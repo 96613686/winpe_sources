@@ -1,0 +1,172 @@
+# ndisMCommonHaltMiniport(_NDIS_MINIPORT_BLOCK *,ulong)
+
+- ea: `0x1401782c0`
+- end: `0x140178f50`
+- name: `?ndisMCommonHaltMiniport@@YAXPEAU_NDIS_MINIPORT_BLOCK@@K@Z`
+- size: `3216`
+- prototype: `void __fastcall(struct _NDIS_MINIPORT_BLOCK *, unsigned int)`
+- caller_count: `3`
+- callee_count: `30`
+- tags: `broker_com_uri`
+
+## callers
+
+- `0x14008b7f0`
+- `0x140181e50`
+- `0x140185210`
+
+## callees
+
+- `0x140009320`
+- `0x14000d4c0`
+- `0x1400110b0`
+- `0x14001ddf0`
+- `0x14003dec0`
+- `0x1400400d0`
+- `0x140041a30`
+- `0x140045f10`
+- `0x140053280`
+- `0x140061200`
+- `0x1400683a0`
+- `0x14006b6d0`
+- `0x1400774e0`
+- `0x140078c50`
+- `0x140088080`
+- `0x140088a2c`
+- `0x14008c71c`
+- `0x14009d7a8`
+- `0x1400eb460`
+- `0x1400eb7c0`
+- `0x14014853c`
+- `0x14014bbd4`
+- `0x14014c770`
+- `0x14015bd60`
+- `0x14015c310`
+- `0x14015d480`
+- `0x14016e540`
+- `0x14016f040`
+- `0x14016ff40`
+- `0x1401782c0`
+
+## import_xrefs
+
+- `ntoskrnl!RtlFreeUnicodeString` at `0x1401783e0`
+- `ntoskrnl!RtlFreeUnicodeString` at `0x1401783e0`
+- `ntoskrnl!DbgPrintEx` at `0x140178d11`
+- `ntoskrnl!DbgPrintEx` at `0x140178d71`
+- `ntoskrnl!DbgPrintEx` at `0x140178ddd`
+- `ntoskrnl!DbgPrintEx` at `0x140178d11`
+- `ntoskrnl!DbgPrintEx` at `0x140178d71`
+- `ntoskrnl!DbgPrintEx` at `0x140178ddd`
+- `ntoskrnl!IoSetDeviceInterfaceState` at `0x140178390`
+- `ntoskrnl!IoSetDeviceInterfaceState` at `0x1401783ab`
+- `ntoskrnl!IoSetDeviceInterfaceState` at `0x1401783d1`
+- `ntoskrnl!IoSetDeviceInterfaceState` at `0x140178390`
+- `ntoskrnl!IoSetDeviceInterfaceState` at `0x1401783ab`
+- `ntoskrnl!IoSetDeviceInterfaceState` at `0x1401783d1`
+- `ntoskrnl!IoWMIRegistrationControl` at `0x14017840a`
+- `ntoskrnl!IoWMIRegistrationControl` at `0x14017840a`
+- `ntoskrnl!ExFreePoolWithTag` at `0x1401788ad`
+- `ntoskrnl!ExFreePoolWithTag` at `0x1401788d3`
+- `ntoskrnl!ExFreePoolWithTag` at `0x1401788f9`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14017891f`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178940`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178971`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178998`
+- `ntoskrnl!ExFreePoolWithTag` at `0x1401789bf`
+- `ntoskrnl!ExFreePoolWithTag` at `0x1401789e6`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178a0d`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178a2e`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178a4f`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178a70`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178a91`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178ab2`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178ad3`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178af4`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178b15`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178b36`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178b57`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178b78`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178b9f`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178bef`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178c10`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178c31`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178c52`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178c73`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178ea5`
+- `ntoskrnl!ExFreePoolWithTag` at `0x1401788ad`
+- `ntoskrnl!ExFreePoolWithTag` at `0x1401788d3`
+- `ntoskrnl!ExFreePoolWithTag` at `0x1401788f9`
+- `ntoskrnl!ExFreePoolWithTag` at `0x14017891f`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178940`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178971`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178998`
+- `ntoskrnl!ExFreePoolWithTag` at `0x1401789bf`
+- `ntoskrnl!ExFreePoolWithTag` at `0x1401789e6`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178a0d`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178a2e`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178a4f`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178a70`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178a91`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178ab2`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178ad3`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178af4`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178b15`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178b36`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178b57`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178b78`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178b9f`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178bef`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178c10`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178c31`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178c52`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178c73`
+- `ntoskrnl!ExFreePoolWithTag` at `0x140178ea5`
+- `ntoskrnl!KeInitializeEvent` at `0x1401784b8`
+- `ntoskrnl!KeInitializeEvent` at `0x140178567`
+- `ntoskrnl!KeInitializeEvent` at `0x1401785d5`
+- `ntoskrnl!KeInitializeEvent` at `0x14017881a`
+- `ntoskrnl!KeInitializeEvent` at `0x1401784b8`
+- `ntoskrnl!KeInitializeEvent` at `0x140178567`
+- `ntoskrnl!KeInitializeEvent` at `0x1401785d5`
+- `ntoskrnl!KeInitializeEvent` at `0x14017881a`
+- `ntoskrnl!KeReleaseSpinLock` at `0x14017836d`
+- `ntoskrnl!KeReleaseSpinLock` at `0x140178452`
+- `ntoskrnl!KeReleaseSpinLock` at `0x1401784ea`
+- `ntoskrnl!KeReleaseSpinLock` at `0x140178512`
+- `ntoskrnl!KeReleaseSpinLock` at `0x14017859d`
+- `ntoskrnl!KeReleaseSpinLock` at `0x1401785f9`
+- `ntoskrnl!KeReleaseSpinLock` at `0x140178624`
+- `ntoskrnl!KeReleaseSpinLock` at `0x140178853`
+- `ntoskrnl!KeReleaseSpinLock` at `0x140178879`
+- `ntoskrnl!KeReleaseSpinLock` at `0x140178e25`
+- `ntoskrnl!KeReleaseSpinLock` at `0x140178ed0`
+- `ntoskrnl!KeReleaseSpinLock` at `0x14017836d`
+- `ntoskrnl!KeReleaseSpinLock` at `0x140178452`
+- `ntoskrnl!KeReleaseSpinLock` at `0x1401784ea`
+- `ntoskrnl!KeReleaseSpinLock` at `0x140178512`
+- `ntoskrnl!KeReleaseSpinLock` at `0x14017859d`
+- `ntoskrnl!KeReleaseSpinLock` at `0x1401785f9`
+- `ntoskrnl!KeReleaseSpinLock` at `0x140178624`
+- `ntoskrnl!KeReleaseSpinLock` at `0x140178853`
+- `ntoskrnl!KeReleaseSpinLock` at `0x140178879`
+- `ntoskrnl!KeReleaseSpinLock` at `0x140178e25`
+- `ntoskrnl!KeReleaseSpinLock` at `0x140178ed0`
+- `ntoskrnl!KeBugCheckEx` at `0x140178d3c`
+- `ntoskrnl!KeBugCheckEx` at `0x140178d9f`
+- `ntoskrnl!KeBugCheckEx` at `0x140178e0b`
+- `ntoskrnl!KeBugCheckEx` at `0x140178d3c`
+- `ntoskrnl!KeBugCheckEx` at `0x140178d9f`
+- `ntoskrnl!KeBugCheckEx` at `0x140178e0b`
+- `HAL!KeStallExecutionProcessor` at `0x140178463`
+- `HAL!KeStallExecutionProcessor` at `0x140178523`
+- `HAL!KeStallExecutionProcessor` at `0x140178e36`
+- `HAL!KeStallExecutionProcessor` at `0x140178463`
+- `HAL!KeStallExecutionProcessor` at `0x140178523`
+- `HAL!KeStallExecutionProcessor` at `0x140178e36`
+
+## pseudocode
+
+```c
+
+```

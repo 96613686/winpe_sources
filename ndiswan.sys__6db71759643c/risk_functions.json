@@ -1,0 +1,4828 @@
+[
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "NdisWanReadRegistry",
+    "ea": "0x140039b38",
+    "function_file": "functions/140039b38_NdisWanReadRegistry.md",
+    "matched_imports": [
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlIntegerToUnicodeString",
+      "ntoskrnl!RtlQueryRegistryValues"
+    ],
+    "matched_strings": [
+      "RtlQueryRegistryValuesEx",
+      "RtlQueryRegistryValuesEx",
+      "RtlQueryRegistryValuesEx",
+      "ProtocolType",
+      "DisableLegacyProtocol",
+      "NdisWan\\Parameters\\Protocols\\",
+      "PPPProtocolType",
+      "CachedKeyCount",
+      "ProtocolMTU",
+      "SniffLink",
+      "MinimumLinkBandwidth",
+      "ProtocolMaxSendPackets"
+    ],
+    "name": "NdisWanReadRegistry",
+    "prototype": "",
+    "rank_score": 11831,
+    "size": 3527,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 20,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x140039008",
+    "function_file": "functions/140039008_DriverEntry.md",
+    "matched_imports": [
+      "NDIS!NdisAllocateNetBufferListPool",
+      "NDIS!NdisAllocateRWLock",
+      "NDIS!NdisGetVersion",
+      "NETIO!NmrRegisterClient",
+      "cng!BCryptCloseAlgorithmProvider",
+      "cng!BCryptOpenAlgorithmProvider",
+      "ntoskrnl!EtwRegister",
+      "ntoskrnl!ExInitializeNPagedLookasideList",
+      "ntoskrnl!ExInitializeResourceLite",
+      "ntoskrnl!KeInitializeDpc",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!KeInitializeTimerEx"
+    ],
+    "matched_strings": [],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 6674,
+    "size": 1751,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 20,
+    "caller_count": 2,
+    "demangled": "ApplyQoSAndQueueSend",
+    "ea": "0x140001be0",
+    "function_file": "functions/140001be0_ApplyQoSAndQueueSend.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireRWLockRead",
+      "NDIS!NdisFreeNetBufferListContext",
+      "NDIS!NdisGetDataBuffer",
+      "NDIS!NdisMCoSendNetBufferListsComplete",
+      "NDIS!NdisMSendNetBufferListsComplete",
+      "NDIS!NdisReleaseRWLock",
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "ApplyQoSAndQueueSend",
+    "prototype": "",
+    "rank_score": 4050,
+    "size": 2378,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 17,
+    "caller_count": 0,
+    "demangled": "BwcTimeoutHandler",
+    "ea": "0x140013080",
+    "function_file": "functions/140013080_BwcTimeoutHandler.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireRWLockWrite",
+      "NDIS!NdisReleaseRWLock",
+      "NETIO!RtlGetNextExpirationTimerWheelTick",
+      "NETIO!RtlGetNextExpiredTimerWheelEntry",
+      "NETIO!RtlIsTimerWheelSuspended",
+      "NETIO!RtlReturnTimerWheelEntry",
+      "NETIO!RtlSuspendTimerWheel",
+      "NETIO!RtlUpdateCurrentTimerWheelTick",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeCancelTimer",
+      "ntoskrnl!KeGetCurrentProcessorNumberEx",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLockFromDpcLevel",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "BwcTimeoutHandler",
+    "prototype": "KDEFERRED_ROUTINE",
+    "rank_score": 3855,
+    "size": 1104,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 5,
+    "demangled": "CompleteSendDesc",
+    "ea": "0x140030940",
+    "function_file": "functions/140030940_CompleteSendDesc.md",
+    "matched_imports": [
+      "NDIS!NdisAdvanceNetBufferListDataStart",
+      "NDIS!NdisFreeNetBufferList",
+      "NDIS!NdisFreeNetBufferListContext",
+      "NDIS!NdisMCoSendNetBufferListsComplete",
+      "NDIS!NdisMSendNetBufferListsComplete",
+      "NDIS!NdisRetreatNetBufferListDataStart",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "CompleteSendDesc",
+    "prototype": "",
+    "rank_score": 3634,
+    "size": 1311,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ConnectionTableCleanUp",
+    "ea": "0x14002e540",
+    "function_file": "functions/14002e540_ConnectionTableCleanUp.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireRWLockWrite",
+      "NDIS!NdisReleaseRWLock",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "ConnectionTableCleanUp",
+    "prototype": "",
+    "rank_score": 3612,
+    "size": 850,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "NdisWanGlobalCleanup",
+    "ea": "0x140007024",
+    "function_file": "functions/140007024_NdisWanGlobalCleanup.md",
+    "matched_imports": [
+      "NDIS!NdisDeregisterDeviceEx",
+      "NDIS!NdisDeregisterProtocol",
+      "NDIS!NdisDeregisterProtocolDriver",
+      "NDIS!NdisFreeNetBufferListPool",
+      "NDIS!NdisFreeRWLock",
+      "NDIS!NdisMDeregisterMiniportDriver",
+      "ntoskrnl!ExDeleteNPagedLookasideList",
+      "ntoskrnl!ExDeleteResourceLite",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "NdisWanGlobalCleanup",
+    "prototype": "",
+    "rank_score": 3438,
+    "size": 496,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "ProtoUnbindAdapterEx",
+    "ea": "0x140005a80",
+    "function_file": "functions/140005a80_ProtoUnbindAdapterEx.md",
+    "matched_imports": [
+      "NDIS!NdisSetEvent",
+      "NDIS!NdisWaitEvent",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "ProtoUnbindAdapterEx",
+    "prototype": "",
+    "rank_score": 3421,
+    "size": 842,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "DoLineUpToProtocol",
+    "ea": "0x14000e400",
+    "function_file": "functions/14000e400_DoLineUpToProtocol.md",
+    "matched_imports": [
+      "NDIS!NdisInitializeEvent",
+      "NDIS!NdisMIndicateStatusEx",
+      "NDIS!NdisResetEvent",
+      "NDIS!NdisWaitEvent",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "DoLineUpToProtocol",
+    "prototype": "",
+    "rank_score": 3029,
+    "size": 1188,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "NdisWanAllocateOpenCB",
+    "ea": "0x1400042e0",
+    "function_file": "functions/1400042e0_NdisWanAllocateOpenCB.md",
+    "matched_imports": [
+      "NDIS!NdisAllocateIoWorkItem",
+      "NDIS!NdisFreeIoWorkItem",
+      "NDIS!NdisInitializeEvent",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlGUIDFromString"
+    ],
+    "matched_strings": [],
+    "name": "NdisWanAllocateOpenCB",
+    "prototype": "__int64 __fastcall(PCUNICODE_STRING SourceString)",
+    "rank_score": 2815,
+    "size": 1096,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "SendFromProtocol",
+    "ea": "0x1400312a0",
+    "function_file": "functions/1400312a0_SendFromProtocol.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "SendFromProtocol",
+    "prototype": "__int64 __usercall@<rax>(PVOID Entry@<rcx>, int)",
+    "rank_score": 2630,
+    "size": 1548,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 0,
+    "demangled": "BundleLink",
+    "ea": "0x1400274e0",
+    "function_file": "functions/1400274e0_BundleLink.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeClearEvent",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "BundleLink",
+    "prototype": "",
+    "rank_score": 2625,
+    "size": 1376,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "CompleteIoRecvPacket",
+    "ea": "0x1400242d4",
+    "function_file": "functions/1400242d4_CompleteIoRecvPacket.md",
+    "matched_imports": [
+      "NDIS!NdisAdvanceNetBufferListDataStart",
+      "NDIS!NdisRetreatNetBufferListDataStart",
+      "NETIO!RtlCopyKernelBufferToMdl",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "CompleteIoRecvPacket",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 2625,
+    "size": 1100,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "ProtoPnPEvent",
+    "ea": "0x140003190",
+    "function_file": "functions/140003190_ProtoPnPEvent.md",
+    "matched_imports": [
+      "NDIS!NdisResetEvent",
+      "NDIS!NdisWaitEvent",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "ProtoPnPEvent",
+    "prototype": "",
+    "rank_score": 2621,
+    "size": 941,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "BwcGetQoSParameters",
+    "ea": "0x1400127f0",
+    "function_file": "functions/1400127f0_BwcGetQoSParameters.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\SYSTEM\\CurrentControlSet\\Services\\RemoteAccess\\Parameters",
+      "QosTokenSizeFactor"
+    ],
+    "name": "BwcGetQoSParameters",
+    "prototype": "",
+    "rank_score": 2519,
+    "size": 790,
+    "tags": [
+      "reparse_path",
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 17,
+    "caller_count": 0,
+    "demangled": "SetCompressionInfo",
+    "ea": "0x14002aa40",
+    "function_file": "functions/14002aa40_SetCompressionInfo.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeSetTimerEx"
+    ],
+    "matched_strings": [],
+    "name": "SetCompressionInfo",
+    "prototype": "",
+    "rank_score": 2441,
+    "size": 1850,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 0,
+    "demangled": "ClIncomingCloseCall",
+    "ea": "0x140025070",
+    "function_file": "functions/140025070_ClIncomingCloseCall.md",
+    "matched_imports": [
+      "NDIS!NdisClCloseCall",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "ClIncomingCloseCall",
+    "prototype": "",
+    "rank_score": 2439,
+    "size": 818,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "IndicatePromiscuousRecv",
+    "ea": "0x14002d570",
+    "function_file": "functions/14002d570_IndicatePromiscuousRecv.md",
+    "matched_imports": [
+      "NDIS!NdisAdvanceNetBufferListDataStart",
+      "NDIS!NdisAllocateCloneNetBufferList",
+      "NDIS!NdisFreeCloneNetBufferList",
+      "NDIS!NdisGetDataBuffer",
+      "NDIS!NdisMIndicateReceiveNetBufferLists",
+      "NDIS!NdisRetreatNetBufferListDataStart",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeLowerIrql",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KfRaiseIrql"
+    ],
+    "matched_strings": [],
+    "name": "IndicatePromiscuousRecv",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 2410,
+    "size": 442,
+    "tags": []
+  },
+  {
+    "callee_count": 17,
+    "caller_count": 0,
+    "demangled": "SetLinkInfo",
+    "ea": "0x14002b270",
+    "function_file": "functions/14002b270_SetLinkInfo.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "SetLinkInfo",
+    "prototype": "",
+    "rank_score": 2252,
+    "size": 1933,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "DoDecompDecryptProcessing",
+    "ea": "0x1400330a0",
+    "function_file": "functions/1400330a0_DoDecompDecryptProcessing.md",
+    "matched_imports": [
+      "cng!BCryptDestroyKey",
+      "cng!BCryptEncrypt",
+      "cng!BCryptGenerateSymmetricKey",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "DoDecompDecryptProcessing",
+    "prototype": "__int64 __fastcall(PVOID)",
+    "rank_score": 2246,
+    "size": 2953,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "SendOnLink",
+    "ea": "0x1400305b0",
+    "function_file": "functions/1400305b0_SendOnLink.md",
+    "matched_imports": [
+      "NDIS!NdisCoSendNetBufferLists",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "SendOnLink",
+    "prototype": "",
+    "rank_score": 2225,
+    "size": 901,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "NdisWanTapiRequestProc",
+    "ea": "0x140010b40",
+    "function_file": "functions/140010b40_NdisWanTapiRequestProc.md",
+    "matched_imports": [
+      "NDIS!NdisSetEvent",
+      "ntoskrnl!ExAllocateFromNPagedLookasideList",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NdisWanTapiRequestProc",
+    "prototype": "",
+    "rank_score": 2220,
+    "size": 684,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 0,
+    "demangled": "ClIncomingCallWork",
+    "ea": "0x140007fb0",
+    "function_file": "functions/140007fb0_ClIncomingCallWork.md",
+    "matched_imports": [
+      "NDIS!NdisClIncomingCallComplete",
+      "NDIS!NdisFreeIoWorkItem",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!MmLockPagableDataSection"
+    ],
+    "matched_strings": [],
+    "name": "ClIncomingCallWork",
+    "prototype": "NDIS_IO_WORKITEM_FUNCTION",
+    "rank_score": 2042,
+    "size": 1313,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "CleanUpRoutesOnBundle",
+    "ea": "0x1400254c8",
+    "function_file": "functions/1400254c8_CleanUpRoutesOnBundle.md",
+    "matched_imports": [
+      "NDIS!NdisCmDispatchIncomingCloseCall",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "CleanUpRoutesOnBundle",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 2033,
+    "size": 592,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ClOpenAfCompleteEx",
+    "ea": "0x1400060f0",
+    "function_file": "functions/1400060f0_ClOpenAfCompleteEx.md",
+    "matched_imports": [
+      "NDIS!NdisClRegisterSap",
+      "ntoskrnl!ExFreeToNPagedLookasideList",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "ClOpenAfCompleteEx",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 2031,
+    "size": 677,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "DoNewLineUpToProtocol",
+    "ea": "0x14002c3f4",
+    "function_file": "functions/14002c3f4_DoNewLineUpToProtocol.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "DoNewLineUpToProtocol",
+    "prototype": "",
+    "rank_score": 2030,
+    "size": 656,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "SendOnLegacyLink",
+    "ea": "0x140010150",
+    "function_file": "functions/140010150_SendOnLegacyLink.md",
+    "matched_imports": [
+      "NDIS!NdisGetDataBuffer",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeLowerIrql",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KfRaiseIrql"
+    ],
+    "matched_strings": [],
+    "name": "SendOnLegacyLink",
+    "prototype": "",
+    "rank_score": 2025,
+    "size": 741,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "QosNblCadDisassemble",
+    "ea": "0x1400148a0",
+    "function_file": "functions/1400148a0_QosNblCadDisassemble.md",
+    "matched_imports": [
+      "NDIS!NdisAllocateNetBufferList",
+      "NDIS!NdisCopySendNetBufferListInfo",
+      "NDIS!NdisFreeNetBufferList",
+      "ntoskrnl!ExAllocateFromNPagedLookasideList",
+      "ntoskrnl!ExFreeToNPagedLookasideList",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLockAtDpcLevel",
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "QosNblCadDisassemble",
+    "prototype": "__int64 __usercall@<rax>(PNET_BUFFER_LIST SrcNetBufferList@<rcx>, int, __int64, char)",
+    "rank_score": 2021,
+    "size": 711,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "MapConnectionId",
+    "ea": "0x14002a4e0",
+    "function_file": "functions/14002a4e0_MapConnectionId.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireRWLockRead",
+      "NDIS!NdisReleaseRWLock",
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel",
+      "ntoskrnl!KeSetTimer",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "MapConnectionId",
+    "prototype": "",
+    "rank_score": 2013,
+    "size": 854,
+    "tags": []
+  },
+  {
+    "callee_count": 17,
+    "caller_count": 2,
+    "demangled": "BwcUpdateFlow",
+    "ea": "0x140013570",
+    "function_file": "functions/140013570_BwcUpdateFlow.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireRWLockWrite",
+      "NDIS!NdisReleaseRWLock",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeGetCurrentProcessorNumberEx",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "BwcUpdateFlow",
+    "prototype": "",
+    "rank_score": 1846,
+    "size": 970,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "UpdateQoSPolicies",
+    "ea": "0x140011940",
+    "function_file": "functions/140011940_UpdateQoSPolicies.md",
+    "matched_imports": [
+      "NDIS!NdisCoOidRequest",
+      "NDIS!NdisSetEvent",
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeClearEvent",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "UpdateQoSPolicies",
+    "prototype": "",
+    "rank_score": 1833,
+    "size": 651,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 0,
+    "demangled": "GetLinkInfo",
+    "ea": "0x1400288a0",
+    "function_file": "functions/1400288a0_GetLinkInfo.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "GetLinkInfo",
+    "prototype": "",
+    "rank_score": 1823,
+    "size": 1295,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "MPInitializeEx",
+    "ea": "0x140037c40",
+    "function_file": "functions/140037c40_MPInitializeEx.md",
+    "matched_imports": [
+      "NDIS!NdisCloseConfiguration",
+      "NDIS!NdisMSetMiniportAttributes",
+      "NDIS!NdisOpenConfigurationEx",
+      "NDIS!NdisReadConfiguration",
+      "NDIS!NdisReadNetworkAddress"
+    ],
+    "matched_strings": [],
+    "name": "MPInitializeEx",
+    "prototype": "__int64 __fastcall(NDIS_HANDLE NdisMiniportHandle)",
+    "rank_score": 1823,
+    "size": 987,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "DoLineDownToProtocol",
+    "ea": "0x14002c200",
+    "function_file": "functions/14002c200_DoLineDownToProtocol.md",
+    "matched_imports": [
+      "NDIS!NdisInitializeEvent",
+      "NDIS!NdisMIndicateStatusEx",
+      "NDIS!NdisResetEvent",
+      "NDIS!NdisWaitEvent",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "DoLineDownToProtocol",
+    "prototype": "",
+    "rank_score": 1820,
+    "size": 494,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ClRegisterSapComplete",
+    "ea": "0x140006860",
+    "function_file": "functions/140006860_ClRegisterSapComplete.md",
+    "matched_imports": [
+      "NDIS!NdisClCloseAddressFamily",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "ClRegisterSapComplete",
+    "prototype": "",
+    "rank_score": 1818,
+    "size": 490,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "IoRecvIrpWorker",
+    "ea": "0x140029e70",
+    "function_file": "functions/140029e70_IoRecvIrpWorker.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel",
+      "ntoskrnl!KeSetTimer"
+    ],
+    "matched_strings": [],
+    "name": "IoRecvIrpWorker",
+    "prototype": "KDEFERRED_ROUTINE",
+    "rank_score": 1818,
+    "size": 619,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "BwcInit",
+    "ea": "0x140012b38",
+    "function_file": "functions/140012b38_BwcInit.md",
+    "matched_imports": [
+      "NDIS!NdisAllocateGenericObject",
+      "NDIS!NdisAllocateNetBufferListPool",
+      "NDIS!NdisGetVersion",
+      "NDIS!NdisInitializeReadWriteLock",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExInitializeNPagedLookasideList",
+      "ntoskrnl!KeQueryMaximumProcessorCountEx"
+    ],
+    "matched_strings": [],
+    "name": "BwcInit",
+    "prototype": "",
+    "rank_score": 1641,
+    "size": 578,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 0,
+    "demangled": "DeactivateRoute",
+    "ea": "0x140027a50",
+    "function_file": "functions/140027a50_DeactivateRoute.md",
+    "matched_imports": [
+      "NDIS!NdisCmDispatchIncomingCloseCall",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "DeactivateRoute",
+    "prototype": "",
+    "rank_score": 1639,
+    "size": 833,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 17,
+    "caller_count": 1,
+    "demangled": "FramePacket",
+    "ea": "0x140031b80",
+    "function_file": "functions/140031b80_FramePacket.md",
+    "matched_imports": [
+      "NDIS!NdisCopyFromNetBufferToNetBuffer",
+      "NETIO!RtlCopyMdlToKernelBuffer",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "FramePacket",
+    "prototype": "__int64 __usercall@<rax>(PVOID Entry@<rcx>, int, ULONG)",
+    "rank_score": 1638,
+    "size": 1382,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "NdisWanAllocateProtocolCB",
+    "ea": "0x140035ad8",
+    "function_file": "functions/140035ad8_NdisWanAllocateProtocolCB.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocateFromNPagedLookasideList",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExFreeToNPagedLookasideList",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeQueryTimeIncrement"
+    ],
+    "matched_strings": [],
+    "name": "NdisWanAllocateProtocolCB",
+    "prototype": "",
+    "rank_score": 1638,
+    "size": 908,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "ProtoCoAfRegisterNotify",
+    "ea": "0x140003c30",
+    "function_file": "functions/140003c30_ProtoCoAfRegisterNotify.md",
+    "matched_imports": [
+      "NDIS!NdisClOpenAddressFamilyEx",
+      "ntoskrnl!ExAllocateFromNPagedLookasideList",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "ProtoCoAfRegisterNotify",
+    "prototype": "",
+    "rank_score": 1636,
+    "size": 1118,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 2,
+    "demangled": "BwcSendNbls",
+    "ea": "0x140002974",
+    "function_file": "functions/140002974_BwcSendNbls.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireRWLockWrite",
+      "NDIS!NdisReleaseRWLock",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeGetCurrentProcessorNumberEx",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLockFromDpcLevel",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "BwcSendNbls",
+    "prototype": "",
+    "rank_score": 1634,
+    "size": 831,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 17,
+    "demangled": "ValidateLinkAndBundle",
+    "ea": "0x1400085b0",
+    "function_file": "functions/1400085b0_ValidateLinkAndBundle.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireRWLockRead",
+      "NDIS!NdisReleaseRWLock",
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "ValidateLinkAndBundle",
+    "prototype": "",
+    "rank_score": 1625,
+    "size": 569,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 7,
+    "demangled": "CompleteNetBufferList",
+    "ea": "0x1400353d0",
+    "function_file": "functions/1400353d0_CompleteNetBufferList.md",
+    "matched_imports": [
+      "NDIS!NdisAdvanceNetBufferListDataStart",
+      "NDIS!NdisFreeNetBufferList",
+      "NDIS!NdisFreeNetBufferListContext",
+      "NDIS!NdisMCoSendNetBufferListsComplete",
+      "NDIS!NdisMSendNetBufferListsComplete",
+      "NDIS!NdisRetreatNetBufferListDataStart",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "CompleteNetBufferList",
+    "prototype": "",
+    "rank_score": 1624,
+    "size": 509,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "NdisWanCancelRoutine",
+    "ea": "0x14000b900",
+    "function_file": "functions/14000b900_NdisWanCancelRoutine.md",
+    "matched_imports": [
+      "ntoskrnl!IoReleaseCancelSpinLock",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NdisWanCancelRoutine",
+    "prototype": "void __fastcall(__int64, IRP *)",
+    "rank_score": 1615,
+    "size": 492,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 9,
+    "demangled": "NdisWanSubmitNdisRequest",
+    "ea": "0x1400048c0",
+    "function_file": "functions/1400048c0_NdisWanSubmitNdisRequest.md",
+    "matched_imports": [
+      "NDIS!NdisCoOidRequest",
+      "NDIS!NdisOidRequest",
+      "NDIS!NdisSetEvent",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeClearEvent",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "NdisWanSubmitNdisRequest",
+    "prototype": "",
+    "rank_score": 1615,
+    "size": 495,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "ApplyQoSPoliciesOnLink",
+    "ea": "0x140011064",
+    "function_file": "functions/140011064_ApplyQoSPoliciesOnLink.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExAllocateFromNPagedLookasideList",
+      "ntoskrnl!ExFreeToNPagedLookasideList",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "ApplyQoSPoliciesOnLink",
+    "prototype": "",
+    "rank_score": 1432,
+    "size": 612,
+    "tags": [
+      "authz_impersonation",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 17,
+    "demangled": "AreLinkAndBundleValid",
+    "ea": "0x140002cc0",
+    "function_file": "functions/140002cc0_AreLinkAndBundleValid.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireRWLockRead",
+      "NDIS!NdisReleaseRWLock",
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "AreLinkAndBundleValid",
+    "prototype": "",
+    "rank_score": 1421,
+    "size": 366,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "IoReceivePacket",
+    "ea": "0x140029b70",
+    "function_file": "functions/140029b70_IoReceivePacket.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "IoReceivePacket",
+    "prototype": "__int64 __fastcall(PIRP Irp, __int64, __int64, unsigned int, _DWORD *)",
+    "rank_score": 1421,
+    "size": 747,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ProtoPnPEventLegacy",
+    "ea": "0x14000fb30",
+    "function_file": "functions/14000fb30_ProtoPnPEventLegacy.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "ProtoPnPEventLegacy",
+    "prototype": "",
+    "rank_score": 1417,
+    "size": 582,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "NdisWanSubmitNdisRequestLegacy",
+    "ea": "0x140010640",
+    "function_file": "functions/140010640_NdisWanSubmitNdisRequestLegacy.md",
+    "matched_imports": [
+      "NDIS!NdisRequest",
+      "NDIS!NdisSetEvent",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeClearEvent",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "NdisWanSubmitNdisRequestLegacy",
+    "prototype": "",
+    "rank_score": 1411,
+    "size": 404,
+    "tags": []
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "DoCompressionEncryption",
+    "ea": "0x140032340",
+    "function_file": "functions/140032340_DoCompressionEncryption.md",
+    "matched_imports": [
+      "cng!BCryptDestroyKey",
+      "cng!BCryptEncrypt",
+      "cng!BCryptGenerateSymmetricKey"
+    ],
+    "matched_strings": [],
+    "name": "DoCompressionEncryption",
+    "prototype": "",
+    "rank_score": 1238,
+    "size": 2132,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 1,
+    "demangled": "BwcFlushDelay",
+    "ea": "0x140012570",
+    "function_file": "functions/140012570_BwcFlushDelay.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireRWLockWrite",
+      "NDIS!NdisReleaseRWLock",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "BwcFlushDelay",
+    "prototype": "",
+    "rank_score": 1229,
+    "size": 631,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "GetNewKeyFromSHA",
+    "ea": "0x140033c30",
+    "function_file": "functions/140033c30_GetNewKeyFromSHA.md",
+    "matched_imports": [
+      "cng!BCryptDestroyHash",
+      "cng!BCryptFinishHash",
+      "cng!BCryptHashData"
+    ],
+    "matched_strings": [],
+    "name": "GetNewKeyFromSHA",
+    "prototype": "",
+    "rank_score": 1220,
+    "size": 382,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "WanInitECP",
+    "ea": "0x14003aad0",
+    "function_file": "functions/14003aad0_WanInitECP.md",
+    "matched_imports": [
+      "NDIS!NdisGetVersion",
+      "ntoskrnl!ExInitializeNPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "WanInitECP",
+    "prototype": "",
+    "rank_score": 1212,
+    "size": 229,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "GetSendingLinks",
+    "ea": "0x140035750",
+    "function_file": "functions/140035750_GetSendingLinks.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "GetSendingLinks",
+    "prototype": "",
+    "rank_score": 1206,
+    "size": 507,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "NdisWanAllocateBundleCB",
+    "ea": "0x14000bfcc",
+    "function_file": "functions/14000bfcc_NdisWanAllocateBundleCB.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocateFromNPagedLookasideList",
+      "ntoskrnl!ExFreeToNPagedLookasideList",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!KeQueryTimeIncrement"
+    ],
+    "matched_strings": [
+      "I/O ProtocolCB"
+    ],
+    "name": "NdisWanAllocateBundleCB",
+    "prototype": "",
+    "rank_score": 1074,
+    "size": 647,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "ProtoWanSendCompleteLegacy",
+    "ea": "0x140007a00",
+    "function_file": "functions/140007a00_ProtoWanSendCompleteLegacy.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreeToNPagedLookasideList",
+      "ntoskrnl!ExpInterlockedPushEntrySList",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "ProtoWanSendCompleteLegacy",
+    "prototype": "",
+    "rank_score": 1032,
+    "size": 480,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "BwcDeinit",
+    "ea": "0x140012174",
+    "function_file": "functions/140012174_BwcDeinit.md",
+    "matched_imports": [
+      "NDIS!NdisFreeGenericObject",
+      "NDIS!NdisFreeNetBufferListPool",
+      "ntoskrnl!ExDeleteNPagedLookasideList",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "BwcDeinit",
+    "prototype": "",
+    "rank_score": 1027,
+    "size": 219,
+    "tags": [
+      "authz_impersonation",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "ClCloseAfComplete",
+    "ea": "0x140006430",
+    "function_file": "functions/140006430_ClCloseAfComplete.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreeToNPagedLookasideList",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "ClCloseAfComplete",
+    "prototype": "",
+    "rank_score": 1027,
+    "size": 327,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "ProtoCoSendNetBufferListChainComplete",
+    "ea": "0x140002e40",
+    "function_file": "functions/140002e40_ProtoCoSendNetBufferListChainComplete.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "ProtoCoSendNetBufferListChainComplete",
+    "prototype": "",
+    "rank_score": 1026,
+    "size": 535,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "DropQoSSendNetBufferList",
+    "ea": "0x140008e5c",
+    "function_file": "functions/140008e5c_DropQoSSendNetBufferList.md",
+    "matched_imports": [
+      "NDIS!NdisFreeNetBufferListContext",
+      "NDIS!NdisMCoSendNetBufferListsComplete",
+      "NDIS!NdisMSendNetBufferListsComplete",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "DropQoSSendNetBufferList",
+    "prototype": "__int64 __fastcall(PNET_BUFFER_LIST NetBufferList)",
+    "rank_score": 1018,
+    "size": 302,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "SetProtocolInfo",
+    "ea": "0x140006e18",
+    "function_file": "functions/140006e18_SetProtocolInfo.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "SetProtocolInfo",
+    "prototype": "",
+    "rank_score": 1018,
+    "size": 478,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "NdisWanAllocateSendResources",
+    "ea": "0x14000ef64",
+    "function_file": "functions/14000ef64_NdisWanAllocateSendResources.md",
+    "matched_imports": [
+      "NDIS!NdisAllocateMemory",
+      "NDIS!NdisGetVersion",
+      "ntoskrnl!ExInitializeNPagedLookasideList",
+      "ntoskrnl!ExpInterlockedPushEntrySList",
+      "ntoskrnl!InitializeSListHead"
+    ],
+    "matched_strings": [],
+    "name": "NdisWanAllocateSendResources",
+    "prototype": "",
+    "rank_score": 1017,
+    "size": 519,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 7,
+    "demangled": "ValidateBundle",
+    "ea": "0x14000899c",
+    "function_file": "functions/14000899c_ValidateBundle.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireRWLockRead",
+      "NDIS!NdisReleaseRWLock",
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "ValidateBundle",
+    "prototype": "",
+    "rank_score": 1013,
+    "size": 419,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 7,
+    "demangled": "ValidateLink",
+    "ea": "0x1400087f0",
+    "function_file": "functions/1400087f0_ValidateLink.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireRWLockRead",
+      "NDIS!NdisReleaseRWLock",
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "ValidateLink",
+    "prototype": "",
+    "rank_score": 1013,
+    "size": 419,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "IsLinkValid",
+    "ea": "0x140003060",
+    "function_file": "functions/140003060_IsLinkValid.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireRWLockRead",
+      "NDIS!NdisReleaseRWLock",
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "IsLinkValid",
+    "prototype": "",
+    "rank_score": 1011,
+    "size": 288,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "IsBundleValid",
+    "ea": "0x140003870",
+    "function_file": "functions/140003870_IsBundleValid.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireRWLockRead",
+      "NDIS!NdisReleaseRWLock",
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "IsBundleValid",
+    "prototype": "",
+    "rank_score": 1010,
+    "size": 235,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "GetDisconnectEvent",
+    "ea": "0x140028420",
+    "function_file": "functions/140028420_GetDisconnectEvent.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireRWLockRead",
+      "NDIS!NdisReleaseRWLock",
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "GetDisconnectEvent",
+    "prototype": "",
+    "rank_score": 1005,
+    "size": 333,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "ClIncomingCallQoSChange",
+    "ea": "0x140007bf0",
+    "function_file": "functions/140007bf0_ClIncomingCallQoSChange.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "ClIncomingCallQoSChange",
+    "prototype": "",
+    "rank_score": 832,
+    "size": 466,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 15,
+    "demangled": "NdisWanFreeRecvDesc",
+    "ea": "0x140005750",
+    "function_file": "functions/140005750_NdisWanFreeRecvDesc.md",
+    "matched_imports": [
+      "NDIS!NdisFreeNetBufferList",
+      "NDIS!NdisFreeNetBufferListContext",
+      "NDIS!NdisReturnNetBufferLists",
+      "ntoskrnl!ExFreeToNPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "NdisWanFreeRecvDesc",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 827,
+    "size": 129,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "GetCompressionInfo",
+    "ea": "0x140027fe0",
+    "function_file": "functions/140027fe0_GetCompressionInfo.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "GetCompressionInfo",
+    "prototype": "",
+    "rank_score": 826,
+    "size": 1076,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "WanAllocateECP",
+    "ea": "0x140024a80",
+    "function_file": "functions/140024a80_WanAllocateECP.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocateFromNPagedLookasideList",
+      "ntoskrnl!ExFreeToNPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "WanAllocateECP",
+    "prototype": "",
+    "rank_score": 822,
+    "size": 735,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "BwcCreateFlow",
+    "ea": "0x140011ed4",
+    "function_file": "functions/140011ed4_BwcCreateFlow.md",
+    "matched_imports": [
+      "NETIO!RtlInitializeTimerWheelEntry",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeInitializeSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "BwcCreateFlow",
+    "prototype": "",
+    "rank_score": 818,
+    "size": 255,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ClDeregisterSapComplete",
+    "ea": "0x140006a50",
+    "function_file": "functions/140006a50_ClDeregisterSapComplete.md",
+    "matched_imports": [
+      "NDIS!NdisClCloseAddressFamily",
+      "NDIS!NdisClNotifyCloseAddressFamilyComplete",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "ClDeregisterSapComplete",
+    "prototype": "",
+    "rank_score": 817,
+    "size": 289,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ProtoOpenWanAdapter",
+    "ea": "0x140004730",
+    "function_file": "functions/140004730_ProtoOpenWanAdapter.md",
+    "matched_imports": [
+      "NDIS!NdisOpenAdapterEx",
+      "ntoskrnl!KeClearEvent",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "ProtoOpenWanAdapter",
+    "prototype": "__int64 __fastcall(NDIS_HANDLE ProtocolBindingContext)",
+    "rank_score": 817,
+    "size": 392,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "NdisWanAllocateCmAfSapCB",
+    "ea": "0x14002bf10",
+    "function_file": "functions/14002bf10_NdisWanAllocateCmAfSapCB.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocateFromNPagedLookasideList",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NdisWanAllocateCmAfSapCB",
+    "prototype": "",
+    "rank_score": 816,
+    "size": 260,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ClIncomingCall",
+    "ea": "0x14000a4b0",
+    "function_file": "functions/14000a4b0_ClIncomingCall.md",
+    "matched_imports": [
+      "NDIS!NdisAllocateIoWorkItem",
+      "NDIS!NdisQueueIoWorkItem",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "ClIncomingCall",
+    "prototype": "",
+    "rank_score": 815,
+    "size": 316,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "FramePacketFast",
+    "ea": "0x140003970",
+    "function_file": "functions/140003970_FramePacketFast.md",
+    "matched_imports": [
+      "NDIS!NdisAdvanceNetBufferListDataStart",
+      "NDIS!NdisGetDataBuffer",
+      "NDIS!NdisRetreatNetBufferListDataStart",
+      "NETIO!RtlCopyKernelBufferToMdl"
+    ],
+    "matched_strings": [],
+    "name": "FramePacketFast",
+    "prototype": "",
+    "rank_score": 814,
+    "size": 684,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "NdisWanCreate",
+    "ea": "0x14000bbc0",
+    "function_file": "functions/14000bbc0_NdisWanCreate.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!MmLockPagableDataSection"
+    ],
+    "matched_strings": [],
+    "name": "NdisWanCreate",
+    "prototype": "",
+    "rank_score": 814,
+    "size": 314,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "NsiCliDeregisterClient",
+    "ea": "0x14000908c",
+    "function_file": "functions/14000908c_NsiCliDeregisterClient.md",
+    "matched_imports": [
+      "NETIO!NmrDeregisterClient",
+      "NETIO!NmrWaitForClientDeregisterComplete",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "NsiCliDeregisterClient",
+    "prototype": "",
+    "rank_score": 814,
+    "size": 140,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "ClCreateVc",
+    "ea": "0x14000a310",
+    "function_file": "functions/14000a310_ClCreateVc.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "ClCreateVc",
+    "prototype": "",
+    "rank_score": 812,
+    "size": 404,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "ClDeleteVc",
+    "ea": "0x140007dd0",
+    "function_file": "functions/140007dd0_ClDeleteVc.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "ClDeleteVc",
+    "prototype": "",
+    "rank_score": 811,
+    "size": 464,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 4,
+    "demangled": "NdisWanFreeOpenCB",
+    "ea": "0x140004ab8",
+    "function_file": "functions/140004ab8_NdisWanFreeOpenCB.md",
+    "matched_imports": [
+      "NDIS!NdisFreeIoWorkItem",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NdisWanFreeOpenCB",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 811,
+    "size": 288,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "EvaluateFilterRule",
+    "ea": "0x14000d4e8",
+    "function_file": "functions/14000d4e8_EvaluateFilterRule.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireRWLockWrite",
+      "NDIS!NdisReleaseRWLock",
+      "ntoskrnl!_wcslwr",
+      "ntoskrnl!wcscpy_s"
+    ],
+    "matched_strings": [],
+    "name": "EvaluateFilterRule",
+    "prototype": "",
+    "rank_score": 808,
+    "size": 369,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ProtoOpenWanAdapterLegacy",
+    "ea": "0x14000f9c0",
+    "function_file": "functions/14000f9c0_ProtoOpenWanAdapterLegacy.md",
+    "matched_imports": [
+      "NDIS!NdisOpenAdapter",
+      "ntoskrnl!KeClearEvent",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "ProtoOpenWanAdapterLegacy",
+    "prototype": "",
+    "rank_score": 806,
+    "size": 362,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "EvaluateFilterRulesForAllConnections",
+    "ea": "0x14000d660",
+    "function_file": "functions/14000d660_EvaluateFilterRulesForAllConnections.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireRWLockWrite",
+      "NDIS!NdisReleaseRWLock",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "EvaluateFilterRulesForAllConnections",
+    "prototype": "",
+    "rank_score": 805,
+    "size": 256,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ProcessFilterData",
+    "ea": "0x14000da84",
+    "function_file": "functions/14000da84_ProcessFilterData.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireRWLockWrite",
+      "NDIS!NdisReleaseRWLock",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "ProcessFilterData",
+    "prototype": "",
+    "rank_score": 804,
+    "size": 211,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 5,
+    "demangled": "NdisWanFreeMiniportCB",
+    "ea": "0x14000c930",
+    "function_file": "functions/14000c930_NdisWanFreeMiniportCB.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NdisWanFreeMiniportCB",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 633,
+    "size": 402,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 16,
+    "demangled": "QosTimerGetCurrentTime",
+    "ea": "0x140009368",
+    "function_file": "functions/140009368_QosTimerGetCurrentTime.md",
+    "matched_imports": [
+      "ntoskrnl!KeGetCurrentProcessorNumberEx",
+      "ntoskrnl!KeLowerIrql",
+      "ntoskrnl!KfRaiseIrql"
+    ],
+    "matched_strings": [],
+    "name": "QosTimerGetCurrentTime",
+    "prototype": "",
+    "rank_score": 629,
+    "size": 140,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "NdisWanFreeProtocolCB",
+    "ea": "0x14002c16c",
+    "function_file": "functions/14002c16c_NdisWanFreeProtocolCB.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExFreeToNPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "NdisWanFreeProtocolCB",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 627,
+    "size": 139,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "ProcessPPPFrame",
+    "ea": "0x140032cd0",
+    "function_file": "functions/140032cd0_ProcessPPPFrame.md",
+    "matched_imports": [
+      "NDIS!NdisAdvanceNetBufferListDataStart",
+      "NDIS!NdisRetreatNetBufferListDataStart",
+      "NETIO!RtlCopyKernelBufferToMdl"
+    ],
+    "matched_strings": [],
+    "name": "ProcessPPPFrame",
+    "prototype": "__int64 __fastcall(PVOID)",
+    "rank_score": 627,
+    "size": 963,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 4,
+    "demangled": "BwcCompleteNbls",
+    "ea": "0x140011da8",
+    "function_file": "functions/140011da8_BwcCompleteNbls.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireRWLockWrite",
+      "NDIS!NdisReleaseRWLock",
+      "ntoskrnl!KeGetCurrentProcessorNumberEx"
+    ],
+    "matched_strings": [],
+    "name": "BwcCompleteNbls",
+    "prototype": "",
+    "rank_score": 622,
+    "size": 291,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "NdisWanAllocateLinkCB",
+    "ea": "0x14000c25c",
+    "function_file": "functions/14000c25c_NdisWanAllocateLinkCB.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocateFromNPagedLookasideList",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeInitializeSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NdisWanAllocateLinkCB",
+    "prototype": "",
+    "rank_score": 620,
+    "size": 547,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "NdisCoWanLinkParamChange",
+    "ea": "0x1400265dc",
+    "function_file": "functions/1400265dc_NdisCoWanLinkParamChange.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NdisCoWanLinkParamChange",
+    "prototype": "",
+    "rank_score": 619,
+    "size": 529,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "TraceFilterEnginepEvaluateBinaryRuleEx",
+    "ea": "0x14000dfb0",
+    "function_file": "functions/14000dfb0_TraceFilterEnginepEvaluateBinaryRuleEx.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "TraceFilterEnginepEvaluateBinaryRuleEx",
+    "prototype": "",
+    "rank_score": 616,
+    "size": 594,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "NdisWanFreeCmAfSapCB",
+    "ea": "0x14002c0bc",
+    "function_file": "functions/14002c0bc_NdisWanFreeCmAfSapCB.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreeToNPagedLookasideList",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NdisWanFreeCmAfSapCB",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 614,
+    "size": 167,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "DoAdapterPauseCompleteWork",
+    "ea": "0x140006c40",
+    "function_file": "functions/140006c40_DoAdapterPauseCompleteWork.md",
+    "matched_imports": [
+      "NDIS!NdisMPauseComplete",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "DoAdapterPauseCompleteWork",
+    "prototype": "",
+    "rank_score": 613,
+    "size": 148,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "NdisWanFreeSendResources",
+    "ea": "0x14000f254",
+    "function_file": "functions/14000f254_NdisWanFreeSendResources.md",
+    "matched_imports": [
+      "NDIS!NdisFreeMemory",
+      "ntoskrnl!ExDeleteNPagedLookasideList",
+      "ntoskrnl!ExpInterlockedPopEntrySList"
+    ],
+    "matched_strings": [],
+    "name": "NdisWanFreeSendResources",
+    "prototype": "",
+    "rank_score": 612,
+    "size": 115,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "WanDeleteECP",
+    "ea": "0x14003709c",
+    "function_file": "functions/14003709c_WanDeleteECP.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteNPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "WanDeleteECP",
+    "prototype": "",
+    "rank_score": 611,
+    "size": 67,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "DerefVc",
+    "ea": "0x140035960",
+    "function_file": "functions/140035960_DerefVc.md",
+    "matched_imports": [
+      "NDIS!NdisClCloseCall",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "DerefVc",
+    "prototype": "",
+    "rank_score": 608,
+    "size": 142,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "InsertBundleInConnectionTable",
+    "ea": "0x14000b2cc",
+    "function_file": "functions/14000b2cc_InsertBundleInConnectionTable.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireRWLockWrite",
+      "NDIS!NdisReleaseRWLock"
+    ],
+    "matched_strings": [],
+    "name": "InsertBundleInConnectionTable",
+    "prototype": "",
+    "rank_score": 606,
+    "size": 295,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "InsertLinkInConnectionTable",
+    "ea": "0x14000b3fc",
+    "function_file": "functions/14000b3fc_InsertLinkInConnectionTable.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireRWLockWrite",
+      "NDIS!NdisReleaseRWLock"
+    ],
+    "matched_strings": [],
+    "name": "InsertLinkInConnectionTable",
+    "prototype": "",
+    "rank_score": 606,
+    "size": 310,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "NdisWanCopyNetBufferList",
+    "ea": "0x1400052e0",
+    "function_file": "functions/1400052e0_NdisWanCopyNetBufferList.md",
+    "matched_imports": [
+      "NDIS!NdisCopyFromNetBufferToNetBuffer",
+      "NDIS!NdisFreeNetBufferList"
+    ],
+    "matched_strings": [],
+    "name": "NdisWanCopyNetBufferList",
+    "prototype": "",
+    "rank_score": 606,
+    "size": 271,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "BwcDeleteLine",
+    "ea": "0x14001231c",
+    "function_file": "functions/14001231c_BwcDeleteLine.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireRWLockWrite",
+      "NDIS!NdisReleaseRWLock"
+    ],
+    "matched_strings": [],
+    "name": "BwcDeleteLine",
+    "prototype": "",
+    "rank_score": 604,
+    "size": 152,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "NdisWanStringToNdisString",
+    "ea": "0x140010f7c",
+    "function_file": "functions/140010f7c_NdisWanStringToNdisString.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "NdisWanStringToNdisString",
+    "prototype": "__int64 __fastcall(PUNICODE_STRING DestinationString)",
+    "rank_score": 604,
+    "size": 115,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CleanupFilterData",
+    "ea": "0x14000d3b8",
+    "function_file": "functions/14000d3b8_CleanupFilterData.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireRWLockWrite",
+      "NDIS!NdisReleaseRWLock",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "CleanupFilterData",
+    "prototype": "",
+    "rank_score": 602,
+    "size": 115,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "FragmentAndQueue",
+    "ea": "0x140030144",
+    "function_file": "functions/140030144_FragmentAndQueue.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint"
+    ],
+    "matched_strings": [
+      "NDISWAN: FragmentAndQueue SendDesc == NULL! LinkCB: 0x%p\n",
+      "NDISWAN: FragmentAndQueue LinkCBCount %d\n"
+    ],
+    "name": "FragmentAndQueue",
+    "prototype": "",
+    "rank_score": 497,
+    "size": 1124,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 9,
+    "demangled": "UpdateBundleInfo",
+    "ea": "0x140007364",
+    "function_file": "functions/140007364_UpdateBundleInfo.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "UpdateBundleInfo",
+    "prototype": "",
+    "rank_score": 436,
+    "size": 489,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "NdisWanFreeBundleCB",
+    "ea": "0x140005568",
+    "function_file": "functions/140005568_NdisWanFreeBundleCB.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExFreeToNPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "NdisWanFreeBundleCB",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 432,
+    "size": 440,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 4,
+    "demangled": "SendPacketOnBundle",
+    "ea": "0x140030e70",
+    "function_file": "functions/140030e70_SendPacketOnBundle.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "SendPacketOnBundle",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 430,
+    "size": 1055,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "NdisWanTapiRequestComplete",
+    "ea": "0x140010a1c",
+    "function_file": "functions/140010a1c_NdisWanTapiRequestComplete.md",
+    "matched_imports": [
+      "NDISTAPI!NdisTapiCompleteRequest",
+      "ntoskrnl!ExFreeToNPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "NdisWanTapiRequestComplete",
+    "prototype": "",
+    "rank_score": 427,
+    "size": 271,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "MPCoSendNetBufferListChain",
+    "ea": "0x14000ce70",
+    "function_file": "functions/14000ce70_MPCoSendNetBufferListChain.md",
+    "matched_imports": [
+      "NDIS!NdisAllocateNetBufferListContext",
+      "NDIS!NdisMSendNetBufferListsComplete"
+    ],
+    "matched_strings": [],
+    "name": "MPCoSendNetBufferListChain",
+    "prototype": "",
+    "rank_score": 420,
+    "size": 579,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "MPSendNetBufferListChain",
+    "ea": "0x1400019a0",
+    "function_file": "functions/1400019a0_MPSendNetBufferListChain.md",
+    "matched_imports": [
+      "NDIS!NdisAllocateNetBufferListContext",
+      "NDIS!NdisMSendNetBufferListsComplete"
+    ],
+    "matched_strings": [],
+    "name": "MPSendNetBufferListChain",
+    "prototype": "",
+    "rank_score": 419,
+    "size": 564,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "RemoveLinkFromBundle",
+    "ea": "0x140005930",
+    "function_file": "functions/140005930_RemoveLinkFromBundle.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "RemoveLinkFromBundle",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 418,
+    "size": 158,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 7,
+    "demangled": "DoDerefCmVcCBWork",
+    "ea": "0x14002e898",
+    "function_file": "functions/14002e898_DoDerefCmVcCBWork.md",
+    "matched_imports": [
+      "NDIS!NdisCmCloseCallComplete",
+      "NDIS!NdisMCmDeactivateVc"
+    ],
+    "matched_strings": [],
+    "name": "DoDerefCmVcCBWork",
+    "prototype": "",
+    "rank_score": 417,
+    "size": 61,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "FlushProtocolPacketQueue",
+    "ea": "0x14000b818",
+    "function_file": "functions/14000b818_FlushProtocolPacketQueue.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "FlushProtocolPacketQueue",
+    "prototype": "",
+    "rank_score": 417,
+    "size": 225,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "GetProtocolEvent",
+    "ea": "0x140028dc0",
+    "function_file": "functions/140028dc0_GetProtocolEvent.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "GetProtocolEvent",
+    "prototype": "",
+    "rank_score": 417,
+    "size": 404,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "wil_InitializeFeatureStaging",
+    "ea": "0x1400396e8",
+    "function_file": "functions/1400396e8_wil_InitializeFeatureStaging.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfigurationChangeStamp",
+      "ntoskrnl!RtlRegisterFeatureConfigurationChangeNotification"
+    ],
+    "matched_strings": [],
+    "name": "wil_InitializeFeatureStaging",
+    "prototype": "",
+    "rank_score": 417,
+    "size": 183,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "CngRsa32Compat_rc4_key_Ex",
+    "ea": "0x140008bf4",
+    "function_file": "functions/140008bf4_CngRsa32Compat_rc4_key_Ex.md",
+    "matched_imports": [
+      "cng!BCryptDestroyKey",
+      "cng!BCryptGenerateSymmetricKey"
+    ],
+    "matched_strings": [],
+    "name": "CngRsa32Compat_rc4_key_Ex",
+    "prototype": "__int64 __fastcall(BCRYPT_KEY_HANDLE *phKey, ULONG cbSecret, PUCHAR pbSecret)",
+    "rank_score": 416,
+    "size": 133,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "NdisWanFreeLinkCB",
+    "ea": "0x1400059d4",
+    "function_file": "functions/1400059d4_NdisWanFreeLinkCB.md",
+    "matched_imports": [
+      "NDIS!NdisSetEvent",
+      "ntoskrnl!ExFreeToNPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "NdisWanFreeLinkCB",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 416,
+    "size": 152,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ProtoCloseAdapterComplete",
+    "ea": "0x140037b70",
+    "function_file": "functions/140037b70_ProtoCloseAdapterComplete.md",
+    "matched_imports": [
+      "NDIS!NdisCompleteUnbindAdapterEx",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "ProtoCloseAdapterComplete",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 416,
+    "size": 196,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ProtoCloseAdapterCompleteLegacy",
+    "ea": "0x14000f690",
+    "function_file": "functions/14000f690_ProtoCloseAdapterCompleteLegacy.md",
+    "matched_imports": [
+      "NDIS!NdisCompleteUnbindAdapter",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "ProtoCloseAdapterCompleteLegacy",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 416,
+    "size": 209,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "WanDeallocateECP",
+    "ea": "0x140024e48",
+    "function_file": "functions/140024e48_WanDeallocateECP.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreeToNPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "WanDeallocateECP",
+    "prototype": "",
+    "rank_score": 416,
+    "size": 260,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BwcCreateTimerUnits",
+    "ea": "0x1400120ac",
+    "function_file": "functions/1400120ac_BwcCreateTimerUnits.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "BwcCreateTimerUnits",
+    "prototype": "",
+    "rank_score": 415,
+    "size": 192,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BwcDeleteFlow",
+    "ea": "0x140012258",
+    "function_file": "functions/140012258_BwcDeleteFlow.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireRWLockWrite",
+      "NDIS!NdisReleaseRWLock"
+    ],
+    "matched_strings": [],
+    "name": "BwcDeleteFlow",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 415,
+    "size": 187,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "GetProtocolInfo",
+    "ea": "0x14000176c",
+    "function_file": "functions/14000176c_GetProtocolInfo.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "GetProtocolInfo",
+    "prototype": "",
+    "rank_score": 415,
+    "size": 131,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "NdisWanAllocateWanPacket",
+    "ea": "0x14000f174",
+    "function_file": "functions/14000f174_NdisWanAllocateWanPacket.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocateFromNPagedLookasideList",
+      "ntoskrnl!ExpInterlockedPopEntrySList"
+    ],
+    "matched_strings": [],
+    "name": "NdisWanAllocateWanPacket",
+    "prototype": "",
+    "rank_score": 415,
+    "size": 218,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "NdisWanCreateProtocolInfoTable",
+    "ea": "0x14003aa1c",
+    "function_file": "functions/14003aa1c_NdisWanCreateProtocolInfoTable.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!KeInitializeSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NdisWanCreateProtocolInfoTable",
+    "prototype": "",
+    "rank_score": 415,
+    "size": 171,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "BwcDereferenceQoSPolicy",
+    "ea": "0x140013b68",
+    "function_file": "functions/140013b68_BwcDereferenceQoSPolicy.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireReadWriteLock",
+      "NDIS!NdisReleaseReadWriteLock"
+    ],
+    "matched_strings": [],
+    "name": "BwcDereferenceQoSPolicy",
+    "prototype": "",
+    "rank_score": 414,
+    "size": 86,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "BwcFindQoSPolicyFromPolicyIndex",
+    "ea": "0x140013bc4",
+    "function_file": "functions/140013bc4_BwcFindQoSPolicyFromPolicyIndex.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireReadWriteLock",
+      "NDIS!NdisReleaseReadWriteLock"
+    ],
+    "matched_strings": [],
+    "name": "BwcFindQoSPolicyFromPolicyIndex",
+    "prototype": "",
+    "rank_score": 414,
+    "size": 128,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "IoGetProtocolInfo",
+    "ea": "0x140029a50",
+    "function_file": "functions/140029a50_IoGetProtocolInfo.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "IoGetProtocolInfo",
+    "prototype": "",
+    "rank_score": 414,
+    "size": 269,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "NdisWanIoctl",
+    "ea": "0x140037a20",
+    "function_file": "functions/140037a20_NdisWanIoctl.md",
+    "matched_imports": [
+      "ntoskrnl!IoIs32bitProcess",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "NdisWanIoctl",
+    "prototype": "__int64 __fastcall(__int64, IRP *)",
+    "rank_score": 414,
+    "size": 322,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "AddProtocolCBToBundle",
+    "ea": "0x140027404",
+    "function_file": "functions/140027404_AddProtocolCBToBundle.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "AddProtocolCBToBundle",
+    "prototype": "",
+    "rank_score": 413,
+    "size": 200,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "BwcAddQoSPolicyToQoSPoliciesHashTable",
+    "ea": "0x140013a30",
+    "function_file": "functions/140013a30_BwcAddQoSPolicyToQoSPoliciesHashTable.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireReadWriteLock",
+      "NDIS!NdisReleaseReadWriteLock"
+    ],
+    "matched_strings": [],
+    "name": "BwcAddQoSPolicyToQoSPoliciesHashTable",
+    "prototype": "",
+    "rank_score": 413,
+    "size": 169,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "CngRsa32Compat_SHAFinal_Ex",
+    "ea": "0x140008ffc",
+    "function_file": "functions/140008ffc_CngRsa32Compat_SHAFinal_Ex.md",
+    "matched_imports": [
+      "cng!BCryptDestroyHash",
+      "cng!BCryptFinishHash"
+    ],
+    "matched_strings": [],
+    "name": "CngRsa32Compat_SHAFinal_Ex",
+    "prototype": "",
+    "rank_score": 413,
+    "size": 71,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_UninitializeFeatureStaging",
+    "ea": "0x1400374cc",
+    "function_file": "functions/1400374cc_wil_UninitializeFeatureStaging.md",
+    "matched_imports": [
+      "ntoskrnl!RtlUnregisterFeatureConfigurationChangeNotification",
+      "ntoskrnl!RtlUnregisterFeatureUsageProvider"
+    ],
+    "matched_strings": [],
+    "name": "wil_UninitializeFeatureStaging",
+    "prototype": "",
+    "rank_score": 413,
+    "size": 90,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "SetProtocolEvent",
+    "ea": "0x14002ba10",
+    "function_file": "functions/14002ba10_SetProtocolEvent.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "SetProtocolEvent",
+    "prototype": "",
+    "rank_score": 412,
+    "size": 148,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "NdisWanCreateConnectionTable",
+    "ea": "0x14000c6e0",
+    "function_file": "functions/14000c6e0_NdisWanCreateConnectionTable.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "NdisWanCreateConnectionTable",
+    "prototype": "",
+    "rank_score": 411,
+    "size": 585,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BwcCreateLine",
+    "ea": "0x140011fdc",
+    "function_file": "functions/140011fdc_BwcCreateLine.md",
+    "matched_imports": [
+      "NDIS!NdisAllocateRWLock",
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "BwcCreateLine",
+    "prototype": "",
+    "rank_score": 405,
+    "size": 199,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "RemoveBundleFromConnectionTable",
+    "ea": "0x1400057d8",
+    "function_file": "functions/1400057d8_RemoveBundleFromConnectionTable.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireRWLockWrite",
+      "NDIS!NdisReleaseRWLock"
+    ],
+    "matched_strings": [],
+    "name": "RemoveBundleFromConnectionTable",
+    "prototype": "",
+    "rank_score": 403,
+    "size": 160,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "RemoveLinkFromConnectionTable",
+    "ea": "0x140005880",
+    "function_file": "functions/140005880_RemoveLinkFromConnectionTable.md",
+    "matched_imports": [
+      "NDIS!NdisAcquireRWLockWrite",
+      "NDIS!NdisReleaseRWLock"
+    ],
+    "matched_strings": [],
+    "name": "RemoveLinkFromConnectionTable",
+    "prototype": "",
+    "rank_score": 403,
+    "size": 167,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 32,
+    "demangled": "DoDerefBundleCBWork",
+    "ea": "0x140005494",
+    "function_file": "functions/140005494_DoDerefBundleCBWork.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "DoDerefBundleCBWork",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 239,
+    "size": 113,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "DoProtocolInit",
+    "ea": "0x140039970",
+    "function_file": "functions/140039970_DoProtocolInit.md",
+    "matched_imports": [
+      "NDIS!NdisRegisterProtocolDriver"
+    ],
+    "matched_strings": [],
+    "name": "DoProtocolInit",
+    "prototype": "",
+    "rank_score": 232,
+    "size": 218,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 33,
+    "demangled": "DoDerefLinkCBWork",
+    "ea": "0x14000550c",
+    "function_file": "functions/14000550c_DoDerefLinkCBWork.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "DoDerefLinkCBWork",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 228,
+    "size": 84,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "DoVJDecompression",
+    "ea": "0x14002cf98",
+    "function_file": "functions/14002cf98_DoVJDecompression.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocateFromNPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "DoVJDecompression",
+    "prototype": "",
+    "rank_score": 228,
+    "size": 463,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "QosFlowUpdateComplete",
+    "ea": "0x140014434",
+    "function_file": "functions/140014434_QosFlowUpdateComplete.md",
+    "matched_imports": [
+      "ntoskrnl!KeGetCurrentProcessorNumberEx"
+    ],
+    "matched_strings": [],
+    "name": "QosFlowUpdateComplete",
+    "prototype": "",
+    "rank_score": 227,
+    "size": 300,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_UpdateFeatureConfiguredStates",
+    "ea": "0x1400378b0",
+    "function_file": "functions/1400378b0_wil_details_UpdateFeatureConfiguredStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_UpdateFeatureConfiguredStates",
+    "prototype": "",
+    "rank_score": 226,
+    "size": 176,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "QosTbcSendNetBufferListComplete",
+    "ea": "0x140015d84",
+    "function_file": "functions/140015d84_QosTbcSendNetBufferListComplete.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreeToNPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "QosTbcSendNetBufferListComplete",
+    "prototype": "",
+    "rank_score": 225,
+    "size": 153,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "DoMiniportInit",
+    "ea": "0x14003a908",
+    "function_file": "functions/14003a908_DoMiniportInit.md",
+    "matched_imports": [
+      "NDIS!NdisMRegisterMiniportDriver"
+    ],
+    "matched_strings": [],
+    "name": "DoMiniportInit",
+    "prototype": "__int64 __fastcall(PUNICODE_STRING RegistryPath)",
+    "rank_score": 224,
+    "size": 267,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "BwcCleanupQoSPolicy",
+    "ea": "0x140013ae0",
+    "function_file": "functions/140013ae0_BwcCleanupQoSPolicy.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreeToNPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "BwcCleanupQoSPolicy",
+    "prototype": "",
+    "rank_score": 223,
+    "size": 129,
+    "tags": [
+      "authz_impersonation",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "CngRsa32Compat_SHAUpdate_Ex",
+    "ea": "0x1400091a0",
+    "function_file": "functions/1400091a0_CngRsa32Compat_SHAUpdate_Ex.md",
+    "matched_imports": [
+      "cng!BCryptHashData"
+    ],
+    "matched_strings": [],
+    "name": "CngRsa32Compat_SHAUpdate_Ex",
+    "prototype": "",
+    "rank_score": 223,
+    "size": 39,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "McGenControlCallbackV2",
+    "ea": "0x14000d770",
+    "function_file": "functions/14000d770_McGenControlCallbackV2.md",
+    "matched_imports": [
+      "NDIS!NdisAllocateRWLock"
+    ],
+    "matched_strings": [],
+    "name": "McGenControlCallbackV2",
+    "prototype": "void __stdcall(LPCGUID SourceId, ULONG ControlCode, UCHAR Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, PEVENT_FILTER_DESCRIPTOR FilterData, PVOID CallbackContext)",
+    "rank_score": 218,
+    "size": 396,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "DoVJHeaderCompression",
+    "ea": "0x14002e080",
+    "function_file": "functions/14002e080_DoVJHeaderCompression.md",
+    "matched_imports": [
+      "NETIO!RtlCopyMdlToKernelBuffer"
+    ],
+    "matched_strings": [],
+    "name": "DoVJHeaderCompression",
+    "prototype": "__int64 __fastcall(int, int, int, int, size_t Size)",
+    "rank_score": 217,
+    "size": 390,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SendAdapterIndexCompartmentIdToMiniport",
+    "ea": "0x14000ec48",
+    "function_file": "functions/14000ec48_SendAdapterIndexCompartmentIdToMiniport.md",
+    "matched_imports": [
+      "ntoskrnl!KeInitializeEvent"
+    ],
+    "matched_strings": [],
+    "name": "SendAdapterIndexCompartmentIdToMiniport",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 231,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "ea": "0x14000abf0",
+    "function_file": "functions/14000abf0_wil_details_FeatureReporting_ReportUsageToServiceDirect.md",
+    "matched_imports": [
+      "ntoskrnl!RtlNotifyFeatureUsage"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_ReportUsageToServiceDirect",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 218,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "ea": "0x140039a50",
+    "function_file": "functions/140039a50_wil_details_PopulateInitialConfiguredFeatureStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 223,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "NdisWanAllocateCmVcCB",
+    "ea": "0x14002c01c",
+    "function_file": "functions/14002c01c_NdisWanAllocateCmVcCB.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocateFromNPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "NdisWanAllocateCmVcCB",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 152,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "NdisWanCleanup",
+    "ea": "0x14000bb00",
+    "function_file": "functions/14000bb00_NdisWanCleanup.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "NdisWanCleanup",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 175,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "ProtoRequestCompleteLegacy",
+    "ea": "0x14000fe00",
+    "function_file": "functions/14000fe00_ProtoRequestCompleteLegacy.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "ProtoRequestCompleteLegacy",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 186,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "QosLineCreate",
+    "ea": "0x140013ea0",
+    "function_file": "functions/140013ea0_QosLineCreate.md",
+    "matched_imports": [
+      "ntoskrnl!KeGetCurrentProcessorNumberEx"
+    ],
+    "matched_strings": [],
+    "name": "QosLineCreate",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 162,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "sl_compress_init",
+    "ea": "0x14002e8dc",
+    "function_file": "functions/14002e8dc_sl_compress_init.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "sl_compress_init",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 185,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_RecordCachedUsage",
+    "ea": "0x14000b5d0",
+    "function_file": "functions/14000b5d0_wil_details_RecordCachedUsage.md",
+    "matched_imports": [
+      "ntoskrnl!RtlRecordFeatureUsage"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_RecordCachedUsage",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 334,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "CngRsa32Compat_SHAInit_Ex",
+    "ea": "0x140009120",
+    "function_file": "functions/140009120_CngRsa32Compat_SHAInit_Ex.md",
+    "matched_imports": [
+      "cng!BCryptCreateHash"
+    ],
+    "matched_strings": [],
+    "name": "CngRsa32Compat_SHAInit_Ex",
+    "prototype": "__int64 __fastcall(BCRYPT_HASH_HANDLE *phHash)",
+    "rank_score": 214,
+    "size": 74,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "DoProtocolInitLegacy",
+    "ea": "0x14000ee40",
+    "function_file": "functions/14000ee40_DoProtocolInitLegacy.md",
+    "matched_imports": [
+      "NDIS!NdisRegisterProtocol"
+    ],
+    "matched_strings": [],
+    "name": "DoProtocolInitLegacy",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 284,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "EtwEx_tidActivityInfoTransfer",
+    "ea": "0x14000d434",
+    "function_file": "functions/14000d434_EtwEx_tidActivityInfoTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "EtwEx_tidActivityInfoTransfer",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 172,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ProtoCoRequestComplete",
+    "ea": "0x140006b80",
+    "function_file": "functions/140006b80_ProtoCoRequestComplete.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "ProtoCoRequestComplete",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 176,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ProtoOpenAdapterComplete",
+    "ea": "0x140038030",
+    "function_file": "functions/140038030_ProtoOpenAdapterComplete.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "ProtoOpenAdapterComplete",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 173,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ProtoOpenAdapterCompleteLegacy",
+    "ea": "0x14000f910",
+    "function_file": "functions/14000f910_ProtoOpenAdapterCompleteLegacy.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "ProtoOpenAdapterCompleteLegacy",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 169,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ProtoRequestComplete",
+    "ea": "0x140006580",
+    "function_file": "functions/140006580_ProtoRequestComplete.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "ProtoRequestComplete",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 185,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ProtoResetCompleteLegacy",
+    "ea": "0x14000fec0",
+    "function_file": "functions/14000fec0_ProtoResetCompleteLegacy.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "ProtoResetCompleteLegacy",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 169,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_RtlStagingConfig_QueryFeatureState",
+    "ea": "0x1400370e8",
+    "function_file": "functions/1400370e8_wil_RtlStagingConfig_QueryFeatureState.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_RtlStagingConfig_QueryFeatureState",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 187,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CmDeleteVc",
+    "ea": "0x140025ae0",
+    "function_file": "functions/140025ae0_CmDeleteVc.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreeToNPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "CmDeleteVc",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 213,
+    "size": 152,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CngRsa32Compat_rc4",
+    "ea": "0x140008f90",
+    "function_file": "functions/140008f90_CngRsa32Compat_rc4.md",
+    "matched_imports": [
+      "cng!BCryptEncrypt"
+    ],
+    "matched_strings": [],
+    "name": "CngRsa32Compat_rc4",
+    "prototype": "",
+    "rank_score": 212,
+    "size": 99,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "McGenEventWrite_EtwWriteTransfer",
+    "ea": "0x14000d93c",
+    "function_file": "functions/14000d93c_McGenEventWrite_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "McGenEventWrite_EtwWriteTransfer",
+    "prototype": "__int64 __fastcall(int, int, int, int, PEVENT_DATA_DESCRIPTOR)",
+    "rank_score": 212,
+    "size": 89,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "DoDerefProtocolCBWork",
+    "ea": "0x140010f40",
+    "function_file": "functions/140010f40_DoDerefProtocolCBWork.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "DoDerefProtocolCBWork",
+    "prototype": "",
+    "rank_score": 211,
+    "size": 51,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "DoBindingPauseCompleteWork",
+    "ea": "0x140007000",
+    "function_file": "functions/140007000_DoBindingPauseCompleteWork.md",
+    "matched_imports": [
+      "NDIS!NdisSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "DoBindingPauseCompleteWork",
+    "prototype": "",
+    "rank_score": 210,
+    "size": 29,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "NdisWanIrpStub",
+    "ea": "0x140037970",
+    "function_file": "functions/140037970_NdisWanIrpStub.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "NdisWanIrpStub",
+    "prototype": "",
+    "rank_score": 210,
+    "size": 47,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "NdisWanAllocateRecvNetBufferList",
+    "ea": "0x140005400",
+    "function_file": "functions/140005400_NdisWanAllocateRecvNetBufferList.md",
+    "matched_imports": [
+      "NDIS!NdisAllocateNetBufferList"
+    ],
+    "matched_strings": [],
+    "name": "NdisWanAllocateRecvNetBufferList",
+    "prototype": "",
+    "rank_score": 207,
+    "size": 139,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "NdisWanFreeNdisString",
+    "ea": "0x140005728",
+    "function_file": "functions/140005728_NdisWanFreeNdisString.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "NdisWanFreeNdisString",
+    "prototype": "",
+    "rank_score": 206,
+    "size": 33,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "RtlAcquireWriteLockAtDpcLevel",
+    "ea": "0x140013a04",
+    "function_file": "functions/140013a04_RtlAcquireWriteLockAtDpcLevel.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireInStackQueuedSpinLockAtDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "RtlAcquireWriteLockAtDpcLevel",
+    "prototype": "",
+    "rank_score": 204,
+    "size": 35,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "GetAsymetricStartKey",
+    "ea": "0x140026360",
+    "function_file": "functions/140026360_GetAsymetricStartKey.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "On the client side, this is the send key; on the server side, it is the receive key.",
+      "On the client side, this is the receive key; on the server side, it is the send key."
+    ],
+    "name": "GetAsymetricStartKey",
+    "prototype": "",
+    "rank_score": 118,
+    "size": 254,
+    "tags": [
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "compress",
+    "ea": "0x1400345a0",
+    "function_file": "functions/1400345a0_compress.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "compress",
+    "prototype": "",
+    "rank_score": 38,
+    "size": 3221,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "QosTbcFlowUpdate",
+    "ea": "0x14001554c",
+    "function_file": "functions/14001554c_QosTbcFlowUpdate.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QosTbcFlowUpdate",
+    "prototype": "",
+    "rank_score": 37,
+    "size": 896,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 50,
+    "demangled": "__security_check_cookie",
+    "ea": "0x1400161f0",
+    "function_file": "functions/1400161f0_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 1,
+    "demangled": "DoMultilinkProcessing",
+    "ea": "0x14002c9e0",
+    "function_file": "functions/14002c9e0_DoMultilinkProcessing.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DoMultilinkProcessing",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 1457,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 58,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x140016230",
+    "function_file": "functions/140016230_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 4,
+    "demangled": "QosTbcAdjustSendWindow",
+    "ea": "0x140014fb4",
+    "function_file": "functions/140014fb4_QosTbcAdjustSendWindow.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QosTbcAdjustSendWindow",
+    "prototype": "",
+    "rank_score": 34,
+    "size": 571,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 27,
+    "demangled": "memmove",
+    "ea": "0x140016400",
+    "function_file": "functions/140016400_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 31,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "sl_uncompress_tcp",
+    "ea": "0x14002eed4",
+    "function_file": "functions/14002eed4_sl_uncompress_tcp.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sl_uncompress_tcp",
+    "prototype": "",
+    "rank_score": 30,
+    "size": 1854,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 62,
+    "demangled": "memset",
+    "ea": "0x140016700",
+    "function_file": "functions/140016700_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 29,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "QosLineUpdate",
+    "ea": "0x1400141c0",
+    "function_file": "functions/1400141c0_QosLineUpdate.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QosLineUpdate",
+    "prototype": "",
+    "rank_score": 28,
+    "size": 354,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 30,
+    "demangled": "Feature_VPN_BugFixes_25C_NdisWan_HandleCheck__private_IsEnabledDeviceUsageNoInline",
+    "ea": "0x1400084d8",
+    "function_file": "functions/1400084d8_Feature_VPN_BugFixes_25C_NdisWan_HandleCheck_private_IsEnabledDeviceUsageNoInline.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Feature_VPN_BugFixes_25C_NdisWan_HandleCheck__private_IsEnabledDeviceUsageNoInline",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 53,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "decompress",
+    "ea": "0x140033df0",
+    "function_file": "functions/140033df0_decompress.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "decompress",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 1962,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState",
+    "ea": "0x14000acd0",
+    "function_file": "functions/14000acd0_wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureStateCache_ReevaluateCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 274,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 145,
+    "demangled": "WPP_SF_",
+    "ea": "0x14000a290",
+    "function_file": "functions/14000a290_WPP_SF.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 26,
+    "size": 40,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 52,
+    "demangled": "WPP_SF_d",
+    "ea": "0x14000a2c0",
+    "function_file": "functions/14000a2c0_WPP_SF_d.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_d",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 26,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 28,
+    "demangled": "WPP_SF_dd",
+    "ea": "0x14000a5f4",
+    "function_file": "functions/14000a5f4_WPP_SF_dd.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_dd",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _DWORD)",
+    "rank_score": 26,
+    "size": 75,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 62,
+    "demangled": "WPP_SF_q",
+    "ea": "0x14000a648",
+    "function_file": "functions/14000a648_WPP_SF_q.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_q",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 26,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "sl_compress_tcp",
+    "ea": "0x14002e99c",
+    "function_file": "functions/14002e99c_sl_compress_tcp.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "sl_compress_tcp",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 1329,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "BwcUpdateQoSPolicy",
+    "ea": "0x140013940",
+    "function_file": "functions/140013940_BwcUpdateQoSPolicy.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BwcUpdateQoSPolicy",
+    "prototype": "",
+    "rank_score": 25,
+    "size": 187,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x1400160bc",
+    "function_file": "functions/1400160bc_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GsDriverEntry",
+    "ea": "0x1400397b0",
+    "function_file": "functions/1400397b0_GsDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GsDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "ea": "0x140037810",
+    "function_file": "functions/140037810_wil_details_ReevaluateOnFeatureConfigurationChange.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 20,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "BwcDropNbls",
+    "ea": "0x1400123e4",
+    "function_file": "functions/1400123e4_BwcDropNbls.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BwcDropNbls",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 149,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "AddLinkToBundle",
+    "ea": "0x14000b13c",
+    "function_file": "functions/14000b13c_AddLinkToBundle.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "AddLinkToBundle",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 183,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 15,
+    "demangled": "WPP_SF_qD",
+    "ea": "0x14000a68c",
+    "function_file": "functions/14000a68c_WPP_SF_qD.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qD",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 78,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_RecordUsageInCache",
+    "ea": "0x14000a9e4",
+    "function_file": "functions/14000a9e4_wil_details_FeatureReporting_RecordUsageInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_RecordUsageInCache",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 381,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_ReportUsageToService",
+    "ea": "0x14000ab68",
+    "function_file": "functions/14000ab68_wil_details_FeatureReporting_ReportUsageToService.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_ReportUsageToService",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 129,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "ClCloseCallComplete",
+    "ea": "0x140024fe0",
+    "function_file": "functions/140024fe0_ClCloseCallComplete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClCloseCallComplete",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 127,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 13,
+    "demangled": "DereferenceRefCount",
+    "ea": "0x1400035f0",
+    "function_file": "functions/1400035f0_DereferenceRefCount.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DereferenceRefCount",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 35,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "QosTbcComputeNbsToDrop",
+    "ea": "0x140015258",
+    "function_file": "functions/140015258_QosTbcComputeNbsToDrop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QosTbcComputeNbsToDrop",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 247,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "ea": "0x140037608",
+    "function_file": "functions/140037608_wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 269,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "QosTbcComputeDropRate",
+    "ea": "0x1400151f8",
+    "function_file": "functions/1400151f8_QosTbcComputeDropRate.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QosTbcComputeDropRate",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 90,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "RemoveProtocolCBFromBundle",
+    "ea": "0x14002a83c",
+    "function_file": "functions/14002a83c_RemoveProtocolCBFromBundle.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RemoveProtocolCBFromBundle",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 157,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "UpdateMinRecvSeqNumber",
+    "ea": "0x14002dc9c",
+    "function_file": "functions/14002dc9c_UpdateMinRecvSeqNumber.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "UpdateMinRecvSeqNumber",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 215,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 13,
+    "demangled": "WPP_SF_qq",
+    "ea": "0x14000a744",
+    "function_file": "functions/14000a744_WPP_SF_qq.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qq",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 75,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_EvaluateFeatureDependencies_UpdateFeatureDesiredStates",
+    "ea": "0x14003771c",
+    "function_file": "functions/14003771c_wil_details_EvaluateFeatureDependencies_UpdateFeatureDesiredStates.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_UpdateFeatureDesiredStates",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 140,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ClMakeCallComplete",
+    "ea": "0x1400253b0",
+    "function_file": "functions/1400253b0_ClMakeCallComplete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClMakeCallComplete",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 127,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ClModifyQoSComplete",
+    "ea": "0x140025440",
+    "function_file": "functions/140025440_ClModifyQoSComplete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ClModifyQoSComplete",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 127,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "NdisWanResetProtocolInfoTable",
+    "ea": "0x140006d9c",
+    "function_file": "functions/140006d9c_NdisWanResetProtocolInfoTable.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NdisWanResetProtocolInfoTable",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 118,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ProtoReceiveCompleteLegacy",
+    "ea": "0x14000fd80",
+    "function_file": "functions/14000fd80_ProtoReceiveCompleteLegacy.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ProtoReceiveCompleteLegacy",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 115,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "QosLineComputeBufferSizes",
+    "ea": "0x140013df0",
+    "function_file": "functions/140013df0_QosLineComputeBufferSizes.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QosLineComputeBufferSizes",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 167,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "QosUtilComputeTokenSpec",
+    "ea": "0x140015f9c",
+    "function_file": "functions/140015f9c_QosUtilComputeTokenSpec.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QosUtilComputeTokenSpec",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 96,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_IncrementOpportunityInCache",
+    "ea": "0x14000a838",
+    "function_file": "functions/14000a838_wil_details_FeatureReporting_IncrementOpportunityInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_IncrementOpportunityInCache",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 202,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_IncrementUsageInCache",
+    "ea": "0x14000a908",
+    "function_file": "functions/14000a908_wil_details_FeatureReporting_IncrementUsageInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_IncrementUsageInCache",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 214,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CmActivateVcComplete",
+    "ea": "0x140025720",
+    "function_file": "functions/140025720_CmActivateVcComplete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CmActivateVcComplete",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 116,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CmDeactivateVcComplete",
+    "ea": "0x140025a60",
+    "function_file": "functions/140025a60_CmDeactivateVcComplete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CmDeactivateVcComplete",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 116,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CmIncomingCallComplete",
+    "ea": "0x140025c00",
+    "function_file": "functions/140025c00_CmIncomingCallComplete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CmIncomingCallComplete",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 116,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ProtoUninstall",
+    "ea": "0x14000ebd0",
+    "function_file": "functions/14000ebd0_ProtoUninstall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ProtoUninstall",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 112,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "QosLineUpdateTotalWeight",
+    "ea": "0x140014328",
+    "function_file": "functions/140014328_QosLineUpdateTotalWeight.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QosLineUpdateTotalWeight",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 83,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "QosUpdateGenerationOverQuota",
+    "ea": "0x140015f5c",
+    "function_file": "functions/140015f5c_QosUpdateGenerationOverQuota.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QosUpdateGenerationOverQuota",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 56,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "UpdateStatisticsFromMiniport",
+    "ea": "0x14000bd10",
+    "function_file": "functions/14000bd10_UpdateStatisticsFromMiniport.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "UpdateStatisticsFromMiniport",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 56,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x1400397e4",
+    "function_file": "functions/1400397e4_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "ea": "0x14000ade8",
+    "function_file": "functions/14000ade8_wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureStateCache_TryEnableDeviceUsageFastPath",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 77,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "ProtoSendNetBufferListsComplete",
+    "ea": "0x14002c690",
+    "function_file": "functions/14002c690_ProtoSendNetBufferListsComplete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ProtoSendNetBufferListsComplete",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 3,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 5,
+    "demangled": "QosLineSignalExternalEvent",
+    "ea": "0x140014050",
+    "function_file": "functions/140014050_QosLineSignalExternalEvent.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QosLineSignalExternalEvent",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 187,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "QosTbcRandomSpread",
+    "ea": "0x140015a88",
+    "function_file": "functions/140015a88_QosTbcRandomSpread.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QosTbcRandomSpread",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 594,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "SetBundleFlags",
+    "ea": "0x14002a8e0",
+    "function_file": "functions/14002a8e0_SetBundleFlags.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SetBundleFlags",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 334,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "wil_details_FeatureDescriptors_SkipPadding",
+    "ea": "0x14000b5a4",
+    "function_file": "functions/14000b5a4_wil_details_FeatureDescriptors_SkipPadding.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureDescriptors_SkipPadding",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 34,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "QosGetNetBufferCount",
+    "ea": "0x14000a168",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QosGetNetBufferCount",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 32,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "QosLineNeedSignal",
+    "ea": "0x140013f48",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QosLineNeedSignal",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 106,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "QosTraceEvent",
+    "ea": "0x14000a23c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QosTraceEvent",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 33,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "WPP_SF_S",
+    "ea": "0x14000cac8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_S",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 103,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "BuildLinkHeader",
+    "ea": "0x1400321d0",
+    "function_file": "functions/1400321d0_BuildLinkHeader.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BuildLinkHeader",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 295,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "QosTbcFrontalSpread",
+    "ea": "0x1400158d4",
+    "function_file": "functions/1400158d4_QosTbcFrontalSpread.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QosTbcFrontalSpread",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 427,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SetQoSPoliciesOnLink",
+    "ea": "0x140011850",
+    "function_file": "functions/140011850_SetQoSPoliciesOnLink.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SetQoSPoliciesOnLink",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 233,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "McTemplateK0zzqbr2_EtwWriteTransfer",
+    "ea": "0x14000d99c",
+    "function_file": "functions/14000d99c_McTemplateK0zzqbr2_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0zzqbr2_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 226,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "BwcNblAppendNblsMoveLast",
+    "ea": "0x14000917c",
+    "function_file": "functions/14000917c_BwcNblAppendNblsMoveLast.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "BwcNblAppendNblsMoveLast",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 29,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CmCreateVc",
+    "ea": "0x1400259b0",
+    "function_file": "functions/1400259b0_CmCreateVc.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CmCreateVc",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 161,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CmOpenAf",
+    "ea": "0x140026170",
+    "function_file": "functions/140026170_CmOpenAf.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CmOpenAf",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 170,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "ea": "0x1400375cc",
+    "function_file": "functions/1400375cc_wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 51,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "QosNblChainRemove",
+    "ea": "0x140014cc4",
+    "function_file": "functions/140014cc4_QosNblChainRemove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QosNblChainRemove",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 34,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "QosUtilSetTokenSpec",
+    "ea": "0x140016004",
+    "function_file": "functions/140016004_QosUtilSetTokenSpec.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "QosUtilSetTokenSpec",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 89,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_details_BuildFeatureStateCacheFromQueryResults",
+    "ea": "0x14003752c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_BuildFeatureStateCacheFromQueryResults",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "MPCoCreateVc",
+    "ea": "0x14000ccf0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MPCoCreateVc",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 114,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "MPCoDeleteVc",
+    "ea": "0x14000cdf0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MPCoDeleteVc",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 114,
+    "tags": []
+  }
+]
