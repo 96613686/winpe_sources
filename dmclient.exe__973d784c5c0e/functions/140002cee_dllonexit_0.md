@@ -1,0 +1,35 @@
+# __dllonexit_0
+
+- ea: `0x140002cee`
+- end: `0x140002cf4`
+- name: `__dllonexit_0`
+- size: `6`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `0`
+- tags: `loader_planting`
+
+## callers
+
+- `0x140002640`
+
+## import_xrefs
+
+- `msvcrt!__dllonexit` at `0x140002cee`
+
+## pseudocode
+
+```c
+// attributes: thunk
+__int64 _dllonexit_0()
+{
+  return __dllonexit();
+}
+
+```
+
+## disassembly
+
+```asm
+0x140002cee  jmp     cs:__imp___dllonexit
+```

@@ -1,0 +1,800 @@
+[
+  {
+    "from_ea": "0x180044934",
+    "from_func": null,
+    "string_ea": "0x18003b0f0",
+    "text": "ESENT.dll"
+  },
+  {
+    "from_ea": "0x18003a4c0",
+    "from_func": null,
+    "string_ea": "0x18003b190",
+    "text": "\\Device\\MountPointManager"
+  },
+  {
+    "from_ea": "0x180004808",
+    "from_func": "0x180004424",
+    "string_ea": "0x18003b1d0",
+    "text": "Global\\discan_{9FEF8AB5-7238-44F3-A974-53D78F0844EA}_tasksem"
+  },
+  {
+    "from_ea": "0x18003a420",
+    "from_func": null,
+    "string_ea": "0x18003b3b8",
+    "text": "SeBackupPrivilege"
+  },
+  {
+    "from_ea": "0x18003a428",
+    "from_func": null,
+    "string_ea": "0x18003b3e0",
+    "text": "SeRestorePrivilege"
+  },
+  {
+    "from_ea": "0x18003a430",
+    "from_func": null,
+    "string_ea": "0x18003b408",
+    "text": "SeManageVolumePrivilege"
+  },
+  {
+    "from_ea": "0x180004436",
+    "from_func": "0x180004424",
+    "string_ea": "0x18003b6b8",
+    "text": "CDataIntegrityScanTaskHandler::FinalConstruct"
+  },
+  {
+    "from_ea": "0x180004532",
+    "from_func": "0x180004424",
+    "string_ea": "0x18003b6f0",
+    "text": "Hr = BOOL_HR( m_StopEvent.AttachEx( CreateEvent( NULL, TRUE, FALSE, NULL ) ) )"
+  },
+  {
+    "from_ea": "0x18000459e",
+    "from_func": "0x180004424",
+    "string_ea": "0x18003b740",
+    "text": "Hr = BOOL_HR( m_PauseEvent.AttachEx( CreateEvent( NULL, TRUE, FALSE, NULL ) ) )"
+  },
+  {
+    "from_ea": "0x180004621",
+    "from_func": "0x180004424",
+    "string_ea": "0x18003b790",
+    "text": "Hr = BOOL_HR( m_ScannerRundownCompleteEvent.AttachEx( CreateEvent( nullptr, TRUE, FALSE, nullptr ) ) )"
+  },
+  {
+    "from_ea": "0x180004690",
+    "from_func": "0x180004424",
+    "string_ea": "0x18003b800",
+    "text": "Hr = BOOL_HR( m_TaskCompletionEvent.AttachEx( CreateEvent( NULL, TRUE, FALSE, NULL ) ) )"
+  },
+  {
+    "from_ea": "0x180004705",
+    "from_func": "0x180004424",
+    "string_ea": "0x18003b860",
+    "text": "Hr = BOOL_HR( m_TaskStartWork.AttachEx( CreateThreadpoolWork( ScanTaskStartCallback, this, NULL ) ) )"
+  },
+  {
+    "from_ea": "0x18000477a",
+    "from_func": "0x180004424",
+    "string_ea": "0x18003b8d0",
+    "text": "Hr = BOOL_HR( m_TaskCompletedWork.AttachEx( CreateThreadpoolWork( ScanTaskCompletedCallback, this, NULL ) ) )"
+  },
+  {
+    "from_ea": "0x1800047f4",
+    "from_func": "0x180004424",
+    "string_ea": "0x18003b940",
+    "text": "Hr = BOOL_HR( m_RegularTaskHaltEvent.AttachEx( CreateEventEx( NULL, DiscanRegularTaskHaltEventName, CREATE_EVENT_MANUAL_RESET, EVENT_ALL_ACCESS ) ) )"
+  },
+  {
+    "from_ea": "0x18000486e",
+    "from_func": "0x180004424",
+    "string_ea": "0x18003b9e0",
+    "text": "Hr = BOOL_HR( m_TaskSemaphore.AttachEx( CreateSemaphoreEx( NULL, 1, 1, DiscanTaskSemaphoreName, 0, SEMAPHORE_ALL_ACCESS ) ) )"
+  },
+  {
+    "from_ea": "0x180005d5b",
+    "from_func": "0x180005d20",
+    "string_ea": "0x18003ba60",
+    "text": "CDataIntegrityScanTaskHandler::Start"
+  },
+  {
+    "from_ea": "0x1800060ea",
+    "from_func": "0x180005d20",
+    "string_ea": "0x18003bac0",
+    "text": "Hr = AtlMarshalPtrInProc( TaskHandlerStatus, IID_ITaskHandlerStatus, &m_TaskCompletedWorkContext.TaskHandlerStatusMarshal )"
+  },
+  {
+    "from_ea": "0x1800061c6",
+    "from_func": "0x180006190",
+    "string_ea": "0x18003bb40",
+    "text": "CDataIntegrityScanTaskHandler::Stop"
+  },
+  {
+    "from_ea": "0x180004b22",
+    "from_func": "0x180004b10",
+    "string_ea": "0x18003bb68",
+    "text": "CDataIntegrityScanTaskHandler::Pause"
+  },
+  {
+    "from_ea": "0x180004eee",
+    "from_func": "0x180004ee0",
+    "string_ea": "0x18003bb90",
+    "text": "CDataIntegrityScanTaskHandler::Resume"
+  },
+  {
+    "from_ea": "0x180005729",
+    "from_func": "0x1800056f8",
+    "string_ea": "0x18003bbb8",
+    "text": "CDataIntegrityScanTaskHandler::ScanTaskStart"
+  },
+  {
+    "from_ea": "0x18000514d",
+    "from_func": "0x18000502c",
+    "string_ea": "0x18003bbe8",
+    "text": "Hr = CoInit.Initialize( COINIT_MULTITHREADED )"
+  },
+  {
+    "from_ea": "0x18000584c",
+    "from_func": "0x1800056f8",
+    "string_ea": "0x18003bbe8",
+    "text": "Hr = CoInit.Initialize( COINIT_MULTITHREADED )"
+  },
+  {
+    "from_ea": "0x180005062",
+    "from_func": "0x18000502c",
+    "string_ea": "0x18003bc18",
+    "text": "CDataIntegrityScanTaskHandler::ScanTaskCompleted"
+  },
+  {
+    "from_ea": "0x1800051dc",
+    "from_func": "0x18000502c",
+    "string_ea": "0x18003bc50",
+    "text": "Hr = AtlUnmarshalPtr( m_TaskCompletedWorkContext.TaskHandlerStatusMarshal, IID_ITaskHandlerStatus, &TaskHandlerStatusUnknown )"
+  },
+  {
+    "from_ea": "0x180003adc",
+    "from_func": "0x180003aa0",
+    "string_ea": "0x18003bd90",
+    "text": "EnableTaskTriggerInternal"
+  },
+  {
+    "from_ea": "0x180003bc2",
+    "from_func": "0x180003aa0",
+    "string_ea": "0x18003bdb0",
+    "text": "Hr = TaskService.CoCreateInstance( CLSID_TaskScheduler )"
+  },
+  {
+    "from_ea": "0x180003c59",
+    "from_func": "0x180003aa0",
+    "string_ea": "0x18003bdf0",
+    "text": "Hr = TaskService->Connect( EmptyVariant, EmptyVariant, EmptyVariant, EmptyVariant )"
+  },
+  {
+    "from_ea": "0x180003cde",
+    "from_func": "0x180003aa0",
+    "string_ea": "0x18003be48",
+    "text": "Hr = TaskService->GetFolder( TaskPath, &TaskFolder )"
+  },
+  {
+    "from_ea": "0x180003d77",
+    "from_func": "0x180003aa0",
+    "string_ea": "0x18003be80",
+    "text": "Hr = TaskFolder->GetTask( TaskName, &RegisteredTask )"
+  },
+  {
+    "from_ea": "0x180003e0e",
+    "from_func": "0x180003aa0",
+    "string_ea": "0x18003beb8",
+    "text": "Hr = RegisteredTask->get_Definition( &TaskDefinition )"
+  },
+  {
+    "from_ea": "0x180003e7b",
+    "from_func": "0x180003aa0",
+    "string_ea": "0x18003bef0",
+    "text": "Hr = TaskDefinition->get_Triggers( &TriggerCollection )"
+  },
+  {
+    "from_ea": "0x1800041c2",
+    "from_func": "0x180003aa0",
+    "string_ea": "0x18003c018",
+    "text": "Hr = TaskDefinition->put_Triggers( TriggerCollection )"
+  },
+  {
+    "from_ea": "0x18000431b",
+    "from_func": "0x180003aa0",
+    "string_ea": "0x18003c050",
+    "text": "Hr = TaskFolder->RegisterTaskDefinition( TaskName, TaskDefinition, TASK_UPDATE | TASK_IGNORE_REGISTRATION_TRIGGERS, EmptyVariant, EmptyVariant, TASK_LOGON_NONE, EmptyVariant, &NewRegisteredTask )"
+  },
+  {
+    "from_ea": "0x180006e60",
+    "from_func": "0x180006d40",
+    "string_ea": "0x18003c4b8",
+    "text": "CLSID\\"
+  },
+  {
+    "from_ea": "0x180006f4f",
+    "from_func": "0x180006d40",
+    "string_ea": "0x18003c4b8",
+    "text": "CLSID\\"
+  },
+  {
+    "from_ea": "0x180007212",
+    "from_func": "0x1800071f4",
+    "string_ea": "0x18003c500",
+    "text": "API-MS-Win-Core-LocalRegistry-L1-1-0.dll"
+  },
+  {
+    "from_ea": "0x180007224",
+    "from_func": "0x1800071f4",
+    "string_ea": "0x18003c558",
+    "text": "RegDeleteKeyExW"
+  },
+  {
+    "from_ea": "0x18000723f",
+    "from_func": "0x1800071f4",
+    "string_ea": "0x18003c568",
+    "text": "advapi32.dll"
+  },
+  {
+    "from_ea": "0x180007251",
+    "from_func": "0x1800071f4",
+    "string_ea": "0x18003c588",
+    "text": "RegDeleteKeyW"
+  },
+  {
+    "from_ea": "0x180007f37",
+    "from_func": "0x180007f18",
+    "string_ea": "0x18003c5d8",
+    "text": "QueryDataIntegrityScanConfiguration"
+  },
+  {
+    "from_ea": "0x1800081bb",
+    "from_func": "0x180007f18",
+    "string_ea": "0x18003c6d0",
+    "text": "ScrubThreadPerVolumeMaximum"
+  },
+  {
+    "from_ea": "0x18000821f",
+    "from_func": "0x180007f18",
+    "string_ea": "0x18003c708",
+    "text": "ScrubThreadMaximumIosPerScrub"
+  },
+  {
+    "from_ea": "0x180008443",
+    "from_func": "0x180007f18",
+    "string_ea": "0x18003c860",
+    "text": "ScrubProgressUpdatePeriodInHours"
+  },
+  {
+    "from_ea": "0x18000a629",
+    "from_func": "0x18000a5f4",
+    "string_ea": "0x18003c8c0",
+    "text": "EnablePrivileges"
+  },
+  {
+    "from_ea": "0x18000e928",
+    "from_func": "0x18000e910",
+    "string_ea": "0x18003c8d8",
+    "text": "OpenMountMgr"
+  },
+  {
+    "from_ea": "0x18000eaba",
+    "from_func": "0x18000ea80",
+    "string_ea": "0x18003c910",
+    "text": "OpenVolumeHandles"
+  },
+  {
+    "from_ea": "0x180008e8e",
+    "from_func": "0x180008e48",
+    "string_ea": "0x18003c958",
+    "text": "CsvQueryMdsPath"
+  },
+  {
+    "from_ea": "0x180009817",
+    "from_func": "0x1800097e0",
+    "string_ea": "0x18003cb50",
+    "text": "DiskWaitForVolumesReady"
+  },
+  {
+    "from_ea": "0x1800090f3",
+    "from_func": "0x1800090a4",
+    "string_ea": "0x18003cb80",
+    "text": "DiskCreateHandle"
+  },
+  {
+    "from_ea": "0x1800134c6",
+    "from_func": "0x18001323c",
+    "string_ea": "0x18003cd50",
+    "text": "BOOL_HR( m_SystemScanCompleteWork.AttachEx( CreateThreadpoolWork( SystemScanCompleteWork, this, m_ScrubEnvironment->ScrubWorkerCallbackEnv ) ) )"
+  },
+  {
+    "from_ea": "0x1800141c5",
+    "from_func": "0x180014190",
+    "string_ea": "0x18003cf68",
+    "text": "CSystemScanner::DiskScanCompleted"
+  },
+  {
+    "from_ea": "0x180016e4f",
+    "from_func": "0x180016d24",
+    "string_ea": "0x18003cf90",
+    "text": "CSystemScanner::SystemScanCompleteWork"
+  },
+  {
+    "from_ea": "0x180013150",
+    "from_func": "0x180012fc0",
+    "string_ea": "0x18003d070",
+    "text": "Hr = BOOL_HR( m_TpCleanupGroup.AttachEx( CreateThreadpoolCleanupGroup() ) )"
+  },
+  {
+    "from_ea": "0x180013216",
+    "from_func": "0x180012fc0",
+    "string_ea": "0x18003d0c0",
+    "text": "Hr = BOOL_HR( m_TpPool.AttachEx( CreateThreadpool( nullptr ) ) )"
+  },
+  {
+    "from_ea": "0x180018185",
+    "from_func": "0x180018130",
+    "string_ea": "0x18003d2b0",
+    "text": "CScrubCheckpoint::_ReadCheckpoint"
+  },
+  {
+    "from_ea": "0x180017abb",
+    "from_func": "0x180017a80",
+    "string_ea": "0x18003d338",
+    "text": "CScrubCheckpoint::WriteCheckpoint"
+  },
+  {
+    "from_ea": "0x180018655",
+    "from_func": "0x18001860c",
+    "string_ea": "0x18003d388",
+    "text": "CScrubCheckpoint::_WriteCheckpointInternal"
+  },
+  {
+    "from_ea": "0x180019ba5",
+    "from_func": "0x180019a98",
+    "string_ea": "0x18003d3e8",
+    "text": "Hr = BOOL_HR( nullptr != InitCompleteEvent )"
+  },
+  {
+    "from_ea": "0x18001b067",
+    "from_func": "0x18001ae24",
+    "string_ea": "0x18003d460",
+    "text": "Hr = CONFIGRET_HR( CM_Register_Notification( &CmNotifyFilter, this, DeviceNotifyCallback, &DiskNotifyHandle ) )"
+  },
+  {
+    "from_ea": "0x18001a95f",
+    "from_func": "0x18001a6bc",
+    "string_ea": "0x18003d550",
+    "text": "Hr = CONFIGRET_HR( CM_Get_Device_Interface_List_Size( &ListSize, const_cast<LPGUID>(&GUID_DEVINTERFACE_DISK), nullptr, CM_GET_DEVICE_INTERFACE_LIST_PRESENT ) )"
+  },
+  {
+    "from_ea": "0x18001a906",
+    "from_func": "0x18001a6bc",
+    "string_ea": "0x18003d5f0",
+    "text": "Hr = CONFIGRET_HR( ConfigRet )"
+  },
+  {
+    "from_ea": "0x18001f90e",
+    "from_func": "0x18001f8dc",
+    "string_ea": "0x18003d7b0",
+    "text": "CDiskScanner::UpdateReferenceDriveLayout"
+  },
+  {
+    "from_ea": "0x180047118",
+    "from_func": null,
+    "string_ea": "0x18003d908",
+    "text": "GUID_IO_VOLUME_DISMOUNT"
+  },
+  {
+    "from_ea": "0x180047130",
+    "from_func": null,
+    "string_ea": "0x18003d920",
+    "text": "GUID_IO_VOLUME_DISMOUNT_FAILED"
+  },
+  {
+    "from_ea": "0x180047148",
+    "from_func": null,
+    "string_ea": "0x18003d940",
+    "text": "GUID_IO_VOLUME_MOUNT"
+  },
+  {
+    "from_ea": "0x180047220",
+    "from_func": null,
+    "string_ea": "0x18003da48",
+    "text": "GUID_IO_VOLUME_INFO_MAKE_COMPAT"
+  },
+  {
+    "from_ea": "0x180047268",
+    "from_func": null,
+    "string_ea": "0x18003dab0",
+    "text": "GUID_IO_VOLUME_PHYSICAL_CONFIGURATION_CHANGE"
+  },
+  {
+    "from_ea": "0x180047340",
+    "from_func": null,
+    "string_ea": "0x18003dbd8",
+    "text": "GUID_IO_DEVICE_BECOMING_READY"
+  },
+  {
+    "from_ea": "0x1800473f0",
+    "from_func": null,
+    "string_ea": "0x18003dd38",
+    "text": "::$SECURITY_DESCRIPTOR"
+  },
+  {
+    "from_ea": "0x180047758",
+    "from_func": null,
+    "string_ea": "0x18003dd38",
+    "text": "::$SECURITY_DESCRIPTOR"
+  },
+  {
+    "from_ea": "0x1800477a8",
+    "from_func": null,
+    "string_ea": "0x18003dd38",
+    "text": "::$SECURITY_DESCRIPTOR"
+  },
+  {
+    "from_ea": "0x180047768",
+    "from_func": null,
+    "string_ea": "0x18003dd80",
+    "text": "::$REPARSE_POINT"
+  },
+  {
+    "from_ea": "0x1800477c8",
+    "from_func": null,
+    "string_ea": "0x18003dd80",
+    "text": "::$REPARSE_POINT"
+  },
+  {
+    "from_ea": "0x1800475d8",
+    "from_func": null,
+    "string_ea": "0x18003e400",
+    "text": "$Extend\\$Reparse:$R:$INDEX_ALLOCATION"
+  },
+  {
+    "from_ea": "0x1800475e8",
+    "from_func": null,
+    "string_ea": "0x18003e450",
+    "text": "$Extend\\$Reparse::$ATTRIBUTE_LIST"
+  },
+  {
+    "from_ea": "0x1800475f8",
+    "from_func": null,
+    "string_ea": "0x18003e498",
+    "text": "$Extend\\$Reparse:$R:$BITMAP"
+  },
+  {
+    "from_ea": "0x180047638",
+    "from_func": null,
+    "string_ea": "0x18003e5d0",
+    "text": "$Extend\\$RmMetadata\\$Repair::$DATA"
+  },
+  {
+    "from_ea": "0x180047648",
+    "from_func": null,
+    "string_ea": "0x18003e620",
+    "text": "$Extend\\$RmMetadata\\$Repair::$ATTRIBUTE_LIST"
+  },
+  {
+    "from_ea": "0x180047658",
+    "from_func": null,
+    "string_ea": "0x18003e680",
+    "text": "$Extend\\$RmMetadata\\$Repair:$Config:$DATA"
+  },
+  {
+    "from_ea": "0x180047668",
+    "from_func": null,
+    "string_ea": "0x18003e6e0",
+    "text": "$Extend\\$RmMetadata\\$Repair:$Corrupt:$DATA"
+  },
+  {
+    "from_ea": "0x180047678",
+    "from_func": null,
+    "string_ea": "0x18003e740",
+    "text": "$Extend\\$RmMetadata\\$Repair:$Verify:$DATA"
+  },
+  {
+    "from_ea": "0x180029a36",
+    "from_func": "0x1800299f0",
+    "string_ea": "0x18003ec80",
+    "text": "CScrub::_ScrubDirectoryQueue"
+  },
+  {
+    "from_ea": "0x1800242c3",
+    "from_func": "0x180024280",
+    "string_ea": "0x18003ecd0",
+    "text": "CScrub::ScrubRootDirectory"
+  },
+  {
+    "from_ea": "0x18002897a",
+    "from_func": "0x18002892c",
+    "string_ea": "0x18003eda0",
+    "text": "CScrub::_ScanDirectoryEntries"
+  },
+  {
+    "from_ea": "0x180029247",
+    "from_func": "0x180029210",
+    "string_ea": "0x18003edf8",
+    "text": "CScrub::_ScrubDirectoryFileEntry"
+  },
+  {
+    "from_ea": "0x18002b36b",
+    "from_func": "0x18002b2d0",
+    "string_ea": "0x18003ee80",
+    "text": "Dismount"
+  },
+  {
+    "from_ea": "0x18002b383",
+    "from_func": "0x18002b2d0",
+    "string_ea": "0x18003ee90",
+    "text": "DismountFailed"
+  },
+  {
+    "from_ea": "0x18002b39b",
+    "from_func": "0x18002b2d0",
+    "string_ea": "0x18003eea0",
+    "text": "Mount"
+  },
+  {
+    "from_ea": "0x18002b464",
+    "from_func": "0x18002b2d0",
+    "string_ea": "0x18003ef18",
+    "text": "InfoMakeCompat"
+  },
+  {
+    "from_ea": "0x18002b4a6",
+    "from_func": "0x18002b2d0",
+    "string_ea": "0x18003ef50",
+    "text": "PhysicalConfigurationChange"
+  },
+  {
+    "from_ea": "0x180021e05",
+    "from_func": "0x180021db4",
+    "string_ea": "0x18003efd8",
+    "text": "Completed"
+  },
+  {
+    "from_ea": "0x180021ef6",
+    "from_func": "0x180021db4",
+    "string_ea": "0x18003efd8",
+    "text": "Completed"
+  },
+  {
+    "from_ea": "0x180021f71",
+    "from_func": "0x180021db4",
+    "string_ea": "0x18003efd8",
+    "text": "Completed"
+  },
+  {
+    "from_ea": "0x180021fcb",
+    "from_func": "0x180021db4",
+    "string_ea": "0x18003efd8",
+    "text": "Completed"
+  },
+  {
+    "from_ea": "0x180022062",
+    "from_func": "0x180021db4",
+    "string_ea": "0x18003efd8",
+    "text": "Completed"
+  },
+  {
+    "from_ea": "0x1800220d3",
+    "from_func": "0x180021db4",
+    "string_ea": "0x18003efd8",
+    "text": "Completed"
+  },
+  {
+    "from_ea": "0x18002213f",
+    "from_func": "0x180021db4",
+    "string_ea": "0x18003efd8",
+    "text": "Completed"
+  },
+  {
+    "from_ea": "0x180022197",
+    "from_func": "0x180021db4",
+    "string_ea": "0x18003efd8",
+    "text": "Completed"
+  },
+  {
+    "from_ea": "0x18002f078",
+    "from_func": "0x18002f040",
+    "string_ea": "0x18003f080",
+    "text": "CScrubDatabase::OpenJetDatabase"
+  },
+  {
+    "from_ea": "0x18002f3e8",
+    "from_func": "0x18002f3b8",
+    "string_ea": "0x18003f0c8",
+    "text": "CScrubDatabase::OpenParityTable"
+  },
+  {
+    "from_ea": "0x18002eb43",
+    "from_func": "0x18002eb28",
+    "string_ea": "0x18003f0e8",
+    "text": "CScrubDatabase::CreateParityTable"
+  },
+  {
+    "from_ea": "0x18002fd67",
+    "from_func": "0x18002fd34",
+    "string_ea": "0x18003f110",
+    "text": "CScrubDatabase::UpdateParityExtent"
+  },
+  {
+    "from_ea": "0x18003065e",
+    "from_func": "0x18003061c",
+    "string_ea": "0x18003f110",
+    "text": "CScrubDatabase::UpdateParityExtent"
+  },
+  {
+    "from_ea": "0x18002fbef",
+    "from_func": "0x18002fbb8",
+    "string_ea": "0x18003f160",
+    "text": "CScrubDatabase::UpdateColumnData"
+  },
+  {
+    "from_ea": "0x18003443a",
+    "from_func": "0x1800343f8",
+    "string_ea": "0x18003f478",
+    "text": "ntdll.dll"
+  },
+  {
+    "from_ea": "0x18003665c",
+    "from_func": "0x18003664c",
+    "string_ea": "0x18003f478",
+    "text": "ntdll.dll"
+  },
+  {
+    "from_ea": "0x180035fa5",
+    "from_func": "0x180035f90",
+    "string_ea": "0x18003f4b0",
+    "text": "kernelbase.dll"
+  },
+  {
+    "from_ea": "0x18003660d",
+    "from_func": "0x1800365f4",
+    "string_ea": "0x18003f4b0",
+    "text": "kernelbase.dll"
+  },
+  {
+    "from_ea": "0x1800316ef",
+    "from_func": "0x1800316d8",
+    "string_ea": "0x18003f4f0",
+    "text": "onecore\\internal\\sdk\\inc\\wil\\opensource\\wil\\resource.h"
+  },
+  {
+    "from_ea": "0x180031720",
+    "from_func": "0x1800316d8",
+    "string_ea": "0x18003f4f0",
+    "text": "onecore\\internal\\sdk\\inc\\wil\\opensource\\wil\\resource.h"
+  },
+  {
+    "from_ea": "0x180032b9d",
+    "from_func": "0x180032b94",
+    "string_ea": "0x18003f4f0",
+    "text": "onecore\\internal\\sdk\\inc\\wil\\opensource\\wil\\resource.h"
+  },
+  {
+    "from_ea": "0x180035030",
+    "from_func": "0x180035020",
+    "string_ea": "0x18003f548",
+    "text": "RtlDllShutdownInProgress"
+  },
+  {
+    "from_ea": "0x180036af4",
+    "from_func": "0x180036ad0",
+    "string_ea": "0x18003f588",
+    "text": "RtlRegisterFeatureConfigurationChangeNotification"
+  },
+  {
+    "from_ea": "0x180036b51",
+    "from_func": "0x180036b3c",
+    "string_ea": "0x18003f5c0",
+    "text": "RtlUnregisterFeatureConfigurationChangeNotification"
+  },
+  {
+    "from_ea": "0x180036a68",
+    "from_func": "0x180036a44",
+    "string_ea": "0x18003f628",
+    "text": "NtUpdateWnfStateData"
+  },
+  {
+    "from_ea": "0x18003573d",
+    "from_func": "0x180035684",
+    "string_ea": "0x18003f698",
+    "text": "CreateThreadpool"
+  },
+  {
+    "from_ea": "0x180035776",
+    "from_func": "0x180035684",
+    "string_ea": "0x18003f6b0",
+    "text": "SetThreadpoolThreadMinimum"
+  },
+  {
+    "from_ea": "0x18003581f",
+    "from_func": "0x180035684",
+    "string_ea": "0x18003f6f0",
+    "text": "CreateFile"
+  },
+  {
+    "from_ea": "0x180044eac",
+    "from_func": null,
+    "string_ea": "0x180044ef0",
+    "text": "DataIntegrityScanTask.dll"
+  },
+  {
+    "from_ea": "0x180044ed8",
+    "from_func": null,
+    "string_ea": "0x180044f0a",
+    "text": "DllCanUnloadNow"
+  },
+  {
+    "from_ea": "0x180044ed8",
+    "from_func": null,
+    "string_ea": "0x180044f1a",
+    "text": "DllGetClassObject"
+  },
+  {
+    "from_ea": "0x180044ed8",
+    "from_func": null,
+    "string_ea": "0x180044f2c",
+    "text": "DllRegisterServer"
+  },
+  {
+    "from_ea": "0x180044ed8",
+    "from_func": null,
+    "string_ea": "0x180044f3e",
+    "text": "DllUnregisterServer"
+  },
+  {
+    "from_ea": "0x180044f60",
+    "from_func": null,
+    "string_ea": "0x180045884",
+    "text": "msvcrt.dll"
+  },
+  {
+    "from_ea": "0x180044f74",
+    "from_func": null,
+    "string_ea": "0x180045b80",
+    "text": "ntdll.dll"
+  },
+  {
+    "from_ea": "0x180044f88",
+    "from_func": null,
+    "string_ea": "0x180045b8a",
+    "text": "OLEAUT32.dll"
+  },
+  {
+    "from_ea": "0x180044f9c",
+    "from_func": null,
+    "string_ea": "0x180045d16",
+    "text": "ADVAPI32.dll"
+  },
+  {
+    "from_ea": "0x180044fb0",
+    "from_func": null,
+    "string_ea": "0x180045d44",
+    "text": "USER32.dll"
+  },
+  {
+    "from_ea": "0x180044fc4",
+    "from_func": null,
+    "string_ea": "0x1800465dc",
+    "text": "KERNEL32.dll"
+  },
+  {
+    "from_ea": "0x180044fd8",
+    "from_func": null,
+    "string_ea": "0x180046630",
+    "text": "SETUPAPI.dll"
+  },
+  {
+    "from_ea": "0x180044fec",
+    "from_func": null,
+    "string_ea": "0x18004668e",
+    "text": "api-ms-win-devices-config-l1-1-1.dll"
+  },
+  {
+    "from_ea": "0x180045000",
+    "from_func": null,
+    "string_ea": "0x18004676c",
+    "text": "api-ms-win-core-com-l1-1-0.dll"
+  }
+]

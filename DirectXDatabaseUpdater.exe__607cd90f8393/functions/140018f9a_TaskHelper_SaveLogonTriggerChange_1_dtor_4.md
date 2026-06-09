@@ -1,0 +1,31 @@
+# _TaskHelper::SaveLogonTriggerChange_::_1_::dtor$4
+
+- ea: `0x140018f9a`
+- end: `0x140018fa6`
+- name: `_TaskHelper::SaveLogonTriggerChange_::_1_::dtor$4`
+- size: `12`
+- prototype: ``
+- caller_count: `0`
+- callee_count: `1`
+- tags: `service_task`
+
+## callees
+
+- `0x1400136e0`
+
+## pseudocode
+
+```c
+HRESULT __fastcall TaskHelper::SaveLogonTriggerChange_::_1_::dtor_4(__int64 a1, __int64 a2)
+{
+  return _variant_t::~_variant_t((VARIANTARG *)(a2 + 80));
+}
+
+```
+
+## disassembly
+
+```asm
+0x140018f9a  lea     rcx, [rdx+50h]; pvarg
+0x140018fa1  jmp     ??1_variant_t@@QEAA@XZ; _variant_t::~_variant_t(void)
+```

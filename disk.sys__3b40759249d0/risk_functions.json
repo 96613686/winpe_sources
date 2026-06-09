@@ -1,0 +1,1888 @@
+[
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "DiskInfoExceptionCheck",
+    "ea": "0x1400046c8",
+    "function_file": "functions/1400046c8_DiskInfoExceptionCheck.md",
+    "matched_imports": [
+      "CLASSPNP!ClassAcquireRemoveLockEx",
+      "CLASSPNP!ClassReleaseRemoveLock",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!IoAllocateMdl",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoGetIoPriorityHint",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!MmBuildMdlForNonPagedPool"
+    ],
+    "matched_strings": [],
+    "name": "DiskInfoExceptionCheck",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 6024,
+    "size": 1486,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "DiskShutdownFlush",
+    "ea": "0x140002ac0",
+    "function_file": "functions/140002ac0_DiskShutdownFlush.md",
+    "matched_imports": [
+      "CLASSPNP!ClassCompleteRequest",
+      "CLASSPNP!ClassIoComplete",
+      "CLASSPNP!ClassReleaseRemoveLock",
+      "CLASSPNP!ClassSendSrbSynchronous",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!IoGetIoPriorityHint",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "DiskShutdownFlush",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 3949,
+    "size": 1747,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "DiskInitFdo",
+    "ea": "0x140011820",
+    "function_file": "functions/140011820_DiskInitFdo.md",
+    "matched_imports": [
+      "CLASSPNP!ClassInitializeMediaChangeDetection",
+      "CLASSPNP!ClassInitializeSrbLookasideList",
+      "CLASSPNP!ClassQueryTimeOutRegistryValue",
+      "CLASSPNP!ClassReadDriveCapacity",
+      "CLASSPNP!ClassScanForSpecial",
+      "CLASSPNP!ClassUpdateInformationInRegistry",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!InitSafeBootMode",
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!IoAllocateWorkItem",
+      "ntoskrnl!IoBuildDeviceIoControlRequest",
+      "ntoskrnl!IoQueueWorkItem",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeInitializeMutex",
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "DiskInitFdo",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject)",
+    "rank_score": 3571,
+    "size": 917,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "DiskCreateFdo",
+    "ea": "0x140015350",
+    "function_file": "functions/140015350_DiskCreateFdo.md",
+    "matched_imports": [
+      "CLASSPNP!ClassClaimDevice",
+      "CLASSPNP!ClassCreateDeviceObject",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAttachDeviceToDeviceStack",
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!IoGetAttachedDeviceReference",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwCreateDirectoryObject",
+      "ntoskrnl!ZwMakeTemporaryObject"
+    ],
+    "matched_strings": [],
+    "name": "DiskCreateFdo",
+    "prototype": "__int64 __fastcall(PDRIVER_OBJECT DriverObject, PDEVICE_OBJECT TargetDevice)",
+    "rank_score": 3257,
+    "size": 1034,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "DiskInfoExceptionComplete",
+    "ea": "0x140004ca0",
+    "function_file": "functions/140004ca0_DiskInfoExceptionComplete.md",
+    "matched_imports": [
+      "CLASSPNP!ClassFindModePage",
+      "CLASSPNP!ClassInterpretSenseInfo",
+      "CLASSPNP!ClassModeSenseTranslate",
+      "CLASSPNP!ClassReleaseQueue",
+      "CLASSPNP!ClassReleaseRemoveLock",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!IofCallDriver"
+    ],
+    "matched_strings": [],
+    "name": "DiskInfoExceptionComplete",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp, PVOID P)",
+    "rank_score": 2454,
+    "size": 1137,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "DiskIoctlPredictFailure",
+    "ea": "0x140012210",
+    "function_file": "functions/140012210_DiskIoctlPredictFailure.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoBuildSynchronousFsdRequest",
+      "ntoskrnl!IoGetActivityIdIrp",
+      "ntoskrnl!IoGetAttachedDeviceReference",
+      "ntoskrnl!IoSetActivityIdIrp",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "DiskIoctlPredictFailure",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, _QWORD *)",
+    "rank_score": 2426,
+    "size": 939,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "DiskIoctlVerifyThread",
+    "ea": "0x14000f330",
+    "function_file": "functions/14000f330_DiskIoctlVerifyThread.md",
+    "matched_imports": [
+      "CLASSPNP!ClassCompleteRequest",
+      "CLASSPNP!ClassReleaseRemoveLock",
+      "CLASSPNP!ClassSendSrbSynchronous",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoFreeWorkItem",
+      "ntoskrnl!IoGetIoPriorityHint",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "DiskIoctlVerifyThread",
+    "prototype": "IO_WORKITEM_ROUTINE",
+    "rank_score": 2231,
+    "size": 1050,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "DiskFlushComplete",
+    "ea": "0x1400019d0",
+    "function_file": "functions/1400019d0_DiskFlushComplete.md",
+    "matched_imports": [
+      "CLASSPNP!ClassCompleteRequest",
+      "CLASSPNP!ClassIoComplete",
+      "CLASSPNP!ClassReleaseRemoveLock",
+      "ntoskrnl!IoGetStackLimits",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeExpandKernelStackAndCalloutEx",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "DiskFlushComplete",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 2044,
+    "size": 957,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "DiskIoctlGetMediaTypesEx",
+    "ea": "0x140013750",
+    "function_file": "functions/140013750_DiskIoctlGetMediaTypesEx.md",
+    "matched_imports": [
+      "CLASSPNP!ClassModeSense",
+      "CLASSPNP!ClassSendSrbSynchronous",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoGetIoPriorityHint",
+      "ntoskrnl!KeGetCurrentIrql"
+    ],
+    "matched_strings": [],
+    "name": "DiskIoctlGetMediaTypesEx",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 2022,
+    "size": 1006,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "DiskAddDevice",
+    "ea": "0x140015030",
+    "function_file": "functions/140015030_DiskAddDevice.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetConfigurationInformation",
+      "ntoskrnl!IoOpenDeviceRegistryKey",
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlQueryRegistryValues",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey"
+    ],
+    "matched_strings": [
+      "RtlQueryRegistryValuesEx",
+      "RootPartitionMountable"
+    ],
+    "name": "DiskAddDevice",
+    "prototype": "__int64 __fastcall(PDRIVER_OBJECT DriverObject, PDEVICE_OBJECT TargetDevice)",
+    "rank_score": 1833,
+    "size": 780,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "DiskIoctlSmartSendDriveCommand",
+    "ea": "0x140014630",
+    "function_file": "functions/140014630_DiskIoctlSmartSendDriveCommand.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoBuildDeviceIoControlRequest",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "DiskIoctlSmartSendDriveCommand",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 1624,
+    "size": 1226,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "DiskGetCacheInformation",
+    "ea": "0x140012ca0",
+    "function_file": "functions/140012ca0_DiskGetCacheInformation.md",
+    "matched_imports": [
+      "CLASSPNP!ClassFindModePage",
+      "CLASSPNP!ClassModeSense",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "DiskGetCacheInformation",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 1623,
+    "size": 1013,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "DiskIoctlSmartReceiveDriveData",
+    "ea": "0x1400131f0",
+    "function_file": "functions/1400131f0_DiskIoctlSmartReceiveDriveData.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoBuildDeviceIoControlRequest",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "DiskIoctlSmartReceiveDriveData",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 1613,
+    "size": 1129,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "DiskCreateGuidSymbolicLink",
+    "ea": "0x1400111d0",
+    "function_file": "functions/1400111d0_DiskCreateGuidSymbolicLink.md",
+    "matched_imports": [
+      "ntoskrnl!ExUuidCreate",
+      "ntoskrnl!IoAllocateErrorLogEntry",
+      "ntoskrnl!IoCreateSymbolicLink",
+      "ntoskrnl!IoWriteErrorLogEntry",
+      "ntoskrnl!RtlCompareMemory",
+      "ntoskrnl!RtlFreeUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "DiskCreateGuidSymbolicLink",
+    "prototype": "",
+    "rank_score": 1431,
+    "size": 607,
+    "tags": [
+      "reparse_path",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "DiskIoctlVerify",
+    "ea": "0x140003824",
+    "function_file": "functions/140003824_DiskIoctlVerify.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAllocateWorkItem",
+      "ntoskrnl!IoQueueWorkItem"
+    ],
+    "matched_strings": [],
+    "name": "DiskIoctlVerify",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, __int64)",
+    "rank_score": 1418,
+    "size": 588,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "DiskReregWorker",
+    "ea": "0x140011010",
+    "function_file": "functions/140011010_DiskReregWorker.md",
+    "matched_imports": [
+      "CLASSPNP!ClassReleaseRemoveLock",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExInterlockedPopEntryList",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!IoFreeWorkItem",
+      "ntoskrnl!IoWMIRegistrationControl"
+    ],
+    "matched_strings": [],
+    "name": "DiskReregWorker",
+    "prototype": "IO_WORKITEM_ROUTINE",
+    "rank_score": 1404,
+    "size": 258,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ResetBus",
+    "ea": "0x140003230",
+    "function_file": "functions/140003230_ResetBus.md",
+    "matched_imports": [
+      "CLASSPNP!ClassAcquireRemoveLockEx",
+      "CLASSPNP!ClassAsynchronousCompletion",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!IoGetIoPriorityHint",
+      "ntoskrnl!IofCallDriver"
+    ],
+    "matched_strings": [],
+    "name": "ResetBus",
+    "prototype": "void __fastcall(PDEVICE_OBJECT DeviceObject)",
+    "rank_score": 1327,
+    "size": 470,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "DiskStartFdo",
+    "ea": "0x140011bc0",
+    "function_file": "functions/140011bc0_DiskStartFdo.md",
+    "matched_imports": [
+      "CLASSPNP!ClassGetDeviceParameter",
+      "ntoskrnl!IoBuildDeviceIoControlRequest",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [
+      "CacheIsPowerProtected",
+      "UserWriteCacheSetting"
+    ],
+    "name": "DiskStartFdo",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject)",
+    "rank_score": 1310,
+    "size": 784,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "DiskRemoveDevice",
+    "ea": "0x140014df0",
+    "function_file": "functions/140014df0_DiskRemoveDevice.md",
+    "matched_imports": [
+      "CLASSPNP!ClassDeleteSrbLookasideList",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoGetConfigurationInformation",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwMakeTemporaryObject"
+    ],
+    "matched_strings": [],
+    "name": "DiskRemoveDevice",
+    "prototype": "",
+    "rank_score": 1254,
+    "size": 256,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 9,
+    "demangled": "DiskPerformSmartCommand",
+    "ea": "0x140012810",
+    "function_file": "functions/140012810_DiskPerformSmartCommand.md",
+    "matched_imports": [
+      "ntoskrnl!IoBuildSynchronousFsdRequest",
+      "ntoskrnl!IoGetIoPriorityHint",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeFlushIoBuffers",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "DiskPerformSmartCommand",
+    "prototype": "NTSTATUS __fastcall(__int64, int, char, char, char, char, char *Buffer, int *)",
+    "rank_score": 1228,
+    "size": 786,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "DiskSetCacheInformation",
+    "ea": "0x14000f804",
+    "function_file": "functions/14000f804_DiskSetCacheInformation.md",
+    "matched_imports": [
+      "CLASSPNP!ClassFindModePage",
+      "CLASSPNP!ClassModeSense",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "DiskSetCacheInformation",
+    "prototype": "__int64 __fastcall(__int64, _BYTE *)",
+    "rank_score": 1223,
+    "size": 838,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "DiskIoctlReassignBlocksEx",
+    "ea": "0x14000ec08",
+    "function_file": "functions/14000ec08_DiskIoctlReassignBlocksEx.md",
+    "matched_imports": [
+      "CLASSPNP!ClassSendSrbSynchronous",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoGetIoPriorityHint",
+      "ntoskrnl!KeGetCurrentIrql"
+    ],
+    "matched_strings": [],
+    "name": "DiskIoctlReassignBlocksEx",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 1221,
+    "size": 906,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "DiskIoctlReassignBlocks",
+    "ea": "0x14000e8b4",
+    "function_file": "functions/14000e8b4_DiskIoctlReassignBlocks.md",
+    "matched_imports": [
+      "CLASSPNP!ClassSendSrbSynchronous",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoGetIoPriorityHint",
+      "ntoskrnl!KeGetCurrentIrql"
+    ],
+    "matched_strings": [],
+    "name": "DiskIoctlReassignBlocks",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 1220,
+    "size": 843,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "DiskSendFailurePredictIoctl",
+    "ea": "0x140014520",
+    "function_file": "functions/140014520_DiskSendFailurePredictIoctl.md",
+    "matched_imports": [
+      "ntoskrnl!IoBuildDeviceIoControlRequest",
+      "ntoskrnl!IoGetAttachedDeviceReference",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "DiskSendFailurePredictIoctl",
+    "prototype": "__int64 __fastcall(__int64, void *)",
+    "rank_score": 1205,
+    "size": 259,
+    "tags": []
+  },
+  {
+    "callee_count": 27,
+    "caller_count": 0,
+    "demangled": "DiskDeviceControl",
+    "ea": "0x1400014a0",
+    "function_file": "functions/1400014a0_DiskDeviceControl.md",
+    "matched_imports": [
+      "CLASSPNP!ClassCompleteRequest",
+      "CLASSPNP!ClassDeviceControl",
+      "CLASSPNP!ClassReleaseRemoveLock",
+      "ntoskrnl!IoGetActivityIdIrp",
+      "ntoskrnl!IoSetHardErrorOrVerifyDevice"
+    ],
+    "matched_strings": [],
+    "name": "DiskDeviceControl",
+    "prototype": "NTSTATUS __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp, __int64)",
+    "rank_score": 1065,
+    "size": 1307,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "DiskFlushDispatchAsync",
+    "ea": "0x1400022b0",
+    "function_file": "functions/1400022b0_DiskFlushDispatchAsync.md",
+    "matched_imports": [
+      "CLASSPNP!ClassAcquireRemoveLockEx",
+      "CLASSPNP!ClassSendSrbAsynchronous",
+      "ntoskrnl!IoGetIoPriorityHint",
+      "ntoskrnl!IoReuseIrp",
+      "ntoskrnl!IofCallDriver"
+    ],
+    "matched_strings": [],
+    "name": "DiskFlushDispatchAsync",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject)",
+    "rank_score": 1046,
+    "size": 1128,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "DiskGetGuidSymbolicLinkName",
+    "ea": "0x1400159c0",
+    "function_file": "functions/1400159c0_DiskGetGuidSymbolicLinkName.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlStringFromGUID"
+    ],
+    "matched_strings": [],
+    "name": "DiskGetGuidSymbolicLinkName",
+    "prototype": "NTSTATUS __fastcall(const GUID *, struct _UNICODE_STRING *)",
+    "rank_score": 1015,
+    "size": 199,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "DiskGetInfoExceptionInformation",
+    "ea": "0x14000e31c",
+    "function_file": "functions/14000e31c_DiskGetInfoExceptionInformation.md",
+    "matched_imports": [
+      "CLASSPNP!ClassFindModePage",
+      "CLASSPNP!ClassModeSense",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "DiskGetInfoExceptionInformation",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 1008,
+    "size": 484,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x140017078",
+    "function_file": "functions/140017078_DriverEntry.md",
+    "matched_imports": [
+      "CLASSPNP!ClassInitialize",
+      "CLASSPNP!ClassInitializeEx",
+      "CLASSPNP!ClassSpinDownPowerHandler",
+      "ntoskrnl!IoRegisterDriverReinitialization"
+    ],
+    "matched_strings": [],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 933,
+    "size": 679,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "DiskFdoProcessError",
+    "ea": "0x140001ec0",
+    "function_file": "functions/140001ec0_DiskFdoProcessError.md",
+    "matched_imports": [
+      "ntoskrnl!IoAllocateErrorLogEntry",
+      "ntoskrnl!IoAllocateWorkItem",
+      "ntoskrnl!IoQueueWorkItem",
+      "ntoskrnl!IoWriteErrorLogEntry"
+    ],
+    "matched_strings": [],
+    "name": "DiskFdoProcessError",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject)",
+    "rank_score": 830,
+    "size": 996,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "DiskInitializeFailurePrediction",
+    "ea": "0x14000e510",
+    "function_file": "functions/14000e510_DiskInitializeFailurePrediction.md",
+    "matched_imports": [
+      "CLASSPNP!ClassAcquireRemoveLockEx",
+      "CLASSPNP!ClassReleaseRemoveLock",
+      "ntoskrnl!IoFreeWorkItem",
+      "ntoskrnl!IoWMIRegistrationControl"
+    ],
+    "matched_strings": [],
+    "name": "DiskInitializeFailurePrediction",
+    "prototype": "IO_WORKITEM_ROUTINE",
+    "rank_score": 825,
+    "size": 225,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "DiskCreateSymbolicLinks",
+    "ea": "0x140011438",
+    "function_file": "functions/140011438_DiskCreateSymbolicLinks.md",
+    "matched_imports": [
+      "ntoskrnl!IoCreateSymbolicLink",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "DiskCreateSymbolicLinks",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 820,
+    "size": 417,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "DiskDeleteSymbolicLinks",
+    "ea": "0x140014f00",
+    "function_file": "functions/140014f00_DiskDeleteSymbolicLinks.md",
+    "matched_imports": [
+      "ntoskrnl!IoDeleteSymbolicLink",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "DiskDeleteSymbolicLinks",
+    "prototype": "",
+    "rank_score": 818,
+    "size": 289,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "DiskEnableInfoExceptions",
+    "ea": "0x1400101c4",
+    "function_file": "functions/1400101c4_DiskEnableInfoExceptions.md",
+    "matched_imports": [
+      "CLASSPNP!ClassModeSelect",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "DiskEnableInfoExceptions",
+    "prototype": "__int64 __fastcall(__int64, char)",
+    "rank_score": 810,
+    "size": 696,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "DiskIoctlSmartGetVersion",
+    "ea": "0x140013ff0",
+    "function_file": "functions/140013ff0_DiskIoctlSmartGetVersion.md",
+    "matched_imports": [
+      "CLASSPNP!ClassSendDeviceIoControlSynchronous",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeGetCurrentIrql"
+    ],
+    "matched_strings": [],
+    "name": "DiskIoctlSmartGetVersion",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 809,
+    "size": 515,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "DiskFlushDispatch",
+    "ea": "0x140001150",
+    "function_file": "functions/140001150_DiskFlushDispatch.md",
+    "matched_imports": [
+      "CLASSPNP!ClassSendSrbSynchronous",
+      "ntoskrnl!IoGetIoPriorityHint",
+      "ntoskrnl!IofCallDriver"
+    ],
+    "matched_strings": [],
+    "name": "DiskFlushDispatch",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject)",
+    "rank_score": 641,
+    "size": 834,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "DiskIoctlUpdateDriveSize",
+    "ea": "0x14000f198",
+    "function_file": "functions/14000f198_DiskIoctlUpdateDriveSize.md",
+    "matched_imports": [
+      "CLASSPNP!ClassReadDriveCapacity",
+      "ntoskrnl!IoReportTargetDeviceChangeAsynchronous",
+      "ntoskrnl!KeGetCurrentIrql"
+    ],
+    "matched_strings": [],
+    "name": "DiskIoctlUpdateDriveSize",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, __int64)",
+    "rank_score": 629,
+    "size": 395,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "DiskModeSelect",
+    "ea": "0x140015760",
+    "function_file": "functions/140015760_DiskModeSelect.md",
+    "matched_imports": [
+      "CLASSPNP!ClassSendSrbSynchronous",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "DiskModeSelect",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, void *Src, size_t Size, char)",
+    "rank_score": 621,
+    "size": 596,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "DiskIoctlGetLengthInfo",
+    "ea": "0x140013660",
+    "function_file": "functions/140013660_DiskIoctlGetLengthInfo.md",
+    "matched_imports": [
+      "CLASSPNP!ClassReadDriveCapacity",
+      "ntoskrnl!IoInvalidateDeviceRelations",
+      "ntoskrnl!KeGetCurrentIrql"
+    ],
+    "matched_strings": [],
+    "name": "DiskIoctlGetLengthInfo",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 603,
+    "size": 229,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "DiskIoctlSetCacheInformation",
+    "ea": "0x14000ef98",
+    "function_file": "functions/14000ef98_DiskIoctlSetCacheInformation.md",
+    "matched_imports": [
+      "CLASSPNP!ClassSetDeviceParameter",
+      "ntoskrnl!KeGetCurrentIrql"
+    ],
+    "matched_strings": [
+      "UserWriteCacheSetting"
+    ],
+    "name": "DiskIoctlSetCacheInformation",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 468,
+    "size": 278,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "DiskIoctlSetCacheSetting",
+    "ea": "0x14000f0b4",
+    "function_file": "functions/14000f0b4_DiskIoctlSetCacheSetting.md",
+    "matched_imports": [
+      "CLASSPNP!ClassSetDeviceParameter",
+      "ntoskrnl!KeGetCurrentIrql"
+    ],
+    "matched_strings": [
+      "CacheIsPowerProtected"
+    ],
+    "name": "DiskIoctlSetCacheSetting",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 453,
+    "size": 220,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "DiskFdoQueryWmiDataBlock",
+    "ea": "0x140014200",
+    "function_file": "functions/140014200_DiskFdoQueryWmiDataBlock.md",
+    "matched_imports": [
+      "CLASSPNP!ClassReadDriveCapacity",
+      "CLASSPNP!ClassWmiCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "DiskFdoQueryWmiDataBlock",
+    "prototype": "NTSTATUS __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp, __int64, unsigned int, _BYTE *)",
+    "rank_score": 435,
+    "size": 779,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "DiskReadFailurePredictData",
+    "ea": "0x1400126c0",
+    "function_file": "functions/1400126c0_DiskReadFailurePredictData.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "DiskReadFailurePredictData",
+    "prototype": "__int64 __fastcall(__int64, _DWORD *)",
+    "rank_score": 415,
+    "size": 330,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "DiskReadFailurePredictThresholds",
+    "ea": "0x140010e14",
+    "function_file": "functions/140010e14_DiskReadFailurePredictThresholds.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "DiskReadFailurePredictThresholds",
+    "prototype": "__int64 __fastcall(__int64, _OWORD *)",
+    "rank_score": 415,
+    "size": 287,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "DiskReadSmartLog",
+    "ea": "0x140010f3c",
+    "function_file": "functions/140010f3c_DiskReadSmartLog.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "DiskReadSmartLog",
+    "prototype": "__int64 __fastcall(__int64, unsigned __int8, char, void *)",
+    "rank_score": 415,
+    "size": 198,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "DiskWriteSmartLog",
+    "ea": "0x140011118",
+    "function_file": "functions/140011118_DiskWriteSmartLog.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "DiskWriteSmartLog",
+    "prototype": "__int64 __fastcall(__int64, unsigned __int8, char, const void *)",
+    "rank_score": 415,
+    "size": 177,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "DiskDeleteGuidSymbolicLink",
+    "ea": "0x14000e170",
+    "function_file": "functions/14000e170_DiskDeleteGuidSymbolicLink.md",
+    "matched_imports": [
+      "ntoskrnl!IoDeleteSymbolicLink",
+      "ntoskrnl!RtlFreeUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "DiskDeleteGuidSymbolicLink",
+    "prototype": "",
+    "rank_score": 413,
+    "size": 124,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "DiskGenerateDeviceName",
+    "ea": "0x1400115e0",
+    "function_file": "functions/1400115e0_DiskGenerateDeviceName.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "DiskGenerateDeviceName",
+    "prototype": "__int64 __fastcall(int, PVOID *)",
+    "rank_score": 411,
+    "size": 562,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "DiskIoctlGetDriveGeometryEx",
+    "ea": "0x14000e798",
+    "function_file": "functions/14000e798_DiskIoctlGetDriveGeometryEx.md",
+    "matched_imports": [
+      "CLASSPNP!ClassReadDriveCapacity",
+      "ntoskrnl!KeGetCurrentIrql"
+    ],
+    "matched_strings": [],
+    "name": "DiskIoctlGetDriveGeometryEx",
+    "prototype": "NTSTATUS __fastcall(__int64, __int64)",
+    "rank_score": 407,
+    "size": 278,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "DiskIoctlGetDriveGeometry",
+    "ea": "0x140015a90",
+    "function_file": "functions/140015a90_DiskIoctlGetDriveGeometry.md",
+    "matched_imports": [
+      "CLASSPNP!ClassReadDriveCapacity",
+      "ntoskrnl!KeGetCurrentIrql"
+    ],
+    "matched_strings": [],
+    "name": "DiskIoctlGetDriveGeometry",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 406,
+    "size": 280,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "DiskIoctlGetVolumeDiskExtents",
+    "ea": "0x14000e010",
+    "function_file": "functions/14000e010_DiskIoctlGetVolumeDiskExtents.md",
+    "matched_imports": [
+      "CLASSPNP!ClassReadDriveCapacity",
+      "ntoskrnl!KeGetCurrentIrql"
+    ],
+    "matched_strings": [],
+    "name": "DiskIoctlGetVolumeDiskExtents",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *)",
+    "rank_score": 406,
+    "size": 331,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "DiskLogCacheInformation",
+    "ea": "0x14000f750",
+    "function_file": "functions/14000f750_DiskLogCacheInformation.md",
+    "matched_imports": [
+      "ntoskrnl!IoAllocateErrorLogEntry",
+      "ntoskrnl!IoWriteErrorLogEntry"
+    ],
+    "matched_strings": [],
+    "name": "DiskLogCacheInformation",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 403,
+    "size": 171,
+    "tags": []
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 0,
+    "demangled": "DiskFdoExecuteWmiMethod",
+    "ea": "0x140010490",
+    "function_file": "functions/140010490_DiskFdoExecuteWmiMethod.md",
+    "matched_imports": [
+      "CLASSPNP!ClassWmiCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "DiskFdoExecuteWmiMethod",
+    "prototype": "NTSTATUS __fastcall(__int64, IRP *, int, int, unsigned int, unsigned int, char *)",
+    "rank_score": 243,
+    "size": 1303,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "DiskDetectFailurePrediction",
+    "ea": "0x140011ee0",
+    "function_file": "functions/140011ee0_DiskDetectFailurePrediction.md",
+    "matched_imports": [
+      "CLASSPNP!ClassNotifyFailurePredicted"
+    ],
+    "matched_strings": [],
+    "name": "DiskDetectFailurePrediction",
+    "prototype": "__int64 __fastcall(int)",
+    "rank_score": 233,
+    "size": 507,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "DiskWmiFunctionControl",
+    "ea": "0x140014b00",
+    "function_file": "functions/140014b00_DiskWmiFunctionControl.md",
+    "matched_imports": [
+      "CLASSPNP!ClassWmiCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "DiskWmiFunctionControl",
+    "prototype": "__int64 __usercall@<rax>(PDEVICE_OBJECT DeviceObject@<rcx>, PIRP Irp@<rdx>, char)",
+    "rank_score": 230,
+    "size": 515,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "DiskFdoSetWmiDataBlock",
+    "ea": "0x140010a70",
+    "function_file": "functions/140010a70_DiskFdoSetWmiDataBlock.md",
+    "matched_imports": [
+      "CLASSPNP!ClassWmiCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "DiskFdoSetWmiDataBlock",
+    "prototype": "NTSTATUS __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp, __int64, unsigned int, _BYTE *)",
+    "rank_score": 226,
+    "size": 348,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "DiskEnableDisableFailurePredictPolling",
+    "ea": "0x14001016c",
+    "function_file": "functions/14001016c_DiskEnableDisableFailurePredictPolling.md",
+    "matched_imports": [
+      "CLASSPNP!ClassSetFailurePredictionPoll"
+    ],
+    "matched_strings": [],
+    "name": "DiskEnableDisableFailurePredictPolling",
+    "prototype": "__int64 __fastcall(PFUNCTIONAL_DEVICE_EXTENSION FdoExtension)",
+    "rank_score": 225,
+    "size": 80,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "DiskFlushAsyncComplete",
+    "ea": "0x140002720",
+    "function_file": "functions/140002720_DiskFlushAsyncComplete.md",
+    "matched_imports": [
+      "ntoskrnl!IofCallDriver"
+    ],
+    "matched_strings": [],
+    "name": "DiskFlushAsyncComplete",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 393,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "DiskFdoSetWmiDataItem",
+    "ea": "0x140010be0",
+    "function_file": "functions/140010be0_DiskFdoSetWmiDataItem.md",
+    "matched_imports": [
+      "CLASSPNP!ClassWmiCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "DiskFdoSetWmiDataItem",
+    "prototype": "__int64 __usercall@<rax>(PDEVICE_OBJECT DeviceObject@<rcx>, PIRP Irp@<rdx>, int, __int64)",
+    "rank_score": 214,
+    "size": 209,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "DiskReadWriteVerification",
+    "ea": "0x140001010",
+    "function_file": "functions/140001010_DiskReadWriteVerification.md",
+    "matched_imports": [
+      "ntoskrnl!IoSetHardErrorOrVerifyDevice"
+    ],
+    "matched_strings": [],
+    "name": "DiskReadWriteVerification",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 214,
+    "size": 309,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "DisableWriteCache",
+    "ea": "0x14000e2a0",
+    "function_file": "functions/14000e2a0_DisableWriteCache.md",
+    "matched_imports": [
+      "ntoskrnl!IoFreeWorkItem"
+    ],
+    "matched_strings": [],
+    "name": "DisableWriteCache",
+    "prototype": "IO_WORKITEM_ROUTINE",
+    "rank_score": 213,
+    "size": 101,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "DiskIoctlGetCacheInformation",
+    "ea": "0x140012b30",
+    "function_file": "functions/140012b30_DiskIoctlGetCacheInformation.md",
+    "matched_imports": [
+      "ntoskrnl!KeGetCurrentIrql"
+    ],
+    "matched_strings": [],
+    "name": "DiskIoctlGetCacheInformation",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *)",
+    "rank_score": 207,
+    "size": 360,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "McGenEventWrite_EtwWriteTransfer",
+    "ea": "0x140003c54",
+    "function_file": "functions/140003c54_McGenEventWrite_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "McGenEventWrite_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 206,
+    "size": 86,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "RtlStringCchPrintfW",
+    "ea": "0x1400031a0",
+    "function_file": "functions/1400031a0_RtlStringCchPrintfW.md",
+    "matched_imports": [
+      "ntoskrnl!_vsnwprintf"
+    ],
+    "matched_strings": [],
+    "name": "RtlStringCchPrintfW",
+    "prototype": "NTSTATUS(NTSTRSAFE_PWSTR pszDest, size_t cchDest, NTSTRSAFE_PCWSTR pszFormat, ...)",
+    "rank_score": 205,
+    "size": 138,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "RtlStringCbPrintfW",
+    "ea": "0x14000572c",
+    "function_file": "functions/14000572c_RtlStringCbPrintfW.md",
+    "matched_imports": [
+      "ntoskrnl!_vsnwprintf"
+    ],
+    "matched_strings": [],
+    "name": "RtlStringCbPrintfW",
+    "prototype": "NTSTATUS(NTSTRSAFE_PWSTR pszDest, size_t cbDest, NTSTRSAFE_PCWSTR pszFormat, ...)",
+    "rank_score": 203,
+    "size": 122,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 24,
+    "demangled": "__security_check_cookie",
+    "ea": "0x140005bf0",
+    "function_file": "functions/140005bf0_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 36,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 37,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x140005c30",
+    "function_file": "functions/140005c30_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 29,
+    "demangled": "WPP_SF_",
+    "ea": "0x140004078",
+    "function_file": "functions/140004078_WPP_SF.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 26,
+    "size": 40,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 21,
+    "demangled": "memset",
+    "ea": "0x140006000",
+    "function_file": "functions/140006000_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 25,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x140005aac",
+    "function_file": "functions/140005aac_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GsDriverEntry",
+    "ea": "0x140017010",
+    "function_file": "functions/140017010_GsDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GsDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 19,
+    "demangled": "WPP_SF_qq",
+    "ea": "0x14000431c",
+    "function_file": "functions/14000431c_WPP_SF_qq.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qq",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 20,
+    "size": 75,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "DiskReadFailurePredictStatus",
+    "ea": "0x1400125d0",
+    "function_file": "functions/1400125d0_DiskReadFailurePredictStatus.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DiskReadFailurePredictStatus",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 16,
+    "size": 227,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "DiskEnableSmart",
+    "ea": "0x1400028b0",
+    "function_file": "functions/1400028b0_DiskEnableSmart.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DiskEnableSmart",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 127,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "GetSrbScsiData",
+    "ea": "0x140002940",
+    "function_file": "functions/140002940_GetSrbScsiData.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetSrbScsiData",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 377,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "memmove",
+    "ea": "0x140005d00",
+    "function_file": "functions/140005d00_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 15,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "DiskDetermineMediaTypes",
+    "ea": "0x140013b50",
+    "function_file": "functions/140013b50_DiskDetermineMediaTypes.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DiskDetermineMediaTypes",
+    "prototype": "__int64 __fastcall(__int64, __int64, char, char, char, char)",
+    "rank_score": 14,
+    "size": 1164,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0qpduuuuu_EtwWriteTransfer",
+    "ea": "0x140003dd8",
+    "function_file": "functions/140003dd8_McTemplateK0qpduuuuu_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0qpduuuuu_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 235,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "DiskSetSpecialHacks",
+    "ea": "0x14000fb50",
+    "function_file": "functions/14000fb50_DiskSetSpecialHacks.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DiskSetSpecialHacks",
+    "prototype": "void __fastcall(PFUNCTIONAL_DEVICE_EXTENSION FdoExtension, ULONG_PTR Data)",
+    "rank_score": 13,
+    "size": 241,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0qpd_EtwWriteTransfer",
+    "ea": "0x140003cb0",
+    "function_file": "functions/140003cb0_McTemplateK0qpd_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0qpd_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 119,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SetSrbScsiData",
+    "ea": "0x1400034f0",
+    "function_file": "functions/1400034f0_SetSrbScsiData.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SetSrbScsiData",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 191,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x140017044",
+    "function_file": "functions/140017044_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x140005c60",
+    "function_file": "functions/140005c60_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "WPP_SF_q",
+    "ea": "0x1400034a0",
+    "function_file": "functions/1400034a0_WPP_SF_q.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_q",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 9,
+    "size": 64,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "DiskEnableDisableFailurePrediction",
+    "ea": "0x140014d90",
+    "function_file": "functions/140014d90_DiskEnableDisableFailurePrediction.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DiskEnableDisableFailurePrediction",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 6,
+    "size": 81,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "DiskSetInfoExceptionInformation",
+    "ea": "0x14000e200",
+    "function_file": "functions/14000e200_DiskSetInfoExceptionInformation.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DiskSetInfoExceptionInformation",
+    "prototype": "__int64 __fastcall(__int64, void *)",
+    "rank_score": 6,
+    "size": 145,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "WPP_SF_D",
+    "ea": "0x1400040a8",
+    "function_file": "functions/1400040a8_WPP_SF_D.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_D",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 6,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "WPP_SF_qqL",
+    "ea": "0x140005244",
+    "function_file": "functions/140005244_WPP_SF_qqL.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qqL",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _DWORD)",
+    "rank_score": 6,
+    "size": 99,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "McTemplateK0uuuuuhhhhq_EtwWriteTransfer",
+    "ea": "0x140003f78",
+    "function_file": "functions/140003f78_McTemplateK0uuuuuhhhhq_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0uuuuuhhhhq_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 250,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "WPP_SF_L",
+    "ea": "0x1400041c0",
+    "function_file": "functions/1400041c0_WPP_SF_L.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_L",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 5,
+    "size": 69,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "WPP_SF_sq",
+    "ea": "0x1400043dc",
+    "function_file": "functions/1400043dc_WPP_SF_sq.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_sq",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 122,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "McGenControlCallbackV2",
+    "ea": "0x140003ac0",
+    "function_file": "functions/140003ac0_McGenControlCallbackV2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McGenControlCallbackV2",
+    "prototype": "void __stdcall(LPCGUID SourceId, ULONG ControlCode, UCHAR Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, PEVENT_FILTER_DESCRIPTOR FilterData, PVOID CallbackContext)",
+    "rank_score": 4,
+    "size": 276,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0qpddd_EtwWriteTransfer",
+    "ea": "0x140003d30",
+    "function_file": "functions/140003d30_McTemplateK0qpddd_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0qpddd_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 161,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0qpuxi_EtwWriteTransfer",
+    "ea": "0x140003ecc",
+    "function_file": "functions/140003ecc_McTemplateK0qpuxi_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0qpuxi_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 165,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "WPP_SF_s",
+    "ea": "0x140004370",
+    "function_file": "functions/140004370_WPP_SF_s.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_s",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 4,
+    "size": 100,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "DiskIsManagedZonedDevice",
+    "ea": "0x140003a78",
+    "function_file": "functions/140003a78_DiskIsManagedZonedDevice.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DiskIsManagedZonedDevice",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 3,
+    "size": 60,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "WPP_SF_qD",
+    "ea": "0x1400042c0",
+    "function_file": "functions/1400042c0_WPP_SF_qD.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qD",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _DWORD)",
+    "rank_score": 3,
+    "size": 85,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "DiskIoctlGetCacheSetting",
+    "ea": "0x140014d10",
+    "function_file": "functions/140014d10_DiskIoctlGetCacheSetting.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DiskIoctlGetCacheSetting",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 2,
+    "size": 107,
+    "tags": []
+  }
+]

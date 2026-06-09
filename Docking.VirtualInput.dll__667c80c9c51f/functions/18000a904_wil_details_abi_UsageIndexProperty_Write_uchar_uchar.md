@@ -1,0 +1,161 @@
+# wil::details_abi::UsageIndexProperty::Write(uchar * &,uchar *)
+
+- ea: `0x18000a904`
+- end: `0x18000a9da`
+- name: `?Write@UsageIndexProperty@details_abi@wil@@QEBA_NAEAPEAEPEAE@Z`
+- size: `214`
+- prototype: `bool __fastcall(wil::details_abi::UsageIndexProperty *__hidden this, unsigned __int8 **, unsigned __int8 *)`
+- caller_count: `1`
+- callee_count: `2`
+- tags: ``
+
+## callers
+
+- `0x180009938`
+
+## callees
+
+- `0x1800076d8`
+- `0x18000a904`
+
+## pseudocode
+
+```c
+bool __fastcall wil::details_abi::UsageIndexProperty::Write(
+        wil::details_abi::UsageIndexProperty *this,
+        char **a2,
+        char *a3)
+{
+  char *v5; // rcx
+  char *v7; // rbx
+  char *v8; // r8
+  rsize_t v9; // r9
+  rsize_t v10; // rdx
+  unsigned __int16 *v11; // r14
+  rsize_t v12; // r9
+  bool result; // al
+  __int16 v14; // [rsp+60h] [rbp+8h] BYREF
+
+  v5 = *a2;
+  if ( *((_BYTE *)this + 2) == 1 )
+  {
+    v7 = v5 + 2;
+    if ( v5 + 2 > a3 )
+      return 0;
+    v8 = (char *)&v14;
+    v9 = 2;
+    v14 = *((_WORD *)this + 2);
+    v10 = 2;
+  }
+  else
+  {
+    v7 = *a2;
+    if ( *((_BYTE *)this + 2) != 2 )
+      goto LABEL_8;
+    v7 = v5 + 4;
+    if ( v5 + 4 > a3 )
+      return 0;
+    v10 = 4;
+    v8 = (char *)this + 4;
+    v9 = 4;
+  }
+  memcpy_s(v5, v10, v8, v9);
+LABEL_8:
+  if ( !*(_WORD *)this )
+  {
+    if ( v7 + 2 <= a3 )
+    {
+      v11 = (unsigned __int16 *)((char *)this + 8);
+      memcpy_s(v7, a3 - v7, (char *)this + 8, 2u);
+      v7 += 2;
+      goto LABEL_12;
+    }
+    return 0;
+  }
+  v11 = (unsigned __int16 *)((char *)this + 8);
+LABEL_12:
+  v12 = *v11;
+  if ( &v7[v12] > a3 )
+    return 0;
+  memcpy_s(v7, a3 - v7, *((const void *const *)this + 3), v12);
+  result = 1;
+  *a2 = &v7[*v11];
+  return result;
+}
+
+```
+
+## disassembly
+
+```asm
+0x18000a904  push    rbx
+0x18000a906  push    rsi
+0x18000a907  push    rdi
+0x18000a908  push    r12
+0x18000a90a  push    r14
+0x18000a90c  push    r15
+0x18000a90e  sub     rsp, 28h
+0x18000a912  mov     rsi, rcx
+0x18000a915  mov     rdi, r8
+0x18000a918  mov     rcx, [rdx]; Destination
+0x18000a91b  mov     r12, rdx
+0x18000a91e  cmp     byte ptr [rsi+2], 1
+0x18000a922  jnz     short loc_18000A946
+0x18000a924  lea     rbx, [rcx+2]
+0x18000a928  cmp     rbx, r8
+0x18000a92b  ja      short loc_18000A9A9
+0x18000a92d  movzx   eax, word ptr [rsi+4]
+0x18000a931  lea     r8, [rsp+58h+arg_0]
+0x18000a936  mov     r9d, 2
+0x18000a93c  mov     [rsp+58h+arg_0], ax
+0x18000a941  mov     edx, r9d
+0x18000a944  jmp     short loc_18000A964
+0x18000a946  cmp     byte ptr [rsi+2], 2
+0x18000a94a  mov     rbx, rcx
+0x18000a94d  jnz     short loc_18000A969
+0x18000a94f  lea     rbx, [rcx+4]
+0x18000a953  cmp     rbx, rdi
+0x18000a956  ja      short loc_18000A9A9
+0x18000a958  mov     edx, 4; DestinationSize
+0x18000a95d  lea     r8, [rsi+4]; Source
+0x18000a961  mov     r9d, edx; SourceSize
+0x18000a964  call    memcpy_s
+0x18000a969  cmp     word ptr [rsi], 0
+0x18000a96d  jnz     short loc_18000A998
+0x18000a96f  lea     r15, [rbx+2]
+0x18000a973  cmp     r15, rdi
+0x18000a976  ja      short loc_18000A9A9
+0x18000a978  lea     r14, [rsi+8]
+0x18000a97c  mov     rdx, rdi
+0x18000a97f  sub     rdx, rbx; DestinationSize
+0x18000a982  mov     r8, r14; Source
+0x18000a985  mov     r9d, 2; SourceSize
+0x18000a98b  mov     rcx, rbx; Destination
+0x18000a98e  call    memcpy_s
+0x18000a993  mov     rbx, r15
+0x18000a996  jmp     short loc_18000A99C
+0x18000a998  lea     r14, [rsi+8]
+0x18000a99c  movzx   r9d, word ptr [r14]; SourceSize
+0x18000a9a0  lea     rax, [r9+rbx]
+0x18000a9a4  cmp     rax, rdi
+0x18000a9a7  jbe     short loc_18000A9AD
+0x18000a9a9  xor     al, al
+0x18000a9ab  jmp     short loc_18000A9CC
+0x18000a9ad  mov     r8, [rsi+18h]; Source
+0x18000a9b1  sub     rdi, rbx
+0x18000a9b4  mov     rdx, rdi; DestinationSize
+0x18000a9b7  mov     rcx, rbx; Destination
+0x18000a9ba  call    memcpy_s
+0x18000a9bf  movzx   ecx, word ptr [r14]
+0x18000a9c3  mov     al, 1
+0x18000a9c5  add     rcx, rbx
+0x18000a9c8  mov     [r12], rcx
+0x18000a9cc  add     rsp, 28h
+0x18000a9d0  pop     r15
+0x18000a9d2  pop     r14
+0x18000a9d4  pop     r12
+0x18000a9d6  pop     rdi
+0x18000a9d7  pop     rsi
+0x18000a9d8  pop     rbx
+0x18000a9d9  retn
+```

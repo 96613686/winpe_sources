@@ -1,0 +1,3570 @@
+[
+  {
+    "callee_count": 13,
+    "caller_count": 1,
+    "demangled": "Windows::Internal::DialogBlocking::ServiceSessions::logonUser(ulong)",
+    "ea": "0x18000a65c",
+    "function_file": "functions/18000a65c_Windows_Internal_DialogBlocking_ServiceSessions_logonUser_ulong.md",
+    "matched_imports": [
+      "WTSAPI32!WTSQueryUserToken",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-security-sddl-l1-1-0!ConvertSidToStringSidW",
+      "msvcp_win!?_Throw_Cpp_error@std@@YAXH@Z",
+      "msvcp_win!_Mtx_lock",
+      "msvcp_win!_Mtx_unlock"
+    ],
+    "matched_strings": [],
+    "name": "?logonUser@ServiceSessions@DialogBlocking@Internal@Windows@@QEAAXK@Z",
+    "prototype": "void __fastcall(Windows::Internal::DialogBlocking::ServiceSessions *this, unsigned int)",
+    "rank_score": 3470,
+    "size": 867,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Windows::Internal::ServiceModuleBase::InitializeSecurity<Windows::Internal::ServiceModuleBase::SecurityPolicyEveryoneLocal>(void)",
+    "ea": "0x18000267c",
+    "function_file": "functions/18000267c_Windows_Internal_ServiceModuleBase_InitializeSecurity_Windows_Internal_ServiceModuleBase_SecurityPolicyEveryon.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoInitializeSecurity",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-security-base-l1-1-0!MakeAbsoluteSD",
+      "api-ms-win-security-sddl-l1-1-0!ConvertStringSecurityDescriptorToSecurityDescriptorW"
+    ],
+    "matched_strings": [
+      "onecore\\internal\\com\\inc\\comservicehelper.h",
+      "onecore\\internal\\com\\inc\\comservicehelper.h"
+    ],
+    "name": "??$InitializeSecurity@USecurityPolicyEveryoneLocal@ServiceModuleBase@Internal@Windows@@@ServiceModuleBase@Internal@Windows@@IEAAJXZ",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 3130,
+    "size": 683,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::ProcessLocalStorageData<wil::details_abi::ProcessLocalData>::Acquire(char const *,wil::details_abi::ProcessLocalStorageData<wil::details_abi::ProcessLocalData> * *)",
+    "ea": "0x1800046d8",
+    "function_file": "functions/1800046d8_wil_details_abi_ProcessLocalStorageData_wil_details_abi_ProcessLocalData_Acquire_char_const_wil_details_abi_Pr.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "api-ms-win-core-synch-l1-1-0!CreateMutexExW",
+      "api-ms-win-core-synch-l1-1-0!ReleaseMutex",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObjectEx"
+    ],
+    "matched_strings": [],
+    "name": "?Acquire@?$ProcessLocalStorageData@UProcessLocalData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *)",
+    "rank_score": 2630,
+    "size": 968,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "Windows::Internal::DialogBlocking::HookProcess::StartProcess(ushort const *)",
+    "ea": "0x1800091a0",
+    "function_file": "functions/1800091a0_Windows_Internal_DialogBlocking_HookProcess_StartProcess_ushort_const.md",
+    "matched_imports": [
+      "WTSAPI32!WTSQueryUserToken",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-heap-l2-1-0!LocalAlloc",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-processthreads-l1-1-0!CreateProcessAsUserW",
+      "api-ms-win-crt-private-l1-1-0!_o__errno"
+    ],
+    "matched_strings": [
+      "base\\embedded\\sys\\dialogblocking\\service\\lib\\hookmgr.cpp",
+      "base\\embedded\\sys\\dialogblocking\\service\\lib\\hookmgr.cpp"
+    ],
+    "name": "?StartProcess@HookProcess@DialogBlocking@Internal@Windows@@AEAAJPEBG@Z",
+    "prototype": "__int64 __fastcall(Windows::Internal::DialogBlocking::HookProcess *this, const unsigned __int16 *)",
+    "rank_score": 2512,
+    "size": 534,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::AssignedAccess::AssignedAccessConfigStoreV1::DoesGroupConfigExistInStore(void)",
+    "ea": "0x18000c020",
+    "function_file": "functions/18000c020_Windows_Internal_AssignedAccess_AssignedAccessConfigStoreV1_DoesGroupConfigExistInStore_void.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoTaskMemFree",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegQueryInfoKeyW"
+    ],
+    "matched_strings": [
+      "GroupConfigs"
+    ],
+    "name": "?DoesGroupConfigExistInStore@AssignedAccessConfigStoreV1@AssignedAccess@Internal@Windows@@EEAA_NXZ",
+    "prototype": "bool __fastcall(Windows::Internal::AssignedAccess::AssignedAccessConfigStoreV1 *__hidden this)",
+    "rank_score": 2275,
+    "size": 387,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::AssignedAccess::AssignedAccessConfigStoreV1::DoesProfileExistInStore(ushort const *)",
+    "ea": "0x18000c2b0",
+    "function_file": "functions/18000c2b0_Windows_Internal_AssignedAccess_AssignedAccessConfigStoreV1_DoesProfileExistInStore_ushort_const.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoTaskMemFree",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+    ],
+    "matched_strings": [
+      "Configs"
+    ],
+    "name": "?DoesProfileExistInStore@AssignedAccessConfigStoreV1@AssignedAccess@Internal@Windows@@EEAA_NPEBG@Z",
+    "prototype": "char __fastcall(Windows::Internal::AssignedAccess::AssignedAccessConfigStoreV1 *this, const unsigned __int16 *)",
+    "rank_score": 2274,
+    "size": 328,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "wil::AdaptFixedSizeToAllocatedResult<wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<ushort *,void (*)(void *),&CoTaskMemFree(void *),wistd::integral_constant<unsigned __int64,0>,ushort *,ushort *,0,std::nullptr_t>>>,256>(wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<ushort *,void (*)(void *),&CoTaskMemFree(void *),wistd::integral_constant<unsigned __int64,0>,ushort *,ushort *,0,std::nullptr_t>>> &,wistd::function<long (ushort *,unsigned __int64,unsigned __int64 *)> const &)",
+    "ea": "0x18000ad54",
+    "function_file": "functions/18000ad54_wil_AdaptFixedSizeToAllocatedResult_wil_unique_any_t_wil_details_unique_storage_wil_details_resource_policy_us.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoTaskMemFree",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError"
+    ],
+    "matched_strings": [
+      "onecore\\internal\\sdk\\inc\\wil\\opensource\\wil\\win32_helpers.h"
+    ],
+    "name": "??$AdaptFixedSizeToAllocatedResult@V?$unique_any_t@V?$unique_storage@U?$resource_policy@PEAGP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAGPEAG$0A@$$T@details@wil@@@details@wil@@@wil@@$0BAA@@wil@@YAJAEAV?$unique_any_t@V?$unique_storage@U?$resource_policy@PEAGP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAGPEAG$0A@$$T@details@wil@@@details@wil@@@0@AEBV?$function@$$A6AJPEAG_KPEA_K@Z@wistd@@@Z",
+    "prototype": "__int64 __fastcall(char *, __int64)",
+    "rank_score": 2082,
+    "size": 587,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::SemaphoreValue::CreateFromValueInternal(ushort const *,bool,unsigned __int64)",
+    "ea": "0x180004ae4",
+    "function_file": "functions/180004ae4_wil_details_abi_SemaphoreValue_CreateFromValueInternal_ushort_const_bool_unsigned_int64.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!CreateSemaphoreExW"
+    ],
+    "matched_strings": [],
+    "name": "?CreateFromValueInternal@SemaphoreValue@details_abi@wil@@AEAAJPEBG_N_K@Z",
+    "prototype": "__int64 __fastcall(wil::details_abi::SemaphoreValue *this, WCHAR *, __int64, unsigned __int64)",
+    "rank_score": 2012,
+    "size": 554,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::AssignedAccess::AssignedAccessConfigStoreV2::IsGlobalProfileConfiguredInStore(void)",
+    "ea": "0x18000c4a0",
+    "function_file": "functions/18000c4a0_Windows_Internal_AssignedAccess_AssignedAccessConfigStoreV2_IsGlobalProfileConfiguredInStore_void.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoTaskMemFree",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+    ],
+    "matched_strings": [
+      "Configs"
+    ],
+    "name": "?IsGlobalProfileConfiguredInStore@AssignedAccessConfigStoreV2@AssignedAccess@Internal@Windows@@EEAA_NXZ",
+    "prototype": "char __fastcall(Windows::Internal::AssignedAccess::AssignedAccessConfigStoreV2 *this)",
+    "rank_score": 1874,
+    "size": 300,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::SemaphoreValue::TryGetValueInternal(ushort const *,bool,unsigned __int64 *,bool *)",
+    "ea": "0x18000752c",
+    "function_file": "functions/18000752c_wil_details_abi_SemaphoreValue_TryGetValueInternal_ushort_const_bool_unsigned_int64_bool.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!OpenSemaphoreW"
+    ],
+    "matched_strings": [],
+    "name": "?TryGetValueInternal@SemaphoreValue@details_abi@wil@@CAJPEBG_NPEA_KPEA_N@Z",
+    "prototype": "__int64 __fastcall(WCHAR *, __int64, unsigned __int64 *, bool *)",
+    "rank_score": 1813,
+    "size": 655,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Windows::Internal::DialogBlocking::HookMgr::CreateStopEvent(void)",
+    "ea": "0x180008da8",
+    "function_file": "functions/180008da8_Windows_Internal_DialogBlocking_HookMgr_CreateStopEvent_void.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoTaskMemFree",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-synch-l1-1-0!CreateEventExW",
+      "api-ms-win-security-sddl-l1-1-0!ConvertStringSecurityDescriptorToSecurityDescriptorW"
+    ],
+    "matched_strings": [],
+    "name": "?CreateStopEvent@HookMgr@DialogBlocking@Internal@Windows@@AEAA_NXZ",
+    "prototype": "char __fastcall(Windows::Internal::DialogBlocking::HookMgr *this)",
+    "rank_score": 1637,
+    "size": 280,
+    "tags": [
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Microsoft::WRL::Details::GetCacheEntry(Microsoft::WRL::Details::ModuleBase *,uint *,_GUID const &,Microsoft::WRL::Details::CreatorMap const *,IUnknown * *)",
+    "ea": "0x180004f14",
+    "function_file": "functions/180004f14_Microsoft_WRL_Details_GetCacheEntry_Microsoft_WRL_Details_ModuleBase_uint_GUID_const_Microsoft_WRL_Details_Cre.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockShared",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockShared",
+      "api-ms-win-core-util-l1-1-0!DecodePointer",
+      "api-ms-win-core-util-l1-1-0!EncodePointer"
+    ],
+    "matched_strings": [],
+    "name": "?GetCacheEntry@Details@WRL@Microsoft@@YAJPEAVModuleBase@123@PEAIAEBU_GUID@@PEBUCreatorMap@123@PEAPEAUIUnknown@@@Z",
+    "prototype": "__int64 __fastcall(Microsoft::WRL::Details *this, struct Microsoft::WRL::Details::ModuleBase *, unsigned int *, const struct _GUID *, const struct Microsoft::WRL::Details::CreatorMap *)",
+    "rank_score": 1616,
+    "size": 388,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "_lambda_3b1bd3dc794689acd37fb36ea0a30994_::operator()(void)",
+    "ea": "0x180004140",
+    "function_file": "functions/180004140_lambda_3b1bd3dc794689acd37fb36ea0a30994_operator_void.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!CreateEventW",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObject",
+      "api-ms-win-core-synch-l1-2-0!InitOnceExecuteOnce",
+      "api-ms-win-service-core-l1-1-0!RegisterServiceCtrlHandlerExW",
+      "api-ms-win-service-core-l1-1-0!SetServiceStatus"
+    ],
+    "matched_strings": [
+      "onecore\\internal\\com\\inc\\comservicehelper.h",
+      "onecore\\internal\\com\\inc\\comservicehelper.h",
+      "DialogBlockingService"
+    ],
+    "name": "??R_lambda_3b1bd3dc794689acd37fb36ea0a30994_@@QEBA@XZ",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 1582,
+    "size": 564,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Windows::Internal::AssignedAccess::AssignedAccessConfigurationHelper::FindUserInfoIf__lambda_85f277e70fc2df7bef089658807efc79___",
+    "ea": "0x18000ba5c",
+    "function_file": "functions/18000ba5c_Windows_Internal_AssignedAccess_AssignedAccessConfigurationHelper_FindUserInfoIf_lambda_85f277e70fc2df7bef0896.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-winrt-string-l1-1-0!WindowsDeleteString",
+      "api-ms-win-core-winrt-string-l1-1-0!WindowsGetStringRawBuffer",
+      "api-ms-win-crt-private-l1-1-0!_o__wcsicmp"
+    ],
+    "matched_strings": [
+      "shellcommondesktopbase\\base\\embedded\\sys\\lockdown\\inc\\assignedaccessconfigurationhelper.h",
+      "shellcommondesktopbase\\base\\embedded\\sys\\lockdown\\inc\\assignedaccessconfigurationhelper.h"
+    ],
+    "name": "Windows::Internal::AssignedAccess::AssignedAccessConfigurationHelper::FindUserInfoIf__lambda_85f277e70fc2df7bef089658807efc79___",
+    "prototype": "__int64 __fastcall(_QWORD *, __int64, _QWORD *)",
+    "rank_score": 1309,
+    "size": 625,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "Windows::Internal::AssignedAccess::PersistentLocationHelper::GetRedirectedPathIfNeeded(ushort const *,ushort const *,wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<ushort *,void (*)(void *),&CoTaskMemFree(void *),wistd::integral_constant<unsigned __int64,0>,ushort *,ushort *,0,std::nullptr_t>>> &)",
+    "ea": "0x18000b680",
+    "function_file": "functions/18000b680_Windows_Internal_AssignedAccess_PersistentLocationHelper_GetRedirectedPathIfNeeded_ushort_const_ushort_const_w.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoTaskMemFree",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError"
+    ],
+    "matched_strings": [
+      "shellcommondesktopbase\\base\\embedded\\sys\\lockdown\\inc\\persistentlocationhelper.h"
+    ],
+    "name": "?GetRedirectedPathIfNeeded@PersistentLocationHelper@AssignedAccess@Internal@Windows@@SAJPEBG0AEAV?$unique_any_t@V?$unique_storage@U?$resource_policy@PEAGP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAGPEAG$0A@$$T@details@wil@@@details@wil@@@wil@@@Z",
+    "prototype": "__int64 __fastcall(char *, __int64, LPVOID *, const char *)",
+    "rank_score": 1281,
+    "size": 334,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "GetAssignedAccessTypeForUser",
+    "ea": "0x18000ab90",
+    "function_file": "functions/18000ab90_GetAssignedAccessTypeForUser.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+    ],
+    "matched_strings": [
+      "shellcommondesktopbase\\base\\embedded\\sys\\lockdown\\config\\lib\\assignedaccessconfig.cpp",
+      "shellcommondesktopbase\\base\\embedded\\sys\\lockdown\\config\\lib\\assignedaccessconfig.cpp",
+      "AssignedAccessConfiguration",
+      "SOFTWARE\\Microsoft\\Windows\\AssignedAccessConfiguration"
+    ],
+    "name": "GetAssignedAccessTypeForUser",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, __int64, enum Windows::Internal::AssignedAccess::AssignedAccessType *)",
+    "rank_score": 1216,
+    "size": 445,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::AssignedAccess::AssignedAccessConfigStoreV0::DoesProfileExistInStore(ushort const *)",
+    "ea": "0x18000c1b0",
+    "function_file": "functions/18000c1b0_Windows_Internal_AssignedAccess_AssignedAccessConfigStoreV0_DoesProfileExistInStore_ushort_const.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+    ],
+    "matched_strings": [],
+    "name": "?DoesProfileExistInStore@AssignedAccessConfigStoreV0@AssignedAccess@Internal@Windows@@EEAA_NPEBG@Z",
+    "prototype": "bool __fastcall(LPCWSTR *this, const unsigned __int16 *)",
+    "rank_score": 1213,
+    "size": 250,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil::details::shared_buffer::create(unsigned __int64)",
+    "ea": "0x180007d9c",
+    "function_file": "functions/180007d9c_wil_details_shared_buffer_create_unsigned_int64.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?create@shared_buffer@details@wil@@QEAA_N_K@Z",
+    "prototype": "__int64 __fastcall(volatile signed __int32 **this, volatile signed __int32 *)",
+    "rank_score": 1204,
+    "size": 195,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "Microsoft::WRL::Details::ActivationFactoryCallback<2>(HSTRING__ *,IActivationFactory * *)",
+    "ea": "0x180002250",
+    "function_file": "functions/180002250_Microsoft_WRL_Details_ActivationFactoryCallback_2_HSTRING_IActivationFactory.md",
+    "matched_imports": [
+      "api-ms-win-core-winrt-error-l1-1-0!RoOriginateError",
+      "api-ms-win-core-winrt-error-l1-1-0!RoOriginateErrorW",
+      "api-ms-win-core-winrt-string-l1-1-0!WindowsGetStringRawBuffer",
+      "api-ms-win-core-winrt-string-l1-1-0!WindowsIsStringEmpty",
+      "api-ms-win-core-winrt-string-l1-1-0!WindowsStringHasEmbeddedNull"
+    ],
+    "matched_strings": [
+      "activatibleClassId"
+    ],
+    "name": "??$ActivationFactoryCallback@$01@Details@WRL@Microsoft@@YAJPEAUHSTRING__@@PEAPEAUIActivationFactory@@@Z",
+    "prototype": "__int64 __fastcall(HSTRING string, struct Microsoft::WRL::Details::CreatorMap *)",
+    "rank_score": 1066,
+    "size": 368,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "Windows::Internal::DialogBlocking::ServiceSessions::logoffUser(ulong)",
+    "ea": "0x18000a538",
+    "function_file": "functions/18000a538_Windows_Internal_DialogBlocking_ServiceSessions_logoffUser_ulong.md",
+    "matched_imports": [
+      "msvcp_win!?_Throw_Cpp_error@std@@YAXH@Z",
+      "msvcp_win!_Mtx_lock",
+      "msvcp_win!_Mtx_unlock"
+    ],
+    "matched_strings": [],
+    "name": "?logoffUser@ServiceSessions@DialogBlocking@Internal@Windows@@QEAAXK@Z",
+    "prototype": "void __fastcall(Windows::Internal::DialogBlocking::ServiceSessions *__hidden this, unsigned int)",
+    "rank_score": 1028,
+    "size": 284,
+    "tags": [
+      "file_ops",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "Windows::Internal::ServiceModuleBase::Uninitialize(void)",
+    "ea": "0x1800077c4",
+    "function_file": "functions/1800077c4_Windows_Internal_ServiceModuleBase_Uninitialize_void.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoDecrementMTAUsage",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-winrt-l1-1-0!RoUninitialize",
+      "combase!__imp_CoRegisterServerShutdownDelay"
+    ],
+    "matched_strings": [],
+    "name": "?Uninitialize@ServiceModuleBase@Internal@Windows@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(Windows::Internal::ServiceModuleBase *__hidden this)",
+    "rank_score": 1027,
+    "size": 247,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "Windows::Internal::DialogBlocking::HookProcess::ResetHookProcess(void)",
+    "ea": "0x180009010",
+    "function_file": "functions/180009010_Windows_Internal_DialogBlocking_HookProcess_ResetHookProcess_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!SetEvent",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?ResetHookProcess@HookProcess@DialogBlocking@Internal@Windows@@QEAAXXZ",
+    "prototype": "void __fastcall(Windows::Internal::DialogBlocking::HookProcess *__hidden this)",
+    "rank_score": 1006,
+    "size": 135,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "Windows::Internal::DialogBlocking::HookProcess::BuildHookLaunchCommand(void)",
+    "ea": "0x180008bbc",
+    "function_file": "functions/180008bbc_Windows_Internal_DialogBlocking_HookProcess_BuildHookLaunchCommand_void.md",
+    "matched_imports": [
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemDirectoryW",
+      "api-ms-win-core-wow64-l1-1-1!GetSystemWow64DirectoryW"
+    ],
+    "matched_strings": [
+      "base\\embedded\\sys\\dialogblocking\\service\\lib\\hookmgr.cpp",
+      "%s\\rundll32.exe %s\\DialogBlockerProc.dll,HookMain"
+    ],
+    "name": "?BuildHookLaunchCommand@HookProcess@DialogBlocking@Internal@Windows@@AEAA?AV?$NativeString@V?$CoTaskMemPolicy@G@Internal@Windows@@@34@XZ",
+    "prototype": "_QWORD *__fastcall(__int64, _QWORD *)",
+    "rank_score": 943,
+    "size": 486,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "Windows::Internal::ServiceModuleBase::Initialize<Windows::Internal::ServiceModuleBase::SecurityPolicyEveryoneLocal,2,Windows::Internal::DefaultServerDescriptor>(uchar,uchar,uchar,uchar,void *,ulong)",
+    "ea": "0x1800023c8",
+    "function_file": "functions/1800023c8_Windows_Internal_ServiceModuleBase_Initialize_Windows_Internal_ServiceModuleBase_SecurityPolicyEveryoneLocal_2.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoCreateInstance",
+      "api-ms-win-core-winrt-l1-1-0!RoInitialize"
+    ],
+    "matched_strings": [
+      "onecore\\internal\\com\\inc\\comservicehelper.h",
+      "onecore\\internal\\com\\inc\\comservicehelper.h",
+      "onecore\\internal\\com\\inc\\comservicehelper.h",
+      "onecore\\internal\\com\\inc\\comservicehelper.h",
+      "onecore\\internal\\com\\inc\\comservicehelper.h",
+      "onecore\\internal\\com\\inc\\comservicehelper.h",
+      "onecore\\internal\\com\\inc\\comservicehelper.h"
+    ],
+    "name": "??$Initialize@USecurityPolicyEveryoneLocal@ServiceModuleBase@Internal@Windows@@$01UDefaultServerDescriptor@34@@ServiceModuleBase@Internal@Windows@@QEAAJEEEEPEAXK@Z",
+    "prototype": "__int64 __fastcall(Windows::Internal::ServiceModuleBase *this, char)",
+    "rank_score": 931,
+    "size": 685,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "wil::details::ProcessHeapAlloc(ulong,unsigned __int64)",
+    "ea": "0x18000627c",
+    "function_file": "functions/18000627c_wil_details_ProcessHeapAlloc_ulong_unsigned_int64.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "?ProcessHeapAlloc@details@wil@@YAPEAXK_K@Z",
+    "prototype": "LPVOID __fastcall(DWORD dwFlags, SIZE_T dwBytes)",
+    "rank_score": 856,
+    "size": 158,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x180001a9c",
+    "function_file": "functions/180001a9c_security_init_cookie.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId",
+      "api-ms-win-core-profile-l1-1-0!QueryPerformanceCounter",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemTimeAsFileTime"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 823,
+    "size": 181,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "Windows::Internal::DialogBlocking::ServiceSessions::~ServiceSessions(void)",
+    "ea": "0x1800099d8",
+    "function_file": "functions/1800099d8_Windows_Internal_DialogBlocking_ServiceSessions_ServiceSessions_void.md",
+    "matched_imports": [
+      "msvcp_win!?_Throw_Cpp_error@std@@YAXH@Z",
+      "msvcp_win!_Mtx_lock",
+      "msvcp_win!_Mtx_unlock"
+    ],
+    "matched_strings": [],
+    "name": "??1ServiceSessions@DialogBlocking@Internal@Windows@@QEAA@XZ",
+    "prototype": "void __fastcall(Windows::Internal::DialogBlocking::ServiceSessions *__hidden this)",
+    "rank_score": 820,
+    "size": 333,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "Microsoft::WRL::Details::TerminateMap(Microsoft::WRL::Details::ModuleBase *,ushort const *,bool)",
+    "ea": "0x180007384",
+    "function_file": "functions/180007384_Microsoft_WRL_Details_TerminateMap_Microsoft_WRL_Details_ModuleBase_ushort_const_bool.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive",
+      "api-ms-win-core-util-l1-1-0!DecodePointer"
+    ],
+    "matched_strings": [],
+    "name": "?TerminateMap@Details@WRL@Microsoft@@YA_NPEAVModuleBase@123@PEBG_N@Z",
+    "prototype": "bool __fastcall(Microsoft::WRL::Details *this, struct Microsoft::WRL::Details::ModuleBase *, const unsigned __int16 *)",
+    "rank_score": 819,
+    "size": 332,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Windows::Internal::AssignedAccess::AssignedAccessConfigStoreHelper::GetStoreVersion(void)",
+    "ea": "0x18000b7d4",
+    "function_file": "functions/18000b7d4_Windows_Internal_AssignedAccess_AssignedAccessConfigStoreHelper_GetStoreVersion_void.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+    ],
+    "matched_strings": [],
+    "name": "?GetStoreVersion@AssignedAccessConfigStoreHelper@AssignedAccess@Internal@Windows@@AEAAKXZ",
+    "prototype": "__int64 __fastcall(LPCWSTR *this)",
+    "rank_score": 813,
+    "size": 167,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::ThreadLocalData::~ThreadLocalData(void)",
+    "ea": "0x1800040a0",
+    "function_file": "functions/1800040a0_wil_details_abi_ThreadLocalData_ThreadLocalData_void.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "??1ThreadLocalData@details_abi@wil@@QEAA@XZ",
+    "prototype": "void __fastcall(wil::details_abi::ThreadLocalData *__hidden this)",
+    "rank_score": 802,
+    "size": 124,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "??$get_token_information@U_TOKEN_USER@@@wil@@YA?A_PPEAX@Z",
+    "ea": "0x1800095d0",
+    "function_file": "functions/1800095d0_get_token_information_U_TOKEN_USER_wil_YA_A_PPEAX_Z.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-security-base-l1-1-0!GetTokenInformation"
+    ],
+    "matched_strings": [
+      "onecore\\internal\\sdk\\inc\\wil\\opensource\\wil\\result_macros.h",
+      "onecore\\internal\\sdk\\inc\\wil\\opensource\\wil\\token_helpers.h",
+      "onecore\\internal\\sdk\\inc\\wil\\opensource\\wil\\token_helpers.h",
+      "onecore\\internal\\sdk\\inc\\wil\\opensource\\wil\\token_helpers.h"
+    ],
+    "name": "??$get_token_information@U_TOKEN_USER@@@wil@@YA?A_PPEAX@Z",
+    "prototype": "void **__fastcall(void **, __int64)",
+    "rank_score": 789,
+    "size": 340,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "Windows::Internal::NativeString<Windows::Internal::CoTaskMemPolicy<ushort>>::InitializeFormat(ushort const *,...)",
+    "ea": "0x180008ec8",
+    "function_file": "functions/180008ec8_Windows_Internal_NativeString_Windows_Internal_CoTaskMemPolicy_ushort_InitializeFormat_ushort_const.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoTaskMemFree",
+      "api-ms-win-crt-private-l1-1-0!_o__get_errno",
+      "api-ms-win-crt-private-l1-1-0!_o__set_errno"
+    ],
+    "matched_strings": [],
+    "name": "?InitializeFormat@?$NativeString@V?$CoTaskMemPolicy@G@Internal@Windows@@@Internal@Windows@@QEAAJPEBGZZ",
+    "prototype": "__int64(__int64, const wchar_t *, ...)",
+    "rank_score": 640,
+    "size": 320,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Microsoft::WRL::Details::RegisterWinRTObject<2>(ushort const *,ushort const * *,_RO_REGISTRATION_COOKIE * *,uint)",
+    "ea": "0x180002dd0",
+    "function_file": "functions/180002dd0_Microsoft_WRL_Details_RegisterWinRTObject_2_ushort_const_ushort_const_RO_REGISTRATION_COOKIE_uint.md",
+    "matched_imports": [
+      "api-ms-win-core-winrt-l1-1-0!RoRegisterActivationFactories",
+      "api-ms-win-core-winrt-string-l1-1-0!WindowsCreateString",
+      "api-ms-win-core-winrt-string-l1-1-0!WindowsDeleteString"
+    ],
+    "matched_strings": [],
+    "name": "??$RegisterWinRTObject@$01@Details@WRL@Microsoft@@YAJPEBGPEAPEBGPEAPEAU_RO_REGISTRATION_COOKIE@@I@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, unsigned int)",
+    "rank_score": 626,
+    "size": 256,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "wil::details::LogFailure(void *,uint,char const *,char const *,char const *,void *,wil::FailureType,wil::details::ResultStatus const &,ushort const *,bool,ushort *,unsigned __int64,char *,unsigned __int64,wil::FailureFlags,wil::FailureInfo *)",
+    "ea": "0x180005db0",
+    "function_file": "functions/180005db0_wil_details_LogFailure_void_uint_char_const_char_const_char_const_void_wil_FailureType_wil_details_ResultStatu.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!IsDebuggerPresent",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringW",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "?LogFailure@details@wil@@YAXPEAXIPEBD110W4FailureType@2@AEBUResultStatus@12@PEBG_NPEAG_KPEAD7W4FailureFlags@2@PEAUFailureInfo@2@@Z",
+    "prototype": "void __fastcall(__int64, int, __int64, __int64, __int64, __int64, int, unsigned int *, _WORD *, __int64, wil *lpOutputString, __int64, _BYTE *, __int64, int, unsigned __int64)",
+    "rank_score": 616,
+    "size": 761,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "wil::details::ReportFailure_NoReturn<0>(void *,uint,char const *,char const *,char const *,void *,wil::details::ResultStatus const &,ushort const *,wil::details::ReportFailureOptions)",
+    "ea": "0x180008278",
+    "function_file": "functions/180008278_wil_details_ReportFailure_NoReturn_0_void_uint_char_const_char_const_char_const_void_wil_details_ResultStatus_.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!IsDebuggerPresent",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringW",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "??$ReportFailure_NoReturn@$0A@@details@wil@@YAXPEAXIPEBD110AEBUResultStatus@01@PEBGW4ReportFailureOptions@01@@Z",
+    "prototype": "void __fastcall __noreturn(__int64, int, __int64, __int64, int, __int64, int *)",
+    "rank_score": 615,
+    "size": 684,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "wil::details::ReportFailure_Return<1>(void *,uint,char const *,char const *,char const *,void *,wil::details::ResultStatus const &,ushort const *,wil::details::ReportFailureOptions,wil::FailureFlags)",
+    "ea": "0x180003598",
+    "function_file": "functions/180003598_wil_details_ReportFailure_Return_1_void_uint_char_const_char_const_char_const_void_wil_details_ResultStatus_co.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!IsDebuggerPresent",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringW",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "??$ReportFailure_Return@$00@details@wil@@YAXPEAXIPEBD110AEBUResultStatus@01@PEBGW4ReportFailureOptions@01@W4FailureFlags@1@@Z",
+    "prototype": "void __fastcall(__int64, int, __int64, __int64, int, __int64, int *, _WORD *)",
+    "rank_score": 615,
+    "size": 678,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "wil::details::ReportFailure_NoReturn<3>(void *,uint,char const *,char const *,char const *,void *,wil::details::ResultStatus const &,ushort const *,wil::details::ReportFailureOptions)",
+    "ea": "0x180003318",
+    "function_file": "functions/180003318_wil_details_ReportFailure_NoReturn_3_void_uint_char_const_char_const_char_const_void_wil_details_ResultStatus_.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!IsDebuggerPresent",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringW",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "??$ReportFailure_NoReturn@$02@details@wil@@YAXPEAXIPEBD110AEBUResultStatus@01@PEBGW4ReportFailureOptions@01@@Z",
+    "prototype": "void __fastcall __noreturn(__int64, int, __int64, __int64, __int64, __int64, int *, _WORD *)",
+    "rank_score": 613,
+    "size": 633,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft::WRL::Module<2,Windows::Internal::SvcHostModule>::RegisterCOMObject(ushort const *,_GUID *,IClassFactory * *,ulong *,uint)",
+    "ea": "0x180006410",
+    "function_file": "functions/180006410_Microsoft_WRL_Module_2_Windows_Internal_SvcHostModule_RegisterCOMObject_ushort_const_GUID_IClassFactory_ulong_.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoRegisterClassObject",
+      "api-ms-win-core-com-l1-1-0!CoResumeClassObjects",
+      "api-ms-win-core-com-l1-1-0!CoRevokeClassObject"
+    ],
+    "matched_strings": [],
+    "name": "?RegisterCOMObject@?$Module@$01VSvcHostModule@Internal@Windows@@@WRL@Microsoft@@UEAAJPEBGPEAU_GUID@@PEAPEAUIClassFactory@@PEAKI@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64, __int64, unsigned int)",
+    "rank_score": 612,
+    "size": 153,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::AssignedAccess::AssignedAccessConfigStoreV1::Initialize(void)",
+    "ea": "0x18000c400",
+    "function_file": "functions/18000c400_Windows_Internal_AssignedAccess_AssignedAccessConfigStoreV1_Initialize_void.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+    ],
+    "matched_strings": [
+      "AssignedAccessConfiguration",
+      "SOFTWARE\\Microsoft\\Windows\\AssignedAccessConfiguration"
+    ],
+    "name": "?Initialize@AssignedAccessConfigStoreV1@AssignedAccess@Internal@Windows@@MEAA_NXZ",
+    "prototype": "char __fastcall(Windows::Internal::AssignedAccess::AssignedAccessConfigStoreV1 *this, __int64, __int64, const char *)",
+    "rank_score": 513,
+    "size": 143,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil::details::RtlDllShutdownInProgress(void)",
+    "ea": "0x180006830",
+    "function_file": "functions/180006830_wil_details_RtlDllShutdownInProgress_void.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ntdll.dll",
+      "RtlDllShutdownInProgress"
+    ],
+    "name": "?RtlDllShutdownInProgress@details@wil@@YAEXZ",
+    "prototype": "FARPROC __fastcall(wil::details *this)",
+    "rank_score": 492,
+    "size": 87,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "ServiceMain",
+    "ea": "0x180007fa0",
+    "function_file": "functions/180007fa0_ServiceMain.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-service-core-l1-1-0!SetServiceStatus"
+    ],
+    "matched_strings": [
+      "onecore\\internal\\com\\inc\\comservicehelper.h"
+    ],
+    "name": "ServiceMain",
+    "prototype": "void()",
+    "rank_score": 479,
+    "size": 311,
+    "tags": [
+      "file_ops",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil::details::MicrosoftInternalNotifyFailure(wil::FailureInfo *)",
+    "ea": "0x180006130",
+    "function_file": "functions/180006130_wil_details_MicrosoftInternalNotifyFailure_wil_FailureInfo.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress"
+    ],
+    "matched_strings": [
+      "kernelbase.dll"
+    ],
+    "name": "?MicrosoftInternalNotifyFailure@details@wil@@YAXPEAUFailureInfo@2@@Z",
+    "prototype": "void __fastcall(wil::details *__hidden this, struct wil::FailureInfo *)",
+    "rank_score": 464,
+    "size": 273,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil::details::WilDynamicLoadRaiseFailFastException(_EXCEPTION_RECORD *,_CONTEXT *,ulong)",
+    "ea": "0x180007bd0",
+    "function_file": "functions/180007bd0_wil_details_WilDynamicLoadRaiseFailFastException_EXCEPTION_RECORD_CONTEXT_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress"
+    ],
+    "matched_strings": [
+      "kernelbase.dll"
+    ],
+    "name": "?WilDynamicLoadRaiseFailFastException@details@wil@@YAXPEAU_EXCEPTION_RECORD@@PEAU_CONTEXT@@K@Z",
+    "prototype": "void __fastcall(wil::details *this, struct _EXCEPTION_RECORD *, struct _CONTEXT *)",
+    "rank_score": 462,
+    "size": 88,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "Windows::Internal::AssignedAccess::AAManagerHelper::AAManagerHelper(void)",
+    "ea": "0x18000bd2c",
+    "function_file": "functions/18000bd2c_Windows_Internal_AssignedAccess_AAManagerHelper_AAManagerHelper_void.md",
+    "matched_imports": [
+      "api-ms-win-core-winrt-l1-1-0!RoActivateInstance",
+      "api-ms-win-core-winrt-string-l1-1-0!WindowsCreateStringReference"
+    ],
+    "matched_strings": [
+      "Windows.Internal.AssignedAccess.AssignedAccessManager"
+    ],
+    "name": "??0AAManagerHelper@AssignedAccess@Internal@Windows@@QEAA@XZ",
+    "prototype": "Windows::Internal::AssignedAccess::AAManagerHelper *__fastcall(Windows::Internal::AssignedAccess::AAManagerHelper *this)",
+    "rank_score": 457,
+    "size": 239,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "wil::details::FormatNtStatusMsg(long,ushort *,ulong)",
+    "ea": "0x180004e70",
+    "function_file": "functions/180004e70_wil_details_FormatNtStatusMsg_long_ushort_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW",
+      "api-ms-win-core-localization-l1-2-0!FormatMessageW"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "?FormatNtStatusMsg@details@wil@@YAXJPEAGK@Z",
+    "prototype": "void __fastcall(DWORD dwMessageId, LPWSTR lpBuffer, DWORD nSize)",
+    "rank_score": 451,
+    "size": 112,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::Service<DialogBlockingService,1,Windows::Internal::ServiceModuleBase::SecurityPolicyEveryoneLocal,2,Windows::Internal::DefaultServerDescriptor>::HandlerExStatic(ulong,ulong,void *,void *)",
+    "ea": "0x180005b00",
+    "function_file": "functions/180005b00_Windows_Internal_Service_DialogBlockingService_1_Windows_Internal_ServiceModuleBase_SecurityPolicyEveryoneLoca.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!SetEvent",
+      "api-ms-win-service-core-l1-1-0!SetServiceStatus"
+    ],
+    "matched_strings": [],
+    "name": "?HandlerExStatic@?$Service@VDialogBlockingService@@$00USecurityPolicyEveryoneLocal@ServiceModuleBase@Internal@Windows@@$01UDefaultServerDescriptor@45@@Internal@Windows@@CAKKKPEAX0@Z",
+    "prototype": "__int64 __fastcall(DWORD dwControl, DWORD dwEventType, _DWORD *lpEventData, char *lpContext)",
+    "rank_score": 442,
+    "size": 97,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "Windows::Internal::AssignedAccess::AssignedAccessConfigStoreV0::CreateInstance(void)",
+    "ea": "0x18000b1f4",
+    "function_file": "functions/18000b1f4_Windows_Internal_AssignedAccess_AssignedAccessConfigStoreV0_CreateInstance_void.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?CreateInstance@AssignedAccessConfigStoreV0@AssignedAccess@Internal@Windows@@SA?AV?$unique_ptr@VAssignedAccessConfigStoreBase@AssignedAccess@Internal@Windows@@U?$default_delete@VAssignedAccessConfigStoreBase@AssignedAccess@Internal@Windows@@@wistd@@@wistd@@XZ",
+    "prototype": "_QWORD *__fastcall(_QWORD *)",
+    "rank_score": 438,
+    "size": 208,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Windows::Internal::NativeString<Windows::Internal::CoTaskMemPolicy<ushort>>::_EnsureCapacity(unsigned __int64)",
+    "ea": "0x180009424",
+    "function_file": "functions/180009424_Windows_Internal_NativeString_Windows_Internal_CoTaskMemPolicy_ushort_EnsureCapacity_unsigned_int64.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc",
+      "api-ms-win-core-com-l1-1-0!CoTaskMemRealloc"
+    ],
+    "matched_strings": [],
+    "name": "?_EnsureCapacity@?$NativeString@V?$CoTaskMemPolicy@G@Internal@Windows@@@Internal@Windows@@AEAAJ_K@Z",
+    "prototype": "__int64 __fastcall(__int64, unsigned __int64)",
+    "rank_score": 433,
+    "size": 255,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 7,
+    "demangled": "wil::GetFailureLogString(ushort *,unsigned __int64,wil::FailureInfo const &)",
+    "ea": "0x1800052f4",
+    "function_file": "functions/1800052f4_wil_GetFailureLogString_ushort_unsigned_int64_wil_FailureInfo_const.md",
+    "matched_imports": [
+      "api-ms-win-core-localization-l1-2-0!FormatMessageW",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "?GetFailureLogString@wil@@YAJPEAG_KAEBUFailureInfo@1@@Z",
+    "prototype": "__int64 __fastcall(wil *this, unsigned __int16 *, __int64, const struct wil::FailureInfo *)",
+    "rank_score": 417,
+    "size": 694,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "wil::details::_dynamic_atexit_destructor_for__g_threadFailureCallbacks__",
+    "ea": "0x18000d050",
+    "function_file": "functions/18000d050_wil_details_dynamic_atexit_destructor_for_g_threadFailureCallbacks.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "wil::details::_dynamic_atexit_destructor_for__g_threadFailureCallbacks__",
+    "prototype": "__int64 *()",
+    "rank_score": 411,
+    "size": 94,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "wil::details::GetContextAndNotifyFailure(wil::FailureInfo *,char *,unsigned __int64)",
+    "ea": "0x1800050a0",
+    "function_file": "functions/1800050a0_wil_details_GetContextAndNotifyFailure_wil_FailureInfo_char_unsigned_int64.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "?GetContextAndNotifyFailure@details@wil@@YAXPEAUFailureInfo@2@PEAD_K@Z",
+    "prototype": "void __fastcall(unsigned __int64 this, struct wil::FailureInfo *, char *)",
+    "rank_score": 410,
+    "size": 519,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::ThreadLocalFailureInfo::Set(wil::FailureInfo const &,uint)",
+    "ea": "0x180006968",
+    "function_file": "functions/180006968_wil_details_abi_ThreadLocalFailureInfo_Set_wil_FailureInfo_const_uint.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?Set@ThreadLocalFailureInfo@details_abi@wil@@QEAAXAEBUFailureInfo@3@I@Z",
+    "prototype": "void __fastcall(wil::details_abi::ThreadLocalFailureInfo *this, const struct wil::FailureInfo *, int)",
+    "rank_score": 409,
+    "size": 537,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "memcpy_s_0",
+    "ea": "0x1800080e0",
+    "function_file": "functions/1800080e0_memcpy_s_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o__errno"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_s_0",
+    "prototype": "static errno_t __cdecl(void *const Destination, const rsize_t DestinationSize, const void *const Source, const rsize_t SourceSize)",
+    "rank_score": 408,
+    "size": 137,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::Service<DialogBlockingService,1,Windows::Internal::ServiceModuleBase::SecurityPolicyEveryoneLocal,2,Windows::Internal::DefaultServerDescriptor>::StopAsync(void)",
+    "ea": "0x1800071c0",
+    "function_file": "functions/1800071c0_Windows_Internal_Service_DialogBlockingService_1_Windows_Internal_ServiceModuleBase_SecurityPolicyEveryoneLoca.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!SetEvent",
+      "api-ms-win-service-core-l1-1-0!SetServiceStatus"
+    ],
+    "matched_strings": [],
+    "name": "?StopAsync@?$Service@VDialogBlockingService@@$00USecurityPolicyEveryoneLocal@ServiceModuleBase@Internal@Windows@@$01UDefaultServerDescriptor@45@@Internal@Windows@@IEAAXXZ",
+    "prototype": "BOOL __fastcall(__int64)",
+    "rank_score": 331,
+    "size": 58,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::SvcHostModule::SubInitialize(void)",
+    "ea": "0x180007340",
+    "function_file": "functions/180007340_Windows_Internal_SvcHostModule_SubInitialize_void.md",
+    "matched_imports": [
+      "combase!__imp_CoGetSharedServiceId"
+    ],
+    "matched_strings": [
+      "onecore\\internal\\com\\inc\\comservicehelper.h"
+    ],
+    "name": "?SubInitialize@SvcHostModule@Internal@Windows@@MEAAJXZ",
+    "prototype": "__int64 __fastcall(Windows::Internal::SvcHostModule *this)",
+    "rank_score": 262,
+    "size": 59,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Windows::Internal::AssignedAccess::AssignedAccessConfigStoreV0::IsValidProfile(HKEY__ *)",
+    "ea": "0x18000c5d4",
+    "function_file": "functions/18000c5d4_Windows_Internal_AssignedAccess_AssignedAccessConfigStoreV0_IsValidProfile_HKEY.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+    ],
+    "matched_strings": [
+      "ConfigLevel"
+    ],
+    "name": "?IsValidProfile@AssignedAccessConfigStoreV0@AssignedAccess@Internal@Windows@@AEAA_NPEAUHKEY__@@@Z",
+    "prototype": "char __fastcall(Windows::Internal::AssignedAccess::AssignedAccessConfigStoreV0 *this, HKEY)",
+    "rank_score": 253,
+    "size": 169,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::AssignedAccess::AssignedAccessConfigStoreV1::`scalar deleting destructor'(uint)",
+    "ea": "0x18000b190",
+    "function_file": "functions/18000b190_Windows_Internal_AssignedAccess_AssignedAccessConfigStoreV1_scalar_deleting_destructor_uint.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "??_GAssignedAccessConfigStoreV1@AssignedAccess@Internal@Windows@@UEAAPEAXI@Z",
+    "prototype": "Windows::Internal::AssignedAccess::AssignedAccessConfigStoreV1 *__fastcall(Windows::Internal::AssignedAccess::AssignedAccessConfigStoreV1 *this, char)",
+    "rank_score": 242,
+    "size": 92,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "?StartHook@HookProcess@DialogBlocking@Internal@Windows@@QEAAXV?$shared_ptr@V?$unique_any_t@V?$event_t@V?$unique_storage@U?$resource_policy@PEAXP6AXPEAX@_E$1?CloseHandle@details@wil@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@Uerr_exception_policy@3@@wil@@@wil@@@std@@@Z",
+    "ea": "0x1800090a0",
+    "function_file": "functions/1800090a0_StartHook_HookProcess_DialogBlocking_Internal_Windows_QEAAXV_shared_ptr_V_unique_any_t_V_event_t_V_unique_stor.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?StartHook@HookProcess@DialogBlocking@Internal@Windows@@QEAAXV?$shared_ptr@V?$unique_any_t@V?$event_t@V?$unique_storage@U?$resource_policy@PEAXP6AXPEAX@_E$1?CloseHandle@details@wil@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@Uerr_exception_policy@3@@wil@@@wil@@@std@@@Z",
+    "prototype": "void __fastcall(Windows::Internal::DialogBlocking::HookProcess *this, _QWORD *)",
+    "rank_score": 236,
+    "size": 250,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "wil::make_unique_string_nothrow<wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<ushort *,void (*)(void *),&CoTaskMemFree(void *),wistd::integral_constant<unsigned __int64,0>,ushort *,ushort *,0,std::nullptr_t>>>>(ushort const *,unsigned __int64)",
+    "ea": "0x18000b020",
+    "function_file": "functions/18000b020_wil_make_unique_string_nothrow_wil_unique_any_t_wil_details_unique_storage_wil_details_resource_policy_ushort_.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+    ],
+    "matched_strings": [],
+    "name": "??$make_unique_string_nothrow@V?$unique_any_t@V?$unique_storage@U?$resource_policy@PEAGP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAGPEAG$0A@$$T@details@wil@@@details@wil@@@wil@@@wil@@YA?AV?$unique_any_t@V?$unique_storage@U?$resource_policy@PEAGP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAGPEAG$0A@$$T@details@wil@@@details@wil@@@0@PEBG_K@Z",
+    "prototype": "_QWORD *__fastcall(_QWORD *, char *, unsigned __int64, const char *)",
+    "rank_score": 236,
+    "size": 198,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Windows::Internal::ServiceModule::`vector deleting destructor'(uint)",
+    "ea": "0x18000459c",
+    "function_file": "functions/18000459c_Windows_Internal_ServiceModule_vector_deleting_destructor_uint.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoDecrementMTAUsage"
+    ],
+    "matched_strings": [],
+    "name": "??_EServiceModule@Internal@Windows@@UEAAPEAXI@Z",
+    "prototype": "Windows::Internal::ServiceModule *__fastcall(Windows::Internal::ServiceModule *this, __int64, const unsigned __int16 *, bool)",
+    "rank_score": 235,
+    "size": 112,
+    "tags": [
+      "file_ops",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "Windows::Internal::NativeString<Windows::Internal::CoTaskMemPolicy<ushort>>::~NativeString<Windows::Internal::CoTaskMemPolicy<ushort>>(void)",
+    "ea": "0x180008810",
+    "function_file": "functions/180008810_Windows_Internal_NativeString_Windows_Internal_CoTaskMemPolicy_ushort_NativeString_Windows_Internal_CoTaskMemP.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "??1?$NativeString@V?$CoTaskMemPolicy@G@Internal@Windows@@@Internal@Windows@@QEAA@XZ",
+    "prototype": "void __fastcall(__int64)",
+    "rank_score": 234,
+    "size": 52,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Windows::Internal::ServiceModule::DecrementObjectCount(void)",
+    "ea": "0x180004d50",
+    "function_file": "functions/180004d50_Windows_Internal_ServiceModule_DecrementObjectCount_void.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoReleaseServerProcess"
+    ],
+    "matched_strings": [],
+    "name": "?DecrementObjectCount@ServiceModule@Internal@Windows@@UEAAKXZ",
+    "prototype": "__int64 __fastcall(Windows::Internal::ServiceModule *this)",
+    "rank_score": 223,
+    "size": 59,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Windows::Internal::SvcHostModule::DecrementObjectCount(void)",
+    "ea": "0x180004db0",
+    "function_file": "functions/180004db0_Windows_Internal_SvcHostModule_DecrementObjectCount_void.md",
+    "matched_imports": [
+      "combase!__imp_CoReleaseSharedService"
+    ],
+    "matched_strings": [],
+    "name": "?DecrementObjectCount@SvcHostModule@Internal@Windows@@UEAAKXZ",
+    "prototype": "__int64 __fastcall(Windows::Internal::SvcHostModule *this)",
+    "rank_score": 223,
+    "size": 57,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft::WRL::Module<2,Windows::Internal::ServiceModule>::UnregisterCOMObject(ushort const *,ulong *,uint)",
+    "ea": "0x1800078d0",
+    "function_file": "functions/1800078d0_Microsoft_WRL_Module_2_Windows_Internal_ServiceModule_UnregisterCOMObject_ushort_const_ulong_uint.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoRevokeClassObject"
+    ],
+    "matched_strings": [],
+    "name": "?UnregisterCOMObject@?$Module@$01VServiceModule@Internal@Windows@@@WRL@Microsoft@@UEAAJPEBGPEAKI@Z",
+    "prototype": "HRESULT __fastcall(__int64, __int64, __int64, unsigned int)",
+    "rank_score": 221,
+    "size": 67,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft::WRL::Module<1,Windows::Internal::ServiceModule>::UnregisterCOMObject(ushort const *,ulong *,uint)",
+    "ea": "0x1800063e0",
+    "function_file": "functions/1800063e0_Microsoft_WRL_Module_1_Windows_Internal_ServiceModule_UnregisterCOMObject_ushort_const_ulong_uint.md",
+    "matched_imports": [
+      "api-ms-win-core-winrt-error-l1-1-0!RoOriginateError"
+    ],
+    "matched_strings": [],
+    "name": "?UnregisterCOMObject@?$Module@$00VServiceModule@Internal@Windows@@@WRL@Microsoft@@UEAAJPEBGPEAKI@Z",
+    "prototype": "__int64()",
+    "rank_score": 220,
+    "size": 27,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_dynamic_initializer_for__Microsoft::WRL::Module_1_Windows::Internal::ServiceModule_::isInitialized__",
+    "ea": "0x180001090",
+    "function_file": "functions/180001090_dynamic_initializer_for_Microsoft_WRL_Module_1_Windows_Internal_ServiceModule_isInitialized.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-2-0!InitOnceExecuteOnce"
+    ],
+    "matched_strings": [],
+    "name": "_dynamic_initializer_for__Microsoft::WRL::Module_1_Windows::Internal::ServiceModule_::isInitialized__",
+    "prototype": "BOOL()",
+    "rank_score": 220,
+    "size": 49,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<ushort *,void * (*)(void *),&LocalFree(void *),wistd::integral_constant<unsigned __int64,0>,ushort *,ushort *,0,std::nullptr_t>>>::~unique_any_t<wil::details::unique_storage<wil::details::resource_policy<ushort *,void * (*)(void *),&LocalFree(void *),wistd::integral_constant<unsigned __int64,0>,ushort *,ushort *,0,std::nullptr_t>>>(void)",
+    "ea": "0x180008930",
+    "function_file": "functions/180008930_wil_unique_any_t_wil_details_unique_storage_wil_details_resource_policy_ushort_void_void_LocalFree_void_wistd_.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l2-1-0!LocalFree"
+    ],
+    "matched_strings": [],
+    "name": "??1?$unique_any_t@V?$unique_storage@U?$resource_policy@PEAGP6APEAXPEAX@Z$1?LocalFree@@YAPEAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAGPEAG$0A@$$T@details@wil@@@details@wil@@@wil@@QEAA@XZ",
+    "prototype": "HLOCAL __fastcall(void **)",
+    "rank_score": 214,
+    "size": 23,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "DllMain",
+    "ea": "0x180001b58",
+    "function_file": "functions/180001b58_DllMain.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!DisableThreadLibraryCalls"
+    ],
+    "matched_strings": [],
+    "name": "DllMain",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 212,
+    "size": 35,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wistd::__function::__func<_lambda_42d7dced1872ed24a4c1197da8e68253_,long (ushort *,unsigned __int64,unsigned __int64 *)>::operator()(ushort * &&,unsigned __int64 &&,unsigned __int64 * &&)",
+    "ea": "0x18000b0f0",
+    "function_file": "functions/18000b0f0_wistd_function_func_lambda_42d7dced1872ed24a4c1197da8e68253_long_ushort_unsigned_int64_unsigned_int64_operator.md",
+    "matched_imports": [
+      "api-ms-win-stateseparation-helpers-l1-1-0!GetPersistedRegistryLocationW"
+    ],
+    "matched_strings": [],
+    "name": "??R?$__func@V_lambda_42d7dced1872ed24a4c1197da8e68253_@@$$A6AJPEAG_KPEA_K@Z@__function@wistd@@UEAAJ$$QEAPEAG$$QEA_K$$QEAPEA_K@Z",
+    "prototype": "int __fastcall(__int64, _QWORD *, unsigned int *, unsigned __int64 **)",
+    "rank_score": 212,
+    "size": 103,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "Windows::Internal::DialogBlocking::HookProcess::~HookProcess(void)",
+    "ea": "0x180008a58",
+    "function_file": "functions/180008a58_Windows_Internal_DialogBlocking_HookProcess_HookProcess_void.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle"
+    ],
+    "matched_strings": [],
+    "name": "??1HookProcess@DialogBlocking@Internal@Windows@@QEAA@XZ",
+    "prototype": "void __fastcall(volatile signed __int32 **this)",
+    "rank_score": 206,
+    "size": 113,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::GetThreadLocalDataCache(bool)",
+    "ea": "0x1800058e4",
+    "function_file": "functions/1800058e4_wil_details_abi_GetThreadLocalDataCache_bool.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "?GetThreadLocalDataCache@details_abi@wil@@YAPEAUThreadLocalData@12@_N@Z",
+    "prototype": "struct wil::details_abi::ThreadLocalData *__fastcall(wil::details_abi *this)",
+    "rank_score": 204,
+    "size": 187,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "Windows::Internal::AssignedAccess::AAManagerHelper::GetAssignedAccessTypeForUserWithoutGroup(ushort const *,Windows::Internal::AssignedAccess::AssignedAccessType *)",
+    "ea": "0x18000be8c",
+    "function_file": "functions/18000be8c_Windows_Internal_AssignedAccess_AAManagerHelper_GetAssignedAccessTypeForUserWithoutGroup_ushort_const_Windows_.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "shellcommondesktopbase\\base\\embedded\\sys\\lockdown\\config\\lib\\aamanagerhelper.cpp",
+      "shellcommondesktopbase\\base\\embedded\\sys\\lockdown\\config\\lib\\aamanagerhelper.cpp",
+      "shellcommondesktopbase\\base\\embedded\\sys\\lockdown\\config\\lib\\aamanagerhelper.cpp"
+    ],
+    "name": "?GetAssignedAccessTypeForUserWithoutGroup@AAManagerHelper@AssignedAccess@Internal@Windows@@AEAAJPEBGPEAW4AssignedAccessType@234@@Z",
+    "prototype": "__int64 __fastcall(Windows::Internal::AssignedAccess::AAManagerHelper *this, const unsigned __int16 *, enum Windows::Internal::AssignedAccess::AssignedAccessType *)",
+    "rank_score": 148,
+    "size": 347,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::ServiceModule::DisconnectCallback(void)",
+    "ea": "0x180004e00",
+    "function_file": "functions/180004e00_Windows_Internal_ServiceModule_DisconnectCallback_void.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoDisconnectContext"
+    ],
+    "matched_strings": [],
+    "name": "?DisconnectCallback@ServiceModule@Internal@Windows@@UEAAJXZ",
+    "prototype": "HRESULT __fastcall(struct Microsoft::WRL::Details::ModuleBase **this, __int64, const unsigned __int16 *)",
+    "rank_score": 121,
+    "size": 31,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Windows::Internal::ServiceModule::IncrementObjectCount(void)",
+    "ea": "0x180005d50",
+    "function_file": "functions/180005d50_Windows_Internal_ServiceModule_IncrementObjectCount_void.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoAddRefServerProcess"
+    ],
+    "matched_strings": [],
+    "name": "?IncrementObjectCount@ServiceModule@Internal@Windows@@UEAAKXZ",
+    "prototype": "ULONG __stdcall()",
+    "rank_score": 121,
+    "size": 7,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Windows::Internal::SvcHostModule::IncrementObjectCount(void)",
+    "ea": "0x180005d70",
+    "function_file": "functions/180005d70_Windows_Internal_SvcHostModule_IncrementObjectCount_void.md",
+    "matched_imports": [
+      "combase!__imp_CoAddRefSharedService"
+    ],
+    "matched_strings": [],
+    "name": "?IncrementObjectCount@SvcHostModule@Internal@Windows@@UEAAKXZ",
+    "prototype": "__int64 __fastcall(Windows::Internal::SvcHostModule *this)",
+    "rank_score": 121,
+    "size": 10,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 15,
+    "demangled": "memset_0",
+    "ea": "0x1800020d0",
+    "function_file": "functions/1800020d0_memset_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-string-l1-1-0!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 115,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_o___stdio_common_vswprintf_0",
+    "ea": "0x180001ffa",
+    "function_file": "functions/180001ffa_o_stdio_common_vswprintf_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o___stdio_common_vswprintf"
+    ],
+    "matched_strings": [],
+    "name": "_o___stdio_common_vswprintf_0",
+    "prototype": "int __cdecl(unsigned __int64 Options, wchar_t *Buffer, size_t BufferCount, const wchar_t *Format, _locale_t Locale, va_list ArgList)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_o__configure_narrow_argv_0",
+    "ea": "0x18000201e",
+    "function_file": "functions/18000201e_o_configure_narrow_argv_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o__configure_narrow_argv"
+    ],
+    "matched_strings": [],
+    "name": "_o__configure_narrow_argv_0",
+    "prototype": "errno_t __cdecl(_crt_argv_mode mode)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_o__seh_filter_dll_0",
+    "ea": "0x180002088",
+    "function_file": "functions/180002088_o_seh_filter_dll_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o__seh_filter_dll"
+    ],
+    "matched_strings": [],
+    "name": "_o__seh_filter_dll_0",
+    "prototype": "int __cdecl(unsigned int ExceptionNum, struct _EXCEPTION_POINTERS *ExceptionPtr)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "wil::details::ReportFailure_CaughtException<1>(void *,uint,char const *,char const *,char const *,void *,wil::SupportedExceptions)",
+    "ea": "0x180002f6c",
+    "function_file": "functions/180002f6c_wil_details_ReportFailure_CaughtException_1_void_uint_char_const_char_const_char_const_void_wil_SupportedExcep.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "base\\embedded\\sys\\dialogblocking\\service\\dll\\dialogblockingservice.cpp",
+      "base\\embedded\\sys\\dialogblocking\\service\\dll\\dialogblockingservice.cpp"
+    ],
+    "name": "??$ReportFailure_CaughtException@$00@details@wil@@YAJPEAXIPEBD110W4SupportedExceptions@1@@Z",
+    "prototype": "__int64 __fastcall(int, __int64, __int64, __int64, int, __int64)",
+    "rank_score": 111,
+    "size": 331,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 8,
+    "demangled": "_o___std_exception_copy_0",
+    "ea": "0x180001fd6",
+    "function_file": "functions/180001fd6_o_std_exception_copy_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o___std_exception_copy"
+    ],
+    "matched_strings": [],
+    "name": "_o___std_exception_copy_0",
+    "prototype": "__int64()",
+    "rank_score": 108,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 7,
+    "demangled": "_CxxThrowException_0",
+    "ea": "0x1800020dc",
+    "function_file": "functions/1800020dc_CxxThrowException_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_CxxThrowException"
+    ],
+    "matched_strings": [],
+    "name": "_CxxThrowException_0",
+    "prototype": "void __stdcall __noreturn(void *pExceptionObject, _ThrowInfo *pThrowInfo)",
+    "rank_score": 107,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "_o___std_exception_destroy_0",
+    "ea": "0x180001fe2",
+    "function_file": "functions/180001fe2_o_std_exception_destroy_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o___std_exception_destroy"
+    ],
+    "matched_strings": [],
+    "name": "_o___std_exception_destroy_0",
+    "prototype": "__int64()",
+    "rank_score": 104,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "memcpy_0",
+    "ea": "0x18000c7f0",
+    "function_file": "functions/18000c7f0_memcpy_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 104,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil::details::ReportFailure_GetLastError<0>(void *,uint,char const *,char const *,char const *,void *)",
+    "ea": "0x18000819c",
+    "function_file": "functions/18000819c_wil_details_ReportFailure_GetLastError_0_void_uint_char_const_char_const_char_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "base\\embedded\\sys\\dialogblocking\\service\\lib\\hookmgr.cpp",
+      "base\\embedded\\sys\\dialogblocking\\service\\lib\\hookmgr.cpp"
+    ],
+    "name": "??$ReportFailure_GetLastError@$0A@@details@wil@@YAKPEAXIPEBD110@Z",
+    "prototype": "void __fastcall __noreturn(wil::details *, __int64, __int64, const char *, int, char *)",
+    "rank_score": 95,
+    "size": 120,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil::details::ReportFailure_GetLastError<3>(void *,uint,char const *,char const *,char const *,void *)",
+    "ea": "0x1800030c0",
+    "function_file": "functions/1800030c0_wil_details_ReportFailure_GetLastError_3_void_uint_char_const_char_const_char_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\internal\\sdk\\inc\\wil\\opensource\\wil\\resource.h",
+      "onecore\\internal\\sdk\\inc\\wil\\opensource\\wil\\resource.h"
+    ],
+    "name": "??$ReportFailure_GetLastError@$02@details@wil@@YAKPEAXIPEBD110@Z",
+    "prototype": "void __fastcall __noreturn(wil::details *, void *, __int64, const char *, int, char *)",
+    "rank_score": 86,
+    "size": 128,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Windows::Internal::DialogBlocking::Consts::ShutdownEventName(ulong)",
+    "ea": "0x18000ab20",
+    "function_file": "functions/18000ab20_Windows_Internal_DialogBlocking_Consts_ShutdownEventName_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "base\\embedded\\sys\\dialogblocking\\common\\lib\\constants.cpp"
+    ],
+    "name": "?ShutdownEventName@Consts@DialogBlocking@Internal@Windows@@SA?AV?$NativeString@V?$CoTaskMemPolicy@G@Internal@Windows@@@34@K@Z",
+    "prototype": "_QWORD *__fastcall(_QWORD *, unsigned int)",
+    "rank_score": 74,
+    "size": 106,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Windows::Internal::AssignedAccess::AAManagerHelper::GetAssignedAccessConfiguration(Windows::Internal::AssignedAccess::IAssignedAccessConfiguration * *)",
+    "ea": "0x18000be24",
+    "function_file": "functions/18000be24_Windows_Internal_AssignedAccess_AAManagerHelper_GetAssignedAccessConfiguration_Windows_Internal_AssignedAccess.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "shellcommondesktopbase\\base\\embedded\\sys\\lockdown\\config\\lib\\aamanagerhelper.cpp"
+    ],
+    "name": "?GetAssignedAccessConfiguration@AAManagerHelper@AssignedAccess@Internal@Windows@@AEAAJPEAPEAUIAssignedAccessConfiguration@234@@Z",
+    "prototype": "__int64 __fastcall(Windows::Internal::AssignedAccess::AAManagerHelper *this, struct Windows::Internal::AssignedAccess::IAssignedAccessConfiguration **)",
+    "rank_score": 64,
+    "size": 97,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil::details::in1diag3::_Log_Hr(void *,uint,char const *,long)",
+    "ea": "0x180007d38",
+    "function_file": "functions/180007d38_wil_details_in1diag3_Log_Hr_void_uint_char_const_long.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\internal\\com\\inc\\comservicehelper.h"
+    ],
+    "name": "?_Log_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z",
+    "prototype": "void __fastcall(wil::details::in1diag3 *this, void *, __int64, const char *)",
+    "rank_score": 62,
+    "size": 54,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil::details::ReportFailure_Win32<1>(void *,uint,char const *,char const *,char const *,void *,ulong)",
+    "ea": "0x18000afa8",
+    "function_file": "functions/18000afa8_wil_details_ReportFailure_Win32_1_void_uint_char_const_char_const_char_const_void_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "shellcommondesktopbase\\base\\embedded\\sys\\lockdown\\inc\\persistentlocationhelper.h"
+    ],
+    "name": "??$ReportFailure_Win32@$00@details@wil@@YAJPEAXIPEBD110K@Z",
+    "prototype": "__int64 __fastcall(__int64, int, __int64, __int64, int, __int64, wil::details *)",
+    "rank_score": 54,
+    "size": 112,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil::details::ReportFailure_Hr<3>(void *,uint,char const *,char const *,char const *,void *,long,wil::FailureFlags)",
+    "ea": "0x1800032b4",
+    "function_file": "functions/1800032b4_wil_details_ReportFailure_Hr_3_void_uint_char_const_char_const_char_const_void_long_wil_FailureFlags.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\internal\\sdk\\inc\\wil\\opensource\\wil\\resource.h"
+    ],
+    "name": "??$ReportFailure_Hr@$02@details@wil@@YAXPEAXIPEBD110JW4FailureFlags@1@@Z",
+    "prototype": "void __fastcall __noreturn(__int64, __int64, __int64, __int64, int, __int64)",
+    "rank_score": 44,
+    "size": 93,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Microsoft::WRL::Details::OutOfProcModuleBase<Windows::Internal::SvcHostModule>::MethodReleaseNotifier<Windows::Internal::Service<DialogBlockingService,1,Windows::Internal::ServiceModuleBase::SecurityPolicyEveryoneLocal,2,Windows::Internal::DefaultServerDescriptor>>::`scalar deleting destructor'(uint)",
+    "ea": "0x1800043a0",
+    "function_file": "functions/1800043a0_Microsoft_WRL_Details_OutOfProcModuleBase_Windows_Internal_SvcHostModule_MethodReleaseNotifier_Windows_Interna.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_G?$MethodReleaseNotifier@V?$Service@VDialogBlockingService@@$00USecurityPolicyEveryoneLocal@ServiceModuleBase@Internal@Windows@@$01UDefaultServerDescriptor@45@@Internal@Windows@@@?$OutOfProcModuleBase@VSvcHostModule@Internal@Windows@@@Details@WRL@Microsoft@@UEAAPEAXI@Z",
+    "prototype": "_QWORD *__fastcall(_QWORD *, char)",
+    "rank_score": 42,
+    "size": 43,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil::details::in1diag3::_Throw_NullAlloc(void *,uint,char const *)",
+    "ea": "0x180009588",
+    "function_file": "functions/180009588_wil_details_in1diag3_Throw_NullAlloc_void_uint_char_const.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\internal\\sdk\\inc\\wil\\opensource\\wil\\resource.h"
+    ],
+    "name": "?_Throw_NullAlloc@in1diag3@details@wil@@YAXPEAXIPEBD@Z",
+    "prototype": "void __fastcall __noreturn(wil::details::in1diag3 *this, void *, __int64, const char *)",
+    "rank_score": 42,
+    "size": 40,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_uninitialize_c",
+    "ea": "0x1800017bc",
+    "function_file": "functions/1800017bc_scrt_dllmain_uninitialize_c.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_uninitialize_c",
+    "prototype": "int()",
+    "rank_score": 36,
+    "size": 48,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 69,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x18000e010",
+    "function_file": "functions/18000e010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 35,
+    "demangled": "operator delete(void *,unsigned __int64)",
+    "ea": "0x180001644",
+    "function_file": "functions/180001644_operator_delete_void_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??3@YAXPEAX_K@Z",
+    "prototype": "void __fastcall(void *Block)",
+    "rank_score": 36,
+    "size": 5,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Microsoft::WRL::Details::OutOfProcModuleBase<Windows::Internal::ServiceModule>::`vector deleting destructor'(uint)",
+    "ea": "0x1800044a0",
+    "function_file": "functions/1800044a0_Microsoft_WRL_Details_OutOfProcModuleBase_Windows_Internal_ServiceModule_vector_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_E?$OutOfProcModuleBase@VServiceModule@Internal@Windows@@@Details@WRL@Microsoft@@UEAAPEAXI@Z",
+    "prototype": "Microsoft::WRL::Details *__fastcall(Microsoft::WRL::Details *, __int64, const unsigned __int16 *, bool)",
+    "rank_score": 33,
+    "size": 52,
+    "tags": [
+      "file_ops",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Microsoft::WRL::Module<1,Windows::Internal::ServiceModule>::`vector deleting destructor'(uint)",
+    "ea": "0x1800043e0",
+    "function_file": "functions/1800043e0_Microsoft_WRL_Module_1_Windows_Internal_ServiceModule_vector_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_E?$Module@$00VServiceModule@Internal@Windows@@@WRL@Microsoft@@UEAAPEAXI@Z",
+    "prototype": "Microsoft::WRL::Details *__fastcall(Microsoft::WRL::Details *, char, const unsigned __int16 *, bool)",
+    "rank_score": 33,
+    "size": 85,
+    "tags": [
+      "file_ops",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartup",
+    "ea": "0x1800015d0",
+    "function_file": "functions/1800015d0_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartup",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 33,
+    "size": 61,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Microsoft::WRL::Details::OutOfProcModuleBase<Windows::Internal::ServiceModule>::ReleaseNotifier::`vector deleting destructor'(uint)",
+    "ea": "0x180004520",
+    "function_file": "functions/180004520_Microsoft_WRL_Details_OutOfProcModuleBase_Windows_Internal_ServiceModule_ReleaseNotifier_vector_deleting_destr.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_EReleaseNotifier@?$OutOfProcModuleBase@VServiceModule@Internal@Windows@@@Details@WRL@Microsoft@@UEAAPEAXI@Z",
+    "prototype": "_QWORD *__fastcall(_QWORD *, char)",
+    "rank_score": 32,
+    "size": 43,
+    "tags": [
+      "file_ops",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_Windows::Internal::DialogBlocking::HookProcess::BuildHookLaunchCommand_::_1_::dtor$1",
+    "ea": "0x18000cd49",
+    "function_file": "functions/18000cd49_Windows_Internal_DialogBlocking_HookProcess_BuildHookLaunchCommand_1_dtor_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_Windows::Internal::DialogBlocking::HookProcess::BuildHookLaunchCommand_::_1_::dtor$1",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 32,
+    "size": 38,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_dynamic_atexit_destructor_for__Microsoft::WRL::Details::StaticStorage_Microsoft::WRL::Details::OutOfProcModuleBase_Windows::Internal::ServiceModule_::MethodReleaseNotifier_Windows::Internal::Service_DialogBlockingService_1_Windows::Internal::ServiceModuleBase::SecurityPolicyEveryoneLocal_2_Windows::Internal::DefaultServerDescriptor____3_Windows::Internal::ServiceModule_::instance___",
+    "ea": "0x18000cf20",
+    "function_file": "functions/18000cf20_dynamic_atexit_destructor_for_Microsoft_WRL_Details_StaticStorage_Microsoft_WRL_Details_OutOfProcModuleBase_Wi.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_dynamic_atexit_destructor_for__Microsoft::WRL::Details::StaticStorage_Microsoft::WRL::Details::OutOfProcModuleBase_Windows::Internal::ServiceModule_::MethodReleaseNotifier_Windows::Internal::Service_DialogBlockingService_1_Windows::Internal::ServiceModuleBase::SecurityPolicyEveryoneLocal_2_Windows::Internal::DefaultServerDescriptor____3_Windows::Internal::ServiceModule_::instance___",
+    "prototype": "__int64()",
+    "rank_score": 32,
+    "size": 49,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_dynamic_atexit_destructor_for__Microsoft::WRL::Details::StaticStorage_Microsoft::WRL::Details::OutOfProcModuleBase_Windows::Internal::SvcHostModule_::MethodReleaseNotifier_Windows::Internal::Service_DialogBlockingService_1_Windows::Internal::ServiceModuleBase::SecurityPolicyEveryoneLocal_2_Windows::Internal::DefaultServerDescriptor____3_Windows::Internal::SvcHostModule_::instance___",
+    "ea": "0x18000cf60",
+    "function_file": "functions/18000cf60_dynamic_atexit_destructor_for_Microsoft_WRL_Details_StaticStorage_Microsoft_WRL_Details_OutOfProcModuleBase_Wi.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_dynamic_atexit_destructor_for__Microsoft::WRL::Details::StaticStorage_Microsoft::WRL::Details::OutOfProcModuleBase_Windows::Internal::SvcHostModule_::MethodReleaseNotifier_Windows::Internal::Service_DialogBlockingService_1_Windows::Internal::ServiceModuleBase::SecurityPolicyEveryoneLocal_2_Windows::Internal::DefaultServerDescriptor____3_Windows::Internal::SvcHostModule_::instance___",
+    "prototype": "__int64()",
+    "rank_score": 32,
+    "size": 49,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft::WRL::Details::OutOfProcModuleBase<Windows::Internal::ServiceModule>::MethodReleaseNotifier<Windows::Internal::Service<DialogBlockingService,1,Windows::Internal::ServiceModuleBase::SecurityPolicyEveryoneLocal,2,Windows::Internal::DefaultServerDescriptor>>::Invoke(void)",
+    "ea": "0x180005d90",
+    "function_file": "functions/180005d90_Microsoft_WRL_Details_OutOfProcModuleBase_Windows_Internal_ServiceModule_MethodReleaseNotifier_Windows_Interna.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Invoke@?$MethodReleaseNotifier@V?$Service@VDialogBlockingService@@$00USecurityPolicyEveryoneLocal@ServiceModuleBase@Internal@Windows@@$01UDefaultServerDescriptor@45@@Internal@Windows@@@?$OutOfProcModuleBase@VServiceModule@Internal@Windows@@@Details@WRL@Microsoft@@UEAAXXZ",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 31,
+    "size": 23,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_Windows::Internal::ServiceModuleBase::Initialize_Windows::Internal::ServiceModuleBase::SecurityPolicyEveryoneLocal_2_Windows::Internal::DefaultServerDescriptor__::_1_::dtor$0",
+    "ea": "0x18000c958",
+    "function_file": "functions/18000c958_Windows_Internal_ServiceModuleBase_Initialize_Windows_Internal_ServiceModuleBase_SecurityPolicyEveryoneLocal_2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_Windows::Internal::ServiceModuleBase::Initialize_Windows::Internal::ServiceModuleBase::SecurityPolicyEveryoneLocal_2_Windows::Internal::DefaultServerDescriptor__::_1_::dtor$0",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 31,
+    "size": 12,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_Windows::Internal::ServiceModuleBase::Initialize_Windows::Internal::ServiceModuleBase::SecurityPolicyEveryoneLocal_2_Windows::Internal::DefaultServerDescriptor__::_1_::dtor$1",
+    "ea": "0x18000c96a",
+    "function_file": "functions/18000c96a_Windows_Internal_ServiceModuleBase_Initialize_Windows_Internal_ServiceModuleBase_SecurityPolicyEveryoneLocal_2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_Windows::Internal::ServiceModuleBase::Initialize_Windows::Internal::ServiceModuleBase::SecurityPolicyEveryoneLocal_2_Windows::Internal::DefaultServerDescriptor__::_1_::dtor$1",
+    "prototype": "_QWORD *__fastcall(__int64, __int64)",
+    "rank_score": 31,
+    "size": 12,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_dynamic_initializer_for__Microsoft::WRL::Details::StaticStorage_Microsoft::WRL::Details::OutOfProcModuleBase_Windows::Internal::ServiceModule_::MethodReleaseNotifier_Windows::Internal::Service_DialogBlockingService_1_Windows::Internal::ServiceModuleBase::SecurityPolicyEveryoneLocal_2_Windows::Internal::DefaultServerDescriptor____3_Windows::Internal::ServiceModule_::instance___",
+    "ea": "0x180001010",
+    "function_file": "functions/180001010_dynamic_initializer_for_Microsoft_WRL_Details_StaticStorage_Microsoft_WRL_Details_OutOfProcModuleBase_Windows_.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_dynamic_initializer_for__Microsoft::WRL::Details::StaticStorage_Microsoft::WRL::Details::OutOfProcModuleBase_Windows::Internal::ServiceModule_::MethodReleaseNotifier_Windows::Internal::Service_DialogBlockingService_1_Windows::Internal::ServiceModuleBase::SecurityPolicyEveryoneLocal_2_Windows::Internal::DefaultServerDescriptor____3_Windows::Internal::ServiceModule_::instance___",
+    "prototype": "int()",
+    "rank_score": 31,
+    "size": 12,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_dynamic_initializer_for__Microsoft::WRL::Details::StaticStorage_Microsoft::WRL::Details::OutOfProcModuleBase_Windows::Internal::SvcHostModule_::MethodReleaseNotifier_Windows::Internal::Service_DialogBlockingService_1_Windows::Internal::ServiceModuleBase::SecurityPolicyEveryoneLocal_2_Windows::Internal::DefaultServerDescriptor____3_Windows::Internal::SvcHostModule_::instance___",
+    "ea": "0x180001030",
+    "function_file": "functions/180001030_dynamic_initializer_for_Microsoft_WRL_Details_StaticStorage_Microsoft_WRL_Details_OutOfProcModuleBase_Windows_.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_dynamic_initializer_for__Microsoft::WRL::Details::StaticStorage_Microsoft::WRL::Details::OutOfProcModuleBase_Windows::Internal::SvcHostModule_::MethodReleaseNotifier_Windows::Internal::Service_DialogBlockingService_1_Windows::Internal::ServiceModuleBase::SecurityPolicyEveryoneLocal_2_Windows::Internal::DefaultServerDescriptor____3_Windows::Internal::SvcHostModule_::instance___",
+    "prototype": "int()",
+    "rank_score": 31,
+    "size": 12,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 17,
+    "demangled": "__security_check_cookie",
+    "ea": "0x180001620",
+    "function_file": "functions/180001620_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 29,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "dllmain_dispatch",
+    "ea": "0x180001494",
+    "function_file": "functions/180001494_dllmain_dispatch.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_dispatch",
+    "prototype": "__int64 __fastcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 28,
+    "size": 295,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "DialogBlockingService::ServiceStarted(void)",
+    "ea": "0x180006890",
+    "function_file": "functions/180006890_DialogBlockingService_ServiceStarted_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ServiceStarted@DialogBlockingService@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(DialogBlockingService *__hidden this)",
+    "rank_score": 27,
+    "size": 208,
+    "tags": [
+      "file_ops",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_after_initialize_c",
+    "ea": "0x1800016d4",
+    "function_file": "functions/1800016d4_scrt_dllmain_after_initialize_c.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_after_initialize_c",
+    "prototype": "char()",
+    "rank_score": 27,
+    "size": 52,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 1,
+    "demangled": "dllmain_crt_process_attach",
+    "ea": "0x180001308",
+    "function_file": "functions/180001308_dllmain_crt_process_attach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_crt_process_attach",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 27,
+    "size": 250,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "dllmain_crt_dispatch",
+    "ea": "0x1800012b0",
+    "function_file": "functions/1800012b0_dllmain_crt_dispatch.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_crt_dispatch",
+    "prototype": "__int64 __fastcall(__int64, int, __int64)",
+    "rank_score": 26,
+    "size": 80,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "Microsoft::WRL::Details::OutOfProcModuleBase<Windows::Internal::ServiceModule>::~OutOfProcModuleBase<Windows::Internal::ServiceModule>(void)",
+    "ea": "0x180003c6c",
+    "function_file": "functions/180003c6c_Microsoft_WRL_Details_OutOfProcModuleBase_Windows_Internal_ServiceModule_OutOfProcModuleBase_Windows_Internal_.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$OutOfProcModuleBase@VServiceModule@Internal@Windows@@@Details@WRL@Microsoft@@UEAA@XZ",
+    "prototype": "bool __fastcall(Microsoft::WRL::Details *this, __int64, const unsigned __int16 *, bool)",
+    "rank_score": 25,
+    "size": 105,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x18000c6a8",
+    "function_file": "functions/18000c6a8_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 24,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 6,
+    "demangled": "Windows::Internal::DialogBlocking::HookMgr::~HookMgr(void)",
+    "ea": "0x18000899c",
+    "function_file": "functions/18000899c_Windows_Internal_DialogBlocking_HookMgr_HookMgr_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1HookMgr@DialogBlocking@Internal@Windows@@QEAA@XZ",
+    "prototype": "void __fastcall(Windows::Internal::DialogBlocking::HookProcess **this)",
+    "rank_score": 22,
+    "size": 181,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_dynamic_atexit_destructor_for__Microsoft::WRL::Details::StaticStorage_Windows::Internal::ServiceModule_1_int_::instance___",
+    "ea": "0x18000cfa0",
+    "function_file": "functions/18000cfa0_dynamic_atexit_destructor_for_Microsoft_WRL_Details_StaticStorage_Windows_Internal_ServiceModule_1_int_instanc.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_dynamic_atexit_destructor_for__Microsoft::WRL::Details::StaticStorage_Windows::Internal::ServiceModule_1_int_::instance___",
+    "prototype": "__int64()",
+    "rank_score": 22,
+    "size": 49,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Microsoft::WRL::Details::OutOfProcModuleBase<Windows::Internal::ServiceModule>::GetObjectCount(void)",
+    "ea": "0x1800057e0",
+    "function_file": "functions/1800057e0_Microsoft_WRL_Details_OutOfProcModuleBase_Windows_Internal_ServiceModule_GetObjectCount_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetObjectCount@?$OutOfProcModuleBase@VServiceModule@Internal@Windows@@@Details@WRL@Microsoft@@EEBAKXZ",
+    "prototype": "__int64()",
+    "rank_score": 21,
+    "size": 3,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::ServiceModule::ConnectCallback(void)",
+    "ea": "0x180004ab0",
+    "function_file": "functions/180004ab0_Windows_Internal_ServiceModule_ConnectCallback_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ConnectCallback@ServiceModule@Internal@Windows@@UEAAJXZ",
+    "prototype": "__int64 __fastcall(Windows::Internal::ServiceModule *__hidden this)",
+    "rank_score": 21,
+    "size": 13,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::ServiceModuleBase::ConnectCallbackThunk(tagComCallData *)",
+    "ea": "0x180004ad0",
+    "function_file": "functions/180004ad0_Windows_Internal_ServiceModuleBase_ConnectCallbackThunk_tagComCallData.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ConnectCallbackThunk@ServiceModuleBase@Internal@Windows@@SAJPEAUtagComCallData@@@Z",
+    "prototype": "__int64 __fastcall(struct tagComCallData *)",
+    "rank_score": 21,
+    "size": 11,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::ServiceModuleBase::DisconnectCallbackThunk(tagComCallData *)",
+    "ea": "0x180004e30",
+    "function_file": "functions/180004e30_Windows_Internal_ServiceModuleBase_DisconnectCallbackThunk_tagComCallData.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DisconnectCallbackThunk@ServiceModuleBase@Internal@Windows@@SAJPEAUtagComCallData@@@Z",
+    "prototype": "__int64 __fastcall(struct tagComCallData *)",
+    "rank_score": 21,
+    "size": 12,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_DialogBlockingService::ServiceStarted_::_1_::dtor$1",
+    "ea": "0x18000cca2",
+    "function_file": "functions/18000cca2_DialogBlockingService_ServiceStarted_1_dtor_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DialogBlockingService::ServiceStarted_::_1_::dtor$1",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 21,
+    "size": 29,
+    "tags": [
+      "file_ops",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_Windows::Internal::DialogBlocking::ServiceSessions::logonUser_::_1_::dtor$16",
+    "ea": "0x18000ceae",
+    "function_file": "functions/18000ceae_Windows_Internal_DialogBlocking_ServiceSessions_logonUser_1_dtor_16.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_Windows::Internal::DialogBlocking::ServiceSessions::logonUser_::_1_::dtor$16",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 21,
+    "size": 32,
+    "tags": [
+      "file_ops",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_Windows::Internal::DialogBlocking::ServiceSessions::logonUser_::_1_::dtor$3",
+    "ea": "0x18000ce78",
+    "function_file": "functions/18000ce78_Windows_Internal_DialogBlocking_ServiceSessions_logonUser_1_dtor_3.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_Windows::Internal::DialogBlocking::ServiceSessions::logonUser_::_1_::dtor$3",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 21,
+    "size": 12,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_Windows::Internal::DialogBlocking::ServiceSessions::logonUser_::_1_::dtor$4",
+    "ea": "0x18000ce8a",
+    "function_file": "functions/18000ce8a_Windows_Internal_DialogBlocking_ServiceSessions_logonUser_1_dtor_4.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_Windows::Internal::DialogBlocking::ServiceSessions::logonUser_::_1_::dtor$4",
+    "prototype": "HLOCAL __fastcall(__int64, __int64)",
+    "rank_score": 21,
+    "size": 12,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_dynamic_initializer_for__Microsoft::WRL::Details::StaticStorage_Windows::Internal::ServiceModule_1_int_::instance___",
+    "ea": "0x180001050",
+    "function_file": "functions/180001050_dynamic_initializer_for_Microsoft_WRL_Details_StaticStorage_Windows_Internal_ServiceModule_1_int_instance.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_dynamic_initializer_for__Microsoft::WRL::Details::StaticStorage_Windows::Internal::ServiceModule_1_int_::instance___",
+    "prototype": "int()",
+    "rank_score": 21,
+    "size": 12,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "dllmain_crt_process_detach",
+    "ea": "0x180001408",
+    "function_file": "functions/180001408_dllmain_crt_process_detach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_crt_process_detach",
+    "prototype": "__int64 __fastcall(char)",
+    "rank_score": 21,
+    "size": 131,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "std::_Tree<std::_Tmap_traits<ulong,std::unique_ptr<Windows::Internal::DialogBlocking::HookMgr,std::default_delete<Windows::Internal::DialogBlocking::HookMgr>>,std::less<ulong>,std::allocator<std::pair<ulong const,std::unique_ptr<Windows::Internal::DialogBlocking::HookMgr,std::default_delete<Windows::Internal::DialogBlocking::HookMgr>>>>,0>>::erase(ulong const &)",
+    "ea": "0x18000a328",
+    "function_file": "functions/18000a328_std_Tree_std_Tmap_traits_ulong_std_unique_ptr_Windows_Internal_DialogBlocking_HookMgr_std_default_delete_Windo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?erase@?$_Tree@V?$_Tmap_traits@KV?$unique_ptr@VHookMgr@DialogBlocking@Internal@Windows@@U?$default_delete@VHookMgr@DialogBlocking@Internal@Windows@@@std@@@std@@U?$less@K@2@V?$allocator@U?$pair@$$CBKV?$unique_ptr@VHookMgr@DialogBlocking@Internal@Windows@@U?$default_delete@VHookMgr@DialogBlocking@Internal@Windows@@@std@@@std@@@std@@@2@$0A@@std@@@std@@QEAA_KAEBK@Z",
+    "prototype": "__int64 __fastcall(_QWORD *, unsigned int *)",
+    "rank_score": 21,
+    "size": 521,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft::WRL::Module<1,Windows::Internal::ServiceModule>::DecrementObjectCount(void)",
+    "ea": "0x180004d30",
+    "function_file": "functions/180004d30_Microsoft_WRL_Module_1_Windows_Internal_ServiceModule_DecrementObjectCount_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DecrementObjectCount@?$Module@$00VServiceModule@Internal@Windows@@@WRL@Microsoft@@UEAAKXZ",
+    "prototype": "__int64()",
+    "rank_score": 20,
+    "size": 14,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "operator delete(void *)",
+    "ea": "0x180001c90",
+    "function_file": "functions/180001c90_operator_delete_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??3@YAXPEAX@Z",
+    "prototype": "void __cdecl(void *Block)",
+    "rank_score": 19,
+    "size": 5,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "Windows::Internal::AssignedAccess::AssignedAccessConfigStoreHelper::DoesGroupConfigExist(void)",
+    "ea": "0x18000b3c4",
+    "function_file": "functions/18000b3c4_Windows_Internal_AssignedAccess_AssignedAccessConfigStoreHelper_DoesGroupConfigExist_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DoesGroupConfigExist@AssignedAccessConfigStoreHelper@AssignedAccess@Internal@Windows@@QEAA_NXZ",
+    "prototype": "char __fastcall(Windows::Internal::AssignedAccess::AssignedAccessConfigStoreHelper *this)",
+    "rank_score": 18,
+    "size": 332,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "Windows::Internal::AssignedAccess::AssignedAccessConfigStoreHelper::DoesTargetProfileExist(ushort const *)",
+    "ea": "0x18000b518",
+    "function_file": "functions/18000b518_Windows_Internal_AssignedAccess_AssignedAccessConfigStoreHelper_DoesTargetProfileExist_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DoesTargetProfileExist@AssignedAccessConfigStoreHelper@AssignedAccess@Internal@Windows@@QEAA_NPEBG@Z",
+    "prototype": "char __fastcall(Windows::Internal::AssignedAccess::AssignedAccessConfigStoreHelper *this, const unsigned __int16 *)",
+    "rank_score": 18,
+    "size": 352,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "Windows::Internal::AssignedAccess::AssignedAccessConfigStoreHelper::IsGlobalProfileConfigured(void)",
+    "ea": "0x18000b8ac",
+    "function_file": "functions/18000b8ac_Windows_Internal_AssignedAccess_AssignedAccessConfigStoreHelper_IsGlobalProfileConfigured_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IsGlobalProfileConfigured@AssignedAccessConfigStoreHelper@AssignedAccess@Internal@Windows@@QEAA_NXZ",
+    "prototype": "char __fastcall(Windows::Internal::AssignedAccess::AssignedAccessConfigStoreHelper *this)",
+    "rank_score": 18,
+    "size": 332,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 12,
+    "demangled": "operator new(unsigned __int64)",
+    "ea": "0x180001650",
+    "function_file": "functions/180001650_operator_new_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??2@YAPEAX_K@Z",
+    "prototype": "void *__fastcall(size_t Size)",
+    "rank_score": 17,
+    "size": 60,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 13,
+    "demangled": "wil::details::HrToNtStatus(long)",
+    "ea": "0x180005b68",
+    "function_file": "functions/180005b68_wil_details_HrToNtStatus_long.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?HrToNtStatus@details@wil@@YAJJ@Z",
+    "prototype": "__int64 __fastcall(wil::details *this)",
+    "rank_score": 17,
+    "size": 444,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 16,
+    "demangled": "wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)",
+    "ea": "0x180006804",
+    "function_file": "functions/180006804_wil_details_in1diag3_Return_Hr_void_uint_char_const_long.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Return_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z",
+    "prototype": "void __fastcall(wil::details::in1diag3 *this, void *, int, const char *)",
+    "rank_score": 17,
+    "size": 30,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "Windows::Internal::AssignedAccess::AssignedAccessConfigStoreV1::CreateInstance(void)",
+    "ea": "0x18000b2cc",
+    "function_file": "functions/18000b2cc_Windows_Internal_AssignedAccess_AssignedAccessConfigStoreV1_CreateInstance_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@AssignedAccessConfigStoreV1@AssignedAccess@Internal@Windows@@SA?AV?$unique_ptr@VAssignedAccessConfigStoreBase@AssignedAccess@Internal@Windows@@U?$default_delete@VAssignedAccessConfigStoreBase@AssignedAccess@Internal@Windows@@@wistd@@@wistd@@XZ",
+    "prototype": "Windows::Internal::AssignedAccess::AssignedAccessConfigStoreV1 **__fastcall(Windows::Internal::AssignedAccess::AssignedAccessConfigStoreV1 **)",
+    "rank_score": 16,
+    "size": 118,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "Windows::Internal::AssignedAccess::AssignedAccessConfigStoreV2::CreateInstance(void)",
+    "ea": "0x18000b348",
+    "function_file": "functions/18000b348_Windows_Internal_AssignedAccess_AssignedAccessConfigStoreV2_CreateInstance_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@AssignedAccessConfigStoreV2@AssignedAccess@Internal@Windows@@SA?AV?$unique_ptr@VAssignedAccessConfigStoreBase@AssignedAccess@Internal@Windows@@U?$default_delete@VAssignedAccessConfigStoreBase@AssignedAccess@Internal@Windows@@@wistd@@@wistd@@XZ",
+    "prototype": "Windows::Internal::AssignedAccess::AssignedAccessConfigStoreV1 **__fastcall(Windows::Internal::AssignedAccess::AssignedAccessConfigStoreV1 **)",
+    "rank_score": 16,
+    "size": 118,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "__scrt_is_ucrt_dll_in_use",
+    "ea": "0x180001f78",
+    "function_file": "functions/180001f78_scrt_is_ucrt_dll_in_use.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_is_ucrt_dll_in_use",
+    "prototype": "_BOOL8()",
+    "rank_score": 16,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "std::_Tree_val<std::_Tree_simple_types<std::pair<ulong const,std::unique_ptr<Windows::Internal::DialogBlocking::HookMgr,std::default_delete<Windows::Internal::DialogBlocking::HookMgr>>>>>::_Erase_tree<std::allocator<std::_Tree_node<std::pair<ulong const,std::unique_ptr<Windows::Internal::DialogBlocking::HookMgr,std::default_delete<Windows::Internal::DialogBlocking::HookMgr>>>,void *>>>(std::allocator<std::_Tree_node<std::pair<ulong const,std::unique_ptr<Windows::Internal::DialogBlocking::HookMgr,std::default_delete<Windows::Internal::DialogBlocking::HookMgr>>>,void *>> &,std::_Tree_node<std::pair<ulong const,std::unique_ptr<Windows::Internal::DialogBlocking::HookMgr,std::default_delete<Windows::Internal::DialogBlocking::HookMgr>>>,void *> *)",
+    "ea": "0x18000396c",
+    "function_file": "functions/18000396c_std_Tree_val_std_Tree_simple_types_std_pair_ulong_const_std_unique_ptr_Windows_Internal_DialogBlocking_HookMgr.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$_Erase_tree@V?$allocator@U?$_Tree_node@U?$pair@$$CBKV?$unique_ptr@VHookMgr@DialogBlocking@Internal@Windows@@U?$default_delete@VHookMgr@DialogBlocking@Internal@Windows@@@std@@@std@@@std@@PEAX@std@@@std@@@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBKV?$unique_ptr@VHookMgr@DialogBlocking@Internal@Windows@@U?$default_delete@VHookMgr@DialogBlocking@Internal@Windows@@@std@@@std@@@std@@@std@@@std@@QEAAXAEAV?$allocator@U?$_Tree_node@U?$pair@$$CBKV?$unique_ptr@VHookMgr@DialogBlocking@Internal@Windows@@U?$default_delete@VHookMgr@DialogBlocking@Internal@Windows@@@std@@@std@@@std@@PEAX@std@@@1@PEAU?$_Tree_node@U?$pair@$$CBKV?$unique_ptr@VHookMgr@DialogBlocking@Internal@Windows@@U?$default_delete@VHookMgr@DialogBlocking@Internal@Windows@@@std@@@std@@@std@@PEAX@1@@Z",
+    "prototype": "void __fastcall(__int64, __int64, __int64)",
+    "rank_score": 16,
+    "size": 108,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "std::unique_ptr<Windows::Internal::DialogBlocking::HookMgr,std::default_delete<Windows::Internal::DialogBlocking::HookMgr>>::~unique_ptr<Windows::Internal::DialogBlocking::HookMgr,std::default_delete<Windows::Internal::DialogBlocking::HookMgr>>(void)",
+    "ea": "0x180003f84",
+    "function_file": "functions/180003f84_std_unique_ptr_Windows_Internal_DialogBlocking_HookMgr_std_default_delete_Windows_Internal_DialogBlocking_Hook.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$unique_ptr@VHookMgr@DialogBlocking@Internal@Windows@@U?$default_delete@VHookMgr@DialogBlocking@Internal@Windows@@@std@@@std@@QEAA@XZ",
+    "prototype": "void __fastcall(Windows::Internal::DialogBlocking::HookMgr **)",
+    "rank_score": 16,
+    "size": 41,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_exception_filter",
+    "ea": "0x18000176c",
+    "function_file": "functions/18000176c_scrt_dllmain_exception_filter.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_exception_filter",
+    "prototype": "int __fastcall(__int64, int, __int64, void (__fastcall *)(__int64, _QWORD, __int64), unsigned int ExceptionNum, struct _EXCEPTION_POINTERS *ExceptionPtr)",
+    "rank_score": 15,
+    "size": 72,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "_vsnwprintf",
+    "ea": "0x1800020e8",
+    "function_file": "functions/1800020e8_vsnwprintf.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_vsnwprintf",
+    "prototype": "int __cdecl(wchar_t *Buffer, size_t BufferCount, const wchar_t *Format, va_list Args)",
+    "rank_score": 15,
+    "size": 78,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "std::_Tree<std::_Tmap_traits<ulong,std::unique_ptr<Windows::Internal::DialogBlocking::HookMgr,std::default_delete<Windows::Internal::DialogBlocking::HookMgr>>,std::less<ulong>,std::allocator<std::pair<ulong const,std::unique_ptr<Windows::Internal::DialogBlocking::HookMgr,std::default_delete<Windows::Internal::DialogBlocking::HookMgr>>>>,0>>::~_Tree<std::_Tmap_traits<ulong,std::unique_ptr<Windows::Internal::DialogBlocking::HookMgr,std::default_delete<Windows::Internal::DialogBlocking::HookMgr>>,std::less<ulong>,std::allocator<std::pair<ulong const,std::unique_ptr<Windows::Internal::DialogBlocking::HookMgr,std::default_delete<Windows::Internal::DialogBlocking::HookMgr>>>>,0>>(void)",
+    "ea": "0x180003e18",
+    "function_file": "functions/180003e18_std_Tree_std_Tmap_traits_ulong_std_unique_ptr_Windows_Internal_DialogBlocking_HookMgr_std_default_delete_Windo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$_Tree@V?$_Tmap_traits@KV?$unique_ptr@VHookMgr@DialogBlocking@Internal@Windows@@U?$default_delete@VHookMgr@DialogBlocking@Internal@Windows@@@std@@@std@@U?$less@K@2@V?$allocator@U?$pair@$$CBKV?$unique_ptr@VHookMgr@DialogBlocking@Internal@Windows@@U?$default_delete@VHookMgr@DialogBlocking@Internal@Windows@@@std@@@std@@@std@@@2@$0A@@std@@@std@@QEAA@XZ",
+    "prototype": "void __fastcall(void **)",
+    "rank_score": 15,
+    "size": 112,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "std::unique_ptr<Windows::Internal::DialogBlocking::HookProcess,std::default_delete<Windows::Internal::DialogBlocking::HookProcess>>::~unique_ptr<Windows::Internal::DialogBlocking::HookProcess,std::default_delete<Windows::Internal::DialogBlocking::HookProcess>>(void)",
+    "ea": "0x18000896c",
+    "function_file": "functions/18000896c_std_unique_ptr_Windows_Internal_DialogBlocking_HookProcess_std_default_delete_Windows_Internal_DialogBlocking_.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$unique_ptr@VHookProcess@DialogBlocking@Internal@Windows@@U?$default_delete@VHookProcess@DialogBlocking@Internal@Windows@@@std@@@std@@QEAA@XZ",
+    "prototype": "void __fastcall(Windows::Internal::DialogBlocking::HookProcess **)",
+    "rank_score": 15,
+    "size": 41,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "DialogBlockingService::OnSessionUserChanged(ulong,ulong,unsigned __int64)",
+    "ea": "0x180006248",
+    "function_file": "functions/180006248_DialogBlockingService_OnSessionUserChanged_ulong_ulong_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?OnSessionUserChanged@DialogBlockingService@@QEAAXKK_K@Z",
+    "prototype": "void __fastcall(Windows::Internal::DialogBlocking::ServiceSessions **this, int, unsigned int)",
+    "rank_score": 14,
+    "size": 46,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wistd::unique_ptr<_TOKEN_USER,wil::details::token_info_deleter>::~unique_ptr<_TOKEN_USER,wil::details::token_info_deleter>(void)",
+    "ea": "0x1800099b0",
+    "function_file": "functions/1800099b0_wistd_unique_ptr_TOKEN_USER_wil_details_token_info_deleter_unique_ptr_TOKEN_USER_wil_details_token_info_delete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$unique_ptr@U_TOKEN_USER@@Utoken_info_deleter@details@wil@@@wistd@@QEAA@XZ",
+    "prototype": "void __fastcall(void **)",
+    "rank_score": 14,
+    "size": 32,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Microsoft::WRL::ComPtr<IGlobalOptions>::~ComPtr<IGlobalOptions>(void)",
+    "ea": "0x180003c3c",
+    "function_file": "functions/180003c3c_Microsoft_WRL_ComPtr_IGlobalOptions_ComPtr_IGlobalOptions_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$ComPtr@UIGlobalOptions@@@WRL@Microsoft@@QEAA@XZ",
+    "prototype": "_QWORD *__fastcall(_QWORD *)",
+    "rank_score": 13,
+    "size": 40,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_crt_thread_attach",
+    "ea": "0x180001720",
+    "function_file": "functions/180001720_scrt_dllmain_crt_thread_attach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_crt_thread_attach",
+    "prototype": "char()",
+    "rank_score": 13,
+    "size": 40,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "std::_Alloc_construct_ptr<std::allocator<std::_Tree_node<std::pair<ulong const,std::unique_ptr<Windows::Internal::DialogBlocking::HookMgr,std::default_delete<Windows::Internal::DialogBlocking::HookMgr>>>,void *>>>::~_Alloc_construct_ptr<std::allocator<std::_Tree_node<std::pair<ulong const,std::unique_ptr<Windows::Internal::DialogBlocking::HookMgr,std::default_delete<Windows::Internal::DialogBlocking::HookMgr>>>,void *>>>(void)",
+    "ea": "0x180009904",
+    "function_file": "functions/180009904_std_Alloc_construct_ptr_std_allocator_std_Tree_node_std_pair_ulong_const_std_unique_ptr_Windows_Internal_Dialo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$_Alloc_construct_ptr@V?$allocator@U?$_Tree_node@U?$pair@$$CBKV?$unique_ptr@VHookMgr@DialogBlocking@Internal@Windows@@U?$default_delete@VHookMgr@DialogBlocking@Internal@Windows@@@std@@@std@@@std@@PEAX@std@@@std@@@std@@QEAA@XZ",
+    "prototype": "void __fastcall(__int64)",
+    "rank_score": 13,
+    "size": 28,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "std::unique_ptr<ushort [0],std::default_delete<ushort [0]>>::~unique_ptr<ushort [0],std::default_delete<ushort [0]>>(void)",
+    "ea": "0x180008950",
+    "function_file": "functions/180008950_std_unique_ptr_ushort_0_std_default_delete_ushort_0_unique_ptr_ushort_0_std_default_delete_ushort_0_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$unique_ptr@$$BY0A@GU?$default_delete@$$BY0A@G@std@@@std@@QEAA@XZ",
+    "prototype": "void __fastcall(void **, unsigned __int64)",
+    "rank_score": 13,
+    "size": 22,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "?_Delete_this@?$_Ref_count_obj2@V?$unique_any_t@V?$event_t@V?$unique_storage@U?$resource_policy@PEAXP6AXPEAX@_E$1?CloseHandle@details@wil@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@Uerr_exception_policy@3@@wil@@@wil@@@std@@EEAAXXZ",
+    "ea": "0x1800093c0",
+    "function_file": "functions/1800093c0_Delete_this_Ref_count_obj2_V_unique_any_t_V_event_t_V_unique_storage_U_resource_policy_PEAXP6AXPEAX_E_1_CloseH.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Delete_this@?$_Ref_count_obj2@V?$unique_any_t@V?$event_t@V?$unique_storage@U?$resource_policy@PEAXP6AXPEAX@_E$1?CloseHandle@details@wil@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@Uerr_exception_policy@3@@wil@@@wil@@@std@@EEAAXXZ",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 12,
+    "size": 31,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_before_initialize_c",
+    "ea": "0x180001710",
+    "function_file": "functions/180001710_scrt_dllmain_before_initialize_c.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_before_initialize_c",
+    "prototype": "__int64()",
+    "rank_score": 12,
+    "size": 7,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_crt_thread_detach",
+    "ea": "0x180001750",
+    "function_file": "functions/180001750_scrt_dllmain_crt_thread_detach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_crt_thread_detach",
+    "prototype": "char()",
+    "rank_score": 12,
+    "size": 21,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_uninitialize_critical",
+    "ea": "0x1800017f4",
+    "function_file": "functions/1800017f4_scrt_dllmain_uninitialize_critical.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_uninitialize_critical",
+    "prototype": "__int64()",
+    "rank_score": 12,
+    "size": 20,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "initialize_msvcrt_compatibility",
+    "ea": "0x180001280",
+    "function_file": "functions/180001280_initialize_msvcrt_compatibility.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "initialize_msvcrt_compatibility",
+    "prototype": "__int64()",
+    "rank_score": 12,
+    "size": 29,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Windows::Internal::AssignedAccess::AssignedAccessConfigStoreV1::GetVersion(void)",
+    "ea": "0x18000b890",
+    "function_file": "functions/18000b890_Windows_Internal_AssignedAccess_AssignedAccessConfigStoreV1_GetVersion_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetVersion@AssignedAccessConfigStoreV1@AssignedAccess@Internal@Windows@@EEAAKXZ",
+    "prototype": "__int64 __fastcall(Windows::Internal::AssignedAccess::AssignedAccessConfigStoreV1 *this)",
+    "rank_score": 11,
+    "size": 6,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:Windows::Internal::ServiceModule::DecrementObjectCount`adjustor{40}' (void)",
+    "ea": "0x180004da0",
+    "function_file": "functions/180004da0_thunk_Windows_Internal_ServiceModule_DecrementObjectCount_adjustor_40_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DecrementObjectCount@ServiceModule@Internal@Windows@@WCI@EAAKXZ",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:Windows::Internal::ServiceModule::IncrementObjectCount`adjustor{40}' (void)",
+    "ea": "0x180005d60",
+    "function_file": "functions/180005d60_thunk_Windows_Internal_ServiceModule_IncrementObjectCount_adjustor_40_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IncrementObjectCount@ServiceModule@Internal@Windows@@WCI@EAAKXZ",
+    "prototype": "ULONG()",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:Windows::Internal::ServiceModule::`vector deleting destructor'`adjustor{40}' (uint)",
+    "ea": "0x180004380",
+    "function_file": "functions/180004380_thunk_Windows_Internal_ServiceModule_vector_deleting_destructor_adjustor_40_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_EServiceModule@Internal@Windows@@WCI@EAAPEAXI@Z",
+    "prototype": "Windows::Internal::ServiceModule *__fastcall(__int64, __int64, const unsigned __int16 *, bool)",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_DialogBlockingService::ServiceStarted_::_1_::catch$5",
+    "ea": "0x18000ccc5",
+    "function_file": "functions/18000ccc5_DialogBlockingService_ServiceStarted_1_catch_5.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DialogBlockingService::ServiceStarted_::_1_::catch$5",
+    "prototype": "__int64 __fastcall(__int64, __int64, unsigned int, const char *)",
+    "rank_score": 11,
+    "size": 42,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_Windows::Internal::DialogBlocking::HookMgr::CreateStopEvent_::_1_::dtor$0",
+    "ea": "0x18000cd87",
+    "function_file": "functions/18000cd87_Windows_Internal_DialogBlocking_HookMgr_CreateStopEvent_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_Windows::Internal::DialogBlocking::HookMgr::CreateStopEvent_::_1_::dtor$0",
+    "prototype": "HLOCAL __fastcall(__int64, __int64)",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_Windows::Internal::DialogBlocking::HookProcess::BuildHookLaunchCommand_::_1_::dtor$0",
+    "ea": "0x18000cd37",
+    "function_file": "functions/18000cd37_Windows_Internal_DialogBlocking_HookProcess_BuildHookLaunchCommand_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_Windows::Internal::DialogBlocking::HookProcess::BuildHookLaunchCommand_::_1_::dtor$0",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_Windows::Internal::DialogBlocking::HookProcess::BuildHookLaunchCommand_::_1_::dtor$2",
+    "ea": "0x18000cd75",
+    "function_file": "functions/18000cd75_Windows_Internal_DialogBlocking_HookProcess_BuildHookLaunchCommand_1_dtor_2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_Windows::Internal::DialogBlocking::HookProcess::BuildHookLaunchCommand_::_1_::dtor$2",
+    "prototype": "void __fastcall(__int64, unsigned __int64)",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_Windows::Internal::DialogBlocking::ServiceSessions::logoffUser_::_1_::dtor$1",
+    "ea": "0x18000ce42",
+    "function_file": "functions/18000ce42_Windows_Internal_DialogBlocking_ServiceSessions_logoffUser_1_dtor_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_Windows::Internal::DialogBlocking::ServiceSessions::logoffUser_::_1_::dtor$1",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_Windows::Internal::DialogBlocking::ServiceSessions::logonUser_::_1_::dtor$0",
+    "ea": "0x18000ce54",
+    "function_file": "functions/18000ce54_Windows_Internal_DialogBlocking_ServiceSessions_logonUser_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_Windows::Internal::DialogBlocking::ServiceSessions::logonUser_::_1_::dtor$0",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_Windows::Internal::DialogBlocking::ServiceSessions::logonUser_::_1_::dtor$1",
+    "ea": "0x18000ce30",
+    "function_file": "functions/18000ce30_Windows_Internal_DialogBlocking_ServiceSessions_logonUser_1_dtor_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_Windows::Internal::DialogBlocking::ServiceSessions::logonUser_::_1_::dtor$1",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_Windows::Internal::DialogBlocking::ServiceSessions::logonUser_::_1_::dtor$2",
+    "ea": "0x18000ce66",
+    "function_file": "functions/18000ce66_Windows_Internal_DialogBlocking_ServiceSessions_logonUser_1_dtor_2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_Windows::Internal::DialogBlocking::ServiceSessions::logonUser_::_1_::dtor$2",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_Windows::Internal::DialogBlocking::ServiceSessions::logonUser_::_1_::dtor$20",
+    "ea": "0x18000ced4",
+    "function_file": "functions/18000ced4_Windows_Internal_DialogBlocking_ServiceSessions_logonUser_1_dtor_20.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_Windows::Internal::DialogBlocking::ServiceSessions::logonUser_::_1_::dtor$20",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_Windows::Internal::DialogBlocking::ServiceSessions::logonUser_::_1_::dtor$5",
+    "ea": "0x18000ce9c",
+    "function_file": "functions/18000ce9c_Windows_Internal_DialogBlocking_ServiceSessions_logonUser_1_dtor_5.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_Windows::Internal::DialogBlocking::ServiceSessions::logonUser_::_1_::dtor$5",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "wil::details::_dynamic_initializer_for__g_threadFailureCallbacks__",
+    "ea": "0x180001210",
+    "function_file": "functions/180001210_wil_details_dynamic_initializer_for_g_threadFailureCallbacks.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil::details::_dynamic_initializer_for__g_threadFailureCallbacks__",
+    "prototype": "int()",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::AssignedAccess::AssignedAccessConfigStoreV0::DoesGroupConfigExistInStore(void)",
+    "ea": "0x18000c010",
+    "function_file": "functions/18000c010_Windows_Internal_AssignedAccess_AssignedAccessConfigStoreV0_DoesGroupConfigExistInStore_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DoesGroupConfigExistInStore@AssignedAccessConfigStoreV0@AssignedAccess@Internal@Windows@@EEAA_NXZ",
+    "prototype": "bool __fastcall(Windows::Internal::AssignedAccess::AssignedAccessConfigStoreV0 *__hidden this)",
+    "rank_score": 10,
+    "size": 3,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::AssignedAccess::AssignedAccessConfigStoreV2::GetVersion(void)",
+    "ea": "0x18000b8a0",
+    "function_file": "functions/18000b8a0_Windows_Internal_AssignedAccess_AssignedAccessConfigStoreV2_GetVersion_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetVersion@AssignedAccessConfigStoreV2@AssignedAccess@Internal@Windows@@EEAAKXZ",
+    "prototype": "__int64 __fastcall(Windows::Internal::AssignedAccess::AssignedAccessConfigStoreV2 *this)",
+    "rank_score": 10,
+    "size": 6,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "std::_Tree_val<std::_Tree_simple_types<std::pair<ulong const,std::unique_ptr<Windows::Internal::DialogBlocking::HookMgr,std::default_delete<Windows::Internal::DialogBlocking::HookMgr>>>>>::_Extract(std::_Tree_unchecked_const_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<ulong const,std::unique_ptr<Windows::Internal::DialogBlocking::HookMgr,std::default_delete<Windows::Internal::DialogBlocking::HookMgr>>>>>,std::_Iterator_base0>)",
+    "ea": "0x180009ba8",
+    "function_file": "functions/180009ba8_std_Tree_val_std_Tree_simple_types_std_pair_ulong_const_std_unique_ptr_Windows_Internal_DialogBlocking_HookMgr.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Extract@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBKV?$unique_ptr@VHookMgr@DialogBlocking@Internal@Windows@@U?$default_delete@VHookMgr@DialogBlocking@Internal@Windows@@@std@@@std@@@std@@@std@@@std@@QEAAPEAU?$_Tree_node@U?$pair@$$CBKV?$unique_ptr@VHookMgr@DialogBlocking@Internal@Windows@@U?$default_delete@VHookMgr@DialogBlocking@Internal@Windows@@@std@@@std@@@std@@PEAX@2@V?$_Tree_unchecked_const_iterator@V?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBKV?$unique_ptr@VHookMgr@DialogBlocking@Internal@Windows@@U?$default_delete@VHookMgr@DialogBlocking@Internal@Windows@@@std@@@std@@@std@@@std@@@std@@U_Iterator_base0@2@@2@@Z",
+    "prototype": "_QWORD *__fastcall(_QWORD *, _QWORD *)",
+    "rank_score": 10,
+    "size": 1117,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "wil::details::WilFailFast(wil::FailureInfo const &)",
+    "ea": "0x180007c30",
+    "function_file": "functions/180007c30_wil_details_WilFailFast_wil_FailureInfo_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?WilFailFast@details@wil@@YAXAEBUFailureInfo@2@@Z",
+    "prototype": "void __fastcall __noreturn(wil::details *__hidden this, const struct wil::FailureInfo *)",
+    "rank_score": 9,
+    "size": 167,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "wil::details::in1diag3::_FailFast_GetLastError(void *,uint,char const *)",
+    "ea": "0x180007d1c",
+    "function_file": "functions/180007d1c_wil_details_in1diag3_FailFast_GetLastError_void_uint_char_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_FailFast_GetLastError@in1diag3@details@wil@@YAXPEAXIPEBD@Z",
+    "prototype": "void __fastcall __noreturn(wil::details::in1diag3 *this, void *, __int64, const char *)",
+    "rank_score": 9,
+    "size": 20,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "StringCchPrintfW(ushort *,unsigned __int64,ushort const *,...)",
+    "ea": "0x1800072b0",
+    "function_file": "functions/1800072b0_StringCchPrintfW_ushort_unsigned_int64_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?StringCchPrintfW@@YAJPEAG_KPEBGZZ",
+    "prototype": "__int64(unsigned __int16 *, unsigned __int64, const unsigned __int16 *, ...)",
+    "rank_score": 8,
+    "size": 131,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "_alloca_probe",
+    "ea": "0x18000c790",
+    "function_file": "functions/18000c790_alloca_probe.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_alloca_probe",
+    "prototype": "unsigned __int64 __fastcall()",
+    "rank_score": 7,
+    "size": 78,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "atexit",
+    "ea": "0x180001a20",
+    "function_file": "functions/180001a20_atexit.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "atexit",
+    "prototype": "int __cdecl(void (__cdecl *)())",
+    "rank_score": 7,
+    "size": 23,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "wil::details::ReportFailure_Hr<2>(void *,uint,char const *,char const *,char const *,void *,long,wil::FailureFlags)",
+    "ea": "0x180003250",
+    "function_file": "functions/180003250_wil_details_ReportFailure_Hr_2_void_uint_char_const_char_const_char_const_void_long_wil_FailureFlags.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$ReportFailure_Hr@$01@details@wil@@YAXPEAXIPEBD110JW4FailureFlags@1@@Z",
+    "prototype": "__int64 __fastcall(__int64, int, __int64, __int64, __int64, __int64, wil::details *)",
+    "rank_score": 7,
+    "size": 92,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "wil::details::in1diag3::Return_GetLastError(void *,uint,char const *)",
+    "ea": "0x1800067e4",
+    "function_file": "functions/1800067e4_wil_details_in1diag3_Return_GetLastError_void_uint_char_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Return_GetLastError@in1diag3@details@wil@@YAJPEAXIPEBD@Z",
+    "prototype": "__int64 __fastcall(wil::details::in1diag3 *this, void *, int, const char *)",
+    "rank_score": 7,
+    "size": 25,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "std::_Throw_system_error(std::errc)",
+    "ea": "0x18000a23c",
+    "function_file": "functions/18000a23c_std_Throw_system_error_std_errc.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Throw_system_error@std@@YAXW4errc@1@@Z",
+    "prototype": "void __fastcall __noreturn(unsigned int)",
+    "rank_score": 6,
+    "size": 58,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "std::_Tree_val<std::_Tree_simple_types<std::pair<ulong const,std::unique_ptr<Windows::Internal::DialogBlocking::HookMgr,std::default_delete<Windows::Internal::DialogBlocking::HookMgr>>>>>::_Insert_node(std::_Tree_id<std::_Tree_node<std::pair<ulong const,std::unique_ptr<Windows::Internal::DialogBlocking::HookMgr,std::default_delete<Windows::Internal::DialogBlocking::HookMgr>>>,void *> *>,std::_Tree_node<std::pair<ulong const,std::unique_ptr<Windows::Internal::DialogBlocking::HookMgr,std::default_delete<Windows::Internal::DialogBlocking::HookMgr>>>,void *> * const)",
+    "ea": "0x18000a00c",
+    "function_file": "functions/18000a00c_std_Tree_val_std_Tree_simple_types_std_pair_ulong_const_std_unique_ptr_Windows_Internal_DialogBlocking_HookMgr.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Insert_node@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBKV?$unique_ptr@VHookMgr@DialogBlocking@Internal@Windows@@U?$default_delete@VHookMgr@DialogBlocking@Internal@Windows@@@std@@@std@@@std@@@std@@@std@@QEAAPEAU?$_Tree_node@U?$pair@$$CBKV?$unique_ptr@VHookMgr@DialogBlocking@Internal@Windows@@U?$default_delete@VHookMgr@DialogBlocking@Internal@Windows@@@std@@@std@@@std@@PEAX@2@U?$_Tree_id@PEAU?$_Tree_node@U?$pair@$$CBKV?$unique_ptr@VHookMgr@DialogBlocking@Internal@Windows@@U?$default_delete@VHookMgr@DialogBlocking@Internal@Windows@@@std@@@std@@@std@@PEAX@std@@@2@QEAU32@@Z",
+    "prototype": "__int64 __fastcall(_QWORD *, __int64, __int64)",
+    "rank_score": 6,
+    "size": 553,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "wil::details::in1diag3::_FailFastImmediate_Unexpected(void)",
+    "ea": "0x180007d0c",
+    "function_file": "functions/180007d0c_wil_details_in1diag3_FailFastImmediate_Unexpected_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_FailFastImmediate_Unexpected@in1diag3@details@wil@@YAXXZ",
+    "prototype": "void __fastcall __noreturn(wil::details::in1diag3 *__hidden this)",
+    "rank_score": 6,
+    "size": 7,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "__scrt_stub_for_acrt_uninitialize_critical",
+    "ea": "0x180002160",
+    "function_file": "functions/180002160_scrt_stub_for_acrt_uninitialize_critical.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_stub_for_acrt_uninitialize_critical",
+    "prototype": "char()",
+    "rank_score": 5,
+    "size": 3,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "__scrt_throw_std_bad_array_new_length(void)",
+    "ea": "0x180007d74",
+    "function_file": "functions/180007d74_scrt_throw_std_bad_array_new_length_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?__scrt_throw_std_bad_array_new_length@@YAXXZ",
+    "prototype": "void __noreturn(void)",
+    "rank_score": 5,
+    "size": 32,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "operator new[](unsigned __int64,std::nothrow_t const &)",
+    "ea": "0x180001a40",
+    "function_file": "functions/180001a40_operator_new_unsigned_int64_std_nothrow_t_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_U@YAPEAX_KAEBUnothrow_t@std@@@Z",
+    "prototype": "void *__fastcall(unsigned __int64, const struct std::nothrow_t *)",
+    "rank_score": 5,
+    "size": 28,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "wil::details::ReportFailure_Base<1,0>(void *,uint,char const *,char const *,char const *,void *,wil::details::ResultStatus const &,ushort const *,wil::details::ReportFailureOptions,wil::FailureFlags)",
+    "ea": "0x180002ed8",
+    "function_file": "functions/180002ed8_wil_details_ReportFailure_Base_1_0_void_uint_char_const_char_const_char_const_void_wil_details_ResultStatus_co.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$ReportFailure_Base@$00$0A@@details@wil@@YAXPEAXIPEBD110AEBUResultStatus@01@PEBGW4ReportFailureOptions@01@W4FailureFlags@1@@Z",
+    "prototype": "__int64 __fastcall(int, int, int, int, int, __int64, int, __int64)",
+    "rank_score": 5,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "wil::details::ResultStatus::FromResult(long)",
+    "ea": "0x180004ee8",
+    "function_file": "functions/180004ee8_wil_details_ResultStatus_FromResult_long.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?FromResult@ResultStatus@details@wil@@SA?AU123@J@Z",
+    "prototype": "__int64 __fastcall(unsigned int *, unsigned int)",
+    "rank_score": 5,
+    "size": 36,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil::details::ThreadFailureCallbackHolder::GetThreadContext(wil::FailureInfo *,wil::details::ThreadFailureCallbackHolder *,char *,unsigned __int64)",
+    "ea": "0x180005800",
+    "function_file": "functions/180005800_wil_details_ThreadFailureCallbackHolder_GetThreadContext_wil_FailureInfo_wil_details_ThreadFailureCallbackHold.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetThreadContext@ThreadFailureCallbackHolder@details@wil@@SA_NPEAUFailureInfo@3@PEAV123@PEAD_K@Z",
+    "prototype": "bool __fastcall(struct wil::FailureInfo *, struct wil::details::ThreadFailureCallbackHolder **, char *, unsigned __int64)",
+    "rank_score": 5,
+    "size": 220,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "__local_stdio_printf_options",
+    "ea": "0x180001254",
+    "function_file": "functions/180001254_local_stdio_printf_options.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__local_stdio_printf_options",
+    "prototype": "unsigned __int64 *__cdecl()",
+    "rank_score": 4,
+    "size": 8,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "wil::details::ReportFailure_Base<3,0>(void *,uint,char const *,char const *,char const *,void *,wil::details::ResultStatus const &,ushort const *,wil::details::ReportFailureOptions,wil::FailureFlags)",
+    "ea": "0x180002f34",
+    "function_file": "functions/180002f34_wil_details_ReportFailure_Base_3_0_void_uint_char_const_char_const_char_const_void_wil_details_ResultStatus_co.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$ReportFailure_Base@$02$0A@@details@wil@@YAXPEAXIPEBD110AEBUResultStatus@01@PEBGW4ReportFailureOptions@01@W4FailureFlags@1@@Z",
+    "prototype": "void __fastcall __noreturn(int, int, int, int, int, __int64, __int64, __int64)",
+    "rank_score": 4,
+    "size": 49,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "wil::details::in1diag3::_Throw_Hr(void *,uint,char const *,long)",
+    "ea": "0x180009568",
+    "function_file": "functions/180009568_wil_details_in1diag3_Throw_Hr_void_uint_char_const_long.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Throw_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z",
+    "prototype": "void __fastcall __noreturn(wil::details::in1diag3 *this, void *, int, const char *, int)",
+    "rank_score": 4,
+    "size": 25,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "__local_stdio_scanf_options",
+    "ea": "0x180001264",
+    "function_file": "functions/180001264_local_stdio_scanf_options.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__local_stdio_scanf_options",
+    "prototype": "unsigned __int64 *__cdecl()",
+    "rank_score": 3,
+    "size": 8,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_wil::get_token_information__TOKEN_USER__::_1_::dtor$1",
+    "ea": "0x18000ce04",
+    "function_file": "functions/18000ce04_wil_get_token_information_TOKEN_USER_1_dtor_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_wil::get_token_information__TOKEN_USER__::_1_::dtor$1",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 2,
+    "size": 38,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil::GetRangeNoThrow<Windows::Internal::AssignedAccess::AssignedAccessUserInfo *>(Windows::Foundation::Collections::IVectorView<Windows::Internal::AssignedAccess::AssignedAccessUserInfo *> *,long *)",
+    "ea": "0x18000bcd4",
+    "function_file": "functions/18000bcd4_wil_GetRangeNoThrow_Windows_Internal_AssignedAccess_AssignedAccessUserInfo_Windows_Foundation_Collections_IVec.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$GetRangeNoThrow@PEAVAssignedAccessUserInfo@AssignedAccess@Internal@Windows@@@wil@@YA?AV?$vector_range_nothrow@U?$IVectorView@PEAVAssignedAccessUserInfo@AssignedAccess@Internal@Windows@@@Collections@Foundation@Windows@@@0@PEAU?$IVectorView@PEAVAssignedAccessUserInfo@AssignedAccess@Internal@Windows@@@Collections@Foundation@Windows@@PEAJ@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 2,
+    "size": 79,
+    "tags": []
+  }
+]

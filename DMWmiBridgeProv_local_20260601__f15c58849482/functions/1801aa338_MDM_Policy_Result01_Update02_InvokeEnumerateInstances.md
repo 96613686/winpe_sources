@@ -1,0 +1,1554 @@
+# MDM_Policy_Result01_Update02_InvokeEnumerateInstances
+
+- ea: `0x1801aa338`
+- end: `0x1801abb0c`
+- name: `MDM_Policy_Result01_Update02_InvokeEnumerateInstances`
+- size: `6100`
+- prototype: `__int64 __fastcall(MI_Instance *self)`
+- caller_count: `1`
+- callee_count: `21`
+- tags: `registry_config, loader_planting, service_task, installer_update, broker_com_uri`
+
+## callers
+
+- `0x1801a8a90`
+
+## callees
+
+- `0x180001008`
+- `0x18000104c`
+- `0x180003abc`
+- `0x180005160`
+- `0x180005198`
+- `0x180005b8c`
+- `0x180005bfc`
+- `0x180005fb4`
+- `0x180005fec`
+- `0x18000605c`
+- `0x180006094`
+- `0x180008ac0`
+- `0x180008b08`
+- `0x18000a768`
+- `0x1801aa338`
+- `0x18023f3ac`
+- `0x180245824`
+- `0x1802458ac`
+- `0x18024ccee`
+- `0x18024cd20`
+- `0x18024f010`
+
+## import_xrefs
+
+- `msvcrt!_wtoi` at `0x1801aa64a`
+- `msvcrt!_wtoi` at `0x1801aa691`
+- `msvcrt!_wtoi` at `0x1801aa6d8`
+- `msvcrt!_wtoi` at `0x1801aa71f`
+- `msvcrt!_wtoi` at `0x1801aa766`
+- `msvcrt!_wtoi` at `0x1801aa7ad`
+- `msvcrt!_wtoi` at `0x1801aa7f4`
+- `msvcrt!_wtoi` at `0x1801aa83b`
+- `msvcrt!_wtoi` at `0x1801aa882`
+- `msvcrt!_wtoi` at `0x1801aa8c9`
+- `msvcrt!_wtoi` at `0x1801aa910`
+- `msvcrt!_wtoi` at `0x1801aa957`
+- `msvcrt!_wtoi` at `0x1801aa99e`
+- `msvcrt!_wtoi` at `0x1801aa9e5`
+- `msvcrt!_wtoi` at `0x1801aaa2c`
+- `msvcrt!_wtoi` at `0x1801aaa73`
+- `msvcrt!_wtoi` at `0x1801aaaba`
+- `msvcrt!_wtoi` at `0x1801aab01`
+- `msvcrt!_wtoi` at `0x1801aab48`
+- `msvcrt!_wtoi` at `0x1801aab8f`
+- `msvcrt!_wtoi` at `0x1801aabd6`
+- `msvcrt!_wtoi` at `0x1801aac1d`
+- `msvcrt!_wtoi` at `0x1801aac64`
+- `msvcrt!_wtoi` at `0x1801aacab`
+- `msvcrt!_wtoi` at `0x1801aacf2`
+- `msvcrt!_wtoi` at `0x1801aad39`
+- `msvcrt!_wtoi` at `0x1801aad80`
+- `msvcrt!_wtoi` at `0x1801aadc7`
+- `msvcrt!_wtoi` at `0x1801aae0e`
+- `msvcrt!_wtoi` at `0x1801aae55`
+- `msvcrt!_wtoi` at `0x1801aae9c`
+- `msvcrt!_wtoi` at `0x1801aaee3`
+- `msvcrt!_wtoi` at `0x1801aaf2a`
+- `msvcrt!_wtoi` at `0x1801aaf71`
+- `msvcrt!_wtoi` at `0x1801aafb8`
+- `msvcrt!_wtoi` at `0x1801aafff`
+- `msvcrt!_wtoi` at `0x1801ab046`
+- `msvcrt!_wtoi` at `0x1801ab08d`
+- `msvcrt!_wtoi` at `0x1801ab0d4`
+- `msvcrt!_wtoi` at `0x1801ab11b`
+- `msvcrt!_wtoi` at `0x1801ab162`
+- `msvcrt!_wtoi` at `0x1801ab1a9`
+- `msvcrt!_wtoi` at `0x1801ab1f0`
+- `msvcrt!_wtoi` at `0x1801ab237`
+- `msvcrt!_wtoi` at `0x1801ab2b7`
+- `msvcrt!_wtoi` at `0x1801ab337`
+- `msvcrt!_wtoi` at `0x1801ab37e`
+- `msvcrt!_wtoi` at `0x1801ab3c5`
+- `msvcrt!_wtoi` at `0x1801ab40c`
+- `msvcrt!_wtoi` at `0x1801ab453`
+- `msvcrt!_wtoi` at `0x1801ab49a`
+- `msvcrt!_wtoi` at `0x1801ab4e1`
+- `msvcrt!_wtoi` at `0x1801ab528`
+- `msvcrt!_wtoi` at `0x1801ab56f`
+- `msvcrt!_wtoi` at `0x1801ab5b6`
+- `msvcrt!_wtoi` at `0x1801ab5fd`
+- `msvcrt!_wtoi` at `0x1801ab644`
+- `msvcrt!_wtoi` at `0x1801ab68b`
+- `msvcrt!_wtoi` at `0x1801ab6d2`
+- `msvcrt!_wtoi` at `0x1801ab719`
+- `msvcrt!_wtoi` at `0x1801ab760`
+- `msvcrt!_wtoi` at `0x1801ab7a7`
+- `msvcrt!_wtoi` at `0x1801ab7ee`
+- `msvcrt!_wtoi` at `0x1801ab835`
+- `msvcrt!_wtoi` at `0x1801ab87c`
+- `msvcrt!_wtoi` at `0x1801ab8c3`
+- `msvcrt!_wtoi` at `0x1801ab97c`
+- `msvcrt!_wtoi` at `0x1801aa64a`
+- `msvcrt!_wtoi` at `0x1801aa691`
+- `msvcrt!_wtoi` at `0x1801aa6d8`
+- `msvcrt!_wtoi` at `0x1801aa71f`
+- `msvcrt!_wtoi` at `0x1801aa766`
+- `msvcrt!_wtoi` at `0x1801aa7ad`
+- `msvcrt!_wtoi` at `0x1801aa7f4`
+- `msvcrt!_wtoi` at `0x1801aa83b`
+- `msvcrt!_wtoi` at `0x1801aa882`
+- `msvcrt!_wtoi` at `0x1801aa8c9`
+- `msvcrt!_wtoi` at `0x1801aa910`
+- `msvcrt!_wtoi` at `0x1801aa957`
+- `msvcrt!_wtoi` at `0x1801aa99e`
+- `msvcrt!_wtoi` at `0x1801aa9e5`
+- `msvcrt!_wtoi` at `0x1801aaa2c`
+- `msvcrt!_wtoi` at `0x1801aaa73`
+- `msvcrt!_wtoi` at `0x1801aaaba`
+- `msvcrt!_wtoi` at `0x1801aab01`
+- `msvcrt!_wtoi` at `0x1801aab48`
+- `msvcrt!_wtoi` at `0x1801aab8f`
+- `msvcrt!_wtoi` at `0x1801aabd6`
+- `msvcrt!_wtoi` at `0x1801aac1d`
+- `msvcrt!_wtoi` at `0x1801aac64`
+- `msvcrt!_wtoi` at `0x1801aacab`
+- `msvcrt!_wtoi` at `0x1801aacf2`
+- `msvcrt!_wtoi` at `0x1801aad39`
+- `msvcrt!_wtoi` at `0x1801aad80`
+- `msvcrt!_wtoi` at `0x1801aadc7`
+- `msvcrt!_wtoi` at `0x1801aae0e`
+- `msvcrt!_wtoi` at `0x1801aae55`
+- `msvcrt!_wtoi` at `0x1801aae9c`
+- `msvcrt!_wtoi` at `0x1801aaee3`
+- `msvcrt!_wtoi` at `0x1801aaf2a`
+- `msvcrt!_wtoi` at `0x1801aaf71`
+- `msvcrt!_wtoi` at `0x1801aafb8`
+- `msvcrt!_wtoi` at `0x1801aafff`
+- `msvcrt!_wtoi` at `0x1801ab046`
+- `msvcrt!_wtoi` at `0x1801ab08d`
+- `msvcrt!_wtoi` at `0x1801ab0d4`
+- `msvcrt!_wtoi` at `0x1801ab11b`
+- `msvcrt!_wtoi` at `0x1801ab162`
+- `msvcrt!_wtoi` at `0x1801ab1a9`
+- `msvcrt!_wtoi` at `0x1801ab1f0`
+- `msvcrt!_wtoi` at `0x1801ab237`
+- `msvcrt!_wtoi` at `0x1801ab2b7`
+- `msvcrt!_wtoi` at `0x1801ab337`
+- `msvcrt!_wtoi` at `0x1801ab37e`
+- `msvcrt!_wtoi` at `0x1801ab3c5`
+- `msvcrt!_wtoi` at `0x1801ab40c`
+- `msvcrt!_wtoi` at `0x1801ab453`
+- `msvcrt!_wtoi` at `0x1801ab49a`
+- `msvcrt!_wtoi` at `0x1801ab4e1`
+- `msvcrt!_wtoi` at `0x1801ab528`
+- `msvcrt!_wtoi` at `0x1801ab56f`
+- `msvcrt!_wtoi` at `0x1801ab5b6`
+- `msvcrt!_wtoi` at `0x1801ab5fd`
+- `msvcrt!_wtoi` at `0x1801ab644`
+- `msvcrt!_wtoi` at `0x1801ab68b`
+- `msvcrt!_wtoi` at `0x1801ab6d2`
+- `msvcrt!_wtoi` at `0x1801ab719`
+- `msvcrt!_wtoi` at `0x1801ab760`
+- `msvcrt!_wtoi` at `0x1801ab7a7`
+- `msvcrt!_wtoi` at `0x1801ab7ee`
+- `msvcrt!_wtoi` at `0x1801ab835`
+- `msvcrt!_wtoi` at `0x1801ab87c`
+- `msvcrt!_wtoi` at `0x1801ab8c3`
+- `msvcrt!_wtoi` at `0x1801ab97c`
+
+## string_xrefs
+
+- `0x1801aa6fb`: `AllowAutoUpdate`
+- `0x1801aa742`: `AllowAutoWindowsUpdateDownloadOverMeteredNetwork`
+- `0x1801aa789`: `AllowTemporaryEnterpriseFeatureControl`
+- `0x1801aa817`: `AlwaysAutoRebootAtScheduledTimeMinutes`
+- `0x1801aa85e`: `AllowMUUpdateService`
+- `0x1801aa8a5`: `AllowNonMicrosoftSignedUpdate`
+- `0x1801aa8ec`: `AllowUpdateService`
+- `0x1801aa9c1`: `AutoRestartDeadlinePeriodInDaysForFeatureUpdates`
+- `0x1801aaa96`: `BranchReadinessLevel`
+- `0x1801aaadd`: `ConfigureDeadlineForFeatureUpdates`
+- `0x1801aab24`: `ConfigureDeadlineForQualityUpdates`
+- `0x1801aab6b`: `ConfigureDeadlineGracePeriod`
+- `0x1801aabb2`: `ConfigureDeadlineGracePeriodForFeatureUpdates`
+- `0x1801aabf9`: `ConfigureDeadlineNoAutoReboot`
+- `0x1801aac40`: `ConfigureFeatureUpdateUninstallPeriod`
+- `0x1801aac87`: `DeferFeatureUpdatesPeriodInDays`
+- `0x1801aacce`: `DeferQualityUpdatesPeriodInDays`
+- `0x1801aad15`: `DeferUpdatePeriod`
+- `0x1801aae78`: `DoNotEnforceEnterpriseTLSCertPinningForUpdateDetection`
+- `0x1801aaf06`: `EngagedRestartDeadlineForFeatureUpdates`
+- `0x1801aaf94`: `EngagedRestartSnoozeScheduleForFeatureUpdates`
+- `0x1801ab022`: `EngagedRestartTransitionScheduleForFeatureUpdates`
+- `0x1801ab069`: `ExcludeWUDriversInQualityUpdate`
+- `0x1801ab13e`: `IgnoreMOUpdateDownloadLimit`
+- `0x1801ab213`: `PauseFeatureUpdates`
+- `0x1801ab25a`: `PauseFeatureUpdatesStartTime`
+- `0x1801ab293`: `PauseQualityUpdates`
+- `0x1801ab2da`: `PauseQualityUpdatesStartTime`
+- `0x1801ab313`: `PhoneUpdateRestrictions`
+- `0x1801ab3a1`: `RequireUpdateApproval`
+- `0x1801ab3e8`: `ScheduledInstallDay`
+- `0x1801ab42f`: `ScheduledInstallEveryWeek`
+- `0x1801ab476`: `ScheduledInstallFirstWeek`
+- `0x1801ab4bd`: `ScheduledInstallFourthWeek`
+- `0x1801ab504`: `ScheduledInstallSecondWeek`
+- `0x1801ab54b`: `ScheduledInstallThirdWeek`
+- `0x1801ab592`: `ScheduledInstallTime`
+- `0x1801ab6ae`: `SetDisablePauseUXAccess`
+- `0x1801ab6f5`: `SetDisableUXWUAccess`
+- `0x1801ab783`: `SetPolicyDrivenUpdateSourceForDriverUpdates`
+- `0x1801ab7ca`: `SetPolicyDrivenUpdateSourceForFeatureUpdates`
+- `0x1801ab811`: `SetPolicyDrivenUpdateSourceForOtherUpdates`
+- `0x1801ab858`: `SetPolicyDrivenUpdateSourceForQualityUpdates`
+- `0x1801ab89f`: `SetProxyBehaviorForUpdateDetection`
+- `0x1801ab958`: `UpdateNotificationLevel`
+- `0x1801ab99f`: `UpdateServiceUrl`
+- `0x1801ab9d8`: `UpdateServiceUrlAlternate`
+- `0x1801aa3b3`: `MDM_Policy_Result01_Update02`
+- `0x1801aa5c5`: `Update`
+
+## pseudocode
+
+```c
+// Hidden C++ exception states: #wind=3
+__int64 __fastcall MDM_Policy_Result01_Update02_InvokeEnumerateInstances(MI_Context *self, char a2)
+{
+  const char *v4; // rdx
+  _DWORD *v5; // r9
+  wil *v6; // rcx
+  MI_Result v7; // r15d
+  _QWORD *v8; // rsi
+  unsigned int i; // r14d
+  const char *v11; // rax
+  int v12; // eax
+  wchar_t *String; // [rsp+40h] [rbp-388h] BYREF
+  char v14; // [rsp+48h] [rbp-380h]
+  _QWORD *v15; // [rsp+50h] [rbp-378h] BYREF
+  _QWORD v16[3]; // [rsp+58h] [rbp-370h] BYREF
+  const exception *v17[2]; // [rsp+70h] [rbp-358h] BYREF
+  char v18; // [rsp+80h] [rbp-348h]
+  int v19; // [rsp+88h] [rbp-340h] BYREF
+  char v20; // [rsp+8Ch] [rbp-33Ch]
+  _BYTE v21[16]; // [rsp+90h] [rbp-338h] BYREF
+  _DWORD v22[4]; // [rsp+A0h] [rbp-328h] BYREF
+  MI_Instance instance; // [rsp+B0h] [rbp-318h] BYREF
+  int v24; // [rsp+110h] [rbp-2B8h]
+  char v25; // [rsp+114h] [rbp-2B4h]
+  int v26; // [rsp+118h] [rbp-2B0h]
+  char v27; // [rsp+11Ch] [rbp-2ACh]
+  int v28; // [rsp+120h] [rbp-2A8h]
+  char v29; // [rsp+124h] [rbp-2A4h]
+  int v30; // [rsp+128h] [rbp-2A0h]
+  char v31; // [rsp+12Ch] [rbp-29Ch]
+  int v32; // [rsp+130h] [rbp-298h]
+  char v33; // [rsp+134h] [rbp-294h]
+  int v34; // [rsp+138h] [rbp-290h]
+  char v35; // [rsp+13Ch] [rbp-28Ch]
+  int v36; // [rsp+140h] [rbp-288h]
+  char v37; // [rsp+144h] [rbp-284h]
+  int v38; // [rsp+148h] [rbp-280h]
+  char v39; // [rsp+14Ch] [rbp-27Ch]
+  int v40; // [rsp+150h] [rbp-278h]
+  char v41; // [rsp+154h] [rbp-274h]
+  int v42; // [rsp+158h] [rbp-270h]
+  char v43; // [rsp+15Ch] [rbp-26Ch]
+  int v44; // [rsp+160h] [rbp-268h]
+  char v45; // [rsp+164h] [rbp-264h]
+  int v46; // [rsp+168h] [rbp-260h]
+  char v47; // [rsp+16Ch] [rbp-25Ch]
+  int v48; // [rsp+170h] [rbp-258h]
+  char v49; // [rsp+174h] [rbp-254h]
+  int v50; // [rsp+178h] [rbp-250h]
+  char v51; // [rsp+17Ch] [rbp-24Ch]
+  int v52; // [rsp+180h] [rbp-248h]
+  char v53; // [rsp+184h] [rbp-244h]
+  int v54; // [rsp+188h] [rbp-240h]
+  char v55; // [rsp+18Ch] [rbp-23Ch]
+  int v56; // [rsp+190h] [rbp-238h]
+  char v57; // [rsp+194h] [rbp-234h]
+  int v58; // [rsp+198h] [rbp-230h]
+  char v59; // [rsp+19Ch] [rbp-22Ch]
+  int v60; // [rsp+1A0h] [rbp-228h]
+  char v61; // [rsp+1A4h] [rbp-224h]
+  int v62; // [rsp+1A8h] [rbp-220h]
+  char v63; // [rsp+1ACh] [rbp-21Ch]
+  int v64; // [rsp+1B0h] [rbp-218h]
+  char v65; // [rsp+1B4h] [rbp-214h]
+  int v66; // [rsp+1B8h] [rbp-210h]
+  char v67; // [rsp+1BCh] [rbp-20Ch]
+  int v68; // [rsp+1C0h] [rbp-208h]
+  char v69; // [rsp+1C4h] [rbp-204h]
+  int v70; // [rsp+1C8h] [rbp-200h]
+  char v71; // [rsp+1CCh] [rbp-1FCh]
+  int v72; // [rsp+1D0h] [rbp-1F8h]
+  char v73; // [rsp+1D4h] [rbp-1F4h]
+  int v74; // [rsp+1D8h] [rbp-1F0h]
+  char v75; // [rsp+1DCh] [rbp-1ECh]
+  int v76; // [rsp+1E0h] [rbp-1E8h]
+  char v77; // [rsp+1E4h] [rbp-1E4h]
+  int v78; // [rsp+1E8h] [rbp-1E0h]
+  char v79; // [rsp+1ECh] [rbp-1DCh]
+  int v80; // [rsp+1F0h] [rbp-1D8h]
+  char v81; // [rsp+1F4h] [rbp-1D4h]
+  int v82; // [rsp+1F8h] [rbp-1D0h]
+  char v83; // [rsp+1FCh] [rbp-1CCh]
+  int v84; // [rsp+200h] [rbp-1C8h]
+  char v85; // [rsp+204h] [rbp-1C4h]
+  int v86; // [rsp+208h] [rbp-1C0h]
+  char v87; // [rsp+20Ch] [rbp-1BCh]
+  int v88; // [rsp+210h] [rbp-1B8h]
+  char v89; // [rsp+214h] [rbp-1B4h]
+  int v90; // [rsp+218h] [rbp-1B0h]
+  char v91; // [rsp+21Ch] [rbp-1ACh]
+  int v92; // [rsp+220h] [rbp-1A8h]
+  char v93; // [rsp+224h] [rbp-1A4h]
+  int v94; // [rsp+228h] [rbp-1A0h]
+  char v95; // [rsp+22Ch] [rbp-19Ch]
+  int v96; // [rsp+230h] [rbp-198h]
+  char v97; // [rsp+234h] [rbp-194h]
+  int v98; // [rsp+238h] [rbp-190h]
+  char v99; // [rsp+23Ch] [rbp-18Ch]
+  int v100; // [rsp+240h] [rbp-188h]
+  char v101; // [rsp+244h] [rbp-184h]
+  int v102; // [rsp+248h] [rbp-180h]
+  char v103; // [rsp+24Ch] [rbp-17Ch]
+  int v104; // [rsp+250h] [rbp-178h]
+  char v105; // [rsp+254h] [rbp-174h]
+  int v106; // [rsp+258h] [rbp-170h]
+  char v107; // [rsp+25Ch] [rbp-16Ch]
+  int v108; // [rsp+260h] [rbp-168h]
+  char v109; // [rsp+264h] [rbp-164h]
+  int v110; // [rsp+268h] [rbp-160h]
+  char v111; // [rsp+26Ch] [rbp-15Ch]
+  int v112; // [rsp+280h] [rbp-148h]
+  char v113; // [rsp+284h] [rbp-144h]
+  int v114; // [rsp+298h] [rbp-130h]
+  char v115; // [rsp+29Ch] [rbp-12Ch]
+  int v116; // [rsp+2A0h] [rbp-128h]
+  char v117; // [rsp+2A4h] [rbp-124h]
+  int v118; // [rsp+2A8h] [rbp-120h]
+  char v119; // [rsp+2ACh] [rbp-11Ch]
+  int v120; // [rsp+2B0h] [rbp-118h]
+  char v121; // [rsp+2B4h] [rbp-114h]
+  int v122; // [rsp+2B8h] [rbp-110h]
+  char v123; // [rsp+2BCh] [rbp-10Ch]
+  int v124; // [rsp+2C0h] [rbp-108h]
+  char v125; // [rsp+2C4h] [rbp-104h]
+  int v126; // [rsp+2C8h] [rbp-100h]
+  char v127; // [rsp+2CCh] [rbp-FCh]
+  int v128; // [rsp+2D0h] [rbp-F8h]
+  char v129; // [rsp+2D4h] [rbp-F4h]
+  int v130; // [rsp+2D8h] [rbp-F0h]
+  char v131; // [rsp+2DCh] [rbp-ECh]
+  int v132; // [rsp+2E0h] [rbp-E8h]
+  char v133; // [rsp+2E4h] [rbp-E4h]
+  int v134; // [rsp+2E8h] [rbp-E0h]
+  char v135; // [rsp+2ECh] [rbp-DCh]
+  int v136; // [rsp+2F0h] [rbp-D8h]
+  char v137; // [rsp+2F4h] [rbp-D4h]
+  int v138; // [rsp+2F8h] [rbp-D0h]
+  char v139; // [rsp+2FCh] [rbp-CCh]
+  int v140; // [rsp+300h] [rbp-C8h]
+  char v141; // [rsp+304h] [rbp-C4h]
+  int v142; // [rsp+308h] [rbp-C0h]
+  char v143; // [rsp+30Ch] [rbp-BCh]
+  int v144; // [rsp+310h] [rbp-B8h]
+  char v145; // [rsp+314h] [rbp-B4h]
+  int v146; // [rsp+318h] [rbp-B0h]
+  char v147; // [rsp+31Ch] [rbp-ACh]
+  int v148; // [rsp+320h] [rbp-A8h]
+  char v149; // [rsp+324h] [rbp-A4h]
+  int v150; // [rsp+328h] [rbp-A0h]
+  char v151; // [rsp+32Ch] [rbp-9Ch]
+  int v152; // [rsp+330h] [rbp-98h]
+  char v153; // [rsp+334h] [rbp-94h]
+  int v154; // [rsp+338h] [rbp-90h]
+  char v155; // [rsp+33Ch] [rbp-8Ch]
+  int v156; // [rsp+360h] [rbp-68h]
+  char v157; // [rsp+364h] [rbp-64h]
+
+  memset_0(&instance, 0, 0x2D8u);
+  v14 = 0;
+  String = 0;
+  v19 = 0;
+  v20 = 0;
+  v16[0] = &TelemetryEventWriter::`vftable';
+  v16[1] = &v19;
+  v16[2] = "MDM_Policy_Result01_Update02";
+  _TlgActivityBase<TraceLoggingActivity<&_tlgProvider_t const * const g_hTraceLoggingProvider,35184372088832,5,_TlgReflectorTag_Param0IsHProvider>,35184372088832,5>::zInternalStart(&v19);
+  if ( (unsigned int)dword_180380B68 > 5 && (unsigned __int8)tlgKeywordOn(&dword_180380B68, 0x200000000000LL) )
+  {
+    if ( v20 && (v22[0] || v22[1] || v22[2] || v22[3]) )
+      v5 = v22;
+    else
+      v5 = 0;
+    _tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,unsigned int,_EVENT_DATA_DESCRIPTOR *),&long _tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,unsigned int,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<>(
+      &dword_180380B68,
+      &word_180365816,
+      v21,
+      v5);
+  }
+  TelemetryEventWriter::WriteStart((TelemetryEventWriter *)v16, v4);
+  try
+  {
+    v15 = 0;
+    v7 = (unsigned int)CreateRequestHandlerInstance(self, 0, 0, &MDM_Policy_Result01_Update02_NodeList, 75, 2, &v15);
+    if ( v7 == MI_RESULT_OK )
+    {
+      v17[1] = (const exception *)&v15;
+      v18 = 1;
+      v8 = v15;
+      if ( v15 )
+      {
+        v7 = (*(unsigned int (__fastcall **)(_QWORD *))(*v15 + 16LL))(v15);
+        if ( v7 )
+        {
+          v6 = (wil *)v15;
+          if ( v15 )
+            (*(void (__fastcall **)(_QWORD *, __int64))*v15)(v15, 1);
+        }
+        else
+        {
+          v7 = (*(unsigned int (__fastcall **)(_QWORD *))(*v8 + 8LL))(v8);
+          if ( v7 )
+          {
+            v6 = (wil *)v15;
+            if ( v15 )
+              (*(void (__fastcall **)(_QWORD *, __int64))*v15)(v15, 1);
+          }
+          else
+          {
+            for ( i = 0; i < (unsigned int)((__int64)(v8[33] - v8[32]) >> 4); ++i )
+            {
+              v7 = MI_Context_ConstructInstance(self, &MDM_Policy_Result01_Update02_rtti, &instance);
+              if ( v7 )
+              {
+                v6 = (wil *)v15;
+                if ( v15 )
+                {
+                  (*(void (__fastcall **)(_QWORD *, __int64))*v15)(v15, 1);
+                  v15 = 0;
+                }
+                goto LABEL_268;
+              }
+              v14 = 1;
+              if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const wchar_t *, wchar_t **))(*v8 + 24LL))(
+                      v8,
+                      i,
+                      L"./Vendor/MSFT/Policy/Result",
+                      &String)
+                && String )
+              {
+                MDM_WindowsLicensing_Subscriptions01_01_Set_ParentID(&instance, String);
+              }
+              if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const wchar_t *, wchar_t **))(*v8 + 24LL))(
+                      v8,
+                      i,
+                      L"Update",
+                      &String)
+                && String )
+              {
+                MDM_WindowsLicensing_Subscriptions01_01_Set_InstanceID(&instance, String);
+              }
+              if ( a2 != 1 )
+              {
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"ActiveHoursEnd",
+                        &String)
+                  && String )
+                {
+                  v24 = _wtoi(String);
+                  v25 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"ActiveHoursMaxRange",
+                        &String)
+                  && String )
+                {
+                  v26 = _wtoi(String);
+                  v27 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"ActiveHoursStart",
+                        &String)
+                  && String )
+                {
+                  v28 = _wtoi(String);
+                  v29 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"AllowAutoUpdate",
+                        &String)
+                  && String )
+                {
+                  v30 = _wtoi(String);
+                  v31 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"AllowAutoWindowsUpdateDownloadOverMeteredNetwork",
+                        &String)
+                  && String )
+                {
+                  v32 = _wtoi(String);
+                  v33 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"AllowTemporaryEnterpriseFeatureControl",
+                        &String)
+                  && String )
+                {
+                  v34 = _wtoi(String);
+                  v35 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"AllowOptionalContent",
+                        &String)
+                  && String )
+                {
+                  v36 = _wtoi(String);
+                  v37 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"AlwaysAutoRebootAtScheduledTimeMinutes",
+                        &String)
+                  && String )
+                {
+                  v38 = _wtoi(String);
+                  v39 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"AllowMUUpdateService",
+                        &String)
+                  && String )
+                {
+                  v40 = _wtoi(String);
+                  v41 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"AllowNonMicrosoftSignedUpdate",
+                        &String)
+                  && String )
+                {
+                  v42 = _wtoi(String);
+                  v43 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"AllowUpdateService",
+                        &String)
+                  && String )
+                {
+                  v44 = _wtoi(String);
+                  v45 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"AutomaticMaintenanceWakeUp",
+                        &String)
+                  && String )
+                {
+                  v46 = _wtoi(String);
+                  v47 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"AutoRestartDeadlinePeriodInDays",
+                        &String)
+                  && String )
+                {
+                  v48 = _wtoi(String);
+                  v49 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"AutoRestartDeadlinePeriodInDaysForFeatureUpdates",
+                        &String)
+                  && String )
+                {
+                  v50 = _wtoi(String);
+                  v51 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"AutoRestartNotificationSchedule",
+                        &String)
+                  && String )
+                {
+                  v52 = _wtoi(String);
+                  v53 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"AutoRestartRequiredNotificationDismissal",
+                        &String)
+                  && String )
+                {
+                  v54 = _wtoi(String);
+                  v55 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"BranchReadinessLevel",
+                        &String)
+                  && String )
+                {
+                  v56 = _wtoi(String);
+                  v57 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"ConfigureDeadlineForFeatureUpdates",
+                        &String)
+                  && String )
+                {
+                  v58 = _wtoi(String);
+                  v59 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"ConfigureDeadlineForQualityUpdates",
+                        &String)
+                  && String )
+                {
+                  v60 = _wtoi(String);
+                  v61 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"ConfigureDeadlineGracePeriod",
+                        &String)
+                  && String )
+                {
+                  v62 = _wtoi(String);
+                  v63 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"ConfigureDeadlineGracePeriodForFeatureUpdates",
+                        &String)
+                  && String )
+                {
+                  v64 = _wtoi(String);
+                  v65 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"ConfigureDeadlineNoAutoReboot",
+                        &String)
+                  && String )
+                {
+                  v66 = _wtoi(String);
+                  v67 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"ConfigureFeatureUpdateUninstallPeriod",
+                        &String)
+                  && String )
+                {
+                  v68 = _wtoi(String);
+                  v69 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"DeferFeatureUpdatesPeriodInDays",
+                        &String)
+                  && String )
+                {
+                  v70 = _wtoi(String);
+                  v71 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"DeferQualityUpdatesPeriodInDays",
+                        &String)
+                  && String )
+                {
+                  v72 = _wtoi(String);
+                  v73 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"DeferUpdatePeriod",
+                        &String)
+                  && String )
+                {
+                  v74 = _wtoi(String);
+                  v75 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"DeferUpgradePeriod",
+                        &String)
+                  && String )
+                {
+                  v76 = _wtoi(String);
+                  v77 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"DetectionFrequency",
+                        &String)
+                  && String )
+                {
+                  v78 = _wtoi(String);
+                  v79 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"DisableDualScan",
+                        &String)
+                  && String )
+                {
+                  v80 = _wtoi(String);
+                  v81 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"DisableWUfBSafeguards",
+                        &String)
+                  && String )
+                {
+                  v82 = _wtoi(String);
+                  v83 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"DoNotEnforceEnterpriseTLSCertPinningForUpdateDetection",
+                        &String)
+                  && String )
+                {
+                  v84 = _wtoi(String);
+                  v85 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"EngagedRestartDeadline",
+                        &String)
+                  && String )
+                {
+                  v86 = _wtoi(String);
+                  v87 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"EngagedRestartDeadlineForFeatureUpdates",
+                        &String)
+                  && String )
+                {
+                  v88 = _wtoi(String);
+                  v89 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"EngagedRestartSnoozeSchedule",
+                        &String)
+                  && String )
+                {
+                  v90 = _wtoi(String);
+                  v91 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"EngagedRestartSnoozeScheduleForFeatureUpdates",
+                        &String)
+                  && String )
+                {
+                  v92 = _wtoi(String);
+                  v93 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"EngagedRestartTransitionSchedule",
+                        &String)
+                  && String )
+                {
+                  v94 = _wtoi(String);
+                  v95 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"EngagedRestartTransitionScheduleForFeatureUpdates",
+                        &String)
+                  && String )
+                {
+                  v96 = _wtoi(String);
+                  v97 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"ExcludeWUDriversInQualityUpdate",
+                        &String)
+                  && String )
+                {
+                  v98 = _wtoi(String);
+                  v99 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"FillEmptyContentUrls",
+                        &String)
+                  && String )
+                {
+                  v100 = _wtoi(String);
+                  v101 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"IgnoreMOAppDownloadLimit",
+                        &String)
+                  && String )
+                {
+                  v102 = _wtoi(String);
+                  v103 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"IgnoreMOUpdateDownloadLimit",
+                        &String)
+                  && String )
+                {
+                  v104 = _wtoi(String);
+                  v105 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"ManagePreviewBuilds",
+                        &String)
+                  && String )
+                {
+                  v106 = _wtoi(String);
+                  v107 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"PauseDeferrals",
+                        &String)
+                  && String )
+                {
+                  v108 = _wtoi(String);
+                  v109 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"PauseFeatureUpdates",
+                        &String)
+                  && String )
+                {
+                  v110 = _wtoi(String);
+                  v111 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"PauseFeatureUpdatesStartTime",
+                        &String)
+                  && String )
+                {
+                  MDM_Policy_User_Result01_InternetExplorer02_Set_DisableGeolocation(&instance);
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"PauseQualityUpdates",
+                        &String)
+                  && String )
+                {
+                  v112 = _wtoi(String);
+                  v113 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"PauseQualityUpdatesStartTime",
+                        &String)
+                  && String )
+                {
+                  MDM_Policy_User_Result01_InternetExplorer02_Set_DisableIgnoringCertificateErrors(&instance);
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"PhoneUpdateRestrictions",
+                        &String)
+                  && String )
+                {
+                  v114 = _wtoi(String);
+                  v115 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"RequireDeferUpgrade",
+                        &String)
+                  && String )
+                {
+                  v116 = _wtoi(String);
+                  v117 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"RequireUpdateApproval",
+                        &String)
+                  && String )
+                {
+                  v118 = _wtoi(String);
+                  v119 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"ScheduledInstallDay",
+                        &String)
+                  && String )
+                {
+                  v120 = _wtoi(String);
+                  v121 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"ScheduledInstallEveryWeek",
+                        &String)
+                  && String )
+                {
+                  v122 = _wtoi(String);
+                  v123 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"ScheduledInstallFirstWeek",
+                        &String)
+                  && String )
+                {
+                  v124 = _wtoi(String);
+                  v125 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"ScheduledInstallFourthWeek",
+                        &String)
+                  && String )
+                {
+                  v126 = _wtoi(String);
+                  v127 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"ScheduledInstallSecondWeek",
+                        &String)
+                  && String )
+                {
+                  v128 = _wtoi(String);
+                  v129 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"ScheduledInstallThirdWeek",
+                        &String)
+                  && String )
+                {
+                  v130 = _wtoi(String);
+                  v131 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"ScheduledInstallTime",
+                        &String)
+                  && String )
+                {
+                  v132 = _wtoi(String);
+                  v133 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"ScheduleImminentRestartWarning",
+                        &String)
+                  && String )
+                {
+                  v134 = _wtoi(String);
+                  v135 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"ScheduleRestartWarning",
+                        &String)
+                  && String )
+                {
+                  v136 = _wtoi(String);
+                  v137 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"SetAutoRestartNotificationDisable",
+                        &String)
+                  && String )
+                {
+                  v138 = _wtoi(String);
+                  v139 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"SetDisablePauseUXAccess",
+                        &String)
+                  && String )
+                {
+                  v140 = _wtoi(String);
+                  v141 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"SetDisableUXWUAccess",
+                        &String)
+                  && String )
+                {
+                  v142 = _wtoi(String);
+                  v143 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"SetEDURestart",
+                        &String)
+                  && String )
+                {
+                  v144 = _wtoi(String);
+                  v145 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"SetPolicyDrivenUpdateSourceForDriverUpdates",
+                        &String)
+                  && String )
+                {
+                  v146 = _wtoi(String);
+                  v147 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"SetPolicyDrivenUpdateSourceForFeatureUpdates",
+                        &String)
+                  && String )
+                {
+                  v148 = _wtoi(String);
+                  v149 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"SetPolicyDrivenUpdateSourceForOtherUpdates",
+                        &String)
+                  && String )
+                {
+                  v150 = _wtoi(String);
+                  v151 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"SetPolicyDrivenUpdateSourceForQualityUpdates",
+                        &String)
+                  && String )
+                {
+                  v152 = _wtoi(String);
+                  v153 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"SetProxyBehaviorForUpdateDetection",
+                        &String)
+                  && String )
+                {
+                  v154 = _wtoi(String);
+                  v155 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"ProductVersion",
+                        &String)
+                  && String )
+                {
+                  MDM_Policy_User_Result01_InternetExplorer02_Set_InternetZoneAllowLoadingOfXAMLFiles(&instance);
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"TargetReleaseVersion",
+                        &String)
+                  && String )
+                {
+                  MDM_Policy_User_Result01_InternetExplorer02_Set_InternetZoneAllowNETFrameworkReliantComponents(&instance);
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"UpdateNotificationLevel",
+                        &String)
+                  && String )
+                {
+                  v156 = _wtoi(String);
+                  v157 = 1;
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"UpdateServiceUrl",
+                        &String)
+                  && String )
+                {
+                  MDM_Policy_User_Result01_InternetExplorer02_Set_InternetZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl(&instance);
+                }
+                if ( !(*(unsigned int (__fastcall **)(_QWORD *, _QWORD, const unsigned __int16 *, wchar_t **))(*v8 + 24LL))(
+                        v8,
+                        i,
+                        L"UpdateServiceUrlAlternate",
+                        &String)
+                  && String )
+                {
+                  MDM_Policy_User_Result01_InternetExplorer02_Set_InternetZoneAllowScriptingOfInternetExplorerWebBrowserControls(&instance);
+                }
+              }
+              MI_Instance_Destruct((MI_Instance *)self);
+              MI_Instance_Destruct(&instance);
+              v14 = 0;
+            }
+            v6 = (wil *)v15;
+            if ( v15 )
+            {
+              (*(void (__fastcall **)(_QWORD *, __int64))*v15)(v15, 1);
+              v15 = 0;
+            }
+          }
+        }
+      }
+      else
+      {
+        v7 = MI_RESULT_FAILED;
+      }
+    }
+  }
+  catch ( const exception *v17 )
+  {
+    v11 = (const char *)(*(__int64 (__fastcall **)(const exception *))(*(_QWORD *)v17[0] + 8LL))(v17[0]);
+    TelemetryEventWriter::WriteStdException((TelemetryEventWriter *)v16, v11);
+    LODWORD(v15) = 1;
+    goto LABEL_259;
+  }
+  catch ( ... )
+  {
+    v12 = wil::ResultFromCaughtException(v6);
+    TelemetryEventWriter::WriteDefaultExceptionHr((TelemetryEventWriter *)v16, v12);
+    LODWORD(v15) = 1;
+LABEL_259:
+    if ( v14 )
+      MI_Instance_Destruct(&instance);
+    v7 = (int)v15;
+  }
+LABEL_268:
+  TelemetryEventWriter::WriteEnd((TelemetryEventWriter *)v16, "EnumerateInstancesEnd", v7);
+  v19 = 2;
+  if ( (unsigned int)dword_180380B68 > 5 && (unsigned __int8)tlgKeywordOn(&dword_180380B68, 0x200000000000LL) )
+    _tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,unsigned int,_EVENT_DATA_DESCRIPTOR *),&long _tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,unsigned int,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<>(
+      &dword_180380B68,
+      byte_180369979,
+      v21,
+      0);
+  _TlgActivityBase<TraceLoggingActivity<&_tlgProvider_t const * const g_hTraceLoggingProvider,35184372088832,5,_TlgReflectorTag_Param0IsHProvider>,35184372088832,5>::~_TlgActivityBase<TraceLoggingActivity<&_tlgProvider_t const * const g_hTraceLoggingProvider,35184372088832,5,_TlgReflectorTag_Param0IsHProvider>,35184372088832,5>(&v19);
+  return (unsigned int)v7;
+}
+
+```
+
+## disassembly
+
+```asm
+0x1801aa338  mov     [rsp+arg_8], rbx
+0x1801aa33d  mov     [rsp+arg_10], rsi
+0x1801aa342  push    rdi
+0x1801aa343  push    r12
+0x1801aa345  push    r13
+0x1801aa347  push    r14
+0x1801aa349  push    r15
+0x1801aa34b  sub     rsp, 3A0h
+0x1801aa352  mov     rax, cs:__security_cookie
+0x1801aa359  xor     rax, rsp
+0x1801aa35c  mov     [rsp+3C8h+var_38], rax
+0x1801aa364  mov     r13b, dl
+0x1801aa367  mov     r12, rcx
+0x1801aa36a  xor     edx, edx; Val
+0x1801aa36c  mov     r8d, 2D8h; Size
+0x1801aa372  lea     rcx, [rsp+3C8h+instance]; void *
+0x1801aa37a  call    memset_0
+0x1801aa37f  xor     edi, edi
+0x1801aa381  mov     [rsp+3C8h+var_380], dil
+0x1801aa386  mov     [rsp+3C8h+String], rdi
+0x1801aa38b  mov     [rsp+3C8h+var_340], edi
+0x1801aa392  mov     [rsp+3C8h+var_33C], dil
+0x1801aa39a  lea     rax, ??_7TelemetryEventWriter@@6B@; const TelemetryEventWriter::`vftable'
+0x1801aa3a1  mov     [rsp+3C8h+var_370], rax
+0x1801aa3a6  lea     rax, [rsp+3C8h+var_340]
+0x1801aa3ae  mov     [rsp+3C8h+var_368], rax
+0x1801aa3b3  lea     rax, aMdmPolicyResul_174; "MDM_Policy_Result01_Update02"
+0x1801aa3ba  mov     [rsp+3C8h+var_360], rax
+0x1801aa3bf  lea     rcx, [rsp+3C8h+var_340]
+0x1801aa3c7  call    ?zInternalStart@?$_TlgActivityBase@V?$TraceLoggingActivity@$1?g_hTraceLoggingProvider@@3QEBU_tlgProvider_t@@EB$0CAAAAAAAAAAA@$04U_TlgReflectorTag_Param0IsHProvider@@@@$0CAAAAAAAAAAA@$04@@QEAAXXZ; _TlgActivityBase<TraceLoggingActivity<&_tlgProvider_t const * const g_hTraceLoggingProvider,35184372088832,5,_TlgReflectorTag_Param0IsHProvider>,35184372088832,5>::zInternalStart(void)
+0x1801aa3cc  mov     eax, cs:dword_180380B68
+0x1801aa3d2  cmp     eax, 5
+0x1801aa3d5  jbe     short loc_1801AA447
+0x1801aa3d7  mov     rdx, 200000000000h
+0x1801aa3e1  lea     rcx, dword_180380B68
+0x1801aa3e8  call    _tlgKeywordOn
+0x1801aa3ed  test    al, al
+0x1801aa3ef  jz      short loc_1801AA447
+0x1801aa3f1  cmp     [rsp+3C8h+var_33C], dil
+0x1801aa3f9  jz      short loc_1801AA429
+0x1801aa3fb  cmp     [rsp+3C8h+var_328], edi
+0x1801aa402  jnz     short loc_1801AA41F
+0x1801aa404  cmp     [rsp+3C8h+var_324], edi
+0x1801aa40b  jnz     short loc_1801AA41F
+0x1801aa40d  cmp     [rsp+3C8h+var_320], edi
+0x1801aa414  jnz     short loc_1801AA41F
+0x1801aa416  cmp     [rsp+3C8h+var_31C], edi
+0x1801aa41d  jz      short loc_1801AA429
+0x1801aa41f  lea     r9, [rsp+3C8h+var_328]
+0x1801aa427  jmp     short loc_1801AA42C
+0x1801aa429  mov     r9, rdi
+0x1801aa42c  lea     r8, [rsp+3C8h+var_338]
+0x1801aa434  lea     rdx, word_180365816
+0x1801aa43b  lea     rcx, dword_180380B68
+0x1801aa442  call    ??$Write@$$V@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EventWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2@Z; _tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *)
+0x1801aa447  lea     rcx, [rsp+3C8h+var_370]; this
+0x1801aa44c  call    ?WriteStart@TelemetryEventWriter@@QEAAXPEBD@Z; TelemetryEventWriter::WriteStart(char const *)
+0x1801aa451  nop
+0x1801aa452  mov     [rsp+3C8h+var_378], rdi
+0x1801aa457  lea     rax, [rsp+3C8h+var_378]
+0x1801aa45c  mov     [rsp+3C8h+var_398], rax
+0x1801aa461  mov     [rsp+3C8h+var_3A0], 2
+0x1801aa469  mov     [rsp+3C8h+var_3A8], 4Bh ; 'K'
+0x1801aa471  lea     r9, ?MDM_Policy_Result01_Update02_NodeList@@3PAUWmiNodeInfo@@A; WmiNodeInfo near * MDM_Policy_Result01_Update02_NodeList
+0x1801aa478  xor     r8d, r8d
+0x1801aa47b  xor     edx, edx
+0x1801aa47d  mov     rcx, r12
+0x1801aa480  call    ?CreateRequestHandlerInstance@@YA?AW4_MI_Result@@PEAU_MI_Context@@PEBG1PEAUWmiNodeInfo@@KW4RequestType@@AEAPEAVWmiRequestHandler@@@Z; CreateRequestHandlerInstance(_MI_Context *,ushort const *,ushort const *,WmiNodeInfo *,ulong,RequestType,WmiRequestHandler * &)
+0x1801aa485  mov     r15d, eax
+0x1801aa488  test    eax, eax
+0x1801aa48a  jz      short loc_1801AA491
+0x1801aa48c  jmp     loc_1801ABA6B
+0x1801aa491  lea     rbx, [rsp+3C8h+var_378]
+0x1801aa496  mov     [rsp+3C8h+var_350], rbx
+0x1801aa49b  mov     r14d, 1
+0x1801aa4a1  mov     [rsp+3C8h+var_348], r14b
+0x1801aa4a9  mov     rsi, [rsp+3C8h+var_378]
+0x1801aa4ae  test    rsi, rsi
+0x1801aa4b1  jnz     short loc_1801AA4BB
+0x1801aa4b3  mov     r15d, r14d
+0x1801aa4b6  jmp     loc_1801ABA6B
+0x1801aa4bb  mov     rax, [rsi]
+0x1801aa4be  mov     rcx, rsi
+0x1801aa4c1  mov     rax, [rax+10h]
+0x1801aa4c5  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x1801aa4ca  mov     r15d, eax
+0x1801aa4cd  test    eax, eax
+0x1801aa4cf  jz      short loc_1801AA4EF
+0x1801aa4d1  mov     rcx, [rsp+3C8h+var_378]
+0x1801aa4d6  test    rcx, rcx
+0x1801aa4d9  jz      short loc_1801AA4EA
+0x1801aa4db  mov     rax, [rcx]
+0x1801aa4de  mov     edx, r14d
+0x1801aa4e1  mov     rax, [rax]
+0x1801aa4e4  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x1801aa4e9  nop
+0x1801aa4ea  jmp     loc_1801ABA6B
+0x1801aa4ef  mov     rax, [rsi]
+0x1801aa4f2  mov     rcx, rsi
+0x1801aa4f5  mov     rax, [rax+8]
+0x1801aa4f9  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x1801aa4fe  mov     r15d, eax
+0x1801aa501  test    eax, eax
+0x1801aa503  jz      short loc_1801AA523
+0x1801aa505  mov     rcx, [rsp+3C8h+var_378]
+0x1801aa50a  test    rcx, rcx
+0x1801aa50d  jz      short loc_1801AA51E
+0x1801aa50f  mov     rax, [rcx]
+0x1801aa512  mov     edx, r14d
+0x1801aa515  mov     rax, [rax]
+0x1801aa518  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x1801aa51d  nop
+0x1801aa51e  jmp     loc_1801ABA6B
+0x1801aa523  mov     r14d, edi
+0x1801aa526  mov     rax, [rsi+108h]
+0x1801aa52d  sub     rax, [rsi+100h]
+0x1801aa534  sar     rax, 4
+0x1801aa538  cmp     r14d, eax
+0x1801aa53b  jnb     loc_1801ABA33
+0x1801aa541  lea     r8, [rsp+3C8h+instance]; instance
+0x1801aa549  lea     rdx, MDM_Policy_Result01_Update02_rtti; classDecl
+0x1801aa550  mov     rcx, r12; context
+0x1801aa553  call    MI_Context_ConstructInstance
+0x1801aa558  mov     r15d, eax
+0x1801aa55b  test    eax, eax
+0x1801aa55d  jz      short loc_1801AA57F
+0x1801aa55f  mov     rcx, [rbx]
+0x1801aa562  test    rcx, rcx
+0x1801aa565  jz      short loc_1801AA57A
+0x1801aa567  mov     rax, [rcx]
+0x1801aa56a  mov     edx, 1
+0x1801aa56f  mov     rax, [rax]
+0x1801aa572  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x1801aa577  mov     [rbx], rdi
+0x1801aa57a  jmp     loc_1801ABA6B
+0x1801aa57f  mov     [rsp+3C8h+var_380], 1
+0x1801aa584  mov     rax, [rsi]
+0x1801aa587  lea     r9, [rsp+3C8h+String]
+0x1801aa58c  lea     r8, aVendorMsftPoli_42; "./Vendor/MSFT/Policy/Result"
+0x1801aa593  mov     edx, r14d
+0x1801aa596  mov     rcx, rsi
+0x1801aa599  mov     rax, [rax+18h]
+0x1801aa59d  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x1801aa5a2  test    eax, eax
+0x1801aa5a4  jnz     short loc_1801AA5BD
+0x1801aa5a6  mov     rdx, [rsp+3C8h+String]
+0x1801aa5ab  test    rdx, rdx
+0x1801aa5ae  jz      short loc_1801AA5BD
+0x1801aa5b0  lea     rcx, [rsp+3C8h+instance]
+0x1801aa5b8  call    MDM_WindowsLicensing_Subscriptions01_01_Set_ParentID
+0x1801aa5bd  mov     rax, [rsi]
+0x1801aa5c0  lea     r9, [rsp+3C8h+String]
+0x1801aa5c5  lea     r8, aUpdate; "Update"
+0x1801aa5cc  mov     edx, r14d
+0x1801aa5cf  mov     rcx, rsi
+0x1801aa5d2  mov     rax, [rax+18h]
+0x1801aa5d6  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x1801aa5db  test    eax, eax
+0x1801aa5dd  jnz     short loc_1801AA5F6
+0x1801aa5df  mov     rdx, [rsp+3C8h+String]
+0x1801aa5e4  test    rdx, rdx
+0x1801aa5e7  jz      short loc_1801AA5F6
+0x1801aa5e9  lea     rcx, [rsp+3C8h+instance]
+0x1801aa5f1  call    MDM_WindowsLicensing_Subscriptions01_01_Set_InstanceID
+0x1801aa5f6  cmp     r13b, 1
+0x1801aa5fa  jnz     short loc_1801AA61E
+0x1801aa5fc  lea     rdx, [rsp+3C8h+instance]
+0x1801aa604  mov     rcx, r12; self
+0x1801aa607  call    MI_Instance_Destruct
+0x1801aa60c  lea     rcx, [rsp+3C8h+instance]; self
+0x1801aa614  call    MI_Instance_Destruct
+0x1801aa619  jmp     loc_1801ABA26
+0x1801aa61e  mov     rax, [rsi]
+0x1801aa621  lea     r9, [rsp+3C8h+String]
+0x1801aa626  lea     r8, aActivehoursend; "ActiveHoursEnd"
+0x1801aa62d  mov     edx, r14d
+0x1801aa630  mov     rcx, rsi
+0x1801aa633  mov     rax, [rax+18h]
+0x1801aa637  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x1801aa63c  test    eax, eax
+0x1801aa63e  jnz     short loc_1801AA665
+0x1801aa640  mov     rcx, [rsp+3C8h+String]; String
+0x1801aa645  test    rcx, rcx
+0x1801aa648  jz      short loc_1801AA665
+0x1801aa64a  call    cs:__imp__wtoi
+0x1801aa651  nop     dword ptr [rax+rax+00h]
+0x1801aa656  mov     [rsp+3C8h+var_2B8], eax
+0x1801aa65d  mov     [rsp+3C8h+var_2B4], 1
+0x1801aa665  mov     rax, [rsi]
+0x1801aa668  lea     r9, [rsp+3C8h+String]
+0x1801aa66d  lea     r8, aActivehoursmax; "ActiveHoursMaxRange"
+0x1801aa674  mov     edx, r14d
+0x1801aa677  mov     rcx, rsi
+0x1801aa67a  mov     rax, [rax+18h]
+0x1801aa67e  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x1801aa683  test    eax, eax
+0x1801aa685  jnz     short loc_1801AA6AC
+0x1801aa687  mov     rcx, [rsp+3C8h+String]; String
+0x1801aa68c  test    rcx, rcx
+0x1801aa68f  jz      short loc_1801AA6AC
+0x1801aa691  call    cs:__imp__wtoi
+0x1801aa698  nop     dword ptr [rax+rax+00h]
+0x1801aa69d  mov     [rsp+3C8h+var_2B0], eax
+0x1801aa6a4  mov     [rsp+3C8h+var_2AC], 1
+0x1801aa6ac  mov     rax, [rsi]
+0x1801aa6af  lea     r9, [rsp+3C8h+String]
+0x1801aa6b4  lea     r8, aActivehourssta; "ActiveHoursStart"
+0x1801aa6bb  mov     edx, r14d
+0x1801aa6be  mov     rcx, rsi
+0x1801aa6c1  mov     rax, [rax+18h]
+0x1801aa6c5  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x1801aa6ca  test    eax, eax
+0x1801aa6cc  jnz     short loc_1801AA6F3
+0x1801aa6ce  mov     rcx, [rsp+3C8h+String]; String
+0x1801aa6d3  test    rcx, rcx
+0x1801aa6d6  jz      short loc_1801AA6F3
+0x1801aa6d8  call    cs:__imp__wtoi
+0x1801aa6df  nop     dword ptr [rax+rax+00h]
+0x1801aa6e4  mov     [rsp+3C8h+var_2A8], eax
+0x1801aa6eb  mov     [rsp+3C8h+var_2A4], 1
+0x1801aa6f3  mov     rax, [rsi]
+0x1801aa6f6  lea     r9, [rsp+3C8h+String]
+0x1801aa6fb  lea     r8, aAllowautoupdat; "AllowAutoUpdate"
+0x1801aa702  mov     edx, r14d
+0x1801aa705  mov     rcx, rsi
+0x1801aa708  mov     rax, [rax+18h]
+0x1801aa70c  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x1801aa711  test    eax, eax
+0x1801aa713  jnz     short loc_1801AA73A
+0x1801aa715  mov     rcx, [rsp+3C8h+String]; String
+0x1801aa71a  test    rcx, rcx
+0x1801aa71d  jz      short loc_1801AA73A
+0x1801aa71f  call    cs:__imp__wtoi
+0x1801aa726  nop     dword ptr [rax+rax+00h]
+0x1801aa72b  mov     [rsp+3C8h+var_2A0], eax
+0x1801aa732  mov     [rsp+3C8h+var_29C], 1
+0x1801aa73a  mov     rax, [rsi]
+0x1801aa73d  lea     r9, [rsp+3C8h+String]
+0x1801aa742  lea     r8, aAllowautowindo; "AllowAutoWindowsUpdateDownloadOverMeter"...
+0x1801aa749  mov     edx, r14d
+0x1801aa74c  mov     rcx, rsi
+0x1801aa74f  mov     rax, [rax+18h]
+0x1801aa753  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x1801aa758  test    eax, eax
+0x1801aa75a  jnz     short loc_1801AA781
+0x1801aa75c  mov     rcx, [rsp+3C8h+String]; String
+0x1801aa761  test    rcx, rcx
+0x1801aa764  jz      short loc_1801AA781
+0x1801aa766  call    cs:__imp__wtoi
+0x1801aa76d  nop     dword ptr [rax+rax+00h]
+0x1801aa772  mov     [rsp+3C8h+var_298], eax
+0x1801aa779  mov     [rsp+3C8h+var_294], 1
+0x1801aa781  mov     rax, [rsi]
+0x1801aa784  lea     r9, [rsp+3C8h+String]
+0x1801aa789  lea     r8, aAllowtemporary; "AllowTemporaryEnterpriseFeatureControl"
+0x1801aa790  mov     edx, r14d
+0x1801aa793  mov     rcx, rsi
+0x1801aa796  mov     rax, [rax+18h]
+0x1801aa79a  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x1801aa79f  test    eax, eax
+0x1801aa7a1  jnz     short loc_1801AA7C8
+0x1801aa7a3  mov     rcx, [rsp+3C8h+String]; String
+0x1801aa7a8  test    rcx, rcx
+0x1801aa7ab  jz      short loc_1801AA7C8
+0x1801aa7ad  call    cs:__imp__wtoi
+0x1801aa7b4  nop     dword ptr [rax+rax+00h]
+0x1801aa7b9  mov     [rsp+3C8h+var_290], eax
+0x1801aa7c0  mov     [rsp+3C8h+var_28C], 1
+0x1801aa7c8  mov     rax, [rsi]
+0x1801aa7cb  lea     r9, [rsp+3C8h+String]
+0x1801aa7d0  lea     r8, aAllowoptionalc; "AllowOptionalContent"
+0x1801aa7d7  mov     edx, r14d
+0x1801aa7da  mov     rcx, rsi
+0x1801aa7dd  mov     rax, [rax+18h]
+0x1801aa7e1  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x1801aa7e6  test    eax, eax
+0x1801aa7e8  jnz     short loc_1801AA80F
+0x1801aa7ea  mov     rcx, [rsp+3C8h+String]; String
+0x1801aa7ef  test    rcx, rcx
+0x1801aa7f2  jz      short loc_1801AA80F
+0x1801aa7f4  call    cs:__imp__wtoi
+0x1801aa7fb  nop     dword ptr [rax+rax+00h]
+0x1801aa800  mov     [rsp+3C8h+var_288], eax
+0x1801aa807  mov     [rsp+3C8h+var_284], 1
+0x1801aa80f  mov     rax, [rsi]
+0x1801aa812  lea     r9, [rsp+3C8h+String]
+0x1801aa817  lea     r8, aAlwaysautorebo; "AlwaysAutoRebootAtScheduledTimeMinutes"
+0x1801aa81e  mov     edx, r14d
+0x1801aa821  mov     rcx, rsi
+0x1801aa824  mov     rax, [rax+18h]
+0x1801aa828  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x1801aa82d  test    eax, eax
+0x1801aa82f  jnz     short loc_1801AA856
+0x1801aa831  mov     rcx, [rsp+3C8h+String]; String
+0x1801aa836  test    rcx, rcx
+0x1801aa839  jz      short loc_1801AA856
+0x1801aa83b  call    cs:__imp__wtoi
+0x1801aa842  nop     dword ptr [rax+rax+00h]
+0x1801aa847  mov     [rsp+3C8h+var_280], eax
+0x1801aa84e  mov     [rsp+3C8h+var_27C], 1
+  ... truncated ...
+```

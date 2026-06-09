@@ -1,0 +1,74 @@
+# wil::details::FormatNtStatusMsg(long,ushort *,ulong)
+
+- ea: `0x1400022b0`
+- end: `0x140002320`
+- name: `?FormatNtStatusMsg@details@wil@@YAXJPEAGK@Z`
+- size: `112`
+- prototype: `void __fastcall(DWORD dwMessageId, LPWSTR lpBuffer, DWORD nSize, unsigned int)`
+- caller_count: `0`
+- callee_count: `1`
+- tags: `loader_planting`
+
+## callees
+
+- `0x1400022b0`
+
+## import_xrefs
+
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW` at `0x1400022da`
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW` at `0x1400022da`
+- `api-ms-win-core-localization-l1-2-0!FormatMessageW` at `0x14000230a`
+- `api-ms-win-core-localization-l1-2-0!FormatMessageW` at `0x14000230a`
+
+## string_xrefs
+
+- `0x1400022d3`: `ntdll.dll`
+
+## pseudocode
+
+```c
+void __fastcall wil::details::FormatNtStatusMsg(DWORD dwMessageId, LPWSTR lpBuffer, DWORD nSize)
+{
+  HMODULE ModuleHandleW; // rax
+
+  ModuleHandleW = (HMODULE)`wil_details_GetNtDllModuleHandle'::`2'::wil_details_ntdllModuleHandle;
+  if ( !`wil_details_GetNtDllModuleHandle'::`2'::wil_details_ntdllModuleHandle )
+  {
+    ModuleHandleW = GetModuleHandleW(L"ntdll.dll");
+    `wil_details_GetNtDllModuleHandle'::`2'::wil_details_ntdllModuleHandle = ModuleHandleW;
+  }
+  FormatMessageW(0x1A00u, ModuleHandleW, dwMessageId, 0x400u, lpBuffer, nSize, 0);
+}
+
+```
+
+## disassembly
+
+```asm
+0x1400022b0  mov     [rsp+arg_0], rbx
+0x1400022b5  mov     [rsp+arg_8], rsi
+0x1400022ba  push    rdi
+0x1400022bb  sub     rsp, 40h
+0x1400022bf  mov     rax, cs:?wil_details_ntdllModuleHandle@?1??wil_details_GetNtDllModuleHandle@@YAPEAUHINSTANCE__@@XZ@4PEAU2@EA; HINSTANCE__ * `wil_details_GetNtDllModuleHandle(void)'::`2'::wil_details_ntdllModuleHandle
+0x1400022c6  mov     ebx, r8d
+0x1400022c9  mov     rdi, rdx
+0x1400022cc  mov     esi, ecx
+0x1400022ce  test    rax, rax
+0x1400022d1  jnz     short loc_1400022E7
+0x1400022d3  lea     rcx, ModuleName; "ntdll.dll"
+0x1400022da  call    cs:__imp_GetModuleHandleW
+0x1400022e0  mov     cs:?wil_details_ntdllModuleHandle@?1??wil_details_GetNtDllModuleHandle@@YAPEAUHINSTANCE__@@XZ@4PEAU2@EA, rax; HINSTANCE__ * `wil_details_GetNtDllModuleHandle(void)'::`2'::wil_details_ntdllModuleHandle
+0x1400022e7  mov     [rsp+48h+Arguments], 0; Arguments
+0x1400022f0  mov     r9d, 400h; dwLanguageId
+0x1400022f6  mov     [rsp+48h+nSize], ebx; nSize
+0x1400022fa  mov     r8d, esi; dwMessageId
+0x1400022fd  mov     rdx, rax; lpSource
+0x140002300  mov     [rsp+48h+lpBuffer], rdi; lpBuffer
+0x140002305  mov     ecx, 1A00h; dwFlags
+0x14000230a  call    cs:__imp_FormatMessageW
+0x140002310  mov     rbx, [rsp+48h+arg_0]
+0x140002315  mov     rsi, [rsp+48h+arg_8]
+0x14000231a  add     rsp, 40h
+0x14000231e  pop     rdi
+0x14000231f  retn
+```
