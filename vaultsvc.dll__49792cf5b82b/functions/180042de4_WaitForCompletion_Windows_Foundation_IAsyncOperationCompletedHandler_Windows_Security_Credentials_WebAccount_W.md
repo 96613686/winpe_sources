@@ -1,0 +1,29 @@
+# `WaitForCompletion<Windows::Foundation::IAsyncOperationCompletedHandler<Windows::Security::Credentials::WebAccount *>,Windows::Foundation::IAsyncOperation<Windows::Security::Credentials::WebAccount *>>(Windows::Foundation::IAsyncOperation<Windows::Security::Credentials::WebAccount *> *,tagCOWAIT_FLAGS,void *)'::`2'::FTMEventDelegate::~FTMEventDelegate(void)
+
+- ea: `0x180042de4`
+- end: `0x180042e21`
+- name: `??1FTMEventDelegate@?1???$WaitForCompletion@U?$IAsyncOperationCompletedHandler@PEAVWebAccount@Credentials@Security@Windows@@@Foundation@Windows@@U?$IAsyncOperation@PEAVWebAccount@Credentials@Security@Windows@@@23@@@YAJPEAU?$IAsyncOperation@PEAVWebAccount@Credentials@Security@Windows@@@Foundation@Windows@@W4tagCOWAIT_FLAGS@@PEAX@Z@EEAA@XZ`
+- size: `61`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `1`
+- tags: `loader_planting, broker_com_uri`
+
+## callers
+
+- `0x180043040`
+
+## callees
+
+- `0x18001fa00`
+
+## import_xrefs
+
+- `api-ms-win-core-handle-l1-1-0!CloseHandle` at `0x180042e06`
+- `api-ms-win-core-handle-l1-1-0!CloseHandle` at `0x180042e06`
+
+## pseudocode
+
+```c
+
+```

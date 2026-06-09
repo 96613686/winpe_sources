@@ -1,0 +1,1364 @@
+[
+  {
+    "import": "ADVAPI32!AllocateAndInitializeSid",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000e5b3",
+        "from_func": "0x14000e550",
+        "from_func_name": "?IsInteractiveUser@@YAHXZ",
+        "import": "ADVAPI32!AllocateAndInitializeSid"
+      },
+      {
+        "from_ea": "0x14000e5b3",
+        "from_func": "0x14000e550",
+        "from_func_name": "?IsInteractiveUser@@YAHXZ",
+        "import": "ADVAPI32!AllocateAndInitializeSid"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!ConvertSidToStringSidW",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x14000e1c8",
+        "from_func": "0x14000e044",
+        "from_func_name": "?GetUserSidFromToken@@YAJQEAXPEAPEAG@Z",
+        "import": "ADVAPI32!ConvertSidToStringSidW"
+      },
+      {
+        "from_ea": "0x140015ef3",
+        "from_func": "0x140015e24",
+        "from_func_name": "_anonymous_namespace_::IsWizardUser",
+        "import": "ADVAPI32!ConvertSidToStringSidW"
+      },
+      {
+        "from_ea": "0x14000e1c8",
+        "from_func": "0x14000e044",
+        "from_func_name": "?GetUserSidFromToken@@YAJQEAXPEAPEAG@Z",
+        "import": "ADVAPI32!ConvertSidToStringSidW"
+      },
+      {
+        "from_ea": "0x140015ef3",
+        "from_func": "0x140015e24",
+        "from_func_name": "_anonymous_namespace_::IsWizardUser",
+        "import": "ADVAPI32!ConvertSidToStringSidW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!ConvertStringSidToSidW",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000e46a",
+        "from_func": "0x14000e3cc",
+        "from_func_name": "?IsCandidateUser@@YAJPEAE@Z",
+        "import": "ADVAPI32!ConvertStringSidToSidW"
+      },
+      {
+        "from_ea": "0x14000e46a",
+        "from_func": "0x14000e3cc",
+        "from_func_name": "?IsCandidateUser@@YAJPEAE@Z",
+        "import": "ADVAPI32!ConvertStringSidToSidW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!FreeSid",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000e5ec",
+        "from_func": "0x14000e550",
+        "from_func_name": "?IsInteractiveUser@@YAHXZ",
+        "import": "ADVAPI32!FreeSid"
+      },
+      {
+        "from_ea": "0x14000e5ec",
+        "from_func": "0x14000e550",
+        "from_func_name": "?IsInteractiveUser@@YAHXZ",
+        "import": "ADVAPI32!FreeSid"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!OpenProcessToken",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140015e51",
+        "from_func": "0x140015e24",
+        "from_func_name": "_anonymous_namespace_::IsWizardUser",
+        "import": "ADVAPI32!OpenProcessToken"
+      },
+      {
+        "from_ea": "0x140015e51",
+        "from_func": "0x140015e24",
+        "from_func_name": "_anonymous_namespace_::IsWizardUser",
+        "import": "ADVAPI32!OpenProcessToken"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegCreateKeyExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 12,
+    "xrefs": [
+      {
+        "from_ea": "0x140013749",
+        "from_func": "0x1400136e4",
+        "from_func_name": "?Create@CRegKey@ATL@@QEAAJPEAUHKEY__@@PEBGPEAGKKPEAU_SECURITY_ATTRIBUTES@@PEAK@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x14001b201",
+        "from_func": "0x14001b16c",
+        "from_func_name": "?UpdateTransferSettingsActive@ColorFilterHelper@ColorFiltering@@SAX_N@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x14001b383",
+        "from_func": "0x14001b2ec",
+        "from_func_name": "?UpdateTransferSettingsFilterType@ColorFilterHelper@ColorFiltering@@SAXK@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x14001b507",
+        "from_func": "0x14001b470",
+        "from_func_name": "?UpdateTransferSettingsGain@ColorFilterHelper@ColorFiltering@@SAXK@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x14001b68b",
+        "from_func": "0x14001b5f4",
+        "from_func_name": "?UpdateTransferSettingsIntensity@ColorFilterHelper@ColorFiltering@@SAXK@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x14001c9b0",
+        "from_func": "0x14001c940",
+        "from_func_name": "?SetRegKeyValue@SettingsCopier@@CAJPEAUHKEY__@@PEBG1KPEBEK@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x140013749",
+        "from_func": "0x1400136e4",
+        "from_func_name": "?Create@CRegKey@ATL@@QEAAJPEAUHKEY__@@PEBGPEAGKKPEAU_SECURITY_ATTRIBUTES@@PEAK@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x14001b201",
+        "from_func": "0x14001b16c",
+        "from_func_name": "?UpdateTransferSettingsActive@ColorFilterHelper@ColorFiltering@@SAX_N@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x14001b383",
+        "from_func": "0x14001b2ec",
+        "from_func_name": "?UpdateTransferSettingsFilterType@ColorFilterHelper@ColorFiltering@@SAXK@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x14001b507",
+        "from_func": "0x14001b470",
+        "from_func_name": "?UpdateTransferSettingsGain@ColorFilterHelper@ColorFiltering@@SAXK@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x14001b68b",
+        "from_func": "0x14001b5f4",
+        "from_func_name": "?UpdateTransferSettingsIntensity@ColorFilterHelper@ColorFiltering@@SAXK@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x14001c9b0",
+        "from_func": "0x14001c940",
+        "from_func_name": "?SetRegKeyValue@SettingsCopier@@CAJPEAUHKEY__@@PEBG1KPEBEK@Z",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegDeleteTreeW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 10,
+    "xrefs": [
+      {
+        "from_ea": "0x14001b2c3",
+        "from_func": "0x14001b16c",
+        "from_func_name": "?UpdateTransferSettingsActive@ColorFilterHelper@ColorFiltering@@SAX_N@Z",
+        "import": "ADVAPI32!RegDeleteTreeW"
+      },
+      {
+        "from_ea": "0x14001b445",
+        "from_func": "0x14001b2ec",
+        "from_func_name": "?UpdateTransferSettingsFilterType@ColorFilterHelper@ColorFiltering@@SAXK@Z",
+        "import": "ADVAPI32!RegDeleteTreeW"
+      },
+      {
+        "from_ea": "0x14001b5c9",
+        "from_func": "0x14001b470",
+        "from_func_name": "?UpdateTransferSettingsGain@ColorFilterHelper@ColorFiltering@@SAXK@Z",
+        "import": "ADVAPI32!RegDeleteTreeW"
+      },
+      {
+        "from_ea": "0x14001b74d",
+        "from_func": "0x14001b5f4",
+        "from_func_name": "?UpdateTransferSettingsIntensity@ColorFilterHelper@ColorFiltering@@SAXK@Z",
+        "import": "ADVAPI32!RegDeleteTreeW"
+      },
+      {
+        "from_ea": "0x14001c26f",
+        "from_func": "0x14001bf80",
+        "from_func_name": "?DeleteATSettings@SettingsCopier@@CAJAEAVCRegKey@ATL@@@Z",
+        "import": "ADVAPI32!RegDeleteTreeW"
+      },
+      {
+        "from_ea": "0x14001b2c3",
+        "from_func": "0x14001b16c",
+        "from_func_name": "?UpdateTransferSettingsActive@ColorFilterHelper@ColorFiltering@@SAX_N@Z",
+        "import": "ADVAPI32!RegDeleteTreeW"
+      },
+      {
+        "from_ea": "0x14001b445",
+        "from_func": "0x14001b2ec",
+        "from_func_name": "?UpdateTransferSettingsFilterType@ColorFilterHelper@ColorFiltering@@SAXK@Z",
+        "import": "ADVAPI32!RegDeleteTreeW"
+      },
+      {
+        "from_ea": "0x14001b5c9",
+        "from_func": "0x14001b470",
+        "from_func_name": "?UpdateTransferSettingsGain@ColorFilterHelper@ColorFiltering@@SAXK@Z",
+        "import": "ADVAPI32!RegDeleteTreeW"
+      },
+      {
+        "from_ea": "0x14001b74d",
+        "from_func": "0x14001b5f4",
+        "from_func_name": "?UpdateTransferSettingsIntensity@ColorFilterHelper@ColorFiltering@@SAXK@Z",
+        "import": "ADVAPI32!RegDeleteTreeW"
+      },
+      {
+        "from_ea": "0x14001c26f",
+        "from_func": "0x14001bf80",
+        "from_func_name": "?DeleteATSettings@SettingsCopier@@CAJAEAVCRegKey@ATL@@@Z",
+        "import": "ADVAPI32!RegDeleteTreeW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegDeleteValueW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1400131b4",
+        "from_func": "0x140012f54",
+        "from_func_name": "wWinMain",
+        "import": "ADVAPI32!RegDeleteValueW"
+      },
+      {
+        "from_ea": "0x1400131b4",
+        "from_func": "0x140012f54",
+        "from_func_name": "wWinMain",
+        "import": "ADVAPI32!RegDeleteValueW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegOpenKeyExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 22,
+    "xrefs": [
+      {
+        "from_ea": "0x14000eab7",
+        "from_func": "0x14000ea8c",
+        "from_func_name": "?Open@CRegKey@ATL@@QEAAJPEAUHKEY__@@PEBGK@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x140015bd8",
+        "from_func": "0x140015b94",
+        "from_func_name": "?IsCamCxhOnlyUser@@YA_NPEBG@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14001b2a8",
+        "from_func": "0x14001b16c",
+        "from_func_name": "?UpdateTransferSettingsActive@ColorFilterHelper@ColorFiltering@@SAX_N@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14001b42a",
+        "from_func": "0x14001b2ec",
+        "from_func_name": "?UpdateTransferSettingsFilterType@ColorFilterHelper@ColorFiltering@@SAXK@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14001b5ae",
+        "from_func": "0x14001b470",
+        "from_func_name": "?UpdateTransferSettingsGain@ColorFilterHelper@ColorFiltering@@SAXK@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14001b732",
+        "from_func": "0x14001b5f4",
+        "from_func_name": "?UpdateTransferSettingsIntensity@ColorFilterHelper@ColorFiltering@@SAXK@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14001c164",
+        "from_func": "0x14001bf80",
+        "from_func_name": "?DeleteATSettings@SettingsCopier@@CAJAEAVCRegKey@ATL@@@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14001c3af",
+        "from_func": "0x14001c2e8",
+        "from_func_name": "?GetRegKeyValue@SettingsCopier@@CAJPEAUHKEY__@@PEBGKPEAGKPEAKAEAV?$CHeapPtr@EVCCRTAllocator@ATL@@@ATL@@3@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14001c9fe",
+        "from_func": "0x14001c940",
+        "from_func_name": "?SetRegKeyValue@SettingsCopier@@CAJPEAUHKEY__@@PEBG1KPEBEK@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x140020508",
+        "from_func": "0x140020474",
+        "from_func_name": "?GetTextScaleFactor@AccessibilityDialog@@AEAAHPEBG@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x140020c9a",
+        "from_func": "0x140020c64",
+        "from_func_name": "?IsFullscreenCXHRunning@@YA_NXZ",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14000eab7",
+        "from_func": "0x14000ea8c",
+        "from_func_name": "?Open@CRegKey@ATL@@QEAAJPEAUHKEY__@@PEBGK@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x140015bd8",
+        "from_func": "0x140015b94",
+        "from_func_name": "?IsCamCxhOnlyUser@@YA_NPEBG@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14001b2a8",
+        "from_func": "0x14001b16c",
+        "from_func_name": "?UpdateTransferSettingsActive@ColorFilterHelper@ColorFiltering@@SAX_N@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14001b42a",
+        "from_func": "0x14001b2ec",
+        "from_func_name": "?UpdateTransferSettingsFilterType@ColorFilterHelper@ColorFiltering@@SAXK@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14001b5ae",
+        "from_func": "0x14001b470",
+        "from_func_name": "?UpdateTransferSettingsGain@ColorFilterHelper@ColorFiltering@@SAXK@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14001b732",
+        "from_func": "0x14001b5f4",
+        "from_func_name": "?UpdateTransferSettingsIntensity@ColorFilterHelper@ColorFiltering@@SAXK@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14001c164",
+        "from_func": "0x14001bf80",
+        "from_func_name": "?DeleteATSettings@SettingsCopier@@CAJAEAVCRegKey@ATL@@@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14001c3af",
+        "from_func": "0x14001c2e8",
+        "from_func_name": "?GetRegKeyValue@SettingsCopier@@CAJPEAUHKEY__@@PEBGKPEAGKPEAKAEAV?$CHeapPtr@EVCCRTAllocator@ATL@@@ATL@@3@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x14001c9fe",
+        "from_func": "0x14001c940",
+        "from_func_name": "?SetRegKeyValue@SettingsCopier@@CAJPEAUHKEY__@@PEBG1KPEBEK@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x140020508",
+        "from_func": "0x140020474",
+        "from_func_name": "?GetTextScaleFactor@AccessibilityDialog@@AEAAHPEBG@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x140020c9a",
+        "from_func": "0x140020c64",
+        "from_func_name": "?IsFullscreenCXHRunning@@YA_NXZ",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegSetValueExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 14,
+    "xrefs": [
+      {
+        "from_ea": "0x14000f5db",
+        "from_func": "0x14000f5b8",
+        "from_func_name": "?SetDWORDValue@CRegKey@ATL@@QEAAJPEBGK@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x14000f635",
+        "from_func": "0x14000f5f4",
+        "from_func_name": "?SetStringValue@CRegKey@ATL@@QEAAJPEBG0K@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x14001b231",
+        "from_func": "0x14001b16c",
+        "from_func_name": "?UpdateTransferSettingsActive@ColorFilterHelper@ColorFiltering@@SAX_N@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x14001b3b3",
+        "from_func": "0x14001b2ec",
+        "from_func_name": "?UpdateTransferSettingsFilterType@ColorFilterHelper@ColorFiltering@@SAXK@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x14001b537",
+        "from_func": "0x14001b470",
+        "from_func_name": "?UpdateTransferSettingsGain@ColorFilterHelper@ColorFiltering@@SAXK@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x14001b6bb",
+        "from_func": "0x14001b5f4",
+        "from_func_name": "?UpdateTransferSettingsIntensity@ColorFilterHelper@ColorFiltering@@SAXK@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x14001caa4",
+        "from_func": "0x14001c940",
+        "from_func_name": "?SetRegKeyValue@SettingsCopier@@CAJPEAUHKEY__@@PEBG1KPEBEK@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x14000f5db",
+        "from_func": "0x14000f5b8",
+        "from_func_name": "?SetDWORDValue@CRegKey@ATL@@QEAAJPEBGK@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x14000f635",
+        "from_func": "0x14000f5f4",
+        "from_func_name": "?SetStringValue@CRegKey@ATL@@QEAAJPEBG0K@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x14001b231",
+        "from_func": "0x14001b16c",
+        "from_func_name": "?UpdateTransferSettingsActive@ColorFilterHelper@ColorFiltering@@SAX_N@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x14001b3b3",
+        "from_func": "0x14001b2ec",
+        "from_func_name": "?UpdateTransferSettingsFilterType@ColorFilterHelper@ColorFiltering@@SAXK@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x14001b537",
+        "from_func": "0x14001b470",
+        "from_func_name": "?UpdateTransferSettingsGain@ColorFilterHelper@ColorFiltering@@SAXK@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x14001b6bb",
+        "from_func": "0x14001b5f4",
+        "from_func_name": "?UpdateTransferSettingsIntensity@ColorFilterHelper@ColorFiltering@@SAXK@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x14001caa4",
+        "from_func": "0x14001c940",
+        "from_func_name": "?SetRegKeyValue@SettingsCopier@@CAJPEAUHKEY__@@PEBG1KPEBEK@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!CompareStringOrdinal",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14001cf5f",
+        "from_func": "0x14001ce60",
+        "from_func_name": "?is_default_system_managed_account@wil@@YA_NPEBG@Z",
+        "import": "KERNEL32!CompareStringOrdinal"
+      },
+      {
+        "from_ea": "0x14001cf5f",
+        "from_func": "0x14001ce60",
+        "from_func_name": "?is_default_system_managed_account@wil@@YA_NPEBG@Z",
+        "import": "KERNEL32!CompareStringOrdinal"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!CreateProcessW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140014b72",
+        "from_func": "0x140014844",
+        "from_func_name": "?CreateBreakawayATProcess@StartList@@AEAAJPEAVAccommodation@@H@Z",
+        "import": "KERNEL32!CreateProcessW"
+      },
+      {
+        "from_ea": "0x140014b72",
+        "from_func": "0x140014844",
+        "from_func_name": "?CreateBreakawayATProcess@StartList@@AEAAJPEAVAccommodation@@H@Z",
+        "import": "KERNEL32!CreateProcessW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!DeleteFileW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x140015a4b",
+        "from_func": "0x140015720",
+        "from_func_name": "?HandleFirstTime@StartList@@AEAAJAEBV?$CAtlList@V?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@ATL@@V?$CElementTraits@V?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@ATL@@@2@@ATL@@AEAV?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@3@AEAVCRegKey@3@@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x140015aa7",
+        "from_func": "0x140015720",
+        "from_func_name": "?HandleFirstTime@StartList@@AEAAJAEBV?$CAtlList@V?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@ATL@@V?$CElementTraits@V?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@ATL@@@2@@ATL@@AEAV?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@3@AEAVCRegKey@3@@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x140015b04",
+        "from_func": "0x140015720",
+        "from_func_name": "?HandleFirstTime@StartList@@AEAAJAEBV?$CAtlList@V?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@ATL@@V?$CElementTraits@V?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@ATL@@@2@@ATL@@AEAV?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@3@AEAVCRegKey@3@@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x140015a4b",
+        "from_func": "0x140015720",
+        "from_func_name": "?HandleFirstTime@StartList@@AEAAJAEBV?$CAtlList@V?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@ATL@@V?$CElementTraits@V?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@ATL@@@2@@ATL@@AEAV?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@3@AEAVCRegKey@3@@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x140015aa7",
+        "from_func": "0x140015720",
+        "from_func_name": "?HandleFirstTime@StartList@@AEAAJAEBV?$CAtlList@V?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@ATL@@V?$CElementTraits@V?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@ATL@@@2@@ATL@@AEAV?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@3@AEAVCRegKey@3@@Z",
+        "import": "KERNEL32!DeleteFileW"
+      },
+      {
+        "from_ea": "0x140015b04",
+        "from_func": "0x140015720",
+        "from_func_name": "?HandleFirstTime@StartList@@AEAAJAEBV?$CAtlList@V?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@ATL@@V?$CElementTraits@V?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@ATL@@@2@@ATL@@AEAV?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@3@AEAVCRegKey@3@@Z",
+        "import": "KERNEL32!DeleteFileW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 12,
+    "xrefs": [
+      {
+        "from_ea": "0x140002817",
+        "from_func": "0x1400027c8",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x140004de4",
+        "from_func": "0x140004dac",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@UProcessLocalData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x140004f60",
+        "from_func": "0x140004f28",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@VFeatureStateData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x14000d622",
+        "from_func": "0x14000d604",
+        "from_func_name": "?AppendSessionIDToKey@@YAJPEBGIPEAG@Z",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x140018882",
+        "from_func": "0x1400187fc",
+        "from_func_name": "?FindProcess@Accommodation@@SAKPEBGPEAPEAXH@Z",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x14001cdde",
+        "from_func": "0x14001cdb0",
+        "from_func_name": "?SessionKeyString@CATUtils@@SA?AV?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@ATL@@XZ",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x140002817",
+        "from_func": "0x1400027c8",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x140004de4",
+        "from_func": "0x140004dac",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@UProcessLocalData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x140004f60",
+        "from_func": "0x140004f28",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@VFeatureStateData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x14000d622",
+        "from_func": "0x14000d604",
+        "from_func_name": "?AppendSessionIDToKey@@YAJPEBGIPEAG@Z",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x140018882",
+        "from_func": "0x1400187fc",
+        "from_func_name": "?FindProcess@Accommodation@@SAKPEBGPEAPEAXH@Z",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x14001cdde",
+        "from_func": "0x14001cdb0",
+        "from_func_name": "?SessionKeyString@CATUtils@@SA?AV?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@ATL@@XZ",
+        "import": "KERNEL32!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetFileAttributesW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x140015a19",
+        "from_func": "0x140015720",
+        "from_func_name": "?HandleFirstTime@StartList@@AEAAJAEBV?$CAtlList@V?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@ATL@@V?$CElementTraits@V?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@ATL@@@2@@ATL@@AEAV?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@3@AEAVCRegKey@3@@Z",
+        "import": "KERNEL32!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x140015a7f",
+        "from_func": "0x140015720",
+        "from_func_name": "?HandleFirstTime@StartList@@AEAAJAEBV?$CAtlList@V?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@ATL@@V?$CElementTraits@V?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@ATL@@@2@@ATL@@AEAV?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@3@AEAVCRegKey@3@@Z",
+        "import": "KERNEL32!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x140015adb",
+        "from_func": "0x140015720",
+        "from_func_name": "?HandleFirstTime@StartList@@AEAAJAEBV?$CAtlList@V?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@ATL@@V?$CElementTraits@V?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@ATL@@@2@@ATL@@AEAV?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@3@AEAVCRegKey@3@@Z",
+        "import": "KERNEL32!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x140015a19",
+        "from_func": "0x140015720",
+        "from_func_name": "?HandleFirstTime@StartList@@AEAAJAEBV?$CAtlList@V?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@ATL@@V?$CElementTraits@V?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@ATL@@@2@@ATL@@AEAV?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@3@AEAVCRegKey@3@@Z",
+        "import": "KERNEL32!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x140015a7f",
+        "from_func": "0x140015720",
+        "from_func_name": "?HandleFirstTime@StartList@@AEAAJAEBV?$CAtlList@V?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@ATL@@V?$CElementTraits@V?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@ATL@@@2@@ATL@@AEAV?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@3@AEAVCRegKey@3@@Z",
+        "import": "KERNEL32!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x140015adb",
+        "from_func": "0x140015720",
+        "from_func_name": "?HandleFirstTime@StartList@@AEAAJAEBV?$CAtlList@V?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@ATL@@V?$CElementTraits@V?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@ATL@@@2@@ATL@@AEAV?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@3@AEAVCRegKey@3@@Z",
+        "import": "KERNEL32!GetFileAttributesW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!InitOnceComplete",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x14000d1ba",
+        "from_func": "0x14000d18c",
+        "from_func_name": "??1Completer@?$static_lazy@VAccessibilitySettingsTraceLogging@@@details@wil@@QEAA@XZ",
+        "import": "KERNEL32!InitOnceComplete"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!LoadLibraryExA",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140026136",
+        "from_func": "0x140025fd0",
+        "from_func_name": "__delayLoadHelper2",
+        "import": "KERNEL32!LoadLibraryExA"
+      },
+      {
+        "from_ea": "0x140026136",
+        "from_func": "0x140025fd0",
+        "from_func_name": "__delayLoadHelper2",
+        "import": "KERNEL32!LoadLibraryExA"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!LoadLibraryExW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x1400032f8",
+        "from_func": "0x1400032f8",
+        "from_func_name": "LoadLibraryExW_0",
+        "import": "KERNEL32!LoadLibraryExW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!OOBEComplete",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14001cc85",
+        "from_func": "0x14001cc74",
+        "from_func_name": "?IsDesktopOOBERunning@CATUtils@@SA_NXZ",
+        "import": "KERNEL32!OOBEComplete"
+      },
+      {
+        "from_ea": "0x14001cc85",
+        "from_func": "0x14001cc74",
+        "from_func_name": "?IsDesktopOOBERunning@CATUtils@@SA_NXZ",
+        "import": "KERNEL32!OOBEComplete"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!ProcessIdToSessionId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 8,
+    "xrefs": [
+      {
+        "from_ea": "0x14000d635",
+        "from_func": "0x14000d604",
+        "from_func_name": "?AppendSessionIDToKey@@YAJPEBGIPEAG@Z",
+        "import": "KERNEL32!ProcessIdToSessionId"
+      },
+      {
+        "from_ea": "0x1400188a0",
+        "from_func": "0x1400187fc",
+        "from_func_name": "?FindProcess@Accommodation@@SAKPEBGPEAPEAXH@Z",
+        "import": "KERNEL32!ProcessIdToSessionId"
+      },
+      {
+        "from_ea": "0x1400188cf",
+        "from_func": "0x1400187fc",
+        "from_func_name": "?FindProcess@Accommodation@@SAKPEBGPEAPEAXH@Z",
+        "import": "KERNEL32!ProcessIdToSessionId"
+      },
+      {
+        "from_ea": "0x14001cdf1",
+        "from_func": "0x14001cdb0",
+        "from_func_name": "?SessionKeyString@CATUtils@@SA?AV?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@ATL@@XZ",
+        "import": "KERNEL32!ProcessIdToSessionId"
+      },
+      {
+        "from_ea": "0x14000d635",
+        "from_func": "0x14000d604",
+        "from_func_name": "?AppendSessionIDToKey@@YAJPEBGIPEAG@Z",
+        "import": "KERNEL32!ProcessIdToSessionId"
+      },
+      {
+        "from_ea": "0x1400188a0",
+        "from_func": "0x1400187fc",
+        "from_func_name": "?FindProcess@Accommodation@@SAKPEBGPEAPEAXH@Z",
+        "import": "KERNEL32!ProcessIdToSessionId"
+      },
+      {
+        "from_ea": "0x1400188cf",
+        "from_func": "0x1400187fc",
+        "from_func_name": "?FindProcess@Accommodation@@SAKPEBGPEAPEAXH@Z",
+        "import": "KERNEL32!ProcessIdToSessionId"
+      },
+      {
+        "from_ea": "0x14001cdf1",
+        "from_func": "0x14001cdb0",
+        "from_func_name": "?SessionKeyString@CATUtils@@SA?AV?$CStringT@GV?$StrTraitATL@GV?$ChTraitsCRT@G@ATL@@@ATL@@@ATL@@XZ",
+        "import": "KERNEL32!ProcessIdToSessionId"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!UpdateProcThreadAttribute",
+    "tags": [
+      "installer_update"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140014b22",
+        "from_func": "0x140014844",
+        "from_func_name": "?CreateBreakawayATProcess@StartList@@AEAAJPEAVAccommodation@@H@Z",
+        "import": "KERNEL32!UpdateProcThreadAttribute"
+      },
+      {
+        "from_ea": "0x140014b22",
+        "from_func": "0x140014844",
+        "from_func_name": "?CreateBreakawayATProcess@StartList@@AEAAJPEAVAccommodation@@H@Z",
+        "import": "KERNEL32!UpdateProcThreadAttribute"
+      }
+    ]
+  },
+  {
+    "import": "SHELL32!ShellExecuteW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 5,
+    "xrefs": [
+      {
+        "from_ea": "0x14000e87d",
+        "from_func": "0x14000e81c",
+        "from_func_name": "?LaunchEaseOfAccessDialogOutOfProccess@@YAXPEBG@Z",
+        "import": "SHELL32!ShellExecuteW"
+      },
+      {
+        "from_ea": "0x14001475d",
+        "from_func": "0x140014560",
+        "from_func_name": "?CreateATProcess@StartList@@AEAAJPEBGPEAVAccommodation@@H@Z",
+        "import": "SHELL32!ShellExecuteW"
+      },
+      {
+        "from_ea": "0x14000e87d",
+        "from_func": "0x14000e81c",
+        "from_func_name": "?LaunchEaseOfAccessDialogOutOfProccess@@YAXPEBG@Z",
+        "import": "SHELL32!ShellExecuteW"
+      },
+      {
+        "from_ea": "0x14001475d",
+        "from_func": "0x140014560",
+        "from_func_name": "?CreateATProcess@StartList@@AEAAJPEBGPEAVAccommodation@@H@Z",
+        "import": "SHELL32!ShellExecuteW"
+      },
+      {
+        "from_ea": "0x140043bd4",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "SHELL32!ShellExecuteW"
+      }
+    ]
+  },
+  {
+    "import": "USER32!DispatchMessageW",
+    "tags": [
+      "installer_update"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14002212c",
+        "from_func": "0x140022098",
+        "from_func_name": "?Run@AccessibilityDialog@@QEAAXPEAUHINSTANCE__@@@Z",
+        "import": "USER32!DispatchMessageW"
+      },
+      {
+        "from_ea": "0x14002212c",
+        "from_func": "0x140022098",
+        "from_func_name": "?Run@AccessibilityDialog@@QEAAXPEAUHINSTANCE__@@@Z",
+        "import": "USER32!DispatchMessageW"
+      }
+    ]
+  },
+  {
+    "import": "USER32!GetWindowThreadProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140015418",
+        "from_func": "0x1400153e4",
+        "from_func_name": "?GetShellProcessHandle@@YAJKPEAPEAX@Z",
+        "import": "USER32!GetWindowThreadProcessId"
+      },
+      {
+        "from_ea": "0x140015418",
+        "from_func": "0x1400153e4",
+        "from_func_name": "?GetShellProcessHandle@@YAJKPEAPEAX@Z",
+        "import": "USER32!GetWindowThreadProcessId"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x140002f70",
+        "from_func": "0x140002f70",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "api-ms-win-crt-private-l1-1-0!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!__CxxFrameHandler3",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x140002f94",
+        "from_func": "0x140002f94",
+        "from_func_name": "__CxxFrameHandler3_0",
+        "import": "api-ms-win-crt-private-l1-1-0!__CxxFrameHandler3"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!__CxxFrameHandler4",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x140002e06",
+        "from_func": "0x140002e06",
+        "from_func_name": "__CxxFrameHandler4_0",
+        "import": "api-ms-win-crt-private-l1-1-0!__CxxFrameHandler4"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!_o___p__commode",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x140002e1e",
+        "from_func": "0x140002e1e",
+        "from_func_name": "__p__commode",
+        "import": "api-ms-win-crt-private-l1-1-0!_o___p__commode"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!_o___stdio_common_vswprintf",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x140002e42",
+        "from_func": "0x140002e42",
+        "from_func_name": "_o___stdio_common_vswprintf_0",
+        "import": "api-ms-win-crt-private-l1-1-0!_o___stdio_common_vswprintf"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!_o___stdio_common_vswprintf_s",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x140002e4e",
+        "from_func": "0x140002e4e",
+        "from_func_name": "__stdio_common_vswprintf_s",
+        "import": "api-ms-win-crt-private-l1-1-0!_o___stdio_common_vswprintf_s"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!_o__configthreadlocale",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x140002e72",
+        "from_func": "0x140002e72",
+        "from_func_name": "_configthreadlocale",
+        "import": "api-ms-win-crt-private-l1-1-0!_o__configthreadlocale"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!_o__configure_wide_argv",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x140002e7e",
+        "from_func": "0x140002e7e",
+        "from_func_name": "_o__configure_wide_argv_0",
+        "import": "api-ms-win-crt-private-l1-1-0!_o__configure_wide_argv"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!_o__get_wide_winmain_command_line",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x140002ea2",
+        "from_func": "0x140002ea2",
+        "from_func_name": "_o__get_wide_winmain_command_line_0",
+        "import": "api-ms-win-crt-private-l1-1-0!_o__get_wide_winmain_command_line"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!NtQueryWnfStateData",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14001ef19",
+        "from_func": "0x14001eecc",
+        "from_func_name": "??$wnf_query_nothrow@UtagRECT@@@wil@@YAJAEBU_WNF_STATE_NAME@@PEA_NPEAUtagRECT@@PEAUWNF_CHANGE_STAMP_STRUCT@0@@Z",
+        "import": "ntdll!NtQueryWnfStateData"
+      },
+      {
+        "from_ea": "0x14001ef19",
+        "from_func": "0x14001eecc",
+        "from_func_name": "??$wnf_query_nothrow@UtagRECT@@@wil@@YAJAEBU_WNF_STATE_NAME@@PEA_NPEAUtagRECT@@PEAUWNF_CHANGE_STAMP_STRUCT@0@@Z",
+        "import": "ntdll!NtQueryWnfStateData"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!WinSqmAddToStream",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x1400165ea",
+        "from_func": "0x140016568",
+        "from_func_name": "?LogAccomodationToSQM@StartList@@AEAAXPEAVAccommodation@@@Z",
+        "import": "ntdll!WinSqmAddToStream"
+      },
+      {
+        "from_ea": "0x1400165ea",
+        "from_func": "0x140016568",
+        "from_func_name": "?LogAccomodationToSQM@StartList@@AEAAXPEAVAccommodation@@@Z",
+        "import": "ntdll!WinSqmAddToStream"
+      },
+      {
+        "from_ea": "0x140043b84",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ntdll!WinSqmAddToStream"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!WinSqmIsOptedIn",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140016575",
+        "from_func": "0x140016568",
+        "from_func_name": "?LogAccomodationToSQM@StartList@@AEAAXPEAVAccommodation@@@Z",
+        "import": "ntdll!WinSqmIsOptedIn"
+      },
+      {
+        "from_ea": "0x140016575",
+        "from_func": "0x140016568",
+        "from_func_name": "?LogAccomodationToSQM@StartList@@AEAAXPEAVAccommodation@@@Z",
+        "import": "ntdll!WinSqmIsOptedIn"
+      }
+    ]
+  },
+  {
+    "import": "ole32!CoTaskMemAlloc",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 11,
+    "xrefs": [
+      {
+        "from_ea": "0x14000bb49",
+        "from_func": "0x14000bb00",
+        "from_func_name": "??$read_cotaskmem_string@Uansistring_tag@tson@@V?$unique_any_t@V?$unique_storage@U?$resource_policy@PEADP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEADPEAD$0A@$$T@details@wil@@@details@wil@@@wil@@@input_archive@tson@@AEAAXAEAV?$unique_any_t@V?$unique_storage@U?$resource_policy@PEADP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEADPEAD$0A@$$T@details@wil@@@details@wil@@@wil@@@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x14000bbf4",
+        "from_func": "0x14000bba8",
+        "from_func_name": "??$read_cotaskmem_string@Ustring_tag@tson@@V?$unique_any_t@V?$unique_storage@U?$resource_policy@PEAGP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAGPEAG$0A@$$T@details@wil@@@details@wil@@@wil@@@input_archive@tson@@AEAAXAEAV?$unique_any_t@V?$unique_storage@U?$resource_policy@PEAGP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAGPEAG$0A@$$T@details@wil@@@details@wil@@@wil@@@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x14000bff2",
+        "from_func": "0x14000bfe0",
+        "from_func_name": "??$tip_make_shared_nothrow@V?$merged_data@U_tip_AccessibilityDialogFlyoutLaunchTest@@U1@@details@tip2@@$$V@details@tip2@@YA?AV?$com_ptr_t@V?$merged_data@U_tip_AccessibilityDialogFlyoutLaunchTest@@U1@@details@tip2@@Uerr_returncode_policy@wil@@@wil@@XZ",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1400117c5",
+        "from_func": "0x140011794",
+        "from_func_name": "?reserve@write_buffer@tson@@AEAA_N_K@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x14001ecd1",
+        "from_func": "0x14001ecbc",
+        "from_func_name": "??$tip_make_shared_nothrow@V?$merged_data@U_tip_AccessibilityDialogFlyoutLaunchTest@@U1@@details@tip2@@AEAPEAU_GUID@@@details@tip2@@YA?AV?$com_ptr_t@V?$merged_data@U_tip_AccessibilityDialogFlyoutLaunchTest@@U1@@details@tip2@@Uerr_returncode_policy@wil@@@wil@@AEAPEAU_GUID@@@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1400030c0",
+        "from_func": "0x1400030c0",
+        "from_func_name": "WINRT_IMPL_CoTaskMemAlloc",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x14000bb49",
+        "from_func": "0x14000bb00",
+        "from_func_name": "??$read_cotaskmem_string@Uansistring_tag@tson@@V?$unique_any_t@V?$unique_storage@U?$resource_policy@PEADP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEADPEAD$0A@$$T@details@wil@@@details@wil@@@wil@@@input_archive@tson@@AEAAXAEAV?$unique_any_t@V?$unique_storage@U?$resource_policy@PEADP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEADPEAD$0A@$$T@details@wil@@@details@wil@@@wil@@@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x14000bbf4",
+        "from_func": "0x14000bba8",
+        "from_func_name": "??$read_cotaskmem_string@Ustring_tag@tson@@V?$unique_any_t@V?$unique_storage@U?$resource_policy@PEAGP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAGPEAG$0A@$$T@details@wil@@@details@wil@@@wil@@@input_archive@tson@@AEAAXAEAV?$unique_any_t@V?$unique_storage@U?$resource_policy@PEAGP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAGPEAG$0A@$$T@details@wil@@@details@wil@@@wil@@@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x14000bff2",
+        "from_func": "0x14000bfe0",
+        "from_func_name": "??$tip_make_shared_nothrow@V?$merged_data@U_tip_AccessibilityDialogFlyoutLaunchTest@@U1@@details@tip2@@$$V@details@tip2@@YA?AV?$com_ptr_t@V?$merged_data@U_tip_AccessibilityDialogFlyoutLaunchTest@@U1@@details@tip2@@Uerr_returncode_policy@wil@@@wil@@XZ",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1400117c5",
+        "from_func": "0x140011794",
+        "from_func_name": "?reserve@write_buffer@tson@@AEAA_N_K@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x14001ecd1",
+        "from_func": "0x14001ecbc",
+        "from_func_name": "??$tip_make_shared_nothrow@V?$merged_data@U_tip_AccessibilityDialogFlyoutLaunchTest@@U1@@details@tip2@@AEAPEAU_GUID@@@details@tip2@@YA?AV?$com_ptr_t@V?$merged_data@U_tip_AccessibilityDialogFlyoutLaunchTest@@U1@@details@tip2@@Uerr_returncode_policy@wil@@@wil@@AEAPEAU_GUID@@@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      }
+    ]
+  },
+  {
+    "import": "ole32!CoTaskMemFree",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 18,
+    "xrefs": [
+      {
+        "from_ea": "0x14000cfcc",
+        "from_func": "0x14000cfc0",
+        "from_func_name": "??1?$unique_storage@U?$resource_policy@PEAXP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@QEAA@XZ",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x14000ee35",
+        "from_func": "0x14000ee10",
+        "from_func_name": "?Release@?$merged_data@U_tip_AccessibilityDialogFlyoutLaunchTest@@U1@@details@tip2@@AEAAKXZ",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x14000f8b0",
+        "from_func": "0x14000f828",
+        "from_func_name": "?begin_update@?$shared_data@$00$0A@$0A@@details@tip2@@AEAA_NXZ",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x14000f8fc",
+        "from_func": "0x14000f828",
+        "from_func_name": "?begin_update@?$shared_data@$00$0A@$0A@@details@tip2@@AEAA_NXZ",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x14000fb6f",
+        "from_func": "0x14000fad8",
+        "from_func_name": "?complete_helper@?$shared_data@$00$0A@$0A@@details@tip2@@AEAAXW4TestQueryOptions@@@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x14000ff73",
+        "from_func": "0x14000fe7c",
+        "from_func_name": "?end_update@?$shared_data@$00$0A@$0A@@details@tip2@@AEAAXXZ",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x14001180d",
+        "from_func": "0x140011794",
+        "from_func_name": "?reserve@write_buffer@tson@@AEAA_N_K@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x140011892",
+        "from_func": "0x140011868",
+        "from_func_name": "?reset@?$unique_storage@U?$resource_policy@PEAGP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAGPEAG$0A@$$T@details@wil@@@details@wil@@QEAAXPEAG@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x140023205",
+        "from_func": "0x140023104",
+        "from_func_name": "?open_without_lock@?$shared_data@$00$0A@$0A@@details@tip2@@IEAAXPEAU_GUID@@@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x14000cfcc",
+        "from_func": "0x14000cfc0",
+        "from_func_name": "??1?$unique_storage@U?$resource_policy@PEAXP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@QEAA@XZ",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x14000ee35",
+        "from_func": "0x14000ee10",
+        "from_func_name": "?Release@?$merged_data@U_tip_AccessibilityDialogFlyoutLaunchTest@@U1@@details@tip2@@AEAAKXZ",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x14000f8b0",
+        "from_func": "0x14000f828",
+        "from_func_name": "?begin_update@?$shared_data@$00$0A@$0A@@details@tip2@@AEAA_NXZ",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x14000f8fc",
+        "from_func": "0x14000f828",
+        "from_func_name": "?begin_update@?$shared_data@$00$0A@$0A@@details@tip2@@AEAA_NXZ",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x14000fb6f",
+        "from_func": "0x14000fad8",
+        "from_func_name": "?complete_helper@?$shared_data@$00$0A@$0A@@details@tip2@@AEAAXW4TestQueryOptions@@@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x14000ff73",
+        "from_func": "0x14000fe7c",
+        "from_func_name": "?end_update@?$shared_data@$00$0A@$0A@@details@tip2@@AEAAXXZ",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x14001180d",
+        "from_func": "0x140011794",
+        "from_func_name": "?reserve@write_buffer@tson@@AEAA_N_K@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x140011892",
+        "from_func": "0x140011868",
+        "from_func_name": "?reset@?$unique_storage@U?$resource_policy@PEAGP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAGPEAG$0A@$$T@details@wil@@@details@wil@@QEAAXPEAG@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x140023205",
+        "from_func": "0x140023104",
+        "from_func_name": "?open_without_lock@?$shared_data@$00$0A@$0A@@details@tip2@@IEAAXPEAU_GUID@@@Z",
+        "import": "ole32!CoTaskMemFree"
+      }
+    ]
+  }
+]

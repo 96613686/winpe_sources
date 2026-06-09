@@ -1,0 +1,443 @@
+[
+  {
+    "import": "KERNEL32!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x1800018cb",
+        "from_func": "0x180001884",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x18000338d",
+        "from_func": "0x180003354",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@UProcessLocalData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x180003739",
+        "from_func": "0x180003700",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@VFeatureStateData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x1800018cb",
+        "from_func": "0x180001884",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x18000338d",
+        "from_func": "0x180003354",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@UProcessLocalData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x180003739",
+        "from_func": "0x180003700",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@VFeatureStateData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "KERNEL32!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!LoadLibraryExA",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x18000927f",
+        "from_func": "0x180009080",
+        "from_func_name": "__delayLoadHelper2",
+        "import": "KERNEL32!LoadLibraryExA"
+      },
+      {
+        "from_ea": "0x18000927f",
+        "from_func": "0x180009080",
+        "from_func_name": "__delayLoadHelper2",
+        "import": "KERNEL32!LoadLibraryExA"
+      },
+      {
+        "from_ea": "0x18000d9a0",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "KERNEL32!LoadLibraryExA"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-cryptoapi-l1-1-0!CryptAcquireContextA",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x180007a7a",
+        "from_func": "0x1800078e4",
+        "from_func_name": "checkOPMforMonitor",
+        "import": "api-ms-win-security-cryptoapi-l1-1-0!CryptAcquireContextA"
+      },
+      {
+        "from_ea": "0x180007a7a",
+        "from_func": "0x1800078e4",
+        "from_func_name": "checkOPMforMonitor",
+        "import": "api-ms-win-security-cryptoapi-l1-1-0!CryptAcquireContextA"
+      },
+      {
+        "from_ea": "0x18000da04",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-security-cryptoapi-l1-1-0!CryptAcquireContextA"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-cryptoapi-l1-1-0!CryptDestroyKey",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180007d10",
+        "from_func": "0x1800078e4",
+        "from_func_name": "checkOPMforMonitor",
+        "import": "api-ms-win-security-cryptoapi-l1-1-0!CryptDestroyKey"
+      },
+      {
+        "from_ea": "0x180007d10",
+        "from_func": "0x1800078e4",
+        "from_func_name": "checkOPMforMonitor",
+        "import": "api-ms-win-security-cryptoapi-l1-1-0!CryptDestroyKey"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-cryptoapi-l1-1-0!CryptExportKey",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180007ad2",
+        "from_func": "0x1800078e4",
+        "from_func_name": "checkOPMforMonitor",
+        "import": "api-ms-win-security-cryptoapi-l1-1-0!CryptExportKey"
+      },
+      {
+        "from_ea": "0x180007b24",
+        "from_func": "0x1800078e4",
+        "from_func_name": "checkOPMforMonitor",
+        "import": "api-ms-win-security-cryptoapi-l1-1-0!CryptExportKey"
+      },
+      {
+        "from_ea": "0x180007ad2",
+        "from_func": "0x1800078e4",
+        "from_func_name": "checkOPMforMonitor",
+        "import": "api-ms-win-security-cryptoapi-l1-1-0!CryptExportKey"
+      },
+      {
+        "from_ea": "0x180007b24",
+        "from_func": "0x1800078e4",
+        "from_func_name": "checkOPMforMonitor",
+        "import": "api-ms-win-security-cryptoapi-l1-1-0!CryptExportKey"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-cryptoapi-l1-1-0!CryptGenRandom",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x180007b46",
+        "from_func": "0x1800078e4",
+        "from_func_name": "checkOPMforMonitor",
+        "import": "api-ms-win-security-cryptoapi-l1-1-0!CryptGenRandom"
+      },
+      {
+        "from_ea": "0x180007b6b",
+        "from_func": "0x1800078e4",
+        "from_func_name": "checkOPMforMonitor",
+        "import": "api-ms-win-security-cryptoapi-l1-1-0!CryptGenRandom"
+      },
+      {
+        "from_ea": "0x180007b8b",
+        "from_func": "0x1800078e4",
+        "from_func_name": "checkOPMforMonitor",
+        "import": "api-ms-win-security-cryptoapi-l1-1-0!CryptGenRandom"
+      },
+      {
+        "from_ea": "0x180007b46",
+        "from_func": "0x1800078e4",
+        "from_func_name": "checkOPMforMonitor",
+        "import": "api-ms-win-security-cryptoapi-l1-1-0!CryptGenRandom"
+      },
+      {
+        "from_ea": "0x180007b6b",
+        "from_func": "0x1800078e4",
+        "from_func_name": "checkOPMforMonitor",
+        "import": "api-ms-win-security-cryptoapi-l1-1-0!CryptGenRandom"
+      },
+      {
+        "from_ea": "0x180007b8b",
+        "from_func": "0x1800078e4",
+        "from_func_name": "checkOPMforMonitor",
+        "import": "api-ms-win-security-cryptoapi-l1-1-0!CryptGenRandom"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-cryptoapi-l1-1-0!CryptReleaseContext",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180007ce6",
+        "from_func": "0x1800078e4",
+        "from_func_name": "checkOPMforMonitor",
+        "import": "api-ms-win-security-cryptoapi-l1-1-0!CryptReleaseContext"
+      },
+      {
+        "from_ea": "0x180007ce6",
+        "from_func": "0x1800078e4",
+        "from_func_name": "checkOPMforMonitor",
+        "import": "api-ms-win-security-cryptoapi-l1-1-0!CryptReleaseContext"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180001973",
+        "from_func": "0x180001973",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "msvcrt!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__dllonexit",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180001b7e",
+        "from_func": "0x180001b7e",
+        "from_func_name": "__dllonexit_0",
+        "import": "msvcrt!__dllonexit"
+      }
+    ]
+  },
+  {
+    "import": "ole32!CoTaskMemAlloc",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 11,
+    "xrefs": [
+      {
+        "from_ea": "0x180007aea",
+        "from_func": "0x1800078e4",
+        "from_func_name": "checkOPMforMonitor",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180007e61",
+        "from_func": "0x180007d80",
+        "from_func_name": "computeOMAC",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800082c9",
+        "from_func": "0x18000823c",
+        "from_func_name": "encryptSignatureUsingRSAWithSHA2",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x18000853f",
+        "from_func": "0x180008460",
+        "from_func_name": "?getDXGIMonitorEnum@@YAJXZ",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180008891",
+        "from_func": "0x180008820",
+        "from_func_name": "importRsaPublicKey",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180007aea",
+        "from_func": "0x1800078e4",
+        "from_func_name": "checkOPMforMonitor",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180007e61",
+        "from_func": "0x180007d80",
+        "from_func_name": "computeOMAC",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800082c9",
+        "from_func": "0x18000823c",
+        "from_func_name": "encryptSignatureUsingRSAWithSHA2",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x18000853f",
+        "from_func": "0x180008460",
+        "from_func_name": "?getDXGIMonitorEnum@@YAJXZ",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180008891",
+        "from_func": "0x180008820",
+        "from_func_name": "importRsaPublicKey",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x18000d9dc",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ole32!CoTaskMemAlloc"
+      }
+    ]
+  },
+  {
+    "import": "ole32!CoTaskMemFree",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 18,
+    "xrefs": [
+      {
+        "from_ea": "0x18000544c",
+        "from_func": "0x180005134",
+        "from_func_name": "?ParseDXGIData@@YAJIIPEAUDXGI_OUTPUT_DESC@@PEBUDXGI_ADAPTER_DESC2@@@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800054b8",
+        "from_func": "0x180005134",
+        "from_func_name": "?ParseDXGIData@@YAJIIPEAUDXGI_OUTPUT_DESC@@PEBUDXGI_ADAPTER_DESC2@@@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180007d21",
+        "from_func": "0x1800078e4",
+        "from_func_name": "checkOPMforMonitor",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180007d30",
+        "from_func": "0x1800078e4",
+        "from_func_name": "checkOPMforMonitor",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180007d41",
+        "from_func": "0x1800078e4",
+        "from_func_name": "checkOPMforMonitor",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180008152",
+        "from_func": "0x180007d80",
+        "from_func_name": "computeOMAC",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000833d",
+        "from_func": "0x18000823c",
+        "from_func_name": "encryptSignatureUsingRSAWithSHA2",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800087e5",
+        "from_func": "0x180008460",
+        "from_func_name": "?getDXGIMonitorEnum@@YAJXZ",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180008956",
+        "from_func": "0x180008820",
+        "from_func_name": "importRsaPublicKey",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000544c",
+        "from_func": "0x180005134",
+        "from_func_name": "?ParseDXGIData@@YAJIIPEAUDXGI_OUTPUT_DESC@@PEBUDXGI_ADAPTER_DESC2@@@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800054b8",
+        "from_func": "0x180005134",
+        "from_func_name": "?ParseDXGIData@@YAJIIPEAUDXGI_OUTPUT_DESC@@PEBUDXGI_ADAPTER_DESC2@@@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180007d21",
+        "from_func": "0x1800078e4",
+        "from_func_name": "checkOPMforMonitor",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180007d30",
+        "from_func": "0x1800078e4",
+        "from_func_name": "checkOPMforMonitor",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180007d41",
+        "from_func": "0x1800078e4",
+        "from_func_name": "checkOPMforMonitor",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180008152",
+        "from_func": "0x180007d80",
+        "from_func_name": "computeOMAC",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000833d",
+        "from_func": "0x18000823c",
+        "from_func_name": "encryptSignatureUsingRSAWithSHA2",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800087e5",
+        "from_func": "0x180008460",
+        "from_func_name": "?getDXGIMonitorEnum@@YAJXZ",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180008956",
+        "from_func": "0x180008820",
+        "from_func_name": "importRsaPublicKey",
+        "import": "ole32!CoTaskMemFree"
+      }
+    ]
+  }
+]
