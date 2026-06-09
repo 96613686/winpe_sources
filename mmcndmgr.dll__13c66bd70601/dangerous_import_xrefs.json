@@ -1,0 +1,4528 @@
+[
+  {
+    "import": "ADVAPI32!AdjustTokenPrivileges",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x1800e5047",
+        "from_func": "0x1800e4fac",
+        "from_func_name": "?SetShutdownPrivilegeAttribute@@YAKKPEAK@Z",
+        "import": "ADVAPI32!AdjustTokenPrivileges"
+      },
+      {
+        "from_ea": "0x18007228b",
+        "from_func": "0x18007228b",
+        "from_func_name": "__imp_load_AdjustTokenPrivileges",
+        "import": "ADVAPI32!AdjustTokenPrivileges"
+      },
+      {
+        "from_ea": "0x1800e5047",
+        "from_func": "0x1800e4fac",
+        "from_func_name": "?SetShutdownPrivilegeAttribute@@YAKKPEAK@Z",
+        "import": "ADVAPI32!AdjustTokenPrivileges"
+      }
+    ]
+  },
+  {
+    "import": "GDI32!CreateCompatibleDC",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1800a845a",
+        "from_func": "0x1800a8384",
+        "from_func_name": "?PersistBitmap@@YAXAEAVCPersistor@@PEBGAEAPEAUHBITMAP__@@@Z",
+        "import": "GDI32!CreateCompatibleDC"
+      },
+      {
+        "from_ea": "0x1800be662",
+        "from_func": "0x1800be5bc",
+        "from_func_name": "?CreateBitmapFromIcon@@YAPEAUHBITMAP__@@PEAUHICON__@@PEAUtagSIZE@@@Z",
+        "import": "GDI32!CreateCompatibleDC"
+      },
+      {
+        "from_ea": "0x1800a845a",
+        "from_func": "0x1800a8384",
+        "from_func_name": "?PersistBitmap@@YAXAEAVCPersistor@@PEBGAEAPEAUHBITMAP__@@@Z",
+        "import": "GDI32!CreateCompatibleDC"
+      },
+      {
+        "from_ea": "0x1800be662",
+        "from_func": "0x1800be5bc",
+        "from_func_name": "?CreateBitmapFromIcon@@YAPEAUHBITMAP__@@PEAUHICON__@@PEAUtagSIZE@@@Z",
+        "import": "GDI32!CreateCompatibleDC"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!RegOpenKeyExA",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180133e42",
+        "from_func": "0x180133d4c",
+        "from_func_name": "?GetSubstituteHKLFromReg@@YAPEAUHKL__@@AEBU_GUID@@G0@Z",
+        "import": "KERNEL32!RegOpenKeyExA"
+      },
+      {
+        "from_ea": "0x18013412a",
+        "from_func": "0x1801340d8",
+        "from_func_name": "GetRegisteredLocation",
+        "import": "KERNEL32!RegOpenKeyExA"
+      },
+      {
+        "from_ea": "0x180133e42",
+        "from_func": "0x180133d4c",
+        "from_func_name": "?GetSubstituteHKLFromReg@@YAPEAUHKL__@@AEBU_GUID@@G0@Z",
+        "import": "KERNEL32!RegOpenKeyExA"
+      },
+      {
+        "from_ea": "0x18013412a",
+        "from_func": "0x1801340d8",
+        "from_func_name": "GetRegisteredLocation",
+        "import": "KERNEL32!RegOpenKeyExA"
+      }
+    ]
+  },
+  {
+    "import": "RPCRT4!NdrDllCanUnloadNow",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800d9459",
+        "from_func": "0x1800d9430",
+        "from_func_name": "DllCanUnloadNow",
+        "import": "RPCRT4!NdrDllCanUnloadNow"
+      },
+      {
+        "from_ea": "0x1800d9459",
+        "from_func": "0x1800d9430",
+        "from_func_name": "DllCanUnloadNow",
+        "import": "RPCRT4!NdrDllCanUnloadNow"
+      }
+    ]
+  },
+  {
+    "import": "RPCRT4!NdrDllGetClassObject",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x18006815f",
+        "from_func": "0x180068120",
+        "from_func_name": "DllGetClassObject",
+        "import": "RPCRT4!NdrDllGetClassObject"
+      },
+      {
+        "from_ea": "0x18006815f",
+        "from_func": "0x180068120",
+        "from_func_name": "DllGetClassObject",
+        "import": "RPCRT4!NdrDllGetClassObject"
+      },
+      {
+        "from_ea": "0x1801b1410",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "RPCRT4!NdrDllGetClassObject"
+      }
+    ]
+  },
+  {
+    "import": "RPCRT4!NdrDllRegisterProxy",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800d9966",
+        "from_func": "0x1800d96f0",
+        "from_func_name": "DllRegisterServer",
+        "import": "RPCRT4!NdrDllRegisterProxy"
+      },
+      {
+        "from_ea": "0x1800d9966",
+        "from_func": "0x1800d96f0",
+        "from_func_name": "DllRegisterServer",
+        "import": "RPCRT4!NdrDllRegisterProxy"
+      }
+    ]
+  },
+  {
+    "import": "RPCRT4!NdrDllUnregisterProxy",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800d9bdb",
+        "from_func": "0x1800d9b50",
+        "from_func_name": "DllUnregisterServer",
+        "import": "RPCRT4!NdrDllUnregisterProxy"
+      },
+      {
+        "from_ea": "0x1800d9bdb",
+        "from_func": "0x1800d9b50",
+        "from_func_name": "DllUnregisterServer",
+        "import": "RPCRT4!NdrDllUnregisterProxy"
+      }
+    ]
+  },
+  {
+    "import": "SHELL32!ShellExecuteExW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x1800c34d3",
+        "from_func": "0x1800c30ec",
+        "from_func_name": "?ScExecuteShellCommand@CNode@@QEAA?AVSC@mmcerror@@PEAG000@Z",
+        "import": "SHELL32!ShellExecuteExW"
+      },
+      {
+        "from_ea": "0x18007293f",
+        "from_func": "0x18007293f",
+        "from_func_name": "__imp_load_ShellExecuteExW",
+        "import": "SHELL32!ShellExecuteExW"
+      },
+      {
+        "from_ea": "0x1800c34d3",
+        "from_func": "0x1800c30ec",
+        "from_func_name": "?ScExecuteShellCommand@CNode@@QEAA?AVSC@mmcerror@@PEAG000@Z",
+        "import": "SHELL32!ShellExecuteExW"
+      }
+    ]
+  },
+  {
+    "import": "SHELL32!ShellExecuteW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x1800d9a8e",
+        "from_func": "0x1800d96f0",
+        "from_func_name": "DllRegisterServer",
+        "import": "SHELL32!ShellExecuteW"
+      },
+      {
+        "from_ea": "0x180072951",
+        "from_func": "0x180072951",
+        "from_func_name": "__imp_load_ShellExecuteW",
+        "import": "SHELL32!ShellExecuteW"
+      },
+      {
+        "from_ea": "0x1800d9a8e",
+        "from_func": "0x1800d96f0",
+        "from_func_name": "DllRegisterServer",
+        "import": "SHELL32!ShellExecuteW"
+      }
+    ]
+  },
+  {
+    "import": "USER32!DispatchMessageW",
+    "tags": [
+      "installer_update"
+    ],
+    "xref_count": 10,
+    "xrefs": [
+      {
+        "from_ea": "0x18000eee0",
+        "from_func": "0x18000ec80",
+        "from_func_name": "?RunModal@CWaitDialogObject@@UEAAJPEAUHWND__@@KKPEAUIWaitDialogCancelCallback@@@Z",
+        "import": "USER32!DispatchMessageW"
+      },
+      {
+        "from_ea": "0x18007529b",
+        "from_func": "0x180075204",
+        "from_func_name": "??1CAboutInfoThread@@QEAA@XZ",
+        "import": "USER32!DispatchMessageW"
+      },
+      {
+        "from_ea": "0x18007bdf4",
+        "from_func": "0x18007bd50",
+        "from_func_name": "?ThreadProc@CAboutInfoThread@@CAIPEAX@Z",
+        "import": "USER32!DispatchMessageW"
+      },
+      {
+        "from_ea": "0x1800b2aa7",
+        "from_func": "0x1800b2a10",
+        "from_func_name": "??1CAboutInfoThread@MMC21ADDREMOVEUI@@QEAA@XZ",
+        "import": "USER32!DispatchMessageW"
+      },
+      {
+        "from_ea": "0x1800bc02d",
+        "from_func": "0x1800bbef0",
+        "from_func_name": "?ThreadProc@CAboutInfoThread@MMC21ADDREMOVEUI@@CAIPEAX@Z",
+        "import": "USER32!DispatchMessageW"
+      },
+      {
+        "from_ea": "0x18000eee0",
+        "from_func": "0x18000ec80",
+        "from_func_name": "?RunModal@CWaitDialogObject@@UEAAJPEAUHWND__@@KKPEAUIWaitDialogCancelCallback@@@Z",
+        "import": "USER32!DispatchMessageW"
+      },
+      {
+        "from_ea": "0x18007529b",
+        "from_func": "0x180075204",
+        "from_func_name": "??1CAboutInfoThread@@QEAA@XZ",
+        "import": "USER32!DispatchMessageW"
+      },
+      {
+        "from_ea": "0x18007bdf4",
+        "from_func": "0x18007bd50",
+        "from_func_name": "?ThreadProc@CAboutInfoThread@@CAIPEAX@Z",
+        "import": "USER32!DispatchMessageW"
+      },
+      {
+        "from_ea": "0x1800b2aa7",
+        "from_func": "0x1800b2a10",
+        "from_func_name": "??1CAboutInfoThread@MMC21ADDREMOVEUI@@QEAA@XZ",
+        "import": "USER32!DispatchMessageW"
+      },
+      {
+        "from_ea": "0x1800bc02d",
+        "from_func": "0x1800bbef0",
+        "from_func_name": "?ThreadProc@CAboutInfoThread@MMC21ADDREMOVEUI@@CAIPEAX@Z",
+        "import": "USER32!DispatchMessageW"
+      }
+    ]
+  },
+  {
+    "import": "USER32!GetWindowThreadProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 8,
+    "xrefs": [
+      {
+        "from_ea": "0x180032dc2",
+        "from_func": "0x180032c80",
+        "from_func_name": "?SetPropertySheetPosition@AMC@@YAXPEAUHWND__@@@Z",
+        "import": "USER32!GetWindowThreadProcessId"
+      },
+      {
+        "from_ea": "0x1800e3d62",
+        "from_func": "0x1800e3cc0",
+        "from_func_name": "?FindPropertySheetEx@CPropertySheetProvider@@UEAAJ_JPEAUIComponent@@PEAUIComponentData@@PEAUIDataObject@@@Z",
+        "import": "USER32!GetWindowThreadProcessId"
+      },
+      {
+        "from_ea": "0x1800e3ddd",
+        "from_func": "0x1800e3cc0",
+        "from_func_name": "?FindPropertySheetEx@CPropertySheetProvider@@UEAAJ_JPEAUIComponent@@PEAUIComponentData@@PEAUIDataObject@@@Z",
+        "import": "USER32!GetWindowThreadProcessId"
+      },
+      {
+        "from_ea": "0x18011b94b",
+        "from_func": "0x18011b8f8",
+        "from_func_name": "MMCIsMTNodeValid",
+        "import": "USER32!GetWindowThreadProcessId"
+      },
+      {
+        "from_ea": "0x180032dc2",
+        "from_func": "0x180032c80",
+        "from_func_name": "?SetPropertySheetPosition@AMC@@YAXPEAUHWND__@@@Z",
+        "import": "USER32!GetWindowThreadProcessId"
+      },
+      {
+        "from_ea": "0x1800e3d62",
+        "from_func": "0x1800e3cc0",
+        "from_func_name": "?FindPropertySheetEx@CPropertySheetProvider@@UEAAJ_JPEAUIComponent@@PEAUIComponentData@@PEAUIDataObject@@@Z",
+        "import": "USER32!GetWindowThreadProcessId"
+      },
+      {
+        "from_ea": "0x1800e3ddd",
+        "from_func": "0x1800e3cc0",
+        "from_func_name": "?FindPropertySheetEx@CPropertySheetProvider@@UEAAJ_JPEAUIComponent@@PEAUIComponentData@@PEAUIDataObject@@@Z",
+        "import": "USER32!GetWindowThreadProcessId"
+      },
+      {
+        "from_ea": "0x18011b94b",
+        "from_func": "0x18011b8f8",
+        "from_func_name": "MMCIsMTNodeValid",
+        "import": "USER32!GetWindowThreadProcessId"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-file-l1-1-0!CreateFileW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 14,
+    "xrefs": [
+      {
+        "from_ea": "0x180042864",
+        "from_func": "0x18004278c",
+        "from_func_name": "?ScGetConsoleFileChecksum@@YA?AVSC@mmcerror@@PEBGAEAVtstring@@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x18009273b",
+        "from_func": "0x18009201c",
+        "from_func_name": "?CreateHelpFile@CHelpDoc@@QEAAJXZ",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x1800928a1",
+        "from_func": "0x180092870",
+        "from_func_name": "?DeleteHelpFile@CHelpDoc@@QEAAXXZ",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x180092eb0",
+        "from_func": "0x180092e7c",
+        "from_func_name": "?IsHelpFileValid@CHelpDoc@@QEAAHXZ",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x1800931e7",
+        "from_func": "0x180093168",
+        "from_func_name": "?OnUpdateHelpDoc@CNodeCallback@@AEAAJPEAU_HELPDOCINFO@@0@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x180128169",
+        "from_func": "0x180128084",
+        "from_func_name": "?ScOpenDocAsStructuredStorage@CConsoleFilePersistor@@CA?AVSC@mmcerror@@PEBGPEAPEAUIStorage@@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x1801284b2",
+        "from_func": "0x180128408",
+        "from_func_name": "ScReadDataFromFile",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x180042864",
+        "from_func": "0x18004278c",
+        "from_func_name": "?ScGetConsoleFileChecksum@@YA?AVSC@mmcerror@@PEBGAEAVtstring@@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x18009273b",
+        "from_func": "0x18009201c",
+        "from_func_name": "?CreateHelpFile@CHelpDoc@@QEAAJXZ",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x1800928a1",
+        "from_func": "0x180092870",
+        "from_func_name": "?DeleteHelpFile@CHelpDoc@@QEAAXXZ",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x180092eb0",
+        "from_func": "0x180092e7c",
+        "from_func_name": "?IsHelpFileValid@CHelpDoc@@QEAAHXZ",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x1800931e7",
+        "from_func": "0x180093168",
+        "from_func_name": "?OnUpdateHelpDoc@CNodeCallback@@AEAAJPEAU_HELPDOCINFO@@0@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x180128169",
+        "from_func": "0x180128084",
+        "from_func_name": "?ScOpenDocAsStructuredStorage@CConsoleFilePersistor@@CA?AVSC@mmcerror@@PEBGPEAPEAUIStorage@@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x1801284b2",
+        "from_func": "0x180128408",
+        "from_func_name": "ScReadDataFromFile",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-file-l1-1-0!DeleteFileW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x180092930",
+        "from_func": "0x180092870",
+        "from_func_name": "?DeleteHelpFile@CHelpDoc@@QEAAXXZ",
+        "import": "api-ms-win-core-file-l1-1-0!DeleteFileW"
+      },
+      {
+        "from_ea": "0x180092930",
+        "from_func": "0x180092870",
+        "from_func_name": "?DeleteHelpFile@CHelpDoc@@QEAAXXZ",
+        "import": "api-ms-win-core-file-l1-1-0!DeleteFileW"
+      },
+      {
+        "from_ea": "0x1801b1280",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-core-file-l1-1-0!DeleteFileW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-file-l1-1-0!GetFileAttributesW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 10,
+    "xrefs": [
+      {
+        "from_ea": "0x1800286b7",
+        "from_func": "0x180028640",
+        "from_func_name": "?BuildFilePath@CHelpDoc@@AEAAJXZ",
+        "import": "api-ms-win-core-file-l1-1-0!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x18006ecd0",
+        "from_func": "0x18006ec64",
+        "from_func_name": "?ScGetUserData@CConsoleFilePersistor@@CA?AVSC@mmcerror@@AEBVtstring@@0AEA_NAEAVCXMLDocument@@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x180125847",
+        "from_func": "0x180125434",
+        "from_func_name": "?ScRedirectHelpFile@@YAJAEAVCStr@@AEAG@Z",
+        "import": "api-ms-win-core-file-l1-1-0!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x1801259d0",
+        "from_func": "0x180125434",
+        "from_func_name": "?ScRedirectHelpFile@@YAJAEAVCStr@@AEAG@Z",
+        "import": "api-ms-win-core-file-l1-1-0!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x180126fca",
+        "from_func": "0x180126eac",
+        "from_func_name": "?ScGetUserDataPath@CConsoleFilePersistor@@CA?AVSC@mmcerror@@PEBGAEAVtstring@@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x1800286b7",
+        "from_func": "0x180028640",
+        "from_func_name": "?BuildFilePath@CHelpDoc@@AEAAJXZ",
+        "import": "api-ms-win-core-file-l1-1-0!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x18006ecd0",
+        "from_func": "0x18006ec64",
+        "from_func_name": "?ScGetUserData@CConsoleFilePersistor@@CA?AVSC@mmcerror@@AEBVtstring@@0AEA_NAEAVCXMLDocument@@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x180125847",
+        "from_func": "0x180125434",
+        "from_func_name": "?ScRedirectHelpFile@@YAJAEAVCStr@@AEAG@Z",
+        "import": "api-ms-win-core-file-l1-1-0!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x1801259d0",
+        "from_func": "0x180125434",
+        "from_func_name": "?ScRedirectHelpFile@@YAJAEAVCStr@@AEAG@Z",
+        "import": "api-ms-win-core-file-l1-1-0!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x180126fca",
+        "from_func": "0x180126eac",
+        "from_func_name": "?ScGetUserDataPath@CConsoleFilePersistor@@CA?AVSC@mmcerror@@PEBGAEAVtstring@@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!GetFileAttributesW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-file-l1-1-0!ReadFile",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x180042928",
+        "from_func": "0x18004278c",
+        "from_func_name": "?ScGetConsoleFileChecksum@@YA?AVSC@mmcerror@@PEBGAEAVtstring@@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!ReadFile"
+      },
+      {
+        "from_ea": "0x1801282c0",
+        "from_func": "0x180128084",
+        "from_func_name": "?ScOpenDocAsStructuredStorage@CConsoleFilePersistor@@CA?AVSC@mmcerror@@PEBGPEAPEAUIStorage@@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!ReadFile"
+      },
+      {
+        "from_ea": "0x1801285e5",
+        "from_func": "0x180128408",
+        "from_func_name": "ScReadDataFromFile",
+        "import": "api-ms-win-core-file-l1-1-0!ReadFile"
+      },
+      {
+        "from_ea": "0x180042928",
+        "from_func": "0x18004278c",
+        "from_func_name": "?ScGetConsoleFileChecksum@@YA?AVSC@mmcerror@@PEBGAEAVtstring@@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!ReadFile"
+      },
+      {
+        "from_ea": "0x1801282c0",
+        "from_func": "0x180128084",
+        "from_func_name": "?ScOpenDocAsStructuredStorage@CConsoleFilePersistor@@CA?AVSC@mmcerror@@PEBGPEAPEAUIStorage@@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!ReadFile"
+      },
+      {
+        "from_ea": "0x1801285e5",
+        "from_func": "0x180128408",
+        "from_func_name": "ScReadDataFromFile",
+        "import": "api-ms-win-core-file-l1-1-0!ReadFile"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-file-l1-1-0!SetFileTime",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x18009275c",
+        "from_func": "0x18009201c",
+        "from_func_name": "?CreateHelpFile@CHelpDoc@@QEAAJXZ",
+        "import": "api-ms-win-core-file-l1-1-0!SetFileTime"
+      },
+      {
+        "from_ea": "0x18009320b",
+        "from_func": "0x180093168",
+        "from_func_name": "?OnUpdateHelpDoc@CNodeCallback@@AEAAJPEAU_HELPDOCINFO@@0@Z",
+        "import": "api-ms-win-core-file-l1-1-0!SetFileTime"
+      },
+      {
+        "from_ea": "0x18009275c",
+        "from_func": "0x18009201c",
+        "from_func_name": "?CreateHelpFile@CHelpDoc@@QEAAJXZ",
+        "import": "api-ms-win-core-file-l1-1-0!SetFileTime"
+      },
+      {
+        "from_ea": "0x18009320b",
+        "from_func": "0x180093168",
+        "from_func_name": "?OnUpdateHelpDoc@CNodeCallback@@AEAAJPEAU_HELPDOCINFO@@0@Z",
+        "import": "api-ms-win-core-file-l1-1-0!SetFileTime"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExA",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 12,
+    "xrefs": [
+      {
+        "from_ea": "0x18003fff1",
+        "from_func": "0x18003ffc0",
+        "from_func_name": "GetProcAddressAll_AtlThunkData_t___(__cdecl_)(void)_",
+        "import": "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExA"
+      },
+      {
+        "from_ea": "0x180133879",
+        "from_func": "0x180133848",
+        "from_func_name": "GetProcAddressAll___int64_(__cdecl_(__cdecl_)(AtlThunkData_t__))(HWND_____unsigned_int_unsigned___int64___int64)_",
+        "import": "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExA"
+      },
+      {
+        "from_ea": "0x180133941",
+        "from_func": "0x180133910",
+        "from_func_name": "GetProcAddressAll_void_(__cdecl_)(AtlThunkData_t__)_",
+        "import": "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExA"
+      },
+      {
+        "from_ea": "0x180133a09",
+        "from_func": "0x1801339d8",
+        "from_func_name": "GetProcAddressAll_void_(__cdecl_)(AtlThunkData_t___void___unsigned___int64)_",
+        "import": "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExA"
+      },
+      {
+        "from_ea": "0x180134257",
+        "from_func": "0x1801341f4",
+        "from_func_name": "HtmlHelpW",
+        "import": "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExA"
+      },
+      {
+        "from_ea": "0x18013427e",
+        "from_func": "0x1801341f4",
+        "from_func_name": "HtmlHelpW",
+        "import": "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExA"
+      },
+      {
+        "from_ea": "0x18003fff1",
+        "from_func": "0x18003ffc0",
+        "from_func_name": "GetProcAddressAll_AtlThunkData_t___(__cdecl_)(void)_",
+        "import": "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExA"
+      },
+      {
+        "from_ea": "0x180133879",
+        "from_func": "0x180133848",
+        "from_func_name": "GetProcAddressAll___int64_(__cdecl_(__cdecl_)(AtlThunkData_t__))(HWND_____unsigned_int_unsigned___int64___int64)_",
+        "import": "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExA"
+      },
+      {
+        "from_ea": "0x180133941",
+        "from_func": "0x180133910",
+        "from_func_name": "GetProcAddressAll_void_(__cdecl_)(AtlThunkData_t__)_",
+        "import": "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExA"
+      },
+      {
+        "from_ea": "0x180133a09",
+        "from_func": "0x1801339d8",
+        "from_func_name": "GetProcAddressAll_void_(__cdecl_)(AtlThunkData_t___void___unsigned___int64)_",
+        "import": "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExA"
+      },
+      {
+        "from_ea": "0x180134257",
+        "from_func": "0x1801341f4",
+        "from_func_name": "HtmlHelpW",
+        "import": "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExA"
+      },
+      {
+        "from_ea": "0x18013427e",
+        "from_func": "0x1801341f4",
+        "from_func_name": "HtmlHelpW",
+        "import": "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExA"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18007cc77",
+        "from_func": "0x18007cc14",
+        "from_func_name": "IsolationAwareLoadLibraryExW",
+        "import": "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x18007cc77",
+        "from_func": "0x18007cc14",
+        "from_func_name": "IsolationAwareLoadLibraryExW",
+        "import": "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-libraryloader-l1-2-1!LoadLibraryW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x18002d133",
+        "from_func": "0x18002cf68",
+        "from_func_name": "WinbaseIsolationAwarePrivatetRgzlnPgpgk",
+        "import": "api-ms-win-core-libraryloader-l1-2-1!LoadLibraryW"
+      },
+      {
+        "from_ea": "0x1800e5494",
+        "from_func": "0x1800e5438",
+        "from_func_name": "IsolationAwareLoadLibraryW",
+        "import": "api-ms-win-core-libraryloader-l1-2-1!LoadLibraryW"
+      },
+      {
+        "from_ea": "0x18002d133",
+        "from_func": "0x18002cf68",
+        "from_func_name": "WinbaseIsolationAwarePrivatetRgzlnPgpgk",
+        "import": "api-ms-win-core-libraryloader-l1-2-1!LoadLibraryW"
+      },
+      {
+        "from_ea": "0x18007cce0",
+        "from_func": "0x18007cce0",
+        "from_func_name": "IsolationAwarePrivatezlybNQyVOeNelJ",
+        "import": "api-ms-win-core-libraryloader-l1-2-1!LoadLibraryW"
+      },
+      {
+        "from_ea": "0x1800e5494",
+        "from_func": "0x1800e5438",
+        "from_func_name": "IsolationAwareLoadLibraryW",
+        "import": "api-ms-win-core-libraryloader-l1-2-1!LoadLibraryW"
+      },
+      {
+        "from_ea": "0x1801b12d0",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-core-libraryloader-l1-2-1!LoadLibraryW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 30,
+    "xrefs": [
+      {
+        "from_ea": "0x18002f410",
+        "from_func": "0x18002ed20",
+        "from_func_name": "?QueryPaste@CNodeCallback@@UEAAJPEAUHNODE__@@H_JPEAUIDataObject@@AEA_N3@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x180032dc8",
+        "from_func": "0x180032c80",
+        "from_func_name": "?SetPropertySheetPosition@AMC@@YAXPEAUHWND__@@@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x180039dce",
+        "from_func": "0x180039b28",
+        "from_func_name": "?PropertySheetProc@@YAJPEAVCPropertySheet@AMC@@@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x180048a38",
+        "from_func": "0x1800482d0",
+        "from_func_name": "?ScCommand@CContextMenu@@QEAA?AVSC@mmcerror@@JPEAUIDataObject@@@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x18006bb25",
+        "from_func": "0x18006b7a4",
+        "from_func_name": "?QueryPasteForCurrentContext@CActionsPaneZone@@AEAAJAEA_N@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x1800720ab",
+        "from_func": "0x180072064",
+        "from_func_name": "__security_init_cookie",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x180086485",
+        "from_func": "0x180086400",
+        "from_func_name": "?GetSourceProcessId@CMMCClipBoardDataObject@@UEAAJPEAK@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x180096770",
+        "from_func": "0x180096738",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@UProcessLocalData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x1800968d8",
+        "from_func": "0x1800968a0",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@VFeatureStateData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x18009baa7",
+        "from_func": "0x18009b8e0",
+        "from_func_name": "?ScExecute@CMenuItem@@UEAA?AVSC@mmcerror@@XZ",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x1800a7c3d",
+        "from_func": "0x1800a7868",
+        "from_func_name": "?LogRemoteConnectionIfNeeded@CMTSnapInNode@@QEAAXAEBVtstring@@@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x1800dcbf9",
+        "from_func": "0x1800dcb1c",
+        "from_func_name": "?OnCustomizeView@@YAXPEAVCViewData@@@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x1800e3d68",
+        "from_func": "0x1800e3cc0",
+        "from_func_name": "?FindPropertySheetEx@CPropertySheetProvider@@UEAAJ_JPEAUIComponent@@PEAUIComponentData@@PEAUIDataObject@@@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x1800ec6cc",
+        "from_func": "0x1800ec508",
+        "from_func_name": "?OnNewTaskpadFromHere@CNodeCallback@@AEAAJPEAVCNode@@@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x18011b951",
+        "from_func": "0x18011b8f8",
+        "from_func_name": "MMCIsMTNodeValid",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x18002f410",
+        "from_func": "0x18002ed20",
+        "from_func_name": "?QueryPaste@CNodeCallback@@UEAAJPEAUHNODE__@@H_JPEAUIDataObject@@AEA_N3@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x180032dc8",
+        "from_func": "0x180032c80",
+        "from_func_name": "?SetPropertySheetPosition@AMC@@YAXPEAUHWND__@@@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x180039dce",
+        "from_func": "0x180039b28",
+        "from_func_name": "?PropertySheetProc@@YAJPEAVCPropertySheet@AMC@@@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x180048a38",
+        "from_func": "0x1800482d0",
+        "from_func_name": "?ScCommand@CContextMenu@@QEAA?AVSC@mmcerror@@JPEAUIDataObject@@@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x18006bb25",
+        "from_func": "0x18006b7a4",
+        "from_func_name": "?QueryPasteForCurrentContext@CActionsPaneZone@@AEAAJAEA_N@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x1800720ab",
+        "from_func": "0x180072064",
+        "from_func_name": "__security_init_cookie",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x180086485",
+        "from_func": "0x180086400",
+        "from_func_name": "?GetSourceProcessId@CMMCClipBoardDataObject@@UEAAJPEAK@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x180096770",
+        "from_func": "0x180096738",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@UProcessLocalData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x1800968d8",
+        "from_func": "0x1800968a0",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@VFeatureStateData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x18009baa7",
+        "from_func": "0x18009b8e0",
+        "from_func_name": "?ScExecute@CMenuItem@@UEAA?AVSC@mmcerror@@XZ",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x1800a7c3d",
+        "from_func": "0x1800a7868",
+        "from_func_name": "?LogRemoteConnectionIfNeeded@CMTSnapInNode@@QEAAXAEBVtstring@@@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x1800dcbf9",
+        "from_func": "0x1800dcb1c",
+        "from_func_name": "?OnCustomizeView@@YAXPEAVCViewData@@@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x1800e3d68",
+        "from_func": "0x1800e3cc0",
+        "from_func_name": "?FindPropertySheetEx@CPropertySheetProvider@@UEAAJ_JPEAUIComponent@@PEAUIComponentData@@PEAUIDataObject@@@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x1800ec6cc",
+        "from_func": "0x1800ec508",
+        "from_func_name": "?OnNewTaskpadFromHere@CNodeCallback@@AEAAJPEAVCNode@@@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x18011b951",
+        "from_func": "0x18011b8f8",
+        "from_func_name": "MMCIsMTNodeValid",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-processthreads-l1-1-0!OpenProcessToken",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800e4ff9",
+        "from_func": "0x1800e4fac",
+        "from_func_name": "?SetShutdownPrivilegeAttribute@@YAKKPEAK@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!OpenProcessToken"
+      },
+      {
+        "from_ea": "0x1800e4ff9",
+        "from_func": "0x1800e4fac",
+        "from_func_name": "?SetShutdownPrivilegeAttribute@@YAKKPEAK@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!OpenProcessToken"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 32,
+    "xrefs": [
+      {
+        "from_ea": "0x1800037f3",
+        "from_func": "0x180003360",
+        "from_func_name": "?ScGetExtensionsForNodeType@@YA?AVSC@mmcerror@@AEAU_GUID@@AEAVCExtensionsCache@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180003802",
+        "from_func": "0x180003360",
+        "from_func_name": "?ScGetExtensionsForNodeType@@YA?AVSC@mmcerror@@AEAU_GUID@@AEAVCExtensionsCache@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180003a0a",
+        "from_func": "0x180003360",
+        "from_func_name": "?ScGetExtensionsForNodeType@@YA?AVSC@mmcerror@@AEAU_GUID@@AEAVCExtensionsCache@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180003e67",
+        "from_func": "0x180003360",
+        "from_func_name": "?ScGetExtensionsForNodeType@@YA?AVSC@mmcerror@@AEAU_GUID@@AEAVCExtensionsCache@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x18000551a",
+        "from_func": "0x1800053e4",
+        "from_func_name": "?OpenSnapInRegKey@@YAJAEBVCSnapInReference@@AEAVCRegKeyEx@@K@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x18000c4d7",
+        "from_func": "0x18000a0a0",
+        "from_func_name": "?Init@CExtensionsIterator@@AEAAJAEAU_GUID@@PEBG@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x18000c4e4",
+        "from_func": "0x18000a0a0",
+        "from_func_name": "?Init@CExtensionsIterator@@AEAAJAEAU_GUID@@PEBG@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x18000fff3",
+        "from_func": "0x18000fd38",
+        "from_func_name": "?MMCGetExtensionsForSnapIn@@YAJAEBVCSnapInReference@@AEAVCExtensionsCache@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x1800145f1",
+        "from_func": "0x180014320",
+        "from_func_name": "?IsSnapInAvailable@CCOMSnapInReference@@UEBAJHPEAH@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180014640",
+        "from_func": "0x180014320",
+        "from_func_name": "?IsSnapInAvailable@CCOMSnapInReference@@UEBAJHPEAH@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180026ae1",
+        "from_func": "0x180026ac8",
+        "from_func_name": "?Close@CRegKey@ATL@@QEAAJXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x18003707f",
+        "from_func": "0x180036ed4",
+        "from_func_name": "?LoadActionsPaneSuppressInfo@CSnapInReference@@AEBAJXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180037d23",
+        "from_func": "0x180037cd4",
+        "from_func_name": "?Open@CRegKey@ATL@@QEAAJPEAUHKEY__@@PEBGKK@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x18003b856",
+        "from_func": "0x18003b7fc",
+        "from_func_name": "?ScOpen@CRegKeyEx@@QEAA?AVSC@mmcerror@@PEAUHKEY__@@PEBGK@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180133ef9",
+        "from_func": "0x180133d4c",
+        "from_func_name": "?GetSubstituteHKLFromReg@@YAPEAUHKL__@@AEBU_GUID@@G0@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x1801341bf",
+        "from_func": "0x1801340d8",
+        "from_func_name": "GetRegisteredLocation",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x1800037f3",
+        "from_func": "0x180003360",
+        "from_func_name": "?ScGetExtensionsForNodeType@@YA?AVSC@mmcerror@@AEAU_GUID@@AEAVCExtensionsCache@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180003802",
+        "from_func": "0x180003360",
+        "from_func_name": "?ScGetExtensionsForNodeType@@YA?AVSC@mmcerror@@AEAU_GUID@@AEAVCExtensionsCache@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180003a0a",
+        "from_func": "0x180003360",
+        "from_func_name": "?ScGetExtensionsForNodeType@@YA?AVSC@mmcerror@@AEAU_GUID@@AEAVCExtensionsCache@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180003e67",
+        "from_func": "0x180003360",
+        "from_func_name": "?ScGetExtensionsForNodeType@@YA?AVSC@mmcerror@@AEAU_GUID@@AEAVCExtensionsCache@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x18000551a",
+        "from_func": "0x1800053e4",
+        "from_func_name": "?OpenSnapInRegKey@@YAJAEBVCSnapInReference@@AEAVCRegKeyEx@@K@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x18000c4d7",
+        "from_func": "0x18000a0a0",
+        "from_func_name": "?Init@CExtensionsIterator@@AEAAJAEAU_GUID@@PEBG@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x18000c4e4",
+        "from_func": "0x18000a0a0",
+        "from_func_name": "?Init@CExtensionsIterator@@AEAAJAEAU_GUID@@PEBG@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x18000fff3",
+        "from_func": "0x18000fd38",
+        "from_func_name": "?MMCGetExtensionsForSnapIn@@YAJAEBVCSnapInReference@@AEAVCExtensionsCache@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x1800145f1",
+        "from_func": "0x180014320",
+        "from_func_name": "?IsSnapInAvailable@CCOMSnapInReference@@UEBAJHPEAH@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180014640",
+        "from_func": "0x180014320",
+        "from_func_name": "?IsSnapInAvailable@CCOMSnapInReference@@UEBAJHPEAH@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180026ae1",
+        "from_func": "0x180026ac8",
+        "from_func_name": "?Close@CRegKey@ATL@@QEAAJXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x18003707f",
+        "from_func": "0x180036ed4",
+        "from_func_name": "?LoadActionsPaneSuppressInfo@CSnapInReference@@AEBAJXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180037d23",
+        "from_func": "0x180037cd4",
+        "from_func_name": "?Open@CRegKey@ATL@@QEAAJPEAUHKEY__@@PEBGKK@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x18003b856",
+        "from_func": "0x18003b7fc",
+        "from_func_name": "?ScOpen@CRegKeyEx@@QEAA?AVSC@mmcerror@@PEAUHKEY__@@PEBGK@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180133ef9",
+        "from_func": "0x180133d4c",
+        "from_func_name": "?GetSubstituteHKLFromReg@@YAPEAUHKL__@@AEBU_GUID@@G0@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x1801341bf",
+        "from_func": "0x1801340d8",
+        "from_func_name": "GetRegisteredLocation",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-registry-l1-1-0!RegCreateKeyExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800ccdf7",
+        "from_func": "0x1800ccd98",
+        "from_func_name": "?Create@CRegKey@ATL@@QEAAJPEAUHKEY__@@PEBGPEAGKKPEAU_SECURITY_ATTRIBUTES@@PEAK@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x1800ccdf7",
+        "from_func": "0x1800ccd98",
+        "from_func_name": "?Create@CRegKey@ATL@@QEAAJPEAUHKEY__@@PEBGPEAGKKPEAU_SECURITY_ATTRIBUTES@@PEAK@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCreateKeyExW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-registry-l1-1-0!RegDeleteValueW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800d58b8",
+        "from_func": "0x1800d565c",
+        "from_func_name": "?RegisterSubkeys@CRegParser@ATL@@IEAAJPEAGPEAUHKEY__@@HH@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegDeleteValueW"
+      },
+      {
+        "from_ea": "0x1800d58b8",
+        "from_func": "0x1800d565c",
+        "from_func_name": "?RegisterSubkeys@CRegParser@ATL@@IEAAJPEAGPEAUHKEY__@@HH@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegDeleteValueW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-registry-l1-1-0!RegEnumKeyExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 8,
+    "xrefs": [
+      {
+        "from_ea": "0x18007abc1",
+        "from_func": "0x18007a920",
+        "from_func_name": "?ScLoadSnapinInfo@CSnapinManager@@IEAA?AVSC@mmcerror@@XZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegEnumKeyExW"
+      },
+      {
+        "from_ea": "0x1800bae4e",
+        "from_func": "0x1800bab38",
+        "from_func_name": "?ScLoadSnapinInfo@CSnapinManager@MMC21ADDREMOVEUI@@AEAA?AVSC@mmcerror@@XZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegEnumKeyExW"
+      },
+      {
+        "from_ea": "0x1800d525c",
+        "from_func": "0x1800d51b0",
+        "from_func_name": "?RecurseDeleteKey@CRegKey@ATL@@QEAAJPEBG@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegEnumKeyExW"
+      },
+      {
+        "from_ea": "0x1800e59f4",
+        "from_func": "0x1800e5918",
+        "from_func_name": "?ScEnumKey@CRegKeyEx@@QEAA?AVSC@mmcerror@@KPEAGPEAKPEAU_FILETIME@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegEnumKeyExW"
+      },
+      {
+        "from_ea": "0x18007abc1",
+        "from_func": "0x18007a920",
+        "from_func_name": "?ScLoadSnapinInfo@CSnapinManager@@IEAA?AVSC@mmcerror@@XZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegEnumKeyExW"
+      },
+      {
+        "from_ea": "0x1800bae4e",
+        "from_func": "0x1800bab38",
+        "from_func_name": "?ScLoadSnapinInfo@CSnapinManager@MMC21ADDREMOVEUI@@AEAA?AVSC@mmcerror@@XZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegEnumKeyExW"
+      },
+      {
+        "from_ea": "0x1800d525c",
+        "from_func": "0x1800d51b0",
+        "from_func_name": "?RecurseDeleteKey@CRegKey@ATL@@QEAAJPEBG@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegEnumKeyExW"
+      },
+      {
+        "from_ea": "0x1800e59f4",
+        "from_func": "0x1800e5918",
+        "from_func_name": "?ScEnumKey@CRegKeyEx@@QEAA?AVSC@mmcerror@@KPEAGPEAKPEAU_FILETIME@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegEnumKeyExW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-registry-l1-1-0!RegEnumValueW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180003acc",
+        "from_func": "0x180003360",
+        "from_func_name": "?ScGetExtensionsForNodeType@@YA?AVSC@mmcerror@@AEAU_GUID@@AEAVCExtensionsCache@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegEnumValueW"
+      },
+      {
+        "from_ea": "0x1800d1860",
+        "from_func": "0x1800d17bc",
+        "from_func_name": "?HasValues@CRegParser@ATL@@IEAAHPEAUHKEY__@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegEnumValueW"
+      },
+      {
+        "from_ea": "0x180003acc",
+        "from_func": "0x180003360",
+        "from_func_name": "?ScGetExtensionsForNodeType@@YA?AVSC@mmcerror@@AEAU_GUID@@AEAVCExtensionsCache@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegEnumValueW"
+      },
+      {
+        "from_ea": "0x1800d1860",
+        "from_func": "0x1800d17bc",
+        "from_func_name": "?HasValues@CRegParser@ATL@@IEAAHPEAUHKEY__@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegEnumValueW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 26,
+    "xrefs": [
+      {
+        "from_ea": "0x1800035eb",
+        "from_func": "0x180003360",
+        "from_func_name": "?ScGetExtensionsForNodeType@@YA?AVSC@mmcerror@@AEAU_GUID@@AEAVCExtensionsCache@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000370c",
+        "from_func": "0x180003360",
+        "from_func_name": "?ScGetExtensionsForNodeType@@YA?AVSC@mmcerror@@AEAU_GUID@@AEAVCExtensionsCache@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180003931",
+        "from_func": "0x180003360",
+        "from_func_name": "?ScGetExtensionsForNodeType@@YA?AVSC@mmcerror@@AEAU_GUID@@AEAVCExtensionsCache@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180005506",
+        "from_func": "0x1800053e4",
+        "from_func_name": "?OpenSnapInRegKey@@YAJAEBVCSnapInReference@@AEAVCRegKeyEx@@K@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000b0d0",
+        "from_func": "0x18000a0a0",
+        "from_func_name": "?Init@CExtensionsIterator@@AEAAJAEAU_GUID@@PEBG@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000b149",
+        "from_func": "0x18000a0a0",
+        "from_func_name": "?Init@CExtensionsIterator@@AEAAJAEAU_GUID@@PEBG@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000ff24",
+        "from_func": "0x18000fd38",
+        "from_func_name": "?MMCGetExtensionsForSnapIn@@YAJAEBVCSnapInReference@@AEAVCExtensionsCache@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x1800143cb",
+        "from_func": "0x180014320",
+        "from_func_name": "?IsSnapInAvailable@CCOMSnapInReference@@UEBAJHPEAH@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x1800145d6",
+        "from_func": "0x180014320",
+        "from_func_name": "?IsSnapInAvailable@CCOMSnapInReference@@UEBAJHPEAH@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180015a19",
+        "from_func": "0x18001595c",
+        "from_func_name": "?ScGetAboutFromSnapinReference@@YA?AVSC@mmcerror@@AEBVCSnapInReference@@AEAU_GUID@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180036fad",
+        "from_func": "0x180036ed4",
+        "from_func_name": "?LoadActionsPaneSuppressInfo@CSnapInReference@@AEBAJXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180037cff",
+        "from_func": "0x180037cd4",
+        "from_func_name": "?Open@CRegKey@ATL@@QEAAJPEAUHKEY__@@PEBGKK@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18003b842",
+        "from_func": "0x18003b7fc",
+        "from_func_name": "?ScOpen@CRegKeyEx@@QEAA?AVSC@mmcerror@@PEAUHKEY__@@PEBGK@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x1800035eb",
+        "from_func": "0x180003360",
+        "from_func_name": "?ScGetExtensionsForNodeType@@YA?AVSC@mmcerror@@AEAU_GUID@@AEAVCExtensionsCache@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000370c",
+        "from_func": "0x180003360",
+        "from_func_name": "?ScGetExtensionsForNodeType@@YA?AVSC@mmcerror@@AEAU_GUID@@AEAVCExtensionsCache@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180003931",
+        "from_func": "0x180003360",
+        "from_func_name": "?ScGetExtensionsForNodeType@@YA?AVSC@mmcerror@@AEAU_GUID@@AEAVCExtensionsCache@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180005506",
+        "from_func": "0x1800053e4",
+        "from_func_name": "?OpenSnapInRegKey@@YAJAEBVCSnapInReference@@AEAVCRegKeyEx@@K@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000b0d0",
+        "from_func": "0x18000a0a0",
+        "from_func_name": "?Init@CExtensionsIterator@@AEAAJAEAU_GUID@@PEBG@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000b149",
+        "from_func": "0x18000a0a0",
+        "from_func_name": "?Init@CExtensionsIterator@@AEAAJAEAU_GUID@@PEBG@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000ff24",
+        "from_func": "0x18000fd38",
+        "from_func_name": "?MMCGetExtensionsForSnapIn@@YAJAEBVCSnapInReference@@AEAVCExtensionsCache@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x1800143cb",
+        "from_func": "0x180014320",
+        "from_func_name": "?IsSnapInAvailable@CCOMSnapInReference@@UEBAJHPEAH@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x1800145d6",
+        "from_func": "0x180014320",
+        "from_func_name": "?IsSnapInAvailable@CCOMSnapInReference@@UEBAJHPEAH@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180015a19",
+        "from_func": "0x18001595c",
+        "from_func_name": "?ScGetAboutFromSnapinReference@@YA?AVSC@mmcerror@@AEBVCSnapInReference@@AEAU_GUID@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180036fad",
+        "from_func": "0x180036ed4",
+        "from_func_name": "?LoadActionsPaneSuppressInfo@CSnapInReference@@AEBAJXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180037cff",
+        "from_func": "0x180037cd4",
+        "from_func_name": "?Open@CRegKey@ATL@@QEAAJPEAUHKEY__@@PEBGKK@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18003b842",
+        "from_func": "0x18003b7fc",
+        "from_func_name": "?ScOpen@CRegKeyEx@@QEAA?AVSC@mmcerror@@PEAUHKEY__@@PEBGK@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-registry-l1-1-0!RegQueryInfoKeyW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 10,
+    "xrefs": [
+      {
+        "from_ea": "0x180077aae",
+        "from_func": "0x180077898",
+        "from_func_name": "?InitFromMMCReg@CSnapinInfo@@QEAAHAEBVCSnapInReference@@AEAVCRegKeyEx@@H@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryInfoKeyW"
+      },
+      {
+        "from_ea": "0x1800b5dd9",
+        "from_func": "0x1800b5bbc",
+        "from_func_name": "?InitFromMMCReg@CSnapinInfo@MMC21ADDREMOVEUI@@QEAAHAEBVCSnapInReference@@AEAVCRegKeyEx@@H@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryInfoKeyW"
+      },
+      {
+        "from_ea": "0x1800d1799",
+        "from_func": "0x1800d1738",
+        "from_func_name": "?HasSubKeys@CRegParser@ATL@@IEAAHPEAUHKEY__@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryInfoKeyW"
+      },
+      {
+        "from_ea": "0x1800d1806",
+        "from_func": "0x1800d17bc",
+        "from_func_name": "?HasValues@CRegParser@ATL@@IEAAHPEAUHKEY__@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryInfoKeyW"
+      },
+      {
+        "from_ea": "0x1800e5db2",
+        "from_func": "0x1800e5b2c",
+        "from_func_name": "?ExtendsNodeNameSpace@@YAHAEAU_GUID@@PEBVCSnapInReference@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryInfoKeyW"
+      },
+      {
+        "from_ea": "0x180077aae",
+        "from_func": "0x180077898",
+        "from_func_name": "?InitFromMMCReg@CSnapinInfo@@QEAAHAEBVCSnapInReference@@AEAVCRegKeyEx@@H@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryInfoKeyW"
+      },
+      {
+        "from_ea": "0x1800b5dd9",
+        "from_func": "0x1800b5bbc",
+        "from_func_name": "?InitFromMMCReg@CSnapinInfo@MMC21ADDREMOVEUI@@QEAAHAEBVCSnapInReference@@AEAVCRegKeyEx@@H@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryInfoKeyW"
+      },
+      {
+        "from_ea": "0x1800d1799",
+        "from_func": "0x1800d1738",
+        "from_func_name": "?HasSubKeys@CRegParser@ATL@@IEAAHPEAUHKEY__@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryInfoKeyW"
+      },
+      {
+        "from_ea": "0x1800d1806",
+        "from_func": "0x1800d17bc",
+        "from_func_name": "?HasValues@CRegParser@ATL@@IEAAHPEAUHKEY__@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryInfoKeyW"
+      },
+      {
+        "from_ea": "0x1800e5db2",
+        "from_func": "0x1800e5b2c",
+        "from_func_name": "?ExtendsNodeNameSpace@@YAHAEAU_GUID@@PEBVCSnapInReference@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryInfoKeyW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 13,
+    "xrefs": [
+      {
+        "from_ea": "0x18003701d",
+        "from_func": "0x180036ed4",
+        "from_func_name": "?LoadActionsPaneSuppressInfo@CSnapInReference@@AEBAJXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+      },
+      {
+        "from_ea": "0x180043846",
+        "from_func": "0x1800437d0",
+        "from_func_name": "??$ScQueryString@VCStr@@@CRegKeyEx@@QEAA?AVSC@mmcerror@@PEBGAEAVCStr@@PEAK@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+      },
+      {
+        "from_ea": "0x180044ebd",
+        "from_func": "0x180044e84",
+        "from_func_name": "?ScQueryValue@CRegKeyEx@@QEAA?AVSC@mmcerror@@PEBGPEAKPEAX1@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+      },
+      {
+        "from_ea": "0x180077999",
+        "from_func": "0x180077898",
+        "from_func_name": "?InitFromMMCReg@CSnapinInfo@@QEAAHAEBVCSnapInReference@@AEAVCRegKeyEx@@H@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+      },
+      {
+        "from_ea": "0x1800b5cc0",
+        "from_func": "0x1800b5bbc",
+        "from_func_name": "?InitFromMMCReg@CSnapinInfo@MMC21ADDREMOVEUI@@QEAAHAEBVCSnapInReference@@AEAVCRegKeyEx@@H@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+      },
+      {
+        "from_ea": "0x1800e56d0",
+        "from_func": "0x1800e56a8",
+        "from_func_name": "?IsValuePresent@CRegKeyEx@@QEAAHPEBG@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+      },
+      {
+        "from_ea": "0x18003701d",
+        "from_func": "0x180036ed4",
+        "from_func_name": "?LoadActionsPaneSuppressInfo@CSnapInReference@@AEBAJXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+      },
+      {
+        "from_ea": "0x180043846",
+        "from_func": "0x1800437d0",
+        "from_func_name": "??$ScQueryString@VCStr@@@CRegKeyEx@@QEAA?AVSC@mmcerror@@PEBGAEAVCStr@@PEAK@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+      },
+      {
+        "from_ea": "0x180044ebd",
+        "from_func": "0x180044e84",
+        "from_func_name": "?ScQueryValue@CRegKeyEx@@QEAA?AVSC@mmcerror@@PEBGPEAKPEAX1@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+      },
+      {
+        "from_ea": "0x180077999",
+        "from_func": "0x180077898",
+        "from_func_name": "?InitFromMMCReg@CSnapinInfo@@QEAAHAEBVCSnapInReference@@AEAVCRegKeyEx@@H@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+      },
+      {
+        "from_ea": "0x1800b5cc0",
+        "from_func": "0x1800b5bbc",
+        "from_func_name": "?InitFromMMCReg@CSnapinInfo@MMC21ADDREMOVEUI@@QEAAHAEBVCSnapInReference@@AEAVCRegKeyEx@@H@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+      },
+      {
+        "from_ea": "0x1800e56d0",
+        "from_func": "0x1800e56a8",
+        "from_func_name": "?IsValuePresent@CRegKeyEx@@QEAAHPEBG@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+      },
+      {
+        "from_ea": "0x1801b130c",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-registry-l1-1-0!RegSetValueExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1800cad48",
+        "from_func": "0x1800caa8c",
+        "from_func_name": "?AddValue@CRegParser@ATL@@IEAAJAEAVCRegKey@2@PEBGPEAG_N@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x1800caec5",
+        "from_func": "0x1800caa8c",
+        "from_func_name": "?AddValue@CRegParser@ATL@@IEAAJAEAVCRegKey@2@PEBGPEAG_N@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x1800cad48",
+        "from_func": "0x1800caa8c",
+        "from_func_name": "?AddValue@CRegParser@ATL@@IEAAJAEAVCRegKey@2@PEBGPEAG_N@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x1800caec5",
+        "from_func": "0x1800caa8c",
+        "from_func_name": "?AddValue@CRegParser@ATL@@IEAAJAEAVCRegKey@2@PEBGPEAG_N@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegSetValueExW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-string-l1-1-0!CompareStringW",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800ba5b4",
+        "from_func": "0x1800ba3bc",
+        "from_func_name": "?ScGetSnapinInfo@CSnapinManager@MMC21ADDREMOVEUI@@AEAA?AVSC@mmcerror@@PEBGPEAPEAVCSnapinInfo@2@@Z",
+        "import": "api-ms-win-core-string-l1-1-0!CompareStringW"
+      },
+      {
+        "from_ea": "0x1800ba5b4",
+        "from_func": "0x1800ba3bc",
+        "from_func_name": "?ScGetSnapinInfo@CSnapinManager@MMC21ADDREMOVEUI@@AEAA?AVSC@mmcerror@@PEBGPEAPEAVCSnapinInfo@2@@Z",
+        "import": "api-ms-win-core-string-l1-1-0!CompareStringW"
+      }
+    ]
+  },
+  {
+    "import": "mmcbase!?LoadDynamicLayoutResource@DialogBoxDpiTracker@@QEAAXPEAUHINSTANCE__@@PEAUHRSRC__@@@Z",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x180083bcd",
+        "from_func": "0x180083a20",
+        "from_func_name": "?OnInitDialog@CColumnsDlg@@IEAA_JI_K_JAEAH@Z",
+        "import": "mmcbase!?LoadDynamicLayoutResource@DialogBoxDpiTracker@@QEAAXPEAUHINSTANCE__@@PEAUHRSRC__@@@Z"
+      },
+      {
+        "from_ea": "0x1800b7d62",
+        "from_func": "0x1800b78bc",
+        "from_func_name": "?OnInitDialog@CSnapinExtensionPage@MMC21ADDREMOVEUI@@QEAA_JI_K_JAEAH@Z",
+        "import": "mmcbase!?LoadDynamicLayoutResource@DialogBoxDpiTracker@@QEAAXPEAUHINSTANCE__@@PEAUHRSRC__@@@Z"
+      },
+      {
+        "from_ea": "0x1800b83c9",
+        "from_func": "0x1800b7e0c",
+        "from_func_name": "?OnInitDialog@CSnapinMainPage@MMC21ADDREMOVEUI@@QEAA_JI_K_JAEAH@Z",
+        "import": "mmcbase!?LoadDynamicLayoutResource@DialogBoxDpiTracker@@QEAAXPEAUHINSTANCE__@@PEAUHRSRC__@@@Z"
+      },
+      {
+        "from_ea": "0x180083bcd",
+        "from_func": "0x180083a20",
+        "from_func_name": "?OnInitDialog@CColumnsDlg@@IEAA_JI_K_JAEAH@Z",
+        "import": "mmcbase!?LoadDynamicLayoutResource@DialogBoxDpiTracker@@QEAAXPEAUHINSTANCE__@@PEAUHRSRC__@@@Z"
+      },
+      {
+        "from_ea": "0x1800b7d62",
+        "from_func": "0x1800b78bc",
+        "from_func_name": "?OnInitDialog@CSnapinExtensionPage@MMC21ADDREMOVEUI@@QEAA_JI_K_JAEAH@Z",
+        "import": "mmcbase!?LoadDynamicLayoutResource@DialogBoxDpiTracker@@QEAAXPEAUHINSTANCE__@@PEAUHRSRC__@@@Z"
+      },
+      {
+        "from_ea": "0x1800b83c9",
+        "from_func": "0x1800b7e0c",
+        "from_func_name": "?OnInitDialog@CSnapinMainPage@MMC21ADDREMOVEUI@@QEAA_JI_K_JAEAH@Z",
+        "import": "mmcbase!?LoadDynamicLayoutResource@DialogBoxDpiTracker@@QEAAXPEAUHINSTANCE__@@PEAUHRSRC__@@@Z"
+      }
+    ]
+  },
+  {
+    "import": "mmcbase!?ResizeDynamicLayout@DialogBoxDpiTracker@@QEAAXXZ",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x1800b926d",
+        "from_func": "0x1800b91e0",
+        "from_func_name": "?ProcessWindowMessage@CSnapinExtensionPage@MMC21ADDREMOVEUI@@UEAAHPEAUHWND__@@I_K_JAEA_JK@Z",
+        "import": "mmcbase!?ResizeDynamicLayout@DialogBoxDpiTracker@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x1800b94c4",
+        "from_func": "0x1800b93f0",
+        "from_func_name": "?ProcessWindowMessage@CSnapinMainPage@MMC21ADDREMOVEUI@@UEAAHPEAUHWND__@@I_K_JAEA_JK@Z",
+        "import": "mmcbase!?ResizeDynamicLayout@DialogBoxDpiTracker@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x1800c2c5e",
+        "from_func": "0x1800c2be0",
+        "from_func_name": "?ProcessWindowMessage@CColumnsDlg@@UEAAHPEAUHWND__@@I_K_JAEA_JK@Z",
+        "import": "mmcbase!?ResizeDynamicLayout@DialogBoxDpiTracker@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x1800b926d",
+        "from_func": "0x1800b91e0",
+        "from_func_name": "?ProcessWindowMessage@CSnapinExtensionPage@MMC21ADDREMOVEUI@@UEAAHPEAUHWND__@@I_K_JAEA_JK@Z",
+        "import": "mmcbase!?ResizeDynamicLayout@DialogBoxDpiTracker@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x1800b94c4",
+        "from_func": "0x1800b93f0",
+        "from_func_name": "?ProcessWindowMessage@CSnapinMainPage@MMC21ADDREMOVEUI@@UEAAHPEAUHWND__@@I_K_JAEA_JK@Z",
+        "import": "mmcbase!?ResizeDynamicLayout@DialogBoxDpiTracker@@QEAAXXZ"
+      },
+      {
+        "from_ea": "0x1800c2c5e",
+        "from_func": "0x1800c2be0",
+        "from_func_name": "?ProcessWindowMessage@CColumnsDlg@@UEAAHPEAUHWND__@@I_K_JAEA_JK@Z",
+        "import": "mmcbase!?ResizeDynamicLayout@DialogBoxDpiTracker@@QEAAXXZ"
+      }
+    ]
+  },
+  {
+    "import": "mmcbase!?ScGetConsoleEventDispatcher@CConsoleEventDispatcherProvider@@SA?AVSC@mmcerror@@AEAPEAVCConsoleEventDispatcher@@@Z",
+    "tags": [
+      "installer_update"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18009bd87",
+        "from_func": "0x18009b8e0",
+        "from_func_name": "?ScExecute@CMenuItem@@UEAA?AVSC@mmcerror@@XZ",
+        "import": "mmcbase!?ScGetConsoleEventDispatcher@CConsoleEventDispatcherProvider@@SA?AVSC@mmcerror@@AEAPEAVCConsoleEventDispatcher@@@Z"
+      },
+      {
+        "from_ea": "0x18009bd87",
+        "from_func": "0x18009b8e0",
+        "from_func_name": "?ScExecute@CMenuItem@@UEAA?AVSC@mmcerror@@XZ",
+        "import": "mmcbase!?ScGetConsoleEventDispatcher@CConsoleEventDispatcherProvider@@SA?AVSC@mmcerror@@AEAPEAVCConsoleEventDispatcher@@@Z"
+      }
+    ]
+  },
+  {
+    "import": "mmcbase!GetComObjectEventSource",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 24,
+    "xrefs": [
+      {
+        "from_ea": "0x180034a2a",
+        "from_func": "0x1800349c0",
+        "from_func_name": "??0?$CMMCIDispatchImpl@UContextMenu@@$1?GUID_NULL@@3U_GUID@@B$1?LIBID_MMC20@@3U3@B@@QEAA@XZ",
+        "import": "mmcbase!GetComObjectEventSource"
+      },
+      {
+        "from_ea": "0x18007464e",
+        "from_func": "0x1800745dc",
+        "from_func_name": "??0?$CMMCIDispatchImpl@UProperties@@$1?GUID_NULL@@3U_GUID@@B$1?LIBID_MMC20@@3U3@B@@QEAA@XZ",
+        "import": "mmcbase!GetComObjectEventSource"
+      },
+      {
+        "from_ea": "0x180095aee",
+        "from_func": "0x180095a7c",
+        "from_func_name": "??0?$CMMCIDispatchImpl@UMenuItem@@$1?GUID_NULL@@3U_GUID@@B$1?LIBID_MMC20@@3U3@B@@QEAA@XZ",
+        "import": "mmcbase!GetComObjectEventSource"
+      },
+      {
+        "from_ea": "0x18009fbc2",
+        "from_func": "0x18009fb50",
+        "from_func_name": "??0?$CMMCIDispatchImpl@UIAccessible@@$1?GUID_NULL@@3U_GUID@@B$1?LIBID_Accessibility@@3U3@B@@QEAA@XZ",
+        "import": "mmcbase!GetComObjectEventSource"
+      },
+      {
+        "from_ea": "0x1800a3e06",
+        "from_func": "0x1800a3d94",
+        "from_func_name": "??0?$CMMCIDispatchImpl@UExtension@@$1?GUID_NULL@@3U_GUID@@B$1?LIBID_MMC20@@3U3@B@@QEAA@XZ",
+        "import": "mmcbase!GetComObjectEventSource"
+      },
+      {
+        "from_ea": "0x1800a3f0a",
+        "from_func": "0x1800a3e98",
+        "from_func_name": "??0?$CMMCIDispatchImpl@UExtensions@@$1?GUID_NULL@@3U_GUID@@B$1?LIBID_MMC20@@3U3@B@@QEAA@XZ",
+        "import": "mmcbase!GetComObjectEventSource"
+      },
+      {
+        "from_ea": "0x1800a400e",
+        "from_func": "0x1800a3f9c",
+        "from_func_name": "??0?$CMMCIDispatchImpl@USnapIn@@$1?GUID_NULL@@3U_GUID@@B$1?LIBID_MMC20@@3U3@B@@QEAA@XZ",
+        "import": "mmcbase!GetComObjectEventSource"
+      },
+      {
+        "from_ea": "0x1800c86d6",
+        "from_func": "0x1800c8664",
+        "from_func_name": "??0?$CMMCIDispatchImpl@U_EventConnector@@$1?CLSID_AppEventsDHTMLConnector@@3U_GUID@@B$1?LIBID_MMC20@@3U3@B@@QEAA@XZ",
+        "import": "mmcbase!GetComObjectEventSource"
+      },
+      {
+        "from_ea": "0x1800f0ae2",
+        "from_func": "0x1800f0a70",
+        "from_func_name": "??0?$CMMCIDispatchImpl@UNode@@$1?GUID_NULL@@3U_GUID@@B$1?LIBID_MMC20@@3U3@B@@QEAA@XZ",
+        "import": "mmcbase!GetComObjectEventSource"
+      },
+      {
+        "from_ea": "0x1800f0be6",
+        "from_func": "0x1800f0b74",
+        "from_func_name": "??0?$CMMCIDispatchImpl@UScopeNamespace@@$1?GUID_NULL@@3U_GUID@@B$1?LIBID_MMC20@@3U3@B@@QEAA@XZ",
+        "import": "mmcbase!GetComObjectEventSource"
+      },
+      {
+        "from_ea": "0x1800f0cea",
+        "from_func": "0x1800f0c78",
+        "from_func_name": "??0?$CMMCIDispatchImpl@USnapIns@@$1?GUID_NULL@@3U_GUID@@B$1?LIBID_MMC20@@3U3@B@@QEAA@XZ",
+        "import": "mmcbase!GetComObjectEventSource"
+      },
+      {
+        "from_ea": "0x1800f9b5a",
+        "from_func": "0x1800f9ae8",
+        "from_func_name": "??0?$CMMCIDispatchImpl@UProperty@@$1?GUID_NULL@@3U_GUID@@B$1?LIBID_MMC20@@3U3@B@@QEAA@XZ",
+        "import": "mmcbase!GetComObjectEventSource"
+      },
+      {
+        "from_ea": "0x180034a2a",
+        "from_func": "0x1800349c0",
+        "from_func_name": "??0?$CMMCIDispatchImpl@UContextMenu@@$1?GUID_NULL@@3U_GUID@@B$1?LIBID_MMC20@@3U3@B@@QEAA@XZ",
+        "import": "mmcbase!GetComObjectEventSource"
+      },
+      {
+        "from_ea": "0x18007464e",
+        "from_func": "0x1800745dc",
+        "from_func_name": "??0?$CMMCIDispatchImpl@UProperties@@$1?GUID_NULL@@3U_GUID@@B$1?LIBID_MMC20@@3U3@B@@QEAA@XZ",
+        "import": "mmcbase!GetComObjectEventSource"
+      },
+      {
+        "from_ea": "0x180095aee",
+        "from_func": "0x180095a7c",
+        "from_func_name": "??0?$CMMCIDispatchImpl@UMenuItem@@$1?GUID_NULL@@3U_GUID@@B$1?LIBID_MMC20@@3U3@B@@QEAA@XZ",
+        "import": "mmcbase!GetComObjectEventSource"
+      },
+      {
+        "from_ea": "0x18009fbc2",
+        "from_func": "0x18009fb50",
+        "from_func_name": "??0?$CMMCIDispatchImpl@UIAccessible@@$1?GUID_NULL@@3U_GUID@@B$1?LIBID_Accessibility@@3U3@B@@QEAA@XZ",
+        "import": "mmcbase!GetComObjectEventSource"
+      },
+      {
+        "from_ea": "0x1800a3e06",
+        "from_func": "0x1800a3d94",
+        "from_func_name": "??0?$CMMCIDispatchImpl@UExtension@@$1?GUID_NULL@@3U_GUID@@B$1?LIBID_MMC20@@3U3@B@@QEAA@XZ",
+        "import": "mmcbase!GetComObjectEventSource"
+      },
+      {
+        "from_ea": "0x1800a3f0a",
+        "from_func": "0x1800a3e98",
+        "from_func_name": "??0?$CMMCIDispatchImpl@UExtensions@@$1?GUID_NULL@@3U_GUID@@B$1?LIBID_MMC20@@3U3@B@@QEAA@XZ",
+        "import": "mmcbase!GetComObjectEventSource"
+      },
+      {
+        "from_ea": "0x1800a400e",
+        "from_func": "0x1800a3f9c",
+        "from_func_name": "??0?$CMMCIDispatchImpl@USnapIn@@$1?GUID_NULL@@3U_GUID@@B$1?LIBID_MMC20@@3U3@B@@QEAA@XZ",
+        "import": "mmcbase!GetComObjectEventSource"
+      },
+      {
+        "from_ea": "0x1800c86d6",
+        "from_func": "0x1800c8664",
+        "from_func_name": "??0?$CMMCIDispatchImpl@U_EventConnector@@$1?CLSID_AppEventsDHTMLConnector@@3U_GUID@@B$1?LIBID_MMC20@@3U3@B@@QEAA@XZ",
+        "import": "mmcbase!GetComObjectEventSource"
+      },
+      {
+        "from_ea": "0x1800f0ae2",
+        "from_func": "0x1800f0a70",
+        "from_func_name": "??0?$CMMCIDispatchImpl@UNode@@$1?GUID_NULL@@3U_GUID@@B$1?LIBID_MMC20@@3U3@B@@QEAA@XZ",
+        "import": "mmcbase!GetComObjectEventSource"
+      },
+      {
+        "from_ea": "0x1800f0be6",
+        "from_func": "0x1800f0b74",
+        "from_func_name": "??0?$CMMCIDispatchImpl@UScopeNamespace@@$1?GUID_NULL@@3U_GUID@@B$1?LIBID_MMC20@@3U3@B@@QEAA@XZ",
+        "import": "mmcbase!GetComObjectEventSource"
+      },
+      {
+        "from_ea": "0x1800f0cea",
+        "from_func": "0x1800f0c78",
+        "from_func_name": "??0?$CMMCIDispatchImpl@USnapIns@@$1?GUID_NULL@@3U_GUID@@B$1?LIBID_MMC20@@3U3@B@@QEAA@XZ",
+        "import": "mmcbase!GetComObjectEventSource"
+      },
+      {
+        "from_ea": "0x1800f9b5a",
+        "from_func": "0x1800f9ae8",
+        "from_func_name": "??0?$CMMCIDispatchImpl@UProperty@@$1?GUID_NULL@@3U_GUID@@B$1?LIBID_MMC20@@3U3@B@@QEAA@XZ",
+        "import": "mmcbase!GetComObjectEventSource"
+      }
+    ]
+  },
+  {
+    "import": "mmcbase!MMCUpdateRegistry",
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ],
+    "xref_count": 32,
+    "xrefs": [
+      {
+        "from_ea": "0x18005b8cd",
+        "from_func": "0x18005b880",
+        "from_func_name": "?RegisterViewExtension@@YAJHAEAVCObjectRegParams@@H@Z",
+        "import": "mmcbase!MMCUpdateRegistry"
+      },
+      {
+        "from_ea": "0x1800d82f0",
+        "from_func": "0x1800d8290",
+        "from_func_name": "?UpdateRegistry@CConsolePower@@SAJH@Z",
+        "import": "mmcbase!MMCUpdateRegistry"
+      },
+      {
+        "from_ea": "0x1800d8390",
+        "from_func": "0x1800d8330",
+        "from_func_name": "?UpdateRegistry@CExecutivePlatform@@SAJH@Z",
+        "import": "mmcbase!MMCUpdateRegistry"
+      },
+      {
+        "from_ea": "0x1800d8430",
+        "from_func": "0x1800d83d0",
+        "from_func_name": "?UpdateRegistry@CFormHost@@SAJH@Z",
+        "import": "mmcbase!MMCUpdateRegistry"
+      },
+      {
+        "from_ea": "0x1800d84ea",
+        "from_func": "0x1800d8470",
+        "from_func_name": "?UpdateRegistry@CIconControl@@SAJH@Z",
+        "import": "mmcbase!MMCUpdateRegistry"
+      },
+      {
+        "from_ea": "0x1800d8590",
+        "from_func": "0x1800d8530",
+        "from_func_name": "?UpdateRegistry@CMMCComCacheCleanup@@SAJH@Z",
+        "import": "mmcbase!MMCUpdateRegistry"
+      },
+      {
+        "from_ea": "0x1800d8630",
+        "from_func": "0x1800d85d0",
+        "from_func_name": "?UpdateRegistry@CMMCDocConfig@@SAJH@Z",
+        "import": "mmcbase!MMCUpdateRegistry"
+      },
+      {
+        "from_ea": "0x1800d86d0",
+        "from_func": "0x1800d8670",
+        "from_func_name": "?UpdateRegistry@CMMCEventConnector@@SAJH@Z",
+        "import": "mmcbase!MMCUpdateRegistry"
+      },
+      {
+        "from_ea": "0x1800d8770",
+        "from_func": "0x1800d8710",
+        "from_func_name": "?UpdateRegistry@CMMCProtocol@@SAJH@Z",
+        "import": "mmcbase!MMCUpdateRegistry"
+      },
+      {
+        "from_ea": "0x1800d8810",
+        "from_func": "0x1800d87b0",
+        "from_func_name": "?UpdateRegistry@CMMCVersionInfo@@SAJH@Z",
+        "import": "mmcbase!MMCUpdateRegistry"
+      },
+      {
+        "from_ea": "0x1800d88b0",
+        "from_func": "0x1800d8850",
+        "from_func_name": "?UpdateRegistry@CMessageView@@SAJH@Z",
+        "import": "mmcbase!MMCUpdateRegistry"
+      },
+      {
+        "from_ea": "0x1800d8950",
+        "from_func": "0x1800d88f0",
+        "from_func_name": "?UpdateRegistry@CNodeInitObject@@SAJH@Z",
+        "import": "mmcbase!MMCUpdateRegistry"
+      },
+      {
+        "from_ea": "0x1800d89f0",
+        "from_func": "0x1800d8990",
+        "from_func_name": "?UpdateRegistry@CScopeTree@@SAJH@Z",
+        "import": "mmcbase!MMCUpdateRegistry"
+      },
+      {
+        "from_ea": "0x1800d8a90",
+        "from_func": "0x1800d8a30",
+        "from_func_name": "?UpdateRegistry@CSnapInFailureReporter@@SAJH@Z",
+        "import": "mmcbase!MMCUpdateRegistry"
+      },
+      {
+        "from_ea": "0x1800d8b4a",
+        "from_func": "0x1800d8ad0",
+        "from_func_name": "?UpdateRegistry@CTaskSymbol@@SAJH@Z",
+        "import": "mmcbase!MMCUpdateRegistry"
+      },
+      {
+        "from_ea": "0x1800d8c80",
+        "from_func": "0x1800d8c20",
+        "from_func_name": "?UpdateRegistry@CWaitDialogObject@@SAJH@Z",
+        "import": "mmcbase!MMCUpdateRegistry"
+      },
+      {
+        "from_ea": "0x18005b8cd",
+        "from_func": "0x18005b880",
+        "from_func_name": "?RegisterViewExtension@@YAJHAEAVCObjectRegParams@@H@Z",
+        "import": "mmcbase!MMCUpdateRegistry"
+      },
+      {
+        "from_ea": "0x1800d82f0",
+        "from_func": "0x1800d8290",
+        "from_func_name": "?UpdateRegistry@CConsolePower@@SAJH@Z",
+        "import": "mmcbase!MMCUpdateRegistry"
+      },
+      {
+        "from_ea": "0x1800d8390",
+        "from_func": "0x1800d8330",
+        "from_func_name": "?UpdateRegistry@CExecutivePlatform@@SAJH@Z",
+        "import": "mmcbase!MMCUpdateRegistry"
+      },
+      {
+        "from_ea": "0x1800d8430",
+        "from_func": "0x1800d83d0",
+        "from_func_name": "?UpdateRegistry@CFormHost@@SAJH@Z",
+        "import": "mmcbase!MMCUpdateRegistry"
+      },
+      {
+        "from_ea": "0x1800d84ea",
+        "from_func": "0x1800d8470",
+        "from_func_name": "?UpdateRegistry@CIconControl@@SAJH@Z",
+        "import": "mmcbase!MMCUpdateRegistry"
+      },
+      {
+        "from_ea": "0x1800d8590",
+        "from_func": "0x1800d8530",
+        "from_func_name": "?UpdateRegistry@CMMCComCacheCleanup@@SAJH@Z",
+        "import": "mmcbase!MMCUpdateRegistry"
+      },
+      {
+        "from_ea": "0x1800d8630",
+        "from_func": "0x1800d85d0",
+        "from_func_name": "?UpdateRegistry@CMMCDocConfig@@SAJH@Z",
+        "import": "mmcbase!MMCUpdateRegistry"
+      },
+      {
+        "from_ea": "0x1800d86d0",
+        "from_func": "0x1800d8670",
+        "from_func_name": "?UpdateRegistry@CMMCEventConnector@@SAJH@Z",
+        "import": "mmcbase!MMCUpdateRegistry"
+      },
+      {
+        "from_ea": "0x1800d8770",
+        "from_func": "0x1800d8710",
+        "from_func_name": "?UpdateRegistry@CMMCProtocol@@SAJH@Z",
+        "import": "mmcbase!MMCUpdateRegistry"
+      },
+      {
+        "from_ea": "0x1800d8810",
+        "from_func": "0x1800d87b0",
+        "from_func_name": "?UpdateRegistry@CMMCVersionInfo@@SAJH@Z",
+        "import": "mmcbase!MMCUpdateRegistry"
+      },
+      {
+        "from_ea": "0x1800d88b0",
+        "from_func": "0x1800d8850",
+        "from_func_name": "?UpdateRegistry@CMessageView@@SAJH@Z",
+        "import": "mmcbase!MMCUpdateRegistry"
+      },
+      {
+        "from_ea": "0x1800d8950",
+        "from_func": "0x1800d88f0",
+        "from_func_name": "?UpdateRegistry@CNodeInitObject@@SAJH@Z",
+        "import": "mmcbase!MMCUpdateRegistry"
+      },
+      {
+        "from_ea": "0x1800d89f0",
+        "from_func": "0x1800d8990",
+        "from_func_name": "?UpdateRegistry@CScopeTree@@SAJH@Z",
+        "import": "mmcbase!MMCUpdateRegistry"
+      },
+      {
+        "from_ea": "0x1800d8a90",
+        "from_func": "0x1800d8a30",
+        "from_func_name": "?UpdateRegistry@CSnapInFailureReporter@@SAJH@Z",
+        "import": "mmcbase!MMCUpdateRegistry"
+      },
+      {
+        "from_ea": "0x1800d8b4a",
+        "from_func": "0x1800d8ad0",
+        "from_func_name": "?UpdateRegistry@CTaskSymbol@@SAJH@Z",
+        "import": "mmcbase!MMCUpdateRegistry"
+      },
+      {
+        "from_ea": "0x1800d8c80",
+        "from_func": "0x1800d8c20",
+        "from_func_name": "?UpdateRegistry@CWaitDialogObject@@SAJH@Z",
+        "import": "mmcbase!MMCUpdateRegistry"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 5,
+    "xrefs": [
+      {
+        "from_ea": "0x180134355",
+        "from_func": "0x18013434c",
+        "from_func_name": "__C_specific_handler_noexcept",
+        "import": "msvcrt!__C_specific_handler"
+      },
+      {
+        "from_ea": "0x1801344d3",
+        "from_func": "0x18013447c",
+        "from_func_name": "__GSHandlerCheck_SEH",
+        "import": "msvcrt!__C_specific_handler"
+      },
+      {
+        "from_ea": "0x180071b16",
+        "from_func": "0x180071b16",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "msvcrt!__C_specific_handler"
+      },
+      {
+        "from_ea": "0x180134355",
+        "from_func": "0x18013434c",
+        "from_func_name": "__C_specific_handler_noexcept",
+        "import": "msvcrt!__C_specific_handler"
+      },
+      {
+        "from_ea": "0x1801344d3",
+        "from_func": "0x18013447c",
+        "from_func_name": "__GSHandlerCheck_SEH",
+        "import": "msvcrt!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__CxxFrameHandler3",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180071f48",
+        "from_func": "0x180071f48",
+        "from_func_name": "__CxxFrameHandler3_0",
+        "import": "msvcrt!__CxxFrameHandler3"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__CxxFrameHandler4",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180071906",
+        "from_func": "0x180071906",
+        "from_func_name": "__CxxFrameHandler4_0",
+        "import": "msvcrt!__CxxFrameHandler4"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__RTDynamicCast",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x1801344ea",
+        "from_func": "0x1801344ea",
+        "from_func_name": "__RTDynamicCast_0",
+        "import": "msvcrt!__RTDynamicCast"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__dllonexit",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x18007216b",
+        "from_func": "0x18007216b",
+        "from_func_name": "__dllonexit_0",
+        "import": "msvcrt!__dllonexit"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!EtwGetTraceEnableFlags",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800d9c3e",
+        "from_func": "0x1800d9bf0",
+        "from_func_name": "WppControlCallback",
+        "import": "ntdll!EtwGetTraceEnableFlags"
+      },
+      {
+        "from_ea": "0x1800d9c3e",
+        "from_func": "0x1800d9bf0",
+        "from_func_name": "WppControlCallback",
+        "import": "ntdll!EtwGetTraceEnableFlags"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!EtwGetTraceEnableLevel",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800d9c32",
+        "from_func": "0x1800d9bf0",
+        "from_func_name": "WppControlCallback",
+        "import": "ntdll!EtwGetTraceEnableLevel"
+      },
+      {
+        "from_ea": "0x1800d9c32",
+        "from_func": "0x1800d9bf0",
+        "from_func_name": "WppControlCallback",
+        "import": "ntdll!EtwGetTraceEnableLevel"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!EtwGetTraceLoggerHandle",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800d9c26",
+        "from_func": "0x1800d9bf0",
+        "from_func_name": "WppControlCallback",
+        "import": "ntdll!EtwGetTraceLoggerHandle"
+      },
+      {
+        "from_ea": "0x1800d9c26",
+        "from_func": "0x1800d9bf0",
+        "from_func_name": "WppControlCallback",
+        "import": "ntdll!EtwGetTraceLoggerHandle"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!EtwRegisterTraceGuidsW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800d9ce0",
+        "from_func": "0x1800d9c78",
+        "from_func_name": "WppInitUm",
+        "import": "ntdll!EtwRegisterTraceGuidsW"
+      },
+      {
+        "from_ea": "0x1800d9ce0",
+        "from_func": "0x1800d9c78",
+        "from_func_name": "WppInitUm",
+        "import": "ntdll!EtwRegisterTraceGuidsW"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!EtwTraceMessage",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 185,
+    "xrefs": [
+      {
+        "from_ea": "0x180007886",
+        "from_func": "0x18000784c",
+        "from_func_name": "WPP_SF_Dd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1800570a0",
+        "from_func": "0x180057074",
+        "from_func_name": "WPP_SF_d",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18005d787",
+        "from_func": "0x18005d738",
+        "from_func_name": "WPP_SF_S",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18006cb51",
+        "from_func": "0x18006caec",
+        "from_func_name": "WPP_SF_Sd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1800743ca",
+        "from_func": "0x1800743b4",
+        "from_func_name": "WPP_SF_",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180074410",
+        "from_func": "0x1800743dc",
+        "from_func_name": "WPP_SF__guid_d",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18007cf0b",
+        "from_func": "0x18007ce7c",
+        "from_func_name": "WPP_SF_SS",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18007cf64",
+        "from_func": "0x18007cf28",
+        "from_func_name": "WPP_SF_qd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18007d952",
+        "from_func": "0x18007d90c",
+        "from_func_name": "WPP_SF_ddd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18007d990",
+        "from_func": "0x18007d964",
+        "from_func_name": "WPP_SF_q",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18007d9ee",
+        "from_func": "0x18007d9a4",
+        "from_func_name": "WPP_SF_qdd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1800802a1",
+        "from_func": "0x180080174",
+        "from_func_name": "WPP_SF_SSSllll",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1800803a7",
+        "from_func": "0x1800802c4",
+        "from_func_name": "WPP_SF_SSllll",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18008040c",
+        "from_func": "0x1800803bc",
+        "from_func_name": "WPP_SF_dDq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180080460",
+        "from_func": "0x180080420",
+        "from_func_name": "WPP_SF_ll",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180080503",
+        "from_func": "0x180080474",
+        "from_func_name": "WPP_SF_llS",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180093b64",
+        "from_func": "0x180093abc",
+        "from_func_name": "WPP_SF_SSD",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180093bcd",
+        "from_func": "0x180093b78",
+        "from_func_name": "WPP_SF_s",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1800a309f",
+        "from_func": "0x1800a3030",
+        "from_func_name": "WPP_SF_dS",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1800a3117",
+        "from_func": "0x1800a30b0",
+        "from_func_name": "WPP_SF_ddddd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1800a3176",
+        "from_func": "0x1800a312c",
+        "from_func_name": "WPP_SF_ddq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1800a31d8",
+        "from_func": "0x1800a3188",
+        "from_func_name": "WPP_SF_dqD",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1800a3232",
+        "from_func": "0x1800a31ec",
+        "from_func_name": "WPP_SF_qqq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1800afe1c",
+        "from_func": "0x1800afdf8",
+        "from_func_name": "WPP_SF__guid_",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1800afeb5",
+        "from_func": "0x1800afe30",
+        "from_func_name": "WPP_SF_dSd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1800c7366",
+        "from_func": "0x1800c731c",
+        "from_func_name": "WPP_SF_dqd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1800f0028",
+        "from_func": "0x1800effd8",
+        "from_func_name": "WPP_SF_ddc",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1800f930c",
+        "from_func": "0x1800f92bc",
+        "from_func_name": "WPP_SF_ldd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1800fdf4d",
+        "from_func": "0x1800fdea8",
+        "from_func_name": "WPP_SF_SSd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18011411a",
+        "from_func": "0x180114050",
+        "from_func_name": "WPP_SF_SSS",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18011cdca",
+        "from_func": "0x18011cd8c",
+        "from_func_name": "WPP_SF__guid_D",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18011ce4f",
+        "from_func": "0x18011cddc",
+        "from_func_name": "WPP_SF_dddddd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18011cecc",
+        "from_func": "0x18011ce64",
+        "from_func_name": "WPP_SF_sd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180123ff4",
+        "from_func": "0x180123fa4",
+        "from_func_name": "WPP_SF_LLP",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18012404c",
+        "from_func": "0x180124008",
+        "from_func_name": "WPP_SF_LP",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1801240da",
+        "from_func": "0x180124060",
+        "from_func_name": "WPP_SF_LS",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180124165",
+        "from_func": "0x1801240ec",
+        "from_func_name": "WPP_SF_LdPqqd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1801241cc",
+        "from_func": "0x18012417c",
+        "from_func_name": "WPP_SF_LlP",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180124224",
+        "from_func": "0x1801241e0",
+        "from_func_name": "WPP_SF_Lq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180124294",
+        "from_func": "0x180124238",
+        "from_func_name": "WPP_SF_PPPd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180124337",
+        "from_func": "0x1801242a8",
+        "from_func_name": "WPP_SF_PSL",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180124392",
+        "from_func": "0x180124348",
+        "from_func_name": "WPP_SF_Pdq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180124490",
+        "from_func": "0x1801243a4",
+        "from_func_name": "WPP_SF_SSSP",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180124532",
+        "from_func": "0x1801244b0",
+        "from_func_name": "WPP_SF_Sdd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1801245ef",
+        "from_func": "0x180124544",
+        "from_func_name": "WPP_SF_Sdlld",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18012469c",
+        "from_func": "0x180124604",
+        "from_func_name": "WPP_SF_Sdqd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1801246fa",
+        "from_func": "0x1801246b0",
+        "from_func_name": "WPP_SF_dPP",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18012479c",
+        "from_func": "0x18012470c",
+        "from_func_name": "WPP_SF_dSq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180124801",
+        "from_func": "0x1801247b0",
+        "from_func_name": "WPP_SF_ddP",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180124850",
+        "from_func": "0x180124814",
+        "from_func_name": "WPP_SF_dq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1801248d1",
+        "from_func": "0x180124864",
+        "from_func_name": "WPP_SF_dqdPP",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180124935",
+        "from_func": "0x1801248e8",
+        "from_func_name": "WPP_SF_qPq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180124a02",
+        "from_func": "0x180124948",
+        "from_func_name": "WPP_SF_qSS",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180124aa3",
+        "from_func": "0x180124a14",
+        "from_func_name": "WPP_SF_qSq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180124b11",
+        "from_func": "0x180124ab4",
+        "from_func_name": "WPP_SF_qdPP",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180124b5e",
+        "from_func": "0x180124b24",
+        "from_func_name": "WPP_SF_qq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180124bcd",
+        "from_func": "0x180124b70",
+        "from_func_name": "WPP_SF_qqqL",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180124c4c",
+        "from_func": "0x180124be0",
+        "from_func_name": "WPP_SF_qqqql",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180125f8a",
+        "from_func": "0x180125ea4",
+        "from_func_name": "WPP_SF_SSSd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180125fe3",
+        "from_func": "0x180125fa0",
+        "from_func_name": "WPP_SF_Dq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180126044",
+        "from_func": "0x180125ff4",
+        "from_func_name": "WPP_SF_DqD",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180126981",
+        "from_func": "0x180126928",
+        "from_func_name": "WPP_SF_hdd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1801298eb",
+        "from_func": "0x1801298a8",
+        "from_func_name": "WPP_SF_qD",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18012a507",
+        "from_func": "0x18012a4c4",
+        "from_func_name": "WPP_SF_id",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18012c53a",
+        "from_func": "0x18012c3e8",
+        "from_func_name": "WPP_SF_SsssS",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180130f5c",
+        "from_func": "0x180130f0c",
+        "from_func_name": "WPP_SF_DLq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180130fc0",
+        "from_func": "0x180130f70",
+        "from_func_name": "WPP_SF_Dqq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180131018",
+        "from_func": "0x180130fd4",
+        "from_func_name": "WPP_SF_PL",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180131074",
+        "from_func": "0x18013102c",
+        "from_func_name": "WPP_SF_P_guid_",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1801310cb",
+        "from_func": "0x180131088",
+        "from_func_name": "WPP_SF_Pl",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18013111d",
+        "from_func": "0x1801310dc",
+        "from_func_name": "WPP_SF_Pq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18013117d",
+        "from_func": "0x180131130",
+        "from_func_name": "WPP_SF_Pqq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18013124e",
+        "from_func": "0x180131190",
+        "from_func_name": "WPP_SF_SSDq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180131332",
+        "from_func": "0x180131260",
+        "from_func_name": "WPP_SF_SSPqL",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1801313b4",
+        "from_func": "0x180131348",
+        "from_func_name": "WPP_SF_Sq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180131408",
+        "from_func": "0x1801313c8",
+        "from_func_name": "WPP_SF_dL",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18013146c",
+        "from_func": "0x18013141c",
+        "from_func_name": "WPP_SF_dLP",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1801314dc",
+        "from_func": "0x180131480",
+        "from_func_name": "WPP_SF_dPDD",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180131591",
+        "from_func": "0x1801314f0",
+        "from_func_name": "WPP_SF_dSdd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180131600",
+        "from_func": "0x1801315a4",
+        "from_func_name": "WPP_SF_lLqq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180131658",
+        "from_func": "0x180131614",
+        "from_func_name": "WPP_SF_lq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1801316b8",
+        "from_func": "0x18013166c",
+        "from_func_name": "WPP_SF_qPP",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180131710",
+        "from_func": "0x1801316cc",
+        "from_func_name": "WPP_SF_ql",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180131780",
+        "from_func": "0x180131724",
+        "from_func_name": "WPP_SF_qllq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1801317f0",
+        "from_func": "0x180131794",
+        "from_func_name": "WPP_SF_qlql",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180131860",
+        "from_func": "0x180131804",
+        "from_func_name": "WPP_SF_qqlL",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18013315b",
+        "from_func": "0x1801330f0",
+        "from_func_name": "WPP_SF_SL",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1801331ee",
+        "from_func": "0x18013316c",
+        "from_func_name": "WPP_SF_SLd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18013324c",
+        "from_func": "0x180133200",
+        "from_func_name": "WPP_SF_dLL",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1801332b0",
+        "from_func": "0x180133260",
+        "from_func_name": "WPP_SF_dqq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180133321",
+        "from_func": "0x1801332c4",
+        "from_func_name": "WPP_SF_dqqd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180133486",
+        "from_func": "0x1801333a0",
+        "from_func_name": "WPP_SF_SdSS",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180007886",
+        "from_func": "0x18000784c",
+        "from_func_name": "WPP_SF_Dd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1800570a0",
+        "from_func": "0x180057074",
+        "from_func_name": "WPP_SF_d",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18005d787",
+        "from_func": "0x18005d738",
+        "from_func_name": "WPP_SF_S",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18006cb51",
+        "from_func": "0x18006caec",
+        "from_func_name": "WPP_SF_Sd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1800743ca",
+        "from_func": "0x1800743b4",
+        "from_func_name": "WPP_SF_",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180074410",
+        "from_func": "0x1800743dc",
+        "from_func_name": "WPP_SF__guid_d",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18007cf0b",
+        "from_func": "0x18007ce7c",
+        "from_func_name": "WPP_SF_SS",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18007cf64",
+        "from_func": "0x18007cf28",
+        "from_func_name": "WPP_SF_qd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18007d952",
+        "from_func": "0x18007d90c",
+        "from_func_name": "WPP_SF_ddd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18007d990",
+        "from_func": "0x18007d964",
+        "from_func_name": "WPP_SF_q",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18007d9ee",
+        "from_func": "0x18007d9a4",
+        "from_func_name": "WPP_SF_qdd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1800802a1",
+        "from_func": "0x180080174",
+        "from_func_name": "WPP_SF_SSSllll",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1800803a7",
+        "from_func": "0x1800802c4",
+        "from_func_name": "WPP_SF_SSllll",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18008040c",
+        "from_func": "0x1800803bc",
+        "from_func_name": "WPP_SF_dDq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180080460",
+        "from_func": "0x180080420",
+        "from_func_name": "WPP_SF_ll",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180080503",
+        "from_func": "0x180080474",
+        "from_func_name": "WPP_SF_llS",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180093b64",
+        "from_func": "0x180093abc",
+        "from_func_name": "WPP_SF_SSD",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180093bcd",
+        "from_func": "0x180093b78",
+        "from_func_name": "WPP_SF_s",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1800a309f",
+        "from_func": "0x1800a3030",
+        "from_func_name": "WPP_SF_dS",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1800a3117",
+        "from_func": "0x1800a30b0",
+        "from_func_name": "WPP_SF_ddddd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1800a3176",
+        "from_func": "0x1800a312c",
+        "from_func_name": "WPP_SF_ddq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1800a31d8",
+        "from_func": "0x1800a3188",
+        "from_func_name": "WPP_SF_dqD",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1800a3232",
+        "from_func": "0x1800a31ec",
+        "from_func_name": "WPP_SF_qqq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1800afe1c",
+        "from_func": "0x1800afdf8",
+        "from_func_name": "WPP_SF__guid_",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1800afeb5",
+        "from_func": "0x1800afe30",
+        "from_func_name": "WPP_SF_dSd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1800c7366",
+        "from_func": "0x1800c731c",
+        "from_func_name": "WPP_SF_dqd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1800f0028",
+        "from_func": "0x1800effd8",
+        "from_func_name": "WPP_SF_ddc",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1800f930c",
+        "from_func": "0x1800f92bc",
+        "from_func_name": "WPP_SF_ldd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1800fdf4d",
+        "from_func": "0x1800fdea8",
+        "from_func_name": "WPP_SF_SSd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18011411a",
+        "from_func": "0x180114050",
+        "from_func_name": "WPP_SF_SSS",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18011cdca",
+        "from_func": "0x18011cd8c",
+        "from_func_name": "WPP_SF__guid_D",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18011ce4f",
+        "from_func": "0x18011cddc",
+        "from_func_name": "WPP_SF_dddddd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18011cecc",
+        "from_func": "0x18011ce64",
+        "from_func_name": "WPP_SF_sd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180123ff4",
+        "from_func": "0x180123fa4",
+        "from_func_name": "WPP_SF_LLP",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18012404c",
+        "from_func": "0x180124008",
+        "from_func_name": "WPP_SF_LP",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1801240da",
+        "from_func": "0x180124060",
+        "from_func_name": "WPP_SF_LS",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180124165",
+        "from_func": "0x1801240ec",
+        "from_func_name": "WPP_SF_LdPqqd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1801241cc",
+        "from_func": "0x18012417c",
+        "from_func_name": "WPP_SF_LlP",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180124224",
+        "from_func": "0x1801241e0",
+        "from_func_name": "WPP_SF_Lq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180124294",
+        "from_func": "0x180124238",
+        "from_func_name": "WPP_SF_PPPd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180124337",
+        "from_func": "0x1801242a8",
+        "from_func_name": "WPP_SF_PSL",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180124392",
+        "from_func": "0x180124348",
+        "from_func_name": "WPP_SF_Pdq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180124490",
+        "from_func": "0x1801243a4",
+        "from_func_name": "WPP_SF_SSSP",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180124532",
+        "from_func": "0x1801244b0",
+        "from_func_name": "WPP_SF_Sdd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1801245ef",
+        "from_func": "0x180124544",
+        "from_func_name": "WPP_SF_Sdlld",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18012469c",
+        "from_func": "0x180124604",
+        "from_func_name": "WPP_SF_Sdqd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1801246fa",
+        "from_func": "0x1801246b0",
+        "from_func_name": "WPP_SF_dPP",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18012479c",
+        "from_func": "0x18012470c",
+        "from_func_name": "WPP_SF_dSq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180124801",
+        "from_func": "0x1801247b0",
+        "from_func_name": "WPP_SF_ddP",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180124850",
+        "from_func": "0x180124814",
+        "from_func_name": "WPP_SF_dq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1801248d1",
+        "from_func": "0x180124864",
+        "from_func_name": "WPP_SF_dqdPP",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180124935",
+        "from_func": "0x1801248e8",
+        "from_func_name": "WPP_SF_qPq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180124a02",
+        "from_func": "0x180124948",
+        "from_func_name": "WPP_SF_qSS",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180124aa3",
+        "from_func": "0x180124a14",
+        "from_func_name": "WPP_SF_qSq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180124b11",
+        "from_func": "0x180124ab4",
+        "from_func_name": "WPP_SF_qdPP",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180124b5e",
+        "from_func": "0x180124b24",
+        "from_func_name": "WPP_SF_qq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180124bcd",
+        "from_func": "0x180124b70",
+        "from_func_name": "WPP_SF_qqqL",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180124c4c",
+        "from_func": "0x180124be0",
+        "from_func_name": "WPP_SF_qqqql",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180125f8a",
+        "from_func": "0x180125ea4",
+        "from_func_name": "WPP_SF_SSSd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180125fe3",
+        "from_func": "0x180125fa0",
+        "from_func_name": "WPP_SF_Dq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180126044",
+        "from_func": "0x180125ff4",
+        "from_func_name": "WPP_SF_DqD",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180126981",
+        "from_func": "0x180126928",
+        "from_func_name": "WPP_SF_hdd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1801298eb",
+        "from_func": "0x1801298a8",
+        "from_func_name": "WPP_SF_qD",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18012a507",
+        "from_func": "0x18012a4c4",
+        "from_func_name": "WPP_SF_id",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18012c53a",
+        "from_func": "0x18012c3e8",
+        "from_func_name": "WPP_SF_SsssS",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180130f5c",
+        "from_func": "0x180130f0c",
+        "from_func_name": "WPP_SF_DLq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180130fc0",
+        "from_func": "0x180130f70",
+        "from_func_name": "WPP_SF_Dqq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180131018",
+        "from_func": "0x180130fd4",
+        "from_func_name": "WPP_SF_PL",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180131074",
+        "from_func": "0x18013102c",
+        "from_func_name": "WPP_SF_P_guid_",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1801310cb",
+        "from_func": "0x180131088",
+        "from_func_name": "WPP_SF_Pl",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18013111d",
+        "from_func": "0x1801310dc",
+        "from_func_name": "WPP_SF_Pq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18013117d",
+        "from_func": "0x180131130",
+        "from_func_name": "WPP_SF_Pqq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18013124e",
+        "from_func": "0x180131190",
+        "from_func_name": "WPP_SF_SSDq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180131332",
+        "from_func": "0x180131260",
+        "from_func_name": "WPP_SF_SSPqL",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1801313b4",
+        "from_func": "0x180131348",
+        "from_func_name": "WPP_SF_Sq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180131408",
+        "from_func": "0x1801313c8",
+        "from_func_name": "WPP_SF_dL",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18013146c",
+        "from_func": "0x18013141c",
+        "from_func_name": "WPP_SF_dLP",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1801314dc",
+        "from_func": "0x180131480",
+        "from_func_name": "WPP_SF_dPDD",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180131591",
+        "from_func": "0x1801314f0",
+        "from_func_name": "WPP_SF_dSdd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180131600",
+        "from_func": "0x1801315a4",
+        "from_func_name": "WPP_SF_lLqq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180131658",
+        "from_func": "0x180131614",
+        "from_func_name": "WPP_SF_lq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1801316b8",
+        "from_func": "0x18013166c",
+        "from_func_name": "WPP_SF_qPP",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180131710",
+        "from_func": "0x1801316cc",
+        "from_func_name": "WPP_SF_ql",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180131780",
+        "from_func": "0x180131724",
+        "from_func_name": "WPP_SF_qllq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1801317f0",
+        "from_func": "0x180131794",
+        "from_func_name": "WPP_SF_qlql",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180131860",
+        "from_func": "0x180131804",
+        "from_func_name": "WPP_SF_qqlL",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18013315b",
+        "from_func": "0x1801330f0",
+        "from_func_name": "WPP_SF_SL",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1801331ee",
+        "from_func": "0x18013316c",
+        "from_func_name": "WPP_SF_SLd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x18013324c",
+        "from_func": "0x180133200",
+        "from_func_name": "WPP_SF_dLL",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1801332b0",
+        "from_func": "0x180133260",
+        "from_func_name": "WPP_SF_dqq",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180133321",
+        "from_func": "0x1801332c4",
+        "from_func_name": "WPP_SF_dqqd",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x180133486",
+        "from_func": "0x1801333a0",
+        "from_func_name": "WPP_SF_SdSS",
+        "import": "ntdll!EtwTraceMessage"
+      },
+      {
+        "from_ea": "0x1801b1230",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ntdll!EtwTraceMessage"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!EtwUnregisterTraceGuids",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180044d60",
+        "from_func": "0x180044d38",
+        "from_func_name": "WppCleanupUm",
+        "import": "ntdll!EtwUnregisterTraceGuids"
+      },
+      {
+        "from_ea": "0x180044d60",
+        "from_func": "0x180044d38",
+        "from_func_name": "WppCleanupUm",
+        "import": "ntdll!EtwUnregisterTraceGuids"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlCaptureContext",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180071ce0",
+        "from_func": "0x180071ca0",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlCaptureContext"
+      },
+      {
+        "from_ea": "0x180071ce0",
+        "from_func": "0x180071ca0",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlCaptureContext"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlLookupFunctionEntry",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180071cff",
+        "from_func": "0x180071ca0",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlLookupFunctionEntry"
+      },
+      {
+        "from_ea": "0x180071cff",
+        "from_func": "0x180071ca0",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlLookupFunctionEntry"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlVirtualUnwind",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180071d4c",
+        "from_func": "0x180071ca0",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlVirtualUnwind"
+      },
+      {
+        "from_ea": "0x180071d4c",
+        "from_func": "0x180071ca0",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlVirtualUnwind"
+      }
+    ]
+  },
+  {
+    "import": "ole32!CLSIDFromProgID",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18011c20c",
+        "from_func": "0x18011c144",
+        "from_func_name": "?CreateSnapInReferenceFromOptionalProgID@@YAJPEBGPEAPEAVCSnapInReference@@@Z",
+        "import": "ole32!CLSIDFromProgID"
+      },
+      {
+        "from_ea": "0x18011c20c",
+        "from_func": "0x18011c144",
+        "from_func_name": "?CreateSnapInReferenceFromOptionalProgID@@YAJPEBGPEAPEAVCSnapInReference@@@Z",
+        "import": "ole32!CLSIDFromProgID"
+      }
+    ]
+  },
+  {
+    "import": "ole32!CLSIDFromString",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 26,
+    "xrefs": [
+      {
+        "from_ea": "0x180004bf8",
+        "from_func": "0x180004b80",
+        "from_func_name": "?Create@CCOMSnapInReference@@SAJPEBGPEAPEAVCSnapInReference@@@Z",
+        "import": "ole32!CLSIDFromString"
+      },
+      {
+        "from_ea": "0x18001003c",
+        "from_func": "0x18000fd38",
+        "from_func_name": "?MMCGetExtensionsForSnapIn@@YAJAEBVCSnapInReference@@AEAVCExtensionsCache@@@Z",
+        "import": "ole32!CLSIDFromString"
+      },
+      {
+        "from_ea": "0x180015ae5",
+        "from_func": "0x18001595c",
+        "from_func_name": "?ScGetAboutFromSnapinReference@@YA?AVSC@mmcerror@@AEBVCSnapInReference@@AEAU_GUID@@@Z",
+        "import": "ole32!CLSIDFromString"
+      },
+      {
+        "from_ea": "0x18002042b",
+        "from_func": "0x18002024c",
+        "from_func_name": "?ScReadFromBSTR@CXMLValue@@QEAA?AVSC@mmcerror@@QEAG@Z",
+        "import": "ole32!CLSIDFromString"
+      },
+      {
+        "from_ea": "0x180069d8e",
+        "from_func": "0x180069c58",
+        "from_func_name": "?LoadImages@CSnapinInfo@MMC21ADDREMOVEUI@@QEAAXVCImageList@WTL@@@Z",
+        "import": "ole32!CLSIDFromString"
+      },
+      {
+        "from_ea": "0x18006a356",
+        "from_func": "0x18006a220",
+        "from_func_name": "?LoadImages@CSnapinInfo@@QEAAXVCImageList@WTL@@@Z",
+        "import": "ole32!CLSIDFromString"
+      },
+      {
+        "from_ea": "0x1800779b2",
+        "from_func": "0x180077898",
+        "from_func_name": "?InitFromMMCReg@CSnapinInfo@@QEAAHAEBVCSnapInReference@@AEAVCRegKeyEx@@H@Z",
+        "import": "ole32!CLSIDFromString"
+      },
+      {
+        "from_ea": "0x18009f6b8",
+        "from_func": "0x18009f60c",
+        "from_func_name": "?ScParseTaskpadURL@CMMCProtocol@@SA?AVSC@mmcerror@@PEBGAEAU_GUID@@@Z",
+        "import": "ole32!CLSIDFromString"
+      },
+      {
+        "from_ea": "0x1800b5cdd",
+        "from_func": "0x1800b5bbc",
+        "from_func_name": "?InitFromMMCReg@CSnapinInfo@MMC21ADDREMOVEUI@@QEAAHAEBVCSnapInReference@@AEAVCRegKeyEx@@H@Z",
+        "import": "ole32!CLSIDFromString"
+      },
+      {
+        "from_ea": "0x1800cb549",
+        "from_func": "0x1800cb2d4",
+        "from_func_name": "?AtlIPersistPropertyBag_Load@ATL@@YAJPEAUIPropertyBag@@PEAUIErrorLog@@PEAUATL_PROPMAP_ENTRY@1@PEAXPEAUIUnknown@@@Z",
+        "import": "ole32!CLSIDFromString"
+      },
+      {
+        "from_ea": "0x1800fd21e",
+        "from_func": "0x1800fd178",
+        "from_func_name": "?Save@CExtSI@@QEAAJPEAUIStream@@H@Z",
+        "import": "ole32!CLSIDFromString"
+      },
+      {
+        "from_ea": "0x1800fd43a",
+        "from_func": "0x1800fd394",
+        "from_func_name": "?Save@CSnapIn@@QEAAJPEAUIStream@@H@Z",
+        "import": "ole32!CLSIDFromString"
+      },
+      {
+        "from_ea": "0x18012537c",
+        "from_func": "0x180125334",
+        "from_func_name": "?ReadCompatibleImageList@@YAJPEAUIStream@@AEAPEAU_IMAGELIST@@@Z",
+        "import": "ole32!CLSIDFromString"
+      },
+      {
+        "from_ea": "0x180004bf8",
+        "from_func": "0x180004b80",
+        "from_func_name": "?Create@CCOMSnapInReference@@SAJPEBGPEAPEAVCSnapInReference@@@Z",
+        "import": "ole32!CLSIDFromString"
+      },
+      {
+        "from_ea": "0x18001003c",
+        "from_func": "0x18000fd38",
+        "from_func_name": "?MMCGetExtensionsForSnapIn@@YAJAEBVCSnapInReference@@AEAVCExtensionsCache@@@Z",
+        "import": "ole32!CLSIDFromString"
+      },
+      {
+        "from_ea": "0x180015ae5",
+        "from_func": "0x18001595c",
+        "from_func_name": "?ScGetAboutFromSnapinReference@@YA?AVSC@mmcerror@@AEBVCSnapInReference@@AEAU_GUID@@@Z",
+        "import": "ole32!CLSIDFromString"
+      },
+      {
+        "from_ea": "0x18002042b",
+        "from_func": "0x18002024c",
+        "from_func_name": "?ScReadFromBSTR@CXMLValue@@QEAA?AVSC@mmcerror@@QEAG@Z",
+        "import": "ole32!CLSIDFromString"
+      },
+      {
+        "from_ea": "0x180069d8e",
+        "from_func": "0x180069c58",
+        "from_func_name": "?LoadImages@CSnapinInfo@MMC21ADDREMOVEUI@@QEAAXVCImageList@WTL@@@Z",
+        "import": "ole32!CLSIDFromString"
+      },
+      {
+        "from_ea": "0x18006a356",
+        "from_func": "0x18006a220",
+        "from_func_name": "?LoadImages@CSnapinInfo@@QEAAXVCImageList@WTL@@@Z",
+        "import": "ole32!CLSIDFromString"
+      },
+      {
+        "from_ea": "0x1800779b2",
+        "from_func": "0x180077898",
+        "from_func_name": "?InitFromMMCReg@CSnapinInfo@@QEAAHAEBVCSnapInReference@@AEAVCRegKeyEx@@H@Z",
+        "import": "ole32!CLSIDFromString"
+      },
+      {
+        "from_ea": "0x18009f6b8",
+        "from_func": "0x18009f60c",
+        "from_func_name": "?ScParseTaskpadURL@CMMCProtocol@@SA?AVSC@mmcerror@@PEBGAEAU_GUID@@@Z",
+        "import": "ole32!CLSIDFromString"
+      },
+      {
+        "from_ea": "0x1800b5cdd",
+        "from_func": "0x1800b5bbc",
+        "from_func_name": "?InitFromMMCReg@CSnapinInfo@MMC21ADDREMOVEUI@@QEAAHAEBVCSnapInReference@@AEAVCRegKeyEx@@H@Z",
+        "import": "ole32!CLSIDFromString"
+      },
+      {
+        "from_ea": "0x1800cb549",
+        "from_func": "0x1800cb2d4",
+        "from_func_name": "?AtlIPersistPropertyBag_Load@ATL@@YAJPEAUIPropertyBag@@PEAUIErrorLog@@PEAUATL_PROPMAP_ENTRY@1@PEAXPEAUIUnknown@@@Z",
+        "import": "ole32!CLSIDFromString"
+      },
+      {
+        "from_ea": "0x1800fd21e",
+        "from_func": "0x1800fd178",
+        "from_func_name": "?Save@CExtSI@@QEAAJPEAUIStream@@H@Z",
+        "import": "ole32!CLSIDFromString"
+      },
+      {
+        "from_ea": "0x1800fd43a",
+        "from_func": "0x1800fd394",
+        "from_func_name": "?Save@CSnapIn@@QEAAJPEAUIStream@@H@Z",
+        "import": "ole32!CLSIDFromString"
+      },
+      {
+        "from_ea": "0x18012537c",
+        "from_func": "0x180125334",
+        "from_func_name": "?ReadCompatibleImageList@@YAJPEAUIStream@@AEAPEAU_IMAGELIST@@@Z",
+        "import": "ole32!CLSIDFromString"
+      }
+    ]
+  },
+  {
+    "import": "ole32!CoMarshalInterThreadInterfaceInStream",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1800e3ad8",
+        "from_func": "0x1800e397c",
+        "from_func_name": "?DoSheet@CPropertySheet@AMC@@QEAAJPEAUHWND__@@H@Z",
+        "import": "ole32!CoMarshalInterThreadInterfaceInStream"
+      },
+      {
+        "from_ea": "0x1800e3b78",
+        "from_func": "0x1800e397c",
+        "from_func_name": "?DoSheet@CPropertySheet@AMC@@QEAAJPEAUHWND__@@H@Z",
+        "import": "ole32!CoMarshalInterThreadInterfaceInStream"
+      },
+      {
+        "from_ea": "0x1800e3ad8",
+        "from_func": "0x1800e397c",
+        "from_func_name": "?DoSheet@CPropertySheet@AMC@@QEAAJPEAUHWND__@@H@Z",
+        "import": "ole32!CoMarshalInterThreadInterfaceInStream"
+      },
+      {
+        "from_ea": "0x1800e3b78",
+        "from_func": "0x1800e397c",
+        "from_func_name": "?DoSheet@CPropertySheet@AMC@@QEAAJPEAUHWND__@@H@Z",
+        "import": "ole32!CoMarshalInterThreadInterfaceInStream"
+      }
+    ]
+  },
+  {
+    "import": "ole32!CoTaskMemAlloc",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 36,
+    "xrefs": [
+      {
+        "from_ea": "0x18004abc7",
+        "from_func": "0x18004aa90",
+        "from_func_name": "?GetColumnConfigData@CColumnData@@UEAAJPEAU_SColumnSetID@@PEAPEAU_MMC_COLUMN_SET_DATA@@@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180050949",
+        "from_func": "0x1800505bc",
+        "from_func_name": "?ScRestoreResultView@CNode@@QEAA?AVSC@mmcerror@@AEAVCResultViewType@@@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800808e5",
+        "from_func": "0x1800807e0",
+        "from_func_name": "?GetColumnSortData@CColumnData@@UEAAJPEAU_SColumnSetID@@PEAPEAU_MMC_SORT_SET_DATA@@@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x18008a237",
+        "from_func": "0x18008a0e0",
+        "from_func_name": "?GetResultViewType@CDummySnapinC@@UEAAJ_JPEAPEAGPEAJ@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x18008e182",
+        "from_func": "0x18008df60",
+        "from_func_name": "?GetResultViewType@CHTMLSnapinComponent@@UEAAJ_JPEAPEAGPEAJ@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x18008e4eb",
+        "from_func": "0x18008e420",
+        "from_func_name": "?GetResultViewType@CSnapinComponentImpl@@UEAAJ_JPEAPEAGPEAJ@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x18008f83e",
+        "from_func": "0x18008f774",
+        "from_func_name": "?ScLoadAndAllocateString@@YA?AVSC@mmcerror@@IPEAPEAG@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800930aa",
+        "from_func": "0x180092f44",
+        "from_func_name": "?OnGetHelpDoc@CNodeCallback@@AEAAJPEAU_HELPDOCINFO@@PEAPEAG@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800c4466",
+        "from_func": "0x1800c43d0",
+        "from_func_name": "?ScGetResultViewTypeInfo@CResultViewType@@QEBA?AVSC@mmcerror@@AEAU_RESULT_VIEW_TYPE_INFO@@@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800ca247",
+        "from_func": "0x1800ca1f8",
+        "from_func_name": "?Add@CExpansionVector@ATL@@QEAAJPEBG0@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800ca252",
+        "from_func": "0x1800ca1f8",
+        "from_func_name": "?Add@CExpansionVector@ATL@@QEAAJPEBG0@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800d38f7",
+        "from_func": "0x1800d3884",
+        "from_func_name": "?PreProcessBuffer@CRegParser@ATL@@QEAAJPEBGPEAPEAG@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800e9c45",
+        "from_func": "0x1800e9bc0",
+        "from_func_name": "?GetMTNodePath@CNodeCallback@@UEAAJPEAUHNODE__@@PEAPEAPEAUHMTNODE__@@PEAJ@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800f29ea",
+        "from_func": "0x1800f2980",
+        "from_func_name": "?GetIDPath@CScopeTree@@UEAAJKPEAPEAKPEAJ@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800f33be",
+        "from_func": "0x1800f32f0",
+        "from_func_name": "?GetPathString@CScopeTree@@UEAAJPEAUHMTNODE__@@0PEAPEAG@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x18012506a",
+        "from_func": "0x180125038",
+        "from_func_name": "?CoTaskDupString@@YAPEAGPEBG@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1801264e9",
+        "from_func": "0x1801264b0",
+        "from_func_name": "?CoTaskMemCopyString@@YAJPEBGPEAPEAG@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x18012b942",
+        "from_func": "0x18012b8cc",
+        "from_func_name": "?ScInitialize@CViewSettings@@QEAA?AVSC@mmcerror@@_NAEBW4_VIEW_TYPE@1@JAEBV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x18004abc7",
+        "from_func": "0x18004aa90",
+        "from_func_name": "?GetColumnConfigData@CColumnData@@UEAAJPEAU_SColumnSetID@@PEAPEAU_MMC_COLUMN_SET_DATA@@@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180050949",
+        "from_func": "0x1800505bc",
+        "from_func_name": "?ScRestoreResultView@CNode@@QEAA?AVSC@mmcerror@@AEAVCResultViewType@@@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800808e5",
+        "from_func": "0x1800807e0",
+        "from_func_name": "?GetColumnSortData@CColumnData@@UEAAJPEAU_SColumnSetID@@PEAPEAU_MMC_SORT_SET_DATA@@@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x18008a237",
+        "from_func": "0x18008a0e0",
+        "from_func_name": "?GetResultViewType@CDummySnapinC@@UEAAJ_JPEAPEAGPEAJ@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x18008e182",
+        "from_func": "0x18008df60",
+        "from_func_name": "?GetResultViewType@CHTMLSnapinComponent@@UEAAJ_JPEAPEAGPEAJ@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x18008e4eb",
+        "from_func": "0x18008e420",
+        "from_func_name": "?GetResultViewType@CSnapinComponentImpl@@UEAAJ_JPEAPEAGPEAJ@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x18008f83e",
+        "from_func": "0x18008f774",
+        "from_func_name": "?ScLoadAndAllocateString@@YA?AVSC@mmcerror@@IPEAPEAG@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800930aa",
+        "from_func": "0x180092f44",
+        "from_func_name": "?OnGetHelpDoc@CNodeCallback@@AEAAJPEAU_HELPDOCINFO@@PEAPEAG@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800c4466",
+        "from_func": "0x1800c43d0",
+        "from_func_name": "?ScGetResultViewTypeInfo@CResultViewType@@QEBA?AVSC@mmcerror@@AEAU_RESULT_VIEW_TYPE_INFO@@@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800ca247",
+        "from_func": "0x1800ca1f8",
+        "from_func_name": "?Add@CExpansionVector@ATL@@QEAAJPEBG0@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800ca252",
+        "from_func": "0x1800ca1f8",
+        "from_func_name": "?Add@CExpansionVector@ATL@@QEAAJPEBG0@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800d38f7",
+        "from_func": "0x1800d3884",
+        "from_func_name": "?PreProcessBuffer@CRegParser@ATL@@QEAAJPEBGPEAPEAG@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800e9c45",
+        "from_func": "0x1800e9bc0",
+        "from_func_name": "?GetMTNodePath@CNodeCallback@@UEAAJPEAUHNODE__@@PEAPEAPEAUHMTNODE__@@PEAJ@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800f29ea",
+        "from_func": "0x1800f2980",
+        "from_func_name": "?GetIDPath@CScopeTree@@UEAAJKPEAPEAKPEAJ@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800f33be",
+        "from_func": "0x1800f32f0",
+        "from_func_name": "?GetPathString@CScopeTree@@UEAAJPEAUHMTNODE__@@0PEAPEAG@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x18012506a",
+        "from_func": "0x180125038",
+        "from_func_name": "?CoTaskDupString@@YAPEAGPEBG@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1801264e9",
+        "from_func": "0x1801264b0",
+        "from_func_name": "?CoTaskMemCopyString@@YAJPEBGPEAPEAG@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x18012b942",
+        "from_func": "0x18012b8cc",
+        "from_func_name": "?ScInitialize@CViewSettings@@QEAA?AVSC@mmcerror@@_NAEBW4_VIEW_TYPE@1@JAEBV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      }
+    ]
+  },
+  {
+    "import": "ole32!CoTaskMemFree",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 57,
+    "xrefs": [
+      {
+        "from_ea": "0x180003827",
+        "from_func": "0x180003360",
+        "from_func_name": "?ScGetExtensionsForNodeType@@YA?AVSC@mmcerror@@AEAU_GUID@@AEAVCExtensionsCache@@@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000b219",
+        "from_func": "0x18000a0a0",
+        "from_func_name": "?Init@CExtensionsIterator@@AEAAJAEAU_GUID@@PEBG@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000b321",
+        "from_func": "0x18000a0a0",
+        "from_func_name": "?Init@CExtensionsIterator@@AEAAJAEAU_GUID@@PEBG@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000f698",
+        "from_func": "0x18000f544",
+        "from_func_name": "?AtlSetErrorInfo@ATL@@YAJAEBU_GUID@@PEBGK10JPEAUHINSTANCE__@@@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180020007",
+        "from_func": "0x18001fed0",
+        "from_func_name": "?ScWriteToBSTR@CXMLValue@@QEBA?AVSC@mmcerror@@PEAPEAG@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18003bf6d",
+        "from_func": "0x18003bf5c",
+        "from_func_name": "??1?$CCoTaskMemPtr@G@@QEAA@XZ",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18004d244",
+        "from_func": "0x18004cd80",
+        "from_func_name": "?AddPrimaryPages@CPropertySheetProvider@@UEAAJPEAUIUnknown@@HPEAUHWND__@@H@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800509e1",
+        "from_func": "0x1800505bc",
+        "from_func_name": "?ScRestoreResultView@CNode@@QEAA?AVSC@mmcerror@@AEAVCResultViewType@@@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18008a189",
+        "from_func": "0x18008a0e0",
+        "from_func_name": "?GetResultViewType@CDummySnapinC@@UEAAJ_JPEAPEAGPEAJ@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800bcf37",
+        "from_func": "0x1800bcde4",
+        "from_func_name": "?OnKillActive@CActiveXPage1@@QEAAHXZ",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800c4cdb",
+        "from_func": "0x1800c4bac",
+        "from_func_name": "?ScInitialize@CResultViewType@@QEAA?AVSC@mmcerror@@AEAPEAGJ@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800c4d9b",
+        "from_func": "0x1800c4d08",
+        "from_func_name": "?ScInitialize@CResultViewType@@QEAA?AVSC@mmcerror@@AEAU_RESULT_VIEW_TYPE_INFO@@_N@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800c4ec9",
+        "from_func": "0x1800c4d08",
+        "from_func_name": "?ScInitialize@CResultViewType@@QEAA?AVSC@mmcerror@@AEAU_RESULT_VIEW_TYPE_INFO@@_N@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800c9b42",
+        "from_func": "0x1800c9b14",
+        "from_func_name": "??1CRegObject@ATL@@QEAA@XZ",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800c9b4b",
+        "from_func": "0x1800c9b14",
+        "from_func_name": "??1CRegObject@ATL@@QEAA@XZ",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800ca2ac",
+        "from_func": "0x1800ca1f8",
+        "from_func_name": "?Add@CExpansionVector@ATL@@QEAAJPEBG0@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800ca2b6",
+        "from_func": "0x1800ca1f8",
+        "from_func_name": "?Add@CExpansionVector@ATL@@QEAAJPEBG0@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800ca2ea",
+        "from_func": "0x1800ca1f8",
+        "from_func_name": "?Add@CExpansionVector@ATL@@QEAAJPEBG0@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800ca2f4",
+        "from_func": "0x1800ca1f8",
+        "from_func_name": "?Add@CExpansionVector@ATL@@QEAAJPEBG0@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800cb8cd",
+        "from_func": "0x1800cb6a4",
+        "from_func_name": "?AtlIPersistPropertyBag_Save@ATL@@YAJPEAUIPropertyBag@@HHPEAUATL_PROPMAP_ENTRY@1@PEAXPEAUIUnknown@@@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800ceb9c",
+        "from_func": "0x1800cea08",
+        "from_func_name": "?DoVerbProperties@CComControlBase@ATL@@QEAAJPEBUtagRECT@@PEAUHWND__@@@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800cebad",
+        "from_func": "0x1800cea08",
+        "from_func_name": "?DoVerbProperties@CComControlBase@ATL@@QEAAJPEBUtagRECT@@PEAUHWND__@@@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800d3909",
+        "from_func": "0x1800d3884",
+        "from_func_name": "?PreProcessBuffer@CRegParser@ATL@@QEAAJPEBGPEAPEAG@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800d3a42",
+        "from_func": "0x1800d3884",
+        "from_func_name": "?PreProcessBuffer@CRegParser@ATL@@QEAAJPEBGPEAPEAG@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800d3a5e",
+        "from_func": "0x1800d3884",
+        "from_func_name": "?PreProcessBuffer@CRegParser@ATL@@QEAAJPEBGPEAPEAG@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800d5415",
+        "from_func": "0x1800d52c4",
+        "from_func_name": "?RegisterBuffer@CRegParser@ATL@@QEAAJPEBGH@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800f3409",
+        "from_func": "0x1800f32f0",
+        "from_func_name": "?GetPathString@CScopeTree@@UEAAJPEAUHMTNODE__@@0PEAPEAG@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180126573",
+        "from_func": "0x1801264b0",
+        "from_func_name": "?CoTaskMemCopyString@@YAJPEBGPEAPEAG@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180003827",
+        "from_func": "0x180003360",
+        "from_func_name": "?ScGetExtensionsForNodeType@@YA?AVSC@mmcerror@@AEAU_GUID@@AEAVCExtensionsCache@@@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000b219",
+        "from_func": "0x18000a0a0",
+        "from_func_name": "?Init@CExtensionsIterator@@AEAAJAEAU_GUID@@PEBG@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000b321",
+        "from_func": "0x18000a0a0",
+        "from_func_name": "?Init@CExtensionsIterator@@AEAAJAEAU_GUID@@PEBG@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18000f698",
+        "from_func": "0x18000f544",
+        "from_func_name": "?AtlSetErrorInfo@ATL@@YAJAEBU_GUID@@PEBGK10JPEAUHINSTANCE__@@@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180020007",
+        "from_func": "0x18001fed0",
+        "from_func_name": "?ScWriteToBSTR@CXMLValue@@QEBA?AVSC@mmcerror@@PEAPEAG@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18003bf6d",
+        "from_func": "0x18003bf5c",
+        "from_func_name": "??1?$CCoTaskMemPtr@G@@QEAA@XZ",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18004d244",
+        "from_func": "0x18004cd80",
+        "from_func_name": "?AddPrimaryPages@CPropertySheetProvider@@UEAAJPEAUIUnknown@@HPEAUHWND__@@H@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800509e1",
+        "from_func": "0x1800505bc",
+        "from_func_name": "?ScRestoreResultView@CNode@@QEAA?AVSC@mmcerror@@AEAVCResultViewType@@@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18008a189",
+        "from_func": "0x18008a0e0",
+        "from_func_name": "?GetResultViewType@CDummySnapinC@@UEAAJ_JPEAPEAGPEAJ@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800bcf37",
+        "from_func": "0x1800bcde4",
+        "from_func_name": "?OnKillActive@CActiveXPage1@@QEAAHXZ",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800c4cdb",
+        "from_func": "0x1800c4bac",
+        "from_func_name": "?ScInitialize@CResultViewType@@QEAA?AVSC@mmcerror@@AEAPEAGJ@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800c4d9b",
+        "from_func": "0x1800c4d08",
+        "from_func_name": "?ScInitialize@CResultViewType@@QEAA?AVSC@mmcerror@@AEAU_RESULT_VIEW_TYPE_INFO@@_N@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800c4ec9",
+        "from_func": "0x1800c4d08",
+        "from_func_name": "?ScInitialize@CResultViewType@@QEAA?AVSC@mmcerror@@AEAU_RESULT_VIEW_TYPE_INFO@@_N@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800c9b42",
+        "from_func": "0x1800c9b14",
+        "from_func_name": "??1CRegObject@ATL@@QEAA@XZ",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800c9b4b",
+        "from_func": "0x1800c9b14",
+        "from_func_name": "??1CRegObject@ATL@@QEAA@XZ",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800ca2ac",
+        "from_func": "0x1800ca1f8",
+        "from_func_name": "?Add@CExpansionVector@ATL@@QEAAJPEBG0@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800ca2b6",
+        "from_func": "0x1800ca1f8",
+        "from_func_name": "?Add@CExpansionVector@ATL@@QEAAJPEBG0@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800ca2ea",
+        "from_func": "0x1800ca1f8",
+        "from_func_name": "?Add@CExpansionVector@ATL@@QEAAJPEBG0@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800ca2f4",
+        "from_func": "0x1800ca1f8",
+        "from_func_name": "?Add@CExpansionVector@ATL@@QEAAJPEBG0@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800cb8cd",
+        "from_func": "0x1800cb6a4",
+        "from_func_name": "?AtlIPersistPropertyBag_Save@ATL@@YAJPEAUIPropertyBag@@HHPEAUATL_PROPMAP_ENTRY@1@PEAXPEAUIUnknown@@@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800ceb9c",
+        "from_func": "0x1800cea08",
+        "from_func_name": "?DoVerbProperties@CComControlBase@ATL@@QEAAJPEBUtagRECT@@PEAUHWND__@@@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800cebad",
+        "from_func": "0x1800cea08",
+        "from_func_name": "?DoVerbProperties@CComControlBase@ATL@@QEAAJPEBUtagRECT@@PEAUHWND__@@@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800d3909",
+        "from_func": "0x1800d3884",
+        "from_func_name": "?PreProcessBuffer@CRegParser@ATL@@QEAAJPEBGPEAPEAG@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800d3a42",
+        "from_func": "0x1800d3884",
+        "from_func_name": "?PreProcessBuffer@CRegParser@ATL@@QEAAJPEBGPEAPEAG@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800d3a5e",
+        "from_func": "0x1800d3884",
+        "from_func_name": "?PreProcessBuffer@CRegParser@ATL@@QEAAJPEBGPEAPEAG@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800d5415",
+        "from_func": "0x1800d52c4",
+        "from_func_name": "?RegisterBuffer@CRegParser@ATL@@QEAAJPEBGH@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800f3409",
+        "from_func": "0x1800f32f0",
+        "from_func_name": "?GetPathString@CScopeTree@@UEAAJPEAUHMTNODE__@@0PEAPEAG@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180126573",
+        "from_func": "0x1801264b0",
+        "from_func_name": "?CoTaskMemCopyString@@YAJPEBGPEAPEAG@Z",
+        "import": "ole32!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1801b13e8",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ole32!CoTaskMemFree"
+      }
+    ]
+  },
+  {
+    "import": "ole32!CoTaskMemRealloc",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800ca34c",
+        "from_func": "0x1800ca31c",
+        "from_func_name": "?AddChar@CParseBuffer@CRegParser@ATL@@QEAAHPEBG@Z",
+        "import": "ole32!CoTaskMemRealloc"
+      },
+      {
+        "from_ea": "0x1800ca34c",
+        "from_func": "0x1800ca31c",
+        "from_func_name": "?AddChar@CParseBuffer@CRegParser@ATL@@QEAAHPEBG@Z",
+        "import": "ole32!CoTaskMemRealloc"
+      }
+    ]
+  },
+  {
+    "import": "ole32!ProgIDFromCLSID",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000f638",
+        "from_func": "0x18000f544",
+        "from_func_name": "?AtlSetErrorInfo@ATL@@YAJAEBU_GUID@@PEBGK10JPEAUHINSTANCE__@@@Z",
+        "import": "ole32!ProgIDFromCLSID"
+      },
+      {
+        "from_ea": "0x18000f638",
+        "from_func": "0x18000f544",
+        "from_func_name": "?AtlSetErrorInfo@ATL@@YAJAEBU_GUID@@PEBGK10JPEAUHINSTANCE__@@@Z",
+        "import": "ole32!ProgIDFromCLSID"
+      }
+    ]
+  },
+  {
+    "import": "ole32!StringFromCLSID",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 16,
+    "xrefs": [
+      {
+        "from_ea": "0x180003478",
+        "from_func": "0x180003360",
+        "from_func_name": "?ScGetExtensionsForNodeType@@YA?AVSC@mmcerror@@AEAU_GUID@@AEAVCExtensionsCache@@@Z",
+        "import": "ole32!StringFromCLSID"
+      },
+      {
+        "from_ea": "0x18000a2cc",
+        "from_func": "0x18000a0a0",
+        "from_func_name": "?Init@CExtensionsIterator@@AEAAJAEAU_GUID@@PEBG@Z",
+        "import": "ole32!StringFromCLSID"
+      },
+      {
+        "from_ea": "0x18001ffe2",
+        "from_func": "0x18001fed0",
+        "from_func_name": "?ScWriteToBSTR@CXMLValue@@QEBA?AVSC@mmcerror@@PEAPEAG@Z",
+        "import": "ole32!StringFromCLSID"
+      },
+      {
+        "from_ea": "0x18005b916",
+        "from_func": "0x18005b880",
+        "from_func_name": "?RegisterViewExtension@@YAJHAEAVCObjectRegParams@@H@Z",
+        "import": "ole32!StringFromCLSID"
+      },
+      {
+        "from_ea": "0x18006e08c",
+        "from_func": "0x18006dfc0",
+        "from_func_name": "?ScAddViewForTaskpad@CConsoleTaskpadViewExtension@@CA?AVSC@mmcerror@@PEAVCConsoleTaskpad@@PEAUIViewExtensionCallback@@@Z",
+        "import": "ole32!StringFromCLSID"
+      },
+      {
+        "from_ea": "0x18008a12a",
+        "from_func": "0x18008a0e0",
+        "from_func_name": "?GetResultViewType@CDummySnapinC@@UEAAJ_JPEAPEAGPEAJ@Z",
+        "import": "ole32!StringFromCLSID"
+      },
+      {
+        "from_ea": "0x1800bced2",
+        "from_func": "0x1800bcde4",
+        "from_func_name": "?OnKillActive@CActiveXPage1@@QEAAHXZ",
+        "import": "ole32!StringFromCLSID"
+      },
+      {
+        "from_ea": "0x1800cb8b6",
+        "from_func": "0x1800cb6a4",
+        "from_func_name": "?AtlIPersistPropertyBag_Save@ATL@@YAJPEAUIPropertyBag@@HHPEAUATL_PROPMAP_ENTRY@1@PEAXPEAUIUnknown@@@Z",
+        "import": "ole32!StringFromCLSID"
+      },
+      {
+        "from_ea": "0x180003478",
+        "from_func": "0x180003360",
+        "from_func_name": "?ScGetExtensionsForNodeType@@YA?AVSC@mmcerror@@AEAU_GUID@@AEAVCExtensionsCache@@@Z",
+        "import": "ole32!StringFromCLSID"
+      },
+      {
+        "from_ea": "0x18000a2cc",
+        "from_func": "0x18000a0a0",
+        "from_func_name": "?Init@CExtensionsIterator@@AEAAJAEAU_GUID@@PEBG@Z",
+        "import": "ole32!StringFromCLSID"
+      },
+      {
+        "from_ea": "0x18001ffe2",
+        "from_func": "0x18001fed0",
+        "from_func_name": "?ScWriteToBSTR@CXMLValue@@QEBA?AVSC@mmcerror@@PEAPEAG@Z",
+        "import": "ole32!StringFromCLSID"
+      },
+      {
+        "from_ea": "0x18005b916",
+        "from_func": "0x18005b880",
+        "from_func_name": "?RegisterViewExtension@@YAJHAEAVCObjectRegParams@@H@Z",
+        "import": "ole32!StringFromCLSID"
+      },
+      {
+        "from_ea": "0x18006e08c",
+        "from_func": "0x18006dfc0",
+        "from_func_name": "?ScAddViewForTaskpad@CConsoleTaskpadViewExtension@@CA?AVSC@mmcerror@@PEAVCConsoleTaskpad@@PEAUIViewExtensionCallback@@@Z",
+        "import": "ole32!StringFromCLSID"
+      },
+      {
+        "from_ea": "0x18008a12a",
+        "from_func": "0x18008a0e0",
+        "from_func_name": "?GetResultViewType@CDummySnapinC@@UEAAJ_JPEAPEAGPEAJ@Z",
+        "import": "ole32!StringFromCLSID"
+      },
+      {
+        "from_ea": "0x1800bced2",
+        "from_func": "0x1800bcde4",
+        "from_func_name": "?OnKillActive@CActiveXPage1@@QEAAHXZ",
+        "import": "ole32!StringFromCLSID"
+      },
+      {
+        "from_ea": "0x1800cb8b6",
+        "from_func": "0x1800cb6a4",
+        "from_func_name": "?AtlIPersistPropertyBag_Save@ATL@@YAJPEAUIPropertyBag@@HHPEAUATL_PROPMAP_ENTRY@1@PEAXPEAUIUnknown@@@Z",
+        "import": "ole32!StringFromCLSID"
+      }
+    ]
+  },
+  {
+    "import": "urlmon!CoInternetCombineUrl",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x18005cbe9",
+        "from_func": "0x18005ca70",
+        "from_func_name": "?CombineUrl@CMMCProtocol@@UEAAJPEBG0KPEAGKPEAKK@Z",
+        "import": "urlmon!CoInternetCombineUrl"
+      },
+      {
+        "from_ea": "0x18005cbe9",
+        "from_func": "0x18005ca70",
+        "from_func_name": "?CombineUrl@CMMCProtocol@@UEAAJPEBG0KPEAGKPEAKK@Z",
+        "import": "urlmon!CoInternetCombineUrl"
+      },
+      {
+        "from_ea": "0x1800728a2",
+        "from_func": "0x1800728a2",
+        "from_func_name": "__imp_load_CoInternetCombineUrl",
+        "import": "urlmon!CoInternetCombineUrl"
+      },
+      {
+        "from_ea": "0x1801b0a04",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "urlmon!CoInternetCombineUrl"
+      }
+    ]
+  }
+]

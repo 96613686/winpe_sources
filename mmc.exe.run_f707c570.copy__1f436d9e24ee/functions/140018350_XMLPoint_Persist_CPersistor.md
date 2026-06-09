@@ -1,0 +1,174 @@
+# XMLPoint::Persist(CPersistor &)
+
+- ea: `0x140018350`
+- end: `0x140018950`
+- name: `?Persist@XMLPoint@@UEAAXAEAVCPersistor@@@Z`
+- size: `1536`
+- prototype: `void(XMLPoint *__hidden this, struct CPersistor *)`
+- caller_count: `0`
+- callee_count: `6`
+- tags: `registry_config`
+
+## callees
+
+- `0x140018350`
+- `0x140018958`
+- `0x140018cec`
+- `0x140018fa8`
+- `0x140019160`
+- `0x1400f3010`
+
+## import_xrefs
+
+- `mmcbase!??1SC@mmcerror@@QEAA@XZ` at `0x140018456`
+- `mmcbase!??1SC@mmcerror@@QEAA@XZ` at `0x140018525`
+- `mmcbase!??1SC@mmcerror@@QEAA@XZ` at `0x1400185a1`
+- `mmcbase!??1SC@mmcerror@@QEAA@XZ` at `0x1400185ca`
+- `mmcbase!??1SC@mmcerror@@QEAA@XZ` at `0x14001862a`
+- `mmcbase!??1SC@mmcerror@@QEAA@XZ` at `0x14001866f`
+- `mmcbase!??1SC@mmcerror@@QEAA@XZ` at `0x140018723`
+- `mmcbase!??1SC@mmcerror@@QEAA@XZ` at `0x1400187f2`
+- `mmcbase!??1SC@mmcerror@@QEAA@XZ` at `0x14001886e`
+- `mmcbase!??1SC@mmcerror@@QEAA@XZ` at `0x140018897`
+- `mmcbase!??1SC@mmcerror@@QEAA@XZ` at `0x1400188ec`
+- `mmcbase!??1SC@mmcerror@@QEAA@XZ` at `0x14001892d`
+- `mmcbase!??1SC@mmcerror@@QEAA@XZ` at `0x140018938`
+- `mmcbase!??1SC@mmcerror@@QEAA@XZ` at `0x140018456`
+- `mmcbase!??1SC@mmcerror@@QEAA@XZ` at `0x140018525`
+- `mmcbase!??1SC@mmcerror@@QEAA@XZ` at `0x1400185a1`
+- `mmcbase!??1SC@mmcerror@@QEAA@XZ` at `0x1400185ca`
+- `mmcbase!??1SC@mmcerror@@QEAA@XZ` at `0x14001862a`
+- `mmcbase!??1SC@mmcerror@@QEAA@XZ` at `0x14001866f`
+- `mmcbase!??1SC@mmcerror@@QEAA@XZ` at `0x140018723`
+- `mmcbase!??1SC@mmcerror@@QEAA@XZ` at `0x1400187f2`
+- `mmcbase!??1SC@mmcerror@@QEAA@XZ` at `0x14001886e`
+- `mmcbase!??1SC@mmcerror@@QEAA@XZ` at `0x140018897`
+- `mmcbase!??1SC@mmcerror@@QEAA@XZ` at `0x1400188ec`
+- `mmcbase!??1SC@mmcerror@@QEAA@XZ` at `0x14001892d`
+- `mmcbase!??1SC@mmcerror@@QEAA@XZ` at `0x140018938`
+- `mmcbase!??BSC@mmcerror@@QEBA_NXZ` at `0x140018460`
+- `mmcbase!??BSC@mmcerror@@QEBA_NXZ` at `0x1400184c3`
+- `mmcbase!??BSC@mmcerror@@QEBA_NXZ` at `0x1400185d4`
+- `mmcbase!??BSC@mmcerror@@QEBA_NXZ` at `0x140018634`
+- `mmcbase!??BSC@mmcerror@@QEBA_NXZ` at `0x14001872d`
+- `mmcbase!??BSC@mmcerror@@QEBA_NXZ` at `0x140018790`
+- `mmcbase!??BSC@mmcerror@@QEBA_NXZ` at `0x1400188a1`
+- `mmcbase!??BSC@mmcerror@@QEBA_NXZ` at `0x1400188f6`
+- `mmcbase!??BSC@mmcerror@@QEBA_NXZ` at `0x140018460`
+- `mmcbase!??BSC@mmcerror@@QEBA_NXZ` at `0x1400184c3`
+- `mmcbase!??BSC@mmcerror@@QEBA_NXZ` at `0x1400185d4`
+- `mmcbase!??BSC@mmcerror@@QEBA_NXZ` at `0x140018634`
+- `mmcbase!??BSC@mmcerror@@QEBA_NXZ` at `0x14001872d`
+- `mmcbase!??BSC@mmcerror@@QEBA_NXZ` at `0x140018790`
+- `mmcbase!??BSC@mmcerror@@QEBA_NXZ` at `0x1400188a1`
+- `mmcbase!??BSC@mmcerror@@QEBA_NXZ` at `0x1400188f6`
+- `mmcbase!??0SC@mmcerror@@QEAA@J@Z` at `0x140018373`
+- `mmcbase!??0SC@mmcerror@@QEAA@J@Z` at `0x1400183b2`
+- `mmcbase!??0SC@mmcerror@@QEAA@J@Z` at `0x1400183ef`
+- `mmcbase!??0SC@mmcerror@@QEAA@J@Z` at `0x14001843c`
+- `mmcbase!??0SC@mmcerror@@QEAA@J@Z` at `0x14001868e`
+- `mmcbase!??0SC@mmcerror@@QEAA@J@Z` at `0x1400186bc`
+- `mmcbase!??0SC@mmcerror@@QEAA@J@Z` at `0x140018709`
+- `mmcbase!??0SC@mmcerror@@QEAA@J@Z` at `0x140018373`
+- `mmcbase!??0SC@mmcerror@@QEAA@J@Z` at `0x1400183b2`
+- `mmcbase!??0SC@mmcerror@@QEAA@J@Z` at `0x1400183ef`
+- `mmcbase!??0SC@mmcerror@@QEAA@J@Z` at `0x14001843c`
+- `mmcbase!??0SC@mmcerror@@QEAA@J@Z` at `0x14001868e`
+- `mmcbase!??0SC@mmcerror@@QEAA@J@Z` at `0x1400186bc`
+- `mmcbase!??0SC@mmcerror@@QEAA@J@Z` at `0x140018709`
+- `mmcbase!?Throw@SC@mmcerror@@QEAAXJ@Z` at `0x140018540`
+- `mmcbase!?Throw@SC@mmcerror@@QEAAXJ@Z` at `0x1400185e7`
+- `mmcbase!?Throw@SC@mmcerror@@QEAAXJ@Z` at `0x14001880d`
+- `mmcbase!?Throw@SC@mmcerror@@QEAAXJ@Z` at `0x1400188b4`
+- `mmcbase!?Throw@SC@mmcerror@@QEAAXJ@Z` at `0x140018540`
+- `mmcbase!?Throw@SC@mmcerror@@QEAAXJ@Z` at `0x1400185e7`
+- `mmcbase!?Throw@SC@mmcerror@@QEAAXJ@Z` at `0x14001880d`
+- `mmcbase!?Throw@SC@mmcerror@@QEAAXJ@Z` at `0x1400188b4`
+- `mmcbase!?Throw@SC@mmcerror@@QEAAXXZ` at `0x14001846e`
+- `mmcbase!?Throw@SC@mmcerror@@QEAAXXZ` at `0x1400184d1`
+- `mmcbase!?Throw@SC@mmcerror@@QEAAXXZ` at `0x140018642`
+- `mmcbase!?Throw@SC@mmcerror@@QEAAXXZ` at `0x14001873b`
+- `mmcbase!?Throw@SC@mmcerror@@QEAAXXZ` at `0x14001879e`
+- `mmcbase!?Throw@SC@mmcerror@@QEAAXXZ` at `0x140018904`
+- `mmcbase!?Throw@SC@mmcerror@@QEAAXXZ` at `0x14001846e`
+- `mmcbase!?Throw@SC@mmcerror@@QEAAXXZ` at `0x1400184d1`
+- `mmcbase!?Throw@SC@mmcerror@@QEAAXXZ` at `0x140018642`
+- `mmcbase!?Throw@SC@mmcerror@@QEAAXXZ` at `0x14001873b`
+- `mmcbase!?Throw@SC@mmcerror@@QEAAXXZ` at `0x14001879e`
+- `mmcbase!?Throw@SC@mmcerror@@QEAAXXZ` at `0x140018904`
+- `mmcbase!?ToHr@SC@mmcerror@@QEBAJXZ` at `0x1400184db`
+- `mmcbase!?ToHr@SC@mmcerror@@QEBAJXZ` at `0x1400187a8`
+- `mmcbase!?ToHr@SC@mmcerror@@QEBAJXZ` at `0x1400184db`
+- `mmcbase!?ToHr@SC@mmcerror@@QEBAJXZ` at `0x1400187a8`
+- `mmcbase!??4SC@mmcerror@@QEAAAEAV01@J@Z` at `0x1400184b9`
+- `mmcbase!??4SC@mmcerror@@QEAAAEAV01@J@Z` at `0x140018786`
+- `mmcbase!??4SC@mmcerror@@QEAAAEAV01@J@Z` at `0x1400184b9`
+- `mmcbase!??4SC@mmcerror@@QEAAAEAV01@J@Z` at `0x140018786`
+- `mmcbase!??4SC@mmcerror@@QEAAAEAV01@AEBV01@@Z` at `0x14001844b`
+- `mmcbase!??4SC@mmcerror@@QEAAAEAV01@AEBV01@@Z` at `0x1400185bf`
+- `mmcbase!??4SC@mmcerror@@QEAAAEAV01@AEBV01@@Z` at `0x14001861f`
+- `mmcbase!??4SC@mmcerror@@QEAAAEAV01@AEBV01@@Z` at `0x140018718`
+- `mmcbase!??4SC@mmcerror@@QEAAAEAV01@AEBV01@@Z` at `0x14001888c`
+- `mmcbase!??4SC@mmcerror@@QEAAAEAV01@AEBV01@@Z` at `0x1400188e1`
+- `mmcbase!??4SC@mmcerror@@QEAAAEAV01@AEBV01@@Z` at `0x14001844b`
+- `mmcbase!??4SC@mmcerror@@QEAAAEAV01@AEBV01@@Z` at `0x1400185bf`
+- `mmcbase!??4SC@mmcerror@@QEAAAEAV01@AEBV01@@Z` at `0x14001861f`
+- `mmcbase!??4SC@mmcerror@@QEAAAEAV01@AEBV01@@Z` at `0x140018718`
+- `mmcbase!??4SC@mmcerror@@QEAAAEAV01@AEBV01@@Z` at `0x14001888c`
+- `mmcbase!??4SC@mmcerror@@QEAAAEAV01@AEBV01@@Z` at `0x1400188e1`
+- `mmcbase!?SetFunctionName@SC@mmcerror@@QEAAXPEBG@Z` at `0x140018385`
+- `mmcbase!?SetFunctionName@SC@mmcerror@@QEAAXPEBG@Z` at `0x1400183c4`
+- `mmcbase!?SetFunctionName@SC@mmcerror@@QEAAXPEBG@Z` at `0x140018401`
+- `mmcbase!?SetFunctionName@SC@mmcerror@@QEAAXPEBG@Z` at `0x1400186a0`
+- `mmcbase!?SetFunctionName@SC@mmcerror@@QEAAXPEBG@Z` at `0x1400186ce`
+- `mmcbase!?SetFunctionName@SC@mmcerror@@QEAAXPEBG@Z` at `0x140018385`
+- `mmcbase!?SetFunctionName@SC@mmcerror@@QEAAXPEBG@Z` at `0x1400183c4`
+- `mmcbase!?SetFunctionName@SC@mmcerror@@QEAAXPEBG@Z` at `0x140018401`
+- `mmcbase!?SetFunctionName@SC@mmcerror@@QEAAXPEBG@Z` at `0x1400186a0`
+- `mmcbase!?SetFunctionName@SC@mmcerror@@QEAAXPEBG@Z` at `0x1400186ce`
+- `OLEAUT32!__imp_SysAllocString` at `0x14001847b`
+- `OLEAUT32!__imp_SysAllocString` at `0x140018555`
+- `OLEAUT32!__imp_SysAllocString` at `0x140018748`
+- `OLEAUT32!__imp_SysAllocString` at `0x140018822`
+- `OLEAUT32!__imp_SysAllocString` at `0x14001847b`
+- `OLEAUT32!__imp_SysAllocString` at `0x140018555`
+- `OLEAUT32!__imp_SysAllocString` at `0x140018748`
+- `OLEAUT32!__imp_SysAllocString` at `0x140018822`
+- `OLEAUT32!__imp_SysFreeString` at `0x140018504`
+- `OLEAUT32!__imp_SysFreeString` at `0x14001854c`
+- `OLEAUT32!__imp_SysFreeString` at `0x140018580`
+- `OLEAUT32!__imp_SysFreeString` at `0x1400185f1`
+- `OLEAUT32!__imp_SysFreeString` at `0x140018664`
+- `OLEAUT32!__imp_SysFreeString` at `0x1400187d1`
+- `OLEAUT32!__imp_SysFreeString` at `0x140018819`
+- `OLEAUT32!__imp_SysFreeString` at `0x14001884d`
+- `OLEAUT32!__imp_SysFreeString` at `0x140018922`
+- `OLEAUT32!__imp_SysFreeString` at `0x140018504`
+- `OLEAUT32!__imp_SysFreeString` at `0x14001854c`
+- `OLEAUT32!__imp_SysFreeString` at `0x140018580`
+- `OLEAUT32!__imp_SysFreeString` at `0x1400185f1`
+- `OLEAUT32!__imp_SysFreeString` at `0x140018664`
+- `OLEAUT32!__imp_SysFreeString` at `0x1400187d1`
+- `OLEAUT32!__imp_SysFreeString` at `0x140018819`
+- `OLEAUT32!__imp_SysFreeString` at `0x14001884d`
+- `OLEAUT32!__imp_SysFreeString` at `0x140018922`
+- `OLEAUT32!__imp_VariantClear` at `0x1400184fa`
+- `OLEAUT32!__imp_VariantClear` at `0x140018576`
+- `OLEAUT32!__imp_VariantClear` at `0x1400187c7`
+- `OLEAUT32!__imp_VariantClear` at `0x140018843`
+- `OLEAUT32!__imp_VariantClear` at `0x1400184fa`
+- `OLEAUT32!__imp_VariantClear` at `0x140018576`
+- `OLEAUT32!__imp_VariantClear` at `0x1400187c7`
+- `OLEAUT32!__imp_VariantClear` at `0x140018843`
+
+## string_xrefs
+
+- `0x14001837a`: `XMLPoint::Persist`
+- `0x1400183f6`: `CXMLElement::getAttribute`
+- `0x1400186c3`: `CXMLElement::getAttribute`
+
+## pseudocode
+
+```c
+
+```

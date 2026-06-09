@@ -1,0 +1,927 @@
+# DeleteDatabaseIfMultipleLoadFailures(void)
+
+- ea: `0x140116374`
+- end: `0x1401170b4`
+- name: `?DeleteDatabaseIfMultipleLoadFailures@@YAXXZ`
+- size: `3392`
+- prototype: `void(void)`
+- caller_count: `1`
+- callee_count: `19`
+- tags: `file_ops, registry_config, loader_planting, installer_update, broker_com_uri`
+
+## callers
+
+- `0x14007f8ec`
+
+## callees
+
+- `0x14003f778`
+- `0x140040184`
+- `0x140041b3c`
+- `0x14004296c`
+- `0x140042ef4`
+- `0x140043354`
+- `0x1400447ac`
+- `0x140045404`
+- `0x140057a20`
+- `0x140076f3c`
+- `0x140116374`
+- `0x140117fc8`
+- `0x140118f6c`
+- `0x140119004`
+- `0x14011916c`
+- `0x1401192c4`
+- `0x14012d7d8`
+- `0x140379070`
+- `0x140380b50`
+
+## import_xrefs
+
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1401168ec`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x140116b26`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x140116db3`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1401168ec`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x140116b26`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x140116db3`
+- `api-ms-win-core-file-l2-1-0!MoveFileExW` at `0x1401168e2`
+- `api-ms-win-core-file-l2-1-0!MoveFileExW` at `0x140116b1c`
+- `api-ms-win-core-file-l2-1-0!MoveFileExW` at `0x140116da9`
+- `api-ms-win-core-file-l2-1-0!MoveFileExW` at `0x1401168e2`
+- `api-ms-win-core-file-l2-1-0!MoveFileExW` at `0x140116b1c`
+- `api-ms-win-core-file-l2-1-0!MoveFileExW` at `0x140116da9`
+
+## string_xrefs
+
+- `0x140116fe1`: `C:\__w\1\s\packages\Microsoft.Windows.Wil.Internal.0.3.30\inc\wil\opensource\wil\stl.h`
+- `0x140117087`: `C:\__w\1\s\packages\Microsoft.Windows.Wil.Internal.0.3.30\inc\wil\opensource\wil\stl.h`
+- `0x1401170a1`: `C:\__w\1\s\packages\Microsoft.Windows.Wil.Internal.0.3.30\inc\wil\opensource\wil\stl.h`
+- `0x140116578`: `AllowedUpdateManagerCtorFailures`
+- `0x14011658d`: `AllowedUpdateManagerCtorFailures`
+- `0x1401163ee`: `UpdateManagerCtorFailures`
+- `0x140116927`: `UpdateManagerCtorFailures`
+- `0x140116bed`: `UpdateManagerCtorFailures`
+- `0x140116dd2`: `UpdateManagerCtorFailures`
+- `0x14011701f`: `rename`
+- `0x140117039`: `rename`
+- `0x140117072`: `rename`
+
+## pseudocode
+
+```c
+// Hidden C++ exception states: #wind=4
+void DeleteDatabaseIfMultipleLoadFailures(void)
+{
+  __int64 System; // rax
+  __int64 v1; // rcx
+  int *traits_2_unsigned_short; // rax
+  const char *v3; // r9
+  int v4; // r11d
+  __int64 v5; // rax
+  __int64 v6; // rax
+  unsigned int SystemValueOrDefault; // esi
+  volatile signed __int32 *v8; // r14
+  volatile signed __int32 *v9; // r14
+  __int64 v10; // rax
+  __int64 v11; // rcx
+  __int64 (__fastcall *v12)(__int64, __int128 *, char *); // r14
+  __int16 *v13; // rax
+  const char *v14; // r9
+  __int64 v15; // r11
+  __int64 v16; // rax
+  unsigned int v17; // r15d
+  volatile signed __int32 *v18; // r14
+  volatile signed __int32 *v19; // r14
+  _QWORD *v20; // rax
+  _QWORD *v21; // rax
+  volatile signed __int32 *v22; // r14
+  volatile signed __int32 *v23; // r14
+  __int64 v24; // rax
+  __int64 v25; // rcx
+  _QWORD *v26; // rax
+  struct std::error_code *v27; // r8
+  volatile signed __int32 *v28; // r14
+  volatile signed __int32 *v29; // r14
+  bool v30; // al
+  __int64 v31; // rdx
+  const struct std::filesystem::path *v32; // r9
+  __int64 v33; // rdx
+  const WCHAR *p_lpNewFileName; // rdx
+  const WCHAR *p_lpExistingFileName; // rcx
+  __int64 v36; // rdx
+  DWORD LastError; // eax
+  const char *v38; // r9
+  __int64 v39; // rax
+  __int64 v40; // rcx
+  _QWORD *v41; // rax
+  __int64 v42; // rax
+  __int64 v43; // rdx
+  volatile signed __int32 *v44; // rsi
+  volatile signed __int32 *v45; // rsi
+  __int64 v46; // rdx
+  const struct std::filesystem::path *v47; // rdx
+  __int64 v48; // rax
+  __int64 v49; // rcx
+  _QWORD *v50; // rax
+  __int64 v51; // rax
+  __int64 v52; // rax
+  __int64 v53; // rsi
+  const WCHAR *v54; // rdx
+  const WCHAR *v55; // rcx
+  __int64 v56; // rdx
+  DWORD v57; // eax
+  __int64 v58; // rdx
+  __int64 v59; // rdx
+  volatile signed __int32 *v60; // rsi
+  volatile signed __int32 *v61; // rsi
+  __int64 v62; // rax
+  __int64 v63; // rcx
+  _QWORD *v64; // rax
+  struct std::error_code *v65; // r8
+  volatile signed __int32 *v66; // r14
+  volatile signed __int32 *v67; // r14
+  bool v68; // al
+  __int64 v69; // rdx
+  const struct std::filesystem::path *v70; // r9
+  __int64 v71; // rdx
+  const WCHAR *v72; // rdx
+  const WCHAR *v73; // rcx
+  __int64 v74; // rdx
+  DWORD v75; // eax
+  __int64 v76; // rax
+  __int64 v77; // rcx
+  void (__fastcall *v78)(__int64, __int128 *, _OWORD *, __int128 *, _DWORD *); // r14
+  int *v79; // rax
+  const char *v80; // r9
+  __int64 v81; // r11
+  __int64 v82; // rax
+  __int64 v83; // rax
+  __int64 v84; // rdx
+  const char *v85; // r9
+  volatile signed __int32 *v86; // rsi
+  volatile signed __int32 *v87; // rsi
+  const char *v88; // r9
+  __int64 *v89; // rdx
+  __int64 v90; // [rsp+0h] [rbp-138h] BYREF
+  unsigned int v91[4]; // [rsp+30h] [rbp-108h] BYREF
+  __int128 v92; // [rsp+40h] [rbp-F8h] BYREF
+  __int128 v93; // [rsp+50h] [rbp-E8h] BYREF
+  char v94[16]; // [rsp+60h] [rbp-D8h] BYREF
+  __int128 v95; // [rsp+80h] [rbp-B8h] BYREF
+  _OWORD v96[2]; // [rsp+90h] [rbp-A8h] BYREF
+  _DWORD v97[8]; // [rsp+B0h] [rbp-88h] BYREF
+  char v98; // [rsp+D0h] [rbp-68h]
+  LPCWSTR lpExistingFileName; // [rsp+D8h] [rbp-60h] BYREF
+  volatile signed __int32 *v100; // [rsp+E0h] [rbp-58h]
+  unsigned __int64 v101; // [rsp+F0h] [rbp-48h]
+  LPCWSTR lpNewFileName; // [rsp+F8h] [rbp-40h] BYREF
+  volatile signed __int32 *v103; // [rsp+100h] [rbp-38h]
+  unsigned __int64 v104; // [rsp+110h] [rbp-28h]
+  wil::details::in1diag3 *retaddr; // [rsp+138h] [rbp+0h]
+
+  try
+  {
+    System = SystemInterface::Providers::GetSystem(&v93);
+    v1 = *(_QWORD *)System + 8LL + *(int *)(*(_QWORD *)(*(_QWORD *)System + 8LL) + 4LL);
+    (*(void (__fastcall **)(__int64, _OWORD *))(*(_QWORD *)v1 + 32LL))(v1, v96);
+    v91[0] = 0;
+    traits_2_unsigned_short = (int *)anonymous_namespace_::__std_find_trivial_impl__anonymous_namespace_::_Find_traits_2_unsigned_short_(
+                                       L"UpdateManagerCtorFailures",
+                                       &dword_1404141DC,
+                                       0);
+    if ( traits_2_unsigned_short == &dword_1404141DC
+      || (v5 = ((char *)traits_2_unsigned_short - (char *)L"UpdateManagerCtorFailures") >> 1, v5 == -1) )
+    {
+      wil::details::in1diag3::_FailFast_Unexpected(
+        retaddr,
+        (void *)0xC9,
+        (unsigned int)"C:\\__w\\1\\s\\packages\\Microsoft.Windows.Wil.Internal.0.3.30\\inc\\wil\\opensource\\wil\\stl.h",
+        v3);
+    }
+    *(_QWORD *)v94 = L"UpdateManagerCtorFailures";
+    *(_QWORD *)&v94[8] = v5;
+    v95 = 0u;
+    *(_QWORD *)&v92 = SystemInterface::Registry::USOCURRENTVERSIONROOT_REDIRECTION_ID;
+    v6 = -1;
+    do
+      ++v6;
+    while ( SystemInterface::Registry::USOCURRENTVERSIONROOT_REDIRECTION_ID[v6] );
+    *((_QWORD *)&v92 + 1) = v6;
+    SystemValueOrDefault = SystemInterface::Registry::GetSystemValueOrDefault(
+                             v4,
+                             (unsigned int)&v92,
+                             (unsigned int)&v95,
+                             (unsigned int)v94,
+                             (__int64)v91);
+    v91[0] = SystemValueOrDefault;
+    v8 = (volatile signed __int32 *)*((_QWORD *)&v96[0] + 1);
+    if ( *((_QWORD *)&v96[0] + 1) )
+    {
+      if ( _InterlockedExchangeAdd((volatile signed __int32 *)(*((_QWORD *)&v96[0] + 1) + 8LL), 0xFFFFFFFF) == 1 )
+      {
+        (**(void (__fastcall ***)(volatile signed __int32 *))v8)(v8);
+        if ( _InterlockedExchangeAdd(v8 + 3, 0xFFFFFFFF) == 1 )
+          (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v8 + 8LL))(v8);
+      }
+    }
+    v9 = (volatile signed __int32 *)*((_QWORD *)&v93 + 1);
+    if ( *((_QWORD *)&v93 + 1) )
+    {
+      if ( _InterlockedExchangeAdd((volatile signed __int32 *)(*((_QWORD *)&v93 + 1) + 8LL), 0xFFFFFFFF) == 1 )
+      {
+        (**(void (__fastcall ***)(volatile signed __int32 *))v9)(v9);
+        if ( _InterlockedExchangeAdd(v9 + 3, 0xFFFFFFFF) == 1 )
+          (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v9 + 8LL))(v9);
+      }
+    }
+    v10 = SystemInterface::Providers::GetSystem(&v95);
+    v11 = *(_QWORD *)v10 + 8LL + *(int *)(*(_QWORD *)(*(_QWORD *)v10 + 8LL) + 4LL);
+    v12 = *(__int64 (__fastcall **)(__int64, __int128 *, char *))(**(_QWORD **)(*(__int64 (__fastcall **)(__int64, _OWORD *))(*(_QWORD *)v11 + 40LL))(
+                                                                                 v11,
+                                                                                 v96)
+                                                                + 56LL);
+    *(_DWORD *)v94 = 2;
+    v13 = (__int16 *)anonymous_namespace_::__std_find_trivial_impl__anonymous_namespace_::_Find_traits_2_unsigned_short_(
+                       L"AllowedUpdateManagerCtorFailures",
+                       word_1404141A2,
+                       0);
+    if ( v13 == word_1404141A2 || (v16 = ((char *)v13 - (char *)L"AllowedUpdateManagerCtorFailures") >> 1, v16 == -1) )
+      wil::details::in1diag3::_FailFast_Unexpected(
+        retaddr,
+        (void *)0xC9,
+        (unsigned int)"C:\\__w\\1\\s\\packages\\Microsoft.Windows.Wil.Internal.0.3.30\\inc\\wil\\opensource\\wil\\stl.h",
+        v14);
+    *(_QWORD *)&v92 = L"AllowedUpdateManagerCtorFailures";
+    *((_QWORD *)&v92 + 1) = v16;
+    v93 = v92;
+    v17 = v12(v15, &v93, v94);
+    if ( v17 < 2 )
+      v17 = 2;
+    v18 = (volatile signed __int32 *)*((_QWORD *)&v96[0] + 1);
+    if ( *((_QWORD *)&v96[0] + 1) )
+    {
+      if ( _InterlockedExchangeAdd((volatile signed __int32 *)(*((_QWORD *)&v96[0] + 1) + 8LL), 0xFFFFFFFF) == 1 )
+      {
+        (**(void (__fastcall ***)(volatile signed __int32 *))v18)(v18);
+        if ( _InterlockedExchangeAdd(v18 + 3, 0xFFFFFFFF) == 1 )
+          (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v18 + 8LL))(v18);
+      }
+    }
+    v19 = (volatile signed __int32 *)*((_QWORD *)&v95 + 1);
+    if ( *((_QWORD *)&v95 + 1) )
+    {
+      if ( _InterlockedExchangeAdd((volatile signed __int32 *)(*((_QWORD *)&v95 + 1) + 8LL), 0xFFFFFFFF) == 1 )
+      {
+        (**(void (__fastcall ***)(volatile signed __int32 *))v19)(v19);
+        if ( _InterlockedExchangeAdd(v19 + 3, 0xFFFFFFFF) == 1 )
+          (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v19 + 8LL))(v19);
+      }
+    }
+    if ( SystemValueOrDefault >= v17 )
+    {
+      v20 = (_QWORD *)SystemInterface::Providers::GetSystem(v96);
+      v21 = (_QWORD *)(*(__int64 (__fastcall **)(_QWORD, __int128 *))(*(_QWORD *)*v20 + 40LL))(*v20, &v93);
+      (*(void (__fastcall **)(_QWORD, _QWORD, _QWORD))(*(_QWORD *)*v21 + 320LL))(*v21, SystemValueOrDefault, v17);
+      v22 = (volatile signed __int32 *)*((_QWORD *)&v93 + 1);
+      if ( *((_QWORD *)&v93 + 1) )
+      {
+        if ( !_InterlockedDecrement((volatile signed __int32 *)(*((_QWORD *)&v93 + 1) + 8LL)) )
+        {
+          (**(void (__fastcall ***)(volatile signed __int32 *))v22)(v22);
+          if ( !_InterlockedDecrement(v22 + 3) )
+            (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v22 + 8LL))(v22);
+        }
+      }
+      v23 = (volatile signed __int32 *)*((_QWORD *)&v96[0] + 1);
+      if ( *((_QWORD *)&v96[0] + 1) )
+      {
+        if ( !_InterlockedDecrement((volatile signed __int32 *)(*((_QWORD *)&v96[0] + 1) + 8LL)) )
+        {
+          (**(void (__fastcall ***)(volatile signed __int32 *))v23)(v23);
+          if ( !_InterlockedDecrement(v23 + 3) )
+            (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v23 + 8LL))(v23);
+        }
+      }
+      if ( (unsigned __int8)wil::details::FeatureImpl<__WilFeatureTraits_Feature_Containment_RecoverDatabaseOnWriteAccessFailure_31864050>::__private_IsEnabled(`wil::Feature<__WilFeatureTraits_Feature_Containment_RecoverDatabaseOnWriteAccessFailure_31864050>::GetImpl'::`2'::impl) )
+      {
+        try
+        {
+          v24 = SystemInterface::Providers::GetSystem(v96);
+          v25 = *(_QWORD *)v24 + 8LL + *(int *)(*(_QWORD *)(*(_QWORD *)v24 + 8LL) + 4LL);
+          v26 = (_QWORD *)(*(__int64 (__fastcall **)(__int64, __int128 *))(*(_QWORD *)v25 + 8LL))(v25, &v93);
+          (*(void (__fastcall **)(_QWORD, LPCWSTR *))(*(_QWORD *)*v26 + 16LL))(*v26, &lpExistingFileName);
+          v28 = (volatile signed __int32 *)*((_QWORD *)&v93 + 1);
+          if ( *((_QWORD *)&v93 + 1) )
+          {
+            if ( _InterlockedExchangeAdd((volatile signed __int32 *)(*((_QWORD *)&v93 + 1) + 8LL), 0xFFFFFFFF) == 1 )
+            {
+              (**(void (__fastcall ***)(volatile signed __int32 *))v28)(v28);
+              if ( _InterlockedExchangeAdd(v28 + 3, 0xFFFFFFFF) == 1 )
+                (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v28 + 8LL))(v28);
+            }
+          }
+          v29 = (volatile signed __int32 *)*((_QWORD *)&v96[0] + 1);
+          if ( *((_QWORD *)&v96[0] + 1) )
+          {
+            if ( _InterlockedExchangeAdd((volatile signed __int32 *)(*((_QWORD *)&v96[0] + 1) + 8LL), 0xFFFFFFFF) == 1 )
+            {
+              (**(void (__fastcall ***)(volatile signed __int32 *))v29)(v29);
+              if ( _InterlockedExchangeAdd(v29 + 3, 0xFFFFFFFF) == 1 )
+                (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v29 + 8LL))(v29);
+            }
+          }
+          *(_QWORD *)v94 = 0;
+          *(_QWORD *)&v94[8] = &`std::_Immortalize_memcpy_image<std::_System_error_category>'::`2'::_Static;
+          v30 = std::filesystem::exists(
+                  (std::filesystem *)&lpExistingFileName,
+                  (const struct std::filesystem::path *)v94,
+                  v27);
+          if ( *(_DWORD *)v94 )
+            std::filesystem::_Throw_fs_error(
+              (std::filesystem *)"exists",
+              v94,
+              (const struct std::error_code *)&lpExistingFileName,
+              v32);
+          if ( v30 )
+          {
+            std::wstring::wstring(&lpNewFileName, &lpExistingFileName);
+            *(_QWORD *)&v92 = L".bad";
+            *((_QWORD *)&v92 + 1) = 4;
+            v93 = v92;
+            std::filesystem::_Convert_stringoid_to_wide<std::filesystem::_Normal_conversion>(v96, &v93);
+            std::filesystem::path::replace_extension(
+              (std::filesystem::path *)&lpNewFileName,
+              (const struct std::filesystem::path *)v96);
+            std::wstring::~wstring(v96, v33);
+            p_lpNewFileName = (const WCHAR *)&lpNewFileName;
+            if ( v104 > 7 )
+              p_lpNewFileName = lpNewFileName;
+            p_lpExistingFileName = (const WCHAR *)&lpExistingFileName;
+            if ( v101 > 7 )
+              p_lpExistingFileName = lpExistingFileName;
+            if ( !MoveFileExW(p_lpExistingFileName, p_lpNewFileName, 3u) )
+            {
+              LastError = GetLastError();
+              if ( LastError )
+                std::filesystem::_Throw_fs_error("rename", LastError, &lpExistingFileName, &lpNewFileName);
+            }
+            SystemValueOrDefault = 0;
+            v91[0] = 0;
+            std::wstring::~wstring(&lpNewFileName, v36);
+          }
+          std::wstring::~wstring(&lpExistingFileName, v31);
+        }
+        catch ( ... )
+        {
+          wil::details::in1diag3::Log_CaughtException(
+            retaddr,
+            (void *)0x29,
+            (unsigned int)"C:\\__w\\1\\s\\src\\orchestrator\\mostack\\updatemanager\\ManagerIntegrity.cpp",
+            v38);
+          SystemValueOrDefault = v91[0];
+        }
+        try
+        {
+          if ( SystemValueOrDefault )
+          {
+            v39 = SystemInterface::Providers::GetSystem(v96);
+            v40 = *(_QWORD *)v39 + 8LL + *(int *)(*(_QWORD *)(*(_QWORD *)v39 + 8LL) + 4LL);
+            v41 = (_QWORD *)(*(__int64 (__fastcall **)(__int64, __int128 *))(*(_QWORD *)v40 + 8LL))(v40, &v93);
+            v42 = (*(__int64 (__fastcall **)(_QWORD, _DWORD *))(*(_QWORD *)*v41 + 16LL))(*v41, v97);
+            std::filesystem::path::parent_path(v42, &lpExistingFileName);
+            std::wstring::~wstring(v97, v43);
+            v44 = (volatile signed __int32 *)*((_QWORD *)&v93 + 1);
+            if ( *((_QWORD *)&v93 + 1) )
+            {
+              if ( _InterlockedExchangeAdd((volatile signed __int32 *)(*((_QWORD *)&v93 + 1) + 8LL), 0xFFFFFFFF) == 1 )
+              {
+                (**(void (__fastcall ***)(volatile signed __int32 *))v44)(v44);
+                if ( _InterlockedExchangeAdd(v44 + 3, 0xFFFFFFFF) == 1 )
+                  (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v44 + 8LL))(v44);
+              }
+            }
+            v45 = (volatile signed __int32 *)*((_QWORD *)&v96[0] + 1);
+            if ( *((_QWORD *)&v96[0] + 1) )
+            {
+              if ( _InterlockedExchangeAdd((volatile signed __int32 *)(*((_QWORD *)&v96[0] + 1) + 8LL), 0xFFFFFFFF) == 1 )
+              {
+                (**(void (__fastcall ***)(volatile signed __int32 *))v45)(v45);
+                if ( _InterlockedExchangeAdd(v45 + 3, 0xFFFFFFFF) == 1 )
+                  (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v45 + 8LL))(v45);
+              }
+            }
+            *(_QWORD *)&v92 = L"bad";
+            *((_QWORD *)&v92 + 1) = 3;
+            std::filesystem::_Convert_stringoid_to_wide<std::filesystem::_Normal_conversion>(&lpNewFileName, &v92);
+            std::filesystem::path::remove_filename((std::filesystem::path *)&lpExistingFileName);
+            std::filesystem::path::operator/=(&lpExistingFileName);
+            std::wstring::~wstring(&lpNewFileName, v46);
+            std::filesystem::remove_all((std::filesystem *)&lpExistingFileName, v47);
+            v48 = SystemInterface::Providers::GetSystem(&v95);
+            v49 = *(_QWORD *)v48 + 8LL + *(int *)(*(_QWORD *)(*(_QWORD *)v48 + 8LL) + 4LL);
+            v50 = (_QWORD *)(*(__int64 (__fastcall **)(__int64, __int128 *))(*(_QWORD *)v49 + 8LL))(v49, &v92);
+            v51 = (*(__int64 (__fastcall **)(_QWORD, char *))(*(_QWORD *)*v50 + 16LL))(*v50, v94);
+            v52 = std::filesystem::path::parent_path(v51, &lpNewFileName);
+            v53 = v52;
+            v54 = (const WCHAR *)&lpExistingFileName;
+            if ( v101 > 7 )
+              v54 = lpExistingFileName;
+            v55 = (const WCHAR *)v52;
+            if ( *(_QWORD *)(v52 + 24) > 7u )
+              v55 = *(const WCHAR **)v52;
+            if ( !MoveFileExW(v55, v54, 3u) )
+            {
+              v57 = GetLastError();
+              if ( v57 )
+                std::filesystem::_Throw_fs_error("rename", v57, v53, &lpExistingFileName);
+            }
+            std::wstring::~wstring(&lpNewFileName, v56);
+            std::wstring::~wstring(v94, v58);
+            v60 = (volatile signed __int32 *)*((_QWORD *)&v92 + 1);
+            if ( *((_QWORD *)&v92 + 1) )
+            {
+              if ( _InterlockedExchangeAdd((volatile signed __int32 *)(*((_QWORD *)&v92 + 1) + 8LL), 0xFFFFFFFF) == 1 )
+              {
+                (**(void (__fastcall ***)(volatile signed __int32 *))v60)(v60);
+                if ( _InterlockedExchangeAdd(v60 + 3, 0xFFFFFFFF) == 1 )
+                  (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v60 + 8LL))(v60);
+              }
+            }
+            v61 = (volatile signed __int32 *)*((_QWORD *)&v95 + 1);
+            if ( *((_QWORD *)&v95 + 1) )
+            {
+              if ( _InterlockedExchangeAdd((volatile signed __int32 *)(*((_QWORD *)&v95 + 1) + 8LL), 0xFFFFFFFF) == 1 )
+              {
+                (**(void (__fastcall ***)(volatile signed __int32 *))v61)(v61);
+                if ( _InterlockedExchangeAdd(v61 + 3, 0xFFFFFFFF) == 1 )
+                  (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v61 + 8LL))(v61);
+              }
+            }
+            SystemValueOrDefault = 0;
+            v91[0] = 0;
+            std::wstring::~wstring(&lpExistingFileName, v59);
+          }
+        }
+        catch ( ... )
+        {
+          wil::details::in1diag3::Log_CaughtException(
+            retaddr,
+            (void *)0x34,
+            (unsigned int)"C:\\__w\\1\\s\\src\\orchestrator\\mostack\\updatemanager\\ManagerIntegrity.cpp",
+            v38);
+          SystemValueOrDefault = v91[0];
+        }
+      }
+      else
+      {
+        v62 = SystemInterface::Providers::GetSystem(v96);
+        v63 = *(_QWORD *)v62 + 8LL + *(int *)(*(_QWORD *)(*(_QWORD *)v62 + 8LL) + 4LL);
+        v64 = (_QWORD *)(*(__int64 (__fastcall **)(__int64, __int128 *))(*(_QWORD *)v63 + 8LL))(v63, &v93);
+        (*(void (__fastcall **)(_QWORD, LPCWSTR *))(*(_QWORD *)*v64 + 16LL))(*v64, &lpExistingFileName);
+        v66 = (volatile signed __int32 *)*((_QWORD *)&v93 + 1);
+        if ( *((_QWORD *)&v93 + 1) )
+        {
+          if ( _InterlockedExchangeAdd((volatile signed __int32 *)(*((_QWORD *)&v93 + 1) + 8LL), 0xFFFFFFFF) == 1 )
+          {
+            (**(void (__fastcall ***)(volatile signed __int32 *))v66)(v66);
+            if ( _InterlockedExchangeAdd(v66 + 3, 0xFFFFFFFF) == 1 )
+              (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v66 + 8LL))(v66);
+          }
+        }
+        v67 = (volatile signed __int32 *)*((_QWORD *)&v96[0] + 1);
+        if ( *((_QWORD *)&v96[0] + 1) )
+        {
+          if ( _InterlockedExchangeAdd((volatile signed __int32 *)(*((_QWORD *)&v96[0] + 1) + 8LL), 0xFFFFFFFF) == 1 )
+          {
+            (**(void (__fastcall ***)(volatile signed __int32 *))v67)(v67);
+            if ( _InterlockedExchangeAdd(v67 + 3, 0xFFFFFFFF) == 1 )
+              (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v67 + 8LL))(v67);
+          }
+        }
+        *(_QWORD *)v94 = 0;
+        *(_QWORD *)&v94[8] = &`std::_Immortalize_memcpy_image<std::_System_error_category>'::`2'::_Static;
+        v68 = std::filesystem::exists(
+                (std::filesystem *)&lpExistingFileName,
+                (const struct std::filesystem::path *)v94,
+                v65);
+        if ( *(_DWORD *)v94 )
+          std::filesystem::_Throw_fs_error(
+            (std::filesystem *)"exists",
+            v94,
+            (const struct std::error_code *)&lpExistingFileName,
+            v70);
+        if ( v68 )
+        {
+          std::wstring::wstring(&lpNewFileName, &lpExistingFileName);
+          *(_QWORD *)&v92 = L".bad";
+          *((_QWORD *)&v92 + 1) = 4;
+          v93 = v92;
+          std::filesystem::_Convert_stringoid_to_wide<std::filesystem::_Normal_conversion>(v96, &v93);
+          std::filesystem::path::replace_extension(
+            (std::filesystem::path *)&lpNewFileName,
+            (const struct std::filesystem::path *)v96);
+          std::wstring::~wstring(v96, v71);
+          v72 = (const WCHAR *)&lpNewFileName;
+          if ( v104 > 7 )
+            v72 = lpNewFileName;
+          v73 = (const WCHAR *)&lpExistingFileName;
+          if ( v101 > 7 )
+            v73 = lpExistingFileName;
+          if ( !MoveFileExW(v73, v72, 3u) )
+          {
+            v75 = GetLastError();
+            if ( v75 )
+            {
+              try
+              {
+                std::filesystem::_Throw_fs_error("rename", v75, &lpExistingFileName, &lpNewFileName);
+              }
+              catch ( ... )
+              {
+                v89 = &v90;
+                wil::details::in1diag3::Log_CaughtException(
+                  (wil::details::in1diag3 *)v89[39],
+                  (void *)0x42,
+                  (unsigned int)"C:\\__w\\1\\s\\src\\orchestrator\\mostack\\updatemanager\\ManagerIntegrity.cpp",
+                  v88);
+                SystemValueOrDefault = v91[0];
+                goto LABEL_96;
+              }
+            }
+          }
+          SystemValueOrDefault = 0;
+          v91[0] = 0;
+LABEL_96:
+          std::wstring::~wstring(&lpNewFileName, v74);
+        }
+        std::wstring::~wstring(&lpExistingFileName, v69);
+      }
+    }
+    v76 = SystemInterface::Providers::GetSystem(&lpExistingFileName);
+    v77 = *(_QWORD *)v76 + 8LL + *(int *)(*(_QWORD *)(*(_QWORD *)v76 + 8LL) + 4LL);
+    v78 = *(void (__fastcall **)(__int64, __int128 *, _OWORD *, __int128 *, _DWORD *))(**(_QWORD **)(*(__int64 (__fastcall **)(__int64, LPCWSTR *))(*(_QWORD *)v77 + 32LL))(v77, &lpNewFileName)
+                                                                                     + 64LL);
+    v97[0] = SystemValueOrDefault + 1;
+    v98 = 0;
+    v79 = (int *)anonymous_namespace_::__std_find_trivial_impl__anonymous_namespace_::_Find_traits_2_unsigned_short_(
+                   L"UpdateManagerCtorFailures",
+                   &dword_1404141DC,
+                   0);
+    if ( v79 == &dword_1404141DC || (v82 = ((char *)v79 - (char *)L"UpdateManagerCtorFailures") >> 1, v82 == -1) )
+      wil::details::in1diag3::_FailFast_Unexpected(
+        retaddr,
+        (void *)0xC9,
+        (unsigned int)"C:\\__w\\1\\s\\packages\\Microsoft.Windows.Wil.Internal.0.3.30\\inc\\wil\\opensource\\wil\\stl.h",
+        v80);
+    *(_QWORD *)&v92 = L"UpdateManagerCtorFailures";
+    *((_QWORD *)&v92 + 1) = v82;
+    v95 = 0u;
+    *(_QWORD *)v94 = SystemInterface::Registry::USOCURRENTVERSIONROOT_REDIRECTION_ID;
+    v83 = -1;
+    do
+      ++v83;
+    while ( SystemInterface::Registry::USOCURRENTVERSIONROOT_REDIRECTION_ID[v83] );
+    *(_QWORD *)&v94[8] = v83;
+    v93 = v92;
+    v96[0] = v95;
+    v92 = *(_OWORD *)v94;
+    v78(v81, &v92, v96, &v93, v97);
+    if ( v98 != -1 && v98 && v98 != 1 )
+      std::wstring::~wstring(v97, v84);
+    v86 = v103;
+    if ( v103 )
+    {
+      if ( !_InterlockedDecrement(v103 + 2) )
+      {
+        (**(void (__fastcall ***)(volatile signed __int32 *))v86)(v86);
+        if ( !_InterlockedDecrement(v86 + 3) )
+          (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v86 + 8LL))(v86);
+      }
+    }
+    v87 = v100;
+    if ( v100 )
+    {
+      if ( !_InterlockedDecrement(v100 + 2) )
+      {
+        (**(void (__fastcall ***)(volatile signed __int32 *))v87)(v87);
+        if ( !_InterlockedDecrement(v87 + 3) )
+          (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v87 + 8LL))(v87);
+      }
+    }
+  }
+  catch ( ... )
+  {
+    wil::details::in1diag3::Log_CaughtException(
+      retaddr,
+      (void *)0x4D,
+      (unsigned int)"C:\\__w\\1\\s\\src\\orchestrator\\mostack\\updatemanager\\ManagerIntegrity.cpp",
+      v85);
+  }
+}
+
+```
+
+## disassembly
+
+```asm
+0x140116374  mov     rax, rsp
+0x140116377  mov     [rax+8], rbx
+0x14011637b  mov     [rax+10h], rsi
+0x14011637f  mov     [rax+18h], rdi
+0x140116383  mov     [rax+20h], r12
+0x140116387  push    r13
+0x140116389  push    r14
+0x14011638b  push    r15
+0x14011638d  sub     rsp, 120h
+0x140116394  mov     rax, cs:__security_cookie
+0x14011639b  xor     rax, rsp
+0x14011639e  mov     [rsp+138h+var_20], rax
+0x1401163a6  xor     edi, edi
+0x1401163a8  lea     rcx, [rsp+138h+var_E8]
+0x1401163ad  call    ?GetSystem@Providers@SystemInterface@@YA?AV?$shared_ptr@VSystem@Providers@SystemInterface@@@std@@XZ; SystemInterface::Providers::GetSystem(void)
+0x1401163b2  nop
+0x1401163b3  mov     rdx, [rax]
+0x1401163b6  mov     rax, [rdx+8]
+0x1401163ba  movsxd  rcx, dword ptr [rax+4]
+0x1401163be  add     rdx, 8
+0x1401163c2  add     rcx, rdx
+0x1401163c5  mov     rax, [rcx]
+0x1401163c8  lea     rdx, [rsp+138h+var_A8]
+0x1401163d0  mov     rax, [rax+20h]
+0x1401163d4  call    _guard_dispatch_icall
+0x1401163d9  nop
+0x1401163da  mov     r11, [rax]
+0x1401163dd  mov     [rsp+138h+var_108], edi
+0x1401163e1  xor     r8d, r8d
+0x1401163e4  lea     r13, dword_1404141DC
+0x1401163eb  mov     rdx, r13
+0x1401163ee  lea     r12, aUpdatemanagerc; "UpdateManagerCtorFailures"
+0x1401163f5  mov     rcx, r12
+0x1401163f8  call    _anonymous_namespace_____std_find_trivial_impl__anonymous_namespace____Find_traits_2_unsigned_short_
+0x1401163fd  cmp     rax, r13
+0x140116400  jz      loc_140116FD9
+0x140116406  sub     rax, r12
+0x140116409  sar     rax, 1
+0x14011640c  or      rbx, 0FFFFFFFFFFFFFFFFh
+0x140116410  cmp     rax, rbx
+0x140116413  jz      loc_140116FD9
+0x140116419  mov     qword ptr [rsp+138h+var_D8], r12
+0x14011641e  mov     qword ptr [rsp+138h+var_D8+8], rax
+0x140116423  mov     qword ptr [rsp+138h+var_B8], rdi
+0x14011642b  mov     qword ptr [rsp+138h+var_B8+8], rdi
+0x140116433  mov     rcx, cs:?USOCURRENTVERSIONROOT_REDIRECTION_ID@Registry@SystemInterface@@2QEB_WEB; wchar_t const * const SystemInterface::Registry::USOCURRENTVERSIONROOT_REDIRECTION_ID
+0x14011643a  mov     qword ptr [rsp+138h+var_F8], rcx
+0x14011643f  mov     rax, rbx
+0x140116442  inc     rax
+0x140116445  cmp     [rcx+rax*2], di
+0x140116449  jnz     short loc_140116442
+0x14011644b  mov     qword ptr [rsp+138h+var_F8+8], rax
+0x140116450  movups  xmm0, xmmword ptr [rsp+138h+var_D8]
+0x140116455  movdqu  xmmword ptr [rsp+138h+var_D8], xmm0
+0x14011645b  movaps  xmm1, [rsp+138h+var_B8]
+0x140116463  movdqa  [rsp+138h+var_B8], xmm1
+0x14011646c  movaps  xmm0, [rsp+138h+var_F8]
+0x140116471  movdqa  [rsp+138h+var_F8], xmm0
+0x140116477  lea     rax, [rsp+138h+var_108]
+0x14011647c  mov     [rsp+138h+var_118], rax
+0x140116481  lea     r9, [rsp+138h+var_D8]
+0x140116486  lea     r8, [rsp+138h+var_B8]
+0x14011648e  lea     rdx, [rsp+138h+var_F8]
+0x140116493  mov     rcx, r11
+0x140116496  call    ?GetSystemValueOrDefault@Registry@SystemInterface@@QEAAIV?$basic_zstring_view@_W@wil@@00AEBI@Z; SystemInterface::Registry::GetSystemValueOrDefault(wil::basic_zstring_view<wchar_t>,wil::basic_zstring_view<wchar_t>,wil::basic_zstring_view<wchar_t>,uint const &)
+0x14011649b  mov     esi, eax
+0x14011649d  mov     [rsp+138h+var_108], eax
+0x1401164a1  mov     r14, qword ptr [rsp+138h+var_A8+8]
+0x1401164a9  test    r14, r14
+0x1401164ac  jz      short loc_1401164E4
+0x1401164ae  mov     ecx, ebx
+0x1401164b0  lock xadd [r14+8], ecx
+0x1401164b6  add     ecx, ebx
+0x1401164b8  jnz     short loc_1401164E4
+0x1401164ba  mov     rax, [r14]
+0x1401164bd  mov     rcx, r14
+0x1401164c0  mov     rax, [rax]
+0x1401164c3  call    _guard_dispatch_icall
+0x1401164c8  mov     eax, ebx
+0x1401164ca  lock xadd [r14+0Ch], eax
+0x1401164d0  add     eax, ebx
+0x1401164d2  jnz     short loc_1401164E4
+0x1401164d4  mov     rax, [r14]
+0x1401164d7  mov     rcx, r14
+0x1401164da  mov     rax, [rax+8]
+0x1401164de  call    _guard_dispatch_icall
+0x1401164e3  nop
+0x1401164e4  mov     r14, qword ptr [rsp+138h+var_E8+8]
+0x1401164e9  test    r14, r14
+0x1401164ec  jz      short loc_140116523
+0x1401164ee  mov     eax, ebx
+0x1401164f0  lock xadd [r14+8], eax
+0x1401164f6  add     eax, ebx
+0x1401164f8  jnz     short loc_140116523
+0x1401164fa  mov     rax, [r14]
+0x1401164fd  mov     rcx, r14
+0x140116500  mov     rax, [rax]
+0x140116503  call    _guard_dispatch_icall
+0x140116508  mov     eax, ebx
+0x14011650a  lock xadd [r14+0Ch], eax
+0x140116510  add     eax, ebx
+0x140116512  jnz     short loc_140116523
+0x140116514  mov     rax, [r14]
+0x140116517  mov     rcx, r14
+0x14011651a  mov     rax, [rax+8]
+0x14011651e  call    _guard_dispatch_icall
+0x140116523  lea     rcx, [rsp+138h+var_B8]
+0x14011652b  call    ?GetSystem@Providers@SystemInterface@@YA?AV?$shared_ptr@VSystem@Providers@SystemInterface@@@std@@XZ; SystemInterface::Providers::GetSystem(void)
+0x140116530  nop
+0x140116531  mov     rdx, [rax]
+0x140116534  mov     rax, [rdx+8]
+0x140116538  movsxd  rcx, dword ptr [rax+4]
+0x14011653c  add     rdx, 8
+0x140116540  add     rcx, rdx
+0x140116543  mov     rax, [rcx]
+0x140116546  lea     rdx, [rsp+138h+var_A8]
+0x14011654e  mov     rax, [rax+28h]
+0x140116552  call    _guard_dispatch_icall
+0x140116557  nop
+0x140116558  mov     r11, [rax]
+0x14011655b  mov     rax, [r11]
+0x14011655e  mov     r14, [rax+38h]
+0x140116562  mov     eax, 2
+0x140116567  mov     dword ptr [rsp+138h+var_D8], eax
+0x14011656b  xor     r8d, r8d
+0x14011656e  lea     r15, word_1404141A2
+0x140116575  mov     rdx, r15
+0x140116578  lea     rcx, aAllowedupdatem; "AllowedUpdateManagerCtorFailures"
+0x14011657f  call    _anonymous_namespace_____std_find_trivial_impl__anonymous_namespace____Find_traits_2_unsigned_short_
+0x140116584  cmp     rax, r15
+0x140116587  jz      loc_140117099
+0x14011658d  lea     rcx, aAllowedupdatem; "AllowedUpdateManagerCtorFailures"
+0x140116594  sub     rax, rcx
+0x140116597  sar     rax, 1
+0x14011659a  cmp     rax, rbx
+0x14011659d  jz      loc_140117099
+0x1401165a3  mov     qword ptr [rsp+138h+var_F8], rcx
+0x1401165a8  mov     qword ptr [rsp+138h+var_F8+8], rax
+0x1401165ad  movaps  xmm0, [rsp+138h+var_F8]
+0x1401165b2  movdqa  [rsp+138h+var_E8], xmm0
+0x1401165b8  lea     r8, [rsp+138h+var_D8]
+0x1401165bd  lea     rdx, [rsp+138h+var_E8]
+0x1401165c2  mov     rcx, r11
+0x1401165c5  mov     rax, r14
+0x1401165c8  call    _guard_dispatch_icall
+0x1401165cd  mov     r15d, eax
+0x1401165d0  mov     eax, 2
+0x1401165d5  cmp     r15d, eax
+0x1401165d8  cmovb   r15d, eax
+0x1401165dc  mov     r14, qword ptr [rsp+138h+var_A8+8]
+0x1401165e4  test    r14, r14
+0x1401165e7  jz      short loc_14011661F
+0x1401165e9  mov     eax, ebx
+0x1401165eb  lock xadd [r14+8], eax
+0x1401165f1  add     eax, ebx
+0x1401165f3  jnz     short loc_14011661F
+0x1401165f5  mov     rax, [r14]
+0x1401165f8  mov     rcx, r14
+0x1401165fb  mov     rax, [rax]
+0x1401165fe  call    _guard_dispatch_icall
+0x140116603  mov     eax, ebx
+0x140116605  lock xadd [r14+0Ch], eax
+0x14011660b  add     eax, ebx
+0x14011660d  jnz     short loc_14011661F
+0x14011660f  mov     rax, [r14]
+0x140116612  mov     rcx, r14
+0x140116615  mov     rax, [rax+8]
+0x140116619  call    _guard_dispatch_icall
+0x14011661e  nop
+0x14011661f  mov     r14, qword ptr [rsp+138h+var_B8+8]
+0x140116627  test    r14, r14
+0x14011662a  jz      short loc_140116661
+0x14011662c  mov     eax, ebx
+0x14011662e  lock xadd [r14+8], eax
+0x140116634  add     eax, ebx
+0x140116636  jnz     short loc_140116661
+0x140116638  mov     rax, [r14]
+0x14011663b  mov     rcx, r14
+0x14011663e  mov     rax, [rax]
+0x140116641  call    _guard_dispatch_icall
+0x140116646  mov     eax, ebx
+0x140116648  lock xadd [r14+0Ch], eax
+0x14011664e  add     eax, ebx
+0x140116650  jnz     short loc_140116661
+0x140116652  mov     rax, [r14]
+0x140116655  mov     rcx, r14
+0x140116658  mov     rax, [rax+8]
+0x14011665c  call    _guard_dispatch_icall
+0x140116661  cmp     esi, r15d
+0x140116664  jb      loc_140116DFC
+0x14011666a  lea     rcx, [rsp+138h+var_A8]
+0x140116672  call    ?GetSystem@Providers@SystemInterface@@YA?AV?$shared_ptr@VSystem@Providers@SystemInterface@@@std@@XZ; SystemInterface::Providers::GetSystem(void)
+0x140116677  nop
+0x140116678  mov     rcx, [rax]
+0x14011667b  mov     rax, [rcx]
+0x14011667e  lea     rdx, [rsp+138h+var_E8]
+0x140116683  mov     rax, [rax+28h]
+0x140116687  call    _guard_dispatch_icall
+0x14011668c  nop
+0x14011668d  mov     rcx, [rax]
+0x140116690  mov     rax, [rcx]
+0x140116693  mov     r8d, r15d
+0x140116696  mov     edx, esi
+0x140116698  mov     rax, [rax+140h]
+0x14011669f  call    _guard_dispatch_icall
+0x1401166a4  nop
+0x1401166a5  mov     r14, qword ptr [rsp+138h+var_E8+8]
+0x1401166aa  test    r14, r14
+0x1401166ad  jz      short loc_1401166E5
+0x1401166af  mov     eax, ebx
+0x1401166b1  lock xadd [r14+8], eax
+0x1401166b7  add     eax, ebx
+0x1401166b9  jnz     short loc_1401166E5
+0x1401166bb  mov     rax, [r14]
+0x1401166be  mov     rcx, r14
+0x1401166c1  mov     rax, [rax]
+0x1401166c4  call    _guard_dispatch_icall
+0x1401166c9  mov     eax, ebx
+0x1401166cb  lock xadd [r14+0Ch], eax
+0x1401166d1  add     eax, ebx
+0x1401166d3  jnz     short loc_1401166E5
+0x1401166d5  mov     rax, [r14]
+0x1401166d8  mov     rcx, r14
+0x1401166db  mov     rax, [rax+8]
+0x1401166df  call    _guard_dispatch_icall
+0x1401166e4  nop
+0x1401166e5  mov     r14, qword ptr [rsp+138h+var_A8+8]
+0x1401166ed  test    r14, r14
+0x1401166f0  jz      short loc_140116727
+0x1401166f2  mov     eax, ebx
+0x1401166f4  lock xadd [r14+8], eax
+0x1401166fa  add     eax, ebx
+0x1401166fc  jnz     short loc_140116727
+0x1401166fe  mov     rax, [r14]
+0x140116701  mov     rcx, r14
+0x140116704  mov     rax, [rax]
+0x140116707  call    _guard_dispatch_icall
+0x14011670c  mov     eax, ebx
+0x14011670e  lock xadd [r14+0Ch], eax
+0x140116714  add     eax, ebx
+0x140116716  jnz     short loc_140116727
+0x140116718  mov     rax, [r14]
+0x14011671b  mov     rcx, r14
+0x14011671e  mov     rax, [rax+8]
+0x140116722  call    _guard_dispatch_icall
+0x140116727  lea     rcx, ?impl@?1??GetImpl@?$Feature@U__WilFeatureTraits_Feature_Containment_RecoverDatabaseOnWriteAccessFailure_31864050@@@wil@@CAAEAV?$FeatureImpl@U__WilFeatureTraits_Feature_Containment_RecoverDatabaseOnWriteAccessFailure_31864050@@@details@3@XZ@4V453@A; wil::details::FeatureImpl<__WilFeatureTraits_Feature_Containment_RecoverDatabaseOnWriteAccessFailure_31864050> `wil::Feature<__WilFeatureTraits_Feature_Containment_RecoverDatabaseOnWriteAccessFailure_31864050>::GetImpl(void)'::`2'::impl
+0x14011672e  call    ?__private_IsEnabled@?$FeatureImpl@U__WilFeatureTraits_Feature_Containment_RecoverDatabaseOnWriteAccessFailure_31864050@@@details@wil@@QEAA_NXZ; wil::details::FeatureImpl<__WilFeatureTraits_Feature_Containment_RecoverDatabaseOnWriteAccessFailure_31864050>::__private_IsEnabled(void)
+0x140116733  test    al, al
+0x140116735  jz      loc_140116C01
+0x14011673b  lea     rcx, [rsp+138h+var_A8]
+0x140116743  call    ?GetSystem@Providers@SystemInterface@@YA?AV?$shared_ptr@VSystem@Providers@SystemInterface@@@std@@XZ; SystemInterface::Providers::GetSystem(void)
+0x140116748  nop
+0x140116749  mov     rdx, [rax]
+0x14011674c  mov     rax, [rdx+8]
+0x140116750  movsxd  rcx, dword ptr [rax+4]
+0x140116754  add     rdx, 8
+0x140116758  add     rcx, rdx
+0x14011675b  mov     rax, [rcx]
+0x14011675e  lea     rdx, [rsp+138h+var_E8]
+0x140116763  mov     rax, [rax+8]
+0x140116767  call    _guard_dispatch_icall
+0x14011676c  nop
+0x14011676d  mov     rcx, [rax]
+0x140116770  mov     rax, [rcx]
+0x140116773  lea     rdx, [rsp+138h+lpExistingFileName]
+0x14011677b  mov     rax, [rax+10h]
+0x14011677f  call    _guard_dispatch_icall
+0x140116784  nop
+0x140116785  mov     r14, qword ptr [rsp+138h+var_E8+8]
+0x14011678a  test    r14, r14
+0x14011678d  jz      short loc_1401167C5
+0x14011678f  mov     eax, ebx
+0x140116791  lock xadd [r14+8], eax
+0x140116797  add     eax, ebx
+0x140116799  jnz     short loc_1401167C5
+0x14011679b  mov     rax, [r14]
+0x14011679e  mov     rcx, r14
+0x1401167a1  mov     rax, [rax]
+0x1401167a4  call    _guard_dispatch_icall
+0x1401167a9  mov     eax, ebx
+0x1401167ab  lock xadd [r14+0Ch], eax
+0x1401167b1  add     eax, ebx
+0x1401167b3  jnz     short loc_1401167C5
+0x1401167b5  mov     rax, [r14]
+0x1401167b8  mov     rcx, r14
+0x1401167bb  mov     rax, [rax+8]
+0x1401167bf  call    _guard_dispatch_icall
+0x1401167c4  nop
+0x1401167c5  mov     r14, qword ptr [rsp+138h+var_A8+8]
+0x1401167cd  test    r14, r14
+0x1401167d0  jz      short loc_140116807
+0x1401167d2  mov     eax, ebx
+0x1401167d4  lock xadd [r14+8], eax
+0x1401167da  add     eax, ebx
+0x1401167dc  jnz     short loc_140116807
+0x1401167de  mov     rax, [r14]
+0x1401167e1  mov     rcx, r14
+0x1401167e4  mov     rax, [rax]
+0x1401167e7  call    _guard_dispatch_icall
+0x1401167ec  mov     eax, ebx
+  ... truncated ...
+```

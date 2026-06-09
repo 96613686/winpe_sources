@@ -1,0 +1,2617 @@
+[
+  {
+    "callee_count": 22,
+    "caller_count": 1,
+    "demangled": "ReconcileThisDatabaseWithMasterWorker",
+    "ea": "0x1400119a0",
+    "function_file": "functions/1400119a0_ReconcileThisDatabaseWithMasterWorker.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoGetDeviceObjectPointer",
+      "ntoskrnl!IoSetThreadHardErrorMode",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeReleaseSemaphore",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!RtlCompareMemory",
+      "ntoskrnl!RtlEqualUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenFile",
+      "ntoskrnl!ZwQueryDirectoryFile"
+    ],
+    "matched_strings": [],
+    "name": "ReconcileThisDatabaseWithMasterWorker",
+    "prototype": "int __fastcall(__int64 *)",
+    "rank_score": 8898,
+    "size": 5186,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "MountMgrQueryDosVolumePath",
+    "ea": "0x140015d50",
+    "function_file": "functions/140015d50_MountMgrQueryDosVolumePath.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoBuildDeviceIoControlRequest",
+      "ntoskrnl!IoGetAttachedDeviceReference",
+      "ntoskrnl!IoGetDeviceObjectPointer",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!RtlDuplicateUnicodeString",
+      "ntoskrnl!RtlEqualUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrQueryDosVolumePath",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *)",
+    "rank_score": 6037,
+    "size": 2894,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 24,
+    "caller_count": 3,
+    "demangled": "MountMgrMountedDeviceArrival",
+    "ea": "0x140014fc0",
+    "function_file": "functions/140014fc0_MountMgrMountedDeviceArrival.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObIsDosDeviceLocallyMapped",
+      "ntoskrnl!RtlCompareUnicodeString",
+      "ntoskrnl!RtlDuplicateUnicodeString",
+      "ntoskrnl!RtlEqualUnicodeString",
+      "ntoskrnl!RtlWriteRegistryValue"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\MountedDevices"
+    ],
+    "name": "MountMgrMountedDeviceArrival",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 5722,
+    "size": 3458,
+    "tags": [
+      "reparse_path",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 27,
+    "caller_count": 0,
+    "demangled": "MountMgrDeviceControl",
+    "ea": "0x1400147a0",
+    "function_file": "functions/1400147a0_MountMgrDeviceControl.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!PsAttachSiloToCurrentThread",
+      "ntoskrnl!PsDetachSiloFromCurrentThread",
+      "ntoskrnl!PsIsHostSilo"
+    ],
+    "matched_strings": [
+      "IOCTL_MOUNTMGR_QUERY_DOS_VOLUME_PATH",
+      "IOCTL_MOUNTMGR_QUERY_DOS_VOLUME_PATH",
+      "IOCTL_MOUNTMGR_CHECK_UNPROCESSED_VOLUMES",
+      "IOCTL_MOUNTMGR_QUERY_POINTS",
+      "IOCTL_MOUNTMGR_QUERY_POINTS",
+      "IOCTL_MOUNTMGR_QUERY_DOS_VOLUME_PATHS",
+      "IOCTL_MOUNTMGR_QUERY_DOS_VOLUME_PATHS",
+      "IOCTL_MOUNTMGR_CHANGE_NOTIFY",
+      "IOCTL_MOUNTMGR_CREATE_POINT",
+      "IOCTL_MOUNTMGR_CREATE_POINT",
+      "IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER",
+      "IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER",
+      "IOCTL_MOUNTMGR_VOLUME_REMOVAL_NOTIFICATION",
+      "IOCTL_MOUNTMGR_VOLUME_REMOVAL_NOTIFICATION",
+      "IOCTL_MOUNTMGR_VOLUME_ARRIVAL_NOTIFICATION",
+      "IOCTL_MOUNTMGR_VOLUME_ARRIVAL_NOTIFICATION",
+      "IOCTL_MOUNTMGR_QUERY_POINTS_ADMIN",
+      "IOCTL_MOUNTMGR_QUERY_POINTS_ADMIN",
+      "IOCTL_MOUNTMGR_QUERY_AUTO_MOUNT",
+      "IOCTL_MOUNTMGR_QUERY_AUTO_MOUNT",
+      "IOCTL_MOUNTMGR_TRACELOG_CACHE",
+      "IOCTL_MOUNTMGR_TRACELOG_CACHE",
+      "IOCTL_MOUNTMGR_DELETE_POINTS",
+      "IOCTL_MOUNTMGR_DELETE_POINTS_DBONLY",
+      "IOCTL_MOUNTMGR_AUTO_DL_ASSIGNMENTS",
+      "IOCTL_MOUNTMGR_BOOT_DL_ASSIGNMENT",
+      "IOCTL_MOUNTMGR_VOLUME_MOUNT_POINT_CREATED",
+      "IOCTL_MOUNTMGR_VOLUME_MOUNT_POINT_DELETED",
+      "IOCTL_MOUNTMGR_KEEP_LINKS_WHEN_OFFLINE",
+      "IOCTL_MOUNTMGR_SCRUB_REGISTRY",
+      "IOCTL_MOUNTMGR_SET_AUTO_MOUNT",
+      "IOCTL_MOUNTMGR_PREPARE_VOLUME_REMOVAL",
+      "IOCTL_MOUNTMGR_SILO_ARRIVAL"
+    ],
+    "name": "MountMgrDeviceControl",
+    "prototype": "__int64 __fastcall(__int64, IRP *, __int64)",
+    "rank_score": 5191,
+    "size": 2065,
+    "tags": [
+      "reparse_path",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "QueryPointsFromMemory",
+    "ea": "0x140016dc0",
+    "function_file": "functions/140016dc0_QueryPointsFromMemory.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoBuildDeviceIoControlRequest",
+      "ntoskrnl!IoGetAttachedDeviceReference",
+      "ntoskrnl!IoGetDeviceObjectPointer",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!RtlCompareMemory",
+      "ntoskrnl!RtlDuplicateUnicodeString",
+      "ntoskrnl!RtlEqualUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "QueryPointsFromMemory",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *, const UNICODE_STRING *, unsigned __int16 *, PUNICODE_STRING ObjectName)",
+    "rank_score": 4839,
+    "size": 1914,
+    "tags": [
+      "reparse_path",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "MountMgrMountedDeviceRemoval",
+    "ea": "0x14000a050",
+    "function_file": "functions/14000a050_MountMgrMountedDeviceRemoval.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoUnregisterPlugPlayNotification",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!RtlCompareUnicodeString",
+      "ntoskrnl!RtlDeleteRegistryValue"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\MountedDevices"
+    ],
+    "name": "MountMgrMountedDeviceRemoval",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 4686,
+    "size": 1203,
+    "tags": [
+      "reparse_path",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x14001b078",
+    "function_file": "functions/14001b078_DriverEntry.md",
+    "matched_imports": [
+      "ntoskrnl!EtwRegister",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!IoCreateDevice",
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!IoRegisterDriverReinitialization",
+      "ntoskrnl!IoRegisterPlugPlayNotification",
+      "ntoskrnl!IoRegisterShutdownNotification",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeInitializeMutex",
+      "ntoskrnl!KeInitializeSemaphore",
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!PsAllocSiloContextSlot",
+      "ntoskrnl!PsFreeSiloContextSlot",
+      "ntoskrnl!PsGetHostSilo",
+      "ntoskrnl!RtlCreateRegistryKey"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\MountedDevices"
+    ],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 4099,
+    "size": 1274,
+    "tags": [
+      "reparse_path",
+      "registry_config",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 1,
+    "demangled": "MountMgrVolumeMountPointCreated",
+    "ea": "0x14000e340",
+    "function_file": "functions/14000e340_MountMgrVolumeMountPointCreated.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlEqualUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrVolumeMountPointCreated",
+    "prototype": "__int64 __fastcall(__int64, int, int)",
+    "rank_score": 3664,
+    "size": 2206,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "MountMgrValidateBackPointer",
+    "ea": "0x140010ef0",
+    "function_file": "functions/140010ef0_MountMgrValidateBackPointer.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoSetThreadHardErrorMode",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!RtlEqualUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwFsControlFile",
+      "ntoskrnl!ZwOpenFile"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrValidateBackPointer",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 3659,
+    "size": 1543,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "MountMgrNotifyNameChange",
+    "ea": "0x14001a3d0",
+    "function_file": "functions/14001a3d0_MountMgrNotifyNameChange.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoBuildDeviceIoControlRequest",
+      "ntoskrnl!IoGetAttachedDeviceReference",
+      "ntoskrnl!IoGetDeviceObjectPointer",
+      "ntoskrnl!IoReportTargetDeviceChangeAsynchronous",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!PsIsHostSilo",
+      "ntoskrnl!RtlCompareUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrNotifyNameChange",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 3625,
+    "size": 940,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 2,
+    "demangled": "MountMgrVolumeMountPointChanged",
+    "ea": "0x14000db54",
+    "function_file": "functions/14000db54_MountMgrVolumeMountPointChanged.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoFileObjectType",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObQueryNameString",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!ZwOpenFile",
+      "ntoskrnl!ZwQueryInformationFile",
+      "ntoskrnl!ZwQueryVolumeInformationFile"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrVolumeMountPointChanged",
+    "prototype": "__int64 __fastcall(struct _KMUTANT *, __int64, __int64, struct _UNICODE_STRING *, _WORD *, PUNICODE_STRING ObjectName)",
+    "rank_score": 3568,
+    "size": 2021,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "FindDeviceInfo",
+    "ea": "0x140010970",
+    "function_file": "functions/140010970_FindDeviceInfo.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoBuildDeviceIoControlRequest",
+      "ntoskrnl!IoGetAttachedDeviceReference",
+      "ntoskrnl!IoGetDeviceObjectPointer",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!RtlDuplicateUnicodeString",
+      "ntoskrnl!RtlEqualUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "FindDeviceInfo",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 3217,
+    "size": 900,
+    "tags": []
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 1,
+    "demangled": "MountMgrVolumeMountPointDeleted",
+    "ea": "0x14000ecbc",
+    "function_file": "functions/14000ecbc_MountMgrVolumeMountPointDeleted.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCompareMemory",
+      "ntoskrnl!RtlEqualUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrVolumeMountPointDeleted",
+    "prototype": "__int64 __fastcall(__int64, int, int)",
+    "rank_score": 3068,
+    "size": 1915,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "OnlineMountedVolumes",
+    "ea": "0x14000f680",
+    "function_file": "functions/14000f680_OnlineMountedVolumes.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ZwOpenFile",
+      "ntoskrnl!ZwQueryDirectoryFile"
+    ],
+    "matched_strings": [],
+    "name": "OnlineMountedVolumes",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 2863,
+    "size": 1593,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 4,
+    "demangled": "QueryVolumeName",
+    "ea": "0x140012e60",
+    "function_file": "functions/140012e60_QueryVolumeName.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwFsControlFile",
+      "ntoskrnl!ZwOpenFile",
+      "ntoskrnl!ZwQueryInformationFile"
+    ],
+    "matched_strings": [],
+    "name": "QueryVolumeName",
+    "prototype": "__int64 __fastcall(__int64, __int64, void *, __int64, struct _UNICODE_STRING *, unsigned __int16 *, unsigned __int16 *)",
+    "rank_score": 2853,
+    "size": 1837,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "QueryDeviceName",
+    "ea": "0x1400144a0",
+    "function_file": "functions/1400144a0_QueryDeviceName.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoBuildDeviceIoControlRequest",
+      "ntoskrnl!IoGetAttachedDeviceReference",
+      "ntoskrnl!IoGetDeviceObjectPointer",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!RtlDuplicateUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "QueryDeviceName",
+    "prototype": "__int64 __fastcall(PUNICODE_STRING ObjectName, PUNICODE_STRING StringOut)",
+    "rank_score": 2822,
+    "size": 754,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "MountMgrSiloArrival",
+    "ea": "0x140001ebc",
+    "function_file": "functions/140001ebc_MountMgrSiloArrival.md",
+    "matched_imports": [
+      "ntoskrnl!IoCreateDevice",
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!PsAttachSiloToCurrentThread",
+      "ntoskrnl!PsCreateSiloContext",
+      "ntoskrnl!PsDereferenceSiloContext",
+      "ntoskrnl!PsDetachSiloFromCurrentThread",
+      "ntoskrnl!PsGetJobSilo",
+      "ntoskrnl!PsInsertPermanentSiloContext",
+      "ntoskrnl!PsJobType",
+      "ntoskrnl!RtlCreateRegistryKey",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\MountedDevices",
+      "\\Registry\\Machine\\System\\MountedDevices"
+    ],
+    "name": "MountMgrSiloArrival",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 2620,
+    "size": 636,
+    "tags": [
+      "reparse_path",
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "WorkerThread",
+    "ea": "0x1400010f0",
+    "function_file": "functions/1400010f0_WorkerThread.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoFreeWorkItem",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenEvent",
+      "ntoskrnl!ZwWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "WorkerThread",
+    "prototype": "IO_WORKITEM_ROUTINE",
+    "rank_score": 2436,
+    "size": 587,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 3,
+    "demangled": "DeleteRemoteDatabaseEntry",
+    "ea": "0x14000b5e8",
+    "function_file": "functions/14000b5e8_DeleteRemoteDatabaseEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ZwReadFile",
+      "ntoskrnl!ZwWriteFile"
+    ],
+    "matched_strings": [],
+    "name": "DeleteRemoteDatabaseEntry",
+    "prototype": "__int64 __fastcall(__int64, void *, unsigned int)",
+    "rank_score": 2229,
+    "size": 1187,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "MountMgrUnload",
+    "ea": "0x14000d7a0",
+    "function_file": "functions/14000d7a0_MountMgrUnload.md",
+    "matched_imports": [
+      "ntoskrnl!EtwUnregister",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!IoUnregisterPlugPlayNotification",
+      "ntoskrnl!IoUnregisterShutdownNotification",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeReleaseSemaphore",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!PsFreeSiloContextSlot"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrUnload",
+    "prototype": "",
+    "rank_score": 2229,
+    "size": 503,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "MountMgrFreeMountedDeviceInfo",
+    "ea": "0x14000c7d8",
+    "function_file": "functions/14000c7d8_MountMgrFreeMountedDeviceInfo.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoUnregisterPlugPlayNotification"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrFreeMountedDeviceInfo",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 2216,
+    "size": 371,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 4,
+    "demangled": "OpenRemoteDatabase",
+    "ea": "0x140011500",
+    "function_file": "functions/140011500_OpenRemoteDatabase.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoCreateFile",
+      "ntoskrnl!IoSetThreadHardErrorMode",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "OpenRemoteDatabase",
+    "prototype": "__int64 __fastcall(__int64, char, _BYTE *, void **)",
+    "rank_score": 2072,
+    "size": 1168,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 5,
+    "demangled": "GetRemoteDatabaseEntry",
+    "ea": "0x1400135a0",
+    "function_file": "functions/1400135a0_GetRemoteDatabaseEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ZwReadFile"
+    ],
+    "matched_strings": [],
+    "name": "GetRemoteDatabaseEntry",
+    "prototype": "__int64 __fastcall(__int64, void *, unsigned int, unsigned __int16 **)",
+    "rank_score": 2029,
+    "size": 1089,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "MountMgrUniqueIdChangeRoutine",
+    "ea": "0x14000d494",
+    "function_file": "functions/14000d494_MountMgrUniqueIdChangeRoutine.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeReleaseSemaphore",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!RtlCompareMemory",
+      "ntoskrnl!RtlQueryRegistryValuesEx"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\MountedDevices"
+    ],
+    "name": "MountMgrUniqueIdChangeRoutine",
+    "prototype": "__int64 __fastcall(__int64, unsigned __int16 *)",
+    "rank_score": 1874,
+    "size": 768,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "MountMgrQueryPoints",
+    "ea": "0x1400168b0",
+    "function_file": "functions/1400168b0_MountMgrQueryPoints.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrQueryPoints",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64)",
+    "rank_score": 1829,
+    "size": 1280,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 4,
+    "demangled": "MountMgrCreatePointWorker",
+    "ea": "0x14000be4c",
+    "function_file": "functions/14000be4c_MountMgrCreatePointWorker.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!PsIsHostSilo",
+      "ntoskrnl!RtlWriteRegistryValue"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\MountedDevices"
+    ],
+    "name": "MountMgrCreatePointWorker",
+    "prototype": "__int64 __fastcall(_QWORD *Context, UNICODE_STRING *, __int64)",
+    "rank_score": 1687,
+    "size": 1151,
+    "tags": [
+      "reparse_path",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "ChangeRemoteDatabaseUniqueId",
+    "ea": "0x14000a96c",
+    "function_file": "functions/14000a96c_ChangeRemoteDatabaseUniqueId.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "ChangeRemoteDatabaseUniqueId",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 1644,
+    "size": 733,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "MountMgrDeletePoints",
+    "ea": "0x140018560",
+    "function_file": "functions/140018560_MountMgrDeletePoints.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlDeleteRegistryValue"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\MountedDevices"
+    ],
+    "name": "MountMgrDeletePoints",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64)",
+    "rank_score": 1479,
+    "size": 798,
+    "tags": [
+      "reparse_path",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CreateNewDriveLetterHelper",
+    "ea": "0x140018af0",
+    "function_file": "functions/140018af0_CreateNewDriveLetterHelper.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ObIsDosDeviceLocallyMapped",
+      "ntoskrnl!RtlWriteRegistryValue"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\MountedDevices"
+    ],
+    "name": "CreateNewDriveLetterHelper",
+    "prototype": "",
+    "rank_score": 1469,
+    "size": 467,
+    "tags": [
+      "reparse_path",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 4,
+    "demangled": "CreateNoDriveLetterEntry",
+    "ea": "0x14000adf0",
+    "function_file": "functions/14000adf0_CreateNoDriveLetterEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExUuidCreate",
+      "ntoskrnl!RtlStringFromGUID",
+      "ntoskrnl!RtlWriteRegistryValue"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\MountedDevices"
+    ],
+    "name": "CreateNoDriveLetterEntry",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 1462,
+    "size": 444,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "SendLinkCreated",
+    "ea": "0x140017540",
+    "function_file": "functions/140017540_SendLinkCreated.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoGetAttachedDeviceReference",
+      "ntoskrnl!IoGetDeviceObjectPointer",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "SendLinkCreated",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 1412,
+    "size": 536,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "PostOnlineNotification",
+    "ea": "0x140001730",
+    "function_file": "functions/140001730_PostOnlineNotification.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExQueueWorkItem",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "PostOnlineNotification",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 1411,
+    "size": 544,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "CreateNewVolumeName",
+    "ea": "0x1400195d0",
+    "function_file": "functions/1400195d0_CreateNewVolumeName.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExUuidCreate",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlStringFromGUID"
+    ],
+    "matched_strings": [],
+    "name": "CreateNewVolumeName",
+    "prototype": "__int64 __fastcall(PUNICODE_STRING Destination)",
+    "rank_score": 1409,
+    "size": 421,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "CreateRemoteDatabaseWorker",
+    "ea": "0x14000b150",
+    "function_file": "functions/14000b150_CreateRemoteDatabaseWorker.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoCreateFile",
+      "ntoskrnl!IoFreeWorkItem",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!RtlCreateSystemVolumeInformationFolder"
+    ],
+    "matched_strings": [],
+    "name": "CreateRemoteDatabaseWorker",
+    "prototype": "void __fastcall(PDEVICE_OBJECT DeviceObject, _QWORD *Context)",
+    "rank_score": 1249,
+    "size": 637,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "MountMgrQueryDosVolumePaths",
+    "ea": "0x140013a20",
+    "function_file": "functions/140013a20_MountMgrQueryDosVolumePaths.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!RtlEqualUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrQueryDosVolumePaths",
+    "prototype": "__int64 __fastcall(struct _KMUTANT *, _QWORD *)",
+    "rank_score": 1226,
+    "size": 1087,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "MountMgrInitSiloDeviceExtension",
+    "ea": "0x140001d04",
+    "function_file": "functions/140001d04_MountMgrInitSiloDeviceExtension.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeInitializeMutex",
+      "ntoskrnl!KeInitializeSemaphore",
+      "ntoskrnl!KeInitializeSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrInitSiloDeviceExtension",
+    "prototype": "",
+    "rank_score": 1218,
+    "size": 434,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "MountMgrVolumeArrivalNotification",
+    "ea": "0x14000d9a0",
+    "function_file": "functions/14000d9a0_MountMgrVolumeArrivalNotification.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!PsGetThreadHardErrorsAreDisabled",
+      "ntoskrnl!PsSetThreadHardErrorsAreDisabled"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrVolumeArrivalNotification",
+    "prototype": "__int64 __fastcall(__int64, IRP *, struct _IRP *MasterIrp)",
+    "rank_score": 1218,
+    "size": 429,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "WaitForOnlinesToComplete",
+    "ea": "0x140002afc",
+    "function_file": "functions/140002afc_WaitForOnlinesToComplete.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "WaitForOnlinesToComplete",
+    "prototype": "",
+    "rank_score": 1213,
+    "size": 190,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SendLinkDeleted",
+    "ea": "0x14001a8a0",
+    "function_file": "functions/14001a8a0_SendLinkDeleted.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoGetAttachedDeviceReference",
+      "ntoskrnl!IoGetDeviceObjectPointer",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "SendLinkDeleted",
+    "prototype": "",
+    "rank_score": 1210,
+    "size": 522,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CreateRemoteDatabase",
+    "ea": "0x14000afb4",
+    "function_file": "functions/14000afb4_CreateRemoteDatabase.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAllocateWorkItem",
+      "ntoskrnl!IoQueueWorkItem",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "CreateRemoteDatabase",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *)",
+    "rank_score": 1207,
+    "size": 406,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "MountMgrCreatePointWorkerLegacy",
+    "ea": "0x14000c2d4",
+    "function_file": "functions/14000c2d4_MountMgrCreatePointWorkerLegacy.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlQueryRegistryValuesEx",
+      "ntoskrnl!RtlWriteRegistryValue"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\MountedDevices",
+      "\\Registry\\Machine\\System\\MountedDevices"
+    ],
+    "name": "MountMgrCreatePointWorkerLegacy",
+    "prototype": "__int64 __fastcall(__int64, UNICODE_STRING *, __int64)",
+    "rank_score": 1114,
+    "size": 587,
+    "tags": [
+      "reparse_path",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "QuerySymbolicLinkNamesFromStorage",
+    "ea": "0x1400192f0",
+    "function_file": "functions/1400192f0_QuerySymbolicLinkNamesFromStorage.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlQueryRegistryValuesEx"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\MountedDevices",
+      "\\Registry\\Machine\\System\\MountedDevices"
+    ],
+    "name": "QuerySymbolicLinkNamesFromStorage",
+    "prototype": "",
+    "rank_score": 1111,
+    "size": 720,
+    "tags": [
+      "reparse_path",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "MountMgrDeletePointsDbOnly",
+    "ea": "0x14000c528",
+    "function_file": "functions/14000c528_MountMgrDeletePointsDbOnly.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlDeleteRegistryValue"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\MountedDevices"
+    ],
+    "name": "MountMgrDeletePointsDbOnly",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 1072,
+    "size": 502,
+    "tags": [
+      "reparse_path",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CreateStringWithGlobal",
+    "ea": "0x140018e80",
+    "function_file": "functions/140018e80_CreateStringWithGlobal.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!RtlPrefixUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "CreateStringWithGlobal",
+    "prototype": "__int64 __fastcall(PCUNICODE_STRING String2, UNICODE_STRING *)",
+    "rank_score": 1009,
+    "size": 600,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "WriteUniqueIdToMaster",
+    "ea": "0x14001045c",
+    "function_file": "functions/14001045c_WriteUniqueIdToMaster.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCompareMemory",
+      "ntoskrnl!RtlWriteRegistryValue"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\MountedDevices"
+    ],
+    "name": "WriteUniqueIdToMaster",
+    "prototype": "__int64 __fastcall(PVOID Context)",
+    "rank_score": 869,
+    "size": 400,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "QueryPointsFromSymbolicLinkName",
+    "ea": "0x140017760",
+    "function_file": "functions/140017760_QueryPointsFromSymbolicLinkName.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCompareUnicodeString",
+      "ntoskrnl!RtlEqualUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "QueryPointsFromSymbolicLinkName",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 830,
+    "size": 692,
+    "tags": [
+      "reparse_path",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "CloseFileHandleOutsideExtensionMutexLock",
+    "ea": "0x140010600",
+    "function_file": "functions/140010600_CloseFileHandleOutsideExtensionMutexLock.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "CloseFileHandleOutsideExtensionMutexLock",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 829,
+    "size": 116,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "UpdateReplicatedUniqueIds",
+    "ea": "0x140010680",
+    "function_file": "functions/140010680_UpdateReplicatedUniqueIds.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "UpdateReplicatedUniqueIds",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 826,
+    "size": 365,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "MountMgrQueryVolumePaths",
+    "ea": "0x140013e70",
+    "function_file": "functions/140013e70_MountMgrQueryVolumePaths.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrQueryVolumePaths",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *, _QWORD *, int **, _DWORD *, _QWORD *)",
+    "rank_score": 820,
+    "size": 1568,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "MountMgrVolumeRemovalNotification",
+    "ea": "0x14000f518",
+    "function_file": "functions/14000f518_MountMgrVolumeRemovalNotification.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!PsGetThreadHardErrorsAreDisabled",
+      "ntoskrnl!PsSetThreadHardErrorsAreDisabled"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrVolumeRemovalNotification",
+    "prototype": "__int64 __fastcall(__int64, IRP *, struct _IRP *MasterIrp)",
+    "rank_score": 816,
+    "size": 353,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "MountMgrFreeSavedLink",
+    "ea": "0x14000c954",
+    "function_file": "functions/14000c954_MountMgrFreeSavedLink.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrFreeSavedLink",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 815,
+    "size": 157,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "MountMgrCleanup",
+    "ea": "0x140001010",
+    "function_file": "functions/140001010_MountMgrCleanup.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireCancelSpinLock",
+      "ntoskrnl!IoReleaseCancelSpinLock",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrCleanup",
+    "prototype": "__int64 __fastcall(__int64, IRP *)",
+    "rank_score": 813,
+    "size": 217,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "MountMgrShutdown",
+    "ea": "0x14000d000",
+    "function_file": "functions/14000d000_MountMgrShutdown.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeReleaseSemaphore",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrShutdown",
+    "prototype": "",
+    "rank_score": 812,
+    "size": 181,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "MountMgrSendDeviceControl",
+    "ea": "0x140017bf0",
+    "function_file": "functions/140017bf0_MountMgrSendDeviceControl.md",
+    "matched_imports": [
+      "ntoskrnl!IoBuildDeviceIoControlRequest",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrSendDeviceControl",
+    "prototype": "NTSTATUS __fastcall(PDEVICE_OBJECT DeviceObject, ULONG IoControlCode, PVOID InputBuffer, ULONG InputBufferLength, PVOID OutputBuffer, ULONG OutputBufferLength, struct _FILE_OBJECT *)",
+    "rank_score": 811,
+    "size": 262,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "SendOnlineNotification",
+    "ea": "0x140018890",
+    "function_file": "functions/140018890_SendOnlineNotification.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetAttachedDeviceReference",
+      "ntoskrnl!IoGetDeviceObjectPointer",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "SendOnlineNotification",
+    "prototype": "",
+    "rank_score": 808,
+    "size": 384,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "DeleteDriveLetterRoutine",
+    "ea": "0x14000b3e0",
+    "function_file": "functions/14000b3e0_DeleteDriveLetterRoutine.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory",
+      "ntoskrnl!RtlDeleteRegistryValue",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\MountedDevices"
+    ],
+    "name": "DeleteDriveLetterRoutine",
+    "prototype": "__int64 __usercall@<rax>(PCWSTR ValueName@<rcx>, __int64)",
+    "rank_score": 664,
+    "size": 186,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "MountMgrQuerySymbolicLink",
+    "ea": "0x14000cd50",
+    "function_file": "functions/14000cd50_MountMgrQuerySymbolicLink.md",
+    "matched_imports": [
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenSymbolicLinkObject",
+      "ntoskrnl!ZwQuerySymbolicLinkObject"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrQuerySymbolicLink",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 636,
+    "size": 302,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "DeleteSymbolicLinkNameFromMemory",
+    "ea": "0x140019e30",
+    "function_file": "functions/140019e30_DeleteSymbolicLinkNameFromMemory.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCompareUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "DeleteSymbolicLinkNameFromMemory",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 627,
+    "size": 309,
+    "tags": [
+      "reparse_path",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "SymbolicLinkNamesFromUniqueIdQuery",
+    "ea": "0x140019780",
+    "function_file": "functions/140019780_SymbolicLinkNamesFromUniqueIdQuery.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!RtlCompareMemory",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SymbolicLinkNamesFromUniqueIdQuery",
+    "prototype": "__int64 __usercall@<rax>(void *Src@<rcx>, __int64, __int64)",
+    "rank_score": 625,
+    "size": 298,
+    "tags": [
+      "reparse_path",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "AddRemoteDatabaseEntry",
+    "ea": "0x14000a810",
+    "function_file": "functions/14000a810_AddRemoteDatabaseEntry.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ZwWriteFile"
+    ],
+    "matched_strings": [],
+    "name": "AddRemoteDatabaseEntry",
+    "prototype": "__int64 __fastcall(__int64, void *, _DWORD *)",
+    "rank_score": 619,
+    "size": 340,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "WriteRemoteDatabaseEntry",
+    "ea": "0x140010d00",
+    "function_file": "functions/140010d00_WriteRemoteDatabaseEntry.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ZwWriteFile"
+    ],
+    "matched_strings": [],
+    "name": "WriteRemoteDatabaseEntry",
+    "prototype": "__int64 __fastcall(__int64, void *, unsigned int, _DWORD *)",
+    "rank_score": 618,
+    "size": 362,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "MountMgrFreeSiloDeviceExtension",
+    "ea": "0x140001bec",
+    "function_file": "functions/140001bec_MountMgrFreeSiloDeviceExtension.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrFreeSiloDeviceExtension",
+    "prototype": "",
+    "rank_score": 617,
+    "size": 274,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "MountMgrNotify",
+    "ea": "0x1400019c0",
+    "function_file": "functions/1400019c0_MountMgrNotify.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireCancelSpinLock",
+      "ntoskrnl!IoReleaseCancelSpinLock",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrNotify",
+    "prototype": "__int64 **__fastcall(__int64)",
+    "rank_score": 616,
+    "size": 272,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "RedirectSavedLink",
+    "ea": "0x14000ff00",
+    "function_file": "functions/14000ff00_RedirectSavedLink.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlEqualUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "RedirectSavedLink",
+    "prototype": "",
+    "rank_score": 616,
+    "size": 182,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 6,
+    "demangled": "ReconcileThisDatabaseWithMaster",
+    "ea": "0x140019140",
+    "function_file": "functions/140019140_ReconcileThisDatabaseWithMaster.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAllocateWorkItem"
+    ],
+    "matched_strings": [],
+    "name": "ReconcileThisDatabaseWithMaster",
+    "prototype": "__int64 __fastcall(PVOID Context)",
+    "rank_score": 612,
+    "size": 292,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "MountMgrBootDriveLetterAssignment",
+    "ea": "0x14001a190",
+    "function_file": "functions/14001a190_MountMgrBootDriveLetterAssignment.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrBootDriveLetterAssignment",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 606,
+    "size": 274,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "MountMgrChangeNotify",
+    "ea": "0x1400015a0",
+    "function_file": "functions/1400015a0_MountMgrChangeNotify.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireCancelSpinLock",
+      "ntoskrnl!IoReleaseCancelSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrChangeNotify",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64)",
+    "rank_score": 606,
+    "size": 394,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "MountMgrMountedDeviceNotification",
+    "ea": "0x140019980",
+    "function_file": "functions/140019980_MountMgrMountedDeviceNotification.md",
+    "matched_imports": [
+      "ntoskrnl!PsGetThreadHardErrorsAreDisabled",
+      "ntoskrnl!PsSetThreadHardErrorsAreDisabled"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrMountedDeviceNotification",
+    "prototype": "DRIVER_NOTIFICATION_CALLBACK_ROUTINE",
+    "rank_score": 606,
+    "size": 362,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "OpenDevice",
+    "ea": "0x140017fc0",
+    "function_file": "functions/140017fc0_OpenDevice.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetAttachedDeviceReference",
+      "ntoskrnl!IoGetDeviceObjectPointer",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "OpenDevice",
+    "prototype": "__int64 __fastcall(struct _UNICODE_STRING *, PFILE_OBJECT *, PDEVICE_OBJECT *)",
+    "rank_score": 605,
+    "size": 154,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "QueryUniqueIdInternal",
+    "ea": "0x140017d00",
+    "function_file": "functions/140017d00_QueryUniqueIdInternal.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "QueryUniqueIdInternal",
+    "prototype": "__int64 __fastcall(__int64, PDEVICE_OBJECT DeviceObject)",
+    "rank_score": 605,
+    "size": 216,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "DeleteNoDriveLetterEntryRoutine",
+    "ea": "0x14001a0b0",
+    "function_file": "functions/14001a0b0_DeleteNoDriveLetterEntryRoutine.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory",
+      "ntoskrnl!RtlDeleteRegistryValue"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\MountedDevices"
+    ],
+    "name": "DeleteNoDriveLetterEntryRoutine",
+    "prototype": "__int64 __usercall@<rax>(PCWSTR ValueName@<rcx>, __int64)",
+    "rank_score": 463,
+    "size": 207,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ScrubRegistryRoutine",
+    "ea": "0x14000ffc0",
+    "function_file": "functions/14000ffc0_ScrubRegistryRoutine.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory",
+      "ntoskrnl!RtlDeleteRegistryValue"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\MountedDevices"
+    ],
+    "name": "ScrubRegistryRoutine",
+    "prototype": "__int64 __usercall@<rax>(PCWSTR ValueName@<rcx>, __int64, __int64)",
+    "rank_score": 463,
+    "size": 222,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ChangeUniqueIdRoutine",
+    "ea": "0x14000ac50",
+    "function_file": "functions/14000ac50_ChangeUniqueIdRoutine.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory",
+      "ntoskrnl!RtlWriteRegistryValue"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\MountedDevices"
+    ],
+    "name": "ChangeUniqueIdRoutine",
+    "prototype": "__int64 __usercall@<rax>(PCWSTR ValueName@<rcx>, __int64, __int64)",
+    "rank_score": 462,
+    "size": 129,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "DeleteFromLocalDatabaseRoutine",
+    "ea": "0x14000b520",
+    "function_file": "functions/14000b520_DeleteFromLocalDatabaseRoutine.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory",
+      "ntoskrnl!RtlDeleteRegistryValue"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\MountedDevices"
+    ],
+    "name": "DeleteFromLocalDatabaseRoutine",
+    "prototype": "__int64 __usercall@<rax>(PCWSTR ValueName@<rcx>, __int64)",
+    "rank_score": 461,
+    "size": 97,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "QueryUniqueIdFromMaster",
+    "ea": "0x140010800",
+    "function_file": "functions/140010800_QueryUniqueIdFromMaster.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!RtlQueryRegistryValuesEx"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\MountedDevices"
+    ],
+    "name": "QueryUniqueIdFromMaster",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64)",
+    "rank_score": 459,
+    "size": 355,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "MountMgrCreatePoint",
+    "ea": "0x14000bcac",
+    "function_file": "functions/14000bcac_MountMgrCreatePoint.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCompareUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrCreatePoint",
+    "prototype": "__int64 __fastcall(_QWORD *Context, __int64)",
+    "rank_score": 429,
+    "size": 410,
+    "tags": [
+      "reparse_path",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "MountMgrNextDriveLetter",
+    "ea": "0x14001aab0",
+    "function_file": "functions/14001aab0_MountMgrNextDriveLetter.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCompareUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrNextDriveLetter",
+    "prototype": "__int64 __fastcall(PVOID Context)",
+    "rank_score": 428,
+    "size": 507,
+    "tags": [
+      "reparse_path",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 9,
+    "demangled": "GlobalDeleteSymbolicLink",
+    "ea": "0x140018cd0",
+    "function_file": "functions/140018cd0_GlobalDeleteSymbolicLink.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoDeleteSymbolicLink"
+    ],
+    "matched_strings": [],
+    "name": "GlobalDeleteSymbolicLink",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 424,
+    "size": 201,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 7,
+    "demangled": "GlobalCreateSymbolicLink",
+    "ea": "0x140018da0",
+    "function_file": "functions/140018da0_GlobalCreateSymbolicLink.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoCreateSymbolicLink2"
+    ],
+    "matched_strings": [],
+    "name": "GlobalCreateSymbolicLink",
+    "prototype": "__int64 __fastcall(const UNICODE_STRING *, __int128 *)",
+    "rank_score": 421,
+    "size": 214,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "SymbolicLinkNamesFromUniqueIdCount",
+    "ea": "0x140019270",
+    "function_file": "functions/140019270_SymbolicLinkNamesFromUniqueIdCount.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SymbolicLinkNamesFromUniqueIdCount",
+    "prototype": "__int64 __fastcall(PCWSTR SourceString, int, const void *, unsigned int, unsigned __int16 *, _DWORD *)",
+    "rank_score": 421,
+    "size": 122,
+    "tags": [
+      "reparse_path",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "MountMgrDriverReinitialization",
+    "ea": "0x14000c730",
+    "function_file": "functions/14000c730_MountMgrDriverReinitialization.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrDriverReinitialization",
+    "prototype": "DRIVER_REINITIALIZE",
+    "rank_score": 416,
+    "size": 160,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "MountMgrTargetDeviceNotification",
+    "ea": "0x140019f70",
+    "function_file": "functions/140019f70_MountMgrTargetDeviceNotification.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrTargetDeviceNotification",
+    "prototype": "DRIVER_NOTIFICATION_CALLBACK_ROUTINE",
+    "rank_score": 416,
+    "size": 312,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "MountMgrVolumeMountPointCreatedIoctl",
+    "ea": "0x14000ebe4",
+    "function_file": "functions/14000ebe4_MountMgrVolumeMountPointCreatedIoctl.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseSemaphore",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrVolumeMountPointCreatedIoctl",
+    "prototype": "__int64 __fastcall(__int64, int)",
+    "rank_score": 416,
+    "size": 209,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "MountMgrVolumeMountPointDeletedIoctl",
+    "ea": "0x14000f440",
+    "function_file": "functions/14000f440_MountMgrVolumeMountPointDeletedIoctl.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseSemaphore",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrVolumeMountPointDeletedIoctl",
+    "prototype": "__int64 __fastcall(__int64, int)",
+    "rank_score": 416,
+    "size": 209,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "DetectedSymlinkOnRemoteDatabaseFile",
+    "ea": "0x14000ba94",
+    "function_file": "functions/14000ba94_DetectedSymlinkOnRemoteDatabaseFile.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWrite",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "DetectedSymlinkOnRemoteDatabaseFile",
+    "prototype": "__int64(void)",
+    "rank_score": 415,
+    "size": 165,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "MountMgrCancel",
+    "ea": "0x140001b80",
+    "function_file": "functions/140001b80_MountMgrCancel.md",
+    "matched_imports": [
+      "ntoskrnl!IoReleaseCancelSpinLock",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrCancel",
+    "prototype": "void __fastcall(__int64, IRP *)",
+    "rank_score": 412,
+    "size": 102,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "MountMgrNextDriveLetterWorker",
+    "ea": "0x140019af0",
+    "function_file": "functions/140019af0_MountMgrNextDriveLetterWorker.md",
+    "matched_imports": [
+      "ntoskrnl!RtlPrefixUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrNextDriveLetterWorker",
+    "prototype": "__int64 __fastcall(PVOID Context)",
+    "rank_score": 410,
+    "size": 417,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "MountmgrSetDLStringCase",
+    "ea": "0x14001a2b0",
+    "function_file": "functions/14001a2b0_MountmgrSetDLStringCase.md",
+    "matched_imports": [
+      "ntoskrnl!RtlEqualUnicodeString",
+      "ntoskrnl!RtlUpcaseUnicodeChar"
+    ],
+    "matched_strings": [],
+    "name": "MountmgrSetDLStringCase",
+    "prototype": "__int64 __fastcall(UNICODE_STRING *, __int64, __int64)",
+    "rank_score": 409,
+    "size": 279,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CreateNewDriveLetterName",
+    "ea": "0x14000acd8",
+    "function_file": "functions/14000acd8_CreateNewDriveLetterName.md",
+    "matched_imports": [
+      "ntoskrnl!RtlPrefixUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "CreateNewDriveLetterName",
+    "prototype": "",
+    "rank_score": 408,
+    "size": 272,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "QuerySuggestedLinkNameInternal",
+    "ea": "0x140018450",
+    "function_file": "functions/140018450_QuerySuggestedLinkNameInternal.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "QuerySuggestedLinkNameInternal",
+    "prototype": "__int64 __fastcall(__int64, PDEVICE_OBJECT DeviceObject)",
+    "rank_score": 406,
+    "size": 264,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "TruncateRemoteDatabase",
+    "ea": "0x14000a550",
+    "function_file": "functions/14000a550_TruncateRemoteDatabase.md",
+    "matched_imports": [
+      "ntoskrnl!ZwSetInformationFile"
+    ],
+    "matched_strings": [],
+    "name": "TruncateRemoteDatabase",
+    "prototype": "__int64 __fastcall(HANDLE FileHandle)",
+    "rank_score": 406,
+    "size": 225,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "MountMgrFreeDeadDeviceInfo",
+    "ea": "0x14000a510",
+    "function_file": "functions/14000a510_MountMgrFreeDeadDeviceInfo.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrFreeDeadDeviceInfo",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 404,
+    "size": 51,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "MountmgrReadNoAutoMount",
+    "ea": "0x14001b578",
+    "function_file": "functions/14001b578_MountmgrReadNoAutoMount.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryRegistryValuesEx"
+    ],
+    "matched_strings": [
+      "NoAutoMount"
+    ],
+    "name": "MountmgrReadNoAutoMount",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 255,
+    "size": 213,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "DeleteNoDriveLetterEntry",
+    "ea": "0x14000b588",
+    "function_file": "functions/14000b588_DeleteNoDriveLetterEntry.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryRegistryValuesEx"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\MountedDevices"
+    ],
+    "name": "DeleteNoDriveLetterEntry",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 254,
+    "size": 88,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "HasNoDriveLetterEntry",
+    "ea": "0x14000a640",
+    "function_file": "functions/14000a640_HasNoDriveLetterEntry.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryRegistryValuesEx"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\MountedDevices"
+    ],
+    "name": "HasNoDriveLetterEntry",
+    "prototype": "",
+    "rank_score": 254,
+    "size": 119,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "IsOffline",
+    "ea": "0x1400198b0",
+    "function_file": "functions/1400198b0_IsOffline.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryRegistryValuesEx"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\MountedDevices\\Offline"
+    ],
+    "name": "IsOffline",
+    "prototype": "",
+    "rank_score": 254,
+    "size": 189,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "MountMgrScrubRegistry",
+    "ea": "0x14000ce84",
+    "function_file": "functions/14000ce84_MountMgrScrubRegistry.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryRegistryValuesEx"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\MountedDevices"
+    ],
+    "name": "MountMgrScrubRegistry",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 254,
+    "size": 146,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "MountMgrSetAutoMount",
+    "ea": "0x14000cf1c",
+    "function_file": "functions/14000cf1c_MountMgrSetAutoMount.md",
+    "matched_imports": [
+      "ntoskrnl!RtlWriteRegistryValue"
+    ],
+    "matched_strings": [
+      "NoAutoMount"
+    ],
+    "name": "MountMgrSetAutoMount",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 254,
+    "size": 214,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "DeleteFromLocalDatabase",
+    "ea": "0x14000b4a0",
+    "function_file": "functions/14000b4a0_DeleteFromLocalDatabase.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryRegistryValuesEx"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\MountedDevices"
+    ],
+    "name": "DeleteFromLocalDatabase",
+    "prototype": "",
+    "rank_score": 252,
+    "size": 112,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "MountMgrQueryBootDriveLetter",
+    "ea": "0x14000ccb4",
+    "function_file": "functions/14000ccb4_MountMgrQueryBootDriveLetter.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryRegistryValuesEx"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrQueryBootDriveLetter",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 150,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CheckForNoDriveLetterEntry",
+    "ea": "0x140019d00",
+    "function_file": "functions/140019d00_CheckForNoDriveLetterEntry.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "CheckForNoDriveLetterEntry",
+    "prototype": "",
+    "rank_score": 213,
+    "size": 138,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "RemoveSavedLinks",
+    "ea": "0x140019d90",
+    "function_file": "functions/140019d90_RemoveSavedLinks.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "RemoveSavedLinks",
+    "prototype": "",
+    "rank_score": 213,
+    "size": 143,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "IsUniqueIdPresent",
+    "ea": "0x14000bc48",
+    "function_file": "functions/14000bc48_IsUniqueIdPresent.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "IsUniqueIdPresent",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 212,
+    "size": 91,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "MountMgrSiloContextCleanupCallback",
+    "ea": "0x140002140",
+    "function_file": "functions/140002140_MountMgrSiloContextCleanupCallback.md",
+    "matched_imports": [
+      "ntoskrnl!IoDeleteDevice"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrSiloContextCleanupCallback",
+    "prototype": "",
+    "rank_score": 212,
+    "size": 48,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "MountMgrCreateClose",
+    "ea": "0x1400190e0",
+    "function_file": "functions/1400190e0_MountMgrCreateClose.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "MountMgrCreateClose",
+    "prototype": "",
+    "rank_score": 211,
+    "size": 75,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "IsDriveLetter",
+    "ea": "0x140019ca0",
+    "function_file": "functions/140019ca0_IsDriveLetter.md",
+    "matched_imports": [
+      "ntoskrnl!RtlPrefixUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "IsDriveLetter",
+    "prototype": "__int64 __fastcall(PCUNICODE_STRING String2)",
+    "rank_score": 210,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "WaitForRemoteDatabaseSemaphore",
+    "ea": "0x140010e70",
+    "function_file": "functions/140010e70_WaitForRemoteDatabaseSemaphore.md",
+    "matched_imports": [
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "WaitForRemoteDatabaseSemaphore",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 206,
+    "size": 112,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 20,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x140002db0",
+    "function_file": "functions/140002db0_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 31,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 34,
+    "demangled": "memmove",
+    "ea": "0x140002f80",
+    "function_file": "functions/140002f80_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 31,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 41,
+    "demangled": "WPP_SF_",
+    "ea": "0x140001b30",
+    "function_file": "functions/140001b30_WPP_SF.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 26,
+    "size": 47,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 66,
+    "demangled": "WPP_SF_L",
+    "ea": "0x140001ae0",
+    "function_file": "functions/140001ae0_WPP_SF_L.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_L",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 26,
+    "size": 71,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x140002c3c",
+    "function_file": "functions/140002c3c_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 11,
+    "demangled": "__security_check_cookie",
+    "ea": "0x140002d70",
+    "function_file": "functions/140002d70_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 23,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GsDriverEntry",
+    "ea": "0x14001b010",
+    "function_file": "functions/14001b010_GsDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GsDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 18,
+    "demangled": "memset",
+    "ea": "0x140003280",
+    "function_file": "functions/140003280_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 22,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "MountMgrTracelogCache",
+    "ea": "0x14000d3ac",
+    "function_file": "functions/14000d3ac_MountMgrTracelogCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MountMgrTracelogCache",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 16,
+    "size": 225,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "MountMgrTraceDeviceExtension",
+    "ea": "0x14000d0bc",
+    "function_file": "functions/14000d0bc_MountMgrTraceDeviceExtension.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MountMgrTraceDeviceExtension",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 134,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 12,
+    "demangled": "VerifyEpoch",
+    "ea": "0x140012df0",
+    "function_file": "functions/140012df0_VerifyEpoch.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "VerifyEpoch",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 14,
+    "size": 105,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x14001b044",
+    "function_file": "functions/14001b044_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "MountMgrTraceMountedDevice",
+    "ea": "0x14000d148",
+    "function_file": "functions/14000d148_MountMgrTraceMountedDevice.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MountMgrTraceMountedDevice",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 605,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "MountMgrKeepLinksWhenOffline",
+    "ea": "0x14000c9f8",
+    "function_file": "functions/14000c9f8_MountMgrKeepLinksWhenOffline.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MountMgrKeepLinksWhenOffline",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 6,
+    "size": 257,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "MountMgrPrepareVolumeDelete",
+    "ea": "0x14000cb00",
+    "function_file": "functions/14000cb00_MountMgrPrepareVolumeDelete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MountMgrPrepareVolumeDelete",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 6,
+    "size": 297,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "HasDriveLetter",
+    "ea": "0x14000bbe4",
+    "function_file": "functions/14000bbe4_HasDriveLetter.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "HasDriveLetter",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 5,
+    "size": 91,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "MountMgrQueryAutoMount",
+    "ea": "0x14000cc30",
+    "function_file": "functions/14000cc30_MountMgrQueryAutoMount.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MountMgrQueryAutoMount",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64)",
+    "rank_score": 3,
+    "size": 123,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "MountMgrFindBootVolume",
+    "ea": "0x14000a010",
+    "function_file": "functions/14000a010_MountMgrFindBootVolume.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MountMgrFindBootVolume",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 51,
+    "tags": []
+  }
+]
