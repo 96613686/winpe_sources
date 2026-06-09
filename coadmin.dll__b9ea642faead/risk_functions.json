@@ -1,0 +1,3409 @@
+[
+  {
+    "callee_count": 10,
+    "caller_count": 13,
+    "demangled": "CADMCOMW::AuditAccess(ulong,long,ulong,ushort const *,ulong,ushort const *,ulong,_METADATA_RECORD *,_METADATA_RECORD *,ushort const *)",
+    "ea": "0x18000238c",
+    "function_file": "functions/18000238c_CADMCOMW_AuditAccess_ulong_long_ulong_ushort_const_ulong_ushort_const_ulong_METADATA_RECORD_METADATA_RECORD_us.md",
+    "matched_imports": [
+      "AUTHZ!AuthzReportSecurityEventFromParams",
+      "IisRTL!??0STRU@@QEAA@PEAGK@Z",
+      "IisRTL!??1BUFFER@@QEAA@XZ",
+      "IisRTL!??1STRU@@QEAA@XZ",
+      "IisRTL!?Append@STRU@@QEAAJAEBV1@@Z",
+      "IisRTL!?Copy@STRU@@QEAAJAEBV1@@Z",
+      "IisRTL!?Copy@STRU@@QEAAJPEBG@Z",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?AuditAccess@CADMCOMW@@AEAAJKJKPEBGK0KPEAU_METADATA_RECORD@@10@Z",
+    "prototype": "__int64 __usercall@<rax>(CADMCOMW *__hidden this@<rcx>, unsigned int@<edx>, int@<r8d>, unsigned int@<r9d>, const unsigned __int16 *, unsigned int, const unsigned __int16 *, unsigned int, struct _METADATA_RECORD *, struct _METADATA_RECORD *, const unsigned __int16 *)",
+    "rank_score": 7471,
+    "size": 2326,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 0,
+    "demangled": "InitComAdmindata",
+    "ea": "0x18000a0b0",
+    "function_file": "functions/18000a0b0_InitComAdmindata.md",
+    "matched_imports": [
+      "ADVAPI32!AddAccessAllowedAce",
+      "ADVAPI32!CreateWellKnownSid",
+      "ADVAPI32!InitializeAcl",
+      "ADVAPI32!InitializeSecurityDescriptor",
+      "ADVAPI32!SetSecurityDescriptorDacl",
+      "ADVAPI32!SetSecurityDescriptorGroup",
+      "ADVAPI32!SetSecurityDescriptorOwner",
+      "AUTHZ!AuthzInstallSecurityEventSource",
+      "AUTHZ!AuthzRegisterSecurityEventSource",
+      "IisRTL!??0STRU@@QEAA@XZ",
+      "IisRTL!??1STRU@@QEAA@XZ",
+      "IisRTL!?Append@STRU@@QEAAJPEBG@Z",
+      "IisRTL!?Copy@STRU@@QEAAJPEBG@Z",
+      "IisRTL!IISGetPlatformType",
+      "IisRTL!PuCreateDebugPrintsObject",
+      "IisRTL!PuDbgPrint",
+      "IisRTL!PuLoadDebugFlagsFromRegStr",
+      "KERNEL32!GetLastError",
+      "KERNEL32!OutputDebugStringA",
+      "iisutil!?EtwTraceEvent@CEtwTracer@@QEAAKPEBU_GUID@@KZZ",
+      "ole32!CoCreateInstance",
+      "ole32!CoRegisterClassObject",
+      "ole32!CoRevokeClassObject"
+    ],
+    "matched_strings": [
+      "Unable to Create Debug Print Object \n",
+      "System\\CurrentControlSet\\Services\\iisadmin\\Parameters",
+      "[InitComAdmindata] AdminAclInitAclCache failed, hr 0x%8x\n",
+      "InitComAdmindata",
+      "InitComAdmindata",
+      "InitComAdmindata",
+      "\\system32\\inetsrv\\iisres.dll",
+      "[InitComAdmindata] g_ohMasterRootHandle.Init failed, hr 0x%8x\n",
+      "[InitComAdmindata] CADMCOMW::GetPids failed, hr 0x%08x\n",
+      "[InitComAdmindata] Error initialize MDCOM object.  hr = %x\n",
+      "[InitComAdmindata] Error initialize AboWrapper.  hr = %x\n",
+      "[InitComAdmindata] CADMCOMSrvFactoryW failed, error %lx\n",
+      "[InitComAdmindata] CoRegisterClassObject failed, error %lx\n"
+    ],
+    "name": "InitComAdmindata",
+    "prototype": "",
+    "rank_score": 7004,
+    "size": 1546,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "RetrieveCallerInfo(BUFFER *,STRU *,STRU *,STRU *)",
+    "ea": "0x18000eeb8",
+    "function_file": "functions/18000eeb8_RetrieveCallerInfo_BUFFER_STRU_STRU_STRU.md",
+    "matched_imports": [
+      "ADVAPI32!GetLengthSid",
+      "ADVAPI32!GetTokenInformation",
+      "ADVAPI32!LookupAccountSidW",
+      "ADVAPI32!OpenProcessToken",
+      "IisRTL!??0STRU@@QEAA@XZ",
+      "IisRTL!??1BUFFER@@QEAA@XZ",
+      "IisRTL!??1STRU@@QEAA@XZ",
+      "IisRTL!?Append@STRU@@QEAAJAEBV1@@Z",
+      "IisRTL!?Append@STRU@@QEAAJPEBG@Z",
+      "IisRTL!?Copy@STRU@@QEAAJPEBG@Z",
+      "IisRTL!?Resize@BUFFER@@QEAA_NK@Z",
+      "KERNEL32!CloseHandle",
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?RetrieveCallerInfo@@YAJPEAVBUFFER@@PEAVSTRU@@11@Z",
+    "prototype": "__int64 __fastcall(struct BUFFER *, struct STRU *, struct STRU *, struct STRU *)",
+    "rank_score": 5835,
+    "size": 1100,
+    "tags": [
+      "file_ops",
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "TerminateComAdmindata",
+    "ea": "0x18000a6c0",
+    "function_file": "functions/18000a6c0_TerminateComAdmindata.md",
+    "matched_imports": [
+      "IisRTL!PuDbgPrint",
+      "KERNEL32!Sleep",
+      "abocomp!TerminateAboCompatibilityLayer",
+      "iisutil!?EtwTraceEvent@CEtwTracer@@QEAAKPEBU_GUID@@KZZ",
+      "ole32!CoRevokeClassObject"
+    ],
+    "matched_strings": [
+      "[TerminateComAdmindata] Terminating ABO.\n",
+      "TerminateComAdmindata",
+      "[TerminateComAdmindata] Not initialized!\n",
+      "[TerminateComAdmindata] Disabled the ACL cache.\n",
+      "[TerminateComAdmindata] Revoked the ABO class factory %d with hr = 0x%08x.\n",
+      "[TerminateComAdmindata] Sent shutdown notifications with hr = 0x%08x.\n",
+      "[TerminateComAdmindata] Stopped EWR with hr = 0x%08x.\n",
+      "[TerminateComAdmindata] Terminating all ABO objects.\n",
+      "[TerminateComAdmindata] Waiting on factory shutdown, i = %d\n",
+      "[TerminateComAdmindata] Terminated all ABO objects.\n",
+      "[TerminateComAdmindata] Terminated ABO wrapper.\n",
+      "[TerminateComAdmindata] Terminated ABO ROT.\n",
+      "[TerminateComAdmindata] Shutdown metadata with hr = 0x%08x.\n",
+      "[TerminateComAdmindata] Terminated metadata with hr = 0x%08x.\n",
+      "[TerminateComAdmindata] Done with hr = 0x%08x.\n"
+    ],
+    "name": "TerminateComAdmindata",
+    "prototype": "",
+    "rank_score": 4845,
+    "size": 1270,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CADMCOMW::GetCallerPIDAndProcessName(ulong *,STRU *,void * *,int)",
+    "ea": "0x180005514",
+    "function_file": "functions/180005514_CADMCOMW_GetCallerPIDAndProcessName_ulong_STRU_void_int.md",
+    "matched_imports": [
+      "ADVAPI32!ImpersonateLoggedOnUser",
+      "ADVAPI32!OpenThreadToken",
+      "ADVAPI32!RevertToSelf",
+      "IisRTL!?Append@STRU@@QEAAJPEBG@Z",
+      "IisRTL!PuDbgPrint",
+      "KERNEL32!CloseHandle",
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!GetCurrentThread",
+      "KERNEL32!GetLastError",
+      "KERNEL32!OpenProcess",
+      "RPCRT4!I_RpcBindingInqLocalClientPID",
+      "RPCRT4!I_RpcBindingIsClientLocal",
+      "ole32!CoGetCallContext"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "CADMCOMW::GetCallerPIDAndProcessName",
+      "CADMCOMW::GetCallerPIDAndProcessName",
+      "CADMCOMW::GetCallerPIDAndProcessName",
+      "CADMCOMW::GetCallerPIDAndProcessName",
+      "OpenProcess() failed hr=0x%08x.\n",
+      "ImpersonateLoggedOnUser() failed in GetCallerPIDAndProcessName hr=0x%08x.\n"
+    ],
+    "name": "?GetCallerPIDAndProcessName@CADMCOMW@@AEAAJPEAKPEAVSTRU@@PEAPEAXH@Z",
+    "prototype": "int(CADMCOMW *__hidden this, unsigned int *, struct STRU *, void **, int)",
+    "rank_score": 4832,
+    "size": 1022,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 2,
+    "demangled": "CADMCOMW::CreateNewContext(ulong,_MD_CHANGE_OBJECT_W *,int)",
+    "ea": "0x180003590",
+    "function_file": "functions/180003590_CADMCOMW_CreateNewContext_ulong_MD_CHANGE_OBJECT_W_int.md",
+    "matched_imports": [
+      "IisRTL!?ReadLock@CReaderWriterLock3@@QEAAXXZ",
+      "IisRTL!?ReadUnlock@CReaderWriterLock3@@QEAAXXZ",
+      "IisRTL!PuDbgPrint",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!GetLastError",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!SetEvent"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "CADMCOMW::CreateNewContext",
+      "CADMCOMW::CreateNewContext",
+      "CADMCOMW::CreateNewContext",
+      "CADMCOMW::CreateNewContext",
+      "CADMCOMW::CreateNewContext",
+      "CADMCOMW::CreateNewContext",
+      "CADMCOMW::CreateNewContext",
+      "Normalizing the path %S.\n",
+      "NormalizeMDPath failed with 0x%08x.\n",
+      "Checking the path %S with length %d against the scope [%S] with length %d and flags 0x%08x.\n",
+      "No paths in the notification matched the scope.\n",
+      "NOTIFY_CONTEXT::CreateNewContext"
+    ],
+    "name": "?CreateNewContext@CADMCOMW@@AEAAJKPEAU_MD_CHANGE_OBJECT_W@@H@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, unsigned int, struct _MD_CHANGE_OBJECT_W *, int)",
+    "rank_score": 3857,
+    "size": 1791,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "MakePathCanonicalizationProof(ushort const *,int,STRU *)",
+    "ea": "0x180007394",
+    "function_file": "functions/180007394_MakePathCanonicalizationProof_ushort_const_int_STRU.md",
+    "matched_imports": [
+      "IisRTL!??1BUFFER@@QEAA@XZ",
+      "IisRTL!?Append@STRU@@QEAAJPEBG@Z",
+      "IisRTL!?Append@STRU@@QEAAJPEBGK@Z",
+      "IisRTL!?Copy@STRU@@QEAAJPEBG@Z",
+      "IisRTL!?Resize@BUFFER@@QEAA_NK@Z",
+      "IisRTL!?SetLen@STRU@@QEAA_NK@Z",
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!GetLastError",
+      "ntdll!NtQueryInformationFile",
+      "ntdll!RtlNtStatusToDosError"
+    ],
+    "matched_strings": [],
+    "name": "?MakePathCanonicalizationProof@@YAJPEBGHPEAVSTRU@@@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, int, LPCWSTR *)",
+    "rank_score": 3431,
+    "size": 798,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::CImpExpHelp::EnumeratePathsInFile(ushort const *,ushort const *,ulong,ushort *,ulong *)",
+    "ea": "0x18000de90",
+    "function_file": "functions/18000de90_CADMCOMW_CImpExpHelp_EnumeratePathsInFile_ushort_const_ushort_const_ulong_ushort_ulong.md",
+    "matched_imports": [
+      "IISCFG!DllGetSimpleObjectByIDEx",
+      "IisRTL!??0STRU@@QEAA@XZ",
+      "IisRTL!??1STRU@@QEAA@XZ",
+      "IisRTL!PuDbgPrint",
+      "OLEAUT32!__imp_GetErrorInfo",
+      "msvcrt!_wcsdup",
+      "msvcrt!_wcsupr",
+      "msvcrt!free",
+      "msvcrt!wcsstr",
+      "ole32!CoImpersonateClient"
+    ],
+    "matched_strings": [
+      "CADMCOMW::CImpExpHelp::EnumeratePathsInFile",
+      "CADMCOMW::CImpExpHelp::EnumeratePathsInFile",
+      "CADMCOMW::CImpExpHelp::EnumeratePathsInFile",
+      "CADMCOMW::CImpExpHelp::EnumeratePathsInFile",
+      "[%s] DllGetSimpleObjectByIDEx failed with hr = 0x%x.\n",
+      "[%s] Could not get ISTRead2 from IErrorInfo\n, __FUNCTION__",
+      "[%s] Could not read an error row.\n",
+      "[ReadSomeDataFromXML] GetColumnValues failed with hr = 0x%x. Table:%ws. Read row index:%d.\n"
+    ],
+    "name": "?EnumeratePathsInFile@CImpExpHelp@CADMCOMW@@UEAAJPEBG0KPEAGPEAK@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW::CImpExpHelp *this, const unsigned __int16 *, const unsigned __int16 *, int, unsigned __int16 *, unsigned int *)",
+    "rank_score": 2987,
+    "size": 2718,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CADMCOMW::EnumAndStopDependentServices(ulong *,BUFFER *)",
+    "ea": "0x1800046a4",
+    "function_file": "functions/1800046a4_CADMCOMW_EnumAndStopDependentServices_ulong_BUFFER.md",
+    "matched_imports": [
+      "ADVAPI32!CloseServiceHandle",
+      "ADVAPI32!ControlService",
+      "ADVAPI32!EnumDependentServicesW",
+      "ADVAPI32!OpenSCManagerW",
+      "ADVAPI32!OpenServiceW",
+      "IisRTL!?Resize@BUFFER@@QEAA_NK@Z",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?EnumAndStopDependentServices@CADMCOMW@@AEAAJPEAKPEAVBUFFER@@@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, unsigned int *, struct BUFFER *)",
+    "rank_score": 2828,
+    "size": 531,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "CADMCOMW::InitializeCallerWatch(void)",
+    "ea": "0x180006c0c",
+    "function_file": "functions/180006c0c_CADMCOMW_InitializeCallerWatch_void.md",
+    "matched_imports": [
+      "IisRTL!??0STRU@@QEAA@XZ",
+      "IisRTL!??1STRU@@QEAA@XZ",
+      "IisRTL!?Copy@STRU@@QEAAJAEBV1@@Z",
+      "IisRTL!PuDbgPrint",
+      "KERNEL32!CloseHandle",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!GetLastError",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!RegisterWaitForSingleObject",
+      "KERNEL32!UnregisterWaitEx"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "CADMCOMW::InitializeCallerWatch",
+      "CADMCOMW::InitializeCallerWatch"
+    ],
+    "name": "?InitializeCallerWatch@CADMCOMW@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(PVOID Context)",
+    "rank_score": 2600,
+    "size": 559,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "_GetServicePid",
+    "ea": "0x180009bd8",
+    "function_file": "functions/180009bd8_GetServicePid.md",
+    "matched_imports": [
+      "ADVAPI32!CloseServiceHandle",
+      "ADVAPI32!OpenSCManagerW",
+      "ADVAPI32!OpenServiceW",
+      "ADVAPI32!QueryServiceStatusEx",
+      "IisRTL!PuDbgPrint",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "OpenSCManager() failed hr=0x%08x.\n",
+      "_GetServicePid",
+      "_GetServicePid",
+      "_GetServicePid",
+      "OpenService() failed hr=0x%08x.\n",
+      "QueryServiceStatusEx() failed hr=0x%08x.\n"
+    ],
+    "name": "_GetServicePid",
+    "prototype": "",
+    "rank_score": 2596,
+    "size": 466,
+    "tags": [
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "RetrieveOldValue(CADMCOMW *,IMDCOM *,ulong,ulong,ushort const *,_METADATA_RECORD * *)",
+    "ea": "0x18000f468",
+    "function_file": "functions/18000f468_RetrieveOldValue_CADMCOMW_IMDCOM_ulong_ulong_ushort_const_METADATA_RECORD.md",
+    "matched_imports": [
+      "IisRTL!??0STRU@@QEAA@XZ",
+      "IisRTL!??1BUFFER@@QEAA@XZ",
+      "IisRTL!??1STRU@@QEAA@XZ",
+      "IisRTL!?Resize@BUFFER@@QEAA_NK@Z",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?RetrieveOldValue@@YAJPEAVCADMCOMW@@PEAUIMDCOM@@KKPEBGPEAPEAU_METADATA_RECORD@@@Z",
+    "prototype": "__int64 __usercall@<rax>(struct CADMCOMW *@<rcx>, struct IMDCOM *@<rdx>, unsigned int@<r8d>, unsigned int@<r9d>, const unsigned __int16 *, struct _METADATA_RECORD **)",
+    "rank_score": 2423,
+    "size": 703,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "QueryHandleMaxAllowedAccess(IMDCOM *,void *,ulong,ushort const *,COpenHandle *,ulong *,int *)",
+    "ea": "0x18000b988",
+    "function_file": "functions/18000b988_QueryHandleMaxAllowedAccess_IMDCOM_void_ulong_ushort_const_COpenHandle_ulong_int.md",
+    "matched_imports": [
+      "ADVAPI32!AccessCheck",
+      "ADVAPI32!GetSecurityDescriptorControl",
+      "IisRTL!PuDbgPrint",
+      "KERNEL32!CloseHandle",
+      "KERNEL32!GetLastError",
+      "msvcrt!wcscpy_s"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\mb\\coadmin\\admacl.cxx",
+      "inetsrv\\iis\\mb\\coadmin\\admacl.cxx",
+      "inetsrv\\iis\\mb\\coadmin\\admacl.cxx",
+      "inetsrv\\iis\\mb\\coadmin\\admacl.cxx"
+    ],
+    "name": "?QueryHandleMaxAllowedAccess@@YAJPEAUIMDCOM@@PEAXKPEBGPEAVCOpenHandle@@PEAKPEAH@Z",
+    "prototype": "__int64 __fastcall(struct IMDCOM *, void *, DWORD, const unsigned __int16 *, struct COpenHandle *, unsigned int *, int *)",
+    "rank_score": 2000,
+    "size": 1099,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 3,
+    "demangled": "CADMCOMW::RestoreHelper(ushort const *,ulong,ulong,ushort const *,ulong,ulong)",
+    "ea": "0x180008ae0",
+    "function_file": "functions/180008ae0_CADMCOMW_RestoreHelper_ushort_const_ulong_ulong_ushort_const_ulong_ulong.md",
+    "matched_imports": [
+      "ADVAPI32!CloseServiceHandle",
+      "ADVAPI32!OpenSCManagerW",
+      "ADVAPI32!OpenServiceW",
+      "ADVAPI32!StartServiceW",
+      "IisRTL!??1BUFFER@@QEAA@XZ",
+      "IisRTL!PuDbgPrint",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "AccessCheck failed hr = 0x%08x\n",
+      "CADMCOMW::RestoreHelper"
+    ],
+    "name": "?RestoreHelper@CADMCOMW@@AEAAJPEBGKK0KK@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *this, const unsigned __int16 *, unsigned int, unsigned int, const unsigned __int16 *, unsigned int, unsigned int)",
+    "rank_score": 1974,
+    "size": 1396,
+    "tags": [
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "NOTIFY_CONTEXT::NotifyThreadProc(void *)",
+    "ea": "0x180007c20",
+    "function_file": "functions/180007c20_NOTIFY_CONTEXT_NotifyThreadProc_void.md",
+    "matched_imports": [
+      "IisRTL!?WriteLock@CReaderWriterLock3@@QEAAXXZ",
+      "IisRTL!?WriteUnlock@CReaderWriterLock3@@QEAAXXZ",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!WaitForMultipleObjects",
+      "ole32!CoInitializeEx",
+      "ole32!CoUninitialize"
+    ],
+    "matched_strings": [],
+    "name": "?NotifyThreadProc@NOTIFY_CONTEXT@@CAKPEAX@Z",
+    "prototype": "ULONG __stdcall(PVOID Parameter)",
+    "rank_score": 1843,
+    "size": 689,
+    "tags": [
+      "file_ops",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 10,
+    "demangled": "CADMCOMW::AccessCheck(ulong,ushort const *,ACTP_ACCESSTYPE,ACTP_ACCESSTYPE,_METADATA_RECORD *,COpenHandle *,int *,int *)",
+    "ea": "0x180001cec",
+    "function_file": "functions/180001cec_CADMCOMW_AccessCheck_ulong_ushort_const_ACTP_ACCESSTYPE_ACTP_ACCESSTYPE_METADATA_RECORD_COpenHandle_int_int.md",
+    "matched_imports": [
+      "IisRTL!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "inetsrv\\iis\\mb\\coadmin\\admacl.cxx",
+      "inetsrv\\iis\\mb\\coadmin\\admacl.cxx",
+      "inetsrv\\iis\\mb\\coadmin\\admacl.cxx"
+    ],
+    "name": "?AccessCheck@CADMCOMW@@QEAAJKPEBGW4ACTP_ACCESSTYPE@@1PEAU_METADATA_RECORD@@PEAVCOpenHandle@@PEAH4@Z",
+    "prototype": "__int64 __fastcall(__int64, unsigned int, const unsigned __int16 *, unsigned int, unsigned int, unsigned int *, struct COpenHandle *, int *, int *)",
+    "rank_score": 1721,
+    "size": 979,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CADMCOMW::ShutdownCallerWatch(void)",
+    "ea": "0x180009678",
+    "function_file": "functions/180009678_CADMCOMW_ShutdownCallerWatch_void.md",
+    "matched_imports": [
+      "IisRTL!PuDbgPrint",
+      "KERNEL32!CloseHandle",
+      "KERNEL32!GetCurrentThreadId",
+      "KERNEL32!GetLastError",
+      "KERNEL32!SetLastError",
+      "KERNEL32!UnregisterWaitEx"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "CADMCOMW::ShutdownCallerWatch"
+    ],
+    "name": "?ShutdownCallerWatch@CADMCOMW@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this)",
+    "rank_score": 1693,
+    "size": 240,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "DisplayValue(_METADATA_RECORD *,STRU *)",
+    "ea": "0x18000ec98",
+    "function_file": "functions/18000ec98_DisplayValue_METADATA_RECORD_STRU.md",
+    "matched_imports": [
+      "ADVAPI32!ConvertSecurityDescriptorToStringSecurityDescriptorW",
+      "IisRTL!?Copy@STRU@@QEAAJPEBG@Z",
+      "IisRTL!?Copy@STRU@@QEAAJPEBGK@Z",
+      "IisRTL!?Resize@STRU@@QEAAJK@Z",
+      "KERNEL32!GetLastError",
+      "KERNEL32!LocalFree"
+    ],
+    "matched_strings": [],
+    "name": "?DisplayValue@@YAJPEAU_METADATA_RECORD@@PEAVSTRU@@@Z",
+    "prototype": "int(struct _METADATA_RECORD *, struct STRU *)",
+    "rank_score": 1639,
+    "size": 537,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::Import(ushort const *,ushort const *,ushort const *,ushort const *,ulong)",
+    "ea": "0x1800063c0",
+    "function_file": "functions/1800063c0_CADMCOMW_Import_ushort_const_ushort_const_ushort_const_ushort_const_ulong.md",
+    "matched_imports": [
+      "IisRTL!??0STRU@@QEAA@XZ",
+      "IisRTL!??1STRU@@QEAA@XZ",
+      "IisRTL!PuDbgPrint",
+      "ole32!CoImpersonateClient"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "AccessCheck failed hr = 0x%08x\n",
+      "AccessCheck failed hr = 0x%08x\n",
+      "CADMCOMW::Import",
+      "CADMCOMW::Import",
+      "CADMCOMW::Import"
+    ],
+    "name": "?Import@CADMCOMW@@UEAAJPEBG000K@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *this, const unsigned __int16 *, const unsigned __int16 *, unsigned __int16 *, unsigned __int16 *Src, unsigned int)",
+    "rank_score": 1574,
+    "size": 1293,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::RenameKey(ulong,ushort const *,ushort const *)",
+    "ea": "0x1800087f0",
+    "function_file": "functions/1800087f0_CADMCOMW_RenameKey_ulong_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "IisRTL!??0STRU@@QEAA@XZ",
+      "IisRTL!??1STRU@@QEAA@XZ",
+      "IisRTL!?Append@STRU@@QEAAJPEBG@Z",
+      "IisRTL!?Append@STRU@@QEAAJPEBGK@Z",
+      "IisRTL!?Copy@STRU@@QEAAJPEBGK@Z",
+      "msvcrt!wcschr"
+    ],
+    "matched_strings": [],
+    "name": "?RenameKey@CADMCOMW@@UEAAJKPEBG0@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, unsigned int, const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 1440,
+    "size": 697,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "CADMCOMW::Terminate(int)",
+    "ea": "0x180009920",
+    "function_file": "functions/180009920_CADMCOMW_Terminate_int.md",
+    "matched_imports": [
+      "ADMWPROX!ReleaseObjectSecurityContextW",
+      "IisRTL!?WriteLock@CReaderWriterLock3@@QEAAXXZ",
+      "IisRTL!?WriteUnlock@CReaderWriterLock3@@QEAAXXZ",
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!LocalFree",
+      "KERNEL32!Sleep"
+    ],
+    "matched_strings": [],
+    "name": "?Terminate@CADMCOMW@@AEAAXH@Z",
+    "prototype": "void __fastcall(CADMCOMW *__hidden this, int)",
+    "rank_score": 1440,
+    "size": 360,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CADMCOMW::AddNode(ulong,ulong,COpenHandle *,ulong *,ushort const *,ushort const * *,ABO_MAPPER_DISPOSITION)",
+    "ea": "0x1800021e4",
+    "function_file": "functions/1800021e4_CADMCOMW_AddNode_ulong_ulong_COpenHandle_ulong_ushort_const_ushort_const_ABO_MAPPER_DISPOSITION.md",
+    "matched_imports": [
+      "IisRTL!?WriteLock@CReaderWriterLock3@@QEAAXXZ",
+      "IisRTL!?WriteUnlock@CReaderWriterLock3@@QEAAXXZ",
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree"
+    ],
+    "matched_strings": [],
+    "name": "?AddNode@CADMCOMW@@QEAAJKKPEAVCOpenHandle@@PEAKPEBGPEAPEBGW4ABO_MAPPER_DISPOSITION@@@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _DWORD)",
+    "rank_score": 1427,
+    "size": 345,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "NOTIFY_CONTEXT::RemoveAllWork(void)",
+    "ea": "0x180008614",
+    "function_file": "functions/180008614_NOTIFY_CONTEXT_RemoveAllWork_void.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!GetCurrentThreadId",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!Sleep"
+    ],
+    "matched_strings": [],
+    "name": "?RemoveAllWork@NOTIFY_CONTEXT@@SAXXZ",
+    "prototype": "void(void)",
+    "rank_score": 1417,
+    "size": 464,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "CADMCOMW::Init(void)",
+    "ea": "0x1800068d4",
+    "function_file": "functions/1800068d4_CADMCOMW_Init_void.md",
+    "matched_imports": [
+      "IisRTL!PuDbgPrint",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "ole32!CoCreateFreeThreadedMarshaler",
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [
+      " CoCreateInstance(MDCOM) failed, error 0x%08x\n",
+      "CADMCOMW::Init",
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "CImpIMDCOMSINKW failed, error 0x%08x\n"
+    ],
+    "name": "?Init@CADMCOMW@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this)",
+    "rank_score": 1416,
+    "size": 818,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "DisplayBinary(uchar *,ulong,STRU *)",
+    "ea": "0x18000ea44",
+    "function_file": "functions/18000ea44_DisplayBinary_uchar_ulong_STRU.md",
+    "matched_imports": [
+      "IisRTL!?Append@STRU@@QEAAJPEBG@Z",
+      "IisRTL!?Copy@STRU@@QEAAJPEBG@Z",
+      "IisRTL!?Resize@STRU@@QEAAJK@Z",
+      "msvcrt!_ultow"
+    ],
+    "matched_strings": [],
+    "name": "?DisplayBinary@@YAJPEAEKPEAVSTRU@@@Z",
+    "prototype": "__int64 __fastcall(unsigned __int8 *, unsigned int, struct STRU *)",
+    "rank_score": 1415,
+    "size": 259,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CADMCOMW::InitObjectList(void)",
+    "ea": "0x18000d9e4",
+    "function_file": "functions/18000d9e4_CADMCOMW_InitObjectList_void.md",
+    "matched_imports": [
+      "IisRTL!CreateRefTraceLog",
+      "IisRTL!IISInitializeCriticalSection",
+      "KERNEL32!CreateEventA",
+      "KERNEL32!CreateThread",
+      "KERNEL32!GetLastError",
+      "KERNEL32!InitializeCriticalSectionAndSpinCount"
+    ],
+    "matched_strings": [],
+    "name": "?InitObjectList@CADMCOMW@@SAXXZ",
+    "prototype": "void(void)",
+    "rank_score": 1414,
+    "size": 271,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "CADMCOMW::TerminateObjectList(void)",
+    "ea": "0x18000dd4c",
+    "function_file": "functions/18000dd4c_CADMCOMW_TerminateObjectList_void.md",
+    "matched_imports": [
+      "IisRTL!DestroyRefTraceLog",
+      "KERNEL32!CloseHandle",
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!SignalObjectAndWait"
+    ],
+    "matched_strings": [],
+    "name": "?TerminateObjectList@CADMCOMW@@SAXXZ",
+    "prototype": "void(void)",
+    "rank_score": 1414,
+    "size": 224,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "CADMCOMW::NotifySinks(ulong,ulong,_MD_CHANGE_OBJECT_W * const,int)",
+    "ea": "0x180007a50",
+    "function_file": "functions/180007a50_CADMCOMW_NotifySinks_ulong_ulong_MD_CHANGE_OBJECT_W_const_int.md",
+    "matched_imports": [
+      "IisRTL!?ReadLock@CReaderWriterLock3@@QEAAXXZ",
+      "IisRTL!?ReadUnlock@CReaderWriterLock3@@QEAAXXZ",
+      "IisRTL!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "CADMCOMW::NotifySinks",
+      "CADMCOMW::NotifySinks",
+      "CADMCOMW::NotifySinks",
+      "CreateNewContext failed with 0x%08x.\n"
+    ],
+    "name": "?NotifySinks@CADMCOMW@@QEAAJKKQEAU_MD_CHANGE_OBJECT_W@@H@Z",
+    "prototype": "__int64 __usercall@<rax>(CADMCOMW *__hidden this@<rcx>, unsigned int@<edx>, unsigned int@<r8d>, struct _MD_CHANGE_OBJECT_W *const@<r9>, int)",
+    "rank_score": 1299,
+    "size": 443,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::Export(ushort const *,ushort const *,ushort const *,ulong)",
+    "ea": "0x180004dd0",
+    "function_file": "functions/180004dd0_CADMCOMW_Export_ushort_const_ushort_const_ushort_const_ulong.md",
+    "matched_imports": [
+      "IisRTL!??0STRU@@QEAA@XZ",
+      "IisRTL!??1STRU@@QEAA@XZ",
+      "IisRTL!PuDbgPrint",
+      "ole32!CoImpersonateClient"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "AccessCheck failed hr = 0x%08x\n",
+      "AccessCheck failed hr = 0x%08x\n",
+      "CADMCOMW::Export",
+      "CADMCOMW::Export"
+    ],
+    "name": "?Export@CADMCOMW@@UEAAJPEBG00K@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *this, const unsigned __int16 *, const unsigned __int16 *, wchar_t *, unsigned int)",
+    "rank_score": 1272,
+    "size": 625,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CADMCOMW::RemoveAllPendingNotifications(int)",
+    "ea": "0x1800084a0",
+    "function_file": "functions/1800084a0_CADMCOMW_RemoveAllPendingNotifications_int.md",
+    "matched_imports": [
+      "IisRTL!?ReadLock@CReaderWriterLock3@@QEAAXXZ",
+      "IisRTL!?ReadUnlock@CReaderWriterLock3@@QEAAXXZ",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!GetCurrentThreadId",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!Sleep"
+    ],
+    "matched_strings": [],
+    "name": "?RemoveAllPendingNotifications@CADMCOMW@@QEAAJH@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, int)",
+    "rank_score": 1227,
+    "size": 366,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "GetThreadToken(void * *)",
+    "ea": "0x18000b624",
+    "function_file": "functions/18000b624_GetThreadToken_void.md",
+    "matched_imports": [
+      "ADVAPI32!OpenThreadToken",
+      "KERNEL32!GetCurrentThread",
+      "KERNEL32!GetLastError",
+      "ole32!CoGetCallContext"
+    ],
+    "matched_strings": [],
+    "name": "?GetThreadToken@@YAJPEAPEAX@Z",
+    "prototype": "__int64 __fastcall(PHANDLE TokenHandle)",
+    "rank_score": 1226,
+    "size": 257,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x180001954",
+    "function_file": "functions/180001954_security_init_cookie.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcessId",
+      "KERNEL32!GetCurrentThreadId",
+      "KERNEL32!GetSystemTimeAsFileTime",
+      "KERNEL32!GetTickCount",
+      "KERNEL32!QueryPerformanceCounter"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 1223,
+    "size": 221,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "AdminAclNotifyClose(void *,ulong)",
+    "ea": "0x18000b08c",
+    "function_file": "functions/18000b08c_AdminAclNotifyClose_void_ulong.md",
+    "matched_imports": [
+      "IisRTL!?ConvertSharedToExclusive@CReaderWriterLock3@@QEAAXXZ",
+      "IisRTL!?ReadUnlock@CReaderWriterLock3@@QEAAXXZ",
+      "IisRTL!?TryReadLock@CReaderWriterLock3@@QEAA_NXZ",
+      "IisRTL!?WriteLock@CReaderWriterLock3@@QEAAXXZ",
+      "IisRTL!?WriteUnlock@CReaderWriterLock3@@QEAAXXZ"
+    ],
+    "matched_strings": [],
+    "name": "?AdminAclNotifyClose@@YAHPEAXK@Z",
+    "prototype": "__int64 __fastcall(void *, unsigned int)",
+    "rank_score": 1218,
+    "size": 336,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CallRegisterComponent(ushort const *,char *)",
+    "ea": "0x18000f998",
+    "function_file": "functions/18000f998_CallRegisterComponent_ushort_const_char.md",
+    "matched_imports": [
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!GetSystemDirectoryW",
+      "KERNEL32!LoadLibraryExW",
+      "msvcrt!wcscat_s"
+    ],
+    "matched_strings": [
+      "coadmin.dll",
+      "\\inetsrv\\iisreg.dll"
+    ],
+    "name": "?CallRegisterComponent@@YAJPEBGPEAD@Z",
+    "prototype": "int(const unsigned __int16 *, char *)",
+    "rank_score": 1106,
+    "size": 207,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "DllUnregisterServer",
+    "ea": "0x180009f60",
+    "function_file": "functions/180009f60_DllUnregisterServer.md",
+    "matched_imports": [
+      "IisRTL!IISInitializeCriticalSection",
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetVersionExA"
+    ],
+    "matched_strings": [
+      "MS IIS DCOM Server",
+      "MS IIS DCOM Server",
+      "MS IIS DCOM Client",
+      "MS IIS DCOM Client",
+      "RemoveComponent"
+    ],
+    "name": "DllUnregisterServer",
+    "prototype": "HRESULT __stdcall()",
+    "rank_score": 1037,
+    "size": 322,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "COpenHandle::GetAcl(IMDCOM *,ushort const *,uchar * *,ulong *)",
+    "ea": "0x18000b3bc",
+    "function_file": "functions/18000b3bc_COpenHandle_GetAcl_IMDCOM_ushort_const_uchar_ulong.md",
+    "matched_imports": [
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "msvcrt!_wcsnicmp",
+      "msvcrt!wcschr"
+    ],
+    "matched_strings": [],
+    "name": "?GetAcl@COpenHandle@@QEAAHPEAUIMDCOM@@PEBGPEAPEAEPEAK@Z",
+    "prototype": "int(COpenHandle *__hidden this, struct IMDCOM *, const unsigned __int16 *, unsigned __int8 **, unsigned int *)",
+    "rank_score": 1028,
+    "size": 609,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "RetrievePropertyName(IMDCOM *,ulong,STRU *)",
+    "ea": "0x18000f730",
+    "function_file": "functions/18000f730_RetrievePropertyName_IMDCOM_ulong_STRU.md",
+    "matched_imports": [
+      "IisRTL!??0STRU@@QEAA@XZ",
+      "IisRTL!??1BUFFER@@QEAA@XZ",
+      "IisRTL!??1STRU@@QEAA@XZ",
+      "IisRTL!?Copy@STRU@@QEAAJPEBG@Z",
+      "IisRTL!?Resize@BUFFER@@QEAA_NK@Z"
+    ],
+    "matched_strings": [],
+    "name": "?RetrievePropertyName@@YAJPEAUIMDCOM@@KPEAVSTRU@@@Z",
+    "prototype": "__int64 __fastcall(struct IMDCOM *, unsigned int, struct STRU *)",
+    "rank_score": 1028,
+    "size": 467,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "RetrieveFullPath(CADMCOMW *,ulong,ushort const *,STRU *)",
+    "ea": "0x18000f30c",
+    "function_file": "functions/18000f30c_RetrieveFullPath_CADMCOMW_ulong_ushort_const_STRU.md",
+    "matched_imports": [
+      "IisRTL!?Append@STRU@@QEAAJPEBG@Z",
+      "IisRTL!?Copy@STRU@@QEAAJPEBG@Z",
+      "IisRTL!?SetLen@STRU@@QEAA_NK@Z",
+      "msvcrt!wcschr"
+    ],
+    "matched_strings": [],
+    "name": "?RetrieveFullPath@@YAJPEAVCADMCOMW@@KPEBGPEAVSTRU@@@Z",
+    "prototype": "__int64 __fastcall(struct CADMCOMW *, unsigned int, const unsigned __int16 *, struct STRU *)",
+    "rank_score": 1027,
+    "size": 340,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CADMCOMW::DeleteNode(ulong)",
+    "ea": "0x1800042bc",
+    "function_file": "functions/1800042bc_CADMCOMW_DeleteNode_ulong.md",
+    "matched_imports": [
+      "IisRTL!?WriteLock@CReaderWriterLock3@@QEAAXXZ",
+      "IisRTL!?WriteUnlock@CReaderWriterLock3@@QEAAXXZ",
+      "KERNEL32!LocalFree"
+    ],
+    "matched_strings": [],
+    "name": "?DeleteNode@CADMCOMW@@QEAAKK@Z",
+    "prototype": "unsigned int __fastcall(CADMCOMW *__hidden this, unsigned int)",
+    "rank_score": 1024,
+    "size": 198,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "CADMCOMW::ShutDownObjects(void)",
+    "ea": "0x18000dc5c",
+    "function_file": "functions/18000dc5c_CADMCOMW_ShutDownObjects_void.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!SleepEx"
+    ],
+    "matched_strings": [],
+    "name": "?ShutDownObjects@CADMCOMW@@SAXXZ",
+    "prototype": "void(void)",
+    "rank_score": 1019,
+    "size": 231,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CADMCOMW::DisconnectOrphaned(int)",
+    "ea": "0x18000455c",
+    "function_file": "functions/18000455c_CADMCOMW_DisconnectOrphaned_int.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentThreadId",
+      "iisutil!?EtwTraceEvent@CEtwTracer@@QEAAKPEBU_GUID@@KZZ",
+      "ole32!CoDisconnectObject"
+    ],
+    "matched_strings": [],
+    "name": "?DisconnectOrphaned@CADMCOMW@@AEAAJH@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, int)",
+    "rank_score": 1017,
+    "size": 320,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "GetProcessName(void *,STRU *)",
+    "ea": "0x180006198",
+    "function_file": "functions/180006198_GetProcessName_void_STRU.md",
+    "matched_imports": [
+      "IisRTL!??1BUFFER@@QEAA@XZ",
+      "IisRTL!?Copy@STRU@@QEAAJPEBG@Z",
+      "IisRTL!?Resize@BUFFER@@QEAA_NK@Z",
+      "KERNEL32!GetLastError",
+      "KERNEL32!QueryFullProcessImageNameW"
+    ],
+    "matched_strings": [],
+    "name": "?GetProcessName@@YAJPEAXPEAVSTRU@@@Z",
+    "prototype": "__int64 __fastcall(HANDLE hProcess, struct STRU *)",
+    "rank_score": 1015,
+    "size": 277,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CADMCOMW::NormalizeMDPath(ushort const *,ulong,ushort *,ulong,ulong *)",
+    "ea": "0x1800076b8",
+    "function_file": "functions/1800076b8_CADMCOMW_NormalizeMDPath_ushort_const_ulong_ushort_ulong_ulong.md",
+    "matched_imports": [
+      "IisRTL!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "Normalizing the path %S into buffer with length %d.\n",
+      "CADMCOMW::NormalizeMDPath",
+      "CADMCOMW::NormalizeMDPath",
+      "CADMCOMW::NormalizeMDPath",
+      "The input path %S cannot fit the output buffer with length %d.\n",
+      "Normalizing the path %S %s with 0x%08x and the normalized path is %S with length %d.\n"
+    ],
+    "name": "?NormalizeMDPath@CADMCOMW@@AEAAJPEBGKPEAGKPEAK@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, const unsigned __int16 *, unsigned int, unsigned __int16 *, unsigned int, unsigned int *)",
+    "rank_score": 985,
+    "size": 492,
+    "tags": [
+      "reparse_path",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::CallerWatchWaitOrTimerCallback(void *,uchar)",
+    "ea": "0x180002e60",
+    "function_file": "functions/180002e60_CADMCOMW_CallerWatchWaitOrTimerCallback_void_uchar.md",
+    "matched_imports": [
+      "IisRTL!PuDbgPrint",
+      "ole32!CoInitializeEx",
+      "ole32!CoUninitialize"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "CADMCOMW::CallerWatchWaitOrTimerCallback",
+      "CADMCOMW::CallerWatchWaitOrTimerCallback"
+    ],
+    "name": "?CallerWatchWaitOrTimerCallback@CADMCOMW@@CAXPEAXE@Z",
+    "prototype": "void __stdcall(PVOID, BOOLEAN)",
+    "rank_score": 973,
+    "size": 251,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::DeleteData(ulong,ushort const *,ulong,ulong)",
+    "ea": "0x180003fd0",
+    "function_file": "functions/180003fd0_CADMCOMW_DeleteData_ulong_ushort_const_ulong_ulong.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?DeleteData@CADMCOMW@@UEAAJKPEBGKK@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, unsigned int, const unsigned __int16 *, unsigned int, unsigned int)",
+    "rank_score": 829,
+    "size": 454,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::SetData(ulong,ushort const *,_METADATA_RECORD *)",
+    "ea": "0x180009200",
+    "function_file": "functions/180009200_CADMCOMW_SetData_ulong_ushort_const_METADATA_RECORD.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?SetData@CADMCOMW@@UEAAJKPEBGPEAU_METADATA_RECORD@@@Z",
+    "prototype": "__int64 __fastcall(struct IMDCOM **this, unsigned int, const unsigned __int16 *, struct _METADATA_RECORD *)",
+    "rank_score": 829,
+    "size": 436,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "CADMCOMW::StopNotifications(int)",
+    "ea": "0x1800097e4",
+    "function_file": "functions/1800097e4_CADMCOMW_StopNotifications_int.md",
+    "matched_imports": [
+      "IisRTL!?WriteLock@CReaderWriterLock3@@QEAAXXZ",
+      "IisRTL!?WriteUnlock@CReaderWriterLock3@@QEAAXXZ"
+    ],
+    "matched_strings": [],
+    "name": "?StopNotifications@CADMCOMW@@AEAAJH@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, int)",
+    "rank_score": 828,
+    "size": 308,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CImpIMDCOMSINKW::ComMDEventNotify(ulong)",
+    "ea": "0x18000c1b0",
+    "function_file": "functions/18000c1b0_CImpIMDCOMSINKW_ComMDEventNotify_ulong.md",
+    "matched_imports": [
+      "IisRTL!?ReadLock@CReaderWriterLock3@@QEAAXXZ",
+      "IisRTL!?ReadUnlock@CReaderWriterLock3@@QEAAXXZ",
+      "IisRTL!?WriteLock@CReaderWriterLock3@@QEAAXXZ",
+      "IisRTL!?WriteUnlock@CReaderWriterLock3@@QEAAXXZ"
+    ],
+    "matched_strings": [],
+    "name": "?ComMDEventNotify@CImpIMDCOMSINKW@@UEAAJK@Z",
+    "prototype": "__int64 __fastcall(CImpIMDCOMSINKW *__hidden this, unsigned int)",
+    "rank_score": 823,
+    "size": 179,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CImpIMDCOMSINKW::ComMDShutdownNotify(void)",
+    "ea": "0x18000c270",
+    "function_file": "functions/18000c270_CImpIMDCOMSINKW_ComMDShutdownNotify_void.md",
+    "matched_imports": [
+      "IisRTL!?ReadLock@CReaderWriterLock3@@QEAAXXZ",
+      "IisRTL!?ReadUnlock@CReaderWriterLock3@@QEAAXXZ",
+      "IisRTL!?WriteLock@CReaderWriterLock3@@QEAAXXZ",
+      "IisRTL!?WriteUnlock@CReaderWriterLock3@@QEAAXXZ"
+    ],
+    "matched_strings": [],
+    "name": "?ComMDShutdownNotify@CImpIMDCOMSINKW@@UEAAJXZ",
+    "prototype": "__int64 __fastcall(CImpIMDCOMSINKW *__hidden this)",
+    "rank_score": 822,
+    "size": 114,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CADMCOMW::FindClosestProp(ulong,ushort const *,ushort * *,ulong,ulong,ulong,ulong,int)",
+    "ea": "0x180005048",
+    "function_file": "functions/180005048_CADMCOMW_FindClosestProp_ulong_ushort_const_ushort_ulong_ulong_ulong_ulong_int.md",
+    "matched_imports": [
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "msvcrt!wcschr"
+    ],
+    "matched_strings": [],
+    "name": "?FindClosestProp@CADMCOMW@@QEAAJKPEBGPEAPEAGKKKKH@Z",
+    "prototype": "__int64 __usercall@<rax>(CADMCOMW *__hidden this@<rcx>, unsigned int@<edx>, const unsigned __int16 *@<r8>, unsigned __int16 **@<r9>, unsigned int, unsigned int, unsigned int, unsigned int, int)",
+    "rank_score": 820,
+    "size": 576,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "COConnectionPoint::Terminate(int)",
+    "ea": "0x18000d6a4",
+    "function_file": "functions/18000d6a4_COConnectionPoint_Terminate_int.md",
+    "matched_imports": [
+      "IisRTL!?WriteLock@CReaderWriterLock3@@QEAAXXZ",
+      "IisRTL!?WriteUnlock@CReaderWriterLock3@@QEAAXXZ",
+      "iisutil!?EtwTraceEvent@CEtwTracer@@QEAAKPEBU_GUID@@KZZ"
+    ],
+    "matched_strings": [],
+    "name": "?Terminate@COConnectionPoint@@QEAAJH@Z",
+    "prototype": "__int64 __fastcall(COConnectionPoint *__hidden this, int)",
+    "rank_score": 819,
+    "size": 479,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "DisplayAsHex(ulong,STRU *)",
+    "ea": "0x18000e978",
+    "function_file": "functions/18000e978_DisplayAsHex_ulong_STRU.md",
+    "matched_imports": [
+      "IisRTL!??0STRU@@QEAA@XZ",
+      "IisRTL!??1STRU@@QEAA@XZ",
+      "IisRTL!?Append@STRU@@QEAAJAEBV1@@Z",
+      "IisRTL!?Copy@STRU@@QEAAJPEBG@Z"
+    ],
+    "matched_strings": [],
+    "name": "?DisplayAsHex@@YAJKPEAVSTRU@@@Z",
+    "prototype": "__int64 __fastcall(unsigned int, struct STRU *)",
+    "rank_score": 816,
+    "size": 197,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CAdminAclCache::Find(void *,ulong,ushort const *,CAdminAcl * *)",
+    "ea": "0x18000b1e4",
+    "function_file": "functions/18000b1e4_CAdminAclCache_Find_void_ulong_ushort_const_CAdminAcl.md",
+    "matched_imports": [
+      "IisRTL!?ReadUnlock@CReaderWriterLock3@@QEAAXXZ",
+      "IisRTL!?TryConvertSharedToExclusive@CReaderWriterLock3@@QEAA_NXZ",
+      "IisRTL!?TryReadLock@CReaderWriterLock3@@QEAA_NXZ",
+      "IisRTL!?WriteUnlock@CReaderWriterLock3@@QEAAXXZ"
+    ],
+    "matched_strings": [],
+    "name": "?Find@CAdminAclCache@@QEAAJPEAXKPEBGPEAPEAVCAdminAcl@@@Z",
+    "prototype": "int(CAdminAclCache *__hidden this, void *, unsigned int, const unsigned __int16 *, struct CAdminAcl **)",
+    "rank_score": 815,
+    "size": 231,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "COConnectionPoint::Unadvise(ulong)",
+    "ea": "0x18000d890",
+    "function_file": "functions/18000d890_COConnectionPoint_Unadvise_ulong.md",
+    "matched_imports": [
+      "IisRTL!?ConvertExclusiveToShared@CReaderWriterLock3@@QEAAXXZ",
+      "IisRTL!?ReadUnlock@CReaderWriterLock3@@QEAAXXZ",
+      "IisRTL!?WriteLock@CReaderWriterLock3@@QEAAXXZ",
+      "IisRTL!?WriteUnlock@CReaderWriterLock3@@QEAAXXZ"
+    ],
+    "matched_strings": [],
+    "name": "?Unadvise@COConnectionPoint@@UEAAJK@Z",
+    "prototype": "__int64 __fastcall(COConnectionPoint *__hidden this, unsigned int)",
+    "rank_score": 814,
+    "size": 148,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "NOTIFY_CONTEXT::~NOTIFY_CONTEXT(void)",
+    "ea": "0x180001c3c",
+    "function_file": "functions/180001c3c_NOTIFY_CONTEXT_NOTIFY_CONTEXT_void.md",
+    "matched_imports": [
+      "IisRTL!?ConvertSharedToExclusive@CReaderWriterLock3@@QEAAXXZ",
+      "IisRTL!?ReadLock@CReaderWriterLock3@@QEAAXXZ",
+      "IisRTL!?ReadUnlock@CReaderWriterLock3@@QEAAXXZ",
+      "IisRTL!?WriteUnlock@CReaderWriterLock3@@QEAAXXZ"
+    ],
+    "matched_strings": [],
+    "name": "??1NOTIFY_CONTEXT@@AEAA@XZ",
+    "prototype": "void __fastcall(NOTIFY_CONTEXT *__hidden this)",
+    "rank_score": 808,
+    "size": 169,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 23,
+    "demangled": "CADMCOMW::LookupAndAccessCheck(ulong,ulong *,ushort const *,ACTP_ACCESSTYPE,ACTP_ACCESSTYPE,_METADATA_RECORD *,int *,ushort const * *,ABO_MAPPER_DISPOSITION *,int *)",
+    "ea": "0x18000716c",
+    "function_file": "functions/18000716c_CADMCOMW_LookupAndAccessCheck_ulong_ulong_ushort_const_ACTP_ACCESSTYPE_ACTP_ACCESSTYPE_METADATA_RECORD_int_ush.md",
+    "matched_imports": [
+      "IisRTL!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx"
+    ],
+    "name": "?LookupAndAccessCheck@CADMCOMW@@QEAAJKPEAKPEBGW4ACTP_ACCESSTYPE@@2PEAU_METADATA_RECORD@@PEAHPEAPEBGPEAW4ABO_MAPPER_DISPOSITION@@4@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *, unsigned int, unsigned int *, __int64, unsigned int, int, __int64, __int64, _QWORD *, _DWORD *, __int64)",
+    "rank_score": 772,
+    "size": 545,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "IsSchemaForPropertyVolatile(IMDCOM *,ulong,int *)",
+    "ea": "0x180006f0c",
+    "function_file": "functions/180006f0c_IsSchemaForPropertyVolatile_IMDCOM_ulong_int.md",
+    "matched_imports": [
+      "IisRTL!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx"
+    ],
+    "name": "?IsSchemaForPropertyVolatile@@YAJPEAUIMDCOM@@KPEAH@Z",
+    "prototype": "__int64 __fastcall(struct IMDCOM *, unsigned int, int *)",
+    "rank_score": 735,
+    "size": 339,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__raise_securityfailure",
+    "ea": "0x180001654",
+    "function_file": "functions/180001654_raise_securityfailure.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!SetUnhandledExceptionFilter",
+      "KERNEL32!TerminateProcess",
+      "KERNEL32!UnhandledExceptionFilter"
+    ],
+    "matched_strings": [],
+    "name": "__raise_securityfailure",
+    "prototype": "__int64 __fastcall(struct _EXCEPTION_POINTERS *ExceptionInfo)",
+    "rank_score": 711,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "AccessTypeCheck(ACTP_ACCESSTYPE,ACTP_ACCESSTYPE,ulong,ulong,ulong *)",
+    "ea": "0x18000ac10",
+    "function_file": "functions/18000ac10_AccessTypeCheck_ACTP_ACCESSTYPE_ACTP_ACCESSTYPE_ulong_ulong_ulong.md",
+    "matched_imports": [
+      "IisRTL!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\mb\\coadmin\\admacl.cxx"
+    ],
+    "name": "?AccessTypeCheck@@YAJW4ACTP_ACCESSTYPE@@0KKPEAK@Z",
+    "prototype": "__int64 __fastcall(int, int, int, unsigned int, int *)",
+    "rank_score": 658,
+    "size": 741,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 6,
+    "demangled": "CAdminAclCache::Flush(void)",
+    "ea": "0x18000b2d4",
+    "function_file": "functions/18000b2d4_CAdminAclCache_Flush_void.md",
+    "matched_imports": [
+      "IisRTL!?WriteLock@CReaderWriterLock3@@QEAAXXZ",
+      "IisRTL!?WriteUnlock@CReaderWriterLock3@@QEAAXXZ"
+    ],
+    "matched_strings": [],
+    "name": "?Flush@CAdminAclCache@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(CAdminAclCache *__hidden this)",
+    "rank_score": 622,
+    "size": 226,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CADMCOMW::InitializeAboWrapper(void)",
+    "ea": "0x18000dafc",
+    "function_file": "functions/18000dafc_CADMCOMW_InitializeAboWrapper_void.md",
+    "matched_imports": [
+      "abocomp!GetAboWrapper",
+      "abocomp!InitializeAboCompatibilityLayer",
+      "abocomp!TerminateAboCompatibilityLayer"
+    ],
+    "matched_strings": [],
+    "name": "?InitializeAboWrapper@CADMCOMW@@SAJXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 615,
+    "size": 165,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "COpenHandle::Init(ulong,ushort const *,ushort const *)",
+    "ea": "0x18000b72c",
+    "function_file": "functions/18000b72c_COpenHandle_Init_ulong_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!LocalAlloc",
+      "msvcrt!wcschr"
+    ],
+    "matched_strings": [],
+    "name": "?Init@COpenHandle@@QEAAJKPEBG0@Z",
+    "prototype": "int(COpenHandle *__hidden this, unsigned int, const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 606,
+    "size": 311,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CADMCOMW::GetPids(void)",
+    "ea": "0x180006128",
+    "function_file": "functions/180006128_CADMCOMW_GetPids_void.md",
+    "matched_imports": [
+      "IisRTL!PuDbgPrint",
+      "KERNEL32!GetCurrentProcessId"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "_GetServicePid(RpcSs) failed hr=0x%08x.\n",
+      "CADMCOMW::GetPids"
+    ],
+    "name": "?GetPids@CADMCOMW@@SAJXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 553,
+    "size": 105,
+    "tags": [
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "CADMCOMW::OpenKeyHelper(ulong,ushort const *,ulong,ulong,ulong *)",
+    "ea": "0x180007f40",
+    "function_file": "functions/180007f40_CADMCOMW_OpenKeyHelper_ulong_ushort_const_ulong_ulong_ulong.md",
+    "matched_imports": [
+      "IisRTL!PuDbgPrint",
+      "msvcrt!wcsstr"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx"
+    ],
+    "name": "?OpenKeyHelper@CADMCOMW@@QEAAJKPEBGKKPEAK@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *this, unsigned int, wchar_t *Str, unsigned int, unsigned int, unsigned int *)",
+    "rank_score": 474,
+    "size": 748,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "COConnectionPoint::InternalEnumSinks(IMSAdminBaseSinkW * * *,ulong *)",
+    "ea": "0x18000cfd4",
+    "function_file": "functions/18000cfd4_COConnectionPoint_InternalEnumSinks_IMSAdminBaseSinkW_ulong.md",
+    "matched_imports": [
+      "IisRTL!?ReadLock@CReaderWriterLock3@@QEAAXXZ",
+      "IisRTL!?ReadUnlock@CReaderWriterLock3@@QEAAXXZ"
+    ],
+    "matched_strings": [],
+    "name": "?InternalEnumSinks@COConnectionPoint@@QEAAJPEAPEAPEAUIMSAdminBaseSinkW@@PEAK@Z",
+    "prototype": "__int64 __fastcall(COConnectionPoint *__hidden this, struct IMSAdminBaseSinkW ***, unsigned int *)",
+    "rank_score": 440,
+    "size": 420,
+    "tags": [
+      "file_ops",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::SetLastChangeTime(ulong,ushort const *,_FILETIME *,int)",
+    "ea": "0x180009520",
+    "function_file": "functions/180009520_CADMCOMW_SetLastChangeTime_ulong_ushort_const_FILETIME_int.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!LocalFileTimeToFileTime"
+    ],
+    "matched_strings": [],
+    "name": "?SetLastChangeTime@CADMCOMW@@UEAAJKPEBGPEAU_FILETIME@@H@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, unsigned int, const unsigned __int16 *, FILETIME *lpLocalFileTime, int)",
+    "rank_score": 426,
+    "size": 336,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CAboSink::SinkConfigurationChange(ulong,_MD_CHANGE_OBJECT_W *)",
+    "ea": "0x180009770",
+    "function_file": "functions/180009770_CAboSink_SinkConfigurationChange_ulong_MD_CHANGE_OBJECT_W.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?SinkConfigurationChange@CAboSink@@UEAAJKPEAU_MD_CHANGE_OBJECT_W@@@Z",
+    "prototype": "int(CAboSink *__hidden this, unsigned int, struct _MD_CHANGE_OBJECT_W *)",
+    "rank_score": 422,
+    "size": 110,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CImpIMDCOMSINKW::ComMDSinkNotify(ulong,ulong,_MD_CHANGE_OBJECT_W * const)",
+    "ea": "0x18000c2f0",
+    "function_file": "functions/18000c2f0_CImpIMDCOMSINKW_ComMDSinkNotify_ulong_ulong_MD_CHANGE_OBJECT_W_const.md",
+    "matched_imports": [
+      "IisRTL!?ReadLock@CReaderWriterLock3@@QEAAXXZ",
+      "IisRTL!?ReadUnlock@CReaderWriterLock3@@QEAAXXZ"
+    ],
+    "matched_strings": [],
+    "name": "?ComMDSinkNotify@CImpIMDCOMSINKW@@UEAAJKKQEAU_MD_CHANGE_OBJECT_W@@@Z",
+    "prototype": "int(CImpIMDCOMSINKW *__hidden this, unsigned int, unsigned int, struct _MD_CHANGE_OBJECT_W *const)",
+    "rank_score": 422,
+    "size": 95,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "CADMCOMW::Lookup(ulong,ulong *,ulong *,COpenHandle * *)",
+    "ea": "0x180007068",
+    "function_file": "functions/180007068_CADMCOMW_Lookup_ulong_ulong_ulong_COpenHandle.md",
+    "matched_imports": [
+      "IisRTL!?ReadLock@CReaderWriterLock3@@QEAAXXZ",
+      "IisRTL!?ReadUnlock@CReaderWriterLock3@@QEAAXXZ"
+    ],
+    "matched_strings": [],
+    "name": "?Lookup@CADMCOMW@@QEAAJKPEAK0PEAPEAVCOpenHandle@@@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, unsigned int, unsigned int *, unsigned int *, struct COpenHandle **)",
+    "rank_score": 421,
+    "size": 251,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "COConnectionPoint::EnumConnections(IEnumConnections * *)",
+    "ea": "0x18000ca70",
+    "function_file": "functions/18000ca70_COConnectionPoint_EnumConnections_IEnumConnections.md",
+    "matched_imports": [
+      "IisRTL!?ReadLock@CReaderWriterLock3@@QEAAXXZ",
+      "IisRTL!?ReadUnlock@CReaderWriterLock3@@QEAAXXZ"
+    ],
+    "matched_strings": [],
+    "name": "?EnumConnections@COConnectionPoint@@UEAAJPEAPEAUIEnumConnections@@@Z",
+    "prototype": "__int64 __fastcall(COConnectionPoint *__hidden this, struct IEnumConnections **)",
+    "rank_score": 420,
+    "size": 382,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CAdminAclCache::Add(CAdminAcl *)",
+    "ea": "0x18000aefc",
+    "function_file": "functions/18000aefc_CAdminAclCache_Add_CAdminAcl.md",
+    "matched_imports": [
+      "IisRTL!?TryWriteLock@CReaderWriterLock3@@QEAA_NXZ",
+      "IisRTL!?WriteUnlock@CReaderWriterLock3@@QEAAXXZ"
+    ],
+    "matched_strings": [],
+    "name": "?Add@CAdminAclCache@@QEAAJPEAVCAdminAcl@@@Z",
+    "prototype": "__int64 __fastcall(CAdminAclCache *__hidden this, struct CAdminAcl *)",
+    "rank_score": 419,
+    "size": 391,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "COConnectionPoint::Advise(IUnknown *,ulong *)",
+    "ea": "0x18000c6e0",
+    "function_file": "functions/18000c6e0_COConnectionPoint_Advise_IUnknown_ulong.md",
+    "matched_imports": [
+      "IisRTL!?WriteLock@CReaderWriterLock3@@QEAAXXZ",
+      "IisRTL!?WriteUnlock@CReaderWriterLock3@@QEAAXXZ"
+    ],
+    "matched_strings": [],
+    "name": "?Advise@COConnectionPoint@@UEAAJPEAUIUnknown@@PEAK@Z",
+    "prototype": "__int64 __fastcall(COConnectionPoint *__hidden this, struct IUnknown *, unsigned int *)",
+    "rank_score": 417,
+    "size": 478,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CADMCOMW::RemoveObjectFromList(int)",
+    "ea": "0x18000dba8",
+    "function_file": "functions/18000dba8_CADMCOMW_RemoveObjectFromList_int.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?RemoveObjectFromList@CADMCOMW@@AEAAHH@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, int)",
+    "rank_score": 416,
+    "size": 172,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "DisplayDwordRadix(ulong,STRU *,int)",
+    "ea": "0x18000eb50",
+    "function_file": "functions/18000eb50_DisplayDwordRadix_ulong_STRU_int.md",
+    "matched_imports": [
+      "IisRTL!?Copy@STRU@@QEAAJPEBG@Z",
+      "msvcrt!_ultow"
+    ],
+    "matched_strings": [],
+    "name": "?DisplayDwordRadix@@YAJKPEAVSTRU@@H@Z",
+    "prototype": "__int64 __fastcall(unsigned int, struct STRU *, int)",
+    "rank_score": 415,
+    "size": 105,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "WaitForServiceStatus(SC_HANDLE__ *,ulong)",
+    "ea": "0x180009ac4",
+    "function_file": "functions/180009ac4_WaitForServiceStatus_SC_HANDLE_ulong.md",
+    "matched_imports": [
+      "ADVAPI32!QueryServiceStatus",
+      "KERNEL32!Sleep"
+    ],
+    "matched_strings": [],
+    "name": "?WaitForServiceStatus@@YAXPEAUSC_HANDLE__@@K@Z",
+    "prototype": "void __fastcall(SC_HANDLE hService, unsigned int)",
+    "rank_score": 415,
+    "size": 128,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "CADMCOMW::CADMCOMW(void)",
+    "ea": "0x180001a98",
+    "function_file": "functions/180001a98_CADMCOMW_CADMCOMW_void.md",
+    "matched_imports": [
+      "IisRTL!??0STRU@@QEAA@XZ",
+      "KERNEL32!InitializeCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??0CADMCOMW@@QEAA@XZ",
+    "prototype": "CADMCOMW *__fastcall(CADMCOMW *__hidden this)",
+    "rank_score": 413,
+    "size": 307,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "COConnectionPoint::ListenersPresent(void)",
+    "ea": "0x18000d180",
+    "function_file": "functions/18000d180_COConnectionPoint_ListenersPresent_void.md",
+    "matched_imports": [
+      "IisRTL!?ReadLock@CReaderWriterLock3@@QEAAXXZ",
+      "IisRTL!?ReadUnlock@CReaderWriterLock3@@QEAAXXZ"
+    ],
+    "matched_strings": [],
+    "name": "?ListenersPresent@COConnectionPoint@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(COConnectionPoint *__hidden this)",
+    "rank_score": 403,
+    "size": 91,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CADMCOMW::NotifySinkHelper(IMSAdminBaseSinkW *,ulong,_MD_CHANGE_OBJECT_W * const,int)",
+    "ea": "0x1800078ac",
+    "function_file": "functions/1800078ac_CADMCOMW_NotifySinkHelper_IMSAdminBaseSinkW_ulong_MD_CHANGE_OBJECT_W_const_int.md",
+    "matched_imports": [
+      "IisRTL!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "CADMCOMW::NotifySinkHelper",
+      "Failled in CreateCall to ICallFactory !!!\n",
+      "SetSinkCallbackSecurityBlanket failled for the async sink !!!\n"
+    ],
+    "name": "?NotifySinkHelper@CADMCOMW@@AEAAJPEAUIMSAdminBaseSinkW@@KQEAU_MD_CHANGE_OBJECT_W@@H@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, struct IMSAdminBaseSinkW *, unsigned int, struct _MD_CHANGE_OBJECT_W *const, int)",
+    "rank_score": 387,
+    "size": 414,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CADMCOMW::BackupHelper(ushort const *,ulong,ulong,ushort const *)",
+    "ea": "0x180002cd0",
+    "function_file": "functions/180002cd0_CADMCOMW_BackupHelper_ushort_const_ulong_ulong_ushort_const.md",
+    "matched_imports": [
+      "IisRTL!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "AccessCheck failed hr = 0x%08x\n",
+      "CADMCOMW::BackupHelper"
+    ],
+    "name": "?BackupHelper@CADMCOMW@@AEAAJPEBGKK0@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *this, const unsigned __int16 *, unsigned int, int, const unsigned __int16 *)",
+    "rank_score": 347,
+    "size": 366,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::DeleteBackup(ushort const *,ulong)",
+    "ea": "0x180003dd0",
+    "function_file": "functions/180003dd0_CADMCOMW_DeleteBackup_ushort_const_ulong.md",
+    "matched_imports": [
+      "IisRTL!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "AccessCheck failed hr = 0x%08x\n",
+      "CADMCOMW::DeleteBackup"
+    ],
+    "name": "?DeleteBackup@CADMCOMW@@UEAAJPEBGK@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, const unsigned __int16 *, unsigned int)",
+    "rank_score": 346,
+    "size": 277,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::EnumHistory(ushort *,ulong *,ulong *,_FILETIME *,ulong)",
+    "ea": "0x180004b50",
+    "function_file": "functions/180004b50_CADMCOMW_EnumHistory_ushort_ulong_ulong_FILETIME_ulong.md",
+    "matched_imports": [
+      "IisRTL!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "AccessCheck failed hr = 0x%08x\n",
+      "CADMCOMW::EnumHistory"
+    ],
+    "name": "?EnumHistory@CADMCOMW@@UEAAJPEAGPEAK1PEAU_FILETIME@@K@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, unsigned __int16 *, unsigned int *, unsigned int *, struct _FILETIME *, unsigned int)",
+    "rank_score": 345,
+    "size": 264,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::EnumBackups(ushort *,ulong *,_FILETIME *,ulong)",
+    "ea": "0x1800048c0",
+    "function_file": "functions/1800048c0_CADMCOMW_EnumBackups_ushort_ulong_FILETIME_ulong.md",
+    "matched_imports": [
+      "IisRTL!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "AccessCheck failed hr = 0x%08x\n",
+      "CADMCOMW::EnumBackups"
+    ],
+    "name": "?EnumBackups@CADMCOMW@@UEAAJPEAGPEAKPEAU_FILETIME@@K@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, unsigned __int16 *, unsigned int *, struct _FILETIME *, unsigned int)",
+    "rank_score": 344,
+    "size": 204,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CADMCOMW::CheckNotificationScope(ushort const *,ulong,ushort const *,ulong,ulong)",
+    "ea": "0x180003048",
+    "function_file": "functions/180003048_CADMCOMW_CheckNotificationScope_ushort_const_ulong_ushort_const_ulong_ulong.md",
+    "matched_imports": [
+      "IisRTL!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx",
+      "Checking the path %S with length %d against the scope [%S] with length %d and flags 0x%08x.\n",
+      "CADMCOMW::CheckNotificationScope"
+    ],
+    "name": "?CheckNotificationScope@CADMCOMW@@AEAAJPEBGK0KK@Z",
+    "prototype": "int(CADMCOMW *__hidden this, const unsigned __int16 *, unsigned int, const unsigned __int16 *, unsigned int, unsigned int)",
+    "rank_score": 335,
+    "size": 274,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::GetDataPaths(ulong,ushort const *,ulong,ulong,ulong,ushort *,ulong *)",
+    "ea": "0x180005bd0",
+    "function_file": "functions/180005bd0_CADMCOMW_GetDataPaths_ulong_ushort_const_ulong_ulong_ulong_ushort_ulong.md",
+    "matched_imports": [
+      "IisRTL!PuDbgPrint"
+    ],
+    "matched_strings": [
+      "inetsrv\\iis\\mb\\coadmin\\comobj.cxx"
+    ],
+    "name": "?GetDataPaths@CADMCOMW@@UEAAJKPEBGKKKPEAGPEAK@Z",
+    "prototype": "__int64 __usercall@<rax>(CADMCOMW *__hidden this@<rcx>, unsigned int@<edx>, const unsigned __int16 *@<r8>, unsigned int@<r9d>, unsigned int, unsigned int, unsigned __int16 *, unsigned int *)",
+    "rank_score": 269,
+    "size": 693,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "CADMCOMW::IsReadAccessGranted(ulong,ushort const *,_METADATA_RECORD *)",
+    "ea": "0x180006e44",
+    "function_file": "functions/180006e44_CADMCOMW_IsReadAccessGranted_ulong_ushort_const_METADATA_RECORD.md",
+    "matched_imports": [
+      "KERNEL32!LocalFree"
+    ],
+    "matched_strings": [],
+    "name": "?IsReadAccessGranted@CADMCOMW@@QEAAJKPEBGPEAU_METADATA_RECORD@@@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, unsigned int, const unsigned __int16 *, struct _METADATA_RECORD *)",
+    "rank_score": 227,
+    "size": 191,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::GetLastChangeTime(ulong,ushort const *,_FILETIME *,int)",
+    "ea": "0x180006010",
+    "function_file": "functions/180006010_CADMCOMW_GetLastChangeTime_ulong_ushort_const_FILETIME_int.md",
+    "matched_imports": [
+      "KERNEL32!FileTimeToLocalFileTime"
+    ],
+    "matched_strings": [],
+    "name": "?GetLastChangeTime@CADMCOMW@@UEAAJKPEBGPEAU_FILETIME@@H@Z",
+    "prototype": "int(CADMCOMW *__hidden this, unsigned int, const unsigned __int16 *, struct _FILETIME *, int)",
+    "rank_score": 225,
+    "size": 271,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::Release(void)",
+    "ea": "0x180008430",
+    "function_file": "functions/180008430_CADMCOMW_Release_void.md",
+    "matched_imports": [
+      "IisRTL!WriteRefTraceLog"
+    ],
+    "matched_strings": [],
+    "name": "?Release@CADMCOMW@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(CADMCOMW *__hidden this)",
+    "rank_score": 224,
+    "size": 103,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CAdminAclCache::_Find(void *,ulong,ushort const *,CAdminAcl * *,ulong *)",
+    "ea": "0x18000be64",
+    "function_file": "functions/18000be64_CAdminAclCache_Find_void_ulong_ushort_const_CAdminAcl_ulong.md",
+    "matched_imports": [
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [],
+    "name": "?_Find@CAdminAclCache@@AEAAJPEAXKPEBGPEAPEAVCAdminAcl@@PEAK@Z",
+    "prototype": "int(CAdminAclCache *__hidden this, void *, unsigned int, const unsigned __int16 *, struct CAdminAcl **, unsigned int *)",
+    "rank_score": 216,
+    "size": 299,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "_IsTokenLocalSystem",
+    "ea": "0x18000c020",
+    "function_file": "functions/18000c020_IsTokenLocalSystem.md",
+    "matched_imports": [
+      "ADVAPI32!AccessCheck"
+    ],
+    "matched_strings": [],
+    "name": "_IsTokenLocalSystem",
+    "prototype": "__int64 __fastcall(HANDLE ClientToken)",
+    "rank_score": 214,
+    "size": 167,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "IISCryptoDeleteContainerByName",
+    "ea": "0x18000f940",
+    "function_file": "functions/18000f940_IISCryptoDeleteContainerByName.md",
+    "matched_imports": [
+      "ADVAPI32!CryptAcquireContextA"
+    ],
+    "matched_strings": [],
+    "name": "IISCryptoDeleteContainerByName",
+    "prototype": "__int64 __fastcall(LPCSTR szContainer)",
+    "rank_score": 213,
+    "size": 81,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::AddRef(void)",
+    "ea": "0x180002350",
+    "function_file": "functions/180002350_CADMCOMW_AddRef_void.md",
+    "matched_imports": [
+      "IisRTL!WriteRefTraceLog"
+    ],
+    "matched_strings": [],
+    "name": "?AddRef@CADMCOMW@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(CADMCOMW *__hidden this)",
+    "rank_score": 211,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 14,
+    "demangled": "memset_0",
+    "ea": "0x18000fb1e",
+    "function_file": "functions/18000fb1e_memset_0.md",
+    "matched_imports": [
+      "msvcrt!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 114,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CADMCOMW::~CADMCOMW(void)",
+    "ea": "0x180001bd4",
+    "function_file": "functions/180001bd4_CADMCOMW_CADMCOMW_void.md",
+    "matched_imports": [
+      "IisRTL!??1STRU@@QEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "??1CADMCOMW@@QEAA@XZ",
+    "prototype": "void __fastcall(CADMCOMW *__hidden this)",
+    "rank_score": 113,
+    "size": 97,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__dllonexit_0",
+    "ea": "0x180001a67",
+    "function_file": "functions/180001a67_dllonexit_0.md",
+    "matched_imports": [
+      "msvcrt!__dllonexit"
+    ],
+    "matched_strings": [],
+    "name": "__dllonexit_0",
+    "prototype": "",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 8,
+    "demangled": "memcpy_0",
+    "ea": "0x18000fb06",
+    "function_file": "functions/18000fb06_memcpy_0.md",
+    "matched_imports": [
+      "msvcrt!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 108,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "memmove_0",
+    "ea": "0x18000fb12",
+    "function_file": "functions/18000fb12_memmove_0.md",
+    "matched_imports": [
+      "msvcrt!memmove"
+    ],
+    "matched_strings": [],
+    "name": "memmove_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 102,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "DllRegisterServer",
+    "ea": "0x180009f40",
+    "function_file": "functions/180009f40_DllRegisterServer.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "InstallComponent"
+    ],
+    "name": "DllRegisterServer",
+    "prototype": "HRESULT __stdcall()",
+    "rank_score": 71,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x180008240",
+    "function_file": "functions/180008240_CADMCOMW_QueryInterface_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@CADMCOMW@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, const struct _GUID *, void **)",
+    "rank_score": 37,
+    "size": 479,
+    "tags": [
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 27,
+    "demangled": "__security_check_cookie",
+    "ea": "0x18000fb50",
+    "function_file": "functions/18000fb50_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 95,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x180010010",
+    "function_file": "functions/180010010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CImpIMDCOMSINKW::Release(void)",
+    "ea": "0x18000c550",
+    "function_file": "functions/18000c550_CImpIMDCOMSINKW_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@CImpIMDCOMSINKW@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(CImpIMDCOMSINKW *__hidden this)",
+    "rank_score": 32,
+    "size": 47,
+    "tags": [
+      "file_ops",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 7,
+    "demangled": "COpenHandle::Release(void *)",
+    "ea": "0x18000be20",
+    "function_file": "functions/18000be20_COpenHandle_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@COpenHandle@@QEAAXPEAX@Z",
+    "prototype": "void(COpenHandle *__hidden this, void *)",
+    "rank_score": 30,
+    "size": 62,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 19,
+    "demangled": "operator delete(void *)",
+    "ea": "0x1800010a4",
+    "function_file": "functions/1800010a4_operator_delete_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??3@YAXPEAX@Z",
+    "prototype": "void __cdecl(void *Block)",
+    "rank_score": 30,
+    "size": 5,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::GetAllData(ulong,ushort const *,ulong,ulong,ulong,ulong *,ulong *,ulong,uchar *,ulong *)",
+    "ea": "0x180005290",
+    "function_file": "functions/180005290_CADMCOMW_GetAllData_ulong_ushort_const_ulong_ulong_ulong_ulong_ulong_ulong_uchar_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetAllData@CADMCOMW@@UEAAJKPEBGKKKPEAK1KPEAE1@Z",
+    "prototype": "__int64 __usercall@<rax>(CADMCOMW *__hidden this@<rcx>, unsigned int@<edx>, const unsigned __int16 *@<r8>, unsigned int@<r9d>, unsigned int, unsigned int, unsigned int *, unsigned int *, unsigned int, unsigned __int8 *, unsigned int *)",
+    "rank_score": 28,
+    "size": 637,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::CopyData(ulong,ushort const *,ulong,ushort const *,ulong,ulong,ulong,int)",
+    "ea": "0x180003230",
+    "function_file": "functions/180003230_CADMCOMW_CopyData_ulong_ushort_const_ulong_ushort_const_ulong_ulong_ulong_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CopyData@CADMCOMW@@UEAAJKPEBGK0KKKH@Z",
+    "prototype": "__int64 __usercall@<rax>(CADMCOMW *__hidden this@<rcx>, unsigned int@<edx>, const unsigned __int16 *@<r8>, unsigned int@<r9d>, const unsigned __int16 *, unsigned int, unsigned int, unsigned int, int)",
+    "rank_score": 27,
+    "size": 453,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::CopyKey(ulong,ushort const *,ulong,ushort const *,int,int)",
+    "ea": "0x180003400",
+    "function_file": "functions/180003400_CADMCOMW_CopyKey_ulong_ushort_const_ulong_ushort_const_int_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CopyKey@CADMCOMW@@UEAAJKPEBGK0HH@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, unsigned int, const unsigned __int16 *, unsigned int, const unsigned __int16 *, int, int)",
+    "rank_score": 27,
+    "size": 392,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::EnumData(ulong,ushort const *,_METADATA_RECORD *,ulong,ulong *)",
+    "ea": "0x1800049a0",
+    "function_file": "functions/1800049a0_CADMCOMW_EnumData_ulong_ushort_const_METADATA_RECORD_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EnumData@CADMCOMW@@UEAAJKPEBGPEAU_METADATA_RECORD@@KPEAK@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, unsigned int, const unsigned __int16 *, struct _METADATA_RECORD *, unsigned int, unsigned int *)",
+    "rank_score": 27,
+    "size": 420,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::GetData(ulong,ushort const *,_METADATA_RECORD *,ulong *)",
+    "ea": "0x180005a20",
+    "function_file": "functions/180005a20_CADMCOMW_GetData_ulong_ushort_const_METADATA_RECORD_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetData@CADMCOMW@@UEAAJKPEBGPEAU_METADATA_RECORD@@PEAK@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, unsigned int, const unsigned __int16 *, struct _METADATA_RECORD *, unsigned int *)",
+    "rank_score": 27,
+    "size": 414,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "CAdminAcl::Release(void)",
+    "ea": "0x18000bddc",
+    "function_file": "functions/18000bddc_CAdminAcl_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@CAdminAcl@@QEAAKXZ",
+    "prototype": "unsigned int __fastcall(CAdminAcl *__hidden this)",
+    "rank_score": 27,
+    "size": 60,
+    "tags": [
+      "file_ops",
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::AddKey(ulong,ushort const *)",
+    "ea": "0x1800020d0",
+    "function_file": "functions/1800020d0_CADMCOMW_AddKey_ulong_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddKey@CADMCOMW@@UEAAJKPEBG@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, unsigned int, const unsigned __int16 *)",
+    "rank_score": 26,
+    "size": 269,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::DeleteAllData(ulong,ushort const *,ulong,ulong)",
+    "ea": "0x180003ca0",
+    "function_file": "functions/180003ca0_CADMCOMW_DeleteAllData_ulong_ushort_const_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DeleteAllData@CADMCOMW@@UEAAJKPEBGKK@Z",
+    "prototype": "__int64 __usercall@<rax>(CADMCOMW *__hidden this@<rcx>, unsigned int@<edx>, const unsigned __int16 *@<r8>, unsigned int@<r9d>, unsigned int)",
+    "rank_score": 26,
+    "size": 293,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::DeleteKey(ulong,ushort const *)",
+    "ea": "0x1800041a0",
+    "function_file": "functions/1800041a0_CADMCOMW_DeleteKey_ulong_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DeleteKey@CADMCOMW@@UEAAJKPEBG@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, unsigned int, const unsigned __int16 *)",
+    "rank_score": 26,
+    "size": 278,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::DeleteChildKeys(ulong,ushort const *)",
+    "ea": "0x180003ef0",
+    "function_file": "functions/180003ef0_CADMCOMW_DeleteChildKeys_ulong_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DeleteChildKeys@CADMCOMW@@UEAAJKPEBG@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, unsigned int, const unsigned __int16 *)",
+    "rank_score": 25,
+    "size": 208,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::EnumKeys(ulong,ushort const *,ushort *,ulong)",
+    "ea": "0x180004c60",
+    "function_file": "functions/180004c60_CADMCOMW_EnumKeys_ulong_ushort_const_ushort_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EnumKeys@CADMCOMW@@UEAAJKPEBGPEAGK@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, unsigned int, const unsigned __int16 *, unsigned __int16 *, unsigned int)",
+    "rank_score": 25,
+    "size": 353,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::SaveData(void)",
+    "ea": "0x1800090f0",
+    "function_file": "functions/1800090f0_CADMCOMW_SaveData_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SaveData@CADMCOMW@@UEAAJXZ",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this)",
+    "rank_score": 25,
+    "size": 259,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::ChangePermissions(ulong,ulong,ulong)",
+    "ea": "0x180002f70",
+    "function_file": "functions/180002f70_CADMCOMW_ChangePermissions_ulong_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ChangePermissions@CADMCOMW@@UEAAJKKK@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, unsigned int, unsigned int, unsigned int)",
+    "rank_score": 24,
+    "size": 209,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::GetChildPaths(ulong,ushort const *,ulong,ushort *,ulong *)",
+    "ea": "0x180005920",
+    "function_file": "functions/180005920_CADMCOMW_GetChildPaths_ulong_ushort_const_ulong_ushort_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetChildPaths@CADMCOMW@@UEAAJKPEBGKPEAGPEAK@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, unsigned int, const unsigned __int16 *, unsigned int, unsigned __int16 *, unsigned int *)",
+    "rank_score": 24,
+    "size": 235,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::GetDataSetNumber(ulong,ushort const *,ulong *)",
+    "ea": "0x180005e90",
+    "function_file": "functions/180005e90_CADMCOMW_GetDataSetNumber_ulong_ushort_const_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetDataSetNumber@CADMCOMW@@UEAAJKPEBGPEAK@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, unsigned int, const unsigned __int16 *, unsigned int *)",
+    "rank_score": 24,
+    "size": 217,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::GetSystemChangeNumber(ulong *)",
+    "ea": "0x1800062d0",
+    "function_file": "functions/1800062d0_CADMCOMW_GetSystemChangeNumber_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetSystemChangeNumber@CADMCOMW@@UEAAJPEAK@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, unsigned int *)",
+    "rank_score": 24,
+    "size": 228,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartup",
+    "ea": "0x180001340",
+    "function_file": "functions/180001340_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartup",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 23,
+    "size": 61,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x18000fa94",
+    "function_file": "functions/18000fa94_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CADMCOMSrvFactoryW::Release(void)",
+    "ea": "0x180009ef0",
+    "function_file": "functions/180009ef0_CADMCOMSrvFactoryW_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@CADMCOMSrvFactoryW@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(CADMCOMSrvFactoryW *__hidden this)",
+    "rank_score": 22,
+    "size": 54,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::CImpExpHelp::`scalar deleting destructor'(uint)",
+    "ea": "0x18000de40",
+    "function_file": "functions/18000de40_CADMCOMW_CImpExpHelp_scalar_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_GCImpExpHelp@CADMCOMW@@UEAAPEAXI@Z",
+    "prototype": "void *__fastcall(CADMCOMW::CImpExpHelp *__hidden this, unsigned int)",
+    "rank_score": 22,
+    "size": 38,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::CImpIConnectionPointContainer::`scalar deleting destructor'(uint)",
+    "ea": "0x18000c140",
+    "function_file": "functions/18000c140_CADMCOMW_CImpIConnectionPointContainer_scalar_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_GCImpIConnectionPointContainer@CADMCOMW@@UEAAPEAXI@Z",
+    "prototype": "void *__fastcall(CADMCOMW::CImpIConnectionPointContainer *__hidden this, unsigned int)",
+    "rank_score": 22,
+    "size": 38,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CImpIMDCOMSINKW::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x18000c4c0",
+    "function_file": "functions/18000c4c0_CImpIMDCOMSINKW_QueryInterface_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@CImpIMDCOMSINKW@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(CImpIMDCOMSINKW *__hidden this, const struct _GUID *, void **)",
+    "rank_score": 22,
+    "size": 103,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_dynamic_atexit_destructor_for__g_AclCache__",
+    "ea": "0x18000ff80",
+    "function_file": "functions/18000ff80_dynamic_atexit_destructor_for_g_AclCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_dynamic_atexit_destructor_for__g_AclCache__",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 12,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_dynamic_initializer_for__g_AclCache__",
+    "ea": "0x180001050",
+    "function_file": "functions/180001050_dynamic_initializer_for_g_AclCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_dynamic_initializer_for__g_AclCache__",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 12,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 10,
+    "demangled": "operator delete[](void *)",
+    "ea": "0x1800010b0",
+    "function_file": "functions/1800010b0_operator_delete_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_V@YAXPEAX@Z",
+    "prototype": "void __cdecl(void *Block)",
+    "rank_score": 21,
+    "size": 5,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CImpIMDCOMSINKW::AddRef(void)",
+    "ea": "0x18000c190",
+    "function_file": "functions/18000c190_CImpIMDCOMSINKW_AddRef_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@CImpIMDCOMSINKW@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(CImpIMDCOMSINKW *__hidden this)",
+    "rank_score": 20,
+    "size": 13,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "__DllMainCRTStartup",
+    "ea": "0x180001384",
+    "function_file": "functions/180001384_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__DllMainCRTStartup",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 524,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "COEnumConnections::Init(ulong,tagCONNECTDATA *,ulong,IGlobalInterfaceTable *)",
+    "ea": "0x18000cdd8",
+    "function_file": "functions/18000cdd8_COEnumConnections_Init_ulong_tagCONNECTDATA_ulong_IGlobalInterfaceTable.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Init@COEnumConnections@@QEAAJKPEAUtagCONNECTDATA@@KPEAUIGlobalInterfaceTable@@@Z",
+    "prototype": "__int64 __fastcall(COEnumConnections *__hidden this, unsigned int, struct tagCONNECTDATA *, unsigned int, struct IGlobalInterfaceTable *)",
+    "rank_score": 19,
+    "size": 499,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CADMCOMW::DisableHistory(ulong *,ulong *)",
+    "ea": "0x180004388",
+    "function_file": "functions/180004388_CADMCOMW_DisableHistory_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DisableHistory@CADMCOMW@@AEAAJPEAK0@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, unsigned int *, unsigned int *)",
+    "rank_score": 17,
+    "size": 462,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "SetSinkCallbackSecurityBlanket(IUnknown *)",
+    "ea": "0x18000d5e0",
+    "function_file": "functions/18000d5e0_SetSinkCallbackSecurityBlanket_IUnknown.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SetSinkCallbackSecurityBlanket@@YAJPEAUIUnknown@@@Z",
+    "prototype": "__int64 __fastcall(struct IUnknown *)",
+    "rank_score": 17,
+    "size": 146,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "CADMCOMSrvFactoryW::CreateInstance(IUnknown *,_GUID const &,void * *)",
+    "ea": "0x180009dd0",
+    "function_file": "functions/180009dd0_CADMCOMSrvFactoryW_CreateInstance_IUnknown_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@CADMCOMSrvFactoryW@@UEAAJPEAUIUnknown@@AEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(CADMCOMSrvFactoryW *__hidden this, struct IUnknown *, const struct _GUID *, void **)",
+    "rank_score": 16,
+    "size": 134,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CADMCOMW::SetHistoryAndEWR(ulong,ulong)",
+    "ea": "0x1800093bc",
+    "function_file": "functions/1800093bc_CADMCOMW_SetHistoryAndEWR_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SetHistoryAndEWR@CADMCOMW@@AEAAJKK@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, unsigned int, unsigned int)",
+    "rank_score": 16,
+    "size": 345,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "COEnumConnections::~COEnumConnections(void)",
+    "ea": "0x18000c5e8",
+    "function_file": "functions/18000c5e8_COEnumConnections_COEnumConnections_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1COEnumConnections@@QEAA@XZ",
+    "prototype": "void __fastcall(COEnumConnections *__hidden this)",
+    "rank_score": 16,
+    "size": 94,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::CImpIConnectionPointContainer::EnumConnectionPoints(IEnumConnectionPoints * *)",
+    "ea": "0x18000c360",
+    "function_file": "functions/18000c360_CADMCOMW_CImpIConnectionPointContainer_EnumConnectionPoints_IEnumConnectionPoints.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EnumConnectionPoints@CImpIConnectionPointContainer@CADMCOMW@@UEAAJPEAPEAUIEnumConnectionPoints@@@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW::CImpIConnectionPointContainer *__hidden this, struct IEnumConnectionPoints **)",
+    "rank_score": 15,
+    "size": 209,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::CloseKey(ulong)",
+    "ea": "0x180003160",
+    "function_file": "functions/180003160_CADMCOMW_CloseKey_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CloseKey@CADMCOMW@@UEAAJK@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, unsigned int)",
+    "rank_score": 15,
+    "size": 200,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "_DeleteChangeObjectArray",
+    "ea": "0x180009b4c",
+    "function_file": "functions/180009b4c_DeleteChangeObjectArray.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DeleteChangeObjectArray",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 131,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x18000fb90",
+    "function_file": "functions/18000fb90_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 12,
+    "demangled": "operator new(unsigned __int64)",
+    "ea": "0x180001064",
+    "function_file": "functions/180001064_operator_new_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??2@YAPEAX_K@Z",
+    "prototype": "void *__fastcall(size_t Size)",
+    "rank_score": 15,
+    "size": 57,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::GetHandleInfo(ulong,_METADATA_HANDLE_INFO *)",
+    "ea": "0x180005f70",
+    "function_file": "functions/180005f70_CADMCOMW_GetHandleInfo_ulong_METADATA_HANDLE_INFO.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetHandleInfo@CADMCOMW@@UEAAJKPEAU_METADATA_HANDLE_INFO@@@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, unsigned int, struct _METADATA_HANDLE_INFO *)",
+    "rank_score": 14,
+    "size": 141,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CAdminAclCache::_MoveFirst(ulong)",
+    "ea": "0x18000c0d0",
+    "function_file": "functions/18000c0d0_CAdminAclCache_MoveFirst_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_MoveFirst@CAdminAclCache@@AEAAJK@Z",
+    "prototype": "__int64 __fastcall(CAdminAclCache *__hidden this, unsigned int)",
+    "rank_score": 14,
+    "size": 101,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::OpenKey(ulong,ushort const *,ulong,ulong,ulong *)",
+    "ea": "0x180007ee0",
+    "function_file": "functions/180007ee0_CADMCOMW_OpenKey_ulong_ushort_const_ulong_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?OpenKey@CADMCOMW@@UEAAJKPEBGKKPEAK@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, unsigned int, wchar_t *Str, unsigned int, unsigned int, unsigned int *)",
+    "rank_score": 13,
+    "size": 87,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CAdminAcl::~CAdminAcl(void)",
+    "ea": "0x18000abbc",
+    "function_file": "functions/18000abbc_CAdminAcl_CAdminAcl_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1CAdminAcl@@QEAA@XZ",
+    "prototype": "void __fastcall(CAdminAcl *__hidden this)",
+    "rank_score": 13,
+    "size": 77,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CADMCOMSrvFactoryW::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x180009e80",
+    "function_file": "functions/180009e80_CADMCOMSrvFactoryW_QueryInterface_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@CADMCOMSrvFactoryW@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(CADMCOMSrvFactoryW *__hidden this, const struct _GUID *, void **)",
+    "rank_score": 12,
+    "size": 102,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::CImpIConnectionPointContainer::FindConnectionPoint(_GUID const &,IConnectionPoint * *)",
+    "ea": "0x18000c440",
+    "function_file": "functions/18000c440_CADMCOMW_CImpIConnectionPointContainer_FindConnectionPoint_GUID_const_IConnectionPoint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?FindConnectionPoint@CImpIConnectionPointContainer@CADMCOMW@@UEAAJAEBU_GUID@@PEAPEAUIConnectionPoint@@@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW::CImpIConnectionPointContainer *__hidden this, const struct _GUID *, struct IConnectionPoint **)",
+    "rank_score": 12,
+    "size": 79,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::RestoreHistory(ushort const *,ulong,ulong,ulong)",
+    "ea": "0x180009060",
+    "function_file": "functions/180009060_CADMCOMW_RestoreHistory_ushort_const_ulong_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?RestoreHistory@CADMCOMW@@UEAAJPEBGKKK@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, const unsigned __int16 *, unsigned int, unsigned int, unsigned int)",
+    "rank_score": 12,
+    "size": 78,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CADMCOMSrvFactoryW::LockServer(int)",
+    "ea": "0x180009e60",
+    "function_file": "functions/180009e60_CADMCOMSrvFactoryW_LockServer_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?LockServer@CADMCOMSrvFactoryW@@UEAAJH@Z",
+    "prototype": "__int64 __fastcall(CADMCOMSrvFactoryW *__hidden this, int)",
+    "rank_score": 11,
+    "size": 23,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::Backup(ushort const *,ulong,ulong)",
+    "ea": "0x180002cb0",
+    "function_file": "functions/180002cb0_CADMCOMW_Backup_ushort_const_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Backup@CADMCOMW@@UEAAJPEBGKK@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, const unsigned __int16 *, unsigned int, unsigned int)",
+    "rank_score": 11,
+    "size": 23,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::BackupWithPasswd(ushort const *,ulong,ulong,ushort const *)",
+    "ea": "0x180002e50",
+    "function_file": "functions/180002e50_CADMCOMW_BackupWithPasswd_ushort_const_ulong_ulong_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?BackupWithPasswd@CADMCOMW@@UEAAJPEBGKK0@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, const unsigned __int16 *, unsigned int, unsigned int, const unsigned __int16 *)",
+    "rank_score": 11,
+    "size": 5,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::CImpExpHelp::AddRef(void)",
+    "ea": "0x18000de70",
+    "function_file": "functions/18000de70_CADMCOMW_CImpExpHelp_AddRef_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@CImpExpHelp@CADMCOMW@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(CADMCOMW::CImpExpHelp *__hidden this)",
+    "rank_score": 11,
+    "size": 16,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::CImpExpHelp::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x18000e940",
+    "function_file": "functions/18000e940_CADMCOMW_CImpExpHelp_QueryInterface_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@CImpExpHelp@CADMCOMW@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW::CImpExpHelp *__hidden this, const struct _GUID *, void **)",
+    "rank_score": 11,
+    "size": 15,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::CImpExpHelp::Release(void)",
+    "ea": "0x18000e960",
+    "function_file": "functions/18000e960_CADMCOMW_CImpExpHelp_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@CImpExpHelp@CADMCOMW@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(CADMCOMW::CImpExpHelp *__hidden this)",
+    "rank_score": 11,
+    "size": 16,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::CImpIConnectionPointContainer::AddRef(void)",
+    "ea": "0x18000c170",
+    "function_file": "functions/18000c170_CADMCOMW_CImpIConnectionPointContainer_AddRef_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@CImpIConnectionPointContainer@CADMCOMW@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(CADMCOMW::CImpIConnectionPointContainer *__hidden this)",
+    "rank_score": 11,
+    "size": 16,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::CImpIConnectionPointContainer::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x18000c4a0",
+    "function_file": "functions/18000c4a0_CADMCOMW_CImpIConnectionPointContainer_QueryInterface_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@CImpIConnectionPointContainer@CADMCOMW@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW::CImpIConnectionPointContainer *__hidden this, const struct _GUID *, void **)",
+    "rank_score": 11,
+    "size": 15,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::CImpIConnectionPointContainer::Release(void)",
+    "ea": "0x18000c530",
+    "function_file": "functions/18000c530_CADMCOMW_CImpIConnectionPointContainer_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@CImpIConnectionPointContainer@CADMCOMW@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(CADMCOMW::CImpIConnectionPointContainer *__hidden this)",
+    "rank_score": 11,
+    "size": 16,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::Restore(ushort const *,ulong,ulong)",
+    "ea": "0x180008ab0",
+    "function_file": "functions/180008ab0_CADMCOMW_Restore_ushort_const_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Restore@CADMCOMW@@UEAAJPEBGKK@Z",
+    "prototype": "int(CADMCOMW *__hidden this, const unsigned __int16 *, unsigned int, unsigned int)",
+    "rank_score": 11,
+    "size": 39,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::RestoreWithPasswd(ushort const *,ulong,ulong,ushort const *)",
+    "ea": "0x1800090c0",
+    "function_file": "functions/1800090c0_CADMCOMW_RestoreWithPasswd_ushort_const_ulong_ulong_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?RestoreWithPasswd@CADMCOMW@@UEAAJPEBGKK0@Z",
+    "prototype": "int(CADMCOMW *__hidden this, const unsigned __int16 *, unsigned int, unsigned int, const unsigned __int16 *)",
+    "rank_score": 11,
+    "size": 40,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::UnmarshalInterface(IMSAdminBaseW * *)",
+    "ea": "0x180009a90",
+    "function_file": "functions/180009a90_CADMCOMW_UnmarshalInterface_IMSAdminBaseW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?UnmarshalInterface@CADMCOMW@@UEAAJPEAPEAUIMSAdminBaseW@@@Z",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this, struct IMSAdminBaseW **)",
+    "rank_score": 11,
+    "size": 44,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "DllMain",
+    "ea": "0x180009f30",
+    "function_file": "functions/180009f30_DllMain.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DllMain",
+    "prototype": "HRESULT __stdcall()",
+    "rank_score": 11,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CADMCOMSrvFactoryW::AddRef(void)",
+    "ea": "0x180009db0",
+    "function_file": "functions/180009db0_CADMCOMSrvFactoryW_AddRef_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@CADMCOMSrvFactoryW@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(CADMCOMSrvFactoryW *__hidden this)",
+    "rank_score": 10,
+    "size": 20,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CADMCOMW::GetServerGuid(void)",
+    "ea": "0x1800062c0",
+    "function_file": "functions/1800062c0_CADMCOMW_GetServerGuid_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetServerGuid@CADMCOMW@@UEAAJXZ",
+    "prototype": "__int64 __fastcall(CADMCOMW *__hidden this)",
+    "rank_score": 10,
+    "size": 6,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "operator new[](unsigned __int64)",
+    "ea": "0x1800010bc",
+    "function_file": "functions/1800010bc_operator_new_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_U@YAPEAX_K@Z",
+    "prototype": "void *__fastcall(unsigned __int64)",
+    "rank_score": 9,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "COEnumConnectionPoints::Init(ulong,IConnectionPoint * *,ulong)",
+    "ea": "0x18000cd48",
+    "function_file": "functions/18000cd48_COEnumConnectionPoints_Init_ulong_IConnectionPoint_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Init@COEnumConnectionPoints@@QEAAJKPEAPEAUIConnectionPoint@@K@Z",
+    "prototype": "__int64 __fastcall(COEnumConnectionPoints *__hidden this, unsigned int, struct IConnectionPoint **, unsigned int)",
+    "rank_score": 6,
+    "size": 137,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "atexit",
+    "ea": "0x180001634",
+    "function_file": "functions/180001634_atexit.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "atexit",
+    "prototype": "int __cdecl(void (__cdecl *)())",
+    "rank_score": 4,
+    "size": 23,
+    "tags": []
+  }
+]

@@ -1,0 +1,199 @@
+# WorkerEtwProvider::Deploy::StartActivity(ushort const *,ushort const *)
+
+- ea: `0x140007a84`
+- end: `0x140007bca`
+- name: `?StartActivity@Deploy@WorkerEtwProvider@@QEAAXPEBG0@Z`
+- size: `326`
+- prototype: `void __fastcall(WorkerEtwProvider::Deploy *__hidden this, const unsigned __int16 *, const unsigned __int16 *)`
+- caller_count: `1`
+- callee_count: `5`
+- tags: ``
+
+## callers
+
+- `0x140006188`
+
+## callees
+
+- `0x1400018e8`
+- `0x140004ed0`
+- `0x140006894`
+- `0x140007a84`
+- `0x14000939c`
+
+## import_xrefs
+
+- `api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId` at `0x140007aea`
+- `api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId` at `0x140007ba4`
+- `api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId` at `0x140007aea`
+- `api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId` at `0x140007ba4`
+
+## pseudocode
+
+```c
+void __fastcall WorkerEtwProvider::Deploy::StartActivity(
+        WorkerEtwProvider::Deploy *this,
+        const unsigned __int16 *a2,
+        const unsigned __int16 *a3)
+{
+  const struct _tlgProvider_t *v6; // rax
+  __int64 v7; // rdx
+  __int64 v8; // rcx
+  const struct _tlgProvider_t *v9; // rdi
+  __int64 v10; // rax
+  DWORD CurrentThreadId; // eax
+  __int64 v12; // r8
+  int v13; // r9d
+  char *v14; // rbx
+  _QWORD *Local; // rax
+  const unsigned __int16 *v16; // [rsp+40h] [rbp-28h] BYREF
+  __int64 v17[4]; // [rsp+48h] [rbp-20h] BYREF
+  DWORD v18; // [rsp+70h] [rbp+8h] BYREF
+  const unsigned __int16 *v19; // [rsp+88h] [rbp+20h] BYREF
+
+  wil::ActivityBase<WorkerEtwProvider,1,70368744177664,5,16777216,_TlgReflectorTag_Param0IsProviderType>::zInternalStart();
+  v6 = WorkerEtwProvider::Provider();
+  v9 = v6;
+  if ( *(_DWORD *)v6 > 5u )
+  {
+    v10 = *((_QWORD *)v6 + 3);
+    v7 = 0x400000000000LL;
+    if ( (*((_QWORD *)v9 + 2) & 0x400000000000LL) != 0 )
+    {
+      v8 = v10 & 0x400000000000LL;
+      if ( (v10 & 0x400000000000LL) == v10 )
+      {
+        v19 = a3;
+        v16 = a2;
+        CurrentThreadId = GetCurrentThreadId();
+        v12 = *((_QWORD *)this + 34);
+        v18 = CurrentThreadId;
+        v17[0] = 0x1000000;
+        if ( !*(_BYTE *)(v12 + 4)
+          || (v13 = v12 + 24, !*(_DWORD *)(v12 + 24))
+          && !*(_DWORD *)(v12 + 28)
+          && !*(_DWORD *)(v12 + 32)
+          && !*(_DWORD *)(v12 + 36) )
+        {
+          v13 = 0;
+        }
+        _tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,unsigned int,_EVENT_DATA_DESCRIPTOR *),&long _tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,unsigned int,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapSz<unsigned short>,_tlgWrapSz<unsigned short>>(
+          (_DWORD)v9,
+          (unsigned int)byte_140039001,
+          v12 + 8,
+          v13,
+          (__int64)v17,
+          (__int64)&v18,
+          (__int64)&v16,
+          (__int64)&v19);
+      }
+    }
+  }
+  if ( !*((_DWORD *)this + 78) )
+  {
+    v14 = (char *)this + 288;
+    if ( wil::details::g_pThreadFailureCallbacks )
+    {
+      LOBYTE(v7) = 1;
+      Local = (_QWORD *)wil::details_abi::ThreadLocalStorage<wil::details::ThreadFailureCallbackHolder *>::GetLocal(
+                          v8,
+                          v7);
+      *(_QWORD *)v14 = Local;
+      if ( Local )
+      {
+        *((_QWORD *)v14 + 2) = *Local;
+        *Local = v14;
+        *((_DWORD *)v14 + 6) = GetCurrentThreadId();
+      }
+    }
+    else
+    {
+      *(_QWORD *)v14 = 0;
+    }
+  }
+}
+
+```
+
+## disassembly
+
+```asm
+0x140007a84  mov     [rsp+arg_8], rbx
+0x140007a89  push    rbp
+0x140007a8a  push    rsi
+0x140007a8b  push    rdi
+0x140007a8c  sub     rsp, 50h
+0x140007a90  mov     rsi, r8
+0x140007a93  mov     rbp, rdx
+0x140007a96  mov     rbx, rcx
+0x140007a99  call    ?zInternalStart@?$ActivityBase@VWorkerEtwProvider@@$00$0EAAAAAAAAAAA@$04$0BAAAAAA@U_TlgReflectorTag_Param0IsProviderType@@@wil@@QEAAXXZ; wil::ActivityBase<WorkerEtwProvider,1,70368744177664,5,16777216,_TlgReflectorTag_Param0IsProviderType>::zInternalStart(void)
+0x140007a9e  call    ?Provider@WorkerEtwProvider@@SAPEBU_tlgProvider_t@@XZ; WorkerEtwProvider::Provider(void)
+0x140007aa3  mov     rdi, rax
+0x140007aa6  mov     r9d, [rax]
+0x140007aa9  cmp     r9d, 5
+0x140007aad  jbe     loc_140007B71
+0x140007ab3  mov     rax, [rax+18h]
+0x140007ab7  mov     rdx, 400000000000h
+0x140007ac1  mov     r9, [rdi+10h]
+0x140007ac5  test    rdx, r9
+0x140007ac8  jz      loc_140007B71
+0x140007ace  mov     rcx, rax
+0x140007ad1  and     rcx, rdx
+0x140007ad4  cmp     rcx, rax
+0x140007ad7  jnz     loc_140007B71
+0x140007add  mov     [rsp+68h+arg_18], rsi
+0x140007ae5  mov     [rsp+68h+var_28], rbp
+0x140007aea  call    cs:__imp_GetCurrentThreadId
+0x140007af1  nop     dword ptr [rax+rax+00h]
+0x140007af6  mov     r8, [rbx+110h]
+0x140007afd  mov     [rsp+68h+arg_0], eax
+0x140007b01  mov     [rsp+68h+var_20], 1000000h
+0x140007b0a  cmp     byte ptr [r8+4], 0
+0x140007b0f  jz      short loc_140007B30
+0x140007b11  lea     r9, [r8+18h]
+0x140007b15  cmp     dword ptr [r9], 0
+0x140007b19  jnz     short loc_140007B33
+0x140007b1b  cmp     dword ptr [r9+4], 0
+0x140007b20  jnz     short loc_140007B33
+0x140007b22  cmp     dword ptr [r9+8], 0
+0x140007b27  jnz     short loc_140007B33
+0x140007b29  cmp     dword ptr [r9+0Ch], 0
+0x140007b2e  jnz     short loc_140007B33
+0x140007b30  xor     r9d, r9d
+0x140007b33  lea     rax, [rsp+68h+arg_18]
+0x140007b3b  add     r8, 8
+0x140007b3f  mov     [rsp+68h+var_30], rax
+0x140007b44  lea     rdx, byte_140039001
+0x140007b4b  lea     rax, [rsp+68h+var_28]
+0x140007b50  mov     rcx, rdi
+0x140007b53  mov     [rsp+68h+var_38], rax
+0x140007b58  lea     rax, [rsp+68h+arg_0]
+0x140007b5d  mov     [rsp+68h+var_40], rax
+0x140007b62  lea     rax, [rsp+68h+var_20]
+0x140007b67  mov     [rsp+68h+var_48], rax
+0x140007b6c  call    ??$Write@U?$_tlgWrapperByVal@$07@@U?$_tlgWrapperByVal@$03@@U?$_tlgWrapSz@G@@U3@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EventWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$07@@AEBU?$_tlgWrapperByVal@$03@@AEBU?$_tlgWrapSz@G@@5@Z; _tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapSz<ushort>,_tlgWrapSz<ushort>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<ushort> const &,_tlgWrapSz<ushort> const &)
+0x140007b71  cmp     dword ptr [rbx+138h], 0
+0x140007b78  jnz     short loc_140007BBC
+0x140007b7a  add     rbx, 120h
+0x140007b81  cmp     cs:?g_pThreadFailureCallbacks@details@wil@@3PEAV?$ThreadLocalStorage@PEAVThreadFailureCallbackHolder@details@wil@@@details_abi@2@EA, 0; wil::details_abi::ThreadLocalStorage<wil::details::ThreadFailureCallbackHolder *> * wil::details::g_pThreadFailureCallbacks
+0x140007b89  jz      short loc_140007BB5
+0x140007b8b  mov     dl, 1
+0x140007b8d  call    ?GetLocal@?$ThreadLocalStorage@PEAVThreadFailureCallbackHolder@details@wil@@@details_abi@wil@@QEAAPEAPEAVThreadFailureCallbackHolder@details@3@_N@Z; wil::details_abi::ThreadLocalStorage<wil::details::ThreadFailureCallbackHolder *>::GetLocal(bool)
+0x140007b92  mov     [rbx], rax
+0x140007b95  test    rax, rax
+0x140007b98  jz      short loc_140007BBC
+0x140007b9a  mov     rcx, [rax]
+0x140007b9d  mov     [rbx+10h], rcx
+0x140007ba1  mov     [rax], rbx
+0x140007ba4  call    cs:__imp_GetCurrentThreadId
+0x140007bab  nop     dword ptr [rax+rax+00h]
+0x140007bb0  mov     [rbx+18h], eax
+0x140007bb3  jmp     short loc_140007BBC
+0x140007bb5  mov     qword ptr [rbx], 0
+0x140007bbc  mov     rbx, [rsp+68h+arg_8]
+0x140007bc1  add     rsp, 50h
+0x140007bc5  pop     rdi
+0x140007bc6  pop     rsi
+0x140007bc7  pop     rbp
+0x140007bc8  retn
+```

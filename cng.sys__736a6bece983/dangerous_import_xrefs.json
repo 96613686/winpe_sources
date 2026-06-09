@@ -1,0 +1,344 @@
+[
+  {
+    "import": "ntoskrnl!ExAllocateFromPagedLookasideList",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180084aa9",
+        "from_func": "0x180084a2c",
+        "from_func_name": "Ssl3ComputeMac",
+        "import": "ntoskrnl!ExAllocateFromPagedLookasideList"
+      },
+      {
+        "from_ea": "0x180084aa9",
+        "from_func": "0x180084a2c",
+        "from_func_name": "Ssl3ComputeMac",
+        "import": "ntoskrnl!ExAllocateFromPagedLookasideList"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!ExDeletePagedLookasideList",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800849c6",
+        "from_func": "0x180084948",
+        "from_func_name": "Ssl3InitMacHashLookasideList",
+        "import": "ntoskrnl!ExDeletePagedLookasideList"
+      },
+      {
+        "from_ea": "0x1800849c6",
+        "from_func": "0x180084948",
+        "from_func_name": "Ssl3InitMacHashLookasideList",
+        "import": "ntoskrnl!ExDeletePagedLookasideList"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!ExFreeToPagedLookasideList",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180084cfc",
+        "from_func": "0x180084a2c",
+        "from_func_name": "Ssl3ComputeMac",
+        "import": "ntoskrnl!ExFreeToPagedLookasideList"
+      },
+      {
+        "from_ea": "0x180084cfc",
+        "from_func": "0x180084a2c",
+        "from_func_name": "Ssl3ComputeMac",
+        "import": "ntoskrnl!ExFreeToPagedLookasideList"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!ExInitializePagedLookasideList",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800849ae",
+        "from_func": "0x180084948",
+        "from_func_name": "Ssl3InitMacHashLookasideList",
+        "import": "ntoskrnl!ExInitializePagedLookasideList"
+      },
+      {
+        "from_ea": "0x1800849ae",
+        "from_func": "0x180084948",
+        "from_func_name": "Ssl3InitMacHashLookasideList",
+        "import": "ntoskrnl!ExInitializePagedLookasideList"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!ExRegisterExtension",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18005dbd4",
+        "from_func": "0x18005d7b8",
+        "from_func_name": "DriverEntry",
+        "import": "ntoskrnl!ExRegisterExtension"
+      },
+      {
+        "from_ea": "0x18005dbd4",
+        "from_func": "0x18005d7b8",
+        "from_func_name": "DriverEntry",
+        "import": "ntoskrnl!ExRegisterExtension"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!IofCompleteRequest",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800231d4",
+        "from_func": "0x180023140",
+        "from_func_name": "CngDispatch",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x1800231d4",
+        "from_func": "0x180023140",
+        "from_func_name": "CngDispatch",
+        "import": "ntoskrnl!IofCompleteRequest"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!ObSetSecurityObjectByPointer",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18005d6ae",
+        "from_func": "0x18005d69c",
+        "from_func_name": "CngSetDeviceSecurity",
+        "import": "ntoskrnl!ObSetSecurityObjectByPointer"
+      },
+      {
+        "from_ea": "0x18005d6ae",
+        "from_func": "0x18005d69c",
+        "from_func_name": "CngSetDeviceSecurity",
+        "import": "ntoskrnl!ObSetSecurityObjectByPointer"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!PsLookupProcessByProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180021e1e",
+        "from_func": "0x180021e00",
+        "from_func_name": "CngCreateProcessNotifyRoutine",
+        "import": "ntoskrnl!PsLookupProcessByProcessId"
+      },
+      {
+        "from_ea": "0x180021e1e",
+        "from_func": "0x180021e00",
+        "from_func_name": "CngCreateProcessNotifyRoutine",
+        "import": "ntoskrnl!PsLookupProcessByProcessId"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!PsSetCreateProcessNotifyRoutine",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18005db67",
+        "from_func": "0x18005d7b8",
+        "from_func_name": "DriverEntry",
+        "import": "ntoskrnl!PsSetCreateProcessNotifyRoutine"
+      },
+      {
+        "from_ea": "0x18005db67",
+        "from_func": "0x18005d7b8",
+        "from_func_name": "DriverEntry",
+        "import": "ntoskrnl!PsSetCreateProcessNotifyRoutine"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlCompareUnicodeString",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x18003bd1d",
+        "from_func": "0x18003bc74",
+        "from_func_name": "_LoadImage",
+        "import": "ntoskrnl!RtlCompareUnicodeString"
+      },
+      {
+        "from_ea": "0x18004967e",
+        "from_func": "0x180049628",
+        "from_func_name": "_IsImagePath",
+        "import": "ntoskrnl!RtlCompareUnicodeString"
+      },
+      {
+        "from_ea": "0x18003bd1d",
+        "from_func": "0x18003bc74",
+        "from_func_name": "_LoadImage",
+        "import": "ntoskrnl!RtlCompareUnicodeString"
+      },
+      {
+        "from_ea": "0x18004967e",
+        "from_func": "0x180049628",
+        "from_func_name": "_IsImagePath",
+        "import": "ntoskrnl!RtlCompareUnicodeString"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!SeReportSecurityEventWithSubCategory",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 16,
+    "xrefs": [
+      {
+        "from_ea": "0x18006e1e5",
+        "from_func": "0x18006e014",
+        "from_func_name": "CfgAdtReportContextModification",
+        "import": "ntoskrnl!SeReportSecurityEventWithSubCategory"
+      },
+      {
+        "from_ea": "0x18006e3d1",
+        "from_func": "0x18006e230",
+        "from_func_name": "CfgAdtReportContextOperation",
+        "import": "ntoskrnl!SeReportSecurityEventWithSubCategory"
+      },
+      {
+        "from_ea": "0x18006e677",
+        "from_func": "0x18006e41c",
+        "from_func_name": "CfgAdtReportFunctionModification",
+        "import": "ntoskrnl!SeReportSecurityEventWithSubCategory"
+      },
+      {
+        "from_ea": "0x18006e91c",
+        "from_func": "0x18006e6c0",
+        "from_func_name": "CfgAdtReportFunctionOperation",
+        "import": "ntoskrnl!SeReportSecurityEventWithSubCategory"
+      },
+      {
+        "from_ea": "0x18006ec7e",
+        "from_func": "0x18006e968",
+        "from_func_name": "CfgAdtReportFunctionPropertyModification",
+        "import": "ntoskrnl!SeReportSecurityEventWithSubCategory"
+      },
+      {
+        "from_ea": "0x18006efc1",
+        "from_func": "0x18006ecf0",
+        "from_func_name": "CfgAdtReportFunctionPropertyOperation",
+        "import": "ntoskrnl!SeReportSecurityEventWithSubCategory"
+      },
+      {
+        "from_ea": "0x18006f2b7",
+        "from_func": "0x18006f024",
+        "from_func_name": "CfgAdtReportFunctionProviderOperation",
+        "import": "ntoskrnl!SeReportSecurityEventWithSubCategory"
+      },
+      {
+        "from_ea": "0x18006f494",
+        "from_func": "0x18006f30c",
+        "from_func_name": "CfgAdtReportProviderOperation",
+        "import": "ntoskrnl!SeReportSecurityEventWithSubCategory"
+      },
+      {
+        "from_ea": "0x18006e1e5",
+        "from_func": "0x18006e014",
+        "from_func_name": "CfgAdtReportContextModification",
+        "import": "ntoskrnl!SeReportSecurityEventWithSubCategory"
+      },
+      {
+        "from_ea": "0x18006e3d1",
+        "from_func": "0x18006e230",
+        "from_func_name": "CfgAdtReportContextOperation",
+        "import": "ntoskrnl!SeReportSecurityEventWithSubCategory"
+      },
+      {
+        "from_ea": "0x18006e677",
+        "from_func": "0x18006e41c",
+        "from_func_name": "CfgAdtReportFunctionModification",
+        "import": "ntoskrnl!SeReportSecurityEventWithSubCategory"
+      },
+      {
+        "from_ea": "0x18006e91c",
+        "from_func": "0x18006e6c0",
+        "from_func_name": "CfgAdtReportFunctionOperation",
+        "import": "ntoskrnl!SeReportSecurityEventWithSubCategory"
+      },
+      {
+        "from_ea": "0x18006ec7e",
+        "from_func": "0x18006e968",
+        "from_func_name": "CfgAdtReportFunctionPropertyModification",
+        "import": "ntoskrnl!SeReportSecurityEventWithSubCategory"
+      },
+      {
+        "from_ea": "0x18006efc1",
+        "from_func": "0x18006ecf0",
+        "from_func_name": "CfgAdtReportFunctionPropertyOperation",
+        "import": "ntoskrnl!SeReportSecurityEventWithSubCategory"
+      },
+      {
+        "from_ea": "0x18006f2b7",
+        "from_func": "0x18006f024",
+        "from_func_name": "CfgAdtReportFunctionProviderOperation",
+        "import": "ntoskrnl!SeReportSecurityEventWithSubCategory"
+      },
+      {
+        "from_ea": "0x18006f494",
+        "from_func": "0x18006f30c",
+        "from_func_name": "CfgAdtReportProviderOperation",
+        "import": "ntoskrnl!SeReportSecurityEventWithSubCategory"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180056963",
+        "from_func": "0x180056963",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "ntoskrnl!__C_specific_handler"
+      }
+    ]
+  }
+]

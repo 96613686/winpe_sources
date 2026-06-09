@@ -1,0 +1,187 @@
+# ComboBox_WndProc(HWND__ *,uint,unsigned __int64,__int64)
+
+- ea: `0x1800b36a0`
+- end: `0x1800b4a18`
+- name: `?ComboBox_WndProc@@YA_JPEAUHWND__@@I_K_J@Z`
+- size: `4984`
+- prototype: `__int64 __fastcall(HWND hwnd, unsigned int, unsigned int, HWND)`
+- caller_count: `2`
+- callee_count: `40`
+- tags: `broker_com_uri`
+
+## callers
+
+- `0x18009f150`
+- `0x1800b33ec`
+
+## callees
+
+- `0x180005b30`
+- `0x18000bae0`
+- `0x180011f44`
+- `0x180026340`
+- `0x1800462bc`
+- `0x180053d48`
+- `0x1800543d4`
+- `0x1800545dc`
+- `0x180054664`
+- `0x1800546e0`
+- `0x18008eb48`
+- `0x1800b36a0`
+- `0x1800bd038`
+- `0x1800bd07c`
+- `0x1800bd948`
+- `0x1800c06b0`
+- `0x1800c0f54`
+- `0x1800c136c`
+- `0x1800c13e4`
+- `0x1800c145c`
+- `0x1800c14bc`
+- `0x1800c3094`
+- `0x1800c3e4c`
+- `0x1800cabbc`
+- `0x1800cad54`
+- `0x1800d6dd0`
+- `0x1800d7e58`
+- `0x1800efa04`
+- `0x1800f2308`
+- `0x180102cc0`
+- `0x18010483c`
+- `0x180105368`
+- `0x180105c40`
+- `0x180114520`
+- `0x18013e4cc`
+- `0x18013e534`
+- `0x18013e558`
+- `0x18013e5c0`
+- `0x18013ea00`
+- `0x180148f14`
+
+## import_xrefs
+
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800b38cb`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x1800b38cb`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x1800b38d9`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x1800b38d9`
+- `api-ms-win-core-localization-l1-2-0!IsDBCSLeadByte` at `0x1800b3dbd`
+- `api-ms-win-core-localization-l1-2-0!IsDBCSLeadByte` at `0x1800b3dbd`
+- `GDI32!RestoreDC` at `0x1800b4809`
+- `GDI32!RestoreDC` at `0x1800b4809`
+- `GDI32!SaveDC` at `0x1800b47b2`
+- `GDI32!SaveDC` at `0x1800b47b2`
+- `GDI32!OffsetWindowOrgEx` at `0x1800b47e5`
+- `GDI32!OffsetWindowOrgEx` at `0x1800b47e5`
+- `USER32!EnableWindow` at `0x1800b3844`
+- `USER32!EnableWindow` at `0x1800b3865`
+- `USER32!EnableWindow` at `0x1800b3844`
+- `USER32!EnableWindow` at `0x1800b3865`
+- `USER32!GetKeyState` at `0x1800b3d31`
+- `USER32!GetKeyState` at `0x1800b3d31`
+- `USER32!ClientToScreen` at `0x1800b42b5`
+- `USER32!ClientToScreen` at `0x1800b42b5`
+- `USER32!IsWindowVisible` at `0x1800b39d2`
+- `USER32!IsWindowVisible` at `0x1800b47a5`
+- `USER32!IsWindowVisible` at `0x1800b39d2`
+- `USER32!IsWindowVisible` at `0x1800b47a5`
+- `USER32!TrackMouseEvent` at `0x1800b438b`
+- `USER32!TrackMouseEvent` at `0x1800b438b`
+- `USER32!SetFocus` at `0x1800b391c`
+- `USER32!SetFocus` at `0x1800b44b5`
+- `USER32!SetFocus` at `0x1800b391c`
+- `USER32!SetFocus` at `0x1800b44b5`
+- `USER32!SetCapture` at `0x1800b454d`
+- `USER32!SetCapture` at `0x1800b454d`
+- `USER32!SetWindowLongW` at `0x1800b3b60`
+- `USER32!SetWindowLongW` at `0x1800b3b90`
+- `USER32!SetWindowLongW` at `0x1800b3b60`
+- `USER32!SetWindowLongW` at `0x1800b3b90`
+- `USER32!GetWindowLongW` at `0x1800b3b4a`
+- `USER32!GetWindowLongW` at `0x1800b3b7a`
+- `USER32!GetWindowLongW` at `0x1800b3b4a`
+- `USER32!GetWindowLongW` at `0x1800b3b7a`
+- `USER32!DefWindowProcW` at `0x1800b3723`
+- `USER32!DefWindowProcW` at `0x1800b477d`
+- `USER32!DefWindowProcW` at `0x1800b3723`
+- `USER32!DefWindowProcW` at `0x1800b477d`
+- `USER32!GetWindowRect` at `0x1800b3950`
+- `USER32!GetWindowRect` at `0x1800b3fed`
+- `USER32!GetWindowRect` at `0x1800b42c3`
+- `USER32!GetWindowRect` at `0x1800b47c1`
+- `USER32!GetWindowRect` at `0x1800b47cf`
+- `USER32!GetWindowRect` at `0x1800b3950`
+- `USER32!GetWindowRect` at `0x1800b3fed`
+- `USER32!GetWindowRect` at `0x1800b42c3`
+- `USER32!GetWindowRect` at `0x1800b47c1`
+- `USER32!GetWindowRect` at `0x1800b47cf`
+- `USER32!SetWindowLongPtrW` at `0x1800b3c93`
+- `USER32!SetWindowLongPtrW` at `0x1800b3c93`
+- `USER32!ScreenToClient` at `0x1800b42ff`
+- `USER32!ScreenToClient` at `0x1800b42ff`
+- `USER32!SendMessageW` at `0x1800b3801`
+- `USER32!SendMessageW` at `0x1800b3e4d`
+- `USER32!SendMessageW` at `0x1800b3e85`
+- `USER32!SendMessageW` at `0x1800b40eb`
+- `USER32!SendMessageW` at `0x1800b413f`
+- `USER32!SendMessageW` at `0x1800b4171`
+- `USER32!SendMessageW` at `0x1800b418f`
+- `USER32!SendMessageW` at `0x1800b447c`
+- `USER32!SendMessageW` at `0x1800b47fe`
+- `USER32!SendMessageW` at `0x1800b484f`
+- `USER32!SendMessageW` at `0x1800b48fa`
+- `USER32!SendMessageW` at `0x1800b3801`
+- `USER32!SendMessageW` at `0x1800b3e4d`
+- `USER32!SendMessageW` at `0x1800b3e85`
+- `USER32!SendMessageW` at `0x1800b40eb`
+- `USER32!SendMessageW` at `0x1800b413f`
+- `USER32!SendMessageW` at `0x1800b4171`
+- `USER32!SendMessageW` at `0x1800b418f`
+- `USER32!SendMessageW` at `0x1800b447c`
+- `USER32!SendMessageW` at `0x1800b47fe`
+- `USER32!SendMessageW` at `0x1800b484f`
+- `USER32!SendMessageW` at `0x1800b48fa`
+- `USER32!GetSystemMetrics` at `0x1800b3dad`
+- `USER32!GetSystemMetrics` at `0x1800b48b3`
+- `USER32!GetSystemMetrics` at `0x1800b3dad`
+- `USER32!GetSystemMetrics` at `0x1800b48b3`
+- `USER32!GetWindowLongPtrW` at `0x1800b36fc`
+- `USER32!GetWindowLongPtrW` at `0x1800b38a6`
+- `USER32!GetWindowLongPtrW` at `0x1800b4821`
+- `USER32!GetWindowLongPtrW` at `0x1800b36fc`
+- `USER32!GetWindowLongPtrW` at `0x1800b38a6`
+- `USER32!GetWindowLongPtrW` at `0x1800b4821`
+- `USER32!IsWindow` at `0x1800b3896`
+- `USER32!IsWindow` at `0x1800b3896`
+- `USER32!RedrawWindow` at `0x1800b41ae`
+- `USER32!RedrawWindow` at `0x1800b41ae`
+- `USER32!GetDlgCtrlID` at `0x1800b3be2`
+- `USER32!GetDlgCtrlID` at `0x1800b3bf5`
+- `USER32!GetDlgCtrlID` at `0x1800b3c0b`
+- `USER32!GetDlgCtrlID` at `0x1800b3be2`
+- `USER32!GetDlgCtrlID` at `0x1800b3bf5`
+- `USER32!GetDlgCtrlID` at `0x1800b3c0b`
+- `USER32!PtInRect` at `0x1800b42d1`
+- `USER32!PtInRect` at `0x1800b44ef`
+- `USER32!PtInRect` at `0x1800b42d1`
+- `USER32!PtInRect` at `0x1800b44ef`
+- `USER32!InvalidateRect` at `0x1800b381d`
+- `USER32!InvalidateRect` at `0x1800b38ee`
+- `USER32!InvalidateRect` at `0x1800b3ba6`
+- `USER32!InvalidateRect` at `0x1800b4615`
+- `USER32!InvalidateRect` at `0x1800b46a3`
+- `USER32!InvalidateRect` at `0x1800b381d`
+- `USER32!InvalidateRect` at `0x1800b38ee`
+- `USER32!InvalidateRect` at `0x1800b3ba6`
+- `USER32!InvalidateRect` at `0x1800b4615`
+- `USER32!InvalidateRect` at `0x1800b46a3`
+- `USER32!IsChild` at `0x1800b387f`
+- `USER32!IsChild` at `0x1800b387f`
+- `USER32!NotifyWinEvent` at `0x1800b4566`
+- `USER32!NotifyWinEvent` at `0x1800b457a`
+- `USER32!NotifyWinEvent` at `0x1800b4566`
+- `USER32!NotifyWinEvent` at `0x1800b457a`
+
+## pseudocode
+
+```c
+
+```

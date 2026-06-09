@@ -1,0 +1,35 @@
+# wil::details::ThreadFailureCallbackHolder::GetThreadContext(wil::FailureInfo *,wil::details::ThreadFailureCallbackHolder *,char *,unsigned __int64)
+
+- ea: `0x1800b443c`
+- end: `0x1800b4561`
+- name: `?GetThreadContext@ThreadFailureCallbackHolder@details@wil@@SA_NPEAUFailureInfo@3@PEAV123@PEAD_K@Z`
+- size: `293`
+- prototype: `bool __fastcall(struct wil::FailureInfo *, struct wil::details::ThreadFailureCallbackHolder *, char *, unsigned __int64)`
+- caller_count: `2`
+- callee_count: `4`
+- tags: ``
+
+## callers
+
+- `0x1800b40cc`
+- `0x1800b443c`
+
+## callees
+
+- `0x180005cb6`
+- `0x180005e44`
+- `0x1800b443c`
+- `0x1800efc6c`
+
+## import_xrefs
+
+- `api-ms-win-crt-private-l1-1-0!_o__errno` at `0x1800b4501`
+- `api-ms-win-crt-private-l1-1-0!_o__errno` at `0x1800b4540`
+- `api-ms-win-crt-private-l1-1-0!_o__errno` at `0x1800b4501`
+- `api-ms-win-crt-private-l1-1-0!_o__errno` at `0x1800b4540`
+
+## pseudocode
+
+```c
+
+```

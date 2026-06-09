@@ -1,0 +1,71 @@
+[
+  {
+    "import": "ntoskrnl!IofCompleteRequest",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x14000a028",
+        "from_func": "0x14000a010",
+        "from_func_name": "ProvCreateClose",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14000a0d4",
+        "from_func": "0x14000a050",
+        "from_func_name": "ProvDeviceControl",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14000a028",
+        "from_func": "0x14000a010",
+        "from_func_name": "ProvCreateClose",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14000a0d4",
+        "from_func": "0x14000a050",
+        "from_func_name": "ProvDeviceControl",
+        "import": "ntoskrnl!IofCompleteRequest"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlCompareUnicodeString",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000a0ab",
+        "from_func": "0x14000a050",
+        "from_func_name": "ProvDeviceControl",
+        "import": "ntoskrnl!RtlCompareUnicodeString"
+      },
+      {
+        "from_ea": "0x14000a0ab",
+        "from_func": "0x14000a050",
+        "from_func_name": "ProvDeviceControl",
+        "import": "ntoskrnl!RtlCompareUnicodeString"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x14000101d",
+        "from_func": "0x14000101d",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "ntoskrnl!__C_specific_handler"
+      }
+    ]
+  }
+]

@@ -1,0 +1,180 @@
+# Edit_WndProc(HWND__ *,uint,unsigned __int64,__int64)
+
+- ea: `0x180059720`
+- end: `0x18005a9b8`
+- name: `?Edit_WndProc@@YA_JPEAUHWND__@@I_K_J@Z`
+- size: `4760`
+- prototype: `__int64 __fastcall(HWND hwnd, unsigned int, unsigned int, LPCWSTR lpString)`
+- caller_count: `0`
+- callee_count: `48`
+- tags: ``
+
+## callees
+
+- `0x180005b30`
+- `0x180011f44`
+- `0x180026340`
+- `0x1800462bc`
+- `0x180054db4`
+- `0x180056a44`
+- `0x180056cc0`
+- `0x180057904`
+- `0x1800579a8`
+- `0x180057d14`
+- `0x180057f08`
+- `0x180058f5c`
+- `0x180059000`
+- `0x180059558`
+- `0x180059720`
+- `0x18005a9c0`
+- `0x18005b3d4`
+- `0x18005b520`
+- `0x18005d61c`
+- `0x18005d8bc`
+- `0x18005dbe4`
+- `0x18005e24c`
+- `0x18005e730`
+- `0x18005ed8c`
+- `0x18005eeb4`
+- `0x1800b7140`
+- `0x1800c2ee8`
+- `0x1800c2fc4`
+- `0x1800c97b0`
+- `0x1800d5770`
+- `0x1800d75f0`
+- `0x1800ddb90`
+- `0x1800e0344`
+- `0x1800e20d8`
+- `0x1800e5330`
+- `0x1800eeb30`
+- `0x1800f1314`
+- `0x1800f2e80`
+- `0x1801072e8`
+- `0x180114520`
+- `0x18013b78c`
+- `0x18013b7d4`
+- `0x18013b8cc`
+- `0x18013bb7c`
+- `0x18013be80`
+- `0x18013c284`
+- `0x18013c534`
+- `0x1801d0c48`
+
+## import_xrefs
+
+- `USER32!GetKeyboardLayout` at `0x180059be7`
+- `USER32!GetKeyboardLayout` at `0x180059cc4`
+- `USER32!GetKeyboardLayout` at `0x180059ee6`
+- `USER32!GetKeyboardLayout` at `0x180059be7`
+- `USER32!GetKeyboardLayout` at `0x180059cc4`
+- `USER32!GetKeyboardLayout` at `0x180059ee6`
+- `USER32!GetKeyState` at `0x18005a2f9`
+- `USER32!GetKeyState` at `0x18005a30d`
+- `USER32!GetKeyState` at `0x18005a2f9`
+- `USER32!GetKeyState` at `0x18005a30d`
+- `USER32!MapVirtualKeyW` at `0x18005a32a`
+- `USER32!MapVirtualKeyW` at `0x18005a32a`
+- `USER32!CopyRect` at `0x180059a85`
+- `USER32!CopyRect` at `0x180059a85`
+- `USER32!SetWindowPos` at `0x180059b4b`
+- `USER32!SetWindowPos` at `0x180059b4b`
+- `USER32!TrackMouseEvent` at `0x18005a0d4`
+- `USER32!TrackMouseEvent` at `0x18005a0d4`
+- `USER32!SetFocus` at `0x18005a238`
+- `USER32!SetFocus` at `0x18005a238`
+- `USER32!SetWindowLongW` at `0x180059df1`
+- `USER32!SetWindowLongW` at `0x180059e7b`
+- `USER32!SetWindowLongW` at `0x180059ea5`
+- `USER32!SetWindowLongW` at `0x18005a3f3`
+- `USER32!SetWindowLongW` at `0x180059df1`
+- `USER32!SetWindowLongW` at `0x180059e7b`
+- `USER32!SetWindowLongW` at `0x180059ea5`
+- `USER32!SetWindowLongW` at `0x18005a3f3`
+- `USER32!KillTimer` at `0x1800598e5`
+- `USER32!KillTimer` at `0x1800598e5`
+- `USER32!GetWindowLongW` at `0x180059dd3`
+- `USER32!GetWindowLongW` at `0x180059dd3`
+- `USER32!DefWindowProcW` at `0x180059a15`
+- `USER32!DefWindowProcW` at `0x180059b0b`
+- `USER32!DefWindowProcW` at `0x18005a12f`
+- `USER32!DefWindowProcW` at `0x18005a3b6`
+- `USER32!DefWindowProcW` at `0x18005a3e1`
+- `USER32!DefWindowProcW` at `0x18005a4bf`
+- `USER32!DefWindowProcW` at `0x180059a15`
+- `USER32!DefWindowProcW` at `0x180059b0b`
+- `USER32!DefWindowProcW` at `0x18005a12f`
+- `USER32!DefWindowProcW` at `0x18005a3b6`
+- `USER32!DefWindowProcW` at `0x18005a3e1`
+- `USER32!DefWindowProcW` at `0x18005a4bf`
+- `USER32!SetWindowLongPtrW` at `0x180059ad8`
+- `USER32!SetWindowLongPtrW` at `0x180059ad8`
+- `USER32!SendMessageW` at `0x1800598fa`
+- `USER32!SendMessageW` at `0x18005a078`
+- `USER32!SendMessageW` at `0x18005a0f3`
+- `USER32!SendMessageW` at `0x18005a22f`
+- `USER32!SendMessageW` at `0x18005a243`
+- `USER32!SendMessageW` at `0x1800598fa`
+- `USER32!SendMessageW` at `0x18005a078`
+- `USER32!SendMessageW` at `0x18005a0f3`
+- `USER32!SendMessageW` at `0x18005a22f`
+- `USER32!SendMessageW` at `0x18005a243`
+- `USER32!GetSystemMetrics` at `0x180059b93`
+- `USER32!GetSystemMetrics` at `0x180059bf5`
+- `USER32!GetSystemMetrics` at `0x180059dfc`
+- `USER32!GetSystemMetrics` at `0x180059ed6`
+- `USER32!GetSystemMetrics` at `0x180059b93`
+- `USER32!GetSystemMetrics` at `0x180059bf5`
+- `USER32!GetSystemMetrics` at `0x180059dfc`
+- `USER32!GetSystemMetrics` at `0x180059ed6`
+- `USER32!GetWindowLongPtrW` at `0x18005974d`
+- `USER32!GetWindowLongPtrW` at `0x18005974d`
+- `USER32!GetClientRect` at `0x1800599aa`
+- `USER32!GetClientRect` at `0x1800599aa`
+- `USER32!PtInRect` at `0x1800599ba`
+- `USER32!PtInRect` at `0x1800599ba`
+- `USER32!InvalidateRect` at `0x18005a4d3`
+- `USER32!InvalidateRect` at `0x18005a540`
+- `USER32!InvalidateRect` at `0x18005a4d3`
+- `USER32!InvalidateRect` at `0x18005a540`
+- `USER32!GetCaretPos` at `0x180059d12`
+- `USER32!GetCaretPos` at `0x180059d12`
+- `IMM32!ImmNotifyIME` at `0x18005a264`
+- `IMM32!ImmNotifyIME` at `0x18005a28f`
+- `IMM32!ImmNotifyIME` at `0x18005a264`
+- `IMM32!ImmNotifyIME` at `0x18005a28f`
+- `IMM32!ImmGetContext` at `0x180059c0f`
+- `IMM32!ImmGetContext` at `0x180059f00`
+- `IMM32!ImmGetContext` at `0x180059ff5`
+- `IMM32!ImmGetContext` at `0x18005a558`
+- `IMM32!ImmGetContext` at `0x180059c0f`
+- `IMM32!ImmGetContext` at `0x180059f00`
+- `IMM32!ImmGetContext` at `0x180059ff5`
+- `IMM32!ImmGetContext` at `0x18005a558`
+- `IMM32!ImmIsIME` at `0x180059c02`
+- `IMM32!ImmIsIME` at `0x180059cef`
+- `IMM32!ImmIsIME` at `0x180059eef`
+- `IMM32!ImmIsIME` at `0x180059c02`
+- `IMM32!ImmIsIME` at `0x180059cef`
+- `IMM32!ImmIsIME` at `0x180059eef`
+- `IMM32!ImmReleaseContext` at `0x180059c47`
+- `IMM32!ImmReleaseContext` at `0x180059f3f`
+- `IMM32!ImmReleaseContext` at `0x18005a025`
+- `IMM32!ImmReleaseContext` at `0x180059c47`
+- `IMM32!ImmReleaseContext` at `0x180059f3f`
+- `IMM32!ImmReleaseContext` at `0x18005a025`
+- `IMM32!ImmGetGuideLineW` at `0x18005a573`
+- `IMM32!ImmGetGuideLineW` at `0x18005a573`
+- `IMM32!ImmUnlockIMC` at `0x18005a019`
+- `IMM32!ImmUnlockIMC` at `0x18005a2a7`
+- `IMM32!ImmUnlockIMC` at `0x18005a019`
+- `IMM32!ImmUnlockIMC` at `0x18005a2a7`
+- `IMM32!ImmLockIMC` at `0x180059c32`
+- `IMM32!ImmLockIMC` at `0x18005a001`
+- `IMM32!ImmLockIMC` at `0x180059c32`
+- `IMM32!ImmLockIMC` at `0x18005a001`
+
+## pseudocode
+
+```c
+
+```

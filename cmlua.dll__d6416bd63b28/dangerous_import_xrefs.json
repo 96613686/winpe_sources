@@ -1,0 +1,563 @@
+[
+  {
+    "import": "ADVAPI32!AdjustTokenPrivileges",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1800034c5",
+        "from_func": "0x180003420",
+        "from_func_name": "?ExitWindowsFunc@CCMLuaUtil@@UEAAJXZ",
+        "import": "ADVAPI32!AdjustTokenPrivileges"
+      },
+      {
+        "from_ea": "0x18000350e",
+        "from_func": "0x180003420",
+        "from_func_name": "?ExitWindowsFunc@CCMLuaUtil@@UEAAJXZ",
+        "import": "ADVAPI32!AdjustTokenPrivileges"
+      },
+      {
+        "from_ea": "0x1800034c5",
+        "from_func": "0x180003420",
+        "from_func_name": "?ExitWindowsFunc@CCMLuaUtil@@UEAAJXZ",
+        "import": "ADVAPI32!AdjustTokenPrivileges"
+      },
+      {
+        "from_ea": "0x18000350e",
+        "from_func": "0x180003420",
+        "from_func_name": "?ExitWindowsFunc@CCMLuaUtil@@UEAAJXZ",
+        "import": "ADVAPI32!AdjustTokenPrivileges"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!AllocateAndInitializeSid",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800045c5",
+        "from_func": "0x180004564",
+        "from_func_name": "FIsUserGroupMember",
+        "import": "ADVAPI32!AllocateAndInitializeSid"
+      },
+      {
+        "from_ea": "0x1800045c5",
+        "from_func": "0x180004564",
+        "from_func_name": "FIsUserGroupMember",
+        "import": "ADVAPI32!AllocateAndInitializeSid"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!FreeSid",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180004602",
+        "from_func": "0x180004564",
+        "from_func_name": "FIsUserGroupMember",
+        "import": "ADVAPI32!FreeSid"
+      },
+      {
+        "from_ea": "0x180004602",
+        "from_func": "0x180004564",
+        "from_func_name": "FIsUserGroupMember",
+        "import": "ADVAPI32!FreeSid"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!LookupPrivilegeValueW",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x180003491",
+        "from_func": "0x180003420",
+        "from_func_name": "?ExitWindowsFunc@CCMLuaUtil@@UEAAJXZ",
+        "import": "ADVAPI32!LookupPrivilegeValueW"
+      },
+      {
+        "from_ea": "0x180003491",
+        "from_func": "0x180003420",
+        "from_func_name": "?ExitWindowsFunc@CCMLuaUtil@@UEAAJXZ",
+        "import": "ADVAPI32!LookupPrivilegeValueW"
+      },
+      {
+        "from_ea": "0x18000ab90",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ADVAPI32!LookupPrivilegeValueW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!OpenProcessToken",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000345c",
+        "from_func": "0x180003420",
+        "from_func_name": "?ExitWindowsFunc@CCMLuaUtil@@UEAAJXZ",
+        "import": "ADVAPI32!OpenProcessToken"
+      },
+      {
+        "from_ea": "0x18000345c",
+        "from_func": "0x180003420",
+        "from_func_name": "?ExitWindowsFunc@CCMLuaUtil@@UEAAJXZ",
+        "import": "ADVAPI32!OpenProcessToken"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegCreateKeyW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180003e40",
+        "from_func": "0x180003e10",
+        "from_func_name": "?SetRegistryStringValue@CCMLuaUtil@@UEAAJHPEBG00@Z",
+        "import": "ADVAPI32!RegCreateKeyW"
+      },
+      {
+        "from_ea": "0x180003e40",
+        "from_func": "0x180003e10",
+        "from_func_name": "?SetRegistryStringValue@CCMLuaUtil@@UEAAJHPEBG00@Z",
+        "import": "ADVAPI32!RegCreateKeyW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegDeleteKeyW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x18000283e",
+        "from_func": "0x1800026b0",
+        "from_func_name": "?CmDeleteRegKeyWithoutSubKeys@@YAJPEAUHKEY__@@PEBGH@Z",
+        "import": "ADVAPI32!RegDeleteKeyW"
+      },
+      {
+        "from_ea": "0x18000334c",
+        "from_func": "0x180003240",
+        "from_func_name": "?DeleteRegTree@CCMLuaUtil@@UEAAJHPEBG@Z",
+        "import": "ADVAPI32!RegDeleteKeyW"
+      },
+      {
+        "from_ea": "0x18000283e",
+        "from_func": "0x1800026b0",
+        "from_func_name": "?CmDeleteRegKeyWithoutSubKeys@@YAJPEAUHKEY__@@PEBGH@Z",
+        "import": "ADVAPI32!RegDeleteKeyW"
+      },
+      {
+        "from_ea": "0x18000334c",
+        "from_func": "0x180003240",
+        "from_func_name": "?DeleteRegTree@CCMLuaUtil@@UEAAJHPEBG@Z",
+        "import": "ADVAPI32!RegDeleteKeyW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegDeleteValueW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800033e1",
+        "from_func": "0x180003390",
+        "from_func_name": "?DeleteRegistryStringValue@CCMLuaUtil@@UEAAJHPEBG0@Z",
+        "import": "ADVAPI32!RegDeleteValueW"
+      },
+      {
+        "from_ea": "0x1800033e1",
+        "from_func": "0x180003390",
+        "from_func_name": "?DeleteRegistryStringValue@CCMLuaUtil@@UEAAJHPEBG0@Z",
+        "import": "ADVAPI32!RegDeleteValueW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegOpenKeyExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x1800027ab",
+        "from_func": "0x1800026b0",
+        "from_func_name": "?CmDeleteRegKeyWithoutSubKeys@@YAJPEAUHKEY__@@PEBGH@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000329f",
+        "from_func": "0x180003240",
+        "from_func_name": "?DeleteRegTree@CCMLuaUtil@@UEAAJHPEBG@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x1800033cd",
+        "from_func": "0x180003390",
+        "from_func_name": "?DeleteRegistryStringValue@CCMLuaUtil@@UEAAJHPEBG0@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x1800027ab",
+        "from_func": "0x1800026b0",
+        "from_func_name": "?CmDeleteRegKeyWithoutSubKeys@@YAJPEAUHKEY__@@PEBGH@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18000329f",
+        "from_func": "0x180003240",
+        "from_func_name": "?DeleteRegTree@CCMLuaUtil@@UEAAJHPEBG@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x1800033cd",
+        "from_func": "0x180003390",
+        "from_func_name": "?DeleteRegistryStringValue@CCMLuaUtil@@UEAAJHPEBG0@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegSetValueExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180003e76",
+        "from_func": "0x180003e10",
+        "from_func_name": "?SetRegistryStringValue@CCMLuaUtil@@UEAAJHPEBG00@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x180003e76",
+        "from_func": "0x180003e10",
+        "from_func_name": "?SetRegistryStringValue@CCMLuaUtil@@UEAAJHPEBG00@Z",
+        "import": "ADVAPI32!RegSetValueExW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!CreateFileW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1800028c1",
+        "from_func": "0x180002890",
+        "from_func_name": "?CreateFileAndClose@CCMLuaUtil@@UEAAJPEBGKKKK@Z",
+        "import": "KERNEL32!CreateFileW"
+      },
+      {
+        "from_ea": "0x180002a30",
+        "from_func": "0x1800029d4",
+        "from_func_name": "?DeleteFolderRecursively@@YAKPEBG@Z",
+        "import": "KERNEL32!CreateFileW"
+      },
+      {
+        "from_ea": "0x1800028c1",
+        "from_func": "0x180002890",
+        "from_func_name": "?CreateFileAndClose@CCMLuaUtil@@UEAAJPEBGKKKK@Z",
+        "import": "KERNEL32!CreateFileW"
+      },
+      {
+        "from_ea": "0x180002a30",
+        "from_func": "0x1800029d4",
+        "from_func_name": "?DeleteFolderRecursively@@YAKPEBG@Z",
+        "import": "KERNEL32!CreateFileW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000194b",
+        "from_func": "0x180001904",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x18000194b",
+        "from_func": "0x180001904",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!LoadLibraryExA",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180003626",
+        "from_func": "0x1800035ec",
+        "from_func_name": "?LinkToDll@@YAHPEAPEAUHINSTANCE__@@PEBDPEAPEBDQEAPEAXK@Z",
+        "import": "KERNEL32!LoadLibraryExA"
+      },
+      {
+        "from_ea": "0x180003626",
+        "from_func": "0x1800035ec",
+        "from_func_name": "?LinkToDll@@YAHPEAPEAUHINSTANCE__@@PEBDPEAPEBDQEAPEAXK@Z",
+        "import": "KERNEL32!LoadLibraryExA"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!LoadLibraryExW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 18,
+    "xrefs": [
+      {
+        "from_ea": "0x180002463",
+        "from_func": "0x180002420",
+        "from_func_name": "?CallCustomActionDll@CCMLuaUtil@@UEAAJPEBG000PEAK@Z",
+        "import": "KERNEL32!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x1800030b1",
+        "from_func": "0x180003090",
+        "from_func_name": "?DeleteRasEntry@CCMLuaUtil@@UEAAJPEBG0@Z",
+        "import": "KERNEL32!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x18000316e",
+        "from_func": "0x180003150",
+        "from_func_name": "?DeleteRasSubEntry@CCMLuaUtil@@UEAAJPEBG0K@Z",
+        "import": "KERNEL32!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x1800039e0",
+        "from_func": "0x1800039c0",
+        "from_func_name": "?SetCustomAuthData@CCMLuaUtil@@UEAAJPEBG00K@Z",
+        "import": "KERNEL32!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x180003ad0",
+        "from_func": "0x180003ab0",
+        "from_func_name": "?SetRasCredentials@CCMLuaUtil@@UEAAJPEBG00H@Z",
+        "import": "KERNEL32!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x180003bc4",
+        "from_func": "0x180003ba0",
+        "from_func_name": "?SetRasEntryProperties@CCMLuaUtil@@UEAAJPEBG0PEAPEAGK@Z",
+        "import": "KERNEL32!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x180003cf6",
+        "from_func": "0x180003cd0",
+        "from_func_name": "?SetRasSubEntryProperties@CCMLuaUtil@@UEAAJPEBG0KPEAPEAGK@Z",
+        "import": "KERNEL32!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x180004826",
+        "from_func": "0x1800047e0",
+        "from_func_name": "_LaunchInfSection",
+        "import": "KERNEL32!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x180004b65",
+        "from_func": "0x180004aac",
+        "from_func_name": "_LaunchInfSectionEx",
+        "import": "KERNEL32!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x180002463",
+        "from_func": "0x180002420",
+        "from_func_name": "?CallCustomActionDll@CCMLuaUtil@@UEAAJPEBG000PEAK@Z",
+        "import": "KERNEL32!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x1800030b1",
+        "from_func": "0x180003090",
+        "from_func_name": "?DeleteRasEntry@CCMLuaUtil@@UEAAJPEBG0@Z",
+        "import": "KERNEL32!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x18000316e",
+        "from_func": "0x180003150",
+        "from_func_name": "?DeleteRasSubEntry@CCMLuaUtil@@UEAAJPEBG0K@Z",
+        "import": "KERNEL32!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x1800039e0",
+        "from_func": "0x1800039c0",
+        "from_func_name": "?SetCustomAuthData@CCMLuaUtil@@UEAAJPEBG00K@Z",
+        "import": "KERNEL32!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x180003ad0",
+        "from_func": "0x180003ab0",
+        "from_func_name": "?SetRasCredentials@CCMLuaUtil@@UEAAJPEBG00H@Z",
+        "import": "KERNEL32!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x180003bc4",
+        "from_func": "0x180003ba0",
+        "from_func_name": "?SetRasEntryProperties@CCMLuaUtil@@UEAAJPEBG0PEAPEAGK@Z",
+        "import": "KERNEL32!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x180003cf6",
+        "from_func": "0x180003cd0",
+        "from_func_name": "?SetRasSubEntryProperties@CCMLuaUtil@@UEAAJPEBG0KPEAPEAGK@Z",
+        "import": "KERNEL32!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x180004826",
+        "from_func": "0x1800047e0",
+        "from_func_name": "_LaunchInfSection",
+        "import": "KERNEL32!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x180004b65",
+        "from_func": "0x180004aac",
+        "from_func_name": "_LaunchInfSectionEx",
+        "import": "KERNEL32!LoadLibraryExW"
+      }
+    ]
+  },
+  {
+    "import": "RPCRT4!NdrDllCanUnloadNow",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180001a5b",
+        "from_func": "0x180001a50",
+        "from_func_name": "DllCanUnloadNow",
+        "import": "RPCRT4!NdrDllCanUnloadNow"
+      },
+      {
+        "from_ea": "0x180001a5b",
+        "from_func": "0x180001a50",
+        "from_func_name": "DllCanUnloadNow",
+        "import": "RPCRT4!NdrDllCanUnloadNow"
+      }
+    ]
+  },
+  {
+    "import": "RPCRT4!NdrDllGetClassObject",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180001ac3",
+        "from_func": "0x180001a80",
+        "from_func_name": "DllGetClassObject",
+        "import": "RPCRT4!NdrDllGetClassObject"
+      },
+      {
+        "from_ea": "0x180001ac3",
+        "from_func": "0x180001a80",
+        "from_func_name": "DllGetClassObject",
+        "import": "RPCRT4!NdrDllGetClassObject"
+      }
+    ]
+  },
+  {
+    "import": "SHELL32!ShellExecuteExW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180003922",
+        "from_func": "0x1800038d0",
+        "from_func_name": "?RunCustomActionExe@CCMLuaUtil@@UEAAJPEBG0PEAPEAG@Z",
+        "import": "SHELL32!ShellExecuteExW"
+      },
+      {
+        "from_ea": "0x180003f0d",
+        "from_func": "0x180003eb0",
+        "from_func_name": "?ShellExec@CCMLuaUtil@@UEAAJPEBG00KK@Z",
+        "import": "SHELL32!ShellExecuteExW"
+      },
+      {
+        "from_ea": "0x180003922",
+        "from_func": "0x1800038d0",
+        "from_func_name": "?RunCustomActionExe@CCMLuaUtil@@UEAAJPEBG0PEAPEAG@Z",
+        "import": "SHELL32!ShellExecuteExW"
+      },
+      {
+        "from_ea": "0x180003f0d",
+        "from_func": "0x180003eb0",
+        "from_func_name": "?ShellExec@CCMLuaUtil@@UEAAJPEBG00KK@Z",
+        "import": "SHELL32!ShellExecuteExW"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x1800014e2",
+        "from_func": "0x1800014e2",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "msvcrt!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__CxxFrameHandler4",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x1800014d6",
+        "from_func": "0x1800014d6",
+        "from_func_name": "__CxxFrameHandler4_0",
+        "import": "msvcrt!__CxxFrameHandler4"
+      }
+    ]
+  }
+]

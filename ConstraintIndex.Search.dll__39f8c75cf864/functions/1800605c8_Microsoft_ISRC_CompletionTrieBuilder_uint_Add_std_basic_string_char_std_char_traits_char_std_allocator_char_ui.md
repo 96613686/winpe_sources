@@ -1,0 +1,47 @@
+# Microsoft::ISRC::CompletionTrieBuilder<uint>::Add(std::basic_string<char,std::char_traits<char>,std::allocator<char>>,uint,uint)
+
+- ea: `0x1800605c8`
+- end: `0x180060831`
+- name: `?Add@?$CompletionTrieBuilder@I@ISRC@Microsoft@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@II@Z`
+- size: `617`
+- prototype: ``
+- caller_count: `4`
+- callee_count: `16`
+- tags: `broker_com_uri`
+
+## callers
+
+- `0x18005fb18`
+- `0x18005fc74`
+- `0x18005fd04`
+- `0x180064800`
+
+## callees
+
+- `0x1800049e0`
+- `0x180004a04`
+- `0x180005e44`
+- `0x1800062a0`
+- `0x1800062b8`
+- `0x18000c840`
+- `0x18000cdb0`
+- `0x18000d150`
+- `0x180011ea4`
+- `0x1800154dc`
+- `0x180016e84`
+- `0x18001a548`
+- `0x1800499d8`
+- `0x180052bbc`
+- `0x1800605c8`
+- `0x18006ca0c`
+
+## import_xrefs
+
+- `api-ms-win-crt-private-l1-1-0!_o_exit` at `0x180060637`
+- `api-ms-win-crt-private-l1-1-0!_o_exit` at `0x180060637`
+
+## pseudocode
+
+```c
+
+```

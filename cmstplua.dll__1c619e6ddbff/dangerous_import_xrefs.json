@@ -1,0 +1,209 @@
+[
+  {
+    "import": "ADVAPI32!AllocateAndInitializeSid",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800022e5",
+        "from_func": "0x180002284",
+        "from_func_name": "FIsUserGroupMember",
+        "import": "ADVAPI32!AllocateAndInitializeSid"
+      },
+      {
+        "from_ea": "0x1800022e5",
+        "from_func": "0x180002284",
+        "from_func_name": "FIsUserGroupMember",
+        "import": "ADVAPI32!AllocateAndInitializeSid"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!FreeSid",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x180002322",
+        "from_func": "0x180002284",
+        "from_func_name": "FIsUserGroupMember",
+        "import": "ADVAPI32!FreeSid"
+      },
+      {
+        "from_ea": "0x180002322",
+        "from_func": "0x180002284",
+        "from_func_name": "FIsUserGroupMember",
+        "import": "ADVAPI32!FreeSid"
+      },
+      {
+        "from_ea": "0x1800056c0",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ADVAPI32!FreeSid"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000162b",
+        "from_func": "0x1800015e4",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x18000162b",
+        "from_func": "0x1800015e4",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!LoadLibraryExW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x180001b11",
+        "from_func": "0x180001af0",
+        "from_func_name": "?CreateDesktopIcon@CCmstpLua@@UEAAJU_GUID@@PEBG@Z",
+        "import": "KERNEL32!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x180001db2",
+        "from_func": "0x180001d70",
+        "from_func_name": "?LaunchProfile@CCmstpLua@@UEAAJPEBG00H@Z",
+        "import": "KERNEL32!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x180001f19",
+        "from_func": "0x180001d70",
+        "from_func_name": "?LaunchProfile@CCmstpLua@@UEAAJPEBG00H@Z",
+        "import": "KERNEL32!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x180001b11",
+        "from_func": "0x180001af0",
+        "from_func_name": "?CreateDesktopIcon@CCmstpLua@@UEAAJU_GUID@@PEBG@Z",
+        "import": "KERNEL32!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x180001db2",
+        "from_func": "0x180001d70",
+        "from_func_name": "?LaunchProfile@CCmstpLua@@UEAAJPEBG00H@Z",
+        "import": "KERNEL32!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x180001f19",
+        "from_func": "0x180001d70",
+        "from_func_name": "?LaunchProfile@CCmstpLua@@UEAAJPEBG00H@Z",
+        "import": "KERNEL32!LoadLibraryExW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!SetFileAttributesW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180001ceb",
+        "from_func": "0x180001c60",
+        "from_func_name": "?DeleteDesktopIcon@CCmstpLua@@UEAAJPEBG@Z",
+        "import": "KERNEL32!SetFileAttributesW"
+      },
+      {
+        "from_ea": "0x180001ceb",
+        "from_func": "0x180001c60",
+        "from_func_name": "?DeleteDesktopIcon@CCmstpLua@@UEAAJPEBG@Z",
+        "import": "KERNEL32!SetFileAttributesW"
+      }
+    ]
+  },
+  {
+    "import": "RPCRT4!NdrDllCanUnloadNow",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000192b",
+        "from_func": "0x180001920",
+        "from_func_name": "DllCanUnloadNow",
+        "import": "RPCRT4!NdrDllCanUnloadNow"
+      },
+      {
+        "from_ea": "0x18000192b",
+        "from_func": "0x180001920",
+        "from_func_name": "DllCanUnloadNow",
+        "import": "RPCRT4!NdrDllCanUnloadNow"
+      }
+    ]
+  },
+  {
+    "import": "RPCRT4!NdrDllGetClassObject",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180001993",
+        "from_func": "0x180001950",
+        "from_func_name": "DllGetClassObject",
+        "import": "RPCRT4!NdrDllGetClassObject"
+      },
+      {
+        "from_ea": "0x180001993",
+        "from_func": "0x180001950",
+        "from_func_name": "DllGetClassObject",
+        "import": "RPCRT4!NdrDllGetClassObject"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x1800016d3",
+        "from_func": "0x1800016d3",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "msvcrt!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__CxxFrameHandler4",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x1800014d6",
+        "from_func": "0x1800014d6",
+        "from_func_name": "__CxxFrameHandler4_0",
+        "import": "msvcrt!__CxxFrameHandler4"
+      }
+    ]
+  }
+]
