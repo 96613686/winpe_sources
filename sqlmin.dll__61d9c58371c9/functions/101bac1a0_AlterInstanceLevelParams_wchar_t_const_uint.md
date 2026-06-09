@@ -1,0 +1,243 @@
+# AlterInstanceLevelParams(wchar_t const *,uint)
+
+- ea: `0x101bac1a0`
+- end: `0x101bad795`
+- name: `?AlterInstanceLevelParams@@YA?AW4SOS_RESULT@@PEB_WI@Z`
+- size: `5621`
+- prototype: ``
+- caller_count: `0`
+- callee_count: `15`
+- tags: `installer_update, broker_com_uri`
+
+## callees
+
+- `0x1004714f0`
+- `0x101208480`
+- `0x1012084f0`
+- `0x101208c00`
+- `0x101208cc0`
+- `0x1012094f0`
+- `0x1012095b0`
+- `0x101209680`
+- `0x101209810`
+- `0x101209920`
+- `0x101bab7f0`
+- `0x101bab9a0`
+- `0x101bac1a0`
+- `0x101c62c00`
+- `0x10249b110`
+
+## import_xrefs
+
+- `sqldk!?UpdateSchedulerIdealWorkerLimit@SOS_OS@@SAXG@Z` at `0x101bad1dd`
+- `sqldk!?UpdateSchedulerIdealWorkerLimit@SOS_OS@@SAXG@Z` at `0x101bad1dd`
+- `sqldk!?InterlockedResetTags@VolumeIOData@@QEAAXXZ` at `0x101bac250`
+- `sqldk!?InterlockedResetTags@VolumeIOData@@QEAAXXZ` at `0x101bac2fc`
+- `sqldk!?InterlockedResetTags@VolumeIOData@@QEAAXXZ` at `0x101bac43d`
+- `sqldk!?InterlockedResetTags@VolumeIOData@@QEAAXXZ` at `0x101bac4e8`
+- `sqldk!?InterlockedResetTags@VolumeIOData@@QEAAXXZ` at `0x101bac5f4`
+- `sqldk!?InterlockedResetTags@VolumeIOData@@QEAAXXZ` at `0x101bac69f`
+- `sqldk!?InterlockedResetTags@VolumeIOData@@QEAAXXZ` at `0x101bac892`
+- `sqldk!?InterlockedResetTags@VolumeIOData@@QEAAXXZ` at `0x101bac250`
+- `sqldk!?InterlockedResetTags@VolumeIOData@@QEAAXXZ` at `0x101bac2fc`
+- `sqldk!?InterlockedResetTags@VolumeIOData@@QEAAXXZ` at `0x101bac43d`
+- `sqldk!?InterlockedResetTags@VolumeIOData@@QEAAXXZ` at `0x101bac4e8`
+- `sqldk!?InterlockedResetTags@VolumeIOData@@QEAAXXZ` at `0x101bac5f4`
+- `sqldk!?InterlockedResetTags@VolumeIOData@@QEAAXXZ` at `0x101bac69f`
+- `sqldk!?InterlockedResetTags@VolumeIOData@@QEAAXXZ` at `0x101bac892`
+- `sqldk!?ChangeGlobalCapCpu@SOS_ResourceManager@@SAXK@Z` at `0x101bac348`
+- `sqldk!?ChangeGlobalCapCpu@SOS_ResourceManager@@SAXK@Z` at `0x101bac348`
+- `sqldk!?SOS_OS_MinSosGapWithJobMemLimitInBytes@@3_KA` at `0x101bad240`
+- `sqldk!?SOS_OS_MinSosGapWithJobMemLimitInBytes@@3_KA` at `0x101bad26a`
+- `sqldk!?SOS_OS_IgnoreNonYieldingScheduler@@3HA` at `0x101bad744`
+- `sqldk!?SOS_OS_MinHealthyRateOfMemReleaseKB@@3_JA` at `0x101bad2cc`
+- `sqldk!?GetManager@SOS_IOResourceManager@@SAPEAV1@XZ` at `0x101bad6fa`
+- `sqldk!?GetManager@SOS_IOResourceManager@@SAPEAV1@XZ` at `0x101bad6fa`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101bad77d`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101bad77d`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac1bd`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac209`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac272`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac2bb`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac31e`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac37f`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac3ab`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac3f3`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac45f`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac4a4`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac50a`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac552`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac57e`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac5aa`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac616`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac65b`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac6c1`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac749`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac795`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac7dd`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac809`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac84e`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac8b4`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac8ea`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac968`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac9e8`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101baca14`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101baca40`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101baca85`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacaca`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacb0f`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacb54`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacb99`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacbde`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacc20`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacc62`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacca4`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacce6`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacd28`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacd6a`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacdb1`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacdeb`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bace25`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bace5f`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bace8b`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101baceb7`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacef1`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacf33`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacf75`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacfb7`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacff9`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad03b`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad07d`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad0bf`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad101`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad143`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad185`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad1c7`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad236`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad290`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad2c2`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad2f2`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad31e`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad34a`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad376`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad3a2`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad3ce`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad3fa`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad426`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad452`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad47e`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad4aa`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad4d6`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad502`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad52e`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad55a`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad586`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad5b2`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad5de`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad60a`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad636`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad662`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad68e`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad6ba`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad6f0`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad73a`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac1bd`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac209`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac272`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac2bb`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac31e`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac37f`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac3ab`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac3f3`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac45f`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac4a4`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac50a`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac552`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac57e`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac5aa`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac616`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac65b`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac6c1`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac749`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac795`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac7dd`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac809`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac84e`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac8b4`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac8ea`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac968`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bac9e8`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101baca14`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101baca40`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101baca85`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacaca`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacb0f`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacb54`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacb99`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacbde`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacc20`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacc62`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacca4`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacce6`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacd28`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacd6a`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacdb1`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacdeb`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bace25`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bace5f`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bace8b`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101baceb7`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacef1`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacf33`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacf75`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacfb7`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bacff9`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad03b`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad07d`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad0bf`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad101`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad143`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad185`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad1c7`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad236`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad290`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad2c2`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad2f2`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad31e`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad34a`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad376`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad3a2`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad3ce`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad3fa`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad426`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad452`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad47e`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad4aa`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad4d6`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad502`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad52e`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad55a`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad586`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad5b2`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad5de`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad60a`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad636`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad662`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad68e`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad6ba`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad6f0`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101bad73a`
+- `sqlfabric!GetInstanceMemberComputeNodeCount` at `0x101bac915`
+- `sqlfabric!GetInstanceMemberComputeNodeCount` at `0x101bac996`
+
+## string_xrefs
+
+- `0x101bad1bd`: `MaxWorkerThreads`
+- `0x101baca0a`: `DwPestoBlobXStoreWriteIOSizeBytes`
+- `0x101bac9de`: `DwPestoBlobXStoreReadIOSizeBytes`
+
+## pseudocode
+
+```c
+
+```

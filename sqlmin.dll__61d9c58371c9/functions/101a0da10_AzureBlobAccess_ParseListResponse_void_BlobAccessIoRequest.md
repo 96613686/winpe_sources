@@ -1,0 +1,224 @@
+# AzureBlobAccess::ParseListResponse(void *,BlobAccessIoRequest *)
+
+- ea: `0x101a0da10`
+- end: `0x101a0eeb4`
+- name: `?ParseListResponse@AzureBlobAccess@@UEAA_NPEAXPEAUBlobAccessIoRequest@@@Z`
+- size: `5284`
+- prototype: `bool __fastcall(AzureBlobAccess *__hidden this, void *, struct BlobAccessIoRequest *)`
+- caller_count: `0`
+- callee_count: `17`
+- tags: ``
+
+## callees
+
+- `0x100401490`
+- `0x100401fcf`
+- `0x100402000`
+- `0x1004025c0`
+- `0x100415e90`
+- `0x1006202e0`
+- `0x1019f9890`
+- `0x1019f9a60`
+- `0x1019f9be0`
+- `0x101a0da10`
+- `0x101a0fd90`
+- `0x101a11390`
+- `0x101a1c570`
+- `0x101a1d210`
+- `0x1023aea90`
+- `0x1023aee60`
+- `0x1024ac8f9`
+
+## import_xrefs
+
+- `WINHTTP!WinHttpReadData` at `0x101a0dc3e`
+- `WINHTTP!WinHttpReadData` at `0x101a0dc3e`
+- `KERNEL32!GetLastError` at `0x101a0dc4c`
+- `KERNEL32!GetLastError` at `0x101a0e754`
+- `KERNEL32!GetLastError` at `0x101a0e77f`
+- `KERNEL32!GetLastError` at `0x101a0e9fa`
+- `KERNEL32!GetLastError` at `0x101a0ea7f`
+- `KERNEL32!GetLastError` at `0x101a0eaa2`
+- `KERNEL32!GetLastError` at `0x101a0eac0`
+- `KERNEL32!GetLastError` at `0x101a0eadb`
+- `KERNEL32!GetLastError` at `0x101a0eaff`
+- `KERNEL32!GetLastError` at `0x101a0eb1d`
+- `KERNEL32!GetLastError` at `0x101a0eb3d`
+- `KERNEL32!GetLastError` at `0x101a0eb60`
+- `KERNEL32!GetLastError` at `0x101a0eb7b`
+- `KERNEL32!GetLastError` at `0x101a0ebf5`
+- `KERNEL32!GetLastError` at `0x101a0ec1f`
+- `KERNEL32!GetLastError` at `0x101a0ec3d`
+- `KERNEL32!GetLastError` at `0x101a0dc4c`
+- `KERNEL32!GetLastError` at `0x101a0e754`
+- `KERNEL32!GetLastError` at `0x101a0e77f`
+- `KERNEL32!GetLastError` at `0x101a0e9fa`
+- `KERNEL32!GetLastError` at `0x101a0ea7f`
+- `KERNEL32!GetLastError` at `0x101a0eaa2`
+- `KERNEL32!GetLastError` at `0x101a0eac0`
+- `KERNEL32!GetLastError` at `0x101a0eadb`
+- `KERNEL32!GetLastError` at `0x101a0eaff`
+- `KERNEL32!GetLastError` at `0x101a0eb1d`
+- `KERNEL32!GetLastError` at `0x101a0eb3d`
+- `KERNEL32!GetLastError` at `0x101a0eb60`
+- `KERNEL32!GetLastError` at `0x101a0eb7b`
+- `KERNEL32!GetLastError` at `0x101a0ebf5`
+- `KERNEL32!GetLastError` at `0x101a0ec1f`
+- `KERNEL32!GetLastError` at `0x101a0ec3d`
+- `sqlTsEs!?FastDBCSToUnicode@@YAHIPEBDHPEA_WH@Z` at `0x101a0de67`
+- `sqlTsEs!?FastDBCSToUnicode@@YAHIPEBDHPEA_WH@Z` at `0x101a0dfa1`
+- `sqlTsEs!?FastDBCSToUnicode@@YAHIPEBDHPEA_WH@Z` at `0x101a0e0c0`
+- `sqlTsEs!?FastDBCSToUnicode@@YAHIPEBDHPEA_WH@Z` at `0x101a0e1df`
+- `sqlTsEs!?FastDBCSToUnicode@@YAHIPEBDHPEA_WH@Z` at `0x101a0e625`
+- `sqlTsEs!?FastDBCSToUnicode@@YAHIPEBDHPEA_WH@Z` at `0x101a0e74a`
+- `sqlTsEs!?FastDBCSToUnicode@@YAHIPEBDHPEA_WH@Z` at `0x101a0de67`
+- `sqlTsEs!?FastDBCSToUnicode@@YAHIPEBDHPEA_WH@Z` at `0x101a0dfa1`
+- `sqlTsEs!?FastDBCSToUnicode@@YAHIPEBDHPEA_WH@Z` at `0x101a0e0c0`
+- `sqlTsEs!?FastDBCSToUnicode@@YAHIPEBDHPEA_WH@Z` at `0x101a0e1df`
+- `sqlTsEs!?FastDBCSToUnicode@@YAHIPEBDHPEA_WH@Z` at `0x101a0e625`
+- `sqlTsEs!?FastDBCSToUnicode@@YAHIPEBDHPEA_WH@Z` at `0x101a0e74a`
+- `sqldk!?SOS_OS_sm_osProcessStatus@@3KA` at `0x101a0dbbf`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101a0dce2`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101a0e478`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101a0dce2`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101a0e478`
+- `sqldk!?GetOSErrString@@YAPEA_WKAEAVErrorStringHolder@@PEBXK@Z` at `0x101a0ea2e`
+- `sqldk!?GetOSErrString@@YAPEA_WKAEAVErrorStringHolder@@PEBXK@Z` at `0x101a0eab7`
+- `sqldk!?GetOSErrString@@YAPEA_WKAEAVErrorStringHolder@@PEBXK@Z` at `0x101a0eb14`
+- `sqldk!?GetOSErrString@@YAPEA_WKAEAVErrorStringHolder@@PEBXK@Z` at `0x101a0eb72`
+- `sqldk!?GetOSErrString@@YAPEA_WKAEAVErrorStringHolder@@PEBXK@Z` at `0x101a0ec34`
+- `sqldk!?GetOSErrString@@YAPEA_WKAEAVErrorStringHolder@@PEBXK@Z` at `0x101a0ea2e`
+- `sqldk!?GetOSErrString@@YAPEA_WKAEAVErrorStringHolder@@PEBXK@Z` at `0x101a0eab7`
+- `sqldk!?GetOSErrString@@YAPEA_WKAEAVErrorStringHolder@@PEBXK@Z` at `0x101a0eb14`
+- `sqldk!?GetOSErrString@@YAPEA_WKAEAVErrorStringHolder@@PEBXK@Z` at `0x101a0eb72`
+- `sqldk!?GetOSErrString@@YAPEA_WKAEAVErrorStringHolder@@PEBXK@Z` at `0x101a0ec34`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101a0e607`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101a0e728`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101a0e828`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101a0e86d`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101a0ecd2`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101a0ed04`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101a0e607`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101a0e728`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101a0e828`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101a0e86d`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101a0ecd2`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101a0ed04`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101a0dc0d`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101a0dc0d`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101a0de3d`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101a0df76`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101a0e092`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101a0e1b1`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101a0ee1d`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101a0de3d`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101a0df76`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101a0e092`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101a0e1b1`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101a0ee1d`
+- `sqldk!SystemThread_TlsIndex` at `0x101a0dbdd`
+- `sqldk!SystemThread_TlsOffset` at `0x101a0dbe6`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101a0dc92`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101a0dc92`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a0ed1a`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a0ed1a`
+- `VCRUNTIME140!strstr` at `0x101a0dad0`
+- `VCRUNTIME140!strstr` at `0x101a0dae5`
+- `VCRUNTIME140!strstr` at `0x101a0dafa`
+- `VCRUNTIME140!strstr` at `0x101a0db19`
+- `VCRUNTIME140!strstr` at `0x101a0db2c`
+- `VCRUNTIME140!strstr` at `0x101a0db44`
+- `VCRUNTIME140!strstr` at `0x101a0db57`
+- `VCRUNTIME140!strstr` at `0x101a0dda2`
+- `VCRUNTIME140!strstr` at `0x101a0ddbe`
+- `VCRUNTIME140!strstr` at `0x101a0dedb`
+- `VCRUNTIME140!strstr` at `0x101a0def7`
+- `VCRUNTIME140!strstr` at `0x101a0dff7`
+- `VCRUNTIME140!strstr` at `0x101a0e013`
+- `VCRUNTIME140!strstr` at `0x101a0e116`
+- `VCRUNTIME140!strstr` at `0x101a0e132`
+- `VCRUNTIME140!strstr` at `0x101a0e235`
+- `VCRUNTIME140!strstr` at `0x101a0e24d`
+- `VCRUNTIME140!strstr` at `0x101a0e2e7`
+- `VCRUNTIME140!strstr` at `0x101a0e303`
+- `VCRUNTIME140!strstr` at `0x101a0e3dd`
+- `VCRUNTIME140!strstr` at `0x101a0e3f0`
+- `VCRUNTIME140!strstr` at `0x101a0e53b`
+- `VCRUNTIME140!strstr` at `0x101a0e557`
+- `VCRUNTIME140!strstr` at `0x101a0e687`
+- `VCRUNTIME140!strstr` at `0x101a0e6a3`
+- `VCRUNTIME140!strstr` at `0x101a0e7fc`
+- `VCRUNTIME140!strstr` at `0x101a0e841`
+- `VCRUNTIME140!strstr` at `0x101a0e97d`
+- `VCRUNTIME140!strstr` at `0x101a0e990`
+- `VCRUNTIME140!strstr` at `0x101a0e9a8`
+- `VCRUNTIME140!strstr` at `0x101a0e9bb`
+- `VCRUNTIME140!strstr` at `0x101a0ec8e`
+- `VCRUNTIME140!strstr` at `0x101a0eca1`
+- `VCRUNTIME140!strstr` at `0x101a0ed85`
+- `VCRUNTIME140!strstr` at `0x101a0eda1`
+- `VCRUNTIME140!strstr` at `0x101a0dad0`
+- `VCRUNTIME140!strstr` at `0x101a0dae5`
+- `VCRUNTIME140!strstr` at `0x101a0dafa`
+- `VCRUNTIME140!strstr` at `0x101a0db19`
+- `VCRUNTIME140!strstr` at `0x101a0db2c`
+- `VCRUNTIME140!strstr` at `0x101a0db44`
+- `VCRUNTIME140!strstr` at `0x101a0db57`
+- `VCRUNTIME140!strstr` at `0x101a0dda2`
+- `VCRUNTIME140!strstr` at `0x101a0ddbe`
+- `VCRUNTIME140!strstr` at `0x101a0dedb`
+- `VCRUNTIME140!strstr` at `0x101a0def7`
+- `VCRUNTIME140!strstr` at `0x101a0dff7`
+- `VCRUNTIME140!strstr` at `0x101a0e013`
+- `VCRUNTIME140!strstr` at `0x101a0e116`
+- `VCRUNTIME140!strstr` at `0x101a0e132`
+- `VCRUNTIME140!strstr` at `0x101a0e235`
+- `VCRUNTIME140!strstr` at `0x101a0e24d`
+- `VCRUNTIME140!strstr` at `0x101a0e2e7`
+- `VCRUNTIME140!strstr` at `0x101a0e303`
+- `VCRUNTIME140!strstr` at `0x101a0e3dd`
+- `VCRUNTIME140!strstr` at `0x101a0e3f0`
+- `VCRUNTIME140!strstr` at `0x101a0e53b`
+- `VCRUNTIME140!strstr` at `0x101a0e557`
+- `VCRUNTIME140!strstr` at `0x101a0e687`
+- `VCRUNTIME140!strstr` at `0x101a0e6a3`
+- `VCRUNTIME140!strstr` at `0x101a0e7fc`
+- `VCRUNTIME140!strstr` at `0x101a0e841`
+- `VCRUNTIME140!strstr` at `0x101a0e97d`
+- `VCRUNTIME140!strstr` at `0x101a0e990`
+- `VCRUNTIME140!strstr` at `0x101a0e9a8`
+- `VCRUNTIME140!strstr` at `0x101a0e9bb`
+- `VCRUNTIME140!strstr` at `0x101a0ec8e`
+- `VCRUNTIME140!strstr` at `0x101a0eca1`
+- `VCRUNTIME140!strstr` at `0x101a0ed85`
+- `VCRUNTIME140!strstr` at `0x101a0eda1`
+- `api-ms-win-crt-string-l1-1-0!wcsncmp` at `0x101a0e8e4`
+- `api-ms-win-crt-string-l1-1-0!wcsncmp` at `0x101a0e8e4`
+- `api-ms-win-crt-convert-l1-1-0!mbstowcs_s` at `0x101a0ee75`
+- `api-ms-win-crt-convert-l1-1-0!mbstowcs_s` at `0x101a0ee75`
+- `api-ms-win-crt-convert-l1-1-0!_atoi64` at `0x101a0e295`
+- `api-ms-win-crt-convert-l1-1-0!_atoi64` at `0x101a0e295`
+
+## string_xrefs
+
+- `0x101a0dc21`: `%hs: WinHttpReadData 0x%x bytes.`
+- `0x101a0dccd`: `sql\ntdbms\storeng\dfs\manager\blobaccess.cpp`
+- `0x101a0de28`: `sql\ntdbms\storeng\dfs\manager\blobaccess.cpp`
+- `0x101a0df61`: `sql\ntdbms\storeng\dfs\manager\blobaccess.cpp`
+- `0x101a0e07d`: `sql\ntdbms\storeng\dfs\manager\blobaccess.cpp`
+- `0x101a0e19c`: `sql\ntdbms\storeng\dfs\manager\blobaccess.cpp`
+- `0x101a0e462`: `sql\ntdbms\storeng\dfs\manager\blobaccess.cpp`
+- `0x101a0ee0a`: `sql\ntdbms\storeng\dfs\manager\blobaccess.cpp`
+- `0x101a0dc1a`: `AzureBlobAccess::ParseListResponse`
+- `0x101a0e5f4`: `"sql\\ntdbms\\storeng\\dfs\\manager\\blobaccess.cpp"`
+- `0x101a0e717`: `"sql\\ntdbms\\storeng\\dfs\\manager\\blobaccess.cpp"`
+- `0x101a0e815`: `"sql\\ntdbms\\storeng\\dfs\\manager\\blobaccess.cpp"`
+- `0x101a0e85a`: `"sql\\ntdbms\\storeng\\dfs\\manager\\blobaccess.cpp"`
+- `0x101a0ecc1`: `"sql\\ntdbms\\storeng\\dfs\\manager\\blobaccess.cpp"`
+- `0x101a0ecf3`: `"sql\\ntdbms\\storeng\\dfs\\manager\\blobaccess.cpp"`
+
+## pseudocode
+
+```c
+
+```

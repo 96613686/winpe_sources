@@ -1,0 +1,226 @@
+# BackupEntry::SetupObject(BackupOperation *,IMemObj *,int,wchar_t const *,int)
+
+- ea: `0x101f84560`
+- end: `0x101f86700`
+- name: `?SetupObject@BackupEntry@@IEAAXPEAVBackupOperation@@PEAVIMemObj@@HPEB_WH@Z`
+- size: `8608`
+- prototype: `void __fastcall(BackupEntry *__hidden this, struct BackupOperation *, struct IMemObj *, int, const wchar_t *, unsigned int)`
+- caller_count: `1`
+- callee_count: `29`
+- tags: `registry_config, installer_update, broker_com_uri`
+
+## callers
+
+- `0x101f83b10`
+
+## callees
+
+- `0x100401490`
+- `0x100401fcf`
+- `0x100402000`
+- `0x100402200`
+- `0x100415c30`
+- `0x10041b5d0`
+- `0x10042c9e0`
+- `0x1005c14e0`
+- `0x100999ad0`
+- `0x1011538d0`
+- `0x1017aee00`
+- `0x101802370`
+- `0x101f841c0`
+- `0x101f84560`
+- `0x101f8f370`
+- `0x101f8f980`
+- `0x101f92b50`
+- `0x101f92cc0`
+- `0x101fc57b0`
+- `0x101fc9d70`
+- `0x101fc9e50`
+- `0x101fcd600`
+- `0x101fd7a60`
+- `0x101fed730`
+- `0x101ff01d0`
+- `0x101ffb840`
+- `0x102029580`
+- `0x1023aee60`
+- `0x1023af450`
+
+## import_xrefs
+
+- `KERNEL32!LocalFree` at `0x101f85734`
+- `KERNEL32!LocalFree` at `0x101f85734`
+- `sqlTsEs!?DateAdd@SQLDATE@@QEAAJJJ@Z` at `0x101f86558`
+- `sqlTsEs!?DateAdd@SQLDATE@@QEAAJJJ@Z` at `0x101f865a2`
+- `sqlTsEs!?DateAdd@SQLDATE@@QEAAJJJ@Z` at `0x101f86558`
+- `sqlTsEs!?DateAdd@SQLDATE@@QEAAJJJ@Z` at `0x101f865a2`
+- `sqldk!?s_pServerConf@@3PEAVIServerConfiguration@@EA` at `0x101f845eb`
+- `sqldk!?s_pServerConf@@3PEAVIServerConfiguration@@EA` at `0x101f85c0e`
+- `sqldk!?s_pServerConf@@3PEAVIServerConfiguration@@EA` at `0x101f85c26`
+- `sqldk!?s_pServerConf@@3PEAVIServerConfiguration@@EA` at `0x101f86560`
+- `sqldk!?s_pServerConf@@3PEAVIServerConfiguration@@EA` at `0x101f86583`
+- `sqldk!?g_metadataFactory@@3UMetadataFactory@@A` at `0x101f85279`
+- `sqldk!?g_metadataFactory@@3UMetadataFactory@@A` at `0x101f854f5`
+- `sqldk!?g_metadataFactory@@3UMetadataFactory@@A` at `0x101f85cdb`
+- `sqldk!?g_pAutoXactFactory@@3PEAVIAutoXactFactory@@EA` at `0x101f8522e`
+- `sqldk!?g_pAutoXactFactory@@3PEAVIAutoXactFactory@@EA` at `0x101f854a6`
+- `sqldk!?g_pAutoXactFactory@@3PEAVIAutoXactFactory@@EA` at `0x101f85c89`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101f852cc`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101f852cc`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101f85381`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101f856df`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101f85381`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101f856df`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101f84771`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101f86272`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101f84771`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101f86272`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101f84639`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101f8469f`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101f85491`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101f858c9`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101f85ea7`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101f85fed`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101f86088`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101f860b3`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101f861f8`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101f84639`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101f8469f`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101f85491`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101f858c9`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101f85ea7`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101f85fed`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101f86088`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101f860b3`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101f861f8`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f84608`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f84663`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f8494b`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f8498d`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f849c5`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f84a37`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f84b9e`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f84e82`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f85149`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f85206`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f852ff`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f85354`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f853f1`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f8556c`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f85592`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f855be`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f855f7`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f85623`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f8564f`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f85689`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f858f7`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f85a12`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f85a3c`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f85bf1`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f85c62`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f85c7f`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f85d73`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f85d94`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f85e08`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f85e34`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f86056`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f8622f`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f86468`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f864ba`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f864e2`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f84608`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f84663`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f8494b`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f8498d`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f849c5`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f84a37`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f84b9e`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f84e82`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f85149`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f85206`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f852ff`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f85354`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f853f1`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f8556c`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f85592`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f855be`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f855f7`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f85623`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f8564f`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f85689`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f858f7`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f85a12`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f85a3c`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f85bf1`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f85c62`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f85c7f`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f85d73`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f85d94`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f85e08`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f85e34`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f86056`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f8622f`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f86468`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f864ba`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f864e2`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101f84ac4`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101f84b40`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101f84f6e`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101f84fb9`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101f86655`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101f84ac4`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101f84b40`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101f84f6e`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101f84fb9`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101f86655`
+- `sqldk!SystemThread_TlsIndex` at `0x101f84a95`
+- `sqldk!SystemThread_TlsIndex` at `0x101f84b11`
+- `sqldk!SystemThread_TlsIndex` at `0x101f84f37`
+- `sqldk!SystemThread_TlsIndex` at `0x101f84f8a`
+- `sqldk!SystemThread_TlsIndex` at `0x101f85f30`
+- `sqldk!SystemThread_TlsIndex` at `0x101f8613f`
+- `sqldk!SystemThread_TlsIndex` at `0x101f86625`
+- `sqldk!SystemThread_TlsIndex` at `0x101f86668`
+- `sqldk!SystemThread_TlsOffset` at `0x101f84a9e`
+- `sqldk!SystemThread_TlsOffset` at `0x101f84b1a`
+- `sqldk!SystemThread_TlsOffset` at `0x101f84f40`
+- `sqldk!SystemThread_TlsOffset` at `0x101f84f93`
+- `sqldk!SystemThread_TlsOffset` at `0x101f85f39`
+- `sqldk!SystemThread_TlsOffset` at `0x101f86148`
+- `sqldk!SystemThread_TlsOffset` at `0x101f8662e`
+- `sqldk!SystemThread_TlsOffset` at `0x101f86671`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101f85396`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101f85396`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x101f852e5`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x101f852e5`
+- `sqllang!?FTapeUnloadOn@CUEnvTransient@@QEBA_NXZ` at `0x101f84f08`
+- `sqllang!?FTapeUnloadOn@CUEnvTransient@@QEBA_NXZ` at `0x101f84f08`
+- `sqllang!?GetCertificate@@YAXPEAVIMetadataAccess@@PEAVIMEDDatabase@@PEAVIMemObj@@PEA_WKAEAPEAVIMEDCertificate@@_N555@Z` at `0x101f85f08`
+- `sqllang!?GetCertificate@@YAXPEAVIMetadataAccess@@PEAVIMEDDatabase@@PEAVIMemObj@@PEA_WKAEAPEAVIMEDCertificate@@_N555@Z` at `0x101f85fc0`
+- `sqllang!?GetCertificate@@YAXPEAVIMetadataAccess@@PEAVIMEDDatabase@@PEAVIMemObj@@PEA_WKAEAPEAVIMEDCertificate@@_N555@Z` at `0x101f85f08`
+- `sqllang!?GetCertificate@@YAXPEAVIMetadataAccess@@PEAVIMEDDatabase@@PEAVIMemObj@@PEA_WKAEAPEAVIMEDCertificate@@_N555@Z` at `0x101f85fc0`
+- `sqllang!?GetAsymmetricKey@@YAXPEAVIMetadataAccess@@PEAVIMEDDatabase@@PEAVIMemObj@@PEA_WKAEAPEAVIMEDAsymmetricKey@@_N555@Z` at `0x101f86114`
+- `sqllang!?GetAsymmetricKey@@YAXPEAVIMetadataAccess@@PEAVIMEDDatabase@@PEAVIMemObj@@PEA_WKAEAPEAVIMEDAsymmetricKey@@_N555@Z` at `0x101f861cd`
+- `sqllang!?GetAsymmetricKey@@YAXPEAVIMetadataAccess@@PEAVIMEDDatabase@@PEAVIMemObj@@PEA_WKAEAPEAVIMEDAsymmetricKey@@_N555@Z` at `0x101f86114`
+- `sqllang!?GetAsymmetricKey@@YAXPEAVIMetadataAccess@@PEAVIMEDDatabase@@PEAVIMemObj@@PEA_WKAEAPEAVIMEDAsymmetricKey@@_N555@Z` at `0x101f861cd`
+- `sqllang!??0CSECDEK@@QEAA@PEAVIMemObj@@K@Z` at `0x101f8628f`
+- `sqllang!??0CSECDEK@@QEAA@PEAVIMemObj@@K@Z` at `0x101f8628f`
+- `sqllang!?Generate@CSECDEK@@QEAAXW4EMDEncryptAlgos@@W4EncryptorType@@PEAX@Z` at `0x101f862bc`
+- `sqllang!?Generate@CSECDEK@@QEAAXW4EMDEncryptAlgos@@W4EncryptorType@@PEAX@Z` at `0x101f862bc`
+- `sqllang!?WszFeatureNameFromId@Deprecation@@YAPEB_WW4EFeatureId@1@@Z` at `0x101f8488c`
+- `sqllang!?WszFeatureNameFromId@Deprecation@@YAPEB_WW4EFeatureId@1@@Z` at `0x101f8488c`
+- `sqllang!?LogUsage@Deprecation@@YAXW4EFeatureId@1@ZZ` at `0x101f8489a`
+- `sqllang!?LogUsage@Deprecation@@YAXW4EFeatureId@1@ZZ` at `0x101f8489a`
+- `sqllang!?Release@CSECDEK@@QEAAXXZ` at `0x101f85e3f`
+- `sqllang!?Release@CSECDEK@@QEAAXXZ` at `0x101f85e3f`
+
+## string_xrefs
+
+- `0x101f852db`: `S3 Access Key`
+- `0x101f84e4c`: `DBREADSIZE`
+- `0x101f851de`: `Backup to S3 remote storage cannot be mixed with other backup device types. Ensure all Primary and Mirror Urls use S3 path`
+
+## pseudocode
+
+```c
+
+```

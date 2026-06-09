@@ -1,0 +1,252 @@
+# RecoveryMgr::AnalyzeLogRecord(LogRec const *,LSN const &,bool,LBH const *)
+
+- ea: `0x101cc0b80`
+- end: `0x101cc4f47`
+- name: `?AnalyzeLogRecord@RecoveryMgr@@QEAAXPEBVLogRec@@AEBVLSN@@_NPEBVLBH@@@Z`
+- size: `17351`
+- prototype: `void __usercall(RecoveryMgr *__hidden this@<rcx>, const struct LogRec *@<rdx>, const struct LSN *@<r8>, bool@<r9b>, const struct LBH *)`
+- caller_count: `3`
+- callee_count: `86`
+- tags: `authz_impersonation, broker_com_uri`
+
+## callers
+
+- `0x101cbda30`
+- `0x101cd0460`
+- `0x10210ccc0`
+
+## callees
+
+- `0x100401490`
+- `0x100402620`
+- `0x100415e90`
+- `0x10041b5d0`
+- `0x100445560`
+- `0x1004621e0`
+- `0x10047bc10`
+- `0x1004c4220`
+- `0x1005d8fb0`
+- `0x1005f1f00`
+- `0x1005f5cd0`
+- `0x10072d4d0`
+- `0x10072d690`
+- `0x1008696a0`
+- `0x100877e40`
+- `0x100abcc20`
+- `0x100abf730`
+- `0x1011f5660`
+- `0x1011f59a0`
+- `0x1014314f0`
+- `0x1017ec870`
+- `0x1017f1220`
+- `0x101817e40`
+- `0x10181a170`
+- `0x1019023b0`
+- `0x101b45bd0`
+- `0x101b45f00`
+- `0x101b46790`
+- `0x101bf7c30`
+- `0x101bf7e50`
+- `0x101bf8270`
+- `0x101bf8d30`
+- `0x101c06c80`
+- `0x101c06d00`
+- `0x101c07980`
+- `0x101c080c0`
+- `0x101c08230`
+- `0x101c0a240`
+- `0x101c0a560`
+- `0x101c0a790`
+- `0x101c0aeb0`
+- `0x101c0b020`
+- `0x101c0ba90`
+- `0x101c37a60`
+- `0x101c7bf50`
+- `0x101c837a0`
+- `0x101c853a0`
+- `0x101c86c40`
+- `0x101cb66c0`
+- `0x101cc0b80`
+
+## import_xrefs
+
+- `KERNEL32!QueryPerformanceCounter` at `0x101cc1c49`
+- `KERNEL32!QueryPerformanceCounter` at `0x101cc1cab`
+- `KERNEL32!QueryPerformanceCounter` at `0x101cc29ab`
+- `KERNEL32!QueryPerformanceCounter` at `0x101cc2a09`
+- `KERNEL32!QueryPerformanceCounter` at `0x101cc4355`
+- `KERNEL32!QueryPerformanceCounter` at `0x101cc43b3`
+- `KERNEL32!QueryPerformanceCounter` at `0x101cc4669`
+- `KERNEL32!QueryPerformanceCounter` at `0x101cc46c7`
+- `KERNEL32!QueryPerformanceCounter` at `0x101cc1c49`
+- `KERNEL32!QueryPerformanceCounter` at `0x101cc1cab`
+- `KERNEL32!QueryPerformanceCounter` at `0x101cc29ab`
+- `KERNEL32!QueryPerformanceCounter` at `0x101cc2a09`
+- `KERNEL32!QueryPerformanceCounter` at `0x101cc4355`
+- `KERNEL32!QueryPerformanceCounter` at `0x101cc43b3`
+- `KERNEL32!QueryPerformanceCounter` at `0x101cc4669`
+- `KERNEL32!QueryPerformanceCounter` at `0x101cc46c7`
+- `sqldk!?sm_SpinlockStatSnapshot@SOS_PublicGlobals@@2_NA` at `0x101cc1e79`
+- `sqldk!?sm_SpinlockStatSnapshot@SOS_PublicGlobals@@2_NA` at `0x101cc2a47`
+- `sqldk!?sm_SpinlockStatSnapshot@SOS_PublicGlobals@@2_NA` at `0x101cc4443`
+- `sqldk!?sm_SpinlockStatSnapshot@SOS_PublicGlobals@@2_NA` at `0x101cc4a02`
+- `sqldk!?sm_osStats@SOS_PublicGlobals@@2KA` at `0x101cc1be7`
+- `sqldk!?sm_osStats@SOS_PublicGlobals@@2KA` at `0x101cc2949`
+- `sqldk!?sm_osStats@SOS_PublicGlobals@@2KA` at `0x101cc42f3`
+- `sqldk!?sm_osStats@SOS_PublicGlobals@@2KA` at `0x101cc4607`
+- `sqldk!?sm_traceFlags@SOS_PublicGlobals@@2PAEA` at `0x101cc1c69`
+- `sqldk!?sm_traceFlags@SOS_PublicGlobals@@2PAEA` at `0x101cc29cb`
+- `sqldk!?sm_traceFlags@SOS_PublicGlobals@@2PAEA` at `0x101cc436d`
+- `sqldk!?sm_traceFlags@SOS_PublicGlobals@@2PAEA` at `0x101cc4681`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x101cc1c35`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x101cc1c97`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x101cc2997`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x101cc29f5`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x101cc4341`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x101cc439f`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x101cc4655`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x101cc46b3`
+- `sqldk!?m_PerfCountersEnabled@CommonGlobalState@@2_NA` at `0x101cc4af4`
+- `sqldk!?ExceptionPostCatchActions@@YAXPEAVWorker@@@Z` at `0x101cc1a7f`
+- `sqldk!?ExceptionPostCatchActions@@YAXPEAVWorker@@@Z` at `0x101cc1a7f`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101cc2335`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101cc23b5`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101cc241d`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101cc3915`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101cc3987`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101cc39ef`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101cc2335`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101cc23b5`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101cc241d`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101cc3915`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101cc3987`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101cc39ef`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101cc20ef`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101cc249f`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101cc3a69`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101cc20ef`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101cc249f`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101cc3a69`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101cc0c51`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101cc1838`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101cc1b9e`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101cc2614`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101cc2e7f`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101cc2ef4`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101cc2f4e`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101cc2f7f`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101cc30d2`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101cc3bdc`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101cc3eda`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101cc4b69`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101cc4cc1`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101cc4d91`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101cc0c51`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101cc1838`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101cc1b9e`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101cc2614`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101cc2e7f`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101cc2ef4`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101cc2f4e`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101cc2f7f`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101cc30d2`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101cc3bdc`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101cc3eda`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101cc4b69`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101cc4cc1`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101cc4d91`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101cc22e8`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101cc3835`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101cc3da9`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101cc4d60`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101cc4df9`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101cc22e8`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101cc3835`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101cc3da9`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101cc4d60`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101cc4df9`
+- `sqldk!SystemThread_TlsIndex` at `0x101cc1a43`
+- `sqldk!SystemThread_TlsIndex` at `0x101cc1c07`
+- `sqldk!SystemThread_TlsIndex` at `0x101cc2969`
+- `sqldk!SystemThread_TlsIndex` at `0x101cc4313`
+- `sqldk!SystemThread_TlsIndex` at `0x101cc4627`
+- `sqldk!SystemThread_TlsOffset` at `0x101cc1a4c`
+- `sqldk!SystemThread_TlsOffset` at `0x101cc1c10`
+- `sqldk!SystemThread_TlsOffset` at `0x101cc2972`
+- `sqldk!SystemThread_TlsOffset` at `0x101cc431c`
+- `sqldk!SystemThread_TlsOffset` at `0x101cc4630`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x101cc1a65`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x101cc1a65`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cc234d`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cc23cd`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cc2435`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cc2773`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cc2782`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cc2791`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cc3925`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cc399f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cc39ff`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cc3cbb`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cc3cca`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cc3cd9`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cc234d`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cc23cd`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cc2435`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cc2773`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cc2782`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cc2791`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cc3925`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cc399f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cc39ff`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cc3cbb`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cc3cca`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cc3cd9`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101cc0e64`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101cc188d`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101cc18d4`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101cc1917`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101cc36cc`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101cc0e64`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101cc188d`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101cc18d4`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101cc1917`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101cc36cc`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101cc0e70`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101cc1899`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101cc18e0`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101cc1923`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101cc36d8`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101cc0e70`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101cc1899`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101cc18e0`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101cc1923`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101cc36d8`
+- `api-ms-win-crt-utility-l1-1-0!rand` at `0x101cc1e85`
+- `api-ms-win-crt-utility-l1-1-0!rand` at `0x101cc2a53`
+- `api-ms-win-crt-utility-l1-1-0!rand` at `0x101cc444f`
+- `api-ms-win-crt-utility-l1-1-0!rand` at `0x101cc4a0e`
+- `api-ms-win-crt-utility-l1-1-0!rand` at `0x101cc1e85`
+- `api-ms-win-crt-utility-l1-1-0!rand` at `0x101cc2a53`
+- `api-ms-win-crt-utility-l1-1-0!rand` at `0x101cc444f`
+- `api-ms-win-crt-utility-l1-1-0!rand` at `0x101cc4a0e`
+- `sqllang!?HandleSecurityLogRecord@@YAXAEAVDBTABLE@@PEBVLogRec@@@Z` at `0x101cc4c8e`
+- `sqllang!?HandleSecurityLogRecord@@YAXAEAVDBTABLE@@PEBVLogRec@@@Z` at `0x101cc4c8e`
+
+## string_xrefs
+
+- `0x101cc2e3f`: `LOP_CREATE_FILE`
+- `0x101cc20dc`: `Sql\Ntdbms\storeng\include\committable.inl`
+- `0x101cc1f2d`: `RecoveryMgr::AnalyzeLogRecord:LOP_COMMIT_XACT/LOP_ABORT_XACT lsn : 0x%x:0x%x:0x%x,  replbeginlsn : 0x%x:0x%x:0x%x , trackedbeginlsn : 0x%x:0x%x:0x%x`
+- `0x101cc3408`: `Analysis: Removed %d (out of %d) transactions that ended during checkpoint.`
+- `0x101cc40af`: `Analysis: Removed %d (out of %d) transactions that ended during checkpoint.`
+- `0x101cc3523`: `XdesMgr::AddCkptNestAbortedXdes xdesId %x:%x, start nestId %d, end nestId %d xdes = %x`
+- `0x101cc1aea`: `XdesMgr::AddNestAbortedXdes xdesId %x:%x, start nestId %d, end nestId %d xdes = %x`
+- `0x101cc182c`: `NullXdesId != xdesId`
+- `0x101cc2ee8`: `(NullLSN != m_CkptEnd) || (lsn < m_CompleteCkptBegin) || IsForeignLogApply ()`
+- `0x101cc0c46`: `!IsForeignLogApply () || pLogRec->IsPageOp () || LOP_END_CKPT == pLogRec->log_op || LOP_CREATE_FILE == pLogRec->log_op`
+
+## pseudocode
+
+```c
+
+```

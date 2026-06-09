@@ -1,0 +1,212 @@
+# RecoveryUnit::Init(void)
+
+- ea: `0x101ce96c0`
+- end: `0x101ceb9ca`
+- name: `?Init@RecoveryUnit@@AEAAXXZ`
+- size: `8970`
+- prototype: `void __fastcall(RecoveryUnit *__hidden this)`
+- caller_count: `1`
+- callee_count: `31`
+- tags: `installer_update, broker_com_uri`
+
+## callers
+
+- `0x101ced700`
+
+## callees
+
+- `0x100401490`
+- `0x100401fcf`
+- `0x100402050`
+- `0x10041eb60`
+- `0x10042a090`
+- `0x10042d8d4`
+- `0x10043c680`
+- `0x10043c7e0`
+- `0x1004ab5a0`
+- `0x1004c4b40`
+- `0x10051fa20`
+- `0x10063dc00`
+- `0x10063df30`
+- `0x101683bd0`
+- `0x101811670`
+- `0x101b71f90`
+- `0x101bbefe0`
+- `0x101bbf820`
+- `0x101ce4060`
+- `0x101ce96c0`
+- `0x101ceb9d0`
+- `0x101ced470`
+- `0x101cf1ee0`
+- `0x101d236a0`
+- `0x101d91570`
+- `0x10232ce20`
+- `0x10233a1b0`
+- `0x1023aea90`
+- `0x1023aecb0`
+- `0x1023aef40`
+- `0x10249fb40`
+
+## import_xrefs
+
+- `KERNEL32!GetTickCount` at `0x101ce9781`
+- `KERNEL32!GetTickCount` at `0x101ce9781`
+- `KERNEL32!QueryPerformanceCounter` at `0x101ce9e1e`
+- `KERNEL32!QueryPerformanceCounter` at `0x101ce9e46`
+- `KERNEL32!QueryPerformanceCounter` at `0x101cea530`
+- `KERNEL32!QueryPerformanceCounter` at `0x101ceabfd`
+- `KERNEL32!QueryPerformanceCounter` at `0x101ceb02c`
+- `KERNEL32!QueryPerformanceCounter` at `0x101ceb432`
+- `KERNEL32!QueryPerformanceCounter` at `0x101ceb483`
+- `KERNEL32!QueryPerformanceCounter` at `0x101ce9e1e`
+- `KERNEL32!QueryPerformanceCounter` at `0x101ce9e46`
+- `KERNEL32!QueryPerformanceCounter` at `0x101cea530`
+- `KERNEL32!QueryPerformanceCounter` at `0x101ceabfd`
+- `KERNEL32!QueryPerformanceCounter` at `0x101ceb02c`
+- `KERNEL32!QueryPerformanceCounter` at `0x101ceb432`
+- `KERNEL32!QueryPerformanceCounter` at `0x101ceb483`
+- `sqldk!?CreateStore@SOS_CacheStore@@SAPEAV1@PEB_WW4SOSHOST_CACHESTORE_TYPE@@K_JPEBUSOSHost_CacheStoreHashTableDescriptor@@P6AXPEAXW4destroy_type@@@ZKW4SOSHOST_MEMOBJ_ID@@PEAVSOS_StoreAndClockAlgorithmControlInterface@@@Z` at `0x101ce9f76`
+- `sqldk!?CreateStore@SOS_CacheStore@@SAPEAV1@PEB_WW4SOSHOST_CACHESTORE_TYPE@@K_JPEBUSOSHost_CacheStoreHashTableDescriptor@@P6AXPEAXW4destroy_type@@@ZKW4SOSHOST_MEMOBJ_ID@@PEAVSOS_StoreAndClockAlgorithmControlInterface@@@Z` at `0x101ce9f76`
+- `sqldk!??0SOS_NoForceRemoveStoreController@@QEAA@XZ` at `0x101ce9f05`
+- `sqldk!??0SOS_NoForceRemoveStoreController@@QEAA@XZ` at `0x101ce9f05`
+- `sqldk!?Init@PerCPUDataImpl@@IEAAH_K@Z` at `0x101ceaca3`
+- `sqldk!?Init@PerCPUDataImpl@@IEAAH_K@Z` at `0x101ceacd4`
+- `sqldk!?Init@PerCPUDataImpl@@IEAAH_K@Z` at `0x101ceaca3`
+- `sqldk!?Init@PerCPUDataImpl@@IEAAH_K@Z` at `0x101ceacd4`
+- `sqldk!?x_pDefAllocMemObj@@3PEAVIMemObj@@EA` at `0x101cea26f`
+- `sqldk!?x_pDefAllocMemObj@@3PEAVIMemObj@@EA` at `0x101cea3f4`
+- `sqldk!?sm_maxCpuCount@SOS_PublicGlobals@@2KA` at `0x101ceab5f`
+- `sqldk!?sm_osStats@SOS_PublicGlobals@@2KA` at `0x101ceb3d4`
+- `sqldk!?sm_traceFlags@SOS_PublicGlobals@@2PAEA` at `0x101ceb446`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x101ce9e0e`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x101ce9e36`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x101cea520`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x101ceabed`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x101ceb01c`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x101ceb422`
+- `sqldk!?sm_invariantTscAvailable@Base_PublicGlobals@@2HA` at `0x101ceb473`
+- `sqldk!?SQLExit@@YAXW4SQLEXITCODE@@@Z` at `0x101ceacc3`
+- `sqldk!?SQLExit@@YAXW4SQLEXITCODE@@@Z` at `0x101ceacf4`
+- `sqldk!?SQLExit@@YAXW4SQLEXITCODE@@@Z` at `0x101ceacc3`
+- `sqldk!?SQLExit@@YAXW4SQLEXITCODE@@@Z` at `0x101ceacf4`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101ce9eea`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101ceb1c9`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101ceb548`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101ce9eea`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101ceb1c9`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101ceb548`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ce9d25`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ce9ff3`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101cea0a1`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ceab9f`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ce9d25`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ce9ff3`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101cea0a1`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ceab9f`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ce97bd`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ce989c`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ce99d3`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ce9a7c`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ce9acb`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ce9b1e`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ce9ba8`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ce9bfe`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101cea13c`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101cea21e`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101cea356`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101cea45e`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101cea59e`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101cea9c5`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ceaa5e`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ceab25`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ceafe3`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ceb25c`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ceb631`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ceb777`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ceb817`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ce97bd`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ce989c`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ce99d3`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ce9a7c`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ce9acb`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ce9b1e`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ce9ba8`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ce9bfe`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101cea13c`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101cea21e`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101cea356`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101cea45e`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101cea59e`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101cea9c5`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ceaa5e`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ceab25`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ceafe3`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ceb25c`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ceb631`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ceb777`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101ceb817`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101ceb357`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101ceb870`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101ceb357`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101ceb870`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101ce9742`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101ceac59`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101ceadcb`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101ceae7d`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101ce9742`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101ceac59`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101ceadcb`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101ceae7d`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101cea2ca`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101ceb8c1`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101ceb938`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101cea2ca`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101ceb8c1`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@HPEBDHE@Z` at `0x101ceb938`
+- `sqldk!SystemThread_TlsIndex` at `0x101ce9712`
+- `sqldk!SystemThread_TlsIndex` at `0x101ce9e8a`
+- `sqldk!SystemThread_TlsIndex` at `0x101ceac2a`
+- `sqldk!SystemThread_TlsIndex` at `0x101cead9c`
+- `sqldk!SystemThread_TlsIndex` at `0x101ceae4e`
+- `sqldk!SystemThread_TlsIndex` at `0x101ceb16b`
+- `sqldk!SystemThread_TlsIndex` at `0x101ceb3f4`
+- `sqldk!SystemThread_TlsOffset` at `0x101ce971b`
+- `sqldk!SystemThread_TlsOffset` at `0x101ce9e93`
+- `sqldk!SystemThread_TlsOffset` at `0x101ceac33`
+- `sqldk!SystemThread_TlsOffset` at `0x101ceada5`
+- `sqldk!SystemThread_TlsOffset` at `0x101ceae57`
+- `sqldk!SystemThread_TlsOffset` at `0x101ceb174`
+- `sqldk!SystemThread_TlsOffset` at `0x101ceb3fd`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101ceb5e7`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101ceb5e7`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x101ce9eae`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x101ceb18f`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x101ce9eae`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x101ceb18f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101ceabe3`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101ceabe3`
+- `sqllang!?ex_oom@@YAPEAXW4OOM_EXCEPTIONS@@@Z` at `0x101ce9f29`
+- `sqllang!?ex_oom@@YAPEAXW4OOM_EXCEPTIONS@@@Z` at `0x101ce9f8a`
+- `sqllang!?ex_oom@@YAPEAXW4OOM_EXCEPTIONS@@@Z` at `0x101cea30a`
+- `sqllang!?ex_oom@@YAPEAXW4OOM_EXCEPTIONS@@@Z` at `0x101cea422`
+- `sqllang!?ex_oom@@YAPEAXW4OOM_EXCEPTIONS@@@Z` at `0x101ce9f29`
+- `sqllang!?ex_oom@@YAPEAXW4OOM_EXCEPTIONS@@@Z` at `0x101ce9f8a`
+- `sqllang!?ex_oom@@YAPEAXW4OOM_EXCEPTIONS@@@Z` at `0x101cea30a`
+- `sqllang!?ex_oom@@YAPEAXW4OOM_EXCEPTIONS@@@Z` at `0x101cea422`
+
+## string_xrefs
+
+- `0x101cea2b9`: `Sql\DkTemp\base\include\sehash.inl`
+- `0x101ceab92`: `Sql\Ntdbms\storeng\dfs\access\ColumnDataSetSessionMgr.cpp`
+- `0x101ce9fec`: `Sql\Ntdbms\include\common\SeDynVec.h`
+- `0x101cea09a`: `Sql\Ntdbms\include\common\SeDynVec.h`
+- `0x101ceacad`: `InPageRecordReadCount`
+- `0x101ceacde`: `VersionPageRecordReadCount`
+- `0x101ceb138`: `[%d]. Feature Status: PVS: %d. CTR: %d. ConcurrentPFSUpdate: %d. ConcurrentGAMUpdate: %d. ConcurrentSGAMUpdate: %d, CleanupUnderUserTransaction: %d. TranLevelPVS: %d`
+- `0x101ceb57a`: `%s: Failed to create HotPageTracker.`
+
+## pseudocode
+
+```c
+
+```

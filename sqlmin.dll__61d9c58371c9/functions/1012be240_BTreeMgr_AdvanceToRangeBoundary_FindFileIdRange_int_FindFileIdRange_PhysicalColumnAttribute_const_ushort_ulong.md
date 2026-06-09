@@ -1,0 +1,210 @@
+# BTreeMgr::AdvanceToRangeBoundary<FindFileIdRange>(int,FindFileIdRange &,PhysicalColumnAttribute const *,ushort *,ulong *,ulong *)
+
+- ea: `0x1012be240`
+- end: `0x1012c588b`
+- name: `??$AdvanceToRangeBoundary@VFindFileIdRange@@@BTreeMgr@@AEAAXHAEAVFindFileIdRange@@PEBVPhysicalColumnAttribute@@PEAGPEAK3@Z`
+- size: `30283`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `50`
+- tags: `broker_com_uri`
+
+## callers
+
+- `0x10128bcb0`
+
+## callees
+
+- `0x100401010`
+- `0x100401490`
+- `0x100402000`
+- `0x100403030`
+- `0x10040da40`
+- `0x10040da80`
+- `0x10040eca0`
+- `0x10040fc00`
+- `0x100412840`
+- `0x100432c80`
+- `0x100441e00`
+- `0x10046bf90`
+- `0x1004729d0`
+- `0x100472a40`
+- `0x10047bad0`
+- `0x10047ffb0`
+- `0x100480030`
+- `0x10049a590`
+- `0x10049a5d0`
+- `0x1004bf030`
+- `0x1005468c0`
+- `0x100553e20`
+- `0x1005d9f70`
+- `0x100626480`
+- `0x10069f4f0`
+- `0x100720360`
+- `0x101253e30`
+- `0x101253eb0`
+- `0x1012be240`
+- `0x1012c67d0`
+- `0x1012c6820`
+- `0x1012c84e0`
+- `0x1012c8f30`
+- `0x1012c8f90`
+- `0x1012c9010`
+- `0x1013a6b10`
+- `0x1013b3200`
+- `0x1014cc9d0`
+- `0x1016c9e80`
+- `0x1018c9d70`
+- `0x101907610`
+- `0x1019087e0`
+- `0x101912570`
+- `0x101912590`
+- `0x101cb13d0`
+- `0x101ced0e0`
+- `0x1021d8a90`
+- `0x1021eafd0`
+- `0x1021edf30`
+- `0x1023ae3e0`
+
+## import_xrefs
+
+- `KERNEL32!VirtualProtect` at `0x1012be851`
+- `KERNEL32!VirtualProtect` at `0x1012bec35`
+- `KERNEL32!VirtualProtect` at `0x1012c2ff0`
+- `KERNEL32!VirtualProtect` at `0x1012c3689`
+- `KERNEL32!VirtualProtect` at `0x1012c38a8`
+- `KERNEL32!VirtualProtect` at `0x1012c465b`
+- `KERNEL32!VirtualProtect` at `0x1012c49d7`
+- `KERNEL32!VirtualProtect` at `0x1012c4df5`
+- `KERNEL32!VirtualProtect` at `0x1012c518a`
+- `KERNEL32!VirtualProtect` at `0x1012c53a2`
+- `KERNEL32!VirtualProtect` at `0x1012c579e`
+- `KERNEL32!VirtualProtect` at `0x1012be851`
+- `KERNEL32!VirtualProtect` at `0x1012bec35`
+- `KERNEL32!VirtualProtect` at `0x1012c2ff0`
+- `KERNEL32!VirtualProtect` at `0x1012c3689`
+- `KERNEL32!VirtualProtect` at `0x1012c38a8`
+- `KERNEL32!VirtualProtect` at `0x1012c465b`
+- `KERNEL32!VirtualProtect` at `0x1012c49d7`
+- `KERNEL32!VirtualProtect` at `0x1012c4df5`
+- `KERNEL32!VirtualProtect` at `0x1012c518a`
+- `KERNEL32!VirtualProtect` at `0x1012c53a2`
+- `KERNEL32!VirtualProtect` at `0x1012c579e`
+- `sqldk!?g_dbtableFactory@@3UDBTableFactory@@A` at `0x1012c42d5`
+- `sqldk!?m_CollectingStatistics@CommonGlobalState@@2_NA` at `0x1012c33c0`
+- `sqldk!?ExceptionPostCatchActions@@YAXPEAVWorker@@@Z` at `0x1012c5857`
+- `sqldk!?ExceptionPostCatchActions@@YAXPEAVWorker@@@Z` at `0x1012c5857`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012bf07a`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012bf205`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012bf38b`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012bf59c`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012bf739`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012bf8f2`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012bf99d`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012bfa69`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012bfe54`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012bfeea`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c0654`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c07de`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c0966`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c0b77`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c0d0d`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c0ec6`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c0f71`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c103d`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c1434`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c14ca`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c1c0c`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c1d96`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c1f23`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c2134`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c22ca`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c2483`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c252e`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c25fa`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c29ee`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c2a84`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012bf07a`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012bf205`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012bf38b`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012bf59c`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012bf739`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012bf8f2`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012bf99d`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012bfa69`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012bfe54`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012bfeea`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c0654`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c07de`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c0966`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c0b77`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c0d0d`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c0ec6`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c0f71`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c103d`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c1434`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c14ca`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c1c0c`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c1d96`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c1f23`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c2134`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c22ca`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c2483`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c252e`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c25fa`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c29ee`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1012c2a84`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012bf8af`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012bf97a`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012bfa46`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012bfe07`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012bfec4`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012c0e83`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012c0f4e`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012c101a`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012c13e7`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012c14a4`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012c2440`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012c250b`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012c25d7`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012c29a1`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012c2a5e`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012bf8af`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012bf97a`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012bfa46`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012bfe07`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012bfec4`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012c0e83`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012c0f4e`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012c101a`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012c13e7`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012c14a4`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012c2440`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012c250b`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012c25d7`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012c29a1`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1012c2a5e`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x1012c3462`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x1012c3462`
+- `sqldk!SystemThread_TlsIndex` at `0x1012c3233`
+- `sqldk!SystemThread_TlsIndex` at `0x1012c340b`
+- `sqldk!SystemThread_TlsIndex` at `0x1012c350f`
+- `sqldk!SystemThread_TlsIndex` at `0x1012c3cad`
+- `sqldk!SystemThread_TlsIndex` at `0x1012c4360`
+- `sqldk!SystemThread_TlsIndex` at `0x1012c581f`
+- `sqldk!SystemThread_TlsOffset` at `0x1012c323c`
+- `sqldk!SystemThread_TlsOffset` at `0x1012c3414`
+- `sqldk!SystemThread_TlsOffset` at `0x1012c3518`
+- `sqldk!SystemThread_TlsOffset` at `0x1012c3cb6`
+- `sqldk!SystemThread_TlsOffset` at `0x1012c4369`
+- `sqldk!SystemThread_TlsOffset` at `0x1012c5828`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x1012c3267`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x1012c5841`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x1012c3267`
+- `sqldk!?MakeMiniSOSThread@SystemThread@@SAXPEAX@Z` at `0x1012c5841`
+
+## pseudocode
+
+```c
+
+```

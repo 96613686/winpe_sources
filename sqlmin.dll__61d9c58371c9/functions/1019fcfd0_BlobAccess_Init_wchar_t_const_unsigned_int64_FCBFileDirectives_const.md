@@ -1,0 +1,217 @@
+# BlobAccess::Init(wchar_t const *,unsigned __int64,FCBFileDirectives const *)
+
+- ea: `0x1019fcfd0`
+- end: `0x1019fe748`
+- name: `?Init@BlobAccess@@QEAA_NPEB_W_KPEBUFCBFileDirectives@@@Z`
+- size: `6008`
+- prototype: `bool __fastcall(BlobAccess *__hidden this, const wchar_t *Source, unsigned __int64, const struct FCBFileDirectives *)`
+- caller_count: `6`
+- callee_count: `31`
+- tags: ``
+
+## callers
+
+- `0x1019e1fd0`
+- `0x1019e83e0`
+- `0x1019e9290`
+- `0x101a1f970`
+- `0x101a20f10`
+- `0x102371780`
+
+## callees
+
+- `0x100415e90`
+- `0x100418690`
+- `0x100421c70`
+- `0x1004bb180`
+- `0x1005c5320`
+- `0x100621b90`
+- `0x100626050`
+- `0x10063dc00`
+- `0x100ca7480`
+- `0x101664fb0`
+- `0x101666090`
+- `0x1017af1b0`
+- `0x101801e10`
+- `0x101801ef0`
+- `0x1018020a0`
+- `0x101802370`
+- `0x10185f030`
+- `0x10186a560`
+- `0x1019fb2b0`
+- `0x1019fced0`
+- `0x1019fcfd0`
+- `0x101a00510`
+- `0x101a1c570`
+- `0x101a1cd30`
+- `0x101a35680`
+- `0x101a35d20`
+- `0x101a36200`
+- `0x101a363b0`
+- `0x101a39810`
+- `0x101a3c5a0`
+- `0x101a3d4f0`
+
+## import_xrefs
+
+- `KERNEL32!HeapAlloc` at `0x1019fd14e`
+- `KERNEL32!HeapAlloc` at `0x1019fd94a`
+- `KERNEL32!HeapAlloc` at `0x1019fdda8`
+- `KERNEL32!HeapAlloc` at `0x1019fde65`
+- `KERNEL32!HeapAlloc` at `0x1019fdf1c`
+- `KERNEL32!HeapAlloc` at `0x1019fe0f5`
+- `KERNEL32!HeapAlloc` at `0x1019fd14e`
+- `KERNEL32!HeapAlloc` at `0x1019fd94a`
+- `KERNEL32!HeapAlloc` at `0x1019fdda8`
+- `KERNEL32!HeapAlloc` at `0x1019fde65`
+- `KERNEL32!HeapAlloc` at `0x1019fdf1c`
+- `KERNEL32!HeapAlloc` at `0x1019fe0f5`
+- `KERNEL32!GetProcessHeap` at `0x1019fd13d`
+- `KERNEL32!GetProcessHeap` at `0x1019fd936`
+- `KERNEL32!GetProcessHeap` at `0x1019fdd94`
+- `KERNEL32!GetProcessHeap` at `0x1019fde51`
+- `KERNEL32!GetProcessHeap` at `0x1019fdf08`
+- `KERNEL32!GetProcessHeap` at `0x1019fe0e1`
+- `KERNEL32!GetProcessHeap` at `0x1019fd13d`
+- `KERNEL32!GetProcessHeap` at `0x1019fd936`
+- `KERNEL32!GetProcessHeap` at `0x1019fdd94`
+- `KERNEL32!GetProcessHeap` at `0x1019fde51`
+- `KERNEL32!GetProcessHeap` at `0x1019fdf08`
+- `KERNEL32!GetProcessHeap` at `0x1019fe0e1`
+- `KERNEL32!CreateEventW` at `0x1019fe076`
+- `KERNEL32!CreateEventW` at `0x1019fe076`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x1019fd39b`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x1019fd3db`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x1019fd39b`
+- `sqlTsEs!?PDCServer@CDefaultCollation@@SAPEAV1@XZ` at `0x1019fd3db`
+- `sqlTsEs!?FEqW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x1019fd3c1`
+- `sqlTsEs!?FEqW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x1019fd401`
+- `sqlTsEs!?FEqW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x1019fd3c1`
+- `sqlTsEs!?FEqW@CDefaultCollation@@QEBA_NPEB_WK0K@Z` at `0x1019fd401`
+- `sqldk!?ReleaseLock@SOS_RWLock@@QEAAXW4RWLockMode@@@Z` at `0x1019fd31e`
+- `sqldk!?ReleaseLock@SOS_RWLock@@QEAAXW4RWLockMode@@@Z` at `0x1019fd31e`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x1019fd41e`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x1019fd44f`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x1019fdc56`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x1019fe44c`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x1019fd41e`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x1019fd44f`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x1019fdc56`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x1019fe44c`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1019fd135`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1019fd92e`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1019fdd7c`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1019fde49`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1019fdf00`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1019fe0d9`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1019fe4da`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1019fe52a`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1019fd135`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1019fd92e`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1019fdd7c`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1019fde49`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1019fdf00`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1019fe0d9`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1019fe4da`
+- `sqldk!??_U@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x1019fe52a`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1019fd03c`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1019fd2dd`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1019fd790`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1019fd826`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1019fe016`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1019fd03c`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1019fd2dd`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1019fd790`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1019fd826`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x1019fe016`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1019fd198`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1019fd2af`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1019fd60a`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1019fdb1b`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1019fd198`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1019fd2af`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1019fd60a`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x1019fdb1b`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fe674`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fe67e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fe674`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fe67e`
+- `VCRUNTIME140!wcsstr` at `0x1019fd635`
+- `VCRUNTIME140!wcsstr` at `0x1019fd666`
+- `VCRUNTIME140!wcsstr` at `0x1019fd687`
+- `VCRUNTIME140!wcsstr` at `0x1019fd766`
+- `VCRUNTIME140!wcsstr` at `0x1019fdc00`
+- `VCRUNTIME140!wcsstr` at `0x1019fd635`
+- `VCRUNTIME140!wcsstr` at `0x1019fd666`
+- `VCRUNTIME140!wcsstr` at `0x1019fd687`
+- `VCRUNTIME140!wcsstr` at `0x1019fd766`
+- `VCRUNTIME140!wcsstr` at `0x1019fdc00`
+- `VCRUNTIME140!wcschr` at `0x1019fd79e`
+- `VCRUNTIME140!wcschr` at `0x1019fdcb5`
+- `VCRUNTIME140!wcschr` at `0x1019fdcc6`
+- `VCRUNTIME140!wcschr` at `0x1019fdd0a`
+- `VCRUNTIME140!wcschr` at `0x1019fd79e`
+- `VCRUNTIME140!wcschr` at `0x1019fdcb5`
+- `VCRUNTIME140!wcschr` at `0x1019fdcc6`
+- `VCRUNTIME140!wcschr` at `0x1019fdd0a`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x1019fd874`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x1019fd891`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x1019fd8ae`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x1019fe1de`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x1019fe209`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x1019fe26b`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x1019fe2fe`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x1019fe320`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x1019fe551`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x1019fd874`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x1019fd891`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x1019fd8ae`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x1019fe1de`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x1019fe209`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x1019fe26b`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x1019fe2fe`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x1019fe320`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp` at `0x1019fe551`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x1019fd437`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x1019fd468`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x1019fdc6f`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x1019fe462`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x1019fd437`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x1019fd468`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x1019fdc6f`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x1019fe462`
+- `api-ms-win-crt-convert-l1-1-0!_wtoi` at `0x1019fe5ee`
+- `api-ms-win-crt-convert-l1-1-0!_wtoi` at `0x1019fe5ee`
+- `sqllang!?IsDataVirtualizationFeatureSetLockdownEnabled@DataVirtualizationResource@@YA_NXZ` at `0x1019fd6bd`
+- `sqllang!?IsDataVirtualizationFeatureSetLockdownEnabled@DataVirtualizationResource@@YA_NXZ` at `0x1019fdc26`
+- `sqllang!?IsDataVirtualizationFeatureSetLockdownEnabled@DataVirtualizationResource@@YA_NXZ` at `0x1019fd6bd`
+- `sqllang!?IsDataVirtualizationFeatureSetLockdownEnabled@DataVirtualizationResource@@YA_NXZ` at `0x1019fdc26`
+
+## string_xrefs
+
+- `0x1019fe33c`: `S3 Access Key`
+- `0x1019fe343`: `Shared Access Signature`
+- `0x1019fe1d4`: `S3TempCred `
+- `0x1019fe547`: `S3TempCred `
+- `0x1019fdaff`: `sql\ntdbms\storeng\dfs\manager\HdfsBlobAccess.cpp`
+- `0x1019fd049`: `sql\ntdbms\storeng\dfs\manager\blobaccess.cpp`
+- `0x1019fd91b`: `sql\ntdbms\storeng\dfs\manager\blobaccess.cpp`
+- `0x1019fdd69`: `sql\ntdbms\storeng\dfs\manager\blobaccess.cpp`
+- `0x1019fde36`: `sql\ntdbms\storeng\dfs\manager\blobaccess.cpp`
+- `0x1019fdeed`: `sql\ntdbms\storeng\dfs\manager\blobaccess.cpp`
+- `0x1019fe0c6`: `sql\ntdbms\storeng\dfs\manager\blobaccess.cpp`
+- `0x1019fe4c9`: `sql\ntdbms\storeng\dfs\manager\blobaccess.cpp`
+- `0x1019fe519`: `sql\ntdbms\storeng\dfs\manager\blobaccess.cpp`
+- `0x1019fd02a`: `"sql\\ntdbms\\storeng\\dfs\\manager\\blobaccess.cpp"`
+- `0x1019fd2ca`: `"sql\\ntdbms\\storeng\\dfs\\manager\\blobaccess.cpp"`
+- `0x1019fd77f`: `"sql\\ntdbms\\storeng\\dfs\\manager\\blobaccess.cpp"`
+- `0x1019fd815`: `"sql\\ntdbms\\storeng\\dfs\\manager\\blobaccess.cpp"`
+- `0x1019fe003`: `"sql\\ntdbms\\storeng\\dfs\\manager\\blobaccess.cpp"`
+- `0x1019fd031`: `pathLen <= MAX_CWCH_REMOTE_PATH_LENGTH * sizeof(WCHAR)`
+- `0x1019fd2d1`: `!m_edsRefLink.IsInList ()`
+
+## pseudocode
+
+```c
+
+```
