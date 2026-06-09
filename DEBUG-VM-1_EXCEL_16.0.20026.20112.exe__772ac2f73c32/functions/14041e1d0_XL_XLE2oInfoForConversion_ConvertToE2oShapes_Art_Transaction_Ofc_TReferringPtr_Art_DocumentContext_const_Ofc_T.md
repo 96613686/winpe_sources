@@ -1,0 +1,247 @@
+# XL::XLE2oInfoForConversion::ConvertToE2oShapes(Art::Transaction &,Ofc::TReferringPtr<Art::DocumentContext> const &,Ofc::TReferringPtr<IMsoDrawing> const &,MSOSP *,Ofc::TReferringPtr<Dr::GroupDrawingElement> const &,Art::ShapeConversionPath,Ofc::TReferringPtr<Dr::DrawingElement> &,Art::DiagramConversionPath,Art::GroupTransform2D const *,bool)
+
+- ea: `0x14041e1d0`
+- end: `0x14041f889`
+- name: `?ConvertToE2oShapes@XLE2oInfoForConversion@XL@@UEAA?AV?$TWeakPtr@VGroupDrawingElement@Dr@@@Ofc@@AEAVTransaction@Art@@AEBV?$TReferringPtr@VDocumentContext@Art@@@4@AEBV?$TReferringPtr@UIMsoDrawing@@@4@PEAUMSOSP@@AEBV?$TReferringPtr@VGroupDrawingElement@Dr@@@4@W4ShapeConversionPath@6@AEAV?$TReferringPtr@VDrawingElement@Dr@@@4@W4DiagramConversionPath@6@PEBVGroupTransform2D@6@_N@Z`
+- size: `5817`
+- prototype: ``
+- caller_count: `2`
+- callee_count: `20`
+- tags: `authz_impersonation, broker_com_uri`
+
+## callers
+
+- `0x1406a84d0`
+- `0x14276c580`
+
+## callees
+
+- `0x1403b2a70`
+- `0x1403b2f20`
+- `0x1403bc160`
+- `0x1404124d0`
+- `0x14041dab0`
+- `0x14041de30`
+- `0x14041e1d0`
+- `0x140432f60`
+- `0x140476770`
+- `0x140477120`
+- `0x140488d10`
+- `0x1404c2e40`
+- `0x1408d6570`
+- `0x140cfed50`
+- `0x140d003c0`
+- `0x140d7caa0`
+- `0x1413c77c0`
+- `0x141463de0`
+- `0x142765190`
+- `0x142765870`
+
+## import_xrefs
+
+- `VCRUNTIME140!__std_type_info_compare` at `0x14041f605`
+- `VCRUNTIME140!__std_type_info_compare` at `0x14041f605`
+- `oart!__imp_??0NonVisualGroupDrawingShapeProps@Art@@QEAA@XZ` at `0x14041eaca`
+- `oart!__imp_??0NonVisualGroupDrawingShapeProps@Art@@QEAA@XZ` at `0x14041eaca`
+- `oart!__imp_??0NonVisualDrawingShapeProps@Art@@QEAA@XZ` at `0x14041f2a6`
+- `oart!__imp_??0NonVisualDrawingShapeProps@Art@@QEAA@XZ` at `0x14041f2a6`
+- `oart!__imp_??0NonVisualE2oFrameProps@Art@@QEAA@XZ` at `0x14041e4ea`
+- `oart!__imp_??0NonVisualE2oFrameProps@Art@@QEAA@XZ` at `0x14041e757`
+- `oart!__imp_??0NonVisualE2oFrameProps@Art@@QEAA@XZ` at `0x14041e4ea`
+- `oart!__imp_??0NonVisualE2oFrameProps@Art@@QEAA@XZ` at `0x14041e757`
+- `oart!__imp_??0NonVisualInkContentPartProps@Art@@QEAA@XZ` at `0x14041f08c`
+- `oart!__imp_??0NonVisualInkContentPartProps@Art@@QEAA@XZ` at `0x14041f08c`
+- `oart!__imp_??0NonVisualDrawingProps@Art@@QEAA@XZ` at `0x14041e4e0`
+- `oart!__imp_??0NonVisualDrawingProps@Art@@QEAA@XZ` at `0x14041e74d`
+- `oart!__imp_??0NonVisualDrawingProps@Art@@QEAA@XZ` at `0x14041e906`
+- `oart!__imp_??0NonVisualDrawingProps@Art@@QEAA@XZ` at `0x14041eac0`
+- `oart!__imp_??0NonVisualDrawingProps@Art@@QEAA@XZ` at `0x14041ee2f`
+- `oart!__imp_??0NonVisualDrawingProps@Art@@QEAA@XZ` at `0x14041f082`
+- `oart!__imp_??0NonVisualDrawingProps@Art@@QEAA@XZ` at `0x14041f298`
+- `oart!__imp_??0NonVisualDrawingProps@Art@@QEAA@XZ` at `0x14041e4e0`
+- `oart!__imp_??0NonVisualDrawingProps@Art@@QEAA@XZ` at `0x14041e74d`
+- `oart!__imp_??0NonVisualDrawingProps@Art@@QEAA@XZ` at `0x14041e906`
+- `oart!__imp_??0NonVisualDrawingProps@Art@@QEAA@XZ` at `0x14041eac0`
+- `oart!__imp_??0NonVisualDrawingProps@Art@@QEAA@XZ` at `0x14041ee2f`
+- `oart!__imp_??0NonVisualDrawingProps@Art@@QEAA@XZ` at `0x14041f082`
+- `oart!__imp_??0NonVisualDrawingProps@Art@@QEAA@XZ` at `0x14041f298`
+- `oart!__imp_??0Transform2D@Art@@QEAA@XZ` at `0x14041f075`
+- `oart!__imp_??0Transform2D@Art@@QEAA@XZ` at `0x14041f075`
+- `oart!__imp_??1NonVisualDrawingShapeProps@Art@@QEAA@XZ` at `0x14041f66e`
+- `oart!__imp_??1NonVisualDrawingShapeProps@Art@@QEAA@XZ` at `0x14041f66e`
+- `oart!__imp_??1NonVisualConnectorProps@Art@@QEAA@XZ` at `0x14041f000`
+- `oart!__imp_??1NonVisualConnectorProps@Art@@QEAA@XZ` at `0x14041f000`
+- `oart!__imp_?AddShapeToConversionMap@Art@@YAXAEBV?$TWeakPtr@VDrawingElement@Dr@@@Ofc@@PEAUMSOSP@@@Z` at `0x14041e5a0`
+- `oart!__imp_?AddShapeToConversionMap@Art@@YAXAEBV?$TWeakPtr@VDrawingElement@Dr@@@Ofc@@PEAUMSOSP@@@Z` at `0x14041ed95`
+- `oart!__imp_?AddShapeToConversionMap@Art@@YAXAEBV?$TWeakPtr@VDrawingElement@Dr@@@Ofc@@PEAUMSOSP@@@Z` at `0x14041e5a0`
+- `oart!__imp_?AddShapeToConversionMap@Art@@YAXAEBV?$TWeakPtr@VDrawingElement@Dr@@@Ofc@@PEAUMSOSP@@@Z` at `0x14041ed95`
+- `oart!__imp_??1GroupShapeProps@Art@@QEAA@XZ` at `0x14041ed21`
+- `oart!__imp_??1GroupShapeProps@Art@@QEAA@XZ` at `0x14041ed21`
+- `oart!__imp_??0BlipFillProps@Art@@QEAA@XZ` at `0x14041e8f9`
+- `oart!__imp_??0BlipFillProps@Art@@QEAA@XZ` at `0x14041e8f9`
+- `oart!__imp_?FInkObjAvailable@Dr@@YA_NXZ` at `0x14041f056`
+- `oart!__imp_?FInkObjAvailable@Dr@@YA_NXZ` at `0x14041f056`
+- `oart!__imp_??0?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x14041e4ce`
+- `oart!__imp_??0?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x14041e740`
+- `oart!__imp_??0?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x14041e8ee`
+- `oart!__imp_??0?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x14041ee21`
+- `oart!__imp_??0?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x14041f096`
+- `oart!__imp_??0?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x14041f28b`
+- `oart!__imp_??0?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x14041e4ce`
+- `oart!__imp_??0?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x14041e740`
+- `oart!__imp_??0?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x14041e8ee`
+- `oart!__imp_??0?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x14041ee21`
+- `oart!__imp_??0?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x14041f096`
+- `oart!__imp_??0?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x14041f28b`
+- `oart!__imp_??1NonVisualPictureProps@Art@@QEAA@XZ` at `0x14041ea41`
+- `oart!__imp_??1NonVisualPictureProps@Art@@QEAA@XZ` at `0x14041ea41`
+- `oart!__imp_?GetTextFrame@ShapeDrawingElement@Dr@@QEAAAEBV?$TReferringPtr@VDrawingTextFrame@Dr@@@Ofc@@XZ` at `0x14041f6d6`
+- `oart!__imp_?GetTextFrame@ShapeDrawingElement@Dr@@QEAAAEBV?$TReferringPtr@VDrawingTextFrame@Dr@@@Ofc@@XZ` at `0x14041f6d6`
+- `oart!__imp_??1ShapeLocking@Art@@QEAA@XZ` at `0x14041f54b`
+- `oart!__imp_??1ShapeLocking@Art@@QEAA@XZ` at `0x14041f54b`
+- `oart!__imp_?SetLocksText@XLConversionInfoBase@XL@@UEAAX_N@Z` at `0x14041f540`
+- `oart!__imp_?SetLocksText@XLConversionInfoBase@XL@@UEAAX_N@Z` at `0x14041f540`
+- `oart!__imp_??4TextBodyPropertyBag@Art@@QEAAAEAV01@AEBV01@@Z` at `0x14041f3a1`
+- `oart!__imp_??4TextBodyPropertyBag@Art@@QEAAAEAV01@AEBV01@@Z` at `0x14041f3a1`
+- `oart!__imp_??1ShapeStyleData@Art@@QEAA@XZ` at `0x14041ef32`
+- `oart!__imp_??1ShapeStyleData@Art@@QEAA@XZ` at `0x14041f480`
+- `oart!__imp_??1ShapeStyleData@Art@@QEAA@XZ` at `0x14041ef32`
+- `oart!__imp_??1ShapeStyleData@Art@@QEAA@XZ` at `0x14041f480`
+- `oart!__imp_??1?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x14041e5c5`
+- `oart!__imp_??1?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x14041e805`
+- `oart!__imp_??1?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x14041ea63`
+- `oart!__imp_??1?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x14041f017`
+- `oart!__imp_??1?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x14041f216`
+- `oart!__imp_??1?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x14041f68a`
+- `oart!__imp_??1?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x14041e5c5`
+- `oart!__imp_??1?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x14041e805`
+- `oart!__imp_??1?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x14041ea63`
+- `oart!__imp_??1?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x14041f017`
+- `oart!__imp_??1?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x14041f216`
+- `oart!__imp_??1?$ShapePropsMethods@V?$ShapePropsData_@$0A@@Art@@@Art@@QEAA@XZ` at `0x14041f68a`
+- `oart!__imp_?Set11To12ConversionInfo@XLConversionInfoBase@XL@@QEAAXAEBV?$TWeakPtr@VXLClientDataBase@XL@@@Ofc@@PEAUMSOSP@@@Z` at `0x14041eca0`
+- `oart!__imp_?Set11To12ConversionInfo@XLConversionInfoBase@XL@@QEAAXAEBV?$TWeakPtr@VXLClientDataBase@XL@@@Ofc@@PEAUMSOSP@@@Z` at `0x14041efa0`
+- `oart!__imp_?Set11To12ConversionInfo@XLConversionInfoBase@XL@@QEAAXAEBV?$TWeakPtr@VXLClientDataBase@XL@@@Ofc@@PEAUMSOSP@@@Z` at `0x14041f1c8`
+- `oart!__imp_?Set11To12ConversionInfo@XLConversionInfoBase@XL@@QEAAXAEBV?$TWeakPtr@VXLClientDataBase@XL@@@Ofc@@PEAUMSOSP@@@Z` at `0x14041f4e1`
+- `oart!__imp_?Set11To12ConversionInfo@XLConversionInfoBase@XL@@QEAAXAEBV?$TWeakPtr@VXLClientDataBase@XL@@@Ofc@@PEAUMSOSP@@@Z` at `0x14041eca0`
+- `oart!__imp_?Set11To12ConversionInfo@XLConversionInfoBase@XL@@QEAAXAEBV?$TWeakPtr@VXLClientDataBase@XL@@@Ofc@@PEAUMSOSP@@@Z` at `0x14041efa0`
+- `oart!__imp_?Set11To12ConversionInfo@XLConversionInfoBase@XL@@QEAAXAEBV?$TWeakPtr@VXLClientDataBase@XL@@@Ofc@@PEAUMSOSP@@@Z` at `0x14041f1c8`
+- `oart!__imp_?Set11To12ConversionInfo@XLConversionInfoBase@XL@@QEAAXAEBV?$TWeakPtr@VXLClientDataBase@XL@@@Ofc@@PEAUMSOSP@@@Z` at `0x14041f4e1`
+- `oart!__imp_?GetBounds@GroupTransform2D@Art@@QEBAXAEAVRect64@2@@Z` at `0x14041e40f`
+- `oart!__imp_?GetBounds@GroupTransform2D@Art@@QEBAXAEAVRect64@2@@Z` at `0x14041e40f`
+- `oart!__imp_??1NonVisualDrawingProps@Art@@QEAA@XZ` at `0x14041e5b8`
+- `oart!__imp_??1NonVisualDrawingProps@Art@@QEAA@XZ` at `0x14041e7f8`
+- `oart!__imp_??1NonVisualDrawingProps@Art@@QEAA@XZ` at `0x14041ea4e`
+- `oart!__imp_??1NonVisualDrawingProps@Art@@QEAA@XZ` at `0x14041ed17`
+- `oart!__imp_??1NonVisualDrawingProps@Art@@QEAA@XZ` at `0x14041f00d`
+- `oart!__imp_??1NonVisualDrawingProps@Art@@QEAA@XZ` at `0x14041f22e`
+- `oart!__imp_??1NonVisualDrawingProps@Art@@QEAA@XZ` at `0x14041f680`
+- `oart!__imp_??1NonVisualDrawingProps@Art@@QEAA@XZ` at `0x14041e5b8`
+- `oart!__imp_??1NonVisualDrawingProps@Art@@QEAA@XZ` at `0x14041e7f8`
+- `oart!__imp_??1NonVisualDrawingProps@Art@@QEAA@XZ` at `0x14041ea4e`
+- `oart!__imp_??1NonVisualDrawingProps@Art@@QEAA@XZ` at `0x14041ed17`
+- `oart!__imp_??1NonVisualDrawingProps@Art@@QEAA@XZ` at `0x14041f00d`
+- `oart!__imp_??1NonVisualDrawingProps@Art@@QEAA@XZ` at `0x14041f22e`
+- `oart!__imp_??1NonVisualDrawingProps@Art@@QEAA@XZ` at `0x14041f680`
+- `oart!__imp_?GetTxLink@XLConversionInfoBase@XL@@UEBA?AV?$TWeakPtr@VITxLinkFmla@XL@@@Ofc@@XZ` at `0x14041f560`
+- `oart!__imp_?GetTxLink@XLConversionInfoBase@XL@@UEBA?AV?$TWeakPtr@VITxLinkFmla@XL@@@Ofc@@XZ` at `0x14041f58a`
+- `oart!__imp_?GetTxLink@XLConversionInfoBase@XL@@UEBA?AV?$TWeakPtr@VITxLinkFmla@XL@@@Ofc@@XZ` at `0x14041f560`
+- `oart!__imp_?GetTxLink@XLConversionInfoBase@XL@@UEBA?AV?$TWeakPtr@VITxLinkFmla@XL@@@Ofc@@XZ` at `0x14041f58a`
+- `oart!__imp_??1NonVisualE2oFrameProps@Art@@QEAA@XZ` at `0x14041e5ab`
+- `oart!__imp_??1NonVisualE2oFrameProps@Art@@QEAA@XZ` at `0x14041e7eb`
+- `oart!__imp_??1NonVisualE2oFrameProps@Art@@QEAA@XZ` at `0x14041e5ab`
+- `oart!__imp_??1NonVisualE2oFrameProps@Art@@QEAA@XZ` at `0x14041e7eb`
+- `oart!__imp_?EnsurePropConverterHelper@Art@@YAAEAUIPropConverterHelper@1@XZ` at `0x14041e271`
+- `oart!__imp_?EnsurePropConverterHelper@Art@@YAAEAUIPropConverterHelper@1@XZ` at `0x14041e2d7`
+- `oart!__imp_?EnsurePropConverterHelper@Art@@YAAEAUIPropConverterHelper@1@XZ` at `0x14041e3ce`
+- `oart!__imp_?EnsurePropConverterHelper@Art@@YAAEAUIPropConverterHelper@1@XZ` at `0x14041e433`
+- `oart!__imp_?EnsurePropConverterHelper@Art@@YAAEAUIPropConverterHelper@1@XZ` at `0x14041e64f`
+- `oart!__imp_?EnsurePropConverterHelper@Art@@YAAEAUIPropConverterHelper@1@XZ` at `0x14041e271`
+- `oart!__imp_?EnsurePropConverterHelper@Art@@YAAEAUIPropConverterHelper@1@XZ` at `0x14041e2d7`
+- `oart!__imp_?EnsurePropConverterHelper@Art@@YAAEAUIPropConverterHelper@1@XZ` at `0x14041e3ce`
+- `oart!__imp_?EnsurePropConverterHelper@Art@@YAAEAUIPropConverterHelper@1@XZ` at `0x14041e433`
+- `oart!__imp_?EnsurePropConverterHelper@Art@@YAAEAUIPropConverterHelper@1@XZ` at `0x14041e64f`
+- `oart!__imp_??1TextBox@Art@@QEAA@XZ` at `0x14041f653`
+- `oart!__imp_??1TextBox@Art@@QEAA@XZ` at `0x14041f653`
+- `oart!__imp_??0GroupTransform2D@Art@@QEAA@XZ` at `0x14041e391`
+- `oart!__imp_??0GroupTransform2D@Art@@QEAA@XZ` at `0x14041e391`
+- `oart!__imp_??0GroupTransform2D@Art@@QEAA@AEBV01@@Z` at `0x14041eb98`
+- `oart!__imp_??0GroupTransform2D@Art@@QEAA@AEBV01@@Z` at `0x14041eb98`
+- `oart!__imp_?AutofitShapeToText@Dr@@YAXAEAVTransaction@Art@@AEBV?$TReferringPtr@VShapeDrawingElement@Dr@@@Ofc@@AEBVAutoFitParams@1@_N@Z` at `0x14041f747`
+- `oart!__imp_?AutofitShapeToText@Dr@@YAXAEAVTransaction@Art@@AEBV?$TReferringPtr@VShapeDrawingElement@Dr@@@Ofc@@AEBVAutoFitParams@1@_N@Z` at `0x14041f747`
+- `oart!__imp_??0GroupShapeProps@Art@@QEAA@XZ` at `0x14041eab2`
+- `oart!__imp_??0GroupShapeProps@Art@@QEAA@XZ` at `0x14041eab2`
+- `oart!__imp_?ToTextBox@TextBody@Art@@QEBAXAEAVTextBox@2@AEBVTextBodyPropertyBag@2@@Z` at `0x14041f360`
+- `oart!__imp_?ToTextBox@TextBody@Art@@QEBAXAEAVTextBox@2@AEBVTextBodyPropertyBag@2@@Z` at `0x14041f360`
+- `oart!__imp_??1GroupTransform2D@Art@@QEAA@XZ` at `0x14041e5f8`
+- `oart!__imp_??1GroupTransform2D@Art@@QEAA@XZ` at `0x14041e5f8`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VGroupShapePropsIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x14041eb69`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VGroupShapePropsIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x14041ebae`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VGroupShapePropsIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x14041eb69`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VGroupShapePropsIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x14041ebae`
+- `oart!__imp_??0NonVisualPictureProps@Art@@QEAA@XZ` at `0x14041e910`
+- `oart!__imp_??0NonVisualPictureProps@Art@@QEAA@XZ` at `0x14041e910`
+- `oart!__imp_??1NonVisualGroupDrawingShapeProps@Art@@QEAA@XZ` at `0x14041ed0a`
+- `oart!__imp_??1NonVisualGroupDrawingShapeProps@Art@@QEAA@XZ` at `0x14041ed0a`
+- `oart!__imp_??1TextBodyPropertyBag@Art@@QEAA@XZ` at `0x14041f6a0`
+- `oart!__imp_??1TextBodyPropertyBag@Art@@QEAA@XZ` at `0x14041f6a0`
+- `oart!__imp_??0ShapeLocking@Art@@QEAA@XZ` at `0x14041f515`
+- `oart!__imp_??0ShapeLocking@Art@@QEAA@XZ` at `0x14041f515`
+- `oart!__imp_?GetTextBody@ShapeDrawingElement@Dr@@QEAAAEBV?$TReferringPtr@VTextBody@Art@@@Ofc@@XZ` at `0x14041f700`
+- `oart!__imp_?GetTextBody@ShapeDrawingElement@Dr@@QEAAAEBV?$TReferringPtr@VTextBody@Art@@@Ofc@@XZ` at `0x14041f700`
+- `oart!__imp_??1BlipFillProps@Art@@QEAA@XZ` at `0x14041ea59`
+- `oart!__imp_??1BlipFillProps@Art@@QEAA@XZ` at `0x14041ea59`
+- `oart!__imp_??1NonVisualInkContentPartProps@Art@@QEAA@XZ` at `0x14041f220`
+- `oart!__imp_??1NonVisualInkContentPartProps@Art@@QEAA@XZ` at `0x14041f220`
+- `oart!__imp_?SetTextBody@SimpleTextFrame@Art@@QEAAXAEBV?$TWeakPtr@VTextBody@Art@@@Ofc@@@Z` at `0x14041f70c`
+- `oart!__imp_?SetTextBody@SimpleTextFrame@Art@@QEAAXAEBV?$TWeakPtr@VTextBody@Art@@@Ofc@@@Z` at `0x14041f70c`
+- `oart!__imp_??0NonVisualConnectorProps@Art@@QEAA@XZ` at `0x14041ee40`
+- `oart!__imp_??0NonVisualConnectorProps@Art@@QEAA@XZ` at `0x14041ee40`
+- `oart!__imp_??0TextBodyPropertyBag@Art@@QEAA@XZ` at `0x14041f260`
+- `oart!__imp_??0TextBodyPropertyBag@Art@@QEAA@XZ` at `0x14041f260`
+- `oart!__imp_??0Rect64@Art@@QEAA@XZ` at `0x14041e401`
+- `oart!__imp_??0Rect64@Art@@QEAA@XZ` at `0x14041ed41`
+- `oart!__imp_??0Rect64@Art@@QEAA@XZ` at `0x14041e401`
+- `oart!__imp_??0Rect64@Art@@QEAA@XZ` at `0x14041ed41`
+- `mso40uiWin32Client!__imp_?CheckedStrongAddRef@CProxyPtrImpl@Ofc@@KAPEAV12@PEAV12@@Z` at `0x14041e220`
+- `mso40uiWin32Client!__imp_?CheckedStrongAddRef@CProxyPtrImpl@Ofc@@KAPEAV12@PEAV12@@Z` at `0x14041e2c0`
+- `mso40uiWin32Client!__imp_?CheckedStrongAddRef@CProxyPtrImpl@Ofc@@KAPEAV12@PEAV12@@Z` at `0x14041e220`
+- `mso40uiWin32Client!__imp_?CheckedStrongAddRef@CProxyPtrImpl@Ofc@@KAPEAV12@PEAV12@@Z` at `0x14041e2c0`
+- `mso40uiWin32Client!__imp_?StrongAssign@CProxyPtrImpl@Ofc@@KAXPEAPEAV12@PEAV12@@Z` at `0x14041ed34`
+- `mso40uiWin32Client!__imp_?StrongAssign@CProxyPtrImpl@Ofc@@KAXPEAPEAV12@PEAV12@@Z` at `0x14041ed34`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x14041e2d1`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x14041ec40`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x14041ece3`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x14041eda2`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x14041ef20`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x14041efcf`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x14041f16d`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x14041f1f7`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x14041f46c`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x14041f574`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x14041f5a5`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x14041f625`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x14041e2d1`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x14041ec40`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x14041ece3`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x14041eda2`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x14041ef20`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x14041efcf`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x14041f16d`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x14041f1f7`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x14041f46c`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x14041f574`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x14041f5a5`
+- `mso40uiWin32Client!__imp_?DtorWeakRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x14041f625`
+- `mso40uiWin32Client!__imp_??1StgTypeOwner@Tph@Ofc@@QEAA@XZ` at `0x14041ebea`
+- `mso40uiWin32Client!__imp_??1StgTypeOwner@Tph@Ofc@@QEAA@XZ` at `0x14041ebea`
+- `mso40uiWin32Client!__imp_?FSetValid@CPropertySetImpl@Tph@Ofc@@IEAA_NIIPEBUVTable@23@AEAVStgTypeOwner@23@PEAVCTransaction@3@@Z` at `0x14041ebd1`
+- `mso40uiWin32Client!__imp_?FSetValid@CPropertySetImpl@Tph@Ofc@@IEAA_NIIPEBUVTable@23@AEAVStgTypeOwner@23@PEAVCTransaction@3@@Z` at `0x14041ebd1`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x14041e22e`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x14041e2a0`
+
+## pseudocode
+
+```c
+
+```

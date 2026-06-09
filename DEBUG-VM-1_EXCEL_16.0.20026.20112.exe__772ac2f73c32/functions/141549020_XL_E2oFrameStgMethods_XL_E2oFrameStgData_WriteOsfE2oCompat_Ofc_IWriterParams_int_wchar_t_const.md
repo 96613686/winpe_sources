@@ -1,0 +1,217 @@
+# XL::E2oFrameStgMethods<XL::E2oFrameStgData>::WriteOsfE2oCompat(Ofc::IWriterParams &,int,wchar_t const *)
+
+- ea: `0x141549020`
+- end: `0x1415499b0`
+- name: `?WriteOsfE2oCompat@?$E2oFrameStgMethods@VE2oFrameStgData@XL@@@XL@@AEBAXAEAVIWriterParams@Ofc@@HPEB_W@Z`
+- size: `2448`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `29`
+- tags: `authz_impersonation, broker_com_uri`
+
+## callers
+
+- `0x140710d20`
+
+## callees
+
+- `0x140340f44`
+- `0x1403d6e18`
+- `0x1403de790`
+- `0x1404133b0`
+- `0x140420fc0`
+- `0x140449410`
+- `0x1404766e0`
+- `0x140476770`
+- `0x1404c2e40`
+- `0x1404c2eb0`
+- `0x140557130`
+- `0x14068e670`
+- `0x14068e780`
+- `0x140710fd0`
+- `0x1407193b0`
+- `0x140730680`
+- `0x14073d510`
+- `0x1408d2bb0`
+- `0x1408d6570`
+- `0x1411e9a60`
+- `0x141221ca0`
+- `0x141277bc0`
+- `0x1412a9fb0`
+- `0x1412bcf50`
+- `0x1412bcfe0`
+- `0x1412bd070`
+- `0x141549020`
+- `0x141847da0`
+- `0x141dd8530`
+
+## import_xrefs
+
+- `KERNEL32!EncodePointer` at `0x1415494c0`
+- `KERNEL32!EncodePointer` at `0x1415494c0`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x141549760`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x141549858`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x141549892`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x141549760`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x141549858`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x141549892`
+- `oart!__imp_?SetCharPropertyBag@TextBody@Art@@QEAAXAEAVCTransaction@Ofc@@AEBUTextRange@2@AEBVTextCharPropertyBag@2@_N@Z` at `0x1415495e8`
+- `oart!__imp_?SetCharPropertyBag@TextBody@Art@@QEAAXAEAVCTransaction@Ofc@@AEBUTextRange@2@AEBVTextCharPropertyBag@2@_N@Z` at `0x1415495e8`
+- `oart!__imp_??1FillProps@Art@@QEAA@XZ` at `0x1415498d4`
+- `oart!__imp_??1FillProps@Art@@QEAA@XZ` at `0x1415498d4`
+- `oart!__imp_??0Geometry2D@Art@@QEAA@AEBV01@@Z` at `0x141549222`
+- `oart!__imp_??0Geometry2D@Art@@QEAA@AEBV01@@Z` at `0x141549222`
+- `oart!__imp_?GetE2oFrame@NodeHelper@Dr@@SAAEBV?$TWeakPtr@VE2oFrameDrawingElement@Dr@@@Ofc@@AEBV?$TReferringPtr@VIE2o@Art@@@4@@Z` at `0x1415491ae`
+- `oart!__imp_?GetE2oFrame@NodeHelper@Dr@@SAAEBV?$TWeakPtr@VE2oFrameDrawingElement@Dr@@@Ofc@@AEBV?$TReferringPtr@VIE2o@Art@@@4@@Z` at `0x1415491ae`
+- `oart!__imp_?Empty@AlternateContentStg@Art@@QEAAXXZ` at `0x1415496c0`
+- `oart!__imp_?Empty@AlternateContentStg@Art@@QEAAXXZ` at `0x1415496c0`
+- `oart!__imp_?GetMax@LineWidthRange@Art@@SAAEBVCoord32@2@XZ` at `0x141549405`
+- `oart!__imp_?GetMax@LineWidthRange@Art@@SAAEBVCoord32@2@XZ` at `0x141549405`
+- `oart!__imp_?GetMin@LineWidthRange@Art@@SAAEBVCoord32@2@XZ` at `0x14154940d`
+- `oart!__imp_?GetMin@LineWidthRange@Art@@SAAEBVCoord32@2@XZ` at `0x14154940d`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VTextBodyPropertyBagIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x141549608`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VTextBodyPropertyBagIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x14154964b`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VTextBodyPropertyBagIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x141549608`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VTextBodyPropertyBagIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x14154964b`
+- `oart!__imp_?PutChars@TextBody@Art@@QEAAXAEAVCTransaction@Ofc@@AEBUTextRange@2@PEB_W_N3@Z` at `0x141549560`
+- `oart!__imp_?PutChars@TextBody@Art@@QEAAXAEAVCTransaction@Ofc@@AEBUTextRange@2@PEB_W_N3@Z` at `0x141549560`
+- `oart!__imp_?TopLeft@Rect64@Art@@QEBA?BVPoint2D@2@XZ` at `0x1415492a6`
+- `oart!__imp_?TopLeft@Rect64@Art@@QEBA?BVPoint2D@2@XZ` at `0x1415492a6`
+- `oart!__imp_??0Color@Art@@QEAA@W4PresetColorVal@1@@Z` at `0x1415492f1`
+- `oart!__imp_??0Color@Art@@QEAA@W4PresetColorVal@1@@Z` at `0x141549384`
+- `oart!__imp_??0Color@Art@@QEAA@W4PresetColorVal@1@@Z` at `0x1415492f1`
+- `oart!__imp_??0Color@Art@@QEAA@W4PresetColorVal@1@@Z` at `0x141549384`
+- `oart!__imp_??0Transform2D@Art@@QEAA@AEBVPoint2D@1@AEBVPosSize2D@1@AEBVAngle@1@@Z` at `0x1415492c0`
+- `oart!__imp_??0Transform2D@Art@@QEAA@AEBVPoint2D@1@AEBVPosSize2D@1@AEBVAngle@1@@Z` at `0x1415492c0`
+- `oart!__imp_??1LineProps@Art@@QEAA@XZ` at `0x1415498c0`
+- `oart!__imp_??1LineProps@Art@@QEAA@XZ` at `0x1415498c0`
+- `oart!__imp_??0FillProps@Art@@QEAA@XZ` at `0x1415492e0`
+- `oart!__imp_??0FillProps@Art@@QEAA@XZ` at `0x1415492e0`
+- `oart!__imp_??0LineProps@Art@@QEAA@XZ` at `0x1415493f1`
+- `oart!__imp_??0LineProps@Art@@QEAA@XZ` at `0x1415493f1`
+- `oart!__imp_??1SolidColorFillProps@Art@@QEAA@XZ` at `0x141549319`
+- `oart!__imp_??1SolidColorFillProps@Art@@QEAA@XZ` at `0x1415493ac`
+- `oart!__imp_??1SolidColorFillProps@Art@@QEAA@XZ` at `0x141549319`
+- `oart!__imp_??1SolidColorFillProps@Art@@QEAA@XZ` at `0x1415493ac`
+- `oart!__imp_??0SolidColorFillProps@Art@@QEAA@AEBVColor@1@@Z` at `0x141549300`
+- `oart!__imp_??0SolidColorFillProps@Art@@QEAA@AEBVColor@1@@Z` at `0x141549393`
+- `oart!__imp_??0SolidColorFillProps@Art@@QEAA@AEBVColor@1@@Z` at `0x141549300`
+- `oart!__imp_??0SolidColorFillProps@Art@@QEAA@AEBVColor@1@@Z` at `0x141549393`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VLinePropsIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x141549429`
+- `oart!__imp_?GetVTableArray@?$TPropertySet@VLinePropsIDs@Art@@@Ofc@@CAPEBUVTable@Tph@2@XZ` at `0x141549429`
+- `oart!__imp_??1TextBox@Art@@QEAA@XZ` at `0x141549920`
+- `oart!__imp_??1TextBox@Art@@QEAA@XZ` at `0x141549920`
+- `oart!__imp_??1TextCharPropertyBag@Art@@QEAA@XZ` at `0x141549798`
+- `oart!__imp_??1TextCharPropertyBag@Art@@QEAA@XZ` at `0x141549798`
+- `oart!__imp_?Size@Rect64@Art@@QEBA?BVPosSize2D@2@XZ` at `0x141549294`
+- `oart!__imp_?Size@Rect64@Art@@QEBA?BVPosSize2D@2@XZ` at `0x141549294`
+- `oart!__imp_??0LineFillProps@Art@@QEAA@XZ` at `0x141549373`
+- `oart!__imp_??0LineFillProps@Art@@QEAA@XZ` at `0x141549373`
+- `oart!__imp_??1Geometry2D@Art@@QEAA@XZ` at `0x1415498e0`
+- `oart!__imp_??1Geometry2D@Art@@QEAA@XZ` at `0x1415498e0`
+- `oart!__imp_?ToTextBox@TextBody@Art@@QEBAXAEAVTextBox@2@AEBVTextBodyPropertyBag@2@@Z` at `0x1415496a0`
+- `oart!__imp_?ToTextBox@TextBody@Art@@QEBAXAEAVTextBox@2@AEBVTextBodyPropertyBag@2@@Z` at `0x1415496a0`
+- `oart!__imp_?GetDefaultGeometry@Art@@YAAEBVGeometry2D@1@W4ShapeType@1@@Z` at `0x141549215`
+- `oart!__imp_?GetDefaultGeometry@Art@@YAAEBVGeometry2D@1@W4ShapeType@1@@Z` at `0x141549215`
+- `oart!__imp_?Length@TextBody@Art@@QEBAHXZ` at `0x1415495c1`
+- `oart!__imp_?Length@TextBody@Art@@QEBAHXZ` at `0x1415495c1`
+- `oart!__imp_??1TextBodyPropertyBag@Art@@QEAA@XZ` at `0x14154978e`
+- `oart!__imp_??1TextBodyPropertyBag@Art@@QEAA@XZ` at `0x14154978e`
+- `oart!__imp_??1LineFillProps@Art@@QEAA@XZ` at `0x1415498ca`
+- `oart!__imp_??1LineFillProps@Art@@QEAA@XZ` at `0x1415498ca`
+- `oart!__imp_??0TextBody@Art@@QEAA@XZ` at `0x1415494a0`
+- `oart!__imp_??0TextBody@Art@@QEAA@XZ` at `0x1415494a0`
+- `oart!__imp_??0TextCharPropertyBag@Art@@QEAA@XZ` at `0x141549574`
+- `oart!__imp_??0TextCharPropertyBag@Art@@QEAA@XZ` at `0x141549574`
+- `oart!__imp_??0TextBodyPropertyBag@Art@@QEAA@XZ` at `0x1415495f2`
+- `oart!__imp_??0TextBodyPropertyBag@Art@@QEAA@XZ` at `0x1415495f2`
+- `oart!__imp_??0Rect64@Art@@QEAA@XZ` at `0x141549240`
+- `oart!__imp_??0Rect64@Art@@QEAA@XZ` at `0x141549240`
+- `mso40uiWin32Client!__imp_?WriteFallbackEndElem@ACBWriterHelper@Ofc@@QEAAXXZ` at `0x141549940`
+- `mso40uiWin32Client!__imp_?WriteFallbackEndElem@ACBWriterHelper@Ofc@@QEAAXXZ` at `0x141549940`
+- `mso40uiWin32Client!__imp_?WriteChoiceEndElem@ACBWriterHelper@Ofc@@QEAAXXZ` at `0x1415490e9`
+- `mso40uiWin32Client!__imp_?WriteChoiceEndElem@ACBWriterHelper@Ofc@@QEAAXXZ` at `0x1415490e9`
+- `mso40uiWin32Client!__imp_?WriteChoiceStartElem@ACBWriterHelper@Ofc@@QEAAXH@Z` at `0x1415490ce`
+- `mso40uiWin32Client!__imp_?WriteChoiceStartElem@ACBWriterHelper@Ofc@@QEAAXH@Z` at `0x1415490ce`
+- `mso40uiWin32Client!__imp_?CheckedStrongAddRef@CProxyPtrImpl@Ofc@@KAPEAV12@PEAV12@@Z` at `0x141549060`
+- `mso40uiWin32Client!__imp_?CheckedStrongAddRef@CProxyPtrImpl@Ofc@@KAPEAV12@PEAV12@@Z` at `0x1415491a0`
+- `mso40uiWin32Client!__imp_?CheckedStrongAddRef@CProxyPtrImpl@Ofc@@KAPEAV12@PEAV12@@Z` at `0x1415491b7`
+- `mso40uiWin32Client!__imp_?CheckedStrongAddRef@CProxyPtrImpl@Ofc@@KAPEAV12@PEAV12@@Z` at `0x141549060`
+- `mso40uiWin32Client!__imp_?CheckedStrongAddRef@CProxyPtrImpl@Ofc@@KAPEAV12@PEAV12@@Z` at `0x1415491a0`
+- `mso40uiWin32Client!__imp_?CheckedStrongAddRef@CProxyPtrImpl@Ofc@@KAPEAV12@PEAV12@@Z` at `0x1415491b7`
+- `mso40uiWin32Client!__imp_?AddUri@CNamespaceDeclarationTracker@Ofc@@QEAAXH@Z` at `0x1415490c1`
+- `mso40uiWin32Client!__imp_?AddUri@CNamespaceDeclarationTracker@Ofc@@QEAAXH@Z` at `0x1415490c1`
+- `mso40uiWin32Client!__imp_?WriteFallbackStartElem@ACBWriterHelper@Ofc@@QEAAXXZ` at `0x1415490f3`
+- `mso40uiWin32Client!__imp_?WriteFallbackStartElem@ACBWriterHelper@Ofc@@QEAAXXZ` at `0x1415490f3`
+- `mso40uiWin32Client!__imp_??1CNamespaceDeclarationTracker@Ofc@@QEAA@XZ` at `0x141549961`
+- `mso40uiWin32Client!__imp_??1CNamespaceDeclarationTracker@Ofc@@QEAA@XZ` at `0x141549961`
+- `mso40uiWin32Client!__imp_?WriteAlternateContentStartElem@ACBWriterHelper@Ofc@@QEAAXXZ` at `0x141549093`
+- `mso40uiWin32Client!__imp_?WriteAlternateContentStartElem@ACBWriterHelper@Ofc@@QEAAXXZ` at `0x141549093`
+- `mso40uiWin32Client!__imp_??1StgTypeOwner@Tph@Ofc@@QEAA@XZ` at `0x141549462`
+- `mso40uiWin32Client!__imp_??1StgTypeOwner@Tph@Ofc@@QEAA@XZ` at `0x141549645`
+- `mso40uiWin32Client!__imp_??1StgTypeOwner@Tph@Ofc@@QEAA@XZ` at `0x141549684`
+- `mso40uiWin32Client!__imp_??1StgTypeOwner@Tph@Ofc@@QEAA@XZ` at `0x141549462`
+- `mso40uiWin32Client!__imp_??1StgTypeOwner@Tph@Ofc@@QEAA@XZ` at `0x141549645`
+- `mso40uiWin32Client!__imp_??1StgTypeOwner@Tph@Ofc@@QEAA@XZ` at `0x141549684`
+- `mso40uiWin32Client!__imp_??0ACBWriterHelper@Ofc@@QEAA@AEAVIWriterParams@1@@Z` at `0x141549089`
+- `mso40uiWin32Client!__imp_??0ACBWriterHelper@Ofc@@QEAA@AEAVIWriterParams@1@@Z` at `0x141549089`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x14154910a`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x14154924b`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x141549519`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x1415495aa`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x1415495b8`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x14154968f`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x14154910a`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x14154924b`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x141549519`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x1415495aa`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x1415495b8`
+- `mso40uiWin32Client!__imp_?GetChecked@CProxyPtrImpl@Ofc@@IEBAPEAXXZ` at `0x14154968f`
+- `mso40uiWin32Client!__imp_??0CNamespaceDeclarationTracker@Ofc@@QEAA@AEAVCNamespaceList@1@AEAUIMXAttributes@@H_N@Z` at `0x1415490b3`
+- `mso40uiWin32Client!__imp_??0CNamespaceDeclarationTracker@Ofc@@QEAA@AEAVCNamespaceList@1@AEAUIMXAttributes@@H_N@Z` at `0x1415490b3`
+- `mso40uiWin32Client!__imp_?WriteAlternateContentEndElem@ACBWriterHelper@Ofc@@QEAAXXZ` at `0x14154994a`
+- `mso40uiWin32Client!__imp_?WriteAlternateContentEndElem@ACBWriterHelper@Ofc@@QEAAXXZ` at `0x14154994a`
+- `mso40uiWin32Client!__imp_?DtorStrongRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x141549280`
+- `mso40uiWin32Client!__imp_?DtorStrongRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x1415498b1`
+- `mso40uiWin32Client!__imp_?DtorStrongRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x1415498eb`
+- `mso40uiWin32Client!__imp_?DtorStrongRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x1415498f6`
+- `mso40uiWin32Client!__imp_?DtorStrongRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x141549900`
+- `mso40uiWin32Client!__imp_?DtorStrongRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x14154990a`
+- `mso40uiWin32Client!__imp_?DtorStrongRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x14154996b`
+- `mso40uiWin32Client!__imp_?DtorStrongRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x141549975`
+- `mso40uiWin32Client!__imp_?DtorStrongRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x141549280`
+- `mso40uiWin32Client!__imp_?DtorStrongRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x1415498b1`
+- `mso40uiWin32Client!__imp_?DtorStrongRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x1415498eb`
+- `mso40uiWin32Client!__imp_?DtorStrongRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x1415498f6`
+- `mso40uiWin32Client!__imp_?DtorStrongRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x141549900`
+- `mso40uiWin32Client!__imp_?DtorStrongRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x14154990a`
+- `mso40uiWin32Client!__imp_?DtorStrongRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x14154996b`
+- `mso40uiWin32Client!__imp_?DtorStrongRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x141549975`
+- `Mso30Win32Client!__imp_MsoGetHinstIntl` at `0x141549522`
+- `Mso30Win32Client!__imp_MsoGetHinstIntl` at `0x141549522`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x141549480`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x141549480`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x141549331`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x141549340`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1415493c5`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1415493ce`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x141549751`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x14154984b`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x141549885`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x141549929`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x141549331`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x141549340`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1415493c5`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1415493ce`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x141549751`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x14154984b`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x141549885`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x141549929`
+- `Mso20Win32Client!__imp_?ThrowOOM@@YAXXZ` at `0x14154948b`
+- `Mso20Win32Client!__imp_?ThrowOOM@@YAXXZ` at `0x14154948b`
+
+## pseudocode
+
+```c
+
+```

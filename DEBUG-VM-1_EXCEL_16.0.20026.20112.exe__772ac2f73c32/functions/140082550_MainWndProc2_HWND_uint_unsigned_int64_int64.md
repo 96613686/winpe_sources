@@ -1,0 +1,284 @@
+# _MainWndProc2(HWND__ *,uint,unsigned __int64,__int64)
+
+- ea: `0x140082550`
+- end: `0x14008614d`
+- name: `?_MainWndProc2@@YA_JPEAUHWND__@@I_K_J@Z`
+- size: `15357`
+- prototype: `__int64 __fastcall(HWND, void **, unsigned int, unsigned __int64)`
+- caller_count: `2`
+- callee_count: `159`
+- tags: `authz_impersonation, registry_config, installer_update, broker_com_uri`
+
+## callers
+
+- `0x140086150`
+- `0x1408c0900`
+
+## callees
+
+- `0x14002e600`
+- `0x140053ee0`
+- `0x140055810`
+- `0x1400566f0`
+- `0x1400703d0`
+- `0x140073990`
+- `0x140074650`
+- `0x140074fa0`
+- `0x140075e60`
+- `0x1400765a0`
+- `0x14007748c`
+- `0x14007d950`
+- `0x14007db70`
+- `0x14007e200`
+- `0x140080fe0`
+- `0x140082550`
+- `0x140086eb0`
+- `0x140086f10`
+- `0x140089e80`
+- `0x140097ad0`
+- `0x140099040`
+- `0x1400b5820`
+- `0x1400c7f40`
+- `0x1400c8b50`
+- `0x1400ca0b0`
+- `0x1400cc008`
+- `0x1400cc6e0`
+- `0x1400cec40`
+- `0x1400cee50`
+- `0x1400cef20`
+- `0x1400cf370`
+- `0x1400d2720`
+- `0x1400d2db0`
+- `0x1400e9860`
+- `0x14010b540`
+- `0x14010b590`
+- `0x14010b730`
+- `0x14010b940`
+- `0x14010bab0`
+- `0x14010d480`
+- `0x14010e4c0`
+- `0x14011b710`
+- `0x14011b770`
+- `0x14011ba20`
+- `0x14011bb50`
+- `0x140168940`
+- `0x1401ab510`
+- `0x1401ab5d0`
+- `0x1401ae470`
+- `0x1401b3b80`
+
+## import_xrefs
+
+- `api-ms-win-crt-string-l1-1-0!strncpy_s` at `0x140085320`
+- `api-ms-win-crt-string-l1-1-0!strncpy_s` at `0x1400855b0`
+- `api-ms-win-crt-string-l1-1-0!strncpy_s` at `0x1400855f9`
+- `api-ms-win-crt-string-l1-1-0!strncpy_s` at `0x140085639`
+- `api-ms-win-crt-string-l1-1-0!strncpy_s` at `0x140085320`
+- `api-ms-win-crt-string-l1-1-0!strncpy_s` at `0x1400855b0`
+- `api-ms-win-crt-string-l1-1-0!strncpy_s` at `0x1400855f9`
+- `api-ms-win-crt-string-l1-1-0!strncpy_s` at `0x140085639`
+- `USER32!SetWindowPos` at `0x140082fd9`
+- `USER32!SetWindowPos` at `0x1400830a0`
+- `USER32!SetWindowPos` at `0x140084b8f`
+- `USER32!SetWindowPos` at `0x140082fd9`
+- `USER32!SetWindowPos` at `0x1400830a0`
+- `USER32!SetWindowPos` at `0x140084b8f`
+- `USER32!SetForegroundWindow` at `0x140082e96`
+- `USER32!SetForegroundWindow` at `0x140082e96`
+- `USER32!GetWindowLongW` at `0x140084ef7`
+- `USER32!GetWindowLongW` at `0x140084f44`
+- `USER32!GetWindowLongW` at `0x140084f61`
+- `USER32!GetWindowLongW` at `0x140085180`
+- `USER32!GetWindowLongW` at `0x140085d4f`
+- `USER32!GetWindowLongW` at `0x140085e33`
+- `USER32!GetWindowLongW` at `0x140084ef7`
+- `USER32!GetWindowLongW` at `0x140084f44`
+- `USER32!GetWindowLongW` at `0x140084f61`
+- `USER32!GetWindowLongW` at `0x140085180`
+- `USER32!GetWindowLongW` at `0x140085d4f`
+- `USER32!GetWindowLongW` at `0x140085e33`
+- `USER32!RegisterWindowMessageA` at `0x140086018`
+- `USER32!RegisterWindowMessageA` at `0x140086018`
+- `USER32!IsWindowVisible` at `0x140082dc7`
+- `USER32!IsWindowVisible` at `0x140082f6d`
+- `USER32!IsWindowVisible` at `0x140083440`
+- `USER32!IsWindowVisible` at `0x140082dc7`
+- `USER32!IsWindowVisible` at `0x140082f6d`
+- `USER32!IsWindowVisible` at `0x140083440`
+- `USER32!SetFocus` at `0x140082e13`
+- `USER32!SetFocus` at `0x140082f8c`
+- `USER32!SetFocus` at `0x140083386`
+- `USER32!SetFocus` at `0x1400833e9`
+- `USER32!SetFocus` at `0x140083420`
+- `USER32!SetFocus` at `0x140082e13`
+- `USER32!SetFocus` at `0x140082f8c`
+- `USER32!SetFocus` at `0x140083386`
+- `USER32!SetFocus` at `0x1400833e9`
+- `USER32!SetFocus` at `0x140083420`
+- `USER32!GetParent` at `0x140082c20`
+- `USER32!GetParent` at `0x140082c45`
+- `USER32!GetParent` at `0x14008364b`
+- `USER32!GetParent` at `0x140082c20`
+- `USER32!GetParent` at `0x140082c45`
+- `USER32!GetParent` at `0x14008364b`
+- `USER32!SetActiveWindow` at `0x140082dae`
+- `USER32!SetActiveWindow` at `0x140082dae`
+- `USER32!GetClassNameW` at `0x140082b67`
+- `USER32!GetClassNameW` at `0x140082def`
+- `USER32!GetClassNameW` at `0x140082b67`
+- `USER32!GetClassNameW` at `0x140082def`
+- `USER32!EnableWindow` at `0x140084ec0`
+- `USER32!EnableWindow` at `0x140084ee3`
+- `USER32!EnableWindow` at `0x140084ec0`
+- `USER32!EnableWindow` at `0x140084ee3`
+- `USER32!IsWindowEnabled` at `0x140083221`
+- `USER32!IsWindowEnabled` at `0x140083221`
+- `USER32!GetCursorPos` at `0x14008346a`
+- `USER32!GetCursorPos` at `0x14008346a`
+- `USER32!MessageBeep` at `0x140084840`
+- `USER32!MessageBeep` at `0x1400854e0`
+- `USER32!MessageBeep` at `0x140084840`
+- `USER32!MessageBeep` at `0x1400854e0`
+- `USER32!GetWindowThreadProcessId` at `0x140083660`
+- `USER32!GetWindowThreadProcessId` at `0x140083660`
+- `USER32!GetMenuItemCount` at `0x140085c96`
+- `USER32!GetMenuItemCount` at `0x140085c96`
+- `USER32!GetSubMenu` at `0x140085ef6`
+- `USER32!GetSubMenu` at `0x140085ef6`
+- `USER32!PostMessageW` at `0x140084661`
+- `USER32!PostMessageW` at `0x140084661`
+- `USER32!SendMessageW` at `0x140083924`
+- `USER32!SendMessageW` at `0x140085a55`
+- `USER32!SendMessageW` at `0x140085aaa`
+- `USER32!SendMessageW` at `0x140083924`
+- `USER32!SendMessageW` at `0x140085a55`
+- `USER32!SendMessageW` at `0x140085aaa`
+- `USER32!IsWindow` at `0x140082db9`
+- `USER32!IsWindow` at `0x140082f60`
+- `USER32!IsWindow` at `0x140082db9`
+- `USER32!IsWindow` at `0x140082f60`
+- `USER32!GetAncestor` at `0x1400825b0`
+- `USER32!GetAncestor` at `0x140082b51`
+- `USER32!GetAncestor` at `0x140082b91`
+- `USER32!GetAncestor` at `0x140082dd9`
+- `USER32!GetAncestor` at `0x1400825b0`
+- `USER32!GetAncestor` at `0x140082b51`
+- `USER32!GetAncestor` at `0x140082b91`
+- `USER32!GetAncestor` at `0x140082dd9`
+- `USER32!IsChild` at `0x140082c60`
+- `USER32!IsChild` at `0x140082c60`
+- `USER32!ScreenToClient` at `0x14008348b`
+- `USER32!ScreenToClient` at `0x14008348b`
+- `USER32!GetWindowLongPtrW` at `0x1400860c1`
+- `USER32!GetWindowLongPtrW` at `0x1400860c1`
+- `USER32!GetSystemMenu` at `0x140085ca3`
+- `USER32!GetSystemMenu` at `0x140085db0`
+- `USER32!GetSystemMenu` at `0x140085f8d`
+- `USER32!GetSystemMenu` at `0x140085ca3`
+- `USER32!GetSystemMenu` at `0x140085db0`
+- `USER32!GetSystemMenu` at `0x140085f8d`
+- `USER32!GetMenu` at `0x140085c88`
+- `USER32!GetMenu` at `0x140085c88`
+- `USER32!GetWindowRect` at `0x140083060`
+- `USER32!GetWindowRect` at `0x140084f81`
+- `USER32!GetWindowRect` at `0x140085018`
+- `USER32!GetWindowRect` at `0x140083060`
+- `USER32!GetWindowRect` at `0x140084f81`
+- `USER32!GetWindowRect` at `0x140085018`
+- `MSO!__imp_?HdlgGetCur@@YAPEAPEAXXZ` at `0x1400833c9`
+- `MSO!__imp_?HdlgGetCur@@YAPEAPEAXXZ` at `0x1400833d4`
+- `MSO!__imp_?HdlgGetCur@@YAPEAPEAXXZ` at `0x1400838ce`
+- `MSO!__imp_?HdlgGetCur@@YAPEAPEAXXZ` at `0x140085cf9`
+- `MSO!__imp_?HdlgGetCur@@YAPEAPEAXXZ` at `0x1400833c9`
+- `MSO!__imp_?HdlgGetCur@@YAPEAPEAXXZ` at `0x1400833d4`
+- `MSO!__imp_?HdlgGetCur@@YAPEAPEAXXZ` at `0x1400838ce`
+- `MSO!__imp_?HdlgGetCur@@YAPEAPEAXXZ` at `0x140085cf9`
+- `MSO!__imp_?WindowFromDlg@@YAPEAUHWND__@@PEAPEAX@Z` at `0x140082f00`
+- `MSO!__imp_?WindowFromDlg@@YAPEAUHWND__@@PEAPEAX@Z` at `0x1400833e0`
+- `MSO!__imp_?WindowFromDlg@@YAPEAUHWND__@@PEAPEAX@Z` at `0x140085d02`
+- `MSO!__imp_?WindowFromDlg@@YAPEAUHWND__@@PEAPEAX@Z` at `0x140082f00`
+- `MSO!__imp_?WindowFromDlg@@YAPEAUHWND__@@PEAPEAX@Z` at `0x1400833e0`
+- `MSO!__imp_?WindowFromDlg@@YAPEAUHWND__@@PEAPEAX@Z` at `0x140085d02`
+- `MSO!__imp_?MsoBackgroundDownloadTapDocuments@@YAXXZ` at `0x140083eae`
+- `MSO!__imp_?MsoBackgroundDownloadTapDocuments@@YAXXZ` at `0x140083eae`
+- `Mso98Win32Client!__imp_?MsoFrameDefWindowProc@@YA_NPEAUHWND__@@I_K_JPEA_J@Z` at `0x140084d80`
+- `Mso98Win32Client!__imp_?MsoFrameDefWindowProc@@YA_NPEAUHWND__@@I_K_JPEA_J@Z` at `0x140084d80`
+- `Mso98Win32Client!__imp_?MsoIsMainWindowVisible@@YAHPEAUHWND__@@@Z` at `0x1400827a5`
+- `Mso98Win32Client!__imp_?MsoIsMainWindowVisible@@YAHPEAUHWND__@@@Z` at `0x1400829a0`
+- `Mso98Win32Client!__imp_?MsoIsMainWindowVisible@@YAHPEAUHWND__@@@Z` at `0x140082bc6`
+- `Mso98Win32Client!__imp_?MsoIsMainWindowVisible@@YAHPEAUHWND__@@@Z` at `0x1400827a5`
+- `Mso98Win32Client!__imp_?MsoIsMainWindowVisible@@YAHPEAUHWND__@@@Z` at `0x1400829a0`
+- `Mso98Win32Client!__imp_?MsoIsMainWindowVisible@@YAHPEAUHWND__@@@Z` at `0x140082bc6`
+- `Mso98Win32Client!__imp_MsoFGetComponentManager` at `0x140082cf0`
+- `Mso98Win32Client!__imp_MsoFGetComponentManager` at `0x140082cf0`
+- `Mso30Win32Client!__imp_?IsAppGuard@Config@AppGuard@@YA_NXZ` at `0x140082d95`
+- `Mso30Win32Client!__imp_?IsAppGuard@Config@AppGuard@@YA_NXZ` at `0x140082d95`
+- `Mso20Win32Client!__imp_?MsoDwRegGetDw@@YAKPEBU_msoreg@@@Z` at `0x140083960`
+- `Mso20Win32Client!__imp_?MsoDwRegGetDw@@YAKPEBU_msoreg@@@Z` at `0x140083c31`
+- `Mso20Win32Client!__imp_?MsoDwRegGetDw@@YAKPEBU_msoreg@@@Z` at `0x1400845e0`
+- `Mso20Win32Client!__imp_?MsoDwRegGetDw@@YAKPEBU_msoreg@@@Z` at `0x140083960`
+- `Mso20Win32Client!__imp_?MsoDwRegGetDw@@YAKPEBU_msoreg@@@Z` at `0x140083c31`
+- `Mso20Win32Client!__imp_?MsoDwRegGetDw@@YAKPEBU_msoreg@@@Z` at `0x1400845e0`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1400826b7`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x140082a60`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x140083c82`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x140083d2b`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x140084200`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x140084600`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1400846e2`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x140084aeb`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1400852a0`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x14008546f`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1400854d4`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1400826b7`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x140082a60`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x140083c82`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x140083d2b`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x140084200`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x140084600`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1400846e2`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x140084aeb`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1400852a0`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x14008546f`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1400854d4`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x140082ca0`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1400830e9`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x140082ca0`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1400830e9`
+- `Mso20Win32Client!__imp_?MsoFIsRunningRestricted@@YAHXZ` at `0x1400842ab`
+- `Mso20Win32Client!__imp_?MsoFIsRunningRestricted@@YAHXZ` at `0x140084308`
+- `Mso20Win32Client!__imp_?MsoFIsRunningRestricted@@YAHXZ` at `0x140084360`
+- `Mso20Win32Client!__imp_?MsoFIsRunningRestricted@@YAHXZ` at `0x1400843b8`
+- `Mso20Win32Client!__imp_?MsoFIsRunningRestricted@@YAHXZ` at `0x140084406`
+- `Mso20Win32Client!__imp_?MsoFIsRunningRestricted@@YAHXZ` at `0x1400842ab`
+- `Mso20Win32Client!__imp_?MsoFIsRunningRestricted@@YAHXZ` at `0x140084308`
+- `Mso20Win32Client!__imp_?MsoFIsRunningRestricted@@YAHXZ` at `0x140084360`
+- `Mso20Win32Client!__imp_?MsoFIsRunningRestricted@@YAHXZ` at `0x1400843b8`
+- `Mso20Win32Client!__imp_?MsoFIsRunningRestricted@@YAHXZ` at `0x140084406`
+- `Mso20Win32Client!__imp_?CrashWithRecoveryHrTag@@YAXHI@Z` at `0x14008604f`
+- `Mso20Win32Client!__imp_?CrashWithRecoveryHrTag@@YAXHI@Z` at `0x14008604f`
+- `Mso20Win32Client!__imp_?OverrideSessionFlag@UngracefulExit@Telemetry@Mso@@YAXW4SessionFlag@123@_N@Z` at `0x1400842cc`
+- `Mso20Win32Client!__imp_?OverrideSessionFlag@UngracefulExit@Telemetry@Mso@@YAXW4SessionFlag@123@_N@Z` at `0x140084333`
+- `Mso20Win32Client!__imp_?OverrideSessionFlag@UngracefulExit@Telemetry@Mso@@YAXW4SessionFlag@123@_N@Z` at `0x140084380`
+- `Mso20Win32Client!__imp_?OverrideSessionFlag@UngracefulExit@Telemetry@Mso@@YAXW4SessionFlag@123@_N@Z` at `0x1400843d1`
+- `Mso20Win32Client!__imp_?OverrideSessionFlag@UngracefulExit@Telemetry@Mso@@YAXW4SessionFlag@123@_N@Z` at `0x140084425`
+- `Mso20Win32Client!__imp_?OverrideSessionFlag@UngracefulExit@Telemetry@Mso@@YAXW4SessionFlag@123@_N@Z` at `0x1400842cc`
+- `Mso20Win32Client!__imp_?OverrideSessionFlag@UngracefulExit@Telemetry@Mso@@YAXW4SessionFlag@123@_N@Z` at `0x140084333`
+- `Mso20Win32Client!__imp_?OverrideSessionFlag@UngracefulExit@Telemetry@Mso@@YAXW4SessionFlag@123@_N@Z` at `0x140084380`
+- `Mso20Win32Client!__imp_?OverrideSessionFlag@UngracefulExit@Telemetry@Mso@@YAXW4SessionFlag@123@_N@Z` at `0x1400843d1`
+- `Mso20Win32Client!__imp_?OverrideSessionFlag@UngracefulExit@Telemetry@Mso@@YAXW4SessionFlag@123@_N@Z` at `0x140084425`
+- `Mso20Win32Client!__imp_??0EventFlags@Telemetry@Mso@@QEAA@AEBV?$optional@W4SamplingPolicy@Telemetry@Mso@@@std@@AEBV?$optional@W4PersistencePriority@Telemetry@Mso@@@4@AEBV?$optional@W4CostPriority@Telemetry@Mso@@@4@AEBV?$optional@W4DataCategories@Telemetry@Mso@@@4@AEBV?$optional@W4DiagnosticLevel@Telemetry@Mso@@@4@@Z` at `0x140085377`
+- `Mso20Win32Client!__imp_??0EventFlags@Telemetry@Mso@@QEAA@AEBV?$optional@W4SamplingPolicy@Telemetry@Mso@@@std@@AEBV?$optional@W4PersistencePriority@Telemetry@Mso@@@4@AEBV?$optional@W4CostPriority@Telemetry@Mso@@@4@AEBV?$optional@W4DataCategories@Telemetry@Mso@@@4@AEBV?$optional@W4DiagnosticLevel@Telemetry@Mso@@@4@@Z` at `0x14008568a`
+
+## string_xrefs
+
+- `0x140086011`: `SmartTagInstall`
+- `0x1400839cc`: `SecureReader`
+- `0x140083ccf`: `MicrosoftOfficeUpdateOnLockShutdown`
+- `0x1400843dd`: `MicrosoftOfficeUpdateOnLockShutdown`
+
+## pseudocode
+
+```c
+
+```

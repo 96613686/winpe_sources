@@ -1,0 +1,249 @@
+# FMainInit(wchar_t *,char *,int,int,int *)
+
+- ea: `0x140047920`
+- end: `0x14004ac4d`
+- name: `?FMainInit@@YAHPEA_WPEADHHPEAH@Z`
+- size: `13101`
+- prototype: `__int64 __fastcall(wchar_t *, wchar_t *, int, int)`
+- caller_count: `1`
+- callee_count: `187`
+- tags: `installer_update, broker_com_uri`
+
+## callers
+
+- `0x140045d30`
+
+## callees
+
+- `0x140039520`
+- `0x140039860`
+- `0x14003a030`
+- `0x14003a110`
+- `0x14003b8b0`
+- `0x14003c5b0`
+- `0x14003e430`
+- `0x14003ea70`
+- `0x14003f840`
+- `0x14003fc20`
+- `0x1400413f0`
+- `0x1400416c0`
+- `0x1400420b0`
+- `0x140043370`
+- `0x140043a40`
+- `0x140046a30`
+- `0x140046b90`
+- `0x140046e10`
+- `0x140046ee0`
+- `0x140047920`
+- `0x14004ad30`
+- `0x14004af40`
+- `0x14004b028`
+- `0x14004b0b0`
+- `0x14004cc10`
+- `0x140050290`
+- `0x140051560`
+- `0x140052b78`
+- `0x140052bc0`
+- `0x140052c2c`
+- `0x140052c80`
+- `0x140052d40`
+- `0x140055750`
+- `0x140055810`
+- `0x1400559d0`
+- `0x140056d24`
+- `0x140056d90`
+- `0x140057200`
+- `0x1400597c4`
+- `0x14005acf0`
+- `0x14005b160`
+- `0x14005b1e0`
+- `0x14005b570`
+- `0x14005bbf0`
+- `0x14005bf20`
+- `0x14005d170`
+- `0x14005e490`
+- `0x14005efc0`
+- `0x14005f388`
+- `0x14005f6c0`
+
+## import_xrefs
+
+- `KERNEL32!DeleteCriticalSection` at `0x1400481c0`
+- `KERNEL32!DeleteCriticalSection` at `0x1400481c0`
+- `KERNEL32!InitializeCriticalSection` at `0x140047ed4`
+- `KERNEL32!InitializeCriticalSection` at `0x140047ee1`
+- `KERNEL32!InitializeCriticalSection` at `0x140047eee`
+- `KERNEL32!InitializeCriticalSection` at `0x140047f00`
+- `KERNEL32!InitializeCriticalSection` at `0x140047f0d`
+- `KERNEL32!InitializeCriticalSection` at `0x140048190`
+- `KERNEL32!InitializeCriticalSection` at `0x1400482d8`
+- `KERNEL32!InitializeCriticalSection` at `0x140047ed4`
+- `KERNEL32!InitializeCriticalSection` at `0x140047ee1`
+- `KERNEL32!InitializeCriticalSection` at `0x140047eee`
+- `KERNEL32!InitializeCriticalSection` at `0x140047f00`
+- `KERNEL32!InitializeCriticalSection` at `0x140047f0d`
+- `KERNEL32!InitializeCriticalSection` at `0x140048190`
+- `KERNEL32!InitializeCriticalSection` at `0x1400482d8`
+- `KERNEL32!GetLastError` at `0x140048206`
+- `KERNEL32!GetLastError` at `0x140048206`
+- `KERNEL32!GetModuleHandleW` at `0x14004806f`
+- `KERNEL32!GetModuleHandleW` at `0x14004806f`
+- `KERNEL32!SetEnvironmentVariableW` at `0x140048fce`
+- `KERNEL32!SetEnvironmentVariableW` at `0x140048fce`
+- `KERNEL32!GetTickCount` at `0x140049cb9`
+- `KERNEL32!GetTickCount` at `0x140049cb9`
+- `KERNEL32!SetErrorMode` at `0x140049d08`
+- `KERNEL32!SetErrorMode` at `0x140049d08`
+- `KERNEL32!GetCurrentProcess` at `0x140049b60`
+- `KERNEL32!GetCurrentProcess` at `0x140049b60`
+- `KERNEL32!GetSystemDefaultLangID` at `0x14004a130`
+- `KERNEL32!GetSystemDefaultLangID` at `0x14004a130`
+- `api-ms-win-crt-runtime-l1-1-0!_fpreset` at `0x140049ce9`
+- `api-ms-win-crt-runtime-l1-1-0!_fpreset` at `0x140049ce9`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x14004a4a7`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x14004a4a7`
+- `USER32!SetWindowPos` at `0x140049267`
+- `USER32!SetWindowPos` at `0x1400494e4`
+- `USER32!SetWindowPos` at `0x140049267`
+- `USER32!SetWindowPos` at `0x1400494e4`
+- `USER32!GetClientRect` at `0x1400494b4`
+- `USER32!GetClientRect` at `0x1400494b4`
+- `USER32!GetSystemMetrics` at `0x140049ccd`
+- `USER32!GetSystemMetrics` at `0x140049ccd`
+- `USER32!VkKeyScanW` at `0x140048091`
+- `USER32!WaitForInputIdle` at `0x140049b6b`
+- `USER32!WaitForInputIdle` at `0x140049b6b`
+- `MSO!__imp_?MsoHrTrHelpPaneOnOpen@@YAJPEAUMSO_PROPS_UD@@@Z` at `0x14004a9c9`
+- `MSO!__imp_?MsoHrTrHelpPaneOnOpen@@YAJPEAUMSO_PROPS_UD@@@Z` at `0x14004a9c9`
+- `MSO!__imp_?RegisterCommentsOperations@Comments@Document@Mso@@YAXXZ` at `0x140048660`
+- `MSO!__imp_?RegisterCommentsOperations@Comments@Document@Mso@@YAXXZ` at `0x140048660`
+- `MSO!__imp_?RegisterCollabCommentsState@UI@CollabCorner@Mso@@YAXAEAUICollabCommentsState@123@@Z` at `0x14004860e`
+- `MSO!__imp_?RegisterCollabCommentsState@UI@CollabCorner@Mso@@YAXAEAUICollabCommentsState@123@@Z` at `0x14004860e`
+- `MSO!__imp_?MsoInitDigSigEx@@YAXPEBUIMsoDigSigUser@@PEBXH_N2@Z` at `0x1400497e6`
+- `MSO!__imp_?MsoInitDigSigEx@@YAXPEBUIMsoDigSigUser@@PEBXH_N2@Z` at `0x1400497e6`
+- `MSO!__imp_?MsoEndBoot@@YAXXZ` at `0x14004ac31`
+- `MSO!__imp_?MsoEndBoot@@YAXXZ` at `0x14004ac31`
+- `MSO!__imp_?Init@Scripting@Programmability@Mso@@YAXAEBUIMsoScriptsUser@@PEBU_msoreg@@@Z` at `0x140049ff6`
+- `MSO!__imp_?Init@Scripting@Programmability@Mso@@YAXAEBUIMsoScriptsUser@@PEBU_msoreg@@@Z` at `0x140049ff6`
+- `MSO!__imp_?MsoResuscitateDrpWorkpane@@YAXP6A_JPEAUtagMSODRP@@I_K_J@ZPEAUIMsoToolbarSet@@@Z` at `0x14004a80c`
+- `MSO!__imp_?MsoResuscitateDrpWorkpane@@YAXP6A_JPEAUtagMSODRP@@I_K_J@ZPEAUIMsoToolbarSet@@@Z` at `0x14004a80c`
+- `Mso98Win32Client!__imp_MsoPvlprulsMirror` at `0x14004a96b`
+- `Mso98Win32Client!__imp_MsoPvlprulsMirror` at `0x14004a96b`
+- `Mso98Win32Client!__imp_MsoSetCurrRulg` at `0x14004a9a0`
+- `Mso98Win32Client!__imp_MsoSetCurrRulg` at `0x14004a9a0`
+- `Mso98Win32Client!__imp_?HrStartTransaction@OCE@@YAJPEAUHWND__@@W4TransactionType@1@@Z` at `0x1400499a7`
+- `Mso98Win32Client!__imp_?HrStartTransaction@OCE@@YAJPEAUHWND__@@W4TransactionType@1@@Z` at `0x1400499a7`
+- `Mso98Win32Client!__imp_?MsoFGimmeFeatureEx@@YAHHK@Z` at `0x140049e60`
+- `Mso98Win32Client!__imp_?MsoFGimmeFeatureEx@@YAHHK@Z` at `0x140049e60`
+- `Mso98Win32Client!__imp_?InitOMCallsLogger@Telemetry@Programmability@Mso@@YAXXZ` at `0x140047ec7`
+- `Mso98Win32Client!__imp_?InitOMCallsLogger@Telemetry@Programmability@Mso@@YAXXZ` at `0x140047ec7`
+- `Mso98Win32Client!Mso98Win32Client_45317` at `0x140049b44`
+- `Mso98Win32Client!Mso98Win32Client_45317` at `0x140049b44`
+- `Mso98Win32Client!__imp_?MsoFShowHelpForHelpIdString@@YAHQEB_W0@Z` at `0x14004a8b0`
+- `Mso98Win32Client!__imp_?MsoFShowHelpForHelpIdString@@YAHQEB_W0@Z` at `0x14004a8b0`
+- `Mso98Win32Client!__imp_MsoScheduleIrul` at `0x14004a992`
+- `Mso98Win32Client!__imp_MsoScheduleIrul` at `0x14004a992`
+- `mso40uiWin32Client!__imp_?MsoDestroyStartup@@YAXXZ` at `0x140048200`
+- `mso40uiWin32Client!__imp_?MsoDestroyStartup@@YAXXZ` at `0x14004a8e0`
+- `mso40uiWin32Client!__imp_?MsoDestroyStartup@@YAXXZ` at `0x140048200`
+- `mso40uiWin32Client!__imp_?MsoDestroyStartup@@YAXXZ` at `0x14004a8e0`
+- `Mso30Win32Client!__imp_?MsoFidToFilename@@YAXHPEA_WH@Z` at `0x140048228`
+- `Mso30Win32Client!__imp_?MsoFidToFilename@@YAXHPEA_WH@Z` at `0x140048228`
+- `Mso30Win32Client!__imp_?MsoFSetInstHwndMain@@YAHPEAUMSOINST@@PEAUHWND__@@@Z` at `0x1400494f8`
+- `Mso30Win32Client!__imp_?MsoFSetInstHwndMain@@YAHPEAUMSOINST@@PEAUHWND__@@@Z` at `0x1400494f8`
+- `Mso30Win32Client!__imp_MsoChsFromHculture` at `0x140048000`
+- `Mso30Win32Client!__imp_MsoChsFromHculture` at `0x140048000`
+- `Mso30Win32Client!__imp_?SetTelemetryNamespace@Alerts@Mso@@YAXAEBUTelemetryNamespace@Telemetry@2@@Z` at `0x1400490d6`
+- `Mso30Win32Client!__imp_?SetTelemetryNamespace@Alerts@Mso@@YAXAEBUTelemetryNamespace@Telemetry@2@@Z` at `0x1400490d6`
+- `Mso30Win32Client!__imp_?MetroHrRoundtripPartType@@YAJW4MetroPartType@@@Z` at `0x140048499`
+- `Mso30Win32Client!__imp_?MetroHrRoundtripPartType@@YAJW4MetroPartType@@@Z` at `0x1400484b4`
+- `Mso30Win32Client!__imp_?MetroHrRoundtripPartType@@YAJW4MetroPartType@@@Z` at `0x1400484ce`
+- `Mso30Win32Client!__imp_?MetroHrRoundtripPartType@@YAJW4MetroPartType@@@Z` at `0x140048499`
+- `Mso30Win32Client!__imp_?MetroHrRoundtripPartType@@YAJW4MetroPartType@@@Z` at `0x1400484b4`
+- `Mso30Win32Client!__imp_?MetroHrRoundtripPartType@@YAJW4MetroPartType@@@Z` at `0x1400484ce`
+- `Mso30Win32Client!__imp_?GetApi@ITelemetryApi@Telemetry@Mso@@SAAEAU123@XZ` at `0x1400490ea`
+- `Mso30Win32Client!__imp_?GetApi@ITelemetryApi@Telemetry@Mso@@SAAEAU123@XZ` at `0x140049117`
+- `Mso30Win32Client!__imp_?GetApi@ITelemetryApi@Telemetry@Mso@@SAAEAU123@XZ` at `0x1400490ea`
+- `Mso30Win32Client!__imp_?GetApi@ITelemetryApi@Telemetry@Mso@@SAAEAU123@XZ` at `0x140049117`
+- `Mso30Win32Client!__imp_?IsAvailable@ITelemetryApi@Telemetry@Mso@@SA_NXZ` at `0x1400490e0`
+- `Mso30Win32Client!__imp_?IsAvailable@ITelemetryApi@Telemetry@Mso@@SA_NXZ` at `0x1400490e0`
+- `Mso30Win32Client!__imp_?MsoUIBootCheck@@YAHXZ` at `0x140049a11`
+- `Mso30Win32Client!__imp_?MsoUIBootCheck@@YAHXZ` at `0x140049a11`
+- `Mso20Win32Client!__imp_?MsoDwRegGetDw@@YAKPEBU_msoreg@@@Z` at `0x140047de0`
+- `Mso20Win32Client!__imp_?MsoDwRegGetDw@@YAKPEBU_msoreg@@@Z` at `0x140048ee6`
+- `Mso20Win32Client!__imp_?MsoDwRegGetDw@@YAKPEBU_msoreg@@@Z` at `0x140048f01`
+- `Mso20Win32Client!__imp_?MsoDwRegGetDw@@YAKPEBU_msoreg@@@Z` at `0x140048f42`
+- `Mso20Win32Client!__imp_?MsoDwRegGetDw@@YAKPEBU_msoreg@@@Z` at `0x140048f70`
+- `Mso20Win32Client!__imp_?MsoDwRegGetDw@@YAKPEBU_msoreg@@@Z` at `0x140048fb0`
+- `Mso20Win32Client!__imp_?MsoDwRegGetDw@@YAKPEBU_msoreg@@@Z` at `0x140049559`
+- `Mso20Win32Client!__imp_?MsoDwRegGetDw@@YAKPEBU_msoreg@@@Z` at `0x140049580`
+- `Mso20Win32Client!__imp_?MsoDwRegGetDw@@YAKPEBU_msoreg@@@Z` at `0x140049ce3`
+- `Mso20Win32Client!__imp_?MsoDwRegGetDw@@YAKPEBU_msoreg@@@Z` at `0x14004a2f0`
+- `Mso20Win32Client!__imp_?MsoDwRegGetDw@@YAKPEBU_msoreg@@@Z` at `0x140047de0`
+- `Mso20Win32Client!__imp_?MsoDwRegGetDw@@YAKPEBU_msoreg@@@Z` at `0x140048ee6`
+- `Mso20Win32Client!__imp_?MsoDwRegGetDw@@YAKPEBU_msoreg@@@Z` at `0x140048f01`
+- `Mso20Win32Client!__imp_?MsoDwRegGetDw@@YAKPEBU_msoreg@@@Z` at `0x140048f42`
+- `Mso20Win32Client!__imp_?MsoDwRegGetDw@@YAKPEBU_msoreg@@@Z` at `0x140048f70`
+- `Mso20Win32Client!__imp_?MsoDwRegGetDw@@YAKPEBU_msoreg@@@Z` at `0x140048fb0`
+- `Mso20Win32Client!__imp_?MsoDwRegGetDw@@YAKPEBU_msoreg@@@Z` at `0x140049559`
+- `Mso20Win32Client!__imp_?MsoDwRegGetDw@@YAKPEBU_msoreg@@@Z` at `0x140049580`
+- `Mso20Win32Client!__imp_?MsoDwRegGetDw@@YAKPEBU_msoreg@@@Z` at `0x140049ce3`
+- `Mso20Win32Client!__imp_?MsoDwRegGetDw@@YAKPEBU_msoreg@@@Z` at `0x14004a2f0`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1400484a9`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1400484c3`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1400484e0`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x140049015`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1400484a9`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1400484c3`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x1400484e0`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x140049015`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x140048481`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x140048481`
+- `Mso20Win32Client!__imp_?MsoHrGetMyDocumentsFolder@@YAJPEA_WH@Z` at `0x14004a1f5`
+- `Mso20Win32Client!__imp_?MsoHrGetMyDocumentsFolder@@YAJPEA_WH@Z` at `0x14004a1f5`
+- `Mso20Win32Client!__imp_?MsoFRegReadWz@@YAHPEBU_msoreg@@PEA_WK@Z` at `0x14004a16a`
+- `Mso20Win32Client!__imp_?MsoFRegReadWz@@YAHPEBU_msoreg@@PEA_WK@Z` at `0x14004a294`
+- `Mso20Win32Client!__imp_?MsoFRegReadWz@@YAHPEBU_msoreg@@PEA_WK@Z` at `0x14004a16a`
+- `Mso20Win32Client!__imp_?MsoFRegReadWz@@YAHPEBU_msoreg@@PEA_WK@Z` at `0x14004a294`
+- `Mso20Win32Client!__imp_?MsoFIsClick2Run@@YAHK@Z` at `0x140049e4c`
+- `Mso20Win32Client!__imp_?MsoFIsClick2Run@@YAHK@Z` at `0x140049e4c`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1400499e4`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x14004a6ac`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x1400499e4`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x14004a6ac`
+- `Mso20Win32Client!__imp_?ConcurrentQueue@Async@Mso@@YAAEAVIDispatchQueue@12@XZ` at `0x14004aa0a`
+- `Mso20Win32Client!__imp_?ConcurrentQueue@Async@Mso@@YAAEAVIDispatchQueue@12@XZ` at `0x14004aa0a`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x14004810c`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1400499c3`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x14004810c`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x1400499c3`
+- `Mso20Win32Client!__imp_?Evaluate@ScopeEnum@AB@Mso@@QEBA_NXZ` at `0x140047d6b`
+- `Mso20Win32Client!__imp_?Evaluate@ScopeEnum@AB@Mso@@QEBA_NXZ` at `0x140047d6b`
+- `Mso20Win32Client!__imp_?MsoFRegGetDw@@YAHPEBU_msoreg@@PEAK@Z` at `0x1400495ab`
+- `Mso20Win32Client!__imp_?MsoFRegGetDw@@YAHPEBU_msoreg@@PEAK@Z` at `0x140049600`
+- `Mso20Win32Client!__imp_?MsoFRegGetDw@@YAHPEBU_msoreg@@PEAK@Z` at `0x14004964b`
+- `Mso20Win32Client!__imp_?MsoFRegGetDw@@YAHPEBU_msoreg@@PEAK@Z` at `0x1400496a0`
+- `Mso20Win32Client!__imp_?MsoFRegGetDw@@YAHPEBU_msoreg@@PEAK@Z` at `0x1400496ef`
+- `Mso20Win32Client!__imp_?MsoFRegGetDw@@YAHPEBU_msoreg@@PEAK@Z` at `0x1400495ab`
+- `Mso20Win32Client!__imp_?MsoFRegGetDw@@YAHPEBU_msoreg@@PEAK@Z` at `0x140049600`
+- `Mso20Win32Client!__imp_?MsoFRegGetDw@@YAHPEBU_msoreg@@PEAK@Z` at `0x14004964b`
+- `Mso20Win32Client!__imp_?MsoFRegGetDw@@YAHPEBU_msoreg@@PEAK@Z` at `0x1400496a0`
+- `Mso20Win32Client!__imp_?MsoFRegGetDw@@YAHPEBU_msoreg@@PEAK@Z` at `0x1400496ef`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x140048520`
+- `Mso20Win32Client!__imp_?AllocateEx@Memory@Mso@@YAPEAX_KK@Z` at `0x140048520`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x140048589`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1400485c0`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1400485d3`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1400487b0`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x14004ab75`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x140048589`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1400485c0`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1400485d3`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x1400487b0`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x14004ab75`
+
+## pseudocode
+
+```c
+
+```

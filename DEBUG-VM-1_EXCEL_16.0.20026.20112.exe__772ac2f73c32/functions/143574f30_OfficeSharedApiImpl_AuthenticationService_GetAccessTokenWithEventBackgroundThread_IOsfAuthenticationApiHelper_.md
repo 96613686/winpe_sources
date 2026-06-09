@@ -1,0 +1,168 @@
+# OfficeSharedApiImpl::AuthenticationService::GetAccessTokenWithEventBackgroundThread(IOsfAuthenticationApiHelper *,Mso::TCntPtr<IOsfSolutionReference> const &,bool,unsigned __int64,std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>> const &,std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>> const &,std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>> const &,std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>> const &,std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>> const &,std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>> const &,Mso::Authentication::IOfficeIdentity *)
+
+- ea: `0x143574f30`
+- end: `0x143576340`
+- name: `?GetAccessTokenWithEventBackgroundThread@AuthenticationService@OfficeSharedApiImpl@@CAJPEAUIOsfAuthenticationApiHelper@@AEBV?$TCntPtr@UIOsfSolutionReference@@@Mso@@_N_KAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@44444PEAUIOfficeIdentity@Authentication@5@@Z`
+- size: `5136`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `20`
+- tags: `registry_config, service_task`
+
+## callers
+
+- `0x143578310`
+
+## callees
+
+- `0x14004e950`
+- `0x140054fe0`
+- `0x140055190`
+- `0x140075f40`
+- `0x14007910c`
+- `0x14007fb80`
+- `0x14007fda0`
+- `0x140308ad0`
+- `0x1408d2bb0`
+- `0x1408d6570`
+- `0x140de7794`
+- `0x141454e70`
+- `0x1414850f4`
+- `0x14154b9d0`
+- `0x141844868`
+- `0x143573280`
+- `0x143573850`
+- `0x143574f30`
+- `0x1435b7250`
+- `0x1435b7f50`
+
+## import_xrefs
+
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x143575200`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x143575393`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1435753f3`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1435754d6`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x143575540`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1435755a0`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1435758a0`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x14357590a`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x14357596a`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x143575a6a`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x143575acc`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x143575f73`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x143575fe0`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x143576040`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1435761e0`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x143576254`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1435762af`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x143575200`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x143575393`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1435753f3`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1435754d6`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x143575540`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1435755a0`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1435758a0`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x14357590a`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x14357596a`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x143575a6a`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x143575acc`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x143575f73`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x143575fe0`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x143576040`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1435761e0`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x143576254`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1435762af`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x1435761d5`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x14357624d`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x143576333`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x1435761d5`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x14357624d`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x143576333`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x1435757d3`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x1435757d3`
+- `OLEAUT32!__imp_SysFreeString` at `0x14357582e`
+- `OLEAUT32!__imp_SysFreeString` at `0x143575a00`
+- `OLEAUT32!__imp_SysFreeString` at `0x143575b68`
+- `OLEAUT32!__imp_SysFreeString` at `0x143575c4f`
+- `OLEAUT32!__imp_SysFreeString` at `0x143575d40`
+- `OLEAUT32!__imp_SysFreeString` at `0x143575e2f`
+- `OLEAUT32!__imp_SysFreeString` at `0x14357582e`
+- `OLEAUT32!__imp_SysFreeString` at `0x143575a00`
+- `OLEAUT32!__imp_SysFreeString` at `0x143575b68`
+- `OLEAUT32!__imp_SysFreeString` at `0x143575c4f`
+- `OLEAUT32!__imp_SysFreeString` at `0x143575d40`
+- `OLEAUT32!__imp_SysFreeString` at `0x143575e2f`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x143575222`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x143575415`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x1435755c2`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x14357598c`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x143575b14`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x143575c0b`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x143575cf5`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x143575deb`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x143575ed5`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x143576062`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x143576141`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x1435762d1`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x1435762eb`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x143575222`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x143575415`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x1435755c2`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x14357598c`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x143575b14`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x143575c0b`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x143575cf5`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x143575deb`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x143575ed5`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x143576062`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x143576141`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x1435762d1`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x1435762eb`
+- `Mso20Win32Client!__imp_?EndCurrentCorrelation@Logging@Mso@@YAXXZ` at `0x143575217`
+- `Mso20Win32Client!__imp_?EndCurrentCorrelation@Logging@Mso@@YAXXZ` at `0x14357540a`
+- `Mso20Win32Client!__imp_?EndCurrentCorrelation@Logging@Mso@@YAXXZ` at `0x1435755b7`
+- `Mso20Win32Client!__imp_?EndCurrentCorrelation@Logging@Mso@@YAXXZ` at `0x143575981`
+- `Mso20Win32Client!__imp_?EndCurrentCorrelation@Logging@Mso@@YAXXZ` at `0x143575b09`
+- `Mso20Win32Client!__imp_?EndCurrentCorrelation@Logging@Mso@@YAXXZ` at `0x143575c00`
+- `Mso20Win32Client!__imp_?EndCurrentCorrelation@Logging@Mso@@YAXXZ` at `0x143575cea`
+- `Mso20Win32Client!__imp_?EndCurrentCorrelation@Logging@Mso@@YAXXZ` at `0x143575de0`
+- `Mso20Win32Client!__imp_?EndCurrentCorrelation@Logging@Mso@@YAXXZ` at `0x143575eca`
+- `Mso20Win32Client!__imp_?EndCurrentCorrelation@Logging@Mso@@YAXXZ` at `0x143576057`
+- `Mso20Win32Client!__imp_?EndCurrentCorrelation@Logging@Mso@@YAXXZ` at `0x143576136`
+- `Mso20Win32Client!__imp_?EndCurrentCorrelation@Logging@Mso@@YAXXZ` at `0x1435762c6`
+- `Mso20Win32Client!__imp_?EndCurrentCorrelation@Logging@Mso@@YAXXZ` at `0x1435762e0`
+- `Mso20Win32Client!__imp_?EndCurrentCorrelation@Logging@Mso@@YAXXZ` at `0x143575217`
+- `Mso20Win32Client!__imp_?EndCurrentCorrelation@Logging@Mso@@YAXXZ` at `0x14357540a`
+- `Mso20Win32Client!__imp_?EndCurrentCorrelation@Logging@Mso@@YAXXZ` at `0x1435755b7`
+- `Mso20Win32Client!__imp_?EndCurrentCorrelation@Logging@Mso@@YAXXZ` at `0x143575981`
+- `Mso20Win32Client!__imp_?EndCurrentCorrelation@Logging@Mso@@YAXXZ` at `0x143575b09`
+- `Mso20Win32Client!__imp_?EndCurrentCorrelation@Logging@Mso@@YAXXZ` at `0x143575c00`
+- `Mso20Win32Client!__imp_?EndCurrentCorrelation@Logging@Mso@@YAXXZ` at `0x143575cea`
+- `Mso20Win32Client!__imp_?EndCurrentCorrelation@Logging@Mso@@YAXXZ` at `0x143575de0`
+- `Mso20Win32Client!__imp_?EndCurrentCorrelation@Logging@Mso@@YAXXZ` at `0x143575eca`
+- `Mso20Win32Client!__imp_?EndCurrentCorrelation@Logging@Mso@@YAXXZ` at `0x143576057`
+- `Mso20Win32Client!__imp_?EndCurrentCorrelation@Logging@Mso@@YAXXZ` at `0x143576136`
+- `Mso20Win32Client!__imp_?EndCurrentCorrelation@Logging@Mso@@YAXXZ` at `0x1435762c6`
+- `Mso20Win32Client!__imp_?EndCurrentCorrelation@Logging@Mso@@YAXXZ` at `0x1435762e0`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1435757f2`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1435759c0`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x143575eea`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x143576153`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1435757f2`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x1435759c0`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x143575eea`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x143576153`
+- `Mso20Win32Client!__imp_??0EventFlags@Telemetry@Mso@@QEAA@AEBV?$optional@W4SamplingPolicy@Telemetry@Mso@@@std@@AEBV?$optional@W4PersistencePriority@Telemetry@Mso@@@4@AEBV?$optional@W4CostPriority@Telemetry@Mso@@@4@AEBV?$optional@W4DataCategories@Telemetry@Mso@@@4@AEBV?$optional@W4DiagnosticLevel@Telemetry@Mso@@@4@@Z` at `0x143574ff9`
+- `Mso20Win32Client!__imp_??0EventFlags@Telemetry@Mso@@QEAA@AEBV?$optional@W4SamplingPolicy@Telemetry@Mso@@@std@@AEBV?$optional@W4PersistencePriority@Telemetry@Mso@@@4@AEBV?$optional@W4CostPriority@Telemetry@Mso@@@4@AEBV?$optional@W4DataCategories@Telemetry@Mso@@@4@AEBV?$optional@W4DiagnosticLevel@Telemetry@Mso@@@4@@Z` at `0x143574ff9`
+- `Mso20Win32Client!__imp_?StartCorrelation@Logging@Mso@@YAXXZ` at `0x143575065`
+- `Mso20Win32Client!__imp_?StartCorrelation@Logging@Mso@@YAXXZ` at `0x143575065`
+
+## string_xrefs
+
+- `0x14357500e`: `GetAccessTokenV3Background`
+
+## pseudocode
+
+```c
+
+```

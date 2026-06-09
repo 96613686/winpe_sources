@@ -1,0 +1,174 @@
+# WinMain
+
+- ea: `0x14002b4c0`
+- end: `0x14002c33b`
+- name: `WinMain`
+- size: `3707`
+- prototype: `int __stdcall(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nShowCmd)`
+- caller_count: `1`
+- callee_count: `46`
+- tags: `registry_config, broker_com_uri`
+
+## callers
+
+- `0x14001d250`
+
+## callees
+
+- `0x140005d20`
+- `0x140009f90`
+- `0x140026060`
+- `0x140027200`
+- `0x14002b4c0`
+- `0x14002c340`
+- `0x14002e600`
+- `0x14002f010`
+- `0x140030ca0`
+- `0x140031890`
+- `0x1400367c0`
+- `0x140036e80`
+- `0x140038e60`
+- `0x140045d30`
+- `0x14004ac60`
+- `0x14004acb0`
+- `0x14004ad30`
+- `0x14004e760`
+- `0x14004ed70`
+- `0x140052b50`
+- `0x140056620`
+- `0x1400597c4`
+- `0x14007fda0`
+- `0x1400a1db0`
+- `0x1400a2350`
+- `0x1400a25d0`
+- `0x1400a3c80`
+- `0x1400a9df0`
+- `0x1400b9340`
+- `0x1400cc008`
+- `0x1400cfff0`
+- `0x140194e10`
+- `0x14020b250`
+- `0x1402c7600`
+- `0x1402f8e80`
+- `0x1408c08d0`
+- `0x1408d2b50`
+- `0x1408d2bb0`
+- `0x14111a5b0`
+- `0x1411419b0`
+- `0x14128f290`
+- `0x1413cc640`
+- `0x141f16000`
+- `0x14248df50`
+- `0x14248e1f0`
+- `0x143337860`
+
+## import_xrefs
+
+- `KERNEL32!GetCurrentThreadId` at `0x14002b518`
+- `KERNEL32!GetCurrentThreadId` at `0x14002b681`
+- `KERNEL32!GetCurrentThreadId` at `0x14002b518`
+- `KERNEL32!GetCurrentThreadId` at `0x14002b681`
+- `KERNEL32!InitializeCriticalSection` at `0x14002b56e`
+- `KERNEL32!InitializeCriticalSection` at `0x14002b580`
+- `KERNEL32!InitializeCriticalSection` at `0x14002b58d`
+- `KERNEL32!InitializeCriticalSection` at `0x14002b56e`
+- `KERNEL32!InitializeCriticalSection` at `0x14002b580`
+- `KERNEL32!InitializeCriticalSection` at `0x14002b58d`
+- `KERNEL32!GetCurrentProcess` at `0x14002b503`
+- `KERNEL32!GetCurrentProcess` at `0x14002b503`
+- `KERNEL32!GetCommandLineW` at `0x14002b7c7`
+- `KERNEL32!GetCommandLineW` at `0x14002b7c7`
+- `api-ms-win-crt-runtime-l1-1-0!exit` at `0x14002c334`
+- `api-ms-win-crt-runtime-l1-1-0!exit` at `0x14002c334`
+- `api-ms-win-crt-string-l1-1-0!iswspace` at `0x14002b7e0`
+- `api-ms-win-crt-string-l1-1-0!iswspace` at `0x14002b7e0`
+- `USER32!RegisterWindowMessageA` at `0x14002bf80`
+- `USER32!RegisterWindowMessageA` at `0x14002bf93`
+- `USER32!RegisterWindowMessageA` at `0x14002bf80`
+- `USER32!RegisterWindowMessageA` at `0x14002bf93`
+- `USER32!WaitForInputIdle` at `0x14002b50e`
+- `USER32!WaitForInputIdle` at `0x14002b50e`
+- `USER32!GetDC` at `0x14002b696`
+- `USER32!GetDC` at `0x14002b696`
+- `MSO!__imp_?OsrHrInitClient@@YAJXZ` at `0x14002b705`
+- `MSO!__imp_?OsrHrInitClient@@YAJXZ` at `0x14002b705`
+- `MSO!__imp_MsoUninitEarlyOffice` at `0x14002c32b`
+- `MSO!__imp_MsoUninitEarlyOffice` at `0x14002c32b`
+- `MSO!__imp_?MsoEndBoot@@YAXXZ` at `0x14002c12d`
+- `MSO!__imp_?MsoEndBoot@@YAXXZ` at `0x14002c12d`
+- `MSO!__imp_?MsoStartShutdown@@YAXXZ` at `0x14002c325`
+- `MSO!__imp_?MsoStartShutdown@@YAXXZ` at `0x14002c325`
+- `MSO!__imp_MsoBeginBootEx` at `0x14002bd00`
+- `MSO!__imp_MsoBeginBootEx` at `0x14002bd00`
+- `Mso98Win32Client!__imp_?MsoSetIsRibbonApp@@YAX_N@Z` at `0x14002bdee`
+- `Mso98Win32Client!__imp_?MsoSetIsRibbonApp@@YAX_N@Z` at `0x14002bdee`
+- `Mso98Win32Client!__imp_?MsoInitGimme@@YAXHPEBU_msotcfcf@@PEAUIMsoGimmeUser@@@Z` at `0x14002bde0`
+- `Mso98Win32Client!__imp_?MsoInitGimme@@YAXHPEBU_msotcfcf@@PEAUIMsoGimmeUser@@@Z` at `0x14002bde0`
+- `Mso98Win32Client!__imp_?SetDynamicCanvasBootArguments@DynamicCanvas@Mso@@YAXAEBUBootArguments@12@@Z` at `0x14002bc73`
+- `Mso98Win32Client!__imp_?SetDynamicCanvasBootArguments@DynamicCanvas@Mso@@YAXAEBUBootArguments@12@@Z` at `0x14002bc73`
+- `mso40uiWin32Client!__imp_?EnableWhatsNewOnBoot@WhatsNew@Mso@@YAXXZ` at `0x14002b846`
+- `mso40uiWin32Client!__imp_?EnableWhatsNewOnBoot@WhatsNew@Mso@@YAXXZ` at `0x14002b846`
+- `mso40uiWin32Client!__imp_?DisableBootIdle@ApplicationModel@Mso@@YAXXZ` at `0x14002bc68`
+- `mso40uiWin32Client!__imp_?DisableBootIdle@ApplicationModel@Mso@@YAXXZ` at `0x14002bc68`
+- `Mso30Win32Client!__imp_?FShouldActivateChildWindowMixedMode@DisplayAssistant@Mso@@YA_NXZ` at `0x14002bd29`
+- `Mso30Win32Client!__imp_?FShouldActivateChildWindowMixedMode@DisplayAssistant@Mso@@YA_NXZ` at `0x14002bd29`
+- `Mso30Win32Client!__imp_?MsoGetUserDefaultLocaleName@Config@Mso@@YA_NPEA_WH@Z` at `0x14002bee1`
+- `Mso30Win32Client!__imp_?MsoGetUserDefaultLocaleName@Config@Mso@@YA_NPEA_WH@Z` at `0x14002bee1`
+- `Mso30Win32Client!__imp_MsoGetUILcid` at `0x14002be60`
+- `Mso30Win32Client!__imp_MsoGetUILcid` at `0x14002be60`
+- `Mso30Win32Client!__imp_?MsoSetUnhandledExceptionFilterEx@@YAP6AJPEAU_EXCEPTION_POINTERS@@@ZP6AJ0@ZW4MSORCOF@@@Z` at `0x14002b780`
+- `Mso30Win32Client!__imp_?MsoSetUnhandledExceptionFilterEx@@YAP6AJPEAU_EXCEPTION_POINTERS@@@ZP6AJ0@ZW4MSORCOF@@@Z` at `0x14002b780`
+- `Mso30Win32Client!__imp_?SetFForceDisablePerMonitorMode@DisplayAssistant@Mso@@YAXXZ` at `0x14002bbc0`
+- `Mso30Win32Client!__imp_?SetFForceDisablePerMonitorMode@DisplayAssistant@Mso@@YAXXZ` at `0x14002bbc0`
+- `Mso30Win32Client!__imp_?GetOsrClient@Client@SecureReader@Mso@@YAPEAUIOsrClient@123@XZ` at `0x14002b711`
+- `Mso30Win32Client!__imp_?GetOsrClient@Client@SecureReader@Mso@@YAPEAUIOsrClient@123@XZ` at `0x14002b711`
+- `Mso30Win32Client!__imp_?MsoGimmeLocalizedLibrary@@YAPEAUHINSTANCE__@@HPEAKKPEA_WHK@Z` at `0x14002bea8`
+- `Mso30Win32Client!__imp_?MsoGimmeLocalizedLibrary@@YAPEAUHINSTANCE__@@HPEAKKPEA_WHK@Z` at `0x14002bea8`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x14002b6ce`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x14002b6ce`
+- `Mso20Win32Client!__imp_??1BootActivity@Mso@@QEAA@XZ` at `0x14002bf6a`
+- `Mso20Win32Client!__imp_??1BootActivity@Mso@@QEAA@XZ` at `0x14002c312`
+- `Mso20Win32Client!__imp_??1BootActivity@Mso@@QEAA@XZ` at `0x14002bf6a`
+- `Mso20Win32Client!__imp_??1BootActivity@Mso@@QEAA@XZ` at `0x14002c312`
+- `Mso20Win32Client!__imp_?MsoFIsRunningRestricted@@YAHXZ` at `0x14002c077`
+- `Mso20Win32Client!__imp_?MsoFIsRunningRestricted@@YAHXZ` at `0x14002c0c0`
+- `Mso20Win32Client!__imp_?MsoFIsRunningRestricted@@YAHXZ` at `0x14002c106`
+- `Mso20Win32Client!__imp_?MsoFIsRunningRestricted@@YAHXZ` at `0x14002c077`
+- `Mso20Win32Client!__imp_?MsoFIsRunningRestricted@@YAHXZ` at `0x14002c0c0`
+- `Mso20Win32Client!__imp_?MsoFIsRunningRestricted@@YAHXZ` at `0x14002c106`
+- `Mso20Win32Client!__imp_?MsoSetThreadDpiHostingBehavior@Mso@@YA?AW4DPI_HOSTING_BEHAVIOR@@W42@@Z` at `0x14002bd50`
+- `Mso20Win32Client!__imp_?MsoSetThreadDpiHostingBehavior@Mso@@YA?AW4DPI_HOSTING_BEHAVIOR@@W42@@Z` at `0x14002bd50`
+- `Mso20Win32Client!__imp_?Discard@BootActivityScenario@Mso@@QEAAXXZ` at `0x14002c240`
+- `Mso20Win32Client!__imp_?Discard@BootActivityScenario@Mso@@QEAAXXZ` at `0x14002c240`
+- `Mso20Win32Client!__imp_?OverrideSessionFlag@UngracefulExit@Telemetry@Mso@@YAXW4SessionFlag@123@_N@Z` at `0x14002c093`
+- `Mso20Win32Client!__imp_?OverrideSessionFlag@UngracefulExit@Telemetry@Mso@@YAXW4SessionFlag@123@_N@Z` at `0x14002c0d9`
+- `Mso20Win32Client!__imp_?OverrideSessionFlag@UngracefulExit@Telemetry@Mso@@YAXW4SessionFlag@123@_N@Z` at `0x14002c120`
+- `Mso20Win32Client!__imp_?OverrideSessionFlag@UngracefulExit@Telemetry@Mso@@YAXW4SessionFlag@123@_N@Z` at `0x14002c093`
+- `Mso20Win32Client!__imp_?OverrideSessionFlag@UngracefulExit@Telemetry@Mso@@YAXW4SessionFlag@123@_N@Z` at `0x14002c0d9`
+- `Mso20Win32Client!__imp_?OverrideSessionFlag@UngracefulExit@Telemetry@Mso@@YAXW4SessionFlag@123@_N@Z` at `0x14002c120`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x14002c149`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x14002c149`
+- `Mso20Win32Client!__imp_?SetActivationKind@BootActivity@Mso@@SAXW4ActivationKind@12@@Z` at `0x14002bba0`
+- `Mso20Win32Client!__imp_?SetActivationKind@BootActivity@Mso@@SAXW4ActivationKind@12@@Z` at `0x14002bba0`
+- `Mso20Win32Client!__imp_?GetActivationKind@BootActivity@Mso@@SA?AW4ActivationKind@12@XZ` at `0x14002c204`
+- `Mso20Win32Client!__imp_?GetActivationKind@BootActivity@Mso@@SA?AW4ActivationKind@12@XZ` at `0x14002c204`
+- `Mso20Win32Client!__imp_?EnableCrashRecoveryOnPureCall@CrashDetails@Mso@@YAXXZ` at `0x14002b7a0`
+- `Mso20Win32Client!__imp_?EnableCrashRecoveryOnPureCall@CrashDetails@Mso@@YAXXZ` at `0x14002b7a0`
+- `Mso20Win32Client!__imp_?EnableCrashRecoveryOnInvalidParameter@CrashDetails@Mso@@YAXXZ` at `0x14002b794`
+- `Mso20Win32Client!__imp_?EnableCrashRecoveryOnInvalidParameter@CrashDetails@Mso@@YAXXZ` at `0x14002b794`
+- `Mso20Win32Client!Mso20Win32Client_48782` at `0x14002bcc8`
+- `Mso20Win32Client!Mso20Win32Client_48782` at `0x14002bcc8`
+- `Mso20Win32Client!__imp_?Set@RPA@Process@Mso@@YAX_N@Z` at `0x14002bbe0`
+- `Mso20Win32Client!__imp_?Set@RPA@Process@Mso@@YAX_N@Z` at `0x14002bbe0`
+- `Mso20Win32Client!__imp_??0BootActivity@Mso@@QEAA@AEBV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@_N@Z` at `0x14002b766`
+- `Mso20Win32Client!__imp_??0BootActivity@Mso@@QEAA@AEBV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@_N@Z` at `0x14002b766`
+- `Mso20Win32Client!__imp_?IsInProgress@BootActivityScenario@Mso@@QEBA_NXZ` at `0x14002c230`
+- `Mso20Win32Client!__imp_?IsInProgress@BootActivityScenario@Mso@@QEBA_NXZ` at `0x14002c230`
+- `Mso20Win32Client!__imp_?GetScenario@BootActivity@Mso@@SA?AV?$shared_ptr@UBootActivityScenario@Mso@@@std@@W4BootScenarioType@2@@Z` at `0x14002c220`
+- `Mso20Win32Client!__imp_?GetScenario@BootActivity@Mso@@SA?AV?$shared_ptr@UBootActivityScenario@Mso@@@std@@W4BootScenarioType@2@@Z` at `0x14002c220`
+
+## pseudocode
+
+```c
+
+```

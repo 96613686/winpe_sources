@@ -1,0 +1,174 @@
+# FHandleTable(_MSOETK const *,_MSOETK const *,higd *,int)
+
+- ea: `0x140ac7590`
+- end: `0x140ac9989`
+- name: `?FHandleTable@@YAHPEBU_MSOETK@@0PEAUhigd@@H@Z`
+- size: `9209`
+- prototype: `__int64 __fastcall(const struct _MSOETK *, const struct _MSOETK *, struct higd *, int)`
+- caller_count: `5`
+- callee_count: `55`
+- tags: ``
+
+## callers
+
+- `0x1406a57c0`
+- `0x1406b0040`
+- `0x1406bef70`
+- `0x1406c3420`
+- `0x140ac7590`
+
+## callees
+
+- `0x140072a08`
+- `0x140075c50`
+- `0x14007dfb0`
+- `0x14007fe00`
+- `0x1400d0650`
+- `0x1400d07f0`
+- `0x1400d2d70`
+- `0x1401b1dc0`
+- `0x1401f1a20`
+- `0x14020b1c0`
+- `0x1402cb6f0`
+- `0x1402cbd70`
+- `0x140641eb0`
+- `0x14065ef70`
+- `0x1406a1560`
+- `0x1406b1270`
+- `0x1406b15a0`
+- `0x1406bfb90`
+- `0x1406c33d0`
+- `0x1406c9e00`
+- `0x1406ca40c`
+- `0x1406cf260`
+- `0x1406d08d0`
+- `0x1406d7520`
+- `0x1407e6890`
+- `0x14080c710`
+- `0x1408d2370`
+- `0x1408d2b50`
+- `0x1408d2bb0`
+- `0x140908e30`
+- `0x1409defe0`
+- `0x1409df010`
+- `0x1409e0c00`
+- `0x140a54920`
+- `0x140ac7590`
+- `0x140b71450`
+- `0x140db7b80`
+- `0x140e483a2`
+- `0x140e7afa0`
+- `0x140fc5a40`
+- `0x140fe8450`
+- `0x1410b3b60`
+- `0x14110b330`
+- `0x141149a60`
+- `0x141214688`
+- `0x1412f2910`
+- `0x1413043a0`
+- `0x141438340`
+- `0x1415028c0`
+- `0x141542b30`
+
+## import_xrefs
+
+- `MSO!__imp_?MsoFAddCvsToList@@YAHPEAV?$MSOTPX@U_MSOCVS@@@@PEBU_MSOCVS@@@Z` at `0x140ac7c40`
+- `MSO!__imp_?MsoFAddCvsToList@@YAHPEAV?$MSOTPX@U_MSOCVS@@@@PEBU_MSOCVS@@@Z` at `0x140ac7d13`
+- `MSO!__imp_?MsoFAddCvsToList@@YAHPEAV?$MSOTPX@U_MSOCVS@@@@PEBU_MSOCVS@@@Z` at `0x140ac8358`
+- `MSO!__imp_?MsoFAddCvsToList@@YAHPEAV?$MSOTPX@U_MSOCVS@@@@PEBU_MSOCVS@@@Z` at `0x140ac83d5`
+- `MSO!__imp_?MsoFAddCvsToList@@YAHPEAV?$MSOTPX@U_MSOCVS@@@@PEBU_MSOCVS@@@Z` at `0x140ac8400`
+- `MSO!__imp_?MsoFAddCvsToList@@YAHPEAV?$MSOTPX@U_MSOCVS@@@@PEBU_MSOCVS@@@Z` at `0x140ac8429`
+- `MSO!__imp_?MsoFAddCvsToList@@YAHPEAV?$MSOTPX@U_MSOCVS@@@@PEBU_MSOCVS@@@Z` at `0x140ac846a`
+- `MSO!__imp_?MsoFAddCvsToList@@YAHPEAV?$MSOTPX@U_MSOCVS@@@@PEBU_MSOCVS@@@Z` at `0x140ac8493`
+- `MSO!__imp_?MsoFAddCvsToList@@YAHPEAV?$MSOTPX@U_MSOCVS@@@@PEBU_MSOCVS@@@Z` at `0x140ac84c0`
+- `MSO!__imp_?MsoFAddCvsToList@@YAHPEAV?$MSOTPX@U_MSOCVS@@@@PEBU_MSOCVS@@@Z` at `0x140ac84f5`
+- `MSO!__imp_?MsoFAddCvsToList@@YAHPEAV?$MSOTPX@U_MSOCVS@@@@PEBU_MSOCVS@@@Z` at `0x140ac8520`
+- `MSO!__imp_?MsoFAddCvsToList@@YAHPEAV?$MSOTPX@U_MSOCVS@@@@PEBU_MSOCVS@@@Z` at `0x140ac8549`
+- `MSO!__imp_?MsoFAddCvsToList@@YAHPEAV?$MSOTPX@U_MSOCVS@@@@PEBU_MSOCVS@@@Z` at `0x140ac8580`
+- `MSO!__imp_?MsoFAddCvsToList@@YAHPEAV?$MSOTPX@U_MSOCVS@@@@PEBU_MSOCVS@@@Z` at `0x140ac85a9`
+- `MSO!__imp_?MsoFAddCvsToList@@YAHPEAV?$MSOTPX@U_MSOCVS@@@@PEBU_MSOCVS@@@Z` at `0x140ac85d2`
+- `MSO!__imp_?MsoFAddCvsToList@@YAHPEAV?$MSOTPX@U_MSOCVS@@@@PEBU_MSOCVS@@@Z` at `0x140ac7c40`
+- `MSO!__imp_?MsoFAddCvsToList@@YAHPEAV?$MSOTPX@U_MSOCVS@@@@PEBU_MSOCVS@@@Z` at `0x140ac7d13`
+- `MSO!__imp_?MsoFAddCvsToList@@YAHPEAV?$MSOTPX@U_MSOCVS@@@@PEBU_MSOCVS@@@Z` at `0x140ac8358`
+- `MSO!__imp_?MsoFAddCvsToList@@YAHPEAV?$MSOTPX@U_MSOCVS@@@@PEBU_MSOCVS@@@Z` at `0x140ac83d5`
+- `MSO!__imp_?MsoFAddCvsToList@@YAHPEAV?$MSOTPX@U_MSOCVS@@@@PEBU_MSOCVS@@@Z` at `0x140ac8400`
+- `MSO!__imp_?MsoFAddCvsToList@@YAHPEAV?$MSOTPX@U_MSOCVS@@@@PEBU_MSOCVS@@@Z` at `0x140ac8429`
+- `MSO!__imp_?MsoFAddCvsToList@@YAHPEAV?$MSOTPX@U_MSOCVS@@@@PEBU_MSOCVS@@@Z` at `0x140ac846a`
+- `MSO!__imp_?MsoFAddCvsToList@@YAHPEAV?$MSOTPX@U_MSOCVS@@@@PEBU_MSOCVS@@@Z` at `0x140ac8493`
+- `MSO!__imp_?MsoFAddCvsToList@@YAHPEAV?$MSOTPX@U_MSOCVS@@@@PEBU_MSOCVS@@@Z` at `0x140ac84c0`
+- `MSO!__imp_?MsoFAddCvsToList@@YAHPEAV?$MSOTPX@U_MSOCVS@@@@PEBU_MSOCVS@@@Z` at `0x140ac84f5`
+- `MSO!__imp_?MsoFAddCvsToList@@YAHPEAV?$MSOTPX@U_MSOCVS@@@@PEBU_MSOCVS@@@Z` at `0x140ac8520`
+- `MSO!__imp_?MsoFAddCvsToList@@YAHPEAV?$MSOTPX@U_MSOCVS@@@@PEBU_MSOCVS@@@Z` at `0x140ac8549`
+- `MSO!__imp_?MsoFAddCvsToList@@YAHPEAV?$MSOTPX@U_MSOCVS@@@@PEBU_MSOCVS@@@Z` at `0x140ac8580`
+- `MSO!__imp_?MsoFAddCvsToList@@YAHPEAV?$MSOTPX@U_MSOCVS@@@@PEBU_MSOCVS@@@Z` at `0x140ac85a9`
+- `MSO!__imp_?MsoFAddCvsToList@@YAHPEAV?$MSOTPX@U_MSOCVS@@@@PEBU_MSOCVS@@@Z` at `0x140ac85d2`
+- `MSO!__imp_?TryAllocCvsList@HtmlParser@Mso@@YAPEAV?$MSOTPX@U_MSOCVS@@@@XZ` at `0x140ac7921`
+- `MSO!__imp_?TryAllocCvsList@HtmlParser@Mso@@YAPEAV?$MSOTPX@U_MSOCVS@@@@XZ` at `0x140ac7940`
+- `MSO!__imp_?TryAllocCvsList@HtmlParser@Mso@@YAPEAV?$MSOTPX@U_MSOCVS@@@@XZ` at `0x140ac7921`
+- `MSO!__imp_?TryAllocCvsList@HtmlParser@Mso@@YAPEAV?$MSOTPX@U_MSOCVS@@@@XZ` at `0x140ac7940`
+- `MSO!__imp_?MsoFreeCvs@@YAXPEAU_MSOCVS@@@Z` at `0x140ac86f0`
+- `MSO!__imp_?MsoFreeCvs@@YAXPEAU_MSOCVS@@@Z` at `0x140ac8740`
+- `MSO!__imp_?MsoFreeCvs@@YAXPEAU_MSOCVS@@@Z` at `0x140ac86f0`
+- `MSO!__imp_?MsoFreeCvs@@YAXPEAU_MSOCVS@@@Z` at `0x140ac8740`
+- `MSO!__imp_?MsoFMergeCvsLists@@YAHPEAV?$MSOTPX@U_MSOCVS@@@@PEBV1@@Z` at `0x140ac8230`
+- `MSO!__imp_?MsoFMergeCvsLists@@YAHPEAV?$MSOTPX@U_MSOCVS@@@@PEBV1@@Z` at `0x140ac8268`
+- `MSO!__imp_?MsoFMergeCvsLists@@YAHPEAV?$MSOTPX@U_MSOCVS@@@@PEBV1@@Z` at `0x140ac8230`
+- `MSO!__imp_?MsoFMergeCvsLists@@YAHPEAV?$MSOTPX@U_MSOCVS@@@@PEBV1@@Z` at `0x140ac8268`
+- `Mso98Win32Client!__imp_?MsoFRefinePwch@@YAHPEB_WHPEAUMSORPV@@J@Z` at `0x140ac7c81`
+- `Mso98Win32Client!__imp_?MsoFRefinePwch@@YAHPEB_WHPEAUMSORPV@@J@Z` at `0x140ac7c81`
+- `Mso98Win32Client!__imp_?MsoSetPcvsLong@@YAXPEAU_MSOCVS@@HHJJ@Z` at `0x140ac7c2e`
+- `Mso98Win32Client!__imp_?MsoSetPcvsLong@@YAXPEAU_MSOCVS@@HHJJ@Z` at `0x140ac7c2e`
+- `Mso98Win32Client!__imp_?MsoSetPcvsColorref@@YAXPEAU_MSOCVS@@HK@Z` at `0x140ac8417`
+- `Mso98Win32Client!__imp_?MsoSetPcvsColorref@@YAXPEAU_MSOCVS@@HK@Z` at `0x140ac84aa`
+- `Mso98Win32Client!__imp_?MsoSetPcvsColorref@@YAXPEAU_MSOCVS@@HK@Z` at `0x140ac8537`
+- `Mso98Win32Client!__imp_?MsoSetPcvsColorref@@YAXPEAU_MSOCVS@@HK@Z` at `0x140ac85c0`
+- `Mso98Win32Client!__imp_?MsoSetPcvsColorref@@YAXPEAU_MSOCVS@@HK@Z` at `0x140ac8417`
+- `Mso98Win32Client!__imp_?MsoSetPcvsColorref@@YAXPEAU_MSOCVS@@HK@Z` at `0x140ac84aa`
+- `Mso98Win32Client!__imp_?MsoSetPcvsColorref@@YAXPEAU_MSOCVS@@HK@Z` at `0x140ac8537`
+- `Mso98Win32Client!__imp_?MsoSetPcvsColorref@@YAXPEAU_MSOCVS@@HK@Z` at `0x140ac85c0`
+- `Mso98Win32Client!__imp_?MsoFRefinePetk@@YAHPEBU_MSOETK@@PEAUMSORPV@@J@Z` at `0x140ac7a40`
+- `Mso98Win32Client!__imp_?MsoFRefinePetk@@YAHPEBU_MSOETK@@PEAUMSORPV@@J@Z` at `0x140ac7bd5`
+- `Mso98Win32Client!__imp_?MsoFRefinePetk@@YAHPEBU_MSOETK@@PEAUMSORPV@@J@Z` at `0x140ac7d45`
+- `Mso98Win32Client!__imp_?MsoFRefinePetk@@YAHPEBU_MSOETK@@PEAUMSORPV@@J@Z` at `0x140ac7a40`
+- `Mso98Win32Client!__imp_?MsoFRefinePetk@@YAHPEBU_MSOETK@@PEAUMSORPV@@J@Z` at `0x140ac7bd5`
+- `Mso98Win32Client!__imp_?MsoFRefinePetk@@YAHPEBU_MSOETK@@PEAUMSORPV@@J@Z` at `0x140ac7d45`
+- `Mso98Win32Client!__imp_?MsoSetPcvsLiteral@@YAXPEAU_MSOCVS@@HH@Z` at `0x140ac83c3`
+- `Mso98Win32Client!__imp_?MsoSetPcvsLiteral@@YAXPEAU_MSOCVS@@HH@Z` at `0x140ac83ec`
+- `Mso98Win32Client!__imp_?MsoSetPcvsLiteral@@YAXPEAU_MSOCVS@@HH@Z` at `0x140ac8458`
+- `Mso98Win32Client!__imp_?MsoSetPcvsLiteral@@YAXPEAU_MSOCVS@@HH@Z` at `0x140ac8481`
+- `Mso98Win32Client!__imp_?MsoSetPcvsLiteral@@YAXPEAU_MSOCVS@@HH@Z` at `0x140ac84e3`
+- `Mso98Win32Client!__imp_?MsoSetPcvsLiteral@@YAXPEAU_MSOCVS@@HH@Z` at `0x140ac850c`
+- `Mso98Win32Client!__imp_?MsoSetPcvsLiteral@@YAXPEAU_MSOCVS@@HH@Z` at `0x140ac856b`
+- `Mso98Win32Client!__imp_?MsoSetPcvsLiteral@@YAXPEAU_MSOCVS@@HH@Z` at `0x140ac8597`
+- `Mso98Win32Client!__imp_?MsoSetPcvsLiteral@@YAXPEAU_MSOCVS@@HH@Z` at `0x140ac83c3`
+- `Mso98Win32Client!__imp_?MsoSetPcvsLiteral@@YAXPEAU_MSOCVS@@HH@Z` at `0x140ac83ec`
+- `Mso98Win32Client!__imp_?MsoSetPcvsLiteral@@YAXPEAU_MSOCVS@@HH@Z` at `0x140ac8458`
+- `Mso98Win32Client!__imp_?MsoSetPcvsLiteral@@YAXPEAU_MSOCVS@@HH@Z` at `0x140ac8481`
+- `Mso98Win32Client!__imp_?MsoSetPcvsLiteral@@YAXPEAU_MSOCVS@@HH@Z` at `0x140ac84e3`
+- `Mso98Win32Client!__imp_?MsoSetPcvsLiteral@@YAXPEAU_MSOCVS@@HH@Z` at `0x140ac850c`
+- `Mso98Win32Client!__imp_?MsoSetPcvsLiteral@@YAXPEAU_MSOCVS@@HH@Z` at `0x140ac856b`
+- `Mso98Win32Client!__imp_?MsoSetPcvsLiteral@@YAXPEAU_MSOCVS@@HH@Z` at `0x140ac8597`
+- `Mso98Win32Client!__imp_?MsoFreePrpv@@YAXPEAUMSORPV@@@Z` at `0x140ac7e0c`
+- `Mso98Win32Client!__imp_?MsoFreePrpv@@YAXPEAUMSORPV@@@Z` at `0x140ac7e0c`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x140ac9924`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x140ac9924`
+- `Mso20Win32Client!__imp_?MsoFRemovePx@@YAHPEAXII@Z` at `0x140ac8708`
+- `Mso20Win32Client!__imp_?MsoFRemovePx@@YAHPEAXII@Z` at `0x140ac8752`
+- `Mso20Win32Client!__imp_?MsoFRemovePx@@YAHPEAXII@Z` at `0x140ac8708`
+- `Mso20Win32Client!__imp_?MsoFRemovePx@@YAHPEAXII@Z` at `0x140ac8752`
+- `Mso20Win32Client!__imp_MsoRaiseException` at `0x140ac8816`
+- `Mso20Win32Client!__imp_MsoRaiseException` at `0x140ac8816`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x140ac7cb3`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x140ac7f50`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x140ac9000`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x140ac96b9`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x140ac7cb3`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x140ac7f50`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x140ac9000`
+- `Mso20Win32Client!__imp_?Free@Memory@Mso@@YAXPEAX@Z` at `0x140ac96b9`
+
+## pseudocode
+
+```c
+
+```

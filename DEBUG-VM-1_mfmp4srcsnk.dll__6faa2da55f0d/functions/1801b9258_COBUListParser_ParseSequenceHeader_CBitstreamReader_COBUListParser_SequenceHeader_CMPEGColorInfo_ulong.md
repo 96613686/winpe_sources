@@ -1,0 +1,241 @@
+# COBUListParser::ParseSequenceHeader(CBitstreamReader &,COBUListParser::SequenceHeader *,CMPEGColorInfo *,ulong *)
+
+- ea: `0x1801b9258`
+- end: `0x1801bcc80`
+- name: `?ParseSequenceHeader@COBUListParser@@AEAAJAEAVCBitstreamReader@@PEAUSequenceHeader@1@PEAVCMPEGColorInfo@@PEAK@Z`
+- size: `14888`
+- prototype: `__int64 __usercall@<rax>(COBUListParser *__hidden this@<rcx>, struct CBitstreamReader *@<rdx>, struct COBUListParser::SequenceHeader *@<r8>, struct CMPEGColorInfo *@<r9>, unsigned int *)`
+- caller_count: `1`
+- callee_count: `15`
+- tags: ``
+
+## callers
+
+- `0x180296a68`
+
+## callees
+
+- `0x18000320c`
+- `0x180003278`
+- `0x18000329c`
+- `0x1800053d0`
+- `0x180006c50`
+- `0x180009ef0`
+- `0x18005238c`
+- `0x1800eb164`
+- `0x18010ede8`
+- `0x1801831cc`
+- `0x1801b9258`
+- `0x1801e7de0`
+- `0x18022016c`
+- `0x1802bd760`
+- `0x1802ea010`
+
+## import_xrefs
+
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801b939a`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801b94df`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801b9621`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801b9777`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801b98b2`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801b99f9`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801b9b37`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801b9c81`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801b9dc2`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801b9f0a`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801ba24c`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801ba375`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801ba49a`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801ba5bf`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801ba6e4`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801ba809`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801ba92e`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801baa53`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bab78`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bac9d`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bad7a`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bae9f`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bafc4`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bb0e9`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bb22b`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bb36a`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bb4aa`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bb5ea`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bb732`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bb87b`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bb9ba`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bbaf4`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bbc2e`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bbd68`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bbeac`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bbfe6`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bc120`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bc25a`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bc398`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bc4df`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801b939a`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801b94df`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801b9621`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801b9777`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801b98b2`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801b99f9`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801b9b37`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801b9c81`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801b9dc2`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801b9f0a`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801ba24c`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801ba375`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801ba49a`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801ba5bf`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801ba6e4`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801ba809`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801ba92e`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801baa53`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bab78`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bac9d`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bad7a`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bae9f`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bafc4`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bb0e9`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bb22b`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bb36a`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bb4aa`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bb5ea`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bb732`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bb87b`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bb9ba`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bbaf4`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bbc2e`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bbd68`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bbeac`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bbfe6`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bc120`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bc25a`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bc398`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x1801bc4df`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b9318`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b9335`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b945d`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b947a`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b959f`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b95bc`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b96f5`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b9712`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b9830`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b984d`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b9977`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b9994`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b9ab5`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b9ad2`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b9bff`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b9c1c`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b9d40`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b9d5d`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b9e88`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b9ea5`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801ba1ca`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801ba1e7`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801ba2f3`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801ba310`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801ba418`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801ba435`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801ba53d`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801ba55a`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801ba662`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801ba67f`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801ba787`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801ba7a4`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801ba8ac`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801ba8c9`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801ba9d1`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801ba9ee`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801baaf6`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bab13`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bac1b`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bac38`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bacf8`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bad15`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bae1d`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bae3a`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801baf42`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801baf5f`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bb067`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bb084`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bb1a9`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bb1c6`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bb2e8`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bb305`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bb428`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bb445`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bb568`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bb585`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bb6b0`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bb6cd`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bb7f9`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bb816`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bb938`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bb955`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bba72`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bba8f`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bbbac`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bbbc9`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bbce6`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bbd03`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bbe2a`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bbe47`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bbf64`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bbf81`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bc09e`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bc0bb`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bc1d8`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bc1f5`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bc316`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bc333`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bc45d`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bc47a`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b9318`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b9335`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b945d`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b947a`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b959f`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b95bc`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b96f5`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b9712`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b9830`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b984d`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b9977`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b9994`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b9ab5`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b9ad2`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b9bff`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b9c1c`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b9d40`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b9d5d`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b9e88`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b9ea5`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801ba1ca`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801ba1e7`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801ba2f3`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801ba310`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801ba418`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801ba435`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801ba53d`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801ba55a`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801ba662`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801ba67f`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801ba787`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801ba7a4`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801ba8ac`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801ba8c9`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801ba9d1`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801ba9ee`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801baaf6`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bab13`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bac1b`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801bac38`
+
+## pseudocode
+
+```c
+
+```

@@ -1,0 +1,146 @@
+# LinkedEntityNoCuratedDataTeachingCallout::HrShowTeachingCallout(IMemHeap *,HWND__ *,LinkedEntityServiceDomain,LinkedEntityCalloutMediaCollection const *)
+
+- ea: `0x142ad3490`
+- end: `0x142ad463e`
+- name: `?HrShowTeachingCallout@LinkedEntityNoCuratedDataTeachingCallout@@SAJPEAVIMemHeap@@PEAUHWND__@@W4LinkedEntityServiceDomain@@PEBULinkedEntityCalloutMediaCollection@@@Z`
+- size: `4526`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `25`
+- tags: `registry_config, service_task`
+
+## callers
+
+- `0x1426f5430`
+
+## callees
+
+- `0x140055190`
+- `0x1400768c0`
+- `0x1400769a0`
+- `0x140078ef8`
+- `0x14007f7c0`
+- `0x14007fb80`
+- `0x14007fc60`
+- `0x140080000`
+- `0x14009a4b0`
+- `0x1401b108c`
+- `0x1401c4ce0`
+- `0x14020b250`
+- `0x1408ce6a0`
+- `0x1408ce700`
+- `0x1408d2bb0`
+- `0x1408d6570`
+- `0x140ef2b90`
+- `0x1411774b0`
+- `0x141525650`
+- `0x141536ab0`
+- `0x14153f03c`
+- `0x1415e01c0`
+- `0x1427a6360`
+- `0x142ad3340`
+- `0x142ad3490`
+
+## import_xrefs
+
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x142ad3740`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x142ad3836`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x142ad3a2a`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x142ad3c2c`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x142ad3c94`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x142ad3d00`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x142ad3e55`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x142ad3ec0`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x142ad3f92`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x142ad40c0`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x142ad42b2`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x142ad438a`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x142ad44ea`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x142ad3740`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x142ad3836`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x142ad3a2a`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x142ad3c2c`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x142ad3c94`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x142ad3d00`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x142ad3e55`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x142ad3ec0`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x142ad3f92`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x142ad40c0`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x142ad42b2`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x142ad438a`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x142ad44ea`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x142ad3735`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x142ad382f`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x142ad3c25`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x142ad3c8d`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x142ad3cf5`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x142ad3e4e`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x142ad3eb7`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x142ad3f8b`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x142ad42ab`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x142ad45c0`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x142ad3735`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x142ad382f`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x142ad3c25`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x142ad3c8d`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x142ad3cf5`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x142ad3e4e`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x142ad3eb7`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x142ad3f8b`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x142ad42ab`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x142ad45c0`
+- `Mso98Win32Client!__imp_?ShowTeachingCallout@TeachingCallouts@Mso@@YA_NAEBUTeachingCalloutInfo@12@@Z` at `0x142ad42d0`
+- `Mso98Win32Client!__imp_?ShowTeachingCallout@TeachingCallouts@Mso@@YA_NAEBUTeachingCalloutInfo@12@@Z` at `0x142ad42d0`
+- `Mso98Win32Client!__imp_??0TeachingCalloutInfo@TeachingCallouts@Mso@@QEAA@$$QEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@00AEBUAnchorInfo@12@@Z` at `0x142ad3bd4`
+- `Mso98Win32Client!__imp_??0TeachingCalloutInfo@TeachingCallouts@Mso@@QEAA@$$QEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@00AEBUAnchorInfo@12@@Z` at `0x142ad3bd4`
+- `Mso98Win32Client!__imp_??0TeachingCalloutMediaData@TeachingCallouts@Mso@@QEAA@$$QEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@0AEBW4TeachingCalloutMediaSourceType@12@0@Z` at `0x142ad3e01`
+- `Mso98Win32Client!__imp_??0TeachingCalloutMediaData@TeachingCallouts@Mso@@QEAA@$$QEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@0AEBW4TeachingCalloutMediaSourceType@12@0@Z` at `0x142ad3e01`
+- `Mso98Win32Client!__imp_??0AnchorInfo@TeachingCallouts@Mso@@QEAA@$$QEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAUHWND__@@@Z` at `0x142ad37e0`
+- `Mso98Win32Client!__imp_??0AnchorInfo@TeachingCallouts@Mso@@QEAA@$$QEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAUHWND__@@@Z` at `0x142ad37e0`
+- `mso40uiWin32Client!__imp_?GetAnchorRegistry@AnchorRegistry@Mso@@YA?AV?$TCntPtr@UIAnchorRegistry@AnchorRegistry@Mso@@@2@PEAUHWND__@@@Z` at `0x142ad35ec`
+- `mso40uiWin32Client!__imp_?GetAnchorRegistry@AnchorRegistry@Mso@@YA?AV?$TCntPtr@UIAnchorRegistry@AnchorRegistry@Mso@@@2@PEAUHWND__@@@Z` at `0x142ad35ec`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x142ad3663`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x142ad39a0`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x142ad3af0`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x142ad4173`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x142ad4440`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x142ad45a0`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x142ad4602`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x142ad3663`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x142ad39a0`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x142ad3af0`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x142ad4173`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x142ad4440`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x142ad45a0`
+- `Mso20Win32Client!__imp_??1Activity@Telemetry@Mso@@QEAA@XZ` at `0x142ad4602`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x142ad35ad`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x142ad3633`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x142ad396f`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x142ad3ac0`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x142ad4143`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x142ad440f`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x142ad456f`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x142ad45cf`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x142ad35ad`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x142ad3633`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x142ad396f`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x142ad3ac0`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x142ad4143`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x142ad440f`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x142ad456f`
+- `Mso20Win32Client!__imp_?DataFields@Activity@Telemetry@Mso@@QEAAAEAUIDataFieldCollection@23@XZ` at `0x142ad45cf`
+- `Mso20Win32Client!__imp_??0EventFlags@Telemetry@Mso@@QEAA@AEBV?$optional@W4SamplingPolicy@Telemetry@Mso@@@std@@AEBV?$optional@W4PersistencePriority@Telemetry@Mso@@@4@AEBV?$optional@W4CostPriority@Telemetry@Mso@@@4@AEBV?$optional@W4DataCategories@Telemetry@Mso@@@4@AEBV?$optional@W4DiagnosticLevel@Telemetry@Mso@@@4@@Z` at `0x142ad3540`
+- `Mso20Win32Client!__imp_??0EventFlags@Telemetry@Mso@@QEAA@AEBV?$optional@W4SamplingPolicy@Telemetry@Mso@@@std@@AEBV?$optional@W4PersistencePriority@Telemetry@Mso@@@4@AEBV?$optional@W4CostPriority@Telemetry@Mso@@@4@AEBV?$optional@W4DataCategories@Telemetry@Mso@@@4@AEBV?$optional@W4DiagnosticLevel@Telemetry@Mso@@@4@@Z` at `0x142ad3540`
+- `Mso20Win32Client!__imp_?UseCurrentExecutionContext@ApplicationModel@Mso@@YAAEAUIExecutionContext@12@XZ` at `0x142ad4185`
+- `Mso20Win32Client!__imp_?UseCurrentExecutionContext@ApplicationModel@Mso@@YAAEAUIExecutionContext@12@XZ` at `0x142ad4185`
+
+## string_xrefs
+
+- `0x142ad3b1a`: `LinkedEntityNoCuratedDataTeachingCallout`
+- `0x142ad3555`: `LinkedEntityNoCuratedDataTeachingCalloutTelemetryId`
+
+## pseudocode
+
+```c
+
+```
