@@ -1,0 +1,41 @@
+# ATL::_dynamic_atexit_destructor_for___AtlBaseModule__
+
+- ea: `0x18000bdb0`
+- end: `0x18000bdd1`
+- name: `ATL::_dynamic_atexit_destructor_for___AtlBaseModule__`
+- size: `33`
+- prototype: `void()`
+- caller_count: `0`
+- callee_count: `1`
+- tags: `broker_com_uri`
+
+## callees
+
+- `0x18000650c`
+
+## import_xrefs
+
+- `KERNEL32!DeleteCriticalSection` at `0x18000bdbb`
+- `KERNEL32!DeleteCriticalSection` at `0x18000bdbb`
+
+## pseudocode
+
+```c
+void ATL::_dynamic_atexit_destructor_for___AtlBaseModule__()
+{
+  DeleteCriticalSection(&stru_180012908);
+  ATL::_ATL_BASE_MODULE70::~_ATL_BASE_MODULE70((ATL::_ATL_BASE_MODULE70 *)&ATL::_AtlBaseModule);
+}
+
+```
+
+## disassembly
+
+```asm
+0x18000bdb0  sub     rsp, 28h
+0x18000bdb4  lea     rcx, stru_180012908; lpCriticalSection
+0x18000bdbb  call    cs:__imp_DeleteCriticalSection
+0x18000bdc1  lea     rcx, ?_AtlBaseModule@ATL@@3VCAtlBaseModule@1@A; this
+0x18000bdc8  add     rsp, 28h
+0x18000bdcc  jmp     ??1_ATL_BASE_MODULE70@ATL@@QEAA@XZ; ATL::_ATL_BASE_MODULE70::~_ATL_BASE_MODULE70(void)
+```

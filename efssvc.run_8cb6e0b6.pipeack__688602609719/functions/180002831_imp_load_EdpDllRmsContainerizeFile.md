@@ -1,0 +1,35 @@
+# __imp_load_EdpDllRmsContainerizeFile
+
+- ea: `0x180002831`
+- end: `0x18000283d`
+- name: `__imp_load_EdpDllRmsContainerizeFile`
+- size: `12`
+- prototype: ``
+- caller_count: `0`
+- callee_count: `1`
+- tags: `loader_planting`
+
+## callees
+
+- `0x18000239e`
+
+## import_xrefs
+
+- `EFSCORE!EdpDllRmsContainerizeFile` at `0x180002831`
+
+## pseudocode
+
+```c
+__int64 load_EdpDllRmsContainerizeFile()
+{
+  return _tailMerge_efscore_dll();
+}
+
+```
+
+## disassembly
+
+```asm
+0x180002831  lea     rax, __imp_EdpDllRmsContainerizeFile
+0x180002838  jmp     __tailMerge_efscore_dll
+```
