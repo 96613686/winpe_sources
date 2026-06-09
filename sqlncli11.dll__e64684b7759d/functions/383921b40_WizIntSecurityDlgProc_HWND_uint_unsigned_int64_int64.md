@@ -1,0 +1,144 @@
+# WizIntSecurityDlgProc(HWND__ *,uint,unsigned __int64,__int64)
+
+- ea: `0x383921b40`
+- end: `0x38392222d`
+- name: `?WizIntSecurityDlgProc@@YA_JPEAUHWND__@@I_K_J@Z`
+- size: `1773`
+- prototype: `__int64 __fastcall(HWND hWnd, unsigned int, unsigned __int64, __int64)`
+- caller_count: `0`
+- callee_count: `6`
+- tags: `broker_com_uri`
+
+## callees
+
+- `0x38387c938`
+- `0x383921b40`
+- `0x383925550`
+- `0x383925670`
+- `0x383a9f880`
+- `0x383adbd94`
+
+## import_xrefs
+
+- `USER32!GetWindowLongPtrW` at `0x383921bd5`
+- `USER32!GetWindowLongPtrW` at `0x383921d98`
+- `USER32!GetWindowLongPtrW` at `0x38392202e`
+- `USER32!GetWindowLongPtrW` at `0x383922069`
+- `USER32!GetWindowLongPtrW` at `0x3839220b1`
+- `USER32!GetWindowLongPtrW` at `0x383921bd5`
+- `USER32!GetWindowLongPtrW` at `0x383921d98`
+- `USER32!GetWindowLongPtrW` at `0x38392202e`
+- `USER32!GetWindowLongPtrW` at `0x383922069`
+- `USER32!GetWindowLongPtrW` at `0x3839220b1`
+- `USER32!CheckDlgButton` at `0x383921e04`
+- `USER32!CheckDlgButton` at `0x383921e2d`
+- `USER32!CheckDlgButton` at `0x383921e04`
+- `USER32!CheckDlgButton` at `0x383921e2d`
+- `USER32!GetDlgItem` at `0x383921bf0`
+- `USER32!GetDlgItem` at `0x383921c09`
+- `USER32!GetDlgItem` at `0x383921c30`
+- `USER32!GetDlgItem` at `0x383921c49`
+- `USER32!GetDlgItem` at `0x383921c66`
+- `USER32!GetDlgItem` at `0x383921c87`
+- `USER32!GetDlgItem` at `0x383921ca0`
+- `USER32!GetDlgItem` at `0x383921cf1`
+- `USER32!GetDlgItem` at `0x383921d10`
+- `USER32!GetDlgItem` at `0x383921d29`
+- `USER32!GetDlgItem` at `0x383921eb4`
+- `USER32!GetDlgItem` at `0x383921ee4`
+- `USER32!GetDlgItem` at `0x383921f82`
+- `USER32!GetDlgItem` at `0x383921f9b`
+- `USER32!GetDlgItem` at `0x383921fb8`
+- `USER32!GetDlgItem` at `0x383921fda`
+- `USER32!GetDlgItem` at `0x383921ff3`
+- `USER32!GetDlgItem` at `0x3839221c5`
+- `USER32!GetDlgItem` at `0x383921bf0`
+- `USER32!GetDlgItem` at `0x383921c09`
+- `USER32!GetDlgItem` at `0x383921c30`
+- `USER32!GetDlgItem` at `0x383921c49`
+- `USER32!GetDlgItem` at `0x383921c66`
+- `USER32!GetDlgItem` at `0x383921c87`
+- `USER32!GetDlgItem` at `0x383921ca0`
+- `USER32!GetDlgItem` at `0x383921cf1`
+- `USER32!GetDlgItem` at `0x383921d10`
+- `USER32!GetDlgItem` at `0x383921d29`
+- `USER32!GetDlgItem` at `0x383921eb4`
+- `USER32!GetDlgItem` at `0x383921ee4`
+- `USER32!GetDlgItem` at `0x383921f82`
+- `USER32!GetDlgItem` at `0x383921f9b`
+- `USER32!GetDlgItem` at `0x383921fb8`
+- `USER32!GetDlgItem` at `0x383921fda`
+- `USER32!GetDlgItem` at `0x383921ff3`
+- `USER32!GetDlgItem` at `0x3839221c5`
+- `USER32!PostMessageW` at `0x383921ccb`
+- `USER32!PostMessageW` at `0x38392201e`
+- `USER32!PostMessageW` at `0x383921ccb`
+- `USER32!PostMessageW` at `0x38392201e`
+- `USER32!IsWindowEnabled` at `0x3839221ce`
+- `USER32!IsWindowEnabled` at `0x3839221ce`
+- `USER32!SetWindowLongPtrW` at `0x383921d4a`
+- `USER32!SetWindowLongPtrW` at `0x383922056`
+- `USER32!SetWindowLongPtrW` at `0x383922175`
+- `USER32!SetWindowLongPtrW` at `0x383921d4a`
+- `USER32!SetWindowLongPtrW` at `0x383922056`
+- `USER32!SetWindowLongPtrW` at `0x383922175`
+- `USER32!EnableWindow` at `0x383921bfb`
+- `USER32!EnableWindow` at `0x383921c14`
+- `USER32!EnableWindow` at `0x383921c3b`
+- `USER32!EnableWindow` at `0x383921c54`
+- `USER32!EnableWindow` at `0x383921c92`
+- `USER32!EnableWindow` at `0x383921cab`
+- `USER32!EnableWindow` at `0x383921d1b`
+- `USER32!EnableWindow` at `0x383921d34`
+- `USER32!EnableWindow` at `0x383921ebf`
+- `USER32!EnableWindow` at `0x383921eef`
+- `USER32!EnableWindow` at `0x383921f8d`
+- `USER32!EnableWindow` at `0x383921fa6`
+- `USER32!EnableWindow` at `0x383921fe5`
+- `USER32!EnableWindow` at `0x383921ffe`
+- `USER32!EnableWindow` at `0x383921bfb`
+- `USER32!EnableWindow` at `0x383921c14`
+- `USER32!EnableWindow` at `0x383921c3b`
+- `USER32!EnableWindow` at `0x383921c54`
+- `USER32!EnableWindow` at `0x383921c92`
+- `USER32!EnableWindow` at `0x383921cab`
+- `USER32!EnableWindow` at `0x383921d1b`
+- `USER32!EnableWindow` at `0x383921d34`
+- `USER32!EnableWindow` at `0x383921ebf`
+- `USER32!EnableWindow` at `0x383921eef`
+- `USER32!EnableWindow` at `0x383921f8d`
+- `USER32!EnableWindow` at `0x383921fa6`
+- `USER32!EnableWindow` at `0x383921fe5`
+- `USER32!EnableWindow` at `0x383921ffe`
+- `USER32!SendDlgItemMessageW` at `0x383921e8f`
+- `USER32!SendDlgItemMessageW` at `0x383921f0e`
+- `USER32!SendDlgItemMessageW` at `0x383921f2d`
+- `USER32!SendDlgItemMessageW` at `0x383921e8f`
+- `USER32!SendDlgItemMessageW` at `0x383921f0e`
+- `USER32!SendDlgItemMessageW` at `0x383921f2d`
+- `USER32!IsDlgButtonChecked` at `0x383921be0`
+- `USER32!IsDlgButtonChecked` at `0x383921c20`
+- `USER32!IsDlgButtonChecked` at `0x383921f72`
+- `USER32!IsDlgButtonChecked` at `0x3839220c3`
+- `USER32!IsDlgButtonChecked` at `0x383921be0`
+- `USER32!IsDlgButtonChecked` at `0x383921c20`
+- `USER32!IsDlgButtonChecked` at `0x383921f72`
+- `USER32!IsDlgButtonChecked` at `0x3839220c3`
+- `USER32!GetWindowTextLengthW` at `0x383921c6f`
+- `USER32!GetWindowTextLengthW` at `0x383921cfa`
+- `USER32!GetWindowTextLengthW` at `0x383921fc1`
+- `USER32!GetWindowTextLengthW` at `0x383921c6f`
+- `USER32!GetWindowTextLengthW` at `0x383921cfa`
+- `USER32!GetWindowTextLengthW` at `0x383921fc1`
+- `USER32!GetParent` at `0x383921cb4`
+- `USER32!GetParent` at `0x383922007`
+- `USER32!GetParent` at `0x383921cb4`
+- `USER32!GetParent` at `0x383922007`
+- `USER32!CheckRadioButton` at `0x383921bc7`
+- `USER32!CheckRadioButton` at `0x383921bc7`
+
+## pseudocode
+
+```c
+
+```

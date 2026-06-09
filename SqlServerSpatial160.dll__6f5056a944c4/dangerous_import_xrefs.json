@@ -1,0 +1,83 @@
+[
+  {
+    "import": "KERNEL32!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x100469516",
+        "from_func": "0x1004694d0",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x100469516",
+        "from_func": "0x1004694d0",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "VCRUNTIME140!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x100469846",
+        "from_func": "0x100469846",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "VCRUNTIME140!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "VCRUNTIME140!__CxxFrameHandler3",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x100469816",
+        "from_func": "0x100469816",
+        "from_func_name": "__CxxFrameHandler3_0",
+        "import": "VCRUNTIME140!__CxxFrameHandler3"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-runtime-l1-1-0!_configure_narrow_argv",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x10046989a",
+        "from_func": "0x10046989a",
+        "from_func_name": "_configure_narrow_argv_0",
+        "import": "api-ms-win-crt-runtime-l1-1-0!_configure_narrow_argv"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-runtime-l1-1-0!_seh_filter_dll",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x10046988e",
+        "from_func": "0x10046988e",
+        "from_func_name": "_seh_filter_dll_0",
+        "import": "api-ms-win-crt-runtime-l1-1-0!_seh_filter_dll"
+      }
+    ]
+  }
+]

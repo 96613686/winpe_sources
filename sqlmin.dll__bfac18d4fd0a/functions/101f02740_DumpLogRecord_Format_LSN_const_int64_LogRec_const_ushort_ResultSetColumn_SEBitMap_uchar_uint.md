@@ -1,0 +1,203 @@
+# DumpLogRecord::Format(LSN const &,__int64,LogRec const *,ushort &,ResultSetColumn * * &,SEBitMap &,uchar * * &,uint * &)
+
+- ea: `0x101f02740`
+- end: `0x101f04e70`
+- name: `?Format@DumpLogRecord@@QEAAXAEBVLSN@@_JPEBVLogRec@@AEAGAEAPEAPEAUResultSetColumn@@AEAVSEBitMap@@AEAPEAPEAEAEAPEAI@Z`
+- size: `10032`
+- prototype: `void __usercall(DumpLogRecord *__hidden this@<rcx>, LSN *@<rdx>, __int64@<r8>, const struct LogRec *@<r9>, unsigned __int16 *, struct ResultSetColumn ***, struct SEBitMap *, unsigned __int8 ***, unsigned int **)`
+- caller_count: `3`
+- callee_count: `19`
+- tags: `file_ops, registry_config`
+
+## callers
+
+- `0x101efd320`
+- `0x101f15e40`
+- `0x101f53c90`
+
+## callees
+
+- `0x100401fcf`
+- `0x100415e90`
+- `0x10042b3d0`
+- `0x100445560`
+- `0x10044bcb0`
+- `0x1004824a0`
+- `0x1004bb180`
+- `0x1005c5320`
+- `0x1011f5660`
+- `0x1011f59a0`
+- `0x101bdf900`
+- `0x101c39590`
+- `0x101efe650`
+- `0x101efec20`
+- `0x101f02740`
+- `0x101f052a0`
+- `0x101f05660`
+- `0x101f0f2f0`
+- `0x1023ae3e0`
+
+## import_xrefs
+
+- `sqlTsEs!?DateToParts@SQLDATE@@QEBAXPEAUdateparts@@@Z` at `0x101f031ae`
+- `sqlTsEs!?DateToParts@SQLDATE@@QEBAXPEAUdateparts@@@Z` at `0x101f0337e`
+- `sqlTsEs!?DateToParts@SQLDATE@@QEBAXPEAUdateparts@@@Z` at `0x101f0351b`
+- `sqlTsEs!?DateToParts@SQLDATE@@QEBAXPEAUdateparts@@@Z` at `0x101f039d9`
+- `sqlTsEs!?DateToParts@SQLDATE@@QEBAXPEAUdateparts@@@Z` at `0x101f03b01`
+- `sqlTsEs!?DateToParts@SQLDATE@@QEBAXPEAUdateparts@@@Z` at `0x101f03ece`
+- `sqlTsEs!?DateToParts@SQLDATE@@QEBAXPEAUdateparts@@@Z` at `0x101f031ae`
+- `sqlTsEs!?DateToParts@SQLDATE@@QEBAXPEAUdateparts@@@Z` at `0x101f0337e`
+- `sqlTsEs!?DateToParts@SQLDATE@@QEBAXPEAUdateparts@@@Z` at `0x101f0351b`
+- `sqlTsEs!?DateToParts@SQLDATE@@QEBAXPEAUdateparts@@@Z` at `0x101f039d9`
+- `sqlTsEs!?DateToParts@SQLDATE@@QEBAXPEAUdateparts@@@Z` at `0x101f03b01`
+- `sqlTsEs!?DateToParts@SQLDATE@@QEBAXPEAUdateparts@@@Z` at `0x101f03ece`
+- `sqlTsEs!?TimeToParts@SQLDATE@@QEBAXPEAUdateparts@@@Z` at `0x101f031bd`
+- `sqlTsEs!?TimeToParts@SQLDATE@@QEBAXPEAUdateparts@@@Z` at `0x101f0338d`
+- `sqlTsEs!?TimeToParts@SQLDATE@@QEBAXPEAUdateparts@@@Z` at `0x101f0352a`
+- `sqlTsEs!?TimeToParts@SQLDATE@@QEBAXPEAUdateparts@@@Z` at `0x101f039eb`
+- `sqlTsEs!?TimeToParts@SQLDATE@@QEBAXPEAUdateparts@@@Z` at `0x101f03b13`
+- `sqlTsEs!?TimeToParts@SQLDATE@@QEBAXPEAUdateparts@@@Z` at `0x101f03ee0`
+- `sqlTsEs!?TimeToParts@SQLDATE@@QEBAXPEAUdateparts@@@Z` at `0x101f031bd`
+- `sqlTsEs!?TimeToParts@SQLDATE@@QEBAXPEAUdateparts@@@Z` at `0x101f0338d`
+- `sqlTsEs!?TimeToParts@SQLDATE@@QEBAXPEAUdateparts@@@Z` at `0x101f0352a`
+- `sqlTsEs!?TimeToParts@SQLDATE@@QEBAXPEAUdateparts@@@Z` at `0x101f039eb`
+- `sqlTsEs!?TimeToParts@SQLDATE@@QEBAXPEAUdateparts@@@Z` at `0x101f03b13`
+- `sqlTsEs!?TimeToParts@SQLDATE@@QEBAXPEAUdateparts@@@Z` at `0x101f03ee0`
+- `sqlTsEs!?UICodePageFromCID@@YAIK@Z` at `0x101f02775`
+- `sqlTsEs!?UICodePageFromCID@@YAIK@Z` at `0x101f02775`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101f02dcc`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101f031c8`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101f03290`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101f03398`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101f03535`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101f03736`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101f03906`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101f039f9`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101f03b21`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101f03eee`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101f041bf`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101f0451d`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101f04607`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101f04842`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101f02dcc`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101f031c8`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101f03290`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101f03398`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101f03535`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101f03736`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101f03906`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101f039f9`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101f03b21`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101f03eee`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101f041bf`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101f0451d`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101f04607`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101f04842`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101f02efa`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101f04ab4`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101f04ae1`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101f02efa`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101f04ab4`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101f04ae1`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f0290b`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f02e22`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f03244`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f032ea`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f03414`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f035b1`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f0378c`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f0395c`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f03a87`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f03baf`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f03e4f`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f03f7c`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f04088`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f04186`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f04219`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f04327`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f04399`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f04573`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f0465f`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f0472c`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f04898`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f0290b`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f02e22`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f03244`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f032ea`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f03414`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f035b1`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f0378c`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f0395c`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f03a87`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f03baf`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f03e4f`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f03f7c`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f04088`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f04186`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f04219`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f04327`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f04399`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f04573`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f0465f`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f0472c`
+- `sqldk!?ex_raise@@YAHHHHHZZ` at `0x101f04898`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101f02cdb`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101f02cdb`
+- `sqldk!SystemThread_TlsIndex` at `0x101f02cab`
+- `sqldk!SystemThread_TlsOffset` at `0x101f02cb4`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101f0318f`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101f0335f`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101f034fc`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101f036cd`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101f03708`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101f03805`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101f038d8`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101f03adc`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101f03bff`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101f03ea9`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101f04000`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101f0318f`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101f0335f`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101f034fc`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101f036cd`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101f03708`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101f03805`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101f038d8`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101f03adc`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101f03bff`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101f03ea9`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x101f04000`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101f0319b`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101f0336b`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101f03508`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101f036d9`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101f03714`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101f03811`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101f038e4`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101f03ae8`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101f03c0b`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101f03eb5`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101f0400c`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101f0319b`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101f0336b`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101f03508`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101f036d9`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101f03714`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101f03811`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101f038e4`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101f03ae8`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101f03c0b`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101f03eb5`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x101f0400c`
+
+## string_xrefs
+
+- `0x101f02a4e`: `LCX_SYSCONFIG_PAGE`
+- `0x101f02a9f`: `LCX_UNLINKED_REORG_PAGE`
+- `0x101f02a8a`: `LCX_REMOVE_VERSION_INFO`
+
+## pseudocode
+
+```c
+
+```

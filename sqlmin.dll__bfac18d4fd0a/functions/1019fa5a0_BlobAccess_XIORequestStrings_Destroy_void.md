@@ -1,0 +1,185 @@
+# BlobAccess::XIORequestStrings::Destroy(void)
+
+- ea: `0x1019fa5a0`
+- end: `0x1019fab8e`
+- name: `?Destroy@XIORequestStrings@BlobAccess@@QEAAXXZ`
+- size: `1518`
+- prototype: `void __fastcall(BlobAccess::XIORequestStrings *__hidden this)`
+- caller_count: `2`
+- callee_count: `2`
+- tags: ``
+
+## callers
+
+- `0x1019ff000`
+- `0x101a00510`
+
+## callees
+
+- `0x100401fcf`
+- `0x1019fa5a0`
+
+## import_xrefs
+
+- `KERNEL32!HeapFree` at `0x1019fa5de`
+- `KERNEL32!HeapFree` at `0x1019fa615`
+- `KERNEL32!HeapFree` at `0x1019fa64b`
+- `KERNEL32!HeapFree` at `0x1019fa681`
+- `KERNEL32!HeapFree` at `0x1019fa6b7`
+- `KERNEL32!HeapFree` at `0x1019fa6f0`
+- `KERNEL32!HeapFree` at `0x1019fa72c`
+- `KERNEL32!HeapFree` at `0x1019fa768`
+- `KERNEL32!HeapFree` at `0x1019fa7a4`
+- `KERNEL32!HeapFree` at `0x1019fa7dd`
+- `KERNEL32!HeapFree` at `0x1019fa813`
+- `KERNEL32!HeapFree` at `0x1019fa849`
+- `KERNEL32!HeapFree` at `0x1019fa87f`
+- `KERNEL32!HeapFree` at `0x1019fa8b5`
+- `KERNEL32!HeapFree` at `0x1019fa8eb`
+- `KERNEL32!HeapFree` at `0x1019fa921`
+- `KERNEL32!HeapFree` at `0x1019fa957`
+- `KERNEL32!HeapFree` at `0x1019fa98d`
+- `KERNEL32!HeapFree` at `0x1019fa9c6`
+- `KERNEL32!HeapFree` at `0x1019fa9ff`
+- `KERNEL32!HeapFree` at `0x1019faa35`
+- `KERNEL32!HeapFree` at `0x1019faa6e`
+- `KERNEL32!HeapFree` at `0x1019faaaa`
+- `KERNEL32!HeapFree` at `0x1019faae6`
+- `KERNEL32!HeapFree` at `0x1019fab22`
+- `KERNEL32!HeapFree` at `0x1019fab5e`
+- `KERNEL32!HeapFree` at `0x1019fa5de`
+- `KERNEL32!HeapFree` at `0x1019fa615`
+- `KERNEL32!HeapFree` at `0x1019fa64b`
+- `KERNEL32!HeapFree` at `0x1019fa681`
+- `KERNEL32!HeapFree` at `0x1019fa6b7`
+- `KERNEL32!HeapFree` at `0x1019fa6f0`
+- `KERNEL32!HeapFree` at `0x1019fa72c`
+- `KERNEL32!HeapFree` at `0x1019fa768`
+- `KERNEL32!HeapFree` at `0x1019fa7a4`
+- `KERNEL32!HeapFree` at `0x1019fa7dd`
+- `KERNEL32!HeapFree` at `0x1019fa813`
+- `KERNEL32!HeapFree` at `0x1019fa849`
+- `KERNEL32!HeapFree` at `0x1019fa87f`
+- `KERNEL32!HeapFree` at `0x1019fa8b5`
+- `KERNEL32!HeapFree` at `0x1019fa8eb`
+- `KERNEL32!HeapFree` at `0x1019fa921`
+- `KERNEL32!HeapFree` at `0x1019fa957`
+- `KERNEL32!HeapFree` at `0x1019fa98d`
+- `KERNEL32!HeapFree` at `0x1019fa9c6`
+- `KERNEL32!HeapFree` at `0x1019fa9ff`
+- `KERNEL32!HeapFree` at `0x1019faa35`
+- `KERNEL32!HeapFree` at `0x1019faa6e`
+- `KERNEL32!HeapFree` at `0x1019faaaa`
+- `KERNEL32!HeapFree` at `0x1019faae6`
+- `KERNEL32!HeapFree` at `0x1019fab22`
+- `KERNEL32!HeapFree` at `0x1019fab5e`
+- `KERNEL32!GetProcessHeap` at `0x1019fa5d0`
+- `KERNEL32!GetProcessHeap` at `0x1019fa607`
+- `KERNEL32!GetProcessHeap` at `0x1019fa63d`
+- `KERNEL32!GetProcessHeap` at `0x1019fa673`
+- `KERNEL32!GetProcessHeap` at `0x1019fa6a9`
+- `KERNEL32!GetProcessHeap` at `0x1019fa6e2`
+- `KERNEL32!GetProcessHeap` at `0x1019fa71e`
+- `KERNEL32!GetProcessHeap` at `0x1019fa75a`
+- `KERNEL32!GetProcessHeap` at `0x1019fa796`
+- `KERNEL32!GetProcessHeap` at `0x1019fa7cf`
+- `KERNEL32!GetProcessHeap` at `0x1019fa805`
+- `KERNEL32!GetProcessHeap` at `0x1019fa83b`
+- `KERNEL32!GetProcessHeap` at `0x1019fa871`
+- `KERNEL32!GetProcessHeap` at `0x1019fa8a7`
+- `KERNEL32!GetProcessHeap` at `0x1019fa8dd`
+- `KERNEL32!GetProcessHeap` at `0x1019fa913`
+- `KERNEL32!GetProcessHeap` at `0x1019fa949`
+- `KERNEL32!GetProcessHeap` at `0x1019fa97f`
+- `KERNEL32!GetProcessHeap` at `0x1019fa9b8`
+- `KERNEL32!GetProcessHeap` at `0x1019fa9f1`
+- `KERNEL32!GetProcessHeap` at `0x1019faa27`
+- `KERNEL32!GetProcessHeap` at `0x1019faa60`
+- `KERNEL32!GetProcessHeap` at `0x1019faa9c`
+- `KERNEL32!GetProcessHeap` at `0x1019faad8`
+- `KERNEL32!GetProcessHeap` at `0x1019fab14`
+- `KERNEL32!GetProcessHeap` at `0x1019fab50`
+- `KERNEL32!GetProcessHeap` at `0x1019fa5d0`
+- `KERNEL32!GetProcessHeap` at `0x1019fa607`
+- `KERNEL32!GetProcessHeap` at `0x1019fa63d`
+- `KERNEL32!GetProcessHeap` at `0x1019fa673`
+- `KERNEL32!GetProcessHeap` at `0x1019fa6a9`
+- `KERNEL32!GetProcessHeap` at `0x1019fa6e2`
+- `KERNEL32!GetProcessHeap` at `0x1019fa71e`
+- `KERNEL32!GetProcessHeap` at `0x1019fa75a`
+- `KERNEL32!GetProcessHeap` at `0x1019fa796`
+- `KERNEL32!GetProcessHeap` at `0x1019fa7cf`
+- `KERNEL32!GetProcessHeap` at `0x1019fa805`
+- `KERNEL32!GetProcessHeap` at `0x1019fa83b`
+- `KERNEL32!GetProcessHeap` at `0x1019fa871`
+- `KERNEL32!GetProcessHeap` at `0x1019fa8a7`
+- `KERNEL32!GetProcessHeap` at `0x1019fa8dd`
+- `KERNEL32!GetProcessHeap` at `0x1019fa913`
+- `KERNEL32!GetProcessHeap` at `0x1019fa949`
+- `KERNEL32!GetProcessHeap` at `0x1019fa97f`
+- `KERNEL32!GetProcessHeap` at `0x1019fa9b8`
+- `KERNEL32!GetProcessHeap` at `0x1019fa9f1`
+- `KERNEL32!GetProcessHeap` at `0x1019faa27`
+- `KERNEL32!GetProcessHeap` at `0x1019faa60`
+- `KERNEL32!GetProcessHeap` at `0x1019faa9c`
+- `KERNEL32!GetProcessHeap` at `0x1019faad8`
+- `KERNEL32!GetProcessHeap` at `0x1019fab14`
+- `KERNEL32!GetProcessHeap` at `0x1019fab50`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa5c8`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa5ff`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa635`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa66b`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa6a1`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa6da`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa716`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa752`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa78e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa7c7`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa7fd`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa833`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa869`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa89f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa8d5`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa90b`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa941`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa977`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa9b0`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa9e9`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019faa1f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019faa58`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019faa94`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019faad0`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fab0c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fab48`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa5c8`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa5ff`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa635`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa66b`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa6a1`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa6da`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa716`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa752`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa78e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa7c7`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa7fd`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa833`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa869`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa89f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa8d5`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa90b`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa941`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa977`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa9b0`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fa9e9`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019faa1f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019faa58`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019faa94`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019faad0`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fab0c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x1019fab48`
+
+## pseudocode
+
+```c
+
+```

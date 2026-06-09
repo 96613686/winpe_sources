@@ -1,0 +1,188 @@
+# AzureBlobAccess::HandleHeaders(void *,BlobAccessIoRequest *,void *,ulong)
+
+- ea: `0x101a0b260`
+- end: `0x101a0c4d2`
+- name: `?HandleHeaders@AzureBlobAccess@@UEAAJPEAXPEAUBlobAccessIoRequest@@0K@Z`
+- size: `4722`
+- prototype: `int(AzureBlobAccess *__hidden this, void *, struct BlobAccessIoRequest *, void *, unsigned int)`
+- caller_count: `0`
+- callee_count: `15`
+- tags: `file_ops`
+
+## callees
+
+- `0x100401490`
+- `0x100401fcf`
+- `0x100621b90`
+- `0x100656630`
+- `0x1006567e0`
+- `0x1019f7b80`
+- `0x1019f7cc0`
+- `0x1019f9890`
+- `0x1019f9a60`
+- `0x101a0b260`
+- `0x101a0f5b0`
+- `0x101a1c570`
+- `0x101a1d210`
+- `0x101a25370`
+- `0x1023aee60`
+
+## import_xrefs
+
+- `WINHTTP!WinHttpQueryHeaders` at `0x101a0b309`
+- `WINHTTP!WinHttpQueryHeaders` at `0x101a0b47e`
+- `WINHTTP!WinHttpQueryHeaders` at `0x101a0b767`
+- `WINHTTP!WinHttpQueryHeaders` at `0x101a0b7b3`
+- `WINHTTP!WinHttpQueryHeaders` at `0x101a0b939`
+- `WINHTTP!WinHttpQueryHeaders` at `0x101a0b98a`
+- `WINHTTP!WinHttpQueryHeaders` at `0x101a0b9e8`
+- `WINHTTP!WinHttpQueryHeaders` at `0x101a0ba3b`
+- `WINHTTP!WinHttpQueryHeaders` at `0x101a0ba9b`
+- `WINHTTP!WinHttpQueryHeaders` at `0x101a0bb41`
+- `WINHTTP!WinHttpQueryHeaders` at `0x101a0bc7a`
+- `WINHTTP!WinHttpQueryHeaders` at `0x101a0bd05`
+- `WINHTTP!WinHttpQueryHeaders` at `0x101a0bd7f`
+- `WINHTTP!WinHttpQueryHeaders` at `0x101a0c0f7`
+- `WINHTTP!WinHttpQueryHeaders` at `0x101a0c13d`
+- `WINHTTP!WinHttpQueryHeaders` at `0x101a0c3da`
+- `WINHTTP!WinHttpQueryHeaders` at `0x101a0b309`
+- `WINHTTP!WinHttpQueryHeaders` at `0x101a0b47e`
+- `WINHTTP!WinHttpQueryHeaders` at `0x101a0b767`
+- `WINHTTP!WinHttpQueryHeaders` at `0x101a0b7b3`
+- `WINHTTP!WinHttpQueryHeaders` at `0x101a0b939`
+- `WINHTTP!WinHttpQueryHeaders` at `0x101a0b98a`
+- `WINHTTP!WinHttpQueryHeaders` at `0x101a0b9e8`
+- `WINHTTP!WinHttpQueryHeaders` at `0x101a0ba3b`
+- `WINHTTP!WinHttpQueryHeaders` at `0x101a0ba9b`
+- `WINHTTP!WinHttpQueryHeaders` at `0x101a0bb41`
+- `WINHTTP!WinHttpQueryHeaders` at `0x101a0bc7a`
+- `WINHTTP!WinHttpQueryHeaders` at `0x101a0bd05`
+- `WINHTTP!WinHttpQueryHeaders` at `0x101a0bd7f`
+- `WINHTTP!WinHttpQueryHeaders` at `0x101a0c0f7`
+- `WINHTTP!WinHttpQueryHeaders` at `0x101a0c13d`
+- `WINHTTP!WinHttpQueryHeaders` at `0x101a0c3da`
+- `WINHTTP!WinHttpReadData` at `0x101a0b681`
+- `WINHTTP!WinHttpReadData` at `0x101a0c376`
+- `WINHTTP!WinHttpReadData` at `0x101a0b681`
+- `WINHTTP!WinHttpReadData` at `0x101a0c376`
+- `WINHTTP!WinHttpQueryDataAvailable` at `0x101a0c2d7`
+- `WINHTTP!WinHttpQueryDataAvailable` at `0x101a0c2d7`
+- `KERNEL32!SystemTimeToFileTime` at `0x101a0b49b`
+- `KERNEL32!SystemTimeToFileTime` at `0x101a0b49b`
+- `KERNEL32!GetLastError` at `0x101a0b2a0`
+- `KERNEL32!GetLastError` at `0x101a0b4a5`
+- `KERNEL32!GetLastError` at `0x101a0b68f`
+- `KERNEL32!GetLastError` at `0x101a0b7c7`
+- `KERNEL32!GetLastError` at `0x101a0bb04`
+- `KERNEL32!GetLastError` at `0x101a0bd13`
+- `KERNEL32!GetLastError` at `0x101a0c105`
+- `KERNEL32!GetLastError` at `0x101a0c384`
+- `KERNEL32!GetLastError` at `0x101a0b2a0`
+- `KERNEL32!GetLastError` at `0x101a0b4a5`
+- `KERNEL32!GetLastError` at `0x101a0b68f`
+- `KERNEL32!GetLastError` at `0x101a0b7c7`
+- `KERNEL32!GetLastError` at `0x101a0bb04`
+- `KERNEL32!GetLastError` at `0x101a0bd13`
+- `KERNEL32!GetLastError` at `0x101a0c105`
+- `KERNEL32!GetLastError` at `0x101a0c384`
+- `sqldk!?SOS_OS_sm_osProcessStatus@@3KA` at `0x101a0b53e`
+- `sqldk!?SOS_OS_sm_osProcessStatus@@3KA` at `0x101a0b5eb`
+- `sqldk!?SOS_OS_sm_osProcessStatus@@3KA` at `0x101a0c1e5`
+- `sqldk!?SOS_OS_sm_osProcessStatus@@3KA` at `0x101a0c267`
+- `sqldk!?SOS_OS_sm_osProcessStatus@@3KA` at `0x101a0c2f4`
+- `sqldk!?ReleaseSemaphore@SOS_Semaphore@@QEAA?AW4SOS_RESULT@@JPEAJ@Z` at `0x101a0b6f0`
+- `sqldk!?ReleaseSemaphore@SOS_Semaphore@@QEAA?AW4SOS_RESULT@@JPEAJ@Z` at `0x101a0b6f0`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101a0b994`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101a0bb55`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101a0bb8a`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101a0bbbc`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101a0bbee`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101a0c147`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101a0c17d`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101a0c3e8`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101a0b994`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101a0bb55`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101a0bb8a`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101a0bbbc`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101a0bbee`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101a0c147`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101a0c17d`
+- `sqldk!?GetDefaultLocale@@YAPEAU__crt_locale_pointers@@XZ` at `0x101a0c3e8`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101a0b718`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101a0bcba`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101a0c437`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101a0b718`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101a0bcba`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101a0c437`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101a0b58c`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101a0b639`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101a0c233`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101a0c2b5`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101a0c342`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101a0b58c`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101a0b639`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101a0c233`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101a0c2b5`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101a0c342`
+- `sqldk!SystemThread_TlsIndex` at `0x101a0b55c`
+- `sqldk!SystemThread_TlsIndex` at `0x101a0b609`
+- `sqldk!SystemThread_TlsIndex` at `0x101a0c203`
+- `sqldk!SystemThread_TlsIndex` at `0x101a0c285`
+- `sqldk!SystemThread_TlsIndex` at `0x101a0c312`
+- `sqldk!SystemThread_TlsOffset` at `0x101a0b565`
+- `sqldk!SystemThread_TlsOffset` at `0x101a0b612`
+- `sqldk!SystemThread_TlsOffset` at `0x101a0c20c`
+- `sqldk!SystemThread_TlsOffset` at `0x101a0c28e`
+- `sqldk!SystemThread_TlsOffset` at `0x101a0c31b`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x101a0b9ad`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x101a0bb72`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x101a0bba7`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x101a0bbd9`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x101a0bc08`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x101a0c161`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x101a0c197`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x101a0c402`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x101a0b9ad`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x101a0bb72`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x101a0bba7`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x101a0bbd9`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x101a0bc08`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x101a0c161`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x101a0c197`
+- `api-ms-win-crt-string-l1-1-0!_wcsnicmp_l` at `0x101a0c402`
+- `api-ms-win-crt-string-l1-1-0!wcsncmp` at `0x101a0bdb0`
+- `api-ms-win-crt-string-l1-1-0!wcsncmp` at `0x101a0be66`
+- `api-ms-win-crt-string-l1-1-0!wcsncmp` at `0x101a0bf17`
+- `api-ms-win-crt-string-l1-1-0!wcsncmp` at `0x101a0bdb0`
+- `api-ms-win-crt-string-l1-1-0!wcsncmp` at `0x101a0be66`
+- `api-ms-win-crt-string-l1-1-0!wcsncmp` at `0x101a0bf17`
+- `api-ms-win-crt-convert-l1-1-0!_wtoi64` at `0x101a0b77c`
+- `api-ms-win-crt-convert-l1-1-0!_wtoi64` at `0x101a0ba50`
+- `api-ms-win-crt-convert-l1-1-0!_wtoi64` at `0x101a0b77c`
+- `api-ms-win-crt-convert-l1-1-0!_wtoi64` at `0x101a0ba50`
+
+## string_xrefs
+
+- `0x101a0b5a3`: `%hs: WinHttpReadData 0x%x bytes.`
+- `0x101a0b651`: `%hs: WinHttpReadData 0x%x bytes.`
+- `0x101a0c24a`: `%hs: WinHttpReadData 0x%x bytes.`
+- `0x101a0c357`: `%hs: WinHttpReadData 0x%x bytes.`
+- `0x101a0bb2a`: `x-ms-copy-status`
+- `0x101a0c126`: `x-ms-copy-status`
+- `0x101a0b922`: `x-ms-access-tier`
+- `0x101a0b59c`: `AzureBlobAccess::HandleHeaders`
+- `0x101a0b647`: `AzureBlobAccess::HandleHeaders`
+- `0x101a0c243`: `AzureBlobAccess::HandleHeaders`
+- `0x101a0c2bf`: `AzureBlobAccess::HandleHeaders`
+- `0x101a0c350`: `AzureBlobAccess::HandleHeaders`
+- `0x101a0b96e`: `x-ms-access-tier-inferred`
+- `0x101a0b9d1`: `x-ms-access-tier-change-time`
+- `0x101a0b705`: `"sql\\ntdbms\\storeng\\dfs\\manager\\blobaccess.cpp"`
+- `0x101a0bca7`: `"sql\\ntdbms\\storeng\\dfs\\manager\\blobaccess.cpp"`
+- `0x101a0c41f`: `"sql\\ntdbms\\storeng\\dfs\\manager\\blobaccess.cpp"`
+
+## pseudocode
+
+```c
+
+```

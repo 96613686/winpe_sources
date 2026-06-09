@@ -1,0 +1,2679 @@
+[
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil::details::FeatureStateManager::~FeatureStateManager(void)",
+    "ea": "0x1400088ac",
+    "function_file": "functions/1400088ac_wil_details_FeatureStateManager_FeatureStateManager_void.md",
+    "matched_imports": [
+      "KERNEL32!CloseThreadpoolTimer",
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree",
+      "KERNEL32!SetLastError",
+      "KERNEL32!SetThreadpoolTimer",
+      "KERNEL32!WaitForThreadpoolTimerCallbacks"
+    ],
+    "matched_strings": [],
+    "name": "??1FeatureStateManager@details@wil@@QEAA@XZ",
+    "prototype": "void __fastcall(wil::details::FeatureStateManager *__hidden this)",
+    "rank_score": 4818,
+    "size": 492,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::ProcessLocalStorageData<wil::details_abi::FeatureStateData>::Acquire(char const *,wil::details_abi::ProcessLocalStorageData<wil::details_abi::FeatureStateData> * *)",
+    "ea": "0x140009000",
+    "function_file": "functions/140009000_wil_details_abi_ProcessLocalStorageData_wil_details_abi_FeatureStateData_Acquire_char_const_wil_details_abi_Pr.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateMutexExW",
+      "KERNEL32!GetCurrentProcessId",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree",
+      "KERNEL32!InitializeCriticalSectionEx",
+      "KERNEL32!ReleaseMutex",
+      "KERNEL32!WaitForSingleObjectEx"
+    ],
+    "matched_strings": [],
+    "name": "?Acquire@?$ProcessLocalStorageData@VFeatureStateData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+    "prototype": "",
+    "rank_score": 2831,
+    "size": 967,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::ProcessLocalStorageData<wil::details_abi::ProcessLocalData>::Acquire(char const *,wil::details_abi::ProcessLocalStorageData<wil::details_abi::ProcessLocalData> * *)",
+    "ea": "0x140008c5c",
+    "function_file": "functions/140008c5c_wil_details_abi_ProcessLocalStorageData_wil_details_abi_ProcessLocalData_Acquire_char_const_wil_details_abi_Pr.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateMutexExW",
+      "KERNEL32!GetCurrentProcessId",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree",
+      "KERNEL32!ReleaseMutex",
+      "KERNEL32!WaitForSingleObjectEx"
+    ],
+    "matched_strings": [],
+    "name": "?Acquire@?$ProcessLocalStorageData@UProcessLocalData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+    "prototype": "",
+    "rank_score": 2630,
+    "size": 926,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "SxInitializeCOMSecurityForSPP(void)",
+    "ea": "0x140007030",
+    "function_file": "functions/140007030_SxInitializeCOMSecurityForSPP_void.md",
+    "matched_imports": [
+      "ADVAPI32!CreateWellKnownSid",
+      "ADVAPI32!InitializeSecurityDescriptor",
+      "ADVAPI32!SetEntriesInAclW",
+      "ADVAPI32!SetSecurityDescriptorDacl",
+      "ADVAPI32!SetSecurityDescriptorGroup",
+      "ADVAPI32!SetSecurityDescriptorOwner",
+      "KERNEL32!LocalFree",
+      "ole32!CoInitializeSecurity"
+    ],
+    "matched_strings": [
+      "SxInitializeCOMSecurityForSPP"
+    ],
+    "name": "?SxInitializeCOMSecurityForSPP@@YAJXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 2498,
+    "size": 1185,
+    "tags": [
+      "authz_impersonation",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil::details::FeatureStateManager::QueueBackgroundSRUMUsageReporting(uint,ushort,uint)",
+    "ea": "0x14000ad48",
+    "function_file": "functions/14000ad48_wil_details_FeatureStateManager_QueueBackgroundSRUMUsageReporting_uint_ushort_uint.md",
+    "matched_imports": [
+      "KERNEL32!AcquireSRWLockExclusive",
+      "KERNEL32!CloseThreadpoolTimer",
+      "KERNEL32!CreateThreadpoolTimer",
+      "KERNEL32!GetLastError",
+      "KERNEL32!ReleaseSRWLockExclusive",
+      "KERNEL32!SetLastError",
+      "KERNEL32!SetThreadpoolTimer",
+      "KERNEL32!WaitForThreadpoolTimerCallbacks",
+      "msvcrt!memcpy_s"
+    ],
+    "matched_strings": [],
+    "name": "?QueueBackgroundSRUMUsageReporting@FeatureStateManager@details@wil@@QEAAXIGI@Z",
+    "prototype": "void __fastcall(PVOID pv, unsigned int, unsigned __int16, unsigned int)",
+    "rank_score": 2418,
+    "size": 392,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "wil::details_abi::SemaphoreValue::CreateFromValueInternal(ushort const *,bool,unsigned __int64)",
+    "ea": "0x1400093d0",
+    "function_file": "functions/1400093d0_wil_details_abi_SemaphoreValue_CreateFromValueInternal_ushort_const_bool_unsigned_int64.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateSemaphoreExW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?CreateFromValueInternal@SemaphoreValue@details_abi@wil@@AEAAJPEBG_N_K@Z",
+    "prototype": "__int64 __fastcall(wil::details_abi::SemaphoreValue *__hidden this, const unsigned __int16 *, bool, unsigned __int64)",
+    "rank_score": 2013,
+    "size": 525,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "WaitForRestorePointToAppear(ulong,uchar *)",
+    "ea": "0x140003e70",
+    "function_file": "functions/140003e70_WaitForRestorePointToAppear_ulong_uchar.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExW",
+      "KERNEL32!GetTickCount64",
+      "KERNEL32!Sleep",
+      "SRCORE!SrFreeRpPropArray",
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [],
+    "name": "?WaitForRestorePointToAppear@@YAJKPEAE@Z",
+    "prototype": "__int64 __fastcall(unsigned int, unsigned __int8 *)",
+    "rank_score": 1847,
+    "size": 886,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "wil::details_abi::SemaphoreValue::TryGetValueInternal(ushort const *,bool,unsigned __int64 *,bool *)",
+    "ea": "0x14000c5cc",
+    "function_file": "functions/14000c5cc_wil_details_abi_SemaphoreValue_TryGetValueInternal_ushort_const_bool_unsigned_int64_bool.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!GetLastError",
+      "KERNEL32!OpenSemaphoreW"
+    ],
+    "matched_strings": [],
+    "name": "?TryGetValueInternal@SemaphoreValue@details_abi@wil@@CAJPEBG_NPEA_KPEA_N@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, bool, unsigned __int64 *, bool *)",
+    "rank_score": 1813,
+    "size": 620,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil::details::FeatureStateManager::EnsureTimerUnderLock(void)",
+    "ea": "0x140009758",
+    "function_file": "functions/140009758_wil_details_FeatureStateManager_EnsureTimerUnderLock_void.md",
+    "matched_imports": [
+      "KERNEL32!CloseThreadpoolTimer",
+      "KERNEL32!CreateThreadpoolTimer",
+      "KERNEL32!GetLastError",
+      "KERNEL32!SetLastError",
+      "KERNEL32!SetThreadpoolTimer",
+      "KERNEL32!WaitForThreadpoolTimerCallbacks"
+    ],
+    "matched_strings": [],
+    "name": "?EnsureTimerUnderLock@FeatureStateManager@details@wil@@AEAAXXZ",
+    "prototype": "void __fastcall(PVOID pv)",
+    "rank_score": 1803,
+    "size": 212,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "_DeleteOldSPPGroups(ISharedProtectionPoints *)",
+    "ea": "0x140004410",
+    "function_file": "functions/140004410_DeleteOldSPPGroups_ISharedProtectionPoints.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExW",
+      "KERNEL32!GetSystemTimeAsFileTime",
+      "SRCORE!SrFreeRpPropArray",
+      "ole32!CoCreateInstance",
+      "ole32!CoTaskMemAlloc",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [
+      "_DeleteOldSPPGroups"
+    ],
+    "name": "?_DeleteOldSPPGroups@@YAJPEAUISharedProtectionPoints@@@Z",
+    "prototype": "__int64 __fastcall(struct ISharedProtectionPoints *)",
+    "rank_score": 1697,
+    "size": 974,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "GetAndEnsureTracingDirectory(CBsString *)",
+    "ea": "0x140003320",
+    "function_file": "functions/140003320_GetAndEnsureTracingDirectory_CBsString.md",
+    "matched_imports": [
+      "ADVAPI32!ConvertStringSecurityDescriptorToSecurityDescriptorW",
+      "KERNEL32!CreateDirectoryW",
+      "KERNEL32!DeleteFileW",
+      "KERNEL32!GetFileAttributesW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!LocalFree"
+    ],
+    "matched_strings": [
+      "GetAndEnsureTracingDirectory",
+      "::DeleteFile( strTracingDirectory )"
+    ],
+    "name": "?GetAndEnsureTracingDirectory@@YAJPEAVCBsString@@@Z",
+    "prototype": "__int64 __fastcall(struct CBsString *)",
+    "rank_score": 1323,
+    "size": 603,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::RecordWnfUsageIndex(__WIL__WNF_STATE_NAME const *,unsigned __int64,wil::details_abi::RawUsageIndex const &)",
+    "ea": "0x14000b888",
+    "function_file": "functions/14000b888_wil_details_abi_RecordWnfUsageIndex_WIL_WNF_STATE_NAME_const_unsigned_int64_wil_details_abi_RawUsageIndex_cons.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "?RecordWnfUsageIndex@details_abi@wil@@YAXPEBU__WIL__WNF_STATE_NAME@@_KAEBVRawUsageIndex@12@@Z",
+    "prototype": "void __fastcall(wil::details_abi *__hidden this, const struct __WIL__WNF_STATE_NAME *, unsigned __int64, const struct wil::details_abi::RawUsageIndex *)",
+    "rank_score": 1277,
+    "size": 973,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x140001754",
+    "function_file": "functions/140001754_security_init_cookie.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcessId",
+      "KERNEL32!GetCurrentThreadId",
+      "KERNEL32!GetSystemTimeAsFileTime",
+      "KERNEL32!GetTickCount",
+      "KERNEL32!QueryPerformanceCounter"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 1223,
+    "size": 221,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "Free_SR_RP_PROP(_SR_RP_PROP *)",
+    "ea": "0x14000d1a4",
+    "function_file": "functions/14000d1a4_Free_SR_RP_PROP_SR_RP_PROP.md",
+    "matched_imports": [
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?Free_SR_RP_PROP@@YAXPEAU_SR_RP_PROP@@@Z",
+    "prototype": "void __fastcall(struct _SR_RP_PROP *)",
+    "rank_score": 1217,
+    "size": 249,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "wil::details_abi::RawUsageIndex::RecordUsage(void *,unsigned __int64,void *,unsigned __int64,uint)",
+    "ea": "0x14000b350",
+    "function_file": "functions/14000b350_wil_details_abi_RawUsageIndex_RecordUsage_void_unsigned_int64_void_unsigned_int64_uint.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?RecordUsage@RawUsageIndex@details_abi@wil@@QEAA_NPEAX_K01I@Z",
+    "prototype": "bool __usercall@<al>(wil::details_abi::RawUsageIndex *__hidden this@<rcx>, void *@<rdx>, unsigned __int64@<r8>, void *@<r9>, unsigned __int64, unsigned int)",
+    "rank_score": 1210,
+    "size": 425,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "wil::details_abi::SubscriptionList::OnSignaled(wil::srwlock &)",
+    "ea": "0x14000ac84",
+    "function_file": "functions/14000ac84_wil_details_abi_SubscriptionList_OnSignaled_wil_srwlock.md",
+    "matched_imports": [
+      "KERNEL32!AcquireSRWLockExclusive",
+      "KERNEL32!AcquireSRWLockShared",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!ReleaseSRWLockExclusive",
+      "KERNEL32!ReleaseSRWLockShared"
+    ],
+    "matched_strings": [],
+    "name": "?OnSignaled@SubscriptionList@details_abi@wil@@QEAAXAEAVsrwlock@3@@Z",
+    "prototype": "void __fastcall(LPCRITICAL_SECTION lpCriticalSection, PSRWLOCK SRWLock)",
+    "rank_score": 1207,
+    "size": 189,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "wil::details_abi::heap_buffer::ensure(unsigned __int64)",
+    "ea": "0x140006524",
+    "function_file": "functions/140006524_wil_details_abi_heap_buffer_ensure_unsigned_int64.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree",
+      "KERNEL32!SetLastError",
+      "msvcrt!memcpy_s"
+    ],
+    "matched_strings": [],
+    "name": "?ensure@heap_buffer@details_abi@wil@@QEAA_N_K@Z",
+    "prototype": "bool __fastcall(wil::details_abi::heap_buffer *__hidden this, unsigned __int64)",
+    "rank_score": 1206,
+    "size": 211,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "wil::details_abi::UsageIndexes::~UsageIndexes(void)",
+    "ea": "0x140008b24",
+    "function_file": "functions/140008b24_wil_details_abi_UsageIndexes_UsageIndexes_void.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "??1UsageIndexes@details_abi@wil@@QEAA@XZ",
+    "prototype": "void __fastcall(wil::details_abi::UsageIndexes *__hidden this)",
+    "rank_score": 1205,
+    "size": 141,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "GetMainenanceTaskFrequency(ulong *)",
+    "ea": "0x1400020c4",
+    "function_file": "functions/1400020c4_GetMainenanceTaskFrequency_ulong.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExW",
+      "KERNEL32!GetSystemTimeAsFileTime"
+    ],
+    "matched_strings": [
+      "LastMainenanceTaskRunTimeStamp",
+      "GetMainenanceTaskFrequency"
+    ],
+    "name": "?GetMainenanceTaskFrequency@@YAJPEAK@Z",
+    "prototype": "__int64 __fastcall(unsigned int *)",
+    "rank_score": 1121,
+    "size": 499,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 20,
+    "caller_count": 1,
+    "demangled": "_ExecuteScheduledSPPCreation(void)",
+    "ea": "0x140004a70",
+    "function_file": "functions/140004a70_ExecuteScheduledSPPCreation_void.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetModuleHandleW",
+      "SRCLIENT!SRSetRestorePointW",
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [
+      "_ExecuteScheduledSPPCreation"
+    ],
+    "name": "?_ExecuteScheduledSPPCreation@@YAJXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 1103,
+    "size": 1658,
+    "tags": [
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 2,
+    "demangled": "_ExecuteScopeRestorePoint(void)",
+    "ea": "0x1400050f0",
+    "function_file": "functions/1400050f0_ExecuteScopeRestorePoint_void.md",
+    "matched_imports": [
+      "SRCORE!SrFreeRpPropArray",
+      "ole32!CoCreateInstance",
+      "ole32!CoTaskMemAlloc",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?_ExecuteScopeRestorePoint@@YAJXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 1049,
+    "size": 843,
+    "tags": [
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 50,
+    "demangled": "CSxFunctionTracer::~CSxFunctionTracer(void)",
+    "ea": "0x14000e41c",
+    "function_file": "functions/14000e41c_CSxFunctionTracer_CSxFunctionTracer_void.md",
+    "matched_imports": [
+      "KERNEL32!LocalFree",
+      "SPP!SxTracerDebuggerBreak",
+      "SPP!SxTracerShouldTrackFailure"
+    ],
+    "matched_strings": [],
+    "name": "??1CSxFunctionTracer@@QEAA@XZ",
+    "prototype": "void __fastcall(CSxFunctionTracer *__hidden this)",
+    "rank_score": 1034,
+    "size": 592,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "SxRotateLogs(ushort const *,ulong)",
+    "ea": "0x14000f7a0",
+    "function_file": "functions/14000f7a0_SxRotateLogs_ushort_const_ulong.md",
+    "matched_imports": [
+      "KERNEL32!DeleteFileW",
+      "KERNEL32!GetFileAttributesW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!MoveFileExW"
+    ],
+    "matched_strings": [],
+    "name": "?SxRotateLogs@@YAJPEBGK@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *)",
+    "rank_score": 1034,
+    "size": 630,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SxQueryGroupPolicy(ushort const *,ushort const *,int *)",
+    "ea": "0x140005784",
+    "function_file": "functions/140005784_SxQueryGroupPolicy_ushort_const_ushort_const_int.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExW"
+    ],
+    "matched_strings": [],
+    "name": "?SxQueryGroupPolicy@@YAJPEBG0PEAH@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, const unsigned __int16 *, int *)",
+    "rank_score": 1028,
+    "size": 464,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "GetRestorePointIndexToWaitFor(void)",
+    "ea": "0x140003584",
+    "function_file": "functions/140003584_GetRestorePointIndexToWaitFor_void.md",
+    "matched_imports": [
+      "KERNEL32!GetCommandLineW",
+      "KERNEL32!LocalFree",
+      "SHELL32!CommandLineToArgvW",
+      "msvcrt!_wcsnicmp",
+      "msvcrt!_wtol"
+    ],
+    "matched_strings": [],
+    "name": "?GetRestorePointIndexToWaitFor@@YAKXZ",
+    "prototype": "unsigned int(void)",
+    "rank_score": 1020,
+    "size": 416,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::ThreadLocalFailureInfo::Set(wil::FailureInfo const &,uint)",
+    "ea": "0x14000c028",
+    "function_file": "functions/14000c028_wil_details_abi_ThreadLocalFailureInfo_Set_wil_FailureInfo_const_uint.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree",
+      "msvcrt!memcpy_s"
+    ],
+    "matched_strings": [],
+    "name": "?Set@ThreadLocalFailureInfo@details_abi@wil@@QEAAXAEBUFailureInfo@3@I@Z",
+    "prototype": "void __fastcall(wil::details_abi::ThreadLocalFailureInfo *__hidden this, const struct wil::FailureInfo *, unsigned int)",
+    "rank_score": 1008,
+    "size": 540,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "wil::details::WilApiImpl_SubscribeFeatureStateChangeNotification(FEATURE_STATE_CHANGE_SUBSCRIPTION__ * *,void (*)(void *),void *)",
+    "ea": "0x14000ca10",
+    "function_file": "functions/14000ca10_wil_details_WilApiImpl_SubscribeFeatureStateChangeNotification_FEATURE_STATE_CHANGE_SUBSCRIPTION_void_void_voi.md",
+    "matched_imports": [
+      "KERNEL32!AcquireSRWLockExclusive",
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!ReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [
+      "ntdll.dll",
+      "RtlRegisterFeatureConfigurationChangeNotification"
+    ],
+    "name": "?WilApiImpl_SubscribeFeatureStateChangeNotification@details@wil@@YAXPEAPEAUFEATURE_STATE_CHANGE_SUBSCRIPTION__@@P6AXPEAX@Z1@Z",
+    "prototype": "void __fastcall(struct FEATURE_STATE_CHANGE_SUBSCRIPTION__ **this, struct FEATURE_STATE_CHANGE_SUBSCRIPTION__ **, void (*)(void *), void *)",
+    "rank_score": 906,
+    "size": 269,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "ExecuteScheduledSPPCreation(void)",
+    "ea": "0x140002f30",
+    "function_file": "functions/140002f30_ExecuteScheduledSPPCreation_void.md",
+    "matched_imports": [
+      "KERNEL32!HeapSetInformation",
+      "ole32!CoInitializeEx",
+      "ole32!CoTaskMemFree",
+      "ole32!CoUninitialize"
+    ],
+    "matched_strings": [
+      "ExecuteScheduledSPPCreation"
+    ],
+    "name": "?ExecuteScheduledSPPCreation@@YAJXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 875,
+    "size": 499,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "SxSetFileAttributes(ushort const *,ulong)",
+    "ea": "0x14000771c",
+    "function_file": "functions/14000771c_SxSetFileAttributes_ushort_const_ulong.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileW",
+      "ntdll!NtQueryInformationFile",
+      "ntdll!NtSetInformationFile"
+    ],
+    "matched_strings": [
+      "SxSetFileAttributes"
+    ],
+    "name": "?SxSetFileAttributes@@YAJPEBGK@Z",
+    "prototype": "__int64 __fastcall(LPCWSTR lpFileName, int)",
+    "rank_score": 874,
+    "size": 559,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "GetWMIBackupTask(ITaskService *,ushort const *,IRegisteredTask * *)",
+    "ea": "0x140006e40",
+    "function_file": "functions/140006e40_GetWMIBackupTask_ITaskService_ushort_const_IRegisteredTask.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString",
+      "OLEAUT32!__imp_SysStringLen"
+    ],
+    "matched_strings": [
+      "GetWMIBackupTask"
+    ],
+    "name": "?GetWMIBackupTask@@YAJPEAUITaskService@@PEBGPEAPEAUIRegisteredTask@@@Z",
+    "prototype": "__int64 __fastcall(struct ITaskService *, const unsigned __int16 *, struct IRegisteredTask **)",
+    "rank_score": 871,
+    "size": 490,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "wil::details::ProcessHeapAlloc(ulong,unsigned __int64)",
+    "ea": "0x140005cd0",
+    "function_file": "functions/140005cd0_wil_details_ProcessHeapAlloc_ulong_unsigned_int64.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "?ProcessHeapAlloc@details@wil@@YAPEAXK_K@Z",
+    "prototype": "void *__fastcall(DWORD dwFlags, SIZE_T dwBytes, unsigned __int64)",
+    "rank_score": 858,
+    "size": 158,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "ExecuteScopeRestorePoint(void)",
+    "ea": "0x14000312c",
+    "function_file": "functions/14000312c_ExecuteScopeRestorePoint_void.md",
+    "matched_imports": [
+      "KERNEL32!HeapSetInformation",
+      "ole32!CoInitializeEx",
+      "ole32!CoTaskMemFree",
+      "ole32!CoUninitialize"
+    ],
+    "matched_strings": [],
+    "name": "?ExecuteScopeRestorePoint@@YAJXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 836,
+    "size": 492,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "wil::details::FeatureStateManager::RecordFeatureUsage(uint,wil_details_ServiceReportingKind,unsigned __int64)",
+    "ea": "0x14000b104",
+    "function_file": "functions/14000b104_wil_details_FeatureStateManager_RecordFeatureUsage_uint_wil_details_ServiceReportingKind_unsigned_int64.md",
+    "matched_imports": [
+      "KERNEL32!AcquireSRWLockExclusive",
+      "KERNEL32!ReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "?RecordFeatureUsage@FeatureStateManager@details@wil@@QEAAXIW4wil_details_ServiceReportingKind@@_K@Z",
+    "prototype": "",
+    "rank_score": 830,
+    "size": 270,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "SxMergeExtraLogs(ushort const *,ulong)",
+    "ea": "0x14000f510",
+    "function_file": "functions/14000f510_SxMergeExtraLogs_ushort_const_ulong.md",
+    "matched_imports": [
+      "KERNEL32!DeleteFileW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!MoveFileExW"
+    ],
+    "matched_strings": [],
+    "name": "?SxMergeExtraLogs@@YAJPEBGK@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, unsigned int)",
+    "rank_score": 823,
+    "size": 647,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::RawUsageIndex::RecordUsageInternal(void *,unsigned __int64,void *,unsigned __int64,uint)",
+    "ea": "0x14000b500",
+    "function_file": "functions/14000b500_wil_details_abi_RawUsageIndex_RecordUsageInternal_void_unsigned_int64_void_unsigned_int64_uint.md",
+    "matched_imports": [
+      "msvcrt!memcpy_s",
+      "msvcrt!memmove_s"
+    ],
+    "matched_strings": [],
+    "name": "?RecordUsageInternal@RawUsageIndex@details_abi@wil@@AEAA_NPEAX_K01I@Z",
+    "prototype": "bool __fastcall(wil::details_abi::RawUsageIndex *__hidden this, void *Buf1, size_t Size, void *, unsigned __int64, unsigned int)",
+    "rank_score": 813,
+    "size": 896,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "wil::details::FeatureStateManager::EnsureStateData(void)",
+    "ea": "0x1400096a4",
+    "function_file": "functions/1400096a4_wil_details_FeatureStateManager_EnsureStateData_void.md",
+    "matched_imports": [
+      "KERNEL32!AcquireSRWLockExclusive",
+      "KERNEL32!GetLastError",
+      "KERNEL32!ReleaseSRWLockExclusive",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?EnsureStateData@FeatureStateManager@details@wil@@AEAA_NXZ",
+    "prototype": "bool __fastcall(wil::details::FeatureStateManager *__hidden this)",
+    "rank_score": 807,
+    "size": 172,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "wil::details_abi::RawUsageIndex::Swap(wil::details_abi::RawUsageIndex &)",
+    "ea": "0x14000c504",
+    "function_file": "functions/14000c504_wil_details_abi_RawUsageIndex_Swap_wil_details_abi_RawUsageIndex.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?Swap@RawUsageIndex@details_abi@wil@@QEAAXAEAV123@@Z",
+    "prototype": "void __fastcall(wil::details_abi::RawUsageIndex *__hidden this, struct wil::details_abi::RawUsageIndex *)",
+    "rank_score": 805,
+    "size": 194,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::ThreadLocalData::~ThreadLocalData(void)",
+    "ea": "0x140008aa0",
+    "function_file": "functions/140008aa0_wil_details_abi_ThreadLocalData_ThreadLocalData_void.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "??1ThreadLocalData@details_abi@wil@@QEAA@XZ",
+    "prototype": "void __fastcall(wil::details_abi::ThreadLocalData *__hidden this)",
+    "rank_score": 802,
+    "size": 124,
+    "tags": []
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 2,
+    "demangled": "SxGetUniqueVolumeForPath(ushort const *,ushort *,ulong)",
+    "ea": "0x140006018",
+    "function_file": "functions/140006018_SxGetUniqueVolumeForPath_ushort_const_ushort_ulong.md",
+    "matched_imports": [
+      "KERNEL32!GetVolumeNameForVolumeMountPointW",
+      "KERNEL32!GetVolumePathNameW"
+    ],
+    "matched_strings": [
+      "SxGetUniqueVolumeForPath",
+      "::GetVolumePathName( strPath, STRING_CCH_PARAM( wszRootPath ) )",
+      "::GetVolumeNameForVolumeMountPoint( wszRootPath, STRING_CCH_PARAM( wszVolume ) )",
+      "::GetVolumeNameForVolumeMountPoint( wszVolume, pwszUnique, cchUnique )"
+    ],
+    "name": "?SxGetUniqueVolumeForPath@@YAJPEBGPEAGK@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, LPWSTR lpszVolumeName, unsigned int)",
+    "rank_score": 789,
+    "size": 787,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__raise_securityfailure",
+    "ea": "0x14000190c",
+    "function_file": "functions/14000190c_raise_securityfailure.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!SetUnhandledExceptionFilter",
+      "KERNEL32!TerminateProcess",
+      "KERNEL32!UnhandledExceptionFilter"
+    ],
+    "matched_strings": [],
+    "name": "__raise_securityfailure",
+    "prototype": "__int64 __fastcall(struct _EXCEPTION_POINTERS *ExceptionInfo)",
+    "rank_score": 711,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "SxStopTracing(ushort const *)",
+    "ea": "0x14000fd0c",
+    "function_file": "functions/14000fd0c_SxStopTracing_ushort_const.md",
+    "matched_imports": [
+      "ADVAPI32!ControlTraceW",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [
+      "BuiltInSrTasksTracing",
+      "BuiltInSrTasksTracing"
+    ],
+    "name": "?SxStopTracing@@YAJPEBG@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *)",
+    "rank_score": 699,
+    "size": 264,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 2,
+    "demangled": "SrPropStartTracing(ushort * *,int)",
+    "ea": "0x1400039e4",
+    "function_file": "functions/1400039e4_SrPropStartTracing_ushort_int.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExW",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [
+      "SrTasks"
+    ],
+    "name": "?SrPropStartTracing@@YAJPEAPEAGH@Z",
+    "prototype": "__int64 __fastcall(LPVOID *, int)",
+    "rank_score": 692,
+    "size": 984,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "SxShouldCreateScopedSnapshots(uchar *)",
+    "ea": "0x140006ab0",
+    "function_file": "functions/140006ab0_SxShouldCreateScopedSnapshots_uchar.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExW"
+    ],
+    "matched_strings": [
+      "SxShouldCreateScopedSnapshots"
+    ],
+    "name": "?SxShouldCreateScopedSnapshots@@YAJPEAE@Z",
+    "prototype": "__int64 __fastcall(unsigned __int8 *)",
+    "rank_score": 671,
+    "size": 391,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "GetRegistryKeySettings(uchar *,ulong *,uchar *,ulong *)",
+    "ea": "0x1400022c0",
+    "function_file": "functions/1400022c0_GetRegistryKeySettings_uchar_ulong_uchar_ulong.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExW"
+    ],
+    "matched_strings": [
+      "GetRegistryKeySettings"
+    ],
+    "name": "?GetRegistryKeySettings@@YAJPEAEPEAK01@Z",
+    "prototype": "__int64 __fastcall(unsigned __int8 *, unsigned int *, unsigned __int8 *, unsigned int *)",
+    "rank_score": 669,
+    "size": 444,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "SxCompressLogFile(ushort const *)",
+    "ea": "0x14000ef3c",
+    "function_file": "functions/14000ef3c_SxCompressLogFile_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!DeviceIoControl"
+    ],
+    "matched_strings": [
+      "SxCompressLogFile"
+    ],
+    "name": "?SxCompressLogFile@@YAJPEBG@Z",
+    "prototype": "__int64 __fastcall(LPCWSTR lpFileName)",
+    "rank_score": 669,
+    "size": 364,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "SxIsShadowCopyScoped(ushort const *,uchar *)",
+    "ea": "0x1400068d4",
+    "function_file": "functions/1400068d4_SxIsShadowCopyScoped_ushort_const_uchar.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!DeviceIoControl"
+    ],
+    "matched_strings": [
+      "SxIsShadowCopyScoped"
+    ],
+    "name": "?SxIsShadowCopyScoped@@YAJPEBGPEAE@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, unsigned __int8 *)",
+    "rank_score": 664,
+    "size": 470,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "SxDeleteFile(ushort const *)",
+    "ea": "0x1400075cc",
+    "function_file": "functions/1400075cc_SxDeleteFile_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!DeleteFileW",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [
+      "SxDeleteFile"
+    ],
+    "name": "?SxDeleteFile@@YAJPEBG@Z",
+    "prototype": "__int64 __fastcall(LPCWSTR lpFileName)",
+    "rank_score": 661,
+    "size": 328,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 17,
+    "caller_count": 1,
+    "demangled": "SrConvertSppGroupToSrRpProp(_SR_RESTORE_SOURCE,_SPP_GROUP_PROP const *,_SR_RP_PROP *)",
+    "ea": "0x14000d688",
+    "function_file": "functions/14000d688_SrConvertSppGroupToSrRpProp_SR_RESTORE_SOURCE_SPP_GROUP_PROP_const_SR_RP_PROP.md",
+    "matched_imports": [
+      "ole32!CoTaskMemFree",
+      "ole32!CoTaskMemRealloc"
+    ],
+    "matched_strings": [],
+    "name": "?SrConvertSppGroupToSrRpProp@@YAJW4_SR_RESTORE_SOURCE@@PEBU_SPP_GROUP_PROP@@PEAU_SR_RP_PROP@@@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 653,
+    "size": 1992,
+    "tags": [
+      "file_ops",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "_CheckRecentSPPCheckpoint(void)",
+    "ea": "0x1400041ec",
+    "function_file": "functions/1400041ec_CheckRecentSPPCheckpoint_void.md",
+    "matched_imports": [
+      "KERNEL32!GetSystemTimeAsFileTime",
+      "SRCORE!SrFreeRpPropArray",
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [],
+    "name": "?_CheckRecentSPPCheckpoint@@YAJXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 631,
+    "size": 539,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "_GetFileAttributesTag",
+    "ea": "0x140007954",
+    "function_file": "functions/140007954_GetFileAttributesTag.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileW",
+      "ntdll!NtQueryInformationFile"
+    ],
+    "matched_strings": [],
+    "name": "_GetFileAttributesTag",
+    "prototype": "__int64 __fastcall(LPCWSTR lpFileName)",
+    "rank_score": 629,
+    "size": 414,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "GetSnapshotsCount(ulong *,ulong *)",
+    "ea": "0x140002670",
+    "function_file": "functions/140002670_GetSnapshotsCount_ulong_ulong.md",
+    "matched_imports": [
+      "VSSAPI!CreateVssBackupComponentsInternal",
+      "VSSAPI!VssFreeSnapshotPropertiesInternal"
+    ],
+    "matched_strings": [],
+    "name": "?GetSnapshotsCount@@YAJPEAK0@Z",
+    "prototype": "__int64 __fastcall(unsigned int *, unsigned int *)",
+    "rank_score": 626,
+    "size": 830,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "GetDiffAreaInfo(ushort const *,__int64 *,__int64 *,__int64 *)",
+    "ea": "0x1400066e0",
+    "function_file": "functions/1400066e0_GetDiffAreaInfo_ushort_const_int64_int64_int64.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!DeviceIoControl"
+    ],
+    "matched_strings": [],
+    "name": "?GetDiffAreaInfo@@YAJPEBGPEA_J11@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, __int64 *, __int64 *, __int64 *)",
+    "rank_score": 623,
+    "size": 491,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "wil::details::LogFailure(void *,uint,char const *,char const *,char const *,void *,wil::FailureType,wil::details::ResultStatus const &,ushort const *,bool,ushort *,unsigned __int64,char *,unsigned __int64,wil::FailureFlags,wil::FailureInfo *)",
+    "ea": "0x14000a790",
+    "function_file": "functions/14000a790_wil_details_LogFailure_void_uint_char_const_char_const_char_const_void_wil_FailureType_wil_details_ResultStatu.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentThreadId",
+      "KERNEL32!IsDebuggerPresent",
+      "KERNEL32!OutputDebugStringW"
+    ],
+    "matched_strings": [],
+    "name": "?LogFailure@details@wil@@YAXPEAXIPEBD110W4FailureType@2@AEBUResultStatus@12@PEBG_NPEAG_KPEAD7W4FailureFlags@2@PEAUFailureInfo@2@@Z",
+    "prototype": "",
+    "rank_score": 616,
+    "size": 760,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "wil::details::ReportFailure_Return<1>(void *,uint,char const *,char const *,char const *,void *,wil::details::ResultStatus const &,ushort const *,wil::details::ReportFailureOptions,wil::FailureFlags)",
+    "ea": "0x140008188",
+    "function_file": "functions/140008188_wil_details_ReportFailure_Return_1_void_uint_char_const_char_const_char_const_void_wil_details_ResultStatus_co.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentThreadId",
+      "KERNEL32!IsDebuggerPresent",
+      "KERNEL32!OutputDebugStringW"
+    ],
+    "matched_strings": [],
+    "name": "??$ReportFailure_Return@$00@details@wil@@YAXPEAXIPEBD110AEBUResultStatus@01@PEBGW4ReportFailureOptions@01@W4FailureFlags@1@@Z",
+    "prototype": "",
+    "rank_score": 615,
+    "size": 660,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "pre_c_init",
+    "ea": "0x140001220",
+    "function_file": "functions/140001220_pre_c_init.md",
+    "matched_imports": [
+      "msvcrt!__set_app_type",
+      "msvcrt!__setusermatherr",
+      "msvcrt!_commode",
+      "msvcrt!_fmode"
+    ],
+    "matched_strings": [],
+    "name": "pre_c_init",
+    "prototype": "",
+    "rank_score": 614,
+    "size": 215,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "wil::details::ReportFailure_NoReturn<3>(void *,uint,char const *,char const *,char const *,void *,wil::details::ResultStatus const &,ushort const *,wil::details::ReportFailureOptions)",
+    "ea": "0x140007f20",
+    "function_file": "functions/140007f20_wil_details_ReportFailure_NoReturn_3_void_uint_char_const_char_const_char_const_void_wil_details_ResultStatus_.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentThreadId",
+      "KERNEL32!IsDebuggerPresent",
+      "KERNEL32!OutputDebugStringW"
+    ],
+    "matched_strings": [],
+    "name": "??$ReportFailure_NoReturn@$02@details@wil@@YAXPEAXIPEBD110AEBUResultStatus@01@PEBGW4ReportFailureOptions@01@@Z",
+    "prototype": "",
+    "rank_score": 613,
+    "size": 608,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::FeatureStateData::~FeatureStateData(void)",
+    "ea": "0x1400087d4",
+    "function_file": "functions/1400087d4_wil_details_abi_FeatureStateData_FeatureStateData_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "??1FeatureStateData@details_abi@wil@@QEAA@XZ",
+    "prototype": "void __fastcall(wil::details_abi::FeatureStateData *__hidden this)",
+    "rank_score": 607,
+    "size": 208,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "wil::details_abi::UsageIndexProperty::Read(uchar * &,uchar *)",
+    "ea": "0x14000aed8",
+    "function_file": "functions/14000aed8_wil_details_abi_UsageIndexProperty_Read_uchar_uchar.md",
+    "matched_imports": [
+      "msvcrt!memcpy_s"
+    ],
+    "matched_strings": [],
+    "name": "?Read@UsageIndexProperty@details_abi@wil@@QEAA_NAEAPEAEPEAE@Z",
+    "prototype": "bool __fastcall(wil::details_abi::UsageIndexProperty *__hidden this, unsigned __int8 **, unsigned __int8 *)",
+    "rank_score": 605,
+    "size": 233,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::UsageIndexProperty::Write(uchar * &,uchar *)",
+    "ea": "0x14000cccc",
+    "function_file": "functions/14000cccc_wil_details_abi_UsageIndexProperty_Write_uchar_uchar.md",
+    "matched_imports": [
+      "msvcrt!memcpy_s"
+    ],
+    "matched_strings": [],
+    "name": "?Write@UsageIndexProperty@details_abi@wil@@QEBA_NAEAPEAEPEAE@Z",
+    "prototype": "bool __fastcall(wil::details_abi::UsageIndexProperty *__hidden this, unsigned __int8 **, unsigned __int8 *)",
+    "rank_score": 603,
+    "size": 217,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil_details_NtUpdateWnfStateData",
+    "ea": "0x14000d07c",
+    "function_file": "functions/14000d07c_wil_details_NtUpdateWnfStateData.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ntdll.dll",
+      "NtUpdateWnfStateData"
+    ],
+    "name": "wil_details_NtUpdateWnfStateData",
+    "prototype": "",
+    "rank_score": 505,
+    "size": 170,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil::details::unique_storage<wil::details::resource_policy<void *,void (*)(void *),&wil::details::UnregisterWilFeatureConfigurationChange(void *),wistd::integral_constant<unsigned __int64,0>,void *,void *,0,std::nullptr_t>>::~unique_storage<wil::details::resource_policy<void *,void (*)(void *),&wil::details::UnregisterWilFeatureConfigurationChange(void *),wistd::integral_constant<unsigned __int64,0>,void *,void *,0,std::nullptr_t>>(void)",
+    "ea": "0x140008768",
+    "function_file": "functions/140008768_wil_details_unique_storage_wil_details_resource_policy_void_void_void_wil_details_UnregisterWilFeatureConfigur.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ntdll.dll",
+      "RtlUnregisterFeatureConfigurationChangeNotification"
+    ],
+    "name": "??1?$unique_storage@U?$resource_policy@PEAXP6AXPEAX@Z$1?UnregisterWilFeatureConfigurationChange@details@wil@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 503,
+    "size": 100,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil::details::RtlDllShutdownInProgress(void)",
+    "ea": "0x14000bf60",
+    "function_file": "functions/14000bf60_wil_details_RtlDllShutdownInProgress_void.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ntdll.dll",
+      "RtlDllShutdownInProgress"
+    ],
+    "name": "?RtlDllShutdownInProgress@details@wil@@YAEXZ",
+    "prototype": "unsigned __int8 __fastcall(wil::details *__hidden this)",
+    "rank_score": 492,
+    "size": 90,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "wil_details_WriteSRUMWnfUsageBuffer(wil::details_abi::heap_vector<wil_details_FeatureUsageSRUM> *)",
+    "ea": "0x14000ce3c",
+    "function_file": "functions/14000ce3c_wil_details_WriteSRUMWnfUsageBuffer_wil_details_abi_heap_vector_wil_details_FeatureUsageSRUM.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "?wil_details_WriteSRUMWnfUsageBuffer@@YAJPEAV?$heap_vector@Uwil_details_FeatureUsageSRUM@@@details_abi@wil@@@Z",
+    "prototype": "",
+    "rank_score": 471,
+    "size": 568,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "SxStartTracing(ushort const *,ushort const *,ulong,unsigned __int64 *,ushort * *)",
+    "ea": "0x14000fa1c",
+    "function_file": "functions/14000fa1c_SxStartTracing_ushort_const_ushort_const_ulong_unsigned_int64_ushort.md",
+    "matched_imports": [
+      "ADVAPI32!StartTraceW",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [
+      "BuiltInSrTasksTracing"
+    ],
+    "name": "?SxStartTracing@@YAJPEBG0KPEA_KPEAPEAG@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, const unsigned __int16 *, unsigned int, unsigned __int64 *, unsigned __int16 **)",
+    "rank_score": 464,
+    "size": 745,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil::details::MicrosoftInternalNotifyFailure(wil::FailureInfo *)",
+    "ea": "0x14000ab10",
+    "function_file": "functions/14000ab10_wil_details_MicrosoftInternalNotifyFailure_wil_FailureInfo.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "kernelbase.dll"
+    ],
+    "name": "?MicrosoftInternalNotifyFailure@details@wil@@YAXPEAUFailureInfo@2@@Z",
+    "prototype": "void __fastcall(wil::details *__hidden this, struct wil::FailureInfo *)",
+    "rank_score": 464,
+    "size": 272,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil::details::WilDynamicLoadRaiseFailFastException(_EXCEPTION_RECORD *,_CONTEXT *,ulong)",
+    "ea": "0x14000cb90",
+    "function_file": "functions/14000cb90_wil_details_WilDynamicLoadRaiseFailFastException_EXCEPTION_RECORD_CONTEXT_ulong.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "kernelbase.dll"
+    ],
+    "name": "?WilDynamicLoadRaiseFailFastException@details@wil@@YAXPEAU_EXCEPTION_RECORD@@PEAU_CONTEXT@@K@Z",
+    "prototype": "void __fastcall(wil::details *__hidden this, struct _EXCEPTION_RECORD *, struct _CONTEXT *, unsigned int)",
+    "rank_score": 462,
+    "size": 88,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "wil::details::WilApiImpl_RecordFeatureUsage(uint,uint,uint,char const *)",
+    "ea": "0x14000c8d0",
+    "function_file": "functions/14000c8d0_wil_details_WilApiImpl_RecordFeatureUsage_uint_uint_uint_char_const.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "?WilApiImpl_RecordFeatureUsage@details@wil@@YAXIIIPEBD@Z",
+    "prototype": "void __fastcall(wil::details *__hidden this, unsigned int, unsigned int, unsigned int, const char *)",
+    "rank_score": 459,
+    "size": 299,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wmain",
+    "ea": "0x140005718",
+    "function_file": "functions/140005718_wmain.md",
+    "matched_imports": [
+      "msvcrt!_wcsnicmp"
+    ],
+    "matched_strings": [
+      "ExecuteScheduledSPPCreation"
+    ],
+    "name": "wmain",
+    "prototype": "__int64 __fastcall(int, __int64)",
+    "rank_score": 454,
+    "size": 100,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil::details::RtlNtStatusToDosErrorNoTeb(long)",
+    "ea": "0x14000bfc0",
+    "function_file": "functions/14000bfc0_wil_details_RtlNtStatusToDosErrorNoTeb_long.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "?RtlNtStatusToDosErrorNoTeb@details@wil@@YAKJ@Z",
+    "prototype": "unsigned int __fastcall(wil::details *__hidden this, int)",
+    "rank_score": 452,
+    "size": 98,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "wil::details::FormatNtStatusMsg(long,ushort *,ulong)",
+    "ea": "0x140009b30",
+    "function_file": "functions/140009b30_wil_details_FormatNtStatusMsg_long_ushort_ulong.md",
+    "matched_imports": [
+      "KERNEL32!FormatMessageW",
+      "KERNEL32!GetModuleHandleW"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "?FormatNtStatusMsg@details@wil@@YAXJPEAGK@Z",
+    "prototype": "void __fastcall(DWORD dwMessageId, LPWSTR lpBuffer, DWORD nSize, unsigned int)",
+    "rank_score": 451,
+    "size": 112,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "GetRestorePointsCount(ulong *,ulong *,ulong *)",
+    "ea": "0x140002484",
+    "function_file": "functions/140002484_GetRestorePointsCount_ulong_ulong_ulong.md",
+    "matched_imports": [
+      "SRCORE!SrFreeRpPropArray",
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [],
+    "name": "?GetRestorePointsCount@@YAJPEAK00@Z",
+    "prototype": "__int64 __fastcall(unsigned int *, unsigned int *, unsigned int *)",
+    "rank_score": 431,
+    "size": 484,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 12,
+    "demangled": "GetLastFailureAsHRESULT",
+    "ea": "0x140006cc8",
+    "function_file": "functions/140006cc8_GetLastFailureAsHRESULT.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "ntdll!RtlGetLastNtStatus"
+    ],
+    "matched_strings": [],
+    "name": "GetLastFailureAsHRESULT",
+    "prototype": "__int64(void)",
+    "rank_score": 426,
+    "size": 136,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "SxCheckWBDiagSession(void)",
+    "ea": "0x14000ed4c",
+    "function_file": "functions/14000ed4c_SxCheckWBDiagSession_void.md",
+    "matched_imports": [
+      "ADVAPI32!ControlTraceW",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?SxCheckWBDiagSession@@YAJXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 421,
+    "size": 490,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "SxAllocateEventTraceProp(_EVENT_TRACE_PROPERTIES * *)",
+    "ea": "0x14000ec40",
+    "function_file": "functions/14000ec40_SxAllocateEventTraceProp_EVENT_TRACE_PROPERTIES.md",
+    "matched_imports": [
+      "ole32!CoTaskMemAlloc",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?SxAllocateEventTraceProp@@YAJPEAPEAU_EVENT_TRACE_PROPERTIES@@@Z",
+    "prototype": "__int64 __fastcall(struct _EVENT_TRACE_PROPERTIES **)",
+    "rank_score": 420,
+    "size": 262,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "CBsString::ExtendBuffer(ulong)",
+    "ea": "0x1400100b4",
+    "function_file": "functions/1400100b4_CBsString_ExtendBuffer_ulong.md",
+    "matched_imports": [
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?ExtendBuffer@CBsString@@QEAAJK@Z",
+    "prototype": "int(CBsString *__hidden this, unsigned int)",
+    "rank_score": 417,
+    "size": 173,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "Free_SR_VOLUME_PROP(_SR_VOLUME_PROP *)",
+    "ea": "0x14000d2a4",
+    "function_file": "functions/14000d2a4_Free_SR_VOLUME_PROP_SR_VOLUME_PROP.md",
+    "matched_imports": [
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?Free_SR_VOLUME_PROP@@YAXPEAU_SR_VOLUME_PROP@@@Z",
+    "prototype": "void __fastcall(struct _SR_VOLUME_PROP *)",
+    "rank_score": 415,
+    "size": 68,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CSxArrayBuilder<_SR_VOLUME_PROP,&Free_SR_VOLUME_PROP(_SR_VOLUME_PROP *),&SxDefaultInit<_SR_VOLUME_PROP>(_SR_VOLUME_PROP *),&SxDefaultTransfer<_SR_VOLUME_PROP>(_SR_VOLUME_PROP *,_SR_VOLUME_PROP *)>::Append(_SR_VOLUME_PROP *)",
+    "ea": "0x14000d56c",
+    "function_file": "functions/14000d56c_CSxArrayBuilder_SR_VOLUME_PROP_Free_SR_VOLUME_PROP_SR_VOLUME_PROP_SxDefaultInit_SR_VOLUME_PROP_SR_VOLUME_PROP_.md",
+    "matched_imports": [
+      "ole32!CoTaskMemFree",
+      "ole32!CoTaskMemRealloc"
+    ],
+    "matched_strings": [],
+    "name": "?Append@?$CSxArrayBuilder@U_SR_VOLUME_PROP@@$1?Free_SR_VOLUME_PROP@@YAXPEAU1@@Z$1??$SxDefaultInit@U_SR_VOLUME_PROP@@@@YAX0@Z$1??$SxDefaultTransfer@U_SR_VOLUME_PROP@@@@YAX00@Z@@QEAAJPEAU_SR_VOLUME_PROP@@@Z",
+    "prototype": "",
+    "rank_score": 414,
+    "size": 276,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "Free_SR_ENVIRONMENT_PROP(_SR_ENVIRONMENT_PROP *)",
+    "ea": "0x14000d168",
+    "function_file": "functions/14000d168_Free_SR_ENVIRONMENT_PROP_SR_ENVIRONMENT_PROP.md",
+    "matched_imports": [
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?Free_SR_ENVIRONMENT_PROP@@YAXPEAU_SR_ENVIRONMENT_PROP@@@Z",
+    "prototype": "void __fastcall(struct _SR_ENVIRONMENT_PROP *)",
+    "rank_score": 414,
+    "size": 53,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "Free_StringArray(ulong *,ushort * * *)",
+    "ea": "0x14000d2f0",
+    "function_file": "functions/14000d2f0_Free_StringArray_ulong_ushort.md",
+    "matched_imports": [
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?Free_StringArray@@YAXPEAKPEAPEAPEAG@Z",
+    "prototype": "void __fastcall(unsigned int *, unsigned __int16 ***)",
+    "rank_score": 414,
+    "size": 88,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SxCopyString(ushort const *,ushort * *)",
+    "ea": "0x140006c40",
+    "function_file": "functions/140006c40_SxCopyString_ushort_const_ushort.md",
+    "matched_imports": [
+      "ole32!CoTaskMemAlloc",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?SxCopyString@@YAJPEBGPEAPEAG@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *Src, unsigned __int16 **)",
+    "rank_score": 414,
+    "size": 130,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 3,
+    "demangled": "SxIsBootVolume(ushort const *)",
+    "ea": "0x140006334",
+    "function_file": "functions/140006334_SxIsBootVolume_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!ExpandEnvironmentStringsW",
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [],
+    "name": "?SxIsBootVolume@@YAJPEBG@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *)",
+    "rank_score": 414,
+    "size": 488,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CSxArrayBuilder<ushort *,&Free_String(ushort * *),&SxDefaultInit<ushort *>(ushort * *),&SxDefaultTransfer<ushort *>(ushort * *,ushort * *)>::Append(ushort * *)",
+    "ea": "0x14000d478",
+    "function_file": "functions/14000d478_CSxArrayBuilder_ushort_Free_String_ushort_SxDefaultInit_ushort_ushort_SxDefaultTransfer_ushort_ushort_ushort_A.md",
+    "matched_imports": [
+      "ole32!CoTaskMemFree",
+      "ole32!CoTaskMemRealloc"
+    ],
+    "matched_strings": [],
+    "name": "?Append@?$CSxArrayBuilder@PEAG$1?Free_String@@YAXPEAPEAG@Z$1??$SxDefaultInit@PEAG@@YAX0@Z$1??$SxDefaultTransfer@PEAG@@YAX00@Z@@QEAAJPEAPEAG@Z",
+    "prototype": "",
+    "rank_score": 413,
+    "size": 236,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "wil::GetFailureLogString(ushort *,unsigned __int64,wil::FailureInfo const &)",
+    "ea": "0x140009e34",
+    "function_file": "functions/140009e34_wil_GetFailureLogString_ushort_unsigned_int64_wil_FailureInfo_const.md",
+    "matched_imports": [
+      "KERNEL32!FormatMessageW",
+      "KERNEL32!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "?GetFailureLogString@wil@@YAJPEAG_KAEBUFailureInfo@1@@Z",
+    "prototype": "__int64 __fastcall(wil *__hidden this, unsigned __int16 *, unsigned __int64, const struct wil::FailureInfo *)",
+    "rank_score": 413,
+    "size": 694,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CSxArrayBuilder<ushort *,&Free_String(ushort * *),&SxDefaultInit<ushort *>(ushort * *),&SxDefaultTransfer<ushort *>(ushort * *,ushort * *)>::~CSxArrayBuilder<ushort *,&Free_String(ushort * *),&SxDefaultInit<ushort *>(ushort * *),&SxDefaultTransfer<ushort *>(ushort * *,ushort * *)>(void)",
+    "ea": "0x14000d350",
+    "function_file": "functions/14000d350_CSxArrayBuilder_ushort_Free_String_ushort_SxDefaultInit_ushort_ushort_SxDefaultTransfer_ushort_ushort_ushort_C.md",
+    "matched_imports": [
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "??1?$CSxArrayBuilder@PEAG$1?Free_String@@YAXPEAPEAG@Z$1??$SxDefaultInit@PEAG@@YAX0@Z$1??$SxDefaultTransfer@PEAG@@YAX00@Z@@AEAA@XZ",
+    "prototype": "",
+    "rank_score": 412,
+    "size": 92,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "wil::details::_dynamic_atexit_destructor_for__g_threadFailureCallbacks__",
+    "ea": "0x140010b90",
+    "function_file": "functions/140010b90_wil_details_dynamic_atexit_destructor_for_g_threadFailureCallbacks.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "wil::details::_dynamic_atexit_destructor_for__g_threadFailureCallbacks__",
+    "prototype": "",
+    "rank_score": 411,
+    "size": 94,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "wil::details::GetContextAndNotifyFailure(wil::FailureInfo *,char *,unsigned __int64)",
+    "ea": "0x140009be0",
+    "function_file": "functions/140009be0_wil_details_GetContextAndNotifyFailure_wil_FailureInfo_char_unsigned_int64.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "?GetContextAndNotifyFailure@details@wil@@YAXPEAUFailureInfo@2@PEAD_K@Z",
+    "prototype": "void __fastcall(wil::details *__hidden this, struct wil::FailureInfo *, char *, unsigned __int64)",
+    "rank_score": 410,
+    "size": 518,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "wil::details_abi::FeatureStateData::RecordUsage(void)",
+    "ea": "0x14000b2bc",
+    "function_file": "functions/14000b2bc_wil_details_abi_FeatureStateData_RecordUsage_void.md",
+    "matched_imports": [
+      "KERNEL32!AcquireSRWLockExclusive",
+      "KERNEL32!ReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "?RecordUsage@FeatureStateData@details_abi@wil@@QEAAXXZ",
+    "prototype": "void __fastcall(PSRWLOCK SRWLock)",
+    "rank_score": 409,
+    "size": 141,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SxRegWriteULONGLONG(HKEY__ *,ushort const *,unsigned __int64)",
+    "ea": "0x140005c10",
+    "function_file": "functions/140005c10_SxRegWriteULONGLONG_HKEY_ushort_const_unsigned_int64.md",
+    "matched_imports": [
+      "ADVAPI32!RegSetValueExW"
+    ],
+    "matched_strings": [
+      "LastMainenanceTaskRunTimeStamp",
+      "SxRegWriteULONGLONG"
+    ],
+    "name": "?SxRegWriteULONGLONG@@YAJPEAUHKEY__@@PEBG_K@Z",
+    "prototype": "__int64 __fastcall(HKEY hKey, const unsigned __int16 *, unsigned __int64)",
+    "rank_score": 305,
+    "size": 183,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "PublishMaintenanceTasksSQM(ISharedProtectionPoints *)",
+    "ea": "0x140002ae8",
+    "function_file": "functions/140002ae8_PublishMaintenanceTasksSQM_ISharedProtectionPoints.md",
+    "matched_imports": [
+      "ntdll!WinSqmAddToStreamEx"
+    ],
+    "matched_strings": [
+      "PublishMaintenanceTasksSQM"
+    ],
+    "name": "?PublishMaintenanceTasksSQM@@YAJPEAUISharedProtectionPoints@@@Z",
+    "prototype": "__int64 __fastcall(struct ISharedProtectionPoints *)",
+    "rank_score": 289,
+    "size": 814,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "IsSafeDocsTaskRunning",
+    "ea": "0x14000372c",
+    "function_file": "functions/14000372c_IsSafeDocsTaskRunning.md",
+    "matched_imports": [
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [
+      "IsSafeDocsTaskRunning"
+    ],
+    "name": "IsSafeDocsTaskRunning",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 280,
+    "size": 539,
+    "tags": [
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "_DeletePartialSPPGroups(ISharedProtectionPoints *)",
+    "ea": "0x1400047e4",
+    "function_file": "functions/1400047e4_DeletePartialSPPGroups_ISharedProtectionPoints.md",
+    "matched_imports": [
+      "SPP!SppFreeGroupPropArray"
+    ],
+    "matched_strings": [
+      "_DeletePartialSPPGroups"
+    ],
+    "name": "?_DeletePartialSPPGroups@@YAJPEAUISharedProtectionPoints@@@Z",
+    "prototype": "__int64 __fastcall(struct ISharedProtectionPoints *)",
+    "rank_score": 257,
+    "size": 643,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SrTranslatePath(_SR_RP_PROP const *,ushort const *,CBsString *,CBsString *,CBsString *,CBsString *,ulong *)",
+    "ea": "0x14000de58",
+    "function_file": "functions/14000de58_SrTranslatePath_SR_RP_PROP_const_ushort_const_CBsString_CBsString_CBsString_CBsString_ulong.md",
+    "matched_imports": [
+      "msvcrt!_wcsnicmp"
+    ],
+    "matched_strings": [
+      "SrTranslatePath"
+    ],
+    "name": "?SrTranslatePath@@YAJPEBU_SR_RP_PROP@@PEBGPEAVCBsString@@222PEAK@Z",
+    "prototype": "int(const struct _SR_RP_PROP *, const unsigned __int16 *, struct CBsString *, struct CBsString *, struct CBsString *, struct CBsString *, unsigned int *)",
+    "rank_score": 251,
+    "size": 658,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "SxRegReadDWORD(HKEY__ *,ushort const *,ulong *,int)",
+    "ea": "0x14000595c",
+    "function_file": "functions/14000595c_SxRegReadDWORD_HKEY_ushort_const_ulong_int.md",
+    "matched_imports": [
+      "ADVAPI32!RegQueryValueExW"
+    ],
+    "matched_strings": [
+      "SxRegReadDWORD"
+    ],
+    "name": "?SxRegReadDWORD@@YAJPEAUHKEY__@@PEBGPEAKH@Z",
+    "prototype": "__int64 __fastcall(HKEY hKey, LPCWSTR lpValueName, unsigned int *, int)",
+    "rank_score": 250,
+    "size": 350,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "SxRegReadULONGLONG(HKEY__ *,ushort const *,unsigned __int64 *,int)",
+    "ea": "0x140005ac0",
+    "function_file": "functions/140005ac0_SxRegReadULONGLONG_HKEY_ushort_const_unsigned_int64_int.md",
+    "matched_imports": [
+      "ADVAPI32!RegQueryValueExW"
+    ],
+    "matched_strings": [
+      "SxRegReadULONGLONG"
+    ],
+    "name": "?SxRegReadULONGLONG@@YAJPEAUHKEY__@@PEBGPEA_KH@Z",
+    "prototype": "__int64 __fastcall(HKEY hKey, LPCWSTR lpValueName, unsigned __int64 *, int)",
+    "rank_score": 247,
+    "size": 327,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 3,
+    "demangled": "CheckSREnabled(ISharedProtectionPoints *,int *,ulong *)",
+    "ea": "0x140001b3c",
+    "function_file": "functions/140001b3c_CheckSREnabled_ISharedProtectionPoints_int_ulong.md",
+    "matched_imports": [
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?CheckSREnabled@@YAJPEAUISharedProtectionPoints@@PEAHPEAK@Z",
+    "prototype": "__int64 __fastcall(struct ISharedProtectionPoints *, int *, unsigned int *)",
+    "rank_score": 236,
+    "size": 682,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "SrValidateRestorePoint(_SR_RP_PROP const *,int)",
+    "ea": "0x14000e0f0",
+    "function_file": "functions/14000e0f0_SrValidateRestorePoint_SR_RP_PROP_const_int.md",
+    "matched_imports": [
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [],
+    "name": "?SrValidateRestorePoint@@YAJPEBU_SR_RP_PROP@@H@Z",
+    "prototype": "__int64 __fastcall(const struct _SR_RP_PROP *, int)",
+    "rank_score": 234,
+    "size": 557,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 50,
+    "demangled": "CSxFunctionTracer::CSxFunctionTracer(char const *,ushort,ushort)",
+    "ea": "0x14000e324",
+    "function_file": "functions/14000e324_CSxFunctionTracer_CSxFunctionTracer_char_const_ushort_ushort.md",
+    "matched_imports": [
+      "SPP!SxTracerGetThreadContextRetail"
+    ],
+    "matched_strings": [],
+    "name": "??0CSxFunctionTracer@@QEAA@PEBDGG@Z",
+    "prototype": "CSxFunctionTracer *__fastcall(CSxFunctionTracer *__hidden this, const char *, unsigned __int16, unsigned __int16)",
+    "rank_score": 229,
+    "size": 240,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 38,
+    "demangled": "WPP_SF_",
+    "ea": "0x140002e1c",
+    "function_file": "functions/140002e1c_WPP_SF.md",
+    "matched_imports": [
+      "ADVAPI32!TraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 225,
+    "size": 33,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 13,
+    "demangled": "CBsString::_Release(void)",
+    "ea": "0x140010744",
+    "function_file": "functions/140010744_CBsString_Release_void.md",
+    "matched_imports": [
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?_Release@CBsString@@AEAAXXZ",
+    "prototype": "void __fastcall(CBsString *__hidden this)",
+    "rank_score": 224,
+    "size": 56,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "CSxFunctionTracer::_LogCommon(ushort const *,ulong,ushort,ushort const *,char *)",
+    "ea": "0x14000e820",
+    "function_file": "functions/14000e820_CSxFunctionTracer_LogCommon_ushort_const_ulong_ushort_ushort_const_char.md",
+    "matched_imports": [
+      "msvcrt!_vsnwprintf"
+    ],
+    "matched_strings": [],
+    "name": "?_LogCommon@CSxFunctionTracer@@AEBAXPEBGKG0PEAD@Z",
+    "prototype": "void __usercall(CSxFunctionTracer *__hidden this@<rcx>, const unsigned __int16 *@<rdx>, unsigned int@<r8d>, unsigned __int16@<r9w>, wchar_t *Format, char *)",
+    "rank_score": 218,
+    "size": 360,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "HRESULTFromNTSTATUS",
+    "ea": "0x140006d58",
+    "function_file": "functions/140006d58_HRESULTFromNTSTATUS.md",
+    "matched_imports": [
+      "ntdll!RtlNtStatusToDosError"
+    ],
+    "matched_strings": [],
+    "name": "HRESULTFromNTSTATUS",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 215,
+    "size": 127,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CBsString::_AllocateData(ulong,ushort * *,ulong *)",
+    "ea": "0x1400103f0",
+    "function_file": "functions/1400103f0_CBsString_AllocateData_ulong_ushort_ulong.md",
+    "matched_imports": [
+      "ole32!CoTaskMemAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?_AllocateData@CBsString@@CAJKPEAPEAGPEAK@Z",
+    "prototype": "__int64 __fastcall(unsigned int, unsigned __int16 **, unsigned int *)",
+    "rank_score": 213,
+    "size": 182,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CSxArrayBuilder<_SR_ENVIRONMENT_PROP,&Free_SR_ENVIRONMENT_PROP(_SR_ENVIRONMENT_PROP *),&SxDefaultInit<_SR_ENVIRONMENT_PROP>(_SR_ENVIRONMENT_PROP *),&SxDefaultTransfer<_SR_ENVIRONMENT_PROP>(_SR_ENVIRONMENT_PROP *,_SR_ENVIRONMENT_PROP *)>::~CSxArrayBuilder<_SR_ENVIRONMENT_PROP,&Free_SR_ENVIRONMENT_PROP(_SR_ENVIRONMENT_PROP *),&SxDefaultInit<_SR_ENVIRONMENT_PROP>(_SR_ENVIRONMENT_PROP *),&SxDefaultTransfer<_SR_ENVIRONMENT_PROP>(_SR_ENVIRONMENT_PROP *,_SR_ENVIRONMENT_PROP *)>(void)",
+    "ea": "0x14000d3b4",
+    "function_file": "functions/14000d3b4_CSxArrayBuilder_SR_ENVIRONMENT_PROP_Free_SR_ENVIRONMENT_PROP_SR_ENVIRONMENT_PROP_SxDefaultInit_SR_ENVIRONMENT_.md",
+    "matched_imports": [
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "??1?$CSxArrayBuilder@U_SR_ENVIRONMENT_PROP@@$1?Free_SR_ENVIRONMENT_PROP@@YAXPEAU1@@Z$1??$SxDefaultInit@U_SR_ENVIRONMENT_PROP@@@@YAX0@Z$1??$SxDefaultTransfer@U_SR_ENVIRONMENT_PROP@@@@YAX00@Z@@AEAA@XZ",
+    "prototype": "",
+    "rank_score": 213,
+    "size": 90,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CSxArrayBuilder<_SR_VOLUME_PROP,&Free_SR_VOLUME_PROP(_SR_VOLUME_PROP *),&SxDefaultInit<_SR_VOLUME_PROP>(_SR_VOLUME_PROP *),&SxDefaultTransfer<_SR_VOLUME_PROP>(_SR_VOLUME_PROP *,_SR_VOLUME_PROP *)>::~CSxArrayBuilder<_SR_VOLUME_PROP,&Free_SR_VOLUME_PROP(_SR_VOLUME_PROP *),&SxDefaultInit<_SR_VOLUME_PROP>(_SR_VOLUME_PROP *),&SxDefaultTransfer<_SR_VOLUME_PROP>(_SR_VOLUME_PROP *,_SR_VOLUME_PROP *)>(void)",
+    "ea": "0x14000d414",
+    "function_file": "functions/14000d414_CSxArrayBuilder_SR_VOLUME_PROP_Free_SR_VOLUME_PROP_SR_VOLUME_PROP_SxDefaultInit_SR_VOLUME_PROP_SR_VOLUME_PROP_.md",
+    "matched_imports": [
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "??1?$CSxArrayBuilder@U_SR_VOLUME_PROP@@$1?Free_SR_VOLUME_PROP@@YAXPEAU1@@Z$1??$SxDefaultInit@U_SR_VOLUME_PROP@@@@YAX0@Z$1??$SxDefaultTransfer@U_SR_VOLUME_PROP@@@@YAX00@Z@@AEAA@XZ",
+    "prototype": "",
+    "rank_score": 213,
+    "size": 92,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 10,
+    "demangled": "WPP_SF_d",
+    "ea": "0x140002e44",
+    "function_file": "functions/140002e44_WPP_SF_d.md",
+    "matched_imports": [
+      "ADVAPI32!TraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_d",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 210,
+    "size": 55,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "WPP_SF_S",
+    "ea": "0x1400054f4",
+    "function_file": "functions/1400054f4_WPP_SF_S.md",
+    "matched_imports": [
+      "ADVAPI32!TraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_S",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 207,
+    "size": 90,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "WPP_SF_sSd",
+    "ea": "0x140005658",
+    "function_file": "functions/140005658_WPP_SF_sSd.md",
+    "matched_imports": [
+      "ADVAPI32!TraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_sSd",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 183,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "wil::details::GetLastErrorFailHr(void)",
+    "ea": "0x14000a158",
+    "function_file": "functions/14000a158_wil_details_GetLastErrorFailHr_void.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?GetLastErrorFailHr@details@wil@@YAJXZ",
+    "prototype": "__int64 __fastcall(wil::details *__hidden this)",
+    "rank_score": 205,
+    "size": 78,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil::details::ThreadFailureCallbackHolder::GetThreadContext(wil::FailureInfo *,wil::details::ThreadFailureCallbackHolder *,char *,unsigned __int64)",
+    "ea": "0x14000a2d8",
+    "function_file": "functions/14000a2d8_wil_details_ThreadFailureCallbackHolder_GetThreadContext_wil_FailureInfo_wil_details_ThreadFailureCallbackHold.md",
+    "matched_imports": [
+      "msvcrt!memcpy_s"
+    ],
+    "matched_strings": [],
+    "name": "?GetThreadContext@ThreadFailureCallbackHolder@details@wil@@SA_NPEAUFailureInfo@3@PEAV123@PEAD_K@Z",
+    "prototype": "bool __fastcall(struct wil::FailureInfo *, struct wil::details::ThreadFailureCallbackHolder *, char *, unsigned __int64)",
+    "rank_score": 204,
+    "size": 221,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::GetThreadLocalDataCache(bool)",
+    "ea": "0x14000a3bc",
+    "function_file": "functions/14000a3bc_wil_details_abi_GetThreadLocalDataCache_bool.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "?GetThreadLocalDataCache@details_abi@wil@@YAPEAUThreadLocalData@12@_N@Z",
+    "prototype": "struct wil::details_abi::ThreadLocalData *__fastcall(wil::details_abi *__hidden this, bool)",
+    "rank_score": 204,
+    "size": 187,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 24,
+    "demangled": "memset_0",
+    "ea": "0x14001094e",
+    "function_file": "functions/14001094e_memset_0.md",
+    "matched_imports": [
+      "msvcrt!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 124,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__dllonexit_0",
+    "ea": "0x140001b0e",
+    "function_file": "functions/140001b0e_dllonexit_0.md",
+    "matched_imports": [
+      "msvcrt!__dllonexit"
+    ],
+    "matched_strings": [],
+    "name": "__dllonexit_0",
+    "prototype": "",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "memcpy_0",
+    "ea": "0x140010942",
+    "function_file": "functions/140010942_memcpy_0.md",
+    "matched_imports": [
+      "msvcrt!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 103,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil::details::ReportFailure_GetLastError<3>(void *,uint,char const *,char const *,char const *,void *)",
+    "ea": "0x140007cf0",
+    "function_file": "functions/140007cf0_wil_details_ReportFailure_GetLastError_3_void_uint_char_const_char_const_char_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\internal\\sdk\\inc\\wil\\opensource\\wil\\resource.h",
+      "onecore\\internal\\sdk\\inc\\wil\\opensource\\wil\\resource.h"
+    ],
+    "name": "??$ReportFailure_GetLastError@$02@details@wil@@YAKPEAXIPEBD110@Z",
+    "prototype": "",
+    "rank_score": 85,
+    "size": 119,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "wil::details::in1diag3::FailFast_Unexpected(void *,uint,char const *)",
+    "ea": "0x140009834",
+    "function_file": "functions/140009834_wil_details_in1diag3_FailFast_Unexpected_void_uint_char_const.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\internal\\sdk\\inc\\wil\\opensource\\wil\\resource.h"
+    ],
+    "name": "?FailFast_Unexpected@in1diag3@details@wil@@YAXPEAXIPEBD@Z",
+    "prototype": "void __fastcall __noreturn(wil::details::in1diag3 *__hidden this, void *, unsigned int, const char *)",
+    "rank_score": 45,
+    "size": 32,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 31,
+    "demangled": "__security_check_cookie",
+    "ea": "0x140010980",
+    "function_file": "functions/140010980_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 39,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x140011010",
+    "function_file": "functions/140011010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x1400108c8",
+    "function_file": "functions/1400108c8_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "CBsString::_CombinePathImpl(ushort const *,ushort const *,ushort const *,ushort const *,ushort const *,ushort const *,ushort const *,ushort const *,ushort const *,ushort const *)",
+    "ea": "0x140010574",
+    "function_file": "functions/140010574_CBsString_CombinePathImpl_ushort_const_ushort_const_ushort_const_ushort_const_ushort_const_ushort_const_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_CombinePathImpl@CBsString@@AEAAJPEBG000000000@Z",
+    "prototype": "__int64 __fastcall(CBsString *__hidden this, const unsigned __int16 *, const unsigned __int16 *, const unsigned __int16 *, const unsigned __int16 *, const unsigned __int16 *, const unsigned __int16 *, const unsigned __int16 *, const unsigned __int16 *, const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 19,
+    "size": 456,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x1400109c0",
+    "function_file": "functions/1400109c0_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "operator delete(void *)",
+    "ea": "0x1400011d4",
+    "function_file": "functions/1400011d4_operator_delete_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??3@YAXPEAX@Z",
+    "prototype": "void __cdecl(void *Block)",
+    "rank_score": 13,
+    "size": 5,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CBsString::BoundUpdateLength(ulong)",
+    "ea": "0x14000ff4c",
+    "function_file": "functions/14000ff4c_CBsString_BoundUpdateLength_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?BoundUpdateLength@CBsString@@QEAAXK@Z",
+    "prototype": "void __fastcall(CBsString *__hidden this, unsigned int)",
+    "rank_score": 12,
+    "size": 51,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "RtlpImageNtHeader",
+    "ea": "0x1400015bc",
+    "function_file": "functions/1400015bc_RtlpImageNtHeader.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlpImageNtHeader",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 81,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::UsageIndex<wil_details_ServiceReportingKind,uint,0>::RecordUsage(wil_details_ServiceReportingKind,uint,uint)",
+    "ea": "0x14000b284",
+    "function_file": "functions/14000b284_wil_details_abi_UsageIndex_wil_details_ServiceReportingKind_uint_0_RecordUsage_wil_details_ServiceReportingKin.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?RecordUsage@?$UsageIndex@W4wil_details_ServiceReportingKind@@I$0A@@details_abi@wil@@QEAA_NW4wil_details_ServiceReportingKind@@II@Z",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 49,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::UsageIndex<wil_details_ServiceReportingKind,uint,2>::RecordUsage(wil_details_ServiceReportingKind,uint,uint)",
+    "ea": "0x14000b250",
+    "function_file": "functions/14000b250_wil_details_abi_UsageIndex_wil_details_ServiceReportingKind_uint_2_RecordUsage_wil_details_ServiceReportingKin.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?RecordUsage@?$UsageIndex@W4wil_details_ServiceReportingKind@@I$01@details_abi@wil@@QEAA_NW4wil_details_ServiceReportingKind@@II@Z",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "wil::details::_dynamic_initializer_for__g_threadFailureCallbacks__",
+    "ea": "0x1400011c0",
+    "function_file": "functions/1400011c0_wil_details_dynamic_initializer_for_g_threadFailureCallbacks.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil::details::_dynamic_initializer_for__g_threadFailureCallbacks__",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "wil::details::HrToNtStatus(long)",
+    "ea": "0x14000a5cc",
+    "function_file": "functions/14000a5cc_wil_details_HrToNtStatus_long.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?HrToNtStatus@details@wil@@YAJJ@Z",
+    "prototype": "__int64 __fastcall(wil::details *__hidden this, int)",
+    "rank_score": 10,
+    "size": 444,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "wil::details::in1diag3::_FailFast_GetLastError(void *,uint,char const *)",
+    "ea": "0x14000cdbc",
+    "function_file": "functions/14000cdbc_wil_details_in1diag3_FailFast_GetLastError_void_uint_char_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_FailFast_GetLastError@in1diag3@details@wil@@YAXPEAXIPEBD@Z",
+    "prototype": "void __fastcall __noreturn(wil::details::in1diag3 *__hidden this, void *, unsigned int, const char *)",
+    "rank_score": 10,
+    "size": 20,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "CBsString::Append(ushort const *)",
+    "ea": "0x14000fe8c",
+    "function_file": "functions/14000fe8c_CBsString_Append_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Append@CBsString@@QEAAJPEBG@Z",
+    "prototype": "__int64 __fastcall(CBsString *__hidden this, const unsigned __int16 *)",
+    "rank_score": 8,
+    "size": 72,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "CBsString::_Append(ulong,ulong,ulong * const,ushort const * * const)",
+    "ea": "0x1400104ac",
+    "function_file": "functions/1400104ac_CBsString_Append_ulong_ulong_ulong_const_ushort_const_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Append@CBsString@@AEAAJKKQEAKQEAPEBG@Z",
+    "prototype": "__int64 __fastcall(CBsString *__hidden this, unsigned int, unsigned int, unsigned int *const, const unsigned __int16 **const)",
+    "rank_score": 8,
+    "size": 191,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "wil::details::WilFailFast(wil::FailureInfo const &)",
+    "ea": "0x14000cbf0",
+    "function_file": "functions/14000cbf0_wil_details_WilFailFast_wil_FailureInfo_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?WilFailFast@details@wil@@YAXAEBUFailureInfo@2@@Z",
+    "prototype": "void __fastcall __noreturn(wil::details *__hidden this, const struct wil::FailureInfo *)",
+    "rank_score": 8,
+    "size": 167,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "wil::details_abi::UsageIndexes::Record(void)",
+    "ea": "0x14000afc8",
+    "function_file": "functions/14000afc8_wil_details_abi_UsageIndexes_Record_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Record@UsageIndexes@details_abi@wil@@QEAAXXZ",
+    "prototype": "void __fastcall(wil::details_abi::UsageIndexes *__hidden this)",
+    "rank_score": 8,
+    "size": 261,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "CBsString::Format(ushort const *,...)",
+    "ea": "0x140010168",
+    "function_file": "functions/140010168_CBsString_Format_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Format@CBsString@@QEAAJPEBGZZ",
+    "prototype": "__int64(CBsString *__hidden this, const unsigned __int16 *, ...)",
+    "rank_score": 6,
+    "size": 54,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "_alloca_probe",
+    "ea": "0x140010a10",
+    "function_file": "functions/140010a10_alloca_probe.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_alloca_probe",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 77,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "wil::details::ReportFailure_Hr<2>(void *,uint,char const *,char const *,char const *,void *,long,wil::FailureFlags)",
+    "ea": "0x140007e60",
+    "function_file": "functions/140007e60_wil_details_ReportFailure_Hr_2_void_uint_char_const_char_const_char_const_void_long_wil_FailureFlags.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$ReportFailure_Hr@$01@details@wil@@YAXPEAXIPEBD110JW4FailureFlags@1@@Z",
+    "prototype": "__int64 __fastcall(int, int, int, int, __int64, __int64, wil::details *)",
+    "rank_score": 6,
+    "size": 92,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)",
+    "ea": "0x14000bf30",
+    "function_file": "functions/14000bf30_wil_details_in1diag3_Return_Hr_void_uint_char_const_long.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Return_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z",
+    "prototype": "void(wil::details::in1diag3 *__hidden this, void *, unsigned int, const char *, int)",
+    "rank_score": 6,
+    "size": 29,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "wil::details::in1diag3::_FailFastImmediate_Unexpected(void)",
+    "ea": "0x14000cdac",
+    "function_file": "functions/14000cdac_wil_details_in1diag3_FailFastImmediate_Unexpected_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_FailFastImmediate_Unexpected@in1diag3@details@wil@@YAXXZ",
+    "prototype": "void __fastcall __noreturn(wil::details::in1diag3 *__hidden this)",
+    "rank_score": 6,
+    "size": 7,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "wil::details_abi::UsageIndexes::UsageIndexes(void)",
+    "ea": "0x14000854c",
+    "function_file": "functions/14000854c_wil_details_abi_UsageIndexes_UsageIndexes_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??0UsageIndexes@details_abi@wil@@QEAA@XZ",
+    "prototype": "__int64 __fastcall(wil::details_abi::UsageIndexes *__hidden this)",
+    "rank_score": 5,
+    "size": 192,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "atexit",
+    "ea": "0x1400018ec",
+    "function_file": "functions/1400018ec_atexit.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "atexit",
+    "prototype": "int __cdecl(void (__cdecl *)())",
+    "rank_score": 4,
+    "size": 23,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "wistd::__function::__func<_lambda_8db0ce862824541f40dfb767113f1e28_,bool (void *,unsigned __int64,void *,unsigned __int64,uint)>::__move(wistd::__function::__base<bool (void *,unsigned __int64,void *,unsigned __int64,uint)> *)",
+    "ea": "0x14000ce00",
+    "function_file": "functions/14000ce00_wistd_function_func_lambda_8db0ce862824541f40dfb767113f1e28_bool_void_unsigned_int64_void_unsigned_int64_uint_.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?__move@?$__func@V_lambda_8db0ce862824541f40dfb767113f1e28_@@$$A6A_NPEAX_K01I@Z@__function@wistd@@UEAAXPEAV?$__base@$$A6A_NPEAX_K01I@Z@23@@Z",
+    "prototype": "",
+    "rank_score": 0,
+    "size": 29,
+    "tags": []
+  }
+]

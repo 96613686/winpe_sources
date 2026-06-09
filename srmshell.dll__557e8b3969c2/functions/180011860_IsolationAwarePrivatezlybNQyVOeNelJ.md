@@ -1,0 +1,36 @@
+# IsolationAwarePrivatezlybNQyVOeNelJ
+
+- ea: `0x180011860`
+- end: `0x180011867`
+- name: `IsolationAwarePrivatezlybNQyVOeNelJ`
+- size: `7`
+- prototype: `HMODULE __stdcall(LPCWSTR lpLibFileName)`
+- caller_count: `2`
+- callee_count: `0`
+- tags: `loader_planting`
+
+## callers
+
+- `0x1800111c8`
+- `0x180011a40`
+
+## import_xrefs
+
+- `api-ms-win-core-libraryloader-l1-2-1!LoadLibraryW` at `0x180011860`
+
+## pseudocode
+
+```c
+// attributes: thunk
+HMODULE __stdcall IsolationAwarePrivatezlybNQyVOeNelJ(LPCWSTR lpLibFileName)
+{
+  return LoadLibraryW(lpLibFileName);
+}
+
+```
+
+## disassembly
+
+```asm
+0x180011860  jmp     cs:__imp_LoadLibraryW
+```

@@ -1,0 +1,239 @@
+# S3TempCredentialCacheEntry::ParseAuthorizationOptions(IMemObj *,wchar_t const *,CAutoP<ADFSOptions> &,CAutoP<STSOptions> &,wchar_t const *)
+
+- ea: `0x101a3c620`
+- end: `0x101a3d391`
+- name: `?ParseAuthorizationOptions@S3TempCredentialCacheEntry@@AEAAJPEAVIMemObj@@PEB_WAEAV?$CAutoP@VADFSOptions@@@@AEAV?$CAutoP@VSTSOptions@@@@1@Z`
+- size: `3441`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `7`
+- tags: `authz_impersonation`
+
+## callers
+
+- `0x101a3c250`
+
+## callees
+
+- `0x100401490`
+- `0x10061fb80`
+- `0x1010b6540`
+- `0x101a3be50`
+- `0x101a3c620`
+- `0x1022df430`
+- `0x1022e12f0`
+
+## import_xrefs
+
+- `sqlTsEs!?WszFromWsz@@YAPEA_WPEAVIMemObj@@PEB_WPEAH@Z` at `0x101a3c90d`
+- `sqlTsEs!?WszFromWsz@@YAPEA_WPEAVIMemObj@@PEB_WPEAH@Z` at `0x101a3c93a`
+- `sqlTsEs!?WszFromWsz@@YAPEA_WPEAVIMemObj@@PEB_WPEAH@Z` at `0x101a3cc82`
+- `sqlTsEs!?WszFromWsz@@YAPEA_WPEAVIMemObj@@PEB_WPEAH@Z` at `0x101a3ce06`
+- `sqlTsEs!?WszFromWsz@@YAPEA_WPEAVIMemObj@@PEB_WPEAH@Z` at `0x101a3cea7`
+- `sqlTsEs!?WszFromWsz@@YAPEA_WPEAVIMemObj@@PEB_WPEAH@Z` at `0x101a3c90d`
+- `sqlTsEs!?WszFromWsz@@YAPEA_WPEAVIMemObj@@PEB_WPEAH@Z` at `0x101a3c93a`
+- `sqlTsEs!?WszFromWsz@@YAPEA_WPEAVIMemObj@@PEB_WPEAH@Z` at `0x101a3cc82`
+- `sqlTsEs!?WszFromWsz@@YAPEA_WPEAVIMemObj@@PEB_WPEAH@Z` at `0x101a3ce06`
+- `sqlTsEs!?WszFromWsz@@YAPEA_WPEAVIMemObj@@PEB_WPEAH@Z` at `0x101a3cea7`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101a3c8d6`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101a3cee5`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101a3c8d6`
+- `sqldk!??2@YAPEAX_KPEAVIMemObj@@PEBDHE@Z` at `0x101a3cee5`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101a3cc53`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101a3cc53`
+- `sqldk!SystemThread_TlsIndex` at `0x101a3cbdf`
+- `sqldk!SystemThread_TlsOffset` at `0x101a3cbe8`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101a3cd19`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101a3cf75`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101a3cfe3`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101a3d07d`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101a3d101`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101a3d144`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101a3d181`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101a3d1c7`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101a3d216`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101a3cd19`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101a3cf75`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101a3cfe3`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101a3d07d`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101a3d101`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101a3d144`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101a3d181`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101a3d1c7`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101a3d216`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3c920`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3c94e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3cc92`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3cd01`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3cd0b`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3cd22`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3cd2b`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3cd35`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3cd3f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3ce16`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3ceb7`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3cf58`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3cf66`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3cfaa`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3cfb5`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3cfc0`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3cfcb`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3cfd5`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3cff8`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d002`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d00c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d018`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d024`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d02e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d038`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d065`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d06f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d088`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d092`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d09c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d0a8`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d0b4`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d0be`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d0c8`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d0e9`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d0f3`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d10a`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d12c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d136`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d14d`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d169`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d173`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d18a`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d193`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d1af`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d1b9`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d1d0`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d1d9`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d1e2`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d1fe`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d208`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d21f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d228`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d231`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d23a`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d24a`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d253`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d25c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d265`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d26e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d27e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d287`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d290`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d299`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d2a2`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d2ab`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d2bb`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d2c4`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d2cd`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d2d6`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d2df`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d2e8`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d2f1`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d304`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d30d`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d316`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d31f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d328`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d331`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d33a`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3c920`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3c94e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3cc92`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3cd01`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3cd0b`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3cd22`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3cd2b`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3cd35`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3cd3f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3ce16`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3ceb7`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3cf58`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3cf66`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3cfaa`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3cfb5`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3cfc0`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3cfcb`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3cfd5`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3cff8`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d002`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d00c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d018`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d024`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d02e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d038`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d065`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d06f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d088`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d092`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d09c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d0a8`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d0b4`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d0be`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d0c8`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d0e9`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d0f3`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d10a`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d12c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d136`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d14d`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d169`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d173`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d18a`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d193`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d1af`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d1b9`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d1d0`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d1d9`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d1e2`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d1fe`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d208`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d21f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d228`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d231`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d23a`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d24a`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d253`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d25c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d265`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d26e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d27e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d287`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d290`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d299`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d2a2`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d2ab`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d2bb`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d2c4`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d2cd`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d2d6`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d2df`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d2e8`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d2f1`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d304`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d30d`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d316`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d31f`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d328`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d331`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101a3d33a`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101a3c716`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101a3c76a`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101a3c7cf`
+- `api-ms-win-crt-string-l1-1-0!_wcsicmp` at `0x101a3c860`
+
+## string_xrefs
+
+- `0x101a3c8c5`: `sql\ntdbms\storeng\dfs\manager\S3TempCredential.cpp`
+- `0x101a3ced4`: `sql\ntdbms\storeng\dfs\manager\S3TempCredential.cpp`
+- `0x101a3cc40`: `"sql\\ntdbms\\storeng\\dfs\\manager\\S3TempCredential.cpp"`
+
+## pseudocode
+
+```c
+
+```

@@ -1,0 +1,174 @@
+# RecoveryUnit::Destroy(void)
+
+- ea: `0x101cfb1a0`
+- end: `0x101cfbcd9`
+- name: `?Destroy@RecoveryUnit@@EEAAXXZ`
+- size: `2873`
+- prototype: `void __fastcall(RecoveryUnit *__hidden this)`
+- caller_count: `0`
+- callee_count: `26`
+- tags: `service_task`
+
+## callees
+
+- `0x10041c100`
+- `0x10042d820`
+- `0x10045e1b8`
+- `0x100bcdb40`
+- `0x1014cf160`
+- `0x101578c50`
+- `0x1015ca7f0`
+- `0x101626bc0`
+- `0x101683d40`
+- `0x1018165b0`
+- `0x101a56770`
+- `0x101b45790`
+- `0x101bbf820`
+- `0x101bc2fa0`
+- `0x101bf8090`
+- `0x101c01a80`
+- `0x101cab250`
+- `0x101cb0700`
+- `0x101cfb080`
+- `0x101cfb1a0`
+- `0x101d111d0`
+- `0x101d23890`
+- `0x101d481b0`
+- `0x101d921a0`
+- `0x102341080`
+- `0x1023aef40`
+
+## import_xrefs
+
+- `sqldk!?Free@SOS_PartitionedHeap@@QEAAXPEAX@Z` at `0x101cfbc63`
+- `sqldk!?Free@SOS_PartitionedHeap@@QEAAXPEAX@Z` at `0x101cfbc63`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101cfb1ea`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101cfb635`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101cfb1ea`
+- `sqldk!?utassert_fail@@YAXIPEBD0H0ZZ` at `0x101cfb635`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101cfbbbf`
+- `sqldk!?CheckSessionTraceInternal@CSessionTraceFlags@@CAHPEAV1@K@Z` at `0x101cfbbbf`
+- `sqldk!SystemThread_TlsIndex` at `0x101cfbb8f`
+- `sqldk!SystemThread_TlsOffset` at `0x101cfbb98`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb218`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb241`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb26a`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb288`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb2a6`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb2e6`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb32c`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb361`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb3bd`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb405`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb441`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb46a`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb4a9`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb4f1`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb522`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb559`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb577`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb5ea`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb647`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb74b`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb75b`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb789`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb7f3`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb85b`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb8c2`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb90d`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb96c`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb9e1`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfba7a`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfba88`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfbaa6`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfbb24`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfbb4e`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfbb60`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfbc19`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfbc95`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfbcbd`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb218`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb241`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb26a`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb288`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb2a6`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb2e6`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb32c`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb361`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb3bd`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb405`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb441`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb46a`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb4a9`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb4f1`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb522`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb559`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb577`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb5ea`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb647`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb74b`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb75b`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb789`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb7f3`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb85b`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb8c2`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb90d`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb96c`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfb9e1`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfba7a`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfba88`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfbaa6`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfbb24`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfbb4e`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfbb60`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfbc19`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfbc95`
+- `sqldk!??3@YAXPEAX_K@Z` at `0x101cfbcbd`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cfb399`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cfb3a4`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cfb3af`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cfb80c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cfb831`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cfb846`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cfb898`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cfb8ad`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cfb95e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cfb985`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cfb99e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cfb9c3`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cfbb39`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cfbbf2`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cfbc00`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cfbc40`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cfbc70`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cfb399`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cfb3a4`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cfb3af`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cfb80c`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cfb831`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cfb846`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cfb898`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cfb8ad`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cfb95e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cfb985`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cfb99e`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cfb9c3`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cfbb39`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cfbbf2`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cfbc00`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cfbc40`
+- `sqldk!??_V@YAXPEAX@Z` at `0x101cfbc70`
+- `rbio!RbIoConnectionRelease` at `0x101cfba65`
+- `rbio!RbIoConnectionRelease` at `0x101cfba65`
+- `rbio!RbIoCleanupPageLsnCache` at `0x101cfbcae`
+- `rbio!RbIoCleanupPageLsnCache` at `0x101cfbcae`
+
+## string_xrefs
+
+- `0x101cfb62c`: `!m_BufWriteLogTask->FInUse ()`
+
+## pseudocode
+
+```c
+
+```

@@ -1,0 +1,756 @@
+[
+  {
+    "import": "KERNEL32!CompareStringW",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x10082b61d",
+        "from_func": "0x10082b5e0",
+        "from_func_name": "CmpString",
+        "import": "KERNEL32!CompareStringW"
+      },
+      {
+        "from_ea": "0x10082b61d",
+        "from_func": "0x10082b5e0",
+        "from_func_name": "CmpString",
+        "import": "KERNEL32!CompareStringW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x10083e1b6",
+        "from_func": "0x10083e170",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x10083e1b6",
+        "from_func": "0x10083e170",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetFileAttributesW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x10082b8e3",
+        "from_func": "0x10082b650",
+        "from_func_name": "IniRegInitialize",
+        "import": "KERNEL32!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x10082bc02",
+        "from_func": "0x10082bb30",
+        "from_func_name": "IniRegStaticInitialize",
+        "import": "KERNEL32!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x10082b8e3",
+        "from_func": "0x10082b650",
+        "from_func_name": "IniRegInitialize",
+        "import": "KERNEL32!GetFileAttributesW"
+      },
+      {
+        "from_ea": "0x10082bc02",
+        "from_func": "0x10082bb30",
+        "from_func_name": "IniRegStaticInitialize",
+        "import": "KERNEL32!GetFileAttributesW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!LoadLibraryExA",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x10083d310",
+        "from_func": "0x10083d1cc",
+        "from_func_name": "__delayLoadHelper2",
+        "import": "KERNEL32!LoadLibraryExA"
+      },
+      {
+        "from_ea": "0x10083d310",
+        "from_func": "0x10083d1cc",
+        "from_func_name": "__delayLoadHelper2",
+        "import": "KERNEL32!LoadLibraryExA"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!LoadLibraryExW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1008390c5",
+        "from_func": "0x100838f00",
+        "from_func_name": "??0CSGXEnclave@@QEAA@AEBUEnclaveConfiguration@@PEAVIMemObj@@@Z",
+        "import": "KERNEL32!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x1008390c5",
+        "from_func": "0x100838f00",
+        "from_func_name": "??0CSGXEnclave@@QEAA@AEBUEnclaveConfiguration@@PEAVIMemObj@@@Z",
+        "import": "KERNEL32!LoadLibraryExW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!LoadLibraryW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1008387e1",
+        "from_func": "0x1008385d0",
+        "from_func_name": "??0CVSMEnclave@@QEAA@AEBUEnclaveConfiguration@@PEAVIMemObj@@@Z",
+        "import": "KERNEL32!LoadLibraryW"
+      },
+      {
+        "from_ea": "0x100839448",
+        "from_func": "0x1008392b0",
+        "from_func_name": "??0CSimulatorEnclave@@QEAA@AEBUEnclaveConfiguration@@PEAVIMemObj@@@Z",
+        "import": "KERNEL32!LoadLibraryW"
+      },
+      {
+        "from_ea": "0x1008387e1",
+        "from_func": "0x1008385d0",
+        "from_func_name": "??0CVSMEnclave@@QEAA@AEBUEnclaveConfiguration@@PEAVIMemObj@@@Z",
+        "import": "KERNEL32!LoadLibraryW"
+      },
+      {
+        "from_ea": "0x100839448",
+        "from_func": "0x1008392b0",
+        "from_func_name": "??0CSimulatorEnclave@@QEAA@AEBUEnclaveConfiguration@@PEAVIMemObj@@@Z",
+        "import": "KERNEL32!LoadLibraryW"
+      }
+    ]
+  },
+  {
+    "import": "VCRUNTIME140!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x10083e4d0",
+        "from_func": "0x10083e4d0",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "VCRUNTIME140!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "VCRUNTIME140!__CxxFrameHandler3",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x10083e4c4",
+        "from_func": "0x10083e4c4",
+        "from_func_name": "__CxxFrameHandler3_0",
+        "import": "VCRUNTIME140!__CxxFrameHandler3"
+      }
+    ]
+  },
+  {
+    "import": "WININET!InternetReadFile",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x10082f820",
+        "from_func": "0x10082f770",
+        "from_func_name": "?GetResponseBody@HttpClient@WinHttpClient@@UEAA?AUHttpOpResult@2@PEAVIMemObj@@PEAPEADPEAK@Z",
+        "import": "WININET!InternetReadFile"
+      },
+      {
+        "from_ea": "0x10082f86e",
+        "from_func": "0x10082f770",
+        "from_func_name": "?GetResponseBody@HttpClient@WinHttpClient@@UEAA?AUHttpOpResult@2@PEAVIMemObj@@PEAPEADPEAK@Z",
+        "import": "WININET!InternetReadFile"
+      },
+      {
+        "from_ea": "0x10082f820",
+        "from_func": "0x10082f770",
+        "from_func_name": "?GetResponseBody@HttpClient@WinHttpClient@@UEAA?AUHttpOpResult@2@PEAVIMemObj@@PEAPEADPEAK@Z",
+        "import": "WININET!InternetReadFile"
+      },
+      {
+        "from_ea": "0x10082f86e",
+        "from_func": "0x10082f770",
+        "from_func_name": "?GetResponseBody@HttpClient@WinHttpClient@@UEAA?AUHttpOpResult@2@PEAVIMemObj@@PEAPEADPEAK@Z",
+        "import": "WININET!InternetReadFile"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-runtime-l1-1-0!_configure_narrow_argv",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x10083e53c",
+        "from_func": "0x10083e53c",
+        "from_func_name": "_configure_narrow_argv_0",
+        "import": "api-ms-win-crt-runtime-l1-1-0!_configure_narrow_argv"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-runtime-l1-1-0!_seh_filter_dll",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x10083e530",
+        "from_func": "0x10083e530",
+        "from_func_name": "_seh_filter_dll_0",
+        "import": "api-ms-win-crt-runtime-l1-1-0!_seh_filter_dll"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-stdio-l1-1-0!__stdio_common_vsnprintf_s",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x100462067",
+        "from_func": "0x100462020",
+        "from_func_name": "_snprintf_s_l",
+        "import": "api-ms-win-crt-stdio-l1-1-0!__stdio_common_vsnprintf_s"
+      },
+      {
+        "from_ea": "0x100462067",
+        "from_func": "0x100462020",
+        "from_func_name": "_snprintf_s_l",
+        "import": "api-ms-win-crt-stdio-l1-1-0!__stdio_common_vsnprintf_s"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-stdio-l1-1-0!__stdio_common_vsnwprintf_s",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 5,
+    "xrefs": [
+      {
+        "from_ea": "0x10041dafa",
+        "from_func": "0x10041dab0",
+        "from_func_name": "_vsnwprintf_s_l",
+        "import": "api-ms-win-crt-stdio-l1-1-0!__stdio_common_vsnwprintf_s"
+      },
+      {
+        "from_ea": "0x1004309d8",
+        "from_func": "0x100430960",
+        "from_func_name": "?SerializeTrace@@YAXAEAVSOS_TraceStream@@PEA_WPEAD@Z",
+        "import": "api-ms-win-crt-stdio-l1-1-0!__stdio_common_vsnwprintf_s"
+      },
+      {
+        "from_ea": "0x10041dafa",
+        "from_func": "0x10041dab0",
+        "from_func_name": "_vsnwprintf_s_l",
+        "import": "api-ms-win-crt-stdio-l1-1-0!__stdio_common_vsnwprintf_s"
+      },
+      {
+        "from_ea": "0x1004309d8",
+        "from_func": "0x100430960",
+        "from_func_name": "?SerializeTrace@@YAXAEAVSOS_TraceStream@@PEA_WPEAD@Z",
+        "import": "api-ms-win-crt-stdio-l1-1-0!__stdio_common_vsnwprintf_s"
+      },
+      {
+        "from_ea": "0x1008a4b44",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-crt-stdio-l1-1-0!__stdio_common_vsnwprintf_s"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-stdio-l1-1-0!__stdio_common_vswprintf",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x100439324",
+        "from_func": "0x1004392e0",
+        "from_func_name": "_vsnwprintf_l",
+        "import": "api-ms-win-crt-stdio-l1-1-0!__stdio_common_vswprintf"
+      },
+      {
+        "from_ea": "0x1004c75df",
+        "from_func": "0x1004c7570",
+        "from_func_name": "?traceprint@@YAXPEB_WZZ",
+        "import": "api-ms-win-crt-stdio-l1-1-0!__stdio_common_vswprintf"
+      },
+      {
+        "from_ea": "0x100439324",
+        "from_func": "0x1004392e0",
+        "from_func_name": "_vsnwprintf_l",
+        "import": "api-ms-win-crt-stdio-l1-1-0!__stdio_common_vswprintf"
+      },
+      {
+        "from_ea": "0x1004c75df",
+        "from_func": "0x1004c7570",
+        "from_func_name": "?traceprint@@YAXPEB_WZZ",
+        "import": "api-ms-win-crt-stdio-l1-1-0!__stdio_common_vswprintf"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-stdio-l1-1-0!__stdio_common_vswprintf_s",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x10083a51f",
+        "from_func": "0x10083a4e0",
+        "from_func_name": "swprintf_s",
+        "import": "api-ms-win-crt-stdio-l1-1-0!__stdio_common_vswprintf_s"
+      },
+      {
+        "from_ea": "0x10083a51f",
+        "from_func": "0x10083a4e0",
+        "from_func_name": "swprintf_s",
+        "import": "api-ms-win-crt-stdio-l1-1-0!__stdio_common_vswprintf_s"
+      }
+    ]
+  },
+  {
+    "import": "ole32!CLSIDFromString",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x10044e0f9",
+        "from_func": "0x10044e020",
+        "from_func_name": "?ConvertFromWstr@CSsGuid@@QEAAJPEB_WK@Z",
+        "import": "ole32!CLSIDFromString"
+      },
+      {
+        "from_ea": "0x10044e0f9",
+        "from_func": "0x10044e020",
+        "from_func_name": "?ConvertFromWstr@CSsGuid@@QEAAJPEB_WK@Z",
+        "import": "ole32!CLSIDFromString"
+      }
+    ]
+  },
+  {
+    "import": "ole32!CoInitializeSecurity",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x100839b5b",
+        "from_func": "0x100839ae0",
+        "from_func_name": "?InitializeWMI@CHGSHealthReportHelper@@CAJPEAPEAUIWbemServices@@@Z",
+        "import": "ole32!CoInitializeSecurity"
+      },
+      {
+        "from_ea": "0x100839b5b",
+        "from_func": "0x100839ae0",
+        "from_func_name": "?InitializeWMI@CHGSHealthReportHelper@@CAJPEAPEAUIWbemServices@@@Z",
+        "import": "ole32!CoInitializeSecurity"
+      }
+    ]
+  },
+  {
+    "import": "sqldk!?EnqueueTask@SOS_OS@@SA?AW4SOS_RESULT@@P6APEAXPEAX@Z0KPEAPEAVSOS_Task@@_K@Z",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x100837dae",
+        "from_func": "0x100837ae0",
+        "from_func_name": "?GetEnclave@CEnclave@@SAPEAV1@AEBUEnclaveConfiguration@@PEAVIMemObj@@@Z",
+        "import": "sqldk!?EnqueueTask@SOS_OS@@SA?AW4SOS_RESULT@@P6APEAXPEAX@Z0KPEAPEAVSOS_Task@@_K@Z"
+      },
+      {
+        "from_ea": "0x100837dae",
+        "from_func": "0x100837ae0",
+        "from_func_name": "?GetEnclave@CEnclave@@SAPEAV1@AEBUEnclaveConfiguration@@PEAVIMemObj@@@Z",
+        "import": "sqldk!?EnqueueTask@SOS_OS@@SA?AW4SOS_RESULT@@P6APEAXPEAX@Z0KPEAPEAVSOS_Task@@_K@Z"
+      }
+    ]
+  },
+  {
+    "import": "sqldk!?PopWait@SOS_Task@@AEAAXXZ",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x10082caa7",
+        "from_func": "0x10082ca50",
+        "from_func_name": "??1SOS_ExternalAutoWait@@QEAA@XZ",
+        "import": "sqldk!?PopWait@SOS_Task@@AEAAXXZ"
+      },
+      {
+        "from_ea": "0x10082cb5f",
+        "from_func": "0x10082cad0",
+        "from_func_name": "??1AutoSwitchPreemptive@@IEAA@XZ",
+        "import": "sqldk!?PopWait@SOS_Task@@AEAAXXZ"
+      }
+    ]
+  },
+  {
+    "import": "sqldk!?PostWait@SOS_Task@@SAXPEBVSOS_WaitInfo@@W4SOS_RESULT@@@Z",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x10045eec6",
+        "from_func": "0x10045eb60",
+        "from_func_name": "?LongWait@?$UnfairRecursiveMutexInternal@USuspendQueueExpSLock@@$0A@@@AEAA?AW4SOS_RESULT@@PEAVWorker@@KQEBVSOS_WaitInfo@@@Z",
+        "import": "sqldk!?PostWait@SOS_Task@@SAXPEBVSOS_WaitInfo@@W4SOS_RESULT@@@Z"
+      },
+      {
+        "from_ea": "0x100831d02",
+        "from_func": "0x100831bd0",
+        "from_func_name": "?Sleep@SOS_Task@@SA?AW4SOS_RESULT@@KPEBVSOS_WaitInfo@@@Z",
+        "import": "sqldk!?PostWait@SOS_Task@@SAXPEBVSOS_WaitInfo@@W4SOS_RESULT@@@Z"
+      },
+      {
+        "from_ea": "0x10045eec6",
+        "from_func": "0x10045eb60",
+        "from_func_name": "?LongWait@?$UnfairRecursiveMutexInternal@USuspendQueueExpSLock@@$0A@@@AEAA?AW4SOS_RESULT@@PEAVWorker@@KQEBVSOS_WaitInfo@@@Z",
+        "import": "sqldk!?PostWait@SOS_Task@@SAXPEBVSOS_WaitInfo@@W4SOS_RESULT@@@Z"
+      },
+      {
+        "from_ea": "0x100831d02",
+        "from_func": "0x100831bd0",
+        "from_func_name": "?Sleep@SOS_Task@@SA?AW4SOS_RESULT@@KPEBVSOS_WaitInfo@@@Z",
+        "import": "sqldk!?PostWait@SOS_Task@@SAXPEBVSOS_WaitInfo@@W4SOS_RESULT@@@Z"
+      }
+    ]
+  },
+  {
+    "import": "sqldk!?PreWait@SOS_Task@@SAXPEBVSOS_WaitInfo@@@Z",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x10045eead",
+        "from_func": "0x10045eb60",
+        "from_func_name": "?LongWait@?$UnfairRecursiveMutexInternal@USuspendQueueExpSLock@@$0A@@@AEAA?AW4SOS_RESULT@@PEAVWorker@@KQEBVSOS_WaitInfo@@@Z",
+        "import": "sqldk!?PreWait@SOS_Task@@SAXPEBVSOS_WaitInfo@@@Z"
+      },
+      {
+        "from_ea": "0x100831ce9",
+        "from_func": "0x100831bd0",
+        "from_func_name": "?Sleep@SOS_Task@@SA?AW4SOS_RESULT@@KPEBVSOS_WaitInfo@@@Z",
+        "import": "sqldk!?PreWait@SOS_Task@@SAXPEBVSOS_WaitInfo@@@Z"
+      },
+      {
+        "from_ea": "0x10045eead",
+        "from_func": "0x10045eb60",
+        "from_func_name": "?LongWait@?$UnfairRecursiveMutexInternal@USuspendQueueExpSLock@@$0A@@@AEAA?AW4SOS_RESULT@@PEAVWorker@@KQEBVSOS_WaitInfo@@@Z",
+        "import": "sqldk!?PreWait@SOS_Task@@SAXPEBVSOS_WaitInfo@@@Z"
+      },
+      {
+        "from_ea": "0x100831ce9",
+        "from_func": "0x100831bd0",
+        "from_func_name": "?Sleep@SOS_Task@@SA?AW4SOS_RESULT@@KPEBVSOS_WaitInfo@@@Z",
+        "import": "sqldk!?PreWait@SOS_Task@@SAXPEBVSOS_WaitInfo@@@Z"
+      }
+    ]
+  },
+  {
+    "import": "sqldk!?PushWait@SOS_Task@@AEAA?AW4SOS_RESULT@@PEAVSOS_ExternalAutoWait@@@Z",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 18,
+    "xrefs": [
+      {
+        "from_ea": "0x10082c791",
+        "from_func": "0x10082c6c0",
+        "from_func_name": "?GetQuote@CSgxAttestationHelper@@SAX_KPEAVIMemObj@@PEBEKPEAPEAEPEAK@Z",
+        "import": "sqldk!?PushWait@SOS_Task@@AEAA?AW4SOS_RESULT@@PEAVSOS_ExternalAutoWait@@@Z"
+      },
+      {
+        "from_ea": "0x10082d406",
+        "from_func": "0x10082cfb0",
+        "from_func_name": "?SendToAttestationService@AttestClient@CVsmAzureAttestationHelper@@QEAAXPEBEKPEB_WPEAPEAEPEAK@Z",
+        "import": "sqldk!?PushWait@SOS_Task@@AEAA?AW4SOS_RESULT@@PEAVSOS_ExternalAutoWait@@@Z"
+      },
+      {
+        "from_ea": "0x10082da47",
+        "from_func": "0x10082d990",
+        "from_func_name": "?CreateAttestSession@AttestSession@CVsmAzureAttestationHelper@@QEAAXPEBEK@Z",
+        "import": "sqldk!?PushWait@SOS_Task@@AEAA?AW4SOS_RESULT@@PEAVSOS_ExternalAutoWait@@@Z"
+      },
+      {
+        "from_ea": "0x10082dc2e",
+        "from_func": "0x10082db70",
+        "from_func_name": "?Attest@AttestSession@CVsmAzureAttestationHelper@@QEAA_NPEBEKPEAPEAEPEAK@Z",
+        "import": "sqldk!?PushWait@SOS_Task@@AEAA?AW4SOS_RESULT@@PEAVSOS_ExternalAutoWait@@@Z"
+      },
+      {
+        "from_ea": "0x10082debd",
+        "from_func": "0x10082de10",
+        "from_func_name": "?GetReport@AttestSession@CVsmAzureAttestationHelper@@QEAAXPEAPEAEPEAK@Z",
+        "import": "sqldk!?PushWait@SOS_Task@@AEAA?AW4SOS_RESULT@@PEAVSOS_ExternalAutoWait@@@Z"
+      },
+      {
+        "from_ea": "0x10082ecd6",
+        "from_func": "0x10082e560",
+        "from_func_name": "?SendToAttestationService@AttestClient@CSgxAzureAttestationHelper@@QEAAXPEAEKPEBEK0KPEB_WPEAPEAEPEAK@Z",
+        "import": "sqldk!?PushWait@SOS_Task@@AEAA?AW4SOS_RESULT@@PEAVSOS_ExternalAutoWait@@@Z"
+      },
+      {
+        "from_ea": "0x10083875b",
+        "from_func": "0x1008385d0",
+        "from_func_name": "??0CVSMEnclave@@QEAA@AEBUEnclaveConfiguration@@PEAVIMemObj@@@Z",
+        "import": "sqldk!?PushWait@SOS_Task@@AEAA?AW4SOS_RESULT@@PEAVSOS_ExternalAutoWait@@@Z"
+      },
+      {
+        "from_ea": "0x100839033",
+        "from_func": "0x100838f00",
+        "from_func_name": "??0CSGXEnclave@@QEAA@AEBUEnclaveConfiguration@@PEAVIMemObj@@@Z",
+        "import": "sqldk!?PushWait@SOS_Task@@AEAA?AW4SOS_RESULT@@PEAVSOS_ExternalAutoWait@@@Z"
+      },
+      {
+        "from_ea": "0x1008393c6",
+        "from_func": "0x1008392b0",
+        "from_func_name": "??0CSimulatorEnclave@@QEAA@AEBUEnclaveConfiguration@@PEAVIMemObj@@@Z",
+        "import": "sqldk!?PushWait@SOS_Task@@AEAA?AW4SOS_RESULT@@PEAVSOS_ExternalAutoWait@@@Z"
+      },
+      {
+        "from_ea": "0x10082c791",
+        "from_func": "0x10082c6c0",
+        "from_func_name": "?GetQuote@CSgxAttestationHelper@@SAX_KPEAVIMemObj@@PEBEKPEAPEAEPEAK@Z",
+        "import": "sqldk!?PushWait@SOS_Task@@AEAA?AW4SOS_RESULT@@PEAVSOS_ExternalAutoWait@@@Z"
+      },
+      {
+        "from_ea": "0x10082d406",
+        "from_func": "0x10082cfb0",
+        "from_func_name": "?SendToAttestationService@AttestClient@CVsmAzureAttestationHelper@@QEAAXPEBEKPEB_WPEAPEAEPEAK@Z",
+        "import": "sqldk!?PushWait@SOS_Task@@AEAA?AW4SOS_RESULT@@PEAVSOS_ExternalAutoWait@@@Z"
+      },
+      {
+        "from_ea": "0x10082da47",
+        "from_func": "0x10082d990",
+        "from_func_name": "?CreateAttestSession@AttestSession@CVsmAzureAttestationHelper@@QEAAXPEBEK@Z",
+        "import": "sqldk!?PushWait@SOS_Task@@AEAA?AW4SOS_RESULT@@PEAVSOS_ExternalAutoWait@@@Z"
+      },
+      {
+        "from_ea": "0x10082dc2e",
+        "from_func": "0x10082db70",
+        "from_func_name": "?Attest@AttestSession@CVsmAzureAttestationHelper@@QEAA_NPEBEKPEAPEAEPEAK@Z",
+        "import": "sqldk!?PushWait@SOS_Task@@AEAA?AW4SOS_RESULT@@PEAVSOS_ExternalAutoWait@@@Z"
+      },
+      {
+        "from_ea": "0x10082debd",
+        "from_func": "0x10082de10",
+        "from_func_name": "?GetReport@AttestSession@CVsmAzureAttestationHelper@@QEAAXPEAPEAEPEAK@Z",
+        "import": "sqldk!?PushWait@SOS_Task@@AEAA?AW4SOS_RESULT@@PEAVSOS_ExternalAutoWait@@@Z"
+      },
+      {
+        "from_ea": "0x10082ecd6",
+        "from_func": "0x10082e560",
+        "from_func_name": "?SendToAttestationService@AttestClient@CSgxAzureAttestationHelper@@QEAAXPEAEKPEBEK0KPEB_WPEAPEAEPEAK@Z",
+        "import": "sqldk!?PushWait@SOS_Task@@AEAA?AW4SOS_RESULT@@PEAVSOS_ExternalAutoWait@@@Z"
+      },
+      {
+        "from_ea": "0x10083875b",
+        "from_func": "0x1008385d0",
+        "from_func_name": "??0CVSMEnclave@@QEAA@AEBUEnclaveConfiguration@@PEAVIMemObj@@@Z",
+        "import": "sqldk!?PushWait@SOS_Task@@AEAA?AW4SOS_RESULT@@PEAVSOS_ExternalAutoWait@@@Z"
+      },
+      {
+        "from_ea": "0x100839033",
+        "from_func": "0x100838f00",
+        "from_func_name": "??0CSGXEnclave@@QEAA@AEBUEnclaveConfiguration@@PEAVIMemObj@@@Z",
+        "import": "sqldk!?PushWait@SOS_Task@@AEAA?AW4SOS_RESULT@@PEAVSOS_ExternalAutoWait@@@Z"
+      },
+      {
+        "from_ea": "0x1008393c6",
+        "from_func": "0x1008392b0",
+        "from_func_name": "??0CSimulatorEnclave@@QEAA@AEBUEnclaveConfiguration@@PEAVIMemObj@@@Z",
+        "import": "sqldk!?PushWait@SOS_Task@@AEAA?AW4SOS_RESULT@@PEAVSOS_ExternalAutoWait@@@Z"
+      }
+    ]
+  },
+  {
+    "import": "sqldk!?ShouldUpdateSnapshot@SpinlockStat@@QEBA_NGW4SPINLOCK_CATEGORY@@V?$SOS_Ticks@V?$InterruptTicks@_K@@$0?2@@@Z",
+    "tags": [
+      "installer_update"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x10045f334",
+        "from_func": "0x10045f270",
+        "from_func_name": "?UpdateStatSnapshot@?$Spinlock@$0BK@$00$0BAAAABAB@@@AEAAXXZ",
+        "import": "sqldk!?ShouldUpdateSnapshot@SpinlockStat@@QEBA_NGW4SPINLOCK_CATEGORY@@V?$SOS_Ticks@V?$InterruptTicks@_K@@$0?2@@@Z"
+      },
+      {
+        "from_ea": "0x1004a0164",
+        "from_func": "0x1004a00a0",
+        "from_func_name": "?UpdateStatSnapshot@?$Spinlock@$0BJ@$00$0BAAAABAC@@@AEAAXXZ",
+        "import": "sqldk!?ShouldUpdateSnapshot@SpinlockStat@@QEBA_NGW4SPINLOCK_CATEGORY@@V?$SOS_Ticks@V?$InterruptTicks@_K@@$0?2@@@Z"
+      },
+      {
+        "from_ea": "0x10045f334",
+        "from_func": "0x10045f270",
+        "from_func_name": "?UpdateStatSnapshot@?$Spinlock@$0BK@$00$0BAAAABAB@@@AEAAXXZ",
+        "import": "sqldk!?ShouldUpdateSnapshot@SpinlockStat@@QEBA_NGW4SPINLOCK_CATEGORY@@V?$SOS_Ticks@V?$InterruptTicks@_K@@$0?2@@@Z"
+      },
+      {
+        "from_ea": "0x1004a0164",
+        "from_func": "0x1004a00a0",
+        "from_func_name": "?UpdateStatSnapshot@?$Spinlock@$0BJ@$00$0BAAAABAC@@@AEAAXXZ",
+        "import": "sqldk!?ShouldUpdateSnapshot@SpinlockStat@@QEBA_NGW4SPINLOCK_CATEGORY@@V?$SOS_Ticks@V?$InterruptTicks@_K@@$0?2@@@Z"
+      }
+    ]
+  },
+  {
+    "import": "sqldk!?UpdateSnapshot@SpinlockStat@@QEAAXGW4SPINLOCK_CATEGORY@@V?$SOS_Ticks@V?$InterruptTicks@_K@@$0?2@@@Z",
+    "tags": [
+      "installer_update"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x10045f34d",
+        "from_func": "0x10045f270",
+        "from_func_name": "?UpdateStatSnapshot@?$Spinlock@$0BK@$00$0BAAAABAB@@@AEAAXXZ",
+        "import": "sqldk!?UpdateSnapshot@SpinlockStat@@QEAAXGW4SPINLOCK_CATEGORY@@V?$SOS_Ticks@V?$InterruptTicks@_K@@$0?2@@@Z"
+      },
+      {
+        "from_ea": "0x1004a017d",
+        "from_func": "0x1004a00a0",
+        "from_func_name": "?UpdateStatSnapshot@?$Spinlock@$0BJ@$00$0BAAAABAC@@@AEAAXXZ",
+        "import": "sqldk!?UpdateSnapshot@SpinlockStat@@QEAAXGW4SPINLOCK_CATEGORY@@V?$SOS_Ticks@V?$InterruptTicks@_K@@$0?2@@@Z"
+      },
+      {
+        "from_ea": "0x10045f34d",
+        "from_func": "0x10045f270",
+        "from_func_name": "?UpdateStatSnapshot@?$Spinlock@$0BK@$00$0BAAAABAB@@@AEAAXXZ",
+        "import": "sqldk!?UpdateSnapshot@SpinlockStat@@QEAAXGW4SPINLOCK_CATEGORY@@V?$SOS_Ticks@V?$InterruptTicks@_K@@$0?2@@@Z"
+      },
+      {
+        "from_ea": "0x1004a017d",
+        "from_func": "0x1004a00a0",
+        "from_func_name": "?UpdateStatSnapshot@?$Spinlock@$0BJ@$00$0BAAAABAC@@@AEAAXXZ",
+        "import": "sqldk!?UpdateSnapshot@SpinlockStat@@QEAAXGW4SPINLOCK_CATEGORY@@V?$SOS_Ticks@V?$InterruptTicks@_K@@$0?2@@@Z"
+      }
+    ]
+  },
+  {
+    "import": "sqldk!?__gserror_handler@@YAXHPEAX@Z",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x10042dcba",
+        "from_func": "0x10042dc90",
+        "from_func_name": "__report_gsfailure",
+        "import": "sqldk!?__gserror_handler@@YAXHPEAX@Z"
+      },
+      {
+        "from_ea": "0x10042dcba",
+        "from_func": "0x10042dc90",
+        "from_func_name": "__report_gsfailure",
+        "import": "sqldk!?__gserror_handler@@YAXHPEAX@Z"
+      }
+    ]
+  },
+  {
+    "import": "sqldk!?s_pServerConf@@3PEAVIServerConfiguration@@EA",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x10049ea66",
+        "from_func": "0x10049ea40",
+        "from_func_name": "?SetupSwitch@CFeatureSwitchesTsEs@@CAXPEBUCFeatureSwitchDescriptor@@PEB_W@Z",
+        "import": "sqldk!?s_pServerConf@@3PEAVIServerConfiguration@@EA"
+      }
+    ]
+  },
+  {
+    "import": "urlmon!CreateUri",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x10082bdbc",
+        "from_func": "0x10082bd70",
+        "from_func_name": "?CrackUri@CAzureAttestationUtils@@SAJPEAVIMemObj@@PEBXPEAPEAX2PEAK3PEA_N@Z",
+        "import": "urlmon!CreateUri"
+      },
+      {
+        "from_ea": "0x10082bdbc",
+        "from_func": "0x10082bd70",
+        "from_func_name": "?CrackUri@CAzureAttestationUtils@@SAJPEAVIMemObj@@PEBXPEAPEAX2PEAK3PEA_N@Z",
+        "import": "urlmon!CreateUri"
+      },
+      {
+        "from_ea": "0x1008a4a90",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "urlmon!CreateUri"
+      }
+    ]
+  }
+]

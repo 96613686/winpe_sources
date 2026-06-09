@@ -1,0 +1,1476 @@
+# SOS_ProcessConfigImpl<1>::SOS_ProcessConfigImpl<1>(void)
+
+- ea: `0x10040eb50`
+- end: `0x100411319`
+- name: `??0?$SOS_ProcessConfigImpl@$00@@QEAA@XZ`
+- size: `10185`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `3`
+- tags: `authz_impersonation, registry_config, service_task, installer_update, broker_com_uri`
+
+## callers
+
+- `0x100401150`
+
+## callees
+
+- `0x10040eb50`
+- `0x100486250`
+- `0x1004880d0`
+
+## import_xrefs
+
+- `sqldk!??0ProcessConfig@@IEAA@W4SOSHOST_MEMORYCLERK_TYPE@@0PEAPEB_WGPEAPEBDPEAW4SPINLOCK_REPORT_OPTIONS@@G23@Z` at `0x10040ebd5`
+- `sqldk!??0ProcessConfig@@IEAA@W4SOSHOST_MEMORYCLERK_TYPE@@0PEAPEB_WGPEAPEBDPEAW4SPINLOCK_REPORT_OPTIONS@@G23@Z` at `0x10040ebd5`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x10040f151`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x100411156`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x100411181`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x100411214`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1004112cd`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x10040f151`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x100411156`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x100411181`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x100411214`
+- `api-ms-win-crt-runtime-l1-1-0!_invalid_parameter_noinfo` at `0x1004112cd`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x10040f148`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x10041114d`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x100411178`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x10041120b`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1004112c4`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x10040f148`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x10041114d`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x100411178`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x10041120b`
+- `api-ms-win-crt-runtime-l1-1-0!_errno` at `0x1004112c4`
+
+## string_xrefs
+
+- `0x10040ec14`: `MEMORYCLERK_SQLQUERYCOMPILE`
+- `0x10040ecc4`: `MEMORYCLERK_SQLSERVICEBROKER`
+- `0x10040eccf`: `MEMORYCLERK_SQLXML`
+- `0x10040ed7d`: `MEMORYCLERK_WRITEPAGERECORDER`
+- `0x10040ed6f`: `MEMORYCLERK_CSILOBCOMPRESSION`
+- `0x10040eda7`: `MEMORYCLERK_MSJSON`
+- `0x10040edd1`: `MEMORYCLERK_SQLSERVICEBROKERTRANSPORT`
+- `0x10040edfb`: `MEMORYCLERK_FSAGENT`
+- `0x10040ee41`: `MEMORYCLERK_TAILLOGCACHE`
+- `0x10040ee95`: `MEMORYCLERK_NETWORKSXMLMGR`
+- `0x10040ee87`: `MEMORYCLERK_SECURITY_FEDAUTH_AAD`
+- `0x10040eeb1`: `MEMORYCLERK_IPADDRINFIREWALLCACHE`
+- `0x10040eea3`: `MEMORYCLERK_SECURITY_FEDAUTH_SIGNATURE_VALIDATION`
+- `0x10040eedb`: `MEMORYCLERK_XODBCAUTHENTICATIONCACHE`
+- `0x10040ef05`: `MEMORYCLERK_USERDBFIREWALLCACHE`
+- `0x10040eef7`: `MEMORYCLERK_EXTERNAL_ENDPOINT_BLOCKED_IP_CACHE`
+- `0x10040ef4b`: `MEMORYCLERK_RBPEX_PAGEREADER`
+- `0x10040ef91`: `MEMORYCLERK_CS_BLOB_CACHE`
+- `0x10040f00f`: `MEMORYCLERK_BLOCKCHAIN_COMM_MGR`
+- `0x10040f08d`: `MEMORYCLERK_SECURITY`
+- `0x10040f119`: `MEMORYCLERK_LIST_DIRECTORY`
+- `0x10040f10b`: `MEMORYCLERK_DIRECTORY_CONTENT_LISTS`
+- `0x10040f205`: `PS_READ_REQ_MINLSN_MINHEAP`
+- `0x10040f221`: `DB_COPY_MESSAGE_HASH_BUFFER`
+- `0x10040f23d`: `RBPEX_SEGMENT_WRITE_BUFFER_PAGES`
+- `0x10040f267`: `HADR_COMPRESSION_MGR_POOL`
+- `0x10040f29f`: `TEMPORAL`
+- `0x10040f30f`: `XLOG_BROKER`
+- `0x10040f37f`: `RBIO_PLSN_CACHE`
+- `0x10040f3b7`: `CLOUD_PARTITION_COPY_STATS`
+- `0x10040f489`: `SE_REPL_BACKGROUND_TASK_CONTROL`
+- `0x10040f5e7`: `SE_REPL_BACKGROUND_TASK_LIST`
+- `0x10040f665`: `COMMITTABLE`
+- `0x10040f6e3`: `HTTP_CONNCACHE`
+- `0x10040f6ff`: `BACKUP_COPY_CONTEXT`
+- `0x10040f70d`: `FILE_HANDLE_CACHE`
+- `0x10040f761`: `DIGEST_CACHE`
+- `0x10040f7a7`: `SECURITY_CACHE`
+- `0x10040f7c3`: `SECURITY_FEDAUTH_AAD_BECWSCONNS`
+- `0x10040f7b5`: `OBJECT_PERMISSION_CACHE_BUCKET`
+- `0x10040f7d1`: `SECURITY`
+- `0x10040f833`: `EXT_CACHE`
+- `0x10040f84f`: `COM_INIT`
+- `0x10040f85d`: `LOGON_TRIGGER_CACHE`
+- `0x10040f8db`: `CACHEOBJ_DBG`
+- `0x10040f8f7`: `ADB_CACHE`
+- `0x10040f9f3`: `BUF_LINK`
+- `0x10040fa2b`: `DP_CACHE_LIST`
+- `0x10040fad3`: `BUF_WRITE_LOG`
+- `0x10040faef`: `SVC_BROKER_CTRL`
+- `0x10040fae1`: `RFS_THREAD_QUEUE`
+- `0x10040fb43`: `LOGCACHE_ACCESS`
+- `0x10040fb35`: `SVC_BROKER_LIST`
+- `0x10040fb97`: `SVC_BROKER_DEBUG_LIST`
+- `0x10040fba5`: `SVC_BROKER_OBJECT`
+- `0x10040fbc1`: `READ_AHEAD`
+- `0x10040fc07`: `SVC_BROKER_TASK_LIST`
+- `0x10040fd03`: `MATRIX_DATA_VIRTUALIZATION_MANAGER_AGENT_WORK_ITEM_LIST`
+- `0x10040fcf5`: `MATRIX_DATA_VIRTUALIZATION_MANAGER_AGENT_PRIORITY_QUEUE`
+- `0x10040fd3b`: `SE_REPL_SECONDARY_TASk_PROXY`
+- `0x10040fd2d`: `TaskElapsedExecutionMonitor`
+- `0x10040fd49`: `FSAGENT`
+- `0x10040fd81`: `XACT_LOCKINFO_TASK`
+- `0x10040fe1b`: `INDEX_CREATE`
+- `0x10040fe0d`: `DROP_TEMPO`
+- `0x10040fe6f`: `XML_DOC_LIST`
+- `0x10040fe61`: `TEMP_OBJECT_LIST`
+- `0x10040fea7`: `CLR_HOSTTASK`
+- `0x10040feb5`: `MGR_CACHE`
+- `0x10040fed1`: `ALLOC_CACHES_HASH`
+- `0x10040fefb`: `QSCAN_CACHE`
+- `0x10040feed`: `COMPPLAN_SKELETON`
+- `0x10040ff6b`: `SEQUEUE_SIZED_THREADSAFE`
+- `0x10041003d`: `HADR_AGH_X_ACCESS`
+- `0x100410067`: `SEMANTIC_TICACHE`
+- `0x100410059`: `REMOTE_THREAD_CACHE`
+- `0x1004100e5`: `QUERY_STORE_READ_ONLY_FLAGS`
+- `0x100410163`: `FIDO_LCK_REQ_TASK_PROXY`
+- `0x100410155`: `SBS_SERVER_XACT_TASK_PROXY`
+- `0x100410171`: `SYNAPSE_LINK_DATABASES`
+- `0x10041018d`: `FIDO_LCK_REQ_TASK_PROXY_SPID`
+- `0x1004101e1`: `WRITE_PAGE_RECORDER`
+- `0x10041020b`: `FS_DELETED_FOLDER_CLEANUP`
+- `0x100410219`: `REPL_LOGREADER_HISTORY_CACHE`
+- `0x100410243`: `TAILLOGCACHE_HASHBUCKET`
+- `0x10041027b`: `QUERY_STORE_PLAN_COMP_AGG`
+- `0x10041026d`: `QUERY_STORE_STMT_COMP_AGG`
+- `0x100410297`: `SPL_QUERY_STORE_STATS_COOKIE_CACHE`
+- `0x100410289`: `SPL_QUERY_STORE_EXEC_STATS_READ`
+- `0x1004102cf`: `RG_READAHEAD_HASTABLE`
+- `0x10041033f`: `NATIVE_SHUFFLE_OVERLAPPED_READS`
+- `0x100410331`: `SYNAPSE_LINK_LANDING_ZONES`
+- `0x10041035b`: `FREE_SPACE_CACHE_ENTRY`
+- `0x10041034d`: `GROUP_COMMIT_FEEDBACK_LOOP`
+- `0x1004103af`: `REMOTE_SESSION_CACHE`
+- `0x1004103a1`: `ONDEMAND_TASK`
+- `0x1004103f5`: `FS_CONTAINER_LIST_WITH_DELETE`
+- `0x100410465`: `QUERY_STORE_HT_CACHE`
+- `0x1004104ab`: `REPL_LOGREADER_PERDB_HISTORY_CACHE`
+- `0x1004104c7`: `LOGPOOL_SHAREDCACHEBUFFER`
+- `0x1004104b9`: `TailLogCacheHashEntry`
+- `0x10041055a`: `CM_FMCONFIG`
+- `0x100410592`: `SOS_PHYS_PAGE_CACHE`
+- `0x100410602`: `ONE_PROC_SIM_SERVICE_PARTITION`
+- `0x10041069c`: `SE_REPL_QUEUE_COMMIT_LIST`
+- `0x1004106c6`: `SQL_ALIAS_CACHE`
+- `0x1004106b8`: `XDB_URI_CACHE`
+- `0x1004106d4`: `XDB_REMOTE_URI_CACHE`
+- `0x100410736`: `XDB_WINFAB_CACHE_ENTRY_RESOLVE_LIST`
+- `0x100410728`: `XDB_HOST_COMPLETED_REQUEST_LIST`
+- `0x100410744`: `SPL_XDB_ABORT_TASK_LIST`
+- `0x10041078a`: `XDB_CONFIG_SETTING`
+- `0x10041077c`: `XDB_CONFIG_SUBS`
+- `0x100410816`: `DELETEBITMAP`
+- `0x10041085c`: `PARALLELREDOCACHE`
+- `0x100410989`: `RBPE_SEEDING_TASK_LIST`
+- `0x1004109a5`: `SBSFO_LAST_WRITE_LSN`
+- `0x1004109dd`: `SBS_FILE_TRIM_TASK`
+- `0x1004109cf`: `SBS_FILE_COPY_TASK`
+- `0x1004109eb`: `SBS_WRITE_WAIT_TABLE`
+- `0x100410a15`: `IQ_DISP_TASK`
+- `0x100410a07`: `DIRECT_SBS_THREAD_TEB_NODE`
+- `0x100410a69`: `FIDO_VERSION_CACHE`
+- `0x100410a77`: `FIDO_SEQUENCE_OBJECT_CACHE`
+- `0x100410b11`: `XFILE_TASK_PROXY`
+- `0x100410b81`: `RBPEX_WRITE_BUFFER_MAP_BUCKET`
+- `0x100410b73`: `RPBEX_SHRINKIOCOMPREQUEST_LIST`
+- `0x100410b9d`: `RBPEX_SEGMENT_WRITE_BUFFER_WAITING_WRITING_LIST`
+- `0x100410bff`: `LOCK_RW_SECURITY_CACHE`
+- `0x100410d03`: `LOCK_RW_SPL_RW_WRITE_TRACKING_BMP`
+
+## pseudocode
+
+```c
+__int64 __fastcall SOS_ProcessConfigImpl<1>::SOS_ProcessConfigImpl<1>(__int64 a1)
+{
+  __int64 v1; // r15
+  __int64 v2; // rsi
+  __int64 v3; // rbx
+  void *v4; // r12
+  _OWORD *v5; // rdi
+  __int64 *v7; // rax
+  __int64 v8; // rcx
+  __int128 v9; // xmm0
+  __int128 v10; // xmm1
+  __int128 v11; // xmm0
+  __int128 v12; // xmm1
+  __int128 v13; // xmm0
+  __int128 v14; // xmm1
+  __int128 v15; // xmm0
+  __int128 v16; // xmm1
+  __int128 v17; // xmm1
+  __int128 v18; // xmm0
+  __int128 v19; // xmm1
+  __int128 v20; // xmm0
+  __int128 v21; // xmm1
+  __int128 v22; // xmm0
+  __int128 v23; // xmm1
+  __int128 v24; // xmm0
+  __int128 v25; // xmm1
+  __int128 v26; // xmm0
+  __int128 v27; // xmm1
+  __int128 v28; // xmm0
+  __int128 v29; // xmm1
+  __int128 v30; // xmm0
+  const char *v31; // rax
+  __int64 *v32; // rcx
+  __int64 v33; // rax
+  __int128 v34; // xmm0
+  __int128 v35; // xmm1
+  __int128 v36; // xmm0
+  __int128 v37; // xmm1
+  __int128 v38; // xmm0
+  __int128 v39; // xmm1
+  __int128 v40; // xmm0
+  __int128 v41; // xmm1
+  __int64 v42; // rax
+  __int128 v43; // xmm1
+  __int128 v44; // xmm0
+  __int128 v45; // xmm1
+  __int128 v46; // xmm0
+  __int128 v48; // [rsp+50h] [rbp-B0h]
+  __int64 v49; // [rsp+70h] [rbp-90h] BYREF
+  __int64 v50; // [rsp+78h] [rbp-88h]
+  __int64 v51; // [rsp+80h] [rbp-80h]
+  __int64 v52; // [rsp+88h] [rbp-78h]
+  __int64 v53; // [rsp+90h] [rbp-70h]
+  __int64 v54; // [rsp+98h] [rbp-68h]
+  __int64 v55; // [rsp+A0h] [rbp-60h]
+  __int64 v56; // [rsp+A8h] [rbp-58h]
+  __int64 v57; // [rsp+B0h] [rbp-50h]
+  __int64 v58; // [rsp+B8h] [rbp-48h]
+  __int64 v59; // [rsp+C0h] [rbp-40h]
+  __int64 v60; // [rsp+C8h] [rbp-38h]
+  __int64 v61; // [rsp+D0h] [rbp-30h]
+  __int64 v62; // [rsp+D8h] [rbp-28h]
+  __int64 v63; // [rsp+E0h] [rbp-20h]
+  __int64 v64; // [rsp+E8h] [rbp-18h]
+  __int64 v65; // [rsp+F0h] [rbp-10h]
+  __int64 v66; // [rsp+F8h] [rbp-8h]
+  __int64 v67; // [rsp+100h] [rbp+0h]
+  __int64 v68; // [rsp+108h] [rbp+8h]
+  __int64 v69; // [rsp+110h] [rbp+10h]
+  __int64 v70; // [rsp+118h] [rbp+18h]
+  __int64 v71; // [rsp+120h] [rbp+20h]
+  __int64 v72; // [rsp+128h] [rbp+28h]
+  __int128 v73; // [rsp+130h] [rbp+30h]
+  __int64 v74; // [rsp+140h] [rbp+40h]
+  __int64 v75; // [rsp+148h] [rbp+48h]
+  __int64 v76; // [rsp+150h] [rbp+50h]
+  __int64 v77; // [rsp+158h] [rbp+58h]
+  __int64 v78; // [rsp+160h] [rbp+60h]
+  __int64 v79; // [rsp+168h] [rbp+68h]
+  __int64 v80; // [rsp+170h] [rbp+70h]
+  __int64 v81; // [rsp+178h] [rbp+78h]
+  __int64 v82; // [rsp+180h] [rbp+80h]
+  __int64 v83; // [rsp+188h] [rbp+88h]
+  __int64 v84; // [rsp+190h] [rbp+90h]
+  __int64 v85; // [rsp+198h] [rbp+98h]
+  __int64 v86; // [rsp+1A0h] [rbp+A0h]
+  __int64 v87; // [rsp+1A8h] [rbp+A8h]
+  __int64 v88; // [rsp+1B0h] [rbp+B0h]
+  __int64 v89; // [rsp+1B8h] [rbp+B8h]
+  __int64 v90; // [rsp+1C0h] [rbp+C0h]
+  __int128 v91; // [rsp+1C8h] [rbp+C8h]
+  __int64 v92; // [rsp+1D8h] [rbp+D8h]
+  __int64 v93; // [rsp+1E0h] [rbp+E0h]
+  __int64 v94; // [rsp+1E8h] [rbp+E8h]
+  __int64 v95; // [rsp+1F0h] [rbp+F0h]
+  __int64 v96; // [rsp+1F8h] [rbp+F8h]
+  __int64 v97; // [rsp+200h] [rbp+100h]
+  __int64 v98; // [rsp+208h] [rbp+108h]
+  __int64 v99; // [rsp+210h] [rbp+110h]
+  __int64 v100; // [rsp+218h] [rbp+118h]
+  __int64 v101; // [rsp+220h] [rbp+120h]
+  __int64 v102; // [rsp+228h] [rbp+128h]
+  __int64 v103; // [rsp+230h] [rbp+130h]
+  __int64 v104; // [rsp+238h] [rbp+138h]
+  __int64 v105; // [rsp+240h] [rbp+140h]
+  const wchar_t *v106; // [rsp+248h] [rbp+148h]
+  const wchar_t *v107; // [rsp+250h] [rbp+150h]
+  const wchar_t *v108; // [rsp+258h] [rbp+158h]
+  const wchar_t *v109; // [rsp+260h] [rbp+160h]
+  const wchar_t *v110; // [rsp+268h] [rbp+168h]
+  const wchar_t *v111; // [rsp+270h] [rbp+170h]
+  const wchar_t *v112; // [rsp+278h] [rbp+178h]
+  const wchar_t *v113; // [rsp+280h] [rbp+180h]
+  const wchar_t *v114; // [rsp+288h] [rbp+188h]
+  const wchar_t *v115; // [rsp+290h] [rbp+190h]
+  const wchar_t *v116; // [rsp+298h] [rbp+198h]
+  const wchar_t *v117; // [rsp+2A0h] [rbp+1A0h]
+  const wchar_t *v118; // [rsp+2A8h] [rbp+1A8h]
+  const wchar_t *v119; // [rsp+2B0h] [rbp+1B0h]
+  const wchar_t *v120; // [rsp+2B8h] [rbp+1B8h]
+  const wchar_t *v121; // [rsp+2C0h] [rbp+1C0h]
+  const wchar_t *v122; // [rsp+2C8h] [rbp+1C8h]
+  const wchar_t *v123; // [rsp+2D0h] [rbp+1D0h]
+  const wchar_t *v124; // [rsp+2D8h] [rbp+1D8h]
+  const wchar_t *v125; // [rsp+2E0h] [rbp+1E0h]
+  const wchar_t *v126; // [rsp+2E8h] [rbp+1E8h]
+  const wchar_t *v127; // [rsp+2F0h] [rbp+1F0h]
+  const wchar_t *v128; // [rsp+2F8h] [rbp+1F8h]
+  const wchar_t *v129; // [rsp+300h] [rbp+200h]
+  const wchar_t *v130; // [rsp+308h] [rbp+208h]
+  const wchar_t *v131; // [rsp+310h] [rbp+210h]
+  const wchar_t *v132; // [rsp+318h] [rbp+218h]
+  const wchar_t *v133; // [rsp+320h] [rbp+220h]
+  const wchar_t *v134; // [rsp+328h] [rbp+228h]
+  const wchar_t *v135; // [rsp+330h] [rbp+230h]
+  const wchar_t *v136; // [rsp+338h] [rbp+238h]
+  const wchar_t *v137; // [rsp+340h] [rbp+240h]
+  const wchar_t *v138; // [rsp+348h] [rbp+248h]
+  const wchar_t *v139; // [rsp+350h] [rbp+250h]
+  const wchar_t *v140; // [rsp+358h] [rbp+258h]
+  const wchar_t *v141; // [rsp+360h] [rbp+260h]
+  const wchar_t *v142; // [rsp+368h] [rbp+268h]
+  const wchar_t *v143; // [rsp+370h] [rbp+270h]
+  const wchar_t *v144; // [rsp+378h] [rbp+278h]
+  const wchar_t *v145; // [rsp+380h] [rbp+280h]
+  const wchar_t *v146; // [rsp+388h] [rbp+288h]
+  const wchar_t *v147; // [rsp+390h] [rbp+290h]
+  const wchar_t *v148; // [rsp+398h] [rbp+298h]
+  const wchar_t *v149; // [rsp+3A0h] [rbp+2A0h]
+  const wchar_t *v150; // [rsp+3A8h] [rbp+2A8h]
+  const wchar_t *v151; // [rsp+3B0h] [rbp+2B0h]
+  const wchar_t *v152; // [rsp+3B8h] [rbp+2B8h]
+  __int128 v153; // [rsp+3C0h] [rbp+2C0h]
+  __int128 v154; // [rsp+3D0h] [rbp+2D0h]
+  __int128 v155; // [rsp+3E0h] [rbp+2E0h]
+  __int128 v156; // [rsp+3F0h] [rbp+2F0h]
+  __int128 v157; // [rsp+400h] [rbp+300h]
+  __int128 v158; // [rsp+410h] [rbp+310h]
+  __int128 v159; // [rsp+420h] [rbp+320h]
+  __int128 v160; // [rsp+430h] [rbp+330h]
+  __int128 v161; // [rsp+440h] [rbp+340h]
+  __int128 v162; // [rsp+450h] [rbp+350h]
+  __int128 v163; // [rsp+460h] [rbp+360h]
+  const char *v164; // [rsp+470h] [rbp+370h]
+  _QWORD Src[478]; // [rsp+480h] [rbp+380h] BYREF
+
+  v1 = a1 + 5422;
+  v2 = a1 + 4760;
+  v3 = a1 + 4944;
+  v4 = (void *)(a1 + 936);
+  v5 = (_OWORD *)(a1 + 88);
+  ProcessConfig::ProcessConfig(a1, 41, 105, a1 + 88, 477, a1 + 936, a1 + 4944, 22, a1 + 4760, a1 + 5422);
+  v49 = (__int64)L"MEMORYCLERK_SQLGENERAL";
+  v50 = (__int64)L"MEMORYCLERK_XE_BUFFER";
+  v51 = (__int64)L"MEMORYCLERK_TEST";
+  v52 = (__int64)L"MEMORYCLERK_UNITTEST";
+  v53 = (__int64)L"MEMORYCLERK_SQLBUFFERPOOL";
+  v54 = (__int64)L"MEMORYCLERK_SQLQUERYCOMPILE";
+  v55 = (__int64)L"MEMORYCLERK_SQLQUERYPLAN";
+  v56 = (__int64)L"MEMORYCLERK_SQLQUERYEXEC";
+  v57 = (__int64)L"MEMORYCLERK_SQLOPTIMIZER";
+  v58 = (__int64)L"MEMORYCLERK_QUERYDISKSTORE";
+  v59 = (__int64)L"MEMORYCLERK_QUERYDISKSTORE_HASHMAP";
+  v60 = (__int64)L"MEMORYCLERK_QUERYDISKSTORE_STATS";
+  v61 = (__int64)L"MEMORYCLERK_QUERYDISKSTORE_FEEDBACK";
+  v62 = (__int64)L"MEMORYCLERK_QUERYDISKSTORE_MESSAGING";
+  v63 = (__int64)L"MEMORYCLERK_QUERYDISKSTORE_QUERYVARIANT_DISPATCHERLIST";
+  v64 = (__int64)L"MEMORYCLERK_SQLUTILITIES";
+  v65 = (__int64)L"MEMORYCLERK_SQLSTORENG";
+  v66 = (__int64)L"MEMORYCLERK_PAGE_SERVER_ASYNC_PIPELINE";
+  v67 = (__int64)L"MEMORYCLERK_SQLCONNECTIONPOOL";
+  v68 = (__int64)L"MEMORYCLERK_SQLCLR";
+  v69 = (__int64)L"MEMORYCLERK_SQLCLRASSEMBLY";
+  v70 = (__int64)L"MEMORYCLERK_SQLSERVICEBROKER";
+  v71 = (__int64)L"MEMORYCLERK_SQLXML";
+  v72 = (__int64)L"MEMORYCLERK_SQLHTTP";
+  *(_QWORD *)&v73 = L"MEMORYCLERK_SNI";
+  *((_QWORD *)&v73 + 1) = L"MEMORYCLERK_SERIALIZATION";
+  v74 = (__int64)L"MEMORYCLERK_FULLTEXT";
+  v75 = (__int64)L"MEMORYCLERK_SQLXP";
+  v76 = (__int64)L"MEMORYCLERK_QSRANGEPREFETCH";
+  v77 = (__int64)L"MEMORYCLERK_BHF";
+  v78 = (__int64)L"MEMORYCLERK_SQLQERESERVATIONS";
+  v79 = (__int64)L"MEMORYCLERK_SQLTRACE";
+  v80 = (__int64)L"MEMORYCLERK_XTP";
+  v81 = (__int64)L"MEMORYCLERK_LANGSVC";
+  v82 = (__int64)L"MEMORYCLERK_SQLSLO_OPERATIONS";
+  v83 = (__int64)L"MEMORYCLERK_BACKUP";
+  v84 = (__int64)L"MEMORYCLERK_CSILOBCOMPRESSION";
+  v85 = (__int64)L"MEMORYCLERK_WRITEPAGERECORDER";
+  v86 = (__int64)L"MEMORYCLERK_XLOG_SERVER";
+  v87 = (__int64)L"MEMORYCLERK_EXTERNAL_LIBRARIES";
+  v88 = (__int64)L"MEMORYCLERK_MSJSON";
+  v89 = (__int64)L"MEMORYCLERK_SQLLAST";
+  v90 = (__int64)L"MEMORYCLERK_FULLTEXT_SHMEM";
+  *(_QWORD *)&v91 = L"MEMORYCLERK_SQLSERVICEBROKERTRANSPORT";
+  *((_QWORD *)&v91 + 1) = L"MEMORYCLERK_ASYNC_TRANSPORT";
+  v92 = (__int64)L"MEMORYCLERK_SEREPL";
+  v93 = (__int64)L"MEMORYCLERK_FSAGENT";
+  v94 = (__int64)L"MEMORYCLERK_FILETABLE";
+  v95 = (__int64)L"MEMORYCLERK_SPATIAL";
+  v96 = (__int64)L"MEMORYCLERK_HADR";
+  v97 = (__int64)L"MEMORYCLERK_SQLLOGPOOL";
+  v98 = (__int64)L"MEMORYCLERK_TAILLOGCACHE";
+  v99 = (__int64)L"MEMORYCLERK_LWC";
+  v100 = (__int64)L"MEMORYCLERK_FSCHUNKER";
+  v101 = (__int64)L"MEMORYCLERK_SQLFABRIC";
+  v102 = (__int64)L"MEMORYCLERK_DOSGUARD";
+  v103 = (__int64)L"MEMORYCLERK_SECURITY_FEDAUTH_AAD";
+  v104 = (__int64)L"MEMORYCLERK_NETWORKSXMLMGR";
+  v105 = (__int64)L"MEMORYCLERK_SECURITY_FEDAUTH_SIGNATURE_VALIDATION";
+  v106 = L"MEMORYCLERK_IPADDRINFIREWALLCACHE";
+  v107 = L"MEMORYCLERK_SQLEXTENSIBILITY";
+  v108 = L"MEMORYCLERK_XDBPACKAGELAUNCHER";
+  v109 = L"MEMORYCLERK_XODBCAUTHENTICATIONCACHE";
+  v110 = L"MEMORYCLERK_CONNECTIVITY";
+  v111 = L"MEMORYCLERK_EXTERNAL_ENDPOINT_BLOCKED_IP_CACHE";
+  v112 = L"MEMORYCLERK_USERDBFIREWALLCACHE";
+  v113 = L"MEMORYCLERK_SBS";
+  v114 = L"MEMORYCLERK_SBS_STREAM_PROVIDER";
+  v115 = L"MEMORYCLERK_SVL";
+  v116 = L"MEMORYCLERK_PERFORMANCE_COUNTERS";
+  v117 = L"MEMORYCLERK_RBPEX_PAGEREADER";
+  v118 = L"MEMORYCLERK_RBPEX";
+  v119 = L"MEMORYCLERK_RBIO";
+  v120 = L"MEMORYCLERK_SLOG";
+  v121 = L"MEMORYCLERK_XDB_PKG_LAUNCHER_MANAGER";
+  v122 = L"MEMORYCLERK_CS_BLOB_CACHE";
+  v123 = L"MEMORYCLERK_IQ";
+  v124 = L"MEMORYCLERK_RG_METRICS_REPORTING";
+  v125 = L"MEMORYCLERK_XCS";
+  v126 = L"MEMORYCLERK_EDC";
+  v127 = L"MEMORYCLERK_EMC";
+  v128 = L"MEMORYCLERK_NARWHAL";
+  v129 = L"MEMORYCLERK_TOAD";
+  v130 = L"MEMORYCLERK_QUERYPROFILE";
+  v131 = L"MEMORYCLERK_BLOCKCHAIN_COMM_MGR";
+  v132 = L"MEMORYCLERK_FIDO_LCKMGR";
+  v133 = L"MEMORYCLERK_POLYBASE";
+  v134 = L"MEMORYCLERK_TOAD_RESERVATION";
+  v135 = L"MEMORYCLERK_XFILE";
+  v136 = L"MEMORYCLERK_DEK";
+  v137 = L"MEMORYCLERK_DBLEDGER";
+  v138 = L"MEMORYCLERK_SOCRATESQP";
+  v139 = L"MEMORYCLERK_EXTERNAL_GOVERNANCE_AUTHORIZATION_ENGINE";
+  v140 = L"MEMORYCLERK_SECURITY";
+  v141 = L"MEMORYCLERK_FIDO_INDEXSTORE";
+  v142 = L"MEMORYCLERK_FIDO_DELTA";
+  v143 = L"MEMORYCLERK_FIDO_TXMGR";
+  v144 = L"MEMORYCLERK_FIDO_RM";
+  v145 = L"MEMORYCLERK_FIDO_CLONE";
+  v146 = L"MEMORYCLERK_FIDO_GLMS";
+  v147 = L"MEMORYCLERK_FIDO_CLONE_REF";
+  v148 = L"MEMORYCLERK_FIDO_CLONE_TXCTX";
+  v149 = L"MEMORYCLERK_DIRECTORY_CONTENT_LISTS";
+  v150 = L"MEMORYCLERK_LIST_DIRECTORY";
+  v151 = L"MEMORYCLERK_EXT_GOV_MGR";
+  v152 = L"MEMORYCLERK_LAST";
+  if ( v5 )
+  {
+    v7 = &v49;
+    v8 = 6;
+    do
+    {
+      v5 += 8;
+      v9 = *(_OWORD *)v7;
+      v10 = *((_OWORD *)v7 + 1);
+      v7 += 16;
+      *(v5 - 8) = v9;
+      v11 = *((_OWORD *)v7 - 6);
+      *(v5 - 7) = v10;
+      v12 = *((_OWORD *)v7 - 5);
+      *(v5 - 6) = v11;
+      v13 = *((_OWORD *)v7 - 4);
+      *(v5 - 5) = v12;
+      v14 = *((_OWORD *)v7 - 3);
+      *(v5 - 4) = v13;
+      v15 = *((_OWORD *)v7 - 2);
+      *(v5 - 3) = v14;
+      v16 = *((_OWORD *)v7 - 1);
+      *(v5 - 2) = v15;
+      *(v5 - 1) = v16;
+      --v8;
+    }
+    while ( v8 );
+    v17 = *((_OWORD *)v7 + 1);
+    *v5 = *(_OWORD *)v7;
+    v18 = *((_OWORD *)v7 + 2);
+    v5[1] = v17;
+    v19 = *((_OWORD *)v7 + 3);
+    v5[2] = v18;
+    v20 = *((_OWORD *)v7 + 4);
+    v5[3] = v19;
+    v5[4] = v20;
+  }
+  else
+  {
+    *_errno() = 22;
+    _invalid_parameter_noinfo();
+  }
+  Src[0] = "LOG_CONSUMER_SET";
+  Src[1] = "ASYNC_REQ_MGR_DEFERRAL_LIST";
+  Src[2] = "PS_READ_REQ_MINLSN_MINHEAP";
+  Src[3] = "LONG_REQ_TRACKER";
+  Src[4] = "DB_COPY_MESSAGE_HASH_BUFFER";
+  Src[5] = "XLOG_TOS_FILE";
+  Src[6] = "RBPEX_SEGMENT_WRITE_BUFFER_PAGES";
+  Src[7] = "XLOG_TOS_ITER";
+  Src[8] = "LOCK_SQLSATELLITE_MESSAGE";
+  Src[9] = "HADR_COMPRESSION_MGR_POOL";
+  Src[10] = "FOREIGN_FILE_VALIDATION";
+  Src[11] = "XTP";
+  Src[12] = "XTP_CONTAINER_MAP";
+  Src[13] = "TEMPORAL";
+  Src[14] = "SEQMAP";
+  Src[15] = "RBIO";
+  Src[16] = "XLOG_POOL";
+  Src[17] = "XLOG_GEN_MAP";
+  Src[18] = "XLOG_STAGING_MGR";
+  Src[19] = "XLOG_TOS_BLOCK_IO_MAP";
+  Src[20] = "XLOG_TOS_ITER_PROXY";
+  Src[21] = "XLOG_BROKER";
+  Src[22] = "XLOG_SPACE_MGR";
+  Src[23] = "XLOG_RG_ACTOR_TRIM";
+  Src[24] = "XLOG_POOL_FILLER";
+  Src[25] = "XLOG_INSTANCE_PARTNERS";
+  Src[26] = "XLOG_EGRESS_MAP";
+  Src[27] = "LOG_REPLICA_VLF_IO_TRACKER";
+  Src[28] = "DISKPERF_IO_MAP";
+  Src[29] = "RBIO_PLSN_CACHE";
+  Src[30] = "RBIO_IC_MAP";
+  Src[31] = "CHECK_AGGREGATE_STATE";
+  Src[32] = "CLOUD_THROTTLING_SETTING";
+  Src[33] = "CLOUD_PARTITION_COPY_STATS";
+  Src[34] = "CLOUD_PARTITION_USAGE";
+  Src[35] = "SE_REPL_CSN";
+  Src[36] = "SE_REPL_PREFETCH_STATS";
+  Src[37] = "SE_REPL_CSNDBTS";
+  Src[38] = "SE_REPL_REPLICA";
+  Src[39] = "SE_REPL_PARTITION";
+  Src[40] = "SE_REPL_PARTITION_BY_ID";
+  Src[41] = "SE_REPL_PARTITION_BY_KEY";
+  Src[42] = "SE_REPL_PARTITION_VERSION";
+  Src[43] = "SE_REPL_ROWSET_METADATA";
+  Src[44] = "SE_REPL_SECONDARY_ROWSET_METADATA";
+  Src[45] = "SE_REPL_PARTITION_KILL";
+  Src[46] = "SE_REPL_PARTITION_MGR_EVENT_LIST";
+  Src[47] = "SE_REPL_PARTITION_SESSION_EVENT_LIST";
+  Src[48] = "SE_REPL_BACKGROUND_TASK_CONTROL";
+  Src[49] = "SE_REPL_FLOW_CONTROL";
+  Src[50] = "SE_REPL_CHECKPOINT_QUEUES";
+  Src[51] = "SE_REPL_SECONDARY_WORKERLIST";
+  Src[52] = "ASYNC_TRANSPORT_SESSION";
+  Src[53] = "ASYNC_TRANSPORT_USERS";
+  Src[54] = "ASYNC_TRANSPORT_PENDING_USERS";
+  Src[55] = "ASYNC_TRANSPORT_DESTINATIONS";
+  Src[56] = "ASYNC_TRANSPORT_HEARTBEAT_DESTINATIONS";
+  Src[57] = "ASYNC_TRANSPORT_HEARTBEAT_DISPATCH";
+  Src[58] = "ASYNC_TRANSPORT_STREAMS";
+  Src[59] = "ASYNC_TRANSPORT_MESSAGE_QUEUES";
+  Src[60] = "ASYNC_TRANSPORT_CONNECT";
+  Src[61] = "ASYNC_TRANSPORT_THROTTLED_CONNECT";
+  Src[62] = "ASYNC_TRANSPORT_DESTINATION";
+  Src[63] = "ASYNC_TRANSPORT_STREAM";
+  Src[64] = "SEREPL_WORKER_POOLS";
+  Src[65] = "CLOUD_FABRIC_MONITOR";
+  Src[66] = "GQ_PROCESSOR_STATE";
+  Src[67] = "XLOG_REPLICA_LIST";
+  Src[68] = "XLOG_REPLICA_MAP";
+  Src[69] = "LOG_REPLICA_ACTIVITY_STATS";
+  Src[70] = "XLOG_RG_ACTOR_MAP";
+  Src[71] = "PAGE_SERVER_ACTOR_MAP";
+  Src[72] = "RBPEX_SEED_WORK_ITEM_LIST";
+  Src[73] = "SE_REPL_BACKGROUND_TASK_LIST";
+  Src[74] = "SCRIPT_DEPLOYMENT_REQUESTS";
+  Src[75] = "SCRIPT_DEPLOYMENT_WORKERS";
+  Src[76] = "VIRTUAL_FILE_STATS_FCB_LIST";
+  Src[77] = "ASYNC_TRANSPORT_MESSAGE_QUEUE";
+  Src[78] = "ASYNC_TRANSPORT_MESSAGE_QUEUE_PAGES";
+  Src[79] = "ASYNC_TRANSPORT_WORKER_QUEUE";
+  Src[80] = "COLUMNSTOREBUILDSTATE_LIST";
+  Src[81] = "COLUMNSTORE_HASHTABLE";
+  Src[82] = "COMMITTABLE";
+  Src[83] = "HADR_TRANSPORT_CONTROL";
+  Src[84] = "HADR_TRANSPORT_LIST";
+  Src[85] = "ABR";
+  Src[86] = "GUARDIAN";
+  Src[87] = "CONNECTS";
+  Src[88] = "XTP_STORAGE_FILEMAP";
+  Src[89] = "XTP_STORAGE_FREE_LIST";
+  Src[90] = "ASYNCSTATSLIST";
+  Src[91] = "HTTP_CONNCACHE";
+  Src[92] = "BACKUP";
+  Src[93] = "BACKUP_COPY_CONTEXT";
+  Src[94] = "FILE_HANDLE_CACHE";
+  Src[95] = "CMED_DATABASE";
+  Src[96] = "MD_CHANGE_NOTIFICATION";
+  Src[97] = "CMED_HASH_SET";
+  Src[98] = "HTTP";
+  Src[99] = "HTTP_ENDPOINT";
+  Src[100] = "DIGEST_CACHE";
+  Src[101] = "FILE_TABLE";
+  Src[102] = "SESSION_KILLER";
+  Src[103] = "INTERFACE_ENDPOINTS";
+  Src[104] = "SPIN_EVENT_MUTEX";
+  Src[105] = "SECURITY_CACHE";
+  Src[106] = "OBJECT_PERMISSION_CACHE_BUCKET";
+  Src[107] = "SECURITY_FEDAUTH_AAD_BECWSCONNS";
+  Src[108] = "SECURITY";
+  Src[109] = "SPL_AKV_LAST_FOUND_TIME";
+  Src[110] = "SQL_NORM";
+  Src[111] = "TDS_TVP";
+  Src[112] = "SPL_TDS_PKT_QUEUE";
+  Src[113] = "SQLTRACE_FILE_BUFFER";
+  Src[114] = "SRVPROC";
+  Src[115] = "EXT_CACHE";
+  Src[116] = "FT_INIT";
+  Src[117] = "COM_INIT";
+  Src[118] = "LOGON_TRIGGER_CACHE";
+  Src[119] = "BANDWIDTH_STATE_LIST";
+  Src[120] = "QUERY_PROFILE";
+  Src[121] = "PARTITION_BITMAP_LIST";
+  Src[122] = "SOAPSESSIONS";
+  Src[123] = "QUERYSCAN";
+  Src[124] = "BPWORKFILE";
+  Src[125] = "BACKUP_CTX";
+  Src[126] = "RESOURCE";
+  Src[127] = "CACHEOBJ_DBG";
+  Src[128] = "DBCC_CHECK";
+  Src[129] = "ADB_CACHE";
+  Src[130] = "X_PIPE_DEMAND";
+  Src[131] = "DINPBUF";
+  Src[132] = "SQL_MGR";
+  Src[133] = "DEFERRED_WF_EXT_DROP";
+  Src[134] = "EXTENT_ACTIVATION";
+  Src[135] = "DP_LIST";
+  Src[136] = "BUF_HASH";
+  Src[137] = "DP_CONTEXT";
+  Src[138] = "DP_WORK_QUEUE";
+  Src[139] = "DBT_HASH";
+  Src[140] = "HOBT_HASH";
+  Src[141] = "TXFRM_REPL";
+  Src[142] = "FSGHOST_STATUS";
+  Src[143] = "PAGECOPIER";
+  Src[144] = "DTT_LIST";
+  Src[145] = "ENDD_LIST";
+  Src[146] = "IDENTITY";
+  Src[147] = "BUF_LINK";
+  Src[148] = "DBTABLE";
+  Src[149] = "X_PORT";
+  Src[150] = "LSS_SYNC_DTC";
+  Src[151] = "DP_CACHE_LIST";
+  Src[152] = "DP_BLOCK";
+  Src[153] = "XDESMGR";
+  Src[154] = "X_PIPE";
+  Src[155] = "LOGFLUSHQ";
+  Src[156] = "DIRECTLOGCONSUMER";
+  Src[157] = "XCB_HASH";
+  Src[158] = "BASE_XACT_HASH";
+  Src[159] = "XDES_HASH";
+  Src[160] = "ABORTED_XDES_HASH";
+  Src[161] = "ABORTED_XDES_SWEEP";
+  Src[162] = "ABORTED_XDES_ID_FOR_DBCC";
+  Src[163] = "BUF_WRITE_LOG";
+  Src[164] = "RFS_THREAD_QUEUE";
+  Src[165] = "SVC_BROKER_CTRL";
+  Src[166] = "XACT_WORKSPACE";
+  Src[167] = "XCB";
+  Src[168] = "X_PACKET_LIST";
+  Src[169] = "QUERYEXEC";
+  Src[170] = "SVC_BROKER_LIST";
+  Src[171] = "LOGCACHE_ACCESS";
+  Src[172] = "LSLIST";
+  Src[173] = "HADRSEEDINGLIST";
+  Src[174] = "HADR_PRIORITY_QUEUE";
+  Src[175] = "DP_BLOCK_LIST";
+  Src[176] = "DTC_HASHTABLE";
+  Src[177] = "SVC_BROKER_DEBUG_LIST";
+  Src[178] = "SVC_BROKER_OBJECT";
+  Src[179] = "CURSOR";
+  Src[180] = "READ_AHEAD";
+  Src[181] = "DROP";
+  Src[182] = "XID_ARRAY";
+  Src[183] = "LOCK_HASH";
+  Src[184] = "LOGLC";
+  Src[185] = "SVC_BROKER_TASK_LIST";
+  Src[186] = "QE_SHUTDOWN";
+  Src[187] = "LOGLFM";
+  Src[188] = "GHOST_HASH";
+  Src[189] = "ISSRESOURCE";
+  Src[190] = "XVB_CSN";
+  Src[191] = "XVB_LIST";
+  Src[192] = "FCB_REPLICA_SYNC";
+  Src[193] = "SUBPDESC_LIST";
+  Src[194] = "DIAG_OBJECT";
+  Src[195] = "XACT_LOCK_INFO";
+  Src[196] = "MDB_REMOTE_SESSION_HASH_TABLE";
+  Src[197] = "MDB_REMOTE_BATCH_STATS_HASH_TABLE";
+  Src[198] = "SESSION_MANAGER_PRIORITY_QUEUE";
+  Src[199] = "SESSION_MANAGER_WORK_ITEM_LIST";
+  Src[200] = "MATRIX_DATA_VIRTUALIZATION_MANAGER_PRIORITY_QUEUE";
+  Src[201] = "MATRIX_DATA_VIRTUALIZATION_MANAGER_WORK_ITEM_LIST";
+  Src[202] = "MATRIX_DATA_VIRTUALIZATION_MANAGER_AGENT_PRIORITY_QUEUE";
+  Src[203] = "MATRIX_DATA_VIRTUALIZATION_MANAGER_AGENT_WORK_ITEM_LIST";
+  Src[204] = "REMOTEOP";
+  Src[205] = "MATRIXDB_MTM_TXN";
+  Src[206] = "TaskElapsedExecutionMonitor";
+  Src[207] = "SE_REPL_SECONDARY_TASk_PROXY";
+  Src[208] = "FSAGENT";
+  Src[209] = "SESSION_MANAGER_REMOTE_SESSION_LIST";
+  Src[210] = "SESSION_MANAGER_REMOTE_BATCH_STATS_LIST";
+  Src[211] = "SESSION_MANAGER_REMOTE_DIAG_LIST";
+  Src[212] = "XACT_LOCKINFO_TASK";
+  Src[213] = "GHOST_FREE";
+  Src[214] = "XCB_FREE_LIST";
+  Src[215] = "LOCK_FREE_LIST";
+  Src[216] = "LSID";
+  Src[217] = "XDES";
+  Src[218] = "DBT_IO_LIST";
+  Src[219] = "RBIO_MSG_LIST";
+  Src[220] = "IOREQ";
+  Src[221] = "XCHNG_TRACE";
+  Src[222] = "DROP_TEMPO";
+  Src[223] = "INDEX_CREATE";
+  Src[224] = "XTS_MGR";
+  Src[225] = "DATASET_FREELIST";
+  Src[226] = "SHARABLE_SESSION_OBJECTS";
+  Src[227] = "CURSOR_VISIBILITY_LIST";
+  Src[228] = "TEMP_OBJECT_LIST";
+  Src[229] = "XML_DOC_LIST";
+  Src[230] = "PROGRESS_REPORT";
+  Src[231] = "DIAG_MANAGER";
+  Src[232] = "SUBPDESC";
+  Src[233] = "CLR_HOSTTASK";
+  Src[234] = "MGR_CACHE";
+  Src[235] = "SETRANGE_SYNC";
+  Src[236] = "ALLOC_CACHES_HASH";
+  Src[237] = "LOCK_NOTIFICATION";
+  Src[238] = "COMPPLAN_SKELETON";
+  Src[239] = "QSCAN_CACHE";
+  Src[240] = "LPE_SESSION";
+  Src[241] = "LPE_BATCH";
+  Src[242] = "LPE_SXTP";
+  Src[243] = "CLR_SPIN_LOCK";
+  Src[244] = "CURSQL";
+  Src[245] = "TSQL_DEBUG";
+  Src[246] = "LOCK_RESOURCE_ID";
+  Src[247] = "SEQUEUE_SIZED_THREADSAFE";
+  Src[248] = "DROPPED_ALLOC_UNIT";
+  Src[249] = "APPENDONLY_STORAGE";
+  Src[250] = "SNI";
+  Src[251] = "SESSION_MANAGER";
+  Src[252] = "CONNECTION_MANAGER";
+  Src[253] = "SESSION_SEC_CONTEXT";
+  Src[254] = "QUERY_EXEC_STATS";
+  Src[255] = "SUBLATCH";
+  Src[256] = "LATCH_SPIN_STATS";
+  Src[257] = "MCI";
+  Src[258] = "MATRIXDB_TCM_LIST";
+  Src[259] = "RPCDISPATCH";
+  Src[260] = "RPCRESPONDERCONTEXT";
+  Src[261] = "HADR_AR_CONTROLLER_COLLECTION";
+  Src[262] = "HADR_AGH_X_ACCESS";
+  Src[263] = "SYNCPOINT_RESOURCE";
+  Src[264] = "REMOTE_THREAD_CACHE";
+  Src[265] = "SEMANTIC_TICACHE";
+  Src[266] = "QUERY_STORE_SELF_AGG";
+  Src[267] = "QUERY_STORE_LIST";
+  Src[268] = "QUERY_STORE_PLAN_LIST";
+  Src[269] = "QUERY_STORE_PSP_QUERY_VARIANT_STMT_LIST";
+  Src[270] = "QUERY_STORE_PSP_DISPATCHER_PLAN_LIST";
+  Src[271] = "QUERY_STORE_CAPTURE_POLICY_STATS";
+  Src[272] = "QUERY_STORE_CAPTURE_POLICY_INTERVAL";
+  Src[273] = "QUERY_STORE_CAPTURE_POLICY_THRESHOLD";
+  Src[274] = "QUERY_STORE_READ_ONLY_FLAGS";
+  Src[275] = "WINFAB_REPORT_FAULT";
+  Src[276] = "LOCK_SORT_STREAM";
+  Src[277] = "SOCRATESQP_RBIOQUEUE";
+  Src[278] = "LOCK_SHUFFLE_BUFFER_POOL";
+  Src[279] = "LOCK_SHUFFLE_SHARED_BUFFER";
+  Src[280] = "SBS_PENDING";
+  Src[281] = "SBS_EARLY";
+  Src[282] = "SBS_SERVER_XACT_TASK_PROXY";
+  Src[283] = "FIDO_LCK_REQ_TASK_PROXY";
+  Src[284] = "SYNAPSE_LINK_DATABASES";
+  Src[285] = "DWTRANS";
+  Src[286] = "FIDO_LCK_REQ_TASK_PROXY_SPID";
+  Src[287] = "GLOBALTRANS";
+  Src[288] = "APRC_EVENT_LIST";
+  Src[289] = "NATIVE_SHUFFLE_STATS_LIST";
+  Src[290] = "MATRIXDB_PRISM_STATE";
+  Src[291] = "TMP_SESS_KEY";
+  Src[292] = "WRITE_PAGE_RECORDER";
+  Src[293] = "WPR_STALE_PAGE_LIST";
+  Src[294] = "OPT_IDX_MISS_KEY";
+  Src[295] = "FS_DELETED_FOLDER_CLEANUP";
+  Src[296] = "REPL_LOGREADER_HISTORY_CACHE";
+  Src[297] = "MCIBatchOrder";
+  Src[298] = "LOGPOOL_HASHBUCKET";
+  Src[299] = "TAILLOGCACHE_HASHBUCKET";
+  Src[300] = "IO_DISPENSER_PAUSE";
+  Src[301] = "RPCPACKAGE";
+  Src[302] = "QUERY_STORE_STMT_COMP_AGG";
+  Src[303] = "QUERY_STORE_PLAN_COMP_AGG";
+  Src[304] = "SPL_QUERY_STORE_EXEC_STATS_READ";
+  Src[305] = "SPL_QUERY_STORE_STATS_COOKIE_CACHE";
+  Src[306] = "SPL_QUERY_STORE_CTX_INITIALIZED";
+  Src[307] = "SPL_QUERY_STORE_ASYNC_QUEUES_INITIALIZED";
+  Src[308] = "EXTENSIBILITY_LAST_USER_INFO";
+  Src[309] = "RG_READAHEAD_HASTABLE";
+  Src[310] = "IQ_OBJ_HASH";
+  Src[311] = "DEK_INSTANCE";
+  Src[312] = "LIVE_TARGET_TVF";
+  Src[313] = "HADR_AR_TRANSPORT";
+  Src[314] = "HADR_AR_DB_MGR";
+  Src[315] = "REDOMGRSTATE";
+  Src[316] = "SYNAPSE_LINK_LANDING_ZONES";
+  Src[317] = "NATIVE_SHUFFLE_OVERLAPPED_READS";
+  Src[318] = "GROUP_COMMIT_FEEDBACK_LOOP";
+  Src[319] = "FREE_SPACE_CACHE_ENTRY";
+  Src[320] = "OPT_IDX_MISS_ID";
+  Src[321] = "SOS_RW";
+  Src[322] = "RANGE_GENERATION";
+  Src[323] = "KTM_ENLISTMENT";
+  Src[324] = "ONDEMAND_TASK";
+  Src[325] = "REMOTE_SESSION_CACHE";
+  Src[326] = "OPT_INFO_MGR";
+  Src[327] = "OPT_IDX_STATS";
+  Src[328] = "FGCB_PRP_FILL";
+  Src[329] = "HOBT_DROPPED";
+  Src[330] = "FS_CONTAINER_LIST_WITH_DELETE";
+  Src[331] = "FILESTREAM_CHUNKER";
+  Src[332] = "RPCCHANNELPOOL";
+  Src[333] = "RPCREQUESTORCONTEXT";
+  Src[334] = "CHANNELFORCECLOSEMANAGER";
+  Src[335] = "DATAPORTSOURCEINFOQUEUE";
+  Src[336] = "DATAPORTSOURCEINFOCREDIT";
+  Src[337] = "DATAPORTCONSUMER";
+  Src[338] = "QUERY_STORE_HT_CACHE";
+  Src[339] = "SPL_QUERY_STORE_EXEC_STATS_AGG";
+  Src[340] = "QUERY_STORE_CURRENT_INTERVAL";
+  Src[341] = "QUERY_STORE_ASYNC_QUEUE_TLIST";
+  Src[342] = "QUERY_STORE_ASYNC_PERSIST";
+  Src[343] = "REPL_LOGREADER_PERDB_HISTORY_CACHE";
+  Src[344] = "TailLogCacheHashEntry";
+  Src[345] = "LOGPOOL_SHAREDCACHEBUFFER";
+  Src[346] = "LOGPOOL_SIZEPERRESOURCEPOOL";
+  Src[347] = "LOGPOOL_FREEBUFMGR";
+  Src[348] = "LOGPOOL_FREEBUFMGR";
+  Src[349] = "LOGPOOL_REFCOUNTEDOBJECT";
+  Src[350] = "XE_SESSION_STORAGE";
+  Src[351] = "MATRIXDB_MEMTABLE";
+  Src[352] = "CM_ROSTER";
+  Src[353] = "CM_ENLISTMENT";
+  Src[354] = "CM_FMHISTORY";
+  Src[355] = "CMA_FMHISTORY";
+  Src[356] = "CM_FMCONFIG";
+  Src[357] = "FABRIC_OBJECT_REGISTRATION";
+  Src[358] = "TCMA_AGE_DESC";
+  Src[359] = "LOG_CONSOLIDATION";
+  Src[360] = "SOS_PHYS_PAGE_CACHE";
+  Src[361] = "LANG_RES_LOAD";
+  Src[362] = "HADR_FABRIC_FACTORY";
+  Src[363] = "ASYNC_OP_ADMIN_CLIENT_REGISTRATION_LIST";
+  Src[364] = "ASYNC_OP_ADMIN_WORK_REGISTRATION_HASH_TABLE";
+  Src[365] = "FABRIC_REPLICA_TRANSPORT";
+  Src[366] = "ONE_PROC_SIM_NODE_CONTEXT";
+  Src[367] = "ONE_PROC_SIM_REPLICA_CONTEXT";
+  Src[368] = "ONE_PROC_SIM_SERVICE_PARTITION";
+  Src[369] = "FABRIC_DB_MGR_PTR";
+  Src[370] = "FABRIC_LOG_MANAGEMENT_INPUT_VALUE";
+  Src[371] = "FABRIC_TVF_DATA_CONSUMER_LIST";
+  Src[372] = "FABRIC_TVF_LOAD_LIB";
+  Src[373] = "SLO_INFO_LIST";
+  Src[374] = "XECLOUDMIN_PAUSE";
+  Src[375] = "SPT_PROFILE";
+  Src[376] = "XE_RATE_LIMITER_STRETCHDB";
+  Src[377] = "VDI_OPERATION";
+  Src[378] = "SE_REPL_QUEUE_XACT_HASH";
+  Src[379] = "SE_REPL_QUEUE_COMMIT_LIST";
+  Src[380] = "SE_REPL_SUBTYPE_VERSION";
+  Src[381] = "XDB_URI_CACHE";
+  Src[382] = "SQL_ALIAS_CACHE";
+  Src[383] = "XDB_REMOTE_URI_CACHE";
+  Src[384] = "BPREPARTITION";
+  Src[385] = "CSIBUILDMEM";
+  Src[386] = "DBSEEDING_OPERATION";
+  Src[387] = "SNI_NODE_PENDING_IO_QUEUE";
+  Src[388] = "XTP_RT_DATA_LIST";
+  Src[389] = "XDB_HOST_COMPLETED_REQUEST_LIST";
+  Src[390] = "XDB_WINFAB_CACHE_ENTRY_RESOLVE_LIST";
+  Src[391] = "SPL_XDB_ABORT_TASK_LIST";
+  Src[392] = "SPL_XDB_RG_INSTANCE_LIST";
+  Src[393] = "SPL_XDB_RG_APPLICTION_LIST";
+  Src[394] = "SPL_XDB_RG_SERVERLESS_BILLING_FLAGS";
+  Src[395] = "XDB_CONFIG_SUBS";
+  Src[396] = "XDB_CONFIG_SETTING";
+  Src[397] = "XIO_BLOCKLIST";
+  Src[398] = "XIO_REQSTR";
+  Src[399] = "XIO_SEQNUMBUMP";
+  Src[400] = "XIO_REQCLOSE";
+  Src[401] = "XIO_CREDENTIAL";
+  Src[402] = "ACTIVE_REQUEST_LIST";
+  Src[403] = "SBS_TRANSPORT";
+  Src[404] = "ROWGROUP_VERSIONS";
+  Src[405] = "NETCONN_ADDRESS";
+  Src[406] = "DELETEBITMAP";
+  Src[407] = "LSNREFLIST";
+  Src[408] = "PAGE_WORKITEMLIST";
+  Src[409] = "XDESTABLELIST";
+  Src[410] = "SPL_FREEXDESLIST";
+  Src[411] = "PARALLELREDOCACHE";
+  Src[412] = "LOGIOSEQMAPPENDINGMESSAGEQUEUE";
+  Src[413] = "SOS_SATELLITE_USER_POOL";
+  Src[414] = "USERIDENTIFIER_STATE";
+  Src[415] = "COLUMNDATASETSESSIONLIST";
+  Src[416] = "XIOSTATS";
+  Src[417] = "LOGIOSEQ";
+  Src[418] = "APRC_QUEUE_LIST";
+  Src[419] = "APRC_VALIDATION_QUEUE_LIST";
+  Src[420] = "APRC_BACK_OFF_STATS";
+  Src[421] = "FEEDBACK_QUEUE_LIST";
+  Src[422] = "DOP_FEEDBACK_INTERNAL_DATA";
+  Src[423] = "SBS_DISPATCH";
+  Src[424] = "SBS_CLIENT_REQUESTS";
+  Src[425] = "SBS_CLIENT_ENDPOINTS";
+  Src[426] = "PWAIT_GWPROXYCONN_COUNTERTABLE_RWLOCK";
+  Src[427] = "PWAIT_GWPROXYCONN_PENDINGQUEUE_RWLOCK";
+  Src[428] = "SBS_UCS_DISPATCH";
+  Src[429] = "SBS_UCS_DISPATCH";
+  Src[430] = "REMOTEBLOCKIO";
+  Src[431] = "SATELLITE_CONNECTION";
+  Src[432] = "LAUNCHPAD_CONNECTION_STATE";
+  Src[433] = "RBPE_SEEDING_TASK_LIST";
+  Src[434] = "RBPE_LRU_TIMESTAMP_MAP";
+  Src[435] = "SBSFO_LAST_WRITE_LSN";
+  Src[436] = "TIERED_STORAGE_LRU_COST_INFO";
+  Src[437] = "ERROR_REPORTING_MANAGER";
+  Src[438] = "SBS_FILE_COPY_TASK";
+  Src[439] = "SBS_FILE_TRIM_TASK";
+  Src[440] = "SBS_WRITE_WAIT_TABLE";
+  Src[441] = "SBS_CANCEL_LIST";
+  Src[442] = "DIRECT_SBS_THREAD_TEB_NODE";
+  Src[443] = "IQ_DISP_TASK";
+  Src[444] = "IQ_DISP_TVF";
+  Src[445] = "IQ_OBJ_TRACK_DB";
+  Src[446] = "PVS_PAGE_LIST";
+  Src[447] = "PVS_FREE_LIST";
+  Src[448] = "SLOG_APPEND";
+  Src[449] = "FIDO_VERSION_CACHE";
+  Src[450] = "FIDO_SEQUENCE_OBJECT_CACHE";
+  Src[451] = "FIDO_LCK_MGR_XACT";
+  Src[452] = "FIDO_LCK_MGR_PENDING_LOCKS";
+  Src[453] = "FIDO_GLM_ALTER_TX_ID_LIST";
+  Src[454] = "FIDO_GLM_CONTROLLER";
+  Src[455] = "FIDO_GLM_TARDIS";
+  Src[456] = "INDEX_BUILD_BUCKETIZATION";
+  Src[457] = "XCS_PARALLEL_SCAN";
+  Src[458] = "XFILE_DISPATCH";
+  Src[459] = "XFILE_REQUEST";
+  Src[460] = "XFILE_OBJECT_POOL";
+  Src[461] = "XFILE_TASK_PROXY";
+  Src[462] = "DATABASE_LEDGER_APPEND";
+  Src[463] = "DATABASE_LEDGER_TRUNCATION_POINT";
+  Src[464] = "TOAD_ROWGROUP_GC_LIST";
+  Src[465] = "SOCRATES_QP_ID_MAP";
+  Src[466] = "RPBEX_SHRINK_WORKITEM_LIST";
+  Src[467] = "RPBEX_ZONE_LIST";
+  Src[468] = "RPBEX_SHRINKIOCOMPREQUEST_LIST";
+  Src[469] = "RBPEX_WRITE_BUFFER_MAP_BUCKET";
+  Src[470] = "RBPEX_SEGMENT_FREE_LIST";
+  Src[471] = "RBPEX_SEGMENT_WRITE_BUFFER_WAITING_WRITING_LIST";
+  Src[472] = "RBPEX_MEMORY_BUFFER_LIST";
+  Src[473] = "OCCI_ROWGROUP";
+  Src[474] = "STACK_HASHER";
+  Src[475] = "LOCK_SATELLITE_BLOB_MESSAGE_QUEUE";
+  Src[476] = "PWAIT_CADDRITEMSLOCK_RWLOCK";
+  Src[477] = "LAST";
+  *(_QWORD *)&v153 = "LOCK_RW_SECURITY_CACHE";
+  *((_QWORD *)&v153 + 1) = "LOCK_RW_CMED_HASH_SET";
+  *(_QWORD *)&v154 = "LOCK_RW_ABTX_HASH_SET";
+  *((_QWORD *)&v154 + 1) = "LOCK_RW_PGID_HASH_SET";
+  *(_QWORD *)&v155 = "LOCK_RW_USER_TX_PG_CLEANUP_HASH_SET";
+  *((_QWORD *)&v155 + 1) = "LOCK_RW_RBIO_REQ";
+  *(_QWORD *)&v156 = "LOCK_RW_RBPE_IGNORED_OBJ";
+  *((_QWORD *)&v156 + 1) = "LOCK_RW_RBIO_PAGESERVER_DB";
+  *(_QWORD *)&v157 = "LOCK_RW_RBPE_PAGE_ENTRY";
+  v49 = 0x202020202020202LL;
+  *((_QWORD *)&v157 + 1) = "LOCK_RW_SINGLE_PAGE_IO_HIST_OBJ";
+  *(_QWORD *)&v158 = "LOCK_RW_WPR_BUCKET";
+  *((_QWORD *)&v158 + 1) = "LOCK_RW_IN_ROW_TRACKER";
+  *(_QWORD *)&v159 = "LOCK_RW_LOGIN_RATE_STATS";
+  *((_QWORD *)&v159 + 1) = "LOCK_RW_DEFTX_HASH_SET";
+  *(_QWORD *)&v160 = "LOCK_RW_DPT_TABLE";
+  *((_QWORD *)&v160 + 1) = "LOCK_RW_TOSFILE_MULTI";
+  *(_QWORD *)&v161 = "LOCK_RW_AGDB_HEALTH_DIAG";
+  *((_QWORD *)&v161 + 1) = "LOCK_RW_ACTIVE_XDES_ID_TABLE";
+  *(_QWORD *)&v162 = "LOCK_RW_SPL_RW_WRITE_TRACKING_BMP";
+  *((_QWORD *)&v162 + 1) = "LOCK_RW_SPL_RW_SBS_BORROWING_HIDDEN_WORKERS_HASH_SET";
+  *(_QWORD *)&v163 = "LOCK_RW_SPL_LOG_BLOCK_ACTIVITY_TRACE";
+  *((_QWORD *)&v163 + 1) = "ONE_PROC_SIM_NODE_CONTEXT_LIST";
+  v164 = "RWLOCK_LAST";
+  v50 = 0x202020202020202LL;
+  v51 = 0x202020202020202LL;
+  v52 = 0x202020202020202LL;
+  v53 = 0x101010101010101LL;
+  v54 = 0x101010101010101LL;
+  v55 = 0x101010101010101LL;
+  v56 = 0x101010101010101LL;
+  v57 = 0x202020202010101LL;
+  v58 = 0x101010201010102LL;
+  v59 = 0x202020202020202LL;
+  v60 = 0x202020202020202LL;
+  v61 = 0x202020202020202LL;
+  v62 = 0x202020202020202LL;
+  v63 = 0x202020202020202LL;
+  v64 = 0x202020202020202LL;
+  v65 = 0x202020202020202LL;
+  v66 = 0x202020202020202LL;
+  v67 = 0x202020202020202LL;
+  v68 = 0x202020202020202LL;
+  v69 = 0x202020202020202LL;
+  v70 = 0x202020202020202LL;
+  v71 = 0x202020202020202LL;
+  v72 = 0x202020202020202LL;
+  LODWORD(v73) = 33686018;
+  *(_QWORD *)((char *)&v73 + 4) = 514;
+  HIDWORD(v73) = 16908290;
+  v74 = 0x202020200000002LL;
+  v75 = 0x202020202020202LL;
+  v76 = 0x202020202020202LL;
+  v77 = 0x202020202020202LL;
+  v78 = 0x202020202020202LL;
+  v79 = 0x202020202020202LL;
+  v80 = 0x202020000000002LL;
+  v81 = 0x202020202020200LL;
+  v82 = 0x202020202020202LL;
+  v83 = 0x202020202020202LL;
+  v84 = 0x202020202000202LL;
+  v85 = 0x202020202020002LL;
+  v86 = 0x202020202020202LL;
+  v87 = 0x202020202020202LL;
+  v88 = 0x202020202020202LL;
+  v89 = 0x202020202020202LL;
+  v90 = 0x202020202020202LL;
+  LODWORD(v91) = 33686018;
+  *(_QWORD *)((char *)&v91 + 4) = 131586;
+  HIDWORD(v91) = 0x2000000;
+  v92 = 0x202020202020202LL;
+  v93 = 0x201020202020202LL;
+  v94 = 0x101010101010202LL;
+  v95 = 0x101010202020202LL;
+  v96 = 0x202020101010101LL;
+  v97 = 0x202020202020202LL;
+  v98 = 0x202020202020202LL;
+  v99 = 0x202020202020202LL;
+  v100 = 0x202020201010202LL;
+  v101 = 0x202020202020202LL;
+  v102 = 0x202020202020202LL;
+  v103 = 0x202020202020202LL;
+  v104 = 0x202020202020202LL;
+  v105 = 0x202020202020202LL;
+  LODWORD(v106) = 33686018;
+  WORD2(v106) = 513;
+  *(_QWORD *)&v48 = 0x202020202020202LL;
+  *((_QWORD *)&v48 + 1) = 0x202020202020202LL;
+  if ( v4 )
+  {
+    memmove(v4, Src, 0xEF0u);
+  }
+  else
+  {
+    *_errno() = 22;
+    _invalid_parameter_noinfo();
+  }
+  if ( v2 )
+  {
+    v21 = v154;
+    *(_OWORD *)v2 = v153;
+    v22 = v155;
+    *(_OWORD *)(v2 + 16) = v21;
+    v23 = v156;
+    *(_OWORD *)(v2 + 32) = v22;
+    v24 = v157;
+    *(_OWORD *)(v2 + 48) = v23;
+    v25 = v158;
+    *(_OWORD *)(v2 + 64) = v24;
+    v26 = v159;
+    *(_OWORD *)(v2 + 80) = v25;
+    v27 = v160;
+    *(_OWORD *)(v2 + 96) = v26;
+    v28 = v161;
+    *(_OWORD *)(v2 + 112) = v27;
+    v29 = v162;
+    *(_OWORD *)(v2 + 128) = v28;
+    v30 = v163;
+    v31 = v164;
+    *(_OWORD *)(v2 + 144) = v29;
+    *(_OWORD *)(v2 + 160) = v30;
+    *(_QWORD *)(v2 + 176) = v31;
+  }
+  else
+  {
+    *_errno() = 22;
+    _invalid_parameter_noinfo();
+  }
+  if ( v3 )
+  {
+    v32 = &v49;
+    v33 = 3;
+    do
+    {
+      v3 += 128;
+      v34 = *(_OWORD *)v32;
+      v35 = *((_OWORD *)v32 + 1);
+      v32 += 16;
+      *(_OWORD *)(v3 - 128) = v34;
+      v36 = *((_OWORD *)v32 - 6);
+      *(_OWORD *)(v3 - 112) = v35;
+      v37 = *((_OWORD *)v32 - 5);
+      *(_OWORD *)(v3 - 96) = v36;
+      v38 = *((_OWORD *)v32 - 4);
+      *(_OWORD *)(v3 - 80) = v37;
+      v39 = *((_OWORD *)v32 - 3);
+      *(_OWORD *)(v3 - 64) = v38;
+      v40 = *((_OWORD *)v32 - 2);
+      *(_OWORD *)(v3 - 48) = v39;
+      v41 = *((_OWORD *)v32 - 1);
+      *(_OWORD *)(v3 - 32) = v40;
+      *(_OWORD *)(v3 - 16) = v41;
+      --v33;
+    }
+    while ( v33 );
+    v42 = v32[10];
+    v43 = *((_OWORD *)v32 + 1);
+    *(_OWORD *)v3 = *(_OWORD *)v32;
+    v44 = *((_OWORD *)v32 + 2);
+    *(_OWORD *)(v3 + 16) = v43;
+    v45 = *((_OWORD *)v32 + 3);
+    *(_OWORD *)(v3 + 32) = v44;
+    v46 = *((_OWORD *)v32 + 4);
+    *(_OWORD *)(v3 + 48) = v45;
+    *(_OWORD *)(v3 + 64) = v46;
+    *(_QWORD *)(v3 + 80) = v42;
+    *(_DWORD *)(v3 + 88) = *((_DWORD *)v32 + 22);
+    *(_WORD *)(v3 + 92) = *((_WORD *)v32 + 46);
+  }
+  else
+  {
+    *_errno() = 22;
+    _invalid_parameter_noinfo();
+  }
+  if ( v1 )
+  {
+    *(_OWORD *)v1 = v48;
+    *(_DWORD *)(v1 + 16) = 33686018;
+    *(_WORD *)(v1 + 20) = 514;
+    *(_BYTE *)(v1 + 22) = 2;
+  }
+  else
+  {
+    *_errno() = 22;
+    _invalid_parameter_noinfo();
+  }
+  return a1;
+}
+
+```
+
+## disassembly
+
+```asm
+0x10040eb50  mov     [rsp-8+arg_0], rbx
+0x10040eb55  mov     [rsp-8+arg_8], rsi
+0x10040eb5a  mov     [rsp-8+arg_10], rdi
+0x10040eb5f  push    rbp
+0x10040eb60  push    r12
+0x10040eb62  push    r13
+0x10040eb64  push    r14
+0x10040eb66  push    r15
+0x10040eb68  lea     rbp, [rsp-1270h]
+0x10040eb70  mov     eax, 1370h
+0x10040eb75  call    _alloca_probe
+0x10040eb7a  sub     rsp, rax
+0x10040eb7d  mov     r13d, 16h
+0x10040eb83  lea     r15, [rcx+152Eh]
+0x10040eb8a  mov     [rsp+1390h+var_1348], r15
+0x10040eb8f  lea     rsi, [rcx+1298h]
+0x10040eb96  mov     [rsp+1390h+var_1350], rsi
+0x10040eb9b  lea     rbx, [rcx+1350h]
+0x10040eba2  mov     [rsp+1390h+var_1358], r13w
+0x10040eba8  lea     r12, [rcx+3A8h]
+0x10040ebaf  lea     rdi, [rcx+58h]
+0x10040ebb3  mov     [rsp+1390h+var_1360], rbx
+0x10040ebb8  mov     eax, 1DDh
+0x10040ebbd  mov     [rsp+1390h+var_1368], r12
+0x10040ebc2  mov     r9, rdi
+0x10040ebc5  mov     [rsp+1390h+var_1370], ax
+0x10040ebca  lea     edx, [r13+13h]
+0x10040ebce  mov     r14, rcx
+0x10040ebd1  lea     r8d, [r13+53h]
+0x10040ebd5  call    cs:__imp_??0ProcessConfig@@IEAA@W4SOSHOST_MEMORYCLERK_TYPE@@0PEAPEB_WGPEAPEBDPEAW4SPINLOCK_REPORT_OPTIONS@@G23@Z; ProcessConfig::ProcessConfig(SOSHOST_MEMORYCLERK_TYPE,SOSHOST_MEMORYCLERK_TYPE,wchar_t const * *,ushort,char const * *,SPINLOCK_REPORT_OPTIONS *,ushort,char const * *,SPINLOCK_REPORT_OPTIONS *)
+0x10040ebdb  lea     rax, aMemoryclerkSql_2; "MEMORYCLERK_SQLGENERAL"
+0x10040ebe2  mov     [rsp+1390h+var_1320], rax
+0x10040ebe7  lea     rax, aMemoryclerkXeB; "MEMORYCLERK_XE_BUFFER"
+0x10040ebee  mov     [rsp+1390h+var_1318], rax
+0x10040ebf3  lea     rax, aMemoryclerkTes; "MEMORYCLERK_TEST"
+0x10040ebfa  mov     [rbp+1290h+var_1310], rax
+0x10040ebfe  lea     rax, aMemoryclerkUni; "MEMORYCLERK_UNITTEST"
+0x10040ec05  mov     [rbp+1290h+var_1308], rax
+0x10040ec09  lea     rax, aMemoryclerkSql_17; "MEMORYCLERK_SQLBUFFERPOOL"
+0x10040ec10  mov     [rbp+1290h+var_1300], rax
+0x10040ec14  lea     rax, aMemoryclerkSql_20; "MEMORYCLERK_SQLQUERYCOMPILE"
+0x10040ec1b  mov     [rbp+1290h+var_12F8], rax
+0x10040ec1f  lea     rax, aMemoryclerkSql_12; "MEMORYCLERK_SQLQUERYPLAN"
+0x10040ec26  mov     [rbp+1290h+var_12F0], rax
+0x10040ec2a  lea     rax, aMemoryclerkSql_8; "MEMORYCLERK_SQLQUERYEXEC"
+0x10040ec31  mov     [rbp+1290h+var_12E8], rax
+0x10040ec35  lea     rax, aMemoryclerkSql_11; "MEMORYCLERK_SQLOPTIMIZER"
+0x10040ec3c  mov     [rbp+1290h+var_12E0], rax
+0x10040ec40  lea     rax, aMemoryclerkQue_5; "MEMORYCLERK_QUERYDISKSTORE"
+0x10040ec47  mov     [rbp+1290h+var_12D8], rax
+0x10040ec4b  lea     rax, aMemoryclerkQue_1; "MEMORYCLERK_QUERYDISKSTORE_HASHMAP"
+0x10040ec52  mov     [rbp+1290h+var_12D0], rax
+0x10040ec56  lea     rax, aMemoryclerkQue; "MEMORYCLERK_QUERYDISKSTORE_STATS"
+0x10040ec5d  mov     [rbp+1290h+var_12C8], rax
+0x10040ec61  lea     rax, aMemoryclerkQue_3; "MEMORYCLERK_QUERYDISKSTORE_FEEDBACK"
+0x10040ec68  mov     [rbp+1290h+var_12C0], rax
+0x10040ec6c  lea     rax, aMemoryclerkQue_4; "MEMORYCLERK_QUERYDISKSTORE_MESSAGING"
+0x10040ec73  mov     [rbp+1290h+var_12B8], rax
+0x10040ec77  lea     rax, aMemoryclerkQue_0; "MEMORYCLERK_QUERYDISKSTORE_QUERYVARIANT"...
+0x10040ec7e  mov     [rbp+1290h+var_12B0], rax
+0x10040ec82  lea     rax, aMemoryclerkSql_1; "MEMORYCLERK_SQLUTILITIES"
+0x10040ec89  mov     [rbp+1290h+var_12A8], rax
+0x10040ec8d  lea     rax, aMemoryclerkSql_21; "MEMORYCLERK_SQLSTORENG"
+0x10040ec94  mov     [rbp+1290h+var_12A0], rax
+0x10040ec98  lea     rax, aMemoryclerkPag; "MEMORYCLERK_PAGE_SERVER_ASYNC_PIPELINE"
+0x10040ec9f  mov     [rbp+1290h+var_1298], rax
+0x10040eca3  lea     rax, aMemoryclerkSql_13; "MEMORYCLERK_SQLCONNECTIONPOOL"
+0x10040ecaa  mov     [rbp+1290h+var_1290], rax
+0x10040ecae  lea     rax, aMemoryclerkSql_3; "MEMORYCLERK_SQLCLR"
+0x10040ecb5  mov     [rbp+1290h+var_1288], rax
+0x10040ecb9  lea     rax, aMemoryclerkSql_18; "MEMORYCLERK_SQLCLRASSEMBLY"
+0x10040ecc0  mov     [rbp+1290h+var_1280], rax
+0x10040ecc4  lea     rax, aMemoryclerkSql_14; "MEMORYCLERK_SQLSERVICEBROKER"
+0x10040eccb  mov     [rbp+1290h+var_1278], rax
+0x10040eccf  lea     rax, aMemoryclerkSql_6; "MEMORYCLERK_SQLXML"
+0x10040ecd6  mov     [rbp+1290h+var_1270], rax
+0x10040ecda  lea     rax, aMemoryclerkSql; "MEMORYCLERK_SQLHTTP"
+0x10040ece1  mov     [rbp+1290h+var_1268], rax
+0x10040ece5  lea     rax, aMemoryclerkSni; "MEMORYCLERK_SNI"
+0x10040ecec  mov     [rbp+1290h+var_1260], rax
+0x10040ecf0  lea     rax, aMemoryclerkSer_0; "MEMORYCLERK_SERIALIZATION"
+0x10040ecf7  mov     [rbp+1290h+var_1258], rax
+0x10040ecfb  lea     rax, aMemoryclerkFul; "MEMORYCLERK_FULLTEXT"
+0x10040ed02  mov     [rbp+1290h+var_1250], rax
+0x10040ed06  lea     rax, aMemoryclerkSql_10; "MEMORYCLERK_SQLXP"
+0x10040ed0d  mov     [rbp+1290h+var_1248], rax
+0x10040ed11  lea     rax, aMemoryclerkQsr; "MEMORYCLERK_QSRANGEPREFETCH"
+0x10040ed18  mov     [rbp+1290h+var_1240], rax
+0x10040ed1c  lea     rax, aMemoryclerkBhf; "MEMORYCLERK_BHF"
+0x10040ed23  mov     [rbp+1290h+var_1238], rax
+0x10040ed27  lea     rax, aMemoryclerkSql_9; "MEMORYCLERK_SQLQERESERVATIONS"
+0x10040ed2e  mov     [rbp+1290h+var_1230], rax
+0x10040ed32  lea     rax, aMemoryclerkSql_0; "MEMORYCLERK_SQLTRACE"
+0x10040ed39  mov     [rbp+1290h+var_1228], rax
+0x10040ed3d  lea     rax, aMemoryclerkXtp; "MEMORYCLERK_XTP"
+0x10040ed44  mov     [rbp+1290h+var_1220], rax
+0x10040ed48  lea     rax, aMemoryclerkLan; "MEMORYCLERK_LANGSVC"
+0x10040ed4f  mov     [rbp+1290h+var_1218], rax
+0x10040ed53  lea     rax, aMemoryclerkSql_4; "MEMORYCLERK_SQLSLO_OPERATIONS"
+0x10040ed5a  mov     [rbp+1290h+var_1210], rax
+0x10040ed61  lea     rax, aMemoryclerkBac; "MEMORYCLERK_BACKUP"
+0x10040ed68  mov     [rbp+1290h+var_1208], rax
+0x10040ed6f  lea     rax, aMemoryclerkCsi; "MEMORYCLERK_CSILOBCOMPRESSION"
+0x10040ed76  mov     [rbp+1290h+var_1200], rax
+0x10040ed7d  lea     rax, aMemoryclerkWri; "MEMORYCLERK_WRITEPAGERECORDER"
+0x10040ed84  mov     [rbp+1290h+var_11F8], rax
+0x10040ed8b  lea     rax, aMemoryclerkXlo; "MEMORYCLERK_XLOG_SERVER"
+0x10040ed92  mov     [rbp+1290h+var_11F0], rax
+0x10040ed99  lea     rax, aMemoryclerkExt_1; "MEMORYCLERK_EXTERNAL_LIBRARIES"
+0x10040eda0  mov     [rbp+1290h+var_11E8], rax
+0x10040eda7  lea     rax, aMemoryclerkMsj; "MEMORYCLERK_MSJSON"
+0x10040edae  mov     [rbp+1290h+var_11E0], rax
+0x10040edb5  lea     rax, aMemoryclerkSql_15; "MEMORYCLERK_SQLLAST"
+0x10040edbc  mov     [rbp+1290h+var_11D8], rax
+0x10040edc3  lea     rax, aMemoryclerkFul_0; "MEMORYCLERK_FULLTEXT_SHMEM"
+0x10040edca  mov     [rbp+1290h+var_11D0], rax
+0x10040edd1  lea     rax, aMemoryclerkSql_5; "MEMORYCLERK_SQLSERVICEBROKERTRANSPORT"
+0x10040edd8  mov     [rbp+1290h+var_11C8], rax
+0x10040eddf  lea     rax, aMemoryclerkAsy; "MEMORYCLERK_ASYNC_TRANSPORT"
+0x10040ede6  mov     [rbp+1290h+var_11C0], rax
+0x10040eded  lea     rax, aMemoryclerkSer; "MEMORYCLERK_SEREPL"
+0x10040edf4  mov     [rbp+1290h+var_11B8], rax
+0x10040edfb  lea     rax, aMemoryclerkFsa; "MEMORYCLERK_FSAGENT"
+0x10040ee02  mov     [rbp+1290h+var_11B0], rax
+0x10040ee09  lea     rax, aMemoryclerkFil; "MEMORYCLERK_FILETABLE"
+0x10040ee10  mov     [rbp+1290h+var_11A8], rax
+0x10040ee17  lea     rax, aMemoryclerkSpa; "MEMORYCLERK_SPATIAL"
+0x10040ee1e  mov     [rbp+1290h+var_11A0], rax
+0x10040ee25  lea     rax, aMemoryclerkHad; "MEMORYCLERK_HADR"
+0x10040ee2c  mov     [rbp+1290h+var_1198], rax
+0x10040ee33  lea     rax, aMemoryclerkSql_19; "MEMORYCLERK_SQLLOGPOOL"
+0x10040ee3a  mov     [rbp+1290h+var_1190], rax
+0x10040ee41  lea     rax, aMemoryclerkTai; "MEMORYCLERK_TAILLOGCACHE"
+0x10040ee48  mov     [rbp+1290h+var_1188], rax
+0x10040ee4f  lea     rax, aMemoryclerkLwc; "MEMORYCLERK_LWC"
+0x10040ee56  mov     [rbp+1290h+var_1180], rax
+0x10040ee5d  lea     rax, aMemoryclerkFsc; "MEMORYCLERK_FSCHUNKER"
+0x10040ee64  mov     [rbp+1290h+var_1178], rax
+0x10040ee6b  lea     rax, aMemoryclerkSql_7; "MEMORYCLERK_SQLFABRIC"
+0x10040ee72  mov     [rbp+1290h+var_1170], rax
+0x10040ee79  lea     rax, aMemoryclerkDos; "MEMORYCLERK_DOSGUARD"
+0x10040ee80  mov     [rbp+1290h+var_1168], rax
+0x10040ee87  lea     rax, aMemoryclerkSec_0; "MEMORYCLERK_SECURITY_FEDAUTH_AAD"
+0x10040ee8e  mov     [rbp+1290h+var_1160], rax
+0x10040ee95  lea     rax, aMemoryclerkNet; "MEMORYCLERK_NETWORKSXMLMGR"
+0x10040ee9c  mov     [rbp+1290h+var_1158], rax
+0x10040eea3  lea     rax, aMemoryclerkSec_1; "MEMORYCLERK_SECURITY_FEDAUTH_SIGNATURE_"...
+0x10040eeaa  mov     [rbp+1290h+var_1150], rax
+0x10040eeb1  lea     rax, aMemoryclerkIpa; "MEMORYCLERK_IPADDRINFIREWALLCACHE"
+0x10040eeb8  mov     [rbp+1290h+var_1148], rax
+0x10040eebf  lea     rax, aMemoryclerkSql_16; "MEMORYCLERK_SQLEXTENSIBILITY"
+0x10040eec6  mov     [rbp+1290h+var_1140], rax
+0x10040eecd  lea     rax, aMemoryclerkXdb; "MEMORYCLERK_XDBPACKAGELAUNCHER"
+0x10040eed4  mov     [rbp+1290h+var_1138], rax
+0x10040eedb  lea     rax, aMemoryclerkXod; "MEMORYCLERK_XODBCAUTHENTICATIONCACHE"
+0x10040eee2  mov     [rbp+1290h+var_1130], rax
+0x10040eee9  lea     rax, aMemoryclerkCon; "MEMORYCLERK_CONNECTIVITY"
+0x10040eef0  mov     [rbp+1290h+var_1128], rax
+0x10040eef7  lea     rax, aMemoryclerkExt_0; "MEMORYCLERK_EXTERNAL_ENDPOINT_BLOCKED_I"...
+0x10040eefe  mov     [rbp+1290h+var_1120], rax
+0x10040ef05  lea     rax, aMemoryclerkUse; "MEMORYCLERK_USERDBFIREWALLCACHE"
+0x10040ef0c  mov     [rbp+1290h+var_1118], rax
+0x10040ef13  lea     rax, aMemoryclerkSbs_0; "MEMORYCLERK_SBS"
+0x10040ef1a  mov     [rbp+1290h+var_1110], rax
+0x10040ef21  lea     rax, aMemoryclerkSbs; "MEMORYCLERK_SBS_STREAM_PROVIDER"
+0x10040ef28  mov     [rbp+1290h+var_1108], rax
+0x10040ef2f  lea     rax, aMemoryclerkSvl; "MEMORYCLERK_SVL"
+0x10040ef36  mov     [rbp+1290h+var_1100], rax
+0x10040ef3d  lea     rax, aMemoryclerkPer; "MEMORYCLERK_PERFORMANCE_COUNTERS"
+0x10040ef44  mov     [rbp+1290h+var_10F8], rax
+0x10040ef4b  lea     rax, aMemoryclerkRbp; "MEMORYCLERK_RBPEX_PAGEREADER"
+0x10040ef52  mov     [rbp+1290h+var_10F0], rax
+0x10040ef59  lea     rax, aMemoryclerkRbp_0; "MEMORYCLERK_RBPEX"
+0x10040ef60  mov     [rbp+1290h+var_10E8], rax
+0x10040ef67  lea     rax, aMemoryclerkRbi; "MEMORYCLERK_RBIO"
+0x10040ef6e  mov     [rbp+1290h+var_10E0], rax
+0x10040ef75  lea     rax, aMemoryclerkSlo; "MEMORYCLERK_SLOG"
+0x10040ef7c  mov     [rbp+1290h+var_10D8], rax
+0x10040ef83  lea     rax, aMemoryclerkXdb_0; "MEMORYCLERK_XDB_PKG_LAUNCHER_MANAGER"
+0x10040ef8a  mov     [rbp+1290h+var_10D0], rax
+0x10040ef91  lea     rax, aMemoryclerkCsB; "MEMORYCLERK_CS_BLOB_CACHE"
+0x10040ef98  mov     [rbp+1290h+var_10C8], rax
+0x10040ef9f  lea     rax, aMemoryclerkIq; "MEMORYCLERK_IQ"
+0x10040efa6  mov     [rbp+1290h+var_10C0], rax
+0x10040efad  lea     rax, aMemoryclerkRgM; "MEMORYCLERK_RG_METRICS_REPORTING"
+0x10040efb4  mov     [rbp+1290h+var_10B8], rax
+0x10040efbb  lea     rax, aMemoryclerkXcs; "MEMORYCLERK_XCS"
+0x10040efc2  mov     [rbp+1290h+var_10B0], rax
+0x10040efc9  lea     rax, aMemoryclerkEdc; "MEMORYCLERK_EDC"
+0x10040efd0  mov     [rbp+1290h+var_10A8], rax
+0x10040efd7  lea     rax, aMemoryclerkEmc; "MEMORYCLERK_EMC"
+0x10040efde  mov     [rbp+1290h+var_10A0], rax
+0x10040efe5  lea     rax, aMemoryclerkNar; "MEMORYCLERK_NARWHAL"
+0x10040efec  mov     [rbp+1290h+var_1098], rax
+0x10040eff3  lea     rax, aMemoryclerkToa_0; "MEMORYCLERK_TOAD"
+0x10040effa  mov     [rbp+1290h+var_1090], rax
+0x10040f001  lea     rax, aMemoryclerkQue_2; "MEMORYCLERK_QUERYPROFILE"
+0x10040f008  mov     [rbp+1290h+var_1088], rax
+0x10040f00f  lea     rax, aMemoryclerkBlo; "MEMORYCLERK_BLOCKCHAIN_COMM_MGR"
+0x10040f016  mov     [rbp+1290h+var_1080], rax
+0x10040f01d  lea     rax, aMemoryclerkFid_2; "MEMORYCLERK_FIDO_LCKMGR"
+0x10040f024  mov     [rbp+1290h+var_1078], rax
+0x10040f02b  lea     rax, aMemoryclerkPol; "MEMORYCLERK_POLYBASE"
+0x10040f032  mov     [rbp+1290h+var_1070], rax
+0x10040f039  lea     rax, aMemoryclerkToa; "MEMORYCLERK_TOAD_RESERVATION"
+0x10040f040  mov     [rbp+1290h+var_1068], rax
+0x10040f047  lea     rax, aMemoryclerkXfi; "MEMORYCLERK_XFILE"
+0x10040f04e  mov     [rbp+1290h+var_1060], rax
+0x10040f055  lea     rax, aMemoryclerkDek; "MEMORYCLERK_DEK"
+0x10040f05c  mov     [rbp+1290h+var_1058], rax
+0x10040f063  lea     rax, aMemoryclerkDbl; "MEMORYCLERK_DBLEDGER"
+0x10040f06a  mov     [rbp+1290h+var_1050], rax
+0x10040f071  lea     rax, aMemoryclerkSoc; "MEMORYCLERK_SOCRATESQP"
+0x10040f078  mov     [rbp+1290h+var_1048], rax
+0x10040f07f  lea     rax, aMemoryclerkExt; "MEMORYCLERK_EXTERNAL_GOVERNANCE_AUTHORI"...
+0x10040f086  mov     [rbp+1290h+var_1040], rax
+0x10040f08d  lea     rax, aMemoryclerkSec; "MEMORYCLERK_SECURITY"
+0x10040f094  mov     [rbp+1290h+var_1038], rax
+0x10040f09b  lea     rax, aMemoryclerkFid_0; "MEMORYCLERK_FIDO_INDEXSTORE"
+0x10040f0a2  mov     [rbp+1290h+var_1030], rax
+0x10040f0a9  lea     rax, aMemoryclerkFid_1; "MEMORYCLERK_FIDO_DELTA"
+0x10040f0b0  mov     [rbp+1290h+var_1028], rax
+0x10040f0b7  lea     rax, aMemoryclerkFid_7; "MEMORYCLERK_FIDO_TXMGR"
+0x10040f0be  mov     [rbp+1290h+var_1020], rax
+0x10040f0c5  lea     rax, aMemoryclerkFid_4; "MEMORYCLERK_FIDO_RM"
+0x10040f0cc  mov     [rbp+1290h+var_1018], rax
+0x10040f0d3  lea     rax, aMemoryclerkFid; "MEMORYCLERK_FIDO_CLONE"
+0x10040f0da  mov     [rbp+1290h+var_1010], rax
+0x10040f0e1  lea     rax, aMemoryclerkFid_3; "MEMORYCLERK_FIDO_GLMS"
+0x10040f0e8  mov     [rbp+1290h+var_1008], rax
+0x10040f0ef  lea     rax, aMemoryclerkFid_6; "MEMORYCLERK_FIDO_CLONE_REF"
+0x10040f0f6  mov     [rbp+1290h+var_1000], rax
+0x10040f0fd  lea     rax, aMemoryclerkFid_5; "MEMORYCLERK_FIDO_CLONE_TXCTX"
+0x10040f104  mov     [rbp+1290h+var_FF8], rax
+0x10040f10b  lea     rax, aMemoryclerkDir; "MEMORYCLERK_DIRECTORY_CONTENT_LISTS"
+0x10040f112  mov     [rbp+1290h+var_FF0], rax
+0x10040f119  lea     rax, aMemoryclerkLis; "MEMORYCLERK_LIST_DIRECTORY"
+0x10040f120  mov     [rbp+1290h+var_FE8], rax
+0x10040f127  lea     rax, aMemoryclerkExt_2; "MEMORYCLERK_EXT_GOV_MGR"
+0x10040f12e  mov     [rbp+1290h+var_FE0], rax
+0x10040f135  lea     rax, aMemoryclerkLas; "MEMORYCLERK_LAST"
+0x10040f13c  mov     [rbp+1290h+var_FD8], rax
+0x10040f143  test    rdi, rdi
+0x10040f146  jnz     short loc_10040F15C
+0x10040f148  call    cs:__imp__errno
+0x10040f14e  mov     [rax], r13d
+0x10040f151  call    cs:__imp__invalid_parameter_noinfo
+0x10040f157  jmp     loc_10040F1E9
+0x10040f15c  lea     rax, [rsp+1390h+var_1320]
+0x10040f161  mov     ecx, 6
+0x10040f166  nop     word ptr [rax+rax+00000000h]
+0x10040f170  lea     rdi, [rdi+80h]
+0x10040f177  movups  xmm0, xmmword ptr [rax]
+0x10040f17a  movups  xmm1, xmmword ptr [rax+10h]
+0x10040f17e  lea     rax, [rax+80h]
+0x10040f185  movups  xmmword ptr [rdi-80h], xmm0
+0x10040f189  movups  xmm0, xmmword ptr [rax-60h]
+0x10040f18d  movups  xmmword ptr [rdi-70h], xmm1
+0x10040f191  movups  xmm1, xmmword ptr [rax-50h]
+0x10040f195  movups  xmmword ptr [rdi-60h], xmm0
+0x10040f199  movups  xmm0, xmmword ptr [rax-40h]
+0x10040f19d  movups  xmmword ptr [rdi-50h], xmm1
+0x10040f1a1  movups  xmm1, xmmword ptr [rax-30h]
+0x10040f1a5  movups  xmmword ptr [rdi-40h], xmm0
+0x10040f1a9  movups  xmm0, xmmword ptr [rax-20h]
+0x10040f1ad  movups  xmmword ptr [rdi-30h], xmm1
+0x10040f1b1  movups  xmm1, xmmword ptr [rax-10h]
+0x10040f1b5  movups  xmmword ptr [rdi-20h], xmm0
+0x10040f1b9  movups  xmmword ptr [rdi-10h], xmm1
+0x10040f1bd  sub     rcx, 1
+0x10040f1c1  jnz     short loc_10040F170
+0x10040f1c3  movups  xmm0, xmmword ptr [rax]
+0x10040f1c6  movups  xmm1, xmmword ptr [rax+10h]
+0x10040f1ca  movups  xmmword ptr [rdi], xmm0
+0x10040f1cd  movups  xmm0, xmmword ptr [rax+20h]
+0x10040f1d1  movups  xmmword ptr [rdi+10h], xmm1
+0x10040f1d5  movups  xmm1, xmmword ptr [rax+30h]
+0x10040f1d9  movups  xmmword ptr [rdi+20h], xmm0
+0x10040f1dd  movups  xmm0, xmmword ptr [rax+40h]
+0x10040f1e1  movups  xmmword ptr [rdi+30h], xmm1
+0x10040f1e5  movups  xmmword ptr [rdi+40h], xmm0
+0x10040f1e9  lea     rax, aLogConsumerSet; "LOG_CONSUMER_SET"
+0x10040f1f0  mov     [rbp+1290h+Src], rax
+0x10040f1f7  lea     rax, aAsyncReqMgrDef; "ASYNC_REQ_MGR_DEFERRAL_LIST"
+0x10040f1fe  mov     [rbp+1290h+var_F08], rax
+0x10040f205  lea     rax, aPsReadReqMinls; "PS_READ_REQ_MINLSN_MINHEAP"
+0x10040f20c  mov     [rbp+1290h+var_F00], rax
+0x10040f213  lea     rax, aLongReqTracker; "LONG_REQ_TRACKER"
+0x10040f21a  mov     [rbp+1290h+var_EF8], rax
+0x10040f221  lea     rax, aDbCopyMessageH; "DB_COPY_MESSAGE_HASH_BUFFER"
+0x10040f228  mov     [rbp+1290h+var_EF0], rax
+0x10040f22f  lea     rax, aXlogTosFile; "XLOG_TOS_FILE"
+0x10040f236  mov     [rbp+1290h+var_EE8], rax
+0x10040f23d  lea     rax, aRbpexSegmentWr_0; "RBPEX_SEGMENT_WRITE_BUFFER_PAGES"
+0x10040f244  mov     [rbp+1290h+var_EE0], rax
+0x10040f24b  lea     rax, aXlogTosIter; "XLOG_TOS_ITER"
+0x10040f252  mov     [rbp+1290h+var_ED8], rax
+0x10040f259  lea     rax, aLockSqlsatelli; "LOCK_SQLSATELLITE_MESSAGE"
+0x10040f260  mov     [rbp+1290h+var_ED0], rax
+0x10040f267  lea     rax, aHadrCompressio; "HADR_COMPRESSION_MGR_POOL"
+  ... truncated ...
+```
