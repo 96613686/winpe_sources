@@ -1,0 +1,235 @@
+[
+  {
+    "import": "ADVAPI32!RegOpenKeyExA",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 8,
+    "xrefs": [
+      {
+        "from_ea": "0x1400019a9",
+        "from_func": "0x14000193c",
+        "from_func_name": "?GetDLLNameForDispatchEntryService@@YAHPEAD0K@Z",
+        "import": "ADVAPI32!RegOpenKeyExA"
+      },
+      {
+        "from_ea": "0x140001a25",
+        "from_func": "0x14000193c",
+        "from_func_name": "?GetDLLNameForDispatchEntryService@@YAHPEAD0K@Z",
+        "import": "ADVAPI32!RegOpenKeyExA"
+      },
+      {
+        "from_ea": "0x140001fb6",
+        "from_func": "0x140001f54",
+        "from_func_name": "?LoadPreloadDlls@@YAHPEAPEAPEAUHINSTANCE__@@@Z",
+        "import": "ADVAPI32!RegOpenKeyExA"
+      },
+      {
+        "from_ea": "0x140002273",
+        "from_func": "0x140002210",
+        "from_func_name": "?StartDispatchTable@@YAXXZ",
+        "import": "ADVAPI32!RegOpenKeyExA"
+      },
+      {
+        "from_ea": "0x1400019a9",
+        "from_func": "0x14000193c",
+        "from_func_name": "?GetDLLNameForDispatchEntryService@@YAHPEAD0K@Z",
+        "import": "ADVAPI32!RegOpenKeyExA"
+      },
+      {
+        "from_ea": "0x140001a25",
+        "from_func": "0x14000193c",
+        "from_func_name": "?GetDLLNameForDispatchEntryService@@YAHPEAD0K@Z",
+        "import": "ADVAPI32!RegOpenKeyExA"
+      },
+      {
+        "from_ea": "0x140001fb6",
+        "from_func": "0x140001f54",
+        "from_func_name": "?LoadPreloadDlls@@YAHPEAPEAPEAUHINSTANCE__@@@Z",
+        "import": "ADVAPI32!RegOpenKeyExA"
+      },
+      {
+        "from_ea": "0x140002273",
+        "from_func": "0x140002210",
+        "from_func_name": "?StartDispatchTable@@YAXXZ",
+        "import": "ADVAPI32!RegOpenKeyExA"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegisterServiceCtrlHandlerA",
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x14000185c",
+        "from_func": "0x140001808",
+        "from_func_name": "?AbortService@@YAXPEADK@Z",
+        "import": "ADVAPI32!RegisterServiceCtrlHandlerA"
+      },
+      {
+        "from_ea": "0x14000185c",
+        "from_func": "0x140001808",
+        "from_func_name": "?AbortService@@YAXPEADK@Z",
+        "import": "ADVAPI32!RegisterServiceCtrlHandlerA"
+      },
+      {
+        "from_ea": "0x140004e88",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ADVAPI32!RegisterServiceCtrlHandlerA"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!SetServiceStatus",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1400018a4",
+        "from_func": "0x140001808",
+        "from_func_name": "?AbortService@@YAXPEADK@Z",
+        "import": "ADVAPI32!SetServiceStatus"
+      },
+      {
+        "from_ea": "0x1400018a4",
+        "from_func": "0x140001808",
+        "from_func_name": "?AbortService@@YAXPEADK@Z",
+        "import": "ADVAPI32!SetServiceStatus"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!StartServiceCtrlDispatcherA",
+    "tags": [
+      "service_task",
+      "installer_update"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140002431",
+        "from_func": "0x140002210",
+        "from_func_name": "?StartDispatchTable@@YAXXZ",
+        "import": "ADVAPI32!StartServiceCtrlDispatcherA"
+      },
+      {
+        "from_ea": "0x140002431",
+        "from_func": "0x140002210",
+        "from_func_name": "?StartDispatchTable@@YAXXZ",
+        "import": "ADVAPI32!StartServiceCtrlDispatcherA"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!LoadLibraryA",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1400020e2",
+        "from_func": "0x140001f54",
+        "from_func_name": "?LoadPreloadDlls@@YAHPEAPEAPEAUHINSTANCE__@@@Z",
+        "import": "KERNEL32!LoadLibraryA"
+      },
+      {
+        "from_ea": "0x14000252d",
+        "from_func": "0x1400024d0",
+        "from_func_name": "main",
+        "import": "KERNEL32!LoadLibraryA"
+      },
+      {
+        "from_ea": "0x1400020e2",
+        "from_func": "0x140001f54",
+        "from_func_name": "?LoadPreloadDlls@@YAHPEAPEAPEAUHINSTANCE__@@@Z",
+        "import": "KERNEL32!LoadLibraryA"
+      },
+      {
+        "from_ea": "0x14000252d",
+        "from_func": "0x1400024d0",
+        "from_func_name": "main",
+        "import": "KERNEL32!LoadLibraryA"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!LoadLibraryExA",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140001d0a",
+        "from_func": "0x140001b40",
+        "from_func_name": "?InetinfoStartService@@YAXKQEAPEAD@Z",
+        "import": "KERNEL32!LoadLibraryExA"
+      },
+      {
+        "from_ea": "0x140001d0a",
+        "from_func": "0x140001b40",
+        "from_func_name": "?InetinfoStartService@@YAXKQEAPEAD@Z",
+        "import": "KERNEL32!LoadLibraryExA"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000156b",
+        "from_func": "0x140001524",
+        "from_func_name": "__security_init_cookie",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x14000156b",
+        "from_func": "0x140001524",
+        "from_func_name": "__security_init_cookie",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x140001613",
+        "from_func": "0x140001613",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "msvcrt!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!_commode",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x1400010b6",
+        "from_func": "0x140001010",
+        "from_func_name": "pre_c_init",
+        "import": "msvcrt!_commode"
+      }
+    ]
+  }
+]

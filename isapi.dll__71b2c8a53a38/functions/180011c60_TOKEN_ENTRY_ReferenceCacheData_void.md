@@ -1,0 +1,27 @@
+# TOKEN_ENTRY::ReferenceCacheData(void)
+
+- ea: `0x180011c60`
+- end: `0x180011c65`
+- name: `?ReferenceCacheData@TOKEN_ENTRY@@UEAAXXZ`
+- size: `5`
+- prototype: `void __fastcall(TOKEN_ENTRY *__hidden this)`
+- caller_count: `0`
+- callee_count: `0`
+- tags: ``
+
+## pseudocode
+
+```c
+void __fastcall TOKEN_ENTRY::ReferenceCacheData(TOKEN_ENTRY *this)
+{
+  _InterlockedIncrement((volatile signed __int32 *)this + 3);
+}
+
+```
+
+## disassembly
+
+```asm
+0x180011c60  lock inc dword ptr [rcx+0Ch]
+0x180011c64  retn
+```

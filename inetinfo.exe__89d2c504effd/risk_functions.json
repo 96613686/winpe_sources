@@ -1,0 +1,688 @@
+[
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "InetinfoStartService(ulong,char * * const)",
+    "ea": "0x140001b40",
+    "function_file": "functions/140001b40_InetinfoStartService_ulong_char_const.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!LoadLibraryExA",
+      "KERNEL32!SetLastError",
+      "KERNEL32!Sleep",
+      "KERNEL32!lstrcmpiA",
+      "iisutil!PuDbgPrint",
+      "msvcrt!sprintf_s",
+      "msvcrt!strcat_s",
+      "msvcrt!strcpy_s"
+    ],
+    "matched_strings": [
+      "Service %s has path set in registry.  Assuming %s\n",
+      "InetinfoStartService",
+      "InetinfoStartService",
+      "InetinfoStartService",
+      "InetinfoStartService",
+      "Service %s not on primary list.  Assuming %s\n",
+      "Inetinfo: Failed To Find Dll For %s : %ld\n",
+      "Inetinfo: Failed to load DLL %s: %ld\n",
+      "ServiceEntry",
+      "ServiceEntry",
+      "Inetinfo: Can't find entry %s in DLL %s: %ld\n",
+      "INETSVCS: Can't unload DLL %s: %ld\n"
+    ],
+    "name": "?InetinfoStartService@@YAXKQEAPEAD@Z",
+    "prototype": "void __fastcall(unsigned int, LPCSTR *)",
+    "rank_score": 5534,
+    "size": 1038,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "main",
+    "ea": "0x1400024d0",
+    "function_file": "functions/1400024d0_main.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!InitializeCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!LoadLibraryA",
+      "KERNEL32!LocalFree",
+      "KERNEL32!OutputDebugStringA",
+      "KERNEL32!SetErrorMode",
+      "iisutil!PuCreateDebugPrintsObject",
+      "iisutil!PuDbgPrint",
+      "iisutil!PuDeleteDebugPrintsObject",
+      "msvcrt!sprintf_s"
+    ],
+    "matched_strings": [
+      "Unable to Create Debug Print Object \n",
+      "rpcref.dll",
+      "Error %d loading rpcref.dll\n",
+      "Error pre-loading DLLs\n",
+      "Unloading Preloaded DLLs\n",
+      "UnloadPreloadDlls"
+    ],
+    "name": "main",
+    "prototype": "int __fastcall(int argc, const char **argv, const char **envp)",
+    "rank_score": 5070,
+    "size": 704,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "LoadPreloadDlls(HINSTANCE__ * * *)",
+    "ea": "0x140001f54",
+    "function_file": "functions/140001f54_LoadPreloadDlls_HINSTANCE.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExA",
+      "ADVAPI32!RegQueryValueExA",
+      "KERNEL32!LoadLibraryA",
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "iisutil!PuDbgPrint",
+      "msvcrt!sprintf_s"
+    ],
+    "matched_strings": [
+      "System\\CurrentControlSet\\Services\\InetInfo\\Parameters",
+      "PreloadDlls",
+      "PreloadDlls",
+      "Preloading FAILED for DLL: %s\n",
+      "LoadPreloadDlls",
+      "LoadPreloadDlls",
+      "Preloaded DLL: %s\n"
+    ],
+    "name": "?LoadPreloadDlls@@YAHPEAPEAPEAUHINSTANCE__@@@Z",
+    "prototype": "__int64 __fastcall(HINSTANCE **)",
+    "rank_score": 2718,
+    "size": 692,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "StartDispatchTable(void)",
+    "ea": "0x140002210",
+    "function_file": "functions/140002210_StartDispatchTable_void.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExA",
+      "ADVAPI32!RegQueryValueExA",
+      "ADVAPI32!StartServiceCtrlDispatcherA",
+      "KERNEL32!GetLastError",
+      "KERNEL32!LocalAlloc",
+      "KERNEL32!LocalFree",
+      "iisutil!PuDbgPrint",
+      "msvcrt!sprintf_s"
+    ],
+    "matched_strings": [
+      "System\\CurrentControlSet\\Services\\InetInfo\\Parameters"
+    ],
+    "name": "?StartDispatchTable@@YAXXZ",
+    "prototype": "void(void)",
+    "rank_score": 2678,
+    "size": 695,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "GetDLLNameForDispatchEntryService(char *,char *,ulong)",
+    "ea": "0x14000193c",
+    "function_file": "functions/14000193c_GetDLLNameForDispatchEntryService_char_char_ulong.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExA",
+      "ADVAPI32!RegQueryValueExA",
+      "iisutil!PuDbgPrint",
+      "msvcrt!sprintf_s"
+    ],
+    "matched_strings": [
+      "System\\CurrentControlSet\\Services",
+      "Inetinfo: Failed to open service key: %ld\n",
+      "GetDLLNameForDispatchEntryService",
+      "GetDLLNameForDispatchEntryService",
+      "Inetinfo: Failed to open service key for %s: %ld\n",
+      "IISDllPath",
+      "Service Dll is %s"
+    ],
+    "name": "?GetDLLNameForDispatchEntryService@@YAHPEAD0K@Z",
+    "prototype": "__int64 __fastcall(LPCSTR lpSubKey, char *lpData)",
+    "rank_score": 2326,
+    "size": 509,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "AbortService(char *,ulong)",
+    "ea": "0x140001808",
+    "function_file": "functions/140001808_AbortService_char_ulong.md",
+    "matched_imports": [
+      "ADVAPI32!RegisterServiceCtrlHandlerA",
+      "ADVAPI32!SetServiceStatus",
+      "KERNEL32!GetLastError",
+      "iisutil!PuDbgPrint",
+      "msvcrt!sprintf_s"
+    ],
+    "matched_strings": [
+      "[Inetinfo]RegisterServiceCtrlHandler[%s] failed %d\n",
+      "AbortService",
+      "[Inetinfo]SetServiceStatus[%s] error %ld\n"
+    ],
+    "name": "?AbortService@@YAXPEADK@Z",
+    "prototype": "void __fastcall(char *, unsigned int)",
+    "rank_score": 1545,
+    "size": 283,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x140001524",
+    "function_file": "functions/140001524_security_init_cookie.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId",
+      "api-ms-win-core-profile-l1-1-0!QueryPerformanceCounter",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemTimeAsFileTime",
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 1223,
+    "size": 221,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "__mainCRTStartup",
+    "ea": "0x140001140",
+    "function_file": "functions/140001140_mainCRTStartup.md",
+    "matched_imports": [
+      "KERNEL32!Sleep",
+      "msvcrt!_cexit",
+      "msvcrt!_exit",
+      "msvcrt!exit"
+    ],
+    "matched_strings": [],
+    "name": "__mainCRTStartup",
+    "prototype": "",
+    "rank_score": 1031,
+    "size": 423,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__raise_securityfailure",
+    "ea": "0x140001620",
+    "function_file": "functions/140001620_raise_securityfailure.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetUnhandledExceptionFilter",
+      "api-ms-win-core-errorhandling-l1-1-0!UnhandledExceptionFilter",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-processthreads-l1-1-0!TerminateProcess"
+    ],
+    "matched_strings": [],
+    "name": "__raise_securityfailure",
+    "prototype": "__int64 __fastcall(struct _EXCEPTION_POINTERS *ExceptionInfo)",
+    "rank_score": 711,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__report_gsfailure",
+    "ea": "0x140001660",
+    "function_file": "functions/140001660_report_gsfailure.md",
+    "matched_imports": [
+      "api-ms-win-core-rtlsupport-l1-1-0!RtlCaptureContext",
+      "api-ms-win-core-rtlsupport-l1-1-0!RtlLookupFunctionEntry",
+      "api-ms-win-core-rtlsupport-l1-1-0!RtlVirtualUnwind"
+    ],
+    "matched_strings": [],
+    "name": "__report_gsfailure",
+    "prototype": "void __cdecl __noreturn(uintptr_t StackCookie)",
+    "rank_score": 626,
+    "size": 416,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "pre_c_init",
+    "ea": "0x140001010",
+    "function_file": "functions/140001010_pre_c_init.md",
+    "matched_imports": [
+      "msvcrt!__set_app_type",
+      "msvcrt!__setusermatherr",
+      "msvcrt!_commode",
+      "msvcrt!_fmode"
+    ],
+    "matched_strings": [],
+    "name": "pre_c_init",
+    "prototype": "",
+    "rank_score": 614,
+    "size": 215,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "_get_image_app_type",
+    "ea": "0x1400013e4",
+    "function_file": "functions/1400013e4_get_image_app_type.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW"
+    ],
+    "matched_strings": [],
+    "name": "_get_image_app_type",
+    "prototype": "",
+    "rank_score": 213,
+    "size": 70,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__CxxUnhandledExceptionFilter(_EXCEPTION_POINTERS *)",
+    "ea": "0x140001320",
+    "function_file": "functions/140001320_CxxUnhandledExceptionFilter_EXCEPTION_POINTERS.md",
+    "matched_imports": [
+      "msvcrt!?terminate@@YAXXZ"
+    ],
+    "matched_strings": [],
+    "name": "?__CxxUnhandledExceptionFilter@@YAJPEAU_EXCEPTION_POINTERS@@@Z",
+    "prototype": "LONG __stdcall(struct _EXCEPTION_POINTERS *ExceptionInfo)",
+    "rank_score": 201,
+    "size": 57,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "__CxxSetUnhandledExceptionFilter",
+    "ea": "0x140001360",
+    "function_file": "functions/140001360_CxxSetUnhandledExceptionFilter.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetUnhandledExceptionFilter"
+    ],
+    "matched_strings": [],
+    "name": "__CxxSetUnhandledExceptionFilter",
+    "prototype": "",
+    "rank_score": 200,
+    "size": 24,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "pre_cpp_init",
+    "ea": "0x1400010f0",
+    "function_file": "functions/1400010f0_pre_cpp_init.md",
+    "matched_imports": [
+      "msvcrt!__getmainargs"
+    ],
+    "matched_strings": [],
+    "name": "pre_cpp_init",
+    "prototype": "",
+    "rank_score": 200,
+    "size": 73,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "__C_specific_handler_0",
+    "ea": "0x140001613",
+    "function_file": "functions/140001613_C_specific_handler_0.md",
+    "matched_imports": [
+      "msvcrt!__C_specific_handler"
+    ],
+    "matched_strings": [],
+    "name": "__C_specific_handler_0",
+    "prototype": "EXCEPTION_DISPOSITION __cdecl(struct _EXCEPTION_RECORD *ExceptionRecord, void *EstablisherFrame, struct _CONTEXT *ContextRecord, struct _DISPATCHER_CONTEXT *DispatcherContext)",
+    "rank_score": 120,
+    "size": 6,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_XcptFilter_0",
+    "ea": "0x14000137e",
+    "function_file": "functions/14000137e_XcptFilter_0.md",
+    "matched_imports": [
+      "msvcrt!_XcptFilter"
+    ],
+    "matched_strings": [],
+    "name": "_XcptFilter_0",
+    "prototype": "",
+    "rank_score": 101,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_amsg_exit_0",
+    "ea": "0x140001430",
+    "function_file": "functions/140001430_amsg_exit_0.md",
+    "matched_imports": [
+      "msvcrt!_amsg_exit"
+    ],
+    "matched_strings": [],
+    "name": "_amsg_exit_0",
+    "prototype": "",
+    "rank_score": 101,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_initterm_0",
+    "ea": "0x140001607",
+    "function_file": "functions/140001607_initterm_0.md",
+    "matched_imports": [
+      "msvcrt!_initterm"
+    ],
+    "matched_strings": [],
+    "name": "_initterm_0",
+    "prototype": "void __cdecl(_PVFV *First, _PVFV *Last)",
+    "rank_score": 101,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "memset_0",
+    "ea": "0x140002826",
+    "function_file": "functions/140002826_memset_0.md",
+    "matched_imports": [
+      "msvcrt!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 101,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x1400027bc",
+    "function_file": "functions/1400027bc_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__GSHandlerCheck",
+    "ea": "0x140002798",
+    "function_file": "functions/140002798_GSHandlerCheck.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheck",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 29,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "__security_check_cookie",
+    "ea": "0x140002850",
+    "function_file": "functions/140002850_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 19,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x140002890",
+    "function_file": "functions/140002890_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "RtlpImageNtHeader",
+    "ea": "0x14000138c",
+    "function_file": "functions/14000138c_RtlpImageNtHeader.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlpImageNtHeader",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 81,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x1400028f0",
+    "function_file": "functions/1400028f0_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x140003010",
+    "function_file": "functions/140003010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "mainCRTStartup",
+    "ea": "0x1400012f0",
+    "function_file": "functions/1400012f0_mainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "mainCRTStartup",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 18,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_guard_xfg_dispatch_icall_nop",
+    "ea": "0x1400028c0",
+    "function_file": "functions/1400028c0_guard_xfg_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_xfg_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "DummyCtrlHandler(ulong)",
+    "ea": "0x140001930",
+    "function_file": "functions/140001930_DummyCtrlHandler_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DummyCtrlHandler@@YAXK@Z",
+    "prototype": "void __stdcall(DWORD dwControl)",
+    "rank_score": 10,
+    "size": 3,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "_IsNonwritableInCurrentImage",
+    "ea": "0x1400014a0",
+    "function_file": "functions/1400014a0_IsNonwritableInCurrentImage.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_IsNonwritableInCurrentImage",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 74,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "_FindPESection",
+    "ea": "0x140001450",
+    "function_file": "functions/140001450_FindPESection.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_FindPESection",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 67,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "_ValidateImageBase",
+    "ea": "0x1400014f0",
+    "function_file": "functions/1400014f0_ValidateImageBase.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ValidateImageBase",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 43,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_matherr",
+    "ea": "0x140001440",
+    "function_file": "functions/140001440_matherr.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_matherr",
+    "prototype": "int __cdecl(struct _exception *Except)",
+    "rank_score": 1,
+    "size": 3,
+    "tags": []
+  }
+]

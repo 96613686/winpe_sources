@@ -1,0 +1,140 @@
+# wil::details_abi::UsageIndexes::Record(void)
+
+- ea: `0x18000cf90`
+- end: `0x18000d095`
+- name: `?Record@UsageIndexes@details_abi@wil@@QEAAXXZ`
+- size: `261`
+- prototype: `void __fastcall(wil::details_abi::UsageIndexes *this, __int64, __int64, const struct wil::details_abi::RawUsageIndex *)`
+- caller_count: `3`
+- callee_count: `3`
+- tags: ``
+
+## callers
+
+- `0x180009944`
+- `0x18000d220`
+- `0x18000dbd0`
+
+## callees
+
+- `0x18000cf90`
+- `0x18000d7f0`
+- `0x180011460`
+
+## pseudocode
+
+```c
+void __fastcall wil::details_abi::UsageIndexes::Record(
+        wil::details_abi::UsageIndexes *this,
+        __int64 a2,
+        __int64 a3,
+        const struct wil::details_abi::RawUsageIndex *a4)
+{
+  __int64 v5; // [rsp+20h] [rbp-40h] BYREF
+  __int64 v6; // [rsp+28h] [rbp-38h]
+  __int64 v7; // [rsp+30h] [rbp-30h]
+  __int64 v8; // [rsp+38h] [rbp-28h]
+  __int64 v9; // [rsp+40h] [rbp-20h]
+  __int64 v10; // [rsp+48h] [rbp-18h]
+
+  if ( *((_BYTE *)this + 56) )
+  {
+    v5 = __WIL_WNF_WIL_FEATURE_DEVICE_USAGE_TRACKING_1;
+    v6 = __WIL_WNF_WIL_FEATURE_DEVICE_USAGE_TRACKING_2;
+    v7 = __WIL_WNF_WIL_FEATURE_DEVICE_USAGE_TRACKING_3;
+    wil::details_abi::RecordWnfUsageIndex(
+      (wil::details_abi *)&v5,
+      (const struct __WIL__WNF_STATE_NAME *)3,
+      (unsigned __int64)this,
+      a4);
+  }
+  if ( *((_BYTE *)this + 120) )
+  {
+    v5 = __WIL_WNF_WIL_FEATURE_USAGE_TRACKING_1;
+    v6 = __WIL_WNF_WIL_FEATURE_USAGE_TRACKING_2;
+    v7 = __WIL_WNF_WIL_FEATURE_USAGE_TRACKING_3;
+    wil::details_abi::RecordWnfUsageIndex(
+      (wil::details_abi *)&v5,
+      (const struct __WIL__WNF_STATE_NAME *)3,
+      (unsigned __int64)this + 64,
+      a4);
+  }
+  if ( *((_BYTE *)this + 184) )
+  {
+    v5 = __WIL_WNF_WIL_FEATURE_HEALTH_TRACKING_1;
+    v6 = __WIL_WNF_WIL_FEATURE_HEALTH_TRACKING_2;
+    v7 = __WIL_WNF_WIL_FEATURE_HEALTH_TRACKING_3;
+    v8 = __WIL_WNF_WIL_FEATURE_HEALTH_TRACKING_4;
+    v9 = __WIL_WNF_WIL_FEATURE_HEALTH_TRACKING_5;
+    v10 = __WIL_WNF_WIL_FEATURE_HEALTH_TRACKING_6;
+    wil::details_abi::RecordWnfUsageIndex(
+      (wil::details_abi *)&v5,
+      (const struct __WIL__WNF_STATE_NAME *)6,
+      (unsigned __int64)this + 128,
+      a4);
+  }
+}
+
+```
+
+## disassembly
+
+```asm
+0x18000cf90  mov     [rsp-8+arg_8], rbx
+0x18000cf95  push    rbp
+0x18000cf96  mov     rbp, rsp
+0x18000cf99  sub     rsp, 60h
+0x18000cf9d  mov     rax, cs:__security_cookie
+0x18000cfa4  xor     rax, rsp
+0x18000cfa7  mov     [rbp+var_10], rax
+0x18000cfab  cmp     byte ptr [rcx+38h], 0
+0x18000cfaf  mov     rbx, rcx
+0x18000cfb2  jz      short loc_18000CFE6
+0x18000cfb4  mov     rax, cs:?__WIL_WNF_WIL_FEATURE_DEVICE_USAGE_TRACKING_1@@3U__WIL__WNF_STATE_NAME@@B; __WIL__WNF_STATE_NAME const __WIL_WNF_WIL_FEATURE_DEVICE_USAGE_TRACKING_1
+0x18000cfbb  mov     r8, rcx; unsigned __int64
+0x18000cfbe  mov     [rbp+var_40], rax
+0x18000cfc2  lea     rcx, [rbp+var_40]; this
+0x18000cfc6  mov     rax, cs:?__WIL_WNF_WIL_FEATURE_DEVICE_USAGE_TRACKING_2@@3U__WIL__WNF_STATE_NAME@@B; __WIL__WNF_STATE_NAME const __WIL_WNF_WIL_FEATURE_DEVICE_USAGE_TRACKING_2
+0x18000cfcd  mov     edx, 3; struct __WIL__WNF_STATE_NAME *
+0x18000cfd2  mov     [rbp+var_38], rax
+0x18000cfd6  mov     rax, cs:?__WIL_WNF_WIL_FEATURE_DEVICE_USAGE_TRACKING_3@@3U__WIL__WNF_STATE_NAME@@B; __WIL__WNF_STATE_NAME const __WIL_WNF_WIL_FEATURE_DEVICE_USAGE_TRACKING_3
+0x18000cfdd  mov     [rbp+var_30], rax
+0x18000cfe1  call    ?RecordWnfUsageIndex@details_abi@wil@@YAXPEBU__WIL__WNF_STATE_NAME@@_KAEBVRawUsageIndex@12@@Z; wil::details_abi::RecordWnfUsageIndex(__WIL__WNF_STATE_NAME const *,unsigned __int64,wil::details_abi::RawUsageIndex const &)
+0x18000cfe6  lea     r8, [rbx+40h]; unsigned __int64
+0x18000cfea  cmp     byte ptr [r8+38h], 0
+0x18000cfef  jz      short loc_18000D020
+0x18000cff1  mov     rax, cs:?__WIL_WNF_WIL_FEATURE_USAGE_TRACKING_1@@3U__WIL__WNF_STATE_NAME@@B; __WIL__WNF_STATE_NAME const __WIL_WNF_WIL_FEATURE_USAGE_TRACKING_1
+0x18000cff8  lea     rcx, [rbp+var_40]; this
+0x18000cffc  mov     [rbp+var_40], rax
+0x18000d000  mov     edx, 3; struct __WIL__WNF_STATE_NAME *
+0x18000d005  mov     rax, cs:?__WIL_WNF_WIL_FEATURE_USAGE_TRACKING_2@@3U__WIL__WNF_STATE_NAME@@B; __WIL__WNF_STATE_NAME const __WIL_WNF_WIL_FEATURE_USAGE_TRACKING_2
+0x18000d00c  mov     [rbp+var_38], rax
+0x18000d010  mov     rax, cs:?__WIL_WNF_WIL_FEATURE_USAGE_TRACKING_3@@3U__WIL__WNF_STATE_NAME@@B; __WIL__WNF_STATE_NAME const __WIL_WNF_WIL_FEATURE_USAGE_TRACKING_3
+0x18000d017  mov     [rbp+var_30], rax
+0x18000d01b  call    ?RecordWnfUsageIndex@details_abi@wil@@YAXPEBU__WIL__WNF_STATE_NAME@@_KAEBVRawUsageIndex@12@@Z; wil::details_abi::RecordWnfUsageIndex(__WIL__WNF_STATE_NAME const *,unsigned __int64,wil::details_abi::RawUsageIndex const &)
+0x18000d020  lea     r8, [rbx+80h]; unsigned __int64
+0x18000d027  cmp     byte ptr [r8+38h], 0
+0x18000d02c  jz      short loc_18000D07E
+0x18000d02e  mov     rax, cs:?__WIL_WNF_WIL_FEATURE_HEALTH_TRACKING_1@@3U__WIL__WNF_STATE_NAME@@B; __WIL__WNF_STATE_NAME const __WIL_WNF_WIL_FEATURE_HEALTH_TRACKING_1
+0x18000d035  lea     rcx, [rbp+var_40]; this
+0x18000d039  mov     [rbp+var_40], rax
+0x18000d03d  mov     edx, 6; struct __WIL__WNF_STATE_NAME *
+0x18000d042  mov     rax, cs:?__WIL_WNF_WIL_FEATURE_HEALTH_TRACKING_2@@3U__WIL__WNF_STATE_NAME@@B; __WIL__WNF_STATE_NAME const __WIL_WNF_WIL_FEATURE_HEALTH_TRACKING_2
+0x18000d049  mov     [rbp+var_38], rax
+0x18000d04d  mov     rax, cs:?__WIL_WNF_WIL_FEATURE_HEALTH_TRACKING_3@@3U__WIL__WNF_STATE_NAME@@B; __WIL__WNF_STATE_NAME const __WIL_WNF_WIL_FEATURE_HEALTH_TRACKING_3
+0x18000d054  mov     [rbp+var_30], rax
+0x18000d058  mov     rax, cs:?__WIL_WNF_WIL_FEATURE_HEALTH_TRACKING_4@@3U__WIL__WNF_STATE_NAME@@B; __WIL__WNF_STATE_NAME const __WIL_WNF_WIL_FEATURE_HEALTH_TRACKING_4
+0x18000d05f  mov     [rbp+var_28], rax
+0x18000d063  mov     rax, cs:?__WIL_WNF_WIL_FEATURE_HEALTH_TRACKING_5@@3U__WIL__WNF_STATE_NAME@@B; __WIL__WNF_STATE_NAME const __WIL_WNF_WIL_FEATURE_HEALTH_TRACKING_5
+0x18000d06a  mov     [rbp+var_20], rax
+0x18000d06e  mov     rax, cs:?__WIL_WNF_WIL_FEATURE_HEALTH_TRACKING_6@@3U__WIL__WNF_STATE_NAME@@B; __WIL__WNF_STATE_NAME const __WIL_WNF_WIL_FEATURE_HEALTH_TRACKING_6
+0x18000d075  mov     [rbp+var_18], rax
+0x18000d079  call    ?RecordWnfUsageIndex@details_abi@wil@@YAXPEBU__WIL__WNF_STATE_NAME@@_KAEBVRawUsageIndex@12@@Z; wil::details_abi::RecordWnfUsageIndex(__WIL__WNF_STATE_NAME const *,unsigned __int64,wil::details_abi::RawUsageIndex const &)
+0x18000d07e  mov     rcx, [rbp+var_10]
+0x18000d082  xor     rcx, rsp; StackCookie
+0x18000d085  call    __security_check_cookie
+0x18000d08a  mov     rbx, [rsp+60h+arg_8]
+0x18000d08f  add     rsp, 60h
+0x18000d093  pop     rbp
+0x18000d094  retn
+```

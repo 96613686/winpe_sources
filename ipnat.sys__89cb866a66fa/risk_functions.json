@@ -1,0 +1,2589 @@
+[
+  {
+    "callee_count": 11,
+    "caller_count": 2,
+    "demangled": "NatCreateRedirectEx",
+    "ea": "0x1400179cc",
+    "function_file": "functions/1400179cc_NatCreateRedirectEx.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExEventObjectType",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAcquireCancelSpinLock",
+      "ntoskrnl!IoReleaseCancelSpinLock",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeClearEvent",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "NatCreateRedirectEx",
+    "prototype": "",
+    "rank_score": 9948,
+    "size": 6687,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 0,
+    "demangled": "NatUnloadDriver",
+    "ea": "0x140007ca0",
+    "function_file": "functions/140007ca0_NatUnloadDriver.md",
+    "matched_imports": [
+      "NETIO!NmrDeregisterClient",
+      "NETIO!NmrWaitForClientDeregisterComplete",
+      "ntoskrnl!ExDeleteLookasideListEx",
+      "ntoskrnl!ExDeleteNPagedLookasideList",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!IoWMIRegistrationControl",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeCancelTimer",
+      "ntoskrnl!KeFlushQueuedDpcs",
+      "ntoskrnl!KeQueryMaximumProcessorCountEx",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "NatUnloadDriver",
+    "prototype": "",
+    "rank_score": 8681,
+    "size": 3445,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "NatRegisterCallout",
+    "ea": "0x14002adb0",
+    "function_file": "functions/14002adb0_NatRegisterCallout.md",
+    "matched_imports": [
+      "fwpkclnt!FwpiCalloutUnregisterAndDeleteByKey0",
+      "fwpkclnt!FwpmEngineClose0",
+      "fwpkclnt!FwpmEngineOpen0",
+      "fwpkclnt!FwpmFilterAdd0",
+      "fwpkclnt!FwpmTransactionAbort0",
+      "fwpkclnt!FwpmTransactionBegin0",
+      "fwpkclnt!FwpmTransactionCommit0"
+    ],
+    "matched_strings": [],
+    "name": "NatRegisterCallout",
+    "prototype": "",
+    "rank_score": 7842,
+    "size": 3543,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 18,
+    "caller_count": 1,
+    "demangled": "NatInitializeDriver",
+    "ea": "0x140006f00",
+    "function_file": "functions/140006f00_NatInitializeDriver.md",
+    "matched_imports": [
+      "NETIO!NmrRegisterClient",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlUnicodeStringToInteger",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Services\\IpNat\\Parameters",
+      "DisableBootTimeSecurity"
+    ],
+    "name": "NatInitializeDriver",
+    "prototype": "",
+    "rank_score": 5978,
+    "size": 2500,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 0,
+    "demangled": "NatTimerRoutine",
+    "ea": "0x14001f110",
+    "function_file": "functions/14001f110_NatTimerRoutine.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreeToNPagedLookasideList",
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeLowerIrql",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel",
+      "ntoskrnl!KfRaiseIrql"
+    ],
+    "matched_strings": [],
+    "name": "NatTimerRoutine",
+    "prototype": "KDEFERRED_ROUTINE",
+    "rank_score": 3844,
+    "size": 1660,
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 4,
+    "demangled": "NatCreateMapping",
+    "ea": "0x14000d8b0",
+    "function_file": "functions/14000d8b0_NatCreateMapping.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel",
+      "ntoskrnl!RtlSplay"
+    ],
+    "matched_strings": [],
+    "name": "NatCreateMapping",
+    "prototype": "__int64 __fastcall(int, int, int, int, __int64, __int16, __int64, __int64, PVOID Entry, int, __int64)",
+    "rank_score": 3050,
+    "size": 2754,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "NatCancelRedirect",
+    "ea": "0x140017168",
+    "function_file": "functions/140017168_NatCancelRedirect.md",
+    "matched_imports": [
+      "ntoskrnl!IoSetIoCompletion",
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "NatCancelRedirect",
+    "prototype": "",
+    "rank_score": 3029,
+    "size": 1447,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "NatDeregisterCallout",
+    "ea": "0x1400292ac",
+    "function_file": "functions/1400292ac_NatDeregisterCallout.md",
+    "matched_imports": [
+      "fwpkclnt!FwpiCalloutUnregisterAndDeleteByKey0",
+      "fwpkclnt!FwpmEngineClose0",
+      "fwpkclnt!FwpmEngineOpen0",
+      "fwpkclnt!FwpmFilterDeleteByKey0",
+      "fwpkclnt!FwpsInjectionHandleDestroy0"
+    ],
+    "matched_strings": [],
+    "name": "NatDeregisterCallout",
+    "prototype": "",
+    "rank_score": 2816,
+    "size": 1427,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 9,
+    "demangled": "NatCleanupMapping",
+    "ea": "0x14000d66c",
+    "function_file": "functions/14000d66c_NatCleanupMapping.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "NatCleanupMapping",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 2439,
+    "size": 574,
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "NatpRedirectCreateHandler",
+    "ea": "0x14001a220",
+    "function_file": "functions/14001a220_NatpRedirectCreateHandler.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!IoAllocateWorkItem",
+      "ntoskrnl!IoFreeWorkItem",
+      "ntoskrnl!IoQueueWorkItem",
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "NatpRedirectCreateHandler",
+    "prototype": "",
+    "rank_score": 2227,
+    "size": 658,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SepSddlSecurityDescriptorFromSDDLString",
+    "ea": "0x140043734",
+    "function_file": "functions/140043734_SepSddlSecurityDescriptorFromSDDLString.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlAbsoluteToSelfRelativeSD",
+      "ntoskrnl!RtlCreateSecurityDescriptor",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlSetDaclSecurityDescriptor"
+    ],
+    "matched_strings": [
+      "SeConvertStringSecurityDescriptorToSecurityDescriptor"
+    ],
+    "name": "SepSddlSecurityDescriptorFromSDDLString",
+    "prototype": "",
+    "rank_score": 2068,
+    "size": 414,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 5,
+    "demangled": "NatpCleanupRedirect",
+    "ea": "0x140019cec",
+    "function_file": "functions/140019cec_NatpCleanupRedirect.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "NatpCleanupRedirect",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 2028,
+    "size": 1019,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "NatCreateInterface",
+    "ea": "0x14000c49c",
+    "function_file": "functions/14000c49c_NatCreateInterface.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NatCreateInterface",
+    "prototype": "",
+    "rank_score": 1815,
+    "size": 1038,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "NatConfigureInterface",
+    "ea": "0x14000bed0",
+    "function_file": "functions/14000bed0_NatConfigureInterface.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "NatConfigureInterface",
+    "prototype": "__int64 __fastcall(void *Src)",
+    "rank_score": 1641,
+    "size": 1476,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "NatCreateAddressPool",
+    "ea": "0x1400128ec",
+    "function_file": "functions/1400128ec_NatCreateAddressPool.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlClearAllBits"
+    ],
+    "matched_strings": [],
+    "name": "NatCreateAddressPool",
+    "prototype": "",
+    "rank_score": 1623,
+    "size": 1944,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "NatpRedirectIoCompletionWorkerRoutine",
+    "ea": "0x14001a760",
+    "function_file": "functions/14001a760_NatpRedirectIoCompletionWorkerRoutine.md",
+    "matched_imports": [
+      "ntoskrnl!IoFreeWorkItem",
+      "ntoskrnl!IoSetIoCompletion",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NatpRedirectIoCompletionWorkerRoutine",
+    "prototype": "IO_WORKITEM_ROUTINE",
+    "rank_score": 1616,
+    "size": 561,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "NatDispatch",
+    "ea": "0x140002260",
+    "function_file": "functions/140002260_NatDispatch.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!PsGetCurrentProcessId"
+    ],
+    "matched_strings": [],
+    "name": "NatDispatch",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 1450,
+    "size": 1373,
+    "tags": [
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "NatCreateDynamicTicket",
+    "ea": "0x14001c9f0",
+    "function_file": "functions/14001c9f0_NatCreateDynamicTicket.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NatCreateDynamicTicket",
+    "prototype": "",
+    "rank_score": 1428,
+    "size": 1637,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "NatProcessDeleteTicket",
+    "ea": "0x14001e4e4",
+    "function_file": "functions/14001e4e4_NatProcessDeleteTicket.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "NatProcessDeleteTicket",
+    "prototype": "",
+    "rank_score": 1417,
+    "size": 906,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "NatProcessCreateTicket",
+    "ea": "0x14001e1f0",
+    "function_file": "functions/14001e1f0_NatProcessCreateTicket.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "NatProcessCreateTicket",
+    "prototype": "",
+    "rank_score": 1412,
+    "size": 747,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "PpRegStateUpdateStackCreationSettings",
+    "ea": "0x140043dc0",
+    "function_file": "functions/140043dc0_PpRegStateUpdateStackCreationSettings.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlLengthSecurityDescriptor",
+      "ntoskrnl!SeCaptureSecurityDescriptor",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwSetValueKey"
+    ],
+    "matched_strings": [
+      "Security"
+    ],
+    "name": "PpRegStateUpdateStackCreationSettings",
+    "prototype": "",
+    "rank_score": 1287,
+    "size": 372,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SepSddlGetAclForString",
+    "ea": "0x1400431e8",
+    "function_file": "functions/1400431e8_SepSddlGetAclForString.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!_wcsnicmp",
+      "ntoskrnl!wcschr"
+    ],
+    "matched_strings": [],
+    "name": "SepSddlGetAclForString",
+    "prototype": "__int64 __fastcall(wchar_t *Str1, int)",
+    "rank_score": 1223,
+    "size": 951,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "NatpRedirectCancelRoutine",
+    "ea": "0x14001a0f0",
+    "function_file": "functions/14001a0f0_NatpRedirectCancelRoutine.md",
+    "matched_imports": [
+      "ntoskrnl!IoReleaseCancelSpinLock",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "NatpRedirectCancelRoutine",
+    "prototype": "",
+    "rank_score": 1217,
+    "size": 296,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "NatCreateEditor",
+    "ea": "0x14000540c",
+    "function_file": "functions/14000540c_NatCreateEditor.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NatCreateEditor",
+    "prototype": "",
+    "rank_score": 1213,
+    "size": 872,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "NatCreateDirector",
+    "ea": "0x14000115c",
+    "function_file": "functions/14000115c_NatCreateDirector.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NatCreateDirector",
+    "prototype": "",
+    "rank_score": 1212,
+    "size": 795,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "NatShimFreeBuffer",
+    "ea": "0x140028d34",
+    "function_file": "functions/140028d34_NatShimFreeBuffer.md",
+    "matched_imports": [
+      "ntoskrnl!ExQueryDepthSList",
+      "ntoskrnl!ExpInterlockedPushEntrySList",
+      "ntoskrnl!KeGetCurrentProcessorNumberEx",
+      "ntoskrnl!KeLowerIrql",
+      "ntoskrnl!KfRaiseIrql"
+    ],
+    "matched_strings": [],
+    "name": "NatShimFreeBuffer",
+    "prototype": "",
+    "rank_score": 1207,
+    "size": 358,
+    "tags": []
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x140045078",
+    "function_file": "functions/140045078_DriverEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlGetVersion",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 1038,
+    "size": 869,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 19,
+    "demangled": "NatCleanupInterface",
+    "ea": "0x14000bc50",
+    "function_file": "functions/14000bc50_NatCleanupInterface.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NatCleanupInterface",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 1024,
+    "size": 297,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "NatDbgInitalize",
+    "ea": "0x140006c08",
+    "function_file": "functions/140006c08_NatDbgInitalize.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool3",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExInitializeLookasideListEx",
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!KeQueryMaximumProcessorCountEx"
+    ],
+    "matched_strings": [],
+    "name": "NatDbgInitalize",
+    "prototype": "",
+    "rank_score": 1020,
+    "size": 522,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "NatDeleteDynamicTicket",
+    "ea": "0x14001d59c",
+    "function_file": "functions/14001d59c_NatDeleteDynamicTicket.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NatDeleteDynamicTicket",
+    "prototype": "",
+    "rank_score": 1019,
+    "size": 521,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "NatCreateAddressPoolEntry",
+    "ea": "0x14001308c",
+    "function_file": "functions/14001308c_NatCreateAddressPoolEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!RtlFindClearBits",
+      "ntoskrnl!RtlSetBits"
+    ],
+    "matched_strings": [],
+    "name": "NatCreateAddressPoolEntry",
+    "prototype": "",
+    "rank_score": 1018,
+    "size": 1212,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "NatCleanupAnyAssociatedNotification",
+    "ea": "0x140010df4",
+    "function_file": "functions/140010df4_NatCleanupAnyAssociatedNotification.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "NatCleanupAnyAssociatedNotification",
+    "prototype": "",
+    "rank_score": 1016,
+    "size": 355,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 8,
+    "demangled": "NatDereferenceAddressPoolEntry",
+    "ea": "0x1400138fc",
+    "function_file": "functions/1400138fc_NatDereferenceAddressPoolEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlClearBits",
+      "ntoskrnl!RtlDelete"
+    ],
+    "matched_strings": [],
+    "name": "NatDereferenceAddressPoolEntry",
+    "prototype": "",
+    "rank_score": 1015,
+    "size": 621,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "NatInitiateTranslation",
+    "ea": "0x1400078cc",
+    "function_file": "functions/1400078cc_NatInitiateTranslation.md",
+    "matched_imports": [
+      "cng!SystemPrng",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!KeQueryMaximumProcessorCountEx",
+      "ntoskrnl!KeSetTimerEx"
+    ],
+    "matched_strings": [],
+    "name": "NatInitiateTranslation",
+    "prototype": "",
+    "rank_score": 1014,
+    "size": 962,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 8,
+    "demangled": "NatCleanupEditor",
+    "ea": "0x140005300",
+    "function_file": "functions/140005300_NatCleanupEditor.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "NatCleanupEditor",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 1013,
+    "size": 260,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "NatFastIoDeviceControl",
+    "ea": "0x1400027d0",
+    "function_file": "functions/1400027d0_NatFastIoDeviceControl.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExGetPreviousMode",
+      "ntoskrnl!ProbeForRead"
+    ],
+    "matched_strings": [],
+    "name": "NatFastIoDeviceControl",
+    "prototype": "",
+    "rank_score": 1013,
+    "size": 864,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "NatCleanupDirector",
+    "ea": "0x140001030",
+    "function_file": "functions/140001030_NatCleanupDirector.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "NatCleanupDirector",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 1009,
+    "size": 294,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "FsbAllocateAtDpcLevel",
+    "ea": "0x14002c034",
+    "function_file": "functions/14002c034_FsbAllocateAtDpcLevel.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool3",
+      "ntoskrnl!ExQueryDepthSList",
+      "ntoskrnl!ExpInterlockedPopEntrySList",
+      "ntoskrnl!InitializeSListHead",
+      "ntoskrnl!KeGetCurrentProcessorNumberEx"
+    ],
+    "matched_strings": [],
+    "name": "FsbAllocateAtDpcLevel",
+    "prototype": "",
+    "rank_score": 1008,
+    "size": 423,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 5,
+    "demangled": "NatShimTranslatePacket",
+    "ea": "0x140028ea0",
+    "function_file": "functions/140028ea0_NatShimTranslatePacket.md",
+    "matched_imports": [
+      "NDIS!NdisAdvanceNetBufferDataStart",
+      "NDIS!NdisRetreatNetBufferDataStart",
+      "NETIO!NetioAllocateMdl"
+    ],
+    "matched_strings": [],
+    "name": "NatShimTranslatePacket",
+    "prototype": "__int64 __fastcall(int, int, int, int, ULONG DataOffsetDelta, char)",
+    "rank_score": 918,
+    "size": 892,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WdmlibIoCreateDeviceSecure",
+    "ea": "0x140042bc4",
+    "function_file": "functions/140042bc4_WdmlibIoCreateDeviceSecure.md",
+    "matched_imports": [
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "IoCreateDeviceSecure",
+      "IoValidateDeviceIoControlAccess"
+    ],
+    "name": "WdmlibIoCreateDeviceSecure",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, ULONG DeviceExtensionSize, PUNICODE_STRING DeviceName, ULONG DeviceType, ULONG DeviceCharacteristics, BOOLEAN Exclusive, PCUNICODE_STRING DefaultSDDLString, LPCGUID DeviceClassGuid, PDEVICE_OBJECT *DeviceObject)",
+    "rank_score": 894,
+    "size": 232,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "PiRegStateReadStackCreationSettingsFromKey",
+    "ea": "0x140043a6c",
+    "function_file": "functions/140043a6c_PiRegStateReadStackCreationSettingsFromKey.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!SeCaptureSecurityDescriptor"
+    ],
+    "matched_strings": [
+      "Security"
+    ],
+    "name": "PiRegStateReadStackCreationSettingsFromKey",
+    "prototype": "__int64 __fastcall(HANDLE KeyHandle)",
+    "rank_score": 879,
+    "size": 479,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 9,
+    "demangled": "NatFreeBlockAndUpdateStateAllocationUsage",
+    "ea": "0x140006e18",
+    "function_file": "functions/140006e18_NatFreeBlockAndUpdateStateAllocationUsage.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreeToNPagedLookasideList",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NatFreeBlockAndUpdateStateAllocationUsage",
+    "prototype": "__int64 __fastcall(PNPAGED_LOOKASIDE_LIST Lookaside, PVOID Entry)",
+    "rank_score": 832,
+    "size": 226,
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "ReleaseComponentReference",
+    "ea": "0x140011624",
+    "function_file": "functions/140011624_ReleaseComponentReference.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "ReleaseComponentReference",
+    "prototype": "",
+    "rank_score": 828,
+    "size": 113,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "SeUtilSecurityInfoFromSecurityDescriptor",
+    "ea": "0x140043f3c",
+    "function_file": "functions/140043f3c_SeUtilSecurityInfoFromSecurityDescriptor.md",
+    "matched_imports": [
+      "ntoskrnl!RtlGetDaclSecurityDescriptor",
+      "ntoskrnl!RtlGetGroupSecurityDescriptor",
+      "ntoskrnl!RtlGetOwnerSecurityDescriptor",
+      "ntoskrnl!RtlGetSaclSecurityDescriptor"
+    ],
+    "matched_strings": [],
+    "name": "SeUtilSecurityInfoFromSecurityDescriptor",
+    "prototype": "__int64 __fastcall(PSECURITY_DESCRIPTOR SecurityDescriptor)",
+    "rank_score": 824,
+    "size": 249,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "NatSendRoutingFailureNotification",
+    "ea": "0x140011264",
+    "function_file": "functions/140011264_NatSendRoutingFailureNotification.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NatSendRoutingFailureNotification",
+    "prototype": "",
+    "rank_score": 822,
+    "size": 673,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "NatDeleteHandlerPptp",
+    "ea": "0x140014f30",
+    "function_file": "functions/140014f30_NatDeleteHandlerPptp.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAllocateWorkItem",
+      "ntoskrnl!IoQueueWorkItem"
+    ],
+    "matched_strings": [],
+    "name": "NatDeleteHandlerPptp",
+    "prototype": "",
+    "rank_score": 818,
+    "size": 531,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "NatAllocateBlockWithLimitCheck",
+    "ea": "0x140006a08",
+    "function_file": "functions/140006a08_NatAllocateBlockWithLimitCheck.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocateFromNPagedLookasideList",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NatAllocateBlockWithLimitCheck",
+    "prototype": "__int64 __fastcall(PNPAGED_LOOKASIDE_LIST Lookaside)",
+    "rank_score": 817,
+    "size": 250,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "NatpNotificationCancelRoutine",
+    "ea": "0x140011510",
+    "function_file": "functions/140011510_NatpNotificationCancelRoutine.md",
+    "matched_imports": [
+      "ntoskrnl!IoReleaseCancelSpinLock",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NatpNotificationCancelRoutine",
+    "prototype": "",
+    "rank_score": 815,
+    "size": 270,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SepSddlAddAceToAcl",
+    "ea": "0x140043010",
+    "function_file": "functions/140043010_SepSddlAddAceToAcl.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlAddAccessAllowedAce",
+      "ntoskrnl!RtlLengthSid"
+    ],
+    "matched_strings": [],
+    "name": "SepSddlAddAceToAcl",
+    "prototype": "__int64 __fastcall(int, int, int, int, ACCESS_MASK AccessMask, int, PSID Sid)",
+    "rank_score": 815,
+    "size": 235,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "NatDeleteHandlerWorkItemPptp",
+    "ea": "0x140015150",
+    "function_file": "functions/140015150_NatDeleteHandlerWorkItemPptp.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoFreeWorkItem",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NatDeleteHandlerWorkItemPptp",
+    "prototype": "IO_WORKITEM_ROUTINE",
+    "rank_score": 814,
+    "size": 275,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "NatDeleteAnyAssociatedInterface",
+    "ea": "0x14000c8b0",
+    "function_file": "functions/14000c8b0_NatDeleteAnyAssociatedInterface.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "NatDeleteAnyAssociatedInterface",
+    "prototype": "",
+    "rank_score": 805,
+    "size": 255,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "IopDevObjApplyPostCreationSettings",
+    "ea": "0x140042e54",
+    "function_file": "functions/140042e54_IopDevObjApplyPostCreationSettings.md",
+    "matched_imports": [
+      "ntoskrnl!IoDeviceObjectType",
+      "ntoskrnl!ObOpenObjectByPointer",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwSetSecurityObject"
+    ],
+    "matched_strings": [],
+    "name": "IopDevObjApplyPostCreationSettings",
+    "prototype": "__int64 __fastcall(PVOID Object)",
+    "rank_score": 734,
+    "size": 239,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "IoDevObjCreateDeviceSecure",
+    "ea": "0x140042cc0",
+    "function_file": "functions/140042cc0_IoDevObjCreateDeviceSecure.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoCreateDevice",
+      "ntoskrnl!IoDeleteDevice"
+    ],
+    "matched_strings": [],
+    "name": "IoDevObjCreateDeviceSecure",
+    "prototype": "__int64 __usercall@<rax>(PDRIVER_OBJECT DriverObject@<rcx>, int, char, __int64, __int64, PDEVICE_OBJECT)",
+    "rank_score": 658,
+    "size": 395,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 2,
+    "demangled": "NatCreateIcmpMapping",
+    "ea": "0x140008a54",
+    "function_file": "functions/140008a54_NatCreateIcmpMapping.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "NatCreateIcmpMapping",
+    "prototype": "",
+    "rank_score": 647,
+    "size": 1841,
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "NatShutdownPptpManagement",
+    "ea": "0x140016524",
+    "function_file": "functions/140016524_NatShutdownPptpManagement.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteNPagedLookasideList",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NatShutdownPptpManagement",
+    "prototype": "",
+    "rank_score": 627,
+    "size": 417,
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "NatSplitAndHandlePackets",
+    "ea": "0x14002bc7c",
+    "function_file": "functions/14002bc7c_NatSplitAndHandlePackets.md",
+    "matched_imports": [
+      "fwpkclnt!FwpsAllocateCloneNetBufferList0",
+      "fwpkclnt!FwpsFreeCloneNetBufferList0",
+      "fwpkclnt!FwpsInjectNetworkReceiveAsync0"
+    ],
+    "matched_strings": [],
+    "name": "NatSplitAndHandlePackets",
+    "prototype": "__int64 __fastcall(NET_BUFFER_LIST *originalNetBufferList, int, IF_INDEX subInterfaceIndex, int, int)",
+    "rank_score": 619,
+    "size": 386,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "NatpWmiFunctionControl",
+    "ea": "0x140010a00",
+    "function_file": "functions/140010a00_NatpWmiFunctionControl.md",
+    "matched_imports": [
+      "WMILIB!WmiCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NatpWmiFunctionControl",
+    "prototype": "__int64 __usercall@<rax>(PDEVICE_OBJECT DeviceObject@<rcx>, PIRP Irp@<rdx>, char)",
+    "rank_score": 618,
+    "size": 620,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "NatDeleteAnyAssociatedDynamicTicket",
+    "ea": "0x14001d490",
+    "function_file": "functions/14001d490_NatDeleteAnyAssociatedDynamicTicket.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NatDeleteAnyAssociatedDynamicTicket",
+    "prototype": "",
+    "rank_score": 615,
+    "size": 262,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "NatLogDroppedPacket",
+    "ea": "0x14001066c",
+    "function_file": "functions/14001066c_NatLogDroppedPacket.md",
+    "matched_imports": [
+      "ntoskrnl!IoWMIWriteEvent",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NatLogDroppedPacket",
+    "prototype": "void __fastcall(__int64 **, unsigned int, int)",
+    "rank_score": 614,
+    "size": 902,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "NatLogConnectionDeletion",
+    "ea": "0x140010404",
+    "function_file": "functions/140010404_NatLogConnectionDeletion.md",
+    "matched_imports": [
+      "ntoskrnl!IoWMIWriteEvent",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NatLogConnectionDeletion",
+    "prototype": "void __fastcall(unsigned int, __int64, __int64, unsigned __int16, char, char)",
+    "rank_score": 611,
+    "size": 608,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "NatDeleteInterface",
+    "ea": "0x14000c9b8",
+    "function_file": "functions/14000c9b8_NatDeleteInterface.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NatDeleteInterface",
+    "prototype": "",
+    "rank_score": 610,
+    "size": 558,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "NatLogConnectionCreation",
+    "ea": "0x1400101b8",
+    "function_file": "functions/1400101b8_NatLogConnectionCreation.md",
+    "matched_imports": [
+      "ntoskrnl!IoWMIWriteEvent",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NatLogConnectionCreation",
+    "prototype": "void __fastcall(unsigned int, unsigned int, __int16, __int16, char, char)",
+    "rank_score": 610,
+    "size": 579,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SepSddlGetSidForString",
+    "ea": "0x1400435a8",
+    "function_file": "functions/1400435a8_SepSddlGetSidForString.md",
+    "matched_imports": [
+      "ntoskrnl!IoIsWdmVersionAvailable",
+      "ntoskrnl!SeExports",
+      "ntoskrnl!_wcsnicmp"
+    ],
+    "matched_strings": [],
+    "name": "SepSddlGetSidForString",
+    "prototype": "__int64 __fastcall(wchar_t *Str1)",
+    "rank_score": 513,
+    "size": 172,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "IsPacketFragment",
+    "ea": "0x140028af8",
+    "function_file": "functions/140028af8_IsPacketFragment.md",
+    "matched_imports": [
+      "NDIS!NdisAdvanceNetBufferDataStart",
+      "NDIS!NdisRetreatNetBufferDataStart",
+      "NETIO!NetioAllocateMdl"
+    ],
+    "matched_strings": [],
+    "name": "IsPacketFragment",
+    "prototype": "",
+    "rank_score": 509,
+    "size": 267,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "PiRegStateOpenClassKey",
+    "ea": "0x1400438d8",
+    "function_file": "functions/1400438d8_PiRegStateOpenClassKey.md",
+    "matched_imports": [
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!_snwprintf"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Class"
+    ],
+    "name": "PiRegStateOpenClassKey",
+    "prototype": "",
+    "rank_score": 459,
+    "size": 395,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "NatInitializePptpManagement",
+    "ea": "0x140015558",
+    "function_file": "functions/140015558_NatInitializePptpManagement.md",
+    "matched_imports": [
+      "ntoskrnl!ExInitializeNPagedLookasideList",
+      "ntoskrnl!KeInitializeSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NatInitializePptpManagement",
+    "prototype": "",
+    "rank_score": 429,
+    "size": 626,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 7,
+    "demangled": "NatAcquireFromAddressPool",
+    "ea": "0x140011e00",
+    "function_file": "functions/140011e00_NatAcquireFromAddressPool.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!RtlGetNtProductType"
+    ],
+    "matched_strings": [],
+    "name": "NatAcquireFromAddressPool",
+    "prototype": "",
+    "rank_score": 427,
+    "size": 1439,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SeSddlSecurityDescriptorFromSDDL",
+    "ea": "0x140042f4c",
+    "function_file": "functions/140042f4c_SeSddlSecurityDescriptorFromSDDL.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "SeSddlSecurityDescriptorFromSDDL",
+    "prototype": "",
+    "rank_score": 426,
+    "size": 188,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "NatInitializeDynamicTicketManagement",
+    "ea": "0x14001d888",
+    "function_file": "functions/14001d888_NatInitializeDynamicTicketManagement.md",
+    "matched_imports": [
+      "ntoskrnl!ExInitializeNPagedLookasideList",
+      "ntoskrnl!KeInitializeSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NatInitializeDynamicTicketManagement",
+    "prototype": "",
+    "rank_score": 424,
+    "size": 221,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "NatInjectDatagramComplete",
+    "ea": "0x14002a340",
+    "function_file": "functions/14002a340_NatInjectDatagramComplete.md",
+    "matched_imports": [
+      "fwpkclnt!FwpsFreeCloneNetBufferList0",
+      "fwpkclnt!FwpsFreeNetBufferList0"
+    ],
+    "matched_strings": [],
+    "name": "NatInjectDatagramComplete",
+    "prototype": "void __stdcall(void *context, NET_BUFFER_LIST *netBufferList, BOOLEAN dispatchLevel)",
+    "rank_score": 424,
+    "size": 236,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "PpRegStateReadCreateClassCreationSettings",
+    "ea": "0x140043c54",
+    "function_file": "functions/140043c54_PpRegStateReadCreateClassCreationSettings.md",
+    "matched_imports": [
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "PpRegStateReadCreateClassCreationSettings",
+    "prototype": "",
+    "rank_score": 420,
+    "size": 356,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "NatUpdateStatisticsMapping",
+    "ea": "0x14000fbb0",
+    "function_file": "functions/14000fbb0_NatUpdateStatisticsMapping.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "NatUpdateStatisticsMapping",
+    "prototype": "",
+    "rank_score": 417,
+    "size": 456,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "NatInitializeMappingManagement",
+    "ea": "0x14000e868",
+    "function_file": "functions/14000e868_NatInitializeMappingManagement.md",
+    "matched_imports": [
+      "ntoskrnl!ExInitializeNPagedLookasideList",
+      "ntoskrnl!KeInitializeSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NatInitializeMappingManagement",
+    "prototype": "",
+    "rank_score": 416,
+    "size": 281,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "NatpRedirectDeleteHandler",
+    "ea": "0x14001a5e0",
+    "function_file": "functions/14001a5e0_NatpRedirectDeleteHandler.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "NatpRedirectDeleteHandler",
+    "prototype": "",
+    "rank_score": 416,
+    "size": 372,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 6,
+    "demangled": "NatDeleteMapping",
+    "ea": "0x14000e378",
+    "function_file": "functions/14000e378_NatDeleteMapping.md",
+    "matched_imports": [
+      "ntoskrnl!RtlDelete"
+    ],
+    "matched_strings": [],
+    "name": "NatDeleteMapping",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 415,
+    "size": 539,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "NatCreateExternalNaming",
+    "ea": "0x140042008",
+    "function_file": "functions/140042008_NatCreateExternalNaming.md",
+    "matched_imports": [
+      "ntoskrnl!IoCreateSymbolicLink",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "NatCreateExternalNaming",
+    "prototype": "__int64 __fastcall(PUNICODE_STRING DeviceName)",
+    "rank_score": 414,
+    "size": 176,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "NatDeleteExternalNaming",
+    "ea": "0x1400420c0",
+    "function_file": "functions/1400420c0_NatDeleteExternalNaming.md",
+    "matched_imports": [
+      "ntoskrnl!IoDeleteSymbolicLink",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "NatDeleteExternalNaming",
+    "prototype": "",
+    "rank_score": 414,
+    "size": 161,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "NatInitializeIcmpManagement",
+    "ea": "0x14000918c",
+    "function_file": "functions/14000918c_NatInitializeIcmpManagement.md",
+    "matched_imports": [
+      "ntoskrnl!ExInitializeNPagedLookasideList",
+      "ntoskrnl!KeInitializeSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NatInitializeIcmpManagement",
+    "prototype": "",
+    "rank_score": 414,
+    "size": 232,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "NatInitializeRawIpManagement",
+    "ea": "0x140016b5c",
+    "function_file": "functions/140016b5c_NatInitializeRawIpManagement.md",
+    "matched_imports": [
+      "ntoskrnl!ExInitializeNPagedLookasideList",
+      "ntoskrnl!KeInitializeSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NatInitializeRawIpManagement",
+    "prototype": "",
+    "rank_score": 414,
+    "size": 232,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "NatDeleteAddressPool",
+    "ea": "0x14001379c",
+    "function_file": "functions/14001379c_NatDeleteAddressPool.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "NatDeleteAddressPool",
+    "prototype": "",
+    "rank_score": 409,
+    "size": 346,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "NatEditorDeleteTicket",
+    "ea": "0x1400058c0",
+    "function_file": "functions/1400058c0_NatEditorDeleteTicket.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "NatEditorDeleteTicket",
+    "prototype": "",
+    "rank_score": 409,
+    "size": 458,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "NatDeleteDirector",
+    "ea": "0x140001480",
+    "function_file": "functions/140001480_NatDeleteDirector.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NatDeleteDirector",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 407,
+    "size": 439,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "NatEditorCreateTicket",
+    "ea": "0x140005780",
+    "function_file": "functions/140005780_NatEditorCreateTicket.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "NatEditorCreateTicket",
+    "prototype": "",
+    "rank_score": 406,
+    "size": 314,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CmRegUtilCreateWstrKey",
+    "ea": "0x14004403c",
+    "function_file": "functions/14004403c_CmRegUtilCreateWstrKey.md",
+    "matched_imports": [
+      "ntoskrnl!ZwCreateKey"
+    ],
+    "matched_strings": [],
+    "name": "CmRegUtilCreateWstrKey",
+    "prototype": "",
+    "rank_score": 245,
+    "size": 203,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CmRegUtilOpenExistingWstrKey",
+    "ea": "0x140044110",
+    "function_file": "functions/140044110_CmRegUtilOpenExistingWstrKey.md",
+    "matched_imports": [
+      "ntoskrnl!ZwOpenKey"
+    ],
+    "matched_strings": [],
+    "name": "CmRegUtilOpenExistingWstrKey",
+    "prototype": "",
+    "rank_score": 235,
+    "size": 133,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 9,
+    "demangled": "NatTriggerTimer",
+    "ea": "0x14001f794",
+    "function_file": "functions/14001f794_NatTriggerTimer.md",
+    "matched_imports": [
+      "ntoskrnl!KeInsertQueueDpc"
+    ],
+    "matched_strings": [],
+    "name": "NatTriggerTimer",
+    "prototype": "",
+    "rank_score": 222,
+    "size": 206,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "GetParameter",
+    "ea": "0x14002863c",
+    "function_file": "functions/14002863c_GetParameter.md",
+    "matched_imports": [
+      "NETIO!NmrClientDetachProviderComplete"
+    ],
+    "matched_strings": [],
+    "name": "GetParameter",
+    "prototype": "",
+    "rank_score": 221,
+    "size": 404,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "NatpExecuteWmiMethod",
+    "ea": "0x140042670",
+    "function_file": "functions/140042670_NatpExecuteWmiMethod.md",
+    "matched_imports": [
+      "WMILIB!WmiCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "NatpExecuteWmiMethod",
+    "prototype": "__int64 __usercall@<rax>(PDEVICE_OBJECT DeviceObject@<rcx>, PIRP Irp@<rdx>, int)",
+    "rank_score": 214,
+    "size": 193,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "NatpQueryWmiDataBlock",
+    "ea": "0x140042740",
+    "function_file": "functions/140042740_NatpQueryWmiDataBlock.md",
+    "matched_imports": [
+      "WMILIB!WmiCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "NatpQueryWmiDataBlock",
+    "prototype": "__int64 __usercall@<rax>(PDEVICE_OBJECT DeviceObject@<rcx>, PIRP Irp@<rdx>, int)",
+    "rank_score": 214,
+    "size": 246,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "NatpSetWmiDataBlock",
+    "ea": "0x1400429c0",
+    "function_file": "functions/1400429c0_NatpSetWmiDataBlock.md",
+    "matched_imports": [
+      "WMILIB!WmiCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "NatpSetWmiDataBlock",
+    "prototype": "__int64 __usercall@<rax>(PDEVICE_OBJECT DeviceObject@<rcx>, PIRP Irp@<rdx>, int)",
+    "rank_score": 214,
+    "size": 246,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "NatpSetWmiDataItem",
+    "ea": "0x140042ac0",
+    "function_file": "functions/140042ac0_NatpSetWmiDataItem.md",
+    "matched_imports": [
+      "WMILIB!WmiCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "NatpSetWmiDataItem",
+    "prototype": "__int64 __usercall@<rax>(PDEVICE_OBJECT DeviceObject@<rcx>, PIRP Irp@<rdx>, int, int)",
+    "rank_score": 214,
+    "size": 254,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SepSddlDaclFromSDDLString",
+    "ea": "0x140043104",
+    "function_file": "functions/140043104_SepSddlDaclFromSDDLString.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "SepSddlDaclFromSDDLString",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 221,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "node_remove",
+    "ea": "0x14001bb24",
+    "function_file": "functions/14001bb24_node_remove.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "node_remove",
+    "prototype": "",
+    "rank_score": 210,
+    "size": 692,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "NatShimAllocateBuffer",
+    "ea": "0x140028c0c",
+    "function_file": "functions/140028c0c_NatShimAllocateBuffer.md",
+    "matched_imports": [
+      "ntoskrnl!MmMapLockedPagesSpecifyCache"
+    ],
+    "matched_strings": [],
+    "name": "NatShimAllocateBuffer",
+    "prototype": "",
+    "rank_score": 208,
+    "size": 289,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "removeRhizome",
+    "ea": "0x14001bde0",
+    "function_file": "functions/14001bde0_removeRhizome.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "removeRhizome",
+    "prototype": "",
+    "rank_score": 208,
+    "size": 169,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "NatRegisterFwpsInjectionHandle",
+    "ea": "0x14002bb90",
+    "function_file": "functions/14002bb90_NatRegisterFwpsInjectionHandle.md",
+    "matched_imports": [
+      "fwpkclnt!FwpsInjectionHandleCreate0"
+    ],
+    "matched_strings": [],
+    "name": "NatRegisterFwpsInjectionHandle",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 229,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "McGenEventWrite_EtwWriteTransfer",
+    "ea": "0x140006950",
+    "function_file": "functions/140006950_McGenEventWrite_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "McGenEventWrite_EtwWriteTransfer",
+    "prototype": "__int64 __fastcall(int, int, int, int, PEVENT_DATA_DESCRIPTOR)",
+    "rank_score": 202,
+    "size": 97,
+    "tags": []
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "NatCreatePptpMapping",
+    "ea": "0x140014bac",
+    "function_file": "functions/140014bac_NatCreatePptpMapping.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NatCreatePptpMapping",
+    "prototype": "",
+    "rank_score": 37,
+    "size": 893,
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 64,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x14002c710",
+    "function_file": "functions/14002c710_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 3,
+    "demangled": "NatCreateTicket",
+    "ea": "0x14001d05c",
+    "function_file": "functions/14001d05c_NatCreateTicket.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NatCreateTicket",
+    "prototype": "",
+    "rank_score": 30,
+    "size": 1068,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 5,
+    "demangled": "NatDeleteTicket",
+    "ea": "0x14001d7ac",
+    "function_file": "functions/14001d7ac_NatDeleteTicket.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NatDeleteTicket",
+    "prototype": "",
+    "rank_score": 30,
+    "size": 214,
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "NatLookupAndRemoveTicket",
+    "ea": "0x14001dcb8",
+    "function_file": "functions/14001dcb8_NatLookupAndRemoveTicket.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NatLookupAndRemoveTicket",
+    "prototype": "",
+    "rank_score": 30,
+    "size": 587,
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 29,
+    "demangled": "memset",
+    "ea": "0x14002cbc0",
+    "function_file": "functions/14002cbc0_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 29,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "NatDeletePptpMapping",
+    "ea": "0x14001526c",
+    "function_file": "functions/14001526c_NatDeletePptpMapping.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NatDeletePptpMapping",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 26,
+    "size": 206,
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 11,
+    "demangled": "NatQueryInformationMapping",
+    "ea": "0x14000f134",
+    "function_file": "functions/14000f134_NatQueryInformationMapping.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NatQueryInformationMapping",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 360,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 192,
+    "demangled": "WPP_SF_",
+    "ea": "0x14000218c",
+    "function_file": "functions/14000218c_WPP_SF.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 26,
+    "size": 40,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 125,
+    "demangled": "WPP_SF_d",
+    "ea": "0x1400021bc",
+    "function_file": "functions/1400021bc_WPP_SF_d.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_d",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 26,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 13,
+    "demangled": "__security_check_cookie",
+    "ea": "0x14002c6d0",
+    "function_file": "functions/14002c6d0_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 25,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x14002c44c",
+    "function_file": "functions/14002c44c_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GsDriverEntry",
+    "ea": "0x140045010",
+    "function_file": "functions/140045010_GsDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GsDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 21,
+    "demangled": "WPP_SF_dd",
+    "ea": "0x140002200",
+    "function_file": "functions/140002200_WPP_SF_dd.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_dd",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _DWORD)",
+    "rank_score": 22,
+    "size": 75,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 6,
+    "demangled": "NatAdjustMSSOption",
+    "ea": "0x14001f8f0",
+    "function_file": "functions/14001f8f0_NatAdjustMSSOption.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NatAdjustMSSOption",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 1479,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 16,
+    "demangled": "NatLookupInterface",
+    "ea": "0x14000ccc8",
+    "function_file": "functions/14000ccc8_NatLookupInterface.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NatLookupInterface",
+    "prototype": "",
+    "rank_score": 20,
+    "size": 221,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 14,
+    "demangled": "tcpxsum",
+    "ea": "0x14002c580",
+    "function_file": "functions/14002c580_tcpxsum.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "tcpxsum",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 317,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 15,
+    "demangled": "WPP_SF_ii",
+    "ea": "0x14000fe48",
+    "function_file": "functions/14000fe48_WPP_SF_ii.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_ii",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 75,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 10,
+    "demangled": "memmove",
+    "ea": "0x14002c8c0",
+    "function_file": "functions/14002c8c0_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 16,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "NatCompareAddressMappingCallback",
+    "ea": "0x14000bd80",
+    "function_file": "functions/14000bd80_NatCompareAddressMappingCallback.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NatCompareAddressMappingCallback",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 149,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "NatComparePortMappingCallback",
+    "ea": "0x14000be20",
+    "function_file": "functions/14000be20_NatComparePortMappingCallback.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NatComparePortMappingCallback",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 168,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "NatCreateStaticPortMapping",
+    "ea": "0x140013550",
+    "function_file": "functions/140013550_NatCreateStaticPortMapping.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NatCreateStaticPortMapping",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 582,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "NatForwardTcpStateCheck",
+    "ea": "0x14001ff74",
+    "function_file": "functions/14001ff74_NatForwardTcpStateCheck.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NatForwardTcpStateCheck",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 681,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 6,
+    "demangled": "NatLookupForwardMapping",
+    "ea": "0x14000ed8c",
+    "function_file": "functions/14000ed8c_NatLookupForwardMapping.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NatLookupForwardMapping",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 461,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x140045044",
+    "function_file": "functions/140045044_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "NatLookupReverseMapping",
+    "ea": "0x14000ef60",
+    "function_file": "functions/14000ef60_NatLookupReverseMapping.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NatLookupReverseMapping",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 461,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "NatLookupOutboundIcmpMapping",
+    "ea": "0x140009380",
+    "function_file": "functions/140009380_NatLookupOutboundIcmpMapping.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NatLookupOutboundIcmpMapping",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 256,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "NatLookupTicket",
+    "ea": "0x14001e0f8",
+    "function_file": "functions/14001e0f8_NatLookupTicket.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NatLookupTicket",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 242,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "NatReverseTcpStateCheck",
+    "ea": "0x14002040c",
+    "function_file": "functions/14002040c_NatReverseTcpStateCheck.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NatReverseTcpStateCheck",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 359,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "NatLookupAddressPoolEntry",
+    "ea": "0x140013ccc",
+    "function_file": "functions/140013ccc_NatLookupAddressPoolEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NatLookupAddressPoolEntry",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 247,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "NatLookupInboundIcmpMapping",
+    "ea": "0x14000927c",
+    "function_file": "functions/14000927c_NatLookupInboundIcmpMapping.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NatLookupInboundIcmpMapping",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 252,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "NatMappingDetachDirector",
+    "ea": "0x140001e78",
+    "function_file": "functions/140001e78_NatMappingDetachDirector.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NatMappingDetachDirector",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 255,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "WPP_SF_DDD",
+    "ea": "0x1400052a0",
+    "function_file": "functions/1400052a0_WPP_SF_DDD.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_DDD",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "WPP_SF_i",
+    "ea": "0x14000fe04",
+    "function_file": "functions/14000fe04_WPP_SF_i.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_i",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "WPP_SF_id",
+    "ea": "0x14000bbfc",
+    "function_file": "functions/14000bbfc_WPP_SF_id.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_id",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 78,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "WdmlibRtlInitUnicodeStringEx",
+    "ea": "0x14002811c",
+    "function_file": "functions/14002811c_WdmlibRtlInitUnicodeStringEx.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WdmlibRtlInitUnicodeStringEx",
+    "prototype": "NTSTATUS __stdcall(PUNICODE_STRING DestinationString, PCWSTR SourceString)",
+    "rank_score": 8,
+    "size": 70,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "searchRhizome",
+    "ea": "0x14001c2e0",
+    "function_file": "functions/14001c2e0_searchRhizome.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "searchRhizome",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 374,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "NatCreateRedirect",
+    "ea": "0x140017884",
+    "function_file": "functions/140017884_NatCreateRedirect.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NatCreateRedirect",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 319,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "NatLookupOutboundPptpMapping",
+    "ea": "0x1400158c8",
+    "function_file": "functions/1400158c8_NatLookupOutboundPptpMapping.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NatLookupOutboundPptpMapping",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 244,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "WPP_SF_c",
+    "ea": "0x1400051e8",
+    "function_file": "functions/1400051e8_WPP_SF_c.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_c",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "McGenControlCallbackV2",
+    "ea": "0x1400067d0",
+    "function_file": "functions/1400067d0_McGenControlCallbackV2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McGenControlCallbackV2",
+    "prototype": "void __stdcall(LPCGUID SourceId, ULONG ControlCode, UCHAR Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, PEVENT_FILTER_DESCRIPTOR FilterData, PVOID CallbackContext)",
+    "rank_score": 3,
+    "size": 255,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0s_EtwWriteTransfer",
+    "ea": "0x1400069b8",
+    "function_file": "functions/1400069b8_McTemplateK0s_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0s_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 73,
+    "tags": []
+  }
+]
