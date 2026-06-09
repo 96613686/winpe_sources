@@ -1,0 +1,44 @@
+# CUMRDPService::OnLogon(ulong,int)
+
+- ea: `0x18000e5c0`
+- end: `0x18000e73c`
+- name: `?OnLogon@CUMRDPService@@AEAAKKH@Z`
+- size: `380`
+- prototype: `unsigned int __fastcall(CUMRDPService *__hidden this, unsigned int, int)`
+- caller_count: `1`
+- callee_count: `12`
+- tags: `loader_planting, service_task`
+
+## callers
+
+- `0x180001a20`
+
+## callees
+
+- `0x180005b90`
+- `0x18000a01c`
+- `0x18000b8f8`
+- `0x18000e1ac`
+- `0x18000e504`
+- `0x18000e5c0`
+- `0x18000e784`
+- `0x18000f75c`
+- `0x180011850`
+- `0x1800197e8`
+- `0x18001a3f0`
+- `0x180047ef0`
+
+## import_xrefs
+
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x18000e682`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x18000e682`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x18000e6bd`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x18000e6bd`
+- `ntdll!RtlGetSuiteMask` at `0x18000e5ec`
+- `ntdll!RtlGetSuiteMask` at `0x18000e5ec`
+
+## pseudocode
+
+```c
+
+```

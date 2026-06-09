@@ -1,0 +1,300 @@
+# wil::str_concat_nothrow<wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&wil::details::FreeProcessHeap(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>>,wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&wil::details::FreeProcessHeap(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>>,wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&wil::details::FreeProcessHeap(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>>,wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&wil::details::FreeProcessHeap(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>>>(wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&wil::details::FreeProcessHeap(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>> &,wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&wil::details::FreeProcessHeap(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>> const &,wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&wil::details::FreeProcessHeap(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>> const &,wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&wil::details::FreeProcessHeap(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>> const &)
+
+- ea: `0x18000cdd4`
+- end: `0x18000cf85`
+- name: `??$str_concat_nothrow@V?$unique_any_t@V?$unique_storage@U?$resource_policy@PEA_WP6AXPEAX@Z$1?FreeProcessHeap@details@wil@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEA_WPEA_W$0A@$$T@details@wil@@@details@wil@@@wil@@V12@V12@V12@@wil@@YAJAEAV?$unique_any_t@V?$unique_storage@U?$resource_policy@PEA_WP6AXPEAX@Z$1?FreeProcessHeap@details@wil@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEA_WPEA_W$0A@$$T@details@wil@@@details@wil@@@0@AEBV10@11@Z`
+- size: `433`
+- prototype: `__int64 __fastcall(_QWORD *, _QWORD *, _QWORD *, _QWORD *)`
+- caller_count: `1`
+- callee_count: `6`
+- tags: `registry_config, broker_com_uri`
+
+## callers
+
+- `0x18000c690`
+
+## callees
+
+- `0x1800045f8`
+- `0x180005a74`
+- `0x180006858`
+- `0x18000cdd4`
+- `0x18000cf8c`
+- `0x18000ed40`
+
+## import_xrefs
+
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18000ce76`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18000cf19`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18000cf6f`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18000ce76`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18000cf19`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x18000cf6f`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x18000ce84`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x18000cf27`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x18000cf7d`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x18000ce84`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x18000cf27`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x18000cf7d`
+
+## string_xrefs
+
+- `0x18000cea7`: `C:\__w\1\s\packages\Microsoft.Windows.Wil.Internal.0.3.30\inc\wil\opensource\wil\resource.h`
+- `0x18000cf5b`: `C:\__w\1\s\packages\Microsoft.Windows.Wil.Internal.0.3.30\inc\wil\opensource\wil\resource.h`
+
+## pseudocode
+
+```c
+__int64 __fastcall wil::str_concat_nothrow<wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&void wil::details::FreeProcessHeap(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>>,wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&void wil::details::FreeProcessHeap(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>>,wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&void wil::details::FreeProcessHeap(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>>,wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&void wil::details::FreeProcessHeap(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>>>(
+        _QWORD *a1,
+        _QWORD *a2,
+        _QWORD *a3,
+        _QWORD *a4)
+{
+  _QWORD *v5; // rcx
+  __int64 v6; // rsi
+  __int64 v7; // rax
+  __int64 v8; // rax
+  void *v9; // rbx
+  HANDLE ProcessHeap; // rax
+  wchar_t *v11; // rbx
+  unsigned int v12; // edi
+  wchar_t *v13; // rcx
+  wchar_t *v14; // r14
+  const wchar_t **v15; // rsi
+  int v16; // eax
+  wchar_t *v17; // rbx
+  HANDLE v18; // rax
+  HANDLE v20; // rax
+  unsigned __int64 *v21; // [rsp+20h] [rbp-50h]
+  unsigned int v22; // [rsp+28h] [rbp-48h]
+  wchar_t *v23; // [rsp+30h] [rbp-40h] BYREF
+  LPVOID lpMem; // [rsp+38h] [rbp-38h] BYREF
+  _QWORD v25[4]; // [rsp+40h] [rbp-30h] BYREF
+  _QWORD v26[2]; // [rsp+60h] [rbp-10h] BYREF
+  wil::details::in1diag3 *retaddr; // [rsp+98h] [rbp+28h]
+
+  v25[0] = *a1;
+  v5 = v25;
+  v25[1] = *a2;
+  v6 = 0;
+  v25[2] = *a3;
+  v25[3] = *a4;
+  do
+  {
+    if ( *v5 )
+    {
+      v7 = -1;
+      do
+        ++v7;
+      while ( *(_WORD *)(*v5 + 2 * v7) );
+    }
+    else
+    {
+      v7 = 0;
+    }
+    v6 += v7;
+    ++v5;
+  }
+  while ( v5 != v26 );
+  v23 = 0;
+  v8 = wil::make_unique_string_nothrow<wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&void wil::details::FreeProcessHeap(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>>>(
+         &lpMem,
+         0,
+         v6);
+  wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&void wil::details::FreeProcessHeap(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>>::operator=(
+    &v23,
+    v8);
+  v9 = lpMem;
+  if ( lpMem )
+  {
+    ProcessHeap = GetProcessHeap();
+    HeapFree(ProcessHeap, 0, v9);
+  }
+  v11 = v23;
+  v12 = v23 == 0 ? 0x8007000E : 0;
+  if ( v23 )
+  {
+    v13 = v23;
+    v14 = &v23[v6 + 1];
+    v15 = (const wchar_t **)v25;
+    do
+    {
+      if ( *v15 )
+      {
+        v16 = StringCchCopyExW(v13, v14 - v13, *v15, &v23, v21, v22);
+        v12 = v16;
+        if ( v16 < 0 )
+        {
+          wil::details::in1diag3::Return_Hr(
+            retaddr,
+            (void *)0x73F,
+            (unsigned int)"C:\\__w\\1\\s\\packages\\Microsoft.Windows.Wil.Internal.0.3.30\\inc\\wil\\opensource\\wil\\resource.h",
+            (const char *)(unsigned int)v16,
+            (int)v21);
+          v20 = GetProcessHeap();
+          HeapFree(v20, 0, v11);
+          return v12;
+        }
+        v13 = v23;
+      }
+      ++v15;
+    }
+    while ( v15 != v26 );
+    v23 = v11;
+    wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&void wil::details::FreeProcessHeap(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>>::operator=(
+      a1,
+      &v23);
+    v17 = v23;
+    if ( v23 )
+    {
+      v18 = GetProcessHeap();
+      HeapFree(v18, 0, v17);
+    }
+    return 0;
+  }
+  else
+  {
+    wil::details::in1diag3::Return_Hr(
+      retaddr,
+      (void *)0x737,
+      (unsigned int)"C:\\__w\\1\\s\\packages\\Microsoft.Windows.Wil.Internal.0.3.30\\inc\\wil\\opensource\\wil\\resource.h",
+      (const char *)v12,
+      (int)v21);
+  }
+  return v12;
+}
+
+```
+
+## disassembly
+
+```asm
+0x18000cdd4  mov     [rsp-28h+arg_8], rbx
+0x18000cdd9  mov     [rsp-28h+arg_10], rsi
+0x18000cdde  push    rbp
+0x18000cddf  push    rdi
+0x18000cde0  push    r12
+0x18000cde2  push    r14
+0x18000cde4  push    r15
+0x18000cde6  mov     rbp, rsp
+0x18000cde9  sub     rsp, 70h
+0x18000cded  mov     rax, cs:__security_cookie
+0x18000cdf4  xor     rax, rsp
+0x18000cdf7  mov     [rbp+var_10], rax
+0x18000cdfb  mov     rax, [rcx]
+0x18000cdfe  xor     r12d, r12d
+0x18000ce01  mov     [rbp+var_30], rax
+0x18000ce05  mov     r15, rcx
+0x18000ce08  mov     rax, [rdx]
+0x18000ce0b  lea     rcx, [rbp+var_30]
+0x18000ce0f  mov     [rbp+var_28], rax
+0x18000ce13  mov     esi, r12d
+0x18000ce16  mov     rax, [r8]
+0x18000ce19  mov     [rbp+var_20], rax
+0x18000ce1d  mov     rax, [r9]
+0x18000ce20  mov     [rbp+var_18], rax
+0x18000ce24  mov     rdx, [rcx]
+0x18000ce27  test    rdx, rdx
+0x18000ce2a  jz      short loc_18000CE3C
+0x18000ce2c  or      rax, 0FFFFFFFFFFFFFFFFh
+0x18000ce30  inc     rax
+0x18000ce33  cmp     [rdx+rax*2], r12w
+0x18000ce38  jnz     short loc_18000CE30
+0x18000ce3a  jmp     short loc_18000CE3F
+0x18000ce3c  mov     rax, r12
+0x18000ce3f  add     rsi, rax
+0x18000ce42  add     rcx, 8
+0x18000ce46  lea     rax, [rbp+var_10]
+0x18000ce4a  cmp     rcx, rax
+0x18000ce4d  jnz     short loc_18000CE24
+0x18000ce4f  mov     r8, rsi
+0x18000ce52  mov     [rbp+var_40], r12
+0x18000ce56  xor     edx, edx
+0x18000ce58  lea     rcx, [rbp+lpMem]
+0x18000ce5c  call    ??$make_unique_string_nothrow@V?$unique_any_t@V?$unique_storage@U?$resource_policy@PEA_WP6AXPEAX@Z$1?FreeProcessHeap@details@wil@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEA_WPEA_W$0A@$$T@details@wil@@@details@wil@@@wil@@@wil@@YA?AV?$unique_any_t@V?$unique_storage@U?$resource_policy@PEA_WP6AXPEAX@Z$1?FreeProcessHeap@details@wil@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEA_WPEA_W$0A@$$T@details@wil@@@details@wil@@@0@PEB_W_K@Z; wil::make_unique_string_nothrow<wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&wil::details::FreeProcessHeap(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>>>(wchar_t const *,unsigned __int64)
+0x18000ce61  mov     rdx, rax
+0x18000ce64  lea     rcx, [rbp+var_40]
+0x18000ce68  call    ??4?$unique_any_t@V?$unique_storage@U?$resource_policy@PEA_WP6AXPEAX@Z$1?FreeProcessHeap@details@wil@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEA_WPEA_W$0A@$$T@details@wil@@@details@wil@@@wil@@QEAAAEAV01@$$QEAV01@@Z; wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&wil::details::FreeProcessHeap(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>>::operator=(wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&wil::details::FreeProcessHeap(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>> &&)
+0x18000ce6d  mov     rbx, [rbp+lpMem]
+0x18000ce71  test    rbx, rbx
+0x18000ce74  jz      short loc_18000CE8A
+0x18000ce76  call    cs:__imp_GetProcessHeap
+0x18000ce7c  mov     r8, rbx; lpMem
+0x18000ce7f  xor     edx, edx; dwFlags
+0x18000ce81  mov     rcx, rax; hHeap
+0x18000ce84  call    cs:__imp_HeapFree
+0x18000ce8a  mov     rbx, [rbp+var_40]
+0x18000ce8e  mov     rax, rbx
+0x18000ce91  neg     rax
+0x18000ce94  sbb     edi, edi
+0x18000ce96  not     edi
+0x18000ce98  and     edi, 8007000Eh
+0x18000ce9e  test    rbx, rbx
+0x18000cea1  jnz     short loc_18000CEBD
+0x18000cea3  mov     rcx, [rbp+28h]; this
+0x18000cea7  lea     r8, aCW1SPackagesMi_0; "C:\\__w\\1\\s\\packages\\Microsoft.Wind"...
+0x18000ceae  mov     r9d, edi; char *
+0x18000ceb1  mov     edx, 737h; void *
+0x18000ceb6  call    ?Return_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+0x18000cebb  jmp     short loc_18000CF30
+0x18000cebd  inc     rsi
+0x18000cec0  mov     [rbp+var_40], rbx
+0x18000cec4  mov     rcx, rbx; wchar_t *
+0x18000cec7  lea     r14, [rbx+rsi*2]
+0x18000cecb  lea     rsi, [rbp+var_30]
+0x18000cecf  mov     r8, [rsi]; wchar_t *
+0x18000ced2  test    r8, r8
+0x18000ced5  jz      short loc_18000CEF3
+0x18000ced7  mov     rdx, r14
+0x18000ceda  lea     r9, [rbp+var_40]; wchar_t **
+0x18000cede  sub     rdx, rcx
+0x18000cee1  sar     rdx, 1; unsigned __int64
+0x18000cee4  call    ?StringCchCopyExW@@YAJPEA_W_KPEB_WPEAPEA_WPEA_KK@Z; StringCchCopyExW(wchar_t *,unsigned __int64,wchar_t const *,wchar_t * *,unsigned __int64 *,ulong)
+0x18000cee9  mov     edi, eax
+0x18000ceeb  test    eax, eax
+0x18000ceed  js      short loc_18000CF57
+0x18000ceef  mov     rcx, [rbp+var_40]
+0x18000cef3  add     rsi, 8
+0x18000cef7  lea     rax, [rbp+var_10]
+0x18000cefb  cmp     rsi, rax
+0x18000cefe  jnz     short loc_18000CECF
+0x18000cf00  lea     rdx, [rbp+var_40]
+0x18000cf04  mov     [rbp+var_40], rbx
+0x18000cf08  mov     rcx, r15
+0x18000cf0b  call    ??4?$unique_any_t@V?$unique_storage@U?$resource_policy@PEA_WP6AXPEAX@Z$1?FreeProcessHeap@details@wil@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEA_WPEA_W$0A@$$T@details@wil@@@details@wil@@@wil@@QEAAAEAV01@$$QEAV01@@Z; wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&wil::details::FreeProcessHeap(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>>::operator=(wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&wil::details::FreeProcessHeap(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>> &&)
+0x18000cf10  mov     rbx, [rbp+var_40]
+0x18000cf14  test    rbx, rbx
+0x18000cf17  jz      short loc_18000CF2D
+0x18000cf19  call    cs:__imp_GetProcessHeap
+0x18000cf1f  mov     r8, rbx; lpMem
+0x18000cf22  xor     edx, edx; dwFlags
+0x18000cf24  mov     rcx, rax; hHeap
+0x18000cf27  call    cs:__imp_HeapFree
+0x18000cf2d  mov     edi, r12d
+0x18000cf30  mov     eax, edi
+0x18000cf32  mov     rcx, [rbp+var_10]
+0x18000cf36  xor     rcx, rsp; StackCookie
+0x18000cf39  call    __security_check_cookie
+0x18000cf3e  lea     r11, [rsp+70h+var_s0]
+0x18000cf43  mov     rbx, [r11+38h]
+0x18000cf47  mov     rsi, [r11+40h]
+0x18000cf4b  mov     rsp, r11
+0x18000cf4e  pop     r15
+0x18000cf50  pop     r14
+0x18000cf52  pop     r12
+0x18000cf54  pop     rdi
+0x18000cf55  pop     rbp
+0x18000cf56  retn
+0x18000cf57  mov     rcx, [rbp+28h]; this
+0x18000cf5b  lea     r8, aCW1SPackagesMi_0; "C:\\__w\\1\\s\\packages\\Microsoft.Wind"...
+0x18000cf62  mov     r9d, eax; char *
+0x18000cf65  mov     edx, 73Fh; void *
+0x18000cf6a  call    ?Return_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+0x18000cf6f  call    cs:__imp_GetProcessHeap
+0x18000cf75  mov     r8, rbx; lpMem
+0x18000cf78  xor     edx, edx; dwFlags
+0x18000cf7a  mov     rcx, rax; hHeap
+0x18000cf7d  call    cs:__imp_HeapFree
+0x18000cf83  jmp     short loc_18000CF30
+```

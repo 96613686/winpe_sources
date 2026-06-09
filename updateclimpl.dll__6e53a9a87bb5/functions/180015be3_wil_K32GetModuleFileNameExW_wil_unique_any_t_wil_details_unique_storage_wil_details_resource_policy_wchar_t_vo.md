@@ -1,0 +1,49 @@
+# _wil::K32GetModuleFileNameExW_wil::unique_any_t_wil::details::unique_storage_wil::details::resource_policy_wchar_t___void_(__cdecl_)(void__)_&CoTaskMemFree_wistd::integral_constant_unsigned___int64_0__wchar_t___wchar_t___0_std::nullptr_t______128__::_1_::dtor$0
+
+- ea: `0x180015be3`
+- end: `0x180015c09`
+- name: `_wil::K32GetModuleFileNameExW_wil::unique_any_t_wil::details::unique_storage_wil::details::resource_policy_wchar_t___void_(__cdecl_)(void__)_&CoTaskMemFree_wistd::integral_constant_unsigned___int64_0__wchar_t___wchar_t___0_std::nullptr_t______128__::_1_::dtor$0`
+- size: `38`
+- prototype: `void __fastcall(__int64, __int64)`
+- caller_count: `0`
+- callee_count: `2`
+- tags: `registry_config, service_task`
+
+## callees
+
+- `0x18000c3b0`
+- `0x180015be3`
+
+## pseudocode
+
+```c
+void __fastcall wil::K32GetModuleFileNameExW_wil::unique_any_t_wil::details::unique_storage_wil::details::resource_policy_wchar_t___void____cdecl___void_____CoTaskMemFree_wistd::integral_constant_unsigned___int64_0__wchar_t___wchar_t___0_std::nullptr_t______128__::_1_::dtor_0(
+        __int64 a1,
+        __int64 a2)
+{
+  if ( (*(_DWORD *)(a2 + 32) & 1) != 0 )
+  {
+    *(_DWORD *)(a2 + 32) &= ~1u;
+    wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&void CoTaskMemFree(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>>::~unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&void CoTaskMemFree(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>>(*(void ***)(a2 + 40));
+  }
+}
+
+```
+
+## disassembly
+
+```asm
+0x180015be3  push    rbp
+0x180015be5  sub     rsp, 20h
+0x180015be9  mov     rbp, rdx
+0x180015bec  mov     eax, [rbp+20h]
+0x180015bef  and     eax, 1
+0x180015bf2  test    eax, eax
+0x180015bf4  jz      short loc_180015C03
+0x180015bf6  and     dword ptr [rbp+20h], 0FFFFFFFEh
+0x180015bfa  mov     rcx, [rbp+28h]
+0x180015bfe  call    ??1?$unique_any_t@V?$unique_storage@U?$resource_policy@PEA_WP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEA_WPEA_W$0A@$$T@details@wil@@@details@wil@@@wil@@QEAA@XZ; wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&CoTaskMemFree(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>>::~unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&CoTaskMemFree(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>>(void)
+0x180015c03  add     rsp, 20h
+0x180015c07  pop     rbp
+0x180015c08  retn
+```

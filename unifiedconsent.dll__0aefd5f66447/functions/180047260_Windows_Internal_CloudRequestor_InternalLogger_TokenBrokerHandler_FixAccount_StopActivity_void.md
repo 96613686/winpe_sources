@@ -1,0 +1,328 @@
+# Windows::Internal::CloudRequestor::InternalLogger::TokenBrokerHandler_FixAccount::StopActivity(void)
+
+- ea: `0x180047260`
+- end: `0x180047501`
+- name: `?StopActivity@TokenBrokerHandler_FixAccount@InternalLogger@CloudRequestor@Internal@Windows@@MEAAXXZ`
+- size: `673`
+- prototype: `void __fastcall(Windows::Internal::CloudRequestor::InternalLogger::TokenBrokerHandler_FixAccount *__hidden this)`
+- caller_count: `0`
+- callee_count: `6`
+- tags: `loader_planting, broker_com_uri`
+
+## callees
+
+- `0x1800013a4`
+- `0x180001a6c`
+- `0x18004453c`
+- `0x18004460c`
+- `0x180045c98`
+- `0x180047260`
+
+## import_xrefs
+
+- `api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive` at `0x1800472ba`
+- `api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive` at `0x18004745a`
+- `api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive` at `0x1800472ba`
+- `api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive` at `0x18004745a`
+- `api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId` at `0x1800474a1`
+- `api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId` at `0x1800474a1`
+
+## pseudocode
+
+```c
+void __fastcall Windows::Internal::CloudRequestor::InternalLogger::TokenBrokerHandler_FixAccount::StopActivity(
+        Windows::Internal::CloudRequestor::InternalLogger::TokenBrokerHandler_FixAccount *this)
+{
+  __int64 v1; // rdi
+  int v3; // eax
+  int *v4; // rdi
+  RTL_SRWLOCK *v5; // rcx
+  struct Windows::Internal::CloudRequestor::InternalLogger *v6; // rax
+  __int64 v7; // rcx
+  _DWORD *v8; // r9
+  __int64 v9; // r8
+  RTL_SRWLOCK *v10; // rcx
+  struct Windows::Internal::CloudRequestor::InternalLogger *v11; // rax
+  __int64 v12; // rcx
+  _DWORD *v13; // rdi
+  DWORD CurrentThreadId; // eax
+  __int64 v15; // r8
+  int v16; // r9d
+  int v17; // [rsp+A0h] [rbp-19h] BYREF
+  int v18; // [rsp+A4h] [rbp-15h] BYREF
+  __int64 v19; // [rsp+A8h] [rbp-11h] BYREF
+  __int64 v20; // [rsp+B0h] [rbp-9h] BYREF
+  __int64 v21; // [rsp+B8h] [rbp-1h] BYREF
+  __int64 v22; // [rsp+C0h] [rbp+7h] BYREF
+  __int64 v23; // [rsp+C8h] [rbp+Fh] BYREF
+  __int64 v24; // [rsp+D0h] [rbp+17h] BYREF
+  __int64 v25; // [rsp+D8h] [rbp+1Fh] BYREF
+  __int64 v26; // [rsp+E0h] [rbp+27h] BYREF
+  __int64 v27; // [rsp+E8h] [rbp+2Fh] BYREF
+  __int64 v28[4]; // [rsp+F0h] [rbp+37h] BYREF
+  PSRWLOCK SRWLock; // [rsp+120h] [rbp+67h] BYREF
+  int v30; // [rsp+128h] [rbp+6Fh] BYREF
+  __int64 v31; // [rsp+130h] [rbp+77h] BYREF
+  int v32; // [rsp+138h] [rbp+7Fh] BYREF
+
+  v1 = *((_QWORD *)this + 34);
+  v3 = *(_DWORD *)(v1 + 72);
+  if ( v3 < 0 && (v4 = (int *)(v1 + 80), v3 == v4[2]) && v4 )
+  {
+    wil::ActivityBase<Windows::Internal::CloudRequestor::InternalLogger,1,35184372088832,5,16777216,_TlgReflectorTag_Param0IsProviderType>::LockExclusive(
+      this,
+      &SRWLock);
+    v5 = SRWLock;
+    **((_DWORD **)this + 34) = 2;
+    if ( v5 )
+      ReleaseSRWLockExclusive(v5);
+    v6 = Windows::Internal::CloudRequestor::InternalLogger::Instance();
+    v7 = (__int64)v6 + 16;
+    if ( !v6 )
+      v7 = 8;
+    v8 = *(_DWORD **)v7;
+    if ( **(_DWORD **)v7 > 5u
+      && (*((_QWORD *)v8 + 2) & 0x200000000000LL) != 0
+      && (*((_QWORD *)v8 + 3) & 0x200000000000LL) == *((_QWORD *)v8 + 3) )
+    {
+      v9 = *((_QWORD *)this + 34);
+      v19 = *((_QWORD *)v4 + 15);
+      v20 = *((_QWORD *)v4 + 14);
+      LODWORD(SRWLock) = v4[26];
+      v21 = *((_QWORD *)v4 + 12);
+      v22 = *((_QWORD *)v4 + 11);
+      v30 = v4[20];
+      v23 = *((_QWORD *)v4 + 9);
+      LODWORD(v31) = v4[8];
+      v24 = *((_QWORD *)v4 + 3);
+      v32 = *v4;
+      v25 = *((_QWORD *)v4 + 16);
+      v17 = v4[16];
+      v26 = *((_QWORD *)v4 + 7);
+      v18 = v4[2];
+      v27 = 0x1000000;
+      v28[0] = 0x1000000;
+      _tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,unsigned int,_EVENT_DATA_DESCRIPTOR *),&long _tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,unsigned int,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<unsigned short>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapSz<unsigned short>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapSz<unsigned short>>(
+        (_DWORD)v8,
+        (unsigned int)byte_18008D70B,
+        v9 + 8,
+        (_DWORD)v8,
+        (__int64)v28,
+        (__int64)&v27,
+        (__int64)&v18,
+        (__int64)&v26,
+        (__int64)&v17,
+        (__int64)&v25,
+        (__int64)&v32,
+        (__int64)&v24,
+        (__int64)&v31,
+        (__int64)&v23,
+        (__int64)&v30,
+        (__int64)&v22,
+        (__int64)&v21,
+        (__int64)&SRWLock,
+        (__int64)&v20,
+        (__int64)&v19);
+    }
+  }
+  else
+  {
+    wil::ActivityBase<Windows::Internal::CloudRequestor::InternalLogger,1,35184372088832,5,16777216,_TlgReflectorTag_Param0IsProviderType>::LockExclusive(
+      this,
+      &SRWLock);
+    v10 = SRWLock;
+    **((_DWORD **)this + 34) = 2;
+    if ( v10 )
+      ReleaseSRWLockExclusive(v10);
+    v11 = Windows::Internal::CloudRequestor::InternalLogger::Instance();
+    v12 = (__int64)v11 + 16;
+    if ( !v11 )
+      v12 = 8;
+    v13 = *(_DWORD **)v12;
+    if ( **(_DWORD **)v12 > 5u
+      && (*((_QWORD *)v13 + 2) & 0x200000000000LL) != 0
+      && (*((_QWORD *)v13 + 3) & 0x200000000000LL) == *((_QWORD *)v13 + 3) )
+    {
+      CurrentThreadId = GetCurrentThreadId();
+      v15 = *((_QWORD *)this + 34);
+      LODWORD(SRWLock) = CurrentThreadId;
+      v30 = *(_DWORD *)(v15 + 72);
+      v31 = 0x1000000;
+      _tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,unsigned int,_EVENT_DATA_DESCRIPTOR *),&long _tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,unsigned int,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>>(
+        (_DWORD)v13,
+        (unsigned int)byte_18008D6AD,
+        v15 + 8,
+        v16,
+        (__int64)&v31,
+        (__int64)&v30,
+        (__int64)&SRWLock);
+    }
+  }
+  wil::ActivityBase<Windows::Internal::CloudRequestor::InternalLogger,1,35184372088832,5,16777216,_TlgReflectorTag_Param0IsProviderType>::IgnoreCurrentThread((__int64)this);
+}
+
+```
+
+## disassembly
+
+```asm
+0x180047260  push    rbp
+0x180047262  push    rbx
+0x180047263  push    rdi
+0x180047264  lea     rbp, [rsp-47h]
+0x180047269  sub     rsp, 100h
+0x180047270  mov     rdi, [rcx+110h]
+0x180047277  mov     rbx, rcx
+0x18004727a  mov     eax, [rdi+48h]
+0x18004727d  test    eax, eax
+0x18004727f  jns     loc_18004743B
+0x180047285  add     rdi, 50h ; 'P'
+0x180047289  cmp     eax, [rdi+8]
+0x18004728c  jnz     loc_18004743B
+0x180047292  test    rdi, rdi
+0x180047295  jz      loc_18004743B
+0x18004729b  lea     rdx, [rbp+57h+SRWLock]
+0x18004729f  call    ?LockExclusive@?$ActivityBase@VInternalLogger@CloudRequestor@Internal@Windows@@$00$0CAAAAAAAAAAA@$04$0BAAAAAA@U_TlgReflectorTag_Param0IsProviderType@@@wil@@AEAA?AV?$unique_any_t@V?$unique_storage@U?$resource_policy@PEAU_RTL_SRWLOCK@@P6AXPEAU1@@Z$1?ReleaseSRWLockExclusive@@YAX0@ZU?$integral_constant@_K$00@wistd@@PEAU1@PEAU1@$0A@$$T@details@wil@@@details@wil@@@2@XZ; wil::ActivityBase<Windows::Internal::CloudRequestor::InternalLogger,1,35184372088832,5,16777216,_TlgReflectorTag_Param0IsProviderType>::LockExclusive(void)
+0x1800472a4  mov     rax, [rbx+110h]
+0x1800472ab  mov     rcx, [rbp+57h+SRWLock]; SRWLock
+0x1800472af  mov     dword ptr [rax], 2
+0x1800472b5  test    rcx, rcx
+0x1800472b8  jz      short loc_1800472C0
+0x1800472ba  call    cs:__imp_ReleaseSRWLockExclusive
+0x1800472c0  call    ?Instance@InternalLogger@CloudRequestor@Internal@Windows@@KAPEAV1234@XZ; Windows::Internal::CloudRequestor::InternalLogger::Instance(void)
+0x1800472c5  test    rax, rax
+0x1800472c8  mov     edx, 8
+0x1800472cd  lea     rcx, [rax+10h]
+0x1800472d1  cmovz   rcx, rdx
+0x1800472d5  mov     r9, [rcx]
+0x1800472d8  mov     eax, [r9]
+0x1800472db  cmp     eax, 5
+0x1800472de  jbe     loc_1800474EF
+0x1800472e4  mov     r8, [r9+18h]
+0x1800472e8  mov     rcx, 200000000000h
+0x1800472f2  mov     rax, [r9+10h]
+0x1800472f6  test    rcx, rax
+0x1800472f9  jz      loc_1800474EF
+0x1800472ff  mov     rax, r8
+0x180047302  and     rax, rcx
+0x180047305  cmp     rax, r8
+0x180047308  jnz     loc_1800474EF
+0x18004730e  mov     rax, [rdi+78h]
+0x180047312  mov     rcx, r9
+0x180047315  mov     r8, [rbx+110h]
+0x18004731c  mov     [rbp+57h+var_68], rax
+0x180047320  add     r8, rdx
+0x180047323  mov     rax, [rdi+70h]
+0x180047327  lea     rdx, byte_18008D70B
+0x18004732e  mov     [rbp+57h+var_60], rax
+0x180047332  mov     eax, [rdi+68h]
+0x180047335  mov     dword ptr [rbp+57h+SRWLock], eax
+0x180047338  mov     rax, [rdi+60h]
+0x18004733c  mov     [rbp+57h+var_58], rax
+0x180047340  mov     rax, [rdi+58h]
+0x180047344  mov     [rbp+57h+var_50], rax
+0x180047348  mov     eax, [rdi+50h]
+0x18004734b  mov     [rbp+57h+arg_8], eax
+0x18004734e  mov     rax, [rdi+48h]
+0x180047352  mov     [rbp+57h+var_48], rax
+0x180047356  mov     eax, [rdi+20h]
+0x180047359  mov     dword ptr [rbp+57h+arg_10], eax
+0x18004735c  mov     rax, [rdi+18h]
+0x180047360  mov     [rbp+57h+var_40], rax
+0x180047364  mov     eax, [rdi]
+0x180047366  mov     [rbp+57h+arg_18], eax
+0x180047369  mov     rax, [rdi+80h]
+0x180047370  mov     [rbp+57h+var_38], rax
+0x180047374  mov     eax, [rdi+40h]
+0x180047377  mov     [rbp+57h+var_70], eax
+0x18004737a  mov     rax, [rdi+38h]
+0x18004737e  mov     [rbp+57h+var_30], rax
+0x180047382  mov     eax, [rdi+8]
+0x180047385  mov     [rbp+57h+var_6C], eax
+0x180047388  mov     eax, 1000000h
+0x18004738d  mov     [rbp+57h+var_28], rax
+0x180047391  mov     [rbp+57h+var_20], rax
+0x180047395  lea     rax, [rbp+57h+var_68]
+0x180047399  mov     [rsp+110h+var_78], rax
+0x1800473a1  lea     rax, [rbp+57h+var_60]
+0x1800473a5  mov     [rsp+110h+var_80], rax
+0x1800473ad  lea     rax, [rbp+57h+SRWLock]
+0x1800473b1  mov     [rsp+110h+var_88], rax
+0x1800473b9  lea     rax, [rbp+57h+var_58]
+0x1800473bd  mov     [rsp+110h+var_90], rax
+0x1800473c5  lea     rax, [rbp+57h+var_50]
+0x1800473c9  mov     [rsp+110h+var_98], rax
+0x1800473ce  lea     rax, [rbp+57h+arg_8]
+0x1800473d2  mov     [rsp+110h+var_A0], rax
+0x1800473d7  lea     rax, [rbp+57h+var_48]
+0x1800473db  mov     [rsp+110h+var_A8], rax
+0x1800473e0  lea     rax, [rbp+57h+arg_10]
+0x1800473e4  mov     [rsp+110h+var_B0], rax
+0x1800473e9  lea     rax, [rbp+57h+var_40]
+0x1800473ed  mov     [rsp+110h+var_B8], rax
+0x1800473f2  lea     rax, [rbp+57h+arg_18]
+0x1800473f6  mov     [rsp+110h+var_C0], rax
+0x1800473fb  lea     rax, [rbp+57h+var_38]
+0x1800473ff  mov     [rsp+110h+var_C8], rax
+0x180047404  lea     rax, [rbp+57h+var_70]
+0x180047408  mov     [rsp+110h+var_D0], rax
+0x18004740d  lea     rax, [rbp+57h+var_30]
+0x180047411  mov     [rsp+110h+var_D8], rax
+0x180047416  lea     rax, [rbp+57h+var_6C]
+0x18004741a  mov     [rsp+110h+var_E0], rax
+0x18004741f  lea     rax, [rbp+57h+var_28]
+0x180047423  mov     [rsp+110h+var_E8], rax
+0x180047428  lea     rax, [rbp+57h+var_20]
+0x18004742c  mov     [rsp+110h+var_F0], rax
+0x180047431  call    ??$Write@U?$_tlgWrapperByVal@$07@@U1@U?$_tlgWrapperByVal@$03@@U?$_tlgWrapSz@D@@U2@U3@U2@U?$_tlgWrapSz@G@@U2@U3@U2@U3@U4@U2@U3@U4@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EventWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$07@@3AEBU?$_tlgWrapperByVal@$03@@AEBU?$_tlgWrapSz@D@@454AEBU?$_tlgWrapSz@G@@45456456@Z; _tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<ushort>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapSz<ushort>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapSz<ushort>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<ushort> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapSz<ushort> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapSz<ushort> const &)
+0x180047436  jmp     loc_1800474EF
+0x18004743b  lea     rdx, [rbp+57h+SRWLock]
+0x18004743f  call    ?LockExclusive@?$ActivityBase@VInternalLogger@CloudRequestor@Internal@Windows@@$00$0CAAAAAAAAAAA@$04$0BAAAAAA@U_TlgReflectorTag_Param0IsProviderType@@@wil@@AEAA?AV?$unique_any_t@V?$unique_storage@U?$resource_policy@PEAU_RTL_SRWLOCK@@P6AXPEAU1@@Z$1?ReleaseSRWLockExclusive@@YAX0@ZU?$integral_constant@_K$00@wistd@@PEAU1@PEAU1@$0A@$$T@details@wil@@@details@wil@@@2@XZ; wil::ActivityBase<Windows::Internal::CloudRequestor::InternalLogger,1,35184372088832,5,16777216,_TlgReflectorTag_Param0IsProviderType>::LockExclusive(void)
+0x180047444  mov     rax, [rbx+110h]
+0x18004744b  mov     rcx, [rbp+57h+SRWLock]; SRWLock
+0x18004744f  mov     dword ptr [rax], 2
+0x180047455  test    rcx, rcx
+0x180047458  jz      short loc_180047460
+0x18004745a  call    cs:__imp_ReleaseSRWLockExclusive
+0x180047460  call    ?Instance@InternalLogger@CloudRequestor@Internal@Windows@@KAPEAV1234@XZ; Windows::Internal::CloudRequestor::InternalLogger::Instance(void)
+0x180047465  test    rax, rax
+0x180047468  mov     edx, 8
+0x18004746d  lea     rcx, [rax+10h]
+0x180047471  cmovz   rcx, rdx
+0x180047475  mov     rdi, [rcx]
+0x180047478  mov     eax, [rdi]
+0x18004747a  cmp     eax, 5
+0x18004747d  jbe     short loc_1800474EF
+0x18004747f  mov     rdx, [rdi+18h]
+0x180047483  mov     rcx, 200000000000h
+0x18004748d  mov     rax, [rdi+10h]
+0x180047491  test    rcx, rax
+0x180047494  jz      short loc_1800474EF
+0x180047496  mov     rax, rdx
+0x180047499  and     rax, rcx
+0x18004749c  cmp     rax, rdx
+0x18004749f  jnz     short loc_1800474EF
+0x1800474a1  call    cs:__imp_GetCurrentThreadId
+0x1800474a7  mov     r8, [rbx+110h]
+0x1800474ae  lea     rdx, byte_18008D6AD
+0x1800474b5  mov     dword ptr [rbp+57h+SRWLock], eax
+0x1800474b8  mov     rcx, rdi
+0x1800474bb  mov     eax, [r8+48h]
+0x1800474bf  add     r8, 8
+0x1800474c3  mov     [rbp+57h+arg_8], eax
+0x1800474c6  mov     eax, 1000000h
+0x1800474cb  mov     [rbp+57h+arg_10], rax
+0x1800474cf  lea     rax, [rbp+57h+SRWLock]
+0x1800474d3  mov     [rsp+110h+var_E0], rax
+0x1800474d8  lea     rax, [rbp+57h+arg_8]
+0x1800474dc  mov     [rsp+110h+var_E8], rax
+0x1800474e1  lea     rax, [rbp+57h+arg_10]
+0x1800474e5  mov     [rsp+110h+var_F0], rax
+0x1800474ea  call    ??$Write@U?$_tlgWrapperByVal@$07@@U?$_tlgWrapperByVal@$03@@U2@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EventWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$07@@AEBU?$_tlgWrapperByVal@$03@@4@Z; _tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &)
+0x1800474ef  mov     rcx, rbx
+0x1800474f2  add     rsp, 100h
+0x1800474f9  pop     rdi
+0x1800474fa  pop     rbx
+0x1800474fb  pop     rbp
+0x1800474fc  jmp     ?IgnoreCurrentThread@?$ActivityBase@VInternalLogger@CloudRequestor@Internal@Windows@@$00$0CAAAAAAAAAAA@$04$0BAAAAAA@U_TlgReflectorTag_Param0IsProviderType@@@wil@@QEAAXXZ; wil::ActivityBase<Windows::Internal::CloudRequestor::InternalLogger,1,35184372088832,5,16777216,_TlgReflectorTag_Param0IsProviderType>::IgnoreCurrentThread(void)
+```

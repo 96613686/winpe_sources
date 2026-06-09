@@ -1,0 +1,3816 @@
+[
+  {
+    "callee_count": 36,
+    "caller_count": 1,
+    "demangled": "PnpInstallDevice",
+    "ea": "0x1800056d0",
+    "function_file": "functions/1800056d0_PnpInstallDevice.md",
+    "matched_imports": [
+      "DEVRTL!DevRtlSetThreadLogToken",
+      "DEVRTL!DevRtlWriteTextLog",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-processthreads-l1-1-0!CreateProcessW",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId",
+      "api-ms-win-core-processthreads-l1-1-0!GetExitCodeProcess",
+      "api-ms-win-core-realtime-l1-1-0!QueryUnbiasedInterruptTime",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!WaitForMultipleObjectsEx",
+      "api-ms-win-devices-config-l1-1-1!CM_Get_DevNode_Status",
+      "api-ms-win-devices-config-l1-1-1!CM_Locate_DevNodeW",
+      "msvcrt!wcsrchr",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlNtStatusToDosErrorNoTeb"
+    ],
+    "matched_strings": [
+      "{Plug and Play Service: Device Install for %ws}",
+      "{Plug and Play Service: Device Install exit(%08x)}",
+      "Install needed due to device having problem code CM_PROB_NOT_CONFIGURED",
+      "Creating Install Process: %ws",
+      "Server install process exited with code 0x%08x",
+      "Setup online Device Install (Software initiated)",
+      "Device Install (Software initiated)",
+      "Setup online Device Install (Hardware initiated)",
+      "Device Install (Hardware initiated)",
+      "Install needed due to device having problem code CM_PROB_REINSTALL",
+      "Install needed due to device being marked for re-install",
+      "Install needed due to device needing additional installation",
+      "Timeout was detected during previous device installation, setting DI_DONOTCALLCONFIGMG"
+    ],
+    "name": "PnpInstallDevice",
+    "prototype": "__int64 __fastcall(DEVNODE, __int64, WCHAR *, __int64, void *, __int64, unsigned int, int)",
+    "rank_score": 10241,
+    "size": 11069,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 27,
+    "caller_count": 1,
+    "demangled": "PnpInstallDriver",
+    "ea": "0x1800027a0",
+    "function_file": "functions/1800027a0_PnpInstallDriver.md",
+    "matched_imports": [
+      "DEVRTL!DevRtlSetThreadLogToken",
+      "DEVRTL!DevRtlWriteTextLog",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-processthreads-l1-1-0!CreateProcessW",
+      "api-ms-win-core-processthreads-l1-1-0!GetExitCodeProcess",
+      "api-ms-win-core-processthreads-l1-1-0!TerminateProcess",
+      "api-ms-win-core-realtime-l1-1-0!QueryUnbiasedInterruptTime",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObjectEx",
+      "msvcrt!wcsrchr",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "{Plug and Play Service: Driver Install exit(%08x)}",
+      "{Plug and Play Service: Driver Install for %ws}",
+      "Creating Install Process: %ws",
+      "Server install process exited with code 0x%08x",
+      "Driver Install"
+    ],
+    "name": "PnpInstallDriver",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, const WCHAR *, const wchar_t *Src, unsigned int, _DWORD *)",
+    "rank_score": 6701,
+    "size": 6469,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 3,
+    "demangled": "QueueServerInstallEntry",
+    "ea": "0x180008d20",
+    "function_file": "functions/180008d20_QueueServerInstallEntry.md",
+    "matched_imports": [
+      "DEVRTL!DevRtlWriteTextLog",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-handle-l1-1-0!DuplicateHandle",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-synch-l1-1-0!CreateEventW",
+      "api-ms-win-core-synch-l1-1-0!ReleaseMutex",
+      "api-ms-win-core-synch-l1-1-0!SetEvent",
+      "api-ms-win-core-synch-l1-1-0!WaitForMultipleObjectsEx",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObjectEx",
+      "api-ms-win-devices-config-l1-1-1!CM_Get_Depth",
+      "api-ms-win-devices-config-l1-1-1!CM_Locate_DevNodeW",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlNtStatusToDosErrorNoTeb"
+    ],
+    "matched_strings": [
+      "Device installation disabled",
+      "Installation deferred (too early)",
+      "Nested installation",
+      "Installation",
+      "Recursive asynchronous installation requests are not supported!"
+    ],
+    "name": "QueueServerInstallEntry",
+    "prototype": "_BOOL8 __fastcall(int, void *, _WORD *, _WORD *, __int64, __int64, int, unsigned int, int, int)",
+    "rank_score": 6469,
+    "size": 1783,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 1,
+    "demangled": "PnpAddDriverPackage",
+    "ea": "0x180001190",
+    "function_file": "functions/180001190_PnpAddDriverPackage.md",
+    "matched_imports": [
+      "DEVRTL!DevRtlWriteTextLog",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-handle-l1-1-0!DuplicateHandle",
+      "api-ms-win-core-memory-l1-1-0!CreateFileMappingW",
+      "api-ms-win-core-memory-l1-1-0!MapViewOfFile",
+      "api-ms-win-core-memory-l1-1-0!UnmapViewOfFile",
+      "api-ms-win-core-processthreads-l1-1-0!CreateProcessW",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-processthreads-l1-1-0!GetExitCodeProcess",
+      "api-ms-win-core-processthreads-l1-1-0!TerminateProcess",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObjectEx",
+      "msvcrt!wcsrchr",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "PnpAddDriverPackage",
+    "prototype": "__int64 __fastcall(__int64, void *, void *, unsigned __int16, _WORD *, _DWORD *, __int64, void *Src, unsigned int)",
+    "rank_score": 6270,
+    "size": 3357,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CreateDrvInstAlertEvents",
+    "ea": "0x1800020e0",
+    "function_file": "functions/1800020e0_CreateDrvInstAlertEvents.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-synch-l1-1-0!CreateEventW",
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount",
+      "api-ms-win-security-base-l1-1-0!AddAccessAllowedAceEx",
+      "api-ms-win-security-base-l1-1-0!GetLengthSid",
+      "api-ms-win-security-base-l1-1-0!InitializeAcl",
+      "api-ms-win-security-base-l1-1-0!InitializeSecurityDescriptor",
+      "api-ms-win-security-base-l1-1-0!SetSecurityDescriptorDacl",
+      "msvcrt!_itow_s",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlCreateServiceSid",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlNtStatusToDosError",
+      "ntdll!RtlRandomEx"
+    ],
+    "matched_strings": [
+      "DeviceInstall"
+    ],
+    "name": "CreateDrvInstAlertEvents",
+    "prototype": "_BOOL8()",
+    "rank_score": 5503,
+    "size": 999,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 1,
+    "demangled": "PnpExportState",
+    "ea": "0x1800156c0",
+    "function_file": "functions/1800156c0_PnpExportState.md",
+    "matched_imports": [
+      "DEVRTL!DevRtlWriteTextLog",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-processthreads-l1-1-0!CreateProcessW",
+      "api-ms-win-core-processthreads-l1-1-0!GetExitCodeProcess",
+      "api-ms-win-core-processthreads-l1-1-0!TerminateProcess",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObjectEx",
+      "msvcrt!wcsrchr",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "Failed to export PnP state for system path '%ws'. Error = 0x%08X",
+      "Failed to get device installer filename. Error = 0x%08X",
+      "Failed to create temporary file. Error = 0x%08X",
+      "Wait for process completed."
+    ],
+    "name": "PnpExportState",
+    "prototype": "__int64 __fastcall(__int64, __int64, unsigned int, __int64, unsigned int)",
+    "rank_score": 5222,
+    "size": 2222,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 2,
+    "demangled": "PnpServiceStop",
+    "ea": "0x18000ea20",
+    "function_file": "functions/18000ea20_PnpServiceStop.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!ReleaseMutex",
+      "api-ms-win-core-synch-l1-1-0!SetEvent",
+      "api-ms-win-core-synch-l1-2-0!Sleep",
+      "api-ms-win-core-threadpool-l1-2-0!CloseThreadpoolTimer",
+      "api-ms-win-core-threadpool-l1-2-0!SetThreadpoolTimer",
+      "api-ms-win-core-threadpool-l1-2-0!WaitForThreadpoolTimerCallbacks",
+      "api-ms-win-core-threadpool-legacy-l1-1-0!UnregisterWaitEx",
+      "api-ms-win-service-core-l1-1-0!SetServiceStatus",
+      "ntdll!RtlDeleteSecurityObject",
+      "ntdll!RtlUnsubscribeWnfNotificationWaitForCompletion"
+    ],
+    "matched_strings": [],
+    "name": "PnpServiceStop",
+    "prototype": "__int64 __fastcall(DWORD)",
+    "rank_score": 5070,
+    "size": 1765,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "PnpInstallShutdown",
+    "ea": "0x18000a3a0",
+    "function_file": "functions/18000a3a0_PnpInstallShutdown.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-handle-l1-1-0!DuplicateHandle",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-processthreads-l1-1-0!QueueUserAPC",
+      "api-ms-win-core-synch-l1-1-0!ReleaseMutex",
+      "api-ms-win-core-synch-l1-1-0!SetEvent",
+      "api-ms-win-core-synch-l1-1-0!WaitForMultipleObjectsEx",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObjectEx",
+      "api-ms-win-core-synch-l1-2-0!Sleep",
+      "api-ms-win-devices-config-l1-1-1!CM_Unregister_Notification"
+    ],
+    "matched_strings": [],
+    "name": "PnpInstallShutdown",
+    "prototype": "_BOOL8()",
+    "rank_score": 4652,
+    "size": 766,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 19,
+    "caller_count": 0,
+    "demangled": "ServiceMain",
+    "ea": "0x18000cf30",
+    "function_file": "functions/18000cf30_ServiceMain.md",
+    "matched_imports": [
+      "api-ms-win-core-apiquery-l2-1-0!IsApiSetImplemented",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-synch-l1-1-0!CreateEventW",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!SetEvent",
+      "api-ms-win-core-threadpool-l1-2-0!CreateThreadpoolTimer",
+      "api-ms-win-core-threadpool-private-l1-1-0!RegisterWaitForSingleObjectEx",
+      "api-ms-win-service-core-l1-1-0!RegisterServiceCtrlHandlerExW",
+      "api-ms-win-service-core-l1-1-0!SetServiceStatus"
+    ],
+    "matched_strings": [
+      "DeviceInstall",
+      "DeviceInstall"
+    ],
+    "name": "ServiceMain",
+    "prototype": "void()",
+    "rank_score": 4561,
+    "size": 1562,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 1,
+    "demangled": "PnpUninstallDriver",
+    "ea": "0x180014a84",
+    "function_file": "functions/180014a84_PnpUninstallDriver.md",
+    "matched_imports": [
+      "DEVRTL!DevRtlSetThreadLogToken",
+      "DEVRTL!DevRtlWriteTextLog",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-processthreads-l1-1-0!CreateProcessW",
+      "api-ms-win-core-processthreads-l1-1-0!GetExitCodeProcess",
+      "api-ms-win-core-processthreads-l1-1-0!TerminateProcess",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObjectEx",
+      "msvcrt!wcsrchr",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "Server install process exited with code 0x%08x",
+      "{Plug and Play Service: Driver Uninstall for %ws}",
+      "Driver Uninstall",
+      "Creating Uninstall Process: %ws",
+      "{Plug and Play Service: Driver Uninstall exit(%08x)}"
+    ],
+    "name": "PnpUninstallDriver",
+    "prototype": "__int64 __fastcall(__int64, const wchar_t *, __int64, const wchar_t *, const wchar_t *Src, unsigned int, _DWORD *)",
+    "rank_score": 4466,
+    "size": 2574,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "PnpDeleteDriverPackage",
+    "ea": "0x180004180",
+    "function_file": "functions/180004180_PnpDeleteDriverPackage.md",
+    "matched_imports": [
+      "DEVRTL!DevRtlWriteTextLog",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-processthreads-l1-1-0!CreateProcessW",
+      "api-ms-win-core-processthreads-l1-1-0!GetExitCodeProcess",
+      "api-ms-win-core-processthreads-l1-1-0!TerminateProcess",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObjectEx",
+      "msvcrt!wcsrchr",
+      "ntdll!RtlAllocateHeap",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "Delete flags: 0x%08X",
+      "Driver store delete process exited with code 0x%08x"
+    ],
+    "name": "PnpDeleteDriverPackage",
+    "prototype": "__int64 __fastcall(__int64, void *, __int64, void *, unsigned int, _DWORD *)",
+    "rank_score": 4148,
+    "size": 5050,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 0,
+    "demangled": "ServerSchedulerThreadProc",
+    "ea": "0x18000aba0",
+    "function_file": "functions/18000aba0_ServerSchedulerThreadProc.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!DuplicateHandle",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId",
+      "api-ms-win-core-synch-l1-1-0!ReleaseMutex",
+      "api-ms-win-core-synch-l1-1-0!ResetEvent",
+      "api-ms-win-core-synch-l1-1-0!SetEvent",
+      "api-ms-win-core-synch-l1-1-0!WaitForMultipleObjectsEx",
+      "api-ms-win-core-synch-l1-2-0!Sleep",
+      "api-ms-win-core-threadpool-legacy-l1-1-0!QueueUserWorkItem"
+    ],
+    "matched_strings": [],
+    "name": "ServerSchedulerThreadProc",
+    "prototype": "__int64 __fastcall(PVOID Parameter)",
+    "rank_score": 4041,
+    "size": 1381,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 1,
+    "demangled": "PnpInstallPendingDriverUpdates",
+    "ea": "0x1800126cc",
+    "function_file": "functions/1800126cc_PnpInstallPendingDriverUpdates.md",
+    "matched_imports": [
+      "DEVRTL!DevRtlSetThreadLogToken",
+      "DEVRTL!DevRtlWriteTextLog",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-processthreads-l1-1-0!CreateProcessW",
+      "api-ms-win-core-processthreads-l1-1-0!GetExitCodeProcess",
+      "msvcrt!wcsrchr",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlNtStatusToDosErrorNoTeb"
+    ],
+    "matched_strings": [
+      "Creating Install Process: %ws",
+      "Server install process exited with code 0x%08x",
+      "Device Install (Pending driver updates)"
+    ],
+    "name": "PnpInstallPendingDriverUpdates",
+    "prototype": "_BOOL8()",
+    "rank_score": 3369,
+    "size": 1753,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "PnpInstallStartup",
+    "ea": "0x180012dac",
+    "function_file": "functions/180012dac_PnpInstallStartup.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-processthreads-l1-1-0!CreateThread",
+      "api-ms-win-core-synch-l1-1-0!CreateEventW",
+      "api-ms-win-core-synch-l1-1-0!ReleaseMutex",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemInfo"
+    ],
+    "matched_strings": [],
+    "name": "PnpInstallStartup",
+    "prototype": "_BOOL8()",
+    "rank_score": 3041,
+    "size": 565,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 3,
+    "demangled": "TextLogDecayLogFileBackups",
+    "ea": "0x180016818",
+    "function_file": "functions/180016818_TextLogDecayLogFileBackups.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-file-l1-1-0!DeleteFileW",
+      "api-ms-win-core-file-l1-1-0!FindClose",
+      "api-ms-win-core-file-l1-1-0!FindFirstFileW",
+      "api-ms-win-core-file-l1-1-0!FindNextFileW",
+      "api-ms-win-core-file-l1-1-0!SetFileAttributesW",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-localization-l1-2-0!LCMapStringW",
+      "msvcrt!wcsrchr"
+    ],
+    "matched_strings": [],
+    "name": "TextLogDecayLogFileBackups",
+    "prototype": "__int64 __fastcall(STRSAFE_LPCWSTR pszSrc)",
+    "rank_score": 2840,
+    "size": 1164,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "IsDeviceChild",
+    "ea": "0x1800086c0",
+    "function_file": "functions/1800086c0_IsDeviceChild.md",
+    "matched_imports": [
+      "api-ms-win-core-string-l1-1-0!CompareStringOrdinal",
+      "api-ms-win-core-synch-l1-1-0!ReleaseMutex",
+      "api-ms-win-core-synch-l1-1-0!WaitForMultipleObjectsEx"
+    ],
+    "matched_strings": [],
+    "name": "IsDeviceChild",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 2837,
+    "size": 1314,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CreateNoPendingInstallEvent",
+    "ea": "0x180011ab8",
+    "function_file": "functions/180011ab8_CreateNoPendingInstallEvent.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-synch-l1-1-0!CreateEventW",
+      "api-ms-win-security-base-l1-1-0!AddAccessAllowedAceEx",
+      "api-ms-win-security-base-l1-1-0!GetLengthSid",
+      "api-ms-win-security-base-l1-1-0!InitializeAcl",
+      "api-ms-win-security-base-l1-1-0!InitializeSecurityDescriptor",
+      "api-ms-win-security-base-l1-1-0!SetSecurityDescriptorDacl",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [
+      "Global\\PnP_No_Pending_Install_Events"
+    ],
+    "name": "CreateNoPendingInstallEvent",
+    "prototype": "_BOOL8()",
+    "rank_score": 2686,
+    "size": 459,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "WaitForPendingDriverUpdates",
+    "ea": "0x180013744",
+    "function_file": "functions/180013744_WaitForPendingDriverUpdates.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegCreateKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegNotifyChangeKeyValue",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW",
+      "api-ms-win-core-synch-l1-1-0!CreateEventW",
+      "api-ms-win-core-synch-l1-1-0!ResetEvent",
+      "api-ms-win-core-synch-l1-1-0!WaitForMultipleObjectsEx"
+    ],
+    "matched_strings": [
+      "Software\\Microsoft\\Windows\\CurrentVersion\\Device Installer"
+    ],
+    "name": "WaitForPendingDriverUpdates",
+    "prototype": "__int64 __fastcall(void *)",
+    "rank_score": 2679,
+    "size": 756,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 17,
+    "caller_count": 0,
+    "demangled": "ServerInstallThreadProc",
+    "ea": "0x180009d70",
+    "function_file": "functions/180009d70_ServerInstallThreadProc.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!ReleaseMutex",
+      "api-ms-win-core-synch-l1-1-0!ResetEvent",
+      "api-ms-win-core-synch-l1-1-0!SetEvent",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlPublishWnfStateData"
+    ],
+    "matched_strings": [],
+    "name": "ServerInstallThreadProc",
+    "prototype": "__int64 __fastcall(HANDLE *Parameter)",
+    "rank_score": 2675,
+    "size": 1028,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "PreshutdownProgressCallback",
+    "ea": "0x180012ffc",
+    "function_file": "functions/180012ffc_PreshutdownProgressCallback.md",
+    "matched_imports": [
+      "RPCRT4!I_RpcMapWin32Status",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress",
+      "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExW",
+      "api-ms-win-core-libraryloader-l1-2-0!LoadStringW",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlNtStatusToDosErrorNoTeb"
+    ],
+    "matched_strings": [
+      "WMsgApi.dll"
+    ],
+    "name": "PreshutdownProgressCallback",
+    "prototype": "_BOOL8 __fastcall(_DWORD *)",
+    "rank_score": 2672,
+    "size": 701,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 4,
+    "demangled": "TextLogMapFile",
+    "ea": "0x18000b360",
+    "function_file": "functions/18000b360_TextLogMapFile.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!CreateFileW",
+      "api-ms-win-core-file-l1-1-0!GetFileSize",
+      "api-ms-win-core-file-l1-1-0!SetFilePointer",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-memory-l1-1-0!CreateFileMappingW",
+      "api-ms-win-core-memory-l1-1-0!MapViewOfFile",
+      "api-ms-win-core-synch-l1-1-0!SleepEx"
+    ],
+    "matched_strings": [],
+    "name": "TextLogMapFile",
+    "prototype": "__int64 __fastcall(__int64, __int64, int, char)",
+    "rank_score": 2625,
+    "size": 640,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "_pSpUtilsHwCfgGetRootKey",
+    "ea": "0x180017dd0",
+    "function_file": "functions/180017dd0_pSpUtilsHwCfgGetRootKey.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibrary",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress",
+      "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExW",
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "ntdll!RtlNtStatusToDosErrorNoTeb"
+    ],
+    "matched_strings": [
+      "ntdll.dll",
+      "System\\HardwareConfig",
+      "System\\HardwareConfig",
+      "System\\HardwareConfig",
+      "HardwareConfigState",
+      "HardwareConfigState"
+    ],
+    "name": "_pSpUtilsHwCfgGetRootKey",
+    "prototype": "__int64 __fastcall(__int64, HKEY *)",
+    "rank_score": 2266,
+    "size": 460,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 0,
+    "demangled": "PNP_Local_InstallDevInst",
+    "ea": "0x1800121f0",
+    "function_file": "functions/1800121f0_PNP_Local_InstallDevInst.md",
+    "matched_imports": [
+      "KERNELBASE!WTSGetServiceSessionId",
+      "RPCRT4!I_RpcBindingInqLocalClientPID",
+      "RPCRT4!I_RpcMapWin32Status",
+      "RPCRT4!RpcAsyncCompleteCall",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-processthreads-l1-1-0!ProcessIdToSessionId",
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "PNP_Local_InstallDevInst",
+    "prototype": "unsigned int __fastcall(struct _RPC_ASYNC_STATE *, void *, WCHAR *, __int64, __int64, DWORD *, int)",
+    "rank_score": 2262,
+    "size": 1185,
+    "tags": [
+      "authz_impersonation",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CreatePlugPlaySecurityObject",
+    "ea": "0x18000d740",
+    "function_file": "functions/18000d740_CreatePlugPlaySecurityObject.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "ntdll!NtClose",
+      "ntdll!NtOpenThreadToken",
+      "ntdll!NtSetInformationThread",
+      "ntdll!RtlAdjustPrivilege",
+      "ntdll!RtlCreateAndSetSD",
+      "ntdll!RtlFreeHeap",
+      "ntdll!RtlImpersonateSelf",
+      "ntdll!RtlNewSecurityObject",
+      "ntdll!RtlNtStatusToDosError"
+    ],
+    "matched_strings": [],
+    "name": "CreatePlugPlaySecurityObject",
+    "prototype": "_BOOL8()",
+    "rank_score": 2238,
+    "size": 661,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 20,
+    "caller_count": 3,
+    "demangled": "pSetupCreateTextLogSectionA",
+    "ea": "0x1800177e0",
+    "function_file": "functions/1800177e0_pSetupCreateTextLogSectionA.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-file-l1-1-0!FileTimeToLocalFileTime",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleFileNameA",
+      "api-ms-win-core-processenvironment-l1-1-0!GetCommandLineA",
+      "api-ms-win-core-timezone-l1-1-0!FileTimeToSystemTime",
+      "ntdll!RtlGetVersion"
+    ],
+    "matched_strings": [
+      "     Hardware Configuration: %s",
+      " os: Version = %d.%d.%d, Service Pack = %d.%d, Suite = 0x%04x, ProductType = %d, Architecture = %s"
+    ],
+    "name": "pSetupCreateTextLogSectionA",
+    "prototype": "_BOOL8 __fastcall(const char *, __int64, CHAR *, unsigned __int64 *)",
+    "rank_score": 2163,
+    "size": 1339,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "InitPlugPlayGlobalFlags",
+    "ea": "0x18000d9e0",
+    "function_file": "functions/18000d9e0_InitPlugPlayGlobalFlags.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW",
+      "ntdll!RtlQueryWnfStateData",
+      "ntdll!RtlSubscribeWnfStateChangeNotification"
+    ],
+    "matched_strings": [
+      "FactoryPreInstallInProgress"
+    ],
+    "name": "InitPlugPlayGlobalFlags",
+    "prototype": "LSTATUS()",
+    "rank_score": 2092,
+    "size": 1150,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "GetClientUserToken",
+    "ea": "0x18000f110",
+    "function_file": "functions/18000f110_GetClientUserToken.md",
+    "matched_imports": [
+      "RPCRT4!RpcImpersonateClient",
+      "RPCRT4!RpcRevertToSelf",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThread",
+      "api-ms-win-core-processthreads-l1-1-0!OpenThreadToken",
+      "api-ms-win-security-base-l1-1-0!DuplicateTokenEx"
+    ],
+    "matched_strings": [],
+    "name": "GetClientUserToken",
+    "prototype": "__int64 __fastcall(void **)",
+    "rank_score": 2027,
+    "size": 238,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 0,
+    "demangled": "DeviceInstallThreadProc",
+    "ea": "0x18000a6b0",
+    "function_file": "functions/18000a6b0_DeviceInstallThreadProc.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!ReleaseMutex",
+      "api-ms-win-core-synch-l1-1-0!WaitForMultipleObjectsEx",
+      "api-ms-win-devices-config-l1-1-1!CM_Register_Notification"
+    ],
+    "matched_strings": [],
+    "name": "DeviceInstallThreadProc",
+    "prototype": "__int64 __fastcall(PVOID Parameter)",
+    "rank_score": 1849,
+    "size": 808,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "ServerInstallUpdateStatus",
+    "ea": "0x18000a9e0",
+    "function_file": "functions/18000a9e0_ServerInstallUpdateStatus.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegCreateKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegDeleteTreeW",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegSetValueExW",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemTime"
+    ],
+    "matched_strings": [
+      "Software\\Microsoft\\Windows\\CurrentVersion\\Device Installer"
+    ],
+    "name": "ServerInstallUpdateStatus",
+    "prototype": "LSTATUS()",
+    "rank_score": 1681,
+    "size": 435,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "pSetupMakeSurePathExists",
+    "ea": "0x180018460",
+    "function_file": "functions/180018460_pSetupMakeSurePathExists.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!CreateDirectoryW",
+      "api-ms-win-core-file-l1-1-0!GetFileAttributesW",
+      "api-ms-win-core-file-l1-1-0!GetFullPathNameW",
+      "msvcrt!wcschr",
+      "msvcrt!wcsrchr"
+    ],
+    "matched_strings": [],
+    "name": "pSetupMakeSurePathExists",
+    "prototype": "DWORD __fastcall(const WCHAR *)",
+    "rank_score": 1628,
+    "size": 512,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "TextLogWriteEntry",
+    "ea": "0x18000df10",
+    "function_file": "functions/18000df10_TextLogWriteEntry.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-sysinfo-l1-1-0!GetLocalTime"
+    ],
+    "matched_strings": [],
+    "name": "TextLogWriteEntry",
+    "prototype": "__int64 __fastcall(__int64, unsigned int, __int64, __int64, int)",
+    "rank_score": 1619,
+    "size": 1127,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SignalSetupEvent",
+    "ea": "0x1800133a0",
+    "function_file": "functions/1800133a0_SignalSetupEvent.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!CreateEventW",
+      "api-ms-win-core-synch-l1-1-0!OpenEventW",
+      "api-ms-win-core-synch-l1-1-0!SetEvent"
+    ],
+    "matched_strings": [
+      "Global\\PNP_Create_Pipe_Event",
+      "Global\\PNP_Create_Pipe_Event",
+      "Global\\PNP_Create_Pipe_Event",
+      "Global\\PNP_Create_Pipe_Event"
+    ],
+    "name": "SignalSetupEvent",
+    "prototype": "__int64()",
+    "rank_score": 1574,
+    "size": 241,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "pSetupOpenFileForWrite",
+    "ea": "0x18000f360",
+    "function_file": "functions/18000f360_pSetupOpenFileForWrite.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!CreateFileW",
+      "api-ms-win-core-file-l1-1-0!GetFileSize",
+      "api-ms-win-core-file-l1-1-0!SetFilePointer",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!SleepEx"
+    ],
+    "matched_strings": [],
+    "name": "pSetupOpenFileForWrite",
+    "prototype": "DWORD __fastcall(LPCWSTR lpFileName, int, __int64, unsigned int, HANDLE *, LONG *)",
+    "rank_score": 1423,
+    "size": 242,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WaitForSetupEvent",
+    "ea": "0x180013ad0",
+    "function_file": "functions/180013ad0_WaitForSetupEvent.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!CreateEventW",
+      "api-ms-win-core-synch-l1-1-0!OpenEventW",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObjectEx"
+    ],
+    "matched_strings": [
+      "Global\\PNP_Create_Pipe_Event",
+      "Global\\PNP_Create_Pipe_Event",
+      "Global\\PNP_Create_Pipe_Event"
+    ],
+    "name": "WaitForSetupEvent",
+    "prototype": "__int64()",
+    "rank_score": 1334,
+    "size": 181,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "VerifyClientAccessToObject",
+    "ea": "0x18000be30",
+    "function_file": "functions/18000be30_VerifyClientAccessToObject.md",
+    "matched_imports": [
+      "RPCRT4!RpcImpersonateClient",
+      "RPCRT4!RpcRevertToSelf",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-security-base-l1-1-0!AccessCheckAndAuditAlarmW",
+      "api-ms-win-security-base-l1-1-0!MapGenericMask"
+    ],
+    "matched_strings": [
+      "PlugPlaySecurityObject",
+      "Security"
+    ],
+    "name": "VerifyClientAccessToObject",
+    "prototype": "__int64 __fastcall(DWORD, __int64, __int64)",
+    "rank_score": 1310,
+    "size": 294,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "QueueDeviceInstallEntry",
+    "ea": "0x180009420",
+    "function_file": "functions/180009420_QueueDeviceInstallEntry.md",
+    "matched_imports": [
+      "DEVRTL!DevRtlWriteTextLog",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-devices-config-l1-1-1!CM_Get_DevNode_Status",
+      "api-ms-win-devices-config-l1-1-1!CM_Locate_DevNodeW"
+    ],
+    "matched_strings": [
+      "Device %ws does not need to be installed."
+    ],
+    "name": "QueueDeviceInstallEntry",
+    "prototype": "_BOOL8 __fastcall(int, __int64, WCHAR *, int, __int64, __int64, int, int, DEVNODE pdnDevInst, int)",
+    "rank_score": 1269,
+    "size": 615,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 3,
+    "demangled": "TextLogRenameLogFile",
+    "ea": "0x18001725c",
+    "function_file": "functions/18001725c_TextLogRenameLogFile.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-file-l1-1-0!DeleteFileW",
+      "api-ms-win-core-file-l1-1-0!FlushFileBuffers",
+      "api-ms-win-core-file-l1-1-0!GetFileInformationByHandle",
+      "api-ms-win-core-file-l2-1-0!CreateHardLinkW"
+    ],
+    "matched_strings": [],
+    "name": "TextLogRenameLogFile",
+    "prototype": "__int64 __fastcall(__int64, __int64, int)",
+    "rank_score": 1256,
+    "size": 421,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 6,
+    "demangled": "StringSearchAndReplace",
+    "ea": "0x1800024d0",
+    "function_file": "functions/1800024d0_StringSearchAndReplace.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "msvcrt!wcsstr",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "StringSearchAndReplace",
+    "prototype": "void *__fastcall(const wchar_t *Src)",
+    "rank_score": 1226,
+    "size": 620,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 7,
+    "demangled": "GetDeviceInstallerFilename",
+    "ea": "0x180005540",
+    "function_file": "functions/180005540_GetDeviceInstallerFilename.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-file-l1-1-0!FindClose",
+      "api-ms-win-core-file-l1-1-0!FindFirstFileW",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemDirectoryW"
+    ],
+    "matched_strings": [],
+    "name": "GetDeviceInstallerFilename",
+    "prototype": "_BOOL8 __fastcall(_WORD *)",
+    "rank_score": 1224,
+    "size": 383,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x1800113b4",
+    "function_file": "functions/1800113b4_security_init_cookie.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId",
+      "api-ms-win-core-profile-l1-1-0!QueryPerformanceCounter",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemTimeAsFileTime",
+      "api-ms-win-core-sysinfo-l1-1-0!GetTickCount"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 1223,
+    "size": 221,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "QueueInstallForAllDevices",
+    "ea": "0x1800083b0",
+    "function_file": "functions/1800083b0_QueueInstallForAllDevices.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-devices-config-l1-1-1!CM_Get_DevNode_Status",
+      "api-ms-win-devices-config-l1-1-1!CM_Locate_DevNodeW",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "QueueInstallForAllDevices",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 1043,
+    "size": 671,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "pSetupDeleteFileByHandle",
+    "ea": "0x180018350",
+    "function_file": "functions/180018350_pSetupDeleteFileByHandle.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "ntdll!NtQueryInformationFile",
+      "ntdll!NtSetInformationFile",
+      "ntdll!RtlNtStatusToDosError"
+    ],
+    "matched_strings": [],
+    "name": "pSetupDeleteFileByHandle",
+    "prototype": "_BOOL8 __fastcall(HANDLE FileHandle)",
+    "rank_score": 1035,
+    "size": 264,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 9,
+    "demangled": "pSetupQueryValue",
+    "ea": "0x18000f210",
+    "function_file": "functions/18000f210_pSetupQueryValue.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "ntdll!NtQueryValueKey",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlNtStatusToDosError"
+    ],
+    "matched_strings": [],
+    "name": "pSetupQueryValue",
+    "prototype": "__int64 __fastcall(HANDLE KeyHandle, PCWSTR SourceString, _DWORD *, void *, unsigned int *)",
+    "rank_score": 1034,
+    "size": 328,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "FreeServerInstallEntry",
+    "ea": "0x1800106dc",
+    "function_file": "functions/1800106dc_FreeServerInstallEntry.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "FreeServerInstallEntry",
+    "prototype": "BOOLEAN __fastcall(_QWORD *P)",
+    "rank_score": 1024,
+    "size": 124,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "QueueServerInstallWorkItem",
+    "ea": "0x18001078c",
+    "function_file": "functions/18001078c_QueueServerInstallWorkItem.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-synch-l1-1-0!ResetEvent",
+      "api-ms-win-core-synch-l1-2-0!Sleep",
+      "api-ms-win-core-threadpool-legacy-l1-1-0!QueueUserWorkItem"
+    ],
+    "matched_strings": [],
+    "name": "QueueServerInstallWorkItem",
+    "prototype": "_BOOL8()",
+    "rank_score": 1015,
+    "size": 216,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "PnPRpcIfCallback",
+    "ea": "0x18000fd90",
+    "function_file": "functions/18000fd90_PnPRpcIfCallback.md",
+    "matched_imports": [
+      "RPCRT4!RpcBindingToStringBindingW",
+      "RPCRT4!RpcStringBindingParseW",
+      "RPCRT4!RpcStringFreeW",
+      "api-ms-win-core-string-l1-1-0!CompareStringOrdinal"
+    ],
+    "matched_strings": [],
+    "name": "PnPRpcIfCallback",
+    "prototype": "__int64 __fastcall(__int64, void *)",
+    "rank_score": 1014,
+    "size": 208,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "TextLogUnmapFile",
+    "ea": "0x18000f82c",
+    "function_file": "functions/18000f82c_TextLogUnmapFile.md",
+    "matched_imports": [
+      "api-ms-win-core-file-l1-1-0!FlushFileBuffers",
+      "api-ms-win-core-file-l1-1-0!SetEndOfFile",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-memory-l1-1-0!UnmapViewOfFile"
+    ],
+    "matched_strings": [],
+    "name": "TextLogUnmapFile",
+    "prototype": "BOOL __fastcall(__int64)",
+    "rank_score": 1008,
+    "size": 160,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "_pSpUtilsInitializeSynchronizedAccess",
+    "ea": "0x180017fa4",
+    "function_file": "functions/180017fa4_pSpUtilsInitializeSynchronizedAccess.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!CreateEventW",
+      "api-ms-win-core-synch-l1-1-0!CreateMutexW"
+    ],
+    "matched_strings": [],
+    "name": "_pSpUtilsInitializeSynchronizedAccess",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 1003,
+    "size": 130,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WaitForScAutoStartEvent",
+    "ea": "0x180013a40",
+    "function_file": "functions/180013a40_WaitForScAutoStartEvent.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!OpenEventW",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObjectEx"
+    ],
+    "matched_strings": [
+      "Global\\SC_AutoStartComplete",
+      "Global\\SC_AutoStartComplete"
+    ],
+    "name": "WaitForScAutoStartEvent",
+    "prototype": "__int64()",
+    "rank_score": 894,
+    "size": 136,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "PnpRpcStartup",
+    "ea": "0x18000d550",
+    "function_file": "functions/18000d550_PnpRpcStartup.md",
+    "matched_imports": [
+      "RPCRT4!I_RpcMapWin32Status",
+      "RPCRT4!RpcServerInterfaceGroupActivate",
+      "RPCRT4!RpcServerInterfaceGroupCreateW",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError"
+    ],
+    "matched_strings": [
+      "Device Install Service RPC Interface"
+    ],
+    "name": "PnpRpcStartup",
+    "prototype": "_BOOL8()",
+    "rank_score": 868,
+    "size": 485,
+    "tags": [
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "TextLogSetLogRenameFilename",
+    "ea": "0x180017500",
+    "function_file": "functions/180017500_TextLogSetLogRenameFilename.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "ntdll!NtDeleteValueKey",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlNtStatusToDosError"
+    ],
+    "matched_strings": [
+      "SYSTEM\\Setup\\SetupapiLogRename"
+    ],
+    "name": "TextLogSetLogRenameFilename",
+    "prototype": "_BOOL8 __fastcall(__int64, void *)",
+    "rank_score": 866,
+    "size": 198,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 9,
+    "demangled": "pSetupOpenKeyEx",
+    "ea": "0x18000c650",
+    "function_file": "functions/18000c650_pSetupOpenKeyEx.md",
+    "matched_imports": [
+      "ntdll!NtClose",
+      "ntdll!NtOpenKey",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlNtStatusToDosError"
+    ],
+    "matched_strings": [],
+    "name": "pSetupOpenKeyEx",
+    "prototype": "__int64 __fastcall(void *, const WCHAR *, ACCESS_MASK, _QWORD *)",
+    "rank_score": 863,
+    "size": 282,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "IsSysprepInVmMode",
+    "ea": "0x180011ef8",
+    "function_file": "functions/180011ef8_IsSysprepInVmMode.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW",
+      "api-ms-win-core-string-l1-1-0!CompareStringW"
+    ],
+    "matched_strings": [],
+    "name": "IsSysprepInVmMode",
+    "prototype": "__int64()",
+    "rank_score": 836,
+    "size": 262,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "pSetupSetFileCompressionState",
+    "ea": "0x180018668",
+    "function_file": "functions/180018668_pSetupSetFileCompressionState.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-io-l1-1-0!DeviceIoControl"
+    ],
+    "matched_strings": [],
+    "name": "pSetupSetFileCompressionState",
+    "prototype": "_BOOL8 __fastcall(const WCHAR *, int, __int64)",
+    "rank_score": 834,
+    "size": 192,
+    "tags": [
+      "file_ops",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "pSetupAppendPath",
+    "ea": "0x18000cba0",
+    "function_file": "functions/18000cba0_pSetupAppendPath.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "pSetupAppendPath",
+    "prototype": "__int64 __fastcall(const wchar_t *, const wchar_t *, __int64 *)",
+    "rank_score": 824,
+    "size": 897,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "GetClientLogonId",
+    "ea": "0x1800143e0",
+    "function_file": "functions/1800143e0_GetClientLogonId.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThread",
+      "api-ms-win-core-processthreads-l1-1-0!OpenThreadToken",
+      "api-ms-win-security-base-l1-1-0!GetTokenInformation"
+    ],
+    "matched_strings": [],
+    "name": "GetClientLogonId",
+    "prototype": "__int64()",
+    "rank_score": 823,
+    "size": 128,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "pSetupCreateTextLogSectionW",
+    "ea": "0x18000fc1c",
+    "function_file": "functions/18000fc1c_pSetupCreateTextLogSectionW.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "pSetupCreateTextLogSectionW",
+    "prototype": "_BOOL8 __fastcall(const WCHAR *, __int64, const WCHAR *, unsigned __int64 *)",
+    "rank_score": 817,
+    "size": 169,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "pSetupUnicodeToMultiByte",
+    "ea": "0x18000f5a0",
+    "function_file": "functions/18000f5a0_pSetupUnicodeToMultiByte.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-heap-l1-1-0!HeapReAlloc",
+      "api-ms-win-core-string-l1-1-0!WideCharToMultiByte"
+    ],
+    "matched_strings": [],
+    "name": "pSetupUnicodeToMultiByte",
+    "prototype": "CHAR *__fastcall(LPCWCH lpWideCharStr)",
+    "rank_score": 816,
+    "size": 161,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CreateTempFilename",
+    "ea": "0x180013cd0",
+    "function_file": "functions/180013cd0_CreateTempFilename.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-file-l1-1-0!GetTempFileNameW",
+      "api-ms-win-core-file-l1-2-3!GetTempPath2W"
+    ],
+    "matched_strings": [],
+    "name": "CreateTempFilename",
+    "prototype": "_BOOL8 __fastcall(__int64, __int64)",
+    "rank_score": 805,
+    "size": 184,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ServerInstallRemoveThreadIdFromList",
+    "ea": "0x18000a248",
+    "function_file": "functions/18000a248_ServerInstallRemoveThreadIdFromList.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!ReleaseMutex",
+      "ntdll!RtlFreeHeap"
+    ],
+    "matched_strings": [],
+    "name": "ServerInstallRemoveThreadIdFromList",
+    "prototype": "__int64 __fastcall(int)",
+    "rank_score": 724,
+    "size": 168,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "AreDriverUpdatesPending",
+    "ea": "0x1800119a4",
+    "function_file": "functions/1800119a4_AreDriverUpdatesPending.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+    ],
+    "matched_strings": [
+      "SYSTEM\\CurrentControlSet\\Services\\DeviceInstall\\Parameters",
+      "DriverUpdatesPending"
+    ],
+    "name": "AreDriverUpdatesPending",
+    "prototype": "_BOOL8()",
+    "rank_score": 714,
+    "size": 173,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ClearDriverUpdatesPending",
+    "ea": "0x180011a58",
+    "function_file": "functions/180011a58_ClearDriverUpdatesPending.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegDeleteValueW",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+    ],
+    "matched_strings": [
+      "SYSTEM\\CurrentControlSet\\Services\\DeviceInstall\\Parameters",
+      "DriverUpdatesPending"
+    ],
+    "name": "ClearDriverUpdatesPending",
+    "prototype": "LSTATUS()",
+    "rank_score": 712,
+    "size": 90,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "__raise_securityfailure",
+    "ea": "0x180010fa8",
+    "function_file": "functions/180010fa8_raise_securityfailure.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetUnhandledExceptionFilter",
+      "api-ms-win-core-errorhandling-l1-1-0!UnhandledExceptionFilter",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-processthreads-l1-1-0!TerminateProcess"
+    ],
+    "matched_strings": [],
+    "name": "__raise_securityfailure",
+    "prototype": "BOOL __fastcall(struct _EXCEPTION_POINTERS *ExceptionInfo)",
+    "rank_score": 712,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "WriteTextLogFileHeader",
+    "ea": "0x1800175cc",
+    "function_file": "functions/1800175cc_WriteTextLogFileHeader.md",
+    "matched_imports": [
+      "api-ms-win-core-file-l1-1-0!WriteFile",
+      "ntdll!RtlGetVersion"
+    ],
+    "matched_strings": [
+      "[Device Install Log]\r\n     OS Version = %d.%d.%d\r\n     Service Pack = %d.%d\r\n     Suite = 0x%04x\r\n     ProductType = %d\r\n     Architecture = %s\r\n\r\n[BeginLog]\r\n"
+    ],
+    "name": "WriteTextLogFileHeader",
+    "prototype": "HRESULT __fastcall(HANDLE hFile)",
+    "rank_score": 687,
+    "size": 307,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "GetPreshutdownTimeout",
+    "ea": "0x180011c8c",
+    "function_file": "functions/180011c8c_GetPreshutdownTimeout.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+    ],
+    "matched_strings": [
+      "SYSTEM\\CurrentControlSet\\Services\\DeviceInstall"
+    ],
+    "name": "GetPreshutdownTimeout",
+    "prototype": "__int64()",
+    "rank_score": 673,
+    "size": 166,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "IsSysprepComplete",
+    "ea": "0x180011e44",
+    "function_file": "functions/180011e44_IsSysprepComplete.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+      "api-ms-win-core-registry-l1-1-0!RegQueryValueExW"
+    ],
+    "matched_strings": [
+      "System\\Setup\\Status\\ChildCompletion"
+    ],
+    "name": "IsSysprepComplete",
+    "prototype": "_BOOL8()",
+    "rank_score": 673,
+    "size": 171,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 2,
+    "demangled": "pSpUtilsSetLogPathFromRegKey",
+    "ea": "0x1800164e0",
+    "function_file": "functions/1800164e0_pSpUtilsSetLogPathFromRegKey.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-processenvironment-l1-1-0!ExpandEnvironmentStringsW"
+    ],
+    "matched_strings": [
+      "LogPath"
+    ],
+    "name": "pSpUtilsSetLogPathFromRegKey",
+    "prototype": "_BOOL8()",
+    "rank_score": 665,
+    "size": 399,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "pSetupCreateKeyWorker",
+    "ea": "0x18000bb04",
+    "function_file": "functions/18000bb04_pSetupCreateKeyWorker.md",
+    "matched_imports": [
+      "ntdll!NtCreateKey",
+      "ntdll!RtlInitUnicodeString",
+      "ntdll!RtlNtStatusToDosError"
+    ],
+    "matched_strings": [],
+    "name": "pSetupCreateKeyWorker",
+    "prototype": "__int64 __fastcall(void *, const WCHAR *, __int64, ULONG, ACCESS_MASK DesiredAccess, __int64, _QWORD *)",
+    "rank_score": 656,
+    "size": 286,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "pSetupOpenPredefinedKey",
+    "ea": "0x18000c944",
+    "function_file": "functions/18000c944_pSetupOpenPredefinedKey.md",
+    "matched_imports": [
+      "ntdll!RtlFormatCurrentUserKeyPath",
+      "ntdll!RtlFreeUnicodeString",
+      "ntdll!RtlNtStatusToDosError"
+    ],
+    "matched_strings": [],
+    "name": "pSetupOpenPredefinedKey",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *)",
+    "rank_score": 625,
+    "size": 119,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "PnpServiceTerminateInstallOperations",
+    "ea": "0x1800142c4",
+    "function_file": "functions/1800142c4_PnpServiceTerminateInstallOperations.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!SetEvent",
+      "api-ms-win-core-synch-l1-2-0!Sleep"
+    ],
+    "matched_strings": [],
+    "name": "PnpServiceTerminateInstallOperations",
+    "prototype": "void()",
+    "rank_score": 622,
+    "size": 100,
+    "tags": [
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "TextLogQueueLogFileBackup",
+    "ea": "0x1800171b8",
+    "function_file": "functions/1800171b8_TextLogQueueLogFileBackup.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-file-l2-1-0!MoveFileExW"
+    ],
+    "matched_strings": [],
+    "name": "TextLogQueueLogFileBackup",
+    "prototype": "__int64 __fastcall(LPCWSTR lpExistingFileName)",
+    "rank_score": 617,
+    "size": 157,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "_pSpUtilsLogSetPath",
+    "ea": "0x18000cab0",
+    "function_file": "functions/18000cab0_pSpUtilsLogSetPath.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "_pSpUtilsLogSetPath",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 616,
+    "size": 233,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "_AcquireInitMutex",
+    "ea": "0x18001086c",
+    "function_file": "functions/18001086c_AcquireInitMutex.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!CreateEventW",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObjectEx"
+    ],
+    "matched_strings": [],
+    "name": "_AcquireInitMutex",
+    "prototype": "__int64 __fastcall(signed __int64)",
+    "rank_score": 615,
+    "size": 170,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "_pSpUtilsInstallLogUninitialize",
+    "ea": "0x180018730",
+    "function_file": "functions/180018730_pSpUtilsInstallLogUninitialize.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "_pSpUtilsInstallLogUninitialize",
+    "prototype": "__int64()",
+    "rank_score": 614,
+    "size": 128,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 4,
+    "demangled": "_pSpUtilsLogInitialize",
+    "ea": "0x18001621c",
+    "function_file": "functions/18001621c_pSpUtilsLogInitialize.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "_pSpUtilsLogInitialize",
+    "prototype": "__int64()",
+    "rank_score": 611,
+    "size": 156,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "_pSpUtilsDestroySynchronizedAccess",
+    "ea": "0x180017d8c",
+    "function_file": "functions/180017d8c_pSpUtilsDestroySynchronizedAccess.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!SetEvent"
+    ],
+    "matched_strings": [],
+    "name": "_pSpUtilsDestroySynchronizedAccess",
+    "prototype": "int __fastcall(__int64)",
+    "rank_score": 602,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ServerInstallAddThreadIdToList",
+    "ea": "0x18000a2f8",
+    "function_file": "functions/18000a2f8_ServerInstallAddThreadIdToList.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!ReleaseMutex",
+      "ntdll!RtlAllocateHeap"
+    ],
+    "matched_strings": [],
+    "name": "ServerInstallAddThreadIdToList",
+    "prototype": "__int64 __fastcall(int)",
+    "rank_score": 524,
+    "size": 153,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SetProcessId",
+    "ea": "0x18000f650",
+    "function_file": "functions/18000f650_SetProcessId.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!ReleaseMutex",
+      "api-ms-win-core-synch-l1-1-0!WaitForMultipleObjectsEx"
+    ],
+    "matched_strings": [],
+    "name": "SetProcessId",
+    "prototype": "__int64 __fastcall(int, int)",
+    "rank_score": 523,
+    "size": 139,
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "GetClientTokenSessionId",
+    "ea": "0x180014468",
+    "function_file": "functions/180014468_GetClientTokenSessionId.md",
+    "matched_imports": [
+      "RPCRT4!RpcImpersonateClient",
+      "RPCRT4!RpcRevertToSelf"
+    ],
+    "matched_strings": [],
+    "name": "GetClientTokenSessionId",
+    "prototype": "__int64()",
+    "rank_score": 513,
+    "size": 55,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SetServerInstallEntry",
+    "ea": "0x18000a180",
+    "function_file": "functions/18000a180_SetServerInstallEntry.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!ReleaseMutex",
+      "api-ms-win-core-synch-l1-1-0!WaitForMultipleObjectsEx"
+    ],
+    "matched_strings": [],
+    "name": "SetServerInstallEntry",
+    "prototype": "__int64 __fastcall(int, void *)",
+    "rank_score": 512,
+    "size": 125,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "UserDriverInstallAllowed",
+    "ea": "0x18000bf60",
+    "function_file": "functions/18000bf60_UserDriverInstallAllowed.md",
+    "matched_imports": [
+      "ntdll!NtClose"
+    ],
+    "matched_strings": [
+      "Software\\Policies\\Microsoft\\Windows\\DriverInstall"
+    ],
+    "name": "UserDriverInstallAllowed",
+    "prototype": "_BOOL8()",
+    "rank_score": 477,
+    "size": 224,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "_pSpUtilsQueryUnbiasedInterruptTime",
+    "ea": "0x18001802c",
+    "function_file": "functions/18001802c_pSpUtilsQueryUnbiasedInterruptTime.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "_pSpUtilsQueryUnbiasedInterruptTime",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 453,
+    "size": 124,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "PNP_Local_AddDriverPackage",
+    "ea": "0x1800144b0",
+    "function_file": "functions/1800144b0_PNP_Local_AddDriverPackage.md",
+    "matched_imports": [
+      "RPCRT4!RpcAsyncCompleteCall",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle"
+    ],
+    "matched_strings": [],
+    "name": "PNP_Local_AddDriverPackage",
+    "prototype": "RPC_STATUS __fastcall(PRPC_ASYNC_STATE pAsync, __int64, __int64, __int64, unsigned int, int *, _DWORD *, __int64, _DWORD *, int)",
+    "rank_score": 442,
+    "size": 533,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "PNP_Local_InstallDriver",
+    "ea": "0x18000bc30",
+    "function_file": "functions/18000bc30_PNP_Local_InstallDriver.md",
+    "matched_imports": [
+      "RPCRT4!RpcAsyncCompleteCall",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle"
+    ],
+    "matched_strings": [],
+    "name": "PNP_Local_InstallDriver",
+    "prototype": "RPC_STATUS __fastcall(PRPC_ASYNC_STATE pAsync, __int64, __int64, __int64, int *, _DWORD *, int)",
+    "rank_score": 441,
+    "size": 506,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "PNP_Local_DeleteDriverPackage",
+    "ea": "0x1800146d0",
+    "function_file": "functions/1800146d0_PNP_Local_DeleteDriverPackage.md",
+    "matched_imports": [
+      "RPCRT4!RpcAsyncCompleteCall",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle"
+    ],
+    "matched_strings": [],
+    "name": "PNP_Local_DeleteDriverPackage",
+    "prototype": "RPC_STATUS __fastcall(PRPC_ASYNC_STATE pAsync, __int64, __int64, int *, _DWORD *)",
+    "rank_score": 440,
+    "size": 458,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "PNP_Local_UninstallDriver",
+    "ea": "0x1800148a0",
+    "function_file": "functions/1800148a0_PNP_Local_UninstallDriver.md",
+    "matched_imports": [
+      "RPCRT4!RpcAsyncCompleteCall",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle"
+    ],
+    "matched_strings": [],
+    "name": "PNP_Local_UninstallDriver",
+    "prototype": "RPC_STATUS __fastcall(PRPC_ASYNC_STATE pAsync, __int64, __int64, __int64, int *, _DWORD *, int)",
+    "rank_score": 439,
+    "size": 477,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "PlugPlayServiceMain",
+    "ea": "0x180015f80",
+    "function_file": "functions/180015f80_PlugPlayServiceMain.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-service-core-l1-1-0!RegisterServiceCtrlHandlerExW"
+    ],
+    "matched_strings": [],
+    "name": "PlugPlayServiceMain",
+    "prototype": "DWORD()",
+    "rank_score": 436,
+    "size": 202,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "IsSysprepPresent",
+    "ea": "0x180012004",
+    "function_file": "functions/180012004_IsSysprepPresent.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+    ],
+    "matched_strings": [],
+    "name": "IsSysprepPresent",
+    "prototype": "__int64()",
+    "rank_score": 432,
+    "size": 78,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ProcessDetach",
+    "ea": "0x18000fac0",
+    "function_file": "functions/18000fac0_ProcessDetach.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection",
+      "ntdll!RtlDestroyHeap"
+    ],
+    "matched_strings": [],
+    "name": "ProcessDetach",
+    "prototype": "__int64()",
+    "rank_score": 427,
+    "size": 213,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "TextLogDeleteString",
+    "ea": "0x18000b5f0",
+    "function_file": "functions/18000b5f0_TextLogDeleteString.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!SetFilePointer"
+    ],
+    "matched_strings": [],
+    "name": "TextLogDeleteString",
+    "prototype": "__int64 __fastcall(__int64, unsigned int)",
+    "rank_score": 427,
+    "size": 412,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "DeviceIdNeedsInstall",
+    "ea": "0x180009890",
+    "function_file": "functions/180009890_DeviceIdNeedsInstall.md",
+    "matched_imports": [
+      "api-ms-win-devices-config-l1-1-1!CM_Get_DevNode_Status",
+      "api-ms-win-devices-config-l1-1-1!CM_Locate_DevNodeW"
+    ],
+    "matched_strings": [],
+    "name": "DeviceIdNeedsInstall",
+    "prototype": "__int64 __fastcall(DEVINSTID_W pDeviceID, int *)",
+    "rank_score": 425,
+    "size": 307,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 5,
+    "demangled": "TextLogSetLogStatus",
+    "ea": "0x1800101e8",
+    "function_file": "functions/1800101e8_TextLogSetLogStatus.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "msvcrt!wcschr"
+    ],
+    "matched_strings": [],
+    "name": "TextLogSetLogStatus",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64)",
+    "rank_score": 424,
+    "size": 405,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "pSetupGrowMappedFileAtOffset",
+    "ea": "0x18000b980",
+    "function_file": "functions/18000b980_pSetupGrowMappedFileAtOffset.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!SetFilePointer"
+    ],
+    "matched_strings": [],
+    "name": "pSetupGrowMappedFileAtOffset",
+    "prototype": "__int64 __fastcall(HANDLE hFile, unsigned int, __int64, unsigned int, int)",
+    "rank_score": 423,
+    "size": 120,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "TextLogUpdateEof",
+    "ea": "0x18000f7f0",
+    "function_file": "functions/18000f7f0_TextLogUpdateEof.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!SetFilePointer"
+    ],
+    "matched_strings": [],
+    "name": "TextLogUpdateEof",
+    "prototype": "DWORD __fastcall(__int64, int)",
+    "rank_score": 422,
+    "size": 53,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 6,
+    "demangled": "PnpGetObjectProp",
+    "ea": "0x180008bf0",
+    "function_file": "functions/180008bf0_PnpGetObjectProp.md",
+    "matched_imports": [
+      "api-ms-win-devices-config-l1-1-1!CM_Get_DevNode_PropertyW",
+      "api-ms-win-devices-config-l1-1-1!CM_Locate_DevNodeW"
+    ],
+    "matched_strings": [],
+    "name": "PnpGetObjectProp",
+    "prototype": "__int64 __fastcall(DEVINSTID_W pDeviceID, __int64, __int64, const DEVPROPKEY *, DEVPROPTYPE *PropertyType, PBYTE PropertyBuffer, PULONG PropertyBufferSize)",
+    "rank_score": 421,
+    "size": 296,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "pSpUtilsSetLogPath",
+    "ea": "0x180016424",
+    "function_file": "functions/180016424_pSpUtilsSetLogPath.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "pSpUtilsSetLogPath",
+    "prototype": "_BOOL8()",
+    "rank_score": 419,
+    "size": 179,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "PnpGetDeviceRegProp",
+    "ea": "0x180009a20",
+    "function_file": "functions/180009a20_PnpGetDeviceRegProp.md",
+    "matched_imports": [
+      "api-ms-win-devices-config-l1-1-1!CM_Get_DevNode_Registry_PropertyW",
+      "api-ms-win-devices-config-l1-1-1!CM_Locate_DevNodeW"
+    ],
+    "matched_strings": [],
+    "name": "PnpGetDeviceRegProp",
+    "prototype": "CONFIGRET __fastcall(DEVINSTID_W pDeviceID, __int64, ULONG *, void *, PULONG pulLength, DEVNODE pdnDevInst)",
+    "rank_score": 418,
+    "size": 136,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "PnpSetObjectProp",
+    "ea": "0x180008220",
+    "function_file": "functions/180008220_PnpSetObjectProp.md",
+    "matched_imports": [
+      "api-ms-win-devices-config-l1-1-1!CM_Locate_DevNodeW",
+      "api-ms-win-devices-config-l1-1-1!CM_Set_DevNode_PropertyW"
+    ],
+    "matched_strings": [],
+    "name": "PnpSetObjectProp",
+    "prototype": "__int64 __fastcall(DEVINSTID_W pDeviceID, __int64, __int64, const DEVPROPKEY *, DEVPROPTYPE PropertyType, PBYTE PropertyBuffer, ULONG PropertyBufferSize)",
+    "rank_score": 418,
+    "size": 381,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SetDeviceInstallDate",
+    "ea": "0x180009ab0",
+    "function_file": "functions/180009ab0_SetDeviceInstallDate.md",
+    "matched_imports": [
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemTime",
+      "api-ms-win-core-timezone-l1-1-0!SystemTimeToFileTime"
+    ],
+    "matched_strings": [],
+    "name": "SetDeviceInstallDate",
+    "prototype": "__int64 __fastcall(DEVINSTID_W pDeviceID)",
+    "rank_score": 417,
+    "size": 267,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SpUtilsSetTargetWindowsDir",
+    "ea": "0x180016110",
+    "function_file": "functions/180016110_SpUtilsSetTargetWindowsDir.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemWindowsDirectoryW"
+    ],
+    "matched_strings": [],
+    "name": "SpUtilsSetTargetWindowsDir",
+    "prototype": "__int64()",
+    "rank_score": 417,
+    "size": 186,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "_pSpUtilsSetTextLogPath",
+    "ea": "0x180017708",
+    "function_file": "functions/180017708_pSpUtilsSetTextLogPath.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "_pSpUtilsSetTextLogPath",
+    "prototype": "__int64 __fastcall(__int64, int)",
+    "rank_score": 416,
+    "size": 210,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "PnpServiceSignalStop",
+    "ea": "0x180014248",
+    "function_file": "functions/180014248_PnpServiceSignalStop.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-synch-l1-1-0!SetEvent"
+    ],
+    "matched_strings": [],
+    "name": "PnpServiceSignalStop",
+    "prototype": "void()",
+    "rank_score": 414,
+    "size": 96,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "IsMiniNT",
+    "ea": "0x180011df0",
+    "function_file": "functions/180011df0_IsMiniNT.md",
+    "matched_imports": [
+      "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+      "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+    ],
+    "matched_strings": [],
+    "name": "IsMiniNT",
+    "prototype": "__int64()",
+    "rank_score": 413,
+    "size": 78,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PnpSetDeviceRegProp",
+    "ea": "0x180013bdc",
+    "function_file": "functions/180013bdc_PnpSetDeviceRegProp.md",
+    "matched_imports": [
+      "api-ms-win-devices-config-l1-1-1!CM_Locate_DevNodeW",
+      "api-ms-win-devices-config-l1-1-1!CM_Set_DevNode_Registry_PropertyW"
+    ],
+    "matched_strings": [],
+    "name": "PnpSetDeviceRegProp",
+    "prototype": "CONFIGRET __fastcall(DEVINSTID_W pDeviceID, __int64, __int64, const void *)",
+    "rank_score": 413,
+    "size": 111,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "GetCurrentOutstandingServerThreads",
+    "ea": "0x18000b10c",
+    "function_file": "functions/18000b10c_GetCurrentOutstandingServerThreads.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!ReleaseMutex",
+      "api-ms-win-core-synch-l1-1-0!WaitForMultipleObjectsEx"
+    ],
+    "matched_strings": [],
+    "name": "GetCurrentOutstandingServerThreads",
+    "prototype": "__int64()",
+    "rank_score": 411,
+    "size": 65,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "pStrBufCreate",
+    "ea": "0x18000e380",
+    "function_file": "functions/18000e380_pStrBufCreate.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "pStrBufCreate",
+    "prototype": "void *__fastcall(unsigned int)",
+    "rank_score": 404,
+    "size": 105,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "IncrementOutstandingInstallsCounter",
+    "ea": "0x180011d38",
+    "function_file": "functions/180011d38_IncrementOutstandingInstallsCounter.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!EnterCriticalSection",
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "IncrementOutstandingInstallsCounter",
+    "prototype": "void()",
+    "rank_score": 333,
+    "size": 59,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "PnpServiceRegisterPreshutdownRestart",
+    "ea": "0x180014198",
+    "function_file": "functions/180014198_PnpServiceRegisterPreshutdownRestart.md",
+    "matched_imports": [
+      "api-ms-win-service-private-l1-1-1!I_ScRegisterPreshutdownRestart"
+    ],
+    "matched_strings": [
+      "DeviceInstall"
+    ],
+    "name": "PnpServiceRegisterPreshutdownRestart",
+    "prototype": "__int64()",
+    "rank_score": 266,
+    "size": 170,
+    "tags": [
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "TextLogGetLogRenameFilename",
+    "ea": "0x180016f7c",
+    "function_file": "functions/180016f7c_TextLogGetLogRenameFilename.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError"
+    ],
+    "matched_strings": [
+      "SYSTEM\\Setup\\SetupapiLogRename"
+    ],
+    "name": "TextLogGetLogRenameFilename",
+    "prototype": "_BOOL8 __fastcall(__int64, void *, int)",
+    "rank_score": 257,
+    "size": 211,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "PnpServiceControlHandlerEx",
+    "ea": "0x18000e890",
+    "function_file": "functions/18000e890_PnpServiceControlHandlerEx.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!SetEvent"
+    ],
+    "matched_strings": [],
+    "name": "PnpServiceControlHandlerEx",
+    "prototype": "__int64 __fastcall(DWORD dwControl, __int64 dwEventType, LPVOID lpEventData, LPVOID lpContext)",
+    "rank_score": 239,
+    "size": 381,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "PNP_Local_ExportPnpState",
+    "ea": "0x180015550",
+    "function_file": "functions/180015550_PNP_Local_ExportPnpState.md",
+    "matched_imports": [
+      "RPCRT4!RpcAsyncCompleteCall"
+    ],
+    "matched_strings": [],
+    "name": "PNP_Local_ExportPnpState",
+    "prototype": "RPC_STATUS __fastcall(PRPC_ASYNC_STATE pAsync, __int64, int, int, __int64, int, _WORD *, _DWORD *)",
+    "rank_score": 237,
+    "size": 361,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "EvaluateIdleStopPolicy",
+    "ea": "0x180013ed8",
+    "function_file": "functions/180013ed8_EvaluateIdleStopPolicy.md",
+    "matched_imports": [
+      "api-ms-win-core-threadpool-l1-2-0!SetThreadpoolTimer"
+    ],
+    "matched_strings": [],
+    "name": "EvaluateIdleStopPolicy",
+    "prototype": "void()",
+    "rank_score": 235,
+    "size": 108,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 27,
+    "demangled": "WPP_SF_",
+    "ea": "0x1800117d4",
+    "function_file": "functions/1800117d4_WPP_SF.md",
+    "matched_imports": [
+      "ntdll!EtwTraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_",
+    "prototype": "__int64 __fastcall(__int64, unsigned __int16, __int64)",
+    "rank_score": 235,
+    "size": 33,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 24,
+    "demangled": "WPP_SF_d",
+    "ea": "0x180011964",
+    "function_file": "functions/180011964_WPP_SF_d.md",
+    "matched_imports": [
+      "ntdll!EtwTraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_d",
+    "prototype": "__int64 __fastcall(__int64, unsigned __int16, __int64, int)",
+    "rank_score": 234,
+    "size": 55,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "PnPServiceStatusUpdate",
+    "ea": "0x18000de70",
+    "function_file": "functions/18000de70_PnPServiceStatusUpdate.md",
+    "matched_imports": [
+      "api-ms-win-service-core-l1-1-0!SetServiceStatus"
+    ],
+    "matched_strings": [],
+    "name": "PnPServiceStatusUpdate",
+    "prototype": "BOOL __fastcall(__int64, DWORD, DWORD, DWORD)",
+    "rank_score": 226,
+    "size": 151,
+    "tags": [
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "PlugPlayServiceStatusUpdate",
+    "ea": "0x180016050",
+    "function_file": "functions/180016050_PlugPlayServiceStatusUpdate.md",
+    "matched_imports": [
+      "api-ms-win-service-core-l1-1-0!SetServiceStatus"
+    ],
+    "matched_strings": [],
+    "name": "PlugPlayServiceStatusUpdate",
+    "prototype": "BOOL __fastcall(__int64, DWORD, DWORD)",
+    "rank_score": 225,
+    "size": 134,
+    "tags": [
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 11,
+    "demangled": "McGenEventWrite_EtwEventWriteTransfer",
+    "ea": "0x18000f970",
+    "function_file": "functions/18000f970_McGenEventWrite_EtwEventWriteTransfer.md",
+    "matched_imports": [
+      "ntdll!EtwEventWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "McGenEventWrite_EtwEventWriteTransfer",
+    "prototype": "",
+    "rank_score": 222,
+    "size": 82,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 11,
+    "demangled": "PnPExceptionHandler",
+    "ea": "0x180013d90",
+    "function_file": "functions/180013d90_PnPExceptionHandler.md",
+    "matched_imports": [
+      "ntdll!RtlNtStatusToDosError"
+    ],
+    "matched_strings": [],
+    "name": "PnPExceptionHandler",
+    "prototype": "void __fastcall(NTSTATUS, __int64, int *)",
+    "rank_score": 222,
+    "size": 96,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "IsDeviceSpecial",
+    "ea": "0x180009bc4",
+    "function_file": "functions/180009bc4_IsDeviceSpecial.md",
+    "matched_imports": [
+      "api-ms-win-core-string-l1-1-0!CompareStringOrdinal"
+    ],
+    "matched_strings": [],
+    "name": "IsDeviceSpecial",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 221,
+    "size": 410,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 11,
+    "demangled": "pSetupBeginSynchronizedAccess",
+    "ea": "0x18000a210",
+    "function_file": "functions/18000a210_pSetupBeginSynchronizedAccess.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!WaitForMultipleObjectsEx"
+    ],
+    "matched_strings": [],
+    "name": "pSetupBeginSynchronizedAccess",
+    "prototype": "_BOOL8 __fastcall(HANDLE *lpHandles)",
+    "rank_score": 221,
+    "size": 50,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "WPP_SF_S",
+    "ea": "0x180013590",
+    "function_file": "functions/180013590_WPP_SF_S.md",
+    "matched_imports": [
+      "ntdll!EtwTraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_S",
+    "prototype": "__int64 __fastcall(__int64, unsigned __int16, __int64, const wchar_t *)",
+    "rank_score": 220,
+    "size": 90,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "pSetupConcatenatePaths",
+    "ea": "0x18000fe68",
+    "function_file": "functions/18000fe68_pSetupConcatenatePaths.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "pSetupConcatenatePaths",
+    "prototype": "_BOOL8 __fastcall(__int64, const wchar_t *, unsigned int)",
+    "rank_score": 216,
+    "size": 237,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "WPP_SF_Sd",
+    "ea": "0x1800135f0",
+    "function_file": "functions/1800135f0_WPP_SF_Sd.md",
+    "matched_imports": [
+      "ntdll!EtwTraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_Sd",
+    "prototype": "__int64 __fastcall(__int64, unsigned __int16, __int64, const wchar_t *)",
+    "rank_score": 215,
+    "size": 119,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "DllMain",
+    "ea": "0x180011614",
+    "function_file": "functions/180011614_DllMain.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!DisableThreadLibraryCalls"
+    ],
+    "matched_strings": [],
+    "name": "DllMain",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 214,
+    "size": 64,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "WPP_SF_dd",
+    "ea": "0x1800136f8",
+    "function_file": "functions/1800136f8_WPP_SF_dd.md",
+    "matched_imports": [
+      "ntdll!EtwTraceMessage"
+    ],
+    "matched_strings": [],
+    "name": "WPP_SF_dd",
+    "prototype": "__int64 __fastcall(__int64, unsigned __int16, __int64, int)",
+    "rank_score": 214,
+    "size": 69,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_tlgWriteTransfer_EtwEventWriteTransfer",
+    "ea": "0x180001034",
+    "function_file": "functions/180001034_tlgWriteTransfer_EtwEventWriteTransfer.md",
+    "matched_imports": [
+      "ntdll!EtwEventWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "_tlgWriteTransfer_EtwEventWriteTransfer",
+    "prototype": "__int64 __fastcall(__int64, unsigned __int8 *, __int64, __int64, int, __int64)",
+    "rank_score": 212,
+    "size": 157,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 10,
+    "demangled": "RtlStringCchPrintfW",
+    "ea": "0x1800040f0",
+    "function_file": "functions/1800040f0_RtlStringCchPrintfW.md",
+    "matched_imports": [
+      "msvcrt!_vsnwprintf"
+    ],
+    "matched_strings": [],
+    "name": "RtlStringCchPrintfW",
+    "prototype": "__int64(wchar_t *, unsigned __int64, const wchar_t *, ...)",
+    "rank_score": 211,
+    "size": 125,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "IsClientLocal",
+    "ea": "0x18001091c",
+    "function_file": "functions/18001091c_IsClientLocal.md",
+    "matched_imports": [
+      "RPCRT4!I_RpcBindingIsClientLocal"
+    ],
+    "matched_strings": [],
+    "name": "IsClientLocal",
+    "prototype": "BOOL()",
+    "rank_score": 207,
+    "size": 59,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "StringCchPrintfA",
+    "ea": "0x18000fb9c",
+    "function_file": "functions/18000fb9c_StringCchPrintfA.md",
+    "matched_imports": [
+      "msvcrt!_vsnprintf"
+    ],
+    "matched_strings": [],
+    "name": "StringCchPrintfA",
+    "prototype": "HRESULT(STRSAFE_LPSTR pszDest, size_t cchDest, STRSAFE_LPCSTR pszFormat, ...)",
+    "rank_score": 205,
+    "size": 122,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "TextLogDeletePendingRenameTag",
+    "ea": "0x180016d08",
+    "function_file": "functions/180016d08_TextLogDeletePendingRenameTag.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "TextLogDeletePendingRenameTag",
+    "prototype": "_BOOL8 __fastcall(__int64)",
+    "rank_score": 204,
+    "size": 115,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "pSetupGetPredefinedKeyPath",
+    "ea": "0x180018290",
+    "function_file": "functions/180018290_pSetupGetPredefinedKeyPath.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "\\REGISTRY\\MACHINE",
+      "\\REGISTRY\\MACHINE\\SOFTWARE\\Classes",
+      "\\REGISTRY\\USER",
+      "\\REGISTRY\\MACHINE\\SYSTEM\\CurrentControlSet\\Hardware Profiles\\Current"
+    ],
+    "name": "pSetupGetPredefinedKeyPath",
+    "prototype": "const wchar_t *__fastcall(__int64)",
+    "rank_score": 182,
+    "size": 75,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 8,
+    "demangled": "pSetupCloseKey",
+    "ea": "0x1800101d8",
+    "function_file": "functions/1800101d8_pSetupCloseKey.md",
+    "matched_imports": [
+      "ntdll!NtClose"
+    ],
+    "matched_strings": [],
+    "name": "pSetupCloseKey",
+    "prototype": "NTSTATUS __fastcall(unsigned int)",
+    "rank_score": 128,
+    "size": 9,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 11,
+    "demangled": "PnpHeapAlloc",
+    "ea": "0x1800010e0",
+    "function_file": "functions/1800010e0_PnpHeapAlloc.md",
+    "matched_imports": [
+      "ntdll!RtlAllocateHeap"
+    ],
+    "matched_strings": [],
+    "name": "PnpHeapAlloc",
+    "prototype": "PVOID __fastcall(SIZE_T)",
+    "rank_score": 122,
+    "size": 34,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 19,
+    "demangled": "memset_0",
+    "ea": "0x18001893e",
+    "function_file": "functions/18001893e_memset_0.md",
+    "matched_imports": [
+      "msvcrt!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 119,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "PnpInstallDisabled",
+    "ea": "0x180012698",
+    "function_file": "functions/180012698_PnpInstallDisabled.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "DeviceInstallDisabled",
+      "SYSTEM\\CurrentControlSet\\Services\\DeviceInstall\\Parameters"
+    ],
+    "name": "PnpInstallDisabled",
+    "prototype": "_BOOL8 __fastcall(__int64)",
+    "rank_score": 113,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_DevRtlSetThreadLogToken",
+    "ea": "0x180011602",
+    "function_file": "functions/180011602_imp_load_DevRtlSetThreadLogToken.md",
+    "matched_imports": [
+      "DEVRTL!DevRtlSetThreadLogToken"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_DevRtlSetThreadLogToken",
+    "prototype": "__int64()",
+    "rank_score": 111,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_DevRtlWriteTextLog",
+    "ea": "0x1800115f0",
+    "function_file": "functions/1800115f0_imp_load_DevRtlWriteTextLog.md",
+    "matched_imports": [
+      "DEVRTL!DevRtlWriteTextLog"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_DevRtlWriteTextLog",
+    "prototype": "__int64()",
+    "rank_score": 111,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "memcpy_0",
+    "ea": "0x180018926",
+    "function_file": "functions/180018926_memcpy_0.md",
+    "matched_imports": [
+      "msvcrt!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 105,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "memmove_0",
+    "ea": "0x180018932",
+    "function_file": "functions/180018932_memmove_0.md",
+    "matched_imports": [
+      "msvcrt!memmove"
+    ],
+    "matched_strings": [],
+    "name": "memmove_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 101,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "TextLogGetHardwareConfigurationGuid",
+    "ea": "0x180016ee8",
+    "function_file": "functions/180016ee8_TextLogGetHardwareConfigurationGuid.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "LastConfig"
+    ],
+    "name": "TextLogGetHardwareConfigurationGuid",
+    "prototype": "__int64 __fastcall(_WORD *)",
+    "rank_score": 66,
+    "size": 140,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 51,
+    "demangled": "__security_check_cookie",
+    "ea": "0x180018970",
+    "function_file": "functions/180018970_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "TextLogRequestLogFileRename",
+    "ea": "0x180017408",
+    "function_file": "functions/180017408_TextLogRequestLogFileRename.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "TextLogRequestLogFileRename",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 27,
+    "size": 242,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "pSpUtilsOpenSetupKey",
+    "ea": "0x1800103f8",
+    "function_file": "functions/1800103f8_pSpUtilsOpenSetupKey.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "pSpUtilsOpenSetupKey",
+    "prototype": "__int64 __fastcall(HANDLE *, _QWORD *)",
+    "rank_score": 26,
+    "size": 217,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "PnpOobeCompleteStateChangeCallback",
+    "ea": "0x180011890",
+    "function_file": "functions/180011890_PnpOobeCompleteStateChangeCallback.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "PnpOobeCompleteStateChangeCallback",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64, unsigned int *, int)",
+    "rank_score": 24,
+    "size": 132,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x180018840",
+    "function_file": "functions/180018840_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 24,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "PlugPlayServiceControlHandlerEx",
+    "ea": "0x18000e750",
+    "function_file": "functions/18000e750_PlugPlayServiceControlHandlerEx.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "PlugPlayServiceControlHandlerEx",
+    "prototype": "__int64 __fastcall(__int64 dwControl, __int64 dwEventType, LPVOID lpEventData, LPVOID lpContext)",
+    "rank_score": 23,
+    "size": 94,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "PlugPlayServiceStop",
+    "ea": "0x1800160dc",
+    "function_file": "functions/1800160dc_PlugPlayServiceStop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "PlugPlayServiceStop",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 23,
+    "size": 46,
+    "tags": [
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartup",
+    "ea": "0x180010d40",
+    "function_file": "functions/180010d40_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartup",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 23,
+    "size": 61,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 5,
+    "demangled": "TextLogGetLogStatus",
+    "ea": "0x180017058",
+    "function_file": "functions/180017058_TextLogGetLogStatus.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "TextLogGetLogStatus",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 21,
+    "size": 146,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "__DllMainCRTStartup",
+    "ea": "0x180010d84",
+    "function_file": "functions/180010d84_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__DllMainCRTStartup",
+    "prototype": "__int64 __fastcall(HINSTANCE hinstDLL, __int64 fdwReason, void *)",
+    "rank_score": 20,
+    "size": 524,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "LogInstallDevice",
+    "ea": "0x18001002c",
+    "function_file": "functions/18001002c_LogInstallDevice.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "LogInstallDevice",
+    "prototype": "__int64 __fastcall(int, int, __int64 *, __int64, __int64, __int64, int)",
+    "rank_score": 18,
+    "size": 277,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "TextLogDeleteCtlTag",
+    "ea": "0x180016cac",
+    "function_file": "functions/180016cac_TextLogDeleteCtlTag.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "TextLogDeleteCtlTag",
+    "prototype": "__int64 __fastcall(__int64, int)",
+    "rank_score": 17,
+    "size": 85,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x18001a010",
+    "function_file": "functions/18001a010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "pSetupGetFileTitle",
+    "ea": "0x18001812c",
+    "function_file": "functions/18001812c_pSetupGetFileTitle.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "pSetupGetFileTitle",
+    "prototype": "unsigned __int16 *__fastcall(unsigned __int16 *)",
+    "rank_score": 16,
+    "size": 74,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "TextLogUpdateFileOffsets",
+    "ea": "0x18000b7a0",
+    "function_file": "functions/18000b7a0_TextLogUpdateFileOffsets.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "TextLogUpdateFileOffsets",
+    "prototype": "__int64 __fastcall(__int64, unsigned int, int)",
+    "rank_score": 15,
+    "size": 223,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__tailMerge_devrtl_dll",
+    "ea": "0x180011571",
+    "function_file": "functions/180011571_tailMerge_devrtl_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_devrtl_dll",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64)",
+    "rank_score": 14,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x1800189b0",
+    "function_file": "functions/1800189b0_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "GetDeviceConfigFlags",
+    "ea": "0x1800099d0",
+    "function_file": "functions/1800099d0_GetDeviceConfigFlags.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetDeviceConfigFlags",
+    "prototype": "__int64 __fastcall(WCHAR *)",
+    "rank_score": 13,
+    "size": 67,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateU0d_EtwEventWriteTransfer",
+    "ea": "0x180013f4c",
+    "function_file": "functions/180013f4c_McTemplateU0d_EtwEventWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0d_EtwEventWriteTransfer",
+    "prototype": "__int64 __fastcall(int, __int64, int)",
+    "rank_score": 13,
+    "size": 86,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 5,
+    "demangled": "RtlStringCchCatExW",
+    "ea": "0x180001ec0",
+    "function_file": "functions/180001ec0_RtlStringCchCatExW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlStringCchCatExW",
+    "prototype": "__int64 __fastcall(_WORD *, unsigned __int64, __int64 *, __int64, char, int)",
+    "rank_score": 13,
+    "size": 527,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "TermInstallation",
+    "ea": "0x180013498",
+    "function_file": "functions/180013498_TermInstallation.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "TermInstallation",
+    "prototype": "int()",
+    "rank_score": 13,
+    "size": 101,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "TextLogUpdateSectionTag",
+    "ea": "0x18000b900",
+    "function_file": "functions/18000b900_TextLogUpdateSectionTag.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "TextLogUpdateSectionTag",
+    "prototype": "__int64 __fastcall(__int64, __int64, unsigned int)",
+    "rank_score": 13,
+    "size": 109,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 4,
+    "demangled": "TextLogWriteSectionFooter",
+    "ea": "0x1800104d8",
+    "function_file": "functions/1800104d8_TextLogWriteSectionFooter.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "TextLogWriteSectionFooter",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, int, int)",
+    "rank_score": 13,
+    "size": 351,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__tailMerge_cfgmgr32_dll",
+    "ea": "0x1800114e6",
+    "function_file": "functions/1800114e6_tailMerge_cfgmgr32_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_cfgmgr32_dll",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64)",
+    "rank_score": 13,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "PnpServiceStopCallback",
+    "ea": "0x1800142b0",
+    "function_file": "functions/1800142b0_PnpServiceStopCallback.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "PnpServiceStopCallback",
+    "prototype": "__int64()",
+    "rank_score": 11,
+    "size": 11,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "SvchostPushServiceGlobals",
+    "ea": "0x180014330",
+    "function_file": "functions/180014330_SvchostPushServiceGlobals.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SvchostPushServiceGlobals",
+    "prototype": "void __fastcall(__int64)",
+    "rank_score": 10,
+    "size": 8,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "TextLogEnumerateOpenSections",
+    "ea": "0x18000b890",
+    "function_file": "functions/18000b890_TextLogEnumerateOpenSections.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "TextLogEnumerateOpenSections",
+    "prototype": "__int64 __fastcall(__int64, unsigned int, __int64)",
+    "rank_score": 8,
+    "size": 98,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "RtlStringCchCopyW",
+    "ea": "0x180001110",
+    "function_file": "functions/180001110_RtlStringCchCopyW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlStringCchCopyW",
+    "prototype": "__int64 __fastcall(_WORD *, unsigned __int64, _WORD *)",
+    "rank_score": 7,
+    "size": 109,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "RtlStringExHandleOtherFlagsW",
+    "ea": "0x1800132c0",
+    "function_file": "functions/1800132c0_RtlStringExHandleOtherFlagsW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlStringExHandleOtherFlagsW",
+    "prototype": "__int64 __fastcall(_WORD *, size_t, __int64, _QWORD *, size_t *, __int16)",
+    "rank_score": 7,
+    "size": 170,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "StringCchCopyW",
+    "ea": "0x180010384",
+    "function_file": "functions/180010384_StringCchCopyW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCchCopyW",
+    "prototype": "HRESULT __stdcall(STRSAFE_LPWSTR pszDest, size_t cchDest, STRSAFE_LPCWSTR pszSrc)",
+    "rank_score": 7,
+    "size": 107,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "McTemplateU0z_EtwEventWriteTransfer",
+    "ea": "0x1800120b0",
+    "function_file": "functions/1800120b0_McTemplateU0z_EtwEventWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0z_EtwEventWriteTransfer",
+    "prototype": "__int64 __fastcall(__int64, int, const wchar_t *)",
+    "rank_score": 6,
+    "size": 122,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "RtlStringLengthWorkerW",
+    "ea": "0x180002750",
+    "function_file": "functions/180002750_RtlStringLengthWorkerW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlStringLengthWorkerW",
+    "prototype": "__int64 __fastcall(_WORD *, __int64, _QWORD *)",
+    "rank_score": 6,
+    "size": 60,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "RtlUnalignedStringCchLengthW",
+    "ea": "0x18000e810",
+    "function_file": "functions/18000e810_RtlUnalignedStringCchLengthW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlUnalignedStringCchLengthW",
+    "prototype": "__int64 __fastcall(_WORD *, unsigned __int64, _QWORD *)",
+    "rank_score": 6,
+    "size": 110,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "TextLogFindSection",
+    "ea": "0x180016d84",
+    "function_file": "functions/180016d84_TextLogFindSection.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "TextLogFindSection",
+    "prototype": "__int64 __fastcall(__int64, int, __int64, unsigned int *)",
+    "rank_score": 6,
+    "size": 72,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "McTemplateU0qz_EtwEventWriteTransfer",
+    "ea": "0x18000f8d4",
+    "function_file": "functions/18000f8d4_McTemplateU0qz_EtwEventWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0qz_EtwEventWriteTransfer",
+    "prototype": "__int64 __fastcall(__int64, __int64, int, const wchar_t *)",
+    "rank_score": 5,
+    "size": 150,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "McTemplateU0zz_EtwEventWriteTransfer",
+    "ea": "0x180012130",
+    "function_file": "functions/180012130_McTemplateU0zz_EtwEventWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0zz_EtwEventWriteTransfer",
+    "prototype": "__int64 __fastcall(__int64, __int64, const wchar_t *, const wchar_t *)",
+    "rank_score": 5,
+    "size": 177,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "TextLogContainsPendingRenameTag",
+    "ea": "0x1800167b0",
+    "function_file": "functions/1800167b0_TextLogContainsPendingRenameTag.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "TextLogContainsPendingRenameTag",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 5,
+    "size": 95,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "McTemplateU0q_EtwEventWriteTransfer",
+    "ea": "0x180012058",
+    "function_file": "functions/180012058_McTemplateU0q_EtwEventWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0q_EtwEventWriteTransfer",
+    "prototype": "__int64 __fastcall(int, int, int)",
+    "rank_score": 4,
+    "size": 79,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "StringCchCopyA",
+    "ea": "0x180017d24",
+    "function_file": "functions/180017d24_StringCchCopyA.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "StringCchCopyA",
+    "prototype": "HRESULT __stdcall(STRSAFE_LPSTR pszDest, size_t cchDest, STRSAFE_LPCSTR pszSrc)",
+    "rank_score": 4,
+    "size": 98,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "RtlStringCchCopyExW",
+    "ea": "0x180015498",
+    "function_file": "functions/180015498_RtlStringCchCopyExW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlStringCchCopyExW",
+    "prototype": "__int64 __fastcall(_WORD *, unsigned __int64, _WORD *)",
+    "rank_score": 3,
+    "size": 166,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "RtlStringCbCopyW",
+    "ea": "0x180013e20",
+    "function_file": "functions/180013e20_RtlStringCbCopyW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlStringCbCopyW",
+    "prototype": "__int64 __fastcall(_WORD *, unsigned __int64, _WORD *)",
+    "rank_score": 2,
+    "size": 108,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "_tlgCreate1Sz_wchar_t",
+    "ea": "0x18000e7c0",
+    "function_file": "functions/18000e7c0_tlgCreate1Sz_wchar_t.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_tlgCreate1Sz_wchar_t",
+    "prototype": "__int64 __fastcall(__int64, __int64 *)",
+    "rank_score": 2,
+    "size": 63,
+    "tags": []
+  }
+]

@@ -1,0 +1,3337 @@
+[
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil::details::EnabledStateManager::~EnabledStateManager(void)",
+    "ea": "0x180003948",
+    "function_file": "functions/180003948_wil_details_EnabledStateManager_EnabledStateManager_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-threadpool-l1-2-0!CloseThreadpoolTimer",
+      "api-ms-win-core-threadpool-l1-2-0!SetThreadpoolTimer",
+      "api-ms-win-core-threadpool-l1-2-0!WaitForThreadpoolTimerCallbacks"
+    ],
+    "matched_strings": [],
+    "name": "??1EnabledStateManager@details@wil@@QEAA@XZ",
+    "prototype": "void __fastcall(wil::details::EnabledStateManager *__hidden this)",
+    "rank_score": 2406,
+    "size": 344,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil::details::EnabledStateManager::EnsureTimerUnderLock(void)",
+    "ea": "0x180002ecc",
+    "function_file": "functions/180002ecc_wil_details_EnabledStateManager_EnsureTimerUnderLock_void.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-threadpool-l1-2-0!CloseThreadpoolTimer",
+      "api-ms-win-core-threadpool-l1-2-0!CreateThreadpoolTimer",
+      "api-ms-win-core-threadpool-l1-2-0!SetThreadpoolTimer",
+      "api-ms-win-core-threadpool-l1-2-0!WaitForThreadpoolTimerCallbacks"
+    ],
+    "matched_strings": [],
+    "name": "?EnsureTimerUnderLock@EnabledStateManager@details@wil@@AEAAXXZ",
+    "prototype": "void __fastcall(struct _TP_TIMER **pv)",
+    "rank_score": 1804,
+    "size": 240,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil::details::FeatureImpl<__WilExternalFeatureTraits_Feature_UxAccOptimization>::GetCurrentFeatureEnabledState(int *)",
+    "ea": "0x1800024e0",
+    "function_file": "functions/1800024e0_wil_details_FeatureImpl_WilExternalFeatureTraits_Feature_UxAccOptimization_GetCurrentFeatureEnabledState_int.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibrary",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress",
+      "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExA"
+    ],
+    "matched_strings": [
+      "kernelbase.dll",
+      "windowsudk.shellcommon.dll"
+    ],
+    "name": "?GetCurrentFeatureEnabledState@?$FeatureImpl@U__WilExternalFeatureTraits_Feature_UxAccOptimization@@@details@wil@@AEAA?ATwil_details_FeatureStateCache@@PEAH@Z",
+    "prototype": "_QWORD *__fastcall(__int64, _QWORD *)",
+    "rank_score": 1707,
+    "size": 529,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "wil::AdaptFixedSizeToAllocatedResult<wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&CoTaskMemFree(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>>,128>(wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&CoTaskMemFree(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>> &,wistd::function<long (wchar_t *,unsigned __int64,unsigned __int64 *)>)",
+    "ea": "0x18000b88c",
+    "function_file": "functions/18000b88c_wil_AdaptFixedSizeToAllocatedResult_wil_unique_any_t_wil_details_unique_storage_wil_details_resource_policy_wc.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoTaskMemFree",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError"
+    ],
+    "matched_strings": [
+      "C:\\__w\\1\\s\\packages\\Microsoft.Windows.Wil.Internal.0.3.30\\inc\\wil\\opensource\\wil\\win32_helpers.h"
+    ],
+    "name": "??$AdaptFixedSizeToAllocatedResult@V?$unique_any_t@V?$unique_storage@U?$resource_policy@PEA_WP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEA_WPEA_W$0A@$$T@details@wil@@@details@wil@@@wil@@$0IA@@wil@@YAJAEAV?$unique_any_t@V?$unique_storage@U?$resource_policy@PEA_WP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEA_WPEA_W$0A@$$T@details@wil@@@details@wil@@@0@V?$function@$$A6AJPEA_W_KPEA_K@Z@wistd@@@Z",
+    "prototype": "__int64 __fastcall(char *, __int64)",
+    "rank_score": 1281,
+    "size": 484,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::SemaphoreValue::TryGetValueInternal(wchar_t const *,bool,unsigned __int64 *,bool *)",
+    "ea": "0x180006084",
+    "function_file": "functions/180006084_wil_details_abi_SemaphoreValue_TryGetValueInternal_wchar_t_const_bool_unsigned_int64_bool.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!OpenSemaphoreW"
+    ],
+    "matched_strings": [],
+    "name": "?TryGetValueInternal@SemaphoreValue@details_abi@wil@@CAJPEB_W_NPEA_KPEA_N@Z",
+    "prototype": "__int64 __fastcall(const wchar_t *, __int64, unsigned __int64 *, bool *)",
+    "rank_score": 1212,
+    "size": 574,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil::details::shared_buffer::create(unsigned __int64)",
+    "ea": "0x180004a0c",
+    "function_file": "functions/180004a0c_wil_details_shared_buffer_create_unsigned_int64.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?create@shared_buffer@details@wil@@QEAA_N_K@Z",
+    "prototype": "__int64 __fastcall(volatile signed __int32 **this, volatile signed __int32 *)",
+    "rank_score": 1204,
+    "size": 218,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "wil::details::string_maker<wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&CoTaskMemFree(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>>>::make(wchar_t const *,unsigned __int64)",
+    "ea": "0x18000b6d4",
+    "function_file": "functions/18000b6d4_wil_details_string_maker_wil_unique_any_t_wil_details_unique_storage_wil_details_resource_policy_wchar_t_void_.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc",
+      "api-ms-win-core-com-l1-1-0!CoTaskMemFree",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?make@?$string_maker@V?$unique_any_t@V?$unique_storage@U?$resource_policy@PEA_WP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEA_WPEA_W$0A@$$T@details@wil@@@details@wil@@@wil@@@details@wil@@QEAAJPEB_W_K@Z",
+    "prototype": "__int64 __fastcall(char *, char *, unsigned __int64, const char *)",
+    "rank_score": 1039,
+    "size": 331,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "?create@?$semaphore_t@V?$unique_storage@U?$resource_policy@PEAXP6AXPEAX@_E$1?CloseHandle@details@wil@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@Uerr_returncode_policy@3@@wil@@QEAAJJJPEB_WKPEAU_SECURITY_ATTRIBUTES@@PEA_N@Z",
+    "ea": "0x1800071d0",
+    "function_file": "functions/1800071d0_create_semaphore_t_V_unique_storage_U_resource_policy_PEAXP6AXPEAX_E_1_CloseHandle_details_wil_YAX0_ZU_integra.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-errorhandling-l1-1-0!SetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!CreateSemaphoreExW"
+    ],
+    "matched_strings": [],
+    "name": "?create@?$semaphore_t@V?$unique_storage@U?$resource_policy@PEAXP6AXPEAX@_E$1?CloseHandle@details@wil@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@Uerr_returncode_policy@3@@wil@@QEAAJJJPEB_WKPEAU_SECURITY_ATTRIBUTES@@PEA_N@Z",
+    "prototype": "__int64 __fastcall(void **, LONG, LONG, const WCHAR *)",
+    "rank_score": 1025,
+    "size": 156,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::ProcessLocalStorageData<wil::details_abi::ProcessLocalData>::Acquire(char const *,wil::details_abi::ProcessLocalStorageData<wil::details_abi::ProcessLocalData> * *)",
+    "ea": "0x180007654",
+    "function_file": "functions/180007654_wil_details_abi_ProcessLocalStorageData_wil_details_abi_ProcessLocalData_Acquire_char_const_wil_details_abi_Pr.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "api-ms-win-core-synch-l1-1-0!CreateMutexExW",
+      "api-ms-win-core-synch-l1-1-0!ReleaseMutex",
+      "api-ms-win-core-synch-l1-1-0!WaitForSingleObjectEx"
+    ],
+    "matched_strings": [],
+    "name": "?Acquire@?$ProcessLocalStorageData@UProcessLocalData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *)",
+    "rank_score": 1023,
+    "size": 502,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "wil::details::ProcessHeapAlloc(ulong,unsigned __int64)",
+    "ea": "0x180003584",
+    "function_file": "functions/180003584_wil_details_ProcessHeapAlloc_ulong_unsigned_int64.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "?ProcessHeapAlloc@details@wil@@YAPEAXK_K@Z",
+    "prototype": "LPVOID __fastcall(DWORD dwFlags, SIZE_T dwBytes)",
+    "rank_score": 858,
+    "size": 158,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "wil::details::ReportUsageToServiceDirect(wil_details_FeatureReportingCache *,uint,int,int,wil_details_ServiceReportingKind,uint,unsigned __int64,uchar)",
+    "ea": "0x180003248",
+    "function_file": "functions/180003248_wil_details_ReportUsageToServiceDirect_wil_details_FeatureReportingCache_uint_int_int_wil_details_ServiceRepor.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "?ReportUsageToServiceDirect@details@wil@@YAHPEAUwil_details_FeatureReportingCache@@IHHW4wil_details_ServiceReportingKind@@I_KE@Z",
+    "prototype": "__int64 __fastcall(__int64, unsigned int, int, int, unsigned int, __int64, __int64, char)",
+    "rank_score": 830,
+    "size": 523,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "CommandImpl::GetExternalCommandFunction(wchar_t const *,char const *)",
+    "ea": "0x18000892c",
+    "function_file": "functions/18000892c_CommandImpl_GetExternalCommandFunction_wchar_t_const_char_const.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoTaskMemFree",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress",
+      "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExW"
+    ],
+    "matched_strings": [
+      "updiag.dll",
+      "ProcessAnalyzeCommand",
+      "C:\\__w\\1\\s\\src\\updatecli\\libs\\main\\CommandImpl.hpp",
+      "C:\\__w\\1\\s\\src\\updatecli\\libs\\main\\CommandImpl.hpp"
+    ],
+    "name": "?GetExternalCommandFunction@CommandImpl@@CA?AU?$pair@V?$unique_any_t@V?$unique_storage@U?$resource_policy@PEAUHINSTANCE__@@P6AHPEAU1@@Z$1?FreeLibrary@@YAH0@ZU?$integral_constant@_K$0A@@wistd@@PEAU1@PEAU1@$0A@$$T@details@wil@@@details@wil@@@wil@@P6AJPEB_W@Z@std@@PEB_WPEBD@Z",
+    "prototype": "HMODULE *__fastcall(HMODULE *)",
+    "rank_score": 826,
+    "size": 602,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "Telemetry4UpdateCli::RunCmd::Stop(wchar_t const *,wchar_t const *,long)",
+    "ea": "0x18000c3d0",
+    "function_file": "functions/18000c3d0_Telemetry4UpdateCli_RunCmd_Stop_wchar_t_const_wchar_t_const_long.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "?Stop@RunCmd@Telemetry4UpdateCli@@QEAAXPEB_W0J@Z",
+    "prototype": "void __fastcall(Telemetry4UpdateCli::RunCmd *__hidden this, const wchar_t *, const wchar_t *, int)",
+    "rank_score": 826,
+    "size": 1103,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "Telemetry4UpdateCli::RunCmd::StopActivity(void)",
+    "ea": "0x18000cbb0",
+    "function_file": "functions/18000cbb0_Telemetry4UpdateCli_RunCmd_StopActivity_void.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "?StopActivity@RunCmd@Telemetry4UpdateCli@@MEAAXXZ",
+    "prototype": "void __fastcall(Telemetry4UpdateCli::RunCmd *__hidden this)",
+    "rank_score": 823,
+    "size": 820,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x1800110b8",
+    "function_file": "functions/1800110b8_security_init_cookie.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId",
+      "api-ms-win-core-profile-l1-1-0!QueryPerformanceCounter",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemTimeAsFileTime"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 823,
+    "size": 183,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "Telemetry4UpdateCli::RunCmd::StartActivity(wchar_t const *,wchar_t const *)",
+    "ea": "0x18000acf4",
+    "function_file": "functions/18000acf4_Telemetry4UpdateCli_RunCmd_StartActivity_wchar_t_const_wchar_t_const.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive",
+      "api-ms-win-eventing-provider-l1-1-0!EventActivityIdControl"
+    ],
+    "matched_strings": [],
+    "name": "?StartActivity@RunCmd@Telemetry4UpdateCli@@QEAAXPEB_W0@Z",
+    "prototype": "void __fastcall(Telemetry4UpdateCli::RunCmd *__hidden this, const wchar_t *, const wchar_t *)",
+    "rank_score": 821,
+    "size": 577,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::ThreadLocalData::~ThreadLocalData(void)",
+    "ea": "0x1800064d0",
+    "function_file": "functions/1800064d0_wil_details_abi_ThreadLocalData_ThreadLocalData_void.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "??1ThreadLocalData@details_abi@wil@@QEAA@XZ",
+    "prototype": "void __fastcall(wil::details_abi::ThreadLocalData *__hidden this)",
+    "rank_score": 803,
+    "size": 146,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__raise_securityfailure",
+    "ea": "0x180010ab4",
+    "function_file": "functions/180010ab4_raise_securityfailure.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!SetUnhandledExceptionFilter",
+      "api-ms-win-core-errorhandling-l1-1-0!UnhandledExceptionFilter",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-processthreads-l1-1-0!TerminateProcess"
+    ],
+    "matched_strings": [],
+    "name": "__raise_securityfailure",
+    "prototype": "BOOL __fastcall(struct _EXCEPTION_POINTERS *ExceptionInfo)",
+    "rank_score": 711,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CliMain::ProcessCliCommand(wchar_t const *)",
+    "ea": "0x180008e40",
+    "function_file": "functions/180008e40_CliMain_ProcessCliCommand_wchar_t_const.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoInitializeEx",
+      "api-ms-win-core-com-l1-1-0!CoUninitialize",
+      "api-ms-win-core-heap-l2-1-0!LocalFree"
+    ],
+    "matched_strings": [
+      "C:\\__w\\1\\s\\packages\\Microsoft.Windows.Wil.Internal.0.3.30\\inc\\wil\\opensource\\wil\\resource.h"
+    ],
+    "name": "?ProcessCliCommand@CliMain@@SAJPEB_W@Z",
+    "prototype": "__int64 __fastcall(const wchar_t *)",
+    "rank_score": 666,
+    "size": 181,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 1,
+    "demangled": "CommandImpl::RunCommand(wchar_t const *)",
+    "ea": "0x1800084bc",
+    "function_file": "functions/1800084bc_CommandImpl_RunCommand_wchar_t_const.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-shcore-obsolete-l1-1-0!CommandLineToArgvW"
+    ],
+    "matched_strings": [],
+    "name": "?RunCommand@CommandImpl@@QEAAJPEB_W@Z",
+    "prototype": "__int64 __fastcall(CommandImpl *__hidden this, const wchar_t *)",
+    "rank_score": 644,
+    "size": 906,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "wil::ActivityBase<Telemetry4UpdateCli,1,70368744177664,5,16777216,_TlgReflectorTag_Param0IsProviderType>::LockExclusive(void)",
+    "ea": "0x18000d038",
+    "function_file": "functions/18000d038_wil_ActivityBase_Telemetry4UpdateCli_1_70368744177664_5_16777216_TlgReflectorTag_Param0IsProviderType_LockExcl.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "?LockExclusive@?$ActivityBase@VTelemetry4UpdateCli@@$00$0EAAAAAAAAAAA@$04$0BAAAAAA@U_TlgReflectorTag_Param0IsProviderType@@@wil@@AEAA?AV?$unique_any_t@V?$unique_storage@U?$resource_policy@PEAU_RTL_SRWLOCK@@P6AXPEAU1@@Z$1?ReleaseSRWLockExclusive@@YAX0@ZU?$integral_constant@_K$00@wistd@@PEAU1@PEAU1@$0A@$$T@details@wil@@@details@wil@@@2@XZ",
+    "prototype": "RTL_SRWLOCK **__fastcall(__int64, RTL_SRWLOCK **)",
+    "rank_score": 627,
+    "size": 154,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil::details::static_lazy<Telemetry4UpdateCli>::Completer::~Completer(void)",
+    "ea": "0x180003bd0",
+    "function_file": "functions/180003bd0_wil_details_static_lazy_Telemetry4UpdateCli_Completer_Completer_void.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-2-0!InitOnceComplete",
+      "api-ms-win-eventing-provider-l1-1-0!EventRegister",
+      "api-ms-win-eventing-provider-l1-1-0!EventSetInformation"
+    ],
+    "matched_strings": [],
+    "name": "??1Completer@?$static_lazy@VTelemetry4UpdateCli@@@details@wil@@QEAA@XZ",
+    "prototype": "BOOL __fastcall(_DWORD *)",
+    "rank_score": 625,
+    "size": 234,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "wil::details::LogFailure(void *,uint,char const *,char const *,char const *,void *,wil::FailureType,wil::details::ResultStatus const &,wchar_t const *,bool,wchar_t *,unsigned __int64,char *,unsigned __int64,wil::FailureFlags,wil::FailureInfo *)",
+    "ea": "0x180005a50",
+    "function_file": "functions/180005a50_wil_details_LogFailure_void_uint_char_const_char_const_char_const_void_wil_FailureType_wil_details_ResultStatu.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!IsDebuggerPresent",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringW",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "?LogFailure@details@wil@@YAXPEAXIPEBD110W4FailureType@2@AEBUResultStatus@12@PEB_W_NPEA_W_KPEAD7W4FailureFlags@2@PEAUFailureInfo@2@@Z",
+    "prototype": "void __fastcall(__int64, int, __int64, __int64, __int64, __int64, int, unsigned int *, _WORD *, __int64, wil *lpOutputString, __int64, _BYTE *, __int64, int, unsigned __int64)",
+    "rank_score": 617,
+    "size": 771,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "wil::details::EnsureSubscribedToFeatureConfigurationChanges(void)",
+    "ea": "0x180003aa8",
+    "function_file": "functions/180003aa8_wil_details_EnsureSubscribedToFeatureConfigurationChanges_void.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "?EnsureSubscribedToFeatureConfigurationChanges@details@wil@@YAIXZ",
+    "prototype": "__int64 __fastcall(wil::details *this)",
+    "rank_score": 616,
+    "size": 187,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "wil::details::ReportFailure_NoReturn<0>(void *,uint,char const *,char const *,char const *,void *,wil::details::ResultStatus const &,wchar_t const *,wil::details::ReportFailureOptions)",
+    "ea": "0x18000d66c",
+    "function_file": "functions/18000d66c_wil_details_ReportFailure_NoReturn_0_void_uint_char_const_char_const_char_const_void_wil_details_ResultStatus_.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!IsDebuggerPresent",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringW",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "??$ReportFailure_NoReturn@$0A@@details@wil@@YAXPEAXIPEBD110AEBUResultStatus@01@PEB_WW4ReportFailureOptions@01@@Z",
+    "prototype": "void __fastcall __noreturn(unsigned __int64, unsigned int, unsigned __int64, __int64, int, unsigned __int64, unsigned __int64 *, _WORD *)",
+    "rank_score": 615,
+    "size": 718,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "wil::details::ReportFailure_Return<1>(void *,uint,char const *,char const *,char const *,void *,wil::details::ResultStatus const &,wchar_t const *,wil::details::ReportFailureOptions,wil::FailureFlags)",
+    "ea": "0x18000739c",
+    "function_file": "functions/18000739c_wil_details_ReportFailure_Return_1_void_uint_char_const_char_const_char_const_void_wil_details_ResultStatus_co.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!IsDebuggerPresent",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringW",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "??$ReportFailure_Return@$00@details@wil@@YAXPEAXIPEBD110AEBUResultStatus@01@PEB_WW4ReportFailureOptions@01@W4FailureFlags@1@@Z",
+    "prototype": "void __fastcall(unsigned __int64, unsigned int, unsigned __int64, __int64, int, unsigned __int64, unsigned __int64 *, _WORD *)",
+    "rank_score": 615,
+    "size": 687,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "wil::details::ReportFailure_NoReturn<3>(void *,uint,char const *,char const *,char const *,void *,wil::details::ResultStatus const &,wchar_t const *,wil::details::ReportFailureOptions)",
+    "ea": "0x180006cf4",
+    "function_file": "functions/180006cf4_wil_details_ReportFailure_NoReturn_3_void_uint_char_const_char_const_char_const_void_wil_details_ResultStatus_.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!IsDebuggerPresent",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringW",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "??$ReportFailure_NoReturn@$02@details@wil@@YAXPEAXIPEBD110AEBUResultStatus@01@PEB_WW4ReportFailureOptions@01@@Z",
+    "prototype": "void __fastcall __noreturn(unsigned __int64, unsigned int, unsigned __int64, __int64, int, unsigned __int64, __int64, _WORD *)",
+    "rank_score": 614,
+    "size": 642,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil::details::RtlDllShutdownInProgress(void)",
+    "ea": "0x1800069c0",
+    "function_file": "functions/1800069c0_wil_details_RtlDllShutdownInProgress_void.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ntdll.dll",
+      "RtlDllShutdownInProgress"
+    ],
+    "name": "?RtlDllShutdownInProgress@details@wil@@YAEXZ",
+    "prototype": "char __fastcall(wil::details *this)",
+    "rank_score": 492,
+    "size": 95,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wistd::__function::__func<`wil::K32GetModuleFileNameExW<wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&CoTaskMemFree(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>>,128>(void *,HINSTANCE__ *,wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&CoTaskMemFree(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>> &)'::`2'::_lambda_1_,long (wchar_t *,unsigned __int64,unsigned __int64 *)>::operator()(wchar_t * &&,unsigned __int64 &&,unsigned __int64 * &&)",
+    "ea": "0x18000bb20",
+    "function_file": "functions/18000bb20_wistd_function_func_wil_K32GetModuleFileNameExW_wil_unique_any_t_wil_details_unique_storage_wil_details_resour.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleFileNameW",
+      "api-ms-win-core-psapi-l1-1-0!K32GetModuleFileNameExW"
+    ],
+    "matched_strings": [
+      "C:\\__w\\1\\s\\packages\\Microsoft.Windows.Wil.Internal.0.3.30\\inc\\wil\\opensource\\wil\\win32_helpers.h"
+    ],
+    "name": "??R?$__func@V_lambda_1_@?1???$K32GetModuleFileNameExW@V?$unique_any_t@V?$unique_storage@U?$resource_policy@PEA_WP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEA_WPEA_W$0A@$$T@details@wil@@@details@wil@@@wil@@$0IA@@wil@@YAJPEAXPEAUHINSTANCE__@@AEAV?$unique_any_t@V?$unique_storage@U?$resource_policy@PEA_WP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEA_WPEA_W$0A@$$T@details@wil@@@details@wil@@@2@@Z@$$A6AJPEA_W_KPEA_K@Z@__function@wistd@@UEAAJ$$QEAPEA_W$$QEA_K$$QEAPEA_K@Z",
+    "prototype": "__int64 __fastcall(__int64, WCHAR **, unsigned __int64 *, __int64 **)",
+    "rank_score": 473,
+    "size": 182,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "wil::details::MicrosoftInternalNotifyFailure(wil::FailureInfo *)",
+    "ea": "0x180006a30",
+    "function_file": "functions/180006a30_wil_details_MicrosoftInternalNotifyFailure_wil_FailureInfo.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress"
+    ],
+    "matched_strings": [
+      "kernelbase.dll"
+    ],
+    "name": "?MicrosoftInternalNotifyFailure@details@wil@@YAXPEAUFailureInfo@2@@Z",
+    "prototype": "void __fastcall(wil::details *__hidden this, struct wil::FailureInfo *)",
+    "rank_score": 465,
+    "size": 296,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil::details::WilDynamicLoadRaiseFailFastException(_EXCEPTION_RECORD *,_CONTEXT *,ulong)",
+    "ea": "0x180004cf0",
+    "function_file": "functions/180004cf0_wil_details_WilDynamicLoadRaiseFailFastException_EXCEPTION_RECORD_CONTEXT_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW",
+      "api-ms-win-core-libraryloader-l1-2-0!GetProcAddress"
+    ],
+    "matched_strings": [
+      "kernelbase.dll"
+    ],
+    "name": "?WilDynamicLoadRaiseFailFastException@details@wil@@YAXPEAU_EXCEPTION_RECORD@@PEAU_CONTEXT@@K@Z",
+    "prototype": "void __fastcall(wil::details *this, struct _EXCEPTION_RECORD *, struct _CONTEXT *)",
+    "rank_score": 462,
+    "size": 88,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "wil::details::FormatNtStatusMsg(long,wchar_t *,ulong)",
+    "ea": "0x180006940",
+    "function_file": "functions/180006940_wil_details_FormatNtStatusMsg_long_wchar_t_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW",
+      "api-ms-win-core-localization-l1-2-0!FormatMessageW"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "?FormatNtStatusMsg@details@wil@@YAXJPEA_WK@Z",
+    "prototype": "void __fastcall(DWORD dwMessageId, LPWSTR lpBuffer, DWORD nSize)",
+    "rank_score": 451,
+    "size": 112,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 17,
+    "demangled": "_CxxThrowException",
+    "ea": "0x18001440c",
+    "function_file": "functions/18001440c_CxxThrowException.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!RaiseException",
+      "api-ms-win-core-rtlsupport-l1-1-0!RtlPcToFileHeader"
+    ],
+    "matched_strings": [],
+    "name": "_CxxThrowException",
+    "prototype": "void __stdcall __noreturn(void *pExceptionObject, _ThrowInfo *pThrowInfo)",
+    "rank_score": 420,
+    "size": 166,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 7,
+    "demangled": "wil::GetFailureLogString(wchar_t *,unsigned __int64,wil::FailureInfo const &)",
+    "ea": "0x180004724",
+    "function_file": "functions/180004724_wil_GetFailureLogString_wchar_t_unsigned_int64_wil_FailureInfo_const.md",
+    "matched_imports": [
+      "api-ms-win-core-localization-l1-2-0!FormatMessageW",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "?GetFailureLogString@wil@@YAJPEA_W_KAEBUFailureInfo@1@@Z",
+    "prototype": "__int64 __fastcall(wil *this, wchar_t *, __int64, const struct wil::FailureInfo *)",
+    "rank_score": 417,
+    "size": 692,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CommandImpl::GetMessageW(ulong,bool)",
+    "ea": "0x18000884c",
+    "function_file": "functions/18000884c_CommandImpl_GetMessageW_ulong_bool.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l2-1-0!LocalFree",
+      "api-ms-win-core-localization-l1-2-0!FormatMessageW"
+    ],
+    "matched_strings": [],
+    "name": "?GetMessageW@CommandImpl@@CA?AV?$unique_ptr@_WU?$function_deleter@P6APEAXPEAX@Z$1?LocalFree@@YAPEAX0@Z@wil@@@wistd@@K_N@Z",
+    "prototype": "_QWORD *__fastcall(_QWORD *, DWORD, unsigned __int8)",
+    "rank_score": 416,
+    "size": 187,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "wil::ActivityBase<Telemetry4UpdateCli,1,70368744177664,5,16777216,_TlgReflectorTag_Param0IsProviderType>::ActivityData<Telemetry4UpdateCli,_TlgReflectorTag_Param0IsProviderType>::~ActivityData<Telemetry4UpdateCli,_TlgReflectorTag_Param0IsProviderType>(void)",
+    "ea": "0x18000d14c",
+    "function_file": "functions/18000d14c_wil_ActivityBase_Telemetry4UpdateCli_1_70368744177664_5_16777216_TlgReflectorTag_Param0IsProviderType_Activity.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "??1?$ActivityData@VTelemetry4UpdateCli@@U_TlgReflectorTag_Param0IsProviderType@@@?$ActivityBase@VTelemetry4UpdateCli@@$00$0EAAAAAAAAAAA@$04$0BAAAAAA@U_TlgReflectorTag_Param0IsProviderType@@@wil@@QEAA@XZ",
+    "prototype": "void __fastcall(__int64)",
+    "rank_score": 416,
+    "size": 120,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "wil::details::SubscribeFeatureStateCacheToConfigurationChanges(wil_details_FeatureStateCache *,wil_FeatureChangeTime,uint)",
+    "ea": "0x180003820",
+    "function_file": "functions/180003820_wil_details_SubscribeFeatureStateCacheToConfigurationChanges_wil_details_FeatureStateCache_wil_FeatureChangeTi.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "?SubscribeFeatureStateCacheToConfigurationChanges@details@wil@@YAXPEATwil_details_FeatureStateCache@@W4wil_FeatureChangeTime@@I@Z",
+    "prototype": "void __fastcall(volatile signed __int32 *, int, int)",
+    "rank_score": 416,
+    "size": 143,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "`wil::details::EnabledStateManager::EnsureSubscribedToFeatureConfigurationChangesImpl(void)'::`5'::_lambda_1_::_lambda_invoker_cdecl_(void *)",
+    "ea": "0x1800038c0",
+    "function_file": "functions/1800038c0_wil_details_EnabledStateManager_EnsureSubscribedToFeatureConfigurationChangesImpl_void_5_lambda_1_lambda_invok.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "?_lambda_invoker_cdecl_@_lambda_1_@?4??EnsureSubscribedToFeatureConfigurationChangesImpl@EnabledStateManager@details@wil@@AEAAIXZ@SA@PEAX@Z",
+    "prototype": "void __fastcall(__int64)",
+    "rank_score": 412,
+    "size": 130,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "`wil::details::EnsureCoalescedTimer<wil::details::EnabledStateManager>(wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<_TP_TIMER *,void (*)(_TP_TIMER *),&wil::details::DestroyThreadPoolTimer<wil::details::SystemThreadPoolMethods,0>::Destroy(_TP_TIMER *),wistd::integral_constant<unsigned __int64,0>,_TP_TIMER *,_TP_TIMER *,0,std::nullptr_t>>> &,bool &,wil::details::EnabledStateManager *)'::`8'::_lambda_1_::_lambda_invoker_cdecl_(_TP_CALLBACK_INSTANCE *,void *,_TP_TIMER *)",
+    "ea": "0x180002e80",
+    "function_file": "functions/180002e80_wil_details_EnsureCoalescedTimer_wil_details_EnabledStateManager_wil_unique_any_t_wil_details_unique_storage_w.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "?_lambda_invoker_cdecl_@_lambda_1_@?7???$EnsureCoalescedTimer@VEnabledStateManager@details@wil@@@details@wil@@YAXAEAV?$unique_any_t@V?$unique_storage@U?$resource_policy@PEAU_TP_TIMER@@P6AXPEAU1@@Z$1?Destroy@?$DestroyThreadPoolTimer@USystemThreadPoolMethods@details@wil@@$0A@@details@wil@@SAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAU1@PEAU1@$0A@$$T@details@wil@@@details@wil@@@3@AEA_NPEAVEnabledStateManager@23@@Z@SA@PEAU_TP_CALLBACK_INSTANCE@@PEAXPEAU_TP_TIMER@@@Z",
+    "prototype": "void __fastcall(PTP_CALLBACK_INSTANCE Instance, RTL_SRWLOCK *Context, PTP_TIMER Timer)",
+    "rank_score": 412,
+    "size": 68,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "`wil::details::RecordFeatureUsageCallback(uint,wil_details_ServiceReportingKind,uint,wil_details_FeatureReportingCache *,wil_details_RecordUsageResult *)'::`17'::_lambda_1_::_lambda_invoker_cdecl_(void *)",
+    "ea": "0x180003200",
+    "function_file": "functions/180003200_wil_details_RecordFeatureUsageCallback_uint_wil_details_ServiceReportingKind_uint_wil_details_FeatureReporting.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "?_lambda_invoker_cdecl_@_lambda_1_@?BB@??RecordFeatureUsageCallback@details@wil@@YAXIW4wil_details_ServiceReportingKind@@IPEAUwil_details_FeatureReportingCache@@PEAUwil_details_RecordUsageResult@@@Z@SA@PEAX@Z",
+    "prototype": "void()",
+    "rank_score": 412,
+    "size": 63,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "wil::details::GetContextAndNotifyFailure(wil::FailureInfo *,char *,unsigned __int64)",
+    "ea": "0x180006730",
+    "function_file": "functions/180006730_wil_details_GetContextAndNotifyFailure_wil_FailureInfo_char_unsigned_int64.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "?GetContextAndNotifyFailure@details@wil@@YAXPEAUFailureInfo@2@PEAD_K@Z",
+    "prototype": "void __fastcall(unsigned __int64 this, struct wil::FailureInfo *, char *)",
+    "rank_score": 410,
+    "size": 522,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::ThreadLocalFailureInfo::Set(wil::FailureInfo const &,uint)",
+    "ea": "0x1800062c8",
+    "function_file": "functions/1800062c8_wil_details_abi_ThreadLocalFailureInfo_Set_wil_FailureInfo_const_uint.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?Set@ThreadLocalFailureInfo@details_abi@wil@@QEAAXAEBUFailureInfo@3@I@Z",
+    "prototype": "void __fastcall(wil::details_abi::ThreadLocalFailureInfo *this, const struct wil::FailureInfo *, int)",
+    "rank_score": 410,
+    "size": 512,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "_Mbrtowc",
+    "ea": "0x18000f804",
+    "function_file": "functions/18000f804_Mbrtowc.md",
+    "matched_imports": [
+      "api-ms-win-core-string-l1-1-0!MultiByteToWideChar"
+    ],
+    "matched_strings": [],
+    "name": "_Mbrtowc",
+    "prototype": "int __cdecl(wchar_t *, const char *, size_t, mbstate_t *, const _Cvtvec *)",
+    "rank_score": 409,
+    "size": 409,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__vcrt_freeptd_for_this_thread",
+    "ea": "0x180011f48",
+    "function_file": "functions/180011f48_vcrt_freeptd_for_this_thread.md",
+    "matched_imports": [
+      "api-ms-win-core-fibers-l1-1-0!FlsGetValue",
+      "api-ms-win-core-fibers-l1-1-0!FlsSetValue"
+    ],
+    "matched_strings": [],
+    "name": "__vcrt_freeptd_for_this_thread",
+    "prototype": "void()",
+    "rank_score": 403,
+    "size": 71,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::ThreadLocalStorage<wil::details_abi::ThreadLocalData>::~ThreadLocalStorage<wil::details_abi::ThreadLocalData>(void)",
+    "ea": "0x180007d10",
+    "function_file": "functions/180007d10_wil_details_abi_ThreadLocalStorage_wil_details_abi_ThreadLocalData_ThreadLocalStorage_wil_details_abi_ThreadLo.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "??1?$ThreadLocalStorage@UThreadLocalData@details_abi@wil@@@details_abi@wil@@QEAA@XZ",
+    "prototype": "void __fastcall(__int64 *)",
+    "rank_score": 403,
+    "size": 111,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::ThreadLocalStorage<wil::details::ThreadFailureCallbackHolder *>::~ThreadLocalStorage<wil::details::ThreadFailureCallbackHolder *>(void)",
+    "ea": "0x180007164",
+    "function_file": "functions/180007164_wil_details_abi_ThreadLocalStorage_wil_details_ThreadFailureCallbackHolder_ThreadLocalStorage_wil_details_Thre.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "??1?$ThreadLocalStorage@PEAVThreadFailureCallbackHolder@details@wil@@@details_abi@wil@@QEAA@XZ",
+    "prototype": "void __fastcall(_QWORD *)",
+    "rank_score": 402,
+    "size": 102,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "std::_Lockit::~_Lockit(void)",
+    "ea": "0x18000fa3c",
+    "function_file": "functions/18000fa3c_std_Lockit_Lockit_void.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!LeaveCriticalSection",
+      "api-ms-win-crt-locale-l1-1-0!_unlock_locales"
+    ],
+    "matched_strings": [],
+    "name": "??1_Lockit@std@@QEAA@XZ",
+    "prototype": "void __fastcall(std::_Lockit *__hidden this)",
+    "rank_score": 310,
+    "size": 53,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "_CommandImpl::ProcessExternalCommand_AnalyzeCommandTraits__::_1_::catch$3",
+    "ea": "0x180015ac6",
+    "function_file": "functions/180015ac6_CommandImpl_ProcessExternalCommand_AnalyzeCommandTraits_1_catch_3.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "updiag.dll",
+      "updiag.dll",
+      "ProcessAnalyzeCommand",
+      "C:\\__w\\1\\s\\src\\updatecli\\libs\\main\\CommandImpl.hpp",
+      "C:\\__w\\1\\s\\src\\updatecli\\libs\\main\\CommandImpl.hpp",
+      "Failed to get external command function from %ws!%hs"
+    ],
+    "name": "_CommandImpl::ProcessExternalCommand_AnalyzeCommandTraits__::_1_::catch$3",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 275,
+    "size": 148,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CliUtils::GetThisHandle(bool)",
+    "ea": "0x180008390",
+    "function_file": "functions/180008390_CliUtils_GetThisHandle_bool.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleExW"
+    ],
+    "matched_strings": [
+      "C:\\__w\\1\\s\\src\\updatecli\\libs\\_inc\\CliUtils.hpp"
+    ],
+    "name": "?GetThisHandle@CliUtils@@SAPEAUHINSTANCE__@@_N@Z",
+    "prototype": "HINSTANCE __fastcall(unsigned __int8)",
+    "rank_score": 255,
+    "size": 112,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CommandImpl::ProcessExternalCommand<AnalyzeCommandTraits>(wchar_t const *,wchar_t const *)",
+    "ea": "0x180008f30",
+    "function_file": "functions/180008f30_CommandImpl_ProcessExternalCommand_AnalyzeCommandTraits_wchar_t_const_wchar_t_const.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibrary"
+    ],
+    "matched_strings": [],
+    "name": "??$ProcessExternalCommand@UAnalyzeCommandTraits@@@CommandImpl@@CAJPEB_W0@Z",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 233,
+    "size": 66,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&CoTaskMemFree(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>>::~unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&CoTaskMemFree(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>>(void)",
+    "ea": "0x18000c3b0",
+    "function_file": "functions/18000c3b0_wil_unique_any_t_wil_details_unique_storage_wil_details_resource_policy_wchar_t_void_void_CoTaskMemFree_void_w.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "??1?$unique_any_t@V?$unique_storage@U?$resource_policy@PEA_WP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEA_WPEA_W$0A@$$T@details@wil@@@details@wil@@@wil@@QEAA@XZ",
+    "prototype": "void __fastcall(void **)",
+    "rank_score": 233,
+    "size": 23,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "Telemetry4UpdateCli::RunCmd::~RunCmd(void)",
+    "ea": "0x18000d1cc",
+    "function_file": "functions/18000d1cc_Telemetry4UpdateCli_RunCmd_RunCmd_void.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "??1RunCmd@Telemetry4UpdateCli@@QEAA@XZ",
+    "prototype": "void __fastcall(Telemetry4UpdateCli::RunCmd *__hidden this)",
+    "rank_score": 232,
+    "size": 292,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 6,
+    "demangled": "Telemetry4UpdateCli::Instance(void)",
+    "ea": "0x180004158",
+    "function_file": "functions/180004158_Telemetry4UpdateCli_Instance_void.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-2-0!InitOnceBeginInitialize"
+    ],
+    "matched_strings": [],
+    "name": "?Instance@Telemetry4UpdateCli@@KAPEAV1@XZ",
+    "prototype": "struct Telemetry4UpdateCli *(void)",
+    "rank_score": 231,
+    "size": 204,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "CommandImpl::ShowDetailedHelp(wchar_t const *,uint,ulong)",
+    "ea": "0x180008cdc",
+    "function_file": "functions/180008cdc_CommandImpl_ShowDetailedHelp_wchar_t_const_uint_ulong.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l2-1-0!LocalFree"
+    ],
+    "matched_strings": [],
+    "name": "?ShowDetailedHelp@CommandImpl@@CAXPEB_WIK@Z",
+    "prototype": "void __fastcall(const wchar_t *, unsigned int, DWORD)",
+    "rank_score": 230,
+    "size": 289,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "CommandLineBase::Parse(wchar_t const * *,unsigned __int64,wchar_t const * *,unsigned __int64)",
+    "ea": "0x180007dec",
+    "function_file": "functions/180007dec_CommandLineBase_Parse_wchar_t_const_unsigned_int64_wchar_t_const_unsigned_int64.md",
+    "matched_imports": [
+      "api-ms-win-core-string-l1-1-0!CompareStringW"
+    ],
+    "matched_strings": [],
+    "name": "?Parse@CommandLineBase@@QEAAJPEAPEB_W_K01@Z",
+    "prototype": "__int64 __fastcall(CommandLineBase *this, const wchar_t **, unsigned __int64, const wchar_t **)",
+    "rank_score": 225,
+    "size": 1048,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "DllMain",
+    "ea": "0x180003b6c",
+    "function_file": "functions/180003b6c_DllMain.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!DisableThreadLibraryCalls"
+    ],
+    "matched_strings": [],
+    "name": "DllMain",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 224,
+    "size": 91,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "wil::ActivityBase<Telemetry4UpdateCli,1,70368744177664,5,16777216,_TlgReflectorTag_Param0IsProviderType>::NotifyFailure(wil::FailureInfo const &)",
+    "ea": "0x18000c830",
+    "function_file": "functions/18000c830_wil_ActivityBase_Telemetry4UpdateCli_1_70368744177664_5_16777216_TlgReflectorTag_Param0IsProviderType_NotifyFa.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "?NotifyFailure@?$ActivityBase@VTelemetry4UpdateCli@@$00$0EAAAAAAAAAAA@$04$0BAAAAAA@U_TlgReflectorTag_Param0IsProviderType@@@wil@@UEAA_NAEBUFailureInfo@2@@Z",
+    "prototype": "char __fastcall(_QWORD *, int *)",
+    "rank_score": 223,
+    "size": 881,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Telemetry4UpdateCli::`vector deleting destructor'(uint)",
+    "ea": "0x180003cc0",
+    "function_file": "functions/180003cc0_Telemetry4UpdateCli_vector_deleting_destructor_uint.md",
+    "matched_imports": [
+      "api-ms-win-eventing-provider-l1-1-0!EventUnregister"
+    ],
+    "matched_strings": [],
+    "name": "??_ETelemetry4UpdateCli@@UEAAPEAXI@Z",
+    "prototype": "Telemetry4UpdateCli *__fastcall(Telemetry4UpdateCli *this, char)",
+    "rank_score": 222,
+    "size": 85,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::~basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>(void)",
+    "ea": "0x18000d3b4",
+    "function_file": "functions/18000d3b4_std_basic_string_wchar_t_std_char_traits_wchar_t_std_allocator_wchar_t_basic_string_wchar_t_std_char_traits_wc.md",
+    "matched_imports": [
+      "api-ms-win-crt-runtime-l1-1-0!_invoke_watson"
+    ],
+    "matched_strings": [],
+    "name": "??1?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@XZ",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 220,
+    "size": 115,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>::~basic_string<char,std::char_traits<char>,std::allocator<char>>(void)",
+    "ea": "0x18000a040",
+    "function_file": "functions/18000a040_std_basic_string_char_std_char_traits_char_std_allocator_char_basic_string_char_std_char_traits_char_std_alloc.md",
+    "matched_imports": [
+      "api-ms-win-crt-runtime-l1-1-0!_invoke_watson"
+    ],
+    "matched_strings": [],
+    "name": "??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ",
+    "prototype": "void __fastcall(__int64)",
+    "rank_score": 219,
+    "size": 114,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<HINSTANCE__ *,int (*)(HINSTANCE__ *),&FreeLibrary(HINSTANCE__ *),wistd::integral_constant<unsigned __int64,0>,HINSTANCE__ *,HINSTANCE__ *,0,std::nullptr_t>>>::~unique_any_t<wil::details::unique_storage<wil::details::resource_policy<HINSTANCE__ *,int (*)(HINSTANCE__ *),&FreeLibrary(HINSTANCE__ *),wistd::integral_constant<unsigned __int64,0>,HINSTANCE__ *,HINSTANCE__ *,0,std::nullptr_t>>>(void)",
+    "ea": "0x1800024c0",
+    "function_file": "functions/1800024c0_wil_unique_any_t_wil_details_unique_storage_wil_details_resource_policy_HINSTANCE_int_HINSTANCE_FreeLibrary_HI.md",
+    "matched_imports": [
+      "api-ms-win-core-libraryloader-l1-2-0!FreeLibrary"
+    ],
+    "matched_strings": [],
+    "name": "??1?$unique_any_t@V?$unique_storage@U?$resource_policy@PEAUHINSTANCE__@@P6AHPEAU1@@Z$1?FreeLibrary@@YAH0@ZU?$integral_constant@_K$0A@@wistd@@PEAU1@PEAU1@$0A@$$T@details@wil@@@details@wil@@@wil@@QEAA@XZ",
+    "prototype": "BOOL __fastcall(HMODULE *)",
+    "rank_score": 216,
+    "size": 23,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::ThreadLocalStorage<wil::details::ThreadFailureCallbackHolder *>::GetLocal(bool)",
+    "ea": "0x1800070ac",
+    "function_file": "functions/1800070ac_wil_details_abi_ThreadLocalStorage_wil_details_ThreadFailureCallbackHolder_GetLocal_bool.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "?GetLocal@?$ThreadLocalStorage@PEAVThreadFailureCallbackHolder@details@wil@@@details_abi@wil@@QEAAPEAPEAVThreadFailureCallbackHolder@details@3@_N@Z",
+    "prototype": "signed __int64 __fastcall(__int64, char)",
+    "rank_score": 214,
+    "size": 175,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "`Telemetry4UpdateCli::Instance(void)'::`2'::_lambda_1_::_lambda_invoker_cdecl_(void)",
+    "ea": "0x1800040e0",
+    "function_file": "functions/1800040e0_Telemetry4UpdateCli_Instance_void_2_lambda_1_lambda_invoker_cdecl_void.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-2-0!InitOnceBeginInitialize"
+    ],
+    "matched_strings": [],
+    "name": "?_lambda_invoker_cdecl_@_lambda_1_@?1??Instance@Telemetry4UpdateCli@@KAPEAV3@XZ@SA@XZ",
+    "prototype": "void __fastcall()",
+    "rank_score": 213,
+    "size": 112,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CommandImpl::~CommandImpl(void)",
+    "ea": "0x180008efc",
+    "function_file": "functions/180008efc_CommandImpl_CommandImpl_void.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l2-1-0!LocalFree"
+    ],
+    "matched_strings": [],
+    "name": "??1CommandImpl@@QEAA@XZ",
+    "prototype": "void __fastcall(CommandImpl *__hidden this)",
+    "rank_score": 212,
+    "size": 35,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "_tlgWriteTransfer_EventWriteTransfer",
+    "ea": "0x180001350",
+    "function_file": "functions/180001350_tlgWriteTransfer_EventWriteTransfer.md",
+    "matched_imports": [
+      "api-ms-win-eventing-provider-l1-1-0!EventWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "_tlgWriteTransfer_EventWriteTransfer",
+    "prototype": "ULONG __fastcall(__int64, unsigned __int8 *, const GUID *, const GUID *, ULONG UserDataCount, PEVENT_DATA_DESCRIPTOR UserData)",
+    "rank_score": 210,
+    "size": 179,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::_Allocate_for_capacity<0>(std::allocator<wchar_t> &,unsigned __int64 &)",
+    "ea": "0x18000d518",
+    "function_file": "functions/18000d518_std_basic_string_wchar_t_std_char_traits_wchar_t_std_allocator_wchar_t_Allocate_for_capacity_0_std_allocator_w.md",
+    "matched_imports": [
+      "api-ms-win-crt-runtime-l1-1-0!_invoke_watson"
+    ],
+    "matched_strings": [],
+    "name": "??$_Allocate_for_capacity@$0A@@?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@CAPEA_WAEAV?$allocator@_W@1@AEA_K@Z",
+    "prototype": "_QWORD *__fastcall(__int64, unsigned __int64 *)",
+    "rank_score": 209,
+    "size": 142,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "_Wcrtomb",
+    "ea": "0x18000feb4",
+    "function_file": "functions/18000feb4_Wcrtomb.md",
+    "matched_imports": [
+      "api-ms-win-core-string-l1-1-0!WideCharToMultiByte"
+    ],
+    "matched_strings": [],
+    "name": "_Wcrtomb",
+    "prototype": "int __cdecl(char *, wchar_t, mbstate_t *, const _Cvtvec *)",
+    "rank_score": 207,
+    "size": 160,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "std::_Init_locks::~_Init_locks(void)",
+    "ea": "0x18000f9f8",
+    "function_file": "functions/18000f9f8_std_Init_locks_Init_locks_void.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1_Init_locks@std@@QEAA@XZ",
+    "prototype": "void __fastcall(std::_Init_locks *__hidden this)",
+    "rank_score": 205,
+    "size": 60,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "__vcrt_uninitialize_locks",
+    "ea": "0x1800141ec",
+    "function_file": "functions/1800141ec_vcrt_uninitialize_locks.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "__vcrt_uninitialize_locks",
+    "prototype": "char()",
+    "rank_score": 204,
+    "size": 55,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::GetThreadLocalDataCache(bool)",
+    "ea": "0x180006568",
+    "function_file": "functions/180006568_wil_details_abi_GetThreadLocalDataCache_bool.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "?GetThreadLocalDataCache@details_abi@wil@@YAPEAUThreadLocalData@12@_N@Z",
+    "prototype": "struct wil::details_abi::ThreadLocalData *__fastcall(wil::details_abi *this)",
+    "rank_score": 204,
+    "size": 183,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "wistd::unique_ptr<wchar_t,wil::function_deleter<void * (*)(void *),&LocalFree(void *)>>::~unique_ptr<wchar_t,wil::function_deleter<void * (*)(void *),&LocalFree(void *)>>(void)",
+    "ea": "0x1800092ec",
+    "function_file": "functions/1800092ec_wistd_unique_ptr_wchar_t_wil_function_deleter_void_void_LocalFree_void_unique_ptr_wchar_t_wil_function_deleter.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l2-1-0!LocalFree"
+    ],
+    "matched_strings": [],
+    "name": "??1?$unique_ptr@_WU?$function_deleter@P6APEAXPEAX@Z$1?LocalFree@@YAPEAX0@Z@wil@@@wistd@@QEAA@XZ",
+    "prototype": "HLOCAL __fastcall(HLOCAL *)",
+    "rank_score": 204,
+    "size": 33,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil::details::ThreadFailureCallbackHolder::~ThreadFailureCallbackHolder(void)",
+    "ea": "0x18000cf4c",
+    "function_file": "functions/18000cf4c_wil_details_ThreadFailureCallbackHolder_ThreadFailureCallbackHolder_void.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "??1ThreadFailureCallbackHolder@details@wil@@QEAA@XZ",
+    "prototype": "void __fastcall(wil::details::ThreadFailureCallbackHolder *this)",
+    "rank_score": 203,
+    "size": 107,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 17,
+    "demangled": "_o___std_exception_copy_0",
+    "ea": "0x18001012c",
+    "function_file": "functions/18001012c_o_std_exception_copy_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o___std_exception_copy"
+    ],
+    "matched_strings": [],
+    "name": "_o___std_exception_copy_0",
+    "prototype": "__int64()",
+    "rank_score": 117,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "_o___stdio_common_vswprintf_0",
+    "ea": "0x180010144",
+    "function_file": "functions/180010144_o_stdio_common_vswprintf_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o___stdio_common_vswprintf"
+    ],
+    "matched_strings": [],
+    "name": "_o___stdio_common_vswprintf_0",
+    "prototype": "int __cdecl(unsigned __int64 Options, wchar_t *Buffer, size_t BufferCount, const wchar_t *Format, _locale_t Locale, va_list ArgList)",
+    "rank_score": 112,
+    "size": 6,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_o__configure_narrow_argv_0",
+    "ea": "0x180010174",
+    "function_file": "functions/180010174_o_configure_narrow_argv_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o__configure_narrow_argv"
+    ],
+    "matched_strings": [],
+    "name": "_o__configure_narrow_argv_0",
+    "prototype": "errno_t __cdecl(_crt_argv_mode mode)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_o__seh_filter_dll_0",
+    "ea": "0x180010208",
+    "function_file": "functions/180010208_o_seh_filter_dll_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o__seh_filter_dll"
+    ],
+    "matched_strings": [],
+    "name": "_o__seh_filter_dll_0",
+    "prototype": "int __cdecl(unsigned int ExceptionNum, struct _EXCEPTION_POINTERS *ExceptionPtr)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 11,
+    "demangled": "abort",
+    "ea": "0x180010238",
+    "function_file": "functions/180010238_abort.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o_abort"
+    ],
+    "matched_strings": [],
+    "name": "abort",
+    "prototype": "void __cdecl __noreturn()",
+    "rank_score": 111,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 7,
+    "demangled": "free",
+    "ea": "0x18001028c",
+    "function_file": "functions/18001028c_free.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o_free"
+    ],
+    "matched_strings": [],
+    "name": "free",
+    "prototype": "void __cdecl(void *Block)",
+    "rank_score": 107,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "_o__errno_0",
+    "ea": "0x18001018c",
+    "function_file": "functions/18001018c_o_errno_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o__errno"
+    ],
+    "matched_strings": [],
+    "name": "_o__errno_0",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64)",
+    "rank_score": 106,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "_o___std_exception_destroy_0",
+    "ea": "0x180010138",
+    "function_file": "functions/180010138_o_std_exception_destroy_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o___std_exception_destroy"
+    ],
+    "matched_strings": [],
+    "name": "_o___std_exception_destroy_0",
+    "prototype": "__int64()",
+    "rank_score": 105,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "_o_fwrite_0",
+    "ea": "0x1800102a4",
+    "function_file": "functions/1800102a4_o_fwrite_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o_fwrite"
+    ],
+    "matched_strings": [],
+    "name": "_o_fwrite_0",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64)",
+    "rank_score": 102,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil::details::ReportFailure_GetLastError<3>(void *,uint,char const *,char const *,char const *,void *)",
+    "ea": "0x180005df8",
+    "function_file": "functions/180005df8_wil_details_ReportFailure_GetLastError_3_void_uint_char_const_char_const_char_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "C:\\__w\\1\\s\\packages\\Microsoft.Windows.Wil.Internal.0.3.30\\inc\\wil\\opensource\\wil\\resource.h",
+      "C:\\__w\\1\\s\\packages\\Microsoft.Windows.Wil.Internal.0.3.30\\inc\\wil\\opensource\\wil\\resource.h"
+    ],
+    "name": "??$ReportFailure_GetLastError@$02@details@wil@@YAKPEAXIPEBD110@Z",
+    "prototype": "void __fastcall __noreturn(wil::details *, void *, __int64, const char *, int, char *)",
+    "rank_score": 95,
+    "size": 128,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil::K32GetModuleFileNameExW<wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&CoTaskMemFree(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>>,128>(void *,HINSTANCE__ *)",
+    "ea": "0x180009224",
+    "function_file": "functions/180009224_wil_K32GetModuleFileNameExW_wil_unique_any_t_wil_details_unique_storage_wil_details_resource_policy_wchar_t_vo.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "C:\\__w\\1\\s\\packages\\Microsoft.Windows.Wil.Internal.0.3.30\\inc\\wil\\opensource\\wil\\win32_helpers.h"
+    ],
+    "name": "??$K32GetModuleFileNameExW@V?$unique_any_t@V?$unique_storage@U?$resource_policy@PEA_WP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEA_WPEA_W$0A@$$T@details@wil@@@details@wil@@@wil@@$0IA@@wil@@YA?AV?$unique_any_t@V?$unique_storage@U?$resource_policy@PEA_WP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEA_WPEA_W$0A@$$T@details@wil@@@details@wil@@@0@PEAXPEAUHINSTANCE__@@@Z",
+    "prototype": "char *__fastcall(char *)",
+    "rank_score": 76,
+    "size": 182,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CliMain::ProcessCliCommand_::_1_::catch$7",
+    "ea": "0x180015a78",
+    "function_file": "functions/180015a78_CliMain_ProcessCliCommand_1_catch_7.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "C:\\__w\\1\\s\\src\\updatecli\\libs\\main\\CliMain.cpp"
+    ],
+    "name": "_CliMain::ProcessCliCommand_::_1_::catch$7",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, const char *)",
+    "rank_score": 61,
+    "size": 54,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CommandImpl::ShowDetailedHelp_::_1_::catch$3",
+    "ea": "0x180015a03",
+    "function_file": "functions/180015a03_CommandImpl_ShowDetailedHelp_1_catch_3.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "C:\\__w\\1\\s\\src\\updatecli\\libs\\main\\CommandImpl.hpp"
+    ],
+    "name": "_CommandImpl::ShowDetailedHelp_::_1_::catch$3",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 61,
+    "size": 75,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CommandImpl::ShowHelp_::_1_::catch$3",
+    "ea": "0x1800159a3",
+    "function_file": "functions/1800159a3_CommandImpl_ShowHelp_1_catch_3.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "C:\\__w\\1\\s\\src\\updatecli\\libs\\main\\CommandImpl.hpp"
+    ],
+    "name": "_CommandImpl::ShowHelp_::_1_::catch$3",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, const char *)",
+    "rank_score": 61,
+    "size": 54,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil::details::ReportFailure_Hr<3>(void *,uint,char const *,char const *,char const *,void *,long,wil::FailureFlags)",
+    "ea": "0x180005d94",
+    "function_file": "functions/180005d94_wil_details_ReportFailure_Hr_3_void_uint_char_const_char_const_char_const_void_long_wil_FailureFlags.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "C:\\__w\\1\\s\\packages\\Microsoft.Windows.Wil.Internal.0.3.30\\inc\\wil\\opensource\\wil\\resource.h"
+    ],
+    "name": "??$ReportFailure_Hr@$02@details@wil@@YAXPEAXIPEBD110JW4FailureFlags@1@@Z",
+    "prototype": "void __fastcall __noreturn(__int64, __int64, __int64, __int64, int, __int64)",
+    "rank_score": 54,
+    "size": 93,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "wil::details::in1diag3::Log_Hr(void *,uint,char const *,long)",
+    "ea": "0x18000cf08",
+    "function_file": "functions/18000cf08_wil_details_in1diag3_Log_Hr_void_uint_char_const_long.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "C:\\__w\\1\\s\\packages\\Microsoft.Windows.Wil.Internal.0.3.30\\inc\\wil\\opensource\\wil\\result.h"
+    ],
+    "name": "?Log_Hr@in1diag3@details@wil@@YAJPEAXIPEBDJ@Z",
+    "prototype": "__int64 __fastcall(wil::details::in1diag3 *this, void *, __int64, const char *)",
+    "rank_score": 54,
+    "size": 60,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "wil::details::FeatureImpl<__WilFeatureTraits_Feature_Calliope_UpdateCli>::GetCachedFeatureEnabledState(void)",
+    "ea": "0x180002214",
+    "function_file": "functions/180002214_wil_details_FeatureImpl_WilFeatureTraits_Feature_Calliope_UpdateCli_GetCachedFeatureEnabledState_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetCachedFeatureEnabledState@?$FeatureImpl@U__WilFeatureTraits_Feature_Calliope_UpdateCli@@@details@wil@@AEAA?ATwil_details_FeatureStateCache@@XZ",
+    "prototype": "_QWORD *__fastcall(wil::details *, _QWORD *)",
+    "rank_score": 38,
+    "size": 234,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 68,
+    "demangled": "__security_check_cookie",
+    "ea": "0x180010310",
+    "function_file": "functions/180010310_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 92,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x1800148e0",
+    "function_file": "functions/1800148e0_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 30,
+    "demangled": "operator delete(void *,unsigned __int64)",
+    "ea": "0x180010334",
+    "function_file": "functions/180010334_operator_delete_void_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??3@YAXPEAX_K@Z",
+    "prototype": "void __fastcall(void *Block)",
+    "rank_score": 36,
+    "size": 5,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 21,
+    "demangled": "memmove",
+    "ea": "0x180014d20",
+    "function_file": "functions/180014d20_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 35,
+    "size": 1645,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartup",
+    "ea": "0x180010a70",
+    "function_file": "functions/180010a70_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartup",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 33,
+    "size": 61,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wistd::__function::__func<`wil::K32GetModuleFileNameExW<wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&CoTaskMemFree(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>>,128>(void *,HINSTANCE__ *,wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&CoTaskMemFree(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>> &)'::`2'::_lambda_1_,long (wchar_t *,unsigned __int64,unsigned __int64 *)>::`vector deleting destructor'(uint)",
+    "ea": "0x18000ba80",
+    "function_file": "functions/18000ba80_wistd_function_func_wil_K32GetModuleFileNameExW_wil_unique_any_t_wil_details_unique_storage_wil_details_resour.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_E?$__func@V_lambda_1_@?1???$K32GetModuleFileNameExW@V?$unique_any_t@V?$unique_storage@U?$resource_policy@PEA_WP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEA_WPEA_W$0A@$$T@details@wil@@@details@wil@@@wil@@$0IA@@wil@@YAJPEAXPEAUHINSTANCE__@@AEAV?$unique_any_t@V?$unique_storage@U?$resource_policy@PEA_WP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEA_WPEA_W$0A@$$T@details@wil@@@details@wil@@@2@@Z@$$A6AJPEA_W_KPEA_K@Z@__function@wistd@@UEAAPEAXI@Z",
+    "prototype": "_QWORD *__fastcall(_QWORD *, char)",
+    "rank_score": 32,
+    "size": 43,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CommandImpl::GetExternalCommandFunction_::_1_::dtor$0",
+    "ea": "0x1800158b6",
+    "function_file": "functions/1800158b6_CommandImpl_GetExternalCommandFunction_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CommandImpl::GetExternalCommandFunction_::_1_::dtor$0",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 31,
+    "size": 12,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "CommandImpl::ShowHelp(wchar_t const *,wchar_t const *)",
+    "ea": "0x180008b90",
+    "function_file": "functions/180008b90_CommandImpl_ShowHelp_wchar_t_const_wchar_t_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ShowHelp@CommandImpl@@CAJPEB_W0@Z",
+    "prototype": "__int64 __fastcall(const wchar_t *, const wchar_t *)",
+    "rank_score": 29,
+    "size": 323,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 20,
+    "demangled": "memset",
+    "ea": "0x180014960",
+    "function_file": "functions/180014960_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 29,
+    "size": 904,
+    "tags": []
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 1,
+    "demangled": "dllmain_crt_process_attach",
+    "ea": "0x180010798",
+    "function_file": "functions/180010798_dllmain_crt_process_attach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_crt_process_attach",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 28,
+    "size": 273,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "dllmain_dispatch",
+    "ea": "0x18001093c",
+    "function_file": "functions/18001093c_dllmain_dispatch.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_dispatch",
+    "prototype": "__int64 __fastcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 28,
+    "size": 295,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "wil::details::FeatureImpl<__WilExternalFeatureTraits_Feature_UxAccOptimization>::GetCachedFeatureEnabledState(void)",
+    "ea": "0x1800026f8",
+    "function_file": "functions/1800026f8_wil_details_FeatureImpl_WilExternalFeatureTraits_Feature_UxAccOptimization_GetCachedFeatureEnabledState_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetCachedFeatureEnabledState@?$FeatureImpl@U__WilExternalFeatureTraits_Feature_UxAccOptimization@@@details@wil@@AEAA?ATwil_details_FeatureStateCache@@XZ",
+    "prototype": "_QWORD *__fastcall(wil::details *, _QWORD *)",
+    "rank_score": 28,
+    "size": 234,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "wil::details::FeatureImpl<__WilFeatureTraits_Feature_Calliope>::GetCachedFeatureEnabledState(void)",
+    "ea": "0x1800029dc",
+    "function_file": "functions/1800029dc_wil_details_FeatureImpl_WilFeatureTraits_Feature_Calliope_GetCachedFeatureEnabledState_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetCachedFeatureEnabledState@?$FeatureImpl@U__WilFeatureTraits_Feature_Calliope@@@details@wil@@AEAA?ATwil_details_FeatureStateCache@@XZ",
+    "prototype": "_QWORD *__fastcall(wil::details *, _QWORD *)",
+    "rank_score": 28,
+    "size": 234,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "FH4::HandlerMap4::DecompHandler(void)",
+    "ea": "0x18001384c",
+    "function_file": "functions/18001384c_FH4_HandlerMap4_DecompHandler_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DecompHandler@HandlerMap4@FH4@@AEAAXXZ",
+    "prototype": "void __fastcall(FH4::HandlerMap4 *__hidden this)",
+    "rank_score": 27,
+    "size": 392,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_after_initialize_c",
+    "ea": "0x180010380",
+    "function_file": "functions/180010380_scrt_dllmain_after_initialize_c.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_after_initialize_c",
+    "prototype": "char()",
+    "rank_score": 27,
+    "size": 52,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "dllmain_crt_dispatch",
+    "ea": "0x180010740",
+    "function_file": "functions/180010740_dllmain_crt_dispatch.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_crt_dispatch",
+    "prototype": "__int64 __fastcall(__int64, int, __int64)",
+    "rank_score": 26,
+    "size": 80,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil::details::FeatureImpl<__WilFeatureTraits_Feature_Calliope_UpdateCli>::ReportUsage(bool,wil::ReportingKind,unsigned __int64)",
+    "ea": "0x180002304",
+    "function_file": "functions/180002304_wil_details_FeatureImpl_WilFeatureTraits_Feature_Calliope_UpdateCli_ReportUsage_bool_wil_ReportingKind_unsigne.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ReportUsage@?$FeatureImpl@U__WilFeatureTraits_Feature_Calliope_UpdateCli@@@details@wil@@QEAAX_NW4ReportingKind@3@_K@Z",
+    "prototype": "__int64 __fastcall(wil::details *, unsigned __int8)",
+    "rank_score": 26,
+    "size": 153,
+    "tags": [
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x180014510",
+    "function_file": "functions/180014510_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 25,
+    "size": 96,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil::ActivityBase<Telemetry4UpdateCli,1,70368744177664,5,16777216,_TlgReflectorTag_Param0IsProviderType>::~ActivityBase<Telemetry4UpdateCli,1,70368744177664,5,16777216,_TlgReflectorTag_Param0IsProviderType>(void)",
+    "ea": "0x18000cfc0",
+    "function_file": "functions/18000cfc0_wil_ActivityBase_Telemetry4UpdateCli_1_70368744177664_5_16777216_TlgReflectorTag_Param0IsProviderType_Activity.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$ActivityBase@VTelemetry4UpdateCli@@$00$0EAAAAAAAAAAA@$04$0BAAAAAA@U_TlgReflectorTag_Param0IsProviderType@@@wil@@QEAA@XZ",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 25,
+    "size": 113,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ProcessUpdateCliCommand(wchar_t const *)",
+    "ea": "0x1800021a0",
+    "function_file": "functions/1800021a0_ProcessUpdateCliCommand_wchar_t_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ProcessUpdateCliCommand@@YAJPEB_W@Z",
+    "prototype": "__int64 __fastcall(const wchar_t *)",
+    "rank_score": 23,
+    "size": 49,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 19,
+    "demangled": "__vcrt_getptd",
+    "ea": "0x180011f98",
+    "function_file": "functions/180011f98_vcrt_getptd.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__vcrt_getptd",
+    "prototype": "__int64()",
+    "rank_score": 22,
+    "size": 25,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_wil::K32GetModuleFileNameExW_wil::unique_any_t_wil::details::unique_storage_wil::details::resource_policy_wchar_t___void_(__cdecl_)(void__)_&CoTaskMemFree_wistd::integral_constant_unsigned___int64_0__wchar_t___wchar_t___0_std::nullptr_t______128__::_1_::dtor$0",
+    "ea": "0x180015be3",
+    "function_file": "functions/180015be3_wil_K32GetModuleFileNameExW_wil_unique_any_t_wil_details_unique_storage_wil_details_resource_policy_wchar_t_vo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_wil::K32GetModuleFileNameExW_wil::unique_any_t_wil::details::unique_storage_wil::details::resource_policy_wchar_t___void_(__cdecl_)(void__)_&CoTaskMemFree_wistd::integral_constant_unsigned___int64_0__wchar_t___wchar_t___0_std::nullptr_t______128__::_1_::dtor$0",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 22,
+    "size": 38,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 6,
+    "demangled": "StringCchPrintfW(wchar_t *,unsigned __int64,wchar_t const *,...)",
+    "ea": "0x180004558",
+    "function_file": "functions/180004558_StringCchPrintfW_wchar_t_unsigned_int64_wchar_t_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?StringCchPrintfW@@YAJPEA_W_KPEB_WZZ",
+    "prototype": "__int64(wchar_t *Buffer, __int64, const wchar_t *, ...)",
+    "rank_score": 21,
+    "size": 183,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CommandImpl::GetExternalCommandFunction_::_1_::dtor$3",
+    "ea": "0x1800158ec",
+    "function_file": "functions/1800158ec_CommandImpl_GetExternalCommandFunction_1_dtor_3.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CommandImpl::GetExternalCommandFunction_::_1_::dtor$3",
+    "prototype": "BOOL __fastcall(__int64, __int64)",
+    "rank_score": 21,
+    "size": 12,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CommandImpl::ProcessExternalCommand_AnalyzeCommandTraits__::_1_::dtor$0",
+    "ea": "0x180015ab4",
+    "function_file": "functions/180015ab4_CommandImpl_ProcessExternalCommand_AnalyzeCommandTraits_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CommandImpl::ProcessExternalCommand_AnalyzeCommandTraits__::_1_::dtor$0",
+    "prototype": "BOOL __fastcall(__int64, __int64)",
+    "rank_score": 21,
+    "size": 12,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CommandImpl::RunCommand_::_1_::dtor$0",
+    "ea": "0x180015880",
+    "function_file": "functions/180015880_CommandImpl_RunCommand_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CommandImpl::RunCommand_::_1_::dtor$0",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 21,
+    "size": 12,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "dllmain_crt_process_detach",
+    "ea": "0x1800108b0",
+    "function_file": "functions/1800108b0_dllmain_crt_process_detach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_crt_process_detach",
+    "prototype": "__int64 __fastcall(char)",
+    "rank_score": 21,
+    "size": 131,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 6,
+    "demangled": "std::ios_base::~ios_base(void)",
+    "ea": "0x18000e144",
+    "function_file": "functions/18000e144_std_ios_base_ios_base_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1ios_base@std@@UEAA@XZ",
+    "prototype": "void __fastcall(std::ios_base *__hidden this)",
+    "rank_score": 20,
+    "size": 239,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "wistd::__function::__func<`wil::K32GetModuleFileNameExW<wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&CoTaskMemFree(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>>,128>(void *,HINSTANCE__ *,wil::unique_any_t<wil::details::unique_storage<wil::details::resource_policy<wchar_t *,void (*)(void *),&CoTaskMemFree(void *),wistd::integral_constant<unsigned __int64,0>,wchar_t *,wchar_t *,0,std::nullptr_t>>> &)'::`2'::_lambda_1_,long (wchar_t *,unsigned __int64,unsigned __int64 *)>::__move(wistd::__function::__base<long (wchar_t *,unsigned __int64,unsigned __int64 *)> *)",
+    "ea": "0x18000bb00",
+    "function_file": "functions/18000bb00_wistd_function_func_wil_K32GetModuleFileNameExW_wil_unique_any_t_wil_details_unique_storage_wil_details_resour.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?__move@?$__func@V_lambda_1_@?1???$K32GetModuleFileNameExW@V?$unique_any_t@V?$unique_storage@U?$resource_policy@PEA_WP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEA_WPEA_W$0A@$$T@details@wil@@@details@wil@@@wil@@$0IA@@wil@@YAJPEAXPEAUHINSTANCE__@@AEAV?$unique_any_t@V?$unique_storage@U?$resource_policy@PEA_WP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEA_WPEA_W$0A@$$T@details@wil@@@details@wil@@@2@@Z@$$A6AJPEA_W_KPEA_K@Z@__function@wistd@@UEAAXPEAV?$__base@$$A6AJPEA_W_KPEA_K@Z@23@@Z",
+    "prototype": "__int64 (__fastcall **__fastcall(__int64, __int64))()",
+    "rank_score": 20,
+    "size": 20,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "wil::details::ReportUsageToService(wil_details_FeatureReportingCache *,uint,int,int,FEATURE_LOGGED_TRAITS const *,int,wil_ReportingKind,unsigned __int64)",
+    "ea": "0x18000345c",
+    "function_file": "functions/18000345c_wil_details_ReportUsageToService_wil_details_FeatureReportingCache_uint_int_int_FEATURE_LOGGED_TRAITS_const_in.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ReportUsageToService@details@wil@@YAXPEAUwil_details_FeatureReportingCache@@IHHPEBUFEATURE_LOGGED_TRAITS@@HW4wil_ReportingKind@@_K@Z",
+    "prototype": "_UNKNOWN **__fastcall(__int64, unsigned int, __int64, __int64, __int64, unsigned int, int)",
+    "rank_score": 18,
+    "size": 288,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "_CommandImpl::GetExternalCommandFunction_::_1_::catch$32",
+    "ea": "0x180015922",
+    "function_file": "functions/180015922_CommandImpl_GetExternalCommandFunction_1_catch_32.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CommandImpl::GetExternalCommandFunction_::_1_::catch$32",
+    "prototype": "void __fastcall __noreturn(__int64, __int64)",
+    "rank_score": 17,
+    "size": 105,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 13,
+    "demangled": "wil::details::HrToNtStatus(long)",
+    "ea": "0x180004d50",
+    "function_file": "functions/180004d50_wil_details_HrToNtStatus_long.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?HrToNtStatus@details@wil@@YAJJ@Z",
+    "prototype": "__int64 __fastcall(wil::details *this)",
+    "rank_score": 17,
+    "size": 447,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil_details_FeatureReporting_RecordUsageInCache",
+    "ea": "0x180002ba4",
+    "function_file": "functions/180002ba4_wil_details_FeatureReporting_RecordUsageInCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureReporting_RecordUsageInCache",
+    "prototype": "__int64 __fastcall(__int64, volatile signed __int32 *, int)",
+    "rank_score": 17,
+    "size": 722,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CommandLineBase::ParseArg(unsigned __int64 *,unsigned __int64,wchar_t const * *,unsigned __int64,unsigned __int64,CommandLineArg *,unsigned __int64,wchar_t const *,wchar_t const * *)",
+    "ea": "0x18000820c",
+    "function_file": "functions/18000820c_CommandLineBase_ParseArg_unsigned_int64_unsigned_int64_wchar_t_const_unsigned_int64_unsigned_int64_CommandLine.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ParseArg@CommandLineBase@@AEAAJPEA_K_KPEAPEB_W11PEAUCommandLineArg@@1PEB_W2@Z",
+    "prototype": "__int64 __fastcall(CommandLineBase *__hidden this, unsigned __int64 *, unsigned __int64, const wchar_t **, unsigned __int64, unsigned __int64, struct CommandLineArg *, unsigned __int64, const wchar_t *, const wchar_t **)",
+    "rank_score": 16,
+    "size": 368,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "_NLG_Notify",
+    "ea": "0x180014240",
+    "function_file": "functions/180014240_NLG_Notify.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_NLG_Notify",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64)",
+    "rank_score": 16,
+    "size": 24,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_uninitialize_c",
+    "ea": "0x18001048c",
+    "function_file": "functions/18001048c_scrt_dllmain_uninitialize_c.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_uninitialize_c",
+    "prototype": "int()",
+    "rank_score": 16,
+    "size": 48,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "__scrt_is_ucrt_dll_in_use",
+    "ea": "0x180010f18",
+    "function_file": "functions/180010f18_scrt_is_ucrt_dll_in_use.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_is_ucrt_dll_in_use",
+    "prototype": "_BOOL8()",
+    "rank_score": 16,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 15,
+    "demangled": "atexit",
+    "ea": "0x1800106f0",
+    "function_file": "functions/1800106f0_atexit.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "atexit",
+    "prototype": "int __cdecl(void (__cdecl *)())",
+    "rank_score": 16,
+    "size": 23,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil::details::FeatureImpl<__WilFeatureTraits_Feature_Calliope_UpdateCli>::GetCurrentFeatureEnabledState(int *)",
+    "ea": "0x1800023a4",
+    "function_file": "functions/1800023a4_wil_details_FeatureImpl_WilFeatureTraits_Feature_Calliope_UpdateCli_GetCurrentFeatureEnabledState_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetCurrentFeatureEnabledState@?$FeatureImpl@U__WilFeatureTraits_Feature_Calliope_UpdateCli@@@details@wil@@AEAA?ATwil_details_FeatureStateCache@@PEAH@Z",
+    "prototype": "_QWORD *__fastcall(__int64, _QWORD *)",
+    "rank_score": 16,
+    "size": 277,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_crt_thread_attach",
+    "ea": "0x1800103d8",
+    "function_file": "functions/1800103d8_scrt_dllmain_crt_thread_attach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_crt_thread_attach",
+    "prototype": "char()",
+    "rank_score": 15,
+    "size": 40,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_exception_filter",
+    "ea": "0x180010424",
+    "function_file": "functions/180010424_scrt_dllmain_exception_filter.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_exception_filter",
+    "prototype": "int __fastcall(__int64, int, __int64, void (__fastcall *)(__int64, _QWORD, __int64), unsigned int ExceptionNum, struct _EXCEPTION_POINTERS *ExceptionPtr)",
+    "rank_score": 15,
+    "size": 95,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "FH4::DecompFuncInfo(uchar *,FH4::FuncInfo4 &,unsigned __int64,int,bool)",
+    "ea": "0x1800112d4",
+    "function_file": "functions/1800112d4_FH4_DecompFuncInfo_uchar_FH4_FuncInfo4_unsigned_int64_int_bool.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?DecompFuncInfo@FH4@@YA_JPEAEAEAUFuncInfo4@1@_KH_N@Z",
+    "prototype": "__int64 __fastcall(FH4 *this, unsigned __int8 *, struct FH4::FuncInfo4 *, int, char)",
+    "rank_score": 14,
+    "size": 300,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "_FindAndUnlinkFrame",
+    "ea": "0x180011954",
+    "function_file": "functions/180011954_FindAndUnlinkFrame.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_FindAndUnlinkFrame",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 14,
+    "size": 83,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "operator delete(void *)",
+    "ea": "0x180010c64",
+    "function_file": "functions/180010c64_operator_delete_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??3@YAXPEAX@Z",
+    "prototype": "void __cdecl(void *Block)",
+    "rank_score": 14,
+    "size": 5,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 5,
+    "demangled": "std::operator<<<wchar_t,std::char_traits<wchar_t>>(std::basic_ostream<wchar_t,std::char_traits<wchar_t>> &,wchar_t const *)",
+    "ea": "0x180008f78",
+    "function_file": "functions/180008f78_std_operator_wchar_t_std_char_traits_wchar_t_std_basic_ostream_wchar_t_std_char_traits_wchar_t_wchar_t_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$?6_WU?$char_traits@_W@std@@@std@@YAAEAV?$basic_ostream@_WU?$char_traits@_W@std@@@0@AEAV10@PEB_W@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 14,
+    "size": 510,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_crt_thread_detach",
+    "ea": "0x180010408",
+    "function_file": "functions/180010408_scrt_dllmain_crt_thread_detach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_crt_thread_detach",
+    "prototype": "char()",
+    "rank_score": 13,
+    "size": 21,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_uninitialize_critical",
+    "ea": "0x1800104c4",
+    "function_file": "functions/1800104c4_scrt_dllmain_uninitialize_critical.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_uninitialize_critical",
+    "prototype": "__vcrt_bool()",
+    "rank_score": 13,
+    "size": 20,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__std_type_info_compare",
+    "ea": "0x1800143c0",
+    "function_file": "functions/1800143c0_std_type_info_compare.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__std_type_info_compare",
+    "prototype": "int __fastcall(__int64, __int64)",
+    "rank_score": 13,
+    "size": 21,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "std::filesystem::path::operator/=(std::filesystem::path const &)",
+    "ea": "0x18000b44c",
+    "function_file": "functions/18000b44c_std_filesystem_path_operator_std_filesystem_path_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_0path@filesystem@std@@QEAAAEAV012@AEBV012@@Z",
+    "prototype": "std::filesystem *__fastcall(std::filesystem *Src, std::filesystem *)",
+    "rank_score": 13,
+    "size": 607,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil::details::FeatureImpl<__WilFeatureTraits_Feature_Calliope_UpdateCli>::__private_IsEnabled(void)",
+    "ea": "0x1800021d8",
+    "function_file": "functions/1800021d8_wil_details_FeatureImpl_WilFeatureTraits_Feature_Calliope_UpdateCli_private_IsEnabled_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?__private_IsEnabled@?$FeatureImpl@U__WilFeatureTraits_Feature_Calliope_UpdateCli@@@details@wil@@QEAA_NXZ",
+    "prototype": "char __fastcall(__int64)",
+    "rank_score": 13,
+    "size": 53,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CommandImpl::ProcessInternalCommand(long (*)(wchar_t const *,wchar_t const *),wchar_t const *,wchar_t const *)",
+    "ea": "0x180008910",
+    "function_file": "functions/180008910_CommandImpl_ProcessInternalCommand_long_wchar_t_const_wchar_t_const_wchar_t_const_wchar_t_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ProcessInternalCommand@CommandImpl@@CAJP6AJPEB_W0@Z00@Z",
+    "prototype": "__int64 __fastcall(__int64 (__fastcall *)(const wchar_t *, const wchar_t *), const wchar_t *, const wchar_t *)",
+    "rank_score": 12,
+    "size": 20,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Telemetry4UpdateCli::FallbackTelemetryCallback(bool,wil::FailureInfo const &)",
+    "ea": "0x180004230",
+    "function_file": "functions/180004230_Telemetry4UpdateCli_FallbackTelemetryCallback_bool_wil_FailureInfo_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?FallbackTelemetryCallback@Telemetry4UpdateCli@@SAX_NAEBUFailureInfo@wil@@@Z",
+    "prototype": "void __fastcall(char, const struct wil::FailureInfo *)",
+    "rank_score": 12,
+    "size": 52,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_before_initialize_c",
+    "ea": "0x1800103bc",
+    "function_file": "functions/1800103bc_scrt_dllmain_before_initialize_c.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_before_initialize_c",
+    "prototype": "bool()",
+    "rank_score": 12,
+    "size": 21,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 7,
+    "demangled": "operator new(unsigned __int64)",
+    "ea": "0x1800146e0",
+    "function_file": "functions/1800146e0_operator_new_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??2@YAPEAX_K@Z",
+    "prototype": "void *__fastcall(size_t Size)",
+    "rank_score": 12,
+    "size": 60,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CommandLineBase::CopyData(wchar_t const * *,unsigned __int64,wchar_t const * *,unsigned __int64,unsigned __int64 *)",
+    "ea": "0x180007d90",
+    "function_file": "functions/180007d90_CommandLineBase_CopyData_wchar_t_const_unsigned_int64_wchar_t_const_unsigned_int64_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CopyData@CommandLineBase@@SAJPEAPEB_W_K01PEA_K@Z",
+    "prototype": "__int64 __fastcall(const wchar_t **, unsigned __int64, const wchar_t **, unsigned __int64, unsigned __int64 *)",
+    "rank_score": 11,
+    "size": 57,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CliMain::ProcessCliCommand_::_1_::dtor$0",
+    "ea": "0x180015a54",
+    "function_file": "functions/180015a54_CliMain_ProcessCliCommand_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CliMain::ProcessCliCommand_::_1_::dtor$0",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CliMain::ProcessCliCommand_::_1_::dtor$1",
+    "ea": "0x180015a66",
+    "function_file": "functions/180015a66_CliMain_ProcessCliCommand_1_dtor_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CliMain::ProcessCliCommand_::_1_::dtor$1",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CommandImpl::GetExternalCommandFunction_::_1_::dtor$1",
+    "ea": "0x1800158c8",
+    "function_file": "functions/1800158c8_CommandImpl_GetExternalCommandFunction_1_dtor_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CommandImpl::GetExternalCommandFunction_::_1_::dtor$1",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CommandImpl::GetExternalCommandFunction_::_1_::dtor$17",
+    "ea": "0x180015910",
+    "function_file": "functions/180015910_CommandImpl_GetExternalCommandFunction_1_dtor_17.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CommandImpl::GetExternalCommandFunction_::_1_::dtor$17",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CommandImpl::GetExternalCommandFunction_::_1_::dtor$2",
+    "ea": "0x1800158da",
+    "function_file": "functions/1800158da_CommandImpl_GetExternalCommandFunction_1_dtor_2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CommandImpl::GetExternalCommandFunction_::_1_::dtor$2",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CommandImpl::GetExternalCommandFunction_::_1_::dtor$5",
+    "ea": "0x1800158fe",
+    "function_file": "functions/1800158fe_CommandImpl_GetExternalCommandFunction_1_dtor_5.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CommandImpl::GetExternalCommandFunction_::_1_::dtor$5",
+    "prototype": "HLOCAL __fastcall(__int64, __int64)",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CommandImpl::GetMessageW_::_1_::dtor$0",
+    "ea": "0x1800158a4",
+    "function_file": "functions/1800158a4_CommandImpl_GetMessageW_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CommandImpl::GetMessageW_::_1_::dtor$0",
+    "prototype": "HLOCAL __fastcall(__int64, __int64)",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CommandImpl::RunCommand_::_1_::dtor$8",
+    "ea": "0x180015892",
+    "function_file": "functions/180015892_CommandImpl_RunCommand_1_dtor_8.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CommandImpl::RunCommand_::_1_::dtor$8",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CommandImpl::ShowDetailedHelp_::_1_::dtor$0",
+    "ea": "0x1800159df",
+    "function_file": "functions/1800159df_CommandImpl_ShowDetailedHelp_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CommandImpl::ShowDetailedHelp_::_1_::dtor$0",
+    "prototype": "HLOCAL __fastcall(__int64, __int64)",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CommandImpl::ShowDetailedHelp_::_1_::dtor$2",
+    "ea": "0x1800159f1",
+    "function_file": "functions/1800159f1_CommandImpl_ShowDetailedHelp_1_dtor_2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CommandImpl::ShowDetailedHelp_::_1_::dtor$2",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CommandImpl::ShowHelp_::_1_::dtor$2",
+    "ea": "0x180015991",
+    "function_file": "functions/180015991_CommandImpl_ShowHelp_1_dtor_2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CommandImpl::ShowHelp_::_1_::dtor$2",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 6,
+    "demangled": "std::basic_ios<wchar_t,std::char_traits<wchar_t>>::setstate(int,bool)",
+    "ea": "0x1800097f4",
+    "function_file": "functions/1800097f4_std_basic_ios_wchar_t_std_char_traits_wchar_t_setstate_int_bool.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?setstate@?$basic_ios@_WU?$char_traits@_W@std@@@std@@QEAAXH_N@Z",
+    "prototype": "__int64 __fastcall(__int64, char, char)",
+    "rank_score": 11,
+    "size": 142,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 5,
+    "demangled": "std::endl<wchar_t,std::char_traits<wchar_t>>(std::basic_ostream<wchar_t,std::char_traits<wchar_t>> &)",
+    "ea": "0x18000917c",
+    "function_file": "functions/18000917c_std_endl_wchar_t_std_char_traits_wchar_t_std_basic_ostream_wchar_t_std_char_traits_wchar_t.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$endl@_WU?$char_traits@_W@std@@@std@@YAAEAV?$basic_ostream@_WU?$char_traits@_W@std@@@0@AEAV10@@Z",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 11,
+    "size": 162,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "wil::details::EnabledStateManager::RecordCachedUsageUnderLock(void)",
+    "ea": "0x180003020",
+    "function_file": "functions/180003020_wil_details_EnabledStateManager_RecordCachedUsageUnderLock_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?RecordCachedUsageUnderLock@EnabledStateManager@details@wil@@AEAAXXZ",
+    "prototype": "void __fastcall(wil::details::EnabledStateManager *__hidden this)",
+    "rank_score": 11,
+    "size": 465,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 6,
+    "demangled": "wil::details::WilFailFast(wil::FailureInfo const &)",
+    "ea": "0x180004298",
+    "function_file": "functions/180004298_wil_details_WilFailFast_wil_FailureInfo_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?WilFailFast@details@wil@@YAXAEBUFailureInfo@2@@Z",
+    "prototype": "void __fastcall __noreturn(wil::details *__hidden this, const struct wil::FailureInfo *)",
+    "rank_score": 11,
+    "size": 167,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "wil::details::_dynamic_atexit_destructor_for__g_threadFailureCallbacks__",
+    "ea": "0x180016250",
+    "function_file": "functions/180016250_wil_details_dynamic_atexit_destructor_for_g_threadFailureCallbacks.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil::details::_dynamic_atexit_destructor_for__g_threadFailureCallbacks__",
+    "prototype": "void()",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "wil::details::_dynamic_initializer_for__g_threadFailureCallbacks__",
+    "ea": "0x180001de0",
+    "function_file": "functions/180001de0_wil_details_dynamic_initializer_for_g_threadFailureCallbacks.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil::details::_dynamic_initializer_for__g_threadFailureCallbacks__",
+    "prototype": "int()",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CommandImpl::GetArguments(CommandLineArg * *,unsigned __int64 *)",
+    "ea": "0x180008e10",
+    "function_file": "functions/180008e10_CommandImpl_GetArguments_CommandLineArg_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetArguments@CommandImpl@@EEAAXPEAPEAUCommandLineArg@@PEA_K@Z",
+    "prototype": "void __fastcall(CommandImpl *__hidden this, struct CommandLineArg **, unsigned __int64 *)",
+    "rank_score": 10,
+    "size": 18,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CommandImpl::IsSwitchChar(wchar_t)",
+    "ea": "0x180008e30",
+    "function_file": "functions/180008e30_CommandImpl_IsSwitchChar_wchar_t.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IsSwitchChar@CommandImpl@@EEAA_N_W@Z",
+    "prototype": "bool __fastcall(CommandImpl *this, __int16)",
+    "rank_score": 10,
+    "size": 8,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CommandLineBase::CopyData(wchar_t const * *,unsigned __int64,bool *,unsigned __int64,unsigned __int64 *)",
+    "ea": "0x180007dd0",
+    "function_file": "functions/180007dd0_CommandLineBase_CopyData_wchar_t_const_unsigned_int64_bool_unsigned_int64_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CopyData@CommandLineBase@@SAJPEAPEB_W_KPEA_N1PEA_K@Z",
+    "prototype": "__int64 __fastcall(const wchar_t **, __int64, bool *, __int64, unsigned __int64 *)",
+    "rank_score": 10,
+    "size": 19,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Telemetry4UpdateCli::RunCmd::WasAlreadyReportedToTelemetry(long)",
+    "ea": "0x18000cef0",
+    "function_file": "functions/18000cef0_Telemetry4UpdateCli_RunCmd_WasAlreadyReportedToTelemetry_long.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?WasAlreadyReportedToTelemetry@RunCmd@Telemetry4UpdateCli@@MEAA_NJ@Z",
+    "prototype": "bool __fastcall(Telemetry4UpdateCli::RunCmd *__hidden this, int)",
+    "rank_score": 10,
+    "size": 18,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "_alloca_probe",
+    "ea": "0x180014870",
+    "function_file": "functions/180014870_alloca_probe.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_alloca_probe",
+    "prototype": "unsigned __int64 __fastcall()",
+    "rank_score": 10,
+    "size": 78,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<wchar_t>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapSz<wchar_t>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapSz<wchar_t>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapSz<char>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<wchar_t> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapSz<wchar_t> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapSz<wchar_t> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &)",
+    "ea": "0x18000140c",
+    "function_file": "functions/18000140c_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByVal@$07@@U?$_tlgWrapperByVal@$03@@U?$_tlgWrapSz@D@@U2@U3@U2@U?$_tlgWrapSz@_W@@U2@U3@U2@U3@U4@U2@U3@U4@U2@U2@U3@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EventWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$07@@AEBU?$_tlgWrapperByVal@$03@@AEBU?$_tlgWrapSz@D@@454AEBU?$_tlgWrapSz@_W@@45456456445@Z",
+    "prototype": "__int64 __fastcall(int, int, int, __int64, __int64, __int64, const wchar_t **, __int64, const wchar_t **, __int64, char **, __int64, const wchar_t **, __int64, const wchar_t **, char **, __int64, const wchar_t **, char **, __int64, __int64, const wchar_t **)",
+    "rank_score": 10,
+    "size": 752,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<wchar_t>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapSz<wchar_t>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapSz<wchar_t>,_tlgWrapSz<wchar_t>,_tlgWrapSz<wchar_t>,_tlgWrapperByVal<4>,_tlgWrapSz<char>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<wchar_t> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapSz<wchar_t> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapSz<wchar_t> const &,_tlgWrapSz<wchar_t> const &,_tlgWrapSz<wchar_t> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &)",
+    "ea": "0x180001704",
+    "function_file": "functions/180001704_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByVal@$07@@U1@U?$_tlgWrapperByVal@$03@@U?$_tlgWrapSz@D@@U2@U3@U2@U?$_tlgWrapSz@_W@@U2@U3@U2@U3@U4@U2@U3@U4@U4@U4@U2@U3@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EventWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$07@@3AEBU?$_tlgWrapperByVal@$03@@AEBU?$_tlgWrapSz@D@@454AEBU?$_tlgWrapSz@_W@@454564566645@Z",
+    "prototype": "__int64 __fastcall(int, int, int, __int64, __int64, __int64, __int64, const wchar_t **, __int64, const wchar_t **, __int64, char **, __int64, const wchar_t **, __int64, const wchar_t **, char **, __int64, const wchar_t **, char **, char **, char **, __int64, const wchar_t **)",
+    "rank_score": 10,
+    "size": 882,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<wchar_t>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapSz<wchar_t>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapSz<wchar_t>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<wchar_t> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapSz<wchar_t> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapSz<wchar_t> const &)",
+    "ea": "0x18000109c",
+    "function_file": "functions/18000109c_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByVal@$07@@U1@U?$_tlgWrapperByVal@$03@@U?$_tlgWrapSz@D@@U2@U3@U2@U?$_tlgWrapSz@_W@@U2@U3@U2@U3@U4@U2@U3@U4@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EventWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$07@@3AEBU?$_tlgWrapperByVal@$03@@AEBU?$_tlgWrapSz@D@@454AEBU?$_tlgWrapSz@_W@@45456456@Z",
+    "prototype": "__int64 __fastcall(int, int, int, __int64, __int64, __int64, __int64, const wchar_t **, __int64, const wchar_t **, __int64, char **, __int64, const wchar_t **, __int64, const wchar_t **, char **, __int64, const wchar_t **, char **)",
+    "rank_score": 10,
+    "size": 685,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "std::_Xlen_string(void)",
+    "ea": "0x18000d430",
+    "function_file": "functions/18000d430_std_Xlen_string_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Xlen_string@std@@YAXXZ",
+    "prototype": "void __fastcall __noreturn(const char *)",
+    "rank_score": 10,
+    "size": 10,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "_GetImageBase",
+    "ea": "0x1800119b0",
+    "function_file": "functions/1800119b0_GetImageBase.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_GetImageBase",
+    "prototype": "__int64()",
+    "rank_score": 9,
+    "size": 18,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<wchar_t>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapSz<wchar_t>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapSz<wchar_t>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<wchar_t> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapSz<wchar_t> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapSz<wchar_t> const &)",
+    "ea": "0x180001a7c",
+    "function_file": "functions/180001a7c_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByVal@$07@@U?$_tlgWrapperByVal@$03@@U?$_tlgWrapSz@D@@U2@U3@U2@U?$_tlgWrapSz@_W@@U2@U3@U2@U3@U4@U2@U3@U4@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EventWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$07@@AEBU?$_tlgWrapperByVal@$03@@AEBU?$_tlgWrapSz@D@@454AEBU?$_tlgWrapSz@_W@@45456456@Z",
+    "prototype": "__int64 __fastcall(int, int, int, __int64, __int64, __int64, const wchar_t **, __int64, const wchar_t **, __int64, char **, __int64, const wchar_t **, __int64, const wchar_t **, char **, __int64, const wchar_t **, char **)",
+    "rank_score": 9,
+    "size": 667,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "_GetThrowImageBase",
+    "ea": "0x1800119c8",
+    "function_file": "functions/1800119c8_GetThrowImageBase.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_GetThrowImageBase",
+    "prototype": "__int64()",
+    "rank_score": 8,
+    "size": 18,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "std::_Yarn<wchar_t>::~_Yarn<wchar_t>(void)",
+    "ea": "0x18000aa10",
+    "function_file": "functions/18000aa10_std_Yarn_wchar_t_Yarn_wchar_t_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$_Yarn@_W@std@@QEAA@XZ",
+    "prototype": "void __fastcall(void **)",
+    "rank_score": 8,
+    "size": 35,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "std::basic_filebuf<wchar_t,std::char_traits<wchar_t>>::_Endwrite(void)",
+    "ea": "0x18000f5e4",
+    "function_file": "functions/18000f5e4_std_basic_filebuf_wchar_t_std_char_traits_wchar_t_Endwrite_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Endwrite@?$basic_filebuf@_WU?$char_traits@_W@std@@@std@@IEAA_NXZ",
+    "prototype": "bool __fastcall(__int64)",
+    "rank_score": 8,
+    "size": 224,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "std::basic_ostream<wchar_t,std::char_traits<wchar_t>>::_Osfx(void)",
+    "ea": "0x1800099e0",
+    "function_file": "functions/1800099e0_std_basic_ostream_wchar_t_std_char_traits_wchar_t_Osfx_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Osfx@?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAXXZ",
+    "prototype": "__int64 __fastcall(__int64 *)",
+    "rank_score": 8,
+    "size": 81,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "std::basic_ostream<wchar_t,std::char_traits<wchar_t>>::sentry::sentry(std::basic_ostream<wchar_t,std::char_traits<wchar_t>> &)",
+    "ea": "0x18000957c",
+    "function_file": "functions/18000957c_std_basic_ostream_wchar_t_std_char_traits_wchar_t_sentry_sentry_std_basic_ostream_wchar_t_std_char_traits_wcha.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??0sentry@?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAA@AEAV12@@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 8,
+    "size": 137,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "__uncaught_exceptions",
+    "ea": "0x1800147a8",
+    "function_file": "functions/1800147a8_uncaught_exceptions.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__uncaught_exceptions",
+    "prototype": "__int64()",
+    "rank_score": 7,
+    "size": 27,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "wil::details::ReportFailure_Hr<2>(void *,uint,char const *,char const *,char const *,void *,long,wil::FailureFlags)",
+    "ea": "0x180006bb4",
+    "function_file": "functions/180006bb4_wil_details_ReportFailure_Hr_2_void_uint_char_const_char_const_char_const_void_long_wil_FailureFlags.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$ReportFailure_Hr@$01@details@wil@@YAXPEAXIPEBD110JW4FailureFlags@1@@Z",
+    "prototype": "__int64 __fastcall(__int64, int, __int64, __int64, __int64, __int64, wil::details *)",
+    "rank_score": 7,
+    "size": 91,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "wil::details::in1diag3::_FailFast_GetLastError(void *,uint,char const *)",
+    "ea": "0x180005ec4",
+    "function_file": "functions/180005ec4_wil_details_in1diag3_FailFast_GetLastError_void_uint_char_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_FailFast_GetLastError@in1diag3@details@wil@@YAXPEAXIPEBD@Z",
+    "prototype": "void __fastcall __noreturn(wil::details::in1diag3 *this, void *, __int64, const char *)",
+    "rank_score": 7,
+    "size": 20,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil::details::FeatureImpl<__WilFeatureTraits_Feature_Calliope>::GetCurrentFeatureEnabledState(int *)",
+    "ea": "0x1800028c0",
+    "function_file": "functions/1800028c0_wil_details_FeatureImpl_WilFeatureTraits_Feature_Calliope_GetCurrentFeatureEnabledState_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetCurrentFeatureEnabledState@?$FeatureImpl@U__WilFeatureTraits_Feature_Calliope@@@details@wil@@AEAA?ATwil_details_FeatureStateCache@@PEAH@Z",
+    "prototype": "_QWORD *__fastcall(__int64, _QWORD *)",
+    "rank_score": 6,
+    "size": 277,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "wil::details::ResultStatus::FromResult(long)",
+    "ea": "0x1800049e0",
+    "function_file": "functions/1800049e0_wil_details_ResultStatus_FromResult_long.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?FromResult@ResultStatus@details@wil@@SA?AU123@J@Z",
+    "prototype": "__int64 __fastcall(unsigned int *, unsigned int)",
+    "rank_score": 6,
+    "size": 36,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)",
+    "ea": "0x180005e80",
+    "function_file": "functions/180005e80_wil_details_in1diag3_Return_Hr_void_uint_char_const_long.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Return_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z",
+    "prototype": "void __fastcall(wil::details::in1diag3 *this, void *, int, const char *)",
+    "rank_score": 6,
+    "size": 30,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "FH4::UWMap4::ReadEntry(uchar * *)",
+    "ea": "0x180013f44",
+    "function_file": "functions/180013f44_FH4_UWMap4_ReadEntry_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ReadEntry@UWMap4@FH4@@AEAAXPEAPEAE@Z",
+    "prototype": "void __fastcall(FH4::UWMap4 *__hidden this, unsigned __int8 **)",
+    "rank_score": 5,
+    "size": 158,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "__scrt_stub_for_acrt_uninitialize_critical",
+    "ea": "0x1800147cc",
+    "function_file": "functions/1800147cc_scrt_stub_for_acrt_uninitialize_critical.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_stub_for_acrt_uninitialize_critical",
+    "prototype": "char()",
+    "rank_score": 5,
+    "size": 3,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil::details::ThreadFailureCallbackHolder::GetThreadContext(wil::FailureInfo *,wil::details::ThreadFailureCallbackHolder *,char *,unsigned __int64)",
+    "ea": "0x180006628",
+    "function_file": "functions/180006628_wil_details_ThreadFailureCallbackHolder_GetThreadContext_wil_FailureInfo_wil_details_ThreadFailureCallbackHold.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetThreadContext@ThreadFailureCallbackHolder@details@wil@@SA_NPEAUFailureInfo@3@PEAV123@PEAD_K@Z",
+    "prototype": "bool __fastcall(struct wil::FailureInfo *, struct wil::details::ThreadFailureCallbackHolder **, char *, unsigned __int64)",
+    "rank_score": 5,
+    "size": 245,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil::details::WriteResultString<wchar_t const *>(uchar *,uchar *,wchar_t const *,wchar_t const * *)",
+    "ea": "0x180006c18",
+    "function_file": "functions/180006c18_wil_details_WriteResultString_wchar_t_const_uchar_uchar_wchar_t_const_wchar_t_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$WriteResultString@PEB_W@details@wil@@YAPEAEPEAE0PEB_WPEAPEB_W@Z",
+    "prototype": "char *__fastcall(char *, char *, _WORD *, _QWORD *)",
+    "rank_score": 5,
+    "size": 128,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "wil::details::in1diag3::_FailFastImmediate_Unexpected(void)",
+    "ea": "0x180005f00",
+    "function_file": "functions/180005f00_wil_details_in1diag3_FailFastImmediate_Unexpected_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_FailFastImmediate_Unexpected@in1diag3@details@wil@@YAXXZ",
+    "prototype": "void __fastcall __noreturn(wil::details::in1diag3 *__hidden this)",
+    "rank_score": 5,
+    "size": 7,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "_tlgWriteActivityAutoStop<70368744177664,5>(_tlgProvider_t const *,_GUID const *)",
+    "ea": "0x18000d0d8",
+    "function_file": "functions/18000d0d8_tlgWriteActivityAutoStop_70368744177664_5_tlgProvider_t_const_GUID_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$_tlgWriteActivityAutoStop@$0EAAAAAAAAAAA@$04@@YAXPEBU_tlgProvider_t@@PEBU_GUID@@@Z",
+    "prototype": "__int64 __fastcall(__int64, int)",
+    "rank_score": 4,
+    "size": 107,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "std::filesystem::path::~path(void)",
+    "ea": "0x18000c1e4",
+    "function_file": "functions/18000c1e4_std_filesystem_path_path_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1path@filesystem@std@@QEAA@XZ",
+    "prototype": "void __fastcall(__int64 this)",
+    "rank_score": 4,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "_CreateFrameInfo",
+    "ea": "0x180011914",
+    "function_file": "functions/180011914_CreateFrameInfo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CreateFrameInfo",
+    "prototype": "_QWORD *__fastcall(_QWORD *, __int64)",
+    "rank_score": 3,
+    "size": 58,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "__vcrt_thread_detach",
+    "ea": "0x180011ca4",
+    "function_file": "functions/180011ca4_vcrt_thread_detach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__vcrt_thread_detach",
+    "prototype": "__vcrt_bool __cdecl()",
+    "rank_score": 3,
+    "size": 16,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_tlgEnableCallback",
+    "ea": "0x180001010",
+    "function_file": "functions/180001010_tlgEnableCallback.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_tlgEnableCallback",
+    "prototype": "void __fastcall(LPCGUID SourceId, __int64 IsEnabled, __int64 Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, PEVENT_FILTER_DESCRIPTOR FilterData, _QWORD *CallbackContext)",
+    "rank_score": 3,
+    "size": 131,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "std::unique_ptr<std::_Facet_base,std::default_delete<std::_Facet_base>>::~unique_ptr<std::_Facet_base,std::default_delete<std::_Facet_base>>(void)",
+    "ea": "0x18000a36c",
+    "function_file": "functions/18000a36c_std_unique_ptr_std_Facet_base_std_default_delete_std_Facet_base_unique_ptr_std_Facet_base_std_default_delete_s.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$unique_ptr@V_Facet_base@std@@U?$default_delete@V_Facet_base@std@@@2@@std@@QEAA@XZ",
+    "prototype": "__int64 __fastcall(__int64 (__fastcall ****)(_QWORD, __int64))",
+    "rank_score": 3,
+    "size": 33,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__vcrt_thread_attach",
+    "ea": "0x180011c88",
+    "function_file": "functions/180011c88_vcrt_thread_attach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__vcrt_thread_attach",
+    "prototype": "__vcrt_bool __cdecl()",
+    "rank_score": 2,
+    "size": 20,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "wistd::unique_ptr<wchar_t,wil::function_deleter<void * (*)(void *),&LocalFree(void *)>>::get(void)",
+    "ea": "0x1800092e0",
+    "function_file": "functions/1800092e0_wistd_unique_ptr_wchar_t_wil_function_deleter_void_void_LocalFree_void_get_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?get@?$unique_ptr@_WU?$function_deleter@P6APEAXPEAX@Z$1?LocalFree@@YAPEAX0@Z@wil@@@wistd@@QEBAPEA_WXZ",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 1,
+    "size": 4,
+    "tags": []
+  }
+]

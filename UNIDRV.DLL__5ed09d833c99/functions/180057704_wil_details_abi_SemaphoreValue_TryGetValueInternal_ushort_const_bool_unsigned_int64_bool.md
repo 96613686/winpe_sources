@@ -1,0 +1,227 @@
+# wil::details_abi::SemaphoreValue::TryGetValueInternal(ushort const *,bool,unsigned __int64 *,bool *)
+
+- ea: `0x180057704`
+- end: `0x1800578b9`
+- name: `?TryGetValueInternal@SemaphoreValue@details_abi@wil@@CAJPEBG_NPEA_KPEA_N@Z`
+- size: `437`
+- prototype: `__int64 __fastcall(STRSAFE_LPCWSTR pszSrc, __int64, unsigned __int64 *, bool *)`
+- caller_count: `1`
+- callee_count: `8`
+- tags: `registry_config`
+
+## callers
+
+- `0x18005768c`
+
+## callees
+
+- `0x180024c98`
+- `0x180033e78`
+- `0x180049d00`
+- `0x180052a34`
+- `0x1800549bc`
+- `0x180056f98`
+- `0x180056fb8`
+- `0x180057704`
+
+## import_xrefs
+
+- `KERNEL32!OpenSemaphoreW` at `0x18005776d`
+- `KERNEL32!OpenSemaphoreW` at `0x18005780b`
+- `KERNEL32!OpenSemaphoreW` at `0x18005776d`
+- `KERNEL32!OpenSemaphoreW` at `0x18005780b`
+- `KERNEL32!GetLastError` at `0x180057783`
+- `KERNEL32!GetLastError` at `0x180057783`
+
+## pseudocode
+
+```c
+__int64 __fastcall wil::details_abi::SemaphoreValue::TryGetValueInternal(
+        STRSAFE_LPCWSTR pszSrc,
+        __int64 a2,
+        unsigned __int64 *a3,
+        bool *a4)
+{
+  wil::details *v5; // rax
+  void *v6; // rdx
+  __int64 v7; // r8
+  const char *v8; // r9
+  unsigned int LastError; // ebx
+  int ValueFromSemaphore; // eax
+  __int64 v11; // r8
+  wil::details *v12; // rax
+  __int64 v13; // r8
+  const char *v14; // r9
+  void *v15; // rdx
+  int v16; // eax
+  void *v17; // rdx
+  __int64 v18; // r8
+  int v20; // [rsp+20h] [rbp-E0h] BYREF
+  int v21; // [rsp+24h] [rbp-DCh] BYREF
+  wil::details *v22; // [rsp+28h] [rbp-D8h] BYREF
+  wil::details *v23; // [rsp+30h] [rbp-D0h] BYREF
+  wchar_t pszDest[264]; // [rsp+40h] [rbp-C0h] BYREF
+  wil::details::in1diag3 *retaddr; // [rsp+278h] [rbp+178h]
+
+  *a3 = 0;
+  StringCchCopyW(pszDest, 0x104u, pszSrc);
+  StringCchCatW(pszDest, 0x104u, L"_p0");
+  v5 = (wil::details *)OpenSemaphoreW(0x1F0003u, 0, pszDest);
+  v23 = v5;
+  if ( v5 )
+  {
+    v21 = 0;
+    v20 = 0;
+    ValueFromSemaphore = wil::details_abi::SemaphoreValue::GetValueFromSemaphore(v5, &v21);
+    LastError = ValueFromSemaphore;
+    if ( ValueFromSemaphore < 0 )
+    {
+      wil::details::in1diag3::Return_Hr(retaddr, 214, v11, (const char *)(unsigned int)ValueFromSemaphore);
+      goto LABEL_13;
+    }
+    StringCchCatW(pszDest, 0x104u, L"h");
+    v12 = (wil::details *)OpenSemaphoreW(0x1F0003u, 0, pszDest);
+    v22 = v12;
+    if ( v12 )
+    {
+      v16 = wil::details_abi::SemaphoreValue::GetValueFromSemaphore(v12, &v20);
+      LastError = v16;
+      if ( v16 >= 0 )
+      {
+        __1__unique_storage_U__resource_policy_PEAXP6AXPEAX__E_1_CloseHandle_details_wil__YAX0_ZU__integral_constant__K_0A__wistd__PEAXPEAX_0A___T_details_wil___details_wil__QEAA_XZ(
+          &v22,
+          v17);
+        *a3 = v21 | (unsigned __int64)((__int64)v20 << 31);
+        goto LABEL_12;
+      }
+      wil::details::in1diag3::Return_Hr(retaddr, 222, v18, (const char *)(unsigned int)v16);
+    }
+    else
+    {
+      LastError = wil::details::in1diag3::Return_GetLastError(retaddr, (void *)0xDC, v13, v14);
+    }
+    __1__unique_storage_U__resource_policy_PEAXP6AXPEAX__E_1_CloseHandle_details_wil__YAX0_ZU__integral_constant__K_0A__wistd__PEAXPEAX_0A___T_details_wil___details_wil__QEAA_XZ(
+      &v22,
+      v15);
+    goto LABEL_13;
+  }
+  if ( GetLastError() == 2 )
+  {
+LABEL_12:
+    LastError = 0;
+    goto LABEL_13;
+  }
+  LastError = wil::details::in1diag3::Return_GetLastError(retaddr, (void *)0xD0, v7, v8);
+LABEL_13:
+  __1__unique_storage_U__resource_policy_PEAXP6AXPEAX__E_1_CloseHandle_details_wil__YAX0_ZU__integral_constant__K_0A__wistd__PEAXPEAX_0A___T_details_wil___details_wil__QEAA_XZ(
+    &v23,
+    v6);
+  return LastError;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180057704  mov     [rsp-8+arg_8], rbx
+0x180057709  push    rbp
+0x18005770a  push    rdi
+0x18005770b  push    r14
+0x18005770d  lea     rbp, [rsp-160h]
+0x180057715  sub     rsp, 260h
+0x18005771c  mov     rax, cs:__security_cookie
+0x180057723  xor     rax, rsp
+0x180057726  mov     [rbp+170h+var_20], rax
+0x18005772d  mov     rdi, r8
+0x180057730  mov     qword ptr [r8], 0
+0x180057737  mov     r8, rcx; pszSrc
+0x18005773a  mov     r14d, 104h
+0x180057740  mov     edx, r14d; cchDest
+0x180057743  lea     rcx, [rsp+270h+pszDest]; pszDest
+0x180057748  call    StringCchCopyW
+0x18005774d  lea     r8, aP0; "_p0"
+0x180057754  mov     edx, r14d; cchDest
+0x180057757  lea     rcx, [rsp+270h+pszDest]; pszDest
+0x18005775c  call    StringCchCatW
+0x180057761  lea     r8, [rsp+270h+pszDest]; lpName
+0x180057766  xor     edx, edx; bInheritHandle
+0x180057768  mov     ecx, 1F0003h; dwDesiredAccess
+0x18005776d  call    cs:__imp_OpenSemaphoreW
+0x180057774  nop     dword ptr [rax+rax+00h]
+0x180057779  mov     [rsp+270h+var_240], rax
+0x18005777e  test    rax, rax
+0x180057781  jnz     short loc_1800577AF
+0x180057783  call    cs:__imp_GetLastError
+0x18005778a  nop     dword ptr [rax+rax+00h]
+0x18005778f  cmp     eax, 2
+0x180057792  jz      loc_180057887
+0x180057798  mov     rcx, [rbp+178h]; this
+0x18005779f  lea     edx, [r14-34h]; void *
+0x1800577a3  call    ?Return_GetLastError@in1diag3@details@wil@@YAJPEAXIPEBD@Z; wil::details::in1diag3::Return_GetLastError(void *,uint,char const *)
+0x1800577a8  mov     ebx, eax
+0x1800577aa  jmp     loc_180057889
+0x1800577af  lea     rdx, [rsp+270h+var_24C]; int *
+0x1800577b4  mov     [rsp+270h+var_24C], 0
+0x1800577bc  mov     rcx, rax; hHandle
+0x1800577bf  mov     [rsp+270h+var_250], 0; int
+0x1800577c7  call    ?GetValueFromSemaphore@SemaphoreValue@details_abi@wil@@CAJPEAXPEAJ@Z; wil::details_abi::SemaphoreValue::GetValueFromSemaphore(void *,long *)
+0x1800577cc  mov     ebx, eax
+0x1800577ce  test    eax, eax
+0x1800577d0  jns     short loc_1800577EB
+0x1800577d2  mov     rcx, [rbp+178h]; this
+0x1800577d9  mov     r9d, eax; char *
+0x1800577dc  mov     edx, 0D6h; void *
+0x1800577e1  call    ?Return_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+0x1800577e6  jmp     loc_180057889
+0x1800577eb  lea     r8, asc_180082E98; "h"
+0x1800577f2  mov     rdx, r14; cchDest
+0x1800577f5  lea     rcx, [rsp+270h+pszDest]; pszDest
+0x1800577fa  call    StringCchCatW
+0x1800577ff  lea     r8, [rsp+270h+pszDest]; lpName
+0x180057804  xor     edx, edx; bInheritHandle
+0x180057806  mov     ecx, 1F0003h; dwDesiredAccess
+0x18005780b  call    cs:__imp_OpenSemaphoreW
+0x180057812  nop     dword ptr [rax+rax+00h]
+0x180057817  mov     [rsp+270h+var_248], rax
+0x18005781c  test    rax, rax
+0x18005781f  jnz     short loc_180057840
+0x180057821  mov     rcx, [rbp+178h]; this
+0x180057828  mov     edx, 0DCh; void *
+0x18005782d  call    ?Return_GetLastError@in1diag3@details@wil@@YAJPEAXIPEBD@Z; wil::details::in1diag3::Return_GetLastError(void *,uint,char const *)
+0x180057832  mov     ebx, eax
+0x180057834  lea     rcx, [rsp+270h+var_248]
+0x180057839  call    ??1?$unique_storage@U?$resource_policy@PEAXP6AXPEAX@_E$1?CloseHandle@details@wil@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@QEAA@XZ
+0x18005783e  jmp     short loc_180057889
+0x180057840  lea     rdx, [rsp+270h+var_250]; int *
+0x180057845  mov     rcx, rax; hHandle
+0x180057848  call    ?GetValueFromSemaphore@SemaphoreValue@details_abi@wil@@CAJPEAXPEAJ@Z; wil::details_abi::SemaphoreValue::GetValueFromSemaphore(void *,long *)
+0x18005784d  mov     ebx, eax
+0x18005784f  test    eax, eax
+0x180057851  jns     short loc_180057869
+0x180057853  mov     rcx, [rbp+178h]; this
+0x18005785a  mov     r9d, eax; char *
+0x18005785d  mov     edx, 0DEh; void *
+0x180057862  call    ?Return_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z; wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)
+0x180057867  jmp     short loc_180057834
+0x180057869  lea     rcx, [rsp+270h+var_248]
+0x18005786e  call    ??1?$unique_storage@U?$resource_policy@PEAXP6AXPEAX@_E$1?CloseHandle@details@wil@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@QEAA@XZ
+0x180057873  movsxd  rcx, [rsp+270h+var_250]
+0x180057878  movsxd  rax, [rsp+270h+var_24C]
+0x18005787d  shl     rcx, 1Fh
+0x180057881  or      rcx, rax
+0x180057884  mov     [rdi], rcx
+0x180057887  xor     ebx, ebx
+0x180057889  lea     rcx, [rsp+270h+var_240]
+0x18005788e  call    ??1?$unique_storage@U?$resource_policy@PEAXP6AXPEAX@_E$1?CloseHandle@details@wil@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@QEAA@XZ
+0x180057893  mov     eax, ebx
+0x180057895  mov     rcx, [rbp+170h+var_20]
+0x18005789c  xor     rcx, rsp; StackCookie
+0x18005789f  call    __security_check_cookie
+0x1800578a4  mov     rbx, [rsp+270h+arg_8]
+0x1800578ac  add     rsp, 260h
+0x1800578b3  pop     r14
+0x1800578b5  pop     rdi
+0x1800578b6  pop     rbp
+0x1800578b7  retn
+```
