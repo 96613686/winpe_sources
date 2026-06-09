@@ -1,0 +1,500 @@
+[
+  {
+    "import": "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000258f",
+        "from_func": "0x180002530",
+        "from_func_name": "PoWdiGetUserSuppliedReason",
+        "import": "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x18000258f",
+        "from_func": "0x180002530",
+        "from_func_name": "PoWdiGetUserSuppliedReason",
+        "import": "api-ms-win-core-libraryloader-l1-2-0!LoadLibraryExW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180001b0b",
+        "from_func": "0x180001ac4",
+        "from_func_name": "__security_init_cookie",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x180001b0b",
+        "from_func": "0x180001ac4",
+        "from_func_name": "__security_init_cookie",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-service-private-l1-1-0!I_QueryTagInformation",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x18000243f",
+        "from_func": "0x1800023a4",
+        "from_func_name": "PoWdiGetTimerText",
+        "import": "api-ms-win-service-private-l1-1-0!I_QueryTagInformation"
+      },
+      {
+        "from_ea": "0x18000243f",
+        "from_func": "0x1800023a4",
+        "from_func_name": "PoWdiGetTimerText",
+        "import": "api-ms-win-service-private-l1-1-0!I_QueryTagInformation"
+      },
+      {
+        "from_ea": "0x180007a7c",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-service-private-l1-1-0!I_QueryTagInformation"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180001bb3",
+        "from_func": "0x180001bb3",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "msvcrt!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!EtwEventRegister",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x18000106a",
+        "from_func": "0x180001008",
+        "from_func_name": "TraceLoggingRegister_EtwEventRegister_EtwEventSetInformation",
+        "import": "ntdll!EtwEventRegister"
+      },
+      {
+        "from_ea": "0x1800046d1",
+        "from_func": "0x180004670",
+        "from_func_name": "WdiDiagnosticModuleMain",
+        "import": "ntdll!EtwEventRegister"
+      },
+      {
+        "from_ea": "0x18000106a",
+        "from_func": "0x180001008",
+        "from_func_name": "TraceLoggingRegister_EtwEventRegister_EtwEventSetInformation",
+        "import": "ntdll!EtwEventRegister"
+      },
+      {
+        "from_ea": "0x1800046d1",
+        "from_func": "0x180004670",
+        "from_func_name": "WdiDiagnosticModuleMain",
+        "import": "ntdll!EtwEventRegister"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!EtwEventSetInformation",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180001093",
+        "from_func": "0x180001008",
+        "from_func_name": "TraceLoggingRegister_EtwEventRegister_EtwEventSetInformation",
+        "import": "ntdll!EtwEventSetInformation"
+      },
+      {
+        "from_ea": "0x180001093",
+        "from_func": "0x180001008",
+        "from_func_name": "TraceLoggingRegister_EtwEventRegister_EtwEventSetInformation",
+        "import": "ntdll!EtwEventSetInformation"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!EtwEventUnregister",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x180004689",
+        "from_func": "0x180004670",
+        "from_func_name": "WdiDiagnosticModuleMain",
+        "import": "ntdll!EtwEventUnregister"
+      },
+      {
+        "from_ea": "0x1800046b6",
+        "from_func": "0x180004670",
+        "from_func_name": "WdiDiagnosticModuleMain",
+        "import": "ntdll!EtwEventUnregister"
+      },
+      {
+        "from_ea": "0x180004814",
+        "from_func": "0x180004710",
+        "from_func_name": "WdiHandleInstance",
+        "import": "ntdll!EtwEventUnregister"
+      },
+      {
+        "from_ea": "0x180004689",
+        "from_func": "0x180004670",
+        "from_func_name": "WdiDiagnosticModuleMain",
+        "import": "ntdll!EtwEventUnregister"
+      },
+      {
+        "from_ea": "0x1800046b6",
+        "from_func": "0x180004670",
+        "from_func_name": "WdiDiagnosticModuleMain",
+        "import": "ntdll!EtwEventUnregister"
+      },
+      {
+        "from_ea": "0x180004814",
+        "from_func": "0x180004710",
+        "from_func_name": "WdiHandleInstance",
+        "import": "ntdll!EtwEventUnregister"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!EtwEventWrite",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000309b",
+        "from_func": "0x180002e50",
+        "from_func_name": "PoWdiLogResumeEvent",
+        "import": "ntdll!EtwEventWrite"
+      },
+      {
+        "from_ea": "0x18000309b",
+        "from_func": "0x180002e50",
+        "from_func_name": "PoWdiLogResumeEvent",
+        "import": "ntdll!EtwEventWrite"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!EtwEventWriteTransfer",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800011d2",
+        "from_func": "0x18000113c",
+        "from_func_name": "_tlgWriteTransfer_EtwEventWriteTransfer",
+        "import": "ntdll!EtwEventWriteTransfer"
+      },
+      {
+        "from_ea": "0x1800011d2",
+        "from_func": "0x18000113c",
+        "from_func_name": "_tlgWriteTransfer_EtwEventWriteTransfer",
+        "import": "ntdll!EtwEventWriteTransfer"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!NtPowerInformation",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180001d76",
+        "from_func": "0x180001d10",
+        "from_func_name": "PoWdiCollectWakeSourceInfo",
+        "import": "ntdll!NtPowerInformation"
+      },
+      {
+        "from_ea": "0x1800030d2",
+        "from_func": "0x180002e50",
+        "from_func_name": "PoWdiLogResumeEvent",
+        "import": "ntdll!NtPowerInformation"
+      },
+      {
+        "from_ea": "0x180001d76",
+        "from_func": "0x180001d10",
+        "from_func_name": "PoWdiCollectWakeSourceInfo",
+        "import": "ntdll!NtPowerInformation"
+      },
+      {
+        "from_ea": "0x1800030d2",
+        "from_func": "0x180002e50",
+        "from_func_name": "PoWdiLogResumeEvent",
+        "import": "ntdll!NtPowerInformation"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlCaptureContext",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180001740",
+        "from_func": "0x180001700",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlCaptureContext"
+      },
+      {
+        "from_ea": "0x1800018e0",
+        "from_func": "0x1800018a8",
+        "from_func_name": "__report_rangecheckfailure",
+        "import": "ntdll!RtlCaptureContext"
+      },
+      {
+        "from_ea": "0x180001740",
+        "from_func": "0x180001700",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlCaptureContext"
+      },
+      {
+        "from_ea": "0x1800018e0",
+        "from_func": "0x1800018a8",
+        "from_func_name": "__report_rangecheckfailure",
+        "import": "ntdll!RtlCaptureContext"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlGetNativeSystemInformation",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000354f",
+        "from_func": "0x1800032c0",
+        "from_func_name": "PoWdiLogTelemetryData",
+        "import": "ntdll!RtlGetNativeSystemInformation"
+      },
+      {
+        "from_ea": "0x18000354f",
+        "from_func": "0x1800032c0",
+        "from_func_name": "PoWdiLogTelemetryData",
+        "import": "ntdll!RtlGetNativeSystemInformation"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlInitUnicodeString",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 14,
+    "xrefs": [
+      {
+        "from_ea": "0x180001d2f",
+        "from_func": "0x180001d10",
+        "from_func_name": "PoWdiCollectWakeSourceInfo",
+        "import": "ntdll!RtlInitUnicodeString"
+      },
+      {
+        "from_ea": "0x180001d3b",
+        "from_func": "0x180001d10",
+        "from_func_name": "PoWdiCollectWakeSourceInfo",
+        "import": "ntdll!RtlInitUnicodeString"
+      },
+      {
+        "from_ea": "0x180001d47",
+        "from_func": "0x180001d10",
+        "from_func_name": "PoWdiCollectWakeSourceInfo",
+        "import": "ntdll!RtlInitUnicodeString"
+      },
+      {
+        "from_ea": "0x180002274",
+        "from_func": "0x180002038",
+        "from_func_name": "PoWdiGetDeviceText",
+        "import": "ntdll!RtlInitUnicodeString"
+      },
+      {
+        "from_ea": "0x1800024b7",
+        "from_func": "0x1800023a4",
+        "from_func_name": "PoWdiGetTimerText",
+        "import": "ntdll!RtlInitUnicodeString"
+      },
+      {
+        "from_ea": "0x1800024c4",
+        "from_func": "0x1800023a4",
+        "from_func_name": "PoWdiGetTimerText",
+        "import": "ntdll!RtlInitUnicodeString"
+      },
+      {
+        "from_ea": "0x1800024d1",
+        "from_func": "0x1800023a4",
+        "from_func_name": "PoWdiGetTimerText",
+        "import": "ntdll!RtlInitUnicodeString"
+      },
+      {
+        "from_ea": "0x180001d2f",
+        "from_func": "0x180001d10",
+        "from_func_name": "PoWdiCollectWakeSourceInfo",
+        "import": "ntdll!RtlInitUnicodeString"
+      },
+      {
+        "from_ea": "0x180001d3b",
+        "from_func": "0x180001d10",
+        "from_func_name": "PoWdiCollectWakeSourceInfo",
+        "import": "ntdll!RtlInitUnicodeString"
+      },
+      {
+        "from_ea": "0x180001d47",
+        "from_func": "0x180001d10",
+        "from_func_name": "PoWdiCollectWakeSourceInfo",
+        "import": "ntdll!RtlInitUnicodeString"
+      },
+      {
+        "from_ea": "0x180002274",
+        "from_func": "0x180002038",
+        "from_func_name": "PoWdiGetDeviceText",
+        "import": "ntdll!RtlInitUnicodeString"
+      },
+      {
+        "from_ea": "0x1800024b7",
+        "from_func": "0x1800023a4",
+        "from_func_name": "PoWdiGetTimerText",
+        "import": "ntdll!RtlInitUnicodeString"
+      },
+      {
+        "from_ea": "0x1800024c4",
+        "from_func": "0x1800023a4",
+        "from_func_name": "PoWdiGetTimerText",
+        "import": "ntdll!RtlInitUnicodeString"
+      },
+      {
+        "from_ea": "0x1800024d1",
+        "from_func": "0x1800023a4",
+        "from_func_name": "PoWdiGetTimerText",
+        "import": "ntdll!RtlInitUnicodeString"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlLoadString",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800025cd",
+        "from_func": "0x180002530",
+        "from_func_name": "PoWdiGetUserSuppliedReason",
+        "import": "ntdll!RtlLoadString"
+      },
+      {
+        "from_ea": "0x1800025cd",
+        "from_func": "0x180002530",
+        "from_func_name": "PoWdiGetUserSuppliedReason",
+        "import": "ntdll!RtlLoadString"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlLookupFunctionEntry",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 5,
+    "xrefs": [
+      {
+        "from_ea": "0x18000175f",
+        "from_func": "0x180001700",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlLookupFunctionEntry"
+      },
+      {
+        "from_ea": "0x1800018ff",
+        "from_func": "0x1800018a8",
+        "from_func_name": "__report_rangecheckfailure",
+        "import": "ntdll!RtlLookupFunctionEntry"
+      },
+      {
+        "from_ea": "0x18000175f",
+        "from_func": "0x180001700",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlLookupFunctionEntry"
+      },
+      {
+        "from_ea": "0x1800018ff",
+        "from_func": "0x1800018a8",
+        "from_func_name": "__report_rangecheckfailure",
+        "import": "ntdll!RtlLookupFunctionEntry"
+      },
+      {
+        "from_ea": "0x1800079b4",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ntdll!RtlLookupFunctionEntry"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlVirtualUnwind",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1800017ac",
+        "from_func": "0x180001700",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlVirtualUnwind"
+      },
+      {
+        "from_ea": "0x18000194c",
+        "from_func": "0x1800018a8",
+        "from_func_name": "__report_rangecheckfailure",
+        "import": "ntdll!RtlVirtualUnwind"
+      },
+      {
+        "from_ea": "0x1800017ac",
+        "from_func": "0x180001700",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlVirtualUnwind"
+      },
+      {
+        "from_ea": "0x18000194c",
+        "from_func": "0x1800018a8",
+        "from_func_name": "__report_rangecheckfailure",
+        "import": "ntdll!RtlVirtualUnwind"
+      }
+    ]
+  }
+]

@@ -1,0 +1,232 @@
+# sub_1814EEED0
+
+- ea: `0x1814eeed0`
+- end: `0x1814efeb4`
+- name: `sub_1814EEED0`
+- size: `4068`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `41`
+- tags: `registry_config, loader_planting, broker_com_uri`
+
+## callers
+
+- `0x1805cd3ec`
+
+## callees
+
+- `0x180015000`
+- `0x180047944`
+- `0x180048b2c`
+- `0x180054b40`
+- `0x180055dd0`
+- `0x180057c18`
+- `0x18005818c`
+- `0x18009429c`
+- `0x18014c5ec`
+- `0x1801f1120`
+- `0x180202874`
+- `0x180213c54`
+- `0x180221b24`
+- `0x180221ca4`
+- `0x180306a4c`
+- `0x180315c10`
+- `0x18033e9bc`
+- `0x180395ac0`
+- `0x180399050`
+- `0x180536140`
+- `0x1805cced8`
+- `0x1805ce7f0`
+- `0x1805ce9cc`
+- `0x1805cf468`
+- `0x1805cfcb0`
+- `0x1805cfde0`
+- `0x1805d021c`
+- `0x1805d0774`
+- `0x1805d1868`
+- `0x1805d21dc`
+- `0x1805d6c48`
+- `0x1809b497c`
+- `0x180a9c58c`
+- `0x18101cd28`
+- `0x181044db4`
+- `0x18116af2c`
+- `0x181292f88`
+- `0x181422cf0`
+- `0x1814ee5e0`
+- `0x1814eec84`
+- `0x1814eeed0`
+
+## import_xrefs
+
+- `KERNEL32!EncodePointer` at `0x1814ef405`
+- `KERNEL32!EncodePointer` at `0x1814ef405`
+- `MSO!MSO_40099` at `0x1814ef055`
+- `MSO!MSO_40099` at `0x1814ef055`
+- `mso40uiWin32Client!mso40uiWin32Client_8046` at `0x1814eef30`
+- `mso40uiWin32Client!mso40uiWin32Client_8046` at `0x1814ef91c`
+- `mso40uiWin32Client!mso40uiWin32Client_8046` at `0x1814efd29`
+- `mso40uiWin32Client!mso40uiWin32Client_8046` at `0x1814eef30`
+- `mso40uiWin32Client!mso40uiWin32Client_8046` at `0x1814ef91c`
+- `mso40uiWin32Client!mso40uiWin32Client_8046` at `0x1814efd29`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x1814eef43`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x1814ef220`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x1814ef256`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x1814ef6d8`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x1814ef92c`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x1814efe23`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x1814efe45`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x1814efe7f`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x1814eef43`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x1814ef220`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x1814ef256`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x1814ef6d8`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x1814ef92c`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x1814efe23`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x1814efe45`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_19457` at `0x1814efe7f`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814eef0b`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814eef4e`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814eef9b`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814ef0c6`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814ef161`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814ef266`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814ef2ac`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814ef4d8`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814ef67f`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814ef71c`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814ef754`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814ef7ce`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814ef7e0`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814ef93c`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814ef977`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814efa51`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814efa8d`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814efac9`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814efafb`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814efb8f`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814efbc7`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814efbf5`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814efca1`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814efd37`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814efd65`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814efdd0`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814efde7`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814eef0b`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814eef4e`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814eef9b`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814ef0c6`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814ef161`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814ef266`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814ef2ac`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814ef4d8`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814ef67f`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814ef71c`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814ef754`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814ef7ce`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814ef7e0`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814ef93c`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814ef977`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814efa51`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814efa8d`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814efac9`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814efafb`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814efb8f`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814efbc7`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814efbf5`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814efca1`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814efd37`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814efd65`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814efdd0`
+- `mso40uiWin32Client!mso40uiWin32Client_33228` at `0x1814efde7`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x1814ef22b`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x1814ef5d1`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x1814ef5e1`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x1814ef64e`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x1814ef6e3`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x1814efa13`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x1814efd4e`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x1814efe50`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x1814efe8a`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x1814ef22b`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x1814ef5d1`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x1814ef5e1`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x1814ef64e`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x1814ef6e3`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x1814efa13`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x1814efd4e`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x1814efe50`
+- `mso40uiWin32Client!__imp_mso40uiWin32Client_49575` at `0x1814efe8a`
+- `Mso20Win32Client!Mso20Win32Client_7228` at `0x1814ef179`
+- `Mso20Win32Client!Mso20Win32Client_7228` at `0x1814efd5b`
+- `Mso20Win32Client!Mso20Win32Client_7228` at `0x1814ef179`
+- `Mso20Win32Client!Mso20Win32Client_7228` at `0x1814efd5b`
+- `oart!oart_2400` at `0x1814ef44f`
+- `oart!oart_2400` at `0x1814ef44f`
+- `oart!oart_4053` at `0x1814ef470`
+- `oart!oart_4053` at `0x1814ef470`
+- `oart!oart_10505` at `0x1814ef9be`
+- `oart!oart_10505` at `0x1814ef9be`
+- `oart!oart_12454` at `0x1814ef313`
+- `oart!oart_12454` at `0x1814ef313`
+- `oart!oart_17894` at `0x1814ef465`
+- `oart!oart_17894` at `0x1814ef465`
+- `oart!oart_19672` at `0x1814ef491`
+- `oart!oart_19672` at `0x1814ef491`
+- `oart!oart_21334` at `0x1814ef2e8`
+- `oart!oart_21334` at `0x1814ef2e8`
+- `oart!oart_22041` at `0x1814ef2f7`
+- `oart!oart_22041` at `0x1814ef2f7`
+- `oart!__imp_oart_22422` at `0x1814ef5fd`
+- `oart!__imp_oart_22422` at `0x1814ef5fd`
+- `oart!oart_27710` at `0x1814ef3e0`
+- `oart!oart_27710` at `0x1814ef3e0`
+- `oart!__imp_oart_35937` at `0x1814ef60b`
+- `oart!__imp_oart_35937` at `0x1814ef60b`
+- `oart!__imp_oart_37855` at `0x1814ef5ef`
+- `oart!__imp_oart_37855` at `0x1814ef5ef`
+- `oart!oart_38767` at `0x1814ef444`
+- `oart!oart_38767` at `0x1814ef444`
+- `oart!oart_40286` at `0x1814ef9c4`
+- `oart!oart_40286` at `0x1814ef9c4`
+- `oart!oart_45265` at `0x1814ef47b`
+- `oart!oart_45265` at `0x1814ef47b`
+- `oart!oart_48206` at `0x1814ef45a`
+- `oart!oart_48206` at `0x1814ef45a`
+- `oart!oart_50107` at `0x1814ef305`
+- `oart!oart_50107` at `0x1814ef305`
+- `oart!oart_51136` at `0x1814efb17`
+- `oart!oart_51136` at `0x1814efc11`
+- `oart!oart_51136` at `0x1814efb17`
+- `oart!oart_51136` at `0x1814efc11`
+- `oart!oart_51253` at `0x1814ef783`
+- `oart!oart_51253` at `0x1814ef838`
+- `oart!oart_51253` at `0x1814efa19`
+- `oart!oart_51253` at `0x1814ef783`
+- `oart!oart_51253` at `0x1814ef838`
+- `oart!oart_51253` at `0x1814efa19`
+- `oart!oart_52144` at `0x1814ef486`
+- `oart!oart_52144` at `0x1814ef486`
+- `oart!oart_52345` at `0x1814ef49c`
+- `oart!oart_52345` at `0x1814ef49c`
+- `oart!__imp_oart_58393` at `0x1814ef619`
+- `oart!__imp_oart_58393` at `0x1814ef619`
+- `oart!oart_64799` at `0x1814ef89e`
+- `oart!oart_64799` at `0x1814ef89e`
+
+## string_xrefs
+
+- `0x1814ef958`: `http://schemas.openxmlformats.org/drawingml/2006/table`
+- `0x1814efa6d`: `http://schemas.openxmlformats.org/drawingml/2006/table`
+- `0x1814eef67`: `http://schemas.openxmlformats.org/drawingml/2006/chart`
+- `0x1814ef27f`: `http://schemas.microsoft.com/office/drawing/2014/chartex`
+- `0x1814efaa9`: `http://schemas.microsoft.com/office/webextensions/webextension/2010/11`
+- `0x1814efbab`: `http://schemas.microsoft.com/office/webextensions/webextension/2010/11`
+- `0x1814ef770`: `http://schemas.openxmlformats.org/presentationml/2006/ole`
+- `0x1814ef738`: `http://schemas.microsoft.com/office/2006/activeX`
+
+## pseudocode
+
+```c
+
+```

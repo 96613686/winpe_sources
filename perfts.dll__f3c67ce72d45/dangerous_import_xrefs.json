@@ -1,0 +1,491 @@
+[
+  {
+    "import": "ADVAPI32!RegOpenKeyExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x180003b02",
+        "from_func": "0x180003a40",
+        "from_func_name": "MonOpenEventLog",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180007751",
+        "from_func": "0x180007668",
+        "from_func_name": "?PerfOpenDataCallback@LagCounterManager@@SAKPEAG@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180008bf4",
+        "from_func": "0x180008bac",
+        "from_func_name": "?UpdateLagCounterSettings@@YAXXZ",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180003b02",
+        "from_func": "0x180003a40",
+        "from_func_name": "MonOpenEventLog",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180007751",
+        "from_func": "0x180007668",
+        "from_func_name": "?PerfOpenDataCallback@LagCounterManager@@SAKPEAG@Z",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180008bf4",
+        "from_func": "0x180008bac",
+        "from_func_name": "?UpdateLagCounterSettings@@YAXXZ",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180001beb",
+        "from_func": "0x180001ba4",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x1800076c7",
+        "from_func": "0x180007668",
+        "from_func_name": "?PerfOpenDataCallback@LagCounterManager@@SAKPEAG@Z",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x180001beb",
+        "from_func": "0x180001ba4",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x1800076c7",
+        "from_func": "0x180007668",
+        "from_func_name": "?PerfOpenDataCallback@LagCounterManager@@SAKPEAG@Z",
+        "import": "KERNEL32!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!LoadLibraryW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180007ac0",
+        "from_func": "0x180007668",
+        "from_func_name": "?PerfOpenDataCallback@LagCounterManager@@SAKPEAG@Z",
+        "import": "KERNEL32!LoadLibraryW"
+      },
+      {
+        "from_ea": "0x180007ac0",
+        "from_func": "0x180007668",
+        "from_func_name": "?PerfOpenDataCallback@LagCounterManager@@SAKPEAG@Z",
+        "import": "KERNEL32!LoadLibraryW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!ProcessIdToSessionId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000595f",
+        "from_func": "0x1800058b8",
+        "from_func_name": "?CreateOrGetProcCounter@@YAPEAVCounterHelper@@K@Z",
+        "import": "KERNEL32!ProcessIdToSessionId"
+      },
+      {
+        "from_ea": "0x18000595f",
+        "from_func": "0x1800058b8",
+        "from_func_name": "?CreateOrGetProcCounter@@YAPEAVCounterHelper@@K@Z",
+        "import": "KERNEL32!ProcessIdToSessionId"
+      }
+    ]
+  },
+  {
+    "import": "KERNELBASE!WTSGetServiceSessionId",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x180006224",
+        "from_func": "0x180006214",
+        "from_func_name": "?GetSessionCounterHelper@CounterHelper@@QEAAPEAV1@PEAV1@@Z",
+        "import": "KERNELBASE!WTSGetServiceSessionId"
+      },
+      {
+        "from_ea": "0x180006224",
+        "from_func": "0x180006214",
+        "from_func_name": "?GetSessionCounterHelper@CounterHelper@@QEAAPEAV1@PEAV1@@Z",
+        "import": "KERNELBASE!WTSGetServiceSessionId"
+      },
+      {
+        "from_ea": "0x180010714",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "KERNELBASE!WTSGetServiceSessionId"
+      }
+    ]
+  },
+  {
+    "import": "UTILDLL!StrConnectState",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 5,
+    "xrefs": [
+      {
+        "from_ea": "0x180002f38",
+        "from_func": "0x180002990",
+        "from_func_name": "CollectTSObjectData",
+        "import": "UTILDLL!StrConnectState"
+      },
+      {
+        "from_ea": "0x1800032cc",
+        "from_func": "0x180003250",
+        "from_func_name": "ConstructSessionName",
+        "import": "UTILDLL!StrConnectState"
+      },
+      {
+        "from_ea": "0x180002f38",
+        "from_func": "0x180002990",
+        "from_func_name": "CollectTSObjectData",
+        "import": "UTILDLL!StrConnectState"
+      },
+      {
+        "from_ea": "0x1800032cc",
+        "from_func": "0x180003250",
+        "from_func_name": "ConstructSessionName",
+        "import": "UTILDLL!StrConnectState"
+      },
+      {
+        "from_ea": "0x1800106b0",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "UTILDLL!StrConnectState"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180001c93",
+        "from_func": "0x180001c93",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "msvcrt!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__CxxFrameHandler3",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x1800027f8",
+        "from_func": "0x1800027f8",
+        "from_func_name": "__CxxFrameHandler3_0",
+        "import": "msvcrt!__CxxFrameHandler3"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__CxxFrameHandler4",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x18000271a",
+        "from_func": "0x18000271a",
+        "from_func_name": "__CxxFrameHandler4_0",
+        "import": "msvcrt!__CxxFrameHandler4"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__dllonexit",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180001d71",
+        "from_func": "0x180001d71",
+        "from_func_name": "__dllonexit_0",
+        "import": "msvcrt!__dllonexit"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!NtClose",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800036f6",
+        "from_func": "0x180003604",
+        "from_func_name": "GetDescriptionOffset",
+        "import": "ntdll!NtClose"
+      },
+      {
+        "from_ea": "0x1800036f6",
+        "from_func": "0x180003604",
+        "from_func_name": "GetDescriptionOffset",
+        "import": "ntdll!NtClose"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!NtOpenKey",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800036a0",
+        "from_func": "0x180003604",
+        "from_func_name": "GetDescriptionOffset",
+        "import": "ntdll!NtOpenKey"
+      },
+      {
+        "from_ea": "0x1800036a0",
+        "from_func": "0x180003604",
+        "from_func_name": "GetDescriptionOffset",
+        "import": "ntdll!NtOpenKey"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!NtQuerySystemInformation",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 9,
+    "xrefs": [
+      {
+        "from_ea": "0x180002b2e",
+        "from_func": "0x180002990",
+        "from_func_name": "CollectTSObjectData",
+        "import": "ntdll!NtQuerySystemInformation"
+      },
+      {
+        "from_ea": "0x180002b7e",
+        "from_func": "0x180002990",
+        "from_func_name": "CollectTSObjectData",
+        "import": "ntdll!NtQuerySystemInformation"
+      },
+      {
+        "from_ea": "0x180002ba3",
+        "from_func": "0x180002990",
+        "from_func_name": "CollectTSObjectData",
+        "import": "ntdll!NtQuerySystemInformation"
+      },
+      {
+        "from_ea": "0x18000357a",
+        "from_func": "0x1800034c8",
+        "from_func_name": "DllProcessAttach",
+        "import": "ntdll!NtQuerySystemInformation"
+      },
+      {
+        "from_ea": "0x180002b2e",
+        "from_func": "0x180002990",
+        "from_func_name": "CollectTSObjectData",
+        "import": "ntdll!NtQuerySystemInformation"
+      },
+      {
+        "from_ea": "0x180002b7e",
+        "from_func": "0x180002990",
+        "from_func_name": "CollectTSObjectData",
+        "import": "ntdll!NtQuerySystemInformation"
+      },
+      {
+        "from_ea": "0x180002ba3",
+        "from_func": "0x180002990",
+        "from_func_name": "CollectTSObjectData",
+        "import": "ntdll!NtQuerySystemInformation"
+      },
+      {
+        "from_ea": "0x18000357a",
+        "from_func": "0x1800034c8",
+        "from_func_name": "DllProcessAttach",
+        "import": "ntdll!NtQuerySystemInformation"
+      },
+      {
+        "from_ea": "0x180010688",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ntdll!NtQuerySystemInformation"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!NtQueryValueKey",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800036d1",
+        "from_func": "0x180003604",
+        "from_func_name": "GetDescriptionOffset",
+        "import": "ntdll!NtQueryValueKey"
+      },
+      {
+        "from_ea": "0x1800036d1",
+        "from_func": "0x180003604",
+        "from_func_name": "GetDescriptionOffset",
+        "import": "ntdll!NtQueryValueKey"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlCaptureContext",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180001950",
+        "from_func": "0x180001910",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlCaptureContext"
+      },
+      {
+        "from_ea": "0x180001950",
+        "from_func": "0x180001910",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlCaptureContext"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlInitUnicodeString",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180003656",
+        "from_func": "0x180003604",
+        "from_func_name": "GetDescriptionOffset",
+        "import": "ntdll!RtlInitUnicodeString"
+      },
+      {
+        "from_ea": "0x180003667",
+        "from_func": "0x180003604",
+        "from_func_name": "GetDescriptionOffset",
+        "import": "ntdll!RtlInitUnicodeString"
+      },
+      {
+        "from_ea": "0x180003656",
+        "from_func": "0x180003604",
+        "from_func_name": "GetDescriptionOffset",
+        "import": "ntdll!RtlInitUnicodeString"
+      },
+      {
+        "from_ea": "0x180003667",
+        "from_func": "0x180003604",
+        "from_func_name": "GetDescriptionOffset",
+        "import": "ntdll!RtlInitUnicodeString"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlLookupFunctionEntry",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000196f",
+        "from_func": "0x180001910",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlLookupFunctionEntry"
+      },
+      {
+        "from_ea": "0x18000196f",
+        "from_func": "0x180001910",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlLookupFunctionEntry"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlNtStatusToDosError",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180002bb1",
+        "from_func": "0x180002990",
+        "from_func_name": "CollectTSObjectData",
+        "import": "ntdll!RtlNtStatusToDosError"
+      },
+      {
+        "from_ea": "0x180002bb1",
+        "from_func": "0x180002990",
+        "from_func_name": "CollectTSObjectData",
+        "import": "ntdll!RtlNtStatusToDosError"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlVirtualUnwind",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800019bc",
+        "from_func": "0x180001910",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlVirtualUnwind"
+      },
+      {
+        "from_ea": "0x1800019bc",
+        "from_func": "0x180001910",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlVirtualUnwind"
+      }
+    ]
+  }
+]

@@ -1,0 +1,5644 @@
+[
+  {
+    "callee_count": 10,
+    "caller_count": 4,
+    "demangled": "ATL::CAtlModule::UpdateRegistryFromResource(uint,int,ATL::_ATL_REGMAP_ENTRY *)",
+    "ea": "0x1800057c0",
+    "function_file": "functions/1800057c0_ATL_CAtlModule_UpdateRegistryFromResource_uint_int_ATL_ATL_REGMAP_ENTRY.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleFileNameW",
+      "KERNEL32!GetModuleHandleW",
+      "ucrtbase_clr0400!_errno",
+      "ucrtbase_clr0400!_invalid_parameter_noinfo",
+      "ucrtbase_clr0400!free"
+    ],
+    "matched_strings": [
+      "REGISTRY",
+      "REGISTRY"
+    ],
+    "name": "?UpdateRegistryFromResource@CAtlModule@ATL@@QEAAJIHPEAU_ATL_REGMAP_ENTRY@2@@Z",
+    "prototype": "__int64 __fastcall(ATL::CAtlModule *__hidden this, unsigned int, int, struct ATL::_ATL_REGMAP_ENTRY *)",
+    "rank_score": 8543,
+    "size": 2514,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 2,
+    "demangled": "ATL::CRegParser::RegisterSubkeys(ushort *,HKEY__ *,int,int)",
+    "ea": "0x1800049b8",
+    "function_file": "functions/1800049b8_ATL_CRegParser_RegisterSubkeys_ushort_HKEY_int_int.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegCreateKeyExW",
+      "ADVAPI32!RegDeleteKeyW",
+      "ADVAPI32!RegDeleteValueW",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegQueryInfoKeyW",
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!lstrcmpiW",
+      "USER32!CharNextW",
+      "ucrtbase_clr0400!wcsncpy_s"
+    ],
+    "matched_strings": [
+      "Delete",
+      "ForceRemove",
+      "NoRemove",
+      "RegOpenKeyTransactedW",
+      "RegOpenKeyTransactedW",
+      "RegOpenKeyTransactedW",
+      "RegOpenKeyTransactedW",
+      "RegOpenKeyTransactedW",
+      "Advapi32.dll",
+      "Advapi32.dll",
+      "Advapi32.dll",
+      "Advapi32.dll",
+      "RegDeleteKeyExW"
+    ],
+    "name": "?RegisterSubkeys@CRegParser@ATL@@IEAAJPEAGPEAUHKEY__@@HH@Z",
+    "prototype": "__int64 __fastcall(ATL::CRegParser *__hidden this, unsigned __int16 *, HKEY, int, int)",
+    "rank_score": 7394,
+    "size": 2715,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "ATL::AtlRegisterClassCategoriesHelper(_GUID const &,ATL::_ATL_CATMAP_ENTRY const *,int)",
+    "ea": "0x180002610",
+    "function_file": "functions/180002610_ATL_AtlRegisterClassCategoriesHelper_GUID_const_ATL_ATL_CATMAP_ENTRY_const_int.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegDeleteKeyW",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegQueryInfoKeyW",
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress",
+      "ole32!CoCreateInstance",
+      "ole32!StringFromGUID2",
+      "ucrtbase_clr0400!wcscat_s",
+      "ucrtbase_clr0400!wcscpy_s"
+    ],
+    "matched_strings": [
+      "CLSID\\",
+      "CLSID\\",
+      "Advapi32.dll",
+      "Advapi32.dll",
+      "RegDeleteKeyExW",
+      "RegDeleteKeyExW"
+    ],
+    "name": "?AtlRegisterClassCategoriesHelper@ATL@@YAJAEBU_GUID@@PEBU_ATL_CATMAP_ENTRY@1@H@Z",
+    "prototype": "__int64 __fastcall(GUID *rguid, const struct ATL::_ATL_CATMAP_ENTRY *, int)",
+    "rank_score": 4897,
+    "size": 1506,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "CPimcContext::InitNamedCommunications(ATL::CComPtr<ITabletContextP>)",
+    "ea": "0x1800066dc",
+    "function_file": "functions/1800066dc_CPimcContext_InitNamedCommunications_ATL_CComPtr_ITabletContextP.md",
+    "matched_imports": [
+      "ADVAPI32!ConvertSidToStringSidW",
+      "ADVAPI32!GetTokenInformation",
+      "ADVAPI32!OpenProcessToken",
+      "KERNEL32!CloseHandle",
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!GetCurrentProcessId",
+      "KERNEL32!GetLastError",
+      "KERNEL32!LocalFree",
+      "KERNEL32!OpenEventW",
+      "KERNEL32!OpenFileMappingW",
+      "KERNEL32!OpenMutexW"
+    ],
+    "matched_strings": [],
+    "name": "?InitNamedCommunications@CPimcContext@@QEAAJV?$CComPtr@UITabletContextP@@@ATL@@@Z",
+    "prototype": "__int64 __fastcall(CPimcContext *this, WCHAR *)",
+    "rank_score": 3646,
+    "size": 841,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 2,
+    "demangled": "CPimcManager::LoadWisptis(void)",
+    "ea": "0x18000a49c",
+    "function_file": "functions/18000a49c_CPimcManager_LoadWisptis_void.md",
+    "matched_imports": [
+      "KERNEL32!CreateEventW",
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!IsWow64Process",
+      "KERNEL32!OpenEventW",
+      "KERNEL32!OutputDebugStringW",
+      "KERNEL32!SignalObjectAndWait",
+      "KERNEL32!WaitForSingleObject",
+      "SHELL32!ShellExecuteExW",
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [
+      "%SystemRoot%\\SYSTEM32\\WISPTIS.EXE",
+      "%SystemRoot%\\SYSTEM32\\"
+    ],
+    "name": "?LoadWisptis@CPimcManager@@QEAAXXZ",
+    "prototype": "void __fastcall(CPimcManager *__hidden this)",
+    "rank_score": 3130,
+    "size": 1070,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ATL::CRegParser::PreProcessBuffer(ushort *,ushort * *)",
+    "ea": "0x180003984",
+    "function_file": "functions/180003984_ATL_CRegParser_PreProcessBuffer_ushort_ushort.md",
+    "matched_imports": [
+      "KERNEL32!lstrcmpiW",
+      "USER32!CharNextW",
+      "VCRUNTIME140_CLR0400!wcsstr",
+      "ole32!CoTaskMemAlloc",
+      "ole32!CoTaskMemFree",
+      "ucrtbase_clr0400!wcsncpy_s"
+    ],
+    "matched_strings": [],
+    "name": "?PreProcessBuffer@CRegParser@ATL@@QEAAJPEAGPEAPEAG@Z",
+    "prototype": "int(ATL::CRegParser *__hidden this, unsigned __int16 *, unsigned __int16 **)",
+    "rank_score": 3033,
+    "size": 1016,
+    "tags": [
+      "registry_config",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "ATL::CRegParser::AddValue(ATL::CRegKey &,ushort const *,ushort *)",
+    "ea": "0x180003ea0",
+    "function_file": "functions/180003ea0_ATL_CRegParser_AddValue_ATL_CRegKey_ushort_const_ushort.md",
+    "matched_imports": [
+      "ADVAPI32!RegSetValueExW",
+      "KERNEL32!lstrcmpiW",
+      "OLEAUT32!__imp_VarUI4FromStr",
+      "USER32!CharNextW"
+    ],
+    "matched_strings": [],
+    "name": "?AddValue@CRegParser@ATL@@IEAAJAEAVCRegKey@2@PEBGPEAG@Z",
+    "prototype": "__int64 __fastcall(ATL::CRegParser *__hidden this, struct ATL::CRegKey *, const unsigned __int16 *, unsigned __int16 *)",
+    "rank_score": 2431,
+    "size": 1499,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CPimcManager::InitializeHookThread(CHookThreadItem *)",
+    "ea": "0x18000aa8c",
+    "function_file": "functions/18000aa8c_CPimcManager_InitializeHookThread_CHookThreadItem.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateEventW",
+      "KERNEL32!CreateThread",
+      "KERNEL32!CreateWaitableTimerW",
+      "KERNEL32!QueueUserAPC",
+      "KERNEL32!SignalObjectAndWait",
+      "KERNEL32!WaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?InitializeHookThread@CPimcManager@@SAJPEAUCHookThreadItem@@@Z",
+    "prototype": "__int64 __fastcall(struct CHookThreadItem *lpParameter)",
+    "rank_score": 2429,
+    "size": 518,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CPimcManager::UserIsLocalSystem(void)",
+    "ea": "0x18000a954",
+    "function_file": "functions/18000a954_CPimcManager_UserIsLocalSystem_void.md",
+    "matched_imports": [
+      "ADVAPI32!AllocateAndInitializeSid",
+      "ADVAPI32!EqualSid",
+      "ADVAPI32!FreeSid",
+      "ADVAPI32!GetTokenInformation",
+      "ADVAPI32!OpenProcessToken",
+      "KERNEL32!CloseHandle",
+      "KERNEL32!GetCurrentProcess"
+    ],
+    "matched_strings": [],
+    "name": "?UserIsLocalSystem@CPimcManager@@IEAAHXZ",
+    "prototype": "__int64 __fastcall(CPimcManager *__hidden this)",
+    "rank_score": 1627,
+    "size": 312,
+    "tags": [
+      "file_ops",
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "ATL::AtlRegisterTypeLib(HINSTANCE__ *,ushort const *)",
+    "ea": "0x1800023d0",
+    "function_file": "functions/1800023d0_ATL_AtlRegisterTypeLib_HINSTANCE_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress",
+      "OLEAUT32!__imp_RegisterTypeLib",
+      "OLEAUT32!__imp_SysFreeString",
+      "OLEAUT32!__imp_SysStringLen",
+      "USER32!CharNextW",
+      "ucrtbase_clr0400!wcsncpy_s"
+    ],
+    "matched_strings": [
+      "OLEAUT32.DLL"
+    ],
+    "name": "?AtlRegisterTypeLib@ATL@@YAJPEAUHINSTANCE__@@PEBG@Z",
+    "prototype": "__int64 __fastcall(HINSTANCE, const unsigned __int16 *)",
+    "rank_score": 1561,
+    "size": 540,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "CPimcTablet::CreateContext(__int64,int,uint,IPimcContext2 * *,int *,__int64 *)",
+    "ea": "0x1800082f0",
+    "function_file": "functions/1800082f0_CPimcTablet_CreateContext_int64_int_uint_IPimcContext2_int_int64.md",
+    "matched_imports": [
+      "USER32!IsWindow",
+      "ole32!CoTaskMemAlloc",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?CreateContext@CPimcTablet@@UEAAJ_JHIPEAPEAUIPimcContext2@@PEAHPEA_J@Z",
+    "prototype": "__int64 __fastcall(CPimcTablet *this, HWND, int, int, struct IPimcContext2 **, int *, __int64 *)",
+    "rank_score": 1435,
+    "size": 1149,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "GetMandatoryLabel(ushort * *)",
+    "ea": "0x18000cbb8",
+    "function_file": "functions/18000cbb8_GetMandatoryLabel_ushort.md",
+    "matched_imports": [
+      "ADVAPI32!ConvertSidToStringSidW",
+      "ADVAPI32!GetTokenInformation",
+      "ADVAPI32!OpenProcessToken",
+      "KERNEL32!CloseHandle",
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?GetMandatoryLabel@@YAJPEAPEAG@Z",
+    "prototype": "__int64 __fastcall(LPWSTR *StringSid)",
+    "rank_score": 1435,
+    "size": 226,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "ATL::CRegObject::RegisterFromResource(ushort const *,ushort const *,ushort const *,int)",
+    "ea": "0x1800055ec",
+    "function_file": "functions/1800055ec_ATL_CRegObject_RegisterFromResource_ushort_const_ushort_const_ushort_const_int.md",
+    "matched_imports": [
+      "KERNEL32!FindResourceW",
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!LoadLibraryExW",
+      "KERNEL32!LoadResource",
+      "KERNEL32!MultiByteToWideChar",
+      "KERNEL32!SizeofResource"
+    ],
+    "matched_strings": [],
+    "name": "?RegisterFromResource@CRegObject@ATL@@IEAAJPEBG00H@Z",
+    "prototype": "int(ATL::CRegObject *__hidden this, const unsigned __int16 *, const unsigned __int16 *, const unsigned __int16 *, int)",
+    "rank_score": 1421,
+    "size": 465,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "__scrt_fastfail",
+    "ea": "0x18000dc48",
+    "function_file": "functions/18000dc48_scrt_fastfail.md",
+    "matched_imports": [
+      "KERNEL32!IsDebuggerPresent",
+      "KERNEL32!IsProcessorFeaturePresent",
+      "KERNEL32!SetUnhandledExceptionFilter",
+      "KERNEL32!UnhandledExceptionFilter",
+      "ntdll!RtlCaptureContext",
+      "ntdll!RtlLookupFunctionEntry",
+      "ntdll!RtlVirtualUnwind"
+    ],
+    "matched_strings": [],
+    "name": "__scrt_fastfail",
+    "prototype": "",
+    "rank_score": 1419,
+    "size": 331,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "ATL::CRegParser::NextToken(ushort *)",
+    "ea": "0x1800047fc",
+    "function_file": "functions/1800047fc_ATL_CRegParser_NextToken_ushort.md",
+    "matched_imports": [
+      "USER32!CharNextW"
+    ],
+    "matched_strings": [],
+    "name": "?NextToken@CRegParser@ATL@@IEAAJPEAG@Z",
+    "prototype": "__int64 __fastcall(ATL::CRegParser *__hidden this, unsigned __int16 *)",
+    "rank_score": 1408,
+    "size": 441,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "__scrt_initialize_thread_safe_statics",
+    "ea": "0x18000d490",
+    "function_file": "functions/18000d490_scrt_initialize_thread_safe_statics.md",
+    "matched_imports": [
+      "KERNEL32!CreateEventW",
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!InitializeCriticalSectionAndSpinCount"
+    ],
+    "matched_strings": [
+      "api-ms-win-core-synch-l1-2-0.dll",
+      "kernel32.dll"
+    ],
+    "name": "__scrt_initialize_thread_safe_statics",
+    "prototype": "",
+    "rank_score": 1295,
+    "size": 208,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "WPFUtils::OSVersionHelper::IsWindowsVersionOrGreater(ulong,ulong,ushort,ulong)",
+    "ea": "0x18000cc9c",
+    "function_file": "functions/18000cc9c_WPFUtils_OSVersionHelper_IsWindowsVersionOrGreater_ulong_ulong_ushort_ulong.md",
+    "matched_imports": [
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!LoadLibraryW",
+      "KERNEL32!VerSetConditionMask"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "?IsWindowsVersionOrGreater@OSVersionHelper@WPFUtils@@CA_NKKGK@Z",
+    "prototype": "bool __fastcall(unsigned int, unsigned int, unsigned __int16, unsigned int)",
+    "rank_score": 1258,
+    "size": 257,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "CPimcManager::InstallWindowHook(HWND__ *,CPimcContext *)",
+    "ea": "0x18000ada8",
+    "function_file": "functions/18000ada8_CPimcManager_InstallWindowHook_HWND_CPimcContext.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcessId",
+      "KERNEL32!ReleaseMutex",
+      "KERNEL32!SetWaitableTimer",
+      "KERNEL32!WaitForSingleObject",
+      "USER32!GetWindowThreadProcessId"
+    ],
+    "matched_strings": [],
+    "name": "?InstallWindowHook@CPimcManager@@QEAAJPEAUHWND__@@PEAVCPimcContext@@@Z",
+    "prototype": "__int64 __fastcall(CPimcManager *__hidden this, HWND, struct CPimcContext *)",
+    "rank_score": 1254,
+    "size": 752,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ATL::CRegKey::DeleteSubKey(ushort const *)",
+    "ea": "0x1800046e4",
+    "function_file": "functions/1800046e4_ATL_CRegKey_DeleteSubKey_ushort_const.md",
+    "matched_imports": [
+      "ADVAPI32!RegDeleteKeyW",
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "RegDeleteKeyTransactedW",
+      "Advapi32.dll",
+      "Advapi32.dll",
+      "RegDeleteKeyExW"
+    ],
+    "name": "?DeleteSubKey@CRegKey@ATL@@QEAAJPEBG@Z",
+    "prototype": "__int64 __fastcall(ATL::CRegKey *__hidden this, const unsigned __int16 *)",
+    "rank_score": 1185,
+    "size": 264,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "DllUnregisterServer",
+    "ea": "0x180001650",
+    "function_file": "functions/180001650_DllUnregisterServer.md",
+    "matched_imports": [
+      "KERNEL32!GetThreadLocale",
+      "KERNEL32!SetThreadLocale",
+      "RPCRT4!NdrDllRegisterProxy",
+      "RPCRT4!NdrDllUnregisterProxy"
+    ],
+    "matched_strings": [],
+    "name": "DllUnregisterServer",
+    "prototype": "HRESULT __stdcall()",
+    "rank_score": 1037,
+    "size": 325,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ATL::CComObject<CPimcTablet>::~CComObject<CPimcTablet>(void)",
+    "ea": "0x18000bddc",
+    "function_file": "functions/18000bddc_ATL_CComObject_CPimcTablet_CComObject_CPimcTablet_void.md",
+    "matched_imports": [
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "??1?$CComObject@VCPimcTablet@@@ATL@@UEAA@XZ",
+    "prototype": "__int64 __fastcall(CPimcTablet *this)",
+    "rank_score": 1027,
+    "size": 370,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "ATL::CRegKey::RecurseDeleteKey(ushort const *)",
+    "ea": "0x180004550",
+    "function_file": "functions/180004550_ATL_CRegKey_RecurseDeleteKey_ushort_const.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegEnumKeyExW",
+      "ADVAPI32!RegOpenKeyExW"
+    ],
+    "matched_strings": [],
+    "name": "?RecurseDeleteKey@CRegKey@ATL@@QEAAJPEBG@Z",
+    "prototype": "__int64 __fastcall(ATL::CRegKey *__hidden this, const unsigned __int16 *)",
+    "rank_score": 1017,
+    "size": 361,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CPimcTablet::GetName(ushort * *)",
+    "ea": "0x180008790",
+    "function_file": "functions/180008790_CPimcTablet_GetName_ushort.md",
+    "matched_imports": [
+      "USER32!GetDesktopWindow",
+      "USER32!GetMonitorInfoW",
+      "USER32!MonitorFromWindow",
+      "ole32!CoTaskMemAlloc",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?GetName@CPimcTablet@@UEAAJPEAPEAG@Z",
+    "prototype": "__int64 __fastcall(CPimcTablet *__hidden this, unsigned __int16 **)",
+    "rank_score": 1016,
+    "size": 481,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "CPimcContext::Init(ATL::CComPtr<CPimcManager>,ATL::CComPtr<ITabletContext>,HWND__ *,ulong,_PACKET_DESCRIPTION *)",
+    "ea": "0x1800062a0",
+    "function_file": "functions/1800062a0_CPimcContext_Init_ATL_CComPtr_CPimcManager_ATL_CComPtr_ITabletContext_HWND_ulong_PACKET_DESCRIPTION.md",
+    "matched_imports": [
+      "KERNEL32!CreateEventW",
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!GetCurrentProcessId",
+      "KERNEL32!InitializeCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?Init@CPimcContext@@QEAAJV?$CComPtr@VCPimcManager@@@ATL@@V?$CComPtr@UITabletContext@@@3@PEAUHWND__@@KPEAU_PACKET_DESCRIPTION@@@Z",
+    "prototype": "__int64 __usercall@<rax>(struct CPimcContext *@<rcx>, int, __int64)",
+    "rank_score": 849,
+    "size": 1046,
+    "tags": [
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "ATL::CComObject<CPimcContext>::~CComObject<CPimcContext>(void)",
+    "ea": "0x180009f28",
+    "function_file": "functions/180009f28_ATL_CComObject_CPimcContext_CComObject_CPimcContext_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "??1?$CComObject@VCPimcContext@@@ATL@@UEAA@XZ",
+    "prototype": "__int64 __fastcall(CPimcContext *this)",
+    "rank_score": 840,
+    "size": 261,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "DllRegisterServer",
+    "ea": "0x180001510",
+    "function_file": "functions/180001510_DllRegisterServer.md",
+    "matched_imports": [
+      "KERNEL32!GetThreadLocale",
+      "KERNEL32!SetThreadLocale",
+      "RPCRT4!NdrDllRegisterProxy"
+    ],
+    "matched_strings": [],
+    "name": "DllRegisterServer",
+    "prototype": "HRESULT __stdcall()",
+    "rank_score": 837,
+    "size": 313,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CPimcManager::PostCtxUpdateForSubtree(ulong,HWND__ *,CHookThreadItem *)",
+    "ea": "0x18000b8bc",
+    "function_file": "functions/18000b8bc_CPimcManager_PostCtxUpdateForSubtree_ulong_HWND_CHookThreadItem.md",
+    "matched_imports": [
+      "USER32!GetWindow",
+      "USER32!GetWindowRect"
+    ],
+    "matched_strings": [],
+    "name": "?PostCtxUpdateForSubtree@CPimcManager@@SAXKPEAUHWND__@@PEAUCHookThreadItem@@@Z",
+    "prototype": "void __fastcall(unsigned int, HWND, struct CHookThreadItem *)",
+    "rank_score": 830,
+    "size": 611,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ATL::CAtlDllModuleT<CPenImcModule>::DllGetClassObject(_GUID const &,_GUID const &,void * *)",
+    "ea": "0x180001798",
+    "function_file": "functions/180001798_ATL_CAtlDllModuleT_CPenImcModule_DllGetClassObject_GUID_const_GUID_const_void.md",
+    "matched_imports": [
+      "KERNEL32!DecodePointer",
+      "KERNEL32!EncodePointer",
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?DllGetClassObject@?$CAtlDllModuleT@VCPenImcModule@@@ATL@@QEAAJAEBU_GUID@@0PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 825,
+    "size": 351,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CPimcManager::HookProc(int,unsigned __int64,__int64)",
+    "ea": "0x18000b5d0",
+    "function_file": "functions/18000b5d0_CPimcManager_HookProc_int_unsigned_int64_int64.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcessId",
+      "USER32!CallNextHookEx",
+      "USER32!GetWindowThreadProcessId",
+      "USER32!IsWindow"
+    ],
+    "matched_strings": [],
+    "name": "?HookProc@CPimcManager@@SA_JH_K_J@Z",
+    "prototype": "LRESULT __stdcall(int code, WPARAM wParam, LPARAM lParam)",
+    "rank_score": 823,
+    "size": 229,
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x18000df44",
+    "function_file": "functions/18000df44_security_init_cookie.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcessId",
+      "KERNEL32!GetCurrentThreadId",
+      "KERNEL32!GetSystemTimeAsFileTime",
+      "KERNEL32!QueryPerformanceCounter"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 823,
+    "size": 172,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ATL::CRegParser::CParseBuffer::Append(ushort const *,int)",
+    "ea": "0x180003838",
+    "function_file": "functions/180003838_ATL_CRegParser_CParseBuffer_Append_ushort_const_int.md",
+    "matched_imports": [
+      "ole32!CoTaskMemRealloc",
+      "ucrtbase_clr0400!_errno",
+      "ucrtbase_clr0400!_invalid_parameter_noinfo"
+    ],
+    "matched_strings": [],
+    "name": "?Append@CParseBuffer@CRegParser@ATL@@QEAAHPEBGH@Z",
+    "prototype": "int(ATL::CRegParser::CParseBuffer *__hidden this, const unsigned __int16 *, int)",
+    "rank_score": 817,
+    "size": 329,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CPimcManager::HookThreadProc(void *)",
+    "ea": "0x18000ad10",
+    "function_file": "functions/18000ad10_CPimcManager_HookThreadProc_void.md",
+    "matched_imports": [
+      "KERNEL32!SetEvent",
+      "USER32!MsgWaitForMultipleObjectsEx",
+      "USER32!PeekMessageW"
+    ],
+    "matched_strings": [],
+    "name": "?HookThreadProc@CPimcManager@@SAKPEAX@Z",
+    "prototype": "ULONG __stdcall(PVOID Parameter)",
+    "rank_score": 803,
+    "size": 149,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ATL::AtlUnRegisterTypeLib(HINSTANCE__ *,ushort const *)",
+    "ea": "0x180002de8",
+    "function_file": "functions/180002de8_ATL_AtlUnRegisterTypeLib_HINSTANCE_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress",
+      "OLEAUT32!__imp_SysFreeString",
+      "OLEAUT32!__imp_UnRegisterTypeLib"
+    ],
+    "matched_strings": [
+      "OLEAUT32.DLL"
+    ],
+    "name": "?AtlUnRegisterTypeLib@ATL@@YAJPEAUHINSTANCE__@@PEBG@Z",
+    "prototype": "__int64 __fastcall(HINSTANCE, const unsigned __int16 *)",
+    "rank_score": 755,
+    "size": 235,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ATL::CAtlTransactionManager::RegCreateKeyExW(HKEY__ *,ushort const *,ulong,ushort *,ulong,ulong,_SECURITY_ATTRIBUTES * const,HKEY__ * *,ulong *)",
+    "ea": "0x180003d7c",
+    "function_file": "functions/180003d7c_ATL_CAtlTransactionManager_RegCreateKeyExW_HKEY_ushort_const_ulong_ushort_ulong_ulong_SECURITY_ATTRIBUTES_cons.md",
+    "matched_imports": [
+      "ADVAPI32!RegCreateKeyExW",
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "RegCreateKeyTransactedW",
+      "Advapi32.dll"
+    ],
+    "name": "?RegCreateKeyExW@CAtlTransactionManager@ATL@@QEAAJPEAUHKEY__@@PEBGKPEAGKKQEAU_SECURITY_ATTRIBUTES@@PEAPEAU3@PEAK@Z",
+    "prototype": "int(ATL::CAtlTransactionManager *__hidden this, HKEY, const unsigned __int16 *, unsigned int, unsigned __int16 *, unsigned int, unsigned int, struct _SECURITY_ATTRIBUTES *const, HKEY *, unsigned int *)",
+    "rank_score": 714,
+    "size": 248,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "__raise_securityfailure",
+    "ea": "0x18000ce1c",
+    "function_file": "functions/18000ce1c_raise_securityfailure.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!SetUnhandledExceptionFilter",
+      "KERNEL32!TerminateProcess",
+      "KERNEL32!UnhandledExceptionFilter"
+    ],
+    "matched_strings": [],
+    "name": "__raise_securityfailure",
+    "prototype": "__int64 __fastcall(struct _EXCEPTION_POINTERS *ExceptionInfo)",
+    "rank_score": 712,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "CPimcManager::UninstallWindowHook(CPimcContext *)",
+    "ea": "0x18000b39c",
+    "function_file": "functions/18000b39c_CPimcManager_UninstallWindowHook_CPimcContext.md",
+    "matched_imports": [
+      "KERNEL32!CancelWaitableTimer",
+      "KERNEL32!ReleaseMutex",
+      "KERNEL32!WaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?UninstallWindowHook@CPimcManager@@QEAAJPEAVCPimcContext@@@Z",
+    "prototype": "__int64 __fastcall(CPimcManager *__hidden this, struct CPimcContext *)",
+    "rank_score": 630,
+    "size": 561,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "CPimcTablet::RefreshCursorInfo(void)",
+    "ea": "0x180008eb0",
+    "function_file": "functions/180008eb0_CPimcTablet_RefreshCursorInfo_void.md",
+    "matched_imports": [
+      "ole32!CoTaskMemAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?RefreshCursorInfo@CPimcTablet@@UEAAJXZ",
+    "prototype": "__int64 __fastcall(CPimcTablet *__hidden this)",
+    "rank_score": 628,
+    "size": 1601,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "ATL::CRegParser::RegisterBuffer(ushort *,int)",
+    "ea": "0x180005454",
+    "function_file": "functions/180005454_ATL_CRegParser_RegisterBuffer_ushort_int.md",
+    "matched_imports": [
+      "KERNEL32!lstrcmpiW",
+      "USER32!CharNextW",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?RegisterBuffer@CRegParser@ATL@@QEAAJPEAGH@Z",
+    "prototype": "__int64 __fastcall(ATL::CRegParser *__hidden this, unsigned __int16 *, int)",
+    "rank_score": 620,
+    "size": 408,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CPimcManager::EnsureHookWindowItem(HWND__ *,unsigned __int64 *)",
+    "ea": "0x18000b228",
+    "function_file": "functions/18000b228_CPimcManager_EnsureHookWindowItem_HWND_unsigned_int64.md",
+    "matched_imports": [
+      "USER32!GetParent",
+      "USER32!GetWindowThreadProcessId"
+    ],
+    "matched_strings": [],
+    "name": "?EnsureHookWindowItem@CPimcManager@@QEAAJPEAUHWND__@@PEA_K@Z",
+    "prototype": "int(CPimcManager *__hidden this, HWND, unsigned __int64 *)",
+    "rank_score": 615,
+    "size": 300,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "CPimcContext::PostUpdate(ulong)",
+    "ea": "0x180006f08",
+    "function_file": "functions/180006f08_CPimcContext_PostUpdate_ulong.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!SetEvent"
+    ],
+    "matched_strings": [],
+    "name": "?PostUpdate@CPimcContext@@QEAAJK@Z",
+    "prototype": "__int64 __fastcall(CPimcContext *__hidden this, unsigned int)",
+    "rank_score": 612,
+    "size": 82,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "_Init_thread_wait",
+    "ea": "0x18000d6c4",
+    "function_file": "functions/18000d6c4_Init_thread_wait.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection",
+      "KERNEL32!WaitForSingleObjectEx"
+    ],
+    "matched_strings": [],
+    "name": "_Init_thread_wait",
+    "prototype": "__int64 __fastcall(DWORD dwMilliseconds)",
+    "rank_score": 503,
+    "size": 99,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CPimcContext::ExecuteUpdates(void)",
+    "ea": "0x180006f5c",
+    "function_file": "functions/180006f5c_CPimcContext_ExecuteUpdates_void.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?ExecuteUpdates@CPimcContext@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(CPimcContext *__hidden this)",
+    "rank_score": 427,
+    "size": 346,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ComUtils::GitComLockableWrapper<ITablet>::GitComLockableWrapper<ITablet>(ATL::CComPtr<ITablet>,ComUtils::ComApartmentVerifier)",
+    "ea": "0x18000a164",
+    "function_file": "functions/18000a164_ComUtils_GitComLockableWrapper_ITablet_GitComLockableWrapper_ITablet_ATL_CComPtr_ITablet_ComUtils_ComApartment.md",
+    "matched_imports": [
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [],
+    "name": "??0?$GitComLockableWrapper@UITablet@@@ComUtils@@QEAA@V?$CComPtr@UITablet@@@ATL@@VComApartmentVerifier@1@@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 427,
+    "size": 449,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ComUtils::GitComLockableWrapper<ITabletContextP>::GitComLockableWrapper<ITabletContextP>(ATL::CComPtr<ITabletContextP>,ComUtils::ComApartmentVerifier)",
+    "ea": "0x180007b24",
+    "function_file": "functions/180007b24_ComUtils_GitComLockableWrapper_ITabletContextP_GitComLockableWrapper_ITabletContextP_ATL_CComPtr_ITabletContex.md",
+    "matched_imports": [
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [],
+    "name": "??0?$GitComLockableWrapper@UITabletContextP@@@ComUtils@@QEAA@V?$CComPtr@UITabletContextP@@@ATL@@VComApartmentVerifier@1@@Z",
+    "prototype": "",
+    "rank_score": 427,
+    "size": 449,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ComUtils::GitComLockableWrapper<ITabletManager>::GitComLockableWrapper<ITabletManager>(ATL::CComPtr<ITabletManager>,ComUtils::ComApartmentVerifier)",
+    "ea": "0x18000c198",
+    "function_file": "functions/18000c198_ComUtils_GitComLockableWrapper_ITabletManager_GitComLockableWrapper_ITabletManager_ATL_CComPtr_ITabletManager_.md",
+    "matched_imports": [
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [],
+    "name": "??0?$GitComLockableWrapper@UITabletManager@@@ComUtils@@QEAA@V?$CComPtr@UITabletManager@@@ATL@@VComApartmentVerifier@1@@Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 427,
+    "size": 449,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CPimcContext::ShutdownSharedMemoryCommunications(void)",
+    "ea": "0x180006b10",
+    "function_file": "functions/180006b10_CPimcContext_ShutdownSharedMemoryCommunications_void.md",
+    "matched_imports": [
+      "KERNEL32!UnmapViewOfFile"
+    ],
+    "matched_strings": [],
+    "name": "?ShutdownSharedMemoryCommunications@CPimcContext@@QEAAXXZ",
+    "prototype": "void __fastcall(CPimcContext *__hidden this)",
+    "rank_score": 426,
+    "size": 145,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CPimcTablet::ReleaseCursorInfo(void)",
+    "ea": "0x18000953c",
+    "function_file": "functions/18000953c_CPimcTablet_ReleaseCursorInfo_void.md",
+    "matched_imports": [
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?ReleaseCursorInfo@CPimcTablet@@QEAAXXZ",
+    "prototype": "void __fastcall(CPimcTablet *__hidden this)",
+    "rank_score": 425,
+    "size": 254,
+    "tags": [
+      "file_ops",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "ATL::CExpansionVector::ClearReplacements(void)",
+    "ea": "0x180003480",
+    "function_file": "functions/180003480_ATL_CExpansionVector_ClearReplacements_void.md",
+    "matched_imports": [
+      "ucrtbase_clr0400!free"
+    ],
+    "matched_strings": [],
+    "name": "?ClearReplacements@CExpansionVector@ATL@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(ATL::CExpansionVector *__hidden this)",
+    "rank_score": 418,
+    "size": 157,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CPimcContext::InitCommunicationsCore(void)",
+    "ea": "0x180006a28",
+    "function_file": "functions/180006a28_CPimcContext_InitCommunicationsCore_void.md",
+    "matched_imports": [
+      "KERNEL32!MapViewOfFile"
+    ],
+    "matched_strings": [],
+    "name": "?InitCommunicationsCore@CPimcContext@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(CPimcContext *__hidden this)",
+    "rank_score": 415,
+    "size": 229,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CPimcManager::MgrHandleCtxUpdate(ulong,ulong,HWND__ *)",
+    "ea": "0x18000b834",
+    "function_file": "functions/18000b834_CPimcManager_MgrHandleCtxUpdate_ulong_ulong_HWND.md",
+    "matched_imports": [
+      "KERNEL32!ReleaseMutex",
+      "KERNEL32!WaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?MgrHandleCtxUpdate@CPimcManager@@SAXKKPEAUHWND__@@@Z",
+    "prototype": "static void(unsigned int, unsigned int, HWND)",
+    "rank_score": 414,
+    "size": 133,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CPimcTablet::GetDeviceType(int *)",
+    "ea": "0x180008da0",
+    "function_file": "functions/180008da0_CPimcTablet_GetDeviceType_int.md",
+    "matched_imports": [
+      "VCRUNTIME140_CLR0400!wcsstr",
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "?GetDeviceType@CPimcTablet@@UEAAJPEAH@Z",
+    "prototype": "__int64 __fastcall(CPimcTablet *__hidden this, int *)",
+    "rank_score": 414,
+    "size": 260,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "ComUtils::ComApartmentVerifier::CurrentSta(void)",
+    "ea": "0x180001190",
+    "function_file": "functions/180001190_ComUtils_ComApartmentVerifier_CurrentSta_void.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentThreadId",
+      "ole32!CoGetApartmentType"
+    ],
+    "matched_strings": [],
+    "name": "?CurrentSta@ComApartmentVerifier@ComUtils@@SA?AV12@XZ",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 414,
+    "size": 93,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ATL::CAtlComModule::~CAtlComModule(void)",
+    "ea": "0x180003088",
+    "function_file": "functions/180003088_ATL_CAtlComModule_CAtlComModule_void.md",
+    "matched_imports": [
+      "KERNEL32!DecodePointer",
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1CAtlComModule@ATL@@QEAA@XZ",
+    "prototype": "void __fastcall(ATL::CAtlComModule *__hidden this)",
+    "rank_score": 413,
+    "size": 121,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "ComUtils::ComApartmentVerifier::VerifyCurrentApartmentType(void)",
+    "ea": "0x1800011f0",
+    "function_file": "functions/1800011f0_ComUtils_ComApartmentVerifier_VerifyCurrentApartmentType_void.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentThreadId",
+      "ole32!CoGetApartmentType"
+    ],
+    "matched_strings": [],
+    "name": "?VerifyCurrentApartmentType@ComApartmentVerifier@ComUtils@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(ComUtils::ComApartmentVerifier *__hidden this)",
+    "rank_score": 413,
+    "size": 80,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::_dynamic_initializer_for___AtlComModule__",
+    "ea": "0x1800010c0",
+    "function_file": "functions/1800010c0_ATL_dynamic_initializer_for_AtlComModule.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!InitializeCriticalSectionEx"
+    ],
+    "matched_strings": [],
+    "name": "ATL::_dynamic_initializer_for___AtlComModule__",
+    "prototype": "",
+    "rank_score": 412,
+    "size": 85,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CPimcManager::InstallWindowHookApcCore(unsigned __int64)",
+    "ea": "0x18000b360",
+    "function_file": "functions/18000b360_CPimcManager_InstallWindowHookApcCore_unsigned_int64.md",
+    "matched_imports": [
+      "KERNEL32!SetEvent",
+      "USER32!SetWindowsHookExW"
+    ],
+    "matched_strings": [],
+    "name": "?InstallWindowHookApcCore@CPimcManager@@SAX_K@Z",
+    "prototype": "void __stdcall(ULONG_PTR Parameter)",
+    "rank_score": 411,
+    "size": 57,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "ATL::CSimpleMap<ushort *,ushort *,ATL::CExpansionVectorEqualHelper>::~CSimpleMap<ushort *,ushort *,ATL::CExpansionVectorEqualHelper>(void)",
+    "ea": "0x180003400",
+    "function_file": "functions/180003400_ATL_CSimpleMap_ushort_ushort_ATL_CExpansionVectorEqualHelper_CSimpleMap_ushort_ushort_ATL_CExpansionVectorEqua.md",
+    "matched_imports": [
+      "ucrtbase_clr0400!free"
+    ],
+    "matched_strings": [],
+    "name": "??1?$CSimpleMap@PEAGPEAGVCExpansionVectorEqualHelper@ATL@@@ATL@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 406,
+    "size": 57,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CPimcManager::TerminateHookThread(CHookThreadItem *)",
+    "ea": "0x18000ac94",
+    "function_file": "functions/18000ac94_CPimcManager_TerminateHookThread_CHookThreadItem.md",
+    "matched_imports": [
+      "KERNEL32!SignalObjectAndWait",
+      "USER32!UnhookWindowsHookEx"
+    ],
+    "matched_strings": [],
+    "name": "?TerminateHookThread@CPimcManager@@SAXPEAUCHookThreadItem@@@Z",
+    "prototype": "void __fastcall(struct CHookThreadItem *)",
+    "rank_score": 404,
+    "size": 120,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "_Init_thread_abort",
+    "ea": "0x18000d588",
+    "function_file": "functions/18000d588_Init_thread_abort.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "_Init_thread_abort",
+    "prototype": "",
+    "rank_score": 403,
+    "size": 48,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "_Init_thread_footer",
+    "ea": "0x18000d5b8",
+    "function_file": "functions/18000d5b8_Init_thread_footer.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "_Init_thread_footer",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 403,
+    "size": 96,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__scrt_uninitialize_thread_safe_statics",
+    "ea": "0x18000d560",
+    "function_file": "functions/18000d560_scrt_uninitialize_thread_safe_statics.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "__scrt_uninitialize_thread_safe_statics",
+    "prototype": "void __cdecl()",
+    "rank_score": 401,
+    "size": 40,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "_Init_thread_header",
+    "ea": "0x18000d618",
+    "function_file": "functions/18000d618_Init_thread_header.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "_Init_thread_header",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 304,
+    "size": 103,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "_Init_thread_notify",
+    "ea": "0x18000d680",
+    "function_file": "functions/18000d680_Init_thread_notify.md",
+    "matched_imports": [
+      "KERNEL32!ResetEvent",
+      "KERNEL32!SetEvent"
+    ],
+    "matched_strings": [],
+    "name": "_Init_thread_notify",
+    "prototype": "",
+    "rank_score": 304,
+    "size": 65,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "DllGetClassObject",
+    "ea": "0x1800014a0",
+    "function_file": "functions/1800014a0_DllGetClassObject.md",
+    "matched_imports": [
+      "RPCRT4!NdrDllGetClassObject"
+    ],
+    "matched_strings": [],
+    "name": "DllGetClassObject",
+    "prototype": "HRESULT __stdcall(const IID *const rclsid, const IID *const riid, LPVOID *ppv)",
+    "rank_score": 232,
+    "size": 97,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "ATL::CComGITPtr<ITabletContextP>::Revoke(void)",
+    "ea": "0x180007e24",
+    "function_file": "functions/180007e24_ATL_CComGITPtr_ITabletContextP_Revoke_void.md",
+    "matched_imports": [
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [],
+    "name": "?Revoke@?$CComGITPtr@UITabletContextP@@@ATL@@QEAAJXZ",
+    "prototype": "",
+    "rank_score": 229,
+    "size": 168,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "ComUtils::GitComLockableWrapper<IUnknown>::GetComObject(void)",
+    "ea": "0x18000c9e0",
+    "function_file": "functions/18000c9e0_ComUtils_GitComLockableWrapper_IUnknown_GetComObject_void.md",
+    "matched_imports": [
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [],
+    "name": "?GetComObject@?$GitComLockableWrapper@UIUnknown@@@ComUtils@@QEAA?AV?$CComPtr@UIUnknown@@@ATL@@XZ",
+    "prototype": "",
+    "rank_score": 226,
+    "size": 314,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ComUtils::GitComLockableWrapper<ITabletContextP>::GetComObject(void)",
+    "ea": "0x180007ce8",
+    "function_file": "functions/180007ce8_ComUtils_GitComLockableWrapper_ITabletContextP_GetComObject_void.md",
+    "matched_imports": [
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [],
+    "name": "?GetComObject@?$GitComLockableWrapper@UITabletContextP@@@ComUtils@@QEAA?AV?$CComPtr@UITabletContextP@@@ATL@@XZ",
+    "prototype": "",
+    "rank_score": 225,
+    "size": 314,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ATL::CComGITPtr<IUnknown>::~CComGITPtr<IUnknown>(void)",
+    "ea": "0x18000cb1c",
+    "function_file": "functions/18000cb1c_ATL_CComGITPtr_IUnknown_CComGITPtr_IUnknown_void.md",
+    "matched_imports": [
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [],
+    "name": "??1?$CComGITPtr@UIUnknown@@@ATL@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 224,
+    "size": 154,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CAtlModule::GetGITPtr(IGlobalInterfaceTable * *)",
+    "ea": "0x180002330",
+    "function_file": "functions/180002330_ATL_CAtlModule_GetGITPtr_IGlobalInterfaceTable.md",
+    "matched_imports": [
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [],
+    "name": "?GetGITPtr@CAtlModule@ATL@@UEAAJPEAPEAUIGlobalInterfaceTable@@@Z",
+    "prototype": "__int64 __fastcall(ATL::CAtlModule *__hidden this, struct IGlobalInterfaceTable **)",
+    "rank_score": 222,
+    "size": 118,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 6,
+    "demangled": "ATL::CAtlModule::~CAtlModule(void)",
+    "ea": "0x180002ffc",
+    "function_file": "functions/180002ffc_ATL_CAtlModule_CAtlModule_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1CAtlModule@ATL@@UEAA@XZ",
+    "prototype": "void __fastcall(ATL::CAtlModule *__hidden this)",
+    "rank_score": 220,
+    "size": 140,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CPimcSurrogate::GetWisptisITabletManager(IUnknown * *)",
+    "ea": "0x18000c4b0",
+    "function_file": "functions/18000c4b0_CPimcSurrogate_GetWisptisITabletManager_IUnknown.md",
+    "matched_imports": [
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [],
+    "name": "?GetWisptisITabletManager@CPimcSurrogate@@UEAAJPEAPEAUIUnknown@@@Z",
+    "prototype": "HRESULT __fastcall(CPimcSurrogate *this, LPVOID *ppv)",
+    "rank_score": 220,
+    "size": 40,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 6,
+    "demangled": "ComUtils::ComLockableWrapper::Unlock(void)",
+    "ea": "0x1800012c0",
+    "function_file": "functions/1800012c0_ComUtils_ComLockableWrapper_Unlock_void.md",
+    "matched_imports": [
+      "ole32!CoLockObjectExternal"
+    ],
+    "matched_strings": [],
+    "name": "?Unlock@ComLockableWrapper@ComUtils@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(ComUtils::ComLockableWrapper *__hidden this)",
+    "rank_score": 220,
+    "size": 131,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "ComUtils::ComLockableWrapper::Lock(void)",
+    "ea": "0x180001240",
+    "function_file": "functions/180001240_ComUtils_ComLockableWrapper_Lock_void.md",
+    "matched_imports": [
+      "ole32!CoLockObjectExternal"
+    ],
+    "matched_strings": [],
+    "name": "?Lock@ComLockableWrapper@ComUtils@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(ComUtils::ComLockableWrapper *__hidden this)",
+    "rank_score": 218,
+    "size": 128,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "__report_securityfailure",
+    "ea": "0x18000cf38",
+    "function_file": "functions/18000cf38_report_securityfailure.md",
+    "matched_imports": [
+      "KERNEL32!IsProcessorFeaturePresent"
+    ],
+    "matched_strings": [],
+    "name": "__report_securityfailure",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 156,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CPimcTablet::GetCursorButtonInfo(int,int,ushort * *,_GUID *)",
+    "ea": "0x180009910",
+    "function_file": "functions/180009910_CPimcTablet_GetCursorButtonInfo_int_int_ushort_GUID.md",
+    "matched_imports": [
+      "ole32!CoTaskMemAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?GetCursorButtonInfo@CPimcTablet@@UEAAJHHPEAPEAGPEAU_GUID@@@Z",
+    "prototype": "__int64 __fastcall(CPimcTablet *__hidden this, int, int, unsigned __int16 **, struct _GUID *)",
+    "rank_score": 214,
+    "size": 461,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CPimcTablet::GetCursorInfo(int,ushort * *,int *,int *)",
+    "ea": "0x180009660",
+    "function_file": "functions/180009660_CPimcTablet_GetCursorInfo_int_ushort_int_int.md",
+    "matched_imports": [
+      "ole32!CoTaskMemAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?GetCursorInfo@CPimcTablet@@UEAAJHPEAPEAGPEAH1@Z",
+    "prototype": "__int64 __fastcall(CPimcTablet *__hidden this, int, unsigned __int16 **, int *, int *)",
+    "rank_score": 214,
+    "size": 448,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CPimcTablet::GetPlugAndPlayId(ushort * *)",
+    "ea": "0x180008980",
+    "function_file": "functions/180008980_CPimcTablet_GetPlugAndPlayId_ushort.md",
+    "matched_imports": [
+      "ole32!CoTaskMemAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?GetPlugAndPlayId@CPimcTablet@@UEAAJPEAPEAG@Z",
+    "prototype": "__int64 __fastcall(CPimcTablet *__hidden this, unsigned __int16 **)",
+    "rank_score": 214,
+    "size": 330,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "StringCchPrintfW(ushort *,unsigned __int64,ushort const *,...)",
+    "ea": "0x180007f00",
+    "function_file": "functions/180007f00_StringCchPrintfW_ushort_unsigned_int64_ushort_const.md",
+    "matched_imports": [
+      "ucrtbase_clr0400!__stdio_common_vswprintf"
+    ],
+    "matched_strings": [],
+    "name": "?StringCchPrintfW@@YAJPEAG_KPEBGZZ",
+    "prototype": "__int64(wchar_t *Buffer, unsigned __int64, const unsigned __int16 *, ...)",
+    "rank_score": 214,
+    "size": 156,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "DllMain",
+    "ea": "0x18000140c",
+    "function_file": "functions/18000140c_DllMain.md",
+    "matched_imports": [
+      "KERNEL32!CreateMutexW"
+    ],
+    "matched_strings": [],
+    "name": "DllMain",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 213,
+    "size": 80,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "ATL::CComCritSecLock<ATL::CComCriticalSection>::~CComCritSecLock<ATL::CComCriticalSection>(void)",
+    "ea": "0x180002ed4",
+    "function_file": "functions/180002ed4_ATL_CComCritSecLock_ATL_CComCriticalSection_CComCritSecLock_ATL_CComCriticalSection_void.md",
+    "matched_imports": [
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1?$CComCritSecLock@VCComCriticalSection@ATL@@@ATL@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 212,
+    "size": 34,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "DllCanUnloadNow",
+    "ea": "0x180001460",
+    "function_file": "functions/180001460_DllCanUnloadNow.md",
+    "matched_imports": [
+      "RPCRT4!NdrDllCanUnloadNow"
+    ],
+    "matched_strings": [],
+    "name": "DllCanUnloadNow",
+    "prototype": "HRESULT __stdcall()",
+    "rank_score": 212,
+    "size": 62,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "ATL::CRegParser::CParseBuffer::~CParseBuffer(void)",
+    "ea": "0x180003814",
+    "function_file": "functions/180003814_ATL_CRegParser_CParseBuffer_CParseBuffer_void.md",
+    "matched_imports": [
+      "ole32!CoTaskMemFree"
+    ],
+    "matched_strings": [],
+    "name": "??1CParseBuffer@CRegParser@ATL@@QEAA@XZ",
+    "prototype": "void __fastcall(ATL::CRegParser::CParseBuffer *__hidden this)",
+    "rank_score": 211,
+    "size": 20,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "ATL::_ATL_SAFE_ALLOCA_IMPL::CAtlSafeAllocBufferManager<ATL::CCRTAllocator>::~CAtlSafeAllocBufferManager<ATL::CCRTAllocator>(void)",
+    "ea": "0x180003e74",
+    "function_file": "functions/180003e74_ATL_ATL_SAFE_ALLOCA_IMPL_CAtlSafeAllocBufferManager_ATL_CCRTAllocator_CAtlSafeAllocBufferManager_ATL_CCRTAlloc.md",
+    "matched_imports": [
+      "ucrtbase_clr0400!free"
+    ],
+    "matched_strings": [],
+    "name": "??1?$CAtlSafeAllocBufferManager@VCCRTAllocator@ATL@@@_ATL_SAFE_ALLOCA_IMPL@ATL@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 209,
+    "size": 42,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "SafeCloseHandle(void * *)",
+    "ea": "0x180001360",
+    "function_file": "functions/180001360_SafeCloseHandle_void.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle"
+    ],
+    "matched_strings": [],
+    "name": "?SafeCloseHandle@@YAXPEAPEAX@Z",
+    "prototype": "void __fastcall(void **)",
+    "rank_score": 209,
+    "size": 33,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "ATL::CRegKey::~CRegKey(void)",
+    "ea": "0x1800046bc",
+    "function_file": "functions/1800046bc_ATL_CRegKey_CRegKey_void.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey"
+    ],
+    "matched_strings": [],
+    "name": "??1CRegKey@ATL@@QEAA@XZ",
+    "prototype": "void __fastcall(ATL::CRegKey *__hidden this)",
+    "rank_score": 208,
+    "size": 37,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "CPimcManager::CHookLock::~CHookLock(void)",
+    "ea": "0x18000a428",
+    "function_file": "functions/18000a428_CPimcManager_CHookLock_CHookLock_void.md",
+    "matched_imports": [
+      "KERNEL32!ReleaseMutex"
+    ],
+    "matched_strings": [],
+    "name": "??1CHookLock@CPimcManager@@QEAA@XZ",
+    "prototype": "void __fastcall(CPimcManager::CHookLock *__hidden this)",
+    "rank_score": 205,
+    "size": 28,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "ATL::CTempBuffer<ushort,1024,ATL::CCRTAllocator>::AllocateHeap(unsigned __int64)",
+    "ea": "0x1800037c8",
+    "function_file": "functions/1800037c8_ATL_CTempBuffer_ushort_1024_ATL_CCRTAllocator_AllocateHeap_unsigned_int64.md",
+    "matched_imports": [
+      "ucrtbase_clr0400!malloc"
+    ],
+    "matched_strings": [],
+    "name": "?AllocateHeap@?$CTempBuffer@G$0EAA@VCCRTAllocator@ATL@@@ATL@@AEAAX_K@Z",
+    "prototype": "",
+    "rank_score": 204,
+    "size": 43,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "ATL::AtlHresultFromLastError(void)",
+    "ea": "0x1800037f4",
+    "function_file": "functions/1800037f4_ATL_AtlHresultFromLastError_void.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?AtlHresultFromLastError@ATL@@YAJXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 203,
+    "size": 30,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ATL::CAtlBaseModule::~CAtlBaseModule(void)",
+    "ea": "0x18000e208",
+    "function_file": "functions/18000e208_ATL_CAtlBaseModule_CAtlBaseModule_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "??1CAtlBaseModule@ATL@@QEAA@XZ",
+    "prototype": "void __fastcall(ATL::CAtlBaseModule *__hidden this)",
+    "rank_score": 203,
+    "size": 52,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CreateResetEvent",
+    "ea": "0x180007a60",
+    "function_file": "functions/180007a60_CreateResetEvent.md",
+    "matched_imports": [
+      "KERNEL32!CreateEventW"
+    ],
+    "matched_strings": [],
+    "name": "CreateResetEvent",
+    "prototype": "",
+    "rank_score": 201,
+    "size": 79,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "ATL::CComBSTR::~CComBSTR(void)",
+    "ea": "0x180002bf4",
+    "function_file": "functions/180002bf4_ATL_CComBSTR_CComBSTR_void.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysFreeString"
+    ],
+    "matched_strings": [],
+    "name": "??1CComBSTR@ATL@@QEAA@XZ",
+    "prototype": "void __fastcall(ATL::CComBSTR *__hidden this)",
+    "rank_score": 113,
+    "size": 10,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_configure_narrow_argv_0",
+    "ea": "0x18000e0fc",
+    "function_file": "functions/18000e0fc_configure_narrow_argv_0.md",
+    "matched_imports": [
+      "ucrtbase_clr0400!_configure_narrow_argv"
+    ],
+    "matched_strings": [],
+    "name": "_configure_narrow_argv_0",
+    "prototype": "errno_t __cdecl(_crt_argv_mode mode)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_seh_filter_dll_0",
+    "ea": "0x18000e0f6",
+    "function_file": "functions/18000e0f6_seh_filter_dll_0.md",
+    "matched_imports": [
+      "ucrtbase_clr0400!_seh_filter_dll"
+    ],
+    "matched_strings": [],
+    "name": "_seh_filter_dll_0",
+    "prototype": "int __cdecl(unsigned int ExceptionNum, struct _EXCEPTION_POINTERS *ExceptionPtr)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 7,
+    "demangled": "memcpy_0",
+    "ea": "0x18000e484",
+    "function_file": "functions/18000e484_memcpy_0.md",
+    "matched_imports": [
+      "VCRUNTIME140_CLR0400!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 107,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 7,
+    "demangled": "memset_0",
+    "ea": "0x18000e0cc",
+    "function_file": "functions/18000e0cc_memset_0.md",
+    "matched_imports": [
+      "VCRUNTIME140_CLR0400!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 107,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "ATL::CTempBuffer<ushort,1024,ATL::CCRTAllocator>::FreeHeap(void)",
+    "ea": "0x1800037a4",
+    "function_file": "functions/1800037a4_ATL_CTempBuffer_ushort_1024_ATL_CCRTAllocator_FreeHeap_void.md",
+    "matched_imports": [
+      "ucrtbase_clr0400!free"
+    ],
+    "matched_strings": [],
+    "name": "?FreeHeap@?$CTempBuffer@G$0EAA@VCCRTAllocator@ATL@@@ATL@@AEAAXXZ",
+    "prototype": "",
+    "rank_score": 103,
+    "size": 10,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "ATL::_AtlRaiseException(ulong,ulong)",
+    "ea": "0x180003828",
+    "function_file": "functions/180003828_ATL_AtlRaiseException_ulong_ulong.md",
+    "matched_imports": [
+      "KERNEL32!RaiseException"
+    ],
+    "matched_strings": [],
+    "name": "?_AtlRaiseException@ATL@@YAXKK@Z",
+    "prototype": "void __fastcall(unsigned int, unsigned int)",
+    "rank_score": 103,
+    "size": 13,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "__std_exception_copy_0",
+    "ea": "0x18000e0d2",
+    "function_file": "functions/18000e0d2_std_exception_copy_0.md",
+    "matched_imports": [
+      "VCRUNTIME140_CLR0400!__std_exception_copy"
+    ],
+    "matched_strings": [],
+    "name": "__std_exception_copy_0",
+    "prototype": "",
+    "rank_score": 103,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 1,
+    "demangled": "dllmain_crt_process_attach",
+    "ea": "0x18000d780",
+    "function_file": "functions/18000d780_dllmain_crt_process_attach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_crt_process_attach",
+    "prototype": "",
+    "rank_score": 38,
+    "size": 278,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 74,
+    "demangled": "ATL::CComPtrBase<IUnknown>::~CComPtrBase<IUnknown>(void)",
+    "ea": "0x180002244",
+    "function_file": "functions/180002244_ATL_CComPtrBase_IUnknown_CComPtrBase_IUnknown_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CComPtrBase@UIUnknown@@@ATL@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 46,
+    "demangled": "operator delete(void *,std::nothrow_t const &)",
+    "ea": "0x18000ce0c",
+    "function_file": "functions/18000ce0c_operator_delete_void_std_nothrow_t_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??3@YAXPEAXAEBUnothrow_t@std@@@Z",
+    "prototype": "void __cdecl(void *Block)",
+    "rank_score": 36,
+    "size": 5,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 23,
+    "demangled": "__security_check_cookie",
+    "ea": "0x18000cdb0",
+    "function_file": "functions/18000cdb0_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 35,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 114,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x18000e4a0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 35,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartup",
+    "ea": "0x18000da50",
+    "function_file": "functions/18000da50_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartup",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 33,
+    "size": 61,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "dllmain_crt_process_detach",
+    "ea": "0x18000d898",
+    "function_file": "functions/18000d898_dllmain_crt_process_detach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_crt_process_detach",
+    "prototype": "",
+    "rank_score": 32,
+    "size": 132,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "dllmain_dispatch",
+    "ea": "0x18000d91c",
+    "function_file": "functions/18000d91c_dllmain_dispatch.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_dispatch",
+    "prototype": "__int64 __fastcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 29,
+    "size": 305,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_after_initialize_c",
+    "ea": "0x18000d0f4",
+    "function_file": "functions/18000d0f4_scrt_dllmain_after_initialize_c.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_after_initialize_c",
+    "prototype": "",
+    "rank_score": 27,
+    "size": 52,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 14,
+    "demangled": "ATL::CComPtr<CPimcManager>::~CComPtr<CPimcManager>(void)",
+    "ea": "0x180006258",
+    "function_file": "functions/180006258_ATL_CComPtr_CPimcManager_CComPtr_CPimcManager_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CComPtr@VCPimcManager@@@ATL@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 36,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "dllmain_crt_dispatch",
+    "ea": "0x18000d730",
+    "function_file": "functions/18000d730_dllmain_crt_dispatch.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_crt_dispatch",
+    "prototype": "",
+    "rank_score": 26,
+    "size": 80,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 12,
+    "demangled": "ATL::CComPtr<ITabletContextP>::~CComPtr<ITabletContextP>(void)",
+    "ea": "0x18000627c",
+    "function_file": "functions/18000627c_ATL_CComPtr_ITabletContextP_CComPtr_ITabletContextP_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CComPtr@UITabletContextP@@@ATL@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 36,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x18000e33c",
+    "function_file": "functions/18000e33c_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 91,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ATL::CComAggObject<CPimcManager>::`scalar deleting destructor'(uint)",
+    "ea": "0x1800021b0",
+    "function_file": "functions/1800021b0_ATL_CComAggObject_CPimcManager_scalar_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_G?$CComAggObject@VCPimcManager@@@ATL@@UEAAPEAXI@Z",
+    "prototype": "__int64 __fastcall(void *Block)",
+    "rank_score": 23,
+    "size": 52,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ATL::CComAggObject<CPimcSurrogate>::`scalar deleting destructor'(uint)",
+    "ea": "0x18000c860",
+    "function_file": "functions/18000c860_ATL_CComAggObject_CPimcSurrogate_scalar_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_G?$CComAggObject@VCPimcSurrogate@@@ATL@@UEAAPEAXI@Z",
+    "prototype": "__int64 __fastcall(void *Block)",
+    "rank_score": 23,
+    "size": 84,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<CPimcContext>::`vector deleting destructor'(uint)",
+    "ea": "0x18000a030",
+    "function_file": "functions/18000a030_ATL_CComObject_CPimcContext_vector_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_E?$CComObject@VCPimcContext@@@ATL@@UEAAPEAXI@Z",
+    "prototype": "__int64 __fastcall(void *Block)",
+    "rank_score": 23,
+    "size": 52,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<CPimcManager>::`vector deleting destructor'(uint)",
+    "ea": "0x180002140",
+    "function_file": "functions/180002140_ATL_CComObject_CPimcManager_vector_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_E?$CComObject@VCPimcManager@@@ATL@@UEAAPEAXI@Z",
+    "prototype": "__int64 __fastcall(void *Block)",
+    "rank_score": 23,
+    "size": 52,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<CPimcSurrogate>::`scalar deleting destructor'(uint)",
+    "ea": "0x18000c800",
+    "function_file": "functions/18000c800_ATL_CComObject_CPimcSurrogate_scalar_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_G?$CComObject@VCPimcSurrogate@@@ATL@@UEAAPEAXI@Z",
+    "prototype": "__int64 __fastcall(void *Block)",
+    "rank_score": 23,
+    "size": 84,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<CPimcTablet>::`vector deleting destructor'(uint)",
+    "ea": "0x18000c110",
+    "function_file": "functions/18000c110_ATL_CComObject_CPimcTablet_vector_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_E?$CComObject@VCPimcTablet@@@ATL@@UEAAPEAXI@Z",
+    "prototype": "__int64 __fastcall(void *Block)",
+    "rank_score": 23,
+    "size": 52,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 11,
+    "demangled": "ATL::CComPtr<ITablet>::~CComPtr<ITablet>(void)",
+    "ea": "0x18000814c",
+    "function_file": "functions/18000814c_ATL_CComPtr_ITablet_CComPtr_ITablet_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CComPtr@UITablet@@@ATL@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 36,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CComClassFactory::`vector deleting destructor'(uint)",
+    "ea": "0x180002fa0",
+    "function_file": "functions/180002fa0_ATL_CComClassFactory_vector_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_ECComClassFactory@ATL@@UEAAPEAXI@Z",
+    "prototype": "void *__fastcall(ATL::CComClassFactory *__hidden this, unsigned int)",
+    "rank_score": 22,
+    "size": 43,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CComObjectCached<ATL::CComClassFactory>::`scalar deleting destructor'(uint)",
+    "ea": "0x180001e00",
+    "function_file": "functions/180001e00_ATL_CComObjectCached_ATL_CComClassFactory_scalar_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_G?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UEAAPEAXI@Z",
+    "prototype": "",
+    "rank_score": 22,
+    "size": 64,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "ATL::CComObjectRootBase::InternalQueryInterface(void *,ATL::_ATL_INTMAP_ENTRY const *,_GUID const &,void * *)",
+    "ea": "0x18000323c",
+    "function_file": "functions/18000323c_ATL_CComObjectRootBase_InternalQueryInterface_void_ATL_ATL_INTMAP_ENTRY_const_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?InternalQueryInterface@CComObjectRootBase@ATL@@SAJPEAXPEBU_ATL_INTMAP_ENTRY@2@AEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(void *, const struct ATL::_ATL_INTMAP_ENTRY *, const struct _GUID *, void **)",
+    "rank_score": 21,
+    "size": 276,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CPimcManager::UpdateRegistry(int)",
+    "ea": "0x180001350",
+    "function_file": "functions/180001350_CPimcManager_UpdateRegistry_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?UpdateRegistry@CPimcManager@@SAJH@Z",
+    "prototype": "__int64 __fastcall(int)",
+    "rank_score": 21,
+    "size": 15,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CPimcSurrogate::UpdateRegistry(int)",
+    "ea": "0x18000c4a0",
+    "function_file": "functions/18000c4a0_CPimcSurrogate_UpdateRegistry_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?UpdateRegistry@CPimcSurrogate@@SAJH@Z",
+    "prototype": "__int64 __fastcall(int)",
+    "rank_score": 21,
+    "size": 15,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CAtlDllModuleT_CPenImcModule_::DllGetClassObject_::_1_::dtor$0",
+    "ea": "0x18000e50e",
+    "function_file": "functions/18000e50e_ATL_CAtlDllModuleT_CPenImcModule_DllGetClassObject_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CAtlDllModuleT_CPenImcModule_::DllGetClassObject_::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 12,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CAtlModule::UpdateRegistryFromResource_::_1_::dtor$0",
+    "ea": "0x18000e874",
+    "function_file": "functions/18000e874_ATL_CAtlModule_UpdateRegistryFromResource_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CAtlModule::UpdateRegistryFromResource_::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 12,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CAtlModule::UpdateRegistryFromResource_::_1_::dtor$1",
+    "ea": "0x18000e880",
+    "function_file": "functions/18000e880_ATL_CAtlModule_UpdateRegistryFromResource_1_dtor_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CAtlModule::UpdateRegistryFromResource_::_1_::dtor$1",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 12,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CAtlModule::UpdateRegistryFromResource_::_1_::dtor$12",
+    "ea": "0x18000e89c",
+    "function_file": "functions/18000e89c_ATL_CAtlModule_UpdateRegistryFromResource_1_dtor_12.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CAtlModule::UpdateRegistryFromResource_::_1_::dtor$12",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 12,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CAtlModule::UpdateRegistryFromResource_::_1_::dtor$23",
+    "ea": "0x18000e85c",
+    "function_file": "functions/18000e85c_ATL_CAtlModule_UpdateRegistryFromResource_1_dtor_23.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CAtlModule::UpdateRegistryFromResource_::_1_::dtor$23",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 12,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CAtlModule::UpdateRegistryFromResource_::_1_::dtor$24",
+    "ea": "0x18000e88c",
+    "function_file": "functions/18000e88c_ATL_CAtlModule_UpdateRegistryFromResource_1_dtor_24.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CAtlModule::UpdateRegistryFromResource_::_1_::dtor$24",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 16,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CAtlModule::UpdateRegistryFromResource_::_1_::dtor$25",
+    "ea": "0x18000e8a8",
+    "function_file": "functions/18000e8a8_ATL_CAtlModule_UpdateRegistryFromResource_1_dtor_25.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CAtlModule::UpdateRegistryFromResource_::_1_::dtor$25",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 12,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComCreator_ATL::CComAggObject_CPimcSurrogate___::CreateInstance_::_1_::dtor$0",
+    "ea": "0x18000e51a",
+    "function_file": "functions/18000e51a_ATL_CComCreator_ATL_CComAggObject_CPimcSurrogate_CreateInstance_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComCreator_ATL::CComAggObject_CPimcSurrogate___::CreateInstance_::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 31,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComCreator_ATL::CComObject_CPimcSurrogate___::CreateInstance_::_1_::dtor$0",
+    "ea": "0x18000e5ab",
+    "function_file": "functions/18000e5ab_ATL_CComCreator_ATL_CComObject_CPimcSurrogate_CreateInstance_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComCreator_ATL::CComObject_CPimcSurrogate___::CreateInstance_::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 31,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComObject_CPimcContext_::CComObject_CPimcContext__::_1_::dtor$1",
+    "ea": "0x18000edff",
+    "function_file": "functions/18000edff_ATL_CComObject_CPimcContext_CComObject_CPimcContext_1_dtor_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComObject_CPimcContext_::CComObject_CPimcContext__::_1_::dtor$1",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 29,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComObject_CPimcContext_::CreateInstance_::_1_::dtor$0",
+    "ea": "0x18000edb0",
+    "function_file": "functions/18000edb0_ATL_CComObject_CPimcContext_CreateInstance_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComObject_CPimcContext_::CreateInstance_::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 31,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "ATL::CComGITPtr<ITablet>::~CComGITPtr<ITablet>(void)",
+    "ea": "0x180007ecc",
+    "function_file": "functions/180007ecc_ATL_CComGITPtr_ITablet_CComGITPtr_ITablet_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CComGITPtr@UITablet@@@ATL@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 19,
+    "size": 5,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ATL::CComCreator<ATL::CComAggObject<CPimcManager>>::CreateInstance(void *,_GUID const &,void * *)",
+    "ea": "0x180001b50",
+    "function_file": "functions/180001b50_ATL_CComCreator_ATL_CComAggObject_CPimcManager_CreateInstance_void_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@?$CComCreator@V?$CComAggObject@VCPimcManager@@@ATL@@@ATL@@SAJPEAXAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 347,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ATL::CComCreator<ATL::CComObject<CPimcManager>>::CreateInstance(void *,_GUID const &,void * *)",
+    "ea": "0x180001cac",
+    "function_file": "functions/180001cac_ATL_CComCreator_ATL_CComObject_CPimcManager_CreateInstance_void_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@?$CComCreator@V?$CComObject@VCPimcManager@@@ATL@@@ATL@@SAJPEAXAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 327,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ATL::CComAggObject<CPimcManager>::~CComAggObject<CPimcManager>(void)",
+    "ea": "0x1800020a8",
+    "function_file": "functions/1800020a8_ATL_CComAggObject_CPimcManager_CComAggObject_CPimcManager_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CComAggObject@VCPimcManager@@@ATL@@UEAA@XZ",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 149,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ATL::CComCreator<ATL::CComAggObject<CPimcSurrogate>>::CreateInstance(void *,_GUID const &,void * *)",
+    "ea": "0x18000c4f0",
+    "function_file": "functions/18000c4f0_ATL_CComCreator_ATL_CComAggObject_CPimcSurrogate_CreateInstance_void_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@?$CComCreator@V?$CComAggObject@VCPimcSurrogate@@@ATL@@@ATL@@SAJPEAXAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 263,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "ATL::CComCreator<ATL::CComObject<CPimcSurrogate>>::CreateInstance(void *,_GUID const &,void * *)",
+    "ea": "0x18000c5f8",
+    "function_file": "functions/18000c5f8_ATL_CComCreator_ATL_CComObject_CPimcSurrogate_CreateInstance_void_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@?$CComCreator@V?$CComObject@VCPimcSurrogate@@@ATL@@@ATL@@SAJPEAXAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 261,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ATL::CComObject<CPimcManager>::~CComObject<CPimcManager>(void)",
+    "ea": "0x180001edc",
+    "function_file": "functions/180001edc_ATL_CComObject_CPimcManager_CComObject_CPimcManager_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CComObject@VCPimcManager@@@ATL@@UEAA@XZ",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 143,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "ATL::CComCreator<ATL::CComObjectCached<ATL::CComClassFactory>>::CreateInstance(void *,_GUID const &,void * *)",
+    "ea": "0x180001980",
+    "function_file": "functions/180001980_ATL_CComCreator_ATL_CComObjectCached_ATL_CComClassFactory_CreateInstance_void_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@?$CComCreator@V?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@@ATL@@SAJPEAXAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 264,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ATL::CComObject<CPimcTablet>::CreateInstance(ATL::CComObject<CPimcTablet> * *)",
+    "ea": "0x18000c35c",
+    "function_file": "functions/18000c35c_ATL_CComObject_CPimcTablet_CreateInstance_ATL_CComObject_CPimcTablet.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@?$CComObject@VCPimcTablet@@@ATL@@SAJPEAPEAV12@@Z",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 16,
+    "size": 278,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "ATL::CComPtr<IGlobalInterfaceTable>::~CComPtr<IGlobalInterfaceTable>(void)",
+    "ea": "0x180007ed4",
+    "function_file": "functions/180007ed4_ATL_CComPtr_IGlobalInterfaceTable_CComPtr_IGlobalInterfaceTable_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CComPtr@UIGlobalInterfaceTable@@@ATL@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 36,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "ATL::CComPtr<ITabletContext>::~CComPtr<ITabletContext>(void)",
+    "ea": "0x1800066b8",
+    "function_file": "functions/1800066b8_ATL_CComPtr_ITabletContext_CComPtr_ITabletContext_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CComPtr@UITabletContext@@@ATL@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 36,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "ATL::CComPtr<ITabletManager>::~CComPtr<ITabletManager>(void)",
+    "ea": "0x180002220",
+    "function_file": "functions/180002220_ATL_CComPtr_ITabletManager_CComPtr_ITabletManager_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CComPtr@UITabletManager@@@ATL@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 36,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "ATL::CComPtr<IUnknown>::~CComPtr<IUnknown>(void)",
+    "ea": "0x18000c474",
+    "function_file": "functions/18000c474_ATL_CComPtr_IUnknown_CComPtr_IUnknown_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CComPtr@UIUnknown@@@ATL@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 36,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CPimcContext::GetCommHandle(__int64 *)",
+    "ea": "0x180006ba4",
+    "function_file": "functions/180006ba4_CPimcContext_GetCommHandle_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetCommHandle@CPimcContext@@QEAAJPEA_J@Z",
+    "prototype": "__int64 __fastcall(CPimcContext *__hidden this, __int64 *)",
+    "rank_score": 16,
+    "size": 240,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CPimcTablet::Init(ATL::CComPtr<ITablet>,ATL::CComPtr<CPimcManager>)",
+    "ea": "0x180008170",
+    "function_file": "functions/180008170_CPimcTablet_Init_ATL_CComPtr_ITablet_ATL_CComPtr_CPimcManager.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Init@CPimcTablet@@QEAAJV?$CComPtr@UITablet@@@ATL@@V?$CComPtr@VCPimcManager@@@3@@Z",
+    "prototype": "__int64 __fastcall(_DWORD *, _QWORD *, _QWORD *)",
+    "rank_score": 16,
+    "size": 383,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_uninitialize_c",
+    "ea": "0x18000d1e0",
+    "function_file": "functions/18000d1e0_scrt_dllmain_uninitialize_c.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_uninitialize_c",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 48,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "__scrt_is_ucrt_dll_in_use",
+    "ea": "0x18000dc34",
+    "function_file": "functions/18000dc34_scrt_is_ucrt_dll_in_use.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_is_ucrt_dll_in_use",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "ATL::CAtlDllModuleT<CPenImcModule>::~CAtlDllModuleT<CPenImcModule>(void)",
+    "ea": "0x1800018f8",
+    "function_file": "functions/1800018f8_ATL_CAtlDllModuleT_CPenImcModule_CAtlDllModuleT_CPenImcModule_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CAtlDllModuleT@VCPenImcModule@@@ATL@@UEAA@XZ",
+    "prototype": "__int64 __fastcall(ATL::CAtlModule *this)",
+    "rank_score": 15,
+    "size": 88,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "ATL::CComContainedObject<CPimcManager>::~CComContainedObject<CPimcManager>(void)",
+    "ea": "0x1800021e4",
+    "function_file": "functions/1800021e4_ATL_CComContainedObject_CPimcManager_CComContainedObject_CPimcManager_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CComContainedObject@VCPimcManager@@@ATL@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 58,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ATL::CComObject<CPimcContext>::CreateInstance(ATL::CComObject<CPimcContext> * *)",
+    "ea": "0x18000a0d4",
+    "function_file": "functions/18000a0d4_ATL_CComObject_CPimcContext_CreateInstance_ATL_CComObject_CPimcContext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@?$CComObject@VCPimcContext@@@ATL@@SAJPEAPEAV12@@Z",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 15,
+    "size": 141,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "ATL::CComPtr<ITablet2>::~CComPtr<ITablet2>(void)",
+    "ea": "0x180008d28",
+    "function_file": "functions/180008d28_ATL_CComPtr_ITablet2_CComPtr_ITablet2_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CComPtr@UITablet2@@@ATL@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 36,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_exception_filter",
+    "ea": "0x18000d180",
+    "function_file": "functions/18000d180_scrt_dllmain_exception_filter.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_exception_filter",
+    "prototype": "__int64 __fastcall(int, int, int, int, unsigned int ExceptionNum, struct _EXCEPTION_POINTERS *ExceptionPtr)",
+    "rank_score": 15,
+    "size": 96,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 12,
+    "demangled": "ATL::AtlThrowImpl(long)",
+    "ea": "0x180004484",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AtlThrowImpl@ATL@@YAXJ@Z",
+    "prototype": "void __fastcall __noreturn(int)",
+    "rank_score": 14,
+    "size": 34,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ATL::CComAggObject<CPimcManager>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x180001fd0",
+    "function_file": "functions/180001fd0_ATL_CComAggObject_CPimcManager_QueryInterface_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComAggObject@VCPimcManager@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 100,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "ATL::CComAggObject<CPimcSurrogate>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x18000c790",
+    "function_file": "functions/18000c790_ATL_CComAggObject_CPimcSurrogate_QueryInterface_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComAggObject@VCPimcSurrogate@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 100,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ATL::CComObject<CPimcContext>::CComObject<CPimcContext>(void *)",
+    "ea": "0x18000a328",
+    "function_file": "functions/18000a328_ATL_CComObject_CPimcContext_CComObject_CPimcContext_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??0?$CComObject@VCPimcContext@@@ATL@@QEAA@PEAX@Z",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 254,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "ATL::CComPtr<CPimcContext::CEventSink>::~CComPtr<CPimcContext::CEventSink>(void)",
+    "ea": "0x180006234",
+    "function_file": "functions/180006234_ATL_CComPtr_CPimcContext_CEventSink_CComPtr_CPimcContext_CEventSink_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CComPtr@VCEventSink@CPimcContext@@@ATL@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 36,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "ATL::CComPtr<ITabletCursor>::~CComPtr<ITabletCursor>(void)",
+    "ea": "0x1800094f4",
+    "function_file": "functions/1800094f4_ATL_CComPtr_ITabletCursor_CComPtr_ITabletCursor_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CComPtr@UITabletCursor@@@ATL@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 36,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "ATL::CComPtr<ITabletCursorButton>::~CComPtr<ITabletCursorButton>(void)",
+    "ea": "0x180009518",
+    "function_file": "functions/180009518_ATL_CComPtr_ITabletCursorButton_CComPtr_ITabletCursorButton_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CComPtr@UITabletCursorButton@@@ATL@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 36,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "ATL::CComQIPtr<ITablet2,&_GUID const IID_ITablet2>::~CComQIPtr<ITablet2,&_GUID const IID_ITablet2>(void)",
+    "ea": "0x180008d04",
+    "function_file": "functions/180008d04_ATL_CComQIPtr_ITablet2_GUID_const_IID_ITablet2_CComQIPtr_ITablet2_GUID_const_IID_ITablet2_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CComQIPtr@UITablet2@@$1?IID_ITablet2@@3U_GUID@@B@ATL@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 36,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CHookThreadItem::~CHookThreadItem(void)",
+    "ea": "0x18000b098",
+    "function_file": "functions/18000b098_CHookThreadItem_CHookThreadItem_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1CHookThreadItem@@QEAA@XZ",
+    "prototype": "void __fastcall(CHookThreadItem *__hidden this)",
+    "rank_score": 14,
+    "size": 43,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ATL::CComPtr<ICatRegister>::~CComPtr<ICatRegister>(void)",
+    "ea": "0x1800025ec",
+    "function_file": "functions/1800025ec_ATL_CComPtr_ICatRegister_CComPtr_ICatRegister_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CComPtr@UICatRegister@@@ATL@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 36,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ATL::CComPtr<IPimcSurrogate2>::~CComPtr<IPimcSurrogate2>(void)",
+    "ea": "0x18000a8cc",
+    "function_file": "functions/18000a8cc_ATL_CComPtr_IPimcSurrogate2_CComPtr_IPimcSurrogate2_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CComPtr@UIPimcSurrogate2@@@ATL@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 36,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ATL::CComPtr<ITypeLib>::~CComPtr<ITypeLib>(void)",
+    "ea": "0x180002c00",
+    "function_file": "functions/180002c00_ATL_CComPtr_ITypeLib_CComPtr_ITypeLib_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CComPtr@UITypeLib@@@ATL@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 36,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CPbList<CHookThreadItem>::~CPbList<CHookThreadItem>(void)",
+    "ea": "0x18000bf8c",
+    "function_file": "functions/18000bf8c_CPbList_CHookThreadItem_CPbList_CHookThreadItem_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CPbList@UCHookThreadItem@@@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 109,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CPimcContext::ShutdownComm(void)",
+    "ea": "0x180006ca0",
+    "function_file": "functions/180006ca0_CPimcContext_ShutdownComm_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ShutdownComm@CPimcContext@@UEAAJXZ",
+    "prototype": "__int64 __fastcall(CPimcContext *__hidden this)",
+    "rank_score": 13,
+    "size": 113,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_crt_thread_attach",
+    "ea": "0x18000d140",
+    "function_file": "functions/18000d140_scrt_dllmain_crt_thread_attach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_crt_thread_attach",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 40,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 8,
+    "demangled": "operator new(unsigned __int64)",
+    "ea": "0x18000d44c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??2@YAPEAX_K@Z",
+    "prototype": "void *__fastcall(size_t Size)",
+    "rank_score": 13,
+    "size": 59,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CComAggObject<CPimcSurrogate>::Release(void)",
+    "ea": "0x180002040",
+    "function_file": "functions/180002040_ATL_CComAggObject_CPimcSurrogate_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComAggObject@VCPimcSurrogate@@@ATL@@UEAAKXZ",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 103,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CComClassFactory::CreateInstance(IUnknown *,_GUID const &,void * *)",
+    "ea": "0x180002f00",
+    "function_file": "functions/180002f00_ATL_CComClassFactory_CreateInstance_IUnknown_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@CComClassFactory@ATL@@UEAAJPEAUIUnknown@@AEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(ATL::CComClassFactory *__hidden this, struct IUnknown *, const struct _GUID *, void **)",
+    "rank_score": 12,
+    "size": 99,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CComClassFactory::LockServer(int)",
+    "ea": "0x180002f70",
+    "function_file": "functions/180002f70_ATL_CComClassFactory_LockServer_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?LockServer@CComClassFactory@ATL@@UEAAJH@Z",
+    "prototype": "__int64 __fastcall(ATL::CComClassFactory *__hidden this, int)",
+    "rank_score": 12,
+    "size": 41,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "ATL::CComClassFactory::~CComClassFactory(void)",
+    "ea": "0x180002fcc",
+    "function_file": "functions/180002fcc_ATL_CComClassFactory_CComClassFactory_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1CComClassFactory@ATL@@UEAA@XZ",
+    "prototype": "void __fastcall(ATL::CComClassFactory *__hidden this)",
+    "rank_score": 12,
+    "size": 11,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CComCreator2<ATL::CComCreator<ATL::CComObject<CPimcManager>>,ATL::CComCreator<ATL::CComAggObject<CPimcManager>>>::CreateInstance(void *,_GUID const &,void * *)",
+    "ea": "0x180001970",
+    "function_file": "functions/180001970_ATL_CComCreator2_ATL_CComCreator_ATL_CComObject_CPimcManager_ATL_CComCreator_ATL_CComAggObject_CPimcManager_Cr.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@?$CComCreator2@V?$CComCreator@V?$CComObject@VCPimcManager@@@ATL@@@ATL@@V?$CComCreator@V?$CComAggObject@VCPimcManager@@@ATL@@@2@@ATL@@SAJPEAXAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 14,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CComCreator2<ATL::CComCreator<ATL::CComObject<CPimcSurrogate>>,ATL::CComCreator<ATL::CComAggObject<CPimcSurrogate>>>::CreateInstance(void *,_GUID const &,void * *)",
+    "ea": "0x18000c4e0",
+    "function_file": "functions/18000c4e0_ATL_CComCreator2_ATL_CComCreator_ATL_CComObject_CPimcSurrogate_ATL_CComCreator_ATL_CComAggObject_CPimcSurrogat.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@?$CComCreator2@V?$CComCreator@V?$CComObject@VCPimcSurrogate@@@ATL@@@ATL@@V?$CComCreator@V?$CComAggObject@VCPimcSurrogate@@@ATL@@@2@@ATL@@SAJPEAXAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 14,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<CPimcContext>::Release(void)",
+    "ea": "0x180009ec0",
+    "function_file": "functions/180009ec0_ATL_CComObject_CPimcContext_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComObject@VCPimcContext@@@ATL@@UEAAKXZ",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 103,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<CPimcManager>::Release(void)",
+    "ea": "0x180001e60",
+    "function_file": "functions/180001e60_ATL_CComObject_CPimcManager_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComObject@VCPimcManager@@@ATL@@UEAAKXZ",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 103,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<CPimcSurrogate>::Release(void)",
+    "ea": "0x18000c720",
+    "function_file": "functions/18000c720_ATL_CComObject_CPimcSurrogate_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComObject@VCPimcSurrogate@@@ATL@@UEAAKXZ",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 103,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<CPimcTablet>::Release(void)",
+    "ea": "0x18000bd70",
+    "function_file": "functions/18000bd70_ATL_CComObject_CPimcTablet_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComObject@VCPimcTablet@@@ATL@@UEAAKXZ",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 106,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CComObjectCached<ATL::CComClassFactory>::AddRef(void)",
+    "ea": "0x180001b20",
+    "function_file": "functions/180001b20_ATL_CComObjectCached_ATL_CComClassFactory_AddRef_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UEAAKXZ",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 45,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CComObjectCached<ATL::CComClassFactory>::Release(void)",
+    "ea": "0x180001ad0",
+    "function_file": "functions/180001ad0_ATL_CComObjectCached_ATL_CComClassFactory_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UEAAKXZ",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 73,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_ComUtils::GitComLockableWrapper_ITabletContextP_::GetComObject_::_1_::dtor$0",
+    "ea": "0x18000ea64",
+    "function_file": "functions/18000ea64_ComUtils_GitComLockableWrapper_ITabletContextP_GetComObject_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ComUtils::GitComLockableWrapper_ITabletContextP_::GetComObject_::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 38,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_ComUtils::GitComLockableWrapper_IUnknown_::GetComObject_::_1_::dtor$0",
+    "ea": "0x18000f19f",
+    "function_file": "functions/18000f19f_ComUtils_GitComLockableWrapper_IUnknown_GetComObject_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ComUtils::GitComLockableWrapper_IUnknown_::GetComObject_::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 38,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_before_initialize_c",
+    "ea": "0x18000d128",
+    "function_file": "functions/18000d128_scrt_dllmain_before_initialize_c.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_before_initialize_c",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 21,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_crt_thread_detach",
+    "ea": "0x18000d168",
+    "function_file": "functions/18000d168_scrt_dllmain_crt_thread_detach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_crt_thread_detach",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 21,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_uninitialize_critical",
+    "ea": "0x18000d210",
+    "function_file": "functions/18000d210_scrt_dllmain_uninitialize_critical.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_uninitialize_critical",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 20,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "operator delete(void *)",
+    "ea": "0x18000cdd0",
+    "function_file": "functions/18000cdd0_operator_delete_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??3@YAXPEAX@Z",
+    "prototype": "void __cdecl(void *Block)",
+    "rank_score": 12,
+    "size": 5,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::CAtlModuleT<CPenImcModule>::AddCommonRGSReplacements(IRegistrarBase *)",
+    "ea": "0x180001950",
+    "function_file": "functions/180001950_ATL_CAtlModuleT_CPenImcModule_AddCommonRGSReplacements_IRegistrarBase.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddCommonRGSReplacements@?$CAtlModuleT@VCPenImcModule@@@ATL@@UEAAJPEAUIRegistrarBase@@@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 31,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::CComContainedObject<CPimcManager>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x180001f70",
+    "function_file": "functions/180001f70_ATL_CComContainedObject_CPimcManager_QueryInterface_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComContainedObject@VCPimcManager@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 17,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::CComContainedObject<CPimcManager>::Release(void)",
+    "ea": "0x180001f90",
+    "function_file": "functions/180001f90_ATL_CComContainedObject_CPimcManager_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$CComContainedObject@VCPimcManager@@@ATL@@UEAAKXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 18,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::CComContainedObject<CPimcSurrogate>::AddRef(void)",
+    "ea": "0x180001fb0",
+    "function_file": "functions/180001fb0_ATL_CComContainedObject_CPimcSurrogate_AddRef_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@?$CComContainedObject@VCPimcSurrogate@@@ATL@@UEAAKXZ",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 18,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<CPimcContext>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x180009ea0",
+    "function_file": "functions/180009ea0_ATL_CComObject_CPimcContext_QueryInterface_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComObject@VCPimcContext@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 18,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<CPimcManager>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x180001e40",
+    "function_file": "functions/180001e40_ATL_CComObject_CPimcManager_QueryInterface_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComObject@VCPimcManager@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 18,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<CPimcSurrogate>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x18000c700",
+    "function_file": "functions/18000c700_ATL_CComObject_CPimcSurrogate_QueryInterface_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComObject@VCPimcSurrogate@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 18,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<CPimcTablet>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x18000bd50",
+    "function_file": "functions/18000bd50_ATL_CComObject_CPimcTablet_QueryInterface_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComObject@VCPimcTablet@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 18,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::CComObjectCached<ATL::CComClassFactory>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x180001ab0",
+    "function_file": "functions/180001ab0_ATL_CComObjectCached_ATL_CComClassFactory_QueryInterface_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 18,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::_dynamic_atexit_destructor_for___AtlComModule__",
+    "ea": "0x18000f300",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ATL::_dynamic_atexit_destructor_for___AtlComModule__",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "GetProxyDllInfo",
+    "ea": "0x180001150",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetProxyDllInfo",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 38,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComAggObject_CPimcManager_::_CComAggObject_CPimcManager__::_1_::dtor$0",
+    "ea": "0x18000e626",
+    "function_file": "functions/18000e626_ATL_CComAggObject_CPimcManager_CComAggObject_CPimcManager_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComAggObject_CPimcManager_::_CComAggObject_CPimcManager__::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 16,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComCreator_ATL::CComAggObject_CPimcManager___::CreateInstance_::_1_::dtor$1",
+    "ea": "0x18000e563",
+    "function_file": "functions/18000e563_ATL_CComCreator_ATL_CComAggObject_CPimcManager_CreateInstance_1_dtor_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComCreator_ATL::CComAggObject_CPimcManager___::CreateInstance_::_1_::dtor$1",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 16,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComCreator_ATL::CComAggObject_CPimcManager___::CreateInstance_::_1_::dtor$2",
+    "ea": "0x18000e573",
+    "function_file": "functions/18000e573_ATL_CComCreator_ATL_CComAggObject_CPimcManager_CreateInstance_1_dtor_2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComCreator_ATL::CComAggObject_CPimcManager___::CreateInstance_::_1_::dtor$2",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComCreator_ATL::CComAggObject_CPimcManager___::CreateInstance_::_1_::dtor$3",
+    "ea": "0x18000e57f",
+    "function_file": "functions/18000e57f_ATL_CComCreator_ATL_CComAggObject_CPimcManager_CreateInstance_1_dtor_3.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComCreator_ATL::CComAggObject_CPimcManager___::CreateInstance_::_1_::dtor$3",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 16,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComCreator_ATL::CComAggObject_CPimcManager___::CreateInstance_::_1_::dtor$4",
+    "ea": "0x18000e58f",
+    "function_file": "functions/18000e58f_ATL_CComCreator_ATL_CComAggObject_CPimcManager_CreateInstance_1_dtor_4.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComCreator_ATL::CComAggObject_CPimcManager___::CreateInstance_::_1_::dtor$4",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 16,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComCreator_ATL::CComAggObject_CPimcManager___::CreateInstance_::_1_::dtor$5",
+    "ea": "0x18000e59f",
+    "function_file": "functions/18000e59f_ATL_CComCreator_ATL_CComAggObject_CPimcManager_CreateInstance_1_dtor_5.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComCreator_ATL::CComAggObject_CPimcManager___::CreateInstance_::_1_::dtor$5",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComCreator_ATL::CComObjectCached_ATL::CComClassFactory___::CreateInstance_::_1_::dtor$1",
+    "ea": "0x18000e539",
+    "function_file": "functions/18000e539_ATL_CComCreator_ATL_CComObjectCached_ATL_CComClassFactory_CreateInstance_1_dtor_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComCreator_ATL::CComObjectCached_ATL::CComClassFactory___::CreateInstance_::_1_::dtor$1",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComCreator_ATL::CComObject_CPimcManager___::CreateInstance_::_1_::dtor$1",
+    "ea": "0x18000e5ca",
+    "function_file": "functions/18000e5ca_ATL_CComCreator_ATL_CComObject_CPimcManager_CreateInstance_1_dtor_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComCreator_ATL::CComObject_CPimcManager___::CreateInstance_::_1_::dtor$1",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComCreator_ATL::CComObject_CPimcManager___::CreateInstance_::_1_::dtor$2",
+    "ea": "0x18000e5d6",
+    "function_file": "functions/18000e5d6_ATL_CComCreator_ATL_CComObject_CPimcManager_CreateInstance_1_dtor_2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComCreator_ATL::CComObject_CPimcManager___::CreateInstance_::_1_::dtor$2",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 16,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComCreator_ATL::CComObject_CPimcManager___::CreateInstance_::_1_::dtor$3",
+    "ea": "0x18000e5e6",
+    "function_file": "functions/18000e5e6_ATL_CComCreator_ATL_CComObject_CPimcManager_CreateInstance_1_dtor_3.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComCreator_ATL::CComObject_CPimcManager___::CreateInstance_::_1_::dtor$3",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 16,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComCreator_ATL::CComObject_CPimcManager___::CreateInstance_::_1_::dtor$4",
+    "ea": "0x18000e5f6",
+    "function_file": "functions/18000e5f6_ATL_CComCreator_ATL_CComObject_CPimcManager_CreateInstance_1_dtor_4.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComCreator_ATL::CComObject_CPimcManager___::CreateInstance_::_1_::dtor$4",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComGITPtr_IUnknown_::_CComGITPtr_IUnknown__::_1_::dtor$0",
+    "ea": "0x18000ead2",
+    "function_file": "functions/18000ead2_ATL_CComGITPtr_IUnknown_CComGITPtr_IUnknown_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComGITPtr_IUnknown_::_CComGITPtr_IUnknown__::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComGITPtr_IUnknown_::_CComGITPtr_IUnknown__::_1_::dtor$3",
+    "ea": "0x18000eade",
+    "function_file": "functions/18000eade_ATL_CComGITPtr_IUnknown_CComGITPtr_IUnknown_1_dtor_3.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComGITPtr_IUnknown_::_CComGITPtr_IUnknown__::_1_::dtor$3",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComObjectCached_ATL::CComClassFactory_::_scalar_deleting_destructor__::_1_::dtor$0",
+    "ea": "0x18000e602",
+    "function_file": "functions/18000e602_ATL_CComObjectCached_ATL_CComClassFactory_scalar_deleting_destructor_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComObjectCached_ATL::CComClassFactory_::_scalar_deleting_destructor__::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComObject_CPimcContext_::CComObject_CPimcContext__::_1_::dtor$0",
+    "ea": "0x18000edf3",
+    "function_file": "functions/18000edf3_ATL_CComObject_CPimcContext_CComObject_CPimcContext_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComObject_CPimcContext_::CComObject_CPimcContext__::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComObject_CPimcContext_::CComObject_CPimcContext__::_1_::dtor$2",
+    "ea": "0x18000ee1c",
+    "function_file": "functions/18000ee1c_ATL_CComObject_CPimcContext_CComObject_CPimcContext_1_dtor_2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComObject_CPimcContext_::CComObject_CPimcContext__::_1_::dtor$2",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 16,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComObject_CPimcContext_::CComObject_CPimcContext__::_1_::dtor$3",
+    "ea": "0x18000ee2c",
+    "function_file": "functions/18000ee2c_ATL_CComObject_CPimcContext_CComObject_CPimcContext_1_dtor_3.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComObject_CPimcContext_::CComObject_CPimcContext__::_1_::dtor$3",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 16,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComObject_CPimcContext_::CComObject_CPimcContext__::_1_::dtor$4",
+    "ea": "0x18000ee3c",
+    "function_file": "functions/18000ee3c_ATL_CComObject_CPimcContext_CComObject_CPimcContext_1_dtor_4.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComObject_CPimcContext_::CComObject_CPimcContext__::_1_::dtor$4",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 16,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComObject_CPimcContext_::CComObject_CPimcContext__::_1_::dtor$5",
+    "ea": "0x18000ee4c",
+    "function_file": "functions/18000ee4c_ATL_CComObject_CPimcContext_CComObject_CPimcContext_1_dtor_5.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComObject_CPimcContext_::CComObject_CPimcContext__::_1_::dtor$5",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComObject_CPimcContext_::CComObject_CPimcContext__::_1_::dtor$6",
+    "ea": "0x18000ee58",
+    "function_file": "functions/18000ee58_ATL_CComObject_CPimcContext_CComObject_CPimcContext_1_dtor_6.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComObject_CPimcContext_::CComObject_CPimcContext__::_1_::dtor$6",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComObject_CPimcContext_::CComObject_CPimcContext__::_1_::dtor$7",
+    "ea": "0x18000ee64",
+    "function_file": "functions/18000ee64_ATL_CComObject_CPimcContext_CComObject_CPimcContext_1_dtor_7.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComObject_CPimcContext_::CComObject_CPimcContext__::_1_::dtor$7",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComObject_CPimcContext_::_CComObject_CPimcContext__::_1_::dtor$0",
+    "ea": "0x18000ed38",
+    "function_file": "functions/18000ed38_ATL_CComObject_CPimcContext_CComObject_CPimcContext_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComObject_CPimcContext_::_CComObject_CPimcContext__::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComObject_CPimcContext_::_CComObject_CPimcContext__::_1_::dtor$1",
+    "ea": "0x18000ed44",
+    "function_file": "functions/18000ed44_ATL_CComObject_CPimcContext_CComObject_CPimcContext_1_dtor_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComObject_CPimcContext_::_CComObject_CPimcContext__::_1_::dtor$1",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComObject_CPimcManager_::_CComObject_CPimcManager__::_1_::dtor$1",
+    "ea": "0x18000e61a",
+    "function_file": "functions/18000e61a_ATL_CComObject_CPimcManager_CComObject_CPimcManager_1_dtor_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComObject_CPimcManager_::_CComObject_CPimcManager__::_1_::dtor$1",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComObject_CPimcSurrogate_::Release_::_1_::dtor$0",
+    "ea": "0x18000e60e",
+    "function_file": "functions/18000e60e_ATL_CComObject_CPimcSurrogate_Release_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComObject_CPimcSurrogate_::Release_::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComObject_CPimcTablet_::CreateInstance_::_1_::dtor$1",
+    "ea": "0x18000f11f",
+    "function_file": "functions/18000f11f_ATL_CComObject_CPimcTablet_CreateInstance_1_dtor_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComObject_CPimcTablet_::CreateInstance_::_1_::dtor$1",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComObject_CPimcTablet_::CreateInstance_::_1_::dtor$2",
+    "ea": "0x18000f12b",
+    "function_file": "functions/18000f12b_ATL_CComObject_CPimcTablet_CreateInstance_1_dtor_2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComObject_CPimcTablet_::CreateInstance_::_1_::dtor$2",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 16,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComObject_CPimcTablet_::CreateInstance_::_1_::dtor$3",
+    "ea": "0x18000f13b",
+    "function_file": "functions/18000f13b_ATL_CComObject_CPimcTablet_CreateInstance_1_dtor_3.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComObject_CPimcTablet_::CreateInstance_::_1_::dtor$3",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 16,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComObject_CPimcTablet_::CreateInstance_::_1_::dtor$4",
+    "ea": "0x18000f14b",
+    "function_file": "functions/18000f14b_ATL_CComObject_CPimcTablet_CreateInstance_1_dtor_4.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComObject_CPimcTablet_::CreateInstance_::_1_::dtor$4",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComObject_CPimcTablet_::CreateInstance_::_1_::dtor$5",
+    "ea": "0x18000f157",
+    "function_file": "functions/18000f157_ATL_CComObject_CPimcTablet_CreateInstance_1_dtor_5.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComObject_CPimcTablet_::CreateInstance_::_1_::dtor$5",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComObject_CPimcTablet_::CreateInstance_::_1_::dtor$6",
+    "ea": "0x18000f163",
+    "function_file": "functions/18000f163_ATL_CComObject_CPimcTablet_CreateInstance_1_dtor_6.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComObject_CPimcTablet_::CreateInstance_::_1_::dtor$6",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComObject_CPimcTablet_::CreateInstance_::_1_::dtor$8",
+    "ea": "0x18000f16f",
+    "function_file": "functions/18000f16f_ATL_CComObject_CPimcTablet_CreateInstance_1_dtor_8.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComObject_CPimcTablet_::CreateInstance_::_1_::dtor$8",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComObject_CPimcTablet_::_CComObject_CPimcTablet__::_1_::dtor$0",
+    "ea": "0x18000f08f",
+    "function_file": "functions/18000f08f_ATL_CComObject_CPimcTablet_CComObject_CPimcTablet_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComObject_CPimcTablet_::_CComObject_CPimcTablet__::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComObject_CPimcTablet_::_CComObject_CPimcTablet__::_1_::dtor$1",
+    "ea": "0x18000ed50",
+    "function_file": "functions/18000ed50_ATL_CComObject_CPimcTablet_CComObject_CPimcTablet_1_dtor_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComObject_CPimcTablet_::_CComObject_CPimcTablet__::_1_::dtor$1",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComObject_CPimcTablet_::_CComObject_CPimcTablet__::_1_::dtor$3",
+    "ea": "0x18000ed5c",
+    "function_file": "functions/18000ed5c_ATL_CComObject_CPimcTablet_CComObject_CPimcTablet_1_dtor_3.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComObject_CPimcTablet_::_CComObject_CPimcTablet__::_1_::dtor$3",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComObject_CPimcTablet_::_CComObject_CPimcTablet__::_1_::dtor$4",
+    "ea": "0x18000f09b",
+    "function_file": "functions/18000f09b_ATL_CComObject_CPimcTablet_CComObject_CPimcTablet_1_dtor_4.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComObject_CPimcTablet_::_CComObject_CPimcTablet__::_1_::dtor$4",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComObject_CPimcTablet_::_CComObject_CPimcTablet__::_1_::dtor$7",
+    "ea": "0x18000f0a7",
+    "function_file": "functions/18000f0a7_ATL_CComObject_CPimcTablet_CComObject_CPimcTablet_1_dtor_7.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComObject_CPimcTablet_::_CComObject_CPimcTablet__::_1_::dtor$7",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComPtr_ICatRegister_::_CComPtr_ICatRegister__::_1_::dtor$0",
+    "ea": "0x18000e69e",
+    "function_file": "functions/18000e69e_ATL_CComPtr_ICatRegister_CComPtr_ICatRegister_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComPtr_ICatRegister_::_CComPtr_ICatRegister__::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComPtr_IGlobalInterfaceTable_::_CComPtr_IGlobalInterfaceTable__::_1_::dtor$0",
+    "ea": "0x18000eaea",
+    "function_file": "functions/18000eaea_ATL_CComPtr_IGlobalInterfaceTable_CComPtr_IGlobalInterfaceTable_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComPtr_IGlobalInterfaceTable_::_CComPtr_IGlobalInterfaceTable__::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComPtr_IPimcSurrogate2_::_CComPtr_IPimcSurrogate2__::_1_::dtor$0",
+    "ea": "0x18000eec4",
+    "function_file": "functions/18000eec4_ATL_CComPtr_IPimcSurrogate2_CComPtr_IPimcSurrogate2_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComPtr_IPimcSurrogate2_::_CComPtr_IPimcSurrogate2__::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComPtr_ITabletContextP_::_CComPtr_ITabletContextP__::_1_::dtor$0",
+    "ea": "0x18000e8cc",
+    "function_file": "functions/18000e8cc_ATL_CComPtr_ITabletContextP_CComPtr_ITabletContextP_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComPtr_ITabletContextP_::_CComPtr_ITabletContextP__::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComPtr_ITabletContext_::_CComPtr_ITabletContext__::_1_::dtor$0",
+    "ea": "0x18000e98c",
+    "function_file": "functions/18000e98c_ATL_CComPtr_ITabletContext_CComPtr_ITabletContext_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComPtr_ITabletContext_::_CComPtr_ITabletContext__::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComPtr_ITabletCursorButton_::_CComPtr_ITabletCursorButton__::_1_::dtor$0",
+    "ea": "0x18000ed2c",
+    "function_file": "functions/18000ed2c_ATL_CComPtr_ITabletCursorButton_CComPtr_ITabletCursorButton_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComPtr_ITabletCursorButton_::_CComPtr_ITabletCursorButton__::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComPtr_ITabletCursor_::_CComPtr_ITabletCursor__::_1_::dtor$0",
+    "ea": "0x18000ed20",
+    "function_file": "functions/18000ed20_ATL_CComPtr_ITabletCursor_CComPtr_ITabletCursor_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComPtr_ITabletCursor_::_CComPtr_ITabletCursor__::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComPtr_ITabletManager_::_CComPtr_ITabletManager__::_1_::dtor$0",
+    "ea": "0x18000e636",
+    "function_file": "functions/18000e636_ATL_CComPtr_ITabletManager_CComPtr_ITabletManager_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComPtr_ITabletManager_::_CComPtr_ITabletManager__::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComPtr_ITypeLib_::_CComPtr_ITypeLib__::_1_::dtor$0",
+    "ea": "0x18000e6e6",
+    "function_file": "functions/18000e6e6_ATL_CComPtr_ITypeLib_CComPtr_ITypeLib_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComPtr_ITypeLib_::_CComPtr_ITypeLib__::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComPtr_IUnknown_::_CComPtr_IUnknown__::_1_::dtor$0",
+    "ea": "0x18000f17b",
+    "function_file": "functions/18000f17b_ATL_CComPtr_IUnknown_CComPtr_IUnknown_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComPtr_IUnknown_::_CComPtr_IUnknown__::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComQIPtr_ITablet2_&IID_ITablet2_::_CComQIPtr_ITablet2_&IID_ITablet2__::_1_::dtor$0",
+    "ea": "0x18000ec0a",
+    "function_file": "functions/18000ec0a_ATL_CComQIPtr_ITablet2_IID_ITablet2_CComQIPtr_ITablet2_IID_ITablet2_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComQIPtr_ITablet2_&IID_ITablet2_::_CComQIPtr_ITablet2_&IID_ITablet2__::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CComQIPtr_ITablet2_&IID_ITablet2_::_CComQIPtr_ITablet2_&IID_ITablet2__::_1_::dtor$1",
+    "ea": "0x18000ec16",
+    "function_file": "functions/18000ec16_ATL_CComQIPtr_ITablet2_IID_ITablet2_CComQIPtr_ITablet2_IID_ITablet2_1_dtor_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComQIPtr_ITablet2_&IID_ITablet2_::_CComQIPtr_ITablet2_&IID_ITablet2__::_1_::dtor$1",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CPimcContext::ExecuteUpdates_::_1_::dtor$0",
+    "ea": "0x18000e9c8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CPimcContext::ExecuteUpdates_::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CPimcContext::ExecuteUpdates_::_1_::dtor$1",
+    "ea": "0x18000e9d4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CPimcContext::ExecuteUpdates_::_1_::dtor$1",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CPimcContext::ExecuteUpdates_::_1_::dtor$3",
+    "ea": "0x18000e9ec",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CPimcContext::ExecuteUpdates_::_1_::dtor$3",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CPimcContext::ExecuteUpdates_::_1_::dtor$5",
+    "ea": "0x18000e9f8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CPimcContext::ExecuteUpdates_::_1_::dtor$5",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CPimcContext::ExecuteUpdates_::_1_::dtor$6",
+    "ea": "0x18000ea04",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CPimcContext::ExecuteUpdates_::_1_::dtor$6",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CPimcContext::ExecuteUpdates_::_1_::dtor$8",
+    "ea": "0x18000e9e0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CPimcContext::ExecuteUpdates_::_1_::dtor$8",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CPimcContext::InitNamedCommunications_::_1_::dtor$0",
+    "ea": "0x18000e998",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CPimcContext::InitNamedCommunications_::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CPimcContext::InitNamedCommunications_::_1_::dtor$1",
+    "ea": "0x18000e9a4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CPimcContext::InitNamedCommunications_::_1_::dtor$1",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CPimcContext::InitNamedCommunications_::_1_::dtor$2",
+    "ea": "0x18000e9b0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CPimcContext::InitNamedCommunications_::_1_::dtor$2",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CPimcContext::InitNamedCommunications_::_1_::dtor$3",
+    "ea": "0x18000e9bc",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CPimcContext::InitNamedCommunications_::_1_::dtor$3",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CPimcManager::InstallWindowHook_::_1_::dtor$0",
+    "ea": "0x18000eef9",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CPimcManager::InstallWindowHook_::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CPimcManager::InstallWindowHook_::_1_::dtor$3",
+    "ea": "0x18000ef05",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CPimcManager::InstallWindowHook_::_1_::dtor$3",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CPimcManager::InstallWindowHook_::_1_::dtor$4",
+    "ea": "0x18000ef11",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CPimcManager::InstallWindowHook_::_1_::dtor$4",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 16,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CPimcManager::MgrHandleCtxUpdate_::_1_::dtor$0",
+    "ea": "0x18000efcb",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CPimcManager::MgrHandleCtxUpdate_::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CPimcManager::PostCtxUpdateForSubtree_::_1_::dtor$0",
+    "ea": "0x18000efd7",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CPimcManager::PostCtxUpdateForSubtree_::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CPimcManager::UninstallWindowHook_::_1_::dtor$0",
+    "ea": "0x18000efb3",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CPimcManager::UninstallWindowHook_::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CPimcManager::UninstallWindowHook_::_1_::dtor$1",
+    "ea": "0x18000ef97",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CPimcManager::UninstallWindowHook_::_1_::dtor$1",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CPimcManager::UninstallWindowHook_::_1_::dtor$2",
+    "ea": "0x18000efa3",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CPimcManager::UninstallWindowHook_::_1_::dtor$2",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 16,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CPimcManager::UninstallWindowHook_::_1_::dtor$5",
+    "ea": "0x18000ef21",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CPimcManager::UninstallWindowHook_::_1_::dtor$5",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 16,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ComUtils::GitComLockableWrapper_ITabletContextP_::GetComObject_::_1_::dtor$1",
+    "ea": "0x18000ea8a",
+    "function_file": "functions/18000ea8a_ComUtils_GitComLockableWrapper_ITabletContextP_GetComObject_1_dtor_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ComUtils::GitComLockableWrapper_ITabletContextP_::GetComObject_::_1_::dtor$1",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ComUtils::GitComLockableWrapper_ITabletContextP_::GetComObject_::_1_::dtor$2",
+    "ea": "0x18000ea96",
+    "function_file": "functions/18000ea96_ComUtils_GitComLockableWrapper_ITabletContextP_GetComObject_1_dtor_2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ComUtils::GitComLockableWrapper_ITabletContextP_::GetComObject_::_1_::dtor$2",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ComUtils::GitComLockableWrapper_ITabletContextP_::GetComObject_::_1_::dtor$7",
+    "ea": "0x18000eaba",
+    "function_file": "functions/18000eaba_ComUtils_GitComLockableWrapper_ITabletContextP_GetComObject_1_dtor_7.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ComUtils::GitComLockableWrapper_ITabletContextP_::GetComObject_::_1_::dtor$7",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ComUtils::GitComLockableWrapper_ITabletContextP_::GetComObject_::_1_::dtor$9",
+    "ea": "0x18000eac6",
+    "function_file": "functions/18000eac6_ComUtils_GitComLockableWrapper_ITabletContextP_GetComObject_1_dtor_9.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ComUtils::GitComLockableWrapper_ITabletContextP_::GetComObject_::_1_::dtor$9",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ComUtils::GitComLockableWrapper_ITabletContextP_::GitComLockableWrapper_ITabletContextP__::_1_::dtor$0",
+    "ea": "0x18000ea10",
+    "function_file": "functions/18000ea10_ComUtils_GitComLockableWrapper_ITabletContextP_GitComLockableWrapper_ITabletContextP_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ComUtils::GitComLockableWrapper_ITabletContextP_::GitComLockableWrapper_ITabletContextP__::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ComUtils::GitComLockableWrapper_ITabletContextP_::GitComLockableWrapper_ITabletContextP__::_1_::dtor$1",
+    "ea": "0x18000ea1c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ComUtils::GitComLockableWrapper_ITabletContextP_::GitComLockableWrapper_ITabletContextP__::_1_::dtor$1",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ComUtils::GitComLockableWrapper_ITabletContextP_::GitComLockableWrapper_ITabletContextP__::_1_::dtor$15",
+    "ea": "0x18000ea58",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ComUtils::GitComLockableWrapper_ITabletContextP_::GitComLockableWrapper_ITabletContextP__::_1_::dtor$15",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ComUtils::GitComLockableWrapper_ITabletManager_::GitComLockableWrapper_ITabletManager__::_1_::dtor$0",
+    "ea": "0x18000f0fb",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ComUtils::GitComLockableWrapper_ITabletManager_::GitComLockableWrapper_ITabletManager__::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ComUtils::GitComLockableWrapper_ITabletManager_::GitComLockableWrapper_ITabletManager__::_1_::dtor$1",
+    "ea": "0x18000f107",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ComUtils::GitComLockableWrapper_ITabletManager_::GitComLockableWrapper_ITabletManager__::_1_::dtor$1",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ComUtils::GitComLockableWrapper_ITabletManager_::GitComLockableWrapper_ITabletManager__::_1_::dtor$11",
+    "ea": "0x18000ea40",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ComUtils::GitComLockableWrapper_ITabletManager_::GitComLockableWrapper_ITabletManager__::_1_::dtor$11",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ComUtils::GitComLockableWrapper_ITabletManager_::GitComLockableWrapper_ITabletManager__::_1_::dtor$14",
+    "ea": "0x18000ea4c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ComUtils::GitComLockableWrapper_ITabletManager_::GitComLockableWrapper_ITabletManager__::_1_::dtor$14",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ComUtils::GitComLockableWrapper_ITabletManager_::GitComLockableWrapper_ITabletManager__::_1_::dtor$15",
+    "ea": "0x18000f113",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ComUtils::GitComLockableWrapper_ITabletManager_::GitComLockableWrapper_ITabletManager__::_1_::dtor$15",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ComUtils::GitComLockableWrapper_ITabletManager_::GitComLockableWrapper_ITabletManager__::_1_::dtor$2",
+    "ea": "0x18000ea28",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ComUtils::GitComLockableWrapper_ITabletManager_::GitComLockableWrapper_ITabletManager__::_1_::dtor$2",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ComUtils::GitComLockableWrapper_ITabletManager_::GitComLockableWrapper_ITabletManager__::_1_::dtor$6",
+    "ea": "0x18000ea34",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ComUtils::GitComLockableWrapper_ITabletManager_::GitComLockableWrapper_ITabletManager__::_1_::dtor$6",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ComUtils::GitComLockableWrapper_ITablet_::GitComLockableWrapper_ITablet__::_1_::dtor$0",
+    "ea": "0x18000edcf",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ComUtils::GitComLockableWrapper_ITablet_::GitComLockableWrapper_ITablet__::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ComUtils::GitComLockableWrapper_ITablet_::GitComLockableWrapper_ITablet__::_1_::dtor$1",
+    "ea": "0x18000eddb",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ComUtils::GitComLockableWrapper_ITablet_::GitComLockableWrapper_ITablet__::_1_::dtor$1",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ComUtils::GitComLockableWrapper_ITablet_::GitComLockableWrapper_ITablet__::_1_::dtor$15",
+    "ea": "0x18000ede7",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ComUtils::GitComLockableWrapper_ITablet_::GitComLockableWrapper_ITablet__::_1_::dtor$15",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ComUtils::GitComLockableWrapper_IUnknown_::GetComObject_::_1_::dtor$1",
+    "ea": "0x18000f1c5",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ComUtils::GitComLockableWrapper_IUnknown_::GetComObject_::_1_::dtor$1",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ComUtils::GitComLockableWrapper_IUnknown_::GetComObject_::_1_::dtor$2",
+    "ea": "0x18000f1d1",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ComUtils::GitComLockableWrapper_IUnknown_::GetComObject_::_1_::dtor$2",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ComUtils::GitComLockableWrapper_IUnknown_::GetComObject_::_1_::dtor$3",
+    "ea": "0x18000eaa2",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ComUtils::GitComLockableWrapper_IUnknown_::GetComObject_::_1_::dtor$3",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ComUtils::GitComLockableWrapper_IUnknown_::GetComObject_::_1_::dtor$6",
+    "ea": "0x18000eaae",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ComUtils::GitComLockableWrapper_IUnknown_::GetComObject_::_1_::dtor$6",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ComUtils::GitComLockableWrapper_IUnknown_::GetComObject_::_1_::dtor$7",
+    "ea": "0x18000f1dd",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ComUtils::GitComLockableWrapper_IUnknown_::GetComObject_::_1_::dtor$7",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ComUtils::GitComLockableWrapper_IUnknown_::GetComObject_::_1_::dtor$9",
+    "ea": "0x18000f1e9",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ComUtils::GitComLockableWrapper_IUnknown_::GetComObject_::_1_::dtor$9",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_dynamic_atexit_destructor_for__g_HookThreadMap__",
+    "ea": "0x18000f310",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_dynamic_atexit_destructor_for__g_HookThreadMap__",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_dynamic_initializer_for__g_HookThreadMap__",
+    "ea": "0x180001120",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_dynamic_initializer_for__g_HookThreadMap__",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "ATL::CComObject<CPimcSurrogate>::AddRef(void)",
+    "ea": "0x180001ed0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@?$CComObject@VCPimcSurrogate@@@ATL@@UEAAKXZ",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "CPbPreallocArray<CPimcContext *,2>::~CPbPreallocArray<CPimcContext *,2>(void)",
+    "ea": "0x180002300",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CPbPreallocArray@PEAVCPimcContext@@$01@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 36,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_ATL::CComCreator_ATL::CComObject_CPimcSurrogate___::CreateInstance_::_1_::catch$1",
+    "ea": "0x18000e545",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CComCreator_ATL::CComObject_CPimcSurrogate___::CreateInstance_::_1_::catch$1",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "operator new(unsigned __int64,std::nothrow_t const &)",
+    "ea": "0x18000d438",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??2@YAPEAX_KAEBUnothrow_t@std@@@Z",
+    "prototype": "void *__fastcall(unsigned __int64, const struct std::nothrow_t *)",
+    "rank_score": 10,
+    "size": 19,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "CPbList<CPimcManager::CHookWindowItem>::~CPbList<CPimcManager::CHookWindowItem>(void)",
+    "ea": "0x180002264",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CPbList@UCHookWindowItem@CPimcManager@@@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 109,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "ATL::AtlInternalQueryInterface(void *,ATL::_ATL_INTMAP_ENTRY const *,_GUID const &,void * *)",
+    "ea": "0x180003124",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AtlInternalQueryInterface@ATL@@YAJPEAXPEBU_ATL_INTMAP_ENTRY@1@AEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(void *, const struct ATL::_ATL_INTMAP_ENTRY *, const struct _GUID *, void **)",
+    "rank_score": 7,
+    "size": 278,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "operator new[](unsigned __int64)",
+    "ea": "0x18000d488",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_U@YAPEAX_K@Z",
+    "prototype": "void *__fastcall(unsigned __int64)",
+    "rank_score": 7,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CPimcManager::EnsureHookThreadItem(ulong,CPimcManager *,unsigned __int64 *,int *)",
+    "ea": "0x18000b0c4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?EnsureHookThreadItem@CPimcManager@@QEAAJKPEAV1@PEA_KPEAH@Z",
+    "prototype": "__int64 __fastcall(CPimcManager *__hidden this, unsigned int, struct CPimcManager *, unsigned __int64 *, int *)",
+    "rank_score": 6,
+    "size": 355,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "atexit",
+    "ea": "0x18000d420",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "atexit",
+    "prototype": "int __cdecl(void (__cdecl *)())",
+    "rank_score": 6,
+    "size": 23,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "ATL::CTempBuffer<uchar,256,ATL::CCRTAllocator>::~CTempBuffer<uchar,256,ATL::CCRTAllocator>(void)",
+    "ea": "0x1800037b0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$CTempBuffer@E$0BAA@VCCRTAllocator@ATL@@@ATL@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 23,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "CPimcContext::~CPimcContext(void)",
+    "ea": "0x18000a064",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1CPimcContext@@QEAA@XZ",
+    "prototype": "void __fastcall(CPimcContext *__hidden this)",
+    "rank_score": 5,
+    "size": 112,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "CPimcManager::CHookWindowItem::~CHookWindowItem(void)",
+    "ea": "0x1800022d4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1CHookWindowItem@CPimcManager@@QEAA@XZ",
+    "prototype": "void __fastcall(CPimcManager::CHookWindowItem *__hidden this)",
+    "rank_score": 5,
+    "size": 43,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "__scrt_stub_for_acrt_uninitialize_critical",
+    "ea": "0x18000e318",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_stub_for_acrt_uninitialize_critical",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 3,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "_alloca_probe",
+    "ea": "0x18000e430",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_alloca_probe",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 78,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "__local_stdio_printf_options",
+    "ea": "0x180007ef8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__local_stdio_printf_options",
+    "prototype": "unsigned __int64 *__cdecl()",
+    "rank_score": 3,
+    "size": 8,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "ATL::CRegObject::AddReplacement(ushort const *,ushort const *)",
+    "ea": "0x180003770",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddReplacement@CRegObject@ATL@@UEAAJPEBG0@Z",
+    "prototype": "__int64 __fastcall(ATL::CRegObject *__hidden this, const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 2,
+    "size": 52,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "ATL::CRegObject::ClearReplacements(void)",
+    "ea": "0x180003520",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ClearReplacements@CRegObject@ATL@@UEAAJXZ",
+    "prototype": "__int64 __fastcall(ATL::CRegObject *__hidden this)",
+    "rank_score": 1,
+    "size": 9,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CRegKey::RecurseDeleteKey_::_1_::dtor$0",
+    "ea": "0x18000e820",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CRegKey::RecurseDeleteKey_::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 12,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_ATL::CRegObject::AddReplacement_::_1_::dtor$0",
+    "ea": "0x18000e7ae",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ATL::CRegObject::AddReplacement_::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 12,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CHookThreadItem::_CHookThreadItem_::_1_::dtor$0",
+    "ea": "0x18000ef31",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CHookThreadItem::_CHookThreadItem_::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 16,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CPbList_CHookThreadItem_::_CPbList_CHookThreadItem__::_1_::dtor$0",
+    "ea": "0x18000f0df",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CPbList_CHookThreadItem_::_CPbList_CHookThreadItem__::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 12,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CPbList_CHookThreadItem_::_CPbList_CHookThreadItem__::_1_::dtor$1",
+    "ea": "0x18000f0eb",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CPbList_CHookThreadItem_::_CPbList_CHookThreadItem__::_1_::dtor$1",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 16,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CPimcManager::EnsureHookThreadItem_::_1_::dtor$0",
+    "ea": "0x18000ef41",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CPimcManager::EnsureHookThreadItem_::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 29,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CPimcManager::EnsureHookThreadItem_::_1_::dtor$1",
+    "ea": "0x18000ef5e",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CPimcManager::EnsureHookThreadItem_::_1_::dtor$1",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 12,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CPimcManager::EnsureHookThreadItem_::_1_::dtor$2",
+    "ea": "0x18000ef6a",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CPimcManager::EnsureHookThreadItem_::_1_::dtor$2",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 16,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CPimcManager::InitializeHookThread_::_1_::dtor$0",
+    "ea": "0x18000eedc",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CPimcManager::InitializeHookThread_::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 29,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CPimcTablet::CreateContext_::_1_::dtor$0",
+    "ea": "0x18000eb6e",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CPimcTablet::CreateContext_::_1_::dtor$0",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 12,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CPimcTablet::CreateContext_::_1_::dtor$1",
+    "ea": "0x18000eb7a",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CPimcTablet::CreateContext_::_1_::dtor$1",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 12,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CPimcTablet::CreateContext_::_1_::dtor$10",
+    "ea": "0x18000ebaa",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CPimcTablet::CreateContext_::_1_::dtor$10",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 12,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CPimcTablet::CreateContext_::_1_::dtor$2",
+    "ea": "0x18000eb86",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CPimcTablet::CreateContext_::_1_::dtor$2",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 12,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CPimcTablet::CreateContext_::_1_::dtor$3",
+    "ea": "0x18000eb92",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CPimcTablet::CreateContext_::_1_::dtor$3",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 12,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CPimcTablet::CreateContext_::_1_::dtor$4",
+    "ea": "0x18000eb9e",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CPimcTablet::CreateContext_::_1_::dtor$4",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 12,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CPimcTablet::CreateContext_::_1_::dtor$6",
+    "ea": "0x18000ebb6",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CPimcTablet::CreateContext_::_1_::dtor$6",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 12,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CPimcTablet::CreateContext_::_1_::dtor$7",
+    "ea": "0x18000ebc2",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CPimcTablet::CreateContext_::_1_::dtor$7",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 12,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CPimcTablet::CreateContext_::_1_::dtor$8",
+    "ea": "0x18000ebce",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CPimcTablet::CreateContext_::_1_::dtor$8",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 12,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CPimcTablet::CreateContext_::_1_::dtor$9",
+    "ea": "0x18000ebda",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CPimcTablet::CreateContext_::_1_::dtor$9",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 12,
+    "tags": []
+  }
+]

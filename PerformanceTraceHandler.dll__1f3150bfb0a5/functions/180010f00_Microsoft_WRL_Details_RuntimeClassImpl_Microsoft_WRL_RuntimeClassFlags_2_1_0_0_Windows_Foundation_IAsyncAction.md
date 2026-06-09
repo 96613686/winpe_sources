@@ -1,0 +1,37 @@
+# Microsoft::WRL::Details::RuntimeClassImpl<Microsoft::WRL::RuntimeClassFlags<2>,1,0,0,Windows::Foundation::IAsyncActionCompletedHandler,Microsoft::WRL::FtmBase>::AddRef(void)
+
+- ea: `0x180010f00`
+- end: `0x180010f09`
+- name: `?AddRef@?$RuntimeClassImpl@U?$RuntimeClassFlags@$01@WRL@Microsoft@@$00$0A@$0A@UIAsyncActionCompletedHandler@Foundation@Windows@@VFtmBase@23@@Details@WRL@Microsoft@@UEAAKXZ`
+- size: `9`
+- prototype: `unsigned int __fastcall(__int64, volatile int *)`
+- caller_count: `1`
+- callee_count: `1`
+- tags: `loader_planting, broker_com_uri`
+
+## callers
+
+- `0x180010f10`
+
+## callees
+
+- `0x18000ce80`
+
+## pseudocode
+
+```c
+unsigned int __fastcall Microsoft::WRL::Details::RuntimeClassImpl<Microsoft::WRL::RuntimeClassFlags<2>,1,0,0,Windows::Foundation::IAsyncActionCompletedHandler,Microsoft::WRL::FtmBase>::AddRef(
+        __int64 a1,
+        volatile int *a2)
+{
+  return Microsoft::WRL::Details::SafeUnknownIncrementReference((Microsoft::WRL::Details *)(a1 + 44), a2);
+}
+
+```
+
+## disassembly
+
+```asm
+0x180010f00  add     rcx, 2Ch ; ','; this
+0x180010f04  jmp     ?SafeUnknownIncrementReference@Details@WRL@Microsoft@@YAKAECJ@Z; Microsoft::WRL::Details::SafeUnknownIncrementReference(long volatile &)
+```

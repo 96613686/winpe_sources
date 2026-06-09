@@ -1,0 +1,410 @@
+# System.Windows.Baml2006.WpfSharedBamlSchemaContext::CreateKnownMember_0
+
+- ea: `0x44f60`
+- end: `0x48547`
+- name: `System.Windows.Baml2006.WpfSharedBamlSchemaContext::CreateKnownMember_0`
+- size: `13799`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `112`
+- tags: `registry_config, installer_update, broker_com_uri`
+
+## callers
+
+- `0x6bce0`
+
+## callees
+
+- `0x44f30`
+- `0x44f60`
+- `0x4eab0`
+- `0x4eb20`
+- `0x4eb90`
+- `0x4ec10`
+- `0x4ecc0`
+- `0x4ed50`
+- `0x4edf0`
+- `0x4ee60`
+- `0x4eed0`
+- `0x4ef80`
+- `0x4f030`
+- `0x4f0a0`
+- `0x4f140`
+- `0x4f1e0`
+- `0x4f280`
+- `0x4f320`
+- `0x4f3c0`
+- `0x4f450`
+- `0x4f4f0`
+- `0x4f580`
+- `0x4f620`
+- `0x4f670`
+- `0x4f700`
+- `0x4f7a0`
+- `0x4f840`
+- `0x4f8e0`
+- `0x4f980`
+- `0x4fa20`
+- `0x4fac0`
+- `0x4fb10`
+- `0x4fb60`
+- `0x4fbf0`
+- `0x4fc80`
+- `0x4fd10`
+- `0x4fda0`
+- `0x4fe30`
+- `0x4fed0`
+- `0x4ff20`
+- `0x4ff70`
+- `0x50010`
+- `0x500b0`
+- `0x50150`
+- `0x501e0`
+- `0x50280`
+- `0x502d0`
+- `0x50320`
+- `0x50370`
+- `0x503c0`
+
+## string_xrefs
+
+- `0x45f7b`: `Template`
+- `0x475a6`: `Template`
+- `0x45c9b`: `ContentTemplate`
+- `0x45d1c`: `ContentTemplate`
+- `0x45ca8`: `ContentTemplateSelector`
+- `0x45d29`: `ContentTemplateSelector`
+- `0x45bbf`: `Command`
+- `0x48326`: `Command`
+- `0x483e8`: `Command`
+- `0x45bcc`: `CommandParameter`
+- `0x45bd9`: `CommandTarget`
+- `0x45d36`: `RecognizesAccessKey`
+- `0x46455`: `HeaderTemplate`
+- `0x464ca`: `HeaderTemplate`
+- `0x46462`: `HeaderTemplateSelector`
+- `0x464d7`: `HeaderTemplateSelector`
+- `0x46525`: `NavigateUri`
+- `0x46610`: `ItemTemplate`
+- `0x4661f`: `ItemTemplateSelector`
+- `0x467ad`: `IsOpen`
+- `0x46c34`: `IsReadOnly`
+- `0x47b1e`: `IsReadOnly`
+- `0x47099`: `CommandBindings`
+- `0x4738c`: `DataTemplateKey`
+- `0x480a8`: `XmlSerializer`
+- `0x480b5`: `XPath`
+- `0x48219`: `XPath`
+- `0x4820a`: `UpdateSourceTrigger`
+
+## pseudocode
+
+```c
+
+```
+
+## disassembly
+
+```asm
+0x44f60  ldarg.0
+0x44f61  ldarg.1
+0x44f62  call     instance unsigned int32 System.Windows.Baml2006.WpfSharedBamlSchemaContext::GetTypeNameHashForPropeties(string typeName)
+0x44f67  stloc.0
+0x44f68  ldloc.0
+0x44f69  ldc.i4   0x70963B9E
+0x44f6e  bgt.un   loc_45535
+0x44f73  ldloc.0
+0x44f74  ldc.i4   0x313FFD88
+0x44f79  bgt.un   loc_45254
+0x44f7e  ldloc.0
+0x44f7f  ldc.i4   0x82A87F4
+0x44f84  bgt.un   loc_450E9
+0x44f89  ldloc.0
+0x44f8a  ldc.i4   0x6045CD4
+0x44f8f  bgt.un   loc_45039
+0x44f94  ldloc.0
+0x44f95  ldc.i4   0xFE478
+0x44f9a  bgt.un.s loc_44FE5
+0x44f9c  ldloc.0
+0x44f9d  ldc.i4   0x2E97
+0x44fa2  bgt.un.s loc_44FBF
+0x44fa4  ldloc.0
+0x44fa5  ldc.i4   0x2847
+0x44faa  beq      loc_4846B
+0x44faf  ldloc.0
+0x44fb0  ldc.i4   0x2E97
+0x44fb5  beq      loc_47B61
+0x44fba  br       loc_48545
+0x44fbf  ldloc.0
+0x44fc0  ldc.i4   0xF4241
+0x44fc5  beq      loc_466CE
+0x44fca  ldloc.0
+0x44fcb  ldc.i4   0xF4765
+0x44fd0  beq      loc_4672D
+0x44fd5  ldloc.0
+0x44fd6  ldc.i4   0xFE478
+0x44fdb  beq      loc_47874
+0x44fe0  br       loc_48545
+0x44fe5  ldloc.0
+0x44fe6  ldc.i4   0x1195A3
+0x44feb  bgt.un.s loc_45013
+0x44fed  ldloc.0
+0x44fee  ldc.i4   0x1085D4
+0x44ff3  beq      loc_477B7
+0x44ff8  ldloc.0
+0x44ff9  ldc.i4   0x117217
+0x44ffe  beq      loc_471D2
+0x45003  ldloc.0
+0x45004  ldc.i4   0x1195A3
+0x45009  beq      loc_47BE8
+0x4500e  br       loc_48545
+0x45013  ldloc.0
+0x45014  ldc.i4   0x11E873
+0x45019  beq      loc_463DD
+0x4501e  ldloc.0
+0x4501f  ldc.i4   0xF13E73
+0x45024  beq      loc_4808C
+0x45029  ldloc.0
+0x4502a  ldc.i4   0x6045CD4
+0x4502f  beq      loc_47757
+0x45034  br       loc_48545
+0x45039  ldloc.0
+0x4503a  ldc.i4   0x6C0DD1A
+0x4503f  bgt.un.s loc_45095
+0x45041  ldloc.0
+0x45042  ldc.i4   0x6724596
+0x45047  bgt.un.s loc_4506F
+0x45049  ldloc.0
+0x4504a  ldc.i4   0x6045F90
+0x4504f  beq      loc_47D5E
+0x45054  ldloc.0
+0x45055  ldc.i4   0x6063B00
+0x4505a  beq      loc_466E6
+0x4505f  ldloc.0
+0x45060  ldc.i4   0x6724596
+0x45065  beq      loc_468A0
+0x4506a  br       loc_48545
+0x4506f  ldloc.0
+0x45070  ldc.i4   0x68012FD
+0x45075  beq      loc_47208
+0x4507a  ldloc.0
+0x4507b  ldc.i4   0x6B350CD
+0x45080  beq      loc_48455
+0x45085  ldloc.0
+0x45086  ldc.i4   0x6C0DD1A
+0x4508b  beq      loc_46557
+0x45090  br       loc_48545
+0x45095  ldloc.0
+0x45096  ldc.i4   0x70F7A89
+0x4509b  bgt.un.s loc_450C3
+0x4509d  ldloc.0
+0x4509e  ldc.i4   0x6E2A99C
+0x450a3  beq      loc_4679F
+0x450a8  ldloc.0
+0x450a9  ldc.i4   0x70F769D
+0x450ae  beq      loc_46DAA
+0x450b3  ldloc.0
+0x450b4  ldc.i4   0x70F7A89
+0x450b9  beq      loc_48503
+0x450be  br       loc_48545
+0x450c3  ldloc.0
+0x450c4  ldc.i4   0x71299DE
+0x450c9  beq      loc_48497
+0x450ce  ldloc.0
+0x450cf  ldc.i4   0x732A7B6
+0x450d4  beq      loc_47CA0
+0x450d9  ldloc.0
+0x450da  ldc.i4   0x82A87F4
+0x450df  beq      loc_4837B
+0x450e4  br       loc_48545
+0x450e9  ldloc.0
+0x450ea  ldc.i4   0x188B6A60
+0x450ef  bgt.un   loc_451A4
+0x450f4  ldloc.0
+0x450f5  ldc.i4   0x14E9512A
+0x450fa  bgt.un.s loc_45150
+0x450fc  ldloc.0
+0x450fd  ldc.i4   0xCBFBFDD
+0x45102  bgt.un.s loc_4512A
+0x45104  ldloc.0
+0x45105  ldc.i4   0x8693B3E
+0x4510a  beq      loc_4794F
+0x4510f  ldloc.0
+0x45110  ldc.i4   0xA70F66E
+0x45115  beq      loc_45C47
+0x4511a  ldloc.0
+0x4511b  ldc.i4   0xCBFBFDD
+0x45120  beq      loc_46787
+0x45125  br       loc_48545
+0x4512a  ldloc.0
+0x4512b  ldc.i4   0x1076CC29
+0x45130  beq      loc_47706
+0x45135  ldloc.0
+0x45136  ldc.i4   0x10D198FD
+0x4513b  beq      loc_47FCE
+0x45140  ldloc.0
+0x45141  ldc.i4   0x14E9512A
+0x45146  beq      loc_48391
+0x4514b  br       loc_48545
+0x45150  ldloc.0
+0x45151  ldc.i4   0x16C33454
+0x45156  bgt.un.s loc_4517E
+0x45158  ldloc.0
+0x45159  ldc.i4   0x16355385
+0x4515e  beq      loc_47511
+0x45163  ldloc.0
+0x45164  ldc.i4   0x164B9FE3
+0x45169  beq      loc_4773C
+0x4516e  ldloc.0
+0x4516f  ldc.i4   0x16C33454
+0x45174  beq      loc_45B47
+0x45179  br       loc_48545
+0x4517e  ldloc.0
+0x4517f  ldc.i4   0x16FE729A
+0x45184  beq      loc_46C26
+0x45189  ldloc.0
+0x4518a  ldc.i4   0x173D5FA7
+0x4518f  beq      loc_47613
+0x45194  ldloc.0
+0x45195  ldc.i4   0x188B6A60
+0x4519a  beq      loc_475F8
+0x4519f  br       loc_48545
+0x451a4  ldloc.0
+0x451a5  ldc.i4   0x280D4B7C
+0x451aa  bgt.un.s loc_45200
+0x451ac  ldloc.0
+0x451ad  ldc.i4   0x1D2F0FBC
+0x451b2  bgt.un.s loc_451DA
+0x451b4  ldloc.0
+0x451b5  ldc.i4   0x1A56C1D5
+0x451ba  beq      loc_47445
+0x451bf  ldloc.0
+0x451c0  ldc.i4   0x1CFAF9AA
+0x451c5  beq      loc_476D0
+0x451ca  ldloc.0
+0x451cb  ldc.i4   0x1D2F0FBC
+0x451d0  beq      loc_479B1
+0x451d5  br       loc_48545
+0x451da  ldloc.0
+0x451db  ldc.i4   0x1D4DB094
+0x451e0  beq      loc_45B19
+0x451e5  ldloc.0
+0x451e6  ldc.i4   0x26B08C1B
+0x451eb  beq      loc_46745
+0x451f0  ldloc.0
+0x451f1  ldc.i4   0x280D4B7C
+0x451f6  beq      loc_47D0D
+0x451fb  br       loc_48545
+0x45200  ldloc.0
+0x45201  ldc.i4   0x2DBB29E2
+0x45206  bgt.un.s loc_4522E
+0x45208  ldloc.0
+0x45209  ldc.i4   0x2BA58959
+0x4520e  beq      loc_4762E
+0x45213  ldloc.0
+0x45214  ldc.i4   0x2D06D439
+0x45219  beq      loc_472C0
+0x4521e  ldloc.0
+0x4521f  ldc.i4   0x2DBB29E2
+0x45224  beq      loc_46102
+0x45229  br       loc_48545
+0x4522e  ldloc.0
+0x4522f  ldc.i4   0x2F24C8DB
+0x45234  beq      loc_4830F
+0x45239  ldloc.0
+0x4523a  ldc.i4   0x3066C438
+0x4523f  beq      loc_46422
+0x45244  ldloc.0
+0x45245  ldc.i4   0x313FFD88
+0x4524a  beq      loc_471B7
+0x4524f  br       loc_48545
+0x45254  ldloc.0
+0x45255  ldc.i4   0x58CB4C69
+0x4525a  bgt.un   loc_453CA
+0x4525f  ldloc.0
+0x45260  ldc.i4   0x4762AEC0
+0x45265  bgt.un   loc_4531A
+0x4526a  ldloc.0
+0x4526b  ldc.i4   0x40F4318C
+0x45270  bgt.un.s loc_452C6
+0x45272  ldloc.0
+0x45273  ldc.i4   0x3628045E
+0x45278  bgt.un.s loc_452A0
+0x4527a  ldloc.0
+0x4527b  ldc.i4   0x31E98C08
+0x45280  beq      loc_4843F
+0x45285  ldloc.0
+0x45286  ldc.i4   0x3299DEED
+0x4528b  beq      loc_45BBE
+0x45290  ldloc.0
+0x45291  ldc.i4   0x3628045E
+0x45296  beq      loc_47EB8
+0x4529b  br       loc_48545
+0x452a0  ldloc.0
+0x452a1  ldc.i4   0x399DE928
+0x452a6  beq      loc_46F1D
+0x452ab  ldloc.0
+0x452ac  ldc.i4   0x39EB3DEF
+0x452b1  beq      loc_47E9D
+0x452b6  ldloc.0
+0x452b7  ldc.i4   0x40F4318C
+0x452bc  beq      loc_469DD
+0x452c1  br       loc_48545
+0x452c6  ldloc.0
+0x452c7  ldc.i4   0x44632147
+0x452cc  bgt.un.s loc_452F4
+0x452ce  ldloc.0
+0x452cf  ldc.i4   0x438FBB89
+0x452d4  beq      loc_47FE9
+0x452d9  ldloc.0
+0x452da  ldc.i4   0x43903A86
+0x452df  beq      loc_48004
+0x452e4  ldloc.0
+0x452e5  ldc.i4   0x44632147
+0x452ea  beq      loc_482F9
+0x452ef  br       loc_48545
+0x452f4  ldloc.0
+0x452f5  ldc.i4   0x45BAA8D2
+0x452fa  beq      loc_4783E
+0x452ff  ldloc.0
+0x45300  ldc.i4   0x45D5C522
+0x45305  beq      loc_472DB
+0x4530a  ldloc.0
+0x4530b  ldc.i4   0x4762AEC0
+0x45310  beq      loc_476EB
+0x45315  br       loc_48545
+0x4531a  ldloc.0
+0x4531b  ldc.i4   0x5181A0A6
+0x45320  bgt.un.s loc_45376
+0x45322  ldloc.0
+0x45323  ldc.i4   0x501888A7
+0x45328  bgt.un.s loc_45350
+0x4532a  ldloc.0
+0x4532b  ldc.i4   0x49B51035
+0x45330  beq      loc_4602D
+0x45335  ldloc.0
+0x45336  ldc.i4   0x4B42F485
+0x4533b  beq      loc_47ABF
+0x45340  ldloc.0
+0x45341  ldc.i4   0x501888A7
+0x45346  beq      loc_4669E
+0x4534b  br       loc_48545
+0x45350  ldloc.0
+0x45351  ldc.i4   0x513CE0EC
+0x45356  beq      loc_47BCD
+0x4535b  ldloc.0
+0x4535c  ldc.i4   0x516C757F
+0x45361  beq      loc_47A89
+0x45366  ldloc.0
+0x45367  ldc.i4   0x5181A0A6
+0x4536c  beq      loc_45D73
+0x45371  br       loc_48545
+0x45376  ldloc.0
+0x45377  ldc.i4   0x5730337F
+0x4537c  bgt.un.s loc_453A4
+0x4537e  ldloc.0
+0x4537f  ldc.i4   0x51EBB732
+0x45384  beq      loc_473CA
+0x45389  ldloc.0
+  ... truncated ...
+```

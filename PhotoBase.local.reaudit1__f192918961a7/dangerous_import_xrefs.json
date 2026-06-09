@@ -1,0 +1,212 @@
+[
+  {
+    "import": "KERNEL32!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180001c3f",
+        "from_func": "0x180001bf0",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x180001c3f",
+        "from_func": "0x180001bf0",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!LoadLibraryW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1800070a3",
+        "from_func": "0x180006fc4",
+        "from_func_name": "IsolationAwareLoadLibraryW",
+        "import": "KERNEL32!LoadLibraryW"
+      },
+      {
+        "from_ea": "0x1800072c8",
+        "from_func": "0x1800070fc",
+        "from_func_name": "WinbaseIsolationAwarePrivatetRgzlnPgpgk",
+        "import": "KERNEL32!LoadLibraryW"
+      },
+      {
+        "from_ea": "0x1800070a3",
+        "from_func": "0x180006fc4",
+        "from_func_name": "IsolationAwareLoadLibraryW",
+        "import": "KERNEL32!LoadLibraryW"
+      },
+      {
+        "from_ea": "0x1800072c8",
+        "from_func": "0x1800070fc",
+        "from_func_name": "WinbaseIsolationAwarePrivatetRgzlnPgpgk",
+        "import": "KERNEL32!LoadLibraryW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x1800020a6",
+        "from_func": "0x1800020a6",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "api-ms-win-crt-private-l1-1-0!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!__C_specific_handler_noexcept",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180007475",
+        "from_func": "0x180007475",
+        "from_func_name": "__C_specific_handler_noexcept_0",
+        "import": "api-ms-win-crt-private-l1-1-0!__C_specific_handler_noexcept"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!__CxxFrameHandler4",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x18000208e",
+        "from_func": "0x18000208e",
+        "from_func_name": "__CxxFrameHandler4_0",
+        "import": "api-ms-win-crt-private-l1-1-0!__CxxFrameHandler4"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!_o__configure_narrow_argv",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x1800020ca",
+        "from_func": "0x1800020ca",
+        "from_func_name": "_o__configure_narrow_argv_0",
+        "import": "api-ms-win-crt-private-l1-1-0!_o__configure_narrow_argv"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!_o__msize",
+    "tags": [
+      "installer_update"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x1800028d3",
+        "from_func": "0x1800028d0",
+        "from_func_name": "?GetSize@CCRTHeap@ATL@@UEAA_KPEAX@Z",
+        "import": "api-ms-win-crt-private-l1-1-0!_o__msize"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!_o__seh_filter_dll",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x18000211e",
+        "from_func": "0x18000211e",
+        "from_func_name": "_o__seh_filter_dll_0",
+        "import": "api-ms-win-crt-private-l1-1-0!_o__seh_filter_dll"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!_o__set_new_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x18000212a",
+        "from_func": "0x18000212a",
+        "from_func_name": "_o__set_new_handler_0",
+        "import": "api-ms-win-crt-private-l1-1-0!_o__set_new_handler"
+      }
+    ]
+  },
+  {
+    "import": "ole32!CoTaskMemAlloc",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x18000283e",
+        "from_func": "0x180002830",
+        "from_func_name": "?Allocate@CComHeap@ATL@@UEAAPEAX_K@Z",
+        "import": "ole32!CoTaskMemAlloc"
+      }
+    ]
+  },
+  {
+    "import": "ole32!CoTaskMemFree",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180002893",
+        "from_func": "0x180002890",
+        "from_func_name": "?Free@CComHeap@ATL@@UEAAXPEAX@Z",
+        "import": "ole32!CoTaskMemFree"
+      }
+    ]
+  },
+  {
+    "import": "ole32!CoTaskMemRealloc",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180002a15",
+        "from_func": "0x180002a00",
+        "from_func_name": "?Reallocate@CComHeap@ATL@@UEAAPEAXPEAX_K@Z",
+        "import": "ole32!CoTaskMemRealloc"
+      },
+      {
+        "from_ea": "0x18000bb4c",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ole32!CoTaskMemRealloc"
+      }
+    ]
+  }
+]

@@ -1,0 +1,221 @@
+[
+  {
+    "import": "ADVAPI32!RegOpenKeyExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x140001c81",
+        "from_func": "0x140001c40",
+        "from_func_name": "wWinMain",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x140001000",
+        "from_func": "0x140001000",
+        "from_func_name": "__imp_load_RegOpenKeyExW",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x140001c81",
+        "from_func": "0x140001c40",
+        "from_func_name": "wWinMain",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1400010c9",
+        "from_func": "0x140001080",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x1400010c9",
+        "from_func": "0x140001080",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!LoadLibraryExA",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1400017a1",
+        "from_func": "0x140001650",
+        "from_func_name": "__delayLoadHelper2",
+        "import": "KERNEL32!LoadLibraryExA"
+      },
+      {
+        "from_ea": "0x140002ca5",
+        "from_func": "0x140002c10",
+        "from_func_name": "DelayLoadFailureHookWithRetryAndTelemetry",
+        "import": "KERNEL32!LoadLibraryExA"
+      },
+      {
+        "from_ea": "0x1400017a1",
+        "from_func": "0x140001650",
+        "from_func_name": "__delayLoadHelper2",
+        "import": "KERNEL32!LoadLibraryExA"
+      },
+      {
+        "from_ea": "0x140002ca5",
+        "from_func": "0x140002c10",
+        "from_func_name": "DelayLoadFailureHookWithRetryAndTelemetry",
+        "import": "KERNEL32!LoadLibraryExA"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!LoadLibraryExW",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1400023d4",
+        "from_func": "0x140001c40",
+        "from_func_name": "wWinMain",
+        "import": "KERNEL32!LoadLibraryExW"
+      },
+      {
+        "from_ea": "0x1400023d4",
+        "from_func": "0x140001c40",
+        "from_func_name": "wWinMain",
+        "import": "KERNEL32!LoadLibraryExW"
+      }
+    ]
+  },
+  {
+    "import": "VCRUNTIME140!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x1400028f0",
+        "from_func": "0x1400028f0",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "VCRUNTIME140!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "VCRUNTIME140!__C_specific_handler_noexcept",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x140002968",
+        "from_func": "0x140002968",
+        "from_func_name": "__C_specific_handler_noexcept_0",
+        "import": "VCRUNTIME140!__C_specific_handler_noexcept"
+      }
+    ]
+  },
+  {
+    "import": "VCRUNTIME140_1!__CxxFrameHandler4",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1400028dc",
+        "from_func": "0x1400028dc",
+        "from_func_name": "__CxxFrameHandler4_0",
+        "import": "VCRUNTIME140_1!__CxxFrameHandler4"
+      },
+      {
+        "from_ea": "0x140008038",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "VCRUNTIME140_1!__CxxFrameHandler4"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-locale-l1-1-0!_configthreadlocale",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000147f",
+        "from_func": "0x14000147f",
+        "from_func_name": "_configthreadlocale_0",
+        "import": "api-ms-win-crt-locale-l1-1-0!_configthreadlocale"
+      },
+      {
+        "from_ea": "0x1400080d8",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-crt-locale-l1-1-0!_configthreadlocale"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-runtime-l1-1-0!_configure_wide_argv",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x14000145b",
+        "from_func": "0x14000145b",
+        "from_func_name": "_configure_wide_argv_0",
+        "import": "api-ms-win-crt-runtime-l1-1-0!_configure_wide_argv"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-runtime-l1-1-0!_get_wide_winmain_command_line",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x140001467",
+        "from_func": "0x140001467",
+        "from_func_name": "_get_wide_winmain_command_line_0",
+        "import": "api-ms-win-crt-runtime-l1-1-0!_get_wide_winmain_command_line"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-stdio-l1-1-0!__p__commode",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x140001485",
+        "from_func": "0x140001485",
+        "from_func_name": "__p__commode_0",
+        "import": "api-ms-win-crt-stdio-l1-1-0!__p__commode"
+      }
+    ]
+  }
+]
