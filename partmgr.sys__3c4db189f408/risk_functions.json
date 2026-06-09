@@ -1,0 +1,5100 @@
+[
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PmRemoveDevice(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x140022988",
+    "function_file": "functions/140022988_PmRemoveDevice_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!IoDetachDevice",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoFreeWorkItem",
+      "ntoskrnl!IoReleaseRemoveLockAndWaitEx",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!RtlFreeUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?PmRemoveDevice@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "int(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 6019,
+    "size": 862,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 18,
+    "caller_count": 0,
+    "demangled": "PmNotificationWorkItem(_DEVICE_OBJECT *,void *)",
+    "ea": "0x1400087c0",
+    "function_file": "functions/1400087c0_PmNotificationWorkItem_DEVICE_OBJECT_void.md",
+    "matched_imports": [
+      "ntoskrnl!IoForwardIrpSynchronously",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!IoReuseIrp",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?PmNotificationWorkItem@@YAXPEAU_DEVICE_OBJECT@@PEAX@Z",
+    "prototype": "IO_WORKITEM_ROUTINE",
+    "rank_score": 5063,
+    "size": 3900,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "PmApplyServiceProtection(_DEVICE_EXTENSION *)",
+    "ea": "0x14001f6b8",
+    "function_file": "functions/14001f6b8_PmApplyServiceProtection_DEVICE_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ObSetSecurityObjectByPointer",
+      "ntoskrnl!RtlAddAccessAllowedAce",
+      "ntoskrnl!RtlAddProcessTrustLabelAce",
+      "ntoskrnl!RtlCreateAcl",
+      "ntoskrnl!RtlCreateSecurityDescriptor",
+      "ntoskrnl!RtlLengthSid",
+      "ntoskrnl!RtlSetDaclSecurityDescriptor",
+      "ntoskrnl!RtlSetSaclSecurityDescriptor",
+      "ntoskrnl!SeExports"
+    ],
+    "matched_strings": [],
+    "name": "?PmApplyServiceProtection@@YAJPEAU_DEVICE_EXTENSION@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *)",
+    "rank_score": 4357,
+    "size": 689,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "PmAddDevice(_DRIVER_OBJECT *,_DEVICE_OBJECT *)",
+    "ea": "0x140025d20",
+    "function_file": "functions/140025d20_PmAddDevice_DRIVER_OBJECT_DEVICE_OBJECT.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!IoAllocateWorkItem",
+      "ntoskrnl!IoAttachDeviceToDeviceStack",
+      "ntoskrnl!IoCreateDevice",
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!IoDetachDevice",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoFreeWorkItem",
+      "ntoskrnl!IoInitializeRemoveLockEx",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeInitializeMutex",
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!KeQueryActiveProcessorCountEx",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!PoEnergyEstimationEnabled"
+    ],
+    "matched_strings": [],
+    "name": "?PmAddDevice@@YAJPEAU_DRIVER_OBJECT@@PEAU_DEVICE_OBJECT@@@Z",
+    "prototype": "__int64 __fastcall(PDRIVER_OBJECT DriverObject, PDEVICE_OBJECT Pdo)",
+    "rank_score": 4222,
+    "size": 1235,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 38,
+    "caller_count": 0,
+    "demangled": "PmFilterDeviceControl(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x1400068b0",
+    "function_file": "functions/1400068b0_PmFilterDeviceControl_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?PmFilterDeviceControl@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 4071,
+    "size": 2077,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 2,
+    "demangled": "PmStartDeviceInternal(_DEVICE_EXTENSION *,_IRP *)",
+    "ea": "0x140007674",
+    "function_file": "functions/140007674_PmStartDeviceInternal_DEVICE_EXTENSION_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IoCreateArcName",
+      "ntoskrnl!IoForwardIrpSynchronously",
+      "ntoskrnl!IoRegisterDeviceInterface",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!IoSynchronousCallDriver",
+      "ntoskrnl!IoWMIRegistrationControl",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!PoEnergyEstimationEnabled"
+    ],
+    "matched_strings": [],
+    "name": "?PmStartDeviceInternal@@YAJPEAU_DEVICE_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, struct _IRP *)",
+    "rank_score": 3455,
+    "size": 896,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "PmRemoveHelper(_DEVICE_EXTENSION *)",
+    "ea": "0x14000743c",
+    "function_file": "functions/14000743c_PmRemoveHelper_DEVICE_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!IoSetDeviceInterfaceState",
+      "ntoskrnl!IoWMIRegistrationControl",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!RtlFreeUnicodeString"
+    ],
+    "matched_strings": [
+      "PmRemoveHelper"
+    ],
+    "name": "?PmRemoveHelper@@YAXPEAU_DEVICE_EXTENSION@@@Z",
+    "prototype": "void __fastcall(struct _DEVICE_EXTENSION *)",
+    "rank_score": 3071,
+    "size": 561,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PmQueryDepends(_DEVICE_EXTENSION *,_LIST_ENTRY *)",
+    "ea": "0x140005454",
+    "function_file": "functions/140005454_PmQueryDepends_DEVICE_EXTENSION_LIST_ENTRY.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoForwardIrpSynchronously",
+      "ntoskrnl!IoReuseIrp",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!ObfReferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "?PmQueryDepends@@YAXPEAU_DEVICE_EXTENSION@@PEAU_LIST_ENTRY@@@Z",
+    "prototype": "void __fastcall(struct _DEVICE_EXTENSION *, struct _LIST_ENTRY *)",
+    "rank_score": 2631,
+    "size": 1097,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "SC_DISK::~SC_DISK(void)",
+    "ea": "0x140009704",
+    "function_file": "functions/140009704_SC_DISK_SC_DISK_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??1SC_DISK@@UEAA@XZ",
+    "prototype": "void __fastcall(SC_DISK *__hidden this)",
+    "rank_score": 2608,
+    "size": 372,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "PmWrite(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x140002730",
+    "function_file": "functions/140002730_PmWrite_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetIoPriorityHint",
+      "ntoskrnl!IoGetRequestorProcess",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeQueryUnbiasedInterruptTimePrecise",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!ObDereferenceObjectDeferDelete",
+      "ntoskrnl!ObReferenceObjectSafe",
+      "ntoskrnl!PoEnergyEstimationEnabled",
+      "ntoskrnl!PsUpdateComponentPower"
+    ],
+    "matched_strings": [],
+    "name": "?PmWrite@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "int(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 2440,
+    "size": 575,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PmPowerContextInitialization(_DISK_POWER_CONTEXT *,_DISK_DEVICEPOWER_TYPE)",
+    "ea": "0x14000d180",
+    "function_file": "functions/14000d180_PmPowerContextInitialization_DISK_POWER_CONTEXT_DISK_DEVICEPOWER_TYPE.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlIntegerToUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey"
+    ],
+    "matched_strings": [
+      "SmallRandomReadPowerMw",
+      "SmallRandomWritePowerMw",
+      "SmallSequentialReadPowerMw",
+      "SmallSequentialWritePowerMw",
+      "LargeRandomReadPowerMw",
+      "LargeRandomWritePowerMw",
+      "LargeSequentialReadPowerMw",
+      "LargeSequentialWritePowerMw",
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Power\\EnergyEstimation\\Storage\\SD",
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Power\\EnergyEstimation\\Storage\\SSD",
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Power\\EnergyEstimation\\Storage\\HDD",
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Power\\EnergyEstimation\\Storage\\NVME"
+    ],
+    "name": "?PmPowerContextInitialization@@YAJPEAU_DISK_POWER_CONTEXT@@W4_DISK_DEVICEPOWER_TYPE@@@Z",
+    "prototype": "",
+    "rank_score": 2332,
+    "size": 1050,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 27,
+    "demangled": "PmGetDriveLayoutEx(_DEVICE_EXTENSION *,_DRIVE_LAYOUT_INFORMATION_EX * *)",
+    "ea": "0x140007bcc",
+    "function_file": "functions/140007bcc_PmGetDriveLayoutEx_DEVICE_EXTENSION_DRIVE_LAYOUT_INFORMATION_EX.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeQueryUnbiasedInterruptTimePrecise",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [
+      "PartitionTableCache"
+    ],
+    "name": "?PmGetDriveLayoutEx@@YAJPEAU_DEVICE_EXTENSION@@PEAPEAU_DRIVE_LAYOUT_INFORMATION_EX@@@Z",
+    "prototype": "__int64 __fastcall(KSPIN_LOCK *, struct _DRIVE_LAYOUT_INFORMATION_EX **)",
+    "rank_score": 2310,
+    "size": 924,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x1400292a4",
+    "function_file": "functions/1400292a4_DriverEntry.md",
+    "matched_imports": [
+      "ntoskrnl!IoCreateDevice",
+      "ntoskrnl!IoCreateSymbolicLink",
+      "ntoskrnl!IoRegisterDriverReinitialization",
+      "ntoskrnl!IoRegisterPlugPlayNotification",
+      "ntoskrnl!KeInitializeMutex",
+      "ntoskrnl!RtlDuplicateUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlInitializeGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 2261,
+    "size": 598,
+    "tags": [
+      "reparse_path",
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PmSetVolumeManagerAltitude(_VOLUME_MANAGER *)",
+    "ea": "0x14002249c",
+    "function_file": "functions/14002249c_PmSetVolumeManagerAltitude_VOLUME_MANAGER.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoGetDevicePropertyData",
+      "ntoskrnl!IoOpenDriverRegistryKey",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [],
+    "name": "?PmSetVolumeManagerAltitude@@YAJPEAU_VOLUME_MANAGER@@@Z",
+    "prototype": "__int64 __fastcall(struct _VOLUME_MANAGER *)",
+    "rank_score": 1867,
+    "size": 636,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 4,
+    "demangled": "PmGetSnapshotData(_DEVICE_EXTENSION *,_DRIVE_LAYOUT_INFORMATION_EX *,_DISK_SNAPSHOT_DATA * *,ulong *)",
+    "ea": "0x14000d878",
+    "function_file": "functions/14000d878_PmGetSnapshotData_DEVICE_EXTENSION_DRIVE_LAYOUT_INFORMATION_EX_DISK_SNAPSHOT_DATA_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [
+      "SnapshotDataCache"
+    ],
+    "name": "?PmGetSnapshotData@@YAJPEAU_DEVICE_EXTENSION@@PEAU_DRIVE_LAYOUT_INFORMATION_EX@@PEAPEAU_DISK_SNAPSHOT_DATA@@PEAK@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, struct _DRIVE_LAYOUT_INFORMATION_EX *, struct _DISK_SNAPSHOT_DATA **, unsigned int *)",
+    "rank_score": 1865,
+    "size": 541,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "PartitionIo(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x140002bd0",
+    "function_file": "functions/140002bd0_PartitionIo_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireRundownProtectionCacheAware",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?PartitionIo@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 1843,
+    "size": 1050,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "PartitionOverlapIo(_PM_OVERLAP_TYPE,_PM_PATCH *,unsigned __int64,unsigned __int64,void *)",
+    "ea": "0x14000b490",
+    "function_file": "functions/14000b490_PartitionOverlapIo_PM_OVERLAP_TYPE_PM_PATCH_unsigned_int64_unsigned_int64_void.md",
+    "matched_imports": [
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!IoAllocateMdl",
+      "ntoskrnl!IoBuildPartialMdl",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!IoGetActivityIdIrp",
+      "ntoskrnl!IoIsActivityTracingEnabled",
+      "ntoskrnl!IoPropagateIrpExtensionEx",
+      "ntoskrnl!IoSetActivityIdIrp"
+    ],
+    "matched_strings": [],
+    "name": "?PartitionOverlapIo@@YAJW4_PM_OVERLAP_TYPE@@PEAU_PM_PATCH@@_K2PEAX@Z",
+    "prototype": "__int64 __fastcall(int, __int64, ULONG, __int64, _QWORD *)",
+    "rank_score": 1836,
+    "size": 618,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "PmUpdatePartitions(_DEVICE_EXTENSION *,_DRIVE_LAYOUT_INFORMATION_EX *)",
+    "ea": "0x140008104",
+    "function_file": "functions/140008104_PmUpdatePartitions_DEVICE_EXTENSION_DRIVE_LAYOUT_INFORMATION_EX.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?PmUpdatePartitions@@YAJPEAU_DEVICE_EXTENSION@@PEAU_DRIVE_LAYOUT_INFORMATION_EX@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, struct _DRIVE_LAYOUT_INFORMATION_EX *)",
+    "rank_score": 1833,
+    "size": 907,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "PmUpdatePartition(_DEVICE_EXTENSION *,_PARTITION_EXTENSION *,_DRIVE_LAYOUT_INFORMATION_EX *,ulong,_PARTITION_INFORMATION_EX *)",
+    "ea": "0x140007f70",
+    "function_file": "functions/140007f70_PmUpdatePartition_DEVICE_EXTENSION_PARTITION_EXTENSION_DRIVE_LAYOUT_INFORMATION_EX_ulong_PARTITION_INFORMATION.md",
+    "matched_imports": [
+      "ntoskrnl!ExWaitForRundownProtectionReleaseCacheAware",
+      "ntoskrnl!IoGetAttachedDeviceReference",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeClearEvent",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "?PmUpdatePartition@@YAJPEAU_DEVICE_EXTENSION@@PEAU_PARTITION_EXTENSION@@PEAU_DRIVE_LAYOUT_INFORMATION_EX@@KPEAU_PARTITION_INFORMATION_EX@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, struct _PARTITION_EXTENSION *, struct _DRIVE_LAYOUT_INFORMATION_EX *, int, struct _PARTITION_INFORMATION_EX *)",
+    "rank_score": 1829,
+    "size": 396,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PmQueryGlobalSettings(_CONTROL_EXTENSION *)",
+    "ea": "0x140029078",
+    "function_file": "functions/140029078_PmQueryGlobalSettings_CONTROL_EXTENSION.md",
+    "matched_imports": [
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!ExIsSoftBoot",
+      "ntoskrnl!IoGetBootDiskInformationLite",
+      "ntoskrnl!IoGetBootLayers",
+      "ntoskrnl!IoOpenDriverRegistryKey",
+      "ntoskrnl!RtlCheckRegistryKey",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "?PmQueryGlobalSettings@@YAJPEAU_CONTROL_EXTENSION@@@Z",
+    "prototype": "__int64 __fastcall(struct _CONTROL_EXTENSION *)",
+    "rank_score": 1827,
+    "size": 548,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "PartitionIoctlDsm(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x140022df0",
+    "function_file": "functions/140022df0_PartitionIoctlDsm_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?PartitionIoctlDsm@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 1645,
+    "size": 1213,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "PmRead(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x140002550",
+    "function_file": "functions/140002550_PmRead_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetIoPriorityHint",
+      "ntoskrnl!IoGetRequestorProcess",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeQueryUnbiasedInterruptTimePrecise",
+      "ntoskrnl!ObDereferenceObjectDeferDelete",
+      "ntoskrnl!ObReferenceObjectSafe",
+      "ntoskrnl!PoEnergyEstimationEnabled",
+      "ntoskrnl!PsUpdateComponentPower"
+    ],
+    "matched_strings": [],
+    "name": "?PmRead@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "int(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 1640,
+    "size": 466,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "PmIo(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x1400029b0",
+    "function_file": "functions/1400029b0_PmIo_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetIoPriorityHint",
+      "ntoskrnl!IoGetRequestorProcess",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeQueryUnbiasedInterruptTimePrecise",
+      "ntoskrnl!ObDereferenceObjectDeferDelete",
+      "ntoskrnl!ObReferenceObjectSafe",
+      "ntoskrnl!PoEnergyEstimationEnabled",
+      "ntoskrnl!PsUpdateComponentPower"
+    ],
+    "matched_strings": [],
+    "name": "?PmIo@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "int(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 1637,
+    "size": 327,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "PmUnload(_DRIVER_OBJECT *)",
+    "ea": "0x14001c880",
+    "function_file": "functions/14001c880_PmUnload_DRIVER_OBJECT.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!IoDeleteSymbolicLink",
+      "ntoskrnl!IoUnregisterPlugPlayNotification",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?PmUnload@@YAXPEAU_DRIVER_OBJECT@@@Z",
+    "prototype": "void __fastcall(struct _DRIVER_OBJECT *)",
+    "rank_score": 1627,
+    "size": 287,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "PmGivePartition(_DEVICE_EXTENSION *,_PARTITION_EXTENSION *)",
+    "ea": "0x1400084d0",
+    "function_file": "functions/1400084d0_PmGivePartition_DEVICE_EXTENSION_PARTITION_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!IoForwardIrpSynchronously",
+      "ntoskrnl!IoReuseIrp",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?PmGivePartition@@YAXPEAU_DEVICE_EXTENSION@@PEAU_PARTITION_EXTENSION@@@Z",
+    "prototype": "void __fastcall(struct _DEVICE_EXTENSION *, struct _PARTITION_EXTENSION *)",
+    "rank_score": 1620,
+    "size": 741,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "PmCreatePartition(_DEVICE_EXTENSION *,_DRIVE_LAYOUT_INFORMATION_EX *,ulong,_PARTITION_INFORMATION_EX *,_PARTITION_EXTENSION * *)",
+    "ea": "0x1400254c8",
+    "function_file": "functions/1400254c8_PmCreatePartition_DEVICE_EXTENSION_DRIVE_LAYOUT_INFORMATION_EX_ulong_PARTITION_INFORMATION_EX_PARTITION_EXTENS.md",
+    "matched_imports": [
+      "ntoskrnl!ExInitializeRundownProtectionCacheAware",
+      "ntoskrnl!ExSizeOfRundownProtectionCacheAware",
+      "ntoskrnl!IoCreateDevice",
+      "ntoskrnl!IoGetAttachedDeviceReference",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeInitializeMutex",
+      "ntoskrnl!KeInitializeSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?PmCreatePartition@@YAJPEAU_DEVICE_EXTENSION@@PEAU_DRIVE_LAYOUT_INFORMATION_EX@@KPEAU_PARTITION_INFORMATION_EX@@PEAPEAU_PARTITION_EXTENSION@@@Z",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT *, struct _DRIVE_LAYOUT_INFORMATION_EX *, int, struct _PARTITION_INFORMATION_EX *, struct _PARTITION_EXTENSION **)",
+    "rank_score": 1434,
+    "size": 658,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "PmGetRegistryId(_DEVICE_EXTENSION *,_GUID *)",
+    "ea": "0x140023394",
+    "function_file": "functions/140023394_PmGetRegistryId_DEVICE_EXTENSION_GUID.md",
+    "matched_imports": [
+      "ntoskrnl!ExUuidCreate",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!RtlGUIDFromString",
+      "ntoskrnl!RtlQueryRegistryValuesEx",
+      "ntoskrnl!RtlStringFromGUID",
+      "ntoskrnl!RtlWriteRegistryValue",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "?PmGetRegistryId@@YAJPEAU_DEVICE_EXTENSION@@PEAU_GUID@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, struct _GUID *)",
+    "rank_score": 1428,
+    "size": 415,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "PmDeviceUsageNotification(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x14000b904",
+    "function_file": "functions/14000b904_PmDeviceUsageNotification_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IoForwardIrpSynchronously",
+      "ntoskrnl!IoInvalidateDeviceState",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?PmDeviceUsageNotification@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "int(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 1425,
+    "size": 439,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "PmDiskRedirect(_DEVICE_EXTENSION *,_IRP *,void *,__int64,ulong)",
+    "ea": "0x140022340",
+    "function_file": "functions/140022340_PmDiskRedirect_DEVICE_EXTENSION_IRP_void_int64_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!IoAllocateMdl",
+      "ntoskrnl!IoBuildPartialMdl",
+      "ntoskrnl!IoForwardIrpSynchronously",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!IoMakeAssociatedIrp",
+      "ntoskrnl!IoPropagateIrpExtensionEx"
+    ],
+    "matched_strings": [],
+    "name": "?PmDiskRedirect@@YAJPEAU_DEVICE_EXTENSION@@PEAU_IRP@@PEAX_JK@Z",
+    "prototype": "int(struct _DEVICE_EXTENSION *, struct _IRP *, void *, __int64, unsigned int)",
+    "rank_score": 1424,
+    "size": 341,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PmQueryStorageProperty(_DEVICE_EXTENSION *,_STORAGE_PROPERTY_ID,ulong,void * *)",
+    "ea": "0x140023aa0",
+    "function_file": "functions/140023aa0_PmQueryStorageProperty_DEVICE_EXTENSION_STORAGE_PROPERTY_ID_ulong_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoBuildDeviceIoControlRequest",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?PmQueryStorageProperty@@YAJPEAU_DEVICE_EXTENSION@@W4_STORAGE_PROPERTY_ID@@KPEAPEAX@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, unsigned int, ULONG, void **)",
+    "rank_score": 1417,
+    "size": 462,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PmSetLegacyRemovableFlag(_DEVICE_EXTENSION *,_DRIVE_LAYOUT_INFORMATION_EX *)",
+    "ea": "0x14000ce84",
+    "function_file": "functions/14000ce84_PmSetLegacyRemovableFlag_DEVICE_EXTENSION_DRIVE_LAYOUT_INFORMATION_EX.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?PmSetLegacyRemovableFlag@@YAJPEAU_DEVICE_EXTENSION@@PEAU_DRIVE_LAYOUT_INFORMATION_EX@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, struct _DRIVE_LAYOUT_INFORMATION_EX *)",
+    "rank_score": 1417,
+    "size": 445,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "PmIoCompletion(_DEVICE_OBJECT *,_IRP *,void *)",
+    "ea": "0x1400021c0",
+    "function_file": "functions/1400021c0_PmIoCompletion_DEVICE_OBJECT_IRP_void.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetIoPriorityHint",
+      "ntoskrnl!IoQueueWorkItem",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeQueryUnbiasedInterruptTimePrecise",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!PoEnergyEstimationEnabled"
+    ],
+    "matched_strings": [],
+    "name": "?PmIoCompletion@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@PEAX@Z",
+    "prototype": "int(struct _DEVICE_OBJECT *, struct _IRP *, void *)",
+    "rank_score": 1243,
+    "size": 900,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 15,
+    "demangled": "PmInvalidatePartitionTableCache(_DEVICE_EXTENSION *)",
+    "ea": "0x14000cb34",
+    "function_file": "functions/14000cb34_PmInvalidatePartitionTableCache_DEVICE_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoReportTargetDeviceChangeAsynchronous",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?PmInvalidatePartitionTableCache@@YAXPEAU_DEVICE_EXTENSION@@@Z",
+    "prototype": "void __fastcall(struct _DEVICE_EXTENSION *)",
+    "rank_score": 1229,
+    "size": 333,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "PmDecrementPendingPartitionsCount(_DEVICE_EXTENSION *,long)",
+    "ea": "0x1400079fc",
+    "function_file": "functions/1400079fc_PmDecrementPendingPartitionsCount_DEVICE_EXTENSION_long.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?PmDecrementPendingPartitionsCount@@YAXPEAU_DEVICE_EXTENSION@@J@Z",
+    "prototype": "void __fastcall(struct _DEVICE_EXTENSION *, int)",
+    "rank_score": 1228,
+    "size": 457,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PmQueryBusRelations(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x1400071b8",
+    "function_file": "functions/1400071b8_PmQueryBusRelations_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IoForwardIrpSynchronously",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "?PmQueryBusRelations@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "int(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 1225,
+    "size": 267,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "PmPower(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x1400049f0",
+    "function_file": "functions/1400049f0_PmPower_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!PoCallDriver",
+      "ntoskrnl!PoStartNextPowerIrp"
+    ],
+    "matched_strings": [],
+    "name": "?PmPower@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "int(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 1223,
+    "size": 304,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "PmUpdateLayoutEx(_DEVICE_EXTENSION *,_DRIVE_LAYOUT_INFORMATION_EX *)",
+    "ea": "0x140005b2c",
+    "function_file": "functions/140005b2c_PmUpdateLayoutEx_DEVICE_EXTENSION_DRIVE_LAYOUT_INFORMATION_EX.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [
+      "PmUpdateLayoutEx"
+    ],
+    "name": "?PmUpdateLayoutEx@@YAJPEAU_DEVICE_EXTENSION@@PEAU_DRIVE_LAYOUT_INFORMATION_EX@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, struct _DRIVE_LAYOUT_INFORMATION_EX *)",
+    "rank_score": 1084,
+    "size": 285,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PmQueryRemoveDevice(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x14000bda4",
+    "function_file": "functions/14000bda4_PmQueryRemoveDevice_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [
+      "PmQueryRemoveDevice"
+    ],
+    "name": "?PmQueryRemoveDevice@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "int(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 1065,
+    "size": 263,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "PmPowerCompletion(_DEVICE_OBJECT *,_IRP *,void *)",
+    "ea": "0x1400070e0",
+    "function_file": "functions/1400070e0_PmPowerCompletion_DEVICE_OBJECT_IRP_void.md",
+    "matched_imports": [
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!PoSetPowerState",
+      "ntoskrnl!PoStartNextPowerIrp"
+    ],
+    "matched_strings": [
+      "PmPowerCompletion"
+    ],
+    "name": "?PmPowerCompletion@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@PEAX@Z",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp, void *)",
+    "rank_score": 1063,
+    "size": 209,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "PmGetPartitionAttributesMbr(_DEVICE_EXTENSION *,_DRIVE_LAYOUT_INFORMATION_EX *,unsigned __int64 *)",
+    "ea": "0x14000a964",
+    "function_file": "functions/14000a964_PmGetPartitionAttributesMbr_DEVICE_EXTENSION_DRIVE_LAYOUT_INFORMATION_EX_unsigned_int64.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [
+      "AttributesTableCache"
+    ],
+    "name": "?PmGetPartitionAttributesMbr@@YAJPEAU_DEVICE_EXTENSION@@PEAU_DRIVE_LAYOUT_INFORMATION_EX@@PEA_K@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, struct _DRIVE_LAYOUT_INFORMATION_EX *, unsigned __int64 *)",
+    "rank_score": 1056,
+    "size": 244,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "PartitionIoctlManageBypassIo(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x14001ca0c",
+    "function_file": "functions/14001ca0c_PartitionIoctlManageBypassIo_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!wcscpy_s"
+    ],
+    "matched_strings": [],
+    "name": "?PartitionIoctlManageBypassIo@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 1040,
+    "size": 580,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "PmCollectTelemetry(_DEVICE_EXTENSION *,_DISK_TELEMETRY_INFO * *)",
+    "ea": "0x140026640",
+    "function_file": "functions/140026640_PmCollectTelemetry_DEVICE_EXTENSION_DISK_TELEMETRY_INFO.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!IoGetDeviceAttachmentBaseRef",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "?PmCollectTelemetry@@YAJPEAU_DEVICE_EXTENSION@@PEAPEAU_DISK_TELEMETRY_INFO@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, struct _DISK_TELEMETRY_INFO **)",
+    "rank_score": 1039,
+    "size": 2300,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "PmVolumeManagerArrival(_CONTROL_EXTENSION *,_UNICODE_STRING *)",
+    "ea": "0x14000e398",
+    "function_file": "functions/14000e398_PmVolumeManagerArrival_CONTROL_EXTENSION_UNICODE_STRING.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!IoGetDeviceObjectPointer",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?PmVolumeManagerArrival@@YAJPEAU_CONTROL_EXTENSION@@PEAU_UNICODE_STRING@@@Z",
+    "prototype": "int(struct _CONTROL_EXTENSION *, struct _UNICODE_STRING *)",
+    "rank_score": 1030,
+    "size": 530,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "PmQueryRemovalRelations(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x1400072cc",
+    "function_file": "functions/1400072cc_PmQueryRemovalRelations_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?PmQueryRemovalRelations@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "int(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 1027,
+    "size": 360,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "PmIoctlSetSanSettings(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x14001f3d8",
+    "function_file": "functions/14001f3d8_PmIoctlSetSanSettings_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IoOpenDriverRegistryKey",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwSetValueKey"
+    ],
+    "matched_strings": [],
+    "name": "?PmIoctlSetSanSettings@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 1024,
+    "size": 306,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "PmFilterInternalDeviceControl(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x14000bb00",
+    "function_file": "functions/14000bb00_PmFilterInternalDeviceControl_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "?PmFilterInternalDeviceControl@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 1023,
+    "size": 218,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "PmGrowPartition(_DEVICE_EXTENSION *,_DRIVE_LAYOUT_INFORMATION_EX *,_DISK_GROW_PARTITION *,__int64)",
+    "ea": "0x14000c730",
+    "function_file": "functions/14000c730_PmGrowPartition_DEVICE_EXTENSION_DRIVE_LAYOUT_INFORMATION_EX_DISK_GROW_PARTITION_int64.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?PmGrowPartition@@YAJPEAU_DEVICE_EXTENSION@@PEAU_DRIVE_LAYOUT_INFORMATION_EX@@PEAU_DISK_GROW_PARTITION@@_J@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, struct _DRIVE_LAYOUT_INFORMATION_EX *, struct _DISK_GROW_PARTITION *, __int64)",
+    "rank_score": 1022,
+    "size": 740,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "PmGetLayout(_DEVICE_EXTENSION *,SC_DISK_LAYOUT * *)",
+    "ea": "0x1400066a0",
+    "function_file": "functions/1400066a0_PmGetLayout_DEVICE_EXTENSION_SC_DISK_LAYOUT.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeQueryUnbiasedInterruptTimePrecise",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?PmGetLayout@@YAJPEAU_DEVICE_EXTENSION@@PEAPEAVSC_DISK_LAYOUT@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, struct SC_DISK_LAYOUT **)",
+    "rank_score": 1020,
+    "size": 407,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "PartitionReleaseRundownExclusive(_PARTITION_EXTENSION *)",
+    "ea": "0x14000b700",
+    "function_file": "functions/14000b700_PartitionReleaseRundownExclusive_PARTITION_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!ExReInitializeRundownProtectionCacheAware",
+      "ntoskrnl!KeAcquireInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseInStackQueuedSpinLock",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "?PartitionReleaseRundownExclusive@@YAXPEAU_PARTITION_EXTENSION@@@Z",
+    "prototype": "void __fastcall(struct _PARTITION_EXTENSION *)",
+    "rank_score": 1017,
+    "size": 387,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "PmWmiCounterEnable(_PERF_COUNTER_CONTEXT * *)",
+    "ea": "0x14001c2c0",
+    "function_file": "functions/14001c2c0_PmWmiCounterEnable_PERF_COUNTER_CONTEXT.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!KeInitializeMutex",
+      "ntoskrnl!KeQueryActiveProcessorCountEx",
+      "ntoskrnl!KeQueryUnbiasedInterruptTimePrecise"
+    ],
+    "matched_strings": [],
+    "name": "?PmWmiCounterEnable@@YAJPEAPEAU_PERF_COUNTER_CONTEXT@@@Z",
+    "prototype": "__int64 __fastcall(struct _PERF_COUNTER_CONTEXT **)",
+    "rank_score": 1016,
+    "size": 245,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PmLogError(_DEVICE_EXTENSION *,_DEVICE_EXTENSION *,long)",
+    "ea": "0x14002133c",
+    "function_file": "functions/14002133c_PmLogError_DEVICE_EXTENSION_DEVICE_EXTENSION_long.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAllocateErrorLogEntry",
+      "ntoskrnl!IoReportTargetDeviceChangeAsynchronous",
+      "ntoskrnl!IoWriteErrorLogEntry"
+    ],
+    "matched_strings": [],
+    "name": "?PmLogError@@YAXPEAU_DEVICE_EXTENSION@@0J@Z",
+    "prototype": "void __fastcall(struct _DEVICE_EXTENSION *, struct _DEVICE_EXTENSION *, int)",
+    "rank_score": 1015,
+    "size": 317,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "PmDeletePartition(_PARTITION_EXTENSION *)",
+    "ea": "0x14000c688",
+    "function_file": "functions/14000c688_PmDeletePartition_PARTITION_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!RtlFreeUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?PmDeletePartition@@YAXPEAU_PARTITION_EXTENSION@@@Z",
+    "prototype": "void __fastcall(struct _PARTITION_EXTENSION *)",
+    "rank_score": 1014,
+    "size": 159,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SC_DEVICE::GetStorageProperty(_STORAGE_PROPERTY_ID,_STORAGE_DESCRIPTOR_HEADER * *)",
+    "ea": "0x1400051c0",
+    "function_file": "functions/1400051c0_SC_DEVICE_GetStorageProperty_STORAGE_PROPERTY_ID_STORAGE_DESCRIPTOR_HEADER.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?GetStorageProperty@SC_DEVICE@@QEAAJW4_STORAGE_PROPERTY_ID@@PEAPEAU_STORAGE_DESCRIPTOR_HEADER@@@Z",
+    "prototype": "__int64 __fastcall(SC_DEVICE *__hidden this, enum _STORAGE_PROPERTY_ID, struct _STORAGE_DESCRIPTOR_HEADER **)",
+    "rank_score": 1008,
+    "size": 525,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "ScAnsiToUnicodeString(char *,_UNICODE_STRING *)",
+    "ea": "0x140004878",
+    "function_file": "functions/140004878_ScAnsiToUnicodeString_char_UNICODE_STRING.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlAnsiStringToUnicodeString",
+      "ntoskrnl!RtlInitAnsiString",
+      "ntoskrnl!RtlxAnsiStringToUnicodeSize"
+    ],
+    "matched_strings": [],
+    "name": "?ScAnsiToUnicodeString@@YAJPEADPEAU_UNICODE_STRING@@@Z",
+    "prototype": "__int64 __fastcall(PCSZ SourceString, struct _UNICODE_STRING *)",
+    "rank_score": 1007,
+    "size": 219,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "PM_DISK::Read(unsigned __int64,ulong,uchar *)",
+    "ea": "0x140023e10",
+    "function_file": "functions/140023e10_PM_DISK_Read_unsigned_int64_ulong_uchar.md",
+    "matched_imports": [
+      "ntoskrnl!IoBuildAsynchronousFsdRequest",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!IoSynchronousCallDriver",
+      "ntoskrnl!MmUnlockPages"
+    ],
+    "matched_strings": [],
+    "name": "?Read@PM_DISK@@UEAAJ_KKPEAE@Z",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT *this, union _LARGE_INTEGER, ULONG, unsigned __int8 *)",
+    "rank_score": 1002,
+    "size": 179,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "PM_DISK::Write(unsigned __int64,ulong,uchar *)",
+    "ea": "0x14001d1a0",
+    "function_file": "functions/14001d1a0_PM_DISK_Write_unsigned_int64_ulong_uchar.md",
+    "matched_imports": [
+      "ntoskrnl!IoBuildAsynchronousFsdRequest",
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!IoSynchronousCallDriver",
+      "ntoskrnl!MmUnlockPages"
+    ],
+    "matched_strings": [],
+    "name": "?Write@PM_DISK@@UEAAJ_KKPEAE@Z",
+    "prototype": "int(PM_DISK *__hidden this, unsigned __int64, unsigned int, unsigned __int8 *)",
+    "rank_score": 1002,
+    "size": 179,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "PmCreateSnapshotPartition(_DEVICE_EXTENSION *)",
+    "ea": "0x14001c3d8",
+    "function_file": "functions/14001c3d8_PmCreateSnapshotPartition_DEVICE_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExUuidCreate"
+    ],
+    "matched_strings": [
+      "Microsoft shadow copy partition"
+    ],
+    "name": "?PmCreateSnapshotPartition@@YAJPEAU_DEVICE_EXTENSION@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *)",
+    "rank_score": 884,
+    "size": 634,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "PmOpenDeviceParameter(_DEVICE_EXTENSION *,void * *)",
+    "ea": "0x140023540",
+    "function_file": "functions/140023540_PmOpenDeviceParameter_DEVICE_EXTENSION_void.md",
+    "matched_imports": [
+      "ntoskrnl!IoOpenDeviceRegistryKey",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwCreateKey"
+    ],
+    "matched_strings": [],
+    "name": "?PmOpenDeviceParameter@@YAJPEAU_DEVICE_EXTENSION@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, void **)",
+    "rank_score": 859,
+    "size": 291,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "PmIoctlRedirect(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x14001ed38",
+    "function_file": "functions/14001ed38_PmIoctlRedirect_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?PmIoctlRedirect@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 841,
+    "size": 486,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 6,
+    "demangled": "PmSetDiskAttributes(_DEVICE_EXTENSION *,_SET_DISK_ATTRIBUTES *,_DISK_OFFLINE_REASON)",
+    "ea": "0x14000ab3c",
+    "function_file": "functions/14000ab3c_PmSetDiskAttributes_DEVICE_EXTENSION_SET_DISK_ATTRIBUTES_DISK_OFFLINE_REASON.md",
+    "matched_imports": [
+      "ntoskrnl!IoSetDeviceInterfaceState",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?PmSetDiskAttributes@@YAJPEAU_DEVICE_EXTENSION@@PEAU_SET_DISK_ATTRIBUTES@@W4_DISK_OFFLINE_REASON@@@Z",
+    "prototype": "",
+    "rank_score": 834,
+    "size": 603,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "PmUpdatePartitionsLegacyRemovable(_DEVICE_EXTENSION *,_DRIVE_LAYOUT_INFORMATION_EX *)",
+    "ea": "0x140005d78",
+    "function_file": "functions/140005d78_PmUpdatePartitionsLegacyRemovable_DEVICE_EXTENSION_DRIVE_LAYOUT_INFORMATION_EX.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?PmUpdatePartitionsLegacyRemovable@@YAJPEAU_DEVICE_EXTENSION@@PEAU_DRIVE_LAYOUT_INFORMATION_EX@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, struct _DRIVE_LAYOUT_INFORMATION_EX *)",
+    "rank_score": 834,
+    "size": 650,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "PmPnp(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x140022800",
+    "function_file": "functions/140022800_PmPnp_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "?PmPnp@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 832,
+    "size": 385,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "PartitionIoctlBandmgmt(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x14002532c",
+    "function_file": "functions/14002532c_PartitionIoctlBandmgmt_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?PartitionIoctlBandmgmt@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 828,
+    "size": 403,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PmCheckIdsGpt(_DEVICE_EXTENSION *,_DRIVE_LAYOUT_INFORMATION_EX *,uchar *,_DISK_OFFLINE_REASON *)",
+    "ea": "0x140023f38",
+    "function_file": "functions/140023f38_PmCheckIdsGpt_DEVICE_EXTENSION_DRIVE_LAYOUT_INFORMATION_EX_uchar_DISK_OFFLINE_REASON.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInsertElementGenericTableAvl",
+      "ntoskrnl!RtlLookupElementGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "?PmCheckIdsGpt@@YAJPEAU_DEVICE_EXTENSION@@PEAU_DRIVE_LAYOUT_INFORMATION_EX@@PEAEPEAW4_DISK_OFFLINE_REASON@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, struct _DRIVE_LAYOUT_INFORMATION_EX *, unsigned __int8 *, enum _DISK_OFFLINE_REASON *)",
+    "rank_score": 827,
+    "size": 631,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "PmPropagateVerify(_DEVICE_EXTENSION *)",
+    "ea": "0x14000bc88",
+    "function_file": "functions/14000bc88_PmPropagateVerify_DEVICE_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!IoAllocateIrp",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?PmPropagateVerify@@YAXPEAU_DEVICE_EXTENSION@@@Z",
+    "prototype": "void __fastcall(struct _DEVICE_EXTENSION *)",
+    "rank_score": 826,
+    "size": 233,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "PmSetSnapshotInfo(_DEVICE_EXTENSION *,_DISK_SNAPSHOT_INFO *)",
+    "ea": "0x140021c90",
+    "function_file": "functions/140021c90_PmSetSnapshotInfo_DEVICE_EXTENSION_DISK_SNAPSHOT_INFO.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?PmSetSnapshotInfo@@YAJPEAU_DEVICE_EXTENSION@@PEAU_DISK_SNAPSHOT_INFO@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, struct _DISK_SNAPSHOT_INFO *)",
+    "rank_score": 824,
+    "size": 560,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "PmAreVolumesReadyCancelRoutine(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x14000afd0",
+    "function_file": "functions/14000afd0_PmAreVolumesReadyCancelRoutine_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IoReleaseCancelSpinLock",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?PmAreVolumesReadyCancelRoutine@@YAXPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "void(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 822,
+    "size": 166,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "PmPassThrough(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x140004360",
+    "function_file": "functions/140004360_PmPassThrough_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoReleaseRemoveLockEx",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "?PmPassThrough@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "int(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 822,
+    "size": 154,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 17,
+    "demangled": "PmSendDeviceControl(_DEVICE_OBJECT *,ulong,void *,ulong,void *,ulong,uchar)",
+    "ea": "0x140023cb4",
+    "function_file": "functions/140023cb4_PmSendDeviceControl_DEVICE_OBJECT_ulong_void_ulong_void_ulong_uchar.md",
+    "matched_imports": [
+      "ntoskrnl!IoBuildDeviceIoControlRequest",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?PmSendDeviceControl@@YAJPEAU_DEVICE_OBJECT@@KPEAXK1KE@Z",
+    "prototype": "NTSTATUS __fastcall(PDEVICE_OBJECT DeviceObject, ULONG IoControlCode, PVOID InputBuffer, ULONG InputBufferLength, PVOID OutputBuffer, ULONG OutputBufferLength, BOOLEAN InternalDeviceIoControl)",
+    "rank_score": 819,
+    "size": 238,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "PmBuildUniqueId(_DEVICE_EXTENSION *,_PARTITION_EXTENSION *)",
+    "ea": "0x14000c328",
+    "function_file": "functions/14000c328_PmBuildUniqueId_DEVICE_EXTENSION_PARTITION_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?PmBuildUniqueId@@YAJPEAU_DEVICE_EXTENSION@@PEAU_PARTITION_EXTENSION@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, struct _PARTITION_EXTENSION *)",
+    "rank_score": 817,
+    "size": 331,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PmIsConversionInProgress(_DEVICE_EXTENSION *,_PARTITION_EXTENSION *)",
+    "ea": "0x14002096c",
+    "function_file": "functions/14002096c_PmIsConversionInProgress_DEVICE_EXTENSION_PARTITION_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?PmIsConversionInProgress@@YAJPEAU_DEVICE_EXTENSION@@PEAU_PARTITION_EXTENSION@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, struct _PARTITION_EXTENSION *)",
+    "rank_score": 816,
+    "size": 392,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "PmPartitionRedirect(_DEVICE_EXTENSION *,_PARTITION_EXTENSION *,_IRP *,void *,__int64,ulong)",
+    "ea": "0x14000e018",
+    "function_file": "functions/14000e018_PmPartitionRedirect_DEVICE_EXTENSION_PARTITION_EXTENSION_IRP_void_int64_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!IoForwardIrpSynchronously",
+      "ntoskrnl!IoReuseIrp",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?PmPartitionRedirect@@YAJPEAU_DEVICE_EXTENSION@@PEAU_PARTITION_EXTENSION@@PEAU_IRP@@PEAX_JK@Z",
+    "prototype": "int(struct _DEVICE_EXTENSION *, struct _PARTITION_EXTENSION *, struct _IRP *, void *, __int64, unsigned int)",
+    "rank_score": 816,
+    "size": 337,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PmGetHybridInfo(_DEVICE_EXTENSION *,_SRB_IO_CONTROL_HYBRID * *)",
+    "ea": "0x14001ff34",
+    "function_file": "functions/14001ff34_PmGetHybridInfo_DEVICE_EXTENSION_SRB_IO_CONTROL_HYBRID.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?PmGetHybridInfo@@YAJPEAU_DEVICE_EXTENSION@@PEAPEAU_SRB_IO_CONTROL_HYBRID@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, struct _SRB_IO_CONTROL_HYBRID **)",
+    "rank_score": 815,
+    "size": 276,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PmConstructDeviceLocationVhd(_DEVICE_EXTENSION *)",
+    "ea": "0x14001fa44",
+    "function_file": "functions/14001fa44_PmConstructDeviceLocationVhd_DEVICE_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?PmConstructDeviceLocationVhd@@YAJPEAU_DEVICE_EXTENSION@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *)",
+    "rank_score": 814,
+    "size": 174,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "PmGiveDisk(_DEVICE_EXTENSION *)",
+    "ea": "0x140024e38",
+    "function_file": "functions/140024e38_PmGiveDisk_DEVICE_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!IoForwardIrpSynchronously",
+      "ntoskrnl!IoReuseIrp",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?PmGiveDisk@@YAXPEAU_DEVICE_EXTENSION@@@Z",
+    "prototype": "void __fastcall(struct _DEVICE_EXTENSION *)",
+    "rank_score": 814,
+    "size": 260,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "PmRemoveIds(_DEVICE_EXTENSION *)",
+    "ea": "0x14000d794",
+    "function_file": "functions/14000d794_PmRemoveIds_DEVICE_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!RtlDeleteElementGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "?PmRemoveIds@@YAJPEAU_DEVICE_EXTENSION@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *)",
+    "rank_score": 814,
+    "size": 219,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "PartitionChildIoCompletion(_DEVICE_OBJECT *,_IRP *,void *)",
+    "ea": "0x14000b400",
+    "function_file": "functions/14000b400_PartitionChildIoCompletion_DEVICE_OBJECT_IRP_void.md",
+    "matched_imports": [
+      "ntoskrnl!IoFreeIrp",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!IoSetMasterIrpStatus",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "?PartitionChildIoCompletion@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@PEAX@Z",
+    "prototype": "int(struct _DEVICE_OBJECT *, struct _IRP *, void *)",
+    "rank_score": 812,
+    "size": 137,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "PmSendIO(_DEVICE_OBJECT *,ulong,void *,ulong,_LARGE_INTEGER *)",
+    "ea": "0x140020240",
+    "function_file": "functions/140020240_PmSendIO_DEVICE_OBJECT_ulong_void_ulong_LARGE_INTEGER.md",
+    "matched_imports": [
+      "ntoskrnl!IoBuildSynchronousFsdRequest",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?PmSendIO@@YAJPEAU_DEVICE_OBJECT@@KPEAXKPEAT_LARGE_INTEGER@@@Z",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, ULONG MajorFunction, PVOID Buffer, ULONG Length, PLARGE_INTEGER)",
+    "rank_score": 811,
+    "size": 229,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "PmGetDevicePropertyData(_DEVICE_OBJECT *,_DEVPROPKEY const *,void * *)",
+    "ea": "0x14002443c",
+    "function_file": "functions/14002443c_PmGetDevicePropertyData_DEVICE_OBJECT_DEVPROPKEY_const_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoGetDevicePropertyData"
+    ],
+    "matched_strings": [],
+    "name": "?PmGetDevicePropertyData@@YAJPEAU_DEVICE_OBJECT@@PEBU_DEVPROPKEY@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT Pdo, DEVPROPKEY *PropertyKey, void **)",
+    "rank_score": 807,
+    "size": 265,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PmInitializePartitionTableCache(_DEVICE_EXTENSION *)",
+    "ea": "0x14000ca1c",
+    "function_file": "functions/14000ca1c_PmInitializePartitionTableCache_DEVICE_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [
+      "PartitionTableCache"
+    ],
+    "name": "?PmInitializePartitionTableCache@@YAJPEAU_DEVICE_EXTENSION@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *)",
+    "rank_score": 655,
+    "size": 273,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PmInitializeSnapshotDataCache(_DEVICE_EXTENSION *)",
+    "ea": "0x14000da9c",
+    "function_file": "functions/14000da9c_PmInitializeSnapshotDataCache_DEVICE_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [
+      "SnapshotDataCache"
+    ],
+    "name": "?PmInitializeSnapshotDataCache@@YAJPEAU_DEVICE_EXTENSION@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *)",
+    "rank_score": 655,
+    "size": 186,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PmInitializeAttributesTableCache(_DEVICE_EXTENSION *)",
+    "ea": "0x14000aa60",
+    "function_file": "functions/14000aa60_PmInitializeAttributesTableCache_DEVICE_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [
+      "AttributesTableCache"
+    ],
+    "name": "?PmInitializeAttributesTableCache@@YAJPEAU_DEVICE_EXTENSION@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *)",
+    "rank_score": 654,
+    "size": 212,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "PmSetSnapshotData(_DEVICE_EXTENSION *,_DRIVE_LAYOUT_INFORMATION_EX *,_DISK_SNAPSHOT_DATA *,ulong)",
+    "ea": "0x14000dbd0",
+    "function_file": "functions/14000dbd0_PmSetSnapshotData_DEVICE_EXTENSION_DRIVE_LAYOUT_INFORMATION_EX_DISK_SNAPSHOT_DATA_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!RtlComputeCrc32"
+    ],
+    "matched_strings": [],
+    "name": "?PmSetSnapshotData@@YAJPEAU_DEVICE_EXTENSION@@PEAU_DRIVE_LAYOUT_INFORMATION_EX@@PEAU_DISK_SNAPSHOT_DATA@@K@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, struct _DRIVE_LAYOUT_INFORMATION_EX *, UCHAR *, unsigned int)",
+    "rank_score": 647,
+    "size": 802,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 18,
+    "caller_count": 0,
+    "demangled": "PartitionDeviceControl(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x140003110",
+    "function_file": "functions/140003110_PartitionDeviceControl_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "?PartitionDeviceControl@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "int __fastcall(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 644,
+    "size": 791,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "PmIsRedundantPath(_DEVICE_EXTENSION *,_DEVICE_EXTENSION *,uchar *)",
+    "ea": "0x1400210a8",
+    "function_file": "functions/1400210a8_PmIsRedundantPath_DEVICE_EXTENSION_DEVICE_EXTENSION_uchar.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "?PmIsRedundantPath@@YAJPEAU_DEVICE_EXTENSION@@0PEAE@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, struct _DEVICE_EXTENSION *, unsigned __int8 *)",
+    "rank_score": 642,
+    "size": 594,
+    "tags": [
+      "reparse_path",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "PmAssociatePartitions(_DEVICE_EXTENSION *,_DRIVE_LAYOUT_INFORMATION_EX *)",
+    "ea": "0x140005c50",
+    "function_file": "functions/140005c50_PmAssociatePartitions_DEVICE_EXTENSION_DRIVE_LAYOUT_INFORMATION_EX.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?PmAssociatePartitions@@YAJPEAU_DEVICE_EXTENSION@@PEAU_DRIVE_LAYOUT_INFORMATION_EX@@@Z",
+    "prototype": "__int64 __fastcall(KSPIN_LOCK *, struct _DRIVE_LAYOUT_INFORMATION_EX *)",
+    "rank_score": 638,
+    "size": 287,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 14,
+    "demangled": "PmQueueNotificationWorkItem(_DEVICE_EXTENSION *,char const *)",
+    "ea": "0x14000a014",
+    "function_file": "functions/14000a014_PmQueueNotificationWorkItem_DEVICE_EXTENSION_char_const.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireRemoveLockEx",
+      "ntoskrnl!IoQueueWorkItem",
+      "ntoskrnl!KeClearEvent"
+    ],
+    "matched_strings": [],
+    "name": "?PmQueueNotificationWorkItem@@YAJPEAU_DEVICE_EXTENSION@@PEBD@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, const char *)",
+    "rank_score": 638,
+    "size": 226,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PartitionIoctlVerify(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x14000aee0",
+    "function_file": "functions/14000aee0_PartitionIoctlVerify_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?PartitionIoctlVerify@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 635,
+    "size": 227,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "PartitionIoctlQueryProperty(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x140023ecc",
+    "function_file": "functions/140023ecc_PartitionIoctlQueryProperty_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?PartitionIoctlQueryProperty@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "int(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 625,
+    "size": 101,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PmIoctlUpdateDriveSize(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x14001f5c4",
+    "function_file": "functions/14001f5c4_PmIoctlUpdateDriveSize_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IoForwardIrpSynchronously",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?PmIoctlUpdateDriveSize@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 625,
+    "size": 133,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "PmConstructDeviceLocation(_DEVICE_EXTENSION *,_IRP *)",
+    "ea": "0x14002366c",
+    "function_file": "functions/14002366c_PmConstructDeviceLocation_DEVICE_EXTENSION_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetDevicePropertyData",
+      "ntoskrnl!IoSynchronousCallDriver"
+    ],
+    "matched_strings": [],
+    "name": "?PmConstructDeviceLocation@@YAJPEAU_DEVICE_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, struct _IRP *)",
+    "rank_score": 624,
+    "size": 698,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "PmSystemControl(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x140022720",
+    "function_file": "functions/140022720_PmSystemControl_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "WMILIB!WmiSystemControl",
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "?PmSystemControl@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(PDEVICE_OBJECT DeviceObject, PIRP Irp)",
+    "rank_score": 622,
+    "size": 217,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PmBuildInstanceId(_DEVICE_EXTENSION *,_PARTITION_EXTENSION *)",
+    "ea": "0x140020550",
+    "function_file": "functions/140020550_PmBuildInstanceId_DEVICE_EXTENSION_PARTITION_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlDuplicateUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?PmBuildInstanceId@@YAJPEAU_DEVICE_EXTENSION@@PEAU_PARTITION_EXTENSION@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, struct _PARTITION_EXTENSION *)",
+    "rank_score": 617,
+    "size": 408,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "PmGetSnapshotInfo(_DEVICE_EXTENSION *,_DISK_SNAPSHOT_INFO * *)",
+    "ea": "0x140021970",
+    "function_file": "functions/140021970_PmGetSnapshotInfo_DEVICE_EXTENSION_DISK_SNAPSHOT_INFO.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?PmGetSnapshotInfo@@YAJPEAU_DEVICE_EXTENSION@@PEAPEAU_DISK_SNAPSHOT_INFO@@@Z",
+    "prototype": "__int64 __fastcall(KSPIN_LOCK *, struct _DISK_SNAPSHOT_INFO **)",
+    "rank_score": 617,
+    "size": 323,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PmGetFirmwareInfo(_DEVICE_EXTENSION *,_STORAGE_BUS_TYPE,_STORAGE_HW_FIRMWARE_INFO * *)",
+    "ea": "0x14002392c",
+    "function_file": "functions/14002392c_PmGetFirmwareInfo_DEVICE_EXTENSION_STORAGE_BUS_TYPE_STORAGE_HW_FIRMWARE_INFO.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?PmGetFirmwareInfo@@YAJPEAU_DEVICE_EXTENSION@@W4_STORAGE_BUS_TYPE@@PEAPEAU_STORAGE_HW_FIRMWARE_INFO@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, enum _STORAGE_BUS_TYPE, PVOID *)",
+    "rank_score": 616,
+    "size": 366,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PmConstructDeviceLocationNetworkStorage(_DEVICE_EXTENSION *)",
+    "ea": "0x14001f99c",
+    "function_file": "functions/14001f99c_PmConstructDeviceLocationNetworkStorage_DEVICE_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?PmConstructDeviceLocationNetworkStorage@@YAJPEAU_DEVICE_EXTENSION@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *)",
+    "rank_score": 614,
+    "size": 162,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PmIoctlCreateDisk(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x14001d6a4",
+    "function_file": "functions/14001d6a4_PmIoctlCreateDisk_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IoForwardIrpSynchronously",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?PmIoctlCreateDisk@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 614,
+    "size": 152,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "PartitionReferenceParent(_PARTITION_EXTENSION *)",
+    "ea": "0x140003430",
+    "function_file": "functions/140003430_PartitionReferenceParent_PARTITION_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!ObfReferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "?PartitionReferenceParent@@YAPEAU_DEVICE_OBJECT@@PEAU_PARTITION_EXTENSION@@@Z",
+    "prototype": "struct _DEVICE_OBJECT *__fastcall(struct _PARTITION_EXTENSION *)",
+    "rank_score": 613,
+    "size": 101,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "PmFreePending(_DEVICE_EXTENSION *)",
+    "ea": "0x140004c80",
+    "function_file": "functions/140004c80_PmFreePending_DEVICE_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?PmFreePending@@YAXPEAU_DEVICE_EXTENSION@@@Z",
+    "prototype": "void __fastcall(struct _DEVICE_EXTENSION *)",
+    "rank_score": 613,
+    "size": 146,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "PmInvalidateSnapshotDataCache(_DEVICE_EXTENSION *)",
+    "ea": "0x14000db5c",
+    "function_file": "functions/14000db5c_PmInvalidateSnapshotDataCache_DEVICE_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?PmInvalidateSnapshotDataCache@@YAXPEAU_DEVICE_EXTENSION@@@Z",
+    "prototype": "void __fastcall(struct _DEVICE_EXTENSION *)",
+    "rank_score": 612,
+    "size": 110,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "PartitionAcquireRundownExclusive(_PARTITION_EXTENSION *)",
+    "ea": "0x14000b39c",
+    "function_file": "functions/14000b39c_PartitionAcquireRundownExclusive_PARTITION_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!ExWaitForRundownProtectionReleaseCacheAware",
+      "ntoskrnl!KeClearEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?PartitionAcquireRundownExclusive@@YAXPEAU_PARTITION_EXTENSION@@@Z",
+    "prototype": "void __fastcall(struct _PARTITION_EXTENSION *)",
+    "rank_score": 611,
+    "size": 90,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "PmUuidCreate(_GUID *)",
+    "ea": "0x1400217e8",
+    "function_file": "functions/1400217e8_PmUuidCreate_GUID.md",
+    "matched_imports": [
+      "ntoskrnl!ExUuidCreate",
+      "ntoskrnl!KeQueryUnbiasedInterruptTimePrecise"
+    ],
+    "matched_strings": [],
+    "name": "?PmUuidCreate@@YAXPEAU_GUID@@@Z",
+    "prototype": "void __fastcall(struct _GUID *)",
+    "rank_score": 604,
+    "size": 91,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "PmSetPartitionAttributesMbr(_DEVICE_EXTENSION *,_DRIVE_LAYOUT_INFORMATION_EX *,unsigned __int64)",
+    "ea": "0x14000ada0",
+    "function_file": "functions/14000ada0_PmSetPartitionAttributesMbr_DEVICE_EXTENSION_DRIVE_LAYOUT_INFORMATION_EX_unsigned_int64.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [
+      "AttributesTableCache"
+    ],
+    "name": "?PmSetPartitionAttributesMbr@@YAJPEAU_DEVICE_EXTENSION@@PEAU_DRIVE_LAYOUT_INFORMATION_EX@@_K@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, struct _DRIVE_LAYOUT_INFORMATION_EX *, unsigned __int64)",
+    "rank_score": 458,
+    "size": 225,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "PmInitializeDevice(_DEVICE_EXTENSION *,_IRP *)",
+    "ea": "0x1400261fc",
+    "function_file": "functions/1400261fc_PmInitializeDevice_DEVICE_EXTENSION_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!FsRtlGetVirtualDiskNestingLevel",
+      "ntoskrnl!IoGetDevicePropertyData"
+    ],
+    "matched_strings": [],
+    "name": "?PmInitializeDevice@@YAJPEAU_DEVICE_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, struct _IRP *)",
+    "rank_score": 439,
+    "size": 948,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "PmCommitPending(_DEVICE_EXTENSION *,_DRIVE_LAYOUT_INFORMATION_EX *)",
+    "ea": "0x14000c47c",
+    "function_file": "functions/14000c47c_PmCommitPending_DEVICE_EXTENSION_DRIVE_LAYOUT_INFORMATION_EX.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?PmCommitPending@@YAXPEAU_DEVICE_EXTENSION@@PEAU_DRIVE_LAYOUT_INFORMATION_EX@@@Z",
+    "prototype": "void __fastcall(struct _DEVICE_EXTENSION *, struct _DRIVE_LAYOUT_INFORMATION_EX *)",
+    "rank_score": 435,
+    "size": 516,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PmUpdateIoPower(_DISK_POWER_CONTEXT *,_IRP *,unsigned __int64,unsigned __int64)",
+    "ea": "0x1400045c0",
+    "function_file": "functions/1400045c0_PmUpdateIoPower_DISK_POWER_CONTEXT_IRP_unsigned_int64_unsigned_int64.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetRequestorProcess",
+      "ntoskrnl!PsUpdateComponentPower"
+    ],
+    "matched_strings": [],
+    "name": "?PmUpdateIoPower@@YAXPEAU_DISK_POWER_CONTEXT@@PEAU_IRP@@_K2@Z",
+    "prototype": "void(struct _DISK_POWER_CONTEXT *, struct _IRP *, unsigned __int64, unsigned __int64)",
+    "rank_score": 428,
+    "size": 569,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "PmGetDeviceParameterBinary(_DEVICE_EXTENSION *,ushort *,void * *,ulong *)",
+    "ea": "0x14001fda0",
+    "function_file": "functions/14001fda0_PmGetDeviceParameterBinary_DEVICE_EXTENSION_ushort_void_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryRegistryValuesEx",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "?PmGetDeviceParameterBinary@@YAJPEAU_DEVICE_EXTENSION@@PEAGPEAPEAXPEAK@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, unsigned __int16 *, void **, unsigned int *)",
+    "rank_score": 427,
+    "size": 233,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PmIoctlQueryProperty(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x14002454c",
+    "function_file": "functions/14002454c_PmIoctlQueryProperty_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IofCallDriver",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "?PmIoctlQueryProperty@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 426,
+    "size": 317,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "PmSetDeviceParameterBinary(_DEVICE_EXTENSION *,ushort *,void *,ulong)",
+    "ea": "0x140023310",
+    "function_file": "functions/140023310_PmSetDeviceParameterBinary_DEVICE_EXTENSION_ushort_void_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!RtlWriteRegistryValue",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "?PmSetDeviceParameterBinary@@YAJPEAU_DEVICE_EXTENSION@@PEAGPEAXK@Z",
+    "prototype": "int(struct _DEVICE_EXTENSION *, unsigned __int16 *, void *, unsigned int)",
+    "rank_score": 426,
+    "size": 124,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PmCheckIdsMbr(_DEVICE_EXTENSION *,_DRIVE_LAYOUT_INFORMATION_EX *,uchar *,_DISK_OFFLINE_REASON *)",
+    "ea": "0x140020f90",
+    "function_file": "functions/140020f90_PmCheckIdsMbr_DEVICE_EXTENSION_DRIVE_LAYOUT_INFORMATION_EX_uchar_DISK_OFFLINE_REASON.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInsertElementGenericTableAvl",
+      "ntoskrnl!RtlLookupElementGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "?PmCheckIdsMbr@@YAJPEAU_DEVICE_EXTENSION@@PEAU_DRIVE_LAYOUT_INFORMATION_EX@@PEAEPEAW4_DISK_OFFLINE_REASON@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, struct _DRIVE_LAYOUT_INFORMATION_EX *, unsigned __int8 *, enum _DISK_OFFLINE_REASON *)",
+    "rank_score": 425,
+    "size": 272,
+    "tags": [
+      "reparse_path",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PmGetDeviceParameter(_DEVICE_EXTENSION *,ushort *,ulong *)",
+    "ea": "0x14001fbdc",
+    "function_file": "functions/14001fbdc_PmGetDeviceParameter_DEVICE_EXTENSION_ushort_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryRegistryValuesEx",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "?PmGetDeviceParameter@@YAJPEAU_DEVICE_EXTENSION@@PEAGPEAK@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, unsigned __int16 *, unsigned int *)",
+    "rank_score": 425,
+    "size": 215,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PmGetDeviceParameter(_DEVICE_EXTENSION *,ushort *,unsigned __int64 *)",
+    "ea": "0x14001fcbc",
+    "function_file": "functions/14001fcbc_PmGetDeviceParameter_DEVICE_EXTENSION_ushort_unsigned_int64.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryRegistryValuesEx",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "?PmGetDeviceParameter@@YAJPEAU_DEVICE_EXTENSION@@PEAGPEA_K@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, unsigned __int16 *, unsigned __int64 *)",
+    "rank_score": 425,
+    "size": 222,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PmUpdateIdsGpt(_DRIVE_LAYOUT_INFORMATION_EX *,uchar)",
+    "ea": "0x1400215d0",
+    "function_file": "functions/1400215d0_PmUpdateIdsGpt_DRIVE_LAYOUT_INFORMATION_EX_uchar.md",
+    "matched_imports": [
+      "ntoskrnl!RtlLookupElementGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "?PmUpdateIdsGpt@@YAXPEAU_DRIVE_LAYOUT_INFORMATION_EX@@E@Z",
+    "prototype": "void __fastcall(struct _DRIVE_LAYOUT_INFORMATION_EX *, unsigned __int8)",
+    "rank_score": 425,
+    "size": 353,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PmSetDeviceParameter(_DEVICE_EXTENSION *,ushort *,unsigned __int64)",
+    "ea": "0x14002032c",
+    "function_file": "functions/14002032c_PmSetDeviceParameter_DEVICE_EXTENSION_ushort_unsigned_int64.md",
+    "matched_imports": [
+      "ntoskrnl!RtlWriteRegistryValue",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "?PmSetDeviceParameter@@YAJPEAU_DEVICE_EXTENSION@@PEAG_K@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, unsigned __int16 *, unsigned __int64)",
+    "rank_score": 424,
+    "size": 128,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PmIoctlUpdateProperties(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x14001f650",
+    "function_file": "functions/14001f650_PmIoctlUpdateProperties_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?PmIoctlUpdateProperties@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 423,
+    "size": 97,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "PmSurpriseRemoval(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x14002579c",
+    "function_file": "functions/14002579c_PmSurpriseRemoval_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IoForwardIrpSynchronously",
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "?PmSurpriseRemoval@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "int(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 422,
+    "size": 85,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "PmConstructDeviceLocationDefault(_DEVICE_EXTENSION *)",
+    "ea": "0x140024844",
+    "function_file": "functions/140024844_PmConstructDeviceLocationDefault_DEVICE_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?PmConstructDeviceLocationDefault@@YAJPEAU_DEVICE_EXTENSION@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *)",
+    "rank_score": 421,
+    "size": 627,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "PmWriteSnapshotData(_DEVICE_EXTENSION *,_DRIVE_LAYOUT_INFORMATION_EX *,_DISK_SNAPSHOT_DATA *,ulong)",
+    "ea": "0x140021ec8",
+    "function_file": "functions/140021ec8_PmWriteSnapshotData_DEVICE_EXTENSION_DRIVE_LAYOUT_INFORMATION_EX_DISK_SNAPSHOT_DATA_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?PmWriteSnapshotData@@YAJPEAU_DEVICE_EXTENSION@@PEAU_DRIVE_LAYOUT_INFORMATION_EX@@PEAU_DISK_SNAPSHOT_DATA@@K@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, struct _DRIVE_LAYOUT_INFORMATION_EX *, struct _DISK_SNAPSHOT_DATA *, unsigned int)",
+    "rank_score": 421,
+    "size": 331,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "PmAttributesPhase1(_DEVICE_EXTENSION *,uchar *)",
+    "ea": "0x14002589c",
+    "function_file": "functions/14002589c_PmAttributesPhase1_DEVICE_EXTENSION_uchar.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?PmAttributesPhase1@@YAJPEAU_DEVICE_EXTENSION@@PEAE@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, unsigned __int8 *)",
+    "rank_score": 420,
+    "size": 389,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "PmReadSnapshotData(_DEVICE_EXTENSION *,_DRIVE_LAYOUT_INFORMATION_EX *,_DISK_SNAPSHOT_DATA * *,ulong *)",
+    "ea": "0x140021b3c",
+    "function_file": "functions/140021b3c_PmReadSnapshotData_DEVICE_EXTENSION_DRIVE_LAYOUT_INFORMATION_EX_DISK_SNAPSHOT_DATA_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?PmReadSnapshotData@@YAJPEAU_DEVICE_EXTENSION@@PEAU_DRIVE_LAYOUT_INFORMATION_EX@@PEAPEAU_DISK_SNAPSHOT_DATA@@PEAK@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, struct _DRIVE_LAYOUT_INFORMATION_EX *, struct _DISK_SNAPSHOT_DATA **, unsigned int *)",
+    "rank_score": 420,
+    "size": 332,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "PmReadPartitionAttributesMbr(_DEVICE_EXTENSION *,_DRIVE_LAYOUT_INFORMATION_EX *,_PARTITION_ATTRIBUTES_TABLE * *,ulong *)",
+    "ea": "0x14001c764",
+    "function_file": "functions/14001c764_PmReadPartitionAttributesMbr_DEVICE_EXTENSION_DRIVE_LAYOUT_INFORMATION_EX_PARTITION_ATTRIBUTES_TABLE_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?PmReadPartitionAttributesMbr@@YAJPEAU_DEVICE_EXTENSION@@PEAU_DRIVE_LAYOUT_INFORMATION_EX@@PEAPEAU_PARTITION_ATTRIBUTES_TABLE@@PEAK@Z",
+    "prototype": "int(struct _DEVICE_EXTENSION *, struct _DRIVE_LAYOUT_INFORMATION_EX *, struct _PARTITION_ATTRIBUTES_TABLE **, unsigned int *)",
+    "rank_score": 419,
+    "size": 276,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PmSplitAndRedirectIo(_DEVICE_EXTENSION *,_IRP *,_LIST_ENTRY *)",
+    "ea": "0x14000e170",
+    "function_file": "functions/14000e170_PmSplitAndRedirectIo_DEVICE_EXTENSION_IRP_LIST_ENTRY.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?PmSplitAndRedirectIo@@YAJPEAU_DEVICE_EXTENSION@@PEAU_IRP@@PEAU_LIST_ENTRY@@@Z",
+    "prototype": "int(struct _DEVICE_EXTENSION *, struct _IRP *, struct _LIST_ENTRY *)",
+    "rank_score": 418,
+    "size": 543,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "PmAttributesPhase2(_DEVICE_EXTENSION *)",
+    "ea": "0x14001c0e0",
+    "function_file": "functions/14001c0e0_PmAttributesPhase2_DEVICE_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?PmAttributesPhase2@@YAJPEAU_DEVICE_EXTENSION@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *)",
+    "rank_score": 417,
+    "size": 291,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "PmWritePartitionAttributesMbr(_DEVICE_EXTENSION *,_DRIVE_LAYOUT_INFORMATION_EX *,_PARTITION_ATTRIBUTES_TABLE *,ulong)",
+    "ea": "0x14001cde0",
+    "function_file": "functions/14001cde0_PmWritePartitionAttributesMbr_DEVICE_EXTENSION_DRIVE_LAYOUT_INFORMATION_EX_PARTITION_ATTRIBUTES_TABLE_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?PmWritePartitionAttributesMbr@@YAJPEAU_DEVICE_EXTENSION@@PEAU_DRIVE_LAYOUT_INFORMATION_EX@@PEAU_PARTITION_ATTRIBUTES_TABLE@@K@Z",
+    "prototype": "int(struct _DEVICE_EXTENSION *, struct _DRIVE_LAYOUT_INFORMATION_EX *, struct _PARTITION_ATTRIBUTES_TABLE *, unsigned int)",
+    "rank_score": 417,
+    "size": 238,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "PmRedirectRequest(_DEVICE_EXTENSION *,_IRP *)",
+    "ea": "0x14000beb4",
+    "function_file": "functions/14000beb4_PmRedirectRequest_DEVICE_EXTENSION_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?PmRedirectRequest@@YAXPEAU_DEVICE_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "void __fastcall(struct _DEVICE_EXTENSION *, struct _IRP *)",
+    "rank_score": 416,
+    "size": 161,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PmCheckIds(_DEVICE_EXTENSION *,_DRIVE_LAYOUT_INFORMATION_EX *,uchar *,_DISK_OFFLINE_REASON *)",
+    "ea": "0x14000d6f4",
+    "function_file": "functions/14000d6f4_PmCheckIds_DEVICE_EXTENSION_DRIVE_LAYOUT_INFORMATION_EX_uchar_DISK_OFFLINE_REASON.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?PmCheckIds@@YAJPEAU_DEVICE_EXTENSION@@PEAU_DRIVE_LAYOUT_INFORMATION_EX@@PEAEPEAW4_DISK_OFFLINE_REASON@@@Z",
+    "prototype": "int(struct _DEVICE_EXTENSION *, struct _DRIVE_LAYOUT_INFORMATION_EX *, unsigned __int8 *, enum _DISK_OFFLINE_REASON *)",
+    "rank_score": 415,
+    "size": 152,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PmIoctlCreateSpacesMetadata(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x14001d744",
+    "function_file": "functions/14001d744_PmIoctlCreateSpacesMetadata_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?PmIoctlCreateSpacesMetadata@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 414,
+    "size": 129,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "PmIsOverlap(_DEVICE_EXTENSION *,__int64,unsigned __int64)",
+    "ea": "0x14000a2b4",
+    "function_file": "functions/14000a2b4_PmIsOverlap_DEVICE_EXTENSION_int64_unsigned_int64.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "?PmIsOverlap@@YAEPEAU_DEVICE_EXTENSION@@_J_K@Z",
+    "prototype": "unsigned __int8 __fastcall(struct _DEVICE_EXTENSION *, __int64, unsigned __int64)",
+    "rank_score": 414,
+    "size": 130,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PmSetSystemCriticalFlagPhase1(_DEVICE_EXTENSION *,uchar *)",
+    "ea": "0x140020c40",
+    "function_file": "functions/140020c40_PmSetSystemCriticalFlagPhase1_DEVICE_EXTENSION_uchar.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?PmSetSystemCriticalFlagPhase1@@YAXPEAU_DEVICE_EXTENSION@@PEAE@Z",
+    "prototype": "void __fastcall(struct _DEVICE_EXTENSION *, unsigned __int8 *)",
+    "rank_score": 414,
+    "size": 154,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "PmVolumeManagerRemoval(_CONTROL_EXTENSION *,_VOLUME_MANAGER *)",
+    "ea": "0x14001c9a8",
+    "function_file": "functions/14001c9a8_PmVolumeManagerRemoval_CONTROL_EXTENSION_VOLUME_MANAGER.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "?PmVolumeManagerRemoval@@YAJPEAU_CONTROL_EXTENSION@@PEAU_VOLUME_MANAGER@@@Z",
+    "prototype": "int(struct _CONTROL_EXTENSION *, struct _VOLUME_MANAGER *)",
+    "rank_score": 414,
+    "size": 94,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "SC_MBR::ReadPartitionTable(SC_DISK_LAYOUT * *)",
+    "ea": "0x140006384",
+    "function_file": "functions/140006384_SC_MBR_ReadPartitionTable_SC_DISK_LAYOUT.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?ReadPartitionTable@SC_MBR@@QEAAJPEAPEAVSC_DISK_LAYOUT@@@Z",
+    "prototype": "__int64 __fastcall(SC_DISK **this, struct SC_DISK_LAYOUT **, unsigned __int8)",
+    "rank_score": 414,
+    "size": 790,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "PmPowerChanged(_DEVICE_EXTENSION *,_LIST_ENTRY *)",
+    "ea": "0x140022cf0",
+    "function_file": "functions/140022cf0_PmPowerChanged_DEVICE_EXTENSION_LIST_ENTRY.md",
+    "matched_imports": [
+      "ntoskrnl!IoForwardIrpSynchronously",
+      "ntoskrnl!IoReuseIrp"
+    ],
+    "matched_strings": [],
+    "name": "?PmPowerChanged@@YAXPEAU_DEVICE_EXTENSION@@PEAU_LIST_ENTRY@@@Z",
+    "prototype": "void __fastcall(struct _DEVICE_EXTENSION *, struct _LIST_ENTRY *)",
+    "rank_score": 413,
+    "size": 241,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "PmTakeDisk(_DEVICE_EXTENSION *)",
+    "ea": "0x1400242f0",
+    "function_file": "functions/1400242f0_PmTakeDisk_DEVICE_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!IoForwardIrpSynchronously",
+      "ntoskrnl!IoReuseIrp"
+    ],
+    "matched_strings": [],
+    "name": "?PmTakeDisk@@YAXPEAU_DEVICE_EXTENSION@@@Z",
+    "prototype": "void __fastcall(struct _DEVICE_EXTENSION *)",
+    "rank_score": 413,
+    "size": 186,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "PmIoctlDeleteDriveLayout(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x14001d7cc",
+    "function_file": "functions/14001d7cc_PmIoctlDeleteDriveLayout_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?PmIoctlDeleteDriveLayout@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 412,
+    "size": 93,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "PmIoctlDeleteSpacesMetadata(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x14001d830",
+    "function_file": "functions/14001d830_PmIoctlDeleteSpacesMetadata_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "?PmIoctlDeleteSpacesMetadata@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 412,
+    "size": 91,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "SC_DRIVE::CreateMetadata(ushort *,SC_DRIVE_HEADER *,unsigned __int64,uchar)",
+    "ea": "0x14000f430",
+    "function_file": "functions/14000f430_SC_DRIVE_CreateMetadata_ushort_SC_DRIVE_HEADER_unsigned_int64_uchar.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?CreateMetadata@SC_DRIVE@@QEAAJPEAGPEAVSC_DRIVE_HEADER@@_KE@Z",
+    "prototype": "__int64 __fastcall(SC_DRIVE *__hidden this, unsigned __int16 *, struct SC_DRIVE_HEADER *, unsigned __int64, unsigned __int8)",
+    "rank_score": 411,
+    "size": 372,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SC_DEVICE::SaveStorageProperty(_STORAGE_PROPERTY_ID,_STORAGE_DESCRIPTOR_HEADER *)",
+    "ea": "0x140010920",
+    "function_file": "functions/140010920_SC_DEVICE_SaveStorageProperty_STORAGE_PROPERTY_ID_STORAGE_DESCRIPTOR_HEADER.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?SaveStorageProperty@SC_DEVICE@@MEAAXW4_STORAGE_PROPERTY_ID@@PEAU_STORAGE_DESCRIPTOR_HEADER@@@Z",
+    "prototype": "void(SC_DEVICE *__hidden this, enum _STORAGE_PROPERTY_ID, struct _STORAGE_DESCRIPTOR_HEADER *)",
+    "rank_score": 407,
+    "size": 265,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "SC_DRIVE::~SC_DRIVE(void)",
+    "ea": "0x14000f394",
+    "function_file": "functions/14000f394_SC_DRIVE_SC_DRIVE_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??1SC_DRIVE@@UEAA@XZ",
+    "prototype": "void __fastcall(SC_DRIVE *__hidden this)",
+    "rank_score": 406,
+    "size": 86,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SC_DISK::SaveStorageProperty(_STORAGE_PROPERTY_ID,_STORAGE_DESCRIPTOR_HEADER *)",
+    "ea": "0x140009ac0",
+    "function_file": "functions/140009ac0_SC_DISK_SaveStorageProperty_STORAGE_PROPERTY_ID_STORAGE_DESCRIPTOR_HEADER.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?SaveStorageProperty@SC_DISK@@MEAAXW4_STORAGE_PROPERTY_ID@@PEAU_STORAGE_DESCRIPTOR_HEADER@@@Z",
+    "prototype": "void __fastcall(SC_DISK *__hidden this, enum _STORAGE_PROPERTY_ID, struct _STORAGE_DESCRIPTOR_HEADER *)",
+    "rank_score": 403,
+    "size": 226,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "PmIoctlPerformance(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x140024fd4",
+    "function_file": "functions/140024fd4_PmIoctlPerformance_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryRegistryValuesEx"
+    ],
+    "matched_strings": [],
+    "name": "?PmIoctlPerformance@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 237,
+    "size": 271,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 2,
+    "demangled": "SC_GPT::WritePartitionTable(SC_DISK_LAYOUT *,uchar)",
+    "ea": "0x140010380",
+    "function_file": "functions/140010380_SC_GPT_WritePartitionTable_SC_DISK_LAYOUT_uchar.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?WritePartitionTable@SC_GPT@@QEAAJPEAVSC_DISK_LAYOUT@@E@Z",
+    "prototype": "__int64 __fastcall(SC_DISK **this, struct SC_DISK_LAYOUT *, char)",
+    "rank_score": 231,
+    "size": 1238,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "PmUpdateIds(_DEVICE_EXTENSION *,_DRIVE_LAYOUT_INFORMATION_EX *)",
+    "ea": "0x1400214fc",
+    "function_file": "functions/1400214fc_PmUpdateIds_DEVICE_EXTENSION_DRIVE_LAYOUT_INFORMATION_EX.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?PmUpdateIds@@YAJPEAU_DEVICE_EXTENSION@@PEAU_DRIVE_LAYOUT_INFORMATION_EX@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, struct _DRIVE_LAYOUT_INFORMATION_EX *)",
+    "rank_score": 229,
+    "size": 203,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "PmQueryWmiDataBlock(_DEVICE_OBJECT *,_IRP *,ulong,ulong,ulong,ulong *,ulong,uchar *)",
+    "ea": "0x1400200e0",
+    "function_file": "functions/1400200e0_PmQueryWmiDataBlock_DEVICE_OBJECT_IRP_ulong_ulong_ulong_ulong_ulong_uchar.md",
+    "matched_imports": [
+      "WMILIB!WmiCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "?PmQueryWmiDataBlock@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@KKKPEAKKPEAE@Z",
+    "prototype": "__int64 __usercall@<rax>(PDEVICE_OBJECT DeviceObject@<rcx>, PIRP Irp@<rdx>, unsigned int@<r8d>, unsigned int@<r9d>, unsigned int, unsigned int *, unsigned int, unsigned __int8 *)",
+    "rank_score": 228,
+    "size": 346,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PmUpdateAttributes(_DEVICE_EXTENSION *,_DRIVE_LAYOUT_INFORMATION_EX *)",
+    "ea": "0x14001ccb4",
+    "function_file": "functions/14001ccb4_PmUpdateAttributes_DEVICE_EXTENSION_DRIVE_LAYOUT_INFORMATION_EX.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?PmUpdateAttributes@@YAJPEAU_DEVICE_EXTENSION@@PEAU_DRIVE_LAYOUT_INFORMATION_EX@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, struct _DRIVE_LAYOUT_INFORMATION_EX *)",
+    "rank_score": 226,
+    "size": 291,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PmEtwControlComplete(_DEVICE_EXTENSION *,_IRP *,long)",
+    "ea": "0x14001fb44",
+    "function_file": "functions/14001fb44_PmEtwControlComplete_DEVICE_EXTENSION_IRP_long.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetActivityIdIrp"
+    ],
+    "matched_strings": [],
+    "name": "?PmEtwControlComplete@@YAXPEAU_DEVICE_EXTENSION@@PEAU_IRP@@J@Z",
+    "prototype": "void __fastcall(struct _DEVICE_EXTENSION *, struct _IRP *, int)",
+    "rank_score": 225,
+    "size": 145,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PmEtwControlStart(_DEVICE_EXTENSION *,_IRP *)",
+    "ea": "0x140024f44",
+    "function_file": "functions/140024f44_PmEtwControlStart_DEVICE_EXTENSION_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetActivityIdIrp"
+    ],
+    "matched_strings": [],
+    "name": "?PmEtwControlStart@@YAXPEAU_DEVICE_EXTENSION@@PEAU_IRP@@@Z",
+    "prototype": "void __fastcall(struct _DEVICE_EXTENSION *, struct _IRP *)",
+    "rank_score": 225,
+    "size": 135,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PmUpdateIdsMbr(_DRIVE_LAYOUT_INFORMATION_EX *,uchar)",
+    "ea": "0x140021738",
+    "function_file": "functions/140021738_PmUpdateIdsMbr_DRIVE_LAYOUT_INFORMATION_EX_uchar.md",
+    "matched_imports": [
+      "ntoskrnl!RtlLookupElementGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "?PmUpdateIdsMbr@@YAXPEAU_DRIVE_LAYOUT_INFORMATION_EX@@E@Z",
+    "prototype": "void __fastcall(struct _DRIVE_LAYOUT_INFORMATION_EX *, unsigned __int8)",
+    "rank_score": 225,
+    "size": 170,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "PartitionInsertPatch(_PARTITION_EXTENSION *,unsigned __int64,unsigned __int64,unsigned __int64)",
+    "ea": "0x140004db8",
+    "function_file": "functions/140004db8_PartitionInsertPatch_PARTITION_EXTENSION_unsigned_int64_unsigned_int64_unsigned_int64.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "?PartitionInsertPatch@@YAJPEAU_PARTITION_EXTENSION@@_K11@Z",
+    "prototype": "__int64 __fastcall(struct _PARTITION_EXTENSION *, unsigned __int64, __int64, __int64)",
+    "rank_score": 224,
+    "size": 134,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "PmWmiCounterIoComplete(_PERF_COUNTER_CONTEXT *,_IRP *,_LARGE_INTEGER *,ulong *)",
+    "ea": "0x140009ed0",
+    "function_file": "functions/140009ed0_PmWmiCounterIoComplete_PERF_COUNTER_CONTEXT_IRP_LARGE_INTEGER_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!KeQueryUnbiasedInterruptTimePrecise"
+    ],
+    "matched_strings": [],
+    "name": "?PmWmiCounterIoComplete@@YAXPEAU_PERF_COUNTER_CONTEXT@@PEAU_IRP@@PEAT_LARGE_INTEGER@@PEAK@Z",
+    "prototype": "void __fastcall(struct _PERF_COUNTER_CONTEXT *, struct _IRP *, union _LARGE_INTEGER *, unsigned int *)",
+    "rank_score": 224,
+    "size": 318,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "PmWmiFunctionControl(_DEVICE_OBJECT *,_IRP *,ulong,_WMIENABLEDISABLECONTROL,uchar)",
+    "ea": "0x1400203c0",
+    "function_file": "functions/1400203c0_PmWmiFunctionControl_DEVICE_OBJECT_IRP_ulong_WMIENABLEDISABLECONTROL_uchar.md",
+    "matched_imports": [
+      "WMILIB!WmiCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "?PmWmiFunctionControl@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@KW4_WMIENABLEDISABLECONTROL@@E@Z",
+    "prototype": "__int64 __usercall@<rax>(PDEVICE_OBJECT DeviceObject@<rcx>, PIRP Irp@<rdx>, unsigned int@<r8d>, enum _WMIENABLEDISABLECONTROL@<r9d>, unsigned __int8)",
+    "rank_score": 224,
+    "size": 132,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 12,
+    "demangled": "McGenEventWrite_EtwWriteTransfer",
+    "ea": "0x140004300",
+    "function_file": "functions/140004300_McGenEventWrite_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "McGenEventWrite_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 223,
+    "size": 86,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "PartitionWrite(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x140002b70",
+    "function_file": "functions/140002b70_PartitionWrite_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "?PartitionWrite@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 223,
+    "size": 80,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "PmControlDeviceControl(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x14000b890",
+    "function_file": "functions/14000b890_PmControlDeviceControl_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "?PmControlDeviceControl@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 223,
+    "size": 108,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "PartitionIoCompletion(_DEVICE_OBJECT *,_IRP *,void *)",
+    "ea": "0x140003040",
+    "function_file": "functions/140003040_PartitionIoCompletion_DEVICE_OBJECT_IRP_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExReleaseRundownProtectionCacheAware"
+    ],
+    "matched_strings": [],
+    "name": "?PartitionIoCompletion@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@PEAX@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_OBJECT *, struct _IRP *, void *)",
+    "rank_score": 222,
+    "size": 88,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "PmSignalCompletion(_DEVICE_OBJECT *,_IRP *,void *)",
+    "ea": "0x14000b340",
+    "function_file": "functions/14000b340_PmSignalCompletion_DEVICE_OBJECT_IRP_void.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "?PmSignalCompletion@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@PEAX@Z",
+    "prototype": "int(struct _DEVICE_OBJECT *, struct _IRP *, void *)",
+    "rank_score": 220,
+    "size": 35,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "PmIoctlPassThroughQuerySectorWriteScsi(_IRP *,uchar,uchar *,__int64 *,unsigned __int64 *)",
+    "ea": "0x14001e6f0",
+    "function_file": "functions/14001e6f0_PmIoctlPassThroughQuerySectorWriteScsi_IRP_uchar_uchar_int64_unsigned_int64.md",
+    "matched_imports": [
+      "ntoskrnl!IoIs32bitProcess"
+    ],
+    "matched_strings": [],
+    "name": "?PmIoctlPassThroughQuerySectorWriteScsi@@YAJPEAU_IRP@@EPEAEPEA_JPEA_K@Z",
+    "prototype": "int(struct _IRP *, unsigned __int8, unsigned __int8 *, __int64 *, unsigned __int64 *)",
+    "rank_score": 216,
+    "size": 1196,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PmIoctlDsm(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x140024214",
+    "function_file": "functions/140024214_PmIoctlDsm_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "?PmIoctlDsm@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 215,
+    "size": 214,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PmIsEqualName(_GUID const *,ushort const *)",
+    "ea": "0x14000cc88",
+    "function_file": "functions/14000cc88_PmIsEqualName_GUID_const_ushort_const.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "?PmIsEqualName@@YAEPEBU_GUID@@PEBG@Z",
+    "prototype": "bool __fastcall(const struct _GUID *, const unsigned __int16 *Source2)",
+    "rank_score": 215,
+    "size": 135,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "PmVerifySnapshotData(_DISK_SNAPSHOT_DATA *,ulong,uchar)",
+    "ea": "0x14001c20c",
+    "function_file": "functions/14001c20c_PmVerifySnapshotData_DISK_SNAPSHOT_DATA_ulong_uchar.md",
+    "matched_imports": [
+      "ntoskrnl!RtlComputeCrc32"
+    ],
+    "matched_strings": [],
+    "name": "?PmVerifySnapshotData@@YAEPEAU_DISK_SNAPSHOT_DATA@@KE@Z",
+    "prototype": "char __fastcall(UCHAR *Buffer, unsigned int, char)",
+    "rank_score": 215,
+    "size": 171,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "PmWmiCounterDisable(_PERF_COUNTER_CONTEXT * *,uchar,uchar)",
+    "ea": "0x140024ac0",
+    "function_file": "functions/140024ac0_PmWmiCounterDisable_PERF_COUNTER_CONTEXT_uchar_uchar.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?PmWmiCounterDisable@@YAEPEAPEAU_PERF_COUNTER_CONTEXT@@EE@Z",
+    "prototype": "unsigned __int8 __fastcall(struct _PERF_COUNTER_CONTEXT **, unsigned __int8, unsigned __int8)",
+    "rank_score": 215,
+    "size": 116,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "StRtlFindMSFTIdentifier",
+    "ea": "0x14000e6f0",
+    "function_file": "functions/14000e6f0_StRtlFindMSFTIdentifier.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "StRtlFindMSFTIdentifier",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 164,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "PmBuildStableGuid(_DEVICE_EXTENSION *,_PARTITION_EXTENSION *)",
+    "ea": "0x1400206f0",
+    "function_file": "functions/1400206f0_PmBuildStableGuid_DEVICE_EXTENSION_PARTITION_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!ExUuidCreate"
+    ],
+    "matched_strings": [],
+    "name": "?PmBuildStableGuid@@YAJPEAU_DEVICE_EXTENSION@@PEAU_PARTITION_EXTENSION@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, struct _PARTITION_EXTENSION *)",
+    "rank_score": 214,
+    "size": 127,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "PmInitializeSnapshotData(_DISK_SNAPSHOT_DATA *,ulong)",
+    "ea": "0x1400241b8",
+    "function_file": "functions/1400241b8_PmInitializeSnapshotData_DISK_SNAPSHOT_DATA_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!RtlComputeCrc32"
+    ],
+    "matched_strings": [],
+    "name": "?PmInitializeSnapshotData@@YAXPEAU_DISK_SNAPSHOT_DATA@@K@Z",
+    "prototype": "void __fastcall(_QWORD *Buffer, size_t Size)",
+    "rank_score": 213,
+    "size": 83,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 4,
+    "demangled": "SC_DISK::Initialize(void)",
+    "ea": "0x140009880",
+    "function_file": "functions/140009880_SC_DISK_Initialize_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?Initialize@SC_DISK@@UEAAJXZ",
+    "prototype": "__int64 __fastcall(SC_DISK *__hidden this)",
+    "rank_score": 213,
+    "size": 569,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "SC_GPT::ReadPartitionTable(SC_DISK_LAYOUT * *)",
+    "ea": "0x1400100ac",
+    "function_file": "functions/1400100ac_SC_GPT_ReadPartitionTable_SC_DISK_LAYOUT.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?ReadPartitionTable@SC_GPT@@QEAAJPEAPEAVSC_DISK_LAYOUT@@@Z",
+    "prototype": "__int64 __fastcall(SC_GPT *__hidden this, struct SC_DISK_LAYOUT **)",
+    "rank_score": 213,
+    "size": 718,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "PartitionIoctlDsmCompletion(_DEVICE_OBJECT *,_IRP *,void *)",
+    "ea": "0x140004490",
+    "function_file": "functions/140004490_PartitionIoctlDsmCompletion_DEVICE_OBJECT_IRP_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?PartitionIoctlDsmCompletion@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@PEAX@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_OBJECT *, struct _IRP *, struct _IRP *)",
+    "rank_score": 212,
+    "size": 107,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "PmIoctlPassThroughQuerySectorWriteAta(_IRP *,uchar *,__int64 *,unsigned __int64 *)",
+    "ea": "0x14001e468",
+    "function_file": "functions/14001e468_PmIoctlPassThroughQuerySectorWriteAta_IRP_uchar_int64_unsigned_int64.md",
+    "matched_imports": [
+      "ntoskrnl!IoIs32bitProcess"
+    ],
+    "matched_strings": [],
+    "name": "?PmIoctlPassThroughQuerySectorWriteAta@@YAJPEAU_IRP@@PEAEPEA_JPEA_K@Z",
+    "prototype": "int(struct _IRP *, unsigned __int8 *, __int64 *, unsigned __int64 *)",
+    "rank_score": 212,
+    "size": 642,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "PmPowerCounterDisable(_DEVICE_EXTENSION *)",
+    "ea": "0x14000a4d4",
+    "function_file": "functions/14000a4d4_PmPowerCounterDisable_DEVICE_EXTENSION.md",
+    "matched_imports": [
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "?PmPowerCounterDisable@@YAXPEAU_DEVICE_EXTENSION@@@Z",
+    "prototype": "void __fastcall(struct _DEVICE_EXTENSION *)",
+    "rank_score": 212,
+    "size": 86,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 11,
+    "demangled": "SC_ENV::Allocate(unsigned __int64,ulong,uchar,ulong)",
+    "ea": "0x14000a530",
+    "function_file": "functions/14000a530_SC_ENV_Allocate_unsigned_int64_ulong_uchar_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "?Allocate@SC_ENV@@SAPEAX_KKEK@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, char)",
+    "rank_score": 211,
+    "size": 43,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "PmCleanup(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x14001f970",
+    "function_file": "functions/14001f970_PmCleanup_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "?PmCleanup@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "int(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 210,
+    "size": 36,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "PmCreate(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x14001fb00",
+    "function_file": "functions/14001fb00_PmCreate_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "?PmCreate@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "int(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 210,
+    "size": 61,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "PmFail(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x14000bad0",
+    "function_file": "functions/14000bad0_PmFail_DEVICE_OBJECT_IRP.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "?PmFail@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "int(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 210,
+    "size": 39,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "PmPropagateVerifyCompletion(_DEVICE_OBJECT *,_IRP *,void *)",
+    "ea": "0x14000bd80",
+    "function_file": "functions/14000bd80_PmPropagateVerifyCompletion_DEVICE_OBJECT_IRP_void.md",
+    "matched_imports": [
+      "ntoskrnl!IoFreeIrp"
+    ],
+    "matched_strings": [],
+    "name": "?PmPropagateVerifyCompletion@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@PEAX@Z",
+    "prototype": "int(struct _DEVICE_OBJECT *, struct _IRP *, void *)",
+    "rank_score": 210,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SC_DRIVE::DeleteMetadata(void)",
+    "ea": "0x14000f5ac",
+    "function_file": "functions/14000f5ac_SC_DRIVE_DeleteMetadata_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?DeleteMetadata@SC_DRIVE@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(SC_DRIVE *__hidden this)",
+    "rank_score": 208,
+    "size": 301,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "PM_DISK::Initialize(_DEVICE_OBJECT *,uchar)",
+    "ea": "0x140023da8",
+    "function_file": "functions/140023da8_PM_DISK_Initialize_DEVICE_OBJECT_uchar.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetDeviceAttachmentBaseRef"
+    ],
+    "matched_strings": [],
+    "name": "?Initialize@PM_DISK@@QEAAJPEAU_DEVICE_OBJECT@@E@Z",
+    "prototype": "__int64 __fastcall(PM_DISK *this, PDEVICE_OBJECT DeviceObject, char)",
+    "rank_score": 207,
+    "size": 97,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "PM_DISK::~PM_DISK(void)",
+    "ea": "0x1400246c8",
+    "function_file": "functions/1400246c8_PM_DISK_PM_DISK_void.md",
+    "matched_imports": [
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "??1PM_DISK@@UEAA@XZ",
+    "prototype": "void __fastcall(PM_DISK *__hidden this)",
+    "rank_score": 207,
+    "size": 60,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SC_DRIVE::WriteHeader(SC_DRIVE_HEADER *)",
+    "ea": "0x14000f98c",
+    "function_file": "functions/14000f98c_SC_DRIVE_WriteHeader_SC_DRIVE_HEADER.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?WriteHeader@SC_DRIVE@@QEAAJPEAVSC_DRIVE_HEADER@@@Z",
+    "prototype": "int(SC_DRIVE *__hidden this, struct SC_DRIVE_HEADER *)",
+    "rank_score": 206,
+    "size": 193,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SC_DISK::GetFruIdDescPost(_STORAGE_FRU_ID_DESCRIPTOR *)",
+    "ea": "0x14000ec70",
+    "function_file": "functions/14000ec70_SC_DISK_GetFruIdDescPost_STORAGE_FRU_ID_DESCRIPTOR.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?GetFruIdDescPost@SC_DISK@@AEAAJPEAU_STORAGE_FRU_ID_DESCRIPTOR@@@Z",
+    "prototype": "__int64 __fastcall(SC_DISK *__hidden this, struct _STORAGE_FRU_ID_DESCRIPTOR *)",
+    "rank_score": 205,
+    "size": 118,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "SC_ENV::CreateGuid(_GUID *)",
+    "ea": "0x14001c3bc",
+    "function_file": "functions/14001c3bc_SC_ENV_CreateGuid_GUID.md",
+    "matched_imports": [
+      "ntoskrnl!ExUuidCreate"
+    ],
+    "matched_strings": [],
+    "name": "?CreateGuid@SC_ENV@@SAJPEAU_GUID@@@Z",
+    "prototype": "__int64 __fastcall(struct _GUID *)",
+    "rank_score": 205,
+    "size": 22,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SC_GPT::ReadEntries(GPT_HEADER *,GPT_ENTRY * *)",
+    "ea": "0x14000fec8",
+    "function_file": "functions/14000fec8_SC_GPT_ReadEntries_GPT_HEADER_GPT_ENTRY.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?ReadEntries@SC_GPT@@AEAAJPEAVGPT_HEADER@@PEAPEAVGPT_ENTRY@@@Z",
+    "prototype": "__int64 __fastcall(SC_GPT *__hidden this, struct GPT_HEADER *, struct GPT_ENTRY **)",
+    "rank_score": 205,
+    "size": 138,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "_tlgWriteTransfer_EtwWriteTransfer",
+    "ea": "0x140006008",
+    "function_file": "functions/140006008_tlgWriteTransfer_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "_tlgWriteTransfer_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 158,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "RtlComputeCrc32_0",
+    "ea": "0x14000a93d",
+    "function_file": "functions/14000a93d_RtlComputeCrc32_0.md",
+    "matched_imports": [
+      "ntoskrnl!RtlComputeCrc32"
+    ],
+    "matched_strings": [],
+    "name": "RtlComputeCrc32_0",
+    "prototype": "ULONG __stdcall(ULONG InitialCrc, PUCHAR Buffer, ULONG Length)",
+    "rank_score": 114,
+    "size": 7,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "PmSetPartitionInformationEx(_PARTITION_EXTENSION *,_SET_PARTITION_INFORMATION_EX *)",
+    "ea": "0x140020ba8",
+    "function_file": "functions/140020ba8_PmSetPartitionInformationEx_PARTITION_EXTENSION_SET_PARTITION_INFORMATION_EX.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PmSetPartitionInformationEx@@YAJPEAU_PARTITION_EXTENSION@@PEAU_SET_PARTITION_INFORMATION_EX@@@Z",
+    "prototype": "__int64 __fastcall(struct _PARTITION_EXTENSION *, struct _SET_PARTITION_INFORMATION_EX *)",
+    "rank_score": 40,
+    "size": 146,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "PmCheckCriticalPartitions(_DEVICE_EXTENSION *,SC_DISK_LAYOUT *)",
+    "ea": "0x140020778",
+    "function_file": "functions/140020778_PmCheckCriticalPartitions_DEVICE_EXTENSION_SC_DISK_LAYOUT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PmCheckCriticalPartitions@@YAJPEAU_DEVICE_EXTENSION@@PEAVSC_DISK_LAYOUT@@@Z",
+    "prototype": "int(struct _DEVICE_EXTENSION *, struct SC_DISK_LAYOUT *)",
+    "rank_score": 39,
+    "size": 329,
+    "tags": [
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 63,
+    "demangled": "__security_check_cookie",
+    "ea": "0x140010f20",
+    "function_file": "functions/140010f20_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "PmCreateSpacesMetadata(_DEVICE_EXTENSION *,_DISK_SPACES_METADATA *)",
+    "ea": "0x14002208c",
+    "function_file": "functions/14002208c_PmCreateSpacesMetadata_DEVICE_EXTENSION_DISK_SPACES_METADATA.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PmCreateSpacesMetadata@@YAJPEAU_DEVICE_EXTENSION@@PEAU_DISK_SPACES_METADATA@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, struct _DISK_SPACES_METADATA *)",
+    "rank_score": 33,
+    "size": 338,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "PmDeleteSpacesMetadata(_DEVICE_EXTENSION *)",
+    "ea": "0x1400221e4",
+    "function_file": "functions/1400221e4_PmDeleteSpacesMetadata_DEVICE_EXTENSION.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PmDeleteSpacesMetadata@@YAJPEAU_DEVICE_EXTENSION@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *)",
+    "rank_score": 30,
+    "size": 208,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 18,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x140010f60",
+    "function_file": "functions/140010f60_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 29,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 46,
+    "demangled": "memset",
+    "ea": "0x140011440",
+    "function_file": "functions/140011440_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 29,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "PmValidateIds(_DEVICE_EXTENSION *,_DRIVE_LAYOUT_INFORMATION_EX *)",
+    "ea": "0x14002184c",
+    "function_file": "functions/14002184c_PmValidateIds_DEVICE_EXTENSION_DRIVE_LAYOUT_INFORMATION_EX.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PmValidateIds@@YAJPEAU_DEVICE_EXTENSION@@PEAU_DRIVE_LAYOUT_INFORMATION_EX@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, struct _DRIVE_LAYOUT_INFORMATION_EX *)",
+    "rank_score": 27,
+    "size": 285,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PmAssociatePartition(_DEVICE_EXTENSION *,_PARTITION_EXTENSION *)",
+    "ea": "0x14000a21c",
+    "function_file": "functions/14000a21c_PmAssociatePartition_DEVICE_EXTENSION_PARTITION_EXTENSION.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PmAssociatePartition@@YAJPEAU_DEVICE_EXTENSION@@PEAU_PARTITION_EXTENSION@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, struct _PARTITION_EXTENSION *)",
+    "rank_score": 25,
+    "size": 143,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "PmEnforceService(_DEVICE_EXTENSION *)",
+    "ea": "0x1400060ac",
+    "function_file": "functions/1400060ac_PmEnforceService_DEVICE_EXTENSION.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PmEnforceService@@YAEPEAU_DEVICE_EXTENSION@@@Z",
+    "prototype": "unsigned __int8 __fastcall(struct _DEVICE_EXTENSION *)",
+    "rank_score": 24,
+    "size": 45,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 18,
+    "demangled": "memmove",
+    "ea": "0x140011140",
+    "function_file": "functions/140011140_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 24,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "McTemplateK0qqqtqqqqxxjqxqzzzzzzdddddddddxqjjjjtuqqqqqbr41qqqqtttqqqtttxxqqqqqtxqqqzqtqqqbr73qbr75qbr77qbr79qbr81qbr83_EtwWriteTransfer",
+    "ea": "0x1400037bc",
+    "function_file": "functions/1400037bc_McTemplateK0qqqtqqqqxxjqxqzzzzzzdddddddddxqjjjjtuqqqqqbr41qqqqtttqqqtttxxqqqqqtxqqqzqtqqqbr73qbr75qbr77qbr79qb.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0qqqtqqqqxxjqxqzzzzzzdddddddddxqjjjjtuqqqqqbr41qqqqtttqqqtttxxqqqqqtxqqqzqtqqqbr73qbr75qbr77qbr79qbr81qbr83_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 2504,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "PmPerfCounterIdleUpdate(_PERF_COUNTER_CONTEXT *,_LARGE_INTEGER,ulong *,uchar,uchar)",
+    "ea": "0x140009ca4",
+    "function_file": "functions/140009ca4_PmPerfCounterIdleUpdate_PERF_COUNTER_CONTEXT_LARGE_INTEGER_ulong_uchar_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PmPerfCounterIdleUpdate@@YA_KPEAU_PERF_COUNTER_CONTEXT@@T_LARGE_INTEGER@@PEAKEE@Z",
+    "prototype": "unsigned __int64 __fastcall(struct _PERF_COUNTER_CONTEXT *, union _LARGE_INTEGER, unsigned int *, unsigned __int8, char)",
+    "rank_score": 23,
+    "size": 537,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "SC_MBR::WritePartitionTable(SC_DISK_LAYOUT *)",
+    "ea": "0x14000fc84",
+    "function_file": "functions/14000fc84_SC_MBR_WritePartitionTable_SC_DISK_LAYOUT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?WritePartitionTable@SC_MBR@@QEAAJPEAVSC_DISK_LAYOUT@@@Z",
+    "prototype": "__int64 __fastcall(SC_DISK **this, struct SC_DISK_LAYOUT *)",
+    "rank_score": 23,
+    "size": 573,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x140010ddc",
+    "function_file": "functions/140010ddc_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GsDriverEntry",
+    "ea": "0x140029010",
+    "function_file": "functions/140029010_GsDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GsDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "PmUpdateOffline(_DEVICE_EXTENSION *,uchar)",
+    "ea": "0x14000bfa0",
+    "function_file": "functions/14000bfa0_PmUpdateOffline_DEVICE_EXTENSION_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PmUpdateOffline@@YAXPEAU_DEVICE_EXTENSION@@E@Z",
+    "prototype": "void __fastcall(struct _DEVICE_EXTENSION *, unsigned __int8)",
+    "rank_score": 22,
+    "size": 41,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EtwWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<1>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<8>,_tlgWrapperByVal<8>,_tlgWrapperByRef<16>,_tlgWrapperByVal<4>,_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapBuffer<_UNICODE_STRING>,_tlgWrapBuffer<_UNICODE_STRING>,_tlgWrapBuffer<_UNICODE_STRING>,_tlgWrapBuffer<_UNICODE_STRING>,_tlgWrapBuffer<_UNICODE_STRING>,_tlgWrapBuffer<_UNICODE_STRING>,_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapperByRef<16>,_tlgWrapperByRef<16>,_tlgWrapperByRef<16>,_tlgWrapperByRef<16>,_tlgWrapperByVal<1>,_tlgWrapperByVal<1>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperArray<1>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<1>,_tlgWrapperByVal<1>,_tlgWrapperByVal<1>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<1>,_tlgWrapperByVal<1>,_tlgWrapperByVal<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapSz<ushort>,_tlgWrapperByVal<4>,_tlgWrapperByVal<1>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperArray<1>,_tlgWrapperArray<1>,_tlgWrapperArray<1>,_tlgWrapperArray<1>,_tlgWrapperArray<1>,_tlgWrapperArray<1>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByRef<16> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &,_tlgWrapBuffer<_UNICODE_STRING> const &,_tlgWrapBuffer<_UNICODE_STRING> const &,_tlgWrapBuffer<_UNICODE_STRING> const &,_tlgWrapBuffer<_UNICODE_STRING> const &,_tlgWrapBuffer<_UNICODE_STRING> const &,_tlgWrapBuffer<_UNICODE_STRING> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByRef<16> const &,_tlgWrapperByRef<16> const &,_tlgWrapperByRef<16> const &,_tlgWrapperByRef<16> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<ushort> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperArray<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperArray<1> const &,_tlgWrapperArray<1> const &)",
+    "ea": "0x14000191c",
+    "function_file": "functions/14000191c_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByVal@$03@@U1@U1@U1@U?$_tlgWrapperByVal@$00@@U1@U1@U1@U1@U?$_tlgWrapperByVal@$07@@U3@U?$_tlgWrapperByRef@$0BA@@@U1@U3@U1@U?$_tlgWrapBuffer@U_UNICODE_STRING@@@@U5@U5@U5@U5@U5@U3@U1@U4@U4@U4@U4@U2@U2@U1@U1@U1@U1@U?$_tlgWrapperArray@$00@@U1@U1@U1@U1@U2@U2@U2@U1@U1@U1@U2@U2@U2@U3@U3@U1@U1@U1@U1@U1@U2@U3@U1@U1@U1@U?$_tlgWrapSz@G@@U1@U2@U1@U1@U6@U6@U6@U6@U6@U6@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EtwWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$03@@333AEBU?$_tlgWrapperByVal@$00@@3333AEBU?$_tlgWrapperByVal@$07@@5AEBU?$_tlgWrapperByRef@$0BA@@@353AEBU?$_tlgWrapBuffer@U_UNICODE_STRING@@@@77777536666443333AEBU?$_tlgWrapperArray@$00@@3333444333444553333345333AEBU?$_tlgWrapSz@G@@3433888888@Z",
+    "prototype": "",
+    "rank_score": 21,
+    "size": 2192,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "PmSetDriveLayoutEx(_DEVICE_EXTENSION *,_DRIVE_LAYOUT_INFORMATION_EX *)",
+    "ea": "0x140020afc",
+    "function_file": "functions/140020afc_PmSetDriveLayoutEx_DEVICE_EXTENSION_DRIVE_LAYOUT_INFORMATION_EX.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PmSetDriveLayoutEx@@YAJPEAU_DEVICE_EXTENSION@@PEAU_DRIVE_LAYOUT_INFORMATION_EX@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, struct _DRIVE_LAYOUT_INFORMATION_EX *)",
+    "rank_score": 19,
+    "size": 164,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EtwWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<1>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<8>,_tlgWrapperByVal<8>,_tlgWrapperByRef<16>,_tlgWrapperByVal<4>,_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapBuffer<_UNICODE_STRING>,_tlgWrapBuffer<_UNICODE_STRING>,_tlgWrapBuffer<_UNICODE_STRING>,_tlgWrapBuffer<_UNICODE_STRING>,_tlgWrapBuffer<_UNICODE_STRING>,_tlgWrapBuffer<_UNICODE_STRING>,_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapperByRef<16>,_tlgWrapperByRef<16>,_tlgWrapperByRef<16>,_tlgWrapperByRef<16>,_tlgWrapperByVal<1>,_tlgWrapperByVal<1>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperArray<1>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<1>,_tlgWrapperByVal<1>,_tlgWrapperByVal<1>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<1>,_tlgWrapperByVal<1>,_tlgWrapperByVal<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<1>,_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapSz<ushort>,_tlgWrapperByVal<4>,_tlgWrapperByVal<1>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapperArray<1>,_tlgWrapperArray<1>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByRef<16> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &,_tlgWrapBuffer<_UNICODE_STRING> const &,_tlgWrapBuffer<_UNICODE_STRING> const &,_tlgWrapBuffer<_UNICODE_STRING> const &,_tlgWrapBuffer<_UNICODE_STRING> const &,_tlgWrapBuffer<_UNICODE_STRING> const &,_tlgWrapBuffer<_UNICODE_STRING> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByRef<16> const &,_tlgWrapperByRef<16> const &,_tlgWrapperByRef<16> const &,_tlgWrapperByRef<16> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperArray<1> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<ushort> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<1> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapperArray<1> const &,_tlgWrapperArray<1> const &)",
+    "ea": "0x140001160",
+    "function_file": "functions/140001160_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByVal@$03@@U1@U1@U1@U?$_tlgWrapperByVal@$00@@U1@U1@U1@U1@U?$_tlgWrapperByVal@$07@@U3@U?$_tlgWrapperByRef@$0BA@@@U1@U3@U1@U?$_tlgWrapBuffer@U_UNICODE_STRING@@@@U5@U5@U5@U5@U5@U3@U1@U4@U4@U4@U4@U2@U2@U1@U1@U1@U1@U?$_tlgWrapperArray@$00@@U1@U1@U1@U1@U2@U2@U2@U1@U1@U1@U2@U2@U2@U3@U3@U1@U1@U1@U1@U1@U2@U3@U1@U1@U1@U?$_tlgWrapSz@G@@U1@U2@U1@U1@U6@U6@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EtwWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$03@@333AEBU?$_tlgWrapperByVal@$00@@3333AEBU?$_tlgWrapperByVal@$07@@5AEBU?$_tlgWrapperByRef@$0BA@@@353AEBU?$_tlgWrapBuffer@U_UNICODE_STRING@@@@77777536666443333AEBU?$_tlgWrapperArray@$00@@3333444333444553333345333AEBU?$_tlgWrapSz@G@@343388@Z",
+    "prototype": "",
+    "rank_score": 19,
+    "size": 1972,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "PartitionLength(_PARTITION_EXTENSION *,uchar)",
+    "ea": "0x140005994",
+    "function_file": "functions/140005994_PartitionLength_PARTITION_EXTENSION_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PartitionLength@@YA_KPEAU_PARTITION_EXTENSION@@E@Z",
+    "prototype": "unsigned __int64 __fastcall(struct _PARTITION_EXTENSION *, unsigned __int8)",
+    "rank_score": 18,
+    "size": 40,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "PmCreateDisk(_DEVICE_EXTENSION *,_CREATE_DISK *)",
+    "ea": "0x1400208c8",
+    "function_file": "functions/1400208c8_PmCreateDisk_DEVICE_EXTENSION_CREATE_DISK.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PmCreateDisk@@YAJPEAU_DEVICE_EXTENSION@@PEAU_CREATE_DISK@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, struct _CREATE_DISK *)",
+    "rank_score": 17,
+    "size": 84,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "PmEnumerateOverlaps(_LIST_ENTRY *,unsigned __int64,unsigned __int64,long (*)(_PM_OVERLAP_TYPE,_PM_PATCH *,unsigned __int64,unsigned __int64,void *),void *)",
+    "ea": "0x140003530",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PmEnumerateOverlaps@@YAJPEAU_LIST_ENTRY@@_K1P6AJW4_PM_OVERLAP_TYPE@@PEAU_PM_PATCH@@11PEAX@Z4@Z",
+    "prototype": "__int64 __fastcall(struct _LIST_ENTRY *, unsigned __int64, unsigned __int64, int (__high *)(enum _PM_OVERLAP_TYPE, struct _PM_PATCH *, unsigned __int64, unsigned __int64, void *), void *)",
+    "rank_score": 17,
+    "size": 316,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "PartitionOffset(_PARTITION_EXTENSION *,uchar)",
+    "ea": "0x140005a84",
+    "function_file": "functions/140005a84_PartitionOffset_PARTITION_EXTENSION_uchar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PartitionOffset@@YA_KPEAU_PARTITION_EXTENSION@@E@Z",
+    "prototype": "unsigned __int64 __fastcall(struct _PARTITION_EXTENSION *, unsigned __int8)",
+    "rank_score": 16,
+    "size": 36,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "SC_GPT::ReadHeader(ulong,GPT_HEADER *)",
+    "ea": "0x14000ffcc",
+    "function_file": "functions/14000ffcc_SC_GPT_ReadHeader_ulong_GPT_HEADER.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ReadHeader@SC_GPT@@AEAAJKPEAVGPT_HEADER@@@Z",
+    "prototype": "__int64 __fastcall(SC_DISK **this, int, struct GPT_HEADER *)",
+    "rank_score": 16,
+    "size": 218,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "PM_DRIVE::Initialize(_DEVICE_EXTENSION *)",
+    "ea": "0x14000df60",
+    "function_file": "functions/14000df60_PM_DRIVE_Initialize_DEVICE_EXTENSION.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Initialize@PM_DRIVE@@QEAAJPEAU_DEVICE_EXTENSION@@@Z",
+    "prototype": "__int64 __fastcall(PM_DRIVE *__hidden this, struct _DEVICE_EXTENSION *)",
+    "rank_score": 15,
+    "size": 40,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "PmGetBytesPerSector(_DEVICE_EXTENSION *,ulong *)",
+    "ea": "0x14001cf74",
+    "function_file": "functions/14001cf74_PmGetBytesPerSector_DEVICE_EXTENSION_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PmGetBytesPerSector@@YAJPEAU_DEVICE_EXTENSION@@PEAK@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, unsigned int *)",
+    "rank_score": 15,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "PmIsSystemCriticalFlagNeeded(_DEVICE_EXTENSION *,ulong *,ulong *)",
+    "ea": "0x14000cd18",
+    "function_file": "functions/14000cd18_PmIsSystemCriticalFlagNeeded_DEVICE_EXTENSION_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PmIsSystemCriticalFlagNeeded@@YAEPEAU_DEVICE_EXTENSION@@PEAK1@Z",
+    "prototype": "unsigned __int8 __fastcall(struct _DEVICE_EXTENSION *, unsigned int *, unsigned int *)",
+    "rank_score": 15,
+    "size": 140,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PmSetPartitionFlags(_PARTITION_EXTENSION *,_DRIVE_LAYOUT_INFORMATION_EX *)",
+    "ea": "0x14000d048",
+    "function_file": "functions/14000d048_PmSetPartitionFlags_PARTITION_EXTENSION_DRIVE_LAYOUT_INFORMATION_EX.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PmSetPartitionFlags@@YAXPEAU_PARTITION_EXTENSION@@PEAU_DRIVE_LAYOUT_INFORMATION_EX@@@Z",
+    "prototype": "void __fastcall(struct _PARTITION_EXTENSION *, struct _DRIVE_LAYOUT_INFORMATION_EX *)",
+    "rank_score": 15,
+    "size": 303,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PmSetSystemCriticalFlagPhase2(_DEVICE_EXTENSION *)",
+    "ea": "0x140020ce0",
+    "function_file": "functions/140020ce0_PmSetSystemCriticalFlagPhase2_DEVICE_EXTENSION.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PmSetSystemCriticalFlagPhase2@@YAJPEAU_DEVICE_EXTENSION@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *)",
+    "rank_score": 15,
+    "size": 301,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "MBR_ENTRY::ComputeChs(_DISK_GEOMETRY *)",
+    "ea": "0x14000fb14",
+    "function_file": "functions/14000fb14_MBR_ENTRY_ComputeChs_DISK_GEOMETRY.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ComputeChs@MBR_ENTRY@@QEAAXPEAU_DISK_GEOMETRY@@@Z",
+    "prototype": "void __fastcall(MBR_ENTRY *__hidden this, struct _DISK_GEOMETRY *)",
+    "rank_score": 14,
+    "size": 186,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0xxx_EtwWriteTransfer",
+    "ea": "0x140003734",
+    "function_file": "functions/140003734_McTemplateK0xxx_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0xxx_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 130,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PmGetPersistedAttributes(_DEVICE_EXTENSION *,unsigned __int64 *)",
+    "ea": "0x14001cc58",
+    "function_file": "functions/14001cc58_PmGetPersistedAttributes_DEVICE_EXTENSION_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PmGetPersistedAttributes@@YAJPEAU_DEVICE_EXTENSION@@PEA_K@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *, unsigned __int64 *)",
+    "rank_score": 14,
+    "size": 84,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PmPowerCounterEnable(_DEVICE_EXTENSION *)",
+    "ea": "0x14000d5a0",
+    "function_file": "functions/14000d5a0_PmPowerCounterEnable_DEVICE_EXTENSION.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PmPowerCounterEnable@@YAJPEAU_DEVICE_EXTENSION@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_EXTENSION *)",
+    "rank_score": 14,
+    "size": 139,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "SC_DISK::GetStoragePropertyPost(_STORAGE_PROPERTY_ID,_STORAGE_DESCRIPTOR_HEADER *)",
+    "ea": "0x14000ecf0",
+    "function_file": "functions/14000ecf0_SC_DISK_GetStoragePropertyPost_STORAGE_PROPERTY_ID_STORAGE_DESCRIPTOR_HEADER.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetStoragePropertyPost@SC_DISK@@MEAAJW4_STORAGE_PROPERTY_ID@@PEAU_STORAGE_DESCRIPTOR_HEADER@@@Z",
+    "prototype": "int(SC_DISK *__hidden this, enum _STORAGE_PROPERTY_ID, struct _STORAGE_DESCRIPTOR_HEADER *)",
+    "rank_score": 14,
+    "size": 158,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SC_GPT::ReadEntries(GPT_HEADER *,GPT_ENTRY *)",
+    "ea": "0x14000ff58",
+    "function_file": "functions/14000ff58_SC_GPT_ReadEntries_GPT_HEADER_GPT_ENTRY.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ReadEntries@SC_GPT@@AEAAJPEAVGPT_HEADER@@PEAVGPT_ENTRY@@@Z",
+    "prototype": "int(SC_GPT *__hidden this, struct GPT_HEADER *, struct GPT_ENTRY *)",
+    "rank_score": 14,
+    "size": 107,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 14,
+    "demangled": "ScReadNoFence(ulong *)",
+    "ea": "0x14000ae88",
+    "function_file": "functions/14000ae88_ScReadNoFence_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ScReadNoFence@@YAKPEAK@Z",
+    "prototype": "unsigned int __fastcall(unsigned int *)",
+    "rank_score": 14,
+    "size": 3,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0qqq_EtwWriteTransfer",
+    "ea": "0x14000c2a0",
+    "function_file": "functions/14000c2a0_McTemplateK0qqq_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0qqq_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 115,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "PmPerfCounterStatUpdate(_PERF_PRIORITY_COUNTER *,_IRP *,_LARGE_INTEGER *)",
+    "ea": "0x1400034a0",
+    "function_file": "functions/1400034a0_PmPerfCounterStatUpdate_PERF_PRIORITY_COUNTER_IRP_LARGE_INTEGER.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PmPerfCounterStatUpdate@@YAXPEAU_PERF_PRIORITY_COUNTER@@PEAU_IRP@@PEAT_LARGE_INTEGER@@@Z",
+    "prototype": "void __fastcall(struct _PERF_PRIORITY_COUNTER *, struct _IRP *, union _LARGE_INTEGER *)",
+    "rank_score": 13,
+    "size": 135,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "SC_DISK::UpdateControl(void)",
+    "ea": "0x14000f0f8",
+    "function_file": "functions/14000f0f8_SC_DISK_UpdateControl_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?UpdateControl@SC_DISK@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(SC_DISK *__hidden this)",
+    "rank_score": 13,
+    "size": 50,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "PmFindPartition(_DEVICE_EXTENSION *,unsigned __int64,unsigned __int64)",
+    "ea": "0x140020924",
+    "function_file": "functions/140020924_PmFindPartition_DEVICE_EXTENSION_unsigned_int64_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PmFindPartition@@YAPEAU_PARTITION_EXTENSION@@PEAU_DEVICE_EXTENSION@@_K1@Z",
+    "prototype": "struct _PARTITION_EXTENSION *__fastcall(struct _DEVICE_EXTENSION *, unsigned __int64, unsigned __int64)",
+    "rank_score": 12,
+    "size": 64,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "PmLayoutHasIds(_DRIVE_LAYOUT_INFORMATION_EX *)",
+    "ea": "0x140021300",
+    "function_file": "functions/140021300_PmLayoutHasIds_DRIVE_LAYOUT_INFORMATION_EX.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PmLayoutHasIds@@YAEPEAU_DRIVE_LAYOUT_INFORMATION_EX@@@Z",
+    "prototype": "unsigned __int8 __fastcall(struct _DRIVE_LAYOUT_INFORMATION_EX *)",
+    "rank_score": 12,
+    "size": 53,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "PmTableGuidCompareRoutine(_RTL_AVL_TABLE *,void *,void *)",
+    "ea": "0x140025760",
+    "function_file": "functions/140025760_PmTableGuidCompareRoutine_RTL_AVL_TABLE_void_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PmTableGuidCompareRoutine@@YA?AW4_RTL_GENERIC_COMPARE_RESULTS@@PEAU_RTL_AVL_TABLE@@PEAX1@Z",
+    "prototype": "RTL_AVL_COMPARE_ROUTINE",
+    "rank_score": 12,
+    "size": 51,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 5,
+    "demangled": "PmWritePartitionTable(_DEVICE_OBJECT *,_DRIVE_LAYOUT_INFORMATION_EX *)",
+    "ea": "0x14001d090",
+    "function_file": "functions/14001d090_PmWritePartitionTable_DEVICE_OBJECT_DRIVE_LAYOUT_INFORMATION_EX.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PmWritePartitionTable@@YAJPEAU_DEVICE_OBJECT@@PEAU_DRIVE_LAYOUT_INFORMATION_EX@@@Z",
+    "prototype": "int(struct _DEVICE_OBJECT *, struct _DRIVE_LAYOUT_INFORMATION_EX *)",
+    "rank_score": 12,
+    "size": 166,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 5,
+    "demangled": "SC_DISK::ReadPartitionTable(SC_DISK_LAYOUT * *)",
+    "ea": "0x14000a33c",
+    "function_file": "functions/14000a33c_SC_DISK_ReadPartitionTable_SC_DISK_LAYOUT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ReadPartitionTable@SC_DISK@@QEAAJPEAPEAVSC_DISK_LAYOUT@@@Z",
+    "prototype": "__int64 __fastcall(SC_DISK *__hidden this, struct SC_DISK_LAYOUT **)",
+    "rank_score": 12,
+    "size": 140,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SC_DISK::ValidateNvmeDesc(_STORAGE_PROTOCOL_DATA_DESCRIPTOR *)",
+    "ea": "0x14000f130",
+    "function_file": "functions/14000f130_SC_DISK_ValidateNvmeDesc_STORAGE_PROTOCOL_DATA_DESCRIPTOR.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ValidateNvmeDesc@SC_DISK@@AEAAJPEAU_STORAGE_PROTOCOL_DATA_DESCRIPTOR@@@Z",
+    "prototype": "__int64 __fastcall(SC_DISK *__hidden this, struct _STORAGE_PROTOCOL_DATA_DESCRIPTOR *)",
+    "rank_score": 12,
+    "size": 73,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 5,
+    "demangled": "SC_DISK::WritePartitionTable(SC_DISK_LAYOUT *)",
+    "ea": "0x14000f180",
+    "function_file": "functions/14000f180_SC_DISK_WritePartitionTable_SC_DISK_LAYOUT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?WritePartitionTable@SC_DISK@@QEAAJPEAVSC_DISK_LAYOUT@@@Z",
+    "prototype": "__int64 __fastcall(SC_DISK *__hidden this, struct SC_DISK_LAYOUT *)",
+    "rank_score": 12,
+    "size": 221,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 11,
+    "demangled": "SC_PART_ENTRY::IsUnused(void)",
+    "ea": "0x140004ef8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IsUnused@SC_PART_ENTRY@@QEAAEXZ",
+    "prototype": "unsigned __int8 __fastcall(SC_PART_ENTRY *__hidden this)",
+    "rank_score": 12,
+    "size": 75,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x140029044",
+    "function_file": "functions/140029044_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "PmTableSignatureCompareRoutine(_RTL_AVL_TABLE *,void *,void *)",
+    "ea": "0x1400214e0",
+    "function_file": "functions/1400214e0_PmTableSignatureCompareRoutine_RTL_AVL_TABLE_void_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PmTableSignatureCompareRoutine@@YA?AW4_RTL_GENERIC_COMPARE_RESULTS@@PEAU_RTL_AVL_TABLE@@PEAX1@Z",
+    "prototype": "RTL_AVL_COMPARE_ROUTINE",
+    "rank_score": 11,
+    "size": 21,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 3,
+    "demangled": "SC_DISK::CreatePartitionTable(_CREATE_DISK *)",
+    "ea": "0x14000ea44",
+    "function_file": "functions/14000ea44_SC_DISK_CreatePartitionTable_CREATE_DISK.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreatePartitionTable@SC_DISK@@QEAAJPEAU_CREATE_DISK@@@Z",
+    "prototype": "__int64 __fastcall(SC_DISK *__hidden this, struct _CREATE_DISK *)",
+    "rank_score": 11,
+    "size": 200,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "SC_DISK::ResetPartitionCache(void)",
+    "ea": "0x14000510c",
+    "function_file": "functions/14000510c_SC_DISK_ResetPartitionCache_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ResetPartitionCache@SC_DISK@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(SC_DISK *__hidden this)",
+    "rank_score": 9,
+    "size": 173,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "PmCreatePartitionTable(_DEVICE_OBJECT *,_CREATE_DISK *)",
+    "ea": "0x14001ced4",
+    "function_file": "functions/14001ced4_PmCreatePartitionTable_DEVICE_OBJECT_CREATE_DISK.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PmCreatePartitionTable@@YAJPEAU_DEVICE_OBJECT@@PEAU_CREATE_DISK@@@Z",
+    "prototype": "int(struct _DEVICE_OBJECT *, struct _CREATE_DISK *)",
+    "rank_score": 8,
+    "size": 154,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "PmGetDriveGeometry(_DEVICE_OBJECT *,_DISK_GEOMETRY *)",
+    "ea": "0x14001ff00",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PmGetDriveGeometry@@YAJPEAU_DEVICE_OBJECT@@PEAU_DISK_GEOMETRY@@@Z",
+    "prototype": "int(struct _DEVICE_OBJECT *, struct _DISK_GEOMETRY *)",
+    "rank_score": 8,
+    "size": 44,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "SC_DISK::SC_DISK(void)",
+    "ea": "0x140004b28",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??0SC_DISK@@QEAA@XZ",
+    "prototype": "SC_DISK *__fastcall(SC_DISK *__hidden this)",
+    "rank_score": 8,
+    "size": 231,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "SC_DISK_LAYOUT::IsRegionFree(unsigned __int64,ulong)",
+    "ea": "0x14000eea8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IsRegionFree@SC_DISK_LAYOUT@@QEAAE_KK@Z",
+    "prototype": "unsigned __int8 __fastcall(SC_DISK_LAYOUT *__hidden this, unsigned __int64, unsigned int)",
+    "rank_score": 8,
+    "size": 177,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "memcmp",
+    "ea": "0x140011020",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memcmp",
+    "prototype": "int __cdecl(const void *Buf1, const void *Buf2, size_t Size)",
+    "rank_score": 8,
+    "size": 199,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "SC_DISK::ReadSectors(ulong,unsigned __int64,void *)",
+    "ea": "0x140005950",
+    "function_file": "functions/140005950_SC_DISK_ReadSectors_ulong_unsigned_int64_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ReadSectors@SC_DISK@@QEAAJK_KPEAX@Z",
+    "prototype": "__int64 __fastcall(SC_DISK *this, int, __int64, void *)",
+    "rank_score": 7,
+    "size": 60,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "McTemplateK0pxxu_EtwWriteTransfer",
+    "ea": "0x140004260",
+    "function_file": "functions/140004260_McTemplateK0pxxu_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0pxxu_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 150,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "PmIoctlDsmQuerySectorWrite(_IRP *,uchar *,__int64 *,unsigned __int64 *)",
+    "ea": "0x14001d894",
+    "function_file": "functions/14001d894_PmIoctlDsmQuerySectorWrite_IRP_uchar_int64_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PmIoctlDsmQuerySectorWrite@@YAJPEAU_IRP@@PEAEPEA_JPEA_K@Z",
+    "prototype": "__int64 __fastcall(struct _IRP *, unsigned __int8 *, __int64 *, unsigned __int64 *)",
+    "rank_score": 6,
+    "size": 337,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "RtlStringCbCopyW(ushort *,unsigned __int64,ushort const *)",
+    "ea": "0x14000ef60",
+    "function_file": "functions/14000ef60_RtlStringCbCopyW_ushort_unsigned_int64_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?RtlStringCbCopyW@@YAJPEAG_KPEBG@Z",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, __int64, unsigned __int16 *)",
+    "rank_score": 6,
+    "size": 79,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "RtlStringCbPrintfW",
+    "ea": "0x140004504",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlStringCbPrintfW",
+    "prototype": "NTSTATUS(NTSTRSAFE_PWSTR pszDest, size_t cbDest, NTSTRSAFE_PCWSTR pszFormat, ...)",
+    "rank_score": 6,
+    "size": 78,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "SC_DISK::InitializePartitionCache(void)",
+    "ea": "0x1400050c0",
+    "function_file": "functions/1400050c0_SC_DISK_InitializePartitionCache_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?InitializePartitionCache@SC_DISK@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(SC_DISK *this, unsigned int, unsigned __int8)",
+    "rank_score": 6,
+    "size": 68,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SC_RAW::ReadPartitionTable(SC_DISK_LAYOUT * *)",
+    "ea": "0x140006190",
+    "function_file": "functions/140006190_SC_RAW_ReadPartitionTable_SC_DISK_LAYOUT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ReadPartitionTable@SC_RAW@@QEAAJPEAPEAVSC_DISK_LAYOUT@@@Z",
+    "prototype": "__int64 __fastcall(SC_RAW *this, struct SC_DISK_LAYOUT **, unsigned __int8)",
+    "rank_score": 6,
+    "size": 233,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "McTemplateK0qdds_EtwWriteTransfer",
+    "ea": "0x140003674",
+    "function_file": "functions/140003674_McTemplateK0qdds_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0qdds_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 184,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "McTemplateK0qq_EtwWriteTransfer",
+    "ea": "0x14000c238",
+    "function_file": "functions/14000c238_McTemplateK0qq_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0qq_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 96,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "PartitionPassThrough(_DEVICE_OBJECT *,_IRP *)",
+    "ea": "0x1400030a0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PartitionPassThrough@@YAJPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+    "prototype": "__int64 __fastcall(struct _DEVICE_OBJECT *, struct _IRP *)",
+    "rank_score": 5,
+    "size": 26,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "SC_DISK::WriteSectors(ulong,unsigned __int64,void *)",
+    "ea": "0x14000f264",
+    "function_file": "functions/14000f264_SC_DISK_WriteSectors_ulong_unsigned_int64_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?WriteSectors@SC_DISK@@QEAAJK_KPEAX@Z",
+    "prototype": "__int64 __fastcall(SC_DISK *__hidden this, unsigned int, unsigned __int64, void *)",
+    "rank_score": 5,
+    "size": 60,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SC_MBR::CreatePartitionTable(_CREATE_DISK *)",
+    "ea": "0x14000fbd4",
+    "function_file": "functions/14000fbd4_SC_MBR_CreatePartitionTable_CREATE_DISK.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreatePartitionTable@SC_MBR@@QEAAJPEAU_CREATE_DISK@@@Z",
+    "prototype": "__int64 __fastcall(SC_MBR *__hidden this, struct _CREATE_DISK *)",
+    "rank_score": 5,
+    "size": 168,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "SC_PART_ENTRY::IsContainer(void)",
+    "ea": "0x140005ab0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?IsContainer@SC_PART_ENTRY@@QEAAEXZ",
+    "prototype": "unsigned __int8 __fastcall(SC_PART_ENTRY *__hidden this)",
+    "rank_score": 5,
+    "size": 25,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SC_RAW::CreatePartitionTable(void)",
+    "ea": "0x140010a30",
+    "function_file": "functions/140010a30_SC_RAW_CreatePartitionTable_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreatePartitionTable@SC_RAW@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(SC_RAW *__hidden this)",
+    "rank_score": 5,
+    "size": 196,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "ScExtractDeviceStrings(_STORAGE_DEVICE_DESCRIPTOR *,_UNICODE_STRING *,_UNICODE_STRING *,_UNICODE_STRING *,_UNICODE_STRING *)",
+    "ea": "0x140009ba8",
+    "function_file": "functions/140009ba8_ScExtractDeviceStrings_STORAGE_DEVICE_DESCRIPTOR_UNICODE_STRING_UNICODE_STRING_UNICODE_STRING_UNICODE_STRING.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ScExtractDeviceStrings@@YAJPEAU_STORAGE_DEVICE_DESCRIPTOR@@PEAU_UNICODE_STRING@@111@Z",
+    "prototype": "__int64 __fastcall(struct _STORAGE_DEVICE_DESCRIPTOR *, struct _UNICODE_STRING *, struct _UNICODE_STRING *, struct _UNICODE_STRING *, struct _UNICODE_STRING *)",
+    "rank_score": 5,
+    "size": 133,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0pxxxquu_EtwWriteTransfer",
+    "ea": "0x140004190",
+    "function_file": "functions/140004190_McTemplateK0pxxxquu_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0pxxxquu_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 196,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "McTemplateK0qp_EtwWriteTransfer",
+    "ea": "0x14000c14c",
+    "function_file": "functions/14000c14c_McTemplateK0qp_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0qp_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 99,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0qqQR1_EtwWriteTransfer",
+    "ea": "0x14000df90",
+    "function_file": "functions/14000df90_McTemplateK0qqQR1_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0qqQR1_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 128,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "PM_DISK::ReadPartitionTable(SC_DISK_LAYOUT * *)",
+    "ea": "0x14001d13c",
+    "function_file": "functions/14001d13c_PM_DISK_ReadPartitionTable_SC_DISK_LAYOUT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ReadPartitionTable@PM_DISK@@QEAAJPEAPEAVSC_DISK_LAYOUT@@@Z",
+    "prototype": "__int64 __fastcall(PM_DISK *__hidden this, struct SC_DISK_LAYOUT **)",
+    "rank_score": 4,
+    "size": 93,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "RtlStringCbCopyW",
+    "ea": "0x140004800",
+    "function_file": "functions/140004800_RtlStringCbCopyW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlStringCbCopyW",
+    "prototype": "NTSTATUS __stdcall(NTSTRSAFE_PWSTR pszDest, size_t cbDest, NTSTRSAFE_PCWSTR pszSrc)",
+    "rank_score": 4,
+    "size": 111,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EtwWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByRef<16>,_tlgWrapperByVal<4>,_tlgWrapperByRef<16>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByRef<16> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByRef<16> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &)",
+    "ea": "0x1400010ac",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByRef@$0BA@@@U?$_tlgWrapperByVal@$03@@U1@U2@U2@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EtwWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByRef@$0BA@@@AEBU?$_tlgWrapperByVal@$03@@344@Z",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 171,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EtwWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByRef<16>,_tlgWrapperByVal<4>,_tlgWrapperByRef<16>,_tlgWrapperByVal<4>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByRef<16> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByRef<16> const &,_tlgWrapperByVal<4> const &)",
+    "ea": "0x140001008",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByRef@$0BA@@@U?$_tlgWrapperByVal@$03@@U1@U2@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EtwWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByRef@$0BA@@@AEBU?$_tlgWrapperByVal@$03@@34@Z",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 155,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "McGenControlCallbackV2",
+    "ea": "0x14000bfd0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McGenControlCallbackV2",
+    "prototype": "void __stdcall(LPCGUID SourceId, ULONG ControlCode, UCHAR Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, PEVENT_FILTER_DESCRIPTOR FilterData, PVOID CallbackContext)",
+    "rank_score": 3,
+    "size": 254,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0q_EtwWriteTransfer",
+    "ea": "0x14000a3d0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0q_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 90,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0qdq_EtwWriteTransfer",
+    "ea": "0x14000e5b0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0qdq_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 118,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0qpd_EtwWriteTransfer",
+    "ea": "0x14000c1b8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0qpd_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 122,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "PmLookupId(_STORAGE_DEVICE_ID_DESCRIPTOR *,void *,ushort)",
+    "ea": "0x140021abc",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?PmLookupId@@YAEPEAU_STORAGE_DEVICE_ID_DESCRIPTOR@@PEAXG@Z",
+    "prototype": "unsigned __int8(struct _STORAGE_DEVICE_ID_DESCRIPTOR *, void *, unsigned __int16)",
+    "rank_score": 3,
+    "size": 119,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "_tlgCreate1Sz<ushort>(_EVENT_DATA_DESCRIPTOR *,ushort const *)",
+    "ea": "0x140005aec",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$_tlgCreate1Sz@G@@YAXPEAU_EVENT_DATA_DESCRIPTOR@@PEBG@Z",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 54,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "PM_DRIVE::Read(unsigned __int64,ulong,uchar *)",
+    "ea": "0x1400222c0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Read@PM_DRIVE@@UEAAJ_KKPEAE@Z",
+    "prototype": "int(PM_DRIVE *__hidden this, unsigned __int64, unsigned int, unsigned __int8 *)",
+    "rank_score": 1,
+    "size": 55,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "PM_DRIVE::Write(unsigned __int64,ulong,uchar *)",
+    "ea": "0x140022300",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Write@PM_DRIVE@@UEAAJ_KKPEAE@Z",
+    "prototype": "int(PM_DRIVE *__hidden this, unsigned __int64, unsigned int, unsigned __int8 *)",
+    "rank_score": 1,
+    "size": 55,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "ScWriteNoFence(ulong *,ulong)",
+    "ea": "0x14000ae94",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ScWriteNoFence@@YAXPEAKK@Z",
+    "prototype": "void __fastcall(unsigned int *, unsigned int)",
+    "rank_score": 1,
+    "size": 3,
+    "tags": []
+  }
+]

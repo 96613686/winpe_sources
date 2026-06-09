@@ -1,0 +1,188 @@
+# BootBehavior::CBootGlobals::HrBootComponentImpl(int,wchar_t const *,SOlkCmdLine const *)
+
+- ea: `0x14041db40`
+- end: `0x14041e1c6`
+- name: `?HrBootComponentImpl@CBootGlobals@BootBehavior@@UEAAJHPEB_WPEBUSOlkCmdLine@@@Z`
+- size: `1670`
+- prototype: `__int64 __fastcall(BootBehavior::CBootGlobals *__hidden this, int, const wchar_t *, const struct SOlkCmdLine *)`
+- caller_count: `0`
+- callee_count: `4`
+- tags: `broker_com_uri`
+
+## callees
+
+- `0x140131c90`
+- `0x14041db40`
+- `0x14041e1c8`
+- `0x140505260`
+
+## import_xrefs
+
+- `KERNEL32!GetVersionExA` at `0x14041e0fd`
+- `KERNEL32!GetVersionExA` at `0x14041e1ba`
+- `KERNEL32!GetVersionExA` at `0x14041e0fd`
+- `KERNEL32!GetVersionExA` at `0x14041e1ba`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041db7a`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041db8c`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041db9e`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dbb0`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dbc2`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dbd4`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dbe6`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dbf8`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dc0a`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dc1c`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dc2e`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dc40`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dc52`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dc64`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dc76`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dc88`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dc9a`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dcac`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dcbe`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dcd0`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dce2`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dcf4`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dd06`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dd18`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dd2a`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dd3c`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dd4e`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dd60`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dd72`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dd84`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dd96`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dda8`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041ddba`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041ddcc`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041ddde`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041ddf0`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041de02`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041de14`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041de26`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041de38`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041de4a`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041de5c`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041de6e`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041de80`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041de92`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dea4`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041deb6`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dec8`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041deda`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041deec`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041defe`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041df10`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041df22`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041df34`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041df46`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041df58`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041df6a`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041df7c`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041df8e`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dfa0`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dfb2`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dfc4`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dfd6`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dfe8`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dffa`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041e00c`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041e01e`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041e030`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041e042`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041e054`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041e066`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041e078`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041e08a`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041e09c`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041e0ae`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041e0c0`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041e0d2`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041db7a`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041db8c`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041db9e`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dbb0`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dbc2`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dbd4`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dbe6`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dbf8`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dc0a`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dc1c`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dc2e`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dc40`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dc52`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dc64`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dc76`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dc88`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dc9a`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dcac`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dcbe`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dcd0`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dce2`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dcf4`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dd06`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dd18`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dd2a`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dd3c`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dd4e`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dd60`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dd72`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dd84`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dd96`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dda8`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041ddba`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041ddcc`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041ddde`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041ddf0`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041de02`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041de14`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041de26`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041de38`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041de4a`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041de5c`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041de6e`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041de80`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041de92`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dea4`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041deb6`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dec8`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041deda`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041deec`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041defe`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041df10`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041df22`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041df34`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041df46`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041df58`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041df6a`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041df7c`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041df8e`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dfa0`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dfb2`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dfc4`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dfd6`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dfe8`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041dffa`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041e00c`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041e01e`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041e030`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041e042`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041e054`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041e066`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041e078`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041e08a`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041e09c`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041e0ae`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041e0c0`
+- `KERNEL32!InitializeCriticalSectionEx` at `0x14041e0d2`
+- `KERNEL32!GetCurrentThreadId` at `0x14041e10b`
+- `KERNEL32!GetCurrentThreadId` at `0x14041e10b`
+- `Mso20Win32Client!__imp_?MsoDwRegGetDw@@YAKPEBU_msoreg@@@Z` at `0x14041db4b`
+- `Mso20Win32Client!__imp_?MsoDwRegGetDw@@YAKPEBU_msoreg@@@Z` at `0x14041db4b`
+
+## pseudocode
+
+```c
+
+```

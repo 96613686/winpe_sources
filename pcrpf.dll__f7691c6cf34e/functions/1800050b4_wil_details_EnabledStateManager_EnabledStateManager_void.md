@@ -1,0 +1,196 @@
+# wil::details::EnabledStateManager::~EnabledStateManager(void)
+
+- ea: `0x1800050b4`
+- end: `0x1800051f9`
+- name: `??1EnabledStateManager@details@wil@@QEAA@XZ`
+- size: `325`
+- prototype: `void __fastcall(struct _TP_TIMER **this)`
+- caller_count: `1`
+- callee_count: `4`
+- tags: `registry_config`
+
+## callers
+
+- `0x180058a10`
+
+## callees
+
+- `0x1800050b4`
+- `0x180008198`
+- `0x18000b8a0`
+- `0x180059010`
+
+## import_xrefs
+
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x180005153`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x180005184`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x180005153`
+- `api-ms-win-core-heap-l1-1-0!GetProcessHeap` at `0x180005184`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x180005167`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x180005198`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x180005167`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x180005198`
+- `api-ms-win-core-threadpool-l1-2-0!SetThreadpoolTimer` at `0x1800051b8`
+- `api-ms-win-core-threadpool-l1-2-0!SetThreadpoolTimer` at `0x1800051b8`
+- `api-ms-win-core-threadpool-l1-2-0!WaitForThreadpoolTimerCallbacks` at `0x1800051cc`
+- `api-ms-win-core-threadpool-l1-2-0!WaitForThreadpoolTimerCallbacks` at `0x1800051cc`
+- `api-ms-win-core-threadpool-l1-2-0!CloseThreadpoolTimer` at `0x1800051db`
+- `api-ms-win-core-threadpool-l1-2-0!CloseThreadpoolTimer` at `0x1800051db`
+
+## pseudocode
+
+```c
+// Hidden C++ exception states: #wind=17
+void __fastcall wil::details::EnabledStateManager::~EnabledStateManager(struct _TP_TIMER **this)
+{
+  void (*v2)(void); // rax
+  __int64 v3; // rdx
+  struct _TP_TIMER *v4; // rdi
+  HANDLE ProcessHeap; // rax
+  struct _TP_TIMER *v6; // rdi
+  HANDLE v7; // rax
+  struct _TP_TIMER *v8; // rbx
+
+  *(_DWORD *)this = 0;
+  wil::details::unique_storage<wil::details::resource_policy<_TP_TIMER *,void (*)(_TP_TIMER *),&public: static void wil::details::DestroyThreadPoolTimer<wil::details::SystemThreadPoolMethods,0>::Destroy(_TP_TIMER *),wistd::integral_constant<unsigned __int64,0>,_TP_TIMER *,_TP_TIMER *,0,std::nullptr_t>>::reset(
+    this + 2,
+    0);
+  wil::details::EnabledStateManager::ProcessShutdown((wil::details::EnabledStateManager *)this);
+  if ( !this[13] )
+  {
+    v2 = (void (*)(void))g_wil_details_internalUnsubscribeFeatureStateChangeNotification;
+    v3 = g_wil_details_apiUnsubscribeFeatureStateChangeNotification;
+    goto LABEL_8;
+  }
+  v2 = (void (*)(void))g_wil_details_internalUnsubscribeFeatureStateChangeNotification;
+  if ( !g_wil_details_internalUnsubscribeFeatureStateChangeNotification )
+  {
+    v3 = g_wil_details_apiUnsubscribeFeatureStateChangeNotification;
+    if ( !g_wil_details_apiUnsubscribeFeatureStateChangeNotification )
+      goto LABEL_8;
+    v2 = (void (*)(void))g_wil_details_apiUnsubscribeFeatureStateChangeNotification;
+  }
+  v2();
+  v3 = g_wil_details_apiUnsubscribeFeatureStateChangeNotification;
+  v2 = (void (*)(void))g_wil_details_internalUnsubscribeFeatureStateChangeNotification;
+LABEL_8:
+  if ( !this[12] )
+    goto LABEL_13;
+  if ( !v2 )
+  {
+    if ( !v3 )
+      goto LABEL_13;
+    v2 = (void (*)(void))v3;
+  }
+  v2();
+LABEL_13:
+  v4 = this[11];
+  this[11] = 0;
+  if ( v4 )
+  {
+    ProcessHeap = GetProcessHeap();
+    HeapFree(ProcessHeap, 0, v4);
+  }
+  v6 = this[7];
+  this[7] = 0;
+  if ( v6 )
+  {
+    v7 = GetProcessHeap();
+    HeapFree(v7, 0, v6);
+  }
+  v8 = this[2];
+  if ( v8 )
+  {
+    SetThreadpoolTimer(v8, 0, 0, 0);
+    WaitForThreadpoolTimerCallbacks(v8, 1);
+    CloseThreadpoolTimer(v8);
+  }
+}
+
+```
+
+## disassembly
+
+```asm
+0x1800050b4  mov     [rsp+arg_0], rbx
+0x1800050b9  mov     [rsp+arg_8], rsi
+0x1800050be  push    rdi
+0x1800050bf  sub     rsp, 20h
+0x1800050c3  mov     rbx, rcx
+0x1800050c6  mov     dword ptr [rcx], 0
+0x1800050cc  xor     edx, edx
+0x1800050ce  add     rcx, 10h
+0x1800050d2  call    ?reset@?$unique_storage@U?$resource_policy@PEAU_TP_TIMER@@P6AXPEAU1@@Z$1?Destroy@?$DestroyThreadPoolTimer@USystemThreadPoolMethods@details@wil@@$0A@@details@wil@@SAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAU1@PEAU1@$0A@$$T@details@wil@@@details@wil@@QEAAXPEAU_TP_TIMER@@@Z; wil::details::unique_storage<wil::details::resource_policy<_TP_TIMER *,void (*)(_TP_TIMER *),&wil::details::DestroyThreadPoolTimer<wil::details::SystemThreadPoolMethods,0>::Destroy(_TP_TIMER *),wistd::integral_constant<unsigned __int64,0>,_TP_TIMER *,_TP_TIMER *,0,std::nullptr_t>>::reset(_TP_TIMER *)
+0x1800050d7  mov     rcx, rbx; this
+0x1800050da  call    ?ProcessShutdown@EnabledStateManager@details@wil@@QEAAXXZ; wil::details::EnabledStateManager::ProcessShutdown(void)
+0x1800050df  mov     rcx, [rbx+68h]
+0x1800050e3  test    rcx, rcx
+0x1800050e6  jz      short loc_180005118
+0x1800050e8  mov     rax, cs:g_wil_details_internalUnsubscribeFeatureStateChangeNotification
+0x1800050ef  test    rax, rax
+0x1800050f2  jnz     short loc_180005103
+0x1800050f4  mov     rdx, cs:g_wil_details_apiUnsubscribeFeatureStateChangeNotification
+0x1800050fb  test    rdx, rdx
+0x1800050fe  jz      short loc_180005116
+0x180005100  mov     rax, rdx
+0x180005103  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x180005108  mov     rdx, cs:g_wil_details_apiUnsubscribeFeatureStateChangeNotification
+0x18000510f  mov     rax, cs:g_wil_details_internalUnsubscribeFeatureStateChangeNotification
+0x180005116  jmp     short loc_180005126
+0x180005118  mov     rax, cs:g_wil_details_internalUnsubscribeFeatureStateChangeNotification
+0x18000511f  mov     rdx, cs:g_wil_details_apiUnsubscribeFeatureStateChangeNotification
+0x180005126  mov     rcx, [rbx+60h]
+0x18000512a  test    rcx, rcx
+0x18000512d  jz      short loc_180005142
+0x18000512f  test    rax, rax
+0x180005132  jnz     short loc_18000513C
+0x180005134  test    rdx, rdx
+0x180005137  jz      short loc_180005142
+0x180005139  mov     rax, rdx
+0x18000513c  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x180005141  nop
+0x180005142  mov     rdi, [rbx+58h]
+0x180005146  mov     qword ptr [rbx+58h], 0
+0x18000514e  test    rdi, rdi
+0x180005151  jz      short loc_180005173
+0x180005153  call    cs:__imp_GetProcessHeap
+0x18000515a  nop     dword ptr [rax+rax+00h]
+0x18000515f  mov     rcx, rax; hHeap
+0x180005162  mov     r8, rdi; lpMem
+0x180005165  xor     edx, edx; dwFlags
+0x180005167  call    cs:__imp_HeapFree
+0x18000516e  nop     dword ptr [rax+rax+00h]
+0x180005173  mov     rdi, [rbx+38h]
+0x180005177  mov     qword ptr [rbx+38h], 0
+0x18000517f  test    rdi, rdi
+0x180005182  jz      short loc_1800051A4
+0x180005184  call    cs:__imp_GetProcessHeap
+0x18000518b  nop     dword ptr [rax+rax+00h]
+0x180005190  mov     rcx, rax; hHeap
+0x180005193  mov     r8, rdi; lpMem
+0x180005196  xor     edx, edx; dwFlags
+0x180005198  call    cs:__imp_HeapFree
+0x18000519f  nop     dword ptr [rax+rax+00h]
+0x1800051a4  mov     rbx, [rbx+10h]
+0x1800051a8  test    rbx, rbx
+0x1800051ab  jz      short loc_1800051E8
+0x1800051ad  xor     r9d, r9d; msWindowLength
+0x1800051b0  xor     r8d, r8d; msPeriod
+0x1800051b3  xor     edx, edx; pftDueTime
+0x1800051b5  mov     rcx, rbx; pti
+0x1800051b8  call    cs:__imp_SetThreadpoolTimer
+0x1800051bf  nop     dword ptr [rax+rax+00h]
+0x1800051c4  mov     edx, 1; fCancelPendingCallbacks
+0x1800051c9  mov     rcx, rbx; pti
+0x1800051cc  call    cs:__imp_WaitForThreadpoolTimerCallbacks
+0x1800051d3  nop     dword ptr [rax+rax+00h]
+0x1800051d8  mov     rcx, rbx; pti
+0x1800051db  call    cs:__imp_CloseThreadpoolTimer
+0x1800051e2  nop     dword ptr [rax+rax+00h]
+0x1800051e7  nop
+0x1800051e8  mov     rbx, [rsp+28h+arg_0]
+0x1800051ed  mov     rsi, [rsp+28h+arg_8]
+0x1800051f2  add     rsp, 20h
+0x1800051f6  pop     rdi
+0x1800051f7  retn
+```

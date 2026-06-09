@@ -1,0 +1,175 @@
+# FolderTreeData::HrUpdateMoveCopyPolicyOnStores(void)
+
+- ea: `0x140550ec0`
+- end: `0x14055212e`
+- name: `?HrUpdateMoveCopyPolicyOnStores@FolderTreeData@@IEAAJXZ`
+- size: `4718`
+- prototype: `__int64 __fastcall(FolderTreeData *__hidden this)`
+- caller_count: `2`
+- callee_count: `34`
+- tags: `registry_config, installer_update, broker_com_uri`
+
+## callers
+
+- `0x140335f30`
+- `0x140554ed0`
+
+## callees
+
+- `0x14001fadc`
+- `0x14002a6c0`
+- `0x140046fec`
+- `0x140063774`
+- `0x1400dd620`
+- `0x1400dd670`
+- `0x1400dd700`
+- `0x140103fac`
+- `0x14010abac`
+- `0x14010eaf0`
+- `0x140111718`
+- `0x140112e98`
+- `0x140113214`
+- `0x14016cae8`
+- `0x14016cb0c`
+- `0x14016d688`
+- `0x14016d6d8`
+- `0x14016ea94`
+- `0x1401c7b70`
+- `0x1401c7d70`
+- `0x140219f58`
+- `0x1402a0170`
+- `0x1402c68fc`
+- `0x140388c98`
+- `0x1405049f0`
+- `0x140550ec0`
+- `0x1407e9990`
+- `0x140a70d14`
+- `0x14111ce58`
+- `0x14111cfe8`
+- `0x14111d7f8`
+- `0x14111d930`
+- `0x14112be1c`
+- `0x141d35b0c`
+
+## import_xrefs
+
+- `OLMAPI32!EtwTraceErrorTag` at `0x140550f22`
+- `OLMAPI32!EtwTraceErrorTag` at `0x140550f67`
+- `OLMAPI32!EtwTraceErrorTag` at `0x140551935`
+- `OLMAPI32!EtwTraceErrorTag` at `0x140551a85`
+- `OLMAPI32!EtwTraceErrorTag` at `0x140551af5`
+- `OLMAPI32!EtwTraceErrorTag` at `0x140551c05`
+- `OLMAPI32!EtwTraceErrorTag` at `0x140551cdc`
+- `OLMAPI32!EtwTraceErrorTag` at `0x140551dbb`
+- `OLMAPI32!EtwTraceErrorTag` at `0x140551e74`
+- `OLMAPI32!EtwTraceErrorTag` at `0x140551f2c`
+- `OLMAPI32!EtwTraceErrorTag` at `0x140551ff0`
+- `OLMAPI32!EtwTraceErrorTag` at `0x140550f22`
+- `OLMAPI32!EtwTraceErrorTag` at `0x140550f67`
+- `OLMAPI32!EtwTraceErrorTag` at `0x140551935`
+- `OLMAPI32!EtwTraceErrorTag` at `0x140551a85`
+- `OLMAPI32!EtwTraceErrorTag` at `0x140551af5`
+- `OLMAPI32!EtwTraceErrorTag` at `0x140551c05`
+- `OLMAPI32!EtwTraceErrorTag` at `0x140551cdc`
+- `OLMAPI32!EtwTraceErrorTag` at `0x140551dbb`
+- `OLMAPI32!EtwTraceErrorTag` at `0x140551e74`
+- `OLMAPI32!EtwTraceErrorTag` at `0x140551f2c`
+- `OLMAPI32!EtwTraceErrorTag` at `0x140551ff0`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140551160`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x14055125f`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140551944`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140551955`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140551b38`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140551b4b`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140551c13`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140551c26`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140551cec`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140551dcd`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140551e84`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140551f3c`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140552000`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140551160`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x14055125f`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140551944`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140551955`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140551b38`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140551b4b`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140551c13`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140551c26`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140551cec`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140551dcd`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140551e84`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140551f3c`
+- `OLMAPI32!__imp_MAPIFreeBuffer` at `0x140552000`
+- `OLMAPI32!__imp_HrGetOneProp` at `0x140551388`
+- `OLMAPI32!__imp_HrGetOneProp` at `0x140551388`
+- `Mso98Win32Client!__imp_?HrGetProp@CAcctVariant@@QEAAJPEAUIOlkAccount@@K@Z` at `0x140551219`
+- `Mso98Win32Client!__imp_?HrGetProp@CAcctVariant@@QEAAJPEAUIOlkAccount@@K@Z` at `0x140551300`
+- `Mso98Win32Client!__imp_?HrGetProp@CAcctVariant@@QEAAJPEAUIOlkAccount@@K@Z` at `0x140551219`
+- `Mso98Win32Client!__imp_?HrGetProp@CAcctVariant@@QEAAJPEAUIOlkAccount@@K@Z` at `0x140551300`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x14055116b`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551175`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x14055126a`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551274`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x14055182c`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551836`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551960`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x14055196a`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551a46`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551a50`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551ab7`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551ac1`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551b56`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551b60`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551c31`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551c3b`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551cf7`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551d01`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551dd8`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551de2`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551e8f`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551e99`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551f54`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551f5e`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x14055200b`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140552015`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x14055116b`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551175`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x14055126a`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551274`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x14055182c`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551836`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551960`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x14055196a`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551a46`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551a50`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551ab7`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551ac1`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551b56`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551b60`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551c31`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551c3b`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551cf7`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551d01`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551dd8`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551de2`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551e8f`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551e99`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551f54`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140551f5e`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x14055200b`
+- `Mso98Win32Client!__imp_??1CAcctVariant@@QEAA@XZ` at `0x140552015`
+- `Mso98Win32Client!__imp_??0CAcctVariant@@QEAA@XZ` at `0x140551105`
+- `Mso98Win32Client!__imp_??0CAcctVariant@@QEAA@XZ` at `0x14055110f`
+- `Mso98Win32Client!__imp_??0CAcctVariant@@QEAA@XZ` at `0x140551105`
+- `Mso98Win32Client!__imp_??0CAcctVariant@@QEAA@XZ` at `0x14055110f`
+- `Mso30Win32Client!__imp_MsoFWzEqual` at `0x1405510b6`
+- `Mso30Win32Client!__imp_MsoFWzEqual` at `0x1405510b6`
+- `Mso20Win32Client!__imp_?MsoHrCreateUrlSimple@@YAJPEAPEAUIMsoUrl@@PEAUIMsoMemHeap@@@Z` at `0x1405515b3`
+- `Mso20Win32Client!__imp_?MsoHrCreateUrlSimple@@YAJPEAPEAUIMsoUrl@@PEAUIMsoMemHeap@@@Z` at `0x1405515b3`
+
+## pseudocode
+
+```c
+
+```

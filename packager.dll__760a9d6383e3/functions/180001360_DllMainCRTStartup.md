@@ -1,0 +1,51 @@
+# _DllMainCRTStartup
+
+- ea: `0x180001360`
+- end: `0x18000139d`
+- name: `_DllMainCRTStartup`
+- size: `61`
+- prototype: `BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)`
+- caller_count: `0`
+- callee_count: `3`
+- tags: `loader_planting, broker_com_uri`
+
+## callees
+
+- `0x180001360`
+- `0x1800013a4`
+- `0x180001974`
+
+## pseudocode
+
+```c
+BOOL __stdcall DllMainCRTStartup(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)
+{
+  if ( fdwReason == 1 )
+    _security_init_cookie();
+  return _DllMainCRTStartup(hinstDLL, fdwReason, lpReserved);
+}
+
+```
+
+## disassembly
+
+```asm
+0x180001360  mov     [rsp+arg_0], rbx
+0x180001365  mov     [rsp+arg_8], rsi
+0x18000136a  push    rdi
+0x18000136b  sub     rsp, 20h
+0x18000136f  mov     rdi, r8
+0x180001372  mov     ebx, edx
+0x180001374  mov     rsi, rcx
+0x180001377  cmp     edx, 1
+0x18000137a  jnz     short loc_180001381
+0x18000137c  call    __security_init_cookie
+0x180001381  mov     r8, rdi
+0x180001384  mov     edx, ebx; fdwReason
+0x180001386  mov     rcx, rsi; hinstDLL
+0x180001389  mov     rbx, [rsp+28h+arg_0]
+0x18000138e  mov     rsi, [rsp+28h+arg_8]
+0x180001393  add     rsp, 20h
+0x180001397  pop     rdi
+0x180001398  jmp     __DllMainCRTStartup
+```

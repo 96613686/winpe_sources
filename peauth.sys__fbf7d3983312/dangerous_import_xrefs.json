@@ -1,0 +1,218 @@
+[
+  {
+    "import": "ntoskrnl!ExAllocateFromPagedLookasideList",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1400aa0ea",
+        "from_func": "0x1400aa0ac",
+        "from_func_name": "sub_1400AA0AC",
+        "import": "ntoskrnl!ExAllocateFromPagedLookasideList"
+      },
+      {
+        "from_ea": "0x1400aa368",
+        "from_func": "0x1400aa33c",
+        "from_func_name": "sub_1400AA33C",
+        "import": "ntoskrnl!ExAllocateFromPagedLookasideList"
+      },
+      {
+        "from_ea": "0x1400aa0ea",
+        "from_func": "0x1400aa0ac",
+        "from_func_name": "sub_1400AA0AC",
+        "import": "ntoskrnl!ExAllocateFromPagedLookasideList"
+      },
+      {
+        "from_ea": "0x1400aa368",
+        "from_func": "0x1400aa33c",
+        "from_func_name": "sub_1400AA33C",
+        "import": "ntoskrnl!ExAllocateFromPagedLookasideList"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!ExFreeToPagedLookasideList",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1400aa2f6",
+        "from_func": "0x1400aa0ac",
+        "from_func_name": "sub_1400AA0AC",
+        "import": "ntoskrnl!ExFreeToPagedLookasideList"
+      },
+      {
+        "from_ea": "0x1400aa43a",
+        "from_func": "0x1400aa33c",
+        "from_func_name": "sub_1400AA33C",
+        "import": "ntoskrnl!ExFreeToPagedLookasideList"
+      },
+      {
+        "from_ea": "0x1400aa2f6",
+        "from_func": "0x1400aa0ac",
+        "from_func_name": "sub_1400AA0AC",
+        "import": "ntoskrnl!ExFreeToPagedLookasideList"
+      },
+      {
+        "from_ea": "0x1400aa43a",
+        "from_func": "0x1400aa33c",
+        "from_func_name": "sub_1400AA33C",
+        "import": "ntoskrnl!ExFreeToPagedLookasideList"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!PsGetProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140001073",
+        "from_func": "0x140001010",
+        "from_func_name": "sub_140001010",
+        "import": "ntoskrnl!PsGetProcessId"
+      },
+      {
+        "from_ea": "0x140001073",
+        "from_func": "0x140001010",
+        "from_func_name": "sub_140001010",
+        "import": "ntoskrnl!PsGetProcessId"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!PsLookupProcessByProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140044d63",
+        "from_func": "0x140044d30",
+        "from_func_name": "NotifyRoutine",
+        "import": "ntoskrnl!PsLookupProcessByProcessId"
+      },
+      {
+        "from_ea": "0x140044d63",
+        "from_func": "0x140044d30",
+        "from_func_name": "NotifyRoutine",
+        "import": "ntoskrnl!PsLookupProcessByProcessId"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!PsSetCreateProcessNotifyRoutine",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14004438e",
+        "from_func": "0x140044320",
+        "from_func_name": "sub_140044320",
+        "import": "ntoskrnl!PsSetCreateProcessNotifyRoutine"
+      },
+      {
+        "from_ea": "0x14004438e",
+        "from_func": "0x140044320",
+        "from_func_name": "sub_140044320",
+        "import": "ntoskrnl!PsSetCreateProcessNotifyRoutine"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlCompareMemory",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 5,
+    "xrefs": [
+      {
+        "from_ea": "0x1400479df",
+        "from_func": "0x1400477e4",
+        "from_func_name": "sub_1400477E4",
+        "import": "ntoskrnl!RtlCompareMemory"
+      },
+      {
+        "from_ea": "0x1400aa799",
+        "from_func": "0x1400aa700",
+        "from_func_name": "sub_1400AA700",
+        "import": "ntoskrnl!RtlCompareMemory"
+      },
+      {
+        "from_ea": "0x14001c967",
+        "from_func": "0x14001c967",
+        "from_func_name": "RtlCompareMemory",
+        "import": "ntoskrnl!RtlCompareMemory"
+      },
+      {
+        "from_ea": "0x1400479df",
+        "from_func": "0x1400477e4",
+        "from_func_name": "sub_1400477E4",
+        "import": "ntoskrnl!RtlCompareMemory"
+      },
+      {
+        "from_ea": "0x1400aa799",
+        "from_func": "0x1400aa700",
+        "from_func_name": "sub_1400AA700",
+        "import": "ntoskrnl!RtlCompareMemory"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!ZwReadFile",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x140047985",
+        "from_func": "0x1400477e4",
+        "from_func_name": "sub_1400477E4",
+        "import": "ntoskrnl!ZwReadFile"
+      },
+      {
+        "from_ea": "0x1400aa664",
+        "from_func": "0x1400aa600",
+        "from_func_name": "sub_1400AA600",
+        "import": "ntoskrnl!ZwReadFile"
+      },
+      {
+        "from_ea": "0x140047985",
+        "from_func": "0x1400477e4",
+        "from_func_name": "sub_1400477E4",
+        "import": "ntoskrnl!ZwReadFile"
+      },
+      {
+        "from_ea": "0x1400aa664",
+        "from_func": "0x1400aa600",
+        "from_func_name": "sub_1400AA600",
+        "import": "ntoskrnl!ZwReadFile"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x14001c5bd",
+        "from_func": "0x14001c5bd",
+        "from_func_name": "__C_specific_handler",
+        "import": "ntoskrnl!__C_specific_handler"
+      }
+    ]
+  }
+]
