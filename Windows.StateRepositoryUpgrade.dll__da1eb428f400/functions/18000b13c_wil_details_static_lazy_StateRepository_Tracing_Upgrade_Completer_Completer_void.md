@@ -1,0 +1,62 @@
+# wil::details::static_lazy<StateRepository::Tracing::Upgrade>::Completer::~Completer(void)
+
+- ea: `0x18000b13c`
+- end: `0x18000b171`
+- name: `??1Completer@?$static_lazy@VUpgrade@Tracing@StateRepository@@@details@wil@@QEAA@XZ`
+- size: `53`
+- prototype: ``
+- caller_count: `2`
+- callee_count: `2`
+- tags: `broker_com_uri`
+
+## callers
+
+- `0x18000b5c4`
+- `0x18000cb78`
+
+## callees
+
+- `0x18000b13c`
+- `0x18000b2ac`
+
+## import_xrefs
+
+- `api-ms-win-core-synch-l1-2-0!InitOnceComplete` at `0x18000b16a`
+
+## pseudocode
+
+```c
+BOOL __fastcall wil::details::static_lazy<StateRepository::Tracing::Upgrade>::Completer::~Completer(
+        _DWORD *a1,
+        __int64 a2,
+        void (*a3)(const struct _GUID *, unsigned int, unsigned __int8, unsigned __int64, unsigned __int64, struct _EVENT_FILTER_DESCRIPTOR *, void *))
+{
+  if ( !a1[2] )
+    wil::TraceLoggingProvider::Register(
+      (wil::TraceLoggingProvider *)(*(_QWORD *)a1 + 8LL),
+      *(const struct _tlgProvider_t *const *)(*(_QWORD *)a1 + 32LL),
+      a3);
+  return InitOnceComplete(*(LPINIT_ONCE *)a1, a1[2], (LPVOID)(*(_QWORD *)a1 + 8LL));
+}
+
+```
+
+## disassembly
+
+```asm
+0x18000b13c  push    rbx
+0x18000b13e  sub     rsp, 20h
+0x18000b142  cmp     dword ptr [rcx+8], 0
+0x18000b146  mov     rbx, rcx
+0x18000b149  jnz     short loc_18000B15B
+0x18000b14b  mov     rcx, [rcx]
+0x18000b14e  add     rcx, 8; this
+0x18000b152  mov     rdx, [rcx+18h]; struct _tlgProvider_t *
+0x18000b156  call    ?Register@TraceLoggingProvider@wil@@IEAAXQEBU_tlgProvider_t@@P6AXPEBU_GUID@@KE_K2PEAU_EVENT_FILTER_DESCRIPTOR@@PEAX@Z@Z; wil::TraceLoggingProvider::Register(_tlgProvider_t const * const,void (*)(_GUID const *,ulong,uchar,unsigned __int64,unsigned __int64,_EVENT_FILTER_DESCRIPTOR *,void *))
+0x18000b15b  mov     rcx, [rbx]
+0x18000b15e  mov     edx, [rbx+8]
+0x18000b161  lea     r8, [rcx+8]
+0x18000b165  add     rsp, 20h
+0x18000b169  pop     rbx
+0x18000b16a  jmp     cs:__imp_InitOnceComplete
+```

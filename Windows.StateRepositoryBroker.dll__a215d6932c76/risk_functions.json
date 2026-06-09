@@ -1,0 +1,3298 @@
+[
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "wil::GetImpersonationTokenForClientOfObject_nothrow(IUnknown *,ulong,wil::unique_any_t<wil::details::unique_storage<wil::details::handle_null_resource_policy<int (*)(void *),&CloseHandle(void *)>>> &)",
+    "ea": "0x180007f28",
+    "function_file": "functions/180007f28_wil_GetImpersonationTokenForClientOfObject_nothrow_IUnknown_ulong_wil_unique_any_t_wil_details_unique_storage_.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoRevertToSelf",
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcess",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThread",
+      "api-ms-win-core-processthreads-l1-1-0!OpenProcessToken",
+      "api-ms-win-core-processthreads-l1-1-0!OpenThreadToken",
+      "api-ms-win-security-base-l1-1-0!DuplicateTokenEx",
+      "combase!__imp_CoImpersonateClientOfObject"
+    ],
+    "matched_strings": [],
+    "name": "?GetImpersonationTokenForClientOfObject_nothrow@wil@@YAJPEAUIUnknown@@KAEAV?$unique_any_t@V?$unique_storage@U?$handle_null_resource_policy@P6AHPEAX@Z$1?CloseHandle@@YAH0@Z@details@wil@@@details@wil@@@1@@Z",
+    "prototype": "__int64 __fastcall(__int64, DWORD, HANDLE *)",
+    "rank_score": 1851,
+    "size": 414,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "Microsoft::WRL::Details::GetCacheEntry(Microsoft::WRL::Details::ModuleBase *,uint *,_GUID const &,Microsoft::WRL::Details::CreatorMap const *,IUnknown * *)",
+    "ea": "0x18000481c",
+    "function_file": "functions/18000481c_Microsoft_WRL_Details_GetCacheEntry_Microsoft_WRL_Details_ModuleBase_uint_GUID_const_Microsoft_WRL_Details_Cre.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!AcquireSRWLockShared",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive",
+      "api-ms-win-core-synch-l1-1-0!ReleaseSRWLockShared",
+      "api-ms-win-core-util-l1-1-0!DecodePointer",
+      "api-ms-win-core-util-l1-1-0!EncodePointer"
+    ],
+    "matched_strings": [],
+    "name": "?GetCacheEntry@Details@WRL@Microsoft@@YAJPEAVModuleBase@123@PEAIAEBU_GUID@@PEBUCreatorMap@123@PEAPEAUIUnknown@@@Z",
+    "prototype": "__int64 __fastcall(Microsoft::WRL::Details *this, struct Microsoft::WRL::Details::ModuleBase *, unsigned int *, const struct _GUID *, _QWORD *Ptr)",
+    "rank_score": 1418,
+    "size": 399,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "CreateMrtRandomAccessStreamReferenceInternal",
+    "ea": "0x180009af8",
+    "function_file": "functions/180009af8_CreateMrtRandomAccessStreamReferenceInternal.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!RaiseException",
+      "api-ms-win-core-winrt-l1-1-0!RoGetActivationFactory",
+      "api-ms-win-core-winrt-string-l1-1-0!WindowsCreateStringReference"
+    ],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\localize.cpp",
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\localize.cpp",
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\localize.cpp",
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\localize.cpp"
+    ],
+    "name": "CreateMrtRandomAccessStreamReferenceInternal",
+    "prototype": "__int64 __fastcall(PCWSTR sourceString, _QWORD *)",
+    "rank_score": 1191,
+    "size": 602,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Microsoft::WRL::Details::GetActivationFactory<1>(Microsoft::WRL::Details::ModuleBase *,ushort const *,HSTRING__ *,IActivationFactory * *)",
+    "ea": "0x180002f58",
+    "function_file": "functions/180002f58_Microsoft_WRL_Details_GetActivationFactory_1_Microsoft_WRL_Details_ModuleBase_ushort_const_HSTRING_IActivation.md",
+    "matched_imports": [
+      "api-ms-win-core-winrt-error-l1-1-0!RoOriginateError",
+      "api-ms-win-core-winrt-error-l1-1-0!RoOriginateErrorW",
+      "api-ms-win-core-winrt-string-l1-1-0!WindowsGetStringRawBuffer",
+      "api-ms-win-core-winrt-string-l1-1-0!WindowsIsStringEmpty",
+      "api-ms-win-core-winrt-string-l1-1-0!WindowsStringHasEmbeddedNull"
+    ],
+    "matched_strings": [
+      "activatibleClassId"
+    ],
+    "name": "??$GetActivationFactory@$00@Details@WRL@Microsoft@@YAJPEAVModuleBase@012@PEBGPEAUHSTRING__@@PEAPEAUIActivationFactory@@@Z",
+    "prototype": "__int64 __fastcall(Microsoft::WRL::Details *this, __int64, HSTRING, _QWORD *)",
+    "rank_score": 1067,
+    "size": 368,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::AppInfoFactoryBrokerServer::GetFromAppUserModelIdForUser(Windows::Internal::StateRepository::IUser *,HSTRING__ *,__int64 *)",
+    "ea": "0x180007bc0",
+    "function_file": "functions/180007bc0_Windows_Internal_StateRepository_AppInfoFactoryBrokerServer_GetFromAppUserModelIdForUser_Windows_Internal_Stat.md",
+    "matched_imports": [
+      "api-ms-win-core-winrt-l1-1-0!RoGetActivationFactory",
+      "api-ms-win-security-base-l1-1-0!GetTokenInformation"
+    ],
+    "matched_strings": [
+      "onecore\\internal\\sdk\\inc\\wil\\opensource\\wil\\token_helpers.h",
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.appinfofactorybroker.cpp",
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.appinfofactorybroker.cpp",
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.appinfofactorybroker.cpp",
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.appinfofactorybroker.cpp",
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.appinfofactorybroker.cpp"
+    ],
+    "name": "?GetFromAppUserModelIdForUser@AppInfoFactoryBrokerServer@StateRepository@Internal@Windows@@UEAAJPEAUIUser@234@PEAUHSTRING__@@PEA_J@Z",
+    "prototype": "__int64 __fastcall(Windows::Internal::StateRepository::AppInfoFactoryBrokerServer *__hidden this, struct Windows::Internal::StateRepository::IUser *, HSTRING, __int64 *)",
+    "rank_score": 876,
+    "size": 864,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x18000219c",
+    "function_file": "functions/18000219c_security_init_cookie.md",
+    "matched_imports": [
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId",
+      "api-ms-win-core-profile-l1-1-0!QueryPerformanceCounter",
+      "api-ms-win-core-sysinfo-l1-1-0!GetSystemTimeAsFileTime"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 823,
+    "size": 181,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "StateRepository::Localization::CreateUri(HSTRING__ *,Windows::Foundation::IUriRuntimeClass * *)",
+    "ea": "0x180009fc0",
+    "function_file": "functions/180009fc0_StateRepository_Localization_CreateUri_HSTRING_Windows_Foundation_IUriRuntimeClass.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!RaiseException",
+      "api-ms-win-core-winrt-l1-1-0!RoGetActivationFactory",
+      "api-ms-win-core-winrt-string-l1-1-0!WindowsCreateStringReference"
+    ],
+    "matched_strings": [
+      "Windows.Foundation.Uri",
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\localize.cpp",
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\localize.cpp",
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\localize.cpp"
+    ],
+    "name": "?CreateUri@Localization@StateRepository@@YAJPEAUHSTRING__@@PEAPEAUIUriRuntimeClass@Foundation@Windows@@@Z",
+    "prototype": "__int64 __fastcall(StateRepository::Localization *this, _QWORD *, struct Windows::Foundation::IUriRuntimeClass **)",
+    "rank_score": 779,
+    "size": 401,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "Windows::Internal::StateRepository::ApplicationResourceResolverServer::RuntimeClassInitialize(Windows::Internal::StateRepository::IApplication *)",
+    "ea": "0x180008b68",
+    "function_file": "functions/180008b68_Windows_Internal_StateRepository_ApplicationResourceResolverServer_RuntimeClassInitialize_Windows_Internal_Sta.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!RaiseException",
+      "api-ms-win-core-winrt-l1-1-0!RoGetActivationFactory",
+      "api-ms-win-core-winrt-string-l1-1-0!WindowsCreateStringReference"
+    ],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolver.cpp",
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolver.cpp"
+    ],
+    "name": "?RuntimeClassInitialize@ApplicationResourceResolverServer@StateRepository@Internal@Windows@@QEAAJPEAUIApplication@234@@Z",
+    "prototype": "__int64 __fastcall(Windows::Internal::StateRepository::ApplicationResourceResolverServer *__hidden this, struct Windows::Internal::StateRepository::IApplication *)",
+    "rank_score": 701,
+    "size": 646,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "Windows::Internal::StateRepository::PackageResourceResolverServer::RuntimeClassInitialize(Windows::Internal::StateRepository::IPackage *)",
+    "ea": "0x1800092a8",
+    "function_file": "functions/1800092a8_Windows_Internal_StateRepository_PackageResourceResolverServer_RuntimeClassInitialize_Windows_Internal_StateRe.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!RaiseException",
+      "api-ms-win-core-winrt-l1-1-0!RoGetActivationFactory",
+      "api-ms-win-core-winrt-string-l1-1-0!WindowsCreateStringReference"
+    ],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.packageresourceresolver.cpp",
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.packageresourceresolver.cpp"
+    ],
+    "name": "?RuntimeClassInitialize@PackageResourceResolverServer@StateRepository@Internal@Windows@@QEAAJPEAUIPackage@234@@Z",
+    "prototype": "__int64 __fastcall(Windows::Internal::StateRepository::PackageResourceResolverServer *__hidden this, struct Windows::Internal::StateRepository::IPackage *)",
+    "rank_score": 699,
+    "size": 451,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 2,
+    "demangled": "wil::details::LogFailure(void *,uint,char const *,char const *,char const *,void *,wil::FailureType,wil::details::ResultStatus const &,ushort const *,bool,ushort *,unsigned __int64,char *,unsigned __int64,wil::FailureFlags,wil::FailureInfo *)",
+    "ea": "0x1800053f8",
+    "function_file": "functions/1800053f8_wil_details_LogFailure_void_uint_char_const_char_const_char_const_void_wil_FailureType_wil_details_ResultStatu.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!IsDebuggerPresent",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringW",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "?LogFailure@details@wil@@YAXPEAXIPEBD110W4FailureType@2@AEBUResultStatus@12@PEBG_NPEAG_KPEAD7W4FailureFlags@2@PEAUFailureInfo@2@@Z",
+    "prototype": "void __fastcall(__int64, int, __int64, __int64, __int64, __int64, int, unsigned int *, _WORD *, __int64, wil *lpOutputString, __int64, _BYTE *, __int64, int, unsigned __int64)",
+    "rank_score": 617,
+    "size": 761,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "wil::details::ReportFailure_Return<1>(void *,uint,char const *,char const *,char const *,void *,wil::details::ResultStatus const &,ushort const *,wil::details::ReportFailureOptions,wil::FailureFlags)",
+    "ea": "0x180003640",
+    "function_file": "functions/180003640_wil_details_ReportFailure_Return_1_void_uint_char_const_char_const_char_const_void_wil_details_ResultStatus_co.md",
+    "matched_imports": [
+      "api-ms-win-core-debug-l1-1-0!IsDebuggerPresent",
+      "api-ms-win-core-debug-l1-1-0!OutputDebugStringW",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "??$ReportFailure_Return@$00@details@wil@@YAXPEAXIPEBD110AEBUResultStatus@01@PEBGW4ReportFailureOptions@01@W4FailureFlags@1@@Z",
+    "prototype": "void __fastcall(__int64, int, __int64, __int64, int, __int64, int *)",
+    "rank_score": 615,
+    "size": 653,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "StateRepository::Localization::CreateMrtString(ushort const *,HSTRING__ * *)",
+    "ea": "0x180009d80",
+    "function_file": "functions/180009d80_StateRepository_Localization_CreateMrtString_ushort_const_HSTRING.md",
+    "matched_imports": [
+      "api-ms-win-core-string-l2-1-1!SHLoadIndirectString"
+    ],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\localize.cpp",
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\localize.cpp",
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\localize.cpp"
+    ],
+    "name": "?CreateMrtString@Localization@StateRepository@@YAJPEBGPEAPEAUHSTRING__@@@Z",
+    "prototype": "__int64 __fastcall(StateRepository::Localization *this, unsigned __int16 *, HSTRING *)",
+    "rank_score": 551,
+    "size": 379,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "GetMrtRandomAccessStreamReferencePath",
+    "ea": "0x18000a1b8",
+    "function_file": "functions/18000a1b8_GetMrtRandomAccessStreamReferencePath.md",
+    "matched_imports": [
+      "ext-ms-win-mrmcorer-resmanager-l1-1-0!ResourceManagerQueueGetString"
+    ],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\localize.cpp",
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\localize.cpp"
+    ],
+    "name": "GetMrtRandomAccessStreamReferencePath",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, __int64, __int64 *)",
+    "rank_score": 526,
+    "size": 534,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "StateRepository::Localization::CreateHString(ushort const *,HSTRING__ * *)",
+    "ea": "0x180009a20",
+    "function_file": "functions/180009a20_StateRepository_Localization_CreateHString_ushort_const_HSTRING.md",
+    "matched_imports": [
+      "api-ms-win-core-winrt-string-l1-1-0!WindowsCreateString",
+      "api-ms-win-core-winrt-string-l1-1-0!WindowsDeleteString"
+    ],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\localize.cpp",
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\localize.cpp"
+    ],
+    "name": "?CreateHString@Localization@StateRepository@@YAJPEBGPEAPEAUHSTRING__@@@Z",
+    "prototype": "__int64 __fastcall(PCNZWCH sourceString, unsigned __int16 *, HSTRING *)",
+    "rank_score": 495,
+    "size": 208,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "Microsoft::WRL::Details::MakeAndInitialize<`WaitForCompletion<Windows::Foundation::IAsyncOperationCompletedHandler<Windows::Storage::StorageFile *>,Windows::Foundation::IAsyncOperation<Windows::Storage::StorageFile *>>(Windows::Foundation::IAsyncOperation<Windows::Storage::StorageFile *> *,tagCOWAIT_FLAGS,void *)'::`2'::FTMEventDelegate,`WaitForCompletion<Windows::Foundation::IAsyncOperationCompletedHandler<Windows::Storage::StorageFile *>,Windows::Foundation::IAsyncOperation<Windows::Storage::StorageFile *>>(Windows::Foundation::IAsyncOperation<Windows::Storage::StorageFile *> *,tagCOWAIT_FLAGS,void *)'::`2'::FTMEventDelegate,>(`WaitForCompletion<Windows::Foundation::IAsyncOperationCompletedHandler<Windows::Storage::StorageFile *>,Windows::Foundation::IAsyncOperation<Windows::Storage::StorageFile *>>(Windows::Foundation::IAsyncOperation<Windows::Storage::StorageFile *> *,tagCOWAIT_FLAGS,void *)'::`2'::FTMEventDelegate * *)",
+    "ea": "0x180009474",
+    "function_file": "functions/180009474_Microsoft_WRL_Details_MakeAndInitialize_WaitForCompletion_Windows_Foundation_IAsyncOperationCompletedHandler_W.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-synch-l1-1-0!CreateEventExW"
+    ],
+    "matched_strings": [],
+    "name": "??$MakeAndInitialize@VFTMEventDelegate@?1???$WaitForCompletion@U?$IAsyncOperationCompletedHandler@PEAVStorageFile@Storage@Windows@@@Foundation@Windows@@U?$IAsyncOperation@PEAVStorageFile@Storage@Windows@@@23@@@YAJPEAU?$IAsyncOperation@PEAVStorageFile@Storage@Windows@@@Foundation@Windows@@W4tagCOWAIT_FLAGS@@PEAX@Z@V1?1???$WaitForCompletion@U?$IAsyncOperationCompletedHandler@PEAVStorageFile@Storage@Windows@@@Foundation@Windows@@U?$IAsyncOperation@PEAVStorageFile@Storage@Windows@@@23@@@YAJ012@Z@$$V@Details@WRL@Microsoft@@YAJPEAPEAVFTMEventDelegate@?1???$WaitForCompletion@U?$IAsyncOperationCompletedHandler@PEAVStorageFile@Storage@Windows@@@Foundation@Windows@@U?$IAsyncOperation@PEAVStorageFile@Storage@Windows@@@23@@@YAJPEAU?$IAsyncOperation@PEAVStorageFile@Storage@Windows@@@Foundation@Windows@@W4tagCOWAIT_FLAGS@@PEAX@Z@@Z",
+    "prototype": "__int64 __fastcall(_QWORD *)",
+    "rank_score": 429,
+    "size": 310,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "wil::GetFailureLogString(ushort *,unsigned __int64,wil::FailureInfo const &)",
+    "ea": "0x1800049b4",
+    "function_file": "functions/1800049b4_wil_GetFailureLogString_ushort_unsigned_int64_wil_FailureInfo_const.md",
+    "matched_imports": [
+      "api-ms-win-core-localization-l1-2-0!FormatMessageW",
+      "api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "?GetFailureLogString@wil@@YAJPEAG_KAEBUFailureInfo@1@@Z",
+    "prototype": "__int64 __fastcall(wil *this, unsigned __int16 *, __int64, const struct wil::FailureInfo *)",
+    "rank_score": 413,
+    "size": 694,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft::WRL::Wrappers::HStringReference::CreateReference(ushort const *,uint,uint)",
+    "ea": "0x180007b74",
+    "function_file": "functions/180007b74_Microsoft_WRL_Wrappers_HStringReference_CreateReference_ushort_const_uint_uint.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!RaiseException",
+      "api-ms-win-core-winrt-string-l1-1-0!WindowsCreateStringReference"
+    ],
+    "matched_strings": [],
+    "name": "?CreateReference@HStringReference@Wrappers@WRL@Microsoft@@AEAAXPEBGII@Z",
+    "prototype": "void __fastcall(HSTRING_HEADER *hstringHeader, PCWSTR sourceString, UINT32, UINT32)",
+    "rank_score": 412,
+    "size": 65,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "wil::details::shared_buffer::reset(void)",
+    "ea": "0x18000693c",
+    "function_file": "functions/18000693c_wil_details_shared_buffer_reset_void.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?reset@shared_buffer@details@wil@@QEAAXXZ",
+    "prototype": "void __fastcall(volatile signed __int32 **this)",
+    "rank_score": 405,
+    "size": 82,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "__delayLoadHelper2",
+    "ea": "0x18000a6d0",
+    "function_file": "functions/18000a6d0_delayLoadHelper2.md",
+    "matched_imports": [
+      "api-ms-win-core-delayload-l1-1-0!DelayLoadFailureHook",
+      "api-ms-win-core-delayload-l1-1-1!ResolveDelayLoadedAPI"
+    ],
+    "matched_strings": [],
+    "name": "__delayLoadHelper2",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 303,
+    "size": 54,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "DllGetClassObject",
+    "ea": "0x180006b90",
+    "function_file": "functions/180006b90_DllGetClassObject.md",
+    "matched_imports": [
+      "RPCRT4!NdrDllGetClassObject"
+    ],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\srv\\servermain.cpp"
+    ],
+    "name": "DllGetClassObject",
+    "prototype": "HRESULT __stdcall(const IID *const rclsid, const IID *const riid, LPVOID *ppv)",
+    "rank_score": 275,
+    "size": 141,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "WaitForCompletion<Windows::Foundation::IAsyncOperationCompletedHandler<Windows::Storage::StorageFile *>,Windows::Foundation::IAsyncOperation<Windows::Storage::StorageFile *>>(Windows::Foundation::IAsyncOperation<Windows::Storage::StorageFile *> *,tagCOWAIT_FLAGS,void *)",
+    "ea": "0x1800096e8",
+    "function_file": "functions/1800096e8_WaitForCompletion_Windows_Foundation_IAsyncOperationCompletedHandler_Windows_Storage_StorageFile_Windows_Found.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoWaitForMultipleHandles"
+    ],
+    "matched_strings": [],
+    "name": "??$WaitForCompletion@U?$IAsyncOperationCompletedHandler@PEAVStorageFile@Storage@Windows@@@Foundation@Windows@@U?$IAsyncOperation@PEAVStorageFile@Storage@Windows@@@23@@@YAJPEAU?$IAsyncOperation@PEAVStorageFile@Storage@Windows@@@Foundation@Windows@@W4tagCOWAIT_FLAGS@@PEAX@Z",
+    "prototype": "__int64 __fastcall(int (__fastcall ***)(_QWORD, GUID *, __int64 *), int, __int64)",
+    "rank_score": 228,
+    "size": 389,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Microsoft::WRL::ActivationFactory<Microsoft::WRL::Implements<Microsoft::WRL::FtmBase,Windows::Internal::StateRepository::IApplicationResourceResolverStatics>,Microsoft::WRL::Details::Nil,Microsoft::WRL::Details::Nil,0>::GetIids(ulong *,_GUID * *)",
+    "ea": "0x180004c80",
+    "function_file": "functions/180004c80_Microsoft_WRL_ActivationFactory_Microsoft_WRL_Implements_Microsoft_WRL_FtmBase_Windows_Internal_StateRepositor.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?GetIids@?$ActivationFactory@U?$Implements@VFtmBase@WRL@Microsoft@@UIApplicationResourceResolverStatics@StateRepository@Internal@Windows@@@WRL@Microsoft@@VNil@Details@23@V4523@$0A@@WRL@Microsoft@@UEAAJPEAKPEAPEAU_GUID@@@Z",
+    "prototype": "__int64 __fastcall(__int64, _DWORD *, _QWORD *)",
+    "rank_score": 223,
+    "size": 95,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Microsoft::WRL::ActivationFactory<Microsoft::WRL::Implements<Microsoft::WRL::FtmBase,Windows::Internal::StateRepository::IPackageResourceResolverStatics>,Microsoft::WRL::Details::Nil,Microsoft::WRL::Details::Nil,0>::GetIids(ulong *,_GUID * *)",
+    "ea": "0x180004d00",
+    "function_file": "functions/180004d00_Microsoft_WRL_ActivationFactory_Microsoft_WRL_Implements_Microsoft_WRL_FtmBase_Windows_Internal_StateRepositor.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?GetIids@?$ActivationFactory@U?$Implements@VFtmBase@WRL@Microsoft@@UIPackageResourceResolverStatics@StateRepository@Internal@Windows@@@WRL@Microsoft@@VNil@Details@23@V4523@$0A@@WRL@Microsoft@@UEAAJPEAKPEAPEAU_GUID@@@Z",
+    "prototype": "__int64 __fastcall(__int64, _DWORD *, _QWORD *)",
+    "rank_score": 223,
+    "size": 95,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Microsoft::WRL::Details::RuntimeClassImpl<Microsoft::WRL::RuntimeClassFlags<1>,1,1,0,Windows::Internal::StateRepository::IAppInfoFactoryBroker,Microsoft::WRL::FtmBase>::GetIids(ulong *,_GUID * *)",
+    "ea": "0x180004de0",
+    "function_file": "functions/180004de0_Microsoft_WRL_Details_RuntimeClassImpl_Microsoft_WRL_RuntimeClassFlags_1_1_1_0_Windows_Internal_StateRepositor.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?GetIids@?$RuntimeClassImpl@U?$RuntimeClassFlags@$00@WRL@Microsoft@@$00$00$0A@UIAppInfoFactoryBroker@StateRepository@Internal@Windows@@VFtmBase@23@@Details@WRL@Microsoft@@UEAAJPEAKPEAPEAU_GUID@@@Z",
+    "prototype": "__int64 __fastcall(__int64, _DWORD *, _QWORD *)",
+    "rank_score": 222,
+    "size": 95,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Microsoft::WRL::Details::RuntimeClassImpl<Microsoft::WRL::RuntimeClassFlags<1>,1,1,0,Windows::Internal::StateRepository::IApplicationResourceResolver,Microsoft::WRL::FtmBase>::GetIids(ulong *,_GUID * *)",
+    "ea": "0x180007110",
+    "function_file": "functions/180007110_Microsoft_WRL_Details_RuntimeClassImpl_Microsoft_WRL_RuntimeClassFlags_1_1_1_0_Windows_Internal_StateRepositor.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?GetIids@?$RuntimeClassImpl@U?$RuntimeClassFlags@$00@WRL@Microsoft@@$00$00$0A@UIApplicationResourceResolver@StateRepository@Internal@Windows@@VFtmBase@23@@Details@WRL@Microsoft@@UEAAJPEAKPEAPEAU_GUID@@@Z",
+    "prototype": "__int64 __fastcall(__int64, _DWORD *, _QWORD *)",
+    "rank_score": 222,
+    "size": 95,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Microsoft::WRL::Details::RuntimeClassImpl<Microsoft::WRL::RuntimeClassFlags<1>,1,1,0,Windows::Internal::StateRepository::IPackageResourceResolver,Microsoft::WRL::FtmBase>::GetIids(ulong *,_GUID * *)",
+    "ea": "0x180007680",
+    "function_file": "functions/180007680_Microsoft_WRL_Details_RuntimeClassImpl_Microsoft_WRL_RuntimeClassFlags_1_1_1_0_Windows_Internal_StateRepositor.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?GetIids@?$RuntimeClassImpl@U?$RuntimeClassFlags@$00@WRL@Microsoft@@$00$00$0A@UIPackageResourceResolver@StateRepository@Internal@Windows@@VFtmBase@23@@Details@WRL@Microsoft@@UEAAJPEAKPEAPEAU_GUID@@@Z",
+    "prototype": "__int64 __fastcall(__int64, _DWORD *, _QWORD *)",
+    "rank_score": 222,
+    "size": 95,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "`WaitForCompletion<Windows::Foundation::IAsyncOperationCompletedHandler<Windows::Storage::StorageFile *>,Windows::Foundation::IAsyncOperation<Windows::Storage::StorageFile *>>(Windows::Foundation::IAsyncOperation<Windows::Storage::StorageFile *> *,tagCOWAIT_FLAGS,void *)'::`2'::FTMEventDelegate::~FTMEventDelegate(void)",
+    "ea": "0x180009920",
+    "function_file": "functions/180009920_WaitForCompletion_Windows_Foundation_IAsyncOperationCompletedHandler_Windows_Storage_StorageFile_Windows_Found.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle"
+    ],
+    "matched_strings": [],
+    "name": "??1FTMEventDelegate@?1???$WaitForCompletion@U?$IAsyncOperationCompletedHandler@PEAVStorageFile@Storage@Windows@@@Foundation@Windows@@U?$IAsyncOperation@PEAVStorageFile@Storage@Windows@@@23@@@YAJPEAU?$IAsyncOperation@PEAVStorageFile@Storage@Windows@@@Foundation@Windows@@W4tagCOWAIT_FLAGS@@PEAX@Z@EEAA@XZ",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 222,
+    "size": 63,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft::WRL::Details::RuntimeClassImpl<Microsoft::WRL::RuntimeClassFlags<13>,0,1,0,IActivationFactory,Microsoft::WRL::Details::Nil,Microsoft::WRL::Details::Nil,Microsoft::WRL::Details::Nil,Microsoft::WRL::Details::Nil>::GetIids(ulong *,_GUID * *)",
+    "ea": "0x180004d80",
+    "function_file": "functions/180004d80_Microsoft_WRL_Details_RuntimeClassImpl_Microsoft_WRL_RuntimeClassFlags_13_0_1_0_IActivationFactory_Microsoft_W.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?GetIids@?$RuntimeClassImpl@U?$RuntimeClassFlags@$0N@@WRL@Microsoft@@$0A@$00$0A@UIActivationFactory@@VNil@Details@23@V5623@V5623@V5623@@Details@WRL@Microsoft@@UEAAJPEAKPEAPEAU_GUID@@@Z",
+    "prototype": "__int64 __fastcall(__int64, _DWORD *, GUID **)",
+    "rank_score": 221,
+    "size": 85,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "`WaitForCompletion<Windows::Foundation::IAsyncOperationCompletedHandler<Windows::Storage::StorageFile *>,Windows::Foundation::IAsyncOperation<Windows::Storage::StorageFile *>>(Windows::Foundation::IAsyncOperation<Windows::Storage::StorageFile *> *,tagCOWAIT_FLAGS,void *)'::`2'::FTMEventDelegate::Invoke(Windows::Foundation::IAsyncOperation<Windows::Storage::StorageFile *> *,ABI::Windows::Foundation::AsyncStatus)",
+    "ea": "0x18000a3e0",
+    "function_file": "functions/18000a3e0_WaitForCompletion_Windows_Foundation_IAsyncOperationCompletedHandler_Windows_Storage_StorageFile_Windows_Found.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-1-0!SetEvent"
+    ],
+    "matched_strings": [],
+    "name": "?Invoke@FTMEventDelegate@?1???$WaitForCompletion@U?$IAsyncOperationCompletedHandler@PEAVStorageFile@Storage@Windows@@@Foundation@Windows@@U?$IAsyncOperation@PEAVStorageFile@Storage@Windows@@@23@@@YAJPEAU?$IAsyncOperation@PEAVStorageFile@Storage@Windows@@@Foundation@Windows@@W4tagCOWAIT_FLAGS@@PEAX@Z@UEAAJ0W4AsyncStatus@34ABI@@@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, int)",
+    "rank_score": 220,
+    "size": 25,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "Microsoft::WRL::FtmBase::FtmBase(void)",
+    "ea": "0x180003c7c",
+    "function_file": "functions/180003c7c_Microsoft_WRL_FtmBase_FtmBase_void.md",
+    "matched_imports": [
+      "api-ms-win-core-com-l1-1-0!CoCreateFreeThreadedMarshaler"
+    ],
+    "matched_strings": [],
+    "name": "??0FtmBase@WRL@Microsoft@@QEAA@XZ",
+    "prototype": "Microsoft::WRL::FtmBase *__fastcall(Microsoft::WRL::FtmBase *this)",
+    "rank_score": 218,
+    "size": 134,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "StateRepository::Localization::CreateMrtUri(HSTRING__ *,Windows::Foundation::IUriRuntimeClass * *)",
+    "ea": "0x180009f04",
+    "function_file": "functions/180009f04_StateRepository_Localization_CreateMrtUri_HSTRING_Windows_Foundation_IUriRuntimeClass.md",
+    "matched_imports": [
+      "api-ms-win-core-winrt-string-l1-1-0!WindowsGetStringRawBuffer"
+    ],
+    "matched_strings": [],
+    "name": "?CreateMrtUri@Localization@StateRepository@@YAJPEAUHSTRING__@@PEAPEAUIUriRuntimeClass@Foundation@Windows@@@Z",
+    "prototype": "int __fastcall(StateRepository::Localization *this, const unsigned __int16 *, struct Windows::Foundation::IUriRuntimeClass **)",
+    "rank_score": 218,
+    "size": 33,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil::details::static_lazy<StateRepository::Tracing::Broker>::get(void (*)(void))",
+    "ea": "0x18000687c",
+    "function_file": "functions/18000687c_wil_details_static_lazy_StateRepository_Tracing_Broker_get_void_void.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-2-0!InitOnceBeginInitialize"
+    ],
+    "matched_strings": [],
+    "name": "?get@?$static_lazy@VBroker@Tracing@StateRepository@@@details@wil@@QEAAPEAVBroker@Tracing@StateRepository@@P6AXXZ@Z",
+    "prototype": "__int64 *__fastcall(__int64, void (__cdecl *)())",
+    "rank_score": 215,
+    "size": 186,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "Microsoft::WRL::Module<1,Microsoft::WRL::Details::DefaultModule<1>>::Create(void)",
+    "ea": "0x180004620",
+    "function_file": "functions/180004620_Microsoft_WRL_Module_1_Microsoft_WRL_Details_DefaultModule_1_Create_void.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-2-0!InitOnceExecuteOnce"
+    ],
+    "matched_strings": [],
+    "name": "?Create@?$Module@$00V?$DefaultModule@$00@Details@WRL@Microsoft@@@WRL@Microsoft@@SAAEAV?$DefaultModule@$00@Details@23@XZ",
+    "prototype": "__int64 *()",
+    "rank_score": 214,
+    "size": 49,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 13,
+    "demangled": "StateRepository::Localization::CreateMrtString(HSTRING__ *,HSTRING__ * *)",
+    "ea": "0x180009d58",
+    "function_file": "functions/180009d58_StateRepository_Localization_CreateMrtString_HSTRING_HSTRING.md",
+    "matched_imports": [
+      "api-ms-win-core-winrt-string-l1-1-0!WindowsGetStringRawBuffer"
+    ],
+    "matched_strings": [],
+    "name": "?CreateMrtString@Localization@StateRepository@@YAJPEAUHSTRING__@@PEAPEAU3@@Z",
+    "prototype": "int __fastcall(StateRepository::Localization *this, const unsigned __int16 *, HSTRING *)",
+    "rank_score": 214,
+    "size": 33,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 13,
+    "demangled": "StateRepository::Localization::TryCreateMrtRandomAccessStreamReference(HSTRING__ *,Windows::Foundation::Size,Windows::Storage::Streams::IRandomAccessStreamReference * *)",
+    "ea": "0x18000a510",
+    "function_file": "functions/18000a510_StateRepository_Localization_TryCreateMrtRandomAccessStreamReference_HSTRING_Windows_Foundation_Size_Windows_S.md",
+    "matched_imports": [
+      "api-ms-win-core-winrt-string-l1-1-0!WindowsGetStringRawBuffer"
+    ],
+    "matched_strings": [],
+    "name": "?TryCreateMrtRandomAccessStreamReference@Localization@StateRepository@@YAJPEAUHSTRING__@@USize@Foundation@Windows@@PEAPEAUIRandomAccessStreamReference@Streams@Storage@6@@Z",
+    "prototype": "__int64 __fastcall(HSTRING, __int64, _QWORD *)",
+    "rank_score": 214,
+    "size": 53,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Microsoft::WRL::Module<1,Microsoft::WRL::Details::DefaultModule<1>>::UnregisterCOMObject(ushort const *,ulong *,uint)",
+    "ea": "0x180004ff0",
+    "function_file": "functions/180004ff0_Microsoft_WRL_Module_1_Microsoft_WRL_Details_DefaultModule_1_UnregisterCOMObject_ushort_const_ulong_uint.md",
+    "matched_imports": [
+      "api-ms-win-core-winrt-error-l1-1-0!RoOriginateError"
+    ],
+    "matched_strings": [],
+    "name": "?UnregisterCOMObject@?$Module@$00V?$DefaultModule@$00@Details@WRL@Microsoft@@@WRL@Microsoft@@UEAAJPEBGPEAKI@Z",
+    "prototype": "__int64()",
+    "rank_score": 210,
+    "size": 27,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "Windows::Internal::String::~String(void)",
+    "ea": "0x180006f34",
+    "function_file": "functions/180006f34_Windows_Internal_String_String_void.md",
+    "matched_imports": [
+      "api-ms-win-core-winrt-string-l1-1-0!WindowsDeleteString"
+    ],
+    "matched_strings": [],
+    "name": "??1String@Internal@Windows@@QEAA@XZ",
+    "prototype": "void __fastcall(HSTRING *this)",
+    "rank_score": 205,
+    "size": 23,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "_tlgWriteTransfer_EventWriteTransfer",
+    "ea": "0x180001858",
+    "function_file": "functions/180001858_tlgWriteTransfer_EventWriteTransfer.md",
+    "matched_imports": [
+      "api-ms-win-eventing-provider-l1-1-0!EventWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "_tlgWriteTransfer_EventWriteTransfer",
+    "prototype": "ULONG __fastcall(__int64, unsigned __int8 *, const GUID *, const GUID *, ULONG UserDataCount, PEVENT_DATA_DESCRIPTOR UserData)",
+    "rank_score": 204,
+    "size": 151,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::AppInfoFactoryBrokerServer::GetRuntimeClassName(HSTRING__ * *)",
+    "ea": "0x180004f30",
+    "function_file": "functions/180004f30_Windows_Internal_StateRepository_AppInfoFactoryBrokerServer_GetRuntimeClassName_HSTRING.md",
+    "matched_imports": [
+      "api-ms-win-core-winrt-string-l1-1-0!WindowsCreateString"
+    ],
+    "matched_strings": [
+      "Windows.Internal.StateRepository.AppInfoFactoryBroker"
+    ],
+    "name": "?GetRuntimeClassName@AppInfoFactoryBrokerServer@StateRepository@Internal@Windows@@UEAAJPEAPEAUHSTRING__@@@Z",
+    "prototype": "HRESULT __fastcall(Windows::Internal::StateRepository::AppInfoFactoryBrokerServer *this, HSTRING *)",
+    "rank_score": 150,
+    "size": 29,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "DllCanUnloadNow",
+    "ea": "0x180006b00",
+    "function_file": "functions/180006b00_DllCanUnloadNow.md",
+    "matched_imports": [
+      "RPCRT4!NdrDllCanUnloadNow"
+    ],
+    "matched_strings": [],
+    "name": "DllCanUnloadNow",
+    "prototype": "HRESULT __stdcall()",
+    "rank_score": 123,
+    "size": 59,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil::details::static_lazy<StateRepository::Tracing::Broker>::Completer::~Completer(void)",
+    "ea": "0x180003f8c",
+    "function_file": "functions/180003f8c_wil_details_static_lazy_StateRepository_Tracing_Broker_Completer_Completer_void.md",
+    "matched_imports": [
+      "api-ms-win-core-synch-l1-2-0!InitOnceComplete"
+    ],
+    "matched_strings": [],
+    "name": "??1Completer@?$static_lazy@VBroker@Tracing@StateRepository@@@details@wil@@QEAA@XZ",
+    "prototype": "BOOL __fastcall(_DWORD *)",
+    "rank_score": 114,
+    "size": 90,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_WindowsCreateString",
+    "ea": "0x1800029e5",
+    "function_file": "functions/1800029e5_imp_load_WindowsCreateString.md",
+    "matched_imports": [
+      "api-ms-win-core-winrt-string-l1-1-0!WindowsCreateString"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_WindowsCreateString",
+    "prototype": "__int64()",
+    "rank_score": 111,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_WindowsCreateStringReference",
+    "ea": "0x180002c1d",
+    "function_file": "functions/180002c1d_imp_load_WindowsCreateStringReference.md",
+    "matched_imports": [
+      "api-ms-win-core-winrt-string-l1-1-0!WindowsCreateStringReference"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_WindowsCreateStringReference",
+    "prototype": "__int64()",
+    "rank_score": 111,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "__imp_load_WindowsDeleteString",
+    "ea": "0x180002c0b",
+    "function_file": "functions/180002c0b_imp_load_WindowsDeleteString.md",
+    "matched_imports": [
+      "api-ms-win-core-winrt-string-l1-1-0!WindowsDeleteString"
+    ],
+    "matched_strings": [],
+    "name": "__imp_load_WindowsDeleteString",
+    "prototype": "__int64()",
+    "rank_score": 111,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_o___stdio_common_vswprintf_0",
+    "ea": "0x18000282a",
+    "function_file": "functions/18000282a_o_stdio_common_vswprintf_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o___stdio_common_vswprintf"
+    ],
+    "matched_strings": [],
+    "name": "_o___stdio_common_vswprintf_0",
+    "prototype": "int __cdecl(unsigned __int64 Options, wchar_t *Buffer, size_t BufferCount, const wchar_t *Format, _locale_t Locale, va_list ArgList)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_o__configure_narrow_argv_0",
+    "ea": "0x18000284e",
+    "function_file": "functions/18000284e_o_configure_narrow_argv_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o__configure_narrow_argv"
+    ],
+    "matched_strings": [],
+    "name": "_o__configure_narrow_argv_0",
+    "prototype": "errno_t __cdecl(_crt_argv_mode mode)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_o__seh_filter_dll_0",
+    "ea": "0x1800028b8",
+    "function_file": "functions/1800028b8_o_seh_filter_dll_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o__seh_filter_dll"
+    ],
+    "matched_strings": [],
+    "name": "_o__seh_filter_dll_0",
+    "prototype": "int __cdecl(unsigned int ExceptionNum, struct _EXCEPTION_POINTERS *ExceptionPtr)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 8,
+    "demangled": "memset_0",
+    "ea": "0x180002900",
+    "function_file": "functions/180002900_memset_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-string-l1-1-0!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 108,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "StateRepository::Localization::TryCreateMrtRandomAccessStreamReference(ushort const *,Windows::Foundation::Size,Windows::Storage::Streams::IRandomAccessStreamReference * *)",
+    "ea": "0x18000a54c",
+    "function_file": "functions/18000a54c_StateRepository_Localization_TryCreateMrtRandomAccessStreamReference_ushort_const_Windows_Foundation_Size_Wind.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\localize.cpp",
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\localize.cpp"
+    ],
+    "name": "?TryCreateMrtRandomAccessStreamReference@Localization@StateRepository@@YAJPEBGUSize@Foundation@Windows@@PEAPEAUIRandomAccessStreamReference@Streams@Storage@5@@Z",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, __int64, _QWORD *)",
+    "rank_score": 107,
+    "size": 201,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "_CxxThrowException_0",
+    "ea": "0x18000290c",
+    "function_file": "functions/18000290c_CxxThrowException_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_CxxThrowException"
+    ],
+    "matched_strings": [],
+    "name": "_CxxThrowException_0",
+    "prototype": "void __stdcall __noreturn(void *pExceptionObject, _ThrowInfo *pThrowInfo)",
+    "rank_score": 104,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "_o___std_exception_destroy_0",
+    "ea": "0x180002812",
+    "function_file": "functions/180002812_o_std_exception_destroy_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o___std_exception_destroy"
+    ],
+    "matched_strings": [],
+    "name": "_o___std_exception_destroy_0",
+    "prototype": "__int64()",
+    "rank_score": 104,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "_o___std_exception_copy_0",
+    "ea": "0x180002806",
+    "function_file": "functions/180002806_o_std_exception_copy_0.md",
+    "matched_imports": [
+      "api-ms-win-crt-private-l1-1-0!_o___std_exception_copy"
+    ],
+    "matched_strings": [],
+    "name": "_o___std_exception_copy_0",
+    "prototype": "__int64()",
+    "rank_score": 103,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::ApplicationResourceResolverServer::GetRuntimeClassName(HSTRING__ * *)",
+    "ea": "0x180007180",
+    "function_file": "functions/180007180_Windows_Internal_StateRepository_ApplicationResourceResolverServer_GetRuntimeClassName_HSTRING.md",
+    "matched_imports": [
+      "api-ms-win-core-winrt-string-l1-1-0!WindowsCreateString"
+    ],
+    "matched_strings": [],
+    "name": "?GetRuntimeClassName@ApplicationResourceResolverServer@StateRepository@Internal@Windows@@UEAAJPEAPEAUHSTRING__@@@Z",
+    "prototype": "HRESULT __fastcall(Windows::Internal::StateRepository::ApplicationResourceResolverServer *this, HSTRING *)",
+    "rank_score": 100,
+    "size": 29,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::PackageResourceResolverServer::GetRuntimeClassName(HSTRING__ * *)",
+    "ea": "0x1800076f0",
+    "function_file": "functions/1800076f0_Windows_Internal_StateRepository_PackageResourceResolverServer_GetRuntimeClassName_HSTRING.md",
+    "matched_imports": [
+      "api-ms-win-core-winrt-string-l1-1-0!WindowsCreateString"
+    ],
+    "matched_strings": [],
+    "name": "?GetRuntimeClassName@PackageResourceResolverServer@StateRepository@Internal@Windows@@UEAAJPEAPEAUHSTRING__@@@Z",
+    "prototype": "HRESULT __fastcall(Windows::Internal::StateRepository::PackageResourceResolverServer *this, HSTRING *)",
+    "rank_score": 100,
+    "size": 29,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "StateRepository::Localization::CreateMrtUri(ushort const *,Windows::Foundation::IUriRuntimeClass * *)",
+    "ea": "0x180009f2c",
+    "function_file": "functions/180009f2c_StateRepository_Localization_CreateMrtUri_ushort_const_Windows_Foundation_IUriRuntimeClass.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\localize.cpp",
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\localize.cpp"
+    ],
+    "name": "?CreateMrtUri@Localization@StateRepository@@YAJPEBGPEAPEAUIUriRuntimeClass@Foundation@Windows@@@Z",
+    "prototype": "__int64 __fastcall(StateRepository::Localization *this, unsigned __int16 *, HSTRING *)",
+    "rank_score": 97,
+    "size": 140,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::ApplicationResourceResolverFactoryServer::Create(Windows::Internal::StateRepository::IApplication *,Windows::Internal::StateRepository::IApplicationResourceResolver * *)",
+    "ea": "0x180007030",
+    "function_file": "functions/180007030_Windows_Internal_StateRepository_ApplicationResourceResolverFactoryServer_Create_Windows_Internal_StateReposit.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolverfactory.cpp",
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolverfactory.cpp"
+    ],
+    "name": "?Create@ApplicationResourceResolverFactoryServer@StateRepository@Internal@Windows@@UEAAJPEAUIApplication@234@PEAPEAUIApplicationResourceResolver@234@@Z",
+    "prototype": "__int64 __fastcall(Windows::Internal::StateRepository::ApplicationResourceResolverFactoryServer *this, struct Windows::Internal::StateRepository::IApplication *, struct Windows::Internal::StateRepository::IApplicationResourceResolver **)",
+    "rank_score": 95,
+    "size": 181,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::PackageResourceResolverFactoryServer::Create(Windows::Internal::StateRepository::IPackage *,Windows::Internal::StateRepository::IPackageResourceResolver * *)",
+    "ea": "0x1800075a0",
+    "function_file": "functions/1800075a0_Windows_Internal_StateRepository_PackageResourceResolverFactoryServer_Create_Windows_Internal_StateRepository_.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.packageresourceresolverfactory.cpp",
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.packageresourceresolverfactory.cpp"
+    ],
+    "name": "?Create@PackageResourceResolverFactoryServer@StateRepository@Internal@Windows@@UEAAJPEAUIPackage@234@PEAPEAUIPackageResourceResolver@234@@Z",
+    "prototype": "__int64 __fastcall(Windows::Internal::StateRepository::PackageResourceResolverFactoryServer *this, struct Windows::Internal::StateRepository::IPackage *, struct Windows::Internal::StateRepository::IPackageResourceResolver **)",
+    "rank_score": 95,
+    "size": 181,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::ApplicationResourceResolverServer::GetSplashScreenImageLocalizedAsRandomAccessStreamReference(Windows::Foundation::Size,Windows::Storage::Streams::IRandomAccessStreamReference * *)",
+    "ea": "0x180008390",
+    "function_file": "functions/180008390_Windows_Internal_StateRepository_ApplicationResourceResolverServer_GetSplashScreenImageLocalizedAsRandomAccess.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolver.cpp",
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolver.cpp"
+    ],
+    "name": "?GetSplashScreenImageLocalizedAsRandomAccessStreamReference@ApplicationResourceResolverServer@StateRepository@Internal@Windows@@UEAAJUSize@Foundation@4@PEAPEAUIRandomAccessStreamReference@Streams@Storage@4@@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, _QWORD *)",
+    "rank_score": 94,
+    "size": 134,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::ApplicationResourceResolverServer::GetSquare150x150LogoLocalizedAsRandomAccessStreamReference(Windows::Foundation::Size,Windows::Storage::Streams::IRandomAccessStreamReference * *)",
+    "ea": "0x1800084e0",
+    "function_file": "functions/1800084e0_Windows_Internal_StateRepository_ApplicationResourceResolverServer_GetSquare150x150LogoLocalizedAsRandomAccess.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolver.cpp",
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolver.cpp"
+    ],
+    "name": "?GetSquare150x150LogoLocalizedAsRandomAccessStreamReference@ApplicationResourceResolverServer@StateRepository@Internal@Windows@@UEAAJUSize@Foundation@4@PEAPEAUIRandomAccessStreamReference@Streams@Storage@4@@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, _QWORD *)",
+    "rank_score": 94,
+    "size": 133,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::ApplicationResourceResolverServer::GetSquare310x310LogoLocalizedAsRandomAccessStreamReference(Windows::Foundation::Size,Windows::Storage::Streams::IRandomAccessStreamReference * *)",
+    "ea": "0x180008630",
+    "function_file": "functions/180008630_Windows_Internal_StateRepository_ApplicationResourceResolverServer_GetSquare310x310LogoLocalizedAsRandomAccess.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolver.cpp",
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolver.cpp"
+    ],
+    "name": "?GetSquare310x310LogoLocalizedAsRandomAccessStreamReference@ApplicationResourceResolverServer@StateRepository@Internal@Windows@@UEAAJUSize@Foundation@4@PEAPEAUIRandomAccessStreamReference@Streams@Storage@4@@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, _QWORD *)",
+    "rank_score": 94,
+    "size": 134,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::ApplicationResourceResolverServer::GetSquare44x44LogoLocalizedAsRandomAccessStreamReference(Windows::Foundation::Size,Windows::Storage::Streams::IRandomAccessStreamReference * *)",
+    "ea": "0x180008780",
+    "function_file": "functions/180008780_Windows_Internal_StateRepository_ApplicationResourceResolverServer_GetSquare44x44LogoLocalizedAsRandomAccessSt.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolver.cpp",
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolver.cpp"
+    ],
+    "name": "?GetSquare44x44LogoLocalizedAsRandomAccessStreamReference@ApplicationResourceResolverServer@StateRepository@Internal@Windows@@UEAAJUSize@Foundation@4@PEAPEAUIRandomAccessStreamReference@Streams@Storage@4@@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, _QWORD *)",
+    "rank_score": 94,
+    "size": 134,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::ApplicationResourceResolverServer::GetSquare71x71LogoLocalizedAsRandomAccessStreamReference(Windows::Foundation::Size,Windows::Storage::Streams::IRandomAccessStreamReference * *)",
+    "ea": "0x1800088d0",
+    "function_file": "functions/1800088d0_Windows_Internal_StateRepository_ApplicationResourceResolverServer_GetSquare71x71LogoLocalizedAsRandomAccessSt.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolver.cpp",
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolver.cpp"
+    ],
+    "name": "?GetSquare71x71LogoLocalizedAsRandomAccessStreamReference@ApplicationResourceResolverServer@StateRepository@Internal@Windows@@UEAAJUSize@Foundation@4@PEAPEAUIRandomAccessStreamReference@Streams@Storage@4@@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, _QWORD *)",
+    "rank_score": 94,
+    "size": 134,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::ApplicationResourceResolverServer::GetWide310x150LogoLocalizedAsRandomAccessStreamReference(Windows::Foundation::Size,Windows::Storage::Streams::IRandomAccessStreamReference * *)",
+    "ea": "0x180008a80",
+    "function_file": "functions/180008a80_Windows_Internal_StateRepository_ApplicationResourceResolverServer_GetWide310x150LogoLocalizedAsRandomAccessSt.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolver.cpp",
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolver.cpp"
+    ],
+    "name": "?GetWide310x150LogoLocalizedAsRandomAccessStreamReference@ApplicationResourceResolverServer@StateRepository@Internal@Windows@@UEAAJUSize@Foundation@4@PEAPEAUIRandomAccessStreamReference@Streams@Storage@4@@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, _QWORD *)",
+    "rank_score": 94,
+    "size": 134,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::PackageResourceResolverServer::GetLogoLocalizedAsRandomAccessStreamReference(Windows::Foundation::Size,Windows::Storage::Streams::IRandomAccessStreamReference * *)",
+    "ea": "0x180009160",
+    "function_file": "functions/180009160_Windows_Internal_StateRepository_PackageResourceResolverServer_GetLogoLocalizedAsRandomAccessStreamReference_W.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.packageresourceresolver.cpp",
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.packageresourceresolver.cpp"
+    ],
+    "name": "?GetLogoLocalizedAsRandomAccessStreamReference@PackageResourceResolverServer@StateRepository@Internal@Windows@@UEAAJUSize@Foundation@4@PEAPEAUIRandomAccessStreamReference@Streams@Storage@4@@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, _QWORD *)",
+    "rank_score": 94,
+    "size": 133,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Windows::Internal::StateRepository::AppInfoFactoryBrokerServer::HasPackageQueryOrPackageManagmentCapability(void)",
+    "ea": "0x1800080cc",
+    "function_file": "functions/1800080cc_Windows_Internal_StateRepository_AppInfoFactoryBrokerServer_HasPackageQueryOrPackageManagmentCapability_void.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.appinfofactorybroker.cpp"
+    ],
+    "name": "?HasPackageQueryOrPackageManagmentCapability@AppInfoFactoryBrokerServer@StateRepository@Internal@Windows@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(Windows::Internal::StateRepository::AppInfoFactoryBrokerServer *this, __int64, __int64, bool *)",
+    "rank_score": 55,
+    "size": 142,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::ApplicationResourceResolverServer::GetDescriptionLocalized(HSTRING__ * *)",
+    "ea": "0x180008270",
+    "function_file": "functions/180008270_Windows_Internal_StateRepository_ApplicationResourceResolverServer_GetDescriptionLocalized_HSTRING.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolver.cpp"
+    ],
+    "name": "?GetDescriptionLocalized@ApplicationResourceResolverServer@StateRepository@Internal@Windows@@UEAAJPEAPEAUHSTRING__@@@Z",
+    "prototype": "__int64 __fastcall(StateRepository::Localization **this, HSTRING *, HSTRING *)",
+    "rank_score": 53,
+    "size": 82,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::ApplicationResourceResolverServer::GetDisplayNameLocalized(HSTRING__ * *)",
+    "ea": "0x1800082d0",
+    "function_file": "functions/1800082d0_Windows_Internal_StateRepository_ApplicationResourceResolverServer_GetDisplayNameLocalized_HSTRING.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolver.cpp"
+    ],
+    "name": "?GetDisplayNameLocalized@ApplicationResourceResolverServer@StateRepository@Internal@Windows@@UEAAJPEAPEAUHSTRING__@@@Z",
+    "prototype": "__int64 __fastcall(StateRepository::Localization **this, HSTRING *, HSTRING *)",
+    "rank_score": 53,
+    "size": 82,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::ApplicationResourceResolverServer::GetSplashScreenImageLocalized(HSTRING__ * *)",
+    "ea": "0x180008330",
+    "function_file": "functions/180008330_Windows_Internal_StateRepository_ApplicationResourceResolverServer_GetSplashScreenImageLocalized_HSTRING.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolver.cpp"
+    ],
+    "name": "?GetSplashScreenImageLocalized@ApplicationResourceResolverServer@StateRepository@Internal@Windows@@UEAAJPEAPEAUHSTRING__@@@Z",
+    "prototype": "__int64 __fastcall(StateRepository::Localization **this, HSTRING *, HSTRING *)",
+    "rank_score": 53,
+    "size": 82,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::ApplicationResourceResolverServer::GetSplashScreenImageLocalizedAsUri(Windows::Foundation::IUriRuntimeClass * *)",
+    "ea": "0x180008420",
+    "function_file": "functions/180008420_Windows_Internal_StateRepository_ApplicationResourceResolverServer_GetSplashScreenImageLocalizedAsUri_Windows_.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolver.cpp"
+    ],
+    "name": "?GetSplashScreenImageLocalizedAsUri@ApplicationResourceResolverServer@StateRepository@Internal@Windows@@UEAAJPEAPEAUIUriRuntimeClass@Foundation@4@@Z",
+    "prototype": "__int64 __fastcall(StateRepository::Localization **this, struct Windows::Foundation::IUriRuntimeClass **, struct Windows::Foundation::IUriRuntimeClass **)",
+    "rank_score": 53,
+    "size": 82,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::ApplicationResourceResolverServer::GetSquare150x150LogoLocalized(HSTRING__ * *)",
+    "ea": "0x180008480",
+    "function_file": "functions/180008480_Windows_Internal_StateRepository_ApplicationResourceResolverServer_GetSquare150x150LogoLocalized_HSTRING.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolver.cpp"
+    ],
+    "name": "?GetSquare150x150LogoLocalized@ApplicationResourceResolverServer@StateRepository@Internal@Windows@@UEAAJPEAPEAUHSTRING__@@@Z",
+    "prototype": "__int64 __fastcall(StateRepository::Localization **this, HSTRING *, HSTRING *)",
+    "rank_score": 53,
+    "size": 82,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::ApplicationResourceResolverServer::GetSquare150x150LogoLocalizedAsUri(Windows::Foundation::IUriRuntimeClass * *)",
+    "ea": "0x180008570",
+    "function_file": "functions/180008570_Windows_Internal_StateRepository_ApplicationResourceResolverServer_GetSquare150x150LogoLocalizedAsUri_Windows_.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolver.cpp"
+    ],
+    "name": "?GetSquare150x150LogoLocalizedAsUri@ApplicationResourceResolverServer@StateRepository@Internal@Windows@@UEAAJPEAPEAUIUriRuntimeClass@Foundation@4@@Z",
+    "prototype": "__int64 __fastcall(StateRepository::Localization **this, struct Windows::Foundation::IUriRuntimeClass **, struct Windows::Foundation::IUriRuntimeClass **)",
+    "rank_score": 53,
+    "size": 82,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::ApplicationResourceResolverServer::GetSquare310x310LogoLocalized(HSTRING__ * *)",
+    "ea": "0x1800085d0",
+    "function_file": "functions/1800085d0_Windows_Internal_StateRepository_ApplicationResourceResolverServer_GetSquare310x310LogoLocalized_HSTRING.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolver.cpp"
+    ],
+    "name": "?GetSquare310x310LogoLocalized@ApplicationResourceResolverServer@StateRepository@Internal@Windows@@UEAAJPEAPEAUHSTRING__@@@Z",
+    "prototype": "__int64 __fastcall(StateRepository::Localization **this, HSTRING *, HSTRING *)",
+    "rank_score": 53,
+    "size": 82,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::ApplicationResourceResolverServer::GetSquare310x310LogoLocalizedAsUri(Windows::Foundation::IUriRuntimeClass * *)",
+    "ea": "0x1800086c0",
+    "function_file": "functions/1800086c0_Windows_Internal_StateRepository_ApplicationResourceResolverServer_GetSquare310x310LogoLocalizedAsUri_Windows_.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolver.cpp"
+    ],
+    "name": "?GetSquare310x310LogoLocalizedAsUri@ApplicationResourceResolverServer@StateRepository@Internal@Windows@@UEAAJPEAPEAUIUriRuntimeClass@Foundation@4@@Z",
+    "prototype": "__int64 __fastcall(StateRepository::Localization **this, struct Windows::Foundation::IUriRuntimeClass **, struct Windows::Foundation::IUriRuntimeClass **)",
+    "rank_score": 53,
+    "size": 82,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::ApplicationResourceResolverServer::GetSquare44x44LogoLocalized(HSTRING__ * *)",
+    "ea": "0x180008720",
+    "function_file": "functions/180008720_Windows_Internal_StateRepository_ApplicationResourceResolverServer_GetSquare44x44LogoLocalized_HSTRING.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolver.cpp"
+    ],
+    "name": "?GetSquare44x44LogoLocalized@ApplicationResourceResolverServer@StateRepository@Internal@Windows@@UEAAJPEAPEAUHSTRING__@@@Z",
+    "prototype": "__int64 __fastcall(StateRepository::Localization **this, HSTRING *, HSTRING *)",
+    "rank_score": 53,
+    "size": 82,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::ApplicationResourceResolverServer::GetSquare44x44LogoLocalizedAsUri(Windows::Foundation::IUriRuntimeClass * *)",
+    "ea": "0x180008810",
+    "function_file": "functions/180008810_Windows_Internal_StateRepository_ApplicationResourceResolverServer_GetSquare44x44LogoLocalizedAsUri_Windows_Fo.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolver.cpp"
+    ],
+    "name": "?GetSquare44x44LogoLocalizedAsUri@ApplicationResourceResolverServer@StateRepository@Internal@Windows@@UEAAJPEAPEAUIUriRuntimeClass@Foundation@4@@Z",
+    "prototype": "__int64 __fastcall(StateRepository::Localization **this, struct Windows::Foundation::IUriRuntimeClass **, struct Windows::Foundation::IUriRuntimeClass **)",
+    "rank_score": 53,
+    "size": 82,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::ApplicationResourceResolverServer::GetSquare71x71LogoLocalized(HSTRING__ * *)",
+    "ea": "0x180008870",
+    "function_file": "functions/180008870_Windows_Internal_StateRepository_ApplicationResourceResolverServer_GetSquare71x71LogoLocalized_HSTRING.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolver.cpp"
+    ],
+    "name": "?GetSquare71x71LogoLocalized@ApplicationResourceResolverServer@StateRepository@Internal@Windows@@UEAAJPEAPEAUHSTRING__@@@Z",
+    "prototype": "__int64 __fastcall(StateRepository::Localization **this, HSTRING *, HSTRING *)",
+    "rank_score": 53,
+    "size": 82,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::ApplicationResourceResolverServer::GetSquare71x71LogoLocalizedAsUri(Windows::Foundation::IUriRuntimeClass * *)",
+    "ea": "0x180008960",
+    "function_file": "functions/180008960_Windows_Internal_StateRepository_ApplicationResourceResolverServer_GetSquare71x71LogoLocalizedAsUri_Windows_Fo.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolver.cpp"
+    ],
+    "name": "?GetSquare71x71LogoLocalizedAsUri@ApplicationResourceResolverServer@StateRepository@Internal@Windows@@UEAAJPEAPEAUIUriRuntimeClass@Foundation@4@@Z",
+    "prototype": "__int64 __fastcall(StateRepository::Localization **this, struct Windows::Foundation::IUriRuntimeClass **, struct Windows::Foundation::IUriRuntimeClass **)",
+    "rank_score": 53,
+    "size": 82,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::ApplicationResourceResolverServer::GetVisualGroupLocalized(HSTRING__ * *)",
+    "ea": "0x1800089c0",
+    "function_file": "functions/1800089c0_Windows_Internal_StateRepository_ApplicationResourceResolverServer_GetVisualGroupLocalized_HSTRING.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolver.cpp"
+    ],
+    "name": "?GetVisualGroupLocalized@ApplicationResourceResolverServer@StateRepository@Internal@Windows@@UEAAJPEAPEAUHSTRING__@@@Z",
+    "prototype": "__int64 __fastcall(StateRepository::Localization **this, HSTRING *, HSTRING *)",
+    "rank_score": 53,
+    "size": 85,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::ApplicationResourceResolverServer::GetWide310x150LogoLocalized(HSTRING__ * *)",
+    "ea": "0x180008a20",
+    "function_file": "functions/180008a20_Windows_Internal_StateRepository_ApplicationResourceResolverServer_GetWide310x150LogoLocalized_HSTRING.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolver.cpp"
+    ],
+    "name": "?GetWide310x150LogoLocalized@ApplicationResourceResolverServer@StateRepository@Internal@Windows@@UEAAJPEAPEAUHSTRING__@@@Z",
+    "prototype": "__int64 __fastcall(StateRepository::Localization **this, HSTRING *, HSTRING *)",
+    "rank_score": 53,
+    "size": 82,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::ApplicationResourceResolverServer::GetWide310x150LogoLocalizedAsUri(Windows::Foundation::IUriRuntimeClass * *)",
+    "ea": "0x180008b10",
+    "function_file": "functions/180008b10_Windows_Internal_StateRepository_ApplicationResourceResolverServer_GetWide310x150LogoLocalizedAsUri_Windows_Fo.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolver.cpp"
+    ],
+    "name": "?GetWide310x150LogoLocalizedAsUri@ApplicationResourceResolverServer@StateRepository@Internal@Windows@@UEAAJPEAPEAUIUriRuntimeClass@Foundation@4@@Z",
+    "prototype": "__int64 __fastcall(StateRepository::Localization **this, struct Windows::Foundation::IUriRuntimeClass **, struct Windows::Foundation::IUriRuntimeClass **)",
+    "rank_score": 53,
+    "size": 82,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::ApplicationResourceResolverServer::TryGetSplashScreenImageLocalizedAsRandomAccessStreamReference(Windows::Foundation::Size,Windows::Storage::Streams::IRandomAccessStreamReference * *)",
+    "ea": "0x180008e00",
+    "function_file": "functions/180008e00_Windows_Internal_StateRepository_ApplicationResourceResolverServer_TryGetSplashScreenImageLocalizedAsRandomAcc.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolver.cpp"
+    ],
+    "name": "?TryGetSplashScreenImageLocalizedAsRandomAccessStreamReference@ApplicationResourceResolverServer@StateRepository@Internal@Windows@@UEAAJUSize@Foundation@4@PEAPEAUIRandomAccessStreamReference@Streams@Storage@4@@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, _QWORD *)",
+    "rank_score": 53,
+    "size": 82,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::ApplicationResourceResolverServer::TryGetSquare150x150LogoLocalizedAsRandomAccessStreamReference(Windows::Foundation::Size,Windows::Storage::Streams::IRandomAccessStreamReference * *)",
+    "ea": "0x180008e60",
+    "function_file": "functions/180008e60_Windows_Internal_StateRepository_ApplicationResourceResolverServer_TryGetSquare150x150LogoLocalizedAsRandomAcc.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolver.cpp"
+    ],
+    "name": "?TryGetSquare150x150LogoLocalizedAsRandomAccessStreamReference@ApplicationResourceResolverServer@StateRepository@Internal@Windows@@UEAAJUSize@Foundation@4@PEAPEAUIRandomAccessStreamReference@Streams@Storage@4@@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, _QWORD *)",
+    "rank_score": 53,
+    "size": 81,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::ApplicationResourceResolverServer::TryGetSquare310x310LogoLocalizedAsRandomAccessStreamReference(Windows::Foundation::Size,Windows::Storage::Streams::IRandomAccessStreamReference * *)",
+    "ea": "0x180008ec0",
+    "function_file": "functions/180008ec0_Windows_Internal_StateRepository_ApplicationResourceResolverServer_TryGetSquare310x310LogoLocalizedAsRandomAcc.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolver.cpp"
+    ],
+    "name": "?TryGetSquare310x310LogoLocalizedAsRandomAccessStreamReference@ApplicationResourceResolverServer@StateRepository@Internal@Windows@@UEAAJUSize@Foundation@4@PEAPEAUIRandomAccessStreamReference@Streams@Storage@4@@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, _QWORD *)",
+    "rank_score": 53,
+    "size": 82,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::ApplicationResourceResolverServer::TryGetSquare44x44LogoLocalizedAsRandomAccessStreamReference(Windows::Foundation::Size,Windows::Storage::Streams::IRandomAccessStreamReference * *)",
+    "ea": "0x180008f20",
+    "function_file": "functions/180008f20_Windows_Internal_StateRepository_ApplicationResourceResolverServer_TryGetSquare44x44LogoLocalizedAsRandomAcces.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolver.cpp"
+    ],
+    "name": "?TryGetSquare44x44LogoLocalizedAsRandomAccessStreamReference@ApplicationResourceResolverServer@StateRepository@Internal@Windows@@UEAAJUSize@Foundation@4@PEAPEAUIRandomAccessStreamReference@Streams@Storage@4@@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, _QWORD *)",
+    "rank_score": 53,
+    "size": 82,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::ApplicationResourceResolverServer::TryGetSquare71x71LogoLocalizedAsRandomAccessStreamReference(Windows::Foundation::Size,Windows::Storage::Streams::IRandomAccessStreamReference * *)",
+    "ea": "0x180008f80",
+    "function_file": "functions/180008f80_Windows_Internal_StateRepository_ApplicationResourceResolverServer_TryGetSquare71x71LogoLocalizedAsRandomAcces.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolver.cpp"
+    ],
+    "name": "?TryGetSquare71x71LogoLocalizedAsRandomAccessStreamReference@ApplicationResourceResolverServer@StateRepository@Internal@Windows@@UEAAJUSize@Foundation@4@PEAPEAUIRandomAccessStreamReference@Streams@Storage@4@@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, _QWORD *)",
+    "rank_score": 53,
+    "size": 82,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::ApplicationResourceResolverServer::TryGetWide310x150LogoLocalizedAsRandomAccessStreamReference(Windows::Foundation::Size,Windows::Storage::Streams::IRandomAccessStreamReference * *)",
+    "ea": "0x180008fe0",
+    "function_file": "functions/180008fe0_Windows_Internal_StateRepository_ApplicationResourceResolverServer_TryGetWide310x150LogoLocalizedAsRandomAcces.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolver.cpp"
+    ],
+    "name": "?TryGetWide310x150LogoLocalizedAsRandomAccessStreamReference@ApplicationResourceResolverServer@StateRepository@Internal@Windows@@UEAAJUSize@Foundation@4@PEAPEAUIRandomAccessStreamReference@Streams@Storage@4@@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, _QWORD *)",
+    "rank_score": 53,
+    "size": 82,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::PackageResourceResolverServer::GetDescriptionLocalized(HSTRING__ * *)",
+    "ea": "0x180009040",
+    "function_file": "functions/180009040_Windows_Internal_StateRepository_PackageResourceResolverServer_GetDescriptionLocalized_HSTRING.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.packageresourceresolver.cpp"
+    ],
+    "name": "?GetDescriptionLocalized@PackageResourceResolverServer@StateRepository@Internal@Windows@@UEAAJPEAPEAUHSTRING__@@@Z",
+    "prototype": "__int64 __fastcall(StateRepository::Localization **this, HSTRING *, HSTRING *)",
+    "rank_score": 53,
+    "size": 82,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::PackageResourceResolverServer::GetDisplayNameLocalized(HSTRING__ * *)",
+    "ea": "0x1800090a0",
+    "function_file": "functions/1800090a0_Windows_Internal_StateRepository_PackageResourceResolverServer_GetDisplayNameLocalized_HSTRING.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.packageresourceresolver.cpp"
+    ],
+    "name": "?GetDisplayNameLocalized@PackageResourceResolverServer@StateRepository@Internal@Windows@@UEAAJPEAPEAUHSTRING__@@@Z",
+    "prototype": "__int64 __fastcall(StateRepository::Localization **this, HSTRING *, HSTRING *)",
+    "rank_score": 53,
+    "size": 82,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::PackageResourceResolverServer::GetLogoLocalized(HSTRING__ * *)",
+    "ea": "0x180009100",
+    "function_file": "functions/180009100_Windows_Internal_StateRepository_PackageResourceResolverServer_GetLogoLocalized_HSTRING.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.packageresourceresolver.cpp"
+    ],
+    "name": "?GetLogoLocalized@PackageResourceResolverServer@StateRepository@Internal@Windows@@UEAAJPEAPEAUHSTRING__@@@Z",
+    "prototype": "__int64 __fastcall(StateRepository::Localization **this, HSTRING *, HSTRING *)",
+    "rank_score": 53,
+    "size": 82,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::PackageResourceResolverServer::GetLogoLocalizedAsUri(Windows::Foundation::IUriRuntimeClass * *)",
+    "ea": "0x1800091f0",
+    "function_file": "functions/1800091f0_Windows_Internal_StateRepository_PackageResourceResolverServer_GetLogoLocalizedAsUri_Windows_Foundation_IUriRu.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.packageresourceresolver.cpp"
+    ],
+    "name": "?GetLogoLocalizedAsUri@PackageResourceResolverServer@StateRepository@Internal@Windows@@UEAAJPEAPEAUIUriRuntimeClass@Foundation@4@@Z",
+    "prototype": "__int64 __fastcall(StateRepository::Localization **this, struct Windows::Foundation::IUriRuntimeClass **, struct Windows::Foundation::IUriRuntimeClass **)",
+    "rank_score": 53,
+    "size": 82,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::PackageResourceResolverServer::GetPublisherDisplayNameLocalized(HSTRING__ * *)",
+    "ea": "0x180009250",
+    "function_file": "functions/180009250_Windows_Internal_StateRepository_PackageResourceResolverServer_GetPublisherDisplayNameLocalized_HSTRING.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.packageresourceresolver.cpp"
+    ],
+    "name": "?GetPublisherDisplayNameLocalized@PackageResourceResolverServer@StateRepository@Internal@Windows@@UEAAJPEAPEAUHSTRING__@@@Z",
+    "prototype": "__int64 __fastcall(StateRepository::Localization **this, HSTRING *, HSTRING *)",
+    "rank_score": 53,
+    "size": 82,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::ApplicationResourceResolverFactoryServer::ActivateInstance(IInspectable * *)",
+    "ea": "0x180006fe0",
+    "function_file": "functions/180006fe0_Windows_Internal_StateRepository_ApplicationResourceResolverFactoryServer_ActivateInstance_IInspectable.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.applicationresourceresolverfactory.cpp"
+    ],
+    "name": "?ActivateInstance@ApplicationResourceResolverFactoryServer@StateRepository@Internal@Windows@@UEAAJPEAPEAUIInspectable@@@Z",
+    "prototype": "__int64 __fastcall(Windows::Internal::StateRepository::ApplicationResourceResolverFactoryServer *__hidden this, struct IInspectable **)",
+    "rank_score": 52,
+    "size": 61,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::PackageResourceResolverFactoryServer::ActivateInstance(IInspectable * *)",
+    "ea": "0x180007550",
+    "function_file": "functions/180007550_Windows_Internal_StateRepository_PackageResourceResolverFactoryServer_ActivateInstance_IInspectable.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\windows.internal.staterepository.packageresourceresolverfactory.cpp"
+    ],
+    "name": "?ActivateInstance@PackageResourceResolverFactoryServer@StateRepository@Internal@Windows@@UEAAJPEAPEAUIInspectable@@@Z",
+    "prototype": "__int64 __fastcall(Windows::Internal::StateRepository::PackageResourceResolverFactoryServer *__hidden this, struct IInspectable **)",
+    "rank_score": 52,
+    "size": 61,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil::details::in1diag3::_FailFast_Hr(void *,uint,char const *,long)",
+    "ea": "0x18000a61c",
+    "function_file": "functions/18000a61c_wil_details_in1diag3_FailFast_Hr_void_uint_char_const_long.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\base\\appmodel\\staterepository\\winrt\\broker\\lib\\localize.cpp"
+    ],
+    "name": "?_FailFast_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z",
+    "prototype": "void __fastcall __noreturn(wil::details::in1diag3 *this, void *, __int64, const char *, int)",
+    "rank_score": 52,
+    "size": 37,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::AppInfoFactoryBrokerServer::InternalGetRuntimeClassName(void)",
+    "ea": "0x180005360",
+    "function_file": "functions/180005360_Windows_Internal_StateRepository_AppInfoFactoryBrokerServer_InternalGetRuntimeClassName_void.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Windows.Internal.StateRepository.AppInfoFactoryBroker"
+    ],
+    "name": "?InternalGetRuntimeClassName@AppInfoFactoryBrokerServer@StateRepository@Internal@Windows@@SAPEBGXZ",
+    "prototype": "const unsigned __int16 *(void)",
+    "rank_score": 50,
+    "size": 8,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil::details::in1diag3::_FailFast_Unexpected(void *,uint,char const *)",
+    "ea": "0x18000a648",
+    "function_file": "functions/18000a648_wil_details_in1diag3_FailFast_Unexpected_void_uint_char_const.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\internal\\sdk\\inc\\wil\\opensource\\wil\\resource.h"
+    ],
+    "name": "?_FailFast_Unexpected@in1diag3@details@wil@@YAXPEAXIPEBD@Z",
+    "prototype": "void __fastcall __noreturn(wil::details::in1diag3 *this, void *, __int64, const char *)",
+    "rank_score": 42,
+    "size": 40,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_after_initialize_c",
+    "ea": "0x180001de8",
+    "function_file": "functions/180001de8_scrt_dllmain_after_initialize_c.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_after_initialize_c",
+    "prototype": "char()",
+    "rank_score": 37,
+    "size": 52,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 69,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x18000b010",
+    "function_file": "functions/18000b010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Microsoft::WRL::RuntimeClass<Microsoft::WRL::RuntimeClassFlags<2>,Windows::Foundation::IAsyncOperationCompletedHandler<Windows::Storage::StorageFile *>,Microsoft::WRL::FtmBase>::`scalar deleting destructor'(uint)",
+    "ea": "0x180009970",
+    "function_file": "functions/180009970_Microsoft_WRL_RuntimeClass_Microsoft_WRL_RuntimeClassFlags_2_Windows_Foundation_IAsyncOperationCompletedHandle.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_G?$RuntimeClass@U?$RuntimeClassFlags@$01@WRL@Microsoft@@U?$IAsyncOperationCompletedHandler@PEAVStorageFile@Storage@Windows@@@Foundation@Windows@@VFtmBase@23@@WRL@Microsoft@@UEAAPEAXI@Z",
+    "prototype": "_DWORD *__fastcall(_DWORD *Block, char)",
+    "rank_score": 33,
+    "size": 59,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartup",
+    "ea": "0x180001d10",
+    "function_file": "functions/180001d10_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartup",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 33,
+    "size": 61,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "`WaitForCompletion<Windows::Foundation::IAsyncOperationCompletedHandler<Windows::Storage::StorageFile *>,Windows::Foundation::IAsyncOperation<Windows::Storage::StorageFile *>>(Windows::Foundation::IAsyncOperation<Windows::Storage::StorageFile *> *,tagCOWAIT_FLAGS,void *)'::`2'::FTMEventDelegate::`scalar deleting destructor'(uint)",
+    "ea": "0x1800099c0",
+    "function_file": "functions/1800099c0_WaitForCompletion_Windows_Foundation_IAsyncOperationCompletedHandler_Windows_Storage_StorageFile_Windows_Found.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_GFTMEventDelegate@?1???$WaitForCompletion@U?$IAsyncOperationCompletedHandler@PEAVStorageFile@Storage@Windows@@@Foundation@Windows@@U?$IAsyncOperation@PEAVStorageFile@Storage@Windows@@@23@@@YAJPEAU?$IAsyncOperation@PEAVStorageFile@Storage@Windows@@@Foundation@Windows@@W4tagCOWAIT_FLAGS@@PEAX@Z@EEAAPEAXI@Z",
+    "prototype": "void *__fastcall(void *Block, char)",
+    "rank_score": 33,
+    "size": 47,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "Microsoft::WRL::Details::MakeAllocator<Microsoft::WRL::SimpleSealedActivationFactory<Windows::Internal::StateRepository::AppInfoFactoryBrokerServer,0>>::~MakeAllocator<Microsoft::WRL::SimpleSealedActivationFactory<Windows::Internal::StateRepository::AppInfoFactoryBrokerServer,0>>(void)",
+    "ea": "0x180003ee4",
+    "function_file": "functions/180003ee4_Microsoft_WRL_Details_MakeAllocator_Microsoft_WRL_SimpleSealedActivationFactory_Windows_Internal_StateReposito.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$MakeAllocator@V?$SimpleSealedActivationFactory@VAppInfoFactoryBrokerServer@StateRepository@Internal@Windows@@$0A@@WRL@Microsoft@@@Details@WRL@Microsoft@@QEAA@XZ",
+    "prototype": "void __fastcall(void **)",
+    "rank_score": 30,
+    "size": 22,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 18,
+    "demangled": "__security_check_cookie",
+    "ea": "0x180001d60",
+    "function_file": "functions/180001d60_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 30,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "dllmain_dispatch",
+    "ea": "0x180001bd4",
+    "function_file": "functions/180001bd4_dllmain_dispatch.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_dispatch",
+    "prototype": "__int64 __fastcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 28,
+    "size": 295,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 1,
+    "demangled": "dllmain_crt_process_attach",
+    "ea": "0x180001a48",
+    "function_file": "functions/180001a48_dllmain_crt_process_attach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_crt_process_attach",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 27,
+    "size": 250,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Microsoft::WRL::Details::RuntimeClassImpl<Microsoft::WRL::RuntimeClassFlags<2>,1,0,0,Windows::Foundation::IAsyncOperationCompletedHandler<Windows::Storage::StorageFile *>,Microsoft::WRL::FtmBase>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x18000a400",
+    "function_file": "functions/18000a400_Microsoft_WRL_Details_RuntimeClassImpl_Microsoft_WRL_RuntimeClassFlags_2_1_0_0_Windows_Foundation_IAsyncOperat.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$RuntimeClassImpl@U?$RuntimeClassFlags@$01@WRL@Microsoft@@$00$0A@$0A@U?$IAsyncOperationCompletedHandler@PEAVStorageFile@Storage@Windows@@@Foundation@Windows@@VFtmBase@23@@Details@WRL@Microsoft@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(__int64, const struct _GUID *, _QWORD *)",
+    "rank_score": 26,
+    "size": 133,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_uninitialize_c",
+    "ea": "0x180001ed0",
+    "function_file": "functions/180001ed0_scrt_dllmain_uninitialize_c.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_uninitialize_c",
+    "prototype": "int()",
+    "rank_score": 26,
+    "size": 48,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 14,
+    "demangled": "__tailMerge_api_ms_win_core_winrt_string_l1_1_0_dll",
+    "ea": "0x180002966",
+    "function_file": "functions/180002966_tailMerge_api_ms_win_core_winrt_string_l1_1_0_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_api_ms_win_core_winrt_string_l1_1_0_dll",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64)",
+    "rank_score": 26,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "dllmain_crt_dispatch",
+    "ea": "0x1800019f0",
+    "function_file": "functions/1800019f0_dllmain_crt_dispatch.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_crt_dispatch",
+    "prototype": "__int64 __fastcall(__int64, int, __int64)",
+    "rank_score": 26,
+    "size": 80,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 51,
+    "demangled": "wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)",
+    "ea": "0x180006224",
+    "function_file": "functions/180006224_wil_details_in1diag3_Return_Hr_void_uint_char_const_long.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Return_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z",
+    "prototype": "void __fastcall(wil::details::in1diag3 *this, void *, int, const char *)",
+    "rank_score": 26,
+    "size": 30,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "DllMain",
+    "ea": "0x180006c24",
+    "function_file": "functions/180006c24_DllMain.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DllMain",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 24,
+    "size": 85,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Microsoft::WRL::Details::RuntimeClassImpl<Microsoft::WRL::RuntimeClassFlags<2>,1,0,0,Windows::Foundation::IAsyncOperationCompletedHandler<Windows::Storage::StorageFile *>,Microsoft::WRL::FtmBase>::Release(void)",
+    "ea": "0x18000a4a0",
+    "function_file": "functions/18000a4a0_Microsoft_WRL_Details_RuntimeClassImpl_Microsoft_WRL_RuntimeClassFlags_2_1_0_0_Windows_Foundation_IAsyncOperat.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$RuntimeClassImpl@U?$RuntimeClassFlags@$01@WRL@Microsoft@@$00$0A@$0A@U?$IAsyncOperationCompletedHandler@PEAVStorageFile@Storage@Windows@@@Foundation@Windows@@VFtmBase@23@@Details@WRL@Microsoft@@UEAAKXZ",
+    "prototype": "__int64 __fastcall(__int64, volatile int *)",
+    "rank_score": 24,
+    "size": 79,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x18000a730",
+    "function_file": "functions/18000a730_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 24,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Microsoft::WRL::RuntimeClass<Windows::Internal::StateRepository::IAppInfoFactoryBroker,Microsoft::WRL::FtmBase>::`scalar deleting destructor'(uint)",
+    "ea": "0x180004150",
+    "function_file": "functions/180004150_Microsoft_WRL_RuntimeClass_Windows_Internal_StateRepository_IAppInfoFactoryBroker_Microsoft_WRL_FtmBase_scalar.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_G?$RuntimeClass@UIAppInfoFactoryBroker@StateRepository@Internal@Windows@@VFtmBase@WRL@Microsoft@@@WRL@Microsoft@@UEAAPEAXI@Z",
+    "prototype": "void *__fastcall(void *Block, char)",
+    "rank_score": 23,
+    "size": 52,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "StateRepository::Tracing::Broker::`scalar deleting destructor'(uint)",
+    "ea": "0x180004190",
+    "function_file": "functions/180004190_StateRepository_Tracing_Broker_scalar_deleting_destructor_uint.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_GBroker@Tracing@StateRepository@@UEAAPEAXI@Z",
+    "prototype": "StateRepository::Tracing::Broker *__fastcall(StateRepository::Tracing::Broker *this, char)",
+    "rank_score": 23,
+    "size": 52,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "DllGetActivationFactory",
+    "ea": "0x180006b50",
+    "function_file": "functions/180006b50_DllGetActivationFactory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DllGetActivationFactory",
+    "prototype": "__int64 __fastcall(HSTRING, _QWORD *)",
+    "rank_score": 22,
+    "size": 45,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft::WRL::Details::RuntimeClassImpl<Microsoft::WRL::RuntimeClassFlags<2>,1,0,0,Windows::Foundation::IAsyncOperationCompletedHandler<Windows::Storage::StorageFile *>,Microsoft::WRL::FtmBase>::AddRef(void)",
+    "ea": "0x180009a00",
+    "function_file": "functions/180009a00_Microsoft_WRL_Details_RuntimeClassImpl_Microsoft_WRL_RuntimeClassFlags_2_1_0_0_Windows_Foundation_IAsyncOperat.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@?$RuntimeClassImpl@U?$RuntimeClassFlags@$01@WRL@Microsoft@@$00$0A@$0A@U?$IAsyncOperationCompletedHandler@PEAVStorageFile@Storage@Windows@@@Foundation@Windows@@VFtmBase@23@@Details@WRL@Microsoft@@UEAAKXZ",
+    "prototype": "unsigned int __fastcall(__int64, volatile int *)",
+    "rank_score": 22,
+    "size": 9,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 11,
+    "demangled": "operator delete(void *)",
+    "ea": "0x180002154",
+    "function_file": "functions/180002154_operator_delete_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??3@YAXPEAX@Z",
+    "prototype": "void __cdecl(void *Block)",
+    "rank_score": 22,
+    "size": 5,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 9,
+    "demangled": "Microsoft::WRL::ComPtr<Windows::Internal::StateRepository::IMrtPackageStatics>::InternalRelease(void)",
+    "ea": "0x1800071a4",
+    "function_file": "functions/1800071a4_Microsoft_WRL_ComPtr_Windows_Internal_StateRepository_IMrtPackageStatics_InternalRelease_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?InternalRelease@?$ComPtr@UIMrtPackageStatics@StateRepository@Internal@Windows@@@WRL@Microsoft@@IEAAKXZ",
+    "prototype": "__int64 __fastcall(__int64 *)",
+    "rank_score": 21,
+    "size": 37,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:Microsoft::WRL::Details::RuntimeClassImpl<Microsoft::WRL::RuntimeClassFlags<2>,1,0,0,Windows::Foundation::IAsyncOperationCompletedHandler<Windows::Storage::StorageFile *>,Microsoft::WRL::FtmBase>::AddRef`adjustor{8}' (void)",
+    "ea": "0x180009a10",
+    "function_file": "functions/180009a10_thunk_Microsoft_WRL_Details_RuntimeClassImpl_Microsoft_WRL_RuntimeClassFlags_2_1_0_0_Windows_Foundation_IAsync.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@?$RuntimeClassImpl@U?$RuntimeClassFlags@$01@WRL@Microsoft@@$00$0A@$0A@U?$IAsyncOperationCompletedHandler@PEAVStorageFile@Storage@Windows@@@Foundation@Windows@@VFtmBase@23@@Details@WRL@Microsoft@@W7EAAKXZ",
+    "prototype": "unsigned int __fastcall(__int64, volatile int *)",
+    "rank_score": 21,
+    "size": 9,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:Microsoft::WRL::Details::RuntimeClassImpl<Microsoft::WRL::RuntimeClassFlags<2>,1,0,0,Windows::Foundation::IAsyncOperationCompletedHandler<Windows::Storage::StorageFile *>,Microsoft::WRL::FtmBase>::QueryInterface`adjustor{8}' (_GUID const &,void * *)",
+    "ea": "0x18000a490",
+    "function_file": "functions/18000a490_thunk_Microsoft_WRL_Details_RuntimeClassImpl_Microsoft_WRL_RuntimeClassFlags_2_1_0_0_Windows_Foundation_IAsync.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$RuntimeClassImpl@U?$RuntimeClassFlags@$01@WRL@Microsoft@@$00$0A@$0A@U?$IAsyncOperationCompletedHandler@PEAVStorageFile@Storage@Windows@@@Foundation@Windows@@VFtmBase@23@@Details@WRL@Microsoft@@W7EAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(__int64, const struct _GUID *, _QWORD *)",
+    "rank_score": 21,
+    "size": 9,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:Microsoft::WRL::Details::RuntimeClassImpl<Microsoft::WRL::RuntimeClassFlags<2>,1,0,0,Windows::Foundation::IAsyncOperationCompletedHandler<Windows::Storage::StorageFile *>,Microsoft::WRL::FtmBase>::Release`adjustor{8}' (void)",
+    "ea": "0x18000a500",
+    "function_file": "functions/18000a500_thunk_Microsoft_WRL_Details_RuntimeClassImpl_Microsoft_WRL_RuntimeClassFlags_2_1_0_0_Windows_Foundation_IAsync.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$RuntimeClassImpl@U?$RuntimeClassFlags@$01@WRL@Microsoft@@$00$0A@$0A@U?$IAsyncOperationCompletedHandler@PEAVStorageFile@Storage@Windows@@@Foundation@Windows@@VFtmBase@23@@Details@WRL@Microsoft@@W7EAAKXZ",
+    "prototype": "__int64 __fastcall(__int64, volatile int *)",
+    "rank_score": 21,
+    "size": 9,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "dllmain_crt_process_detach",
+    "ea": "0x180001b48",
+    "function_file": "functions/180001b48_dllmain_crt_process_detach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "dllmain_crt_process_detach",
+    "prototype": "__int64 __fastcall(char)",
+    "rank_score": 21,
+    "size": 131,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 10,
+    "demangled": "operator delete(void *,unsigned __int64)",
+    "ea": "0x180002160",
+    "function_file": "functions/180002160_operator_delete_void_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??3@YAXPEAX_K@Z",
+    "prototype": "void __cdecl(void *Block)",
+    "rank_score": 21,
+    "size": 5,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "Microsoft::WRL::Details::SafeUnknownIncrementReference(long volatile &)",
+    "ea": "0x180006270",
+    "function_file": "functions/180006270_Microsoft_WRL_Details_SafeUnknownIncrementReference_long_volatile.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SafeUnknownIncrementReference@Details@WRL@Microsoft@@YAKAECJ@Z",
+    "prototype": "__int64 __fastcall(Microsoft::WRL::Details *this, volatile int *)",
+    "rank_score": 20,
+    "size": 38,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "Microsoft::WRL::Details::MakeAndInitialize<Microsoft::WRL::SimpleSealedActivationFactory<Windows::Internal::StateRepository::AppInfoFactoryBrokerServer,0>,Microsoft::WRL::SimpleSealedActivationFactory<Windows::Internal::StateRepository::AppInfoFactoryBrokerServer,0>,>(Microsoft::WRL::SimpleSealedActivationFactory<Windows::Internal::StateRepository::AppInfoFactoryBrokerServer,0> * *)",
+    "ea": "0x180003244",
+    "function_file": "functions/180003244_Microsoft_WRL_Details_MakeAndInitialize_Microsoft_WRL_SimpleSealedActivationFactory_Windows_Internal_StateRepo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$MakeAndInitialize@V?$SimpleSealedActivationFactory@VAppInfoFactoryBrokerServer@StateRepository@Internal@Windows@@$0A@@WRL@Microsoft@@V123@$$V@Details@WRL@Microsoft@@YAJPEAPEAV?$SimpleSealedActivationFactory@VAppInfoFactoryBrokerServer@StateRepository@Internal@Windows@@$0A@@12@@Z",
+    "prototype": "__int64 __fastcall(_QWORD *)",
+    "rank_score": 19,
+    "size": 178,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "Microsoft::WRL::Details::SafeUnknownDecrementReference(long volatile &)",
+    "ea": "0x180006248",
+    "function_file": "functions/180006248_Microsoft_WRL_Details_SafeUnknownDecrementReference_long_volatile.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SafeUnknownDecrementReference@Details@WRL@Microsoft@@YAKAECJ@Z",
+    "prototype": "__int64 __fastcall(Microsoft::WRL::Details *this, volatile int *)",
+    "rank_score": 19,
+    "size": 34,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "Microsoft::WRL::ComPtr<IUnknown>::InternalRelease(void)",
+    "ea": "0x18000539c",
+    "function_file": "functions/18000539c_Microsoft_WRL_ComPtr_IUnknown_InternalRelease_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?InternalRelease@?$ComPtr@UIUnknown@@@WRL@Microsoft@@IEAAKXZ",
+    "prototype": "__int64 __fastcall(__int64 *)",
+    "rank_score": 18,
+    "size": 38,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "Microsoft::WRL::Details::Make<Microsoft::WRL::Details::WeakReferenceImpl,IUnknown * &>(IUnknown * &)",
+    "ea": "0x180003184",
+    "function_file": "functions/180003184_Microsoft_WRL_Details_Make_Microsoft_WRL_Details_WeakReferenceImpl_IUnknown_IUnknown.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Make@VWeakReferenceImpl@Details@WRL@Microsoft@@AEAPEAUIUnknown@@@Details@WRL@Microsoft@@YA?AV?$ComPtr@VWeakReferenceImpl@Details@WRL@Microsoft@@@12@AEAPEAUIUnknown@@@Z",
+    "prototype": "_QWORD *__fastcall(_QWORD *, __int64 *)",
+    "rank_score": 18,
+    "size": 186,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "Microsoft::WRL::Details::RuntimeClassImpl<Microsoft::WRL::RuntimeClassFlags<1>,1,1,0,Windows::Internal::StateRepository::IApplicationResourceResolver,Microsoft::WRL::FtmBase>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x1800071d0",
+    "function_file": "functions/1800071d0_Microsoft_WRL_Details_RuntimeClassImpl_Microsoft_WRL_RuntimeClassFlags_1_1_1_0_Windows_Internal_StateRepositor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$RuntimeClassImpl@U?$RuntimeClassFlags@$00@WRL@Microsoft@@$00$00$0A@UIApplicationResourceResolver@StateRepository@Internal@Windows@@VFtmBase@23@@Details@WRL@Microsoft@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(__int64, const struct _GUID *, _QWORD *)",
+    "rank_score": 18,
+    "size": 140,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "Microsoft::WRL::Details::RuntimeClassImpl<Microsoft::WRL::RuntimeClassFlags<1>,1,1,0,Windows::Internal::StateRepository::IPackageResourceResolver,Microsoft::WRL::FtmBase>::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x180007720",
+    "function_file": "functions/180007720_Microsoft_WRL_Details_RuntimeClassImpl_Microsoft_WRL_RuntimeClassFlags_1_1_1_0_Windows_Internal_StateRepositor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@?$RuntimeClassImpl@U?$RuntimeClassFlags@$00@WRL@Microsoft@@$00$00$0A@UIPackageResourceResolver@StateRepository@Internal@Windows@@VFtmBase@23@@Details@WRL@Microsoft@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(__int64, const struct _GUID *, _QWORD *)",
+    "rank_score": 18,
+    "size": 140,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "Microsoft::WRL::Details::MakeAndInitialize<Windows::Internal::StateRepository::AppInfoFactoryBrokerServer,IInspectable,>(IInspectable * *)",
+    "ea": "0x1800032fc",
+    "function_file": "functions/1800032fc_Microsoft_WRL_Details_MakeAndInitialize_Windows_Internal_StateRepository_AppInfoFactoryBrokerServer_IInspectab.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$MakeAndInitialize@VAppInfoFactoryBrokerServer@StateRepository@Internal@Windows@@UIInspectable@@$$V@Details@WRL@Microsoft@@YAJPEAPEAUIInspectable@@@Z",
+    "prototype": "__int64 __fastcall(_QWORD *)",
+    "rank_score": 17,
+    "size": 252,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "Microsoft::WRL::Details::RuntimeClassImpl<Microsoft::WRL::RuntimeClassFlags<1>,1,1,0,Windows::Internal::StateRepository::IApplicationResourceResolver,Microsoft::WRL::FtmBase>::Release(void)",
+    "ea": "0x180007290",
+    "function_file": "functions/180007290_Microsoft_WRL_Details_RuntimeClassImpl_Microsoft_WRL_RuntimeClassFlags_1_1_1_0_Windows_Internal_StateRepositor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$RuntimeClassImpl@U?$RuntimeClassFlags@$00@WRL@Microsoft@@$00$00$0A@UIApplicationResourceResolver@StateRepository@Internal@Windows@@VFtmBase@23@@Details@WRL@Microsoft@@UEAAKXZ",
+    "prototype": "__int64 __fastcall(__int64, volatile int *)",
+    "rank_score": 17,
+    "size": 123,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "Microsoft::WRL::Details::RuntimeClassImpl<Microsoft::WRL::RuntimeClassFlags<1>,1,1,0,Windows::Internal::StateRepository::IPackageResourceResolver,Microsoft::WRL::FtmBase>::Release(void)",
+    "ea": "0x1800077e0",
+    "function_file": "functions/1800077e0_Microsoft_WRL_Details_RuntimeClassImpl_Microsoft_WRL_RuntimeClassFlags_1_1_1_0_Windows_Internal_StateRepositor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$RuntimeClassImpl@U?$RuntimeClassFlags@$00@WRL@Microsoft@@$00$00$0A@UIPackageResourceResolver@StateRepository@Internal@Windows@@VFtmBase@23@@Details@WRL@Microsoft@@UEAAKXZ",
+    "prototype": "__int64 __fastcall(__int64, volatile int *)",
+    "rank_score": 17,
+    "size": 120,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "Microsoft::WRL::Details::RuntimeClassImpl<Microsoft::WRL::RuntimeClassFlags<2>,1,0,0,IWeakReference>::Release(void)",
+    "ea": "0x180005d70",
+    "function_file": "functions/180005d70_Microsoft_WRL_Details_RuntimeClassImpl_Microsoft_WRL_RuntimeClassFlags_2_1_0_0_IWeakReference_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$RuntimeClassImpl@U?$RuntimeClassFlags@$01@WRL@Microsoft@@$00$0A@$0A@UIWeakReference@@@Details@WRL@Microsoft@@UEAAKXZ",
+    "prototype": "__int64 __fastcall(__int64, volatile int *)",
+    "rank_score": 17,
+    "size": 79,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "Windows::Internal::StateRepository::AppInfoFactoryBrokerServer::QueryInterface(_GUID const &,void * *)",
+    "ea": "0x180005a20",
+    "function_file": "functions/180005a20_Windows_Internal_StateRepository_AppInfoFactoryBrokerServer_QueryInterface_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@AppInfoFactoryBrokerServer@StateRepository@Internal@Windows@@UEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(Windows::Internal::StateRepository::AppInfoFactoryBrokerServer *this, const struct _GUID *, void **)",
+    "rank_score": 17,
+    "size": 140,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "Microsoft::WRL::Details::CreateActivationFactory<Microsoft::WRL::SimpleSealedActivationFactory<Windows::Internal::StateRepository::AppInfoFactoryBrokerServer,0>>(uint *,Microsoft::WRL::Details::CreatorMap const *,_GUID const &,IUnknown * *)",
+    "ea": "0x180002d60",
+    "function_file": "functions/180002d60_Microsoft_WRL_Details_CreateActivationFactory_Microsoft_WRL_SimpleSealedActivationFactory_Windows_Internal_Sta.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$CreateActivationFactory@V?$SimpleSealedActivationFactory@VAppInfoFactoryBrokerServer@StateRepository@Internal@Windows@@$0A@@WRL@Microsoft@@@Details@WRL@Microsoft@@YAJPEAIPEBUCreatorMap@012@AEBU_GUID@@PEAPEAUIUnknown@@@Z",
+    "prototype": "__int64 __fastcall(_BYTE *, __int64, __int64, __int64)",
+    "rank_score": 16,
+    "size": 139,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "Microsoft::WRL::Details::CreateActivationFactory<Windows::Internal::StateRepository::ApplicationResourceResolverFactoryServer>(uint *,Microsoft::WRL::Details::CreatorMap const *,_GUID const &,IUnknown * *)",
+    "ea": "0x180002e00",
+    "function_file": "functions/180002e00_Microsoft_WRL_Details_CreateActivationFactory_Windows_Internal_StateRepository_ApplicationResourceResolverFact.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$CreateActivationFactory@VApplicationResourceResolverFactoryServer@StateRepository@Internal@Windows@@@Details@WRL@Microsoft@@YAJPEAIPEBUCreatorMap@012@AEBU_GUID@@PEAPEAUIUnknown@@@Z",
+    "prototype": "__int64 __fastcall(_BYTE *, __int64, __int64, __int64)",
+    "rank_score": 16,
+    "size": 161,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "Microsoft::WRL::Details::CreateActivationFactory<Windows::Internal::StateRepository::PackageResourceResolverFactoryServer>(uint *,Microsoft::WRL::Details::CreatorMap const *,_GUID const &,IUnknown * *)",
+    "ea": "0x180002eb0",
+    "function_file": "functions/180002eb0_Microsoft_WRL_Details_CreateActivationFactory_Windows_Internal_StateRepository_PackageResourceResolverFactoryS.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$CreateActivationFactory@VPackageResourceResolverFactoryServer@StateRepository@Internal@Windows@@@Details@WRL@Microsoft@@YAJPEAIPEBUCreatorMap@012@AEBU_GUID@@PEAPEAUIUnknown@@@Z",
+    "prototype": "__int64 __fastcall(_BYTE *, __int64, __int64, __int64)",
+    "rank_score": 16,
+    "size": 161,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "Microsoft::WRL::Details::ImplementsHelper<Microsoft::WRL::RuntimeClassFlags<1>,1,IWeakReferenceSource,Microsoft::WRL::FtmBase>::CanCastTo(_GUID const &,void * *,bool *)",
+    "ea": "0x180004460",
+    "function_file": "functions/180004460_Microsoft_WRL_Details_ImplementsHelper_Microsoft_WRL_RuntimeClassFlags_1_1_IWeakReferenceSource_Microsoft_WRL_.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CanCastTo@?$ImplementsHelper@U?$RuntimeClassFlags@$00@WRL@Microsoft@@$00UIWeakReferenceSource@@VFtmBase@23@@Details@WRL@Microsoft@@IEAAJAEBU_GUID@@PEAPEAXPEA_N@Z",
+    "prototype": "int __fastcall(__int64, const struct _GUID *)",
+    "rank_score": 16,
+    "size": 63,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "Microsoft::WRL::Details::RuntimeClassImpl<Microsoft::WRL::RuntimeClassFlags<1>,1,1,0,Windows::Internal::StateRepository::IAppInfoFactoryBroker,Microsoft::WRL::FtmBase>::Release(void)",
+    "ea": "0x180005cd0",
+    "function_file": "functions/180005cd0_Microsoft_WRL_Details_RuntimeClassImpl_Microsoft_WRL_RuntimeClassFlags_1_1_1_0_Windows_Internal_StateRepositor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$RuntimeClassImpl@U?$RuntimeClassFlags@$00@WRL@Microsoft@@$00$00$0A@UIAppInfoFactoryBroker@StateRepository@Internal@Windows@@VFtmBase@23@@Details@WRL@Microsoft@@UEAAKXZ",
+    "prototype": "__int64 __fastcall(__int64, volatile int *)",
+    "rank_score": 16,
+    "size": 120,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "Microsoft::WRL::Details::RuntimeClassImpl<Microsoft::WRL::RuntimeClassFlags<1>,1,1,0,Windows::Internal::StateRepository::IApplicationResourceResolver,Microsoft::WRL::FtmBase>::~RuntimeClassImpl<Microsoft::WRL::RuntimeClassFlags<1>,1,1,0,Windows::Internal::StateRepository::IApplicationResourceResolver,Microsoft::WRL::FtmBase>(void)",
+    "ea": "0x180006e90",
+    "function_file": "functions/180006e90_Microsoft_WRL_Details_RuntimeClassImpl_Microsoft_WRL_RuntimeClassFlags_1_1_1_0_Windows_Internal_StateRepositor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$RuntimeClassImpl@U?$RuntimeClassFlags@$00@WRL@Microsoft@@$00$00$0A@UIApplicationResourceResolver@StateRepository@Internal@Windows@@VFtmBase@23@@Details@WRL@Microsoft@@UEAA@XZ",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 16,
+    "size": 43,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "Microsoft::WRL::FtmBase::CanCastTo(_GUID const &,void * *)",
+    "ea": "0x1800045dc",
+    "function_file": "functions/1800045dc_Microsoft_WRL_FtmBase_CanCastTo_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CanCastTo@FtmBase@WRL@Microsoft@@IEAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(Microsoft::WRL::FtmBase *this, const struct _GUID *, void **)",
+    "rank_score": 16,
+    "size": 62,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "__scrt_is_ucrt_dll_in_use",
+    "ea": "0x180002630",
+    "function_file": "functions/180002630_scrt_is_ucrt_dll_in_use.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_is_ucrt_dll_in_use",
+    "prototype": "_BOOL8()",
+    "rank_score": 16,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "FileUriToFilenameIfNecessary(ushort const *)",
+    "ea": "0x18000a158",
+    "function_file": "functions/18000a158_FileUriToFilenameIfNecessary_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?FileUriToFilenameIfNecessary@@YAPEBGPEBG@Z",
+    "prototype": "const unsigned __int16 *__fastcall(const unsigned __int16 *)",
+    "rank_score": 15,
+    "size": 90,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "Microsoft::WRL::Details::RuntimeClassImpl<Microsoft::WRL::RuntimeClassFlags<1>,1,1,0,Windows::Internal::StateRepository::IAppInfoFactoryBroker,Microsoft::WRL::FtmBase>::GetWeakReference(IWeakReference * *)",
+    "ea": "0x180005090",
+    "function_file": "functions/180005090_Microsoft_WRL_Details_RuntimeClassImpl_Microsoft_WRL_RuntimeClassFlags_1_1_1_0_Windows_Internal_StateRepositor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetWeakReference@?$RuntimeClassImpl@U?$RuntimeClassFlags@$00@WRL@Microsoft@@$00$00$0A@UIAppInfoFactoryBroker@StateRepository@Internal@Windows@@VFtmBase@23@@Details@WRL@Microsoft@@UEAAJPEAPEAUIWeakReference@@@Z",
+    "prototype": "__int64 __fastcall(__int64, struct IUnknown *)",
+    "rank_score": 15,
+    "size": 152,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "TraceFailureFromProvider<StateRepository::Tracing::Broker>(wil::FailureInfo const &)",
+    "ea": "0x180003a00",
+    "function_file": "functions/180003a00_TraceFailureFromProvider_StateRepository_Tracing_Broker_wil_FailureInfo_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$TraceFailureFromProvider@VBroker@Tracing@StateRepository@@@@YAXAEBUFailureInfo@wil@@@Z",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 15,
+    "size": 148,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_exception_filter",
+    "ea": "0x180001e80",
+    "function_file": "functions/180001e80_scrt_dllmain_exception_filter.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_exception_filter",
+    "prototype": "int __fastcall(__int64, int, __int64, void (__fastcall *)(__int64, _QWORD, __int64), unsigned int ExceptionNum, struct _EXCEPTION_POINTERS *ExceptionPtr)",
+    "rank_score": 15,
+    "size": 72,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 13,
+    "demangled": "InlineIsEqualGUID(_GUID const &,_GUID const &)",
+    "ea": "0x18000532c",
+    "function_file": "functions/18000532c_InlineIsEqualGUID_GUID_const_GUID_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?InlineIsEqualGUID@@YAHAEBU_GUID@@0@Z",
+    "prototype": "_BOOL8 __fastcall(const struct _GUID *, const struct _GUID *)",
+    "rank_score": 14,
+    "size": 39,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Microsoft::WRL::Details::CreateWeakReference(IUnknown *)",
+    "ea": "0x180004658",
+    "function_file": "functions/180004658_Microsoft_WRL_Details_CreateWeakReference_IUnknown.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateWeakReference@Details@WRL@Microsoft@@YAPEAVWeakReferenceImpl@123@PEAUIUnknown@@@Z",
+    "prototype": "struct Microsoft::WRL::Details::WeakReferenceImpl *__fastcall(Microsoft::WRL::Details *__hidden this, struct IUnknown *)",
+    "rank_score": 14,
+    "size": 68,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "Microsoft::WRL::Details::ImplementsHelper<Microsoft::WRL::RuntimeClassFlags<1>,1,IWeakReferenceSource,Microsoft::WRL::FtmBase>::ImplementsHelper<Microsoft::WRL::RuntimeClassFlags<1>,1,IWeakReferenceSource,Microsoft::WRL::FtmBase>(void)",
+    "ea": "0x180003b84",
+    "function_file": "functions/180003b84_Microsoft_WRL_Details_ImplementsHelper_Microsoft_WRL_RuntimeClassFlags_1_1_IWeakReferenceSource_Microsoft_WRL_.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??0?$ImplementsHelper@U?$RuntimeClassFlags@$00@WRL@Microsoft@@$00UIWeakReferenceSource@@VFtmBase@23@@Details@WRL@Microsoft@@QEAA@XZ",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 14,
+    "size": 27,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Microsoft::WRL::Details::RuntimeClassImpl<Microsoft::WRL::RuntimeClassFlags<1>,1,1,0,Windows::Internal::StateRepository::IAppInfoFactoryBroker,Microsoft::WRL::FtmBase>::~RuntimeClassImpl<Microsoft::WRL::RuntimeClassFlags<1>,1,1,0,Windows::Internal::StateRepository::IAppInfoFactoryBroker,Microsoft::WRL::FtmBase>(void)",
+    "ea": "0x180003f30",
+    "function_file": "functions/180003f30_Microsoft_WRL_Details_RuntimeClassImpl_Microsoft_WRL_RuntimeClassFlags_1_1_1_0_Windows_Internal_StateRepositor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$RuntimeClassImpl@U?$RuntimeClassFlags@$00@WRL@Microsoft@@$00$00$0A@UIAppInfoFactoryBroker@StateRepository@Internal@Windows@@VFtmBase@23@@Details@WRL@Microsoft@@UEAA@XZ",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 14,
+    "size": 40,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "Microsoft::WRL::Details::ImplementsHelper<Microsoft::WRL::RuntimeClassFlags<1>,1,IWeakReferenceSource,Microsoft::WRL::FtmBase>::FillArrayWithIid(ulong *,_GUID *)",
+    "ea": "0x18000474c",
+    "function_file": "functions/18000474c_Microsoft_WRL_Details_ImplementsHelper_Microsoft_WRL_RuntimeClassFlags_1_1_IWeakReferenceSource_Microsoft_WRL_.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?FillArrayWithIid@?$ImplementsHelper@U?$RuntimeClassFlags@$00@WRL@Microsoft@@$00UIWeakReferenceSource@@VFtmBase@23@@Details@WRL@Microsoft@@IEAAXPEAKPEAU_GUID@@@Z",
+    "prototype": "__int64 __fastcall(__int64, unsigned int *, __int64)",
+    "rank_score": 13,
+    "size": 26,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "Windows::Internal::StateRepository::AppInfoFactoryBrokerServer::Release(void)",
+    "ea": "0x180005e30",
+    "function_file": "functions/180005e30_Windows_Internal_StateRepository_AppInfoFactoryBrokerServer_Release_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@AppInfoFactoryBrokerServer@StateRepository@Internal@Windows@@UEAAKXZ",
+    "prototype": "__int64 __fastcall(__int64 this, volatile int *)",
+    "rank_score": 13,
+    "size": 5,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_crt_thread_attach",
+    "ea": "0x180001e34",
+    "function_file": "functions/180001e34_scrt_dllmain_crt_thread_attach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_crt_thread_attach",
+    "prototype": "char()",
+    "rank_score": 13,
+    "size": 40,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__tailMerge_api_ms_win_core_winrt_l1_1_0_dll",
+    "ea": "0x180002c29",
+    "function_file": "functions/180002c29_tailMerge_api_ms_win_core_winrt_l1_1_0_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_api_ms_win_core_winrt_l1_1_0_dll",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64)",
+    "rank_score": 13,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__tailMerge_ext_ms_win_mrmcorer_resmanager_l1_1_0_dll",
+    "ea": "0x180002b48",
+    "function_file": "functions/180002b48_tailMerge_ext_ms_win_mrmcorer_resmanager_l1_1_0_dll.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__tailMerge_ext_ms_win_mrmcorer_resmanager_l1_1_0_dll",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64)",
+    "rank_score": 13,
+    "size": 121,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Microsoft::WRL::Details::ImplementsHelper<Microsoft::WRL::RuntimeClassFlags<1>,0,Windows::Internal::StateRepository::IAppInfoFactoryBroker,IWeakReferenceSource,Microsoft::WRL::FtmBase>::FillArrayWithIid(ulong *,_GUID *)",
+    "ea": "0x18000476c",
+    "function_file": "functions/18000476c_Microsoft_WRL_Details_ImplementsHelper_Microsoft_WRL_RuntimeClassFlags_1_0_Windows_Internal_StateRepository_IA.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?FillArrayWithIid@?$ImplementsHelper@U?$RuntimeClassFlags@$00@WRL@Microsoft@@$0A@UIAppInfoFactoryBroker@StateRepository@Internal@Windows@@UIWeakReferenceSource@@VFtmBase@23@@Details@WRL@Microsoft@@IEAAXPEAKPEAU_GUID@@@Z",
+    "prototype": "__int64 __fastcall(__int64, unsigned int *, __int64)",
+    "rank_score": 12,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_before_initialize_c",
+    "ea": "0x180001e24",
+    "function_file": "functions/180001e24_scrt_dllmain_before_initialize_c.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_before_initialize_c",
+    "prototype": "__int64()",
+    "rank_score": 12,
+    "size": 7,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_crt_thread_detach",
+    "ea": "0x180001e64",
+    "function_file": "functions/180001e64_scrt_dllmain_crt_thread_detach.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_crt_thread_detach",
+    "prototype": "char()",
+    "rank_score": 12,
+    "size": 21,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__scrt_dllmain_uninitialize_critical",
+    "ea": "0x180001f08",
+    "function_file": "functions/180001f08_scrt_dllmain_uninitialize_critical.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_dllmain_uninitialize_critical",
+    "prototype": "__int64()",
+    "rank_score": 12,
+    "size": 20,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "initialize_msvcrt_compatibility",
+    "ea": "0x1800019c0",
+    "function_file": "functions/1800019c0_initialize_msvcrt_compatibility.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "initialize_msvcrt_compatibility",
+    "prototype": "__int64()",
+    "rank_score": 12,
+    "size": 29,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Microsoft::WRL::SimpleActivationFactory<Windows::Internal::StateRepository::AppInfoFactoryBrokerServer,0>::ActivateInstance(IInspectable * *)",
+    "ea": "0x180004310",
+    "function_file": "functions/180004310_Microsoft_WRL_SimpleActivationFactory_Windows_Internal_StateRepository_AppInfoFactoryBrokerServer_0_ActivateIn.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ActivateInstance@?$SimpleActivationFactory@VAppInfoFactoryBrokerServer@StateRepository@Internal@Windows@@$0A@@WRL@Microsoft@@UEAAJPEAPEAUIInspectable@@@Z",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *)",
+    "rank_score": 11,
+    "size": 8,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Windows::Internal::StateRepository::AppInfoFactoryBrokerServer::Initialize(void)",
+    "ea": "0x180008160",
+    "function_file": "functions/180008160_Windows_Internal_StateRepository_AppInfoFactoryBrokerServer_Initialize_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Initialize@AppInfoFactoryBrokerServer@StateRepository@Internal@Windows@@UEAAJXZ",
+    "prototype": "__int64 __fastcall(Windows::Internal::StateRepository::AppInfoFactoryBrokerServer *__hidden this)",
+    "rank_score": 11,
+    "size": 3,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "Windows::Internal::StateRepository::AppInfoFactoryBrokerServer::InternalGetTrustLevel(void)",
+    "ea": "0x180005390",
+    "function_file": "functions/180005390_Windows_Internal_StateRepository_AppInfoFactoryBrokerServer_InternalGetTrustLevel_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?InternalGetTrustLevel@AppInfoFactoryBrokerServer@StateRepository@Internal@Windows@@SA?AW4TrustLevel@@XZ",
+    "prototype": "__int64(void)",
+    "rank_score": 11,
+    "size": 6,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:Microsoft::WRL::Details::RuntimeClassImpl<Microsoft::WRL::RuntimeClassFlags<1>,1,1,0,Windows::Internal::StateRepository::IAppInfoFactoryBroker,Microsoft::WRL::FtmBase>::Release`adjustor{16}' (void)",
+    "ea": "0x180005d60",
+    "function_file": "functions/180005d60_thunk_Microsoft_WRL_Details_RuntimeClassImpl_Microsoft_WRL_RuntimeClassFlags_1_1_1_0_Windows_Internal_StateRep.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$RuntimeClassImpl@U?$RuntimeClassFlags@$00@WRL@Microsoft@@$00$00$0A@UIAppInfoFactoryBroker@StateRepository@Internal@Windows@@VFtmBase@23@@Details@WRL@Microsoft@@WBA@EAAKXZ",
+    "prototype": "__int64 __fastcall(__int64, volatile int *)",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:Microsoft::WRL::Details::RuntimeClassImpl<Microsoft::WRL::RuntimeClassFlags<1>,1,1,0,Windows::Internal::StateRepository::IAppInfoFactoryBroker,Microsoft::WRL::FtmBase>::Release`adjustor{8}' (void)",
+    "ea": "0x180005d50",
+    "function_file": "functions/180005d50_thunk_Microsoft_WRL_Details_RuntimeClassImpl_Microsoft_WRL_RuntimeClassFlags_1_1_1_0_Windows_Internal_StateRep.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@?$RuntimeClassImpl@U?$RuntimeClassFlags@$00@WRL@Microsoft@@$00$00$0A@UIAppInfoFactoryBroker@StateRepository@Internal@Windows@@VFtmBase@23@@Details@WRL@Microsoft@@W7EAAKXZ",
+    "prototype": "__int64 __fastcall(__int64, volatile int *)",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:Windows::Internal::StateRepository::AppInfoFactoryBrokerServer::AddRef`adjustor{8}' (void)",
+    "ea": "0x180004430",
+    "function_file": "functions/180004430_thunk_Windows_Internal_StateRepository_AppInfoFactoryBrokerServer_AddRef_adjustor_8_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddRef@AppInfoFactoryBrokerServer@StateRepository@Internal@Windows@@W7EAAKXZ",
+    "prototype": "unsigned int __fastcall(__int64)",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:Windows::Internal::StateRepository::AppInfoFactoryBrokerServer::QueryInterface`adjustor{16}' (_GUID const &,void * *)",
+    "ea": "0x180005ad0",
+    "function_file": "functions/180005ad0_thunk_Windows_Internal_StateRepository_AppInfoFactoryBrokerServer_QueryInterface_adjustor_16_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@AppInfoFactoryBrokerServer@StateRepository@Internal@Windows@@WBA@EAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(__int64, const struct _GUID *, void **)",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:Windows::Internal::StateRepository::AppInfoFactoryBrokerServer::QueryInterface`adjustor{8}' (_GUID const &,void * *)",
+    "ea": "0x180005ac0",
+    "function_file": "functions/180005ac0_thunk_Windows_Internal_StateRepository_AppInfoFactoryBrokerServer_QueryInterface_adjustor_8_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryInterface@AppInfoFactoryBrokerServer@StateRepository@Internal@Windows@@W7EAAJAEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(__int64, const struct _GUID *, void **)",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:Windows::Internal::StateRepository::AppInfoFactoryBrokerServer::Release`adjustor{16}' (void)",
+    "ea": "0x180005e50",
+    "function_file": "functions/180005e50_thunk_Windows_Internal_StateRepository_AppInfoFactoryBrokerServer_Release_adjustor_16_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@AppInfoFactoryBrokerServer@StateRepository@Internal@Windows@@WBA@EAAKXZ",
+    "prototype": "__int64 __fastcall(__int64, volatile int *)",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "[thunk]:Windows::Internal::StateRepository::AppInfoFactoryBrokerServer::Release`adjustor{8}' (void)",
+    "ea": "0x180005e40",
+    "function_file": "functions/180005e40_thunk_Windows_Internal_StateRepository_AppInfoFactoryBrokerServer_Release_adjustor_8_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Release@AppInfoFactoryBrokerServer@StateRepository@Internal@Windows@@W7EAAKXZ",
+    "prototype": "__int64 __fastcall(__int64, volatile int *)",
+    "rank_score": 11,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "Windows::Internal::StateRepository::AppInfoFactoryBrokerServer::GetTrustLevel(TrustLevel *)",
+    "ea": "0x180005020",
+    "function_file": "functions/180005020_Windows_Internal_StateRepository_AppInfoFactoryBrokerServer_GetTrustLevel_TrustLevel.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetTrustLevel@AppInfoFactoryBrokerServer@StateRepository@Internal@Windows@@UEAAJPEAW4TrustLevel@@@Z",
+    "prototype": "__int64 __fastcall(Windows::Internal::StateRepository::AppInfoFactoryBrokerServer *__hidden this, enum TrustLevel *)",
+    "rank_score": 10,
+    "size": 9,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "operator new(unsigned __int64,std::nothrow_t const &)",
+    "ea": "0x180001d84",
+    "function_file": "functions/180001d84_operator_new_unsigned_int64_std_nothrow_t_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??2@YAPEAX_KAEBUnothrow_t@std@@@Z",
+    "prototype": "void *__fastcall(size_t, const struct std::nothrow_t *)",
+    "rank_score": 10,
+    "size": 28,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "wil::details::HrToNtStatus(long)",
+    "ea": "0x180005130",
+    "function_file": "functions/180005130_wil_details_HrToNtStatus_long.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?HrToNtStatus@details@wil@@YAJJ@Z",
+    "prototype": "__int64 __fastcall(wil::details *this)",
+    "rank_score": 10,
+    "size": 444,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<ushort>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapSz<ushort>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapSz<ushort>,_tlgWrapperByVal<4>,_tlgWrapperByVal<4>,_tlgWrapSz<char>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<ushort> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapSz<ushort> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapSz<ushort> const &,_tlgWrapperByVal<4> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &)",
+    "ea": "0x1800013d8",
+    "function_file": "functions/1800013d8_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByVal@$07@@U?$_tlgWrapperByVal@$03@@U?$_tlgWrapSz@D@@U2@U3@U2@U?$_tlgWrapSz@G@@U2@U3@U2@U3@U4@U2@U3@U4@U2@U2@U3@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EventWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$07@@AEBU?$_tlgWrapperByVal@$03@@AEBU?$_tlgWrapSz@D@@454AEBU?$_tlgWrapSz@G@@45456456445@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64, __int64, __int64, const unsigned __int16 **, __int64, const unsigned __int16 **, __int64, int **, __int64, const unsigned __int16 **, __int64, const unsigned __int16 **, int **, __int64, const unsigned __int16 **, int **, __int64, __int64, const unsigned __int16 **)",
+    "rank_score": 9,
+    "size": 751,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<8>,_tlgWrapperByVal<8>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<ushort>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapSz<ushort>,_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapSz<ushort>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<8> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<ushort> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapSz<ushort> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapSz<ushort> const &)",
+    "ea": "0x180001124",
+    "function_file": "functions/180001124_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByVal@$07@@U1@U?$_tlgWrapperByVal@$03@@U?$_tlgWrapSz@D@@U2@U3@U2@U?$_tlgWrapSz@G@@U2@U3@U2@U3@U4@U2@U3@U4@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EventWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$07@@3AEBU?$_tlgWrapperByVal@$03@@AEBU?$_tlgWrapSz@D@@454AEBU?$_tlgWrapSz@G@@45456456@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64, __int64, __int64, __int64, const unsigned __int16 **, __int64, const unsigned __int16 **, __int64, int **, __int64, const unsigned __int16 **, __int64, const unsigned __int16 **, int **, __int64, const unsigned __int16 **, int **)",
+    "rank_score": 9,
+    "size": 683,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "wil::details::WilFailFast(wil::FailureInfo const &)",
+    "ea": "0x18000674c",
+    "function_file": "functions/18000674c_wil_details_WilFailFast_wil_FailureInfo_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?WilFailFast@details@wil@@YAXAEBUFailureInfo@2@@Z",
+    "prototype": "void __fastcall __noreturn(wil::details *__hidden this, const struct wil::FailureInfo *)",
+    "rank_score": 9,
+    "size": 167,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "__isa_available_init",
+    "ea": "0x1800023a4",
+    "function_file": "functions/1800023a4_isa_available_init.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__isa_available_init",
+    "prototype": "int __cdecl()",
+    "rank_score": 8,
+    "size": 643,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "_tlgWriteTemplate<long (_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),&_tlgWriteTransfer_EventWriteTransfer(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,uint,_EVENT_DATA_DESCRIPTOR *),_GUID const *,_GUID const *>::Write<_tlgWrapperByVal<4>,_tlgWrapSz<char>,_tlgWrapperByVal<4>,_tlgWrapSz<ushort>>(_tlgProvider_t const *,void const *,_GUID const *,_GUID const *,_tlgWrapperByVal<4> const &,_tlgWrapSz<char> const &,_tlgWrapperByVal<4> const &,_tlgWrapSz<ushort> const &)",
+    "ea": "0x180001010",
+    "function_file": "functions/180001010_tlgWriteTemplate_long_tlgProvider_t_const_void_const_GUID_const_GUID_const_uint_EVENT_DATA_DESCRIPTOR_tlgWrite.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$Write@U?$_tlgWrapperByVal@$03@@U?$_tlgWrapSz@D@@U1@U?$_tlgWrapSz@G@@@?$_tlgWriteTemplate@$$A6AJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2IPEAU_EVENT_DATA_DESCRIPTOR@@@Z$1?_tlgWriteTransfer_EventWriteTransfer@@YAJ0122I3@ZPEBU2@PEBU2@@@SAJPEBU_tlgProvider_t@@PEBXPEBU_GUID@@2AEBU?$_tlgWrapperByVal@$03@@AEBU?$_tlgWrapSz@D@@3AEBU?$_tlgWrapSz@G@@@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64, __int64, const unsigned __int16 **, __int64, int **)",
+    "rank_score": 6,
+    "size": 269,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "wil::details::shared_buffer::assign(long *,unsigned __int64)",
+    "ea": "0x180006838",
+    "function_file": "functions/180006838_wil_details_shared_buffer_assign_long_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?assign@shared_buffer@details@wil@@AEAAXPEAJ_K@Z",
+    "prototype": "void __fastcall(wil::details::shared_buffer *this, int *, __int64)",
+    "rank_score": 6,
+    "size": 60,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "__scrt_stub_for_acrt_uninitialize_critical",
+    "ea": "0x180002cbc",
+    "function_file": "functions/180002cbc_scrt_stub_for_acrt_uninitialize_critical.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_stub_for_acrt_uninitialize_critical",
+    "prototype": "char()",
+    "rank_score": 5,
+    "size": 3,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "_alloca_probe",
+    "ea": "0x18000a810",
+    "function_file": "functions/18000a810_alloca_probe.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_alloca_probe",
+    "prototype": "unsigned __int64 __fastcall()",
+    "rank_score": 5,
+    "size": 78,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "wil::details::ReportFailure_Base<1,0>(void *,uint,char const *,char const *,char const *,void *,wil::details::ResultStatus const &,ushort const *,wil::details::ReportFailureOptions,wil::FailureFlags)",
+    "ea": "0x180003530",
+    "function_file": "functions/180003530_wil_details_ReportFailure_Base_1_0_void_uint_char_const_char_const_char_const_void_wil_details_ResultStatus_co.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$ReportFailure_Base@$00$0A@@details@wil@@YAXPEAXIPEBD110AEBUResultStatus@01@PEBGW4ReportFailureOptions@01@W4FailureFlags@1@@Z",
+    "prototype": "__int64 __fastcall(int, int, int, int, int, __int64, int)",
+    "rank_score": 5,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "__local_stdio_printf_options",
+    "ea": "0x180001994",
+    "function_file": "functions/180001994_local_stdio_printf_options.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__local_stdio_printf_options",
+    "prototype": "unsigned __int64 *__cdecl()",
+    "rank_score": 4,
+    "size": 8,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil::details::WriteResultString<char const *>(uchar *,uchar *,char const *,char const * *)",
+    "ea": "0x180003a9c",
+    "function_file": "functions/180003a9c_wil_details_WriteResultString_char_const_uchar_uchar_char_const_char_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$WriteResultString@PEBD@details@wil@@YAPEAEPEAE0PEBDPEAPEBD@Z",
+    "prototype": "char *__fastcall(char *Destination, const char *, wil::details *, char **)",
+    "rank_score": 4,
+    "size": 112,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "wil::details::WriteResultString<ushort const *>(uchar *,uchar *,ushort const *,ushort const * *)",
+    "ea": "0x180003b14",
+    "function_file": "functions/180003b14_wil_details_WriteResultString_ushort_const_uchar_uchar_ushort_const_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$WriteResultString@PEBG@details@wil@@YAPEAEPEAE0PEBGPEAPEBG@Z",
+    "prototype": "char *__fastcall(unsigned __int16 *Destination, const unsigned __int16 *, wil::details *, unsigned __int16 **)",
+    "rank_score": 4,
+    "size": 103,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "__local_stdio_scanf_options",
+    "ea": "0x1800019a4",
+    "function_file": "functions/1800019a4_local_stdio_scanf_options.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__local_stdio_scanf_options",
+    "prototype": "unsigned __int64 *__cdecl()",
+    "rank_score": 3,
+    "size": 8,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "__scrt_fastfail",
+    "ea": "0x1800022b4",
+    "function_file": "functions/1800022b4_scrt_fastfail.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__scrt_fastfail",
+    "prototype": "void __fastcall __noreturn(unsigned int)",
+    "rank_score": 3,
+    "size": 4,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_tlgEnableCallback",
+    "ea": "0x1800017b0",
+    "function_file": "functions/1800017b0_tlgEnableCallback.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_tlgEnableCallback",
+    "prototype": "void __fastcall(LPCGUID SourceId, __int64 IsEnabled, __int64 Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, PEVENT_FILTER_DESCRIPTOR FilterData, _QWORD *CallbackContext)",
+    "rank_score": 2,
+    "size": 118,
+    "tags": []
+  }
+]

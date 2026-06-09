@@ -1,0 +1,56 @@
+# Microsoft::WRL::Module<1,Microsoft::WRL::Details::DefaultModule<1>>::Create(void)
+
+- ea: `0x180004620`
+- end: `0x180004651`
+- name: `?Create@?$Module@$00V?$DefaultModule@$00@Details@WRL@Microsoft@@@WRL@Microsoft@@SAAEAV?$DefaultModule@$00@Details@23@XZ`
+- size: `49`
+- prototype: ``
+- caller_count: `4`
+- callee_count: `0`
+- tags: `broker_com_uri`
+
+## callers
+
+- `0x180001920`
+- `0x180006b00`
+- `0x180006b50`
+- `0x180006b90`
+
+## import_xrefs
+
+- `api-ms-win-core-synch-l1-2-0!InitOnceExecuteOnce` at `0x180004638`
+- `api-ms-win-core-synch-l1-2-0!InitOnceExecuteOnce` at `0x180004638`
+
+## pseudocode
+
+```c
+__int64 *Microsoft::WRL::Module<1,Microsoft::WRL::Details::DefaultModule<1>>::Create()
+{
+  __int64 *result; // rax
+
+  InitOnceExecuteOnce(
+    &Microsoft::WRL::Module<1,Microsoft::WRL::Details::DefaultModule<1>>::initOnceInProc_,
+    _lambda_5f1dd388c03885d19ee806198d2ac5ef_::_lambda_invoker_cdecl_,
+    0,
+    0);
+  result = &Microsoft::WRL::Details::StaticStorage<Microsoft::WRL::Details::DefaultModule<1>,0,int>::instance_;
+  byte_180013388 = 1;
+  return result;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180004620  sub     rsp, 28h
+0x180004624  xor     r9d, r9d; Context
+0x180004627  lea     rdx, ?_lambda_invoker_cdecl_@_lambda_5f1dd388c03885d19ee806198d2ac5ef_@@CAHPEAT_RTL_RUN_ONCE@@PEAXPEAPEAX@Z; InitFn
+0x18000462e  xor     r8d, r8d; Parameter
+0x180004631  lea     rcx, ?initOnceInProc_@?$Module@$00V?$DefaultModule@$00@Details@WRL@Microsoft@@@WRL@Microsoft@@1T_RTL_RUN_ONCE@@A; InitOnce
+0x180004638  call    cs:__imp_InitOnceExecuteOnce
+0x18000463e  lea     rax, ?instance_@?$StaticStorage@V?$DefaultModule@$00@Details@WRL@Microsoft@@$0A@H@Details@WRL@Microsoft@@0V1234@A; Microsoft::WRL::Details::StaticStorage<Microsoft::WRL::Details::DefaultModule<1>,0,int> Microsoft::WRL::Details::StaticStorage<Microsoft::WRL::Details::DefaultModule<1>,0,int>::instance_
+0x180004645  mov     cs:byte_180013388, 1
+0x18000464c  add     rsp, 28h
+0x180004650  retn
+```

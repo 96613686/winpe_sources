@@ -1,0 +1,80 @@
+# ?create@?$event_t@V?$unique_storage@U?$resource_policy@PEAXP6AXPEAX@_E$1?CloseHandle@details@wil@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@Uerr_returncode_policy@3@@wil@@QEAAJW4EventOptions@2@PEBGPEAU_SECURITY_ATTRIBUTES@@PEA_N@Z
+
+- ea: `0x180002ff0`
+- end: `0x180003040`
+- name: `?create@?$event_t@V?$unique_storage@U?$resource_policy@PEAXP6AXPEAX@_E$1?CloseHandle@details@wil@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@Uerr_returncode_policy@3@@wil@@QEAAJW4EventOptions@2@PEBGPEAU_SECURITY_ATTRIBUTES@@PEA_N@Z`
+- size: `80`
+- prototype: `HRESULT __fastcall(wil::event_t<wil::details::unique_storage<wil::details::resource_policy<void *,void (__cdecl*)(void *) noexcept,&wil::details::CloseHandle,wistd::integral_constant<unsigned __int64,0>,void *,void *,0,std::nullptr_t> >,wil::err_returncode_policy> *this, wil::EventOptions options, const wchar_t *, _SECURITY_ATTRIBUTES *name)`
+- caller_count: `2`
+- callee_count: `3`
+- tags: `registry_config, broker_com_uri`
+
+## callers
+
+- `0x180020950`
+- `0x18003c2f0`
+
+## callees
+
+- `0x180002ff0`
+- `0x180003048`
+- `0x180020904`
+
+## import_xrefs
+
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18000301b`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18000301b`
+- `api-ms-win-core-synch-l1-1-0!CreateEventExW` at `0x18000300d`
+- `api-ms-win-core-synch-l1-1-0!CreateEventExW` at `0x18000300d`
+
+## pseudocode
+
+```c
+HRESULT __fastcall _create___event_t_V__unique_storage_U__resource_policy_PEAXP6AXPEAX__E_1_CloseHandle_details_wil__YAX0_ZU__integral_constant__K_0A__wistd__PEAXPEAX_0A___T_details_wil___details_wil__Uerr_returncode_policy_3__wil__QEAAJW4EventOptions_2_PEBGPEAU_SECURITY_ATTRIBUTES__PEA_N_Z(
+        wil::event_t<wil::details::unique_storage<wil::details::resource_policy<void *,void (__cdecl*)(void *) noexcept,&wil::details::CloseHandle,wistd::integral_constant<unsigned __int64,0>,void *,void *,0,std::nullptr_t> >,wil::err_returncode_policy> *this,
+        wil::EventOptions options,
+        const wchar_t *a3,
+        _SECURITY_ATTRIBUTES *name)
+{
+  HANDLE Event; // rbx
+
+  Event = CreateEventExW(0, 0, options & 3, 0x1F0003u);
+  if ( !Event )
+    return wil::details::GetLastErrorFailHr();
+  GetLastError();
+  _reset___unique_storage_U__resource_policy_PEAXP6AXPEAX__E_1_CloseHandle_details_wil__YAX0_ZU__integral_constant__K_0A__wistd__PEAXPEAX_0A___T_details_wil___details_wil__QEAAXPEAX_Z(
+    this,
+    Event);
+  return 0;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180002ff0  mov     [rsp+arg_0], rbx
+0x180002ff5  push    rdi
+0x180002ff6  sub     rsp, 20h
+0x180002ffa  and     options, 3
+0x180002ffd  mov     rdi, this
+0x180003000  mov     r8d, options; dwFlags
+0x180003003  mov     r9d, 1F0003h; dwDesiredAccess
+0x180003009  xor     options, options; lpName
+0x18000300b  xor     ecx, ecx; lpEventAttributes
+0x18000300d  call    cs:__imp_CreateEventExW
+0x180003013  mov     rbx, rax
+0x180003016  test    rax, rax
+0x180003019  jz      short loc_180003039
+0x18000301b  call    cs:__imp_GetLastError
+0x180003021  mov     rdx, rbx; ptr
+0x180003024  mov     this, rdi; this
+0x180003027  call    ?reset@?$unique_storage@U?$resource_policy@PEAXP6AXPEAX@_E$1?CloseHandle@details@wil@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@QEAAXPEAX@Z
+0x18000302c  xor     eax, eax
+0x18000302e  mov     rbx, [rsp+28h+arg_0]
+0x180003033  add     rsp, 20h
+0x180003037  pop     rdi
+0x180003038  retn
+0x180003039  call    ?GetLastErrorFailHr@details@wil@@YAJXZ; wil::details::GetLastErrorFailHr(void)
+0x18000303e  jmp     short loc_18000302E
+```
