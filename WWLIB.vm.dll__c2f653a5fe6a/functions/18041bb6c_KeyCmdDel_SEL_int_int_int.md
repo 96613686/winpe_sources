@@ -1,0 +1,191 @@
+# KeyCmdDel(_SEL *,int,int,int)
+
+- ea: `0x18041bb6c`
+- end: `0x18041daa1`
+- name: `?KeyCmdDel@@YA?AW4CMD@@PEAU_SEL@@HHH@Z`
+- size: `7989`
+- prototype: ``
+- caller_count: `8`
+- callee_count: `126`
+- tags: ``
+
+## callers
+
+- `0x1803ac570`
+- `0x18041b3f0`
+- `0x180e6c2c4`
+- `0x1817d2b90`
+- `0x18181fbd0`
+- `0x181bfc3a4`
+- `0x1821553e4`
+- `0x18215d970`
+
+## callees
+
+- `0x18000cd1c`
+- `0x18000f8c0`
+- `0x180017170`
+- `0x180020bbc`
+- `0x180021b5c`
+- `0x18002a170`
+- `0x18004e6dc`
+- `0x18004eea0`
+- `0x18005258c`
+- `0x18005430c`
+- `0x18005a050`
+- `0x18005a320`
+- `0x180063c70`
+- `0x18006d9c0`
+- `0x180070208`
+- `0x180070ec0`
+- `0x180070fa0`
+- `0x1800717c8`
+- `0x180071f0c`
+- `0x1800721f0`
+- `0x1800723b0`
+- `0x1800736a0`
+- `0x180073adc`
+- `0x180084fcc`
+- `0x18008dab0`
+- `0x180096270`
+- `0x18009efec`
+- `0x1800a3bd0`
+- `0x1800add98`
+- `0x1800af9c4`
+- `0x1800b1a7c`
+- `0x1800b2720`
+- `0x1800b9854`
+- `0x1800ca580`
+- `0x1800cba70`
+- `0x1800e34e0`
+- `0x1800f18b4`
+- `0x1800f4ad0`
+- `0x1800f9b20`
+- `0x1800f9d10`
+- `0x1800fc220`
+- `0x18010048c`
+- `0x180101a50`
+- `0x180102970`
+- `0x180106b64`
+- `0x18010b0c8`
+- `0x18010b258`
+- `0x18010b3c8`
+- `0x18010ea18`
+- `0x18010ea70`
+
+## import_xrefs
+
+- `KERNEL32!TlsGetValue` at `0x18041bdb5`
+- `KERNEL32!TlsGetValue` at `0x18041bdfb`
+- `KERNEL32!TlsGetValue` at `0x18041be17`
+- `KERNEL32!TlsGetValue` at `0x18041be3f`
+- `KERNEL32!TlsGetValue` at `0x18041be62`
+- `KERNEL32!TlsGetValue` at `0x18041be7b`
+- `KERNEL32!TlsGetValue` at `0x18041bf8d`
+- `KERNEL32!TlsGetValue` at `0x18041c0f9`
+- `KERNEL32!TlsGetValue` at `0x18041c11b`
+- `KERNEL32!TlsGetValue` at `0x18041c143`
+- `KERNEL32!TlsGetValue` at `0x18041c168`
+- `KERNEL32!TlsGetValue` at `0x18041c190`
+- `KERNEL32!TlsGetValue` at `0x18041c19f`
+- `KERNEL32!TlsGetValue` at `0x18041c223`
+- `KERNEL32!TlsGetValue` at `0x18041c247`
+- `KERNEL32!TlsGetValue` at `0x18041c263`
+- `KERNEL32!TlsGetValue` at `0x18041c2a7`
+- `KERNEL32!TlsGetValue` at `0x18041c2d6`
+- `KERNEL32!TlsGetValue` at `0x18041c2e9`
+- `KERNEL32!TlsGetValue` at `0x18041c307`
+- `KERNEL32!TlsGetValue` at `0x18041c36e`
+- `KERNEL32!TlsGetValue` at `0x18041c37d`
+- `KERNEL32!TlsGetValue` at `0x18041c871`
+- `KERNEL32!TlsGetValue` at `0x18041c893`
+- `KERNEL32!TlsGetValue` at `0x18041c8bc`
+- `KERNEL32!TlsGetValue` at `0x18041cb93`
+- `KERNEL32!TlsGetValue` at `0x18041cd3b`
+- `KERNEL32!TlsGetValue` at `0x18041cd5d`
+- `KERNEL32!TlsGetValue` at `0x18041cd85`
+- `KERNEL32!TlsGetValue` at `0x18041cda4`
+- `KERNEL32!TlsGetValue` at `0x18041cdb3`
+- `KERNEL32!TlsGetValue` at `0x18041cdd5`
+- `KERNEL32!TlsGetValue` at `0x18041ce02`
+- `KERNEL32!TlsGetValue` at `0x18041d1dc`
+- `KERNEL32!TlsGetValue` at `0x18041d201`
+- `KERNEL32!TlsGetValue` at `0x18041d216`
+- `KERNEL32!TlsGetValue` at `0x18041d22f`
+- `KERNEL32!TlsGetValue` at `0x18041d7ad`
+- `KERNEL32!TlsGetValue` at `0x18041d7f3`
+- `KERNEL32!TlsGetValue` at `0x18041d809`
+- `KERNEL32!TlsGetValue` at `0x18041d994`
+- `KERNEL32!TlsGetValue` at `0x18041d9ac`
+- `KERNEL32!TlsGetValue` at `0x18041bdb5`
+- `KERNEL32!TlsGetValue` at `0x18041bdfb`
+- `KERNEL32!TlsGetValue` at `0x18041be17`
+- `KERNEL32!TlsGetValue` at `0x18041be3f`
+- `KERNEL32!TlsGetValue` at `0x18041be62`
+- `KERNEL32!TlsGetValue` at `0x18041be7b`
+- `KERNEL32!TlsGetValue` at `0x18041bf8d`
+- `KERNEL32!TlsGetValue` at `0x18041c0f9`
+- `KERNEL32!TlsGetValue` at `0x18041c11b`
+- `KERNEL32!TlsGetValue` at `0x18041c143`
+- `KERNEL32!TlsGetValue` at `0x18041c168`
+- `KERNEL32!TlsGetValue` at `0x18041c190`
+- `KERNEL32!TlsGetValue` at `0x18041c19f`
+- `KERNEL32!TlsGetValue` at `0x18041c223`
+- `KERNEL32!TlsGetValue` at `0x18041c247`
+- `KERNEL32!TlsGetValue` at `0x18041c263`
+- `KERNEL32!TlsGetValue` at `0x18041c2a7`
+- `KERNEL32!TlsGetValue` at `0x18041c2d6`
+- `KERNEL32!TlsGetValue` at `0x18041c2e9`
+- `KERNEL32!TlsGetValue` at `0x18041c307`
+- `KERNEL32!TlsGetValue` at `0x18041c36e`
+- `KERNEL32!TlsGetValue` at `0x18041c37d`
+- `KERNEL32!TlsGetValue` at `0x18041c871`
+- `KERNEL32!TlsGetValue` at `0x18041c893`
+- `KERNEL32!TlsGetValue` at `0x18041c8bc`
+- `KERNEL32!TlsGetValue` at `0x18041cb93`
+- `KERNEL32!TlsGetValue` at `0x18041cd3b`
+- `KERNEL32!TlsGetValue` at `0x18041cd5d`
+- `KERNEL32!TlsGetValue` at `0x18041cd85`
+- `KERNEL32!TlsGetValue` at `0x18041cda4`
+- `KERNEL32!TlsGetValue` at `0x18041cdb3`
+- `KERNEL32!TlsGetValue` at `0x18041cdd5`
+- `KERNEL32!TlsGetValue` at `0x18041ce02`
+- `KERNEL32!TlsGetValue` at `0x18041d1dc`
+- `KERNEL32!TlsGetValue` at `0x18041d201`
+- `KERNEL32!TlsGetValue` at `0x18041d216`
+- `KERNEL32!TlsGetValue` at `0x18041d22f`
+- `KERNEL32!TlsGetValue` at `0x18041d7ad`
+- `KERNEL32!TlsGetValue` at `0x18041d7f3`
+- `KERNEL32!TlsGetValue` at `0x18041d809`
+- `KERNEL32!TlsGetValue` at `0x18041d994`
+- `KERNEL32!TlsGetValue` at `0x18041d9ac`
+- `OLEAUT32!__imp_VariantClear` at `0x18041d60f`
+- `OLEAUT32!__imp_VariantClear` at `0x18041d60f`
+- `mso40uiWin32Client!__imp_?StrongMoveAssign@CProxyPtrImpl@Ofc@@KAXPEAPEAV12@0@Z` at `0x18041c6d2`
+- `mso40uiWin32Client!__imp_?StrongMoveAssign@CProxyPtrImpl@Ofc@@KAXPEAPEAV12@0@Z` at `0x18041c6d2`
+- `mso40uiWin32Client!__imp_?DtorStrongRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x18041c6dc`
+- `mso40uiWin32Client!__imp_?DtorStrongRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x18041ca62`
+- `mso40uiWin32Client!__imp_?DtorStrongRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x18041d625`
+- `mso40uiWin32Client!__imp_?DtorStrongRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x18041c6dc`
+- `mso40uiWin32Client!__imp_?DtorStrongRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x18041ca62`
+- `mso40uiWin32Client!__imp_?DtorStrongRelease@CProxyPtrImpl@Ofc@@KAXAEAPEAV12@@Z` at `0x18041d625`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x18041cb3d`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x18041cb3d`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18041cabf`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18041da17`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18041cabf`
+- `Mso20Win32Client!__imp_?CrashWithRecovery@@YAXIPEAUCrashContext@@@Z` at `0x18041da17`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x18041c5a4`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x18041c5c4`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x18041c5a4`
+- `Mso20Win32Client!__imp_?Evaluate@FeatureGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x18041c5c4`
+- `Mso20Win32Client!__imp_?SendErrorTag@Diagnostics@Mso@@YAXKW4Category@Logging@2@@Z` at `0x18041cae0`
+- `Mso20Win32Client!__imp_?SendErrorTag@Diagnostics@Mso@@YAXKW4Category@Logging@2@@Z` at `0x18041da38`
+- `Mso20Win32Client!__imp_?SendErrorTag@Diagnostics@Mso@@YAXKW4Category@Logging@2@@Z` at `0x18041cae0`
+- `Mso20Win32Client!__imp_?SendErrorTag@Diagnostics@Mso@@YAXKW4Category@Logging@2@@Z` at `0x18041da38`
+
+## pseudocode
+
+```c
+
+```

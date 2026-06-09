@@ -1,0 +1,264 @@
+# LserrCalcPnbr(PTLS7::ols *,PTLS7::lsparaclient const *,bool,long,PTLS7::ANMRUNS *)
+
+- ea: `0x18031977c`
+- end: `0x18031ac1f`
+- name: `?LserrCalcPnbr@@YAJPEAUols@PTLS7@@PEBVlsparaclient@2@_NJPEAUANMRUNS@2@@Z`
+- size: `5283`
+- prototype: `int(struct PTLS7::ols *, const struct PTLS7::lsparaclient *, bool, int, struct PTLS7::ANMRUNS *)`
+- caller_count: `4`
+- callee_count: `41`
+- tags: `authz_impersonation`
+
+## callers
+
+- `0x18031d52c`
+- `0x1815ca528`
+- `0x1815dae6c`
+- `0x1815db540`
+
+## callees
+
+- `0x18002d530`
+- `0x18002e8dc`
+- `0x180033884`
+- `0x180047f40`
+- `0x180048698`
+- `0x180050040`
+- `0x1800500c8`
+- `0x1800505cc`
+- `0x180051230`
+- `0x18005414c`
+- `0x18005430c`
+- `0x1800723b0`
+- `0x1800723df`
+- `0x1800723f0`
+- `0x1800fb984`
+- `0x18010b258`
+- `0x18010d290`
+- `0x18010fd38`
+- `0x18012db70`
+- `0x18013c2e0`
+- `0x1801fa7ec`
+- `0x1802afbe4`
+- `0x1803186dc`
+- `0x18031977c`
+- `0x18031ac20`
+- `0x180327b04`
+- `0x18033e5c4`
+- `0x180359c10`
+- `0x1803659e4`
+- `0x180436e88`
+- `0x1804405b0`
+- `0x1805f9c24`
+- `0x1807aa558`
+- `0x1808be5f0`
+- `0x180946070`
+- `0x180e4bae0`
+- `0x180e59ab0`
+- `0x180e694c0`
+- `0x180fdd8b8`
+- `0x1811e392c`
+- `0x1814423c0`
+
+## import_xrefs
+
+- `KERNEL32!TlsGetValue` at `0x1803197e6`
+- `KERNEL32!TlsGetValue` at `0x180319863`
+- `KERNEL32!TlsGetValue` at `0x18031987a`
+- `KERNEL32!TlsGetValue` at `0x180319896`
+- `KERNEL32!TlsGetValue` at `0x1803198a9`
+- `KERNEL32!TlsGetValue` at `0x1803198e1`
+- `KERNEL32!TlsGetValue` at `0x180319903`
+- `KERNEL32!TlsGetValue` at `0x18031993e`
+- `KERNEL32!TlsGetValue` at `0x18031996e`
+- `KERNEL32!TlsGetValue` at `0x1803199a1`
+- `KERNEL32!TlsGetValue` at `0x180319a08`
+- `KERNEL32!TlsGetValue` at `0x180319b05`
+- `KERNEL32!TlsGetValue` at `0x180319b1a`
+- `KERNEL32!TlsGetValue` at `0x180319b2c`
+- `KERNEL32!TlsGetValue` at `0x180319b54`
+- `KERNEL32!TlsGetValue` at `0x180319b67`
+- `KERNEL32!TlsGetValue` at `0x180319b76`
+- `KERNEL32!TlsGetValue` at `0x180319b85`
+- `KERNEL32!TlsGetValue` at `0x180319bb6`
+- `KERNEL32!TlsGetValue` at `0x180319cbe`
+- `KERNEL32!TlsGetValue` at `0x180319cd5`
+- `KERNEL32!TlsGetValue` at `0x180319ce5`
+- `KERNEL32!TlsGetValue` at `0x180319d16`
+- `KERNEL32!TlsGetValue` at `0x180319d27`
+- `KERNEL32!TlsGetValue` at `0x180319d3c`
+- `KERNEL32!TlsGetValue` at `0x180319d86`
+- `KERNEL32!TlsGetValue` at `0x180319d95`
+- `KERNEL32!TlsGetValue` at `0x180319da4`
+- `KERNEL32!TlsGetValue` at `0x180319dd5`
+- `KERNEL32!TlsGetValue` at `0x180319e40`
+- `KERNEL32!TlsGetValue` at `0x180319e57`
+- `KERNEL32!TlsGetValue` at `0x180319e8d`
+- `KERNEL32!TlsGetValue` at `0x180319ea2`
+- `KERNEL32!TlsGetValue` at `0x180319ebb`
+- `KERNEL32!TlsGetValue` at `0x180319eca`
+- `KERNEL32!TlsGetValue` at `0x180319ee9`
+- `KERNEL32!TlsGetValue` at `0x180319efc`
+- `KERNEL32!TlsGetValue` at `0x180319f0e`
+- `KERNEL32!TlsGetValue` at `0x180319f23`
+- `KERNEL32!TlsGetValue` at `0x180319f39`
+- `KERNEL32!TlsGetValue` at `0x180319f4f`
+- `KERNEL32!TlsGetValue` at `0x180319f68`
+- `KERNEL32!TlsGetValue` at `0x180319f8e`
+- `KERNEL32!TlsGetValue` at `0x18031a02f`
+- `KERNEL32!TlsGetValue` at `0x18031a099`
+- `KERNEL32!TlsGetValue` at `0x18031a0ab`
+- `KERNEL32!TlsGetValue` at `0x18031a0d3`
+- `KERNEL32!TlsGetValue` at `0x18031a10c`
+- `KERNEL32!TlsGetValue` at `0x18031a123`
+- `KERNEL32!TlsGetValue` at `0x18031a14a`
+- `KERNEL32!TlsGetValue` at `0x18031a174`
+- `KERNEL32!TlsGetValue` at `0x18031a18a`
+- `KERNEL32!TlsGetValue` at `0x18031a1a3`
+- `KERNEL32!TlsGetValue` at `0x18031a301`
+- `KERNEL32!TlsGetValue` at `0x18031a39a`
+- `KERNEL32!TlsGetValue` at `0x18031a3af`
+- `KERNEL32!TlsGetValue` at `0x18031a3c1`
+- `KERNEL32!TlsGetValue` at `0x18031a3d3`
+- `KERNEL32!TlsGetValue` at `0x18031a3fb`
+- `KERNEL32!TlsGetValue` at `0x18031a43a`
+- `KERNEL32!TlsGetValue` at `0x18031a454`
+- `KERNEL32!TlsGetValue` at `0x18031a558`
+- `KERNEL32!TlsGetValue` at `0x18031a73d`
+- `KERNEL32!TlsGetValue` at `0x18031a755`
+- `KERNEL32!TlsGetValue` at `0x18031a76c`
+- `KERNEL32!TlsGetValue` at `0x18031a785`
+- `KERNEL32!TlsGetValue` at `0x18031a79b`
+- `KERNEL32!TlsGetValue` at `0x18031a7ad`
+- `KERNEL32!TlsGetValue` at `0x18031a7bc`
+- `KERNEL32!TlsGetValue` at `0x18031a7d7`
+- `KERNEL32!TlsGetValue` at `0x18031a7ec`
+- `KERNEL32!TlsGetValue` at `0x18031a7f8`
+- `KERNEL32!TlsGetValue` at `0x18031a816`
+- `KERNEL32!TlsGetValue` at `0x18031a832`
+- `KERNEL32!TlsGetValue` at `0x18031a84a`
+- `KERNEL32!TlsGetValue` at `0x18031a863`
+- `KERNEL32!TlsGetValue` at `0x18031a878`
+- `KERNEL32!TlsGetValue` at `0x18031a8b5`
+- `KERNEL32!TlsGetValue` at `0x18031a928`
+- `KERNEL32!TlsGetValue` at `0x18031a940`
+- `KERNEL32!TlsGetValue` at `0x18031a968`
+- `KERNEL32!TlsGetValue` at `0x18031a981`
+- `KERNEL32!TlsGetValue` at `0x18031a996`
+- `KERNEL32!TlsGetValue` at `0x18031a9a8`
+- `KERNEL32!TlsGetValue` at `0x18031a9c2`
+- `KERNEL32!TlsGetValue` at `0x18031a9db`
+- `KERNEL32!TlsGetValue` at `0x18031aa95`
+- `KERNEL32!TlsGetValue` at `0x18031aab2`
+- `KERNEL32!TlsGetValue` at `0x18031aac7`
+- `KERNEL32!TlsGetValue` at `0x18031aad9`
+- `KERNEL32!TlsGetValue` at `0x18031ab62`
+- `KERNEL32!TlsGetValue` at `0x18031aba2`
+- `KERNEL32!TlsGetValue` at `0x18031abc1`
+- `KERNEL32!TlsGetValue` at `0x1803197e6`
+- `KERNEL32!TlsGetValue` at `0x180319863`
+- `KERNEL32!TlsGetValue` at `0x18031987a`
+- `KERNEL32!TlsGetValue` at `0x180319896`
+- `KERNEL32!TlsGetValue` at `0x1803198a9`
+- `KERNEL32!TlsGetValue` at `0x1803198e1`
+- `KERNEL32!TlsGetValue` at `0x180319903`
+- `KERNEL32!TlsGetValue` at `0x18031993e`
+- `KERNEL32!TlsGetValue` at `0x18031996e`
+- `KERNEL32!TlsGetValue` at `0x1803199a1`
+- `KERNEL32!TlsGetValue` at `0x180319a08`
+- `KERNEL32!TlsGetValue` at `0x180319b05`
+- `KERNEL32!TlsGetValue` at `0x180319b1a`
+- `KERNEL32!TlsGetValue` at `0x180319b2c`
+- `KERNEL32!TlsGetValue` at `0x180319b54`
+- `KERNEL32!TlsGetValue` at `0x180319b67`
+- `KERNEL32!TlsGetValue` at `0x180319b76`
+- `KERNEL32!TlsGetValue` at `0x180319b85`
+- `KERNEL32!TlsGetValue` at `0x180319bb6`
+- `KERNEL32!TlsGetValue` at `0x180319cbe`
+- `KERNEL32!TlsGetValue` at `0x180319cd5`
+- `KERNEL32!TlsGetValue` at `0x180319ce5`
+- `KERNEL32!TlsGetValue` at `0x180319d16`
+- `KERNEL32!TlsGetValue` at `0x180319d27`
+- `KERNEL32!TlsGetValue` at `0x180319d3c`
+- `KERNEL32!TlsGetValue` at `0x180319d86`
+- `KERNEL32!TlsGetValue` at `0x180319d95`
+- `KERNEL32!TlsGetValue` at `0x180319da4`
+- `KERNEL32!TlsGetValue` at `0x180319dd5`
+- `KERNEL32!TlsGetValue` at `0x180319e40`
+- `KERNEL32!TlsGetValue` at `0x180319e57`
+- `KERNEL32!TlsGetValue` at `0x180319e8d`
+- `KERNEL32!TlsGetValue` at `0x180319ea2`
+- `KERNEL32!TlsGetValue` at `0x180319ebb`
+- `KERNEL32!TlsGetValue` at `0x180319eca`
+- `KERNEL32!TlsGetValue` at `0x180319ee9`
+- `KERNEL32!TlsGetValue` at `0x180319efc`
+- `KERNEL32!TlsGetValue` at `0x180319f0e`
+- `KERNEL32!TlsGetValue` at `0x180319f23`
+- `KERNEL32!TlsGetValue` at `0x180319f39`
+- `KERNEL32!TlsGetValue` at `0x180319f4f`
+- `KERNEL32!TlsGetValue` at `0x180319f68`
+- `KERNEL32!TlsGetValue` at `0x180319f8e`
+- `KERNEL32!TlsGetValue` at `0x18031a02f`
+- `KERNEL32!TlsGetValue` at `0x18031a099`
+- `KERNEL32!TlsGetValue` at `0x18031a0ab`
+- `KERNEL32!TlsGetValue` at `0x18031a0d3`
+- `KERNEL32!TlsGetValue` at `0x18031a10c`
+- `KERNEL32!TlsGetValue` at `0x18031a123`
+- `KERNEL32!TlsGetValue` at `0x18031a14a`
+- `KERNEL32!TlsGetValue` at `0x18031a174`
+- `KERNEL32!TlsGetValue` at `0x18031a18a`
+- `KERNEL32!TlsGetValue` at `0x18031a1a3`
+- `KERNEL32!TlsGetValue` at `0x18031a301`
+- `KERNEL32!TlsGetValue` at `0x18031a39a`
+- `KERNEL32!TlsGetValue` at `0x18031a3af`
+- `KERNEL32!TlsGetValue` at `0x18031a3c1`
+- `KERNEL32!TlsGetValue` at `0x18031a3d3`
+- `KERNEL32!TlsGetValue` at `0x18031a3fb`
+- `KERNEL32!TlsGetValue` at `0x18031a43a`
+- `KERNEL32!TlsGetValue` at `0x18031a454`
+- `KERNEL32!TlsGetValue` at `0x18031a558`
+- `KERNEL32!TlsGetValue` at `0x18031a73d`
+- `KERNEL32!TlsGetValue` at `0x18031a755`
+- `KERNEL32!TlsGetValue` at `0x18031a76c`
+- `KERNEL32!TlsGetValue` at `0x18031a785`
+- `KERNEL32!TlsGetValue` at `0x18031a79b`
+- `KERNEL32!TlsGetValue` at `0x18031a7ad`
+- `KERNEL32!TlsGetValue` at `0x18031a7bc`
+- `KERNEL32!TlsGetValue` at `0x18031a7d7`
+- `KERNEL32!TlsGetValue` at `0x18031a7ec`
+- `KERNEL32!TlsGetValue` at `0x18031a7f8`
+- `KERNEL32!TlsGetValue` at `0x18031a816`
+- `KERNEL32!TlsGetValue` at `0x18031a832`
+- `KERNEL32!TlsGetValue` at `0x18031a84a`
+- `KERNEL32!TlsGetValue` at `0x18031a863`
+- `KERNEL32!TlsGetValue` at `0x18031a878`
+- `KERNEL32!TlsGetValue` at `0x18031a8b5`
+- `KERNEL32!TlsGetValue` at `0x18031a928`
+- `KERNEL32!TlsGetValue` at `0x18031a940`
+- `KERNEL32!TlsGetValue` at `0x18031a968`
+- `KERNEL32!TlsGetValue` at `0x18031a981`
+- `KERNEL32!TlsGetValue` at `0x18031a996`
+- `KERNEL32!TlsGetValue` at `0x18031a9a8`
+- `KERNEL32!TlsGetValue` at `0x18031a9c2`
+- `KERNEL32!TlsGetValue` at `0x18031a9db`
+- `KERNEL32!TlsGetValue` at `0x18031aa95`
+- `KERNEL32!TlsGetValue` at `0x18031aab2`
+- `KERNEL32!TlsGetValue` at `0x18031aac7`
+- `KERNEL32!TlsGetValue` at `0x18031aad9`
+- `KERNEL32!TlsGetValue` at `0x18031ab62`
+- `KERNEL32!TlsGetValue` at `0x18031aba2`
+- `KERNEL32!TlsGetValue` at `0x18031abc1`
+- `Mso30Win32Client!__imp_MsoWchToUpper` at `0x18031a6d3`
+- `Mso30Win32Client!__imp_MsoWchToUpper` at `0x18031a6d3`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x18031a2c7`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x18031a2e5`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x18031a2c7`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x18031a2e5`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x18031995e`
+- `Mso20Win32Client!__imp_?Evaluate@ChangeGate@Optimized@AB@Mso@@AEBA_NXZ` at `0x18031995e`
+
+## pseudocode
+
+```c
+
+```

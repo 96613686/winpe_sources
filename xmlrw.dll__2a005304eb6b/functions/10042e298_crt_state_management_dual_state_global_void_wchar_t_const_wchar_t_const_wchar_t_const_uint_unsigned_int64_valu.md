@@ -1,0 +1,31 @@
+# __crt_state_management::dual_state_global<void (*)(wchar_t const *,wchar_t const *,wchar_t const *,uint,unsigned __int64)>::value(__crt_cached_ptd_host &)
+
+- ea: `0x10042e298`
+- end: `0x10042e2e4`
+- name: `?value@?$dual_state_global@P6AXPEB_W00I_K@Z@__crt_state_management@@QEAAAEAP6AXPEB_W00I_K@ZAEAV__crt_cached_ptd_host@@@Z`
+- size: `76`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `1`
+- tags: ``
+
+## callers
+
+- `0x10042e504`
+
+## callees
+
+- `0x10042e298`
+
+## import_xrefs
+
+- `KERNEL32!GetLastError` at `0x10042e2b4`
+- `KERNEL32!GetLastError` at `0x10042e2b4`
+- `KERNEL32!SetLastError` at `0x10042e2c4`
+- `KERNEL32!SetLastError` at `0x10042e2c4`
+
+## pseudocode
+
+```c
+
+```

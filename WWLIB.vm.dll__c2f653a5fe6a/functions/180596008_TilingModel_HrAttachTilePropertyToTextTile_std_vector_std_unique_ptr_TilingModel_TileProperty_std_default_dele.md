@@ -1,0 +1,222 @@
+# TilingModel::HrAttachTilePropertyToTextTile(std::vector<std::unique_ptr<TilingModel::TileProperty,std::default_delete<TilingModel::TileProperty>>,std::allocator<std::unique_ptr<TilingModel::TileProperty,std::default_delete<TilingModel::TileProperty>>>> const &,Mso::WritingAssistance::ITextTile *)
+
+- ea: `0x180596008`
+- end: `0x18059763f`
+- name: `?HrAttachTilePropertyToTextTile@TilingModel@@YAJAEBV?$vector@V?$unique_ptr@UTileProperty@TilingModel@@U?$default_delete@UTileProperty@TilingModel@@@std@@@std@@V?$allocator@V?$unique_ptr@UTileProperty@TilingModel@@U?$default_delete@UTileProperty@TilingModel@@@std@@@std@@@2@@std@@PEAUITextTile@WritingAssistance@Mso@@@Z`
+- size: `5687`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `22`
+- tags: ``
+
+## callers
+
+- `0x180597cc0`
+
+## callees
+
+- `0x1800723b0`
+- `0x1800f77b0`
+- `0x180100c70`
+- `0x1801e0db8`
+- `0x1801e1da0`
+- `0x1804406b0`
+- `0x1804f5a50`
+- `0x1804f5cb0`
+- `0x1804f5e30`
+- `0x1804f5fb4`
+- `0x18055d550`
+- `0x18055d904`
+- `0x180595630`
+- `0x180595f90`
+- `0x180596008`
+- `0x180597640`
+- `0x1805976b0`
+- `0x180597724`
+- `0x1805978e0`
+- `0x1805979f0`
+- `0x180597a54`
+- `0x180ebeebc`
+
+## import_xrefs
+
+- `OLEAUT32!__imp_SysAllocString` at `0x1805969c8`
+- `OLEAUT32!__imp_SysAllocString` at `0x1805969df`
+- `OLEAUT32!__imp_SysAllocString` at `0x1805969c8`
+- `OLEAUT32!__imp_SysAllocString` at `0x1805969df`
+- `OLEAUT32!__imp_SysFreeString` at `0x180596a1b`
+- `OLEAUT32!__imp_SysFreeString` at `0x180596a24`
+- `OLEAUT32!__imp_SysFreeString` at `0x1805974c2`
+- `OLEAUT32!__imp_SysFreeString` at `0x1805974cb`
+- `OLEAUT32!__imp_SysFreeString` at `0x180596a1b`
+- `OLEAUT32!__imp_SysFreeString` at `0x180596a24`
+- `OLEAUT32!__imp_SysFreeString` at `0x1805974c2`
+- `OLEAUT32!__imp_SysFreeString` at `0x1805974cb`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180596666`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180596676`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180596686`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180596694`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805966a2`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805966b2`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805966c2`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805966d2`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805966e2`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805966f2`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180596701`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180596710`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x18059671f`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x18059672e`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x18059673d`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x18059674c`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x18059675b`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x18059676a`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180596779`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180596787`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180596796`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805967a4`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805967b2`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805967c0`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805967cf`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805967de`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597167`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597177`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597187`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597196`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805971a5`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805971b5`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805971c5`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805971d5`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805971e5`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805971f5`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597204`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597213`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597222`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597231`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597240`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x18059724f`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x18059725e`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x18059726d`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x18059727c`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x18059728b`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x18059729a`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805972aa`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805972b9`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597332`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597342`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597352`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597361`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597370`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597380`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597390`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805973a0`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805973b0`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805973c0`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805973cf`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805973de`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805973ed`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805973fc`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x18059740b`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x18059741a`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597429`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597438`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597447`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597456`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597465`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597475`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597484`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597494`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805974a3`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805974b2`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180596666`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180596676`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180596686`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180596694`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805966a2`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805966b2`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805966c2`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805966d2`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805966e2`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805966f2`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180596701`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180596710`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x18059671f`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x18059672e`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x18059673d`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x18059674c`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x18059675b`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x18059676a`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180596779`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180596787`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180596796`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805967a4`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805967b2`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805967c0`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805967cf`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805967de`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597167`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597177`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597187`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597196`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805971a5`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805971b5`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805971c5`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805971d5`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805971e5`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805971f5`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597204`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597213`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597222`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597231`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597240`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x18059724f`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x18059725e`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x18059726d`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x18059727c`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x18059728b`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x18059729a`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805972aa`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805972b9`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597332`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597342`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597352`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597361`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597370`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597380`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597390`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805973a0`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805973b0`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805973c0`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805973cf`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805973de`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805973ed`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805973fc`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x18059740b`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x18059741a`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597429`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597438`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597447`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597456`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597465`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597475`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597484`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x180597494`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805974a3`
+- `OLEAUT32!__imp_SafeArrayDestroy` at `0x1805974b2`
+- `OLEAUT32!__imp_SafeArrayCreateVector` at `0x1805961a7`
+- `OLEAUT32!__imp_SafeArrayCreateVector` at `0x1805961f0`
+- `OLEAUT32!__imp_SafeArrayCreateVector` at `0x180596609`
+- `OLEAUT32!__imp_SafeArrayCreateVector` at `0x180596846`
+- `OLEAUT32!__imp_SafeArrayCreateVector` at `0x1805961a7`
+- `OLEAUT32!__imp_SafeArrayCreateVector` at `0x1805961f0`
+- `OLEAUT32!__imp_SafeArrayCreateVector` at `0x180596609`
+- `OLEAUT32!__imp_SafeArrayCreateVector` at `0x180596846`
+- `api-ms-win-crt-runtime-l1-1-0!terminate` at `0x180597638`
+- `api-ms-win-crt-runtime-l1-1-0!terminate` at `0x180597638`
+- `Mso20Win32Client!__imp_?SendErrorTag@Diagnostics@Mso@@YAXKW4Category@Logging@2@@Z` at `0x180596629`
+- `Mso20Win32Client!__imp_?SendErrorTag@Diagnostics@Mso@@YAXKW4Category@Logging@2@@Z` at `0x180596629`
+
+## pseudocode
+
+```c
+
+```

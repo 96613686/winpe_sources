@@ -1,0 +1,579 @@
+# HRenderCfFromHMeta(void *,ushort,int,int,int)
+
+- ea: `0x1811f372c`
+- end: `0x1811f3bbe`
+- name: `?HRenderCfFromHMeta@@YAPEAXPEAXGHHH@Z`
+- size: `1170`
+- prototype: `void *__usercall@<rax>(HENHMETAFILE hmf@<rcx>, unsigned __int16@<dx>, int@<r8d>, int@<r9d>, int)`
+- caller_count: `3`
+- callee_count: `8`
+- tags: `broker_com_uri`
+
+## callers
+
+- `0x1803fd690`
+- `0x181727470`
+- `0x1820374a4`
+
+## callees
+
+- `0x1800721e4`
+- `0x1800723b0`
+- `0x1804406b0`
+- `0x1810cccf0`
+- `0x1811f372c`
+- `0x18128dbb8`
+- `0x181acf3b0`
+- `0x181e49060`
+
+## import_xrefs
+
+- `KERNEL32!GlobalUnlock` at `0x1811f3b13`
+- `KERNEL32!GlobalUnlock` at `0x1811f3b4a`
+- `KERNEL32!GlobalUnlock` at `0x1811f3b13`
+- `KERNEL32!GlobalUnlock` at `0x1811f3b4a`
+- `KERNEL32!GlobalLock` at `0x1811f381b`
+- `KERNEL32!GlobalLock` at `0x1811f381b`
+- `KERNEL32!GlobalFree` at `0x1811f3b58`
+- `KERNEL32!GlobalFree` at `0x1811f3b58`
+- `api-ms-win-crt-math-l1-1-0!round` at `0x1811f3a4b`
+- `api-ms-win-crt-math-l1-1-0!round` at `0x1811f3a83`
+- `api-ms-win-crt-math-l1-1-0!round` at `0x1811f3a4b`
+- `api-ms-win-crt-math-l1-1-0!round` at `0x1811f3a83`
+- `MSO!__imp_?MsoInitBdp@@YAXPEAUMSOBDRAWPARAM@@@Z` at `0x1811f3996`
+- `MSO!__imp_?MsoInitBdp@@YAXPEAUMSOBDRAWPARAM@@@Z` at `0x1811f3996`
+- `MSO!__imp_?MsoFPlayMetaFile@@YAHPEBUMSODC@@PEBUMSOBDRAWPARAM@@PEAUHMETAFILE__@@@Z` at `0x1811f3ab7`
+- `MSO!__imp_?MsoFPlayMetaFile@@YAHPEBUMSODC@@PEBUMSOBDRAWPARAM@@PEAUHMETAFILE__@@@Z` at `0x1811f3ab7`
+- `MSO!__imp_MsoInitBdposFromRcv` at `0x1811f39a8`
+- `MSO!__imp_MsoInitBdposFromRcv` at `0x1811f39a8`
+- `MSO!__imp_?MsoFPlayEnhMetaFile@@YAHPEBUMSODC@@PEBUMSOBDRAWPARAM@@PEAUHENHMETAFILE__@@@Z` at `0x1811f3aaf`
+- `MSO!__imp_?MsoFPlayEnhMetaFile@@YAHPEBUMSODC@@PEBUMSOBDRAWPARAM@@PEAUHENHMETAFILE__@@@Z` at `0x1811f3aaf`
+- `mso40uiWin32Client!__imp_?MsoDestroyDc@@YAXPEAUMSODC@@@Z` at `0x1811f3ac1`
+- `mso40uiWin32Client!__imp_?MsoDestroyDc@@YAXPEAUMSODC@@@Z` at `0x1811f3ac1`
+- `mso40uiWin32Client!__imp_??0MSODC@@QEAA@XZ` at `0x1811f3776`
+- `mso40uiWin32Client!__imp_??0MSODC@@QEAA@XZ` at `0x1811f3776`
+- `mso40uiWin32Client!__imp_?MsoFillDcObj@@YAXPEAUMSODC@@PEAUHDC__@@W4MSOGELDCINFO@@PEAUHPALETTE__@@KP6AHPEAX@Z4K@Z` at `0x1811f397b`
+- `mso40uiWin32Client!__imp_?MsoFillDcObj@@YAXPEAUMSODC@@PEAUHDC__@@W4MSOGELDCINFO@@PEAUHPALETTE__@@KP6AHPEAX@Z4K@Z` at `0x1811f397b`
+- `mso40uiWin32Client!__imp_??1MSODC@@QEAA@XZ` at `0x1811f3b31`
+- `mso40uiWin32Client!__imp_??1MSODC@@QEAA@XZ` at `0x1811f3b84`
+- `mso40uiWin32Client!__imp_??1MSODC@@QEAA@XZ` at `0x1811f3b92`
+- `mso40uiWin32Client!__imp_??1MSODC@@QEAA@XZ` at `0x1811f3b31`
+- `mso40uiWin32Client!__imp_??1MSODC@@QEAA@XZ` at `0x1811f3b84`
+- `mso40uiWin32Client!__imp_??1MSODC@@QEAA@XZ` at `0x1811f3b92`
+- `mso40uiWin32Client!__imp_?MsoHpalOffice@@YAPEAUHPALETTE__@@XZ` at `0x1811f3899`
+- `mso40uiWin32Client!__imp_?MsoHpalOffice@@YAPEAUHPALETTE__@@XZ` at `0x1811f3899`
+- `GDI32!DeleteObject` at `0x1811f3b02`
+- `GDI32!DeleteObject` at `0x1811f3b66`
+- `GDI32!DeleteObject` at `0x1811f3b02`
+- `GDI32!DeleteObject` at `0x1811f3b66`
+- `GDI32!SelectObject` at `0x1811f3893`
+- `GDI32!SelectObject` at `0x1811f3893`
+- `GDI32!DeleteEnhMetaFile` at `0x1811f37dc`
+- `GDI32!DeleteEnhMetaFile` at `0x1811f3b20`
+- `GDI32!DeleteEnhMetaFile` at `0x1811f3b73`
+- `GDI32!DeleteEnhMetaFile` at `0x1811f37dc`
+- `GDI32!DeleteEnhMetaFile` at `0x1811f3b20`
+- `GDI32!DeleteEnhMetaFile` at `0x1811f3b73`
+- `GDI32!SetMapMode` at `0x1811f38ed`
+- `GDI32!SetMapMode` at `0x1811f38ed`
+- `GDI32!RestoreDC` at `0x1811f3ad0`
+- `GDI32!RestoreDC` at `0x1811f3ad0`
+- `GDI32!SetStretchBltMode` at `0x1811f38fd`
+- `GDI32!SetStretchBltMode` at `0x1811f38fd`
+- `GDI32!SetViewportOrgEx` at `0x1811f3937`
+- `GDI32!SetViewportOrgEx` at `0x1811f3937`
+- `GDI32!SelectPalette` at `0x1811f38a8`
+- `GDI32!SelectPalette` at `0x1811f38a8`
+- `GDI32!DeleteDC` at `0x1811f3adb`
+- `GDI32!DeleteDC` at `0x1811f3adb`
+- `GDI32!SetViewportExtEx` at `0x1811f394b`
+- `GDI32!SetViewportExtEx` at `0x1811f394b`
+- `GDI32!SetWindowExtEx` at `0x1811f3924`
+- `GDI32!SetWindowExtEx` at `0x1811f3924`
+- `GDI32!SetWindowOrgEx` at `0x1811f3910`
+- `GDI32!SetWindowOrgEx` at `0x1811f3910`
+- `GDI32!RealizePalette` at `0x1811f38b1`
+- `GDI32!RealizePalette` at `0x1811f38b1`
+- `GDI32!CreateCompatibleDC` at `0x1811f3849`
+- `GDI32!CreateCompatibleDC` at `0x1811f3849`
+- `GDI32!SaveDC` at `0x1811f3883`
+- `GDI32!SaveDC` at `0x1811f3883`
+- `GDI32!CreateCompatibleBitmap` at `0x1811f385e`
+- `GDI32!CreateCompatibleBitmap` at `0x1811f385e`
+- `gdiplus!GdipGetImageBounds` at `0x1811f3a10`
+- `gdiplus!GdipGetImageBounds` at `0x1811f3a10`
+- `gdiplus!GdipCreateMetafileFromWmf` at `0x1811f39f4`
+- `gdiplus!GdipCreateMetafileFromWmf` at `0x1811f39f4`
+- `gdiplus!GdipDisposeImage` at `0x1811f3a9a`
+- `gdiplus!GdipDisposeImage` at `0x1811f3a9a`
+- `gdiplus!GdipCreateMetafileFromEmf` at `0x1811f39df`
+- `gdiplus!GdipCreateMetafileFromEmf` at `0x1811f39df`
+- `USER32!GetDC` at `0x1811f383d`
+- `USER32!GetDC` at `0x1811f383d`
+- `USER32!ReleaseDC` at `0x1811f386c`
+- `USER32!ReleaseDC` at `0x1811f386c`
+- `USER32!FillRect` at `0x1811f38de`
+- `USER32!FillRect` at `0x1811f38de`
+
+## pseudocode
+
+```c
+HENHMETAFILE __fastcall HRenderCfFromHMeta(HENHMETAFILE hmf, unsigned __int16 a2, int a3, int a4, int a5)
+{
+  HENHMETAFILE *v7; // r14
+  HBITMAP CompatibleBitmap; // rsi
+  int v9; // ebx
+  HENHMETAFILE v10; // r12
+  int v11; // esi
+  HENHMETAFILE *v12; // rax
+  HDC DC; // rbx
+  HPALETTE v14; // rax
+  int v15; // r15d
+  int MetafileFromEmf; // eax
+  float v17; // xmm1_4
+  float v18; // xmm1_4
+  HPALETTE v19; // rdx
+  HBITMAP v20; // r15
+  int iMode; // [rsp+40h] [rbp-C0h] BYREF
+  int x[2]; // [rsp+48h] [rbp-B8h] BYREF
+  int cy; // [rsp+50h] [rbp-B0h]
+  HDC hdc; // [rsp+58h] [rbp-A8h]
+  HBITMAP v26; // [rsp+60h] [rbp-A0h] BYREF
+  int nSavedDC; // [rsp+68h] [rbp-98h]
+  RECT rc; // [rsp+70h] [rbp-90h] BYREF
+  __m128i si128; // [rsp+80h] [rbp-80h] BYREF
+  _BYTE v30[4]; // [rsp+90h] [rbp-70h] BYREF
+  int v31; // [rsp+94h] [rbp-6Ch]
+  int v32; // [rsp+9Ch] [rbp-64h]
+  char v33[160]; // [rsp+A0h] [rbp-60h] BYREF
+  _BYTE v34[256]; // [rsp+140h] [rbp+40h] BYREF
+
+  cy = a4;
+  x[0] = a3;
+  v7 = 0;
+  CompatibleBitmap = 0;
+  MSODC::MSODC((MSODC *)v34);
+  if ( a2 == 3 || a2 == 14 )
+  {
+    MSODC::~MSODC((MSODC *)v34);
+    return hmf;
+  }
+  v9 = a5;
+  if ( a5 )
+  {
+    v10 = hmf;
+    if ( FOartCf(a2) )
+    {
+      v26 = 0;
+      v11 = x[0];
+      if ( (unsigned __int8)HandleOartRenderForClipFormat((_DWORD)hmf, a2, x[0], cy, (__int64)&v26) )
+      {
+        DeleteEnhMetaFile(hmf);
+        CompatibleBitmap = v26;
+        v26 = 0;
+LABEL_37:
+        MSODC::~MSODC((MSODC *)v34);
+        return (HENHMETAFILE)CompatibleBitmap;
+      }
+      if ( v26 )
+        (*(void (__fastcall **)(HBITMAP))(*(_QWORD *)v26 + 16LL))(v26);
+    }
+    else
+    {
+      v11 = x[0];
+    }
+    iMode = 8;
+LABEL_13:
+    DC = GetDC(0);
+    hdc = CreateCompatibleDC(DC);
+    CompatibleBitmap = CreateCompatibleBitmap(DC, v11, cy);
+    ReleaseDC(0, DC);
+    if ( CompatibleBitmap )
+    {
+      nSavedDC = SaveDC(hdc);
+      SelectObject(hdc, CompatibleBitmap);
+      v14 = MsoHpalOffice();
+      SelectPalette(hdc, v14, 0);
+      RealizePalette(hdc);
+      *(_QWORD *)&rc.left = 0;
+      v15 = x[0];
+      rc.right = x[0];
+      rc.bottom = cy;
+      FillRect(hdc, &rc, (HBRUSH)6);
+      SetMapMode(hdc, iMode);
+      SetStretchBltMode(hdc, 3);
+      SetWindowOrgEx(hdc, 0, 0, 0);
+      SetWindowExtEx(hdc, x[0], cy, 0);
+      SetViewportOrgEx(hdc, 0, 0, 0);
+      SetViewportExtEx(hdc, x[0], cy, 0);
+      MsoFillDcObj(v34, hdc, 0x800000, 0, 0, 0, 0, 10);
+      memset_0(v30, 0, 0xB0u);
+      MsoInitBdp((struct MSOBDRAWPARAM *)v30);
+      MsoInitBdposFromRcv(v33, &rc, 0);
+      *(_QWORD *)x = 0;
+      si128 = _mm_load_si128((const __m128i *)&_xmm_bf800000bf8000000000000000000000);
+      iMode = 0;
+      v9 = a5;
+      if ( a5 )
+        MetafileFromEmf = GdipCreateMetafileFromEmf(v10, 0, x);
+      else
+        MetafileFromEmf = GdipCreateMetafileFromWmf(v10, 0, 0, x);
+      if ( !MetafileFromEmf && !(unsigned int)GdipGetImageBounds(*(_QWORD *)x, &si128, &iMode) && iMode == 2 )
+      {
+        v17 = *(float *)&si128.m128i_i32[2] - (float)v15;
+        if ( v17 > 0.000001 )
+          v32 = (int)round((float)(v17 / *(float *)&si128.m128i_i32[2]) * 65536.0);
+        v18 = *(float *)&si128.m128i_i32[3] - (float)cy;
+        if ( v18 > 0.000001 )
+          v31 = (int)round((float)(v18 / *(float *)&si128.m128i_i32[3]) * 65536.0);
+      }
+      if ( *(_QWORD *)x )
+        GdipDisposeImage(*(_QWORD *)x);
+      if ( a5 )
+        MsoFPlayEnhMetaFile((const struct MSODC *)v34, (const struct MSOBDRAWPARAM *)v30, v10);
+      else
+        MsoFPlayMetaFile((const struct MSODC *)v34, (const struct MSOBDRAWPARAM *)v30, (HMETAFILE)v10);
+      MsoDestroyDc((struct MSODC *)v34);
+      RestoreDC(hdc, nSavedDC);
+      DeleteDC(hdc);
+      if ( a2 != 8 )
+        goto LABEL_32;
+      v20 = (HBITMAP)HdibFromBmp(CompatibleBitmap, v19, 0);
+      if ( v20 )
+      {
+        DeleteObject(CompatibleBitmap);
+        CompatibleBitmap = v20;
+LABEL_32:
+        if ( v7 )
+          GlobalUnlock(hmf);
+        if ( a5 )
+          DeleteEnhMetaFile(hmf);
+        else
+          DeleteMetaFilePict(hmf);
+        goto LABEL_37;
+      }
+    }
+    else
+    {
+      v9 = a5;
+    }
+    goto LABEL_39;
+  }
+  v12 = (HENHMETAFILE *)GlobalLock(hmf);
+  v7 = v12;
+  if ( v12 )
+  {
+    v10 = v12[2];
+    iMode = *(_DWORD *)v12;
+    v11 = x[0];
+    goto LABEL_13;
+  }
+LABEL_39:
+  if ( v7 )
+    GlobalUnlock(hmf);
+  if ( CompatibleBitmap )
+    DeleteObject(CompatibleBitmap);
+  if ( v9 )
+    DeleteEnhMetaFile(hmf);
+  else
+    DeleteMetaFilePict(hmf);
+  MSODC::~MSODC((MSODC *)v34);
+  return 0;
+}
+
+```
+
+## disassembly
+
+```asm
+0x1811f372c  push    rbp
+0x1811f372e  push    rbx
+0x1811f372f  push    rsi
+0x1811f3730  push    rdi
+0x1811f3731  push    r12
+0x1811f3733  push    r13
+0x1811f3735  push    r14
+0x1811f3737  push    r15
+0x1811f3739  lea     rbp, [rsp-158h]
+0x1811f3741  sub     rsp, 258h
+0x1811f3748  mov     rax, cs:__security_cookie
+0x1811f374f  xor     rax, rsp
+0x1811f3752  mov     [rbp+190h+var_50], rax
+0x1811f3759  mov     [rsp+290h+cy], r9d
+0x1811f375e  mov     [rsp+290h+x], r8d
+0x1811f3763  movzx   r13d, dx
+0x1811f3767  mov     rdi, rcx
+0x1811f376a  xor     r14d, r14d
+0x1811f376d  xor     esi, esi
+0x1811f376f  xor     r15d, r15d
+0x1811f3772  lea     rcx, [rbp+190h+var_150]
+0x1811f3776  call    cs:__imp_??0MSODC@@QEAA@XZ; MSODC::MSODC(void)
+0x1811f377c  lea     eax, [rsi+3]
+0x1811f377f  cmp     r13w, ax
+0x1811f3783  jz      loc_1811F3B8E
+0x1811f3789  cmp     r13w, 0Eh
+0x1811f378e  jz      loc_1811F3B8E
+0x1811f3794  mov     ebx, [rbp+190h+arg_20]
+0x1811f379a  test    ebx, ebx
+0x1811f379c  jz      short loc_1811F3818
+0x1811f379e  mov     r12, rdi
+0x1811f37a1  movzx   ecx, r13w; unsigned __int16
+0x1811f37a5  call    ?FOartCf@@YA_NG@Z; FOartCf(ushort)
+0x1811f37aa  test    al, al
+0x1811f37ac  jz      short loc_1811F380A
+0x1811f37ae  mov     [rsp+290h+var_230], rsi
+0x1811f37b3  lea     rax, [rsp+290h+var_230]
+0x1811f37b8  mov     [rsp+290h+var_270], rax
+0x1811f37bd  mov     r9d, [rsp+290h+cy]
+0x1811f37c2  mov     esi, [rsp+290h+x]
+0x1811f37c6  mov     r8d, esi
+0x1811f37c9  movzx   edx, r13w
+0x1811f37cd  mov     rcx, rdi
+0x1811f37d0  call    ?HandleOartRenderForClipFormat@@YA_NPEAXGHHAEAV?$TCntPtr@UIStream@@@Ofc@@@Z; HandleOartRenderForClipFormat(void *,ushort,int,int,Ofc::TCntPtr<IStream> &)
+0x1811f37d5  test    al, al
+0x1811f37d7  jz      short loc_1811F37F1
+0x1811f37d9  mov     rcx, rdi; hmf
+0x1811f37dc  call    cs:__imp_DeleteEnhMetaFile
+0x1811f37e2  mov     rsi, [rsp+290h+var_230]
+0x1811f37e7  mov     [rsp+290h+var_230], r14
+0x1811f37ec  jmp     loc_1811F3B2D
+0x1811f37f1  mov     rcx, [rsp+290h+var_230]
+0x1811f37f6  test    rcx, rcx
+0x1811f37f9  jz      short loc_1811F380E
+0x1811f37fb  mov     rax, [rcx]
+0x1811f37fe  mov     rax, [rax+10h]
+0x1811f3802  call    cs:__guard_dispatch_icall_fptr
+0x1811f3808  jmp     short loc_1811F380E
+0x1811f380a  mov     esi, [rsp+290h+x]
+0x1811f380e  mov     [rsp+290h+iMode], 8
+0x1811f3816  jmp     short loc_1811F383B
+0x1811f3818  mov     rcx, rdi; hMem
+0x1811f381b  call    cs:__imp_GlobalLock
+0x1811f3821  mov     r14, rax
+0x1811f3824  test    rax, rax
+0x1811f3827  jz      loc_1811F3B42
+0x1811f382d  mov     r12, [rax+10h]
+0x1811f3831  mov     eax, [rax]
+0x1811f3833  mov     [rsp+290h+iMode], eax
+0x1811f3837  mov     esi, [rsp+290h+x]
+0x1811f383b  xor     ecx, ecx; hWnd
+0x1811f383d  call    cs:__imp_GetDC
+0x1811f3843  mov     rbx, rax
+0x1811f3846  mov     rcx, rax; hdc
+0x1811f3849  call    cs:__imp_CreateCompatibleDC
+0x1811f384f  mov     [rsp+290h+hdc], rax
+0x1811f3854  mov     r8d, [rsp+290h+cy]; cy
+0x1811f3859  mov     edx, esi; cx
+0x1811f385b  mov     rcx, rbx; hdc
+0x1811f385e  call    cs:__imp_CreateCompatibleBitmap
+0x1811f3864  mov     rsi, rax
+0x1811f3867  mov     rdx, rbx; hDC
+0x1811f386a  xor     ecx, ecx; hWnd
+0x1811f386c  call    cs:__imp_ReleaseDC
+0x1811f3872  test    rsi, rsi
+0x1811f3875  jz      loc_1811F3B3C
+0x1811f387b  mov     rbx, [rsp+290h+hdc]
+0x1811f3880  mov     rcx, rbx; hdc
+0x1811f3883  call    cs:__imp_SaveDC
+0x1811f3889  mov     [rsp+290h+nSavedDC], eax
+0x1811f388d  mov     rdx, rsi; h
+0x1811f3890  mov     rcx, rbx; hdc
+0x1811f3893  call    cs:__imp_SelectObject
+0x1811f3899  call    cs:__imp_?MsoHpalOffice@@YAPEAUHPALETTE__@@XZ; MsoHpalOffice(void)
+0x1811f389f  mov     rdx, rax; hPal
+0x1811f38a2  xor     r8d, r8d; bForceBkgd
+0x1811f38a5  mov     rcx, rbx; hdc
+0x1811f38a8  call    cs:__imp_SelectPalette
+0x1811f38ae  mov     rcx, rbx; hdc
+0x1811f38b1  call    cs:__imp_RealizePalette
+0x1811f38b7  mov     qword ptr [rsp+290h+rc.left], r15
+0x1811f38bc  mov     r15d, [rsp+290h+x]
+0x1811f38c1  mov     [rsp+290h+rc.right], r15d
+0x1811f38c6  mov     ebx, [rsp+290h+cy]
+0x1811f38ca  mov     [rsp+290h+rc.bottom], ebx
+0x1811f38ce  mov     r8d, 6; hbr
+0x1811f38d4  lea     rdx, [rsp+290h+rc]; lprc
+0x1811f38d9  mov     rcx, [rsp+290h+hdc]; hDC
+0x1811f38de  call    cs:__imp_FillRect
+0x1811f38e4  mov     edx, [rsp+290h+iMode]; iMode
+0x1811f38e8  mov     rcx, [rsp+290h+hdc]; hdc
+0x1811f38ed  call    cs:__imp_SetMapMode
+0x1811f38f3  mov     edx, 3; mode
+0x1811f38f8  mov     rcx, [rsp+290h+hdc]; hdc
+0x1811f38fd  call    cs:__imp_SetStretchBltMode
+0x1811f3903  xor     r9d, r9d; lppt
+0x1811f3906  xor     r8d, r8d; y
+0x1811f3909  xor     edx, edx; x
+0x1811f390b  mov     rcx, [rsp+290h+hdc]; hdc
+0x1811f3910  call    cs:__imp_SetWindowOrgEx
+0x1811f3916  xor     r9d, r9d; lpsz
+0x1811f3919  mov     r8d, ebx; y
+0x1811f391c  mov     edx, r15d; x
+0x1811f391f  mov     rcx, [rsp+290h+hdc]; hdc
+0x1811f3924  call    cs:__imp_SetWindowExtEx
+0x1811f392a  xor     r9d, r9d; lppt
+0x1811f392d  xor     r8d, r8d; y
+0x1811f3930  xor     edx, edx; x
+0x1811f3932  mov     rcx, [rsp+290h+hdc]; hdc
+0x1811f3937  call    cs:__imp_SetViewportOrgEx
+0x1811f393d  xor     r9d, r9d; lpsz
+0x1811f3940  mov     r8d, ebx; y
+0x1811f3943  mov     edx, r15d; x
+0x1811f3946  mov     rcx, [rsp+290h+hdc]; hdc
+0x1811f394b  call    cs:__imp_SetViewportExtEx
+0x1811f3951  mov     [rsp+290h+var_258], 0Ah
+0x1811f3959  xor     eax, eax
+0x1811f395b  mov     [rsp+290h+var_260], rax
+0x1811f3960  mov     [rsp+290h+var_268], rax
+0x1811f3965  mov     dword ptr [rsp+290h+var_270], eax
+0x1811f3969  xor     r9d, r9d
+0x1811f396c  mov     r8d, 800000h
+0x1811f3972  mov     rdx, [rsp+290h+hdc]
+0x1811f3977  lea     rcx, [rbp+190h+var_150]
+0x1811f397b  call    cs:__imp_?MsoFillDcObj@@YAXPEAUMSODC@@PEAUHDC__@@W4MSOGELDCINFO@@PEAUHPALETTE__@@KP6AHPEAX@Z4K@Z; MsoFillDcObj(MSODC *,HDC__ *,MSOGELDCINFO,HPALETTE__ *,ulong,int (*)(void *),void *,ulong)
+0x1811f3981  xor     edx, edx; Val
+0x1811f3983  mov     r8d, 0B0h; Size
+0x1811f3989  lea     rcx, [rbp+190h+var_200]; void *
+0x1811f398d  call    memset_0
+0x1811f3992  lea     rcx, [rbp+190h+var_200]
+0x1811f3996  call    cs:__imp_?MsoInitBdp@@YAXPEAUMSOBDRAWPARAM@@@Z; MsoInitBdp(MSOBDRAWPARAM *)
+0x1811f399c  xor     r8d, r8d
+0x1811f399f  lea     rdx, [rsp+290h+rc]
+0x1811f39a4  lea     rcx, [rbp+190h+var_1F0]
+0x1811f39a8  call    cs:__imp_MsoInitBdposFromRcv
+0x1811f39ae  mov     qword ptr [rsp+290h+x], 0
+0x1811f39b7  movdqa  xmm0, cs:__xmm@bf800000bf8000000000000000000000
+0x1811f39bf  movups  [rbp+190h+var_210], xmm0
+0x1811f39c3  mov     [rsp+290h+iMode], 0
+0x1811f39cb  mov     ebx, [rbp+190h+arg_20]
+0x1811f39d1  test    ebx, ebx
+0x1811f39d3  jz      short loc_1811F39E7
+0x1811f39d5  lea     r8, [rsp+290h+x]
+0x1811f39da  xor     edx, edx
+0x1811f39dc  mov     rcx, r12
+0x1811f39df  call    cs:__imp_GdipCreateMetafileFromEmf
+0x1811f39e5  jmp     short loc_1811F39FA
+0x1811f39e7  lea     r9, [rsp+290h+x]
+0x1811f39ec  xor     r8d, r8d
+0x1811f39ef  xor     edx, edx
+0x1811f39f1  mov     rcx, r12
+0x1811f39f4  call    cs:__imp_GdipCreateMetafileFromWmf
+0x1811f39fa  test    eax, eax
+0x1811f39fc  jnz     loc_1811F3A90
+0x1811f3a02  lea     r8, [rsp+290h+iMode]
+0x1811f3a07  lea     rdx, [rbp+190h+var_210]
+0x1811f3a0b  mov     rcx, qword ptr [rsp+290h+x]
+0x1811f3a10  call    cs:__imp_GdipGetImageBounds
+0x1811f3a16  test    eax, eax
+0x1811f3a18  jnz     short loc_1811F3A90
+0x1811f3a1a  cmp     [rsp+290h+iMode], 2
+0x1811f3a1f  jnz     short loc_1811F3A90
+0x1811f3a21  movd    xmm0, r15d
+0x1811f3a26  cvtdq2ps xmm0, xmm0
+0x1811f3a29  movss   xmm1, dword ptr [rbp+190h+var_210+8]
+0x1811f3a2e  subss   xmm1, xmm0
+0x1811f3a32  comiss  xmm1, cs:__real@358637bd
+0x1811f3a39  jbe     short loc_1811F3A58
+0x1811f3a3b  divss   xmm1, dword ptr [rbp+190h+var_210+8]
+0x1811f3a40  cvtps2pd xmm0, xmm1
+0x1811f3a43  mulsd   xmm0, cs:__real@40f0000000000000; X
+0x1811f3a4b  call    cs:__imp_round
+0x1811f3a51  cvttsd2si eax, xmm0
+0x1811f3a55  mov     [rbp+190h+var_1F4], eax
+0x1811f3a58  movd    xmm0, [rsp+290h+cy]
+0x1811f3a5e  cvtdq2ps xmm0, xmm0
+0x1811f3a61  movss   xmm1, dword ptr [rbp+190h+var_210+0Ch]
+0x1811f3a66  subss   xmm1, xmm0
+0x1811f3a6a  comiss  xmm1, cs:__real@358637bd
+0x1811f3a71  jbe     short loc_1811F3A90
+0x1811f3a73  divss   xmm1, dword ptr [rbp+190h+var_210+0Ch]
+0x1811f3a78  cvtps2pd xmm0, xmm1
+0x1811f3a7b  mulsd   xmm0, cs:__real@40f0000000000000; X
+0x1811f3a83  call    cs:__imp_round
+0x1811f3a89  cvttsd2si eax, xmm0
+0x1811f3a8d  mov     [rbp+190h+var_1FC], eax
+0x1811f3a90  mov     rcx, qword ptr [rsp+290h+x]
+0x1811f3a95  test    rcx, rcx
+0x1811f3a98  jz      short loc_1811F3AA0
+0x1811f3a9a  call    cs:__imp_GdipDisposeImage
+0x1811f3aa0  mov     r8, r12
+0x1811f3aa3  lea     rdx, [rbp+190h+var_200]
+0x1811f3aa7  lea     rcx, [rbp+190h+var_150]
+0x1811f3aab  test    ebx, ebx
+0x1811f3aad  jz      short loc_1811F3AB7
+0x1811f3aaf  call    cs:__imp_?MsoFPlayEnhMetaFile@@YAHPEBUMSODC@@PEBUMSOBDRAWPARAM@@PEAUHENHMETAFILE__@@@Z; MsoFPlayEnhMetaFile(MSODC const *,MSOBDRAWPARAM const *,HENHMETAFILE__ *)
+0x1811f3ab5  jmp     short loc_1811F3ABD
+0x1811f3ab7  call    cs:__imp_?MsoFPlayMetaFile@@YAHPEBUMSODC@@PEBUMSOBDRAWPARAM@@PEAUHMETAFILE__@@@Z; MsoFPlayMetaFile(MSODC const *,MSOBDRAWPARAM const *,HMETAFILE__ *)
+0x1811f3abd  lea     rcx, [rbp+190h+var_150]
+0x1811f3ac1  call    cs:__imp_?MsoDestroyDc@@YAXPEAUMSODC@@@Z; MsoDestroyDc(MSODC *)
+0x1811f3ac7  mov     edx, [rsp+290h+nSavedDC]; nSavedDC
+0x1811f3acb  mov     rcx, [rsp+290h+hdc]; hdc
+0x1811f3ad0  call    cs:__imp_RestoreDC
+0x1811f3ad6  mov     rcx, [rsp+290h+hdc]; hdc
+0x1811f3adb  call    cs:__imp_DeleteDC
+0x1811f3ae1  mov     eax, 8
+0x1811f3ae6  cmp     r13w, ax
+0x1811f3aea  jnz     short loc_1811F3B0B
+0x1811f3aec  xor     r8d, r8d; struct DIBINFO *
+0x1811f3aef  mov     rcx, rsi; HBITMAP
+0x1811f3af2  call    ?HdibFromBmp@@YAPEAXPEAUHBITMAP__@@PEAUHPALETTE__@@PEAUDIBINFO@@@Z; HdibFromBmp(HBITMAP__ *,HPALETTE__ *,DIBINFO *)
+0x1811f3af7  mov     r15, rax
+0x1811f3afa  test    rax, rax
+0x1811f3afd  jz      short loc_1811F3B42
+0x1811f3aff  mov     rcx, rsi; ho
+0x1811f3b02  call    cs:__imp_DeleteObject
+0x1811f3b08  mov     rsi, r15
+0x1811f3b0b  test    r14, r14
+0x1811f3b0e  jz      short loc_1811F3B19
+0x1811f3b10  mov     rcx, rdi; hMem
+0x1811f3b13  call    cs:__imp_GlobalUnlock
+0x1811f3b19  mov     rcx, rdi; hmf
+0x1811f3b1c  test    ebx, ebx
+0x1811f3b1e  jz      short loc_1811F3B28
+0x1811f3b20  call    cs:__imp_DeleteEnhMetaFile
+0x1811f3b26  jmp     short loc_1811F3B2D
+0x1811f3b28  call    ?DeleteMetaFilePict@@YAXPEAX@Z; DeleteMetaFilePict(void *)
+0x1811f3b2d  lea     rcx, [rbp+190h+var_150]
+0x1811f3b31  call    cs:__imp_??1MSODC@@QEAA@XZ; MSODC::~MSODC(void)
+0x1811f3b37  mov     rax, rsi
+0x1811f3b3a  jmp     short loc_1811F3B9B
+0x1811f3b3c  mov     ebx, [rbp+190h+arg_20]
+0x1811f3b42  test    r14, r14
+0x1811f3b45  jz      short loc_1811F3B50
+0x1811f3b47  mov     rcx, rdi; hMem
+0x1811f3b4a  call    cs:__imp_GlobalUnlock
+0x1811f3b50  test    r15, r15
+0x1811f3b53  jz      short loc_1811F3B5E
+0x1811f3b55  mov     rcx, r15; hMem
+0x1811f3b58  call    cs:__imp_GlobalFree
+0x1811f3b5e  test    rsi, rsi
+0x1811f3b61  jz      short loc_1811F3B6C
+0x1811f3b63  mov     rcx, rsi; ho
+0x1811f3b66  call    cs:__imp_DeleteObject
+0x1811f3b6c  mov     rcx, rdi; hmf
+0x1811f3b6f  test    ebx, ebx
+0x1811f3b71  jz      short loc_1811F3B7B
+0x1811f3b73  call    cs:__imp_DeleteEnhMetaFile
+0x1811f3b79  jmp     short loc_1811F3B80
+0x1811f3b7b  call    ?DeleteMetaFilePict@@YAXPEAX@Z; DeleteMetaFilePict(void *)
+0x1811f3b80  lea     rcx, [rbp+190h+var_150]
+0x1811f3b84  call    cs:__imp_??1MSODC@@QEAA@XZ; MSODC::~MSODC(void)
+0x1811f3b8a  xor     eax, eax
+0x1811f3b8c  jmp     short loc_1811F3B9B
+0x1811f3b8e  lea     rcx, [rbp+190h+var_150]
+0x1811f3b92  call    cs:__imp_??1MSODC@@QEAA@XZ; MSODC::~MSODC(void)
+0x1811f3b98  mov     rax, rdi
+0x1811f3b9b  mov     rcx, [rbp+190h+var_50]
+0x1811f3ba2  xor     rcx, rsp; StackCookie
+0x1811f3ba5  call    __security_check_cookie
+0x1811f3baa  add     rsp, 258h
+0x1811f3bb1  pop     r15
+0x1811f3bb3  pop     r14
+0x1811f3bb5  pop     r13
+0x1811f3bb7  pop     r12
+0x1811f3bb9  pop     rdi
+0x1811f3bba  pop     rsi
+0x1811f3bbb  pop     rbx
+0x1811f3bbc  pop     rbp
+0x1811f3bbd  retn
+```

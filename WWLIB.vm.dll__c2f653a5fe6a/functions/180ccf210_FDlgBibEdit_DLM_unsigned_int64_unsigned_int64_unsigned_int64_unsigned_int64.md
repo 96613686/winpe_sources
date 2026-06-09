@@ -1,0 +1,216 @@
+# FDlgBibEdit(DLM,unsigned __int64,unsigned __int64,unsigned __int64,unsigned __int64)
+
+- ea: `0x180ccf210`
+- end: `0x180cd02eb`
+- name: `?FDlgBibEdit@@YAHW4DLM@@_K111@Z`
+- size: `4315`
+- prototype: `int __high(enum DLM, unsigned __int64, unsigned __int64, unsigned __int64, unsigned __int64)`
+- caller_count: `0`
+- callee_count: `37`
+- tags: `reparse_path, registry_config`
+
+## callees
+
+- `0x1800723b0`
+- `0x1800754e8`
+- `0x1800dd638`
+- `0x18029f8e4`
+- `0x1802afbe4`
+- `0x1802f9110`
+- `0x1804406b0`
+- `0x1804dc178`
+- `0x18054bb90`
+- `0x180bcf2bc`
+- `0x180cccae4`
+- `0x180cccba0`
+- `0x180ccf210`
+- `0x180cd090c`
+- `0x180cd0d8c`
+- `0x180cd1000`
+- `0x180cd10b4`
+- `0x180e39c84`
+- `0x180e3b8c8`
+- `0x180e64e08`
+- `0x180f0158c`
+- `0x180f23bb0`
+- `0x1810d6938`
+- `0x1810d7a14`
+- `0x181166d10`
+- `0x1812ce6f8`
+- `0x181319fcc`
+- `0x181324854`
+- `0x1816f66c0`
+- `0x1816f6788`
+- `0x1816f6dac`
+- `0x1816f9180`
+- `0x1816fe014`
+- `0x1816ffdcc`
+- `0x1816ffe3c`
+- `0x18170140c`
+- `0x181e3b628`
+
+## import_xrefs
+
+- `OLEAUT32!__imp_SysFreeString` at `0x180ccfd14`
+- `OLEAUT32!__imp_SysFreeString` at `0x180cd01ef`
+- `OLEAUT32!__imp_SysFreeString` at `0x180ccfd14`
+- `OLEAUT32!__imp_SysFreeString` at `0x180cd01ef`
+- `OLEAUT32!__imp_SysStringLen` at `0x180ccfc77`
+- `OLEAUT32!__imp_SysStringLen` at `0x180cd01ac`
+- `OLEAUT32!__imp_SysStringLen` at `0x180ccfc77`
+- `OLEAUT32!__imp_SysStringLen` at `0x180cd01ac`
+- `MSO!__imp_?FreeCab@@YAXPEAPEAX@Z` at `0x180ccfd0b`
+- `MSO!__imp_?FreeCab@@YAXPEAPEAX@Z` at `0x180ccfd0b`
+- `MSO!__imp_?FEnabledTmc@@YA_N_K@Z` at `0x180ccf404`
+- `MSO!__imp_?FEnabledTmc@@YA_N_K@Z` at `0x180ccf41e`
+- `MSO!__imp_?FEnabledTmc@@YA_N_K@Z` at `0x180ccf438`
+- `MSO!__imp_?FEnabledTmc@@YA_N_K@Z` at `0x180ccf602`
+- `MSO!__imp_?FEnabledTmc@@YA_N_K@Z` at `0x180ccf651`
+- `MSO!__imp_?FEnabledTmc@@YA_N_K@Z` at `0x180ccf672`
+- `MSO!__imp_?FEnabledTmc@@YA_N_K@Z` at `0x180ccf69d`
+- `MSO!__imp_?FEnabledTmc@@YA_N_K@Z` at `0x180ccf7e3`
+- `MSO!__imp_?FEnabledTmc@@YA_N_K@Z` at `0x180ccf819`
+- `MSO!__imp_?FEnabledTmc@@YA_N_K@Z` at `0x180ccf83d`
+- `MSO!__imp_?FEnabledTmc@@YA_N_K@Z` at `0x180ccf860`
+- `MSO!__imp_?FEnabledTmc@@YA_N_K@Z` at `0x180ccf996`
+- `MSO!__imp_?FEnabledTmc@@YA_N_K@Z` at `0x180ccf9b0`
+- `MSO!__imp_?FEnabledTmc@@YA_N_K@Z` at `0x180ccf9cf`
+- `MSO!__imp_?FEnabledTmc@@YA_N_K@Z` at `0x180ccf9ee`
+- `MSO!__imp_?FEnabledTmc@@YA_N_K@Z` at `0x180ccf404`
+- `MSO!__imp_?FEnabledTmc@@YA_N_K@Z` at `0x180ccf41e`
+- `MSO!__imp_?FEnabledTmc@@YA_N_K@Z` at `0x180ccf438`
+- `MSO!__imp_?FEnabledTmc@@YA_N_K@Z` at `0x180ccf602`
+- `MSO!__imp_?FEnabledTmc@@YA_N_K@Z` at `0x180ccf651`
+- `MSO!__imp_?FEnabledTmc@@YA_N_K@Z` at `0x180ccf672`
+- `MSO!__imp_?FEnabledTmc@@YA_N_K@Z` at `0x180ccf69d`
+- `MSO!__imp_?FEnabledTmc@@YA_N_K@Z` at `0x180ccf7e3`
+- `MSO!__imp_?FEnabledTmc@@YA_N_K@Z` at `0x180ccf819`
+- `MSO!__imp_?FEnabledTmc@@YA_N_K@Z` at `0x180ccf83d`
+- `MSO!__imp_?FEnabledTmc@@YA_N_K@Z` at `0x180ccf860`
+- `MSO!__imp_?FEnabledTmc@@YA_N_K@Z` at `0x180ccf996`
+- `MSO!__imp_?FEnabledTmc@@YA_N_K@Z` at `0x180ccf9b0`
+- `MSO!__imp_?FEnabledTmc@@YA_N_K@Z` at `0x180ccf9cf`
+- `MSO!__imp_?FEnabledTmc@@YA_N_K@Z` at `0x180ccf9ee`
+- `MSO!__imp_?SetFocusTmc@@YA_N_K@Z` at `0x180ccf46c`
+- `MSO!__imp_?SetFocusTmc@@YA_N_K@Z` at `0x180ccf899`
+- `MSO!__imp_?SetFocusTmc@@YA_N_K@Z` at `0x180ccfa0f`
+- `MSO!__imp_?SetFocusTmc@@YA_N_K@Z` at `0x180ccf46c`
+- `MSO!__imp_?SetFocusTmc@@YA_N_K@Z` at `0x180ccf899`
+- `MSO!__imp_?SetFocusTmc@@YA_N_K@Z` at `0x180ccfa0f`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf3f5`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf411`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf42b`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf44b`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf49e`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf4b6`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf5eb`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf644`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf666`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf683`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf690`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf7d6`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf80b`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf82e`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf852`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf989`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf9a3`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf9c2`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf9e1`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf3f5`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf411`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf42b`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf44b`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf49e`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf4b6`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf5eb`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf644`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf666`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf683`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf690`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf7d6`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf80b`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf82e`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf852`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf989`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf9a3`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf9c2`
+- `MSO!__imp_?FIsVisibleTmc@@YA_N_K@Z` at `0x180ccf9e1`
+- `MSO!__imp_?GetTmcText@@YAX_KPEA_W0@Z` at `0x180ccfaa2`
+- `MSO!__imp_?GetTmcText@@YAX_KPEA_W0@Z` at `0x180ccfee2`
+- `MSO!__imp_?GetTmcText@@YAX_KPEA_W0@Z` at `0x180ccfaa2`
+- `MSO!__imp_?GetTmcText@@YAX_KPEA_W0@Z` at `0x180ccfee2`
+- `MSO!__imp_?TmcGetFocus@@YA_KXZ` at `0x180ccf31c`
+- `MSO!__imp_?TmcGetFocus@@YA_KXZ` at `0x180ccf737`
+- `MSO!__imp_?TmcGetFocus@@YA_KXZ` at `0x180ccf31c`
+- `MSO!__imp_?TmcGetFocus@@YA_KXZ` at `0x180ccf737`
+- `MSO!__imp_?SetTmcVal@@YAX_K0@Z` at `0x180cd00f3`
+- `MSO!__imp_?SetTmcVal@@YAX_K0@Z` at `0x180cd01e6`
+- `MSO!__imp_?SetTmcVal@@YAX_K0@Z` at `0x180cd0299`
+- `MSO!__imp_?SetTmcVal@@YAX_K0@Z` at `0x180cd00f3`
+- `MSO!__imp_?SetTmcVal@@YAX_K0@Z` at `0x180cd01e6`
+- `MSO!__imp_?SetTmcVal@@YAX_K0@Z` at `0x180cd0299`
+- `MSO!__imp_?WRefQueryCur@@YA_KXZ` at `0x180ccf251`
+- `MSO!__imp_?WRefQueryCur@@YA_KXZ` at `0x180ccfb2c`
+- `MSO!__imp_?WRefQueryCur@@YA_KXZ` at `0x180ccfce8`
+- `MSO!__imp_?WRefQueryCur@@YA_KXZ` at `0x180ccfdb6`
+- `MSO!__imp_?WRefQueryCur@@YA_KXZ` at `0x180cd01c4`
+- `MSO!__imp_?WRefQueryCur@@YA_KXZ` at `0x180cd0206`
+- `MSO!__imp_?WRefQueryCur@@YA_KXZ` at `0x180ccf251`
+- `MSO!__imp_?WRefQueryCur@@YA_KXZ` at `0x180ccfb2c`
+- `MSO!__imp_?WRefQueryCur@@YA_KXZ` at `0x180ccfce8`
+- `MSO!__imp_?WRefQueryCur@@YA_KXZ` at `0x180ccfdb6`
+- `MSO!__imp_?WRefQueryCur@@YA_KXZ` at `0x180cd01c4`
+- `MSO!__imp_?WRefQueryCur@@YA_KXZ` at `0x180cd0206`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x180cd0158`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x180cd0234`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x180cd0158`
+- `MSO!__imp_?SetTmcText@@YAX_KPEB_W@Z` at `0x180cd0234`
+- `MSO!__imp_?LimitTextTmc@@YAX_K0@Z` at `0x180cd0174`
+- `MSO!__imp_?LimitTextTmc@@YAX_K0@Z` at `0x180cd0174`
+- `MSO!__imp_?EnableTmc@@YAX_K_N@Z` at `0x180cd02b0`
+- `MSO!__imp_?EnableTmc@@YAX_K_N@Z` at `0x180cd02b0`
+- `MSO!__imp_?MsoSDMDALAutoLayoutCleanup@@YAXXZ` at `0x180cd0037`
+- `MSO!__imp_?MsoSDMDALAutoLayoutCleanup@@YAXXZ` at `0x180cd0037`
+- `MSO!__imp_?ValGetTmc@@YA_K_K@Z` at `0x180ccfae3`
+- `MSO!__imp_?ValGetTmc@@YA_K_K@Z` at `0x180ccfb0f`
+- `MSO!__imp_?ValGetTmc@@YA_K_K@Z` at `0x180ccfd97`
+- `MSO!__imp_?ValGetTmc@@YA_K_K@Z` at `0x180cd00fb`
+- `MSO!__imp_?ValGetTmc@@YA_K_K@Z` at `0x180cd01fa`
+- `MSO!__imp_?ValGetTmc@@YA_K_K@Z` at `0x180ccfae3`
+- `MSO!__imp_?ValGetTmc@@YA_K_K@Z` at `0x180ccfb0f`
+- `MSO!__imp_?ValGetTmc@@YA_K_K@Z` at `0x180ccfd97`
+- `MSO!__imp_?ValGetTmc@@YA_K_K@Z` at `0x180cd00fb`
+- `MSO!__imp_?ValGetTmc@@YA_K_K@Z` at `0x180cd01fa`
+- `MSO!__imp_?WindowOfTmc@@YAPEAUHWND__@@_K@Z` at `0x180ccfa39`
+- `MSO!__imp_?WindowOfTmc@@YAPEAUHWND__@@_K@Z` at `0x180ccfb5c`
+- `MSO!__imp_?WindowOfTmc@@YAPEAUHWND__@@_K@Z` at `0x180ccfb76`
+- `MSO!__imp_?WindowOfTmc@@YAPEAUHWND__@@_K@Z` at `0x180ccfde6`
+- `MSO!__imp_?WindowOfTmc@@YAPEAUHWND__@@_K@Z` at `0x180ccfe00`
+- `MSO!__imp_?WindowOfTmc@@YAPEAUHWND__@@_K@Z` at `0x180cd0261`
+- `MSO!__imp_?WindowOfTmc@@YAPEAUHWND__@@_K@Z` at `0x180cd027b`
+- `MSO!__imp_?WindowOfTmc@@YAPEAUHWND__@@_K@Z` at `0x180ccfa39`
+- `MSO!__imp_?WindowOfTmc@@YAPEAUHWND__@@_K@Z` at `0x180ccfb5c`
+- `MSO!__imp_?WindowOfTmc@@YAPEAUHWND__@@_K@Z` at `0x180ccfb76`
+- `MSO!__imp_?WindowOfTmc@@YAPEAUHWND__@@_K@Z` at `0x180ccfde6`
+- `MSO!__imp_?WindowOfTmc@@YAPEAUHWND__@@_K@Z` at `0x180ccfe00`
+- `MSO!__imp_?WindowOfTmc@@YAPEAUHWND__@@_K@Z` at `0x180cd0261`
+- `MSO!__imp_?WindowOfTmc@@YAPEAUHWND__@@_K@Z` at `0x180cd027b`
+- `USER32!SendMessageW` at `0x180ccfa4e`
+- `USER32!SendMessageW` at `0x180ccfa4e`
+- `USER32!SetScrollPos` at `0x180ccfb6e`
+- `USER32!SetScrollPos` at `0x180ccfdf8`
+- `USER32!SetScrollPos` at `0x180cd0273`
+- `USER32!SetScrollPos` at `0x180ccfb6e`
+- `USER32!SetScrollPos` at `0x180ccfdf8`
+- `USER32!SetScrollPos` at `0x180cd0273`
+
+## string_xrefs
+
+- `0x180cd0004`: `<?xml version="1.0" encoding="ISO-8859-1"?> <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:b="http://schemas.openxmlformats.org/officeDocument/2006/bibliography">	<xsl:template match="b:Author">		<xsl:variable name="innertext">			<xsl:value-of select="."/>		</xsl:variable>		<xsl:if test="string-length(normalize-space($innertext))>0">			<b:Author>				<xsl:apply-templates/>			</b:Author>		</xsl:if>	</xsl:template>	<xsl:template match="b:Editor">		<xsl:variable`
+- `0x180cd008d`: `<?xml version="1.0" encoding="ISO-8859-1"?> <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:b="http://schemas.openxmlformats.org/officeDocument/2006/bibliography">	<xsl:template match="b:Author">		<xsl:variable name="innertext">			<xsl:value-of select="."/>		</xsl:variable>		<xsl:if test="string-length(normalize-space($innertext))>0">			<b:Author>				<xsl:apply-templates/>			</b:Author>		</xsl:if>	</xsl:template>	<xsl:template match="b:Editor">		<xsl:variable`
+
+## pseudocode
+
+```c
+
+```

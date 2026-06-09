@@ -1,0 +1,178 @@
+# FDlgFormatNumbers(DLM,unsigned __int64,unsigned __int64,unsigned __int64,unsigned __int64)
+
+- ea: `0x18187fdb0`
+- end: `0x181880b77`
+- name: `?FDlgFormatNumbers@@YAHW4DLM@@_K111@Z`
+- size: `3527`
+- prototype: ``
+- caller_count: `0`
+- callee_count: `63`
+- tags: `installer_update`
+
+## callees
+
+- `0x180030440`
+- `0x18005430c`
+- `0x18006fc08`
+- `0x18006fc8c`
+- `0x1800721e4`
+- `0x1800721f0`
+- `0x1800723b0`
+- `0x1800be268`
+- `0x1800f70dc`
+- `0x1800f7330`
+- `0x180115c00`
+- `0x180115c60`
+- `0x18012db70`
+- `0x1801304a4`
+- `0x1801321c0`
+- `0x1801392a0`
+- `0x180139354`
+- `0x18018a00c`
+- `0x18030c33c`
+- `0x18035b0f0`
+- `0x1804406b0`
+- `0x1804bf7d8`
+- `0x1804bfd90`
+- `0x1804cba30`
+- `0x1804de100`
+- `0x18050b5a4`
+- `0x1807d4d10`
+- `0x18080e2e8`
+- `0x18090b9d4`
+- `0x180952d80`
+- `0x180a05194`
+- `0x180a69700`
+- `0x180b6bd80`
+- `0x180cc045c`
+- `0x180cc1de8`
+- `0x180ce8704`
+- `0x180d032f0`
+- `0x180d21744`
+- `0x180d706b8`
+- `0x180d7af34`
+- `0x180d7e728`
+- `0x180ec3b18`
+- `0x180ec3e08`
+- `0x1811ac830`
+- `0x1811ac88c`
+- `0x18130fd0c`
+- `0x181350e40`
+- `0x18187fc90`
+- `0x18187fdb0`
+- `0x181883524`
+
+## import_xrefs
+
+- `KERNEL32!TlsGetValue` at `0x18187fe64`
+- `KERNEL32!TlsGetValue` at `0x18187fe7c`
+- `KERNEL32!TlsGetValue` at `0x181880220`
+- `KERNEL32!TlsGetValue` at `0x1818807d2`
+- `KERNEL32!TlsGetValue` at `0x181880a25`
+- `KERNEL32!TlsGetValue` at `0x181880a46`
+- `KERNEL32!TlsGetValue` at `0x181880a55`
+- `KERNEL32!TlsGetValue` at `0x181880a64`
+- `KERNEL32!TlsGetValue` at `0x181880a76`
+- `KERNEL32!TlsGetValue` at `0x181880aa0`
+- `KERNEL32!TlsGetValue` at `0x18187fe64`
+- `KERNEL32!TlsGetValue` at `0x18187fe7c`
+- `KERNEL32!TlsGetValue` at `0x181880220`
+- `KERNEL32!TlsGetValue` at `0x1818807d2`
+- `KERNEL32!TlsGetValue` at `0x181880a25`
+- `KERNEL32!TlsGetValue` at `0x181880a46`
+- `KERNEL32!TlsGetValue` at `0x181880a55`
+- `KERNEL32!TlsGetValue` at `0x181880a64`
+- `KERNEL32!TlsGetValue` at `0x181880a76`
+- `KERNEL32!TlsGetValue` at `0x181880aa0`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x18188097d`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x18188097d`
+- `MSO!__imp_?HcabFromDlg@@YAPEAPEAX_N@Z` at `0x181880996`
+- `MSO!__imp_?HcabFromDlg@@YAPEAPEAX_N@Z` at `0x1818809c1`
+- `MSO!__imp_?HcabFromDlg@@YAPEAPEAX_N@Z` at `0x181880996`
+- `MSO!__imp_?HcabFromDlg@@YAPEAPEAX_N@Z` at `0x1818809c1`
+- `MSO!__imp_?MsoFRunningSDMDAL@@YA_NXZ` at `0x181880aff`
+- `MSO!__imp_?MsoFRunningSDMDAL@@YA_NXZ` at `0x181880aff`
+- `MSO!__imp_?RedisplayTmc@@YAX_K@Z` at `0x181880260`
+- `MSO!__imp_?RedisplayTmc@@YAX_K@Z` at `0x18188054e`
+- `MSO!__imp_?RedisplayTmc@@YAX_K@Z` at `0x1818805f6`
+- `MSO!__imp_?RedisplayTmc@@YAX_K@Z` at `0x181880260`
+- `MSO!__imp_?RedisplayTmc@@YAX_K@Z` at `0x18188054e`
+- `MSO!__imp_?RedisplayTmc@@YAX_K@Z` at `0x1818805f6`
+- `MSO!__imp_?HidOfDlg@@YA_KPEAPEAX@Z` at `0x181880b32`
+- `MSO!__imp_?HidOfDlg@@YA_KPEAPEAX@Z` at `0x181880b32`
+- `MSO!__imp_?HdlgGetCur@@YAPEAPEAXXZ` at `0x181880b29`
+- `MSO!__imp_?HdlgGetCur@@YAPEAPEAXXZ` at `0x181880b29`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x18188000d`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181880192`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x1818801cb`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x1818801f5`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181880266`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181880277`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x18188038a`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x1818803c5`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x1818803d5`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x1818803f5`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x1818804c8`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x18188057b`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x1818805ab`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x1818805b4`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x1818805c7`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x1818809cc`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181880ab4`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x18188000d`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181880192`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x1818801cb`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x1818801f5`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181880266`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181880277`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x18188038a`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x1818803c5`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x1818803d5`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x1818803f5`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x1818804c8`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x18188057b`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x1818805ab`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x1818805b4`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x1818805c7`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x1818809cc`
+- `MSO!__imp_?HcabQueryCur@@YAPEAPEAXXZ` at `0x181880ab4`
+- `MSO!__imp_?FSetupTabSwitcher@@YA_N_K00P6A_KW4TMM@@PEA_W00000@Z0W4FTSW_SDM@@@Z` at `0x18187fec6`
+- `MSO!__imp_?FSetupTabSwitcher@@YA_N_K00P6A_KW4TMM@@PEA_W00000@Z0W4FTSW_SDM@@@Z` at `0x18187fec6`
+- `MSO!__imp_?SetTmcVal@@YAX_K0@Z` at `0x18188088b`
+- `MSO!__imp_?SetTmcVal@@YAX_K0@Z` at `0x181880acd`
+- `MSO!__imp_?SetTmcVal@@YAX_K0@Z` at `0x18188088b`
+- `MSO!__imp_?SetTmcVal@@YAX_K0@Z` at `0x181880acd`
+- `MSO!__imp_?SetTmcLUser@@YAX_K0@Z` at `0x181880b23`
+- `MSO!__imp_?SetTmcLUser@@YAX_K0@Z` at `0x181880b23`
+- `MSO!__imp_?EndDlg@@YAX_K@Z` at `0x18188099f`
+- `MSO!__imp_?EndDlg@@YAX_K@Z` at `0x18188099f`
+- `MSO!__imp_?EnableTmc@@YAX_K_N@Z` at `0x18187ff1b`
+- `MSO!__imp_?EnableTmc@@YAX_K_N@Z` at `0x18187ff33`
+- `MSO!__imp_?EnableTmc@@YAX_K_N@Z` at `0x181880759`
+- `MSO!__imp_?EnableTmc@@YAX_K_N@Z` at `0x18188089e`
+- `MSO!__imp_?EnableTmc@@YAX_K_N@Z` at `0x181880af9`
+- `MSO!__imp_?EnableTmc@@YAX_K_N@Z` at `0x18187ff1b`
+- `MSO!__imp_?EnableTmc@@YAX_K_N@Z` at `0x18187ff33`
+- `MSO!__imp_?EnableTmc@@YAX_K_N@Z` at `0x181880759`
+- `MSO!__imp_?EnableTmc@@YAX_K_N@Z` at `0x18188089e`
+- `MSO!__imp_?EnableTmc@@YAX_K_N@Z` at `0x181880af9`
+- `MSO!__imp_?MsoSDMDALAutoLayoutCleanup@@YAXXZ` at `0x1818809aa`
+- `MSO!__imp_?MsoSDMDALAutoLayoutCleanup@@YAXXZ` at `0x1818809aa`
+- `MSO!__imp_?ValGetTmc@@YA_K_K@Z` at `0x1818803ad`
+- `MSO!__imp_?ValGetTmc@@YA_K_K@Z` at `0x18188064a`
+- `MSO!__imp_?ValGetTmc@@YA_K_K@Z` at `0x181880658`
+- `MSO!__imp_?ValGetTmc@@YA_K_K@Z` at `0x1818806a1`
+- `MSO!__imp_?ValGetTmc@@YA_K_K@Z` at `0x1818803ad`
+- `MSO!__imp_?ValGetTmc@@YA_K_K@Z` at `0x18188064a`
+- `MSO!__imp_?ValGetTmc@@YA_K_K@Z` at `0x181880658`
+- `MSO!__imp_?ValGetTmc@@YA_K_K@Z` at `0x1818806a1`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x181880873`
+- `Mso20Win32Client!__imp_MsoShipAssertTagProc` at `0x181880873`
+- `Mso20Win32Client!__imp_?MsoWtzRgwchCopy@@YAHPEB_WHPEA_WH@Z` at `0x181880000`
+- `Mso20Win32Client!__imp_?MsoWtzRgwchCopy@@YAHPEB_WHPEA_WH@Z` at `0x181880000`
+
+## pseudocode
+
+```c
+
+```
