@@ -1,0 +1,52 @@
+# CAudioClientManager::AddPartialFormat(tWAVEFORMATEX *,int)
+
+- ea: `0x1803216f4`
+- end: `0x180321d08`
+- name: `?AddPartialFormat@CAudioClientManager@@AEAAJPEAUtWAVEFORMATEX@@H@Z`
+- size: `1556`
+- prototype: `__int64 __fastcall(CAudioClientManager *__hidden this, struct tWAVEFORMATEX *, int)`
+- caller_count: `1`
+- callee_count: `10`
+- tags: ``
+
+## callers
+
+- `0x18021b954`
+
+## callees
+
+- `0x18002fee0`
+- `0x180035170`
+- `0x18003ecb0`
+- `0x1800402c0`
+- `0x180050d6c`
+- `0x180063f00`
+- `0x1800ec0e0`
+- `0x180258480`
+- `0x1803216f4`
+- `0x180344d40`
+
+## import_xrefs
+
+- `MFPlat!MFCreateMediaType` at `0x18032174d`
+- `MFPlat!MFCreateMediaType` at `0x18032174d`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18032178b`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180321864`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180321952`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180321a0d`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180321ad2`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180321b97`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180321c44`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18032178b`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180321864`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180321952`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180321a0d`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180321ad2`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180321b97`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180321c44`
+
+## pseudocode
+
+```c
+
+```

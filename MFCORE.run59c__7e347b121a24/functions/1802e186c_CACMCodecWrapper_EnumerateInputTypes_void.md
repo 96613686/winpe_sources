@@ -1,0 +1,80 @@
+# CACMCodecWrapper::EnumerateInputTypes(void)
+
+- ea: `0x1802e186c`
+- end: `0x1802e25c8`
+- name: `?EnumerateInputTypes@CACMCodecWrapper@@IEAAJXZ`
+- size: `3420`
+- prototype: `__int64 __fastcall(CACMCodecWrapper *__hidden this)`
+- caller_count: `2`
+- callee_count: `13`
+- tags: ``
+
+## callers
+
+- `0x1802054f0`
+- `0x1802e38c0`
+
+## callees
+
+- `0x18002fee0`
+- `0x18003ecb0`
+- `0x1800402c0`
+- `0x180050d6c`
+- `0x1800ec0e0`
+- `0x18018566c`
+- `0x18020a528`
+- `0x18025839c`
+- `0x1802583e8`
+- `0x180258480`
+- `0x1802592a0`
+- `0x1802e186c`
+- `0x180344d40`
+
+## import_xrefs
+
+- `MFPlat!MFCreateMediaType` at `0x1802e197b`
+- `MFPlat!MFCreateMediaType` at `0x1802e197b`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802e18f0`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802e199d`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802e1a52`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802e1b11`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802e1bcf`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802e1c87`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802e1d3f`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802e1e03`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802e1ebd`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802e1f7f`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802e203f`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802e20fd`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802e21b8`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802e227a`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802e2341`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802e2400`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802e24de`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802e18f0`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802e199d`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802e1a52`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802e1b11`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802e1bcf`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802e1c87`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802e1d3f`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802e1e03`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802e1ebd`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802e1f7f`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802e203f`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802e20fd`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802e21b8`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802e227a`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802e2341`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802e2400`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802e24de`
+- `ext-ms-win-mm-msacm-l1-1-0!acmFormatEnumW` at `0x1802e24b5`
+- `ext-ms-win-mm-msacm-l1-1-0!acmFormatEnumW` at `0x1802e24b5`
+- `ext-ms-win-mm-msacm-l1-1-0!acmMetrics` at `0x1802e2318`
+- `ext-ms-win-mm-msacm-l1-1-0!acmMetrics` at `0x1802e2318`
+
+## pseudocode
+
+```c
+
+```

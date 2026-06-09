@@ -1,0 +1,67 @@
+# CAudStreamSink::TryRemoveClockJitter(__int64 *,__int64 *)
+
+- ea: `0x18004d1cc`
+- end: `0x18004d994`
+- name: `?TryRemoveClockJitter@CAudStreamSink@@IEAAJPEA_J0@Z`
+- size: `1992`
+- prototype: `__int64 __fastcall(CAudStreamSink *__hidden this, __int64 *, __int64 *)`
+- caller_count: `1`
+- callee_count: `16`
+- tags: `installer_update`
+
+## callers
+
+- `0x18004e114`
+
+## callees
+
+- `0x18001616c`
+- `0x18001b9b0`
+- `0x1800402c0`
+- `0x18004bcb4`
+- `0x18004bcfc`
+- `0x18004cb80`
+- `0x18004cbfc`
+- `0x18004d1cc`
+- `0x180050530`
+- `0x180050d6c`
+- `0x1800e6d3c`
+- `0x1800ec0e0`
+- `0x18018354c`
+- `0x180258480`
+- `0x1802591bc`
+- `0x180344d40`
+
+## import_xrefs
+
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18004d234`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18004d404`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18004d7e9`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18004d82d`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18004d234`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18004d404`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18004d7e9`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18004d82d`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18004d25f`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18004d42f`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18004d25f`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18004d42f`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18004d245`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18004d415`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18004d245`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18004d415`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18004d8b2`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18004d8b2`
+
+## string_xrefs
+
+- `0x18004d21a`: `CAudStreamSink::TryRemoveClockJitter`
+- `0x18004d271`: `CAudStreamSink::TryRemoveClockJitter`
+- `0x18004d888`: `CAudStreamSink::TryRemoveClockJitter`
+- `0x18004d946`: `CAudStreamSink::TryRemoveClockJitter`
+
+## pseudocode
+
+```c
+
+```

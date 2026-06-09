@@ -1,0 +1,62 @@
+# CAudStreamSink::Flush(void)
+
+- ea: `0x180175df0`
+- end: `0x1801760f4`
+- name: `?Flush@CAudStreamSink@@UEAAJXZ`
+- size: `772`
+- prototype: `__int64 __fastcall(CAudStreamSink *__hidden this)`
+- caller_count: `0`
+- callee_count: `19`
+- tags: `installer_update`
+
+## callees
+
+- `0x18000f278`
+- `0x18001616c`
+- `0x18002fee0`
+- `0x18003ecb0`
+- `0x1800402c0`
+- `0x180045dbc`
+- `0x180050d6c`
+- `0x18006b388`
+- `0x180082f10`
+- `0x18008352c`
+- `0x1800858b0`
+- `0x1800859b0`
+- `0x1800ec0e0`
+- `0x1800f8190`
+- `0x180175df0`
+- `0x1801760fc`
+- `0x180258480`
+- `0x18031d4d4`
+- `0x180344d40`
+
+## import_xrefs
+
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180175eff`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180176078`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180176087`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1801760c1`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180175eff`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180176078`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180176087`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1801760c1`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180175ede`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180175f15`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180175fdc`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180175ffd`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180175ede`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180175f15`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180175fdc`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180175ffd`
+
+## string_xrefs
+
+- `0x180175e0f`: `CAudStreamSink::Flush`
+- `0x180175f79`: `CAudStreamSink::Flush`
+
+## pseudocode
+
+```c
+
+```

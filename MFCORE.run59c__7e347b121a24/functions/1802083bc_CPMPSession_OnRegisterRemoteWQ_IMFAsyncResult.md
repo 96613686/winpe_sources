@@ -1,0 +1,53 @@
+# CPMPSession::OnRegisterRemoteWQ(IMFAsyncResult *)
+
+- ea: `0x1802083bc`
+- end: `0x180208640`
+- name: `?OnRegisterRemoteWQ@CPMPSession@@AEAAXPEAUIMFAsyncResult@@@Z`
+- size: `644`
+- prototype: `void __fastcall(CPMPSession *__hidden this, struct IMFAsyncResult *)`
+- caller_count: `1`
+- callee_count: `11`
+- tags: ``
+
+## callers
+
+- `0x18029fd80`
+
+## callees
+
+- `0x18002fee0`
+- `0x18003ecb0`
+- `0x1800402c0`
+- `0x180050d6c`
+- `0x180063f00`
+- `0x1800ec0e0`
+- `0x18012b948`
+- `0x18012b98c`
+- `0x180205c48`
+- `0x1802083bc`
+- `0x180344d40`
+
+## import_xrefs
+
+- `api-ms-win-core-synch-l1-1-0!CreateEventW` at `0x1802085b8`
+- `api-ms-win-core-synch-l1-1-0!CreateEventW` at `0x1802085b8`
+- `api-ms-win-core-synch-l1-1-0!SetEvent` at `0x180208604`
+- `api-ms-win-core-synch-l1-1-0!SetEvent` at `0x180208604`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180208626`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180208626`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x1802083d6`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x1802083d6`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1802085cc`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1802085cc`
+- `api-ms-win-core-handle-l1-1-0!CloseHandle` at `0x1802085f4`
+- `api-ms-win-core-handle-l1-1-0!CloseHandle` at `0x1802085f4`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18020844a`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18020844a`
+- `MFPlat!MFPutWorkItemEx2` at `0x180208597`
+- `MFPlat!MFPutWorkItemEx2` at `0x180208597`
+
+## pseudocode
+
+```c
+
+```

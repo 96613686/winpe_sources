@@ -1,0 +1,73 @@
+# CMFTopoLoader::ExecuteConnectTask(CTopoLoaderConnectTask *)
+
+- ea: `0x1801283a0`
+- end: `0x180128f93`
+- name: `?ExecuteConnectTask@CMFTopoLoader@@IEAAJPEAVCTopoLoaderConnectTask@@@Z`
+- size: `3059`
+- prototype: `int(CMFTopoLoader *__hidden this, struct CTopoLoaderConnectTask *)`
+- caller_count: `1`
+- callee_count: `20`
+- tags: `service_task`
+
+## callers
+
+- `0x1800b0fc0`
+
+## callees
+
+- `0x18001616c`
+- `0x18002fee0`
+- `0x18003ecb0`
+- `0x1800402c0`
+- `0x180050d6c`
+- `0x180067eec`
+- `0x18006b388`
+- `0x1800ae554`
+- `0x1800ae5b8`
+- `0x1800ec0e0`
+- `0x1801283a0`
+- `0x180141890`
+- `0x18014c0fc`
+- `0x18015c3c8`
+- `0x18022f1f8`
+- `0x180258480`
+- `0x1802592a0`
+- `0x1802c2800`
+- `0x1802c2eac`
+- `0x180344d40`
+
+## import_xrefs
+
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18012861b`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801286b4`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801287a1`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180128835`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801288c9`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180128961`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801289f9`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180128a91`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180128b29`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18012861b`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801286b4`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801287a1`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180128835`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801288c9`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180128961`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801289f9`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180128a91`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180128b29`
+
+## string_xrefs
+
+- `0x1801283cd`: `CMFTopoLoader::ExecuteConnectTask`
+- `0x18012893e`: `CMFTopoLoader::ExecuteConnectTask`
+- `0x1801289d6`: `CMFTopoLoader::ExecuteConnectTask`
+- `0x180128a6e`: `CMFTopoLoader::ExecuteConnectTask`
+- `0x180128b06`: `CMFTopoLoader::ExecuteConnectTask`
+- `0x180128bb8`: `CMFTopoLoader::ExecuteConnectTask`
+
+## pseudocode
+
+```c
+
+```

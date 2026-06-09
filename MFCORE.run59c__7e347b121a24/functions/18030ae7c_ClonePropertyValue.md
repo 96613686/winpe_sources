@@ -1,0 +1,165 @@
+# _ClonePropertyValue
+
+- ea: `0x18030ae7c`
+- end: `0x18030e2f1`
+- name: `_ClonePropertyValue`
+- size: `13429`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `29`
+- tags: ``
+
+## callers
+
+- `0x180309d80`
+
+## callees
+
+- `0x18002fee0`
+- `0x18003ecb0`
+- `0x1800402c0`
+- `0x180050d6c`
+- `0x180097f10`
+- `0x1800ec0e0`
+- `0x180258480`
+- `0x18028d838`
+- `0x180308744`
+- `0x180308918`
+- `0x180308974`
+- `0x180308a70`
+- `0x180308aa8`
+- `0x180308f3c`
+- `0x180308f90`
+- `0x180308fe4`
+- `0x180309038`
+- `0x18030908c`
+- `0x1803090e0`
+- `0x180309134`
+- `0x180309188`
+- `0x1803091dc`
+- `0x180309230`
+- `0x180309284`
+- `0x1803092d8`
+- `0x18030ae5c`
+- `0x18030ae7c`
+- `0x18030ed18`
+- `0x180344d40`
+
+## import_xrefs
+
+- `api-ms-win-core-winrt-string-l1-1-0!WindowsDeleteString` at `0x18030e10a`
+- `api-ms-win-core-winrt-string-l1-1-0!WindowsDeleteString` at `0x18030e10a`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030af0c`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030afc4`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030b0d0`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030b1b1`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030b2ad`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030b38b`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030b488`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030b566`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030b663`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030b740`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030b83c`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030b919`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030ba15`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030baf2`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030bbef`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030bccc`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030bdc9`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030bea6`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030bfa4`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030c088`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030c186`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030c267`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030c367`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030c447`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030c546`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030c626`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030c749`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030c83b`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030c944`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030ca15`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030cb3b`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030cc0c`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030cd32`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030ce11`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030cf37`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030d008`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030d12e`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030d20d`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030d333`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030d412`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030d538`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030d617`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030d73d`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030d81c`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030d942`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030da21`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030db47`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030dc26`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030dd29`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030de08`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030df0b`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030dfea`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030e131`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030e210`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030af0c`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030afc4`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030b0d0`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030b1b1`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030b2ad`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030b38b`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030b488`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030b566`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030b663`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030b740`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030b83c`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030b919`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030ba15`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030baf2`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030bbef`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030bccc`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030bdc9`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030bea6`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030bfa4`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030c088`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030c186`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030c267`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030c367`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030c447`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030c546`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030c626`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030c749`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030c83b`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030c944`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030ca15`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030cb3b`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030cc0c`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030cd32`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030ce11`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030cf37`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030d008`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030d12e`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030d20d`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030d333`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030d412`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030d538`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030d617`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030d73d`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030d81c`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030d942`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030da21`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030db47`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030dc26`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030dd29`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030de08`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030df0b`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030dfea`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030e131`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18030e210`
+
+## pseudocode
+
+```c
+
+```

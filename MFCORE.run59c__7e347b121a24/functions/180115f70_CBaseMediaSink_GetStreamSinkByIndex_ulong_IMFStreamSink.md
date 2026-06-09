@@ -1,0 +1,55 @@
+# CBaseMediaSink::GetStreamSinkByIndex(ulong,IMFStreamSink * *)
+
+- ea: `0x180115f70`
+- end: `0x1801164b4`
+- name: `?GetStreamSinkByIndex@CBaseMediaSink@@UEAAJKPEAPEAUIMFStreamSink@@@Z`
+- size: `1348`
+- prototype: `int(CBaseMediaSink *__hidden this, unsigned int, struct IMFStreamSink **)`
+- caller_count: `1`
+- callee_count: `9`
+- tags: `installer_update`
+
+## callers
+
+- `0x180318760`
+
+## callees
+
+- `0x18001616c`
+- `0x18002fee0`
+- `0x18003ecb0`
+- `0x1800402c0`
+- `0x180050d6c`
+- `0x1800ec0e0`
+- `0x180115f70`
+- `0x1801164bc`
+- `0x180344d40`
+
+## import_xrefs
+
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180116003`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180116003`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180115f98`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180115f98`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801160b3`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18011617e`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180116212`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801162ad`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180116348`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801163e5`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801160b3`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18011617e`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180116212`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801162ad`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180116348`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801163e5`
+
+## string_xrefs
+
+- `0x180115fa4`: `CBaseMediaSink::GetStreamSinkByIndex`
+
+## pseudocode
+
+```c
+
+```

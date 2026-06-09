@@ -1,0 +1,65 @@
+# CAudStreamSink::ProcessPolicyChanged(IMFMediaEvent *)
+
+- ea: `0x18031bc78`
+- end: `0x18031c538`
+- name: `?ProcessPolicyChanged@CAudStreamSink@@IEAAJPEAUIMFMediaEvent@@@Z`
+- size: `2240`
+- prototype: `__int64 __fastcall(CAudStreamSink *__hidden this, struct IMFMediaEvent *)`
+- caller_count: `1`
+- callee_count: `15`
+- tags: `registry_config, installer_update, broker_com_uri`
+
+## callers
+
+- `0x18031b840`
+
+## callees
+
+- `0x18002fee0`
+- `0x18003ecb0`
+- `0x1800402c0`
+- `0x180050d6c`
+- `0x18005a3d4`
+- `0x180063f00`
+- `0x18006b388`
+- `0x18008b3a0`
+- `0x18009b9e0`
+- `0x1800ec0e0`
+- `0x180165ef0`
+- `0x18019c178`
+- `0x180258480`
+- `0x18031bc78`
+- `0x180344d40`
+
+## import_xrefs
+
+- `api-ms-win-core-com-l1-1-0!PropVariantClear` at `0x18031c4de`
+- `api-ms-win-core-com-l1-1-0!PropVariantClear` at `0x18031c4de`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18031bd8c`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18031be3f`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18031bf0e`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18031c01f`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18031c0d6`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18031c187`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18031c22f`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18031c329`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18031c3f1`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18031bd8c`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18031be3f`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18031bf0e`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18031c01f`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18031c0d6`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18031c187`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18031c22f`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18031c329`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18031c3f1`
+
+## string_xrefs
+
+- `0x18031bca5`: `CAudStreamSink::ProcessPolicyChanged`
+
+## pseudocode
+
+```c
+
+```

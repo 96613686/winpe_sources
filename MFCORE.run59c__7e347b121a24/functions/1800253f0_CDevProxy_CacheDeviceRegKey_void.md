@@ -1,0 +1,45 @@
+# CDevProxy::CacheDeviceRegKey(void)
+
+- ea: `0x1800253f0`
+- end: `0x18002567b`
+- name: `?CacheDeviceRegKey@CDevProxy@@UEAAJXZ`
+- size: `651`
+- prototype: `__int64 __fastcall(CDevProxy *__hidden this)`
+- caller_count: `0`
+- callee_count: `5`
+- tags: `registry_config`
+
+## callees
+
+- `0x1800253f0`
+- `0x180025998`
+- `0x180050d6c`
+- `0x180258480`
+- `0x1802592a0`
+
+## import_xrefs
+
+- `api-ms-win-crt-private-l1-1-0!_o__wcsicmp` at `0x180025556`
+- `api-ms-win-crt-private-l1-1-0!_o__wcsicmp` at `0x1800255b8`
+- `api-ms-win-crt-private-l1-1-0!_o__wcsicmp` at `0x180025556`
+- `api-ms-win-crt-private-l1-1-0!_o__wcsicmp` at `0x1800255b8`
+- `api-ms-win-core-handle-l1-1-0!CloseHandle` at `0x180025667`
+- `api-ms-win-core-handle-l1-1-0!CloseHandle` at `0x180025667`
+- `api-ms-win-devices-config-l1-1-1!CM_Open_Device_Interface_KeyW` at `0x180025459`
+- `api-ms-win-devices-config-l1-1-1!CM_Open_Device_Interface_KeyW` at `0x180025459`
+- `api-ms-win-devices-config-l1-1-1!CM_Get_DevNode_PropertyW` at `0x180025507`
+- `api-ms-win-devices-config-l1-1-1!CM_Get_DevNode_PropertyW` at `0x180025598`
+- `api-ms-win-devices-config-l1-1-1!CM_Get_DevNode_PropertyW` at `0x180025507`
+- `api-ms-win-devices-config-l1-1-1!CM_Get_DevNode_PropertyW` at `0x180025598`
+- `api-ms-win-devices-config-l1-1-1!CM_Locate_DevNodeW` at `0x1800254d0`
+- `api-ms-win-devices-config-l1-1-1!CM_Locate_DevNodeW` at `0x1800254d0`
+- `api-ms-win-devices-config-l1-1-1!CM_MapCrToWin32Err` at `0x180025617`
+- `api-ms-win-devices-config-l1-1-1!CM_MapCrToWin32Err` at `0x180025617`
+- `api-ms-win-devices-config-l1-1-1!CM_Get_Device_Interface_PropertyW` at `0x1800254b3`
+- `api-ms-win-devices-config-l1-1-1!CM_Get_Device_Interface_PropertyW` at `0x1800254b3`
+
+## pseudocode
+
+```c
+
+```

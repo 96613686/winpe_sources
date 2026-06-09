@@ -1,0 +1,56 @@
+# CPMPSession::BeginRegisterPlatformWorkQueueWithMMCSSEx(ulong,ushort const *,ulong,long,IMFAsyncCallback *,IUnknown *)
+
+- ea: `0x1801b62e0`
+- end: `0x1801b6800`
+- name: `?BeginRegisterPlatformWorkQueueWithMMCSSEx@CPMPSession@@UEAAJKPEBGKJPEAUIMFAsyncCallback@@PEAUIUnknown@@@Z`
+- size: `1312`
+- prototype: `int(CPMPSession *__hidden this, unsigned int, const unsigned __int16 *, unsigned int, int, struct IMFAsyncCallback *, struct IUnknown *)`
+- caller_count: `0`
+- callee_count: `14`
+- tags: ``
+
+## callees
+
+- `0x18002fee0`
+- `0x18003ecb0`
+- `0x1800402c0`
+- `0x180050d6c`
+- `0x180063f00`
+- `0x1800ec0e0`
+- `0x18012add8`
+- `0x18012b6f4`
+- `0x18012b948`
+- `0x18012b98c`
+- `0x1801b62e0`
+- `0x180205c48`
+- `0x1802a22e8`
+- `0x180344d40`
+
+## import_xrefs
+
+- `api-ms-win-core-synch-l1-1-0!CreateEventW` at `0x1801b65c5`
+- `api-ms-win-core-synch-l1-1-0!CreateEventW` at `0x1801b65c5`
+- `api-ms-win-core-synch-l1-1-0!SetEvent` at `0x1801b6611`
+- `api-ms-win-core-synch-l1-1-0!SetEvent` at `0x1801b6611`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b65d9`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1801b65d9`
+- `api-ms-win-core-handle-l1-1-0!CloseHandle` at `0x1801b6601`
+- `api-ms-win-core-handle-l1-1-0!CloseHandle` at `0x1801b6601`
+- `MFPlat!MFBeginRegisterWorkQueueWithMMCSSEx` at `0x1801b671b`
+- `MFPlat!MFBeginRegisterWorkQueueWithMMCSSEx` at `0x1801b671b`
+- `MFPlat!MFRegisterPlatformWithMMCSS` at `0x1801b643b`
+- `MFPlat!MFRegisterPlatformWithMMCSS` at `0x1801b643b`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801b638d`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801b6651`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801b673d`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801b638d`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801b6651`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801b673d`
+- `MFPlat!MFPutWorkItemEx2` at `0x1801b65a4`
+- `MFPlat!MFPutWorkItemEx2` at `0x1801b65a4`
+
+## pseudocode
+
+```c
+
+```

@@ -1,0 +1,63 @@
+# CMFSampleGrabberStreamSink::CMFSampleGrabberStreamSink(CMFSampleGrabberSink *,ulong,IMFMediaType *,IMFSampleGrabberSinkCallback *,__int64,int,IUnknown *,int,long *)
+
+- ea: `0x1801b8444`
+- end: `0x1801b8ae6`
+- name: `??0CMFSampleGrabberStreamSink@@IEAA@PEAVCMFSampleGrabberSink@@KPEAUIMFMediaType@@PEAUIMFSampleGrabberSinkCallback@@_JHPEAUIUnknown@@HPEAJ@Z`
+- size: `1698`
+- prototype: `CMFSampleGrabberStreamSink *(CMFSampleGrabberStreamSink *__hidden this, struct CMFSampleGrabberSink *, unsigned int, struct IMFMediaType *, struct IMFSampleGrabberSinkCallback *, __int64, int, struct IUnknown *, int, int *)`
+- caller_count: `1`
+- callee_count: `14`
+- tags: `installer_update`
+
+## callers
+
+- `0x1801b1b60`
+
+## callees
+
+- `0x18002fee0`
+- `0x18003ecb0`
+- `0x1800402c0`
+- `0x18004d16c`
+- `0x180050d6c`
+- `0x1800aa468`
+- `0x1800c2d20`
+- `0x1800c49fc`
+- `0x1800ec0e0`
+- `0x1800f8938`
+- `0x180142170`
+- `0x1801b8444`
+- `0x1802cea5c`
+- `0x180344d40`
+
+## import_xrefs
+
+- `api-ms-win-core-synch-l1-1-0!InitializeCriticalSection` at `0x1801b8554`
+- `api-ms-win-core-synch-l1-1-0!InitializeCriticalSection` at `0x1801b8567`
+- `api-ms-win-core-synch-l1-1-0!InitializeCriticalSection` at `0x1801b8554`
+- `api-ms-win-core-synch-l1-1-0!InitializeCriticalSection` at `0x1801b8567`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801b8624`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801b875a`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801b8800`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801b88aa`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801b89cf`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801b8624`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801b875a`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801b8800`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801b88aa`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801b89cf`
+
+## string_xrefs
+
+- `0x1801b85c9`: `CMFSampleGrabberStreamSink::CMFSampleGrabberStreamSink`
+- `0x1801b8682`: `CMFSampleGrabberStreamSink::CMFSampleGrabberStreamSink`
+- `0x1801b87b8`: `CMFSampleGrabberStreamSink::CMFSampleGrabberStreamSink`
+- `0x1801b885e`: `CMFSampleGrabberStreamSink::CMFSampleGrabberStreamSink`
+- `0x1801b8908`: `CMFSampleGrabberStreamSink::CMFSampleGrabberStreamSink`
+- `0x1801b8a2d`: `CMFSampleGrabberStreamSink::CMFSampleGrabberStreamSink`
+
+## pseudocode
+
+```c
+
+```

@@ -1,0 +1,47 @@
+# CWMThumbnailStreamProperty::FormatAsNativeBlob(IStream *)
+
+- ea: `0x1802d8750`
+- end: `0x1802d8c65`
+- name: `?FormatAsNativeBlob@CWMThumbnailStreamProperty@@MEAAJPEAUIStream@@@Z`
+- size: `1301`
+- prototype: `__int64 __fastcall(CWMThumbnailStreamProperty *__hidden this, struct IStream *)`
+- caller_count: `0`
+- callee_count: `9`
+- tags: `service_task, broker_com_uri`
+
+## callees
+
+- `0x18002fee0`
+- `0x18003ecb0`
+- `0x1800402c0`
+- `0x180050d6c`
+- `0x1800ec0e0`
+- `0x180258480`
+- `0x1802592a0`
+- `0x1802d8750`
+- `0x180344d40`
+
+## import_xrefs
+
+- `api-ms-win-core-com-l1-1-0!CoTaskMemAlloc` at `0x1802d89ca`
+- `api-ms-win-core-com-l1-1-0!CoTaskMemAlloc` at `0x1802d89ca`
+- `api-ms-win-core-com-l1-1-0!PropVariantClear` at `0x1802d8c24`
+- `api-ms-win-core-com-l1-1-0!PropVariantClear` at `0x1802d8c24`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802d87e1`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802d888e`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802d8931`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802d89fa`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802d8ae4`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802d8b87`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802d87e1`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802d888e`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802d8931`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802d89fa`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802d8ae4`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802d8b87`
+
+## pseudocode
+
+```c
+
+```

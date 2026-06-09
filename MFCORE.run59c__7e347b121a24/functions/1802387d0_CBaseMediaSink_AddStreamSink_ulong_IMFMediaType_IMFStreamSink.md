@@ -1,0 +1,701 @@
+# CBaseMediaSink::AddStreamSink(ulong,IMFMediaType *,IMFStreamSink * *)
+
+- ea: `0x1802387d0`
+- end: `0x180238e82`
+- name: `?AddStreamSink@CBaseMediaSink@@UEAAJKPEAUIMFMediaType@@PEAPEAUIMFStreamSink@@@Z`
+- size: `1714`
+- prototype: `__int64 __fastcall(CBaseMediaSink *__hidden this, unsigned int, struct IMFMediaType *, struct IMFStreamSink **)`
+- caller_count: `0`
+- callee_count: `9`
+- tags: `installer_update, broker_com_uri`
+
+## callees
+
+- `0x18002fee0`
+- `0x18003ecb0`
+- `0x1800402c0`
+- `0x180050d6c`
+- `0x180063f00`
+- `0x1800ec0e0`
+- `0x1801a52cc`
+- `0x1802387d0`
+- `0x180344d40`
+
+## import_xrefs
+
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180238e59`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180238e59`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180238800`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180238800`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180238853`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180238919`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802389db`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180238ab4`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180238b68`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180238c2d`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180238cd9`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180238d9c`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180238853`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180238919`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1802389db`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180238ab4`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180238b68`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180238c2d`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180238cd9`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180238d9c`
+
+## string_xrefs
+
+- `0x180238812`: `CBaseMediaSink::AddStreamSink`
+- `0x1802388b1`: `CBaseMediaSink::AddStreamSink`
+- `0x180238977`: `CBaseMediaSink::AddStreamSink`
+- `0x180238a39`: `CBaseMediaSink::AddStreamSink`
+- `0x180238b12`: `CBaseMediaSink::AddStreamSink`
+- `0x180238bc6`: `CBaseMediaSink::AddStreamSink`
+- `0x180238c8b`: `CBaseMediaSink::AddStreamSink`
+- `0x180238d37`: `CBaseMediaSink::AddStreamSink`
+- `0x180238dfa`: `CBaseMediaSink::AddStreamSink`
+
+## pseudocode
+
+```c
+__int64 __fastcall CBaseMediaSink::AddStreamSink(
+        CBaseMediaSink *this,
+        unsigned int a2,
+        struct IMFMediaType *a3,
+        struct IMFStreamSink **a4)
+{
+  struct _RTL_CRITICAL_SECTION *v4; // r13
+  __int64 v9; // rdx
+  __int64 v10; // r8
+  char *v11; // rsi
+  __int64 *v12; // rcx
+  int v13; // ebx
+  CallStackTracing *v14; // rax
+  struct CallStackContext *ThreadRelativeContext; // rax
+  __int64 v16; // rdx
+  __int64 *v17; // rcx
+  CallStackTracing *v18; // rax
+  struct CallStackContext *v19; // rax
+  __int64 v20; // rax
+  __int64 v21; // rdx
+  __int64 v22; // r8
+  __int64 *v23; // rcx
+  CallStackTracing *v24; // rax
+  struct CallStackContext *v25; // rax
+  __int64 v26; // rdx
+  __int64 v27; // rax
+  __int64 v28; // rdx
+  __int64 v29; // r8
+  __int64 *v30; // rcx
+  CallStackTracing *v31; // rax
+  struct CallStackContext *v32; // rax
+  unsigned int v33; // eax
+  __int64 v34; // rdx
+  __int64 v35; // r8
+  __int64 *v36; // rcx
+  CallStackTracing *v37; // rax
+  struct CallStackContext *v38; // rax
+  __int64 v39; // rax
+  __int64 v40; // rdx
+  __int64 v41; // r8
+  __int64 *v42; // rcx
+  CallStackTracing *v43; // rax
+  struct CallStackContext *v44; // rax
+  __int64 v45; // rdx
+  __int64 v46; // rdx
+  __int64 v47; // r8
+  __int64 *v48; // rcx
+  CallStackTracing *v49; // rax
+  struct CallStackContext *v50; // rax
+  __int64 v51; // rdx
+  __int64 v52; // r8
+  __int64 *v53; // rcx
+  CallStackTracing *v54; // rax
+  struct CallStackContext *v55; // rax
+  struct CBaseStreamSink *v57[2]; // [rsp+30h] [rbp-10h] BYREF
+  unsigned int v58; // [rsp+70h] [rbp+30h] BYREF
+  __int64 v59; // [rsp+88h] [rbp+48h] BYREF
+
+  v4 = (struct _RTL_CRITICAL_SECTION *)((char *)this + 528);
+  EnterCriticalSection((LPCRITICAL_SECTION)((char *)this + 528));
+  CallStackScopeTrace::CallStackScopeTrace((CallStackScopeTrace *)&v58, "CBaseMediaSink::AddStreamSink", 177);
+  if ( a4 )
+    *a4 = 0;
+  v11 = (char *)this - 136;
+  if ( *((_DWORD *)this + 124) == 8 )
+  {
+    v12 = (__int64 *)CallStackTracing::s_wpInstance;
+    v13 = -1072873851;
+    if ( !CallStackTracing::s_wpInstance )
+    {
+      v14 = (CallStackTracing *)MFGetCallStackTracingWeakReference(0, v9, v10);
+      CallStackTracing::s_wpInstance = v14;
+      if ( v14 && (*(unsigned int (__fastcall **)(CallStackTracing *, __int64))(*(_QWORD *)v14 + 8LL))(v14, 2032) )
+      {
+        v12 = (__int64 *)CallStackTracing::s_wpInstance;
+      }
+      else
+      {
+        v12 = &qword_1803CE250;
+        CallStackTracing::s_wpInstance = (CallStackTracing *)&qword_1803CE250;
+      }
+    }
+    if ( *((_BYTE *)v12 + 8) )
+    {
+      ThreadRelativeContext = CallStackTracing::GetThreadRelativeContext((CallStackTracing *)v12);
+      if ( *((_DWORD *)ThreadRelativeContext + 499) != -1072873851 )
+        CallStackContext::TraceFailure(ThreadRelativeContext, "CBaseMediaSink::AddStreamSink", 193, -1072873851);
+    }
+    if ( g_wppLevels )
+    {
+      v16 = 20;
+LABEL_14:
+      WPP_SF_qD(*((_QWORD *)WPP_GLOBAL_Control + 2), v16, &WPP_064ac3d23a4d328c92d991778bc5e966_Traceguids, v11, v13);
+      goto LABEL_97;
+    }
+    goto LABEL_97;
+  }
+  if ( (v11[656] & 1) == 0 )
+  {
+    v20 = *(_QWORD *)this;
+    v59 = 0;
+    if ( (*(int (__fastcall **)(CBaseMediaSink *, _QWORD, __int64 *))(v20 + 64))(this, a2, &v59) >= 0 )
+    {
+      v23 = (__int64 *)CallStackTracing::s_wpInstance;
+      v13 = -1072870852;
+      if ( !CallStackTracing::s_wpInstance )
+      {
+        v24 = (CallStackTracing *)MFGetCallStackTracingWeakReference(0, v21, v22);
+        CallStackTracing::s_wpInstance = v24;
+        if ( v24 && (*(unsigned int (__fastcall **)(CallStackTracing *, __int64))(*(_QWORD *)v24 + 8LL))(v24, 2032) )
+        {
+          v23 = (__int64 *)CallStackTracing::s_wpInstance;
+        }
+        else
+        {
+          v23 = &qword_1803CE250;
+          CallStackTracing::s_wpInstance = (CallStackTracing *)&qword_1803CE250;
+        }
+      }
+      if ( *((_BYTE *)v23 + 8) )
+      {
+        v25 = CallStackTracing::GetThreadRelativeContext((CallStackTracing *)v23);
+        if ( *((_DWORD *)v25 + 499) != -1072870852 )
+          CallStackContext::TraceFailure(v25, "CBaseMediaSink::AddStreamSink", 210, -1072870852);
+      }
+      if ( !g_wppLevels )
+        goto LABEL_96;
+      v26 = 22;
+      goto LABEL_37;
+    }
+    v27 = *(_QWORD *)this;
+    v58 = 0;
+    v13 = (*(__int64 (__fastcall **)(CBaseMediaSink *, unsigned int *))(v27 + 48))(this, &v58);
+    if ( v13 < 0 )
+    {
+      v30 = (__int64 *)CallStackTracing::s_wpInstance;
+      if ( !CallStackTracing::s_wpInstance )
+      {
+        v31 = (CallStackTracing *)MFGetCallStackTracingWeakReference(0, v28, v29);
+        CallStackTracing::s_wpInstance = v31;
+        if ( v31 && (*(unsigned int (__fastcall **)(CallStackTracing *, __int64))(*(_QWORD *)v31 + 8LL))(v31, 2032) )
+        {
+          v30 = (__int64 *)CallStackTracing::s_wpInstance;
+        }
+        else
+        {
+          v30 = &qword_1803CE250;
+          CallStackTracing::s_wpInstance = (CallStackTracing *)&qword_1803CE250;
+        }
+      }
+      if ( *((_BYTE *)v30 + 8) )
+      {
+        v32 = CallStackTracing::GetThreadRelativeContext((CallStackTracing *)v30);
+        if ( *((_DWORD *)v32 + 499) != v13 )
+          CallStackContext::TraceFailure(v32, "CBaseMediaSink::AddStreamSink", 218, v13);
+      }
+      if ( !g_wppLevels )
+        goto LABEL_96;
+      v26 = 23;
+      goto LABEL_37;
+    }
+    v33 = (*(__int64 (__fastcall **)(char *))(*(_QWORD *)v11 + 32LL))(v11);
+    if ( v58 >= v33 )
+    {
+      v36 = (__int64 *)CallStackTracing::s_wpInstance;
+      v13 = -1072875853;
+      if ( !CallStackTracing::s_wpInstance )
+      {
+        v37 = (CallStackTracing *)MFGetCallStackTracingWeakReference(0, v34, v35);
+        CallStackTracing::s_wpInstance = v37;
+        if ( v37 && (*(unsigned int (__fastcall **)(CallStackTracing *, __int64))(*(_QWORD *)v37 + 8LL))(v37, 2032) )
+        {
+          v36 = (__int64 *)CallStackTracing::s_wpInstance;
+        }
+        else
+        {
+          v36 = &qword_1803CE250;
+          CallStackTracing::s_wpInstance = (CallStackTracing *)&qword_1803CE250;
+        }
+      }
+      if ( *((_BYTE *)v36 + 8) )
+      {
+        v38 = CallStackTracing::GetThreadRelativeContext((CallStackTracing *)v36);
+        if ( *((_DWORD *)v38 + 499) != -1072875853 )
+          CallStackContext::TraceFailure(v38, "CBaseMediaSink::AddStreamSink", 225, -1072875853);
+      }
+      if ( !g_wppLevels )
+        goto LABEL_96;
+      v26 = 24;
+LABEL_37:
+      WPP_SF_qD(*((_QWORD *)WPP_GLOBAL_Control + 2), v26, &WPP_064ac3d23a4d328c92d991778bc5e966_Traceguids, v11, v13);
+LABEL_96:
+      ComSmartPtr<IMFTransform>::~ComSmartPtr<IMFTransform>(&v59);
+      goto LABEL_97;
+    }
+    v39 = *(_QWORD *)v11;
+    v57[0] = 0;
+    v13 = (*(__int64 (__fastcall **)(char *, _QWORD, struct IMFMediaType *, struct CBaseStreamSink **))(v39 + 40))(
+            v11,
+            a2,
+            a3,
+            v57);
+    if ( v13 >= 0 )
+    {
+      v13 = CBaseMediaSink::AddStreamToSinkList((CBaseMediaSink *)v11, v57[0]);
+      if ( v13 >= 0 )
+      {
+        if ( !a4 )
+          goto LABEL_95;
+        v13 = (**(__int64 (__fastcall ***)(struct CBaseStreamSink *, GUID *, struct IMFStreamSink **))v57[0])(
+                v57[0],
+                &IID_IMFStreamSink,
+                a4);
+        if ( v13 >= 0 )
+          goto LABEL_95;
+        v53 = (__int64 *)CallStackTracing::s_wpInstance;
+        if ( !CallStackTracing::s_wpInstance )
+        {
+          v54 = (CallStackTracing *)MFGetCallStackTracingWeakReference(0, v51, v52);
+          CallStackTracing::s_wpInstance = v54;
+          if ( v54 && (*(unsigned int (__fastcall **)(CallStackTracing *, __int64))(*(_QWORD *)v54 + 8LL))(v54, 2032) )
+          {
+            v53 = (__int64 *)CallStackTracing::s_wpInstance;
+          }
+          else
+          {
+            v53 = &qword_1803CE250;
+            CallStackTracing::s_wpInstance = (CallStackTracing *)&qword_1803CE250;
+          }
+        }
+        if ( *((_BYTE *)v53 + 8) )
+        {
+          v55 = CallStackTracing::GetThreadRelativeContext((CallStackTracing *)v53);
+          if ( *((_DWORD *)v55 + 499) != v13 )
+            CallStackContext::TraceFailure(v55, "CBaseMediaSink::AddStreamSink", 249, v13);
+        }
+        if ( !g_wppLevels )
+          goto LABEL_95;
+        v45 = 27;
+      }
+      else
+      {
+        v48 = (__int64 *)CallStackTracing::s_wpInstance;
+        if ( !CallStackTracing::s_wpInstance )
+        {
+          v49 = (CallStackTracing *)MFGetCallStackTracingWeakReference(0, v46, v47);
+          CallStackTracing::s_wpInstance = v49;
+          if ( v49 && (*(unsigned int (__fastcall **)(CallStackTracing *, __int64))(*(_QWORD *)v49 + 8LL))(v49, 2032) )
+          {
+            v48 = (__int64 *)CallStackTracing::s_wpInstance;
+          }
+          else
+          {
+            v48 = &qword_1803CE250;
+            CallStackTracing::s_wpInstance = (CallStackTracing *)&qword_1803CE250;
+          }
+        }
+        if ( *((_BYTE *)v48 + 8) )
+        {
+          v50 = CallStackTracing::GetThreadRelativeContext((CallStackTracing *)v48);
+          if ( *((_DWORD *)v50 + 499) != v13 )
+            CallStackContext::TraceFailure(v50, "CBaseMediaSink::AddStreamSink", 241, v13);
+        }
+        if ( !g_wppLevels )
+          goto LABEL_95;
+        v45 = 26;
+      }
+    }
+    else
+    {
+      v42 = (__int64 *)CallStackTracing::s_wpInstance;
+      if ( !CallStackTracing::s_wpInstance )
+      {
+        v43 = (CallStackTracing *)MFGetCallStackTracingWeakReference(0, v40, v41);
+        CallStackTracing::s_wpInstance = v43;
+        if ( v43 && (*(unsigned int (__fastcall **)(CallStackTracing *, __int64))(*(_QWORD *)v43 + 8LL))(v43, 2032) )
+        {
+          v42 = (__int64 *)CallStackTracing::s_wpInstance;
+        }
+        else
+        {
+          v42 = &qword_1803CE250;
+          CallStackTracing::s_wpInstance = (CallStackTracing *)&qword_1803CE250;
+        }
+      }
+      if ( *((_BYTE *)v42 + 8) )
+      {
+        v44 = CallStackTracing::GetThreadRelativeContext((CallStackTracing *)v42);
+        if ( *((_DWORD *)v44 + 499) != v13 )
+          CallStackContext::TraceFailure(v44, "CBaseMediaSink::AddStreamSink", 235, v13);
+      }
+      if ( !g_wppLevels )
+        goto LABEL_95;
+      v45 = 25;
+    }
+    WPP_SF_qD(*((_QWORD *)WPP_GLOBAL_Control + 2), v45, &WPP_064ac3d23a4d328c92d991778bc5e966_Traceguids, v11, v13);
+LABEL_95:
+    ComSmartPtr<IMFTransform>::~ComSmartPtr<IMFTransform>(v57);
+    goto LABEL_96;
+  }
+  v17 = (__int64 *)CallStackTracing::s_wpInstance;
+  v13 = -1072870853;
+  if ( !CallStackTracing::s_wpInstance )
+  {
+    v18 = (CallStackTracing *)MFGetCallStackTracingWeakReference(0, v9, v10);
+    CallStackTracing::s_wpInstance = v18;
+    if ( v18 && (*(unsigned int (__fastcall **)(CallStackTracing *, __int64))(*(_QWORD *)v18 + 8LL))(v18, 2032) )
+    {
+      v17 = (__int64 *)CallStackTracing::s_wpInstance;
+    }
+    else
+    {
+      v17 = &qword_1803CE250;
+      CallStackTracing::s_wpInstance = (CallStackTracing *)&qword_1803CE250;
+    }
+  }
+  if ( *((_BYTE *)v17 + 8) )
+  {
+    v19 = CallStackTracing::GetThreadRelativeContext((CallStackTracing *)v17);
+    if ( *((_DWORD *)v19 + 499) != -1072870853 )
+      CallStackContext::TraceFailure(v19, "CBaseMediaSink::AddStreamSink", 200, -1072870853);
+  }
+  if ( g_wppLevels )
+  {
+    v16 = 21;
+    goto LABEL_14;
+  }
+LABEL_97:
+  CallStackScopeTrace::~CallStackScopeTrace((CallStackScopeTrace *)&v58);
+  LeaveCriticalSection(v4);
+  return (unsigned int)v13;
+}
+
+```
+
+## disassembly
+
+```asm
+0x1802387d0  mov     [rsp-28h+arg_8], rbx
+0x1802387d5  mov     [rsp-28h+arg_10], rsi
+0x1802387da  push    rbp
+0x1802387db  push    r12
+0x1802387dd  push    r13
+0x1802387df  push    r14
+0x1802387e1  push    r15
+0x1802387e3  mov     rbp, rsp
+0x1802387e6  sub     rsp, 40h
+0x1802387ea  lea     r13, [rcx+210h]
+0x1802387f1  mov     rbx, rcx
+0x1802387f4  mov     rcx, r13; lpCriticalSection
+0x1802387f7  mov     r14, r9
+0x1802387fa  mov     r12, r8
+0x1802387fd  mov     r15d, edx
+0x180238800  call    cs:__imp_EnterCriticalSection
+0x180238807  nop     dword ptr [rax+rax+00h]
+0x18023880c  mov     r8d, 0B1h; int
+0x180238812  lea     rdx, aCbasemediasink_12; "CBaseMediaSink::AddStreamSink"
+0x180238819  lea     rcx, [rbp+arg_0]; this
+0x18023881d  call    ??0CallStackScopeTrace@@QEAA@PEBDJ@Z; CallStackScopeTrace::CallStackScopeTrace(char const *,long)
+0x180238822  test    r14, r14
+0x180238825  jz      short loc_18023882E
+0x180238827  mov     qword ptr [r14], 0
+0x18023882e  lea     rsi, [rbx-88h]
+0x180238835  cmp     dword ptr [rsi+278h], 8
+0x18023883c  jnz     loc_1802388FB
+0x180238842  mov     rcx, cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA; CallStackTracing * CallStackTracing::s_wpInstance
+0x180238849  mov     ebx, 0C00D3E85h
+0x18023884e  test    rcx, rcx
+0x180238851  jnz     short loc_18023889B
+0x180238853  call    cs:__imp_MFGetCallStackTracingWeakReference
+0x18023885a  nop     dword ptr [rax+rax+00h]
+0x18023885f  mov     cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA, rax; CallStackTracing * CallStackTracing::s_wpInstance
+0x180238866  mov     rcx, rax
+0x180238869  test    rax, rax
+0x18023886c  jz      short loc_18023888D
+0x18023886e  mov     rax, [rax]
+0x180238871  mov     edx, 7F0h
+0x180238876  mov     rax, [rax+8]
+0x18023887a  call    cs:__guard_dispatch_icall_fptr
+0x180238880  test    eax, eax
+0x180238882  jz      short loc_18023888D
+0x180238884  mov     rcx, cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA; CallStackTracing * CallStackTracing::s_wpInstance
+0x18023888b  jmp     short loc_18023889B
+0x18023888d  lea     rcx, qword_1803CE250; this
+0x180238894  mov     cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA, rcx; CallStackTracing * CallStackTracing::s_wpInstance
+0x18023889b  cmp     byte ptr [rcx+8], 0
+0x18023889f  jz      short loc_1802388C6
+0x1802388a1  call    ?GetThreadRelativeContext@CallStackTracing@@IEAAAEAVCallStackContext@@XZ; CallStackTracing::GetThreadRelativeContext(void)
+0x1802388a6  cmp     [rax+7CCh], ebx
+0x1802388ac  jz      short loc_1802388C6
+0x1802388ae  mov     r9d, ebx; int
+0x1802388b1  lea     rdx, aCbasemediasink_12; "CBaseMediaSink::AddStreamSink"
+0x1802388b8  mov     r8d, 0C1h; int
+0x1802388be  mov     rcx, rax; this
+0x1802388c1  call    ?TraceFailure@CallStackContext@@AEAAXPEBDJJ@Z; CallStackContext::TraceFailure(char const *,long,long)
+0x1802388c6  cmp     cs:?g_wppLevels@@3UMFWppLevels@@A, 1; MFWppLevels g_wppLevels
+0x1802388cd  jb      loc_180238E4D
+0x1802388d3  mov     edx, 14h
+0x1802388d8  mov     rcx, cs:WPP_GLOBAL_Control
+0x1802388df  lea     r8, WPP_064ac3d23a4d328c92d991778bc5e966_Traceguids
+0x1802388e6  mov     r9, rsi
+0x1802388e9  mov     [rsp+40h+var_20], ebx
+0x1802388ed  mov     rcx, [rcx+10h]
+0x1802388f1  call    WPP_SF_qD
+0x1802388f6  jmp     loc_180238E4D
+0x1802388fb  test    byte ptr [rsi+290h], 1
+0x180238902  jz      loc_1802389A3
+0x180238908  mov     rcx, cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA; CallStackTracing * CallStackTracing::s_wpInstance
+0x18023890f  mov     ebx, 0C00D4A3Bh
+0x180238914  test    rcx, rcx
+0x180238917  jnz     short loc_180238961
+0x180238919  call    cs:__imp_MFGetCallStackTracingWeakReference
+0x180238920  nop     dword ptr [rax+rax+00h]
+0x180238925  mov     cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA, rax; CallStackTracing * CallStackTracing::s_wpInstance
+0x18023892c  mov     rcx, rax
+0x18023892f  test    rax, rax
+0x180238932  jz      short loc_180238953
+0x180238934  mov     rax, [rax]
+0x180238937  mov     edx, 7F0h
+0x18023893c  mov     rax, [rax+8]
+0x180238940  call    cs:__guard_dispatch_icall_fptr
+0x180238946  test    eax, eax
+0x180238948  jz      short loc_180238953
+0x18023894a  mov     rcx, cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA; CallStackTracing * CallStackTracing::s_wpInstance
+0x180238951  jmp     short loc_180238961
+0x180238953  lea     rcx, qword_1803CE250; this
+0x18023895a  mov     cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA, rcx; CallStackTracing * CallStackTracing::s_wpInstance
+0x180238961  cmp     byte ptr [rcx+8], 0
+0x180238965  jz      short loc_18023898C
+0x180238967  call    ?GetThreadRelativeContext@CallStackTracing@@IEAAAEAVCallStackContext@@XZ; CallStackTracing::GetThreadRelativeContext(void)
+0x18023896c  cmp     [rax+7CCh], ebx
+0x180238972  jz      short loc_18023898C
+0x180238974  mov     r9d, ebx; int
+0x180238977  lea     rdx, aCbasemediasink_12; "CBaseMediaSink::AddStreamSink"
+0x18023897e  mov     r8d, 0C8h; int
+0x180238984  mov     rcx, rax; this
+0x180238987  call    ?TraceFailure@CallStackContext@@AEAAXPEBDJJ@Z; CallStackContext::TraceFailure(char const *,long,long)
+0x18023898c  cmp     cs:?g_wppLevels@@3UMFWppLevels@@A, 1; MFWppLevels g_wppLevels
+0x180238993  jb      loc_180238E4D
+0x180238999  mov     edx, 15h
+0x18023899e  jmp     loc_1802388D8
+0x1802389a3  mov     rax, [rbx]
+0x1802389a6  lea     r8, [rbp+arg_18]
+0x1802389aa  mov     edx, r15d
+0x1802389ad  mov     [rbp+arg_18], 0
+0x1802389b5  mov     rcx, rbx
+0x1802389b8  mov     rax, [rax+40h]
+0x1802389bc  call    cs:__guard_dispatch_icall_fptr
+0x1802389c2  test    eax, eax
+0x1802389c4  js      loc_180238A83
+0x1802389ca  mov     rcx, cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA; CallStackTracing * CallStackTracing::s_wpInstance
+0x1802389d1  mov     ebx, 0C00D4A3Ch
+0x1802389d6  test    rcx, rcx
+0x1802389d9  jnz     short loc_180238A23
+0x1802389db  call    cs:__imp_MFGetCallStackTracingWeakReference
+0x1802389e2  nop     dword ptr [rax+rax+00h]
+0x1802389e7  mov     cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA, rax; CallStackTracing * CallStackTracing::s_wpInstance
+0x1802389ee  mov     rcx, rax
+0x1802389f1  test    rax, rax
+0x1802389f4  jz      short loc_180238A15
+0x1802389f6  mov     rax, [rax]
+0x1802389f9  mov     edx, 7F0h
+0x1802389fe  mov     rax, [rax+8]
+0x180238a02  call    cs:__guard_dispatch_icall_fptr
+0x180238a08  test    eax, eax
+0x180238a0a  jz      short loc_180238A15
+0x180238a0c  mov     rcx, cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA; CallStackTracing * CallStackTracing::s_wpInstance
+0x180238a13  jmp     short loc_180238A23
+0x180238a15  lea     rcx, qword_1803CE250; this
+0x180238a1c  mov     cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA, rcx; CallStackTracing * CallStackTracing::s_wpInstance
+0x180238a23  cmp     byte ptr [rcx+8], 0
+0x180238a27  jz      short loc_180238A4E
+0x180238a29  call    ?GetThreadRelativeContext@CallStackTracing@@IEAAAEAVCallStackContext@@XZ; CallStackTracing::GetThreadRelativeContext(void)
+0x180238a2e  cmp     [rax+7CCh], ebx
+0x180238a34  jz      short loc_180238A4E
+0x180238a36  mov     r9d, ebx; int
+0x180238a39  lea     rdx, aCbasemediasink_12; "CBaseMediaSink::AddStreamSink"
+0x180238a40  mov     r8d, 0D2h; int
+0x180238a46  mov     rcx, rax; this
+0x180238a49  call    ?TraceFailure@CallStackContext@@AEAAXPEBDJJ@Z; CallStackContext::TraceFailure(char const *,long,long)
+0x180238a4e  cmp     cs:?g_wppLevels@@3UMFWppLevels@@A, 1; MFWppLevels g_wppLevels
+0x180238a55  jb      loc_180238E44
+0x180238a5b  mov     edx, 16h
+0x180238a60  mov     rcx, cs:WPP_GLOBAL_Control
+0x180238a67  lea     r8, WPP_064ac3d23a4d328c92d991778bc5e966_Traceguids
+0x180238a6e  mov     r9, rsi
+0x180238a71  mov     [rsp+40h+var_20], ebx
+0x180238a75  mov     rcx, [rcx+10h]
+0x180238a79  call    WPP_SF_qD
+0x180238a7e  jmp     loc_180238E44
+0x180238a83  mov     rax, [rbx]
+0x180238a86  lea     rdx, [rbp+arg_0]
+0x180238a8a  mov     rcx, rbx
+0x180238a8d  mov     [rbp+arg_0], 0
+0x180238a94  mov     rax, [rax+30h]
+0x180238a98  call    cs:__guard_dispatch_icall_fptr
+0x180238a9e  mov     ebx, eax
+0x180238aa0  test    eax, eax
+0x180238aa2  jns     loc_180238B3E
+0x180238aa8  mov     rcx, cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA; CallStackTracing * CallStackTracing::s_wpInstance
+0x180238aaf  test    rcx, rcx
+0x180238ab2  jnz     short loc_180238AFC
+0x180238ab4  call    cs:__imp_MFGetCallStackTracingWeakReference
+0x180238abb  nop     dword ptr [rax+rax+00h]
+0x180238ac0  mov     cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA, rax; CallStackTracing * CallStackTracing::s_wpInstance
+0x180238ac7  mov     rcx, rax
+0x180238aca  test    rax, rax
+0x180238acd  jz      short loc_180238AEE
+0x180238acf  mov     rax, [rax]
+0x180238ad2  mov     edx, 7F0h
+0x180238ad7  mov     rax, [rax+8]
+0x180238adb  call    cs:__guard_dispatch_icall_fptr
+0x180238ae1  test    eax, eax
+0x180238ae3  jz      short loc_180238AEE
+0x180238ae5  mov     rcx, cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA; CallStackTracing * CallStackTracing::s_wpInstance
+0x180238aec  jmp     short loc_180238AFC
+0x180238aee  lea     rcx, qword_1803CE250; this
+0x180238af5  mov     cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA, rcx; CallStackTracing * CallStackTracing::s_wpInstance
+0x180238afc  cmp     byte ptr [rcx+8], 0
+0x180238b00  jz      short loc_180238B27
+0x180238b02  call    ?GetThreadRelativeContext@CallStackTracing@@IEAAAEAVCallStackContext@@XZ; CallStackTracing::GetThreadRelativeContext(void)
+0x180238b07  cmp     [rax+7CCh], ebx
+0x180238b0d  jz      short loc_180238B27
+0x180238b0f  mov     r9d, ebx; int
+0x180238b12  lea     rdx, aCbasemediasink_12; "CBaseMediaSink::AddStreamSink"
+0x180238b19  mov     r8d, 0DAh; int
+0x180238b1f  mov     rcx, rax; this
+0x180238b22  call    ?TraceFailure@CallStackContext@@AEAAXPEBDJJ@Z; CallStackContext::TraceFailure(char const *,long,long)
+0x180238b27  cmp     cs:?g_wppLevels@@3UMFWppLevels@@A, 1; MFWppLevels g_wppLevels
+0x180238b2e  jb      loc_180238E44
+0x180238b34  mov     edx, 17h
+0x180238b39  jmp     loc_180238A60
+0x180238b3e  mov     rax, [rsi]
+0x180238b41  mov     rcx, rsi
+0x180238b44  mov     rax, [rax+20h]
+0x180238b48  call    cs:__guard_dispatch_icall_fptr
+0x180238b4e  cmp     [rbp+arg_0], eax
+0x180238b51  jb      loc_180238BF2
+0x180238b57  mov     rcx, cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA; CallStackTracing * CallStackTracing::s_wpInstance
+0x180238b5e  mov     ebx, 0C00D36B3h
+0x180238b63  test    rcx, rcx
+0x180238b66  jnz     short loc_180238BB0
+0x180238b68  call    cs:__imp_MFGetCallStackTracingWeakReference
+0x180238b6f  nop     dword ptr [rax+rax+00h]
+0x180238b74  mov     cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA, rax; CallStackTracing * CallStackTracing::s_wpInstance
+0x180238b7b  mov     rcx, rax
+0x180238b7e  test    rax, rax
+0x180238b81  jz      short loc_180238BA2
+0x180238b83  mov     rax, [rax]
+0x180238b86  mov     edx, 7F0h
+0x180238b8b  mov     rax, [rax+8]
+0x180238b8f  call    cs:__guard_dispatch_icall_fptr
+0x180238b95  test    eax, eax
+0x180238b97  jz      short loc_180238BA2
+0x180238b99  mov     rcx, cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA; CallStackTracing * CallStackTracing::s_wpInstance
+0x180238ba0  jmp     short loc_180238BB0
+0x180238ba2  lea     rcx, qword_1803CE250; this
+0x180238ba9  mov     cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA, rcx; CallStackTracing * CallStackTracing::s_wpInstance
+0x180238bb0  cmp     byte ptr [rcx+8], 0
+0x180238bb4  jz      short loc_180238BDB
+0x180238bb6  call    ?GetThreadRelativeContext@CallStackTracing@@IEAAAEAVCallStackContext@@XZ; CallStackTracing::GetThreadRelativeContext(void)
+0x180238bbb  cmp     [rax+7CCh], ebx
+0x180238bc1  jz      short loc_180238BDB
+0x180238bc3  mov     r9d, ebx; int
+0x180238bc6  lea     rdx, aCbasemediasink_12; "CBaseMediaSink::AddStreamSink"
+0x180238bcd  mov     r8d, 0E1h; int
+0x180238bd3  mov     rcx, rax; this
+0x180238bd6  call    ?TraceFailure@CallStackContext@@AEAAXPEBDJJ@Z; CallStackContext::TraceFailure(char const *,long,long)
+0x180238bdb  cmp     cs:?g_wppLevels@@3UMFWppLevels@@A, 1; MFWppLevels g_wppLevels
+0x180238be2  jb      loc_180238E44
+0x180238be8  mov     edx, 18h
+0x180238bed  jmp     loc_180238A60
+0x180238bf2  mov     rax, [rsi]
+0x180238bf5  lea     r9, [rbp+var_10]
+0x180238bf9  mov     r8, r12
+0x180238bfc  mov     [rbp+var_10], 0
+0x180238c04  mov     edx, r15d
+0x180238c07  mov     rcx, rsi
+0x180238c0a  mov     rax, [rax+28h]
+0x180238c0e  call    cs:__guard_dispatch_icall_fptr
+0x180238c14  xor     r15d, r15d
+0x180238c17  mov     ebx, eax
+0x180238c19  test    eax, eax
+0x180238c1b  jns     loc_180238CB7
+0x180238c21  mov     rcx, cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA; CallStackTracing * CallStackTracing::s_wpInstance
+0x180238c28  test    rcx, rcx
+0x180238c2b  jnz     short loc_180238C75
+0x180238c2d  call    cs:__imp_MFGetCallStackTracingWeakReference
+0x180238c34  nop     dword ptr [rax+rax+00h]
+0x180238c39  mov     cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA, rax; CallStackTracing * CallStackTracing::s_wpInstance
+0x180238c40  mov     rcx, rax
+0x180238c43  test    rax, rax
+0x180238c46  jz      short loc_180238C67
+0x180238c48  mov     rax, [rax]
+0x180238c4b  mov     edx, 7F0h
+0x180238c50  mov     rax, [rax+8]
+0x180238c54  call    cs:__guard_dispatch_icall_fptr
+0x180238c5a  test    eax, eax
+0x180238c5c  jz      short loc_180238C67
+0x180238c5e  mov     rcx, cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA; CallStackTracing * CallStackTracing::s_wpInstance
+0x180238c65  jmp     short loc_180238C75
+0x180238c67  lea     rcx, qword_1803CE250; this
+0x180238c6e  mov     cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA, rcx; CallStackTracing * CallStackTracing::s_wpInstance
+0x180238c75  cmp     [rcx+8], r15b
+0x180238c79  jz      short loc_180238CA0
+0x180238c7b  call    ?GetThreadRelativeContext@CallStackTracing@@IEAAAEAVCallStackContext@@XZ; CallStackTracing::GetThreadRelativeContext(void)
+0x180238c80  cmp     [rax+7CCh], ebx
+0x180238c86  jz      short loc_180238CA0
+0x180238c88  mov     r9d, ebx; int
+0x180238c8b  lea     rdx, aCbasemediasink_12; "CBaseMediaSink::AddStreamSink"
+0x180238c92  mov     r8d, 0EBh; int
+0x180238c98  mov     rcx, rax; this
+0x180238c9b  call    ?TraceFailure@CallStackContext@@AEAAXPEBDJJ@Z; CallStackContext::TraceFailure(char const *,long,long)
+0x180238ca0  cmp     cs:?g_wppLevels@@3UMFWppLevels@@A, 1; MFWppLevels g_wppLevels
+0x180238ca7  jb      loc_180238E3B
+0x180238cad  mov     edx, 19h
+0x180238cb2  jmp     loc_180238E1D
+0x180238cb7  mov     rdx, [rbp+var_10]; struct CBaseStreamSink *
+0x180238cbb  mov     rcx, rsi; this
+0x180238cbe  call    ?AddStreamToSinkList@CBaseMediaSink@@IEAAJPEAVCBaseStreamSink@@@Z; CBaseMediaSink::AddStreamToSinkList(CBaseStreamSink *)
+0x180238cc3  mov     ebx, eax
+0x180238cc5  test    eax, eax
+0x180238cc7  jns     loc_180238D63
+0x180238ccd  mov     rcx, cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA; CallStackTracing * CallStackTracing::s_wpInstance
+0x180238cd4  test    rcx, rcx
+0x180238cd7  jnz     short loc_180238D21
+0x180238cd9  call    cs:__imp_MFGetCallStackTracingWeakReference
+0x180238ce0  nop     dword ptr [rax+rax+00h]
+0x180238ce5  mov     cs:?s_wpInstance@CallStackTracing@@0PEAV1@EA, rax; CallStackTracing * CallStackTracing::s_wpInstance
+0x180238cec  mov     rcx, rax
+0x180238cef  test    rax, rax
+0x180238cf2  jz      short loc_180238D13
+0x180238cf4  mov     rax, [rax]
+0x180238cf7  mov     edx, 7F0h
+0x180238cfc  mov     rax, [rax+8]
+0x180238d00  call    cs:__guard_dispatch_icall_fptr
+0x180238d06  test    eax, eax
+0x180238d08  jz      short loc_180238D13
+  ... truncated ...
+```

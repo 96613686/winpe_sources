@@ -1,0 +1,63 @@
+# CTopoCodecEnumEx::GetTransform(_GUID const &,uint,IMFMediaType *,IMFMediaType *,IMFAttributes *,_GUID *,IMFTransform * *)
+
+- ea: `0x180090934`
+- end: `0x180091273`
+- name: `?GetTransform@CTopoCodecEnumEx@@AEAAJAEBU_GUID@@IPEAUIMFMediaType@@1PEAUIMFAttributes@@PEAU2@PEAPEAUIMFTransform@@@Z`
+- size: `2367`
+- prototype: `__int64 __usercall@<rax>(CTopoCodecEnumEx *__hidden this@<rcx>, const struct _GUID *@<rdx>, unsigned int@<r8d>, struct IMFMediaType *@<r9>, struct IMFMediaType *, struct IMFAttributes *, struct _GUID *, struct IMFTransform **)`
+- caller_count: `1`
+- callee_count: `17`
+- tags: `service_task, broker_com_uri`
+
+## callers
+
+- `0x180221000`
+
+## callees
+
+- `0x18001616c`
+- `0x18002fee0`
+- `0x18003a41c`
+- `0x18003ecb0`
+- `0x1800402c0`
+- `0x180050d6c`
+- `0x18008b3a0`
+- `0x180090934`
+- `0x180091eb0`
+- `0x180092630`
+- `0x18009302c`
+- `0x1800ec0e0`
+- `0x18015f954`
+- `0x1801a4ebc`
+- `0x180258390`
+- `0x1802583a8`
+- `0x180344d40`
+
+## import_xrefs
+
+- `api-ms-win-core-com-l1-1-0!CoTaskMemFree` at `0x180091231`
+- `api-ms-win-core-com-l1-1-0!CoTaskMemFree` at `0x180091231`
+- `MFPlat!MFTEnumEx` at `0x180090fb4`
+- `MFPlat!MFTEnumEx` at `0x180090fb4`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180090a3c`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180090b1f`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180090bd9`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180090c99`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180090d5a`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180090e90`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180090fd6`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18009112c`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180090a3c`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180090b1f`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180090bd9`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180090c99`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180090d5a`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180090e90`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180090fd6`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18009112c`
+
+## pseudocode
+
+```c
+
+```

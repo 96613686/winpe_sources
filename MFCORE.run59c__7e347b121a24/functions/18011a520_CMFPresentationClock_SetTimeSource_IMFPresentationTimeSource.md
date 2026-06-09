@@ -1,0 +1,66 @@
+# CMFPresentationClock::SetTimeSource(IMFPresentationTimeSource *)
+
+- ea: `0x18011a520`
+- end: `0x18011aecd`
+- name: `?SetTimeSource@CMFPresentationClock@@UEAAJPEAUIMFPresentationTimeSource@@@Z`
+- size: `2477`
+- prototype: `__int64 __fastcall(CMFPresentationClock *__hidden this, struct IMFPresentationTimeSource *)`
+- caller_count: `1`
+- callee_count: `18`
+- tags: ``
+
+## callers
+
+- `0x1801d17b0`
+
+## callees
+
+- `0x18001616c`
+- `0x18002fee0`
+- `0x180031884`
+- `0x180031c00`
+- `0x180031c28`
+- `0x180037b98`
+- `0x18003ecb0`
+- `0x1800402c0`
+- `0x18004d118`
+- `0x18004d16c`
+- `0x180050d6c`
+- `0x180097f10`
+- `0x1800ec0e0`
+- `0x18011a520`
+- `0x18011af50`
+- `0x180274920`
+- `0x1802749f0`
+- `0x180344d40`
+
+## import_xrefs
+
+- `api-ms-win-core-synch-l1-1-0!CreateEventW` at `0x18011ac20`
+- `api-ms-win-core-synch-l1-1-0!CreateEventW` at `0x18011ac20`
+- `api-ms-win-core-synch-l1-1-0!SetEvent` at `0x18011ac6c`
+- `api-ms-win-core-synch-l1-1-0!SetEvent` at `0x18011ac6c`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18011ac34`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18011ac34`
+- `api-ms-win-core-handle-l1-1-0!CloseHandle` at `0x18011ac5c`
+- `api-ms-win-core-handle-l1-1-0!CloseHandle` at `0x18011ac5c`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18011a5d3`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18011a692`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18011a74e`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18011a836`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18011ab0f`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18011ad99`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18011a5d3`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18011a692`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18011a74e`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18011a836`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18011ab0f`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18011ad99`
+- `MFPlat!MFPutWorkItemEx2` at `0x18011ac00`
+- `MFPlat!MFPutWorkItemEx2` at `0x18011ac00`
+
+## pseudocode
+
+```c
+
+```

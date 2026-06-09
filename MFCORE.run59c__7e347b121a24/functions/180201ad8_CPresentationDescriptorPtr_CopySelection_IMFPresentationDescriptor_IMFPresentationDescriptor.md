@@ -1,0 +1,54 @@
+# CPresentationDescriptorPtr::CopySelection(IMFPresentationDescriptor *,IMFPresentationDescriptor *)
+
+- ea: `0x180201ad8`
+- end: `0x1802020ba`
+- name: `?CopySelection@CPresentationDescriptorPtr@@SAJPEAUIMFPresentationDescriptor@@0@Z`
+- size: `1506`
+- prototype: `__int64 __fastcall(struct IMFPresentationDescriptor *, struct IMFPresentationDescriptor *)`
+- caller_count: `1`
+- callee_count: `5`
+- tags: ``
+
+## callers
+
+- `0x1802ace70`
+
+## callees
+
+- `0x1800402c0`
+- `0x180063f00`
+- `0x1800ec0e0`
+- `0x180201ad8`
+- `0x180344d40`
+
+## import_xrefs
+
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180201b22`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180201d0e`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180201db6`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180201e30`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180201eaa`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180201f36`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180201fb0`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180202027`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180201b22`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180201d0e`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180201db6`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180201e30`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180201eaa`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180201f36`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180201fb0`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180202027`
+
+## string_xrefs
+
+- `0x180201b88`: `CPresentationDescriptorPtr::CopySelection`
+- `0x180201d72`: `CPresentationDescriptorPtr::CopySelection`
+- `0x180201f16`: `CPresentationDescriptorPtr::CopySelection`
+- `0x18020208b`: `CPresentationDescriptorPtr::CopySelection`
+
+## pseudocode
+
+```c
+
+```

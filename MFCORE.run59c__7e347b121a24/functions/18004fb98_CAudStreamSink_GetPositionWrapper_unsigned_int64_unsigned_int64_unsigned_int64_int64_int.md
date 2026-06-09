@@ -1,0 +1,76 @@
+# CAudStreamSink::GetPositionWrapper(unsigned __int64 *,unsigned __int64 *,unsigned __int64 *,__int64 *,int)
+
+- ea: `0x18004fb98`
+- end: `0x1800501ea`
+- name: `?GetPositionWrapper@CAudStreamSink@@IEAAJPEA_K00PEA_JH@Z`
+- size: `1618`
+- prototype: `int(CAudStreamSink *__hidden this, unsigned __int64 *, unsigned __int64 *, unsigned __int64 *, __int64 *, int)`
+- caller_count: `4`
+- callee_count: `15`
+- tags: `installer_update`
+
+## callers
+
+- `0x18003f424`
+- `0x18004f098`
+- `0x180174680`
+- `0x180177c04`
+
+## callees
+
+- `0x18001616c`
+- `0x18001b9b0`
+- `0x1800402c0`
+- `0x18004c6ec`
+- `0x18004d16c`
+- `0x18004fb98`
+- `0x1800505d8`
+- `0x180050d6c`
+- `0x1800ec0e0`
+- `0x18013c6b4`
+- `0x180189368`
+- `0x180258480`
+- `0x18031d8dc`
+- `0x18031ec9c`
+- `0x180344d40`
+
+## import_xrefs
+
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x18004fd9e`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x18004fd9e`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x18004fcfe`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x18004fcfe`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18004fbf5`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18004fdbe`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18004ff80`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18004ffc4`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18004fbf5`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18004fdbe`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18004ff80`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18004ffc4`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18004fc22`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18004fdeb`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18004fc22`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18004fdeb`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18004fc07`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18004fdd0`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18004fc07`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18004fdd0`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180050042`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1800500da`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180050042`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1800500da`
+
+## string_xrefs
+
+- `0x18004fbdd`: `CAudStreamSink::GetPositionWrapper`
+- `0x18004fc34`: `CAudStreamSink::GetPositionWrapper`
+- `0x18005001c`: `CAudStreamSink::GetPositionWrapper`
+- `0x1800500b7`: `CAudStreamSink::GetPositionWrapper`
+- `0x18005014f`: `CAudStreamSink::GetPositionWrapper`
+
+## pseudocode
+
+```c
+
+```

@@ -1,0 +1,66 @@
+# CAudStreamSink::CheckAllocationLimits(void)
+
+- ea: `0x180081d64`
+- end: `0x180082245`
+- name: `?CheckAllocationLimits@CAudStreamSink@@QEAAXXZ`
+- size: `1249`
+- prototype: `void __fastcall(CAudStreamSink *__hidden this)`
+- caller_count: `4`
+- callee_count: `13`
+- tags: `installer_update`
+
+## callers
+
+- `0x18007ff60`
+- `0x180081600`
+- `0x180081a3c`
+- `0x180082970`
+
+## callees
+
+- `0x18001616c`
+- `0x18001b9b0`
+- `0x1800402c0`
+- `0x18005a3d4`
+- `0x180081d64`
+- `0x180082f10`
+- `0x18018d0a0`
+- `0x180258480`
+- `0x1802debc4`
+- `0x18031d650`
+- `0x18031d798`
+- `0x18031eb10`
+- `0x180344d40`
+
+## import_xrefs
+
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180081eb5`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180081eb5`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180081e73`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180081e73`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180081da0`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180081ed5`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1800820c9`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18008210d`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180081da0`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180081ed5`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1800820c9`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18008210d`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x180081dcb`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x180081f00`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x180081dcb`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x180081f00`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x180081db1`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x180081ee6`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x180081db1`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x180081ee6`
+
+## string_xrefs
+
+- `0x180081def`: `CAudStreamSink::CheckAllocationLimits`
+
+## pseudocode
+
+```c
+
+```

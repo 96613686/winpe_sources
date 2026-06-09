@@ -1,0 +1,52 @@
+# CMFTWrapperAsync::RequestInputForStream(CMFTWrapperInputStream *)
+
+- ea: `0x180052a68`
+- end: `0x180052e59`
+- name: `?RequestInputForStream@CMFTWrapperAsync@@IEAAJPEAVCMFTWrapperInputStream@@@Z`
+- size: `1009`
+- prototype: `__int64 __fastcall(CMFTWrapperAsync *__hidden this, struct CMFTWrapperInputStream *)`
+- caller_count: `2`
+- callee_count: `9`
+- tags: ``
+
+## callers
+
+- `0x180052730`
+- `0x180053448`
+
+## callees
+
+- `0x18001616c`
+- `0x18003a4a0`
+- `0x18003ecb0`
+- `0x1800402c0`
+- `0x180050d6c`
+- `0x180052a68`
+- `0x18005a3d4`
+- `0x1800ec0e0`
+- `0x180344d40`
+
+## import_xrefs
+
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180052aa2`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180052c09`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180052aa2`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180052c09`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x180052acf`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x180052acf`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x180052ab4`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x180052ab4`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180052c59`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180052ced`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180052d81`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180052c59`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180052ced`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180052d81`
+- `MFPlat!MFCreateMediaEvent` at `0x180052b27`
+- `MFPlat!MFCreateMediaEvent` at `0x180052b27`
+
+## pseudocode
+
+```c
+
+```

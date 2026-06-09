@@ -1,0 +1,61 @@
+# CMFTopologyVerifier::VerifyStreamDescriptors(IMFTopology *)
+
+- ea: `0x180102358`
+- end: `0x180102d5a`
+- name: `?VerifyStreamDescriptors@CMFTopologyVerifier@@KAJPEAUIMFTopology@@@Z`
+- size: `2562`
+- prototype: `__int64 __fastcall(struct IMFTopology *)`
+- caller_count: `1`
+- callee_count: `9`
+- tags: ``
+
+## callers
+
+- `0x1801021b0`
+
+## callees
+
+- `0x18001616c`
+- `0x18002fee0`
+- `0x18003ecb0`
+- `0x1800402c0`
+- `0x180050d6c`
+- `0x180063f00`
+- `0x1800ec0e0`
+- `0x180102358`
+- `0x180344d40`
+
+## import_xrefs
+
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18010244a`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18010270f`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801027c4`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180102856`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801028e8`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18010297a`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180102a11`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180102aa8`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180102b3f`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180102bd1`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180102c63`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18010244a`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18010270f`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801027c4`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180102856`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801028e8`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18010297a`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180102a11`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180102aa8`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180102b3f`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180102bd1`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180102c63`
+
+## string_xrefs
+
+- `0x18010236b`: `CMFTopologyVerifier::VerifyStreamDescriptors`
+
+## pseudocode
+
+```c
+
+```

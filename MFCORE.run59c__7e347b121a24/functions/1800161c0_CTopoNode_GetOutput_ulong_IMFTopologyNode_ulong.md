@@ -1,0 +1,50 @@
+# CTopoNode::GetOutput(ulong,IMFTopologyNode * *,ulong *)
+
+- ea: `0x1800161c0`
+- end: `0x18001659e`
+- name: `?GetOutput@CTopoNode@@UEAAJKPEAPEAUIMFTopologyNode@@PEAK@Z`
+- size: `990`
+- prototype: `__int64 __fastcall(CTopoNode *__hidden this, unsigned int, struct IMFTopologyNode **, unsigned int *)`
+- caller_count: `0`
+- callee_count: `6`
+- tags: ``
+
+## callees
+
+- `0x18001616c`
+- `0x1800161c0`
+- `0x1800402c0`
+- `0x180050d6c`
+- `0x1800ec0e0`
+- `0x180344d40`
+
+## import_xrefs
+
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180016219`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1800162ef`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1800163a5`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1800163dd`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180016219`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1800162ef`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1800163a5`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1800163dd`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x180016246`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18001631a`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x180016246`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18001631a`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18001622b`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x180016300`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18001622b`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x180016300`
+- `api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId` at `0x180016387`
+- `api-ms-win-core-processthreads-l1-1-0!GetCurrentThreadId` at `0x180016387`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180016441`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1800164db`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180016441`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1800164db`
+
+## pseudocode
+
+```c
+
+```

@@ -1,0 +1,63 @@
+# CMFMediaProcessor::InitTopologyWorkQueues(IMFTopology *)
+
+- ea: `0x180064994`
+- end: `0x1800654c5`
+- name: `?InitTopologyWorkQueues@CMFMediaProcessor@@AEAAJPEAUIMFTopology@@@Z`
+- size: `2865`
+- prototype: `__int64 __fastcall(CMFMediaProcessor *__hidden this, struct IMFTopology *)`
+- caller_count: `1`
+- callee_count: `11`
+- tags: ``
+
+## callers
+
+- `0x180064054`
+
+## callees
+
+- `0x18001616c`
+- `0x18002fee0`
+- `0x18003ecb0`
+- `0x1800402c0`
+- `0x180050d6c`
+- `0x180063f00`
+- `0x180064994`
+- `0x180066358`
+- `0x1800ec0e0`
+- `0x180258480`
+- `0x180344d40`
+
+## import_xrefs
+
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180064a68`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180064b39`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180064bea`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180064e70`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180064f02`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180064f9b`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180065031`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1800650c3`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180065155`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18006529d`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180065336`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1800653c8`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180064a68`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180064b39`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180064bea`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180064e70`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180064f02`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180064f9b`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180065031`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1800650c3`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180065155`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18006529d`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x180065336`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1800653c8`
+- `MFPlat!MFCreateCollection` at `0x180064d09`
+- `MFPlat!MFCreateCollection` at `0x180064d09`
+
+## pseudocode
+
+```c
+
+```

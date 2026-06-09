@@ -1,0 +1,58 @@
+# CMPTopology::InitAllocatorForWrapper(IMFTopologyNode *,IMFTransformWrapper *)
+
+- ea: `0x1800a8604`
+- end: `0x1800a8fd0`
+- name: `?InitAllocatorForWrapper@CMPTopology@@IEAAJPEAUIMFTopologyNode@@PEAUIMFTransformWrapper@@@Z`
+- size: `2508`
+- prototype: `__int64 __fastcall(CMPTopology *__hidden this, struct IMFTopologyNode *, struct IMFTransformWrapper *)`
+- caller_count: `2`
+- callee_count: `11`
+- tags: ``
+
+## callers
+
+- `0x1800a48e0`
+- `0x1800a5ecc`
+
+## callees
+
+- `0x18002fee0`
+- `0x18003ecb0`
+- `0x1800402c0`
+- `0x180050d6c`
+- `0x180063f00`
+- `0x18006b388`
+- `0x18008b3a0`
+- `0x1800a8604`
+- `0x1800a8fd8`
+- `0x1800ec0e0`
+- `0x180344d40`
+
+## import_xrefs
+
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1800a8775`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1800a884a`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1800a8901`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1800a89ed`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1800a8ad6`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1800a8bfb`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1800a8cc8`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1800a8d96`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1800a8e6b`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1800a8775`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1800a884a`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1800a8901`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1800a89ed`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1800a8ad6`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1800a8bfb`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1800a8cc8`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1800a8d96`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1800a8e6b`
+- `MFPlat!MFCreateAttributes` at `0x1800a874f`
+- `MFPlat!MFCreateAttributes` at `0x1800a874f`
+
+## pseudocode
+
+```c
+
+```

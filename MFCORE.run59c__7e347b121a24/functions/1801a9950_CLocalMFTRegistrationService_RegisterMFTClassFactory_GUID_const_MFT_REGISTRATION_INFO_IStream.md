@@ -1,0 +1,48 @@
+# CLocalMFTRegistrationService::RegisterMFTClassFactory(_GUID const &,_MFT_REGISTRATION_INFO *,IStream *)
+
+- ea: `0x1801a9950`
+- end: `0x1801a9d75`
+- name: `?RegisterMFTClassFactory@CLocalMFTRegistrationService@@UEAAJAEBU_GUID@@PEAU_MFT_REGISTRATION_INFO@@PEAUIStream@@@Z`
+- size: `1061`
+- prototype: `int(CLocalMFTRegistrationService *__hidden this, const struct _GUID *, struct _MFT_REGISTRATION_INFO *, struct IStream *)`
+- caller_count: `0`
+- callee_count: `6`
+- tags: `service_task, broker_com_uri`
+
+## callees
+
+- `0x1800402c0`
+- `0x180063f00`
+- `0x1800ec0e0`
+- `0x1801a9950`
+- `0x18024b998`
+- `0x180344d40`
+
+## import_xrefs
+
+- `api-ms-win-core-com-l1-1-0!CoCreateInstance` at `0x1801a9ace`
+- `api-ms-win-core-com-l1-1-0!CoCreateInstance` at `0x1801a9ace`
+- `MFPlat!MFTRegisterLocal` at `0x1801a9cbd`
+- `MFPlat!MFTRegisterLocal` at `0x1801a9cbd`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801a9991`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801a9a46`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801a9aec`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801a9b89`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801a9c1e`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801a9cdb`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801a9991`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801a9a46`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801a9aec`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801a9b89`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801a9c1e`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x1801a9cdb`
+
+## string_xrefs
+
+- `0x1801a9d3f`: `CLocalMFTRegistrationService::RegisterMFTClassFactory`
+
+## pseudocode
+
+```c
+
+```

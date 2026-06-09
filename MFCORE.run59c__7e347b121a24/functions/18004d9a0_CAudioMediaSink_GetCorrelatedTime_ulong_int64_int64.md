@@ -1,0 +1,71 @@
+# CAudioMediaSink::GetCorrelatedTime(ulong,__int64 *,__int64 *)
+
+- ea: `0x18004d9a0`
+- end: `0x18004e10c`
+- name: `?GetCorrelatedTime@CAudioMediaSink@@UEAAJKPEA_J0@Z`
+- size: `1900`
+- prototype: `int(CAudioMediaSink *__hidden this, unsigned int, __int64 *, __int64 *)`
+- caller_count: `0`
+- callee_count: `11`
+- tags: `installer_update`
+
+## callees
+
+- `0x18001616c`
+- `0x18001b9b0`
+- `0x1800402c0`
+- `0x18004c6ec`
+- `0x18004d9a0`
+- `0x18004e114`
+- `0x180050d6c`
+- `0x1800ec0e0`
+- `0x180258480`
+- `0x180318854`
+- `0x180344d40`
+
+## import_xrefs
+
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x18004dae3`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x18004db2d`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x18004dae3`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x18004db2d`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x18004da6e`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x18004daaf`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x18004da6e`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x18004daaf`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18004d9f5`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18004db4d`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18004dcf2`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18004dd36`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18004d9f5`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18004db4d`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18004dcf2`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18004dd36`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18004da20`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18004db78`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18004da20`
+- `api-ms-win-core-errorhandling-l1-1-0!SetLastError` at `0x18004db78`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18004da06`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18004db5e`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18004da06`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x18004db5e`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18004ddbb`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18004de5f`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18004df0c`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18004df74`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18004e017`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18004ddbb`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18004de5f`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18004df0c`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18004df74`
+- `MFPlat!MFGetCallStackTracingWeakReference` at `0x18004e017`
+
+## string_xrefs
+
+- `0x18004e0a9`: `CAudioMediaSink::GetAudStreamSink`
+
+## pseudocode
+
+```c
+
+```
