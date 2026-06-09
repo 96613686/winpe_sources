@@ -1,0 +1,245 @@
+# ItSpRpcSecurityCallback(void *,void *)
+
+- ea: `0x180076a70`
+- end: `0x180076c76`
+- name: `?ItSpRpcSecurityCallback@@YAJPEAX0@Z`
+- size: `518`
+- prototype: `RPC_IF_CALLBACK_FN`
+- caller_count: `0`
+- callee_count: `2`
+- tags: `authz_impersonation, broker_com_uri`
+
+## callees
+
+- `0x180076a70`
+- `0x180082a40`
+
+## import_xrefs
+
+- `msvcrt!_wcsicmp` at `0x180076b12`
+- `msvcrt!_wcsicmp` at `0x180076b12`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180076b6b`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180076b6b`
+- `api-ms-win-core-handle-l1-1-0!CloseHandle` at `0x180076c1d`
+- `api-ms-win-core-handle-l1-1-0!CloseHandle` at `0x180076c1d`
+- `api-ms-win-core-processthreads-l1-1-0!GetCurrentThread` at `0x180076b92`
+- `api-ms-win-core-processthreads-l1-1-0!GetCurrentThread` at `0x180076b92`
+- `api-ms-win-core-processthreads-l1-1-0!OpenThreadToken` at `0x180076bad`
+- `api-ms-win-core-processthreads-l1-1-0!OpenThreadToken` at `0x180076bad`
+- `RPCRT4!RpcStringFreeW` at `0x180076bf2`
+- `RPCRT4!RpcStringFreeW` at `0x180076c08`
+- `RPCRT4!RpcStringFreeW` at `0x180076bf2`
+- `RPCRT4!RpcStringFreeW` at `0x180076c08`
+- `RPCRT4!RpcStringBindingParseW` at `0x180076af7`
+- `RPCRT4!RpcStringBindingParseW` at `0x180076af7`
+- `RPCRT4!RpcImpersonateClient` at `0x180076b7d`
+- `RPCRT4!RpcImpersonateClient` at `0x180076b7d`
+- `RPCRT4!RpcRevertToSelf` at `0x180076c43`
+- `RPCRT4!RpcRevertToSelf` at `0x180076c43`
+- `RPCRT4!RpcBindingToStringBindingW` at `0x180076ac6`
+- `RPCRT4!RpcBindingToStringBindingW` at `0x180076ac6`
+- `api-ms-win-security-base-l1-1-0!FreeSid` at `0x180076c32`
+- `api-ms-win-security-base-l1-1-0!FreeSid` at `0x180076c32`
+- `api-ms-win-security-base-l1-1-0!CheckTokenMembership` at `0x180076bcc`
+- `api-ms-win-security-base-l1-1-0!CheckTokenMembership` at `0x180076bcc`
+- `api-ms-win-security-base-l1-1-0!AllocateAndInitializeSid` at `0x180076b5b`
+- `api-ms-win-security-base-l1-1-0!AllocateAndInitializeSid` at `0x180076b5b`
+
+## pseudocode
+
+```c
+__int64 __fastcall ItSpRpcSecurityCallback(RPC_IF_HANDLE InterfaceUuid, void *Context)
+{
+  char v2; // di
+  char v3; // si
+  unsigned int LastError; // ebx
+  HANDLE CurrentThread; // rax
+  WINBOOL IsMember; // [rsp+60h] [rbp+7h] BYREF
+  RPC_WSTR StringBinding; // [rsp+68h] [rbp+Fh] BYREF
+  RPC_WSTR Protseq; // [rsp+70h] [rbp+17h] BYREF
+  void *TokenHandle; // [rsp+78h] [rbp+1Fh] BYREF
+  PSID SidToCheck; // [rsp+80h] [rbp+27h] BYREF
+  struct _SID_IDENTIFIER_AUTHORITY pIdentifierAuthority; // [rsp+88h] [rbp+2Fh] BYREF
+
+  *(_WORD *)&pIdentifierAuthority.Value[4] = 1280;
+  *(_DWORD *)pIdentifierAuthority.Value = 0;
+  IsMember = 0;
+  StringBinding = 0;
+  v2 = 0;
+  Protseq = 0;
+  v3 = 0;
+  SidToCheck = 0;
+  TokenHandle = 0;
+  if ( RpcBindingToStringBindingW(Context, &StringBinding)
+    || RpcStringBindingParseW(StringBinding, 0, &Protseq, 0, 0, 0)
+    || _wcsicmp(Protseq, L"ncalrpc") )
+  {
+    LastError = 5;
+    goto LABEL_11;
+  }
+  if ( !AllocateAndInitializeSid(&pIdentifierAuthority, 2u, 0x20u, 0x220u, 0, 0, 0, 0, 0, 0, &SidToCheck) )
+    goto LABEL_6;
+  LastError = RpcImpersonateClient(0);
+  if ( !LastError )
+  {
+    v2 = 1;
+    CurrentThread = GetCurrentThread();
+    if ( !OpenThreadToken(CurrentThread, 0x20008u, 0, &TokenHandle)
+      || (v3 = 1, !CheckTokenMembership(TokenHandle, SidToCheck, &IsMember)) )
+    {
+LABEL_6:
+      LastError = GetLastError();
+      goto LABEL_11;
+    }
+    LastError = IsMember == 0 ? 5 : 0;
+  }
+LABEL_11:
+  if ( StringBinding )
+    RpcStringFreeW(&StringBinding);
+  if ( Protseq )
+    RpcStringFreeW(&Protseq);
+  if ( v3 )
+    CloseHandle(TokenHandle);
+  if ( SidToCheck )
+    FreeSid(SidToCheck);
+  if ( v2 )
+    RpcRevertToSelf();
+  return LastError;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180076a70  mov     [rsp-8+arg_0], rbx
+0x180076a75  mov     [rsp-8+arg_10], rsi
+0x180076a7a  push    rbp
+0x180076a7b  push    rdi
+0x180076a7c  push    r14
+0x180076a7e  lea     rbp, [rsp-47h]
+0x180076a83  sub     rsp, 0A0h
+0x180076a8a  mov     rax, cs:__security_cookie
+0x180076a91  xor     rax, rsp
+0x180076a94  mov     [rbp+57h+var_20], rax
+0x180076a98  xor     r14d, r14d
+0x180076a9b  mov     word ptr [rbp+57h+pIdentifierAuthority.Value+4], 500h
+0x180076aa1  mov     rcx, rdx; Binding
+0x180076aa4  mov     dword ptr [rbp+57h+pIdentifierAuthority.Value], r14d
+0x180076aa8  lea     rdx, [rbp+57h+StringBinding]; StringBinding
+0x180076aac  mov     [rbp+57h+IsMember], r14d
+0x180076ab0  mov     [rbp+57h+StringBinding], r14
+0x180076ab4  mov     dil, r14b
+0x180076ab7  mov     [rbp+57h+Protseq], r14
+0x180076abb  mov     sil, r14b
+0x180076abe  mov     [rbp+57h+SidToCheck], r14
+0x180076ac2  mov     [rbp+57h+TokenHandle], r14
+0x180076ac6  call    cs:__imp_RpcBindingToStringBindingW
+0x180076acd  nop     dword ptr [rax+rax+00h]
+0x180076ad2  test    eax, eax
+0x180076ad4  jz      short loc_180076AE0
+0x180076ad6  mov     ebx, 5
+0x180076adb  jmp     loc_180076BE8
+0x180076ae0  mov     rcx, [rbp+57h+StringBinding]; StringBinding
+0x180076ae4  lea     r8, [rbp+57h+Protseq]; Protseq
+0x180076ae8  mov     [rsp+0B0h+NetworkOptions], r14; NetworkOptions
+0x180076aed  xor     r9d, r9d; NetworkAddr
+0x180076af0  xor     edx, edx; ObjUuid
+0x180076af2  mov     [rsp+0B0h+Endpoint], r14; Endpoint
+0x180076af7  call    cs:__imp_RpcStringBindingParseW
+0x180076afe  nop     dword ptr [rax+rax+00h]
+0x180076b03  test    eax, eax
+0x180076b05  jnz     short loc_180076AD6
+0x180076b07  mov     rcx, [rbp+57h+Protseq]; String1
+0x180076b0b  lea     rdx, aNcalrpc; "ncalrpc"
+0x180076b12  call    cs:__imp__wcsicmp
+0x180076b19  nop     dword ptr [rax+rax+00h]
+0x180076b1e  test    eax, eax
+0x180076b20  jnz     short loc_180076AD6
+0x180076b22  lea     rax, [rbp+57h+SidToCheck]
+0x180076b26  mov     r9d, 220h; nSubAuthority1
+0x180076b2c  mov     [rsp+0B0h+pSid], rax; pSid
+0x180076b31  lea     rcx, [rbp+57h+pIdentifierAuthority]; pIdentifierAuthority
+0x180076b35  mov     [rsp+0B0h+nSubAuthority7], r14d; nSubAuthority7
+0x180076b3a  mov     r8d, 20h ; ' '; nSubAuthority0
+0x180076b40  mov     [rsp+0B0h+nSubAuthority6], r14d; nSubAuthority6
+0x180076b45  mov     dl, 2; nSubAuthorityCount
+0x180076b47  mov     [rsp+0B0h+nSubAuthority5], r14d; nSubAuthority5
+0x180076b4c  mov     [rsp+0B0h+nSubAuthority4], r14d; nSubAuthority4
+0x180076b51  mov     dword ptr [rsp+0B0h+NetworkOptions], r14d; nSubAuthority3
+0x180076b56  mov     dword ptr [rsp+0B0h+Endpoint], r14d; nSubAuthority2
+0x180076b5b  call    cs:__imp_AllocateAndInitializeSid
+0x180076b62  nop     dword ptr [rax+rax+00h]
+0x180076b67  test    eax, eax
+0x180076b69  jnz     short loc_180076B7B
+0x180076b6b  call    cs:__imp_GetLastError
+0x180076b72  nop     dword ptr [rax+rax+00h]
+0x180076b77  mov     ebx, eax
+0x180076b79  jmp     short loc_180076BE8
+0x180076b7b  xor     ecx, ecx; BindingHandle
+0x180076b7d  call    cs:__imp_RpcImpersonateClient
+0x180076b84  nop     dword ptr [rax+rax+00h]
+0x180076b89  mov     ebx, eax
+0x180076b8b  test    eax, eax
+0x180076b8d  jnz     short loc_180076BE8
+0x180076b8f  mov     dil, 1
+0x180076b92  call    cs:__imp_GetCurrentThread
+0x180076b99  nop     dword ptr [rax+rax+00h]
+0x180076b9e  lea     r9, [rbp+57h+TokenHandle]; TokenHandle
+0x180076ba2  xor     r8d, r8d; OpenAsSelf
+0x180076ba5  mov     rcx, rax; ThreadHandle
+0x180076ba8  mov     edx, 20008h; DesiredAccess
+0x180076bad  call    cs:__imp_OpenThreadToken
+0x180076bb4  nop     dword ptr [rax+rax+00h]
+0x180076bb9  test    eax, eax
+0x180076bbb  jz      short loc_180076B6B
+0x180076bbd  mov     rdx, [rbp+57h+SidToCheck]; SidToCheck
+0x180076bc1  lea     r8, [rbp+57h+IsMember]; IsMember
+0x180076bc5  mov     rcx, [rbp+57h+TokenHandle]; TokenHandle
+0x180076bc9  mov     sil, dil
+0x180076bcc  call    cs:__imp_CheckTokenMembership
+0x180076bd3  nop     dword ptr [rax+rax+00h]
+0x180076bd8  test    eax, eax
+0x180076bda  jz      short loc_180076B6B
+0x180076bdc  mov     eax, [rbp+57h+IsMember]
+0x180076bdf  neg     eax
+0x180076be1  sbb     ebx, ebx
+0x180076be3  not     ebx
+0x180076be5  and     ebx, 5
+0x180076be8  cmp     [rbp+57h+StringBinding], r14
+0x180076bec  jz      short loc_180076BFE
+0x180076bee  lea     rcx, [rbp+57h+StringBinding]; String
+0x180076bf2  call    cs:__imp_RpcStringFreeW
+0x180076bf9  nop     dword ptr [rax+rax+00h]
+0x180076bfe  cmp     [rbp+57h+Protseq], r14
+0x180076c02  jz      short loc_180076C14
+0x180076c04  lea     rcx, [rbp+57h+Protseq]; String
+0x180076c08  call    cs:__imp_RpcStringFreeW
+0x180076c0f  nop     dword ptr [rax+rax+00h]
+0x180076c14  test    sil, sil
+0x180076c17  jz      short loc_180076C29
+0x180076c19  mov     rcx, [rbp+57h+TokenHandle]; hObject
+0x180076c1d  call    cs:__imp_CloseHandle
+0x180076c24  nop     dword ptr [rax+rax+00h]
+0x180076c29  mov     rcx, [rbp+57h+SidToCheck]; pSid
+0x180076c2d  test    rcx, rcx
+0x180076c30  jz      short loc_180076C3E
+0x180076c32  call    cs:__imp_FreeSid
+0x180076c39  nop     dword ptr [rax+rax+00h]
+0x180076c3e  test    dil, dil
+0x180076c41  jz      short loc_180076C4F
+0x180076c43  call    cs:__imp_RpcRevertToSelf
+0x180076c4a  nop     dword ptr [rax+rax+00h]
+0x180076c4f  mov     eax, ebx
+0x180076c51  mov     rcx, [rbp+57h+var_20]
+0x180076c55  xor     rcx, rsp; StackCookie
+0x180076c58  call    __security_check_cookie
+0x180076c5d  lea     r11, [rsp+0B0h+var_10]
+0x180076c65  mov     rbx, [r11+20h]
+0x180076c69  mov     rsi, [r11+30h]
+0x180076c6d  mov     rsp, r11
+0x180076c70  pop     r14
+0x180076c72  pop     rdi
+0x180076c73  pop     rbp
+0x180076c74  retn
+```

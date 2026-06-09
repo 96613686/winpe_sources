@@ -1,0 +1,425 @@
+# ItSpWaitForScheduledIdleTasks(void)
+
+- ea: `0x180078ffc`
+- end: `0x180079320`
+- name: `?ItSpWaitForScheduledIdleTasks@@YAJXZ`
+- size: `804`
+- prototype: `__int64(void)`
+- caller_count: `1`
+- callee_count: `6`
+- tags: `authz_impersonation, service_task, broker_com_uri`
+
+## callers
+
+- `0x180077f90`
+
+## callees
+
+- `0x180051914`
+- `0x180078940`
+- `0x180078964`
+- `0x180078ffc`
+- `0x180079328`
+- `0x180088010`
+
+## import_xrefs
+
+- `OLEAUT32!__imp_SysFreeString` at `0x1800791c1`
+- `OLEAUT32!__imp_SysFreeString` at `0x1800792cb`
+- `OLEAUT32!__imp_SysFreeString` at `0x1800791c1`
+- `OLEAUT32!__imp_SysFreeString` at `0x1800792cb`
+- `api-ms-win-core-synch-l1-1-0!WaitForSingleObject` at `0x180079292`
+- `api-ms-win-core-synch-l1-1-0!WaitForSingleObject` at `0x180079292`
+- `api-ms-win-core-com-l1-1-0!CoFreeUnusedLibraries` at `0x1800792d7`
+- `api-ms-win-core-com-l1-1-0!CoFreeUnusedLibraries` at `0x1800792d7`
+- `api-ms-win-core-com-l1-1-0!CoCreateInstance` at `0x18007907f`
+- `api-ms-win-core-com-l1-1-0!CoCreateInstance` at `0x18007907f`
+
+## pseudocode
+
+```c
+__int64 ItSpWaitForScheduledIdleTasks(void)
+{
+  int v0; // edi
+  HRESULT v1; // ebx
+  __int64 v2; // rax
+  __int64 (__fastcall *v3)(LPVOID, __int128 *, __int128 *, __int128 *, _QWORD *); // rax
+  __int64 v4; // xmm6_8
+  int v5; // r12d
+  __int64 *v6; // rcx
+  int v7; // esi
+  int v8; // r15d
+  int v9; // r14d
+  int v10; // ebx
+  __int64 v11; // rax
+  int IsIdleStarted; // eax
+  EventManager *v13; // rcx
+  void *v14; // r9
+  int v15; // r13d
+  DWORD v16; // eax
+  BSTR bstrString; // [rsp+38h] [rbp-D0h] BYREF
+  __int64 *v19; // [rsp+40h] [rbp-C8h] BYREF
+  LPVOID ppv; // [rsp+48h] [rbp-C0h] BYREF
+  __int64 v21; // [rsp+50h] [rbp-B8h] BYREF
+  __int128 v22; // [rsp+58h] [rbp-B0h]
+  __int64 v23; // [rsp+68h] [rbp-A0h]
+  _QWORD v24[5]; // [rsp+70h] [rbp-98h] BYREF
+  __int128 v25; // [rsp+98h] [rbp-70h] BYREF
+  __int64 v26; // [rsp+A8h] [rbp-60h]
+  __int128 v27; // [rsp+B8h] [rbp-50h] BYREF
+  __int64 v28; // [rsp+C8h] [rbp-40h]
+  __int128 v29; // [rsp+D8h] [rbp-30h] BYREF
+  __int64 v30; // [rsp+E8h] [rbp-20h]
+  int v31; // [rsp+158h] [rbp+50h] BYREF
+  int v32; // [rsp+160h] [rbp+58h] BYREF
+  unsigned int v33; // [rsp+168h] [rbp+60h]
+  int v34; // [rsp+170h] [rbp+68h]
+
+  ppv = 0;
+  v0 = 0;
+  v23 = 0;
+  v31 = 0;
+  v32 = 0;
+  bstrString = 0;
+  v19 = 0;
+  *(_OWORD *)&v24[1] = 0;
+  v21 = 0;
+  LOWORD(v24[1]) = 1;
+  v22 = 0;
+  v1 = CoCreateInstance(&CLSID_TaskScheduler, 0, 0x17u, &GUID_2faba4c7_4da9_4013_9697_20cc3fd40f85, &ppv);
+  if ( v1 >= 0 )
+  {
+    v24[3] = 0;
+    v2 = *(_QWORD *)ppv;
+    v27 = *(_OWORD *)&v24[1];
+    v28 = 0;
+    v29 = *(_OWORD *)&v24[1];
+    v3 = *(__int64 (__fastcall **)(LPVOID, __int128 *, __int128 *, __int128 *, _QWORD *))(v2 + 80);
+    v30 = 0;
+    v25 = *(_OWORD *)&v24[1];
+    v26 = 0;
+    v1 = v3(ppv, &v25, &v29, &v27, &v24[1]);
+    if ( v1 >= 0 )
+    {
+      v4 = v23;
+      v34 = 0;
+      v5 = 0;
+      v33 = 0;
+      while ( 1 )
+      {
+        v6 = v19;
+        if ( v19 )
+        {
+          v19 = 0;
+          (*(void (__fastcall **)(__int64 *))(*v6 + 16))(v6);
+        }
+        v1 = (*(__int64 (__fastcall **)(LPVOID, __int64, __int64 **))(*(_QWORD *)ppv + 64LL))(ppv, 1, &v19);
+        if ( v1 < 0 )
+          break;
+        v1 = (*(__int64 (__fastcall **)(__int64 *, int *))(*v19 + 56))(v19, &v31);
+        if ( v1 < 0 )
+          break;
+        v7 = 0;
+        v8 = 0;
+        v9 = 0;
+        v10 = 1;
+        if ( v31 < 1 )
+          goto LABEL_28;
+        do
+        {
+          LOWORD(v22) = 3;
+          DWORD2(v22) = v10;
+          ATL::CComPtrBase<IRunningTask>::Release(&v21);
+          v26 = v4;
+          v11 = *v19;
+          v25 = v22;
+          IsIdleStarted = (*(__int64 (__fastcall **)(__int64 *, __int128 *, __int64 *))(v11 + 64))(v19, &v25, &v21);
+          if ( IsIdleStarted < 0 )
+            goto LABEL_17;
+          if ( bstrString )
+          {
+            SysFreeString(bstrString);
+            bstrString = 0;
+          }
+          IsIdleStarted = (*(__int64 (__fastcall **)(__int64, BSTR *))(*(_QWORD *)v21 + 72LL))(v21, &bstrString);
+          if ( IsIdleStarted < 0
+            || (IsIdleStarted = ItSpScheduledTaskIsIdleStarted((struct ITaskService *)ppv, bstrString, &v32),
+                IsIdleStarted < 0) )
+          {
+LABEL_17:
+            if ( IsIdleStarted == -2147216629 )
+              ++v9;
+            else
+              ++v8;
+          }
+          else if ( v32 )
+          {
+            ++v7;
+            if ( v5 )
+              break;
+            EventManager::EvtReport(v13, &JOB_COMPLETION_PENDING, bstrString, v14);
+          }
+          ++v10;
+        }
+        while ( v10 <= v31 );
+        v15 = v34;
+        if ( v7 )
+        {
+          v0 = 0;
+          goto LABEL_29;
+        }
+        if ( v9 && (++v33, v33 < 0x3C) || v8 && (++v34, (unsigned int)(v15 + 1) < 0xF) )
+        {
+          v0 = 0;
+        }
+        else
+        {
+LABEL_28:
+          if ( (unsigned int)++v0 >= 3 )
+          {
+            v1 = 0;
+            break;
+          }
+        }
+LABEL_29:
+        v16 = WaitForSingleObject(hObject, 0x2710u);
+        if ( !v16 )
+        {
+          v1 = -2147023641;
+          break;
+        }
+        if ( v16 != 258 )
+        {
+          v1 = -2147467259;
+          break;
+        }
+        ++v5;
+      }
+    }
+  }
+  if ( bstrString )
+    SysFreeString(bstrString);
+  CoFreeUnusedLibraries();
+  ATL::CComPtrBase<ITriggerCollection>::~CComPtrBase<ITriggerCollection>(&v21);
+  ATL::CComPtrBase<ITriggerCollection>::~CComPtrBase<ITriggerCollection>(&v19);
+  ATL::CComPtrBase<ITriggerCollection>::~CComPtrBase<ITriggerCollection>(&ppv);
+  return (unsigned int)v1;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180078ffc  mov     rax, rsp
+0x180078fff  push    rbp
+0x180079000  push    rbx
+0x180079001  push    rsi
+0x180079002  push    rdi
+0x180079003  push    r12
+0x180079005  push    r13
+0x180079007  push    r14
+0x180079009  push    r15
+0x18007900b  lea     rbp, [rax-48h]
+0x18007900f  sub     rsp, 108h
+0x180079016  movaps  xmmword ptr [rax-58h], xmm6
+0x18007901a  lea     r9, _GUID_2faba4c7_4da9_4013_9697_20cc3fd40f85; riid
+0x180079021  xor     eax, eax
+0x180079023  mov     [rsp+140h+ppv], 0
+0x18007902c  xor     edi, edi
+0x18007902e  mov     [rsp+140h+var_E0], rax
+0x180079033  xorps   xmm0, xmm0
+0x180079036  mov     [rbp+40h+arg_0], eax
+0x180079039  mov     [rbp+40h+arg_8], eax
+0x18007903c  lea     rcx, CLSID_TaskScheduler; rclsid
+0x180079043  mov     [rsp+140h+bstrString], rax
+0x180079048  xorps   xmm1, xmm1
+0x18007904b  lea     rax, [rsp+140h+ppv]
+0x180079050  mov     [rsp+140h+var_108], 0
+0x180079059  movups  xmmword ptr [rsp+140h+var_D8+8], xmm0
+0x18007905e  lea     esi, [rdi+1]
+0x180079061  mov     qword ptr [rsp+140h+var_F8], 0
+0x18007906a  xor     edx, edx; pUnkOuter
+0x18007906c  mov     word ptr [rsp+140h+var_D8+8], si
+0x180079071  lea     r8d, [rdi+17h]; dwClsContext
+0x180079075  mov     [rsp+20h], rax; ppv
+0x18007907a  movups  [rsp+140h+var_F8+8], xmm1
+0x18007907f  call    cs:__imp_CoCreateInstance
+0x180079086  nop     dword ptr [rax+rax+00h]
+0x18007908b  mov     ebx, eax
+0x18007908d  test    eax, eax
+0x18007908f  js      loc_1800792C1
+0x180079095  movups  xmm1, xmmword ptr [rsp+140h+var_D8+8]
+0x18007909a  mov     rcx, [rsp+140h+ppv]
+0x18007909f  lea     rdx, [rsp+140h+var_D8+8]
+0x1800790a4  mov     [rsp+20h], rdx; struct _GUID *
+0x1800790a9  lea     r9, [rbp+40h+var_90]
+0x1800790ad  lea     r8, [rbp+40h+var_70]
+0x1800790b1  movaps  xmmword ptr [rsp+140h+var_D8+8], xmm1
+0x1800790b6  lea     rdx, [rbp+40h+var_B0]
+0x1800790ba  mov     [rbp+40h+var_C0], rdi
+0x1800790be  mov     rax, [rcx]
+0x1800790c1  movaps  [rbp+40h+var_90], xmm1
+0x1800790c5  mov     [rbp+40h+var_80], rdi
+0x1800790c9  movaps  [rbp+40h+var_70], xmm1
+0x1800790cd  mov     rax, [rax+50h]
+0x1800790d1  mov     [rbp+40h+var_60], rdi
+0x1800790d5  movaps  [rbp+40h+var_B0], xmm1
+0x1800790d9  mov     [rbp+40h+var_A0], rdi
+0x1800790dd  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x1800790e2  mov     ebx, eax
+0x1800790e4  test    eax, eax
+0x1800790e6  js      loc_1800792C1
+0x1800790ec  movsd   xmm6, [rsp+140h+var_E0]
+0x1800790f2  xor     r13d, r13d
+0x1800790f5  mov     [rbp+40h+arg_18], r13d
+0x1800790f9  xor     r12d, r12d
+0x1800790fc  mov     [rbp+40h+arg_10], edi
+0x1800790ff  mov     rcx, [rsp+140h+var_108]
+0x180079104  test    rcx, rcx
+0x180079107  jz      short loc_18007911E
+0x180079109  mov     [rsp+140h+var_108], 0
+0x180079112  mov     rax, [rcx]
+0x180079115  mov     rax, [rax+10h]
+0x180079119  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x18007911e  mov     rcx, [rsp+140h+ppv]
+0x180079123  lea     r8, [rsp+140h+var_108]
+0x180079128  mov     edx, esi
+0x18007912a  mov     rax, [rcx]
+0x18007912d  mov     rax, [rax+40h]
+0x180079131  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x180079136  mov     ebx, eax
+0x180079138  test    eax, eax
+0x18007913a  js      loc_1800792C1
+0x180079140  mov     rcx, [rsp+140h+var_108]
+0x180079145  lea     rdx, [rbp+40h+arg_0]
+0x180079149  mov     rax, [rcx]
+0x18007914c  mov     rax, [rax+38h]
+0x180079150  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x180079155  mov     ebx, eax
+0x180079157  test    eax, eax
+0x180079159  js      loc_1800792C1
+0x18007915f  xor     esi, esi
+0x180079161  xor     r15d, r15d
+0x180079164  xor     r14d, r14d
+0x180079167  lea     ebx, [rsi+1]
+0x18007916a  cmp     [rbp+40h+arg_0], ebx
+0x18007916d  jl      loc_18007927A
+0x180079173  lea     r13d, [rsi+3]
+0x180079177  lea     rcx, [rsp+140h+var_F8]
+0x18007917c  mov     word ptr [rsp+140h+var_F8+8], r13w
+0x180079182  mov     dword ptr [rsp+140h+var_E8], ebx
+0x180079186  call    ?Release@?$CComPtrBase@UIRunningTask@@@ATL@@QEAAXXZ; ATL::CComPtrBase<IRunningTask>::Release(void)
+0x18007918b  mov     rcx, [rsp+140h+var_108]
+0x180079190  lea     r8, [rsp+140h+var_F8]
+0x180079195  movups  xmm0, [rsp+140h+var_F8+8]
+0x18007919a  lea     rdx, [rbp+40h+var_B0]
+0x18007919e  movsd   [rbp+40h+var_A0], xmm6
+0x1800791a3  mov     rax, [rcx]
+0x1800791a6  movaps  [rbp+40h+var_B0], xmm0
+0x1800791aa  mov     rax, [rax+40h]
+0x1800791ae  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x1800791b3  test    eax, eax
+0x1800791b5  js      short loc_180079227
+0x1800791b7  mov     rcx, [rsp+140h+bstrString]; bstrString
+0x1800791bc  test    rcx, rcx
+0x1800791bf  jz      short loc_1800791D6
+0x1800791c1  call    cs:__imp_SysFreeString
+0x1800791c8  nop     dword ptr [rax+rax+00h]
+0x1800791cd  mov     [rsp+140h+bstrString], 0
+0x1800791d6  mov     rcx, qword ptr [rsp+140h+var_F8]
+0x1800791db  lea     rdx, [rsp+140h+bstrString]
+0x1800791e0  mov     rax, [rcx]
+0x1800791e3  mov     rax, [rax+48h]
+0x1800791e7  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x1800791ec  test    eax, eax
+0x1800791ee  js      short loc_180079227
+0x1800791f0  mov     rdx, [rsp+140h+bstrString]; unsigned __int16 *
+0x1800791f5  lea     r8, [rbp+40h+arg_8]; int *
+0x1800791f9  mov     rcx, [rsp+140h+ppv]; struct ITaskService *
+0x1800791fe  call    ?ItSpScheduledTaskIsIdleStarted@@YAJPEAUITaskService@@QEAGPEAH@Z; ItSpScheduledTaskIsIdleStarted(ITaskService *,ushort * const,int *)
+0x180079203  test    eax, eax
+0x180079205  js      short loc_180079227
+0x180079207  cmp     [rbp+40h+arg_8], 0
+0x18007920b  jz      short loc_180079236
+0x18007920d  inc     esi
+0x18007920f  test    r12d, r12d
+0x180079212  jnz     short loc_180079241
+0x180079214  mov     r8, [rsp+140h+bstrString]; unsigned __int16 *
+0x180079219  lea     rdx, JOB_COMPLETION_PENDING; struct _EVENT_DESCRIPTOR *
+0x180079220  call    ?EvtReport@EventManager@@QEAAJPEBU_EVENT_DESCRIPTOR@@PEBGPEAXPEBU_GUID@@@Z; EventManager::EvtReport(_EVENT_DESCRIPTOR const *,ushort const *,void *,_GUID const *)
+0x180079225  jmp     short loc_180079236
+0x180079227  cmp     eax, 8004130Bh
+0x18007922c  jnz     short loc_180079233
+0x18007922e  inc     r14d
+0x180079231  jmp     short loc_180079236
+0x180079233  inc     r15d
+0x180079236  inc     ebx
+0x180079238  cmp     ebx, [rbp+40h+arg_0]
+0x18007923b  jle     loc_180079177
+0x180079241  mov     r13d, [rbp+40h+arg_18]
+0x180079245  test    esi, esi
+0x180079247  jz      short loc_18007924D
+0x180079249  xor     edi, edi
+0x18007924b  jmp     short loc_180079281
+0x18007924d  mov     esi, 1
+0x180079252  test    r14d, r14d
+0x180079255  jz      short loc_180079268
+0x180079257  mov     eax, [rbp+40h+arg_10]
+0x18007925a  add     eax, esi
+0x18007925c  mov     [rbp+40h+arg_10], eax
+0x18007925f  cmp     eax, 3Ch ; '<'
+0x180079262  jnb     short loc_180079268
+0x180079264  xor     edi, edi
+0x180079266  jmp     short loc_180079286
+0x180079268  test    r15d, r15d
+0x18007926b  jz      short loc_18007927A
+0x18007926d  add     r13d, esi
+0x180079270  mov     [rbp+40h+arg_18], r13d
+0x180079274  cmp     r13d, 0Fh
+0x180079278  jb      short loc_180079264
+0x18007927a  inc     edi
+0x18007927c  cmp     edi, 3
+0x18007927f  jnb     short loc_1800792BF
+0x180079281  mov     esi, 1
+0x180079286  mov     rcx, cs:hObject; hHandle
+0x18007928d  mov     edx, 2710h; dwMilliseconds
+0x180079292  call    cs:__imp_WaitForSingleObject
+0x180079299  nop     dword ptr [rax+rax+00h]
+0x18007929e  test    eax, eax
+0x1800792a0  jz      short loc_1800792B8
+0x1800792a2  cmp     eax, 102h
+0x1800792a7  jnz     short loc_1800792B1
+0x1800792a9  add     r12d, esi
+0x1800792ac  jmp     loc_1800790FF
+0x1800792b1  mov     ebx, 80004005h
+0x1800792b6  jmp     short loc_1800792C1
+0x1800792b8  mov     ebx, 800704E7h
+0x1800792bd  jmp     short loc_1800792C1
+0x1800792bf  xor     ebx, ebx
+0x1800792c1  mov     rcx, [rsp+140h+bstrString]; bstrString
+0x1800792c6  test    rcx, rcx
+0x1800792c9  jz      short loc_1800792D7
+0x1800792cb  call    cs:__imp_SysFreeString
+0x1800792d2  nop     dword ptr [rax+rax+00h]
+0x1800792d7  call    cs:__imp_CoFreeUnusedLibraries
+0x1800792de  nop     dword ptr [rax+rax+00h]
+0x1800792e3  lea     rcx, [rsp+140h+var_F8]
+0x1800792e8  call    ??1?$CComPtrBase@UITriggerCollection@@@ATL@@QEAA@XZ; ATL::CComPtrBase<ITriggerCollection>::~CComPtrBase<ITriggerCollection>(void)
+0x1800792ed  lea     rcx, [rsp+140h+var_108]
+0x1800792f2  call    ??1?$CComPtrBase@UITriggerCollection@@@ATL@@QEAA@XZ; ATL::CComPtrBase<ITriggerCollection>::~CComPtrBase<ITriggerCollection>(void)
+0x1800792f7  lea     rcx, [rsp+140h+ppv]
+0x1800792fc  call    ??1?$CComPtrBase@UITriggerCollection@@@ATL@@QEAA@XZ; ATL::CComPtrBase<ITriggerCollection>::~CComPtrBase<ITriggerCollection>(void)
+0x180079301  movaps  xmm6, [rsp+140h+var_58+8]
+0x180079309  mov     eax, ebx
+0x18007930b  add     rsp, 108h
+0x180079312  pop     r15
+0x180079314  pop     r14
+0x180079316  pop     r13
+0x180079318  pop     r12
+0x18007931a  pop     rdi
+0x18007931b  pop     rsi
+0x18007931c  pop     rbx
+0x18007931d  pop     rbp
+0x18007931e  retn
+```

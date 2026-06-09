@@ -1,0 +1,145 @@
+# ItSpStoreRuntimeOverrides(_IT_IDLE_RUNTIME_PARAMETERS *)
+
+- ea: `0x1800776a8`
+- end: `0x1800777a7`
+- name: `?ItSpStoreRuntimeOverrides@@YAKPEAU_IT_IDLE_RUNTIME_PARAMETERS@@@Z`
+- size: `255`
+- prototype: `unsigned int __fastcall(struct _IT_IDLE_RUNTIME_PARAMETERS *)`
+- caller_count: `1`
+- callee_count: `2`
+- tags: `registry_config, service_task, broker_com_uri`
+
+## callers
+
+- `0x180078600`
+
+## callees
+
+- `0x180077668`
+- `0x1800776a8`
+
+## import_xrefs
+
+- `api-ms-win-core-registry-l1-1-0!RegSetValueExW` at `0x180077753`
+- `api-ms-win-core-registry-l1-1-0!RegSetValueExW` at `0x180077753`
+- `api-ms-win-core-registry-l1-1-0!RegCreateKeyExW` at `0x1800776fb`
+- `api-ms-win-core-registry-l1-1-0!RegCreateKeyExW` at `0x1800776fb`
+- `api-ms-win-core-registry-l1-1-0!RegCloseKey` at `0x18007778d`
+- `api-ms-win-core-registry-l1-1-0!RegCloseKey` at `0x18007778d`
+- `api-ms-win-core-registry-l1-1-0!RegDeleteValueW` at `0x18007776a`
+- `api-ms-win-core-registry-l1-1-0!RegDeleteValueW` at `0x18007776a`
+
+## string_xrefs
+
+- `0x1800776c4`: `SOFTWARE\Microsoft\Windows NT\CurrentVersion\IdleService`
+
+## pseudocode
+
+```c
+__int64 __fastcall ItSpStoreRuntimeOverrides(struct _IT_IDLE_RUNTIME_PARAMETERS *a1)
+{
+  unsigned int v2; // ebx
+  const BYTE *v3; // rdx
+  HKEY hKey; // [rsp+68h] [rbp+10h] BYREF
+
+  hKey = 0;
+  v2 = RegCreateKeyExW(
+         HKEY_LOCAL_MACHINE,
+         L"SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\IdleService",
+         0,
+         0,
+         0,
+         0xF003Fu,
+         0,
+         &hKey,
+         0);
+  if ( !v2 )
+  {
+    v2 = ItSpStoreOverrideValue(hKey, L"SkipNotification", *(_BYTE *)a1);
+    if ( !v2 )
+    {
+      if ( *((_DWORD *)a1 + 1) && (v3 = (const BYTE *)*((_QWORD *)a1 + 1)) != 0 )
+      {
+        v2 = RegSetValueExW(hKey, L"ExemptRegistrationList", 0, 7u, v3, *((_DWORD *)a1 + 1));
+      }
+      else
+      {
+        v2 = RegDeleteValueW(hKey, L"ExemptRegistrationList");
+        if ( v2 - 2 <= 1 )
+          v2 = 0;
+      }
+    }
+  }
+  if ( hKey )
+    RegCloseKey(hKey);
+  return v2;
+}
+
+```
+
+## disassembly
+
+```asm
+0x1800776a8  mov     r11, rsp
+0x1800776ab  mov     [r11+8], rbx
+0x1800776af  push    rdi
+0x1800776b0  sub     rsp, 50h
+0x1800776b4  mov     qword ptr [r11-18h], 0
+0x1800776bc  lea     rax, [r11+10h]
+0x1800776c0  mov     [r11-20h], rax
+0x1800776c4  lea     rdx, aSoftwareMicros_2; "SOFTWARE\\Microsoft\\Windows NT\\Curren"...
+0x1800776cb  mov     qword ptr [r11-28h], 0
+0x1800776d3  mov     rdi, rcx
+0x1800776d6  mov     [rsp+58h+samDesired], 0F003Fh; samDesired
+0x1800776de  xor     r9d, r9d; lpClass
+0x1800776e1  xor     r8d, r8d; Reserved
+0x1800776e4  mov     [rsp+58h+dwOptions], 0; dwOptions
+0x1800776ec  mov     rcx, 0FFFFFFFF80000002h; hKey
+0x1800776f3  mov     qword ptr [r11+10h], 0
+0x1800776fb  call    cs:__imp_RegCreateKeyExW
+0x180077702  nop     dword ptr [rax+rax+00h]
+0x180077707  mov     ebx, eax
+0x180077709  test    eax, eax
+0x18007770b  jnz     short loc_180077783
+0x18007770d  mov     r8b, [rdi]; unsigned __int8
+0x180077710  lea     rdx, aSkipnotificati; "SkipNotification"
+0x180077717  mov     rcx, [rsp+58h+hKey]; HKEY
+0x18007771c  call    ?ItSpStoreOverrideValue@@YAKPEAUHKEY__@@PEBGE@Z; ItSpStoreOverrideValue(HKEY__ *,ushort const *,uchar)
+0x180077721  mov     ebx, eax
+0x180077723  test    eax, eax
+0x180077725  jnz     short loc_180077783
+0x180077727  mov     eax, [rdi+4]
+0x18007772a  mov     rcx, [rsp+58h+hKey]; hKey
+0x18007772f  test    eax, eax
+0x180077731  jz      short loc_180077763
+0x180077733  mov     rdx, [rdi+8]
+0x180077737  test    rdx, rdx
+0x18007773a  jz      short loc_180077763
+0x18007773c  mov     [rsp+58h+samDesired], eax; cbData
+0x180077740  lea     r9d, [rbx+7]; dwType
+0x180077744  mov     qword ptr [rsp+58h+dwOptions], rdx; lpData
+0x180077749  xor     r8d, r8d; Reserved
+0x18007774c  lea     rdx, aExemptregistra; "ExemptRegistrationList"
+0x180077753  call    cs:__imp_RegSetValueExW
+0x18007775a  nop     dword ptr [rax+rax+00h]
+0x18007775f  mov     ebx, eax
+0x180077761  jmp     short loc_180077783
+0x180077763  lea     rdx, aExemptregistra; "ExemptRegistrationList"
+0x18007776a  call    cs:__imp_RegDeleteValueW
+0x180077771  nop     dword ptr [rax+rax+00h]
+0x180077776  mov     ebx, eax
+0x180077778  lea     ecx, [rax-2]
+0x18007777b  xor     eax, eax
+0x18007777d  cmp     ecx, 1
+0x180077780  cmovbe  ebx, eax
+0x180077783  mov     rcx, [rsp+58h+hKey]; hKey
+0x180077788  test    rcx, rcx
+0x18007778b  jz      short loc_180077799
+0x18007778d  call    cs:__imp_RegCloseKey
+0x180077794  nop     dword ptr [rax+rax+00h]
+0x180077799  mov     eax, ebx
+0x18007779b  mov     rbx, [rsp+58h+arg_0]
+0x1800777a0  add     rsp, 50h
+0x1800777a4  pop     rdi
+0x1800777a5  retn
+```

@@ -1,0 +1,84 @@
+# RpcServer::EnableTask(ushort const *,int)
+
+- ea: `0x18004fc18`
+- end: `0x1800502be`
+- name: `?EnableTask@RpcServer@@QEAAJPEBGH@Z`
+- size: `1702`
+- prototype: `int(RpcServer *__hidden this, const unsigned __int16 *, int)`
+- caller_count: `1`
+- callee_count: `38`
+- tags: `authz_impersonation, service_task`
+
+## callers
+
+- `0x18007b950`
+
+## callees
+
+- `0x180001114`
+- `0x18000ba20`
+- `0x18000bb10`
+- `0x18000bc60`
+- `0x18000cc40`
+- `0x180011e40`
+- `0x1800138d8`
+- `0x180013a90`
+- `0x1800141e0`
+- `0x18001ea40`
+- `0x18001fe10`
+- `0x180020110`
+- `0x180020350`
+- `0x1800206a0`
+- `0x180022aa0`
+- `0x180024590`
+- `0x1800246a8`
+- `0x180024730`
+- `0x18002db74`
+- `0x180031a40`
+- `0x180036020`
+- `0x18003a1f0`
+- `0x18003c8f8`
+- `0x180040af0`
+- `0x180041610`
+- `0x180042200`
+- `0x180042438`
+- `0x180043e20`
+- `0x1800441c0`
+- `0x18004d0cc`
+- `0x18004fc18`
+- `0x180059140`
+- `0x18007094c`
+- `0x180071c5c`
+- `0x18007e258`
+- `0x1800829fa`
+- `0x180082a40`
+- `0x180088010`
+
+## import_xrefs
+
+- `api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive` at `0x18004fd41`
+- `api-ms-win-core-synch-l1-1-0!AcquireSRWLockExclusive` at `0x18004fd41`
+- `api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive` at `0x18004fd68`
+- `api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive` at `0x18004fe10`
+- `api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive` at `0x18005008e`
+- `api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive` at `0x18004fd68`
+- `api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive` at `0x18004fe10`
+- `api-ms-win-core-synch-l1-1-0!ReleaseSRWLockExclusive` at `0x18005008e`
+- `RPCRT4!RpcRevertToSelf` at `0x18004ff28`
+- `RPCRT4!RpcRevertToSelf` at `0x18004ff3d`
+- `RPCRT4!RpcRevertToSelf` at `0x18005007a`
+- `RPCRT4!RpcRevertToSelf` at `0x18004ff28`
+- `RPCRT4!RpcRevertToSelf` at `0x18004ff3d`
+- `RPCRT4!RpcRevertToSelf` at `0x18005007a`
+
+## string_xrefs
+
+- `0x18004fd1f`: `EnableTask`
+- `0x18004fea8`: `RpcServer::EnableTask`
+- `0x18004ffef`: `RpcServer::EnableTask`
+
+## pseudocode
+
+```c
+
+```

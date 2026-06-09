@@ -1,0 +1,581 @@
+# JobStore::RegOpenTaskKeyP(bool,JobMoniker &,HKEY__ * *,ulong)
+
+- ea: `0x18002bde0`
+- end: `0x18002c2ec`
+- name: `?RegOpenTaskKeyP@JobStore@@AEAAJ_NAEAVJobMoniker@@PEAPEAUHKEY__@@K@Z`
+- size: `1292`
+- prototype: `__int64 __usercall@<rax>(JobStore *__hidden this@<rcx>, bool@<dl>, struct JobMoniker *@<r8>, HKEY *@<r9>, unsigned int)`
+- caller_count: `1`
+- callee_count: `13`
+- tags: `registry_config, service_task, broker_com_uri`
+
+## callers
+
+- `0x18006fed4`
+
+## callees
+
+- `0x18002b210`
+- `0x18002bde0`
+- `0x18002c2f4`
+- `0x18002c470`
+- `0x18002db40`
+- `0x18002db74`
+- `0x1800529a0`
+- `0x180056714`
+- `0x180067290`
+- `0x1800710e8`
+- `0x180073b5c`
+- `0x1800829ee`
+- `0x180082a40`
+
+## import_xrefs
+
+- `msvcrt!memcpy_s` at `0x18002c017`
+- `msvcrt!memcpy_s` at `0x18002c03b`
+- `msvcrt!memcpy_s` at `0x18002c017`
+- `msvcrt!memcpy_s` at `0x18002c03b`
+- `OLEAUT32!__imp_SysAllocString` at `0x18002bf44`
+- `OLEAUT32!__imp_SysAllocString` at `0x18002bf44`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18002bfda`
+- `OLEAUT32!__imp_SysAllocStringLen` at `0x18002bfda`
+- `OLEAUT32!__imp_SysFreeString` at `0x18002c059`
+- `OLEAUT32!__imp_SysFreeString` at `0x18002c0cb`
+- `OLEAUT32!__imp_SysFreeString` at `0x18002c1ab`
+- `OLEAUT32!__imp_SysFreeString` at `0x18002c2b5`
+- `OLEAUT32!__imp_SysFreeString` at `0x18002c059`
+- `OLEAUT32!__imp_SysFreeString` at `0x18002c0cb`
+- `OLEAUT32!__imp_SysFreeString` at `0x18002c1ab`
+- `OLEAUT32!__imp_SysFreeString` at `0x18002c2b5`
+- `OLEAUT32!__imp_SysStringLen` at `0x18002be54`
+- `OLEAUT32!__imp_SysStringLen` at `0x18002bfb9`
+- `OLEAUT32!__imp_SysStringLen` at `0x18002bff5`
+- `OLEAUT32!__imp_SysStringLen` at `0x18002be54`
+- `OLEAUT32!__imp_SysStringLen` at `0x18002bfb9`
+- `OLEAUT32!__imp_SysStringLen` at `0x18002bff5`
+- `api-ms-win-core-registry-l1-1-0!RegOpenKeyExW` at `0x18002c0a5`
+- `api-ms-win-core-registry-l1-1-0!RegOpenKeyExW` at `0x18002c0a5`
+- `api-ms-win-core-com-l1-1-0!StringFromGUID2` at `0x18002bf85`
+- `api-ms-win-core-com-l1-1-0!StringFromGUID2` at `0x18002bf85`
+
+## string_xrefs
+
+- `0x18002bf3d`: `TaskCache\Tasks\`
+
+## pseudocode
+
+```c
+// Hidden C++ exception states: #wind=2
+__int64 __fastcall JobStore::RegOpenTaskKeyP(HKEY *this, char a2, struct JobMoniker *a3, HKEY *a4, REGSAM samDesired)
+{
+  HKEY *v5; // r14
+  HKEY *v8; // rsi
+  GUID v9; // xmm6
+  OLECHAR **v10; // rcx
+  OLECHAR *v11; // rcx
+  UINT v12; // eax
+  __int64 *v13; // rax
+  __int64 v14; // rcx
+  const unsigned __int16 *v15; // rbx
+  int TreeInfo; // ebx
+  _DWORD *v17; // rax
+  OLECHAR *v18; // rbx
+  __int64 v19; // rdi
+  signed int v20; // eax
+  __int64 v21; // rsi
+  signed int v22; // r14d
+  BSTR v23; // r15
+  errno_t v24; // eax
+  errno_t v25; // eax
+  signed int v26; // ecx
+  LSTATUS v27; // eax
+  unsigned int v28; // edi
+  HKEY v29; // rax
+  __int64 result; // rax
+  const unsigned __int16 *v31; // rax
+  const unsigned __int16 *Path; // rax
+  const unsigned __int16 *v33; // rax
+  HKEY phkResult; // [rsp+30h] [rbp-A1h] BYREF
+  JobStore *v35; // [rsp+38h] [rbp-99h]
+  HKEY *v36; // [rsp+40h] [rbp-91h]
+  GUID Buf2; // [rsp+50h] [rbp-81h] BYREF
+  struct _GUID v38; // [rsp+60h] [rbp-71h] BYREF
+  GUID rguid; // [rsp+70h] [rbp-61h] BYREF
+  OLECHAR sz[8]; // [rsp+80h] [rbp-51h] BYREF
+  __int128 v41; // [rsp+90h] [rbp-41h]
+  __int128 v42; // [rsp+A0h] [rbp-31h]
+  _BYTE v43[30]; // [rsp+B0h] [rbp-21h] BYREF
+
+  v5 = a4;
+  v36 = a4;
+  v8 = this;
+  v35 = (JobStore *)this;
+  rguid = 0;
+  v9 = *(GUID *)a3;
+  Buf2 = *(GUID *)a3;
+  v10 = (OLECHAR **)*((_QWORD *)a3 + 2);
+  if ( v10 && ((v11 = *v10) == 0 ? (v12 = 0) : (v12 = SysStringLen(v11)), v12) )
+  {
+    v13 = (__int64 *)*((_QWORD *)a3 + 2);
+    if ( v13 )
+      v14 = *v13;
+    else
+      v14 = 0;
+    v15 = (const unsigned __int16 *)(v14 + 14);
+  }
+  else
+  {
+    v15 = 0;
+  }
+  v38 = 0;
+  if ( memcmp_0(&GUID_NULL, &Buf2, 0x10u) && a2 != 1 )
+    goto LABEL_13;
+  TreeInfo = JobStore::RegGetTreeInfo((JobStore *)v8, v15, &v38, 0);
+  if ( TreeInfo < 0 )
+  {
+    v17 = WPP_GLOBAL_Control;
+  }
+  else
+  {
+    if ( !memcmp_0(&GUID_NULL, &Buf2, 0x10u) )
+    {
+      v9 = v38;
+      v17 = WPP_GLOBAL_Control;
+      if ( WPP_GLOBAL_Control == (_UNKNOWN *)&WPP_GLOBAL_Control
+        || (*((_DWORD *)WPP_GLOBAL_Control + 7) & 0x40000) == 0
+        || *((_BYTE *)WPP_GLOBAL_Control + 25) < 3u )
+      {
+        goto LABEL_16;
+      }
+      Path = JobMoniker::GetPath(a3);
+      WPP_SF_S(*((_QWORD *)WPP_GLOBAL_Control + 2), 81, WPP_575a7bbfdfbc316314e49eeff74208de_Traceguids, Path);
+LABEL_13:
+      v17 = WPP_GLOBAL_Control;
+LABEL_16:
+      rguid = v9;
+      TreeInfo = 0;
+      goto LABEL_17;
+    }
+    if ( !memcmp_0(&Buf2, &v38, 0x10u) )
+      goto LABEL_13;
+    rguid = v38;
+    TreeInfo = -2147216621;
+    v17 = WPP_GLOBAL_Control;
+  }
+LABEL_17:
+  if ( !a2 )
+    goto LABEL_18;
+  if ( TreeInfo != -2147216621 )
+  {
+    if ( !(unsigned int)JobStore::IsMigrationCleanupCompleted((JobStore *)v8) )
+      TreeInfo = JobStore::MigrateDynamicTaskInfo((JobStore *)v8, a3, &rguid);
+LABEL_18:
+    if ( TreeInfo < 0 )
+      return (unsigned int)TreeInfo;
+    v18 = SysAllocString(L"TaskCache\\Tasks\\");
+    *(_QWORD *)&v38.Data1 = v18;
+    if ( !v18 )
+      ATL::PrivateAtlThrow(0x8007000E);
+    *(_OWORD *)sz = 0;
+    v41 = 0;
+    v42 = 0;
+    memset(v43, 0, sizeof(v43));
+    if ( !StringFromGUID2(&rguid, sz, 39) )
+    {
+      SysFreeString(v18);
+      return 2147942522LL;
+    }
+    v19 = -1;
+    do
+      ++v19;
+    while ( sz[v19] );
+    if ( (_DWORD)v19 )
+    {
+      v20 = SysStringLen(v18);
+      v21 = v20;
+      v22 = v20 + v19;
+      if ( v20 + (int)v19 < v20 )
+      {
+        v26 = -2147024882;
+        v8 = (HKEY *)v35;
+        v5 = v36;
+        goto LABEL_30;
+      }
+      v23 = SysAllocStringLen(0, v22);
+      if ( !v23 )
+      {
+        v26 = -2147024882;
+        v8 = (HKEY *)v35;
+        v5 = v36;
+        goto LABEL_30;
+      }
+      if ( SysStringLen(v18) )
+      {
+        v24 = memcpy_s(v23, 2LL * v22, v18, 2 * v21);
+        ATL::AtlCrtErrorCheck(v24);
+      }
+      v25 = memcpy_s(&v23[v21], 2LL * (int)v19, sz, 2LL * (int)v19);
+      ATL::AtlCrtErrorCheck(v25);
+      v23[v22] = 0;
+      SysFreeString(v18);
+      v18 = v23;
+      *(_QWORD *)&v38.Data1 = v23;
+      v8 = (HKEY *)v35;
+      v5 = v36;
+    }
+    v26 = 0;
+LABEL_30:
+    if ( v26 < 0 )
+      ATL::PrivateAtlThrow(v26);
+    phkResult = 0;
+    v27 = RegOpenKeyExW(v8[2], v18, 0, samDesired, &phkResult);
+    v28 = v27;
+    if ( v27 )
+    {
+      if ( v27 > 0 )
+        v28 = (unsigned __int16)v27 | 0x80070000;
+      if ( WPP_GLOBAL_Control != (_UNKNOWN *)&WPP_GLOBAL_Control
+        && (*((_DWORD *)WPP_GLOBAL_Control + 7) & 0x40000) != 0
+        && *((_BYTE *)WPP_GLOBAL_Control + 25) >= 2u )
+      {
+        v31 = JobMoniker::GetPath(a3);
+        WPP_SF_SSD(
+          *((_QWORD *)WPP_GLOBAL_Control + 2),
+          45,
+          (unsigned int)WPP_575a7bbfdfbc316314e49eeff74208de_Traceguids,
+          (_DWORD)v18,
+          (__int64)v31,
+          v28);
+      }
+      wmi::AutoRegKey::Close((wmi::AutoRegKey *)&phkResult);
+      SysFreeString(v18);
+      return v28;
+    }
+    else
+    {
+      v29 = phkResult;
+      phkResult = 0;
+      *v5 = v29;
+      SysFreeString(v18);
+      return 0;
+    }
+  }
+  if ( v17 != (_DWORD *)&WPP_GLOBAL_Control && (v17[7] & 0x40000) != 0 && *((_BYTE *)v17 + 25) >= 4u )
+  {
+    v33 = JobMoniker::GetPath(a3);
+    WPP_SF_S(*((_QWORD *)WPP_GLOBAL_Control + 2), 44, WPP_575a7bbfdfbc316314e49eeff74208de_Traceguids, v33);
+  }
+  JobStore::MigrateDynamicTaskInfo((JobStore *)v8, a3, &rguid);
+  result = JobStore::RemoveTaskEntryP((JobStore *)v8, (OLECHAR ***)a3, 2);
+  if ( (int)result >= 0 )
+    return 2147750670LL;
+  return result;
+}
+
+```
+
+## disassembly
+
+```asm
+0x18002bde0  mov     [rsp-8+arg_8], rbx
+0x18002bde5  push    rbp
+0x18002bde6  push    rsi
+0x18002bde7  push    rdi
+0x18002bde8  push    r12
+0x18002bdea  push    r13
+0x18002bdec  push    r14
+0x18002bdee  push    r15
+0x18002bdf0  lea     rbp, [rsp-1Fh]
+0x18002bdf5  sub     rsp, 0F0h
+0x18002bdfc  movaps  [rsp+120h+var_40], xmm6
+0x18002be04  mov     rax, cs:__security_cookie
+0x18002be0b  xor     rax, rsp
+0x18002be0e  mov     [rbp+4Fh+var_50], rax
+0x18002be12  mov     r14, r9
+0x18002be15  mov     [rsp+120h+var_E0], r9
+0x18002be1a  mov     r13, r8
+0x18002be1d  movzx   edi, dl
+0x18002be20  mov     rsi, rcx
+0x18002be23  mov     [rsp+120h+var_E8], rcx
+0x18002be28  xorps   xmm0, xmm0
+0x18002be2b  movups  xmmword ptr [rbp+4Fh+rguid.Data1], xmm0
+0x18002be2f  movups  xmm6, xmmword ptr [r8]
+0x18002be33  movaps  [rsp+120h+Buf2], xmm6
+0x18002be38  mov     rcx, [r8+10h]
+0x18002be3c  xor     r12d, r12d
+0x18002be3f  test    rcx, rcx
+0x18002be42  jz      loc_18002C109
+0x18002be48  mov     rcx, [rcx]; pbstr
+0x18002be4b  test    rcx, rcx
+0x18002be4e  jz      loc_18002C1BE
+0x18002be54  call    cs:__imp_SysStringLen
+0x18002be5b  nop     dword ptr [rax+rax+00h]
+0x18002be60  test    eax, eax
+0x18002be62  jz      loc_18002C109
+0x18002be68  mov     rax, [r13+10h]
+0x18002be6c  test    rax, rax
+0x18002be6f  jz      loc_18002C111
+0x18002be75  mov     rcx, [rax]
+0x18002be78  lea     rbx, [rcx+0Eh]
+0x18002be7c  xorps   xmm0, xmm0
+0x18002be7f  movups  xmmword ptr [rbp+4Fh+var_C0.Data1], xmm0
+0x18002be83  mov     r8d, 10h; Size
+0x18002be89  lea     rdx, [rsp+120h+Buf2]; Buf2
+0x18002be8e  lea     rcx, GUID_NULL; Buf1
+0x18002be95  call    memcmp_0
+0x18002be9a  lea     r15, WPP_GLOBAL_Control
+0x18002bea1  test    eax, eax
+0x18002bea3  jz      short loc_18002BEAB
+0x18002bea5  cmp     dil, 1
+0x18002bea9  jnz     short loc_18002BEFE
+0x18002beab  xor     r9d, r9d; enum JobStore::TaskIndex *
+0x18002beae  lea     r8, [rbp+4Fh+var_C0]; struct _GUID *
+0x18002beb2  mov     rdx, rbx; unsigned __int16 *
+0x18002beb5  mov     rcx, rsi; this
+0x18002beb8  call    ?RegGetTreeInfo@JobStore@@QEBAJPEBGPEAU_GUID@@PEAW4TaskIndex@1@@Z; JobStore::RegGetTreeInfo(ushort const *,_GUID *,JobStore::TaskIndex *)
+0x18002bebd  mov     ebx, eax
+0x18002bebf  test    eax, eax
+0x18002bec1  js      loc_18002C1C6
+0x18002bec7  mov     r8d, 10h; Size
+0x18002becd  lea     rdx, [rsp+120h+Buf2]; Buf2
+0x18002bed2  lea     rcx, GUID_NULL; Buf1
+0x18002bed9  call    memcmp_0
+0x18002bede  test    eax, eax
+0x18002bee0  jz      short loc_18002BF07
+0x18002bee2  mov     r8d, 10h; Size
+0x18002bee8  lea     rdx, [rbp+4Fh+var_C0]; Buf2
+0x18002beec  lea     rcx, [rsp+120h+Buf2]; Buf1
+0x18002bef1  call    memcmp_0
+0x18002bef6  test    eax, eax
+0x18002bef8  jnz     loc_18002C12D
+0x18002befe  mov     rax, cs:WPP_GLOBAL_Control
+0x18002bf05  jmp     short loc_18002BF24
+0x18002bf07  movaps  xmm6, xmmword ptr [rbp+4Fh+var_C0.Data1]
+0x18002bf0b  mov     rax, cs:WPP_GLOBAL_Control
+0x18002bf12  cmp     rax, r15
+0x18002bf15  jz      short loc_18002BF24
+0x18002bf17  test    dword ptr [rax+1Ch], 40000h
+0x18002bf1e  jnz     loc_18002C1D2
+0x18002bf24  movdqa  xmmword ptr [rbp+4Fh+rguid.Data1], xmm6
+0x18002bf29  mov     ebx, r12d
+0x18002bf2c  test    dil, dil
+0x18002bf2f  jnz     loc_18002C208
+0x18002bf35  test    ebx, ebx
+0x18002bf37  js      loc_18002C2A0
+0x18002bf3d  lea     rcx, aTaskcacheTasks; "TaskCache\\Tasks\\"
+0x18002bf44  call    cs:__imp_SysAllocString
+0x18002bf4b  nop     dword ptr [rax+rax+00h]
+0x18002bf50  mov     rbx, rax
+0x18002bf53  mov     qword ptr [rbp+4Fh+var_C0.Data1], rax
+0x18002bf57  test    rax, rax
+0x18002bf5a  jz      loc_18002C2A7
+0x18002bf60  xorps   xmm0, xmm0
+0x18002bf63  movups  xmmword ptr [rbp+4Fh+sz], xmm0
+0x18002bf67  movups  [rbp+4Fh+var_90], xmm0
+0x18002bf6b  movups  [rbp+4Fh+var_80], xmm0
+0x18002bf6f  movups  xmmword ptr [rbp+4Fh+var_70], xmm0
+0x18002bf73  movups  xmmword ptr [rbp+4Fh+var_70+0Eh], xmm0
+0x18002bf77  mov     r8d, 27h ; '''; cchMax
+0x18002bf7d  lea     rdx, [rbp+4Fh+sz]; lpsz
+0x18002bf81  lea     rcx, [rbp+4Fh+rguid]; rguid
+0x18002bf85  call    cs:__imp_StringFromGUID2
+0x18002bf8c  nop     dword ptr [rax+rax+00h]
+0x18002bf91  test    eax, eax
+0x18002bf93  jz      loc_18002C2B2
+0x18002bf99  lea     rax, [rbp+4Fh+sz]
+0x18002bf9d  mov     rdi, 0FFFFFFFFFFFFFFFFh
+0x18002bfa4  inc     rdi
+0x18002bfa7  cmp     word ptr [rax+rdi*2], 0
+0x18002bfac  jnz     short loc_18002BFA4
+0x18002bfae  test    edi, edi
+0x18002bfb0  jz      loc_18002C07D
+0x18002bfb6  mov     rcx, rbx; pbstr
+0x18002bfb9  call    cs:__imp_SysStringLen
+0x18002bfc0  nop     dword ptr [rax+rax+00h]
+0x18002bfc5  movsxd  rsi, eax
+0x18002bfc8  lea     r14d, [rsi+rdi]
+0x18002bfcc  cmp     r14d, esi
+0x18002bfcf  jl      loc_18002C119
+0x18002bfd5  mov     edx, r14d; ui
+0x18002bfd8  xor     ecx, ecx; strIn
+0x18002bfda  call    cs:__imp_SysAllocStringLen
+0x18002bfe1  nop     dword ptr [rax+rax+00h]
+0x18002bfe6  mov     r15, rax
+0x18002bfe9  test    rax, rax
+0x18002bfec  jz      loc_18002C2CB
+0x18002bff2  mov     rcx, rbx; pbstr
+0x18002bff5  call    cs:__imp_SysStringLen
+0x18002bffc  nop     dword ptr [rax+rax+00h]
+0x18002c001  test    eax, eax
+0x18002c003  jz      short loc_18002C02A
+0x18002c005  mov     r9, rsi
+0x18002c008  add     r9, r9; SourceSize
+0x18002c00b  movsxd  rdx, r14d
+0x18002c00e  add     rdx, rdx; DestinationSize
+0x18002c011  mov     r8, rbx; Source
+0x18002c014  mov     rcx, r15; Destination
+0x18002c017  call    cs:__imp_memcpy_s
+0x18002c01e  nop     dword ptr [rax+rax+00h]
+0x18002c023  mov     ecx, eax; int
+0x18002c025  call    ?AtlCrtErrorCheck@ATL@@YAHH@Z; ATL::AtlCrtErrorCheck(int)
+0x18002c02a  movsxd  rdx, edi
+0x18002c02d  add     rdx, rdx; DestinationSize
+0x18002c030  lea     rcx, [r15+rsi*2]; Destination
+0x18002c034  mov     r9, rdx; SourceSize
+0x18002c037  lea     r8, [rbp+4Fh+sz]; Source
+0x18002c03b  call    cs:__imp_memcpy_s
+0x18002c042  nop     dword ptr [rax+rax+00h]
+0x18002c047  mov     ecx, eax; int
+0x18002c049  call    ?AtlCrtErrorCheck@ATL@@YAHH@Z; ATL::AtlCrtErrorCheck(int)
+0x18002c04e  movsxd  rax, r14d
+0x18002c051  mov     [r15+rax*2], r12w
+0x18002c056  mov     rcx, rbx; bstrString
+0x18002c059  call    cs:__imp_SysFreeString
+0x18002c060  nop     dword ptr [rax+rax+00h]
+0x18002c065  mov     rbx, r15
+0x18002c068  mov     qword ptr [rbp+4Fh+var_C0.Data1], rbx
+0x18002c06c  mov     rsi, [rsp+120h+var_E8]
+0x18002c071  mov     r14, [rsp+120h+var_E0]
+0x18002c076  lea     r15, WPP_GLOBAL_Control
+0x18002c07d  mov     ecx, r12d; unsigned int
+0x18002c080  test    ecx, ecx
+0x18002c082  js      loc_18002C2E6
+0x18002c088  mov     [rsp+120h+var_F0], r12
+0x18002c08d  lea     rax, [rsp+120h+var_F0]
+0x18002c092  mov     [rsp+120h+phkResult], rax; phkResult
+0x18002c097  mov     r9d, [rbp+4Fh+samDesired]; samDesired
+0x18002c09b  xor     r8d, r8d; ulOptions
+0x18002c09e  mov     rdx, rbx; lpSubKey
+0x18002c0a1  mov     rcx, [rsi+10h]; hKey
+0x18002c0a5  call    cs:__imp_RegOpenKeyExW
+0x18002c0ac  nop     dword ptr [rax+rax+00h]
+0x18002c0b1  mov     edi, eax
+0x18002c0b3  test    eax, eax
+0x18002c0b5  jnz     loc_18002C147
+0x18002c0bb  mov     rax, [rsp+120h+var_F0]
+0x18002c0c0  mov     [rsp+120h+var_F0], r12
+0x18002c0c5  mov     [r14], rax
+0x18002c0c8  mov     rcx, rbx; bstrString
+0x18002c0cb  call    cs:__imp_SysFreeString
+0x18002c0d2  nop     dword ptr [rax+rax+00h]
+0x18002c0d7  xor     eax, eax
+0x18002c0d9  mov     rcx, [rbp+4Fh+var_50]
+0x18002c0dd  xor     rcx, rsp; StackCookie
+0x18002c0e0  call    __security_check_cookie
+0x18002c0e5  mov     rbx, [rsp+120h+arg_8]
+0x18002c0ed  movaps  xmm6, [rsp+120h+var_40]
+0x18002c0f5  add     rsp, 0F0h
+0x18002c0fc  pop     r15
+0x18002c0fe  pop     r14
+0x18002c100  pop     r13
+0x18002c102  pop     r12
+0x18002c104  pop     rdi
+0x18002c105  pop     rsi
+0x18002c106  pop     rbp
+0x18002c107  retn
+0x18002c109  mov     rbx, r12
+0x18002c10c  jmp     loc_18002BE7C
+0x18002c111  mov     rcx, r12
+0x18002c114  jmp     loc_18002BE78
+0x18002c119  mov     ecx, 8007000Eh
+0x18002c11e  mov     rsi, [rsp+120h+var_E8]
+0x18002c123  mov     r14, [rsp+120h+var_E0]
+0x18002c128  jmp     loc_18002C080
+0x18002c12d  movaps  xmm0, xmmword ptr [rbp+4Fh+var_C0.Data1]
+0x18002c131  movdqa  xmmword ptr [rbp+4Fh+rguid.Data1], xmm0
+0x18002c136  mov     ebx, 80041313h
+0x18002c13b  mov     rax, cs:WPP_GLOBAL_Control
+0x18002c142  jmp     loc_18002BF2C
+0x18002c147  jle     short loc_18002C152
+0x18002c149  movzx   edi, ax
+0x18002c14c  or      edi, 80070000h
+0x18002c152  mov     rax, cs:WPP_GLOBAL_Control
+0x18002c159  cmp     rax, r15
+0x18002c15c  jz      short loc_18002C19D
+0x18002c15e  test    dword ptr [rax+1Ch], 40000h
+0x18002c165  jz      short loc_18002C19D
+0x18002c167  cmp     byte ptr [rax+19h], 2
+0x18002c16b  jb      short loc_18002C19D
+0x18002c16d  mov     rcx, r13; this
+0x18002c170  call    ?GetPath@JobMoniker@@QEBAPEBGXZ; JobMoniker::GetPath(void)
+0x18002c175  mov     edx, 2Dh ; '-'
+0x18002c17a  mov     [rsp+120h+var_F8], edi
+0x18002c17e  mov     [rsp+120h+phkResult], rax
+0x18002c183  mov     r9, rbx
+0x18002c186  lea     r8, WPP_575a7bbfdfbc316314e49eeff74208de_Traceguids
+0x18002c18d  mov     rcx, cs:WPP_GLOBAL_Control
+0x18002c194  mov     rcx, [rcx+10h]
+0x18002c198  call    WPP_SF_SSD
+0x18002c19d  lea     rcx, [rsp+120h+var_F0]; this
+0x18002c1a2  call    ?Close@AutoRegKey@wmi@@QEAAXXZ; wmi::AutoRegKey::Close(void)
+0x18002c1a7  nop
+0x18002c1a8  mov     rcx, rbx; bstrString
+0x18002c1ab  call    cs:__imp_SysFreeString
+0x18002c1b2  nop     dword ptr [rax+rax+00h]
+0x18002c1b7  mov     eax, edi
+0x18002c1b9  jmp     loc_18002C0D9
+0x18002c1be  mov     eax, r12d
+0x18002c1c1  jmp     loc_18002BE60
+0x18002c1c6  mov     rax, cs:WPP_GLOBAL_Control
+0x18002c1cd  jmp     loc_18002BF2C
+0x18002c1d2  cmp     byte ptr [rax+19h], 3
+0x18002c1d6  jb      loc_18002BF24
+0x18002c1dc  mov     rcx, r13; this
+0x18002c1df  call    ?GetPath@JobMoniker@@QEBAPEBGXZ; JobMoniker::GetPath(void)
+0x18002c1e4  mov     edx, 51h ; 'Q'
+0x18002c1e9  mov     r9, rax
+0x18002c1ec  lea     r8, WPP_575a7bbfdfbc316314e49eeff74208de_Traceguids
+0x18002c1f3  mov     rcx, cs:WPP_GLOBAL_Control
+0x18002c1fa  mov     rcx, [rcx+10h]
+0x18002c1fe  call    WPP_SF_S
+0x18002c203  jmp     loc_18002BEFE
+0x18002c208  cmp     ebx, 80041313h
+0x18002c20e  jnz     short loc_18002C27A
+0x18002c210  cmp     rax, r15
+0x18002c213  jz      short loc_18002C24B
+0x18002c215  test    dword ptr [rax+1Ch], 40000h
+0x18002c21c  jz      short loc_18002C24B
+0x18002c21e  cmp     byte ptr [rax+19h], 4
+0x18002c222  jb      short loc_18002C24B
+0x18002c224  mov     rcx, r13; this
+0x18002c227  call    ?GetPath@JobMoniker@@QEBAPEBGXZ; JobMoniker::GetPath(void)
+0x18002c22c  mov     edx, 2Ch ; ','
+0x18002c231  mov     r9, rax
+0x18002c234  lea     r8, WPP_575a7bbfdfbc316314e49eeff74208de_Traceguids
+0x18002c23b  mov     rcx, cs:WPP_GLOBAL_Control
+0x18002c242  mov     rcx, [rcx+10h]
+0x18002c246  call    WPP_SF_S
+0x18002c24b  lea     r8, [rbp+4Fh+rguid]; struct _GUID *
+0x18002c24f  mov     rdx, r13; struct JobMoniker *
+0x18002c252  mov     rcx, rsi; this
+0x18002c255  call    ?MigrateDynamicTaskInfo@JobStore@@AEAAJAEBVJobMoniker@@AEBU_GUID@@@Z; JobStore::MigrateDynamicTaskInfo(JobMoniker const &,_GUID const &)
+0x18002c25a  mov     r8d, 2
+0x18002c260  mov     rdx, r13
+0x18002c263  mov     rcx, rsi
+0x18002c266  call    ?RemoveTaskEntryP@JobStore@@AEBAJAEBVJobMoniker@@W4REMOVE_TASK_TYPE@1@@Z; JobStore::RemoveTaskEntryP(JobMoniker const &,JobStore::REMOVE_TASK_TYPE)
+0x18002c26b  mov     ecx, 8004130Eh
+0x18002c270  test    eax, eax
+0x18002c272  cmovns  eax, ecx
+0x18002c275  jmp     loc_18002C0D9
+0x18002c27a  mov     rcx, rsi; this
+0x18002c27d  call    ?IsMigrationCleanupCompleted@JobStore@@QEBAHXZ; JobStore::IsMigrationCleanupCompleted(void)
+0x18002c282  test    eax, eax
+0x18002c284  jnz     loc_18002BF35
+0x18002c28a  lea     r8, [rbp+4Fh+rguid]; struct _GUID *
+0x18002c28e  mov     rdx, r13; struct JobMoniker *
+0x18002c291  mov     rcx, rsi; this
+0x18002c294  call    ?MigrateDynamicTaskInfo@JobStore@@AEAAJAEBVJobMoniker@@AEBU_GUID@@@Z; JobStore::MigrateDynamicTaskInfo(JobMoniker const &,_GUID const &)
+0x18002c299  mov     ebx, eax
+0x18002c29b  jmp     loc_18002BF35
+0x18002c2a0  mov     eax, ebx
+0x18002c2a2  jmp     loc_18002C0D9
+0x18002c2a7  mov     ecx, 8007000Eh; unsigned int
+0x18002c2ac  call    ?PrivateAtlThrow@ATL@@YAXJ@Z; ATL::PrivateAtlThrow(long)
+0x18002c2b2  mov     rcx, rbx; bstrString
+0x18002c2b5  call    cs:__imp_SysFreeString
+0x18002c2bc  nop     dword ptr [rax+rax+00h]
+0x18002c2c1  mov     eax, 8007007Ah
+0x18002c2c6  jmp     loc_18002C0D9
+0x18002c2cb  mov     ecx, 8007000Eh
+  ... truncated ...
+```

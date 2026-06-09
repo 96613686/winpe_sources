@@ -1,0 +1,35 @@
+# _I_pSchRpcGetTaskInfo
+
+- ea: `0x18007b730`
+- end: `0x18007b7f6`
+- name: `_I_pSchRpcGetTaskInfo`
+- size: `198`
+- prototype: ``
+- caller_count: `0`
+- callee_count: `5`
+- tags: `authz_impersonation, service_task`
+
+## callees
+
+- `0x180025de4`
+- `0x180042200`
+- `0x18007a3b8`
+- `0x18007b33c`
+- `0x18007b730`
+
+## import_xrefs
+
+- `RPCRT4!RpcRevertToSelf` at `0x18007b77e`
+- `RPCRT4!RpcRevertToSelf` at `0x18007b798`
+- `RPCRT4!RpcRevertToSelf` at `0x18007b77e`
+- `RPCRT4!RpcRevertToSelf` at `0x18007b798`
+
+## string_xrefs
+
+- `0x18007b755`: `_I_pSchRpcGetTaskInfo`
+
+## pseudocode
+
+```c
+
+```

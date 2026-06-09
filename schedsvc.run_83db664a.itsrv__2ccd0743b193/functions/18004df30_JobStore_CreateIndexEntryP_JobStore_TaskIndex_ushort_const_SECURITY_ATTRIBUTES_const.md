@@ -1,0 +1,240 @@
+# JobStore::CreateIndexEntryP(JobStore::TaskIndex,ushort const *,_SECURITY_ATTRIBUTES * const)
+
+- ea: `0x18004df30`
+- end: `0x18004e0c8`
+- name: `?CreateIndexEntryP@JobStore@@AEBAJW4TaskIndex@1@PEBGQEAU_SECURITY_ATTRIBUTES@@@Z`
+- size: `408`
+- prototype: `int __high(enum JobStore::TaskIndex, const unsigned __int16 *, struct _SECURITY_ATTRIBUTES *const)`
+- caller_count: `2`
+- callee_count: `4`
+- tags: `registry_config, service_task, broker_com_uri`
+
+## callers
+
+- `0x18002d020`
+- `0x180031cf0`
+
+## callees
+
+- `0x18002c340`
+- `0x18004bde4`
+- `0x18004df30`
+- `0x180059140`
+
+## import_xrefs
+
+- `OLEAUT32!__imp_SysFreeString` at `0x18004e0a9`
+- `OLEAUT32!__imp_SysFreeString` at `0x18004e0a9`
+- `api-ms-win-core-registry-l1-1-0!RegCreateKeyExW` at `0x18004dfef`
+- `api-ms-win-core-registry-l1-1-0!RegCreateKeyExW` at `0x18004dfef`
+- `api-ms-win-core-registry-l1-1-0!RegCloseKey` at `0x18004e091`
+- `api-ms-win-core-registry-l1-1-0!RegCloseKey` at `0x18004e091`
+
+## string_xrefs
+
+- `0x18004df7f`: `TaskCache\Boot`
+- `0x18004df76`: `TaskCache\Logon`
+- `0x18004df6d`: `TaskCache\Plain`
+- `0x18004df64`: `TaskCache\Maintenance`
+
+## pseudocode
+
+```c
+// Hidden C++ exception states: #wind=1
+__int64 __fastcall JobStore::CreateIndexEntryP(__int64 a1, int a2, __int64 a3, struct _SECURITY_ATTRIBUTES *a4)
+{
+  int v7; // edx
+  int v8; // edx
+  int v9; // edx
+  const wchar_t *v10; // rdx
+  LSTATUS v11; // eax
+  unsigned int v12; // ebx
+  HKEY hKey; // [rsp+50h] [rbp-10h] BYREF
+  LPCWSTR lpSubKey; // [rsp+80h] [rbp+20h] BYREF
+  DWORD dwDisposition; // [rsp+88h] [rbp+28h] BYREF
+
+  lpSubKey = 0;
+  v7 = a2 - 1;
+  if ( v7 )
+  {
+    v8 = v7 - 1;
+    if ( v8 )
+    {
+      v9 = v8 - 1;
+      if ( v9 )
+      {
+        if ( v9 != 1 )
+          goto LABEL_10;
+        v10 = L"TaskCache\\Maintenance";
+      }
+      else
+      {
+        v10 = L"TaskCache\\Plain";
+      }
+    }
+    else
+    {
+      v10 = L"TaskCache\\Logon";
+    }
+  }
+  else
+  {
+    v10 = L"TaskCache\\Boot";
+  }
+  ATL::CComBSTR::operator=(&lpSubKey, v10);
+LABEL_10:
+  ATL::CComBSTR::operator+=(&lpSubKey, L"\\");
+  ATL::CComBSTR::operator+=(&lpSubKey, a3);
+  dwDisposition = 0;
+  hKey = 0;
+  v11 = RegCreateKeyExW(*(HKEY *)(a1 + 16), lpSubKey, 0, 0, 0, 0xF003Fu, a4, &hKey, &dwDisposition);
+  v12 = v11;
+  if ( v11 )
+  {
+    if ( v11 > 0 )
+      v12 = (unsigned __int16)v11 | 0x80070000;
+    if ( WPP_GLOBAL_Control != (_UNKNOWN *)&WPP_GLOBAL_Control
+      && (*((_DWORD *)WPP_GLOBAL_Control + 7) & 0x40000) != 0
+      && *((_BYTE *)WPP_GLOBAL_Control + 25) >= 2u )
+    {
+      WPP_SF_Sd(
+        *((_QWORD *)WPP_GLOBAL_Control + 2),
+        59,
+        (unsigned int)WPP_575a7bbfdfbc316314e49eeff74208de_Traceguids,
+        a3,
+        v12);
+    }
+  }
+  else
+  {
+    v12 = 0;
+    if ( dwDisposition != 1 )
+    {
+      v12 = -2147024713;
+      if ( WPP_GLOBAL_Control != (_UNKNOWN *)&WPP_GLOBAL_Control
+        && (*((_DWORD *)WPP_GLOBAL_Control + 7) & 0x40000) != 0
+        && *((_BYTE *)WPP_GLOBAL_Control + 25) >= 2u )
+      {
+        WPP_SF_Sd(
+          *((_QWORD *)WPP_GLOBAL_Control + 2),
+          60,
+          (unsigned int)WPP_575a7bbfdfbc316314e49eeff74208de_Traceguids,
+          a3,
+          183);
+      }
+    }
+  }
+  if ( hKey )
+  {
+    RegCloseKey(hKey);
+    hKey = 0;
+  }
+  SysFreeString((BSTR)lpSubKey);
+  return v12;
+}
+
+```
+
+## disassembly
+
+```asm
+0x18004df30  mov     [rsp-18h+arg_10], rbx
+0x18004df35  push    rbp
+0x18004df36  push    rsi
+0x18004df37  push    rdi
+0x18004df38  mov     rbp, rsp
+0x18004df3b  sub     rsp, 60h
+0x18004df3f  mov     rbx, r9
+0x18004df42  mov     rdi, r8
+0x18004df45  mov     rsi, rcx
+0x18004df48  mov     [rbp+lpSubKey], 0
+0x18004df50  sub     edx, 1
+0x18004df53  jz      short loc_18004DF7F
+0x18004df55  sub     edx, 1
+0x18004df58  jz      short loc_18004DF76
+0x18004df5a  sub     edx, 1
+0x18004df5d  jz      short loc_18004DF6D
+0x18004df5f  cmp     edx, 1
+0x18004df62  jnz     short loc_18004DF8F
+0x18004df64  lea     rdx, aTaskcacheMaint; "TaskCache\\Maintenance"
+0x18004df6b  jmp     short loc_18004DF86
+0x18004df6d  lea     rdx, aTaskcachePlain; "TaskCache\\Plain"
+0x18004df74  jmp     short loc_18004DF86
+0x18004df76  lea     rdx, aTaskcacheLogon; "TaskCache\\Logon"
+0x18004df7d  jmp     short loc_18004DF86
+0x18004df7f  lea     rdx, aTaskcacheBoot; "TaskCache\\Boot"
+0x18004df86  lea     rcx, [rbp+lpSubKey]
+0x18004df8a  call    ??4CComBSTR@ATL@@QEAAAEAV01@PEBG@Z; ATL::CComBSTR::operator=(ushort const *)
+0x18004df8f  lea     rdx, asc_1800A7EC0; "\\"
+0x18004df96  lea     rcx, [rbp+lpSubKey]
+0x18004df9a  call    ??YCComBSTR@ATL@@QEAAAEAV01@PEBG@Z; ATL::CComBSTR::operator+=(ushort const *)
+0x18004df9f  mov     rdx, rdi
+0x18004dfa2  lea     rcx, [rbp+lpSubKey]
+0x18004dfa6  call    ??YCComBSTR@ATL@@QEAAAEAV01@PEBG@Z; ATL::CComBSTR::operator+=(ushort const *)
+0x18004dfab  mov     [rbp+dwDisposition], 0
+0x18004dfb2  mov     [rbp+hKey], 0
+0x18004dfba  lea     rax, [rbp+dwDisposition]
+0x18004dfbe  mov     [rsp+60h+lpdwDisposition], rax; lpdwDisposition
+0x18004dfc3  lea     rax, [rbp+hKey]
+0x18004dfc7  mov     [rsp+60h+phkResult], rax; phkResult
+0x18004dfcc  mov     [rsp+60h+lpSecurityAttributes], rbx; lpSecurityAttributes
+0x18004dfd1  mov     [rsp+60h+samDesired], 0F003Fh; samDesired
+0x18004dfd9  mov     [rsp+60h+dwOptions], 0; dwOptions
+0x18004dfe1  xor     r9d, r9d; lpClass
+0x18004dfe4  xor     r8d, r8d; Reserved
+0x18004dfe7  mov     rdx, [rbp+lpSubKey]; lpSubKey
+0x18004dfeb  mov     rcx, [rsi+10h]; hKey
+0x18004dfef  call    cs:__imp_RegCreateKeyExW
+0x18004dff6  nop     dword ptr [rax+rax+00h]
+0x18004dffb  mov     ebx, eax
+0x18004dffd  test    eax, eax
+0x18004dfff  jz      short loc_18004E039
+0x18004e001  jle     short loc_18004E00C
+0x18004e003  movzx   ebx, ax
+0x18004e006  or      ebx, 80070000h
+0x18004e00c  lea     rax, WPP_GLOBAL_Control
+0x18004e013  mov     rcx, cs:WPP_GLOBAL_Control
+0x18004e01a  cmp     rcx, rax
+0x18004e01d  jz      short loc_18004E088
+0x18004e01f  test    dword ptr [rcx+1Ch], 40000h
+0x18004e026  jz      short loc_18004E088
+0x18004e028  cmp     byte ptr [rcx+19h], 2
+0x18004e02c  jb      short loc_18004E088
+0x18004e02e  mov     edx, 3Bh ; ';'
+0x18004e033  mov     [rsp+60h+dwOptions], ebx
+0x18004e037  jmp     short loc_18004E075
+0x18004e039  xor     ebx, ebx
+0x18004e03b  cmp     [rbp+dwDisposition], 1
+0x18004e03f  jz      short loc_18004E088
+0x18004e041  mov     ebx, 800700B7h
+0x18004e046  lea     rax, WPP_GLOBAL_Control
+0x18004e04d  mov     rcx, cs:WPP_GLOBAL_Control
+0x18004e054  cmp     rcx, rax
+0x18004e057  jz      short loc_18004E088
+0x18004e059  test    dword ptr [rcx+1Ch], 40000h
+0x18004e060  jz      short loc_18004E088
+0x18004e062  cmp     byte ptr [rcx+19h], 2
+0x18004e066  jb      short loc_18004E088
+0x18004e068  mov     edx, 3Ch ; '<'
+0x18004e06d  mov     [rsp+60h+dwOptions], 800700B7h
+0x18004e075  mov     r9, rdi
+0x18004e078  lea     r8, WPP_575a7bbfdfbc316314e49eeff74208de_Traceguids
+0x18004e07f  mov     rcx, [rcx+10h]
+0x18004e083  call    WPP_SF_Sd
+0x18004e088  mov     rcx, [rbp+hKey]; hKey
+0x18004e08c  test    rcx, rcx
+0x18004e08f  jz      short loc_18004E0A5
+0x18004e091  call    cs:__imp_RegCloseKey
+0x18004e098  nop     dword ptr [rax+rax+00h]
+0x18004e09d  mov     [rbp+hKey], 0
+0x18004e0a5  mov     rcx, [rbp+lpSubKey]; bstrString
+0x18004e0a9  call    cs:__imp_SysFreeString
+0x18004e0b0  nop     dword ptr [rax+rax+00h]
+0x18004e0b5  mov     eax, ebx
+0x18004e0b7  mov     rbx, [rsp+60h+arg_10]
+0x18004e0bf  add     rsp, 60h
+0x18004e0c3  pop     rdi
+0x18004e0c4  pop     rsi
+0x18004e0c5  pop     rbp
+0x18004e0c6  retn
+```

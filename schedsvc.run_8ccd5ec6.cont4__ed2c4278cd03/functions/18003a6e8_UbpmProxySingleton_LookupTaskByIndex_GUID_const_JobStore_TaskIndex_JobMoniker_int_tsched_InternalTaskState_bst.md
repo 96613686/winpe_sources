@@ -1,0 +1,615 @@
+# UbpmProxySingleton::LookupTaskByIndex(_GUID const &,JobStore::TaskIndex,JobMoniker &,int,tsched::InternalTaskState *,_bstr_t *,ulong *)
+
+- ea: `0x18003a6e8`
+- end: `0x18003abda`
+- name: `?LookupTaskByIndex@UbpmProxySingleton@@AEAAJAEBU_GUID@@W4TaskIndex@JobStore@@AEAVJobMoniker@@HPEAW4InternalTaskState@tsched@@PEAV_bstr_t@@PEAK@Z`
+- size: `1266`
+- prototype: ``
+- caller_count: `2`
+- callee_count: `18`
+- tags: `authz_impersonation, registry_config, service_task, installer_update, broker_com_uri`
+
+## callers
+
+- `0x18007c4b0`
+- `0x18007c580`
+
+## callees
+
+- `0x180001f8c`
+- `0x18000fe50`
+- `0x180010390`
+- `0x180011e40`
+- `0x180013a90`
+- `0x1800141e0`
+- `0x180017740`
+- `0x18001ea40`
+- `0x180030620`
+- `0x18003a6e8`
+- `0x18003abe0`
+- `0x18003b1b0`
+- `0x180043478`
+- `0x180059140`
+- `0x18007ccac`
+- `0x18007cd4c`
+- `0x1800829ee`
+- `0x180082a40`
+
+## import_xrefs
+
+- `UBPM!UbpmTriggerConsumerQueryStatus` at `0x18003a933`
+- `UBPM!UbpmTriggerConsumerQueryStatus` at `0x18003a933`
+- `UBPM!UbpmCloseTriggerConsumer` at `0x18003aaf5`
+- `UBPM!UbpmCloseTriggerConsumer` at `0x18003aaf5`
+- `UBPM!UbpmApiBufferFree` at `0x18003aad7`
+- `UBPM!UbpmApiBufferFree` at `0x18003aad7`
+- `UBPM!UbpmOpenTriggerConsumer` at `0x18003a8b2`
+- `UBPM!UbpmOpenTriggerConsumer` at `0x18003a8b2`
+- `OLEAUT32!__imp_SysStringLen` at `0x18003a7fe`
+- `OLEAUT32!__imp_SysStringLen` at `0x18003a7fe`
+
+## pseudocode
+
+```c
+// Hidden C++ exception states: #wind=5
+__int64 __fastcall UbpmProxySingleton::LookupTaskByIndex(
+        __int64 a1,
+        void *a2,
+        unsigned int a3,
+        __int64 a4,
+        int a5,
+        _DWORD *a6,
+        __int64 a7,
+        _DWORD *a8)
+{
+  unsigned int v8; // r14d
+  void *v9; // rsi
+  HKEY *v10; // r15
+  int v11; // edi
+  __int64 v12; // r8
+  wmi::RefBase *v13; // rbx
+  unsigned int v14; // eax
+  __int64 v15; // rdi
+  __int64 v16; // rsi
+  __int64 v17; // rax
+  __int64 v18; // rdi
+  OLECHAR **v19; // rax
+  OLECHAR *v20; // rcx
+  OLECHAR *v21; // rcx
+  const unsigned __int16 *v22; // rdx
+  int BucketFromRegistry; // eax
+  OLECHAR *v24; // rdx
+  int v25; // eax
+  int v26; // edx
+  int v27; // r8d
+  signed int v28; // edi
+  _QWORD *v29; // r10
+  int v30; // eax
+  __int64 v31; // rsi
+  unsigned int i; // r14d
+  __int64 v33; // r15
+  __int64 v34; // r12
+  __int64 v35; // rdx
+  __int64 v37; // [rsp+30h] [rbp-89h] BYREF
+  unsigned int v38; // [rsp+38h] [rbp-81h]
+  void *Buf1; // [rsp+40h] [rbp-79h]
+  __int64 v40; // [rsp+48h] [rbp-71h] BYREF
+  __int64 v41; // [rsp+50h] [rbp-69h] BYREF
+  wmi::RefBase *v42; // [rsp+58h] [rbp-61h] BYREF
+  __int64 v43; // [rsp+60h] [rbp-59h]
+  _DWORD *v44; // [rsp+68h] [rbp-51h]
+  JobStore *v45; // [rsp+70h] [rbp-49h]
+  __int64 v46; // [rsp+78h] [rbp-41h]
+  __int64 *v47; // [rsp+80h] [rbp-39h]
+  GUID iid; // [rsp+88h] [rbp-31h] BYREF
+  OLECHAR **v49; // [rsp+98h] [rbp-21h] BYREF
+  __int64 v50; // [rsp+A0h] [rbp-19h]
+  __int64 v51; // [rsp+A8h] [rbp-11h] BYREF
+
+  v46 = a4;
+  v8 = a3;
+  v38 = a3;
+  v9 = a2;
+  Buf1 = a2;
+  v43 = a7;
+  v44 = a8;
+  v10 = (HKEY *)JobStore::m_pCommonStore;
+  v45 = JobStore::m_pCommonStore;
+  v42 = 0;
+  v11 = JobStore::EnumStoredTasks((__int64)JobStore::m_pCommonStore, a3, &v42);
+  v13 = v42;
+  if ( v11 < 0 )
+    goto LABEL_75;
+  while ( 1 )
+  {
+    while ( 1 )
+    {
+      while ( 1 )
+      {
+        v11 = 1;
+        v14 = *((_DWORD *)v13 + 5) + 1;
+        if ( v14 < *((_DWORD *)v13 + 4) )
+        {
+          *((_DWORD *)v13 + 5) = v14;
+          v11 = 0;
+        }
+        if ( v11 == 1 )
+          goto LABEL_74;
+        JobMoniker::JobMoniker(&iid, 0, 0);
+        v15 = 5LL * *((unsigned int *)v13 + 5);
+        v16 = *((_QWORD *)v13 + 3);
+        v17 = *(_QWORD *)(v16 + 40LL * *((unsigned int *)v13 + 5) + 16);
+        if ( v17 )
+          _InterlockedIncrement((volatile signed __int32 *)(v17 + 16));
+        _bstr_t::~_bstr_t((_bstr_t *)&v49);
+        v49 = *(OLECHAR ***)(v16 + 8 * v15 + 16);
+        v50 = *(_QWORD *)(v16 + 8 * v15 + 24);
+        iid = *(GUID *)(v16 + 8 * v15);
+        v18 = *(_QWORD *)(v16 + 8 * v15 + 32);
+        if ( v18 )
+          _InterlockedIncrement((volatile signed __int32 *)(v18 + 8));
+        wmi::AutoRef<JobBucket>::Release(&v51);
+        v51 = v18;
+        v19 = v49;
+        if ( !v49 )
+          goto LABEL_17;
+        v20 = *v49;
+        if ( *v49 )
+        {
+          LODWORD(v20) = SysStringLen(v20);
+          v19 = v49;
+        }
+        if ( (_DWORD)v20 )
+        {
+          v21 = v19 ? *v19 : 0LL;
+          v22 = v21 + 7;
+        }
+        else
+        {
+LABEL_17:
+          v22 = 0;
+        }
+        BucketFromRegistry = JobStore::LoadBucketFromRegistry(v10, v22, 2u, (__int64)&iid, 0, 0);
+        v11 = BucketFromRegistry;
+        if ( BucketFromRegistry != -2147023728 && (unsigned int)(BucketFromRegistry + 2147024894) > 1 )
+          break;
+        wmi::AutoRef<JobBucket>::Release(&v51);
+        _bstr_t::~_bstr_t((_bstr_t *)&v49);
+      }
+      if ( BucketFromRegistry < 0 )
+        goto LABEL_73;
+      if ( (*(_DWORD *)(v51 + 16) & 0x2000000) != 0 )
+        break;
+      JobMoniker::~JobMoniker((JobMoniker *)&iid);
+    }
+    v41 = 0;
+    v37 = 0;
+    v47 = &v37;
+    if ( v49 )
+      v24 = *v49;
+    else
+      v24 = 0;
+    v25 = UbpmOpenTriggerConsumer(&iid, v24, &v41);
+    v28 = v25;
+    if ( v25 > 0 )
+      v28 = (unsigned __int16)v25 | 0x80070000;
+    v29 = WPP_GLOBAL_Control;
+    if ( WPP_GLOBAL_Control != (_UNKNOWN *)&WPP_GLOBAL_Control
+      && (*((_DWORD *)WPP_GLOBAL_Control + 7) & 0x100) != 0
+      && *((unsigned __int8 *)WPP_GLOBAL_Control + 25) >= ((v28 >> 31) & 0xFFFFFFFE) + 4 )
+    {
+      WPP_SF_Sd(
+        *((_QWORD *)WPP_GLOBAL_Control + 2),
+        10,
+        (unsigned int)WPP_ffeb42fce81a3445f9740a981b62c86a_Traceguids,
+        v50,
+        v28);
+      v29 = WPP_GLOBAL_Control;
+    }
+    if ( v28 < 0 )
+    {
+      v31 = v37;
+    }
+    else
+    {
+      v30 = UbpmTriggerConsumerQueryStatus(v41, &v37);
+      v11 = v30;
+      if ( v30 > 0 )
+        v11 = (unsigned __int16)v30 | 0x80070000;
+      v31 = v37;
+      if ( v11 >= 0 && v37 )
+      {
+        for ( i = 0; ; ++i )
+        {
+          if ( i >= *(_DWORD *)(v31 + 28) )
+            goto LABEL_56;
+          v33 = 56LL * i;
+          v34 = *(_QWORD *)(v31 + 32);
+          if ( !memcmp_0(Buf1, (const void *)(v33 + v34 + 16), 0x10u) )
+            break;
+        }
+        if ( a5 )
+        {
+          v40 = 0;
+          v11 = User::FromSid((struct User *)&v40, *(void **)(v33 + v34 + 48), SidTypeUnknown);
+          if ( v11 < 0 )
+          {
+            wmi::AutoRef<User::UserEntry>::Release(&v40);
+            v31 = v37;
+LABEL_54:
+            if ( v11 == -2147023728 )
+              goto LABEL_56;
+            v29 = WPP_GLOBAL_Control;
+            goto LABEL_59;
+          }
+          wmi::AutoRef<User::UserEntry>::operator=(v51 + 64, v40);
+          wmi::AutoRef<User::UserEntry>::Release(&v40);
+          v31 = v37;
+        }
+        if ( a6 )
+        {
+          if ( *(_BYTE *)(*(_QWORD *)(v31 + 32) + v33 + 32) == 1 )
+            *a6 = 2;
+          else
+            *a6 = *(unsigned __int8 *)(*(_QWORD *)(v31 + 32) + v33 + 32) == 3;
+        }
+        if ( v43 )
+        {
+          _bstr_t::operator=(v43, *(_QWORD *)(*(_QWORD *)(v31 + 32) + v33 + 8));
+          v31 = v37;
+        }
+        if ( v44 )
+          *v44 = *(_DWORD *)(*(_QWORD *)(v31 + 32) + v33 + 36);
+        goto LABEL_54;
+      }
+LABEL_56:
+      v29 = WPP_GLOBAL_Control;
+    }
+    v11 = 1;
+LABEL_59:
+    if ( v29 != &WPP_GLOBAL_Control
+      && (*((_DWORD *)v29 + 7) & 0x100) != 0
+      && *((unsigned __int8 *)v29 + 25) >= ((v11 >> 31) & 0xFFFFFFFE) + 4 )
+    {
+      WPP_SF__guid_SD(v29[2], v26, v27, (_DWORD)Buf1, v50, v11);
+      v31 = v37;
+    }
+    if ( v31 )
+    {
+      UbpmApiBufferFree(v31);
+      v37 = 0;
+    }
+    if ( v41 )
+      UbpmCloseTriggerConsumer();
+    if ( v11 < 0 )
+      goto LABEL_73;
+    if ( !v11 )
+      break;
+    JobMoniker::~JobMoniker((JobMoniker *)&iid);
+    v10 = (HKEY *)v45;
+  }
+  JobMoniker::operator=(v46, &iid);
+LABEL_73:
+  JobMoniker::~JobMoniker((JobMoniker *)&iid);
+LABEL_74:
+  v8 = v38;
+  v9 = Buf1;
+LABEL_75:
+  if ( WPP_GLOBAL_Control != (_UNKNOWN *)&WPP_GLOBAL_Control && (*((_DWORD *)WPP_GLOBAL_Control + 7) & 0x100) != 0 )
+  {
+    v35 = ((v11 >> 31) & 0xFFFFFFFE) + 4;
+    if ( *((unsigned __int8 *)WPP_GLOBAL_Control + 25) >= (unsigned int)v35 )
+      WPP_SF__guid_dD(*((_QWORD *)WPP_GLOBAL_Control + 2), v35, v12, v9, v8, v11);
+  }
+  if ( v13 )
+    wmi::RefBase::Release(v13);
+  return (unsigned int)v11;
+}
+
+```
+
+## disassembly
+
+```asm
+0x18003a6e8  mov     [rsp-8+arg_0], rbx
+0x18003a6ed  push    rbp
+0x18003a6ee  push    rsi
+0x18003a6ef  push    rdi
+0x18003a6f0  push    r12
+0x18003a6f2  push    r13
+0x18003a6f4  push    r14
+0x18003a6f6  push    r15
+0x18003a6f8  lea     rbp, [rsp-7]
+0x18003a6fd  sub     rsp, 0C0h
+0x18003a704  mov     rax, cs:__security_cookie
+0x18003a70b  xor     rax, rsp
+0x18003a70e  mov     [rbp+37h+var_40], rax
+0x18003a712  mov     [rbp+37h+var_78], r9
+0x18003a716  mov     r14d, r8d
+0x18003a719  mov     [rsp+0F0h+var_B8], r8d
+0x18003a71e  mov     rsi, rdx
+0x18003a721  mov     [rbp+37h+Buf1], rdx
+0x18003a725  mov     r13, [rbp+37h+arg_28]
+0x18003a729  mov     rax, [rbp+37h+arg_30]
+0x18003a72d  mov     [rbp+37h+var_90], rax
+0x18003a731  mov     r12, [rbp+37h+arg_38]
+0x18003a735  mov     [rbp+37h+var_88], r12
+0x18003a739  mov     r15, cs:?m_pCommonStore@JobStore@@0PEAV1@EA; JobStore * JobStore::m_pCommonStore
+0x18003a740  mov     [rbp+37h+var_80], r15
+0x18003a744  mov     [rbp+37h+var_98], 0
+0x18003a74c  lea     r8, [rbp+37h+var_98]
+0x18003a750  mov     edx, r14d
+0x18003a753  mov     rcx, r15
+0x18003a756  call    ?EnumStoredTasks@JobStore@@QEBAJW4TaskIndex@1@AEAV?$AutoRef@VIndexEnumerator@@@wmi@@@Z; JobStore::EnumStoredTasks(JobStore::TaskIndex,wmi::AutoRef<IndexEnumerator> &)
+0x18003a75b  mov     edi, eax
+0x18003a75d  mov     rbx, [rbp+37h+var_98]
+0x18003a761  test    eax, eax
+0x18003a763  js      loc_18003AB5E
+0x18003a769  mov     edi, 1
+0x18003a76e  mov     eax, [rbx+14h]
+0x18003a771  inc     eax
+0x18003a773  cmp     eax, [rbx+10h]
+0x18003a776  jnb     short loc_18003A77D
+0x18003a778  mov     [rbx+14h], eax
+0x18003a77b  xor     edi, edi
+0x18003a77d  cmp     edi, 1
+0x18003a780  jz      loc_18003AB55
+0x18003a786  xor     r8d, r8d; unsigned __int16 *
+0x18003a789  xor     edx, edx; psz
+0x18003a78b  lea     rcx, [rbp+37h+iid]; lpiid
+0x18003a78f  call    ??0JobMoniker@@QEAA@PEBG0@Z; JobMoniker::JobMoniker(ushort const *,ushort const *)
+0x18003a794  nop
+0x18003a795  mov     eax, [rbx+14h]
+0x18003a798  lea     rdi, [rax+rax*4]
+0x18003a79c  mov     rsi, [rbx+18h]
+0x18003a7a0  mov     rax, [rsi+rdi*8+10h]
+0x18003a7a5  test    rax, rax
+0x18003a7a8  jz      short loc_18003A7AE
+0x18003a7aa  lock inc dword ptr [rax+10h]
+0x18003a7ae  lea     rcx, [rbp+37h+var_58]; this
+0x18003a7b2  call    ??1_bstr_t@@QEAA@XZ; _bstr_t::~_bstr_t(void)
+0x18003a7b7  mov     rax, [rsi+rdi*8+10h]
+0x18003a7bc  mov     [rbp+37h+var_58], rax
+0x18003a7c0  mov     rax, [rsi+rdi*8+18h]
+0x18003a7c5  mov     [rbp+37h+var_50], rax
+0x18003a7c9  movups  xmm0, xmmword ptr [rsi+rdi*8]
+0x18003a7cd  movdqu  xmmword ptr [rbp+37h+iid.Data1], xmm0
+0x18003a7d2  mov     rdi, [rsi+rdi*8+20h]
+0x18003a7d7  test    rdi, rdi
+0x18003a7da  jz      short loc_18003A7E0
+0x18003a7dc  lock inc dword ptr [rdi+8]
+0x18003a7e0  lea     rcx, [rbp+37h+var_48]
+0x18003a7e4  call    ?Release@?$AutoRef@VJobBucket@@@wmi@@QEAAXXZ; wmi::AutoRef<JobBucket>::Release(void)
+0x18003a7e9  mov     [rbp+37h+var_48], rdi
+0x18003a7ed  mov     rax, [rbp+37h+var_58]
+0x18003a7f1  test    rax, rax
+0x18003a7f4  jz      short loc_18003A826
+0x18003a7f6  mov     rcx, [rax]; pbstr
+0x18003a7f9  test    rcx, rcx
+0x18003a7fc  jz      short loc_18003A810
+0x18003a7fe  call    cs:__imp_SysStringLen
+0x18003a805  nop     dword ptr [rax+rax+00h]
+0x18003a80a  mov     ecx, eax
+0x18003a80c  mov     rax, [rbp+37h+var_58]
+0x18003a810  test    ecx, ecx
+0x18003a812  jz      short loc_18003A826
+0x18003a814  test    rax, rax
+0x18003a817  jz      short loc_18003A81E
+0x18003a819  mov     rcx, [rax]
+0x18003a81c  jmp     short loc_18003A820
+0x18003a81e  xor     ecx, ecx
+0x18003a820  lea     rdx, [rcx+0Eh]
+0x18003a824  jmp     short loc_18003A828
+0x18003a826  xor     edx, edx
+0x18003a828  mov     [rsp+0F0h+var_C8], 0
+0x18003a831  mov     [rsp+0F0h+var_D0], 0
+0x18003a83a  lea     r9, [rbp+37h+iid]
+0x18003a83e  mov     r8d, 2
+0x18003a844  mov     rcx, r15
+0x18003a847  call    ?LoadBucketFromRegistry@JobStore@@QEAAJPEBGW4StreamingFilters@Triggers@@AEAVJobMoniker@@PEAVTrigulator@3@PEAVActionCollection@Actions@@@Z; JobStore::LoadBucketFromRegistry(ushort const *,Triggers::StreamingFilters,JobMoniker &,Triggers::Trigulator *,Actions::ActionCollection *)
+0x18003a84c  mov     edi, eax
+0x18003a84e  cmp     eax, 80070490h
+0x18003a853  jz      loc_18003AB27
+0x18003a859  add     eax, 7FF8FFFEh
+0x18003a85e  cmp     eax, 1
+0x18003a861  jbe     loc_18003AB27
+0x18003a867  test    edi, edi
+0x18003a869  js      loc_18003AB4C
+0x18003a86f  mov     rax, [rbp+37h+var_48]
+0x18003a873  test    dword ptr [rax+10h], 2000000h
+0x18003a87a  jz      loc_18003AB19
+0x18003a880  mov     [rbp+37h+var_A0], 0
+0x18003a888  mov     [rsp+0F0h+var_C0], 0
+0x18003a891  lea     rax, [rsp+0F0h+var_C0]
+0x18003a896  mov     [rbp+37h+var_70], rax
+0x18003a89a  mov     rax, [rbp+37h+var_58]
+0x18003a89e  test    rax, rax
+0x18003a8a1  jz      short loc_18003A8A8
+0x18003a8a3  mov     rdx, [rax]
+0x18003a8a6  jmp     short loc_18003A8AA
+0x18003a8a8  xor     edx, edx
+0x18003a8aa  lea     r8, [rbp+37h+var_A0]
+0x18003a8ae  lea     rcx, [rbp+37h+iid]
+0x18003a8b2  call    cs:__imp_UbpmOpenTriggerConsumer
+0x18003a8b9  nop     dword ptr [rax+rax+00h]
+0x18003a8be  mov     edi, eax
+0x18003a8c0  test    eax, eax
+0x18003a8c2  jle     short loc_18003A8CD
+0x18003a8c4  movzx   edi, ax
+0x18003a8c7  or      edi, 80070000h
+0x18003a8cd  mov     r10, cs:WPP_GLOBAL_Control
+0x18003a8d4  lea     rax, WPP_GLOBAL_Control
+0x18003a8db  cmp     r10, rax
+0x18003a8de  jz      short loc_18003A922
+0x18003a8e0  test    dword ptr [r10+1Ch], 100h
+0x18003a8e8  jz      short loc_18003A922
+0x18003a8ea  mov     ecx, edi
+0x18003a8ec  sar     ecx, 1Fh
+0x18003a8ef  and     ecx, 0FFFFFFFEh
+0x18003a8f2  add     ecx, 4
+0x18003a8f5  movzx   eax, byte ptr [r10+19h]
+0x18003a8fa  cmp     eax, ecx
+0x18003a8fc  jb      short loc_18003A922
+0x18003a8fe  mov     edx, 0Ah
+0x18003a903  mov     dword ptr [rsp+0F0h+var_D0], edi
+0x18003a907  mov     r9, [rbp+37h+var_50]
+0x18003a90b  lea     r8, WPP_ffeb42fce81a3445f9740a981b62c86a_Traceguids
+0x18003a912  mov     rcx, [r10+10h]
+0x18003a916  call    WPP_SF_Sd
+0x18003a91b  mov     r10, cs:WPP_GLOBAL_Control
+0x18003a922  test    edi, edi
+0x18003a924  js      loc_18003AA7C
+0x18003a92a  lea     rdx, [rsp+0F0h+var_C0]
+0x18003a92f  mov     rcx, [rbp+37h+var_A0]
+0x18003a933  call    cs:__imp_UbpmTriggerConsumerQueryStatus
+0x18003a93a  nop     dword ptr [rax+rax+00h]
+0x18003a93f  mov     edi, eax
+0x18003a941  test    eax, eax
+0x18003a943  jle     short loc_18003A94E
+0x18003a945  movzx   edi, ax
+0x18003a948  or      edi, 80070000h
+0x18003a94e  mov     rsi, [rsp+0F0h+var_C0]
+0x18003a953  test    edi, edi
+0x18003a955  js      loc_18003AA73
+0x18003a95b  test    rsi, rsi
+0x18003a95e  jz      loc_18003AA73
+0x18003a964  xor     r14d, r14d
+0x18003a967  cmp     r14d, [rsi+1Ch]
+0x18003a96b  jnb     loc_18003AA73
+0x18003a971  mov     eax, r14d
+0x18003a974  imul    r15, rax, 38h ; '8'
+0x18003a978  mov     r12, [rsi+20h]
+0x18003a97c  lea     rdx, [r12+10h]
+0x18003a981  add     rdx, r15; Buf2
+0x18003a984  mov     r8d, 10h; Size
+0x18003a98a  mov     rcx, [rbp+37h+Buf1]; Buf1
+0x18003a98e  call    memcmp_0
+0x18003a993  test    eax, eax
+0x18003a995  jz      short loc_18003A99C
+0x18003a997  inc     r14d
+0x18003a99a  jmp     short loc_18003A967
+0x18003a99c  cmp     [rbp+37h+arg_20], 0
+0x18003a9a0  jz      short loc_18003A9F7
+0x18003a9a2  mov     [rbp+37h+var_A8], 0
+0x18003a9aa  mov     r8d, 8; enum _SID_NAME_USE
+0x18003a9b0  mov     rdx, [r15+r12+30h]; void *
+0x18003a9b5  lea     rcx, [rbp+37h+var_A8]; this
+0x18003a9b9  call    ?FromSid@User@@SAJAEAV1@PEAXW4_SID_NAME_USE@@@Z; User::FromSid(User &,void *,_SID_NAME_USE)
+0x18003a9be  mov     edi, eax
+0x18003a9c0  test    eax, eax
+0x18003a9c2  jns     short loc_18003A9D7
+0x18003a9c4  lea     rcx, [rbp+37h+var_A8]
+0x18003a9c8  call    ?Release@?$AutoRef@UUserEntry@User@@@wmi@@QEAAXXZ; wmi::AutoRef<User::UserEntry>::Release(void)
+0x18003a9cd  mov     rsi, [rsp+0F0h+var_C0]
+0x18003a9d2  jmp     loc_18003AA62
+0x18003a9d7  mov     rcx, [rbp+37h+var_48]
+0x18003a9db  add     rcx, 40h ; '@'
+0x18003a9df  mov     rdx, [rbp+37h+var_A8]
+0x18003a9e3  call    ??4?$AutoRef@UUserEntry@User@@@wmi@@QEAAAEAV01@PEAUUserEntry@User@@@Z; wmi::AutoRef<User::UserEntry>::operator=(User::UserEntry *)
+0x18003a9e8  nop
+0x18003a9e9  lea     rcx, [rbp+37h+var_A8]
+0x18003a9ed  call    ?Release@?$AutoRef@UUserEntry@User@@@wmi@@QEAAXXZ; wmi::AutoRef<User::UserEntry>::Release(void)
+0x18003a9f2  mov     rsi, [rsp+0F0h+var_C0]
+0x18003a9f7  test    r13, r13
+0x18003a9fa  jz      short loc_18003AA2D
+0x18003a9fc  mov     rax, [rsi+20h]
+0x18003aa00  movzx   ecx, byte ptr [rax+r15+20h]
+0x18003aa06  sub     ecx, 1
+0x18003aa09  jz      short loc_18003AA25
+0x18003aa0b  sub     ecx, 1
+0x18003aa0e  jz      short loc_18003AA1B
+0x18003aa10  cmp     ecx, 1
+0x18003aa13  jnz     short loc_18003AA1B
+0x18003aa15  mov     [r13+0], ecx
+0x18003aa19  jmp     short loc_18003AA2D
+0x18003aa1b  mov     dword ptr [r13+0], 0
+0x18003aa23  jmp     short loc_18003AA2D
+0x18003aa25  mov     dword ptr [r13+0], 2
+0x18003aa2d  mov     rax, [rbp+37h+var_90]
+0x18003aa31  test    rax, rax
+0x18003aa34  jz      short loc_18003AA4C
+0x18003aa36  mov     rdx, [rsi+20h]
+0x18003aa3a  mov     rdx, [rdx+r15+8]
+0x18003aa3f  mov     rcx, rax
+0x18003aa42  call    ??4_bstr_t@@QEAAAEAV0@PEBG@Z; _bstr_t::operator=(ushort const *)
+0x18003aa47  mov     rsi, [rsp+0F0h+var_C0]
+0x18003aa4c  mov     r12, [rbp+37h+var_88]
+0x18003aa50  test    r12, r12
+0x18003aa53  jz      short loc_18003AA62
+0x18003aa55  mov     rax, [rsi+20h]
+0x18003aa59  mov     ecx, [rax+r15+24h]
+0x18003aa5e  mov     [r12], ecx
+0x18003aa62  cmp     edi, 80070490h
+0x18003aa68  jz      short loc_18003AA73
+0x18003aa6a  mov     r10, cs:WPP_GLOBAL_Control
+0x18003aa71  jmp     short loc_18003AA86
+0x18003aa73  mov     r10, cs:WPP_GLOBAL_Control
+0x18003aa7a  jmp     short loc_18003AA81
+0x18003aa7c  mov     rsi, [rsp+0F0h+var_C0]
+0x18003aa81  mov     edi, 1
+0x18003aa86  lea     rax, WPP_GLOBAL_Control
+0x18003aa8d  cmp     r10, rax
+0x18003aa90  jz      short loc_18003AACF
+0x18003aa92  test    dword ptr [r10+1Ch], 100h
+0x18003aa9a  jz      short loc_18003AACF
+0x18003aa9c  mov     ecx, edi
+0x18003aa9e  sar     ecx, 1Fh
+0x18003aaa1  and     ecx, 0FFFFFFFEh
+0x18003aaa4  add     ecx, 4
+0x18003aaa7  movzx   eax, byte ptr [r10+19h]
+0x18003aaac  cmp     eax, ecx
+0x18003aaae  jb      short loc_18003AACF
+0x18003aab0  mov     dword ptr [rsp+0F0h+var_C8], edi
+0x18003aab4  mov     rax, [rbp+37h+var_50]
+0x18003aab8  mov     [rsp+0F0h+var_D0], rax
+0x18003aabd  mov     r9, [rbp+37h+Buf1]
+0x18003aac1  mov     rcx, [r10+10h]
+0x18003aac5  call    WPP_SF__guid_SD
+0x18003aaca  mov     rsi, [rsp+0F0h+var_C0]
+0x18003aacf  test    rsi, rsi
+0x18003aad2  jz      short loc_18003AAEC
+0x18003aad4  mov     rcx, rsi
+0x18003aad7  call    cs:__imp_UbpmApiBufferFree
+0x18003aade  nop     dword ptr [rax+rax+00h]
+0x18003aae3  mov     [rsp+0F0h+var_C0], 0
+0x18003aaec  mov     rcx, [rbp+37h+var_A0]
+0x18003aaf0  test    rcx, rcx
+0x18003aaf3  jz      short loc_18003AB01
+0x18003aaf5  call    cs:__imp_UbpmCloseTriggerConsumer
+0x18003aafc  nop     dword ptr [rax+rax+00h]
+0x18003ab01  test    edi, edi
+0x18003ab03  js      short loc_18003AB4C
+0x18003ab05  jz      short loc_18003AB3E
+0x18003ab07  lea     rcx, [rbp+37h+iid]; this
+0x18003ab0b  call    ??1JobMoniker@@QEAA@XZ; JobMoniker::~JobMoniker(void)
+0x18003ab10  mov     r15, [rbp+37h+var_80]
+0x18003ab14  jmp     loc_18003A769
+0x18003ab19  lea     rcx, [rbp+37h+iid]; this
+0x18003ab1d  call    ??1JobMoniker@@QEAA@XZ; JobMoniker::~JobMoniker(void)
+0x18003ab22  jmp     loc_18003A769
+0x18003ab27  lea     rcx, [rbp+37h+var_48]
+0x18003ab2b  call    ?Release@?$AutoRef@VJobBucket@@@wmi@@QEAAXXZ; wmi::AutoRef<JobBucket>::Release(void)
+0x18003ab30  lea     rcx, [rbp+37h+var_58]; this
+0x18003ab34  call    ??1_bstr_t@@QEAA@XZ; _bstr_t::~_bstr_t(void)
+0x18003ab39  jmp     loc_18003A769
+0x18003ab3e  lea     rdx, [rbp+37h+iid]
+0x18003ab42  mov     rcx, [rbp+37h+var_78]
+0x18003ab46  call    ??4JobMoniker@@QEAAAEAV0@AEBV0@@Z; JobMoniker::operator=(JobMoniker const &)
+0x18003ab4b  nop
+0x18003ab4c  lea     rcx, [rbp+37h+iid]; this
+0x18003ab50  call    ??1JobMoniker@@QEAA@XZ; JobMoniker::~JobMoniker(void)
+0x18003ab55  mov     r14d, [rsp+0F0h+var_B8]
+0x18003ab5a  mov     rsi, [rbp+37h+Buf1]
+0x18003ab5e  mov     rcx, cs:WPP_GLOBAL_Control
+0x18003ab65  lea     rax, WPP_GLOBAL_Control
+0x18003ab6c  cmp     rcx, rax
+0x18003ab6f  jz      short loc_18003ABA3
+0x18003ab71  test    dword ptr [rcx+1Ch], 100h
+0x18003ab78  jz      short loc_18003ABA3
+0x18003ab7a  mov     edx, edi
+0x18003ab7c  sar     edx, 1Fh
+0x18003ab7f  and     edx, 0FFFFFFFEh
+0x18003ab82  add     edx, 4
+0x18003ab85  movzx   eax, byte ptr [rcx+19h]
+  ... truncated ...
+```

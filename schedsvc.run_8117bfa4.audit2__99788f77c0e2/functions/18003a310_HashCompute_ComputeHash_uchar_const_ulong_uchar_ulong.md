@@ -1,0 +1,255 @@
+# HashCompute::ComputeHash(uchar * const,ulong,uchar *,ulong *)
+
+- ea: `0x18003a310`
+- end: `0x18003a53e`
+- name: `?ComputeHash@HashCompute@@QEAAKQEAEKPEAEPEAK@Z`
+- size: `558`
+- prototype: `unsigned int(HashCompute *__hidden this, unsigned __int8 *const, unsigned int, unsigned __int8 *, unsigned int *)`
+- caller_count: `2`
+- callee_count: `2`
+- tags: `loader_planting, broker_com_uri`
+
+## callers
+
+- `0x18003a1f0`
+- `0x180072244`
+
+## callees
+
+- `0x18003a310`
+- `0x180056954`
+
+## import_xrefs
+
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x18003a4e5`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x18003a515`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x18003a4e5`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x18003a515`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x18003a386`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x18003a386`
+- `ntdll!RtlNtStatusToDosError` at `0x18003a4ba`
+- `ntdll!RtlNtStatusToDosError` at `0x18003a4ba`
+- `bcrypt!BCryptDestroyHash` at `0x18003a4d2`
+- `bcrypt!BCryptDestroyHash` at `0x18003a4fa`
+- `bcrypt!BCryptDestroyHash` at `0x18003a4d2`
+- `bcrypt!BCryptDestroyHash` at `0x18003a4fa`
+- `bcrypt!BCryptHashData` at `0x18003a41f`
+- `bcrypt!BCryptHashData` at `0x18003a41f`
+- `bcrypt!BCryptFinishHash` at `0x18003a46a`
+- `bcrypt!BCryptFinishHash` at `0x18003a46a`
+- `bcrypt!BCryptCreateHash` at `0x18003a3c5`
+- `bcrypt!BCryptCreateHash` at `0x18003a3c5`
+
+## pseudocode
+
+```c
+__int64 __fastcall HashCompute::ComputeHash(
+        HashCompute *this,
+        unsigned __int8 *const a2,
+        ULONG a3,
+        unsigned __int8 *a4,
+        unsigned int *a5)
+{
+  ULONG *v9; // rbx
+  int v10; // edi
+  _QWORD *v11; // r10
+  __int64 v12; // rdx
+  ULONG v13; // ebx
+  BCRYPT_HASH_HANDLE phHash; // [rsp+60h] [rbp+8h] BYREF
+
+  phHash = 0;
+  if ( !_InterlockedCompareExchange(&dword_1800C0760, 0, 0) )
+    return 31;
+  if ( !a2 )
+    return 87;
+  if ( !a4 )
+    return 87;
+  v9 = a5;
+  if ( !a5 || *a5 < *(_DWORD *)&dword_1800C074C )
+    return 87;
+  EnterCriticalSection(&CriticalSection);
+  v10 = BCryptCreateHash(hAlgorithm, &phHash, pbHashObject, dwBytes, 0, 0, 0);
+  if ( v10 >= 0 )
+  {
+    v10 = BCryptHashData(phHash, a2, a3, 0);
+    if ( v10 >= 0 )
+    {
+      v10 = BCryptFinishHash(phHash, a4, *v9, 0);
+      if ( v10 >= 0 )
+      {
+        BCryptDestroyHash(phHash);
+        *v9 = *(_DWORD *)&dword_1800C074C;
+        LeaveCriticalSection(&CriticalSection);
+        return 0;
+      }
+      v11 = WPP_GLOBAL_Control;
+      if ( WPP_GLOBAL_Control == (_UNKNOWN *)&WPP_GLOBAL_Control
+        || (*((_DWORD *)WPP_GLOBAL_Control + 7) & 0x40000) == 0
+        || *((_BYTE *)WPP_GLOBAL_Control + 25) < 2u )
+      {
+        goto LABEL_23;
+      }
+      v12 = 16;
+      goto LABEL_22;
+    }
+    v11 = WPP_GLOBAL_Control;
+    if ( WPP_GLOBAL_Control != (_UNKNOWN *)&WPP_GLOBAL_Control
+      && (*((_DWORD *)WPP_GLOBAL_Control + 7) & 0x40000) != 0
+      && *((_BYTE *)WPP_GLOBAL_Control + 25) >= 2u )
+    {
+      v12 = 15;
+      goto LABEL_22;
+    }
+  }
+  else
+  {
+    v11 = WPP_GLOBAL_Control;
+    if ( WPP_GLOBAL_Control != (_UNKNOWN *)&WPP_GLOBAL_Control
+      && (*((_DWORD *)WPP_GLOBAL_Control + 7) & 0x40000) != 0
+      && *((_BYTE *)WPP_GLOBAL_Control + 25) >= 2u )
+    {
+      v12 = 14;
+LABEL_22:
+      WPP_SF_d(v11[2], v12, WPP_2b8d55565e60367fc767d22ca087624d_Traceguids, (unsigned int)v10);
+    }
+  }
+LABEL_23:
+  v13 = RtlNtStatusToDosError(v10);
+  if ( phHash )
+    BCryptDestroyHash(phHash);
+  LeaveCriticalSection(&CriticalSection);
+  return v13;
+}
+
+```
+
+## disassembly
+
+```asm
+0x18003a310  mov     rax, rsp
+0x18003a313  mov     [rax+10h], rbx
+0x18003a317  mov     [rax+18h], rbp
+0x18003a31b  mov     [rax+8], rcx
+0x18003a31f  push    rsi
+0x18003a320  push    rdi
+0x18003a321  push    r14
+0x18003a323  sub     rsp, 40h
+0x18003a327  xor     ecx, ecx
+0x18003a329  mov     qword ptr [rax+8], 0
+0x18003a331  xor     eax, eax
+0x18003a333  mov     rsi, r9
+0x18003a336  mov     r14d, r8d
+0x18003a339  mov     rbp, rdx
+0x18003a33c  lock cmpxchg cs:dword_1800C0760, ecx
+0x18003a344  jnz     short loc_18003A34E
+0x18003a346  lea     eax, [rcx+1Fh]
+0x18003a349  jmp     loc_18003A52A
+0x18003a34e  test    rbp, rbp
+0x18003a351  jz      loc_18003A525
+0x18003a357  test    rsi, rsi
+0x18003a35a  jz      loc_18003A525
+0x18003a360  mov     rbx, [rsp+58h+arg_20]
+0x18003a368  test    rbx, rbx
+0x18003a36b  jz      loc_18003A525
+0x18003a371  mov     eax, cs:dword_1800C074C
+0x18003a377  cmp     [rbx], eax
+0x18003a379  jb      loc_18003A525
+0x18003a37f  lea     rcx, CriticalSection; lpCriticalSection
+0x18003a386  call    cs:__imp_EnterCriticalSection
+0x18003a38d  nop     dword ptr [rax+rax+00h]
+0x18003a392  mov     r9d, cs:dwBytes; cbHashObject
+0x18003a399  lea     rdx, [rsp+58h+phHash]; phHash
+0x18003a39e  mov     r8, cs:pbHashObject; pbHashObject
+0x18003a3a5  mov     rcx, cs:hAlgorithm; hAlgorithm
+0x18003a3ac  mov     [rsp+58h+dwFlags], 0; dwFlags
+0x18003a3b4  mov     [rsp+58h+cbSecret], 0; cbSecret
+0x18003a3bc  mov     [rsp+58h+pbSecret], 0; pbSecret
+0x18003a3c5  call    cs:__imp_BCryptCreateHash
+0x18003a3cc  nop     dword ptr [rax+rax+00h]
+0x18003a3d1  mov     edi, eax
+0x18003a3d3  test    eax, eax
+0x18003a3d5  jns     short loc_18003A411
+0x18003a3d7  mov     r10, cs:WPP_GLOBAL_Control
+0x18003a3de  lea     rcx, WPP_GLOBAL_Control
+0x18003a3e5  cmp     r10, rcx
+0x18003a3e8  jz      loc_18003A4B8
+0x18003a3ee  test    dword ptr [r10+1Ch], 40000h
+0x18003a3f6  jz      loc_18003A4B8
+0x18003a3fc  cmp     byte ptr [r10+19h], 2
+0x18003a401  jb      loc_18003A4B8
+0x18003a407  mov     edx, 0Eh
+0x18003a40c  jmp     loc_18003A4A5
+0x18003a411  mov     rcx, [rsp+58h+phHash]; hHash
+0x18003a416  xor     r9d, r9d; dwFlags
+0x18003a419  mov     r8d, r14d; cbInput
+0x18003a41c  mov     rdx, rbp; pbInput
+0x18003a41f  call    cs:__imp_BCryptHashData
+0x18003a426  nop     dword ptr [rax+rax+00h]
+0x18003a42b  mov     edi, eax
+0x18003a42d  test    eax, eax
+0x18003a42f  jns     short loc_18003A45C
+0x18003a431  mov     r10, cs:WPP_GLOBAL_Control
+0x18003a438  lea     rcx, WPP_GLOBAL_Control
+0x18003a43f  cmp     r10, rcx
+0x18003a442  jz      short loc_18003A4B8
+0x18003a444  test    dword ptr [r10+1Ch], 40000h
+0x18003a44c  jz      short loc_18003A4B8
+0x18003a44e  cmp     byte ptr [r10+19h], 2
+0x18003a453  jb      short loc_18003A4B8
+0x18003a455  mov     edx, 0Fh
+0x18003a45a  jmp     short loc_18003A4A5
+0x18003a45c  mov     r8d, [rbx]; cbOutput
+0x18003a45f  xor     r9d, r9d; dwFlags
+0x18003a462  mov     rcx, [rsp+58h+phHash]; hHash
+0x18003a467  mov     rdx, rsi; pbOutput
+0x18003a46a  call    cs:__imp_BCryptFinishHash
+0x18003a471  nop     dword ptr [rax+rax+00h]
+0x18003a476  mov     edi, eax
+0x18003a478  test    eax, eax
+0x18003a47a  jns     short loc_18003A4F5
+0x18003a47c  mov     r10, cs:WPP_GLOBAL_Control
+0x18003a483  lea     rcx, WPP_GLOBAL_Control
+0x18003a48a  cmp     r10, rcx
+0x18003a48d  jz      short loc_18003A4B8
+0x18003a48f  test    dword ptr [r10+1Ch], 40000h
+0x18003a497  jz      short loc_18003A4B8
+0x18003a499  cmp     byte ptr [r10+19h], 2
+0x18003a49e  jb      short loc_18003A4B8
+0x18003a4a0  mov     edx, 10h
+0x18003a4a5  mov     rcx, [r10+10h]
+0x18003a4a9  lea     r8, WPP_2b8d55565e60367fc767d22ca087624d_Traceguids
+0x18003a4b0  mov     r9d, edi
+0x18003a4b3  call    WPP_SF_d
+0x18003a4b8  mov     ecx, edi; Status
+0x18003a4ba  call    cs:__imp_RtlNtStatusToDosError
+0x18003a4c1  nop     dword ptr [rax+rax+00h]
+0x18003a4c6  mov     ebx, eax
+0x18003a4c8  mov     rcx, [rsp+58h+phHash]; hHash
+0x18003a4cd  test    rcx, rcx
+0x18003a4d0  jz      short loc_18003A4DE
+0x18003a4d2  call    cs:__imp_BCryptDestroyHash
+0x18003a4d9  nop     dword ptr [rax+rax+00h]
+0x18003a4de  lea     rcx, CriticalSection; lpCriticalSection
+0x18003a4e5  call    cs:__imp_LeaveCriticalSection
+0x18003a4ec  nop     dword ptr [rax+rax+00h]
+0x18003a4f1  mov     eax, ebx
+0x18003a4f3  jmp     short loc_18003A52A
+0x18003a4f5  mov     rcx, [rsp+58h+phHash]; hHash
+0x18003a4fa  call    cs:__imp_BCryptDestroyHash
+0x18003a501  nop     dword ptr [rax+rax+00h]
+0x18003a506  mov     eax, cs:dword_1800C074C
+0x18003a50c  lea     rcx, CriticalSection; lpCriticalSection
+0x18003a513  mov     [rbx], eax
+0x18003a515  call    cs:__imp_LeaveCriticalSection
+0x18003a51c  nop     dword ptr [rax+rax+00h]
+0x18003a521  xor     eax, eax
+0x18003a523  jmp     short loc_18003A52A
+0x18003a525  mov     eax, 57h ; 'W'
+0x18003a52a  mov     rbx, [rsp+58h+arg_8]
+0x18003a52f  mov     rbp, [rsp+58h+arg_10]
+0x18003a534  add     rsp, 40h
+0x18003a538  pop     r14
+0x18003a53a  pop     rdi
+0x18003a53b  pop     rsi
+0x18003a53c  retn
+```

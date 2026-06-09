@@ -1,0 +1,151 @@
+# CredStore::WipeoutStore(wmi::AutoRegKey &)
+
+- ea: `0x180073944`
+- end: `0x180073a33`
+- name: `?WipeoutStore@CredStore@@AEAAXAEAVAutoRegKey@wmi@@@Z`
+- size: `239`
+- prototype: `void(CredStore *__hidden this, struct wmi::AutoRegKey *)`
+- caller_count: `1`
+- callee_count: `3`
+- tags: `registry_config, service_task, broker_com_uri`
+
+## callers
+
+- `0x180073408`
+
+## callees
+
+- `0x180056144`
+- `0x1800731b8`
+- `0x180073944`
+
+## import_xrefs
+
+- `msvcrt!wcsstr` at `0x1800739b6`
+- `msvcrt!wcsstr` at `0x1800739b6`
+- `api-ms-win-core-registry-l1-1-0!RegDeleteTreeW` at `0x180073a11`
+- `api-ms-win-core-registry-l1-1-0!RegDeleteTreeW` at `0x180073a11`
+- `api-ms-win-core-registry-l1-1-0!RegCloseKey` at `0x1800739f7`
+- `api-ms-win-core-registry-l1-1-0!RegCloseKey` at `0x1800739f7`
+- `api-ms-win-security-credentials-l1-1-0!CredDeleteW` at `0x1800739d2`
+- `api-ms-win-security-credentials-l1-1-0!CredDeleteW` at `0x1800739d2`
+- `api-ms-win-security-credentials-l1-1-0!CredEnumerateW` at `0x180073979`
+- `api-ms-win-security-credentials-l1-1-0!CredEnumerateW` at `0x180073979`
+- `api-ms-win-security-credentials-l1-1-0!CredFree` at `0x18007398f`
+
+## string_xrefs
+
+- `0x1800739ab`: `TaskScheduler:Task:`
+
+## pseudocode
+
+```c
+void __fastcall CredStore::WipeoutStore(CredStore *this, HKEY *a2)
+{
+  PCREDENTIALW *v3; // rcx
+  __int64 v4; // rbx
+  PCREDENTIALW v5; // rsi
+  CredStore *v6; // rcx
+  _BYTE v7[8]; // [rsp+20h] [rbp-20h] BYREF
+  void (__stdcall *v8)(PVOID); // [rsp+28h] [rbp-18h]
+  PCREDENTIALW *v9; // [rsp+30h] [rbp-10h]
+  DWORD Count; // [rsp+60h] [rbp+20h] BYREF
+  int v11; // [rsp+64h] [rbp+24h]
+  PCREDENTIALW *Credential; // [rsp+68h] [rbp+28h] BYREF
+
+  v11 = HIDWORD(this);
+  Count = 0;
+  Credential = 0;
+  if ( CredEnumerateW(0, 1u, &Count, &Credential) )
+  {
+    v3 = Credential;
+    v4 = 0;
+    v7[0] = 0;
+    v8 = CredFree;
+    v9 = Credential;
+    if ( Count )
+    {
+      while ( 1 )
+      {
+        v5 = v3[v4];
+        if ( wcsstr(v5->TargetName, L"TaskScheduler:Task:") )
+          CredDeleteW(v5->TargetName, 2u, 0);
+        v4 = (unsigned int)(v4 + 1);
+        if ( (unsigned int)v4 >= Count )
+          break;
+        v3 = Credential;
+      }
+    }
+    wmi::ScopeGuardImpl1<long (*)(void *),void *>::~ScopeGuardImpl1<long (*)(void *),void *>(v7);
+  }
+  RegCloseKey(*a2);
+  RegDeleteTreeW(HKEY_LOCAL_MACHINE, L"SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Schedule\\CredWom");
+  CredStore::OpenCredManagerKey(v6, (struct wmi::AutoRegKey *)a2);
+}
+
+```
+
+## disassembly
+
+```asm
+0x180073944  mov     [rsp-18h+arg_10], rbx
+0x180073949  mov     qword ptr [rsp-18h+Count], rcx
+0x18007394e  push    rbp
+0x18007394f  push    rsi
+0x180073950  push    rdi
+0x180073951  mov     rbp, rsp
+0x180073954  sub     rsp, 40h
+0x180073958  mov     rdi, rdx
+0x18007395b  mov     [rbp+Count], 0
+0x180073962  mov     edx, 1; Flags
+0x180073967  mov     [rbp+Credential], 0
+0x18007396f  lea     r9, [rbp+Credential]; Credential
+0x180073973  xor     ecx, ecx; Filter
+0x180073975  lea     r8, [rbp+Count]; Count
+0x180073979  call    cs:__imp_CredEnumerateW
+0x180073980  nop     dword ptr [rax+rax+00h]
+0x180073985  test    eax, eax
+0x180073987  jz      short loc_1800739F4
+0x180073989  mov     rcx, [rbp+Credential]
+0x18007398d  xor     ebx, ebx
+0x18007398f  mov     rax, cs:__imp_CredFree
+0x180073996  mov     [rbp+var_20], 0
+0x18007399a  mov     [rbp+var_18], rax
+0x18007399e  mov     [rbp+var_10], rcx
+0x1800739a2  cmp     [rbp+Count], ebx
+0x1800739a5  jbe     short loc_1800739EB
+0x1800739a7  mov     rsi, [rcx+rbx*8]
+0x1800739ab  lea     rdx, aTaskschedulerT; "TaskScheduler:Task:"
+0x1800739b2  mov     rcx, [rsi+8]; Str
+0x1800739b6  call    cs:__imp_wcsstr
+0x1800739bd  nop     dword ptr [rax+rax+00h]
+0x1800739c2  test    rax, rax
+0x1800739c5  jz      short loc_1800739DE
+0x1800739c7  mov     rcx, [rsi+8]; TargetName
+0x1800739cb  xor     r8d, r8d; Flags
+0x1800739ce  lea     edx, [r8+2]; Type
+0x1800739d2  call    cs:__imp_CredDeleteW
+0x1800739d9  nop     dword ptr [rax+rax+00h]
+0x1800739de  inc     ebx
+0x1800739e0  cmp     ebx, [rbp+Count]
+0x1800739e3  jnb     short loc_1800739EB
+0x1800739e5  mov     rcx, [rbp+Credential]
+0x1800739e9  jmp     short loc_1800739A7
+0x1800739eb  lea     rcx, [rbp+var_20]
+0x1800739ef  call    ??1?$ScopeGuardImpl1@P6AJPEAX@ZPEAX@wmi@@QEAA@XZ; wmi::ScopeGuardImpl1<long (*)(void *),void *>::~ScopeGuardImpl1<long (*)(void *),void *>(void)
+0x1800739f4  mov     rcx, [rdi]; hKey
+0x1800739f7  call    cs:__imp_RegCloseKey
+0x1800739fe  nop     dword ptr [rax+rax+00h]
+0x180073a03  lea     rdx, aSoftwareMicros; "SOFTWARE\\Microsoft\\Windows NT\\Curren"...
+0x180073a0a  mov     rcx, 0FFFFFFFF80000002h; hKey
+0x180073a11  call    cs:__imp_RegDeleteTreeW
+0x180073a18  nop     dword ptr [rax+rax+00h]
+0x180073a1d  mov     rdx, rdi; struct wmi::AutoRegKey *
+0x180073a20  call    ?OpenCredManagerKey@CredStore@@AEAAJAEAVAutoRegKey@wmi@@@Z; CredStore::OpenCredManagerKey(wmi::AutoRegKey &)
+0x180073a25  mov     rbx, [rsp+40h+arg_10]
+0x180073a2a  add     rsp, 40h
+0x180073a2e  pop     rdi
+0x180073a2f  pop     rsi
+0x180073a30  pop     rbp
+0x180073a31  retn
+```

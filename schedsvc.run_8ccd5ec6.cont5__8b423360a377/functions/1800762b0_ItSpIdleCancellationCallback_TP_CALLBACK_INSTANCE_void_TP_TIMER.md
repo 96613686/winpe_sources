@@ -1,0 +1,33 @@
+# ItSpIdleCancellationCallback(_TP_CALLBACK_INSTANCE *,void *,_TP_TIMER *)
+
+- ea: `0x1800762b0`
+- end: `0x180076354`
+- name: `?ItSpIdleCancellationCallback@@YAXPEAU_TP_CALLBACK_INSTANCE@@PEAXPEAU_TP_TIMER@@@Z`
+- size: `164`
+- prototype: `void __stdcall(PTP_CALLBACK_INSTANCE Instance, PVOID Context, PTP_TIMER Timer)`
+- caller_count: `0`
+- callee_count: `1`
+- tags: `loader_planting`
+
+## callees
+
+- `0x1800762b0`
+
+## import_xrefs
+
+- `api-ms-win-core-synch-l1-1-0!SetEvent` at `0x1800762dc`
+- `api-ms-win-core-synch-l1-1-0!SetEvent` at `0x1800762dc`
+- `ntdll!RtlReleaseSRWLockShared` at `0x180076323`
+- `ntdll!RtlReleaseSRWLockShared` at `0x180076323`
+- `ntdll!RtlAcquireSRWLockShared` at `0x1800762f2`
+- `ntdll!RtlAcquireSRWLockShared` at `0x1800762f2`
+- `api-ms-win-core-threadpool-l1-2-0!CloseThreadpoolTimer` at `0x180076337`
+- `api-ms-win-core-threadpool-l1-2-0!CloseThreadpoolTimer` at `0x180076337`
+- `api-ms-win-core-threadpool-legacy-l1-1-0!ChangeTimerQueueTimer` at `0x180076314`
+- `api-ms-win-core-threadpool-legacy-l1-1-0!ChangeTimerQueueTimer` at `0x180076314`
+
+## pseudocode
+
+```c
+
+```

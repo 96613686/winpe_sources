@@ -1,0 +1,5082 @@
+[
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil::details::FeatureStateManager::~FeatureStateManager(void)",
+    "ea": "0x180009354",
+    "function_file": "functions/180009354_wil_details_FeatureStateManager_FeatureStateManager_void.md",
+    "matched_imports": [
+      "KERNEL32!CloseThreadpoolTimer",
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree",
+      "KERNEL32!SetLastError",
+      "KERNEL32!SetThreadpoolTimer",
+      "KERNEL32!WaitForThreadpoolTimerCallbacks"
+    ],
+    "matched_strings": [],
+    "name": "??1FeatureStateManager@details@wil@@QEAA@XZ",
+    "prototype": "void __fastcall(wil::details::FeatureStateManager *__hidden this)",
+    "rank_score": 4818,
+    "size": 494,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "SdpXmlLoadResource(ushort const *,IXMLDOMDocument2 * *,ushort const *)",
+    "ea": "0x180028b34",
+    "function_file": "functions/180028b34_SdpXmlLoadResource_ushort_const_IXMLDOMDocument2_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!FindResourceExW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetModuleHandleExW",
+      "KERNEL32!GlobalAlloc",
+      "KERNEL32!GlobalFree",
+      "KERNEL32!GlobalLock",
+      "KERNEL32!GlobalUnlock",
+      "KERNEL32!LoadResource",
+      "KERNEL32!LockResource",
+      "KERNEL32!SizeofResource",
+      "OLEAUT32!__imp_VariantClear",
+      "OLEAUT32!__imp_VariantInit",
+      "ole32!CoCreateInstance",
+      "ole32!CreateStreamOnHGlobal"
+    ],
+    "matched_strings": [
+      "SdpXmlLoadResource",
+      "SdpXmlLoadResource",
+      "SdpXmlLoadResource"
+    ],
+    "name": "?SdpXmlLoadResource@@YAJPEBGPEAPEAUIXMLDOMDocument2@@0@Z",
+    "prototype": "__int64 __fastcall(LPCWSTR lpName, LPVOID *, const unsigned __int16 *)",
+    "rank_score": 3963,
+    "size": 999,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SdpGetUserSid(ushort * *)",
+    "ea": "0x1800271ec",
+    "function_file": "functions/1800271ec_SdpGetUserSid_ushort.md",
+    "matched_imports": [
+      "ADVAPI32!ConvertSidToStringSidW",
+      "ADVAPI32!GetTokenInformation",
+      "ADVAPI32!OpenProcessToken",
+      "ADVAPI32!OpenThreadToken",
+      "KERNEL32!CloseHandle",
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!GetCurrentThread",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree",
+      "KERNEL32!LocalFree"
+    ],
+    "matched_strings": [
+      "SdpGetUserSid",
+      "SdpGetUserSid"
+    ],
+    "name": "?SdpGetUserSid@@YAJPEAPEAG@Z",
+    "prototype": "__int64 __fastcall(unsigned __int16 **)",
+    "rank_score": 3719,
+    "size": 602,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "DiagPackage::CheckApplicability(IXMLDOMNode *)",
+    "ea": "0x180015730",
+    "function_file": "functions/180015730_DiagPackage_CheckApplicability_IXMLDOMNode.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetNativeSystemInfo",
+      "KERNEL32!GetVersionExW",
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString",
+      "OLEAUT32!__imp_VariantChangeTypeEx",
+      "OLEAUT32!__imp_VariantClear",
+      "OLEAUT32!__imp_VariantInit"
+    ],
+    "matched_strings": [],
+    "name": "?CheckApplicability@DiagPackage@@AEAAJPEAUIXMLDOMNode@@@Z",
+    "prototype": "__int64 __fastcall(DiagPackage *this, struct IXMLDOMNode *)",
+    "rank_score": 3439,
+    "size": 1246,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CScriptedDiag::ImpersonateActiveUser(void)",
+    "ea": "0x18000cd40",
+    "function_file": "functions/18000cd40_CScriptedDiag_ImpersonateActiveUser_void.md",
+    "matched_imports": [
+      "ADVAPI32!DuplicateTokenEx",
+      "ADVAPI32!GetTokenInformation",
+      "ADVAPI32!ImpersonateLoggedOnUser",
+      "KERNEL32!CloseHandle",
+      "KERNEL32!GetLastError",
+      "KERNEL32!WTSGetActiveConsoleSessionId",
+      "WTSAPI32!WTSEnumerateSessionsW",
+      "WTSAPI32!WTSFreeMemory",
+      "WTSAPI32!WTSQueryUserToken"
+    ],
+    "matched_strings": [
+      "CScriptedDiag::ImpersonateActiveUser"
+    ],
+    "name": "?ImpersonateActiveUser@CScriptedDiag@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(CScriptedDiag *__hidden this)",
+    "rank_score": 3066,
+    "size": 442,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "SdpGetCertificate(ushort const *,_CERT_CONTEXT const * *,int *,int *)",
+    "ea": "0x180006ca0",
+    "function_file": "functions/180006ca0_SdpGetCertificate_ushort_const_CERT_CONTEXT_const_int_int.md",
+    "matched_imports": [
+      "CRYPT32!CertDuplicateCertificateContext",
+      "CRYPT32!CertFreeCertificateContext",
+      "CRYPT32!CertVerifyCertificateChainPolicy",
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!GetLastError",
+      "WINTRUST!WTHelperGetProvCertFromChain",
+      "WINTRUST!WTHelperGetProvSignerFromChain",
+      "WINTRUST!WTHelperProvDataFromStateData",
+      "WINTRUST!WinVerifyTrust"
+    ],
+    "matched_strings": [],
+    "name": "?SdpGetCertificate@@YAJPEBGPEAPEBU_CERT_CONTEXT@@PEAH2@Z",
+    "prototype": "__int64 __fastcall(LPCWSTR lpFileName, const struct _CERT_CONTEXT **, int *, int *)",
+    "rank_score": 2833,
+    "size": 857,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::ProcessLocalStorageData<wil::details_abi::FeatureStateData>::Acquire(char const *,wil::details_abi::ProcessLocalStorageData<wil::details_abi::FeatureStateData> * *)",
+    "ea": "0x180009c30",
+    "function_file": "functions/180009c30_wil_details_abi_ProcessLocalStorageData_wil_details_abi_FeatureStateData_Acquire_char_const_wil_details_abi_Pr.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateMutexExW",
+      "KERNEL32!GetCurrentProcessId",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree",
+      "KERNEL32!InitializeCriticalSectionEx",
+      "KERNEL32!ReleaseMutex",
+      "KERNEL32!WaitForSingleObjectEx"
+    ],
+    "matched_strings": [],
+    "name": "?Acquire@?$ProcessLocalStorageData@VFeatureStateData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *)",
+    "rank_score": 2831,
+    "size": 967,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "CScriptedDiag::InitializeHost(void)",
+    "ea": "0x18000d63c",
+    "function_file": "functions/18000d63c_CScriptedDiag_InitializeHost_void.md",
+    "matched_imports": [
+      "ADVAPI32!RevertToSelf",
+      "KERNEL32!GetLastError",
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString",
+      "ole32!CoCreateInstance",
+      "ole32!CoSetProxyBlanket"
+    ],
+    "matched_strings": [],
+    "name": "?InitializeHost@CScriptedDiag@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(CScriptedDiag *__hidden this)",
+    "rank_score": 2660,
+    "size": 1167,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::ProcessLocalStorageData<wil::details_abi::ProcessLocalData>::Acquire(char const *,wil::details_abi::ProcessLocalStorageData<wil::details_abi::ProcessLocalData> * *)",
+    "ea": "0x18000988c",
+    "function_file": "functions/18000988c_wil_details_abi_ProcessLocalStorageData_wil_details_abi_ProcessLocalData_Acquire_char_const_wil_details_abi_Pr.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateMutexExW",
+      "KERNEL32!GetCurrentProcessId",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree",
+      "KERNEL32!ReleaseMutex",
+      "KERNEL32!WaitForSingleObjectEx"
+    ],
+    "matched_strings": [],
+    "name": "?Acquire@?$ProcessLocalStorageData@UProcessLocalData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *)",
+    "rank_score": 2630,
+    "size": 926,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 4,
+    "demangled": "SdpSubstituteParamSet(ushort * *,ushort const *,_SDIAG_PARAMSET *)",
+    "ea": "0x18000571c",
+    "function_file": "functions/18000571c_SdpSubstituteParamSet_ushort_ushort_const_SDIAG_PARAMSET.md",
+    "matched_imports": [
+      "ntdll!RtlCreateEnvironment",
+      "ntdll!RtlDestroyEnvironment",
+      "ntdll!RtlExpandEnvironmentStrings",
+      "ntdll!RtlInitUnicodeStringEx",
+      "ntdll!RtlNtStatusToDosError",
+      "ntdll!RtlSetEnvironmentVariable"
+    ],
+    "matched_strings": [],
+    "name": "?SdpSubstituteParamSet@@YAJPEAPEAGPEBGPEAU_SDIAG_PARAMSET@@@Z",
+    "prototype": "__int64 __fastcall(unsigned __int16 **, const unsigned __int16 *, struct _SDIAG_PARAMSET *)",
+    "rank_score": 2437,
+    "size": 939,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil::details::FeatureStateManager::QueueBackgroundSRUMUsageReporting(uint,ushort,uint)",
+    "ea": "0x18000e750",
+    "function_file": "functions/18000e750_wil_details_FeatureStateManager_QueueBackgroundSRUMUsageReporting_uint_ushort_uint.md",
+    "matched_imports": [
+      "KERNEL32!AcquireSRWLockExclusive",
+      "KERNEL32!CloseThreadpoolTimer",
+      "KERNEL32!CreateThreadpoolTimer",
+      "KERNEL32!GetLastError",
+      "KERNEL32!ReleaseSRWLockExclusive",
+      "KERNEL32!SetLastError",
+      "KERNEL32!SetThreadpoolTimer",
+      "KERNEL32!WaitForThreadpoolTimerCallbacks",
+      "msvcrt!memcpy_s"
+    ],
+    "matched_strings": [],
+    "name": "?QueueBackgroundSRUMUsageReporting@FeatureStateManager@details@wil@@QEAAXIGI@Z",
+    "prototype": "void __fastcall(RTL_SRWLOCK *pv, int, __int16, int)",
+    "rank_score": 2418,
+    "size": 393,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 5,
+    "demangled": "SdpLocalizeDisplayInformation(Settings *,_SDIAG_DISPINFO *,int)",
+    "ea": "0x18000615c",
+    "function_file": "functions/18000615c_SdpLocalizeDisplayInformation_Settings_SDIAG_DISPINFO_int.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString",
+      "msvcrt!_wcsicmp",
+      "msvcrt!wcschr"
+    ],
+    "matched_strings": [],
+    "name": "?SdpLocalizeDisplayInformation@@YAJPEAVSettings@@PEAU_SDIAG_DISPINFO@@H@Z",
+    "prototype": "__int64 __fastcall(struct Settings *, const unsigned __int16 **, int)",
+    "rank_score": 2044,
+    "size": 1214,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "wil::details_abi::SemaphoreValue::CreateFromValueInternal(ushort const *,bool,unsigned __int64)",
+    "ea": "0x18000aa8c",
+    "function_file": "functions/18000aa8c_wil_details_abi_SemaphoreValue_CreateFromValueInternal_ushort_const_bool_unsigned_int64.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateSemaphoreExW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?CreateFromValueInternal@SemaphoreValue@details_abi@wil@@AEAAJPEBG_N_K@Z",
+    "prototype": "__int64 __fastcall(wil::details_abi::SemaphoreValue *this, WCHAR *, __int64, unsigned __int64)",
+    "rank_score": 2013,
+    "size": 547,
+    "tags": []
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 3,
+    "demangled": "Script::Run(void)",
+    "ea": "0x18001e194",
+    "function_file": "functions/18001e194_Script_Run_void.md",
+    "matched_imports": [
+      "KERNEL32!GetTickCount64",
+      "OLEAUT32!__imp_SafeArrayDestroy",
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString",
+      "ole32!CoAllowSetForegroundWindow"
+    ],
+    "matched_strings": [
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><DetailedInformation/>",
+      "Script::UpdateReport",
+      "Script::UpdateReport"
+    ],
+    "name": "?Run@Script@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(const OLECHAR **this, __int64, __int64)",
+    "rank_score": 1971,
+    "size": 939,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "SdpDeleteDirectory(ushort const *)",
+    "ea": "0x180002338",
+    "function_file": "functions/180002338_SdpDeleteDirectory_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!DeleteFileW",
+      "KERNEL32!FindClose",
+      "KERNEL32!FindFirstFileW",
+      "KERNEL32!FindNextFileW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!RemoveDirectoryW",
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [
+      "SdpDeleteDirectory",
+      "SdpDeleteDirectory",
+      "SdpDeleteDirectory"
+    ],
+    "name": "?SdpDeleteDirectory@@YAJPEBG@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *)",
+    "rank_score": 1943,
+    "size": 531,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 4,
+    "demangled": "SdpRecordMethodCall(Settings *,ushort const *,unsigned __int64,long,ulong,...)",
+    "ea": "0x180004518",
+    "function_file": "functions/180004518_SdpRecordMethodCall_Settings_ushort_const_unsigned_int64_long_ulong.md",
+    "matched_imports": [
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><Function/>",
+      "PackagePath"
+    ],
+    "name": "?SdpRecordMethodCall@@YAJPEAVSettings@@PEBG_KJKZZ",
+    "prototype": "__int64(struct Settings *, const unsigned __int16 *, __int64, unsigned int, unsigned int, ...)",
+    "rank_score": 1933,
+    "size": 2105,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CScriptedDiag::GetSystemTempDirPath(ushort * *)",
+    "ea": "0x18000c144",
+    "function_file": "functions/18000c144_CScriptedDiag_GetSystemTempDirPath_ushort.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetWindowsDirectoryW",
+      "USERENV!ExpandEnvironmentStringsForUserW",
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [
+      "CScriptedDiag::GetSystemTempDirPath",
+      "CScriptedDiag::GetSystemTempDirPath",
+      "CScriptedDiag::GetSystemTempDirPath",
+      "%TEMP%",
+      "%TEMP%"
+    ],
+    "name": "?GetSystemTempDirPath@CScriptedDiag@@AEAAJPEAPEAG@Z",
+    "prototype": "__int64 __fastcall(CScriptedDiag *__hidden this, unsigned __int16 **)",
+    "rank_score": 1819,
+    "size": 464,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "wil::details_abi::SemaphoreValue::TryGetValueInternal(ushort const *,bool,unsigned __int64 *,bool *)",
+    "ea": "0x1800111dc",
+    "function_file": "functions/1800111dc_wil_details_abi_SemaphoreValue_TryGetValueInternal_ushort_const_bool_unsigned_int64_bool.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!GetLastError",
+      "KERNEL32!OpenSemaphoreW"
+    ],
+    "matched_strings": [],
+    "name": "?TryGetValueInternal@SemaphoreValue@details_abi@wil@@CAJPEBG_NPEA_KPEA_N@Z",
+    "prototype": "__int64 __fastcall(WCHAR *, __int64, unsigned __int64 *, bool *)",
+    "rank_score": 1813,
+    "size": 629,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil::details::FeatureStateManager::EnsureTimerUnderLock(void)",
+    "ea": "0x18000b0e4",
+    "function_file": "functions/18000b0e4_wil_details_FeatureStateManager_EnsureTimerUnderLock_void.md",
+    "matched_imports": [
+      "KERNEL32!CloseThreadpoolTimer",
+      "KERNEL32!CreateThreadpoolTimer",
+      "KERNEL32!GetLastError",
+      "KERNEL32!SetLastError",
+      "KERNEL32!SetThreadpoolTimer",
+      "KERNEL32!WaitForThreadpoolTimerCallbacks"
+    ],
+    "matched_strings": [],
+    "name": "?EnsureTimerUnderLock@FeatureStateManager@details@wil@@AEAAXXZ",
+    "prototype": "void __fastcall(struct _TP_TIMER **pv)",
+    "rank_score": 1803,
+    "size": 212,
+    "tags": []
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "SdpVerifyDirectoryTrust(ushort const *,ushort const *)",
+    "ea": "0x180007bc0",
+    "function_file": "functions/180007bc0_SdpVerifyDirectoryTrust_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!FindClose",
+      "KERNEL32!FindFirstFileW",
+      "KERNEL32!FindNextFileW",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree",
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [
+      "SdpVerifyDirectoryTrust",
+      "SdpVerifyDirectoryTrust",
+      "SdpVerifyDirectoryTrust",
+      "SdpVerifyDirectoryTrust"
+    ],
+    "name": "?SdpVerifyDirectoryTrust@@YAJPEBG0@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 1799,
+    "size": 836,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "SdpVerifyDirectoryIntegrity(ushort const *,ushort const *,_LIST_ENTRY *)",
+    "ea": "0x18000787c",
+    "function_file": "functions/18000787c_SdpVerifyDirectoryIntegrity_ushort_const_ushort_const_LIST_ENTRY.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "WINTRUST!CryptCATClose",
+      "WINTRUST!CryptCATEnumerateMember",
+      "WINTRUST!CryptCATGetAttrInfo",
+      "WINTRUST!CryptCATOpen",
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [
+      "SdpVerifyDirectoryIntegrity",
+      "SdpVerifyDirectoryIntegrity",
+      "SdpVerifyDirectoryIntegrity",
+      "SdpVerifyDirectoryIntegrity",
+      "SdpVerifyDirectoryIntegrity",
+      "SdpVerifyDirectoryIntegrity"
+    ],
+    "name": "?SdpVerifyDirectoryIntegrity@@YAJPEBG0PEAU_LIST_ENTRY@@@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, WCHAR *, struct _LIST_ENTRY *)",
+    "rank_score": 1674,
+    "size": 827,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "SdpUpdateParamSet(tagSAFEARRAY *,tagSAFEARRAY *,_SDIAG_PARAMSET *)",
+    "ea": "0x180005ad0",
+    "function_file": "functions/180005ad0_SdpUpdateParamSet_tagSAFEARRAY_tagSAFEARRAY_SDIAG_PARAMSET.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SafeArrayGetElement",
+      "OLEAUT32!__imp_SysFreeString",
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [
+      "SdpUpdateParamSet"
+    ],
+    "name": "?SdpUpdateParamSet@@YAJPEAUtagSAFEARRAY@@0PEAU_SDIAG_PARAMSET@@@Z",
+    "prototype": "__int64 __fastcall(SAFEARRAY *psa, SAFEARRAY *, struct _SDIAG_PARAMSET *)",
+    "rank_score": 1664,
+    "size": 649,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 24,
+    "caller_count": 1,
+    "demangled": "DiagPackage::ParsePackageXml(IXMLDOMDocument2 *,IXMLDOMDocument2 *)",
+    "ea": "0x180016630",
+    "function_file": "functions/180016630_DiagPackage_ParsePackageXml_IXMLDOMDocument2_IXMLDOMDocument2.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysFreeString",
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [
+      "SdpParseExtensionPoint",
+      "DiagPackage::ParsePackageXml",
+      "DiagPackage::ParsePackageXml",
+      "DiagPackage::ParsePackageXml",
+      "DiagPackage::ParsePackageXml",
+      "DiagPackage::ParsePackageXml",
+      "DiagPackage::ParsePackageXml",
+      "DiagPackage::ParsePackageXml",
+      "DiagPackage::ParsePackageXml",
+      "DiagPackage::ParsePackageXml",
+      "DiagPackage::ParsePackageXml",
+      "PrivacyLink",
+      "ExtensionPoint"
+    ],
+    "name": "?ParsePackageXml@DiagPackage@@AEAAJPEAUIXMLDOMDocument2@@0@Z",
+    "prototype": "__int64 __fastcall(DiagPackage *__hidden this, struct IXMLDOMDocument2 *, struct IXMLDOMDocument2 *)",
+    "rank_score": 1606,
+    "size": 2691,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "Script::BuildReportScriptXml(ushort *,tagSAFEARRAY *,tagSAFEARRAY *,unsigned __int64,IXMLDOMDocument2 * *)",
+    "ea": "0x18001d544",
+    "function_file": "functions/18001d544_Script_BuildReportScriptXml_ushort_tagSAFEARRAY_tagSAFEARRAY_unsigned_int64_IXMLDOMDocument2.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SafeArrayGetElement",
+      "OLEAUT32!__imp_SysFreeString"
+    ],
+    "matched_strings": [
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><Script/>",
+      "Script::BuildReportScriptXml",
+      "Script::BuildReportScriptXml",
+      "Script::BuildReportScriptXml",
+      "Script::BuildReportScriptXml",
+      "Script::BuildReportScriptXml",
+      "Script::BuildReportScriptXml"
+    ],
+    "name": "?BuildReportScriptXml@Script@@AEAAJPEAGPEAUtagSAFEARRAY@@1_KPEAPEAUIXMLDOMDocument2@@@Z",
+    "prototype": "__int64 __fastcall(Script *this, unsigned __int16 *, struct tagSAFEARRAY *, struct tagSAFEARRAY *, unsigned __int64, struct IXMLDOMDocument2 **)",
+    "rank_score": 1523,
+    "size": 1401,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "DiagPackage::BuildReportPackageXml(IXMLDOMDocument2 * *)",
+    "ea": "0x1800151fc",
+    "function_file": "functions/1800151fc_DiagPackage_BuildReportPackageXml_IXMLDOMDocument2.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString"
+    ],
+    "matched_strings": [
+      "DiagPackage::BuildReportPackageXml",
+      "DiagPackage::BuildReportPackageXml",
+      "DiagPackage::BuildReportPackageXml",
+      "DiagPackage::BuildReportPackageXml",
+      "DiagPackage::BuildReportPackageXml",
+      "DiagPackage::BuildReportPackageXml",
+      "DiagPackage::BuildReportPackageXml",
+      "DiagPackage::BuildReportPackageXml",
+      "DiagPackage::BuildReportPackageXml",
+      "DiagPackage::BuildReportPackageXml",
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><PackageInformation/>"
+    ],
+    "name": "?BuildReportPackageXml@DiagPackage@@AEAAJPEAPEAUIXMLDOMDocument2@@@Z",
+    "prototype": "__int64 __fastcall(DiagPackage *__hidden this, struct IXMLDOMDocument2 **)",
+    "rank_score": 1481,
+    "size": 1324,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "DiagPackage::get_Interactions(IXMLDOMDocument2 * *)",
+    "ea": "0x180017c90",
+    "function_file": "functions/180017c90_DiagPackage_get_Interactions_IXMLDOMDocument2.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysFreeString",
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><Interactions/>"
+    ],
+    "name": "?get_Interactions@DiagPackage@@QEAAJPEAPEAUIXMLDOMDocument2@@@Z",
+    "prototype": "__int64 __fastcall(DiagPackage *__hidden this, struct IXMLDOMDocument2 **)",
+    "rank_score": 1469,
+    "size": 1291,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "Reporter::Initialize(Settings *)",
+    "ea": "0x180021914",
+    "function_file": "functions/180021914_Reporter_Initialize_Settings.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString"
+    ],
+    "matched_strings": [
+      "ResultReport.xml",
+      "DebugReport.xml",
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><ResultReport/>",
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><DebugReport/>"
+    ],
+    "name": "?Initialize@Reporter@@QEAAJPEAVSettings@@@Z",
+    "prototype": "__int64 __fastcall(Reporter *__hidden this, struct Settings *)",
+    "rank_score": 1411,
+    "size": 1049,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SdpIsTrusted(_CERT_CONTEXT const *,int *)",
+    "ea": "0x1800073a0",
+    "function_file": "functions/1800073a0_SdpIsTrusted_CERT_CONTEXT_const_int.md",
+    "matched_imports": [
+      "CRYPT32!CertCloseStore",
+      "CRYPT32!CertFindCertificateInStore",
+      "CRYPT32!CertFreeCertificateContext",
+      "CRYPT32!CertGetCertificateContextProperty",
+      "CRYPT32!CertOpenSystemStoreW",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?SdpIsTrusted@@YAJPEBU_CERT_CONTEXT@@PEAH@Z",
+    "prototype": "__int64 __fastcall(const struct _CERT_CONTEXT *, int *)",
+    "rank_score": 1407,
+    "size": 385,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::RecordWnfUsageIndex(__WIL__WNF_STATE_NAME const *,unsigned __int64,wil::details_abi::RawUsageIndex const &)",
+    "ea": "0x18000f534",
+    "function_file": "functions/18000f534_wil_details_abi_RecordWnfUsageIndex_WIL_WNF_STATE_NAME_const_unsigned_int64_wil_details_abi_RawUsageIndex_cons.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "?RecordWnfUsageIndex@details_abi@wil@@YAXPEBU__WIL__WNF_STATE_NAME@@_KAEBVRawUsageIndex@12@@Z",
+    "prototype": "void __fastcall(wil::details_abi *this, const struct __WIL__WNF_STATE_NAME *, __int64, const struct wil::details_abi::RawUsageIndex *)",
+    "rank_score": 1277,
+    "size": 983,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "Reporter::AddXslInstruction(IXMLDOMDocument2 *,ushort *,ushort *)",
+    "ea": "0x1800215e4",
+    "function_file": "functions/1800215e4_Reporter_AddXslInstruction_IXMLDOMDocument2_ushort_ushort.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString",
+      "OLEAUT32!__imp_VariantClear",
+      "OLEAUT32!__imp_VariantInit"
+    ],
+    "matched_strings": [
+      "xml-stylesheet"
+    ],
+    "name": "?AddXslInstruction@Reporter@@AEAAJPEAUIXMLDOMDocument2@@PEAG1@Z",
+    "prototype": "__int64 __fastcall(Reporter *__hidden this, struct IXMLDOMDocument2 *, unsigned __int16 *, unsigned __int16 *)",
+    "rank_score": 1268,
+    "size": 450,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CScriptedDiag::AddXmlToReport(ushort *,ushort *,ushort *,ushort *,ushort *,ushort *,ushort *)",
+    "ea": "0x18000a2f4",
+    "function_file": "functions/18000a2f4_CScriptedDiag_AddXmlToReport_ushort_ushort_ushort_ushort_ushort_ushort_ushort.md",
+    "matched_imports": [
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [
+      "CScriptedDiag::AddXmlToReport"
+    ],
+    "name": "?AddXmlToReport@CScriptedDiag@@QEAAJPEAG000000@Z",
+    "prototype": "__int64 __fastcall(DiagPackage **this, unsigned __int16 *, unsigned __int16 *, unsigned __int16 *, unsigned __int16 *, unsigned __int16 *String2, unsigned __int16 *String1, unsigned __int16 *)",
+    "rank_score": 1258,
+    "size": 483,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 11,
+    "demangled": "SdpLoadString(ushort const *,ulong,ushort * *)",
+    "ea": "0x180005ffc",
+    "function_file": "functions/180005ffc_SdpLoadString_ushort_const_ulong_ushort.md",
+    "matched_imports": [
+      "KERNEL32!FreeLibrary",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetModuleHandleExW",
+      "KERNEL32!LoadLibraryExW",
+      "USER32!LoadStringW"
+    ],
+    "matched_strings": [],
+    "name": "?SdpLoadString@@YAJPEBGKPEAPEAG@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, UINT, unsigned __int16 **)",
+    "rank_score": 1237,
+    "size": 344,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 1,
+    "demangled": "CScriptedDiag::SecurePackage(ushort const *)",
+    "ea": "0x1800101cc",
+    "function_file": "functions/1800101cc_CScriptedDiag_SecurePackage_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!CreateDirectoryW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!LocalFree"
+    ],
+    "matched_strings": [
+      "Settings::set_PackagePath",
+      "Settings::set_PackagePath",
+      "Settings::set_ResultPath",
+      "Settings::set_ResultPath"
+    ],
+    "name": "?SecurePackage@CScriptedDiag@@AEAAJPEBG@Z",
+    "prototype": "__int64 __fastcall(CScriptedDiag *this, const unsigned __int16 *, __int64)",
+    "rank_score": 1225,
+    "size": 1181,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x180001de4",
+    "function_file": "functions/180001de4_security_init_cookie.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcessId",
+      "KERNEL32!GetCurrentThreadId",
+      "KERNEL32!GetSystemTimeAsFileTime",
+      "KERNEL32!GetTickCount",
+      "KERNEL32!QueryPerformanceCounter"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 1223,
+    "size": 221,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SdpParamSetToSafeArrays(_SDIAG_PARAMSET *,tagSAFEARRAY * *,tagSAFEARRAY * *)",
+    "ea": "0x180005590",
+    "function_file": "functions/180005590_SdpParamSetToSafeArrays_SDIAG_PARAMSET_tagSAFEARRAY_tagSAFEARRAY.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SafeArrayCreateVector",
+      "OLEAUT32!__imp_SafeArrayDestroy",
+      "OLEAUT32!__imp_SafeArrayPutElement"
+    ],
+    "matched_strings": [],
+    "name": "?SdpParamSetToSafeArrays@@YAJPEAU_SDIAG_PARAMSET@@PEAPEAUtagSAFEARRAY@@1@Z",
+    "prototype": "__int64 __fastcall(struct _SDIAG_PARAMSET *, struct tagSAFEARRAY **, struct tagSAFEARRAY **)",
+    "rank_score": 1206,
+    "size": 387,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil::details::shared_buffer::create(unsigned __int64)",
+    "ea": "0x1800128ac",
+    "function_file": "functions/1800128ac_wil_details_shared_buffer_create_unsigned_int64.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "?create@shared_buffer@details@wil@@QEAA_N_K@Z",
+    "prototype": "__int64 __fastcall(volatile signed __int32 **this, volatile signed __int32 *)",
+    "rank_score": 1204,
+    "size": 195,
+    "tags": []
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 3,
+    "demangled": "SdpUpdateReportData(Settings *,IXMLDOMDocument2 *,ushort *,ushort *,ushort *,ushort *,ushort *)",
+    "ea": "0x180004d58",
+    "function_file": "functions/180004d58_SdpUpdateReportData_Settings_IXMLDOMDocument2_ushort_ushort_ushort_ushort_ushort.md",
+    "matched_imports": [
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [
+      "SdpUpdateReportData",
+      "SdpUpdateReportData",
+      "SdpUpdateReportData",
+      "SdpUpdateReportData",
+      "SdpUpdateReportData",
+      "SdpUpdateReportData",
+      "SdpUpdateReportData",
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><Detail/>"
+    ],
+    "name": "?SdpUpdateReportData@@YAJPEAVSettings@@PEAUIXMLDOMDocument2@@PEAG2222@Z",
+    "prototype": "__int64 __fastcall(struct Settings *, struct IXMLDOMDocument2 *, unsigned __int16 *, unsigned __int16 *, unsigned __int16 *, unsigned __int16 *, unsigned __int16 *String1)",
+    "rank_score": 1174,
+    "size": 1499,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "DiagPackage::CheckForceUserModeExtension(IXMLDOMNode *,int *)",
+    "ea": "0x180015c14",
+    "function_file": "functions/180015c14_DiagPackage_CheckForceUserModeExtension_IXMLDOMNode_int.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysFreeString",
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [
+      "DiagPackage::CheckForceUserModeExtension",
+      "DiagPackage::CheckForceUserModeExtension",
+      "DiagPackage::CheckForceUserModeExtension"
+    ],
+    "name": "?CheckForceUserModeExtension@DiagPackage@@AEAAJPEAUIXMLDOMNode@@PEAH@Z",
+    "prototype": "__int64 __fastcall(DiagPackage *__hidden this, struct IXMLDOMNode *, int *)",
+    "rank_score": 1150,
+    "size": 534,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 5,
+    "demangled": "SdpBuildDisplayInformationXml(_SDIAG_DISPINFO *,int,IXMLDOMDocument2 * *)",
+    "ea": "0x180002d20",
+    "function_file": "functions/180002d20_SdpBuildDisplayInformationXml_SDIAG_DISPINFO_int_IXMLDOMDocument2.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString"
+    ],
+    "matched_strings": [
+      "SdpBuildDisplayInformationXml",
+      "SdpBuildDisplayInformationXml",
+      "SdpBuildDisplayInformationXml",
+      "SdpBuildDisplayInformationXml",
+      "SdpBuildDisplayInformationXml",
+      "SdpBuildDisplayInformationXml",
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><DisplayInformation><Name></Name><Description></Description></DisplayInformation>"
+    ],
+    "name": "?SdpBuildDisplayInformationXml@@YAJPEAU_SDIAG_DISPINFO@@HPEAPEAUIXMLDOMDocument2@@@Z",
+    "prototype": "__int64 __fastcall(struct _SDIAG_DISPINFO *, int, struct IXMLDOMDocument2 **)",
+    "rank_score": 1122,
+    "size": 1028,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "SdpCopyDirectory(ushort const *,ushort const *)",
+    "ea": "0x180026958",
+    "function_file": "functions/180026958_SdpCopyDirectory_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!CopyFileW",
+      "KERNEL32!FindClose",
+      "KERNEL32!FindFirstFileW",
+      "KERNEL32!FindNextFileW",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [
+      "SdpCopyDirectory",
+      "SdpCopyDirectory"
+    ],
+    "name": "?SdpCopyDirectory@@YAJPEBG0@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 1105,
+    "size": 662,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "DiagPackage::UpdateApplicability(void)",
+    "ea": "0x1800175c4",
+    "function_file": "functions/1800175c4_DiagPackage_UpdateApplicability_void.md",
+    "matched_imports": [
+      "KERNEL32!GetNativeSystemInfo",
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString",
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [
+      "DiagPackage::UpdateApplicability"
+    ],
+    "name": "?UpdateApplicability@DiagPackage@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(DiagPackage *__hidden this)",
+    "rank_score": 1065,
+    "size": 272,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 2,
+    "demangled": "Reporter::AddTimeToReport(IXMLDOMElement *,IXMLDOMDocument2 *)",
+    "ea": "0x18002114c",
+    "function_file": "functions/18002114c_Reporter_AddTimeToReport_IXMLDOMElement_IXMLDOMDocument2.md",
+    "matched_imports": [
+      "KERNEL32!GetDateFormatEx",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetLocalTime",
+      "KERNEL32!GetTimeFormatEx"
+    ],
+    "matched_strings": [],
+    "name": "?AddTimeToReport@Reporter@@AEAAJPEAUIXMLDOMElement@@PEAUIXMLDOMDocument2@@@Z",
+    "prototype": "__int64 __fastcall(Reporter *this, struct IXMLDOMElement *, struct IXMLDOMDocument2 *)",
+    "rank_score": 1038,
+    "size": 791,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "Interaction::Interact(ushort *,tagSAFEARRAY *,tagSAFEARRAY *,tagSAFEARRAY *,tagSAFEARRAY *,tagSAFEARRAY *,tagSAFEARRAY *,tagSAFEARRAY * *)",
+    "ea": "0x180020314",
+    "function_file": "functions/180020314_Interaction_Interact_ushort_tagSAFEARRAY_tagSAFEARRAY_tagSAFEARRAY_tagSAFEARRAY_tagSAFEARRAY_tagSAFEARRAY_tagS.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SafeArrayCopy",
+      "OLEAUT32!__imp_SafeArrayCreateVector",
+      "OLEAUT32!__imp_SafeArrayDestroy",
+      "OLEAUT32!__imp_SysFreeString",
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [],
+    "name": "?Interact@Interaction@@QEAAJPEAGPEAUtagSAFEARRAY@@11111PEAPEAU2@@Z",
+    "prototype": "Interact *__fastcall(Interact *this, unsigned __int16 *, struct tagSAFEARRAY *, struct tagSAFEARRAY *, struct tagSAFEARRAY *, struct tagSAFEARRAY *, struct tagSAFEARRAY *, struct tagSAFEARRAY *, struct tagSAFEARRAY **)",
+    "rank_score": 1032,
+    "size": 811,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 11,
+    "demangled": "SdpXmlSetAttribute(IXMLDOMDocument2 *,IXMLDOMElement *,ushort const *,ushort const *)",
+    "ea": "0x1800291e0",
+    "function_file": "functions/1800291e0_SdpXmlSetAttribute_IXMLDOMDocument2_IXMLDOMElement_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString"
+    ],
+    "matched_strings": [
+      "SdpXmlSetAttribute",
+      "SdpXmlSetAttribute",
+      "SdpXmlSetAttribute",
+      "SdpXmlSetAttribute",
+      "SdpXmlSetAttribute"
+    ],
+    "name": "?SdpXmlSetAttribute@@YAJPEAUIXMLDOMDocument2@@PEAUIXMLDOMElement@@PEBG2@Z",
+    "prototype": "__int64 __fastcall(struct IXMLDOMDocument2 *, struct IXMLDOMElement *, const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 1028,
+    "size": 439,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "Interaction::SaveAnswers(IXMLDOMNode *)",
+    "ea": "0x180020c7c",
+    "function_file": "functions/180020c7c_Interaction_SaveAnswers_IXMLDOMNode.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SafeArrayAccessData",
+      "OLEAUT32!__imp_SafeArrayCreateVector",
+      "OLEAUT32!__imp_SafeArrayDestroy",
+      "OLEAUT32!__imp_SafeArrayUnaccessData",
+      "OLEAUT32!__imp_SysFreeString"
+    ],
+    "matched_strings": [],
+    "name": "?SaveAnswers@Interaction@@IEAAJPEAUIXMLDOMNode@@@Z",
+    "prototype": "__int64 __fastcall(Interaction *__hidden this, struct IXMLDOMNode *)",
+    "rank_score": 1022,
+    "size": 658,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "SdpGetFileHash(ushort const *,uchar * *,ulong &)",
+    "ea": "0x180007000",
+    "function_file": "functions/180007000_SdpGetFileHash_ushort_const_uchar_ulong.md",
+    "matched_imports": [
+      "KERNEL32!CloseHandle",
+      "KERNEL32!CreateFileW",
+      "KERNEL32!GetLastError",
+      "WINTRUST!CryptCATAdminCalcHashFromFileHandle"
+    ],
+    "matched_strings": [],
+    "name": "?SdpGetFileHash@@YAJPEBGPEAPEAEAEAK@Z",
+    "prototype": "__int64 __fastcall(LPCWSTR lpFileName, unsigned __int8 **, unsigned int *)",
+    "rank_score": 1020,
+    "size": 380,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "SdpIsAdmin(int *)",
+    "ea": "0x18002744c",
+    "function_file": "functions/18002744c_SdpIsAdmin_int.md",
+    "matched_imports": [
+      "ADVAPI32!AllocateAndInitializeSid",
+      "ADVAPI32!CheckTokenMembership",
+      "ADVAPI32!FreeSid",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?SdpIsAdmin@@YAJPEAH@Z",
+    "prototype": "__int64 __fastcall(int *)",
+    "rank_score": 1019,
+    "size": 312,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SdpGetCatalogAttribute(ushort const *,ushort const *,ushort const *,ushort * *)",
+    "ea": "0x18000680c",
+    "function_file": "functions/18000680c_SdpGetCatalogAttribute_ushort_const_ushort_const_ushort_const_ushort.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "WINTRUST!CryptCATClose",
+      "WINTRUST!CryptCATGetCatAttrInfo",
+      "WINTRUST!CryptCATOpen"
+    ],
+    "matched_strings": [],
+    "name": "?SdpGetCatalogAttribute@@YAJPEBG00PEAPEAG@Z",
+    "prototype": "__int64 __fastcall(WCHAR *, const unsigned __int16 *, const unsigned __int16 *, unsigned __int16 **)",
+    "rank_score": 1017,
+    "size": 375,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SdpIsSystem(int *)",
+    "ea": "0x18002778c",
+    "function_file": "functions/18002778c_SdpIsSystem_int.md",
+    "matched_imports": [
+      "ADVAPI32!AllocateAndInitializeSid",
+      "ADVAPI32!CheckTokenMembership",
+      "ADVAPI32!FreeSid",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [],
+    "name": "?SdpIsSystem@@YAJPEAH@Z",
+    "prototype": "__int64 __fastcall(int *)",
+    "rank_score": 1016,
+    "size": 319,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "DiagPackage::ValidatePackageXml(IXMLDOMDocument2 *)",
+    "ea": "0x1800176dc",
+    "function_file": "functions/1800176dc_DiagPackage_ValidatePackageXml_IXMLDOMDocument2.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString"
+    ],
+    "matched_strings": [
+      "DiagPackage::ValidatePackageXml",
+      "DiagPackage::ValidatePackageXml",
+      "http://www.microsoft.com/schemas/dcm/resource/2007",
+      "http://www.microsoft.com/schemas/dcm/package/2007"
+    ],
+    "name": "?ValidatePackageXml@DiagPackage@@AEAAJPEAUIXMLDOMDocument2@@@Z",
+    "prototype": "__int64 __fastcall(DiagPackage *this, struct IXMLDOMDocument2 *)",
+    "rank_score": 994,
+    "size": 553,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "Rootcause::CreateInstance(_LIST_ENTRY *,ushort const *,Rootcause::SDIAG_ROOTCAUSE_STATUS,tagSAFEARRAY *,tagSAFEARRAY *,Rootcause::_SDIAG_ROOTCAUSE_INSTANCE * *)",
+    "ea": "0x180019b88",
+    "function_file": "functions/180019b88_Rootcause_CreateInstance_LIST_ENTRY_ushort_const_Rootcause_SDIAG_ROOTCAUSE_STATUS_tagSAFEARRAY_tagSAFEARRAY_Ro.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><DetailedInformation/>",
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><DetailedInformation/>",
+      "Rootcause::CreateInstance",
+      "Rootcause::CreateInstance"
+    ],
+    "name": "?CreateInstance@Rootcause@@AEAAJPEAU_LIST_ENTRY@@PEBGW4SDIAG_ROOTCAUSE_STATUS@1@PEAUtagSAFEARRAY@@3PEAPEAU_SDIAG_ROOTCAUSE_INSTANCE@1@@Z",
+    "prototype": "__int64 __fastcall(__int64, struct IXMLDOMDocument2 *, __int64, unsigned int, __int64, __int64, struct IXMLDOMDocument2 ***)",
+    "rank_score": 982,
+    "size": 505,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 22,
+    "demangled": "SdpXmlCreateNode(IXMLDOMDocument2 *,IXMLDOMElement *,ushort const *,ushort const *,IXMLDOMElement * *)",
+    "ea": "0x18002827c",
+    "function_file": "functions/18002827c_SdpXmlCreateNode_IXMLDOMDocument2_IXMLDOMElement_ushort_const_ushort_const_IXMLDOMElement.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString"
+    ],
+    "matched_strings": [
+      "SdpXmlCreateNode",
+      "SdpXmlCreateNode",
+      "SdpXmlCreateNode"
+    ],
+    "name": "?SdpXmlCreateNode@@YAJPEAUIXMLDOMDocument2@@PEAUIXMLDOMElement@@PEBG2PEAPEAU2@@Z",
+    "prototype": "__int64 __fastcall(struct IXMLDOMDocument2 *, struct IXMLDOMElement *, const unsigned __int16 *, const unsigned __int16 *, struct IXMLDOMElement **)",
+    "rank_score": 960,
+    "size": 521,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "LaunchUIInteraction::CreateSpecificDocument(IXMLDOMDocument2 * *,int)",
+    "ea": "0x180026500",
+    "function_file": "functions/180026500_LaunchUIInteraction_CreateSpecificDocument_IXMLDOMDocument2_int.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString"
+    ],
+    "matched_strings": [
+      "CommandLine",
+      "LaunchUIInteraction::CreateSpecificDocument",
+      "LaunchUIInteraction::CreateSpecificDocument",
+      "LaunchUIInteraction::CreateSpecificDocument",
+      "LaunchUIInteraction::CreateSpecificDocument",
+      "LaunchUIInteraction::CreateSpecificDocument",
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><LaunchUIInteraction/>"
+    ],
+    "name": "?CreateSpecificDocument@LaunchUIInteraction@@EEAAJPEAPEAUIXMLDOMDocument2@@H@Z",
+    "prototype": "__int64 __fastcall(const OLECHAR **this, struct IXMLDOMDocument2 **, int)",
+    "rank_score": 921,
+    "size": 517,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "wil::details::WilApiImpl_SubscribeFeatureStateChangeNotification(FEATURE_STATE_CHANGE_SUBSCRIPTION__ * *,void (*)(void *),void *)",
+    "ea": "0x180012110",
+    "function_file": "functions/180012110_wil_details_WilApiImpl_SubscribeFeatureStateChangeNotification_FEATURE_STATE_CHANGE_SUBSCRIPTION_void_void_voi.md",
+    "matched_imports": [
+      "KERNEL32!AcquireSRWLockExclusive",
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!ReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [
+      "ntdll.dll",
+      "RtlRegisterFeatureConfigurationChangeNotification"
+    ],
+    "name": "?WilApiImpl_SubscribeFeatureStateChangeNotification@details@wil@@YAXPEAPEAUFEATURE_STATE_CHANGE_SUBSCRIPTION__@@P6AXPEAX@Z1@Z",
+    "prototype": "void __fastcall(struct FEATURE_STATE_CHANGE_SUBSCRIPTION__ **this, struct FEATURE_STATE_CHANGE_SUBSCRIPTION__ **, void (*)(void *), void *)",
+    "rank_score": 906,
+    "size": 269,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "SdpHandleReportFile(Settings *,ushort *,IXMLDOMDocument2 * *)",
+    "ea": "0x1800034c4",
+    "function_file": "functions/1800034c4_SdpHandleReportFile_Settings_ushort_IXMLDOMDocument2.md",
+    "matched_imports": [
+      "KERNEL32!CopyFileW",
+      "KERNEL32!GetLastError",
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString"
+    ],
+    "matched_strings": [
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><Data/>"
+    ],
+    "name": "?SdpHandleReportFile@@YAJPEAVSettings@@PEAGPEAPEAUIXMLDOMDocument2@@@Z",
+    "prototype": "__int64 __fastcall(struct Settings *, unsigned __int16 *, struct IXMLDOMDocument2 **)",
+    "rank_score": 888,
+    "size": 840,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SdpXmlValidate(IXMLDOMDocument2 *,std::pair<ushort *,IXMLDOMDocument2 *> *,ulong)",
+    "ea": "0x1800293a0",
+    "function_file": "functions/1800293a0_SdpXmlValidate_IXMLDOMDocument2_std_pair_ushort_IXMLDOMDocument2_ulong.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_GetErrorInfo",
+      "OLEAUT32!__imp_SysFreeString",
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [
+      "SdpXmlValidate"
+    ],
+    "name": "?SdpXmlValidate@@YAJPEAUIXMLDOMDocument2@@PEAU?$pair@PEAGPEAUIXMLDOMDocument2@@@std@@K@Z",
+    "prototype": "__int64 __fastcall(__int64 *, __int64)",
+    "rank_score": 882,
+    "size": 908,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SdpXmlLoad(ushort const *,IXMLDOMDocument2 * *)",
+    "ea": "0x180028988",
+    "function_file": "functions/180028988_SdpXmlLoad_ushort_const_IXMLDOMDocument2.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_VariantClear",
+      "OLEAUT32!__imp_VariantInit",
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [
+      "SdpXmlLoad"
+    ],
+    "name": "?SdpXmlLoad@@YAJPEBGPEAPEAUIXMLDOMDocument2@@@Z",
+    "prototype": "__int64 __fastcall(OLECHAR *psz, LPVOID *)",
+    "rank_score": 877,
+    "size": 419,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "wil::details::ProcessHeapAlloc(ulong,unsigned __int64)",
+    "ea": "0x18000e5e4",
+    "function_file": "functions/18000e5e4_wil_details_ProcessHeapAlloc_ulong_unsigned_int64.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "?ProcessHeapAlloc@details@wil@@YAPEAXK_K@Z",
+    "prototype": "LPVOID __fastcall(DWORD dwFlags, SIZE_T dwBytes)",
+    "rank_score": 857,
+    "size": 158,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 1,
+    "demangled": "Script::ParseScriptXml(IXMLDOMNode *)",
+    "ea": "0x18001dc28",
+    "function_file": "functions/18001dc28_Script_ParseScriptXml_IXMLDOMNode.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "OLEAUT32!__imp_SysFreeString"
+    ],
+    "matched_strings": [
+      "ExtensionPoint",
+      "Script::ParseScriptXml",
+      "Script::ParseScriptXml",
+      "Script::ParseScriptXml",
+      "Script::ParseScriptXml"
+    ],
+    "name": "?ParseScriptXml@Script@@AEAAJPEAUIXMLDOMNode@@@Z",
+    "prototype": "__int64 __fastcall(Script *__hidden this, struct IXMLDOMNode *)",
+    "rank_score": 854,
+    "size": 1380,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "CScriptedDiag::GetPackageXml(IXMLDOMDocument2 * *)",
+    "ea": "0x18000bef0",
+    "function_file": "functions/18000bef0_CScriptedDiag_GetPackageXml_IXMLDOMDocument2.md",
+    "matched_imports": [
+      "KERNEL32!FindClose",
+      "KERNEL32!FindFirstFileW",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [
+      "CScriptedDiag::GetPackageXml",
+      "CScriptedDiag::GetPackageXml",
+      "CScriptedDiag::GetPackageXml",
+      "CScriptedDiag::GetPackageXml",
+      "CScriptedDiag::GetPackageXml"
+    ],
+    "name": "?GetPackageXml@CScriptedDiag@@AEAAJPEAPEAUIXMLDOMDocument2@@@Z",
+    "prototype": "__int64 __fastcall(CScriptedDiag *__hidden this, struct IXMLDOMDocument2 **)",
+    "rank_score": 834,
+    "size": 588,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "wil::details::FeatureStateManager::RecordFeatureUsage(uint,wil_details_ServiceReportingKind,unsigned __int64)",
+    "ea": "0x18000eb14",
+    "function_file": "functions/18000eb14_wil_details_FeatureStateManager_RecordFeatureUsage_uint_wil_details_ServiceReportingKind_unsigned_int64.md",
+    "matched_imports": [
+      "KERNEL32!AcquireSRWLockExclusive",
+      "KERNEL32!ReleaseSRWLockExclusive"
+    ],
+    "matched_strings": [],
+    "name": "?RecordFeatureUsage@FeatureStateManager@details@wil@@QEAAXIW4wil_details_ServiceReportingKind@@_K@Z",
+    "prototype": "void __fastcall(__int64, unsigned int, unsigned int, unsigned int)",
+    "rank_score": 830,
+    "size": 271,
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SdpParseParameter(IXMLDOMNode *,_SDIAG_PARAMETER *)",
+    "ea": "0x180003e50",
+    "function_file": "functions/180003e50_SdpParseParameter_IXMLDOMNode_SDIAG_PARAMETER.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysFreeString",
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [],
+    "name": "?SdpParseParameter@@YAJPEAUIXMLDOMNode@@PEAU_SDIAG_PARAMETER@@@Z",
+    "prototype": "__int64 __fastcall(struct IXMLDOMNode *, struct _SDIAG_PARAMETER *)",
+    "rank_score": 822,
+    "size": 658,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Rootcause::RecordRootcause(ushort *,ushort *,int,tagSAFEARRAY *,tagSAFEARRAY *)",
+    "ea": "0x18001aaf0",
+    "function_file": "functions/18001aaf0_Rootcause_RecordRootcause_ushort_ushort_int_tagSAFEARRAY_tagSAFEARRAY.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SafeArrayCopy",
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [],
+    "name": "?RecordRootcause@Rootcause@@QEAAJPEAG0HPEAUtagSAFEARRAY@@1@Z",
+    "prototype": "__int64 __fastcall(struct _LIST_ENTRY **this, unsigned __int16 *, unsigned __int16 *, int, struct tagSAFEARRAY *psa, struct tagSAFEARRAY *)",
+    "rank_score": 819,
+    "size": 519,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "SdpCheckBooleanAttribute(IXMLDOMNode *,ushort const *,int *)",
+    "ea": "0x18000330c",
+    "function_file": "functions/18000330c_SdpCheckBooleanAttribute_IXMLDOMNode_ushort_const_int.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString",
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [],
+    "name": "?SdpCheckBooleanAttribute@@YAJPEAUIXMLDOMNode@@PEBGPEAH@Z",
+    "prototype": "__int64 __fastcall(struct IXMLDOMNode *, OLECHAR *psz, int *)",
+    "rank_score": 816,
+    "size": 253,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::RawUsageIndex::RecordUsageInternal(void *,unsigned __int64,void *,unsigned __int64,uint)",
+    "ea": "0x18000f1ac",
+    "function_file": "functions/18000f1ac_wil_details_abi_RawUsageIndex_RecordUsageInternal_void_unsigned_int64_void_unsigned_int64_uint.md",
+    "matched_imports": [
+      "msvcrt!memcpy_s",
+      "msvcrt!memmove_s"
+    ],
+    "matched_strings": [],
+    "name": "?RecordUsageInternal@RawUsageIndex@details_abi@wil@@AEAA_NPEAX_K01I@Z",
+    "prototype": "char __fastcall(wil::details_abi::RawUsageIndex *this, void *Buf1, size_t Size, void *, unsigned __int64, unsigned int)",
+    "rank_score": 813,
+    "size": 896,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "ATL::CAtlArray<void *,ATL::CElementTraits<void *>>::GrowBuffer(unsigned __int64)",
+    "ea": "0x180023fa0",
+    "function_file": "functions/180023fa0_ATL_CAtlArray_void_ATL_CElementTraits_void_GrowBuffer_unsigned_int64.md",
+    "matched_imports": [
+      "msvcrt!calloc",
+      "msvcrt!free",
+      "msvcrt!memmove_s"
+    ],
+    "matched_strings": [],
+    "name": "?GrowBuffer@?$CAtlArray@PEAXV?$CElementTraits@PEAX@ATL@@@ATL@@AEAA_N_K@Z",
+    "prototype": "char __fastcall(__int64, size_t)",
+    "rank_score": 805,
+    "size": 250,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ATL::CAtlArray<ATL::CAtlRegExp<ATL::CAtlRECharTraitsW>::INSTRUCTION,ATL::CElementTraits<ATL::CAtlRegExp<ATL::CAtlRECharTraitsW>::INSTRUCTION>>::GrowBuffer(unsigned __int64)",
+    "ea": "0x1800240a0",
+    "function_file": "functions/1800240a0_ATL_CAtlArray_ATL_CAtlRegExp_ATL_CAtlRECharTraitsW_INSTRUCTION_ATL_CElementTraits_ATL_CAtlRegExp_ATL_CAtlRECha.md",
+    "matched_imports": [
+      "msvcrt!calloc",
+      "msvcrt!free",
+      "msvcrt!memmove_s"
+    ],
+    "matched_strings": [],
+    "name": "?GrowBuffer@?$CAtlArray@UINSTRUCTION@?$CAtlRegExp@VCAtlRECharTraitsW@ATL@@@ATL@@V?$CElementTraits@UINSTRUCTION@?$CAtlRegExp@VCAtlRECharTraitsW@ATL@@@ATL@@@3@@ATL@@AEAA_N_K@Z",
+    "prototype": "char __fastcall(__int64, size_t)",
+    "rank_score": 804,
+    "size": 250,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::ThreadLocalData::~ThreadLocalData(void)",
+    "ea": "0x180009664",
+    "function_file": "functions/180009664_wil_details_abi_ThreadLocalData_ThreadLocalData_void.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "??1ThreadLocalData@details_abi@wil@@QEAA@XZ",
+    "prototype": "void __fastcall(wil::details_abi::ThreadLocalData *__hidden this)",
+    "rank_score": 802,
+    "size": 124,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "CScriptedDiag::CopyPackage(ushort const *,ushort const *)",
+    "ea": "0x18000a86c",
+    "function_file": "functions/18000a86c_CScriptedDiag_CopyPackage_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!CreateDirectoryW",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [
+      "CScriptedDiag::CopyPackage",
+      "CScriptedDiag::CopyPackage",
+      "CScriptedDiag::CopyPackage",
+      "CScriptedDiag::CopyPackage"
+    ],
+    "name": "?CopyPackage@CScriptedDiag@@AEAAJPEBG0@Z",
+    "prototype": "__int64 __fastcall(CScriptedDiag *this, const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 792,
+    "size": 537,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "Interaction::ParseAnswerXml(IXMLDOMDocument2 *)",
+    "ea": "0x180020648",
+    "function_file": "functions/180020648_Interaction_ParseAnswerXml_IXMLDOMDocument2.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysFreeString",
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [
+      "Interaction::ParseAnswerXml",
+      "Interaction::ParseAnswerXml",
+      "Interaction::ParseAnswerXml",
+      "SdpXmlDeleteNode"
+    ],
+    "name": "?ParseAnswerXml@Interaction@@IEAAJPEAUIXMLDOMDocument2@@@Z",
+    "prototype": "__int64 __fastcall(const wchar_t **this, struct IXMLDOMDocument2 *, const unsigned __int16 *)",
+    "rank_score": 785,
+    "size": 678,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "DiagPackage::BuildReportComputerXml(_OSVERSIONINFOEXW,_SYSTEM_INFO,IXMLDOMDocument2 * *)",
+    "ea": "0x18001483c",
+    "function_file": "functions/18001483c_DiagPackage_BuildReportComputerXml_OSVERSIONINFOEXW_SYSTEM_INFO_IXMLDOMDocument2.md",
+    "matched_imports": [
+      "KERNEL32!GetComputerNameExW",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [
+      "DiagPackage::BuildReportComputerXml",
+      "DiagPackage::BuildReportComputerXml",
+      "DiagPackage::BuildReportComputerXml",
+      "DiagPackage::BuildReportComputerXml",
+      "DiagPackage::BuildReportComputerXml",
+      "DiagPackage::BuildReportComputerXml",
+      "DiagPackage::BuildReportComputerXml",
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><ComputerInformation/>"
+    ],
+    "name": "?BuildReportComputerXml@DiagPackage@@AEAAJU_OSVERSIONINFOEXW@@U_SYSTEM_INFO@@PEAPEAUIXMLDOMDocument2@@@Z",
+    "prototype": "__int64 __fastcall(DiagPackage *__hidden this, struct _OSVERSIONINFOEXW *__struct_ptr, struct _SYSTEM_INFO *__struct_ptr, struct IXMLDOMDocument2 **)",
+    "rank_score": 775,
+    "size": 1850,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SdpCreateSecurityDescriptor(ulong,_SECURITY_ATTRIBUTES *)",
+    "ea": "0x180026dec",
+    "function_file": "functions/180026dec_SdpCreateSecurityDescriptor_ulong_SECURITY_ATTRIBUTES.md",
+    "matched_imports": [
+      "ADVAPI32!ConvertStringSecurityDescriptorToSecurityDescriptorW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!LocalFree"
+    ],
+    "matched_strings": [
+      "SdpCreateSecurityDescriptor",
+      "SdpCreateSecurityDescriptor"
+    ],
+    "name": "?SdpCreateSecurityDescriptor@@YAJKPEAU_SECURITY_ATTRIBUTES@@@Z",
+    "prototype": "__int64 __fastcall(unsigned int, struct _SECURITY_ATTRIBUTES *)",
+    "rank_score": 717,
+    "size": 266,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__raise_securityfailure",
+    "ea": "0x180001ee0",
+    "function_file": "functions/180001ee0_raise_securityfailure.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcess",
+      "KERNEL32!SetUnhandledExceptionFilter",
+      "KERNEL32!TerminateProcess",
+      "KERNEL32!UnhandledExceptionFilter"
+    ],
+    "matched_strings": [],
+    "name": "__raise_securityfailure",
+    "prototype": "BOOL __fastcall(struct _EXCEPTION_POINTERS *ExceptionInfo)",
+    "rank_score": 711,
+    "size": 52,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 34,
+    "demangled": "SdpXmlCreate(ushort const *,IXMLDOMDocument2 * *)",
+    "ea": "0x1800280f8",
+    "function_file": "functions/1800280f8_SdpXmlCreate_ushort_const_IXMLDOMDocument2.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString",
+      "ole32!CoCreateInstance"
+    ],
+    "matched_strings": [
+      "SdpXmlCreate"
+    ],
+    "name": "?SdpXmlCreate@@YAJPEBGPEAPEAUIXMLDOMDocument2@@@Z",
+    "prototype": "__int64 __fastcall(OLECHAR *psz, LPVOID *)",
+    "rank_score": 700,
+    "size": 380,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 1,
+    "demangled": "CScriptedDiag::VerifyPackageTrust(ushort const *)",
+    "ea": "0x180011ba4",
+    "function_file": "functions/180011ba4_CScriptedDiag_VerifyPackageTrust_ushort_const.md",
+    "matched_imports": [
+      "CRYPT32!CertCompareCertificate",
+      "CRYPT32!CertFreeCertificateContext"
+    ],
+    "matched_strings": [
+      "SdpCompareCertificate"
+    ],
+    "name": "?VerifyPackageTrust@CScriptedDiag@@AEAAJPEBG@Z",
+    "prototype": "__int64 __fastcall(CScriptedDiag *this, const unsigned __int16 *)",
+    "rank_score": 693,
+    "size": 1074,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "Rootcause::AddXmlToReport(ushort *,ushort *,ushort *,ushort *,ushort *,ushort *,ushort *)",
+    "ea": "0x180018718",
+    "function_file": "functions/180018718_Rootcause_AddXmlToReport_ushort_ushort_ushort_ushort_ushort_ushort_ushort.md",
+    "matched_imports": [
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [
+      "Rootcause::AddXmlToReport"
+    ],
+    "name": "?AddXmlToReport@Rootcause@@QEAAJPEAG000000@Z",
+    "prototype": "__int64 __fastcall(Rootcause *__hidden this, unsigned __int16 *, unsigned __int16 *, unsigned __int16 *, unsigned __int16 *, unsigned __int16 *, wchar_t *String1, wchar_t *)",
+    "rank_score": 672,
+    "size": 891,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SdpRemoveFileFromList(_LIST_ENTRY *,ushort const *)",
+    "ea": "0x1800076a4",
+    "function_file": "functions/1800076a4_SdpRemoveFileFromList_LIST_ENTRY_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree",
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [
+      "SdpRemoveFileFromList"
+    ],
+    "name": "?SdpRemoveFileFromList@@YAJPEAU_LIST_ENTRY@@PEBG@Z",
+    "prototype": "__int64 __fastcall(struct _LIST_ENTRY *, const unsigned __int16 *)",
+    "rank_score": 655,
+    "size": 243,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CScriptedDiag::CheckGroupPolicy(int *)",
+    "ea": "0x18000a650",
+    "function_file": "functions/18000a650_CScriptedDiag_CheckGroupPolicy_int.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegQueryValueExW"
+    ],
+    "matched_strings": [],
+    "name": "?CheckGroupPolicy@CScriptedDiag@@AEAAJPEAH@Z",
+    "prototype": "__int64 __fastcall(CScriptedDiag *__hidden this, int *)",
+    "rank_score": 624,
+    "size": 218,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SdpShouldValidateTrust(int *)",
+    "ea": "0x1800077a0",
+    "function_file": "functions/1800077a0_SdpShouldValidateTrust_int.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExW",
+      "ADVAPI32!RegQueryValueExW"
+    ],
+    "matched_strings": [],
+    "name": "?SdpShouldValidateTrust@@YAJPEAH@Z",
+    "prototype": "__int64 __fastcall(int *)",
+    "rank_score": 624,
+    "size": 214,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 6,
+    "demangled": "SdpFreeParamSet(_SDIAG_PARAMSET *)",
+    "ea": "0x1800025c8",
+    "function_file": "functions/1800025c8_SdpFreeParamSet_SDIAG_PARAMSET.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysFreeString"
+    ],
+    "matched_strings": [],
+    "name": "?SdpFreeParamSet@@YAJPEAU_SDIAG_PARAMSET@@@Z",
+    "prototype": "__int64 __fastcall(struct _SDIAG_PARAMSET *)",
+    "rank_score": 620,
+    "size": 209,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SdpParseDiagnosticIdentification(IXMLDOMNode *,ushort * *,ushort * *,ushort * *)",
+    "ea": "0x1800038c4",
+    "function_file": "functions/1800038c4_SdpParseDiagnosticIdentification_IXMLDOMNode_ushort_ushort_ushort.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysFreeString"
+    ],
+    "matched_strings": [],
+    "name": "?SdpParseDiagnosticIdentification@@YAJPEAUIXMLDOMNode@@PEAPEAG11@Z",
+    "prototype": "__int64 __fastcall(struct IXMLDOMNode *, unsigned __int16 **, unsigned __int16 **, unsigned __int16 **)",
+    "rank_score": 620,
+    "size": 608,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CScriptedDiag::GetUniqueName(ushort * *)",
+    "ea": "0x18000c910",
+    "function_file": "functions/18000c910_CScriptedDiag_GetUniqueName_ushort.md",
+    "matched_imports": [
+      "RPCRT4!RpcStringFreeW",
+      "RPCRT4!UuidCreate",
+      "RPCRT4!UuidToStringW"
+    ],
+    "matched_strings": [],
+    "name": "?GetUniqueName@CScriptedDiag@@AEAAJPEAPEAG@Z",
+    "prototype": "__int64 __fastcall(CScriptedDiag *__hidden this, unsigned __int16 **)",
+    "rank_score": 618,
+    "size": 281,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "wil::details::LogFailure(void *,uint,char const *,char const *,char const *,void *,wil::FailureType,wil::details::ResultStatus const &,ushort const *,bool,ushort *,unsigned __int64,char *,unsigned __int64,wil::FailureFlags,wil::FailureInfo *)",
+    "ea": "0x18000dee8",
+    "function_file": "functions/18000dee8_wil_details_LogFailure_void_uint_char_const_char_const_char_const_void_wil_FailureType_wil_details_ResultStatu.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentThreadId",
+      "KERNEL32!IsDebuggerPresent",
+      "KERNEL32!OutputDebugStringW"
+    ],
+    "matched_strings": [],
+    "name": "?LogFailure@details@wil@@YAXPEAXIPEBD110W4FailureType@2@AEBUResultStatus@12@PEBG_NPEAG_KPEAD7W4FailureFlags@2@PEAUFailureInfo@2@@Z",
+    "prototype": "void __fastcall(__int64, int, __int64, __int64, __int64, __int64, int, unsigned int *, _WORD *, __int64, wil *lpOutputString, __int64, _BYTE *, __int64, int, unsigned __int64)",
+    "rank_score": 616,
+    "size": 761,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "wil::details::ReportFailure_Return<1>(void *,uint,char const *,char const *,char const *,void *,wil::details::ResultStatus const &,ushort const *,wil::details::ReportFailureOptions,wil::FailureFlags)",
+    "ea": "0x1800089b8",
+    "function_file": "functions/1800089b8_wil_details_ReportFailure_Return_1_void_uint_char_const_char_const_char_const_void_wil_details_ResultStatus_co.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentThreadId",
+      "KERNEL32!IsDebuggerPresent",
+      "KERNEL32!OutputDebugStringW"
+    ],
+    "matched_strings": [],
+    "name": "??$ReportFailure_Return@$00@details@wil@@YAXPEAXIPEBD110AEBUResultStatus@01@PEBGW4ReportFailureOptions@01@W4FailureFlags@1@@Z",
+    "prototype": "void __fastcall(__int64, int, __int64, __int64, int, __int64, int *)",
+    "rank_score": 615,
+    "size": 662,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "wil::details::ReportFailure_NoReturn<3>(void *,uint,char const *,char const *,char const *,void *,wil::details::ResultStatus const &,ushort const *,wil::details::ReportFailureOptions)",
+    "ea": "0x180008750",
+    "function_file": "functions/180008750_wil_details_ReportFailure_NoReturn_3_void_uint_char_const_char_const_char_const_void_wil_details_ResultStatus_.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentThreadId",
+      "KERNEL32!IsDebuggerPresent",
+      "KERNEL32!OutputDebugStringW"
+    ],
+    "matched_strings": [],
+    "name": "??$ReportFailure_NoReturn@$02@details@wil@@YAXPEAXIPEBD110AEBUResultStatus@01@PEBGW4ReportFailureOptions@01@@Z",
+    "prototype": "void __fastcall __noreturn(__int64, int, __int64, __int64, int, __int64, int *)",
+    "rank_score": 613,
+    "size": 610,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::ThreadLocalData::SetLastError(wil::FailureInfo const &)",
+    "ea": "0x180010b78",
+    "function_file": "functions/180010b78_wil_details_abi_ThreadLocalData_SetLastError_wil_FailureInfo_const.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree",
+      "msvcrt!memcpy_s"
+    ],
+    "matched_strings": [],
+    "name": "?SetLastError@ThreadLocalData@details_abi@wil@@QEAAXAEBUFailureInfo@3@@Z",
+    "prototype": "void __fastcall(wil::details_abi::ThreadLocalData *__hidden this, const struct wil::FailureInfo *)",
+    "rank_score": 610,
+    "size": 645,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::FeatureStateData::~FeatureStateData(void)",
+    "ea": "0x18000927c",
+    "function_file": "functions/18000927c_wil_details_abi_FeatureStateData_FeatureStateData_void.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "??1FeatureStateData@details_abi@wil@@QEAA@XZ",
+    "prototype": "void __fastcall(wil::details_abi::FeatureStateData *__hidden this)",
+    "rank_score": 607,
+    "size": 208,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "Rootcause::PopulateInstance(ushort const *,Rootcause::SDIAG_ROOTCAUSE_STATUS,tagSAFEARRAY *,tagSAFEARRAY *,Rootcause::_SDIAG_ROOTCAUSE_INSTANCE *)",
+    "ea": "0x18001aa50",
+    "function_file": "functions/18001aa50_Rootcause_PopulateInstance_ushort_const_Rootcause_SDIAG_ROOTCAUSE_STATUS_tagSAFEARRAY_tagSAFEARRAY_Rootcause_S.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SafeArrayCopy",
+      "OLEAUT32!__imp_SysAllocString"
+    ],
+    "matched_strings": [],
+    "name": "?PopulateInstance@Rootcause@@AEAAJPEBGW4SDIAG_ROOTCAUSE_STATUS@1@PEAUtagSAFEARRAY@@2PEAU_SDIAG_ROOTCAUSE_INSTANCE@1@@Z",
+    "prototype": "__int64 __fastcall(__int64, const OLECHAR *, int, SAFEARRAY *, SAFEARRAY *psa, __int64)",
+    "rank_score": 605,
+    "size": 154,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "wil::details_abi::UsageIndexProperty::Read(uchar * &,uchar *)",
+    "ea": "0x18000e8e0",
+    "function_file": "functions/18000e8e0_wil_details_abi_UsageIndexProperty_Read_uchar_uchar.md",
+    "matched_imports": [
+      "msvcrt!memcpy_s"
+    ],
+    "matched_strings": [],
+    "name": "?Read@UsageIndexProperty@details_abi@wil@@QEAA_NAEAPEAEPEAE@Z",
+    "prototype": "bool __fastcall(wil::details_abi::UsageIndexProperty *__hidden this, unsigned __int8 **, unsigned __int8 *)",
+    "rank_score": 605,
+    "size": 233,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::UsageIndexProperty::Write(uchar * &,uchar *)",
+    "ea": "0x1800123cc",
+    "function_file": "functions/1800123cc_wil_details_abi_UsageIndexProperty_Write_uchar_uchar.md",
+    "matched_imports": [
+      "msvcrt!memcpy_s"
+    ],
+    "matched_strings": [],
+    "name": "?Write@UsageIndexProperty@details_abi@wil@@QEBA_NAEAPEAEPEAE@Z",
+    "prototype": "bool __fastcall(wil::details_abi::UsageIndexProperty *this, char **, char *)",
+    "rank_score": 603,
+    "size": 217,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "Resolver::ParseResolverXml(IXMLDOMNode *)",
+    "ea": "0x18001c6e8",
+    "function_file": "functions/18001c6e8_Resolver_ParseResolverXml_IXMLDOMNode.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysFreeString"
+    ],
+    "matched_strings": [
+      "ExtensionPoint",
+      "Resolver::ParseResolverXml",
+      "Resolver::ParseResolverXml",
+      "Resolver::ParseResolverXml"
+    ],
+    "name": "?ParseResolverXml@Resolver@@AEAAJPEAUIXMLDOMNode@@@Z",
+    "prototype": "__int64 __fastcall(Resolver *__hidden this, struct IXMLDOMNode *)",
+    "rank_score": 599,
+    "size": 1184,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "SdpXmlGetAttribute(IXMLDOMDocument2 *,IXMLDOMNode *,ushort const *,ushort * *)",
+    "ea": "0x18002848c",
+    "function_file": "functions/18002848c_SdpXmlGetAttribute_IXMLDOMDocument2_IXMLDOMNode_ushort_const_ushort.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString"
+    ],
+    "matched_strings": [
+      "SdpXmlGetAttribute",
+      "SdpXmlGetAttribute",
+      "SdpXmlGetAttribute"
+    ],
+    "name": "?SdpXmlGetAttribute@@YAJPEAUIXMLDOMDocument2@@PEAUIXMLDOMNode@@PEBGPEAPEAG@Z",
+    "prototype": "__int64 __fastcall(struct IXMLDOMDocument2 *, struct IXMLDOMNode *, const unsigned __int16 *, unsigned __int16 **)",
+    "rank_score": 541,
+    "size": 528,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 24,
+    "caller_count": 0,
+    "demangled": "CScriptedDiag::Initialize(ushort *,IUnknown *,ushort *)",
+    "ea": "0x18000cf00",
+    "function_file": "functions/18000cf00_CScriptedDiag_Initialize_ushort_IUnknown_ushort.md",
+    "matched_imports": [
+      "KERNEL32!GetTickCount64"
+    ],
+    "matched_strings": [
+      "PackagePath"
+    ],
+    "name": "?Initialize@CScriptedDiag@@UEAAJPEAGPEAUIUnknown@@0@Z",
+    "prototype": "__int64 __fastcall(Settings **this, unsigned __int16 *, struct IUnknown *, unsigned __int16 *)",
+    "rank_score": 518,
+    "size": 1845,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 8,
+    "demangled": "SdpGetFullPath(ushort const *,ushort * *,ushort * *)",
+    "ea": "0x18002708c",
+    "function_file": "functions/18002708c_SdpGetFullPath_ushort_const_ushort_ushort.md",
+    "matched_imports": [
+      "KERNEL32!GetFullPathNameW",
+      "KERNEL32!GetLastError"
+    ],
+    "matched_strings": [
+      "SdpGetFullPath",
+      "SdpGetFullPath"
+    ],
+    "name": "?SdpGetFullPath@@YAJPEBGPEAPEAG1@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, unsigned __int16 **, unsigned __int16 **)",
+    "rank_score": 505,
+    "size": 344,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil_details_NtUpdateWnfStateData",
+    "ea": "0x180013264",
+    "function_file": "functions/180013264_wil_details_NtUpdateWnfStateData.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ntdll.dll",
+      "NtUpdateWnfStateData"
+    ],
+    "name": "wil_details_NtUpdateWnfStateData",
+    "prototype": "",
+    "rank_score": 505,
+    "size": 170,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 1,
+    "demangled": "Rootcause::BuildReportXml(Rootcause::_SDIAG_ROOTCAUSE_INSTANCE *,IXMLDOMDocument2 * *)",
+    "ea": "0x180018a9c",
+    "function_file": "functions/180018a9c_Rootcause_BuildReportXml_Rootcause_SDIAG_ROOTCAUSE_INSTANCE_IXMLDOMDocument2.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><DetailedInformation/>",
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><DetailedInformation/>",
+      "Rootcause::BuildReportXml",
+      "Rootcause::BuildReportXml",
+      "Rootcause::BuildReportXml",
+      "Rootcause::BuildReportXml",
+      "Rootcause::BuildReportXml",
+      "Rootcause::BuildReportXml",
+      "Rootcause::BuildReportXml",
+      "Rootcause::BuildReportXml",
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><RootCause/>"
+    ],
+    "name": "?BuildReportXml@Rootcause@@AEAAJPEAU_SDIAG_ROOTCAUSE_INSTANCE@1@PEAPEAUIXMLDOMDocument2@@@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 **this, SAFEARRAY **, struct IXMLDOMDocument2 **)",
+    "rank_score": 503,
+    "size": 2056,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil::details::unique_storage<wil::details::resource_policy<void *,void (*)(void *),&wil::details::UnregisterWilFeatureConfigurationChange(void *),wistd::integral_constant<unsigned __int64,0>,void *,void *,0,std::nullptr_t>>::~unique_storage<wil::details::resource_policy<void *,void (*)(void *),&wil::details::UnregisterWilFeatureConfigurationChange(void *),wistd::integral_constant<unsigned __int64,0>,void *,void *,0,std::nullptr_t>>(void)",
+    "ea": "0x1800091a0",
+    "function_file": "functions/1800091a0_wil_details_unique_storage_wil_details_resource_policy_void_void_void_wil_details_UnregisterWilFeatureConfigur.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ntdll.dll",
+      "RtlUnregisterFeatureConfigurationChangeNotification"
+    ],
+    "name": "??1?$unique_storage@U?$resource_policy@PEAXP6AXPEAX@Z$1?UnregisterWilFeatureConfigurationChange@details@wil@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@QEAA@XZ",
+    "prototype": "void __fastcall(__int64 *)",
+    "rank_score": 503,
+    "size": 101,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CScriptedDiag::GetTempDirPath(ushort * *)",
+    "ea": "0x18000c31c",
+    "function_file": "functions/18000c31c_CScriptedDiag_GetTempDirPath_ushort.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetTempPath2W"
+    ],
+    "matched_strings": [
+      "CScriptedDiag::GetTempDirPath",
+      "CScriptedDiag::GetTempDirPath"
+    ],
+    "name": "?GetTempDirPath@CScriptedDiag@@AEAAJPEAPEAG@Z",
+    "prototype": "__int64 __fastcall(CScriptedDiag *__hidden this, unsigned __int16 **)",
+    "rank_score": 496,
+    "size": 217,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SdpGetLongPath(ushort const *,ushort * *)",
+    "ea": "0x1800026a0",
+    "function_file": "functions/1800026a0_SdpGetLongPath_ushort_const_ushort.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetLongPathNameW"
+    ],
+    "matched_strings": [
+      "SdpGetLongPath",
+      "SdpGetLongPath"
+    ],
+    "name": "?SdpGetLongPath@@YAJPEBGPEAPEAG@Z",
+    "prototype": "__int64 __fastcall(LPCWSTR lpszShortPath, unsigned __int16 **)",
+    "rank_score": 496,
+    "size": 242,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil::details::RtlDllShutdownInProgress(void)",
+    "ea": "0x18000ffe0",
+    "function_file": "functions/18000ffe0_wil_details_RtlDllShutdownInProgress_void.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ntdll.dll",
+      "RtlDllShutdownInProgress"
+    ],
+    "name": "?RtlDllShutdownInProgress@details@wil@@YAEXZ",
+    "prototype": "FARPROC __fastcall(wil::details *this)",
+    "rank_score": 492,
+    "size": 87,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 4,
+    "demangled": "CScriptedDiag::ExitUpdateState(long,Settings::SDIAG_ENGINE_STATE,Settings::SDIAG_ENGINE_STATE *,ulong,Settings::SDIAG_ENGINE_STATE)",
+    "ea": "0x18000b1c0",
+    "function_file": "functions/18000b1c0_CScriptedDiag_ExitUpdateState_long_Settings_SDIAG_ENGINE_STATE_Settings_SDIAG_ENGINE_STATE_ulong_Settings_SDIA.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [
+      "CScriptedDiag::Rollback",
+      "CScriptedDiag::ExitUpdateState",
+      "CScriptedDiag::ExitUpdateState",
+      "CScriptedDiag::ExitUpdateState"
+    ],
+    "name": "?ExitUpdateState@CScriptedDiag@@AEAAXJW4SDIAG_ENGINE_STATE@Settings@@PEAW423@K0@Z",
+    "prototype": "void __fastcall(__int64, int, int, enum Settings::SDIAG_ENGINE_STATE *, __int64, int)",
+    "rank_score": 491,
+    "size": 275,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "Interaction::BuildExtensionNode(ushort *,IXMLDOMNode * *)",
+    "ea": "0x18001ee38",
+    "function_file": "functions/18001ee38_Interaction_BuildExtensionNode_ushort_IXMLDOMNode.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysStringLen"
+    ],
+    "matched_strings": [
+      "Interaction::BuildExtensionNode",
+      "Interaction::BuildExtensionNode",
+      "Interaction::BuildExtensionNode",
+      "Interaction::BuildExtensionNode",
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><ExtensionPoint>",
+      "</ExtensionPoint>"
+    ],
+    "name": "?BuildExtensionNode@Interaction@@IEAAJPEAGPEAPEAUIXMLDOMNode@@@Z",
+    "prototype": "__int64 __fastcall(Interaction *this, unsigned __int16 *, struct IXMLDOMNode **)",
+    "rank_score": 483,
+    "size": 466,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 22,
+    "demangled": "SdpXmlCheckNode(IXMLDOMNode *,ushort const *)",
+    "ea": "0x180028038",
+    "function_file": "functions/180028038_SdpXmlCheckNode_IXMLDOMNode_ushort_const.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysFreeString",
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [
+      "SdpXmlCheckNode"
+    ],
+    "name": "?SdpXmlCheckNode@@YAJPEAUIXMLDOMNode@@PEBG@Z",
+    "prototype": "__int64 __fastcall(struct IXMLDOMNode *, const unsigned __int16 *)",
+    "rank_score": 477,
+    "size": 185,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "DiagPackage::AddXmlToReport(ushort *,ushort *,ushort *,ushort *,ushort *,ushort *,ushort *)",
+    "ea": "0x180014544",
+    "function_file": "functions/180014544_DiagPackage_AddXmlToReport_ushort_ushort_ushort_ushort_ushort_ushort_ushort.md",
+    "matched_imports": [
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [
+      "DiagPackage::AddXmlToReport"
+    ],
+    "name": "?AddXmlToReport@DiagPackage@@QEAAJPEAG000000@Z",
+    "prototype": "__int64 __fastcall(struct Settings **this, unsigned __int16 *, unsigned __int16 *, unsigned __int16 *, unsigned __int16 *, wchar_t *String2, wchar_t *String1, wchar_t *)",
+    "rank_score": 472,
+    "size": 751,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "wil_details_WriteSRUMWnfUsageBuffer(wil::details_abi::heap_vector<wil_details_FeatureUsageSRUM> *)",
+    "ea": "0x180012e90",
+    "function_file": "functions/180012e90_wil_details_WriteSRUMWnfUsageBuffer_wil_details_abi_heap_vector_wil_details_FeatureUsageSRUM.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "?wil_details_WriteSRUMWnfUsageBuffer@@YAJPEAV?$heap_vector@Uwil_details_FeatureUsageSRUM@@@details_abi@wil@@@Z",
+    "prototype": "__int64 __fastcall(__int64 *)",
+    "rank_score": 471,
+    "size": 568,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "LaunchUIInteraction::ParseSpecificChildren(IXMLDOMNodeList *)",
+    "ea": "0x180026790",
+    "function_file": "functions/180026790_LaunchUIInteraction_ParseSpecificChildren_IXMLDOMNodeList.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysFreeString",
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [
+      "CommandLine"
+    ],
+    "name": "?ParseSpecificChildren@LaunchUIInteraction@@EEAAJPEAUIXMLDOMNodeList@@@Z",
+    "prototype": "__int64 __fastcall(LaunchUIInteraction *this, struct IXMLDOMNodeList *)",
+    "rank_score": 469,
+    "size": 447,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil::details::MicrosoftInternalNotifyFailure(wil::FailureInfo *)",
+    "ea": "0x18000e270",
+    "function_file": "functions/18000e270_wil_details_MicrosoftInternalNotifyFailure_wil_FailureInfo.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "kernelbase.dll"
+    ],
+    "name": "?MicrosoftInternalNotifyFailure@details@wil@@YAXPEAUFailureInfo@2@@Z",
+    "prototype": "void __fastcall(wil::details *__hidden this, struct wil::FailureInfo *)",
+    "rank_score": 464,
+    "size": 273,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil::details::WilDynamicLoadRaiseFailFastException(_EXCEPTION_RECORD *,_CONTEXT *,ulong)",
+    "ea": "0x180012290",
+    "function_file": "functions/180012290_wil_details_WilDynamicLoadRaiseFailFastException_EXCEPTION_RECORD_CONTEXT_ulong.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "kernelbase.dll"
+    ],
+    "name": "?WilDynamicLoadRaiseFailFastException@details@wil@@YAXPEAU_EXCEPTION_RECORD@@PEAU_CONTEXT@@K@Z",
+    "prototype": "void __fastcall(wil::details *this, struct _EXCEPTION_RECORD *, struct _CONTEXT *)",
+    "rank_score": 462,
+    "size": 88,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "wil::details::WilApiImpl_RecordFeatureUsage(uint,uint,uint,char const *)",
+    "ea": "0x180011fe0",
+    "function_file": "functions/180011fe0_wil_details_WilApiImpl_RecordFeatureUsage_uint_uint_uint_char_const.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "?WilApiImpl_RecordFeatureUsage@details@wil@@YAXIIIPEBD@Z",
+    "prototype": "void __fastcall(wil::details *this, int, unsigned int)",
+    "rank_score": 459,
+    "size": 288,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "DllMain",
+    "ea": "0x180002b34",
+    "function_file": "functions/180002b34_DllMain.md",
+    "matched_imports": [
+      "KERNEL32!DeleteCriticalSection",
+      "KERNEL32!InitializeCriticalSection"
+    ],
+    "matched_strings": [
+      "DllMain"
+    ],
+    "name": "DllMain",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 455,
+    "size": 110,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil::details::RtlNtStatusToDosErrorNoTeb(long)",
+    "ea": "0x180010040",
+    "function_file": "functions/180010040_wil_details_RtlNtStatusToDosErrorNoTeb_long.md",
+    "matched_imports": [
+      "KERNEL32!GetModuleHandleW",
+      "KERNEL32!GetProcAddress"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "?RtlNtStatusToDosErrorNoTeb@details@wil@@YAKJ@Z",
+    "prototype": "FARPROC __fastcall(wil::details *this)",
+    "rank_score": 452,
+    "size": 94,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "wil::details::FormatNtStatusMsg(long,ushort *,ulong)",
+    "ea": "0x18000b5d0",
+    "function_file": "functions/18000b5d0_wil_details_FormatNtStatusMsg_long_ushort_ulong.md",
+    "matched_imports": [
+      "KERNEL32!FormatMessageW",
+      "KERNEL32!GetModuleHandleW"
+    ],
+    "matched_strings": [
+      "ntdll.dll"
+    ],
+    "name": "?FormatNtStatusMsg@details@wil@@YAXJPEAGK@Z",
+    "prototype": "void __fastcall(DWORD dwMessageId, LPWSTR lpBuffer, DWORD nSize)",
+    "rank_score": 451,
+    "size": 112,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "SdpPathExists(ushort const *,int *)",
+    "ea": "0x1800027f8",
+    "function_file": "functions/1800027f8_SdpPathExists_ushort_const_int.md",
+    "matched_imports": [
+      "KERNEL32!FindClose",
+      "KERNEL32!FindFirstFileW"
+    ],
+    "matched_strings": [
+      "SdpPathExists"
+    ],
+    "name": "?SdpPathExists@@YAJPEBGPEAH@Z",
+    "prototype": "__int64 __fastcall(LPCWSTR lpFileName, int *)",
+    "rank_score": 447,
+    "size": 208,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "Interaction::BuildInteractionDocument(IXMLDOMDocument2 * *,int)",
+    "ea": "0x18001f844",
+    "function_file": "functions/18001f844_Interaction_BuildInteractionDocument_IXMLDOMDocument2_int.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocString",
+      "OLEAUT32!__imp_SysFreeString"
+    ],
+    "matched_strings": [],
+    "name": "?BuildInteractionDocument@Interaction@@IEAAJPEAPEAUIXMLDOMDocument2@@H@Z",
+    "prototype": "__int64 __fastcall(Interaction *this, struct IXMLDOMDocument2 **, int)",
+    "rank_score": 437,
+    "size": 963,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "Rootcause::get_DiagnosisResult(IXMLDOMDocument2 *)",
+    "ea": "0x18001b4d4",
+    "function_file": "functions/18001b4d4_Rootcause_get_DiagnosisResult_IXMLDOMDocument2.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?get_DiagnosisResult@Rootcause@@QEAAJPEAUIXMLDOMDocument2@@@Z",
+    "prototype": "__int64 __fastcall(struct _LIST_ENTRY **this, struct IXMLDOMDocument2 *)",
+    "rank_score": 432,
+    "size": 1261,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 11,
+    "demangled": "CScriptedDiag::CheckState(Settings::SDIAG_ENGINE_STATE *,ulong)",
+    "ea": "0x18000a730",
+    "function_file": "functions/18000a730_CScriptedDiag_CheckState_Settings_SDIAG_ENGINE_STATE_ulong.md",
+    "matched_imports": [
+      "KERNEL32!EnterCriticalSection",
+      "KERNEL32!LeaveCriticalSection"
+    ],
+    "matched_strings": [],
+    "name": "?CheckState@CScriptedDiag@@AEAAJPEAW4SDIAG_ENGINE_STATE@Settings@@K@Z",
+    "prototype": "__int64 __fastcall(CScriptedDiag *__hidden this, enum Settings::SDIAG_ENGINE_STATE *, unsigned int)",
+    "rank_score": 425,
+    "size": 223,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "SdpGetLocale(ushort *,ushort * *)",
+    "ea": "0x180005d60",
+    "function_file": "functions/180005d60_SdpGetLocale_ushort_ushort.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetThreadPreferredUILanguages"
+    ],
+    "matched_strings": [],
+    "name": "?SdpGetLocale@@YAJPEAGPEAPEAG@Z",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, unsigned __int16 **)",
+    "rank_score": 423,
+    "size": 661,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "SdpDebugPrint(ulong,char const *,...)",
+    "ea": "0x180026efc",
+    "function_file": "functions/180026efc_SdpDebugPrint_ulong_char_const.md",
+    "matched_imports": [
+      "msvcrt!_vsnprintf",
+      "ntdll!DbgPrintEx"
+    ],
+    "matched_strings": [],
+    "name": "?SdpDebugPrint@@YAXKPEBDZZ",
+    "prototype": "void(ULONG Level, const char *Format, ...)",
+    "rank_score": 418,
+    "size": 156,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "TextInteraction::ParseSpecificChildren(IXMLDOMNodeList *)",
+    "ea": "0x180025ff0",
+    "function_file": "functions/180025ff0_TextInteraction_ParseSpecificChildren_IXMLDOMNodeList.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysFreeString",
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [],
+    "name": "?ParseSpecificChildren@TextInteraction@@EEAAJPEAUIXMLDOMNodeList@@@Z",
+    "prototype": "__int64 __fastcall(TextInteraction *this, struct IXMLDOMNodeList *)",
+    "rank_score": 417,
+    "size": 257,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "SdpCheckDocumentVersion(IXMLDOMDocument2 *,ushort const *,ushort const *)",
+    "ea": "0x180003410",
+    "function_file": "functions/180003410_SdpCheckDocumentVersion_IXMLDOMDocument2_ushort_const_ushort_const.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysFreeString",
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [],
+    "name": "?SdpCheckDocumentVersion@@YAJPEAUIXMLDOMDocument2@@PEBG1@Z",
+    "prototype": "__int64 __fastcall(struct IXMLDOMDocument2 *, const unsigned __int16 *, const unsigned __int16 *)",
+    "rank_score": 416,
+    "size": 172,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "SdpParseBooleanNode(IXMLDOMNode *,int *)",
+    "ea": "0x180003814",
+    "function_file": "functions/180003814_SdpParseBooleanNode_IXMLDOMNode_int.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysFreeString",
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [],
+    "name": "?SdpParseBooleanNode@@YAJPEAUIXMLDOMNode@@PEAH@Z",
+    "prototype": "__int64 __fastcall(struct IXMLDOMNode *, int *)",
+    "rank_score": 416,
+    "size": 167,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "DiagPackage::InitializeRootcause(IXMLDOMNode *,Rootcause *)",
+    "ea": "0x180016148",
+    "function_file": "functions/180016148_DiagPackage_InitializeRootcause_IXMLDOMNode_Rootcause.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "?InitializeRootcause@DiagPackage@@AEAAJPEAUIXMLDOMNode@@PEAVRootcause@@@Z",
+    "prototype": "__int64 __fastcall(DiagPackage *this, struct IXMLDOMNode *, struct Rootcause *)",
+    "rank_score": 415,
+    "size": 218,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 4,
+    "demangled": "wil::GetFailureLogString(ushort *,unsigned __int64,wil::FailureInfo const &)",
+    "ea": "0x18000b984",
+    "function_file": "functions/18000b984_wil_GetFailureLogString_ushort_unsigned_int64_wil_FailureInfo_const.md",
+    "matched_imports": [
+      "KERNEL32!FormatMessageW",
+      "KERNEL32!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "?GetFailureLogString@wil@@YAJPEAG_KAEBUFailureInfo@1@@Z",
+    "prototype": "__int64 __fastcall(wil *this, unsigned __int16 *, __int64, const struct wil::FailureInfo *)",
+    "rank_score": 414,
+    "size": 694,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "wil::details::_dynamic_atexit_destructor_for__g_threadFailureCallbacks__",
+    "ea": "0x180029fa0",
+    "function_file": "functions/180029fa0_wil_details_dynamic_atexit_destructor_for_g_threadFailureCallbacks.md",
+    "matched_imports": [
+      "KERNEL32!GetProcessHeap",
+      "KERNEL32!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "wil::details::_dynamic_atexit_destructor_for__g_threadFailureCallbacks__",
+    "prototype": "char *()",
+    "rank_score": 411,
+    "size": 94,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 6,
+    "demangled": "SdpFreeDispInfo(_SDIAG_DISPINFO *)",
+    "ea": "0x180002554",
+    "function_file": "functions/180002554_SdpFreeDispInfo_SDIAG_DISPINFO.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysFreeString"
+    ],
+    "matched_strings": [],
+    "name": "?SdpFreeDispInfo@@YAJPEAU_SDIAG_DISPINFO@@@Z",
+    "prototype": "__int64 __fastcall(struct _SDIAG_DISPINFO *)",
+    "rank_score": 409,
+    "size": 109,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "wil::details::GetContextAndNotifyFailure(wil::FailureInfo *,char *,unsigned __int64)",
+    "ea": "0x18000b7f0",
+    "function_file": "functions/18000b7f0_wil_details_GetContextAndNotifyFailure_wil_FailureInfo_char_unsigned_int64.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "?GetContextAndNotifyFailure@details@wil@@YAXPEAUFailureInfo@2@PEAD_K@Z",
+    "prototype": "void __fastcall(unsigned __int64 this, struct wil::FailureInfo *, char *)",
+    "rank_score": 407,
+    "size": 327,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "CScriptedDiag::get_PrivacyLink(ushort * *)",
+    "ea": "0x1800138d0",
+    "function_file": "functions/1800138d0_CScriptedDiag_get_PrivacyLink_ushort.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocString"
+    ],
+    "matched_strings": [
+      "CScriptedDiag::get_PrivacyLink",
+      "CScriptedDiag::get_PrivacyLink",
+      "Settings::get_PackagePrivacyLink",
+      "Settings::get_PackagePrivacyLink"
+    ],
+    "name": "?get_PrivacyLink@CScriptedDiag@@UEAAJPEAPEAG@Z",
+    "prototype": "__int64 __fastcall(CScriptedDiag *__hidden this, unsigned __int16 **)",
+    "rank_score": 387,
+    "size": 312,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "Interaction::CreateInteractionsFromXml(Settings *,IXMLDOMNode *,IXMLDOMDocument2 *,Interaction * * *,ulong *)",
+    "ea": "0x18001fc10",
+    "function_file": "functions/18001fc10_Interaction_CreateInteractionsFromXml_Settings_IXMLDOMNode_IXMLDOMDocument2_Interaction_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Interaction::CreateInteractionsFromXml",
+      "Interaction::CreateInteractionsFromXml",
+      "Interaction::CreateInteractionsFromXml",
+      "Interaction::CreateInteractionsFromXml",
+      "Interaction::CreateInteractionsFromXml",
+      "Interaction::CreateInteractionsFromXml",
+      "Interaction::CreateInteractionsFromXml",
+      "Interaction::CreateInteractionsFromXml"
+    ],
+    "name": "?CreateInteractionsFromXml@Interaction@@SAJPEAVSettings@@PEAUIXMLDOMNode@@PEAUIXMLDOMDocument2@@PEAPEAPEAV1@PEAK@Z",
+    "prototype": "__int64 __fastcall(struct Settings *, struct IXMLDOMNode *, struct IXMLDOMDocument2 *, struct Interaction ***, unsigned int *)",
+    "rank_score": 363,
+    "size": 1540,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "DiagPackage::ParsePrivacyLink(IXMLDOMNode *)",
+    "ea": "0x1800170bc",
+    "function_file": "functions/1800170bc_DiagPackage_ParsePrivacyLink_IXMLDOMNode.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysFreeString"
+    ],
+    "matched_strings": [
+      "DiagPackage::ParsePrivacyLink",
+      "Settings::set_PackagePrivacyLink",
+      "Settings::set_PackagePrivacyLink"
+    ],
+    "name": "?ParsePrivacyLink@DiagPackage@@AEAAJPEAUIXMLDOMNode@@@Z",
+    "prototype": "__int64 __fastcall(DiagPackage *__hidden this, struct IXMLDOMNode *)",
+    "rank_score": 348,
+    "size": 311,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "SdpIsSubDirectory(ushort const *,ushort const *,int *)",
+    "ea": "0x18002758c",
+    "function_file": "functions/18002758c_SdpIsSubDirectory_ushort_const_ushort_const_int.md",
+    "matched_imports": [
+      "msvcrt!_wcsnicmp"
+    ],
+    "matched_strings": [
+      "SdpIsSubDirectory",
+      "SdpIsSubDirectory",
+      "SdpIsSubDirectory"
+    ],
+    "name": "?SdpIsSubDirectory@@YAJPEBG0PEAH@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, const unsigned __int16 *, int *)",
+    "rank_score": 341,
+    "size": 505,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "Resolver::BuildResultXml(int,ushort const *,IXMLDOMDocument2 * *)",
+    "ea": "0x18001c224",
+    "function_file": "functions/18001c224_Resolver_BuildResultXml_int_ushort_const_IXMLDOMDocument2.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Resolver::BuildResultXml",
+      "Resolver::BuildResultXml",
+      "Resolver::BuildResultXml",
+      "Resolver::BuildResultXml",
+      "Resolver::BuildResultXml",
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><Resolution/>",
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><Script/>"
+    ],
+    "name": "?BuildResultXml@Resolver@@AEAAJHPEBGPEAPEAUIXMLDOMDocument2@@@Z",
+    "prototype": "__int64 __fastcall(Resolver *this, int, const unsigned __int16 *, struct IXMLDOMDocument2 **)",
+    "rank_score": 320,
+    "size": 896,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "Resolver::get_ReportXml(IXMLDOMDocument2 *,ulong,IXMLDOMDocument2 * *)",
+    "ea": "0x18001cc2c",
+    "function_file": "functions/18001cc2c_Resolver_get_ReportXml_IXMLDOMDocument2_ulong_IXMLDOMDocument2.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><Resolution/>",
+      "Resolver::get_ReportXml",
+      "Resolver::get_ReportXml",
+      "Resolver::get_ReportXml",
+      "Resolver::get_ReportXml",
+      "Resolver::get_ReportXml",
+      "Resolver::get_ReportXml"
+    ],
+    "name": "?get_ReportXml@Resolver@@QEAAJPEAUIXMLDOMDocument2@@KPEAPEAU2@@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 **this, struct IXMLDOMDocument2 *, char, struct IXMLDOMDocument2 **)",
+    "rank_score": 320,
+    "size": 1121,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CScriptedDiag::ValidatePackagePath(ushort const *)",
+    "ea": "0x1800114dc",
+    "function_file": "functions/1800114dc_CScriptedDiag_ValidatePackagePath_ushort_const.md",
+    "matched_imports": [
+      "KERNEL32!GetDriveTypeW"
+    ],
+    "matched_strings": [
+      "CScriptedDiag::ValidatePackagePath",
+      "CScriptedDiag::ValidatePackagePath"
+    ],
+    "name": "?ValidatePackagePath@CScriptedDiag@@AEAAJPEBG@Z",
+    "prototype": "__int64 __fastcall(CScriptedDiag *__hidden this, const unsigned __int16 *)",
+    "rank_score": 297,
+    "size": 334,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 2,
+    "demangled": "Rootcause::BuildResultXml(Rootcause::_SDIAG_ROOTCAUSE_INSTANCE *,IXMLDOMDocument2 * *)",
+    "ea": "0x18001955c",
+    "function_file": "functions/18001955c_Rootcause_BuildResultXml_Rootcause_SDIAG_ROOTCAUSE_INSTANCE_IXMLDOMDocument2.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Rootcause::BuildResultXml",
+      "Rootcause::BuildResultXml",
+      "Rootcause::BuildResultXml",
+      "Rootcause::BuildResultXml",
+      "Rootcause::BuildResultXml",
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><Rootcause/>"
+    ],
+    "name": "?BuildResultXml@Rootcause@@AEAAJPEAU_SDIAG_ROOTCAUSE_INSTANCE@1@PEAPEAUIXMLDOMDocument2@@@Z",
+    "prototype": "__int64 __fastcall(Rootcause *__hidden this, struct Rootcause::_SDIAG_ROOTCAUSE_INSTANCE *, struct IXMLDOMDocument2 **)",
+    "rank_score": 295,
+    "size": 1122,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CScriptedDiag::get_ExtensionPoint(ushort * *)",
+    "ea": "0x180013650",
+    "function_file": "functions/180013650_CScriptedDiag_get_ExtensionPoint_ushort.md",
+    "matched_imports": [
+      "OLEAUT32!__imp_SysAllocString"
+    ],
+    "matched_strings": [
+      "CScriptedDiag::get_ExtensionPoint",
+      "DiagPackage::get_ExtensionPoint"
+    ],
+    "name": "?get_ExtensionPoint@CScriptedDiag@@UEAAJPEAPEAG@Z",
+    "prototype": "__int64 __fastcall(CScriptedDiag *__hidden this, unsigned __int16 **)",
+    "rank_score": 294,
+    "size": 201,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "SdpCreateSddl(ulong,ushort * *)",
+    "ea": "0x180026bf4",
+    "function_file": "functions/180026bf4_SdpCreateSddl_ulong_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "SdpCreateSddl",
+      "SdpCreateSddl",
+      "SdpCreateSddl",
+      "SdpCreateSddl",
+      "SdpCreateSddl",
+      "SdpCreateSddl"
+    ],
+    "name": "?SdpCreateSddl@@YAJKPEAPEAG@Z",
+    "prototype": "__int64 __fastcall(__int64, unsigned __int16 **)",
+    "rank_score": 273,
+    "size": 497,
+    "tags": [
+      "file_ops",
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "DiagPackage::BuildReportPXml(IXMLDOMDocument2 * *)",
+    "ea": "0x180014f7c",
+    "function_file": "functions/180014f7c_DiagPackage_BuildReportPXml_IXMLDOMDocument2.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "DiagPackage::BuildReportPXml",
+      "DiagPackage::BuildReportPXml",
+      "DiagPackage::BuildReportPXml",
+      "DiagPackage::BuildReportPXml",
+      "DiagPackage::BuildReportPXml",
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><Problem/>"
+    ],
+    "name": "?BuildReportPXml@DiagPackage@@AEAAJPEAPEAUIXMLDOMDocument2@@@Z",
+    "prototype": "__int64 __fastcall(DiagPackage *__hidden this, struct IXMLDOMDocument2 **)",
+    "rank_score": 263,
+    "size": 633,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SdpParseResourceDescriptor(ushort *,ushort * *,ulong *)",
+    "ea": "0x180006620",
+    "function_file": "functions/180006620_SdpParseResourceDescriptor_ushort_ushort_ulong.md",
+    "matched_imports": [
+      "msvcrt!_wtoi"
+    ],
+    "matched_strings": [
+      "SdpParseResourceDescriptor"
+    ],
+    "name": "?SdpParseResourceDescriptor@@YAJPEAGPEAPEAGPEAK@Z",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, unsigned __int16 **, unsigned int *)",
+    "rank_score": 244,
+    "size": 207,
+    "tags": []
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 5,
+    "demangled": "SdpParseParameters(IXMLDOMNode *,_SDIAG_PARAMSET *)",
+    "ea": "0x1800040e8",
+    "function_file": "functions/1800040e8_SdpParseParameters_IXMLDOMNode_SDIAG_PARAMSET.md",
+    "matched_imports": [
+      "msvcrt!_wcsicmp"
+    ],
+    "matched_strings": [],
+    "name": "?SdpParseParameters@@YAJPEAUIXMLDOMNode@@PEAU_SDIAG_PARAMSET@@@Z",
+    "prototype": "__int64 __fastcall(struct IXMLDOMNode *, struct _SDIAG_PARAMSET *)",
+    "rank_score": 230,
+    "size": 655,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "CScriptedDiag::GetTempPackagePath(ushort * *)",
+    "ea": "0x18000c3fc",
+    "function_file": "functions/18000c3fc_CScriptedDiag_GetTempPackagePath_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "CScriptedDiag::GetTempPackagePath",
+      "CScriptedDiag::GetTempPackagePath",
+      "CScriptedDiag::GetTempPackagePath",
+      "CScriptedDiag::GetTempPackagePath",
+      "CScriptedDiag::GetTempPackagePath"
+    ],
+    "name": "?GetTempPackagePath@CScriptedDiag@@AEAAJPEAPEAG@Z",
+    "prototype": "__int64 __fastcall(CScriptedDiag *__hidden this, unsigned __int16 **)",
+    "rank_score": 223,
+    "size": 426,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "ATL::CAtlRegExp<ATL::CAtlRECharTraitsW>::Parse(ushort const *,int)",
+    "ea": "0x180024cec",
+    "function_file": "functions/180024cec_ATL_CAtlRegExp_ATL_CAtlRECharTraitsW_Parse_ushort_const_int.md",
+    "matched_imports": [
+      "msvcrt!free"
+    ],
+    "matched_strings": [],
+    "name": "?Parse@?$CAtlRegExp@VCAtlRECharTraitsW@ATL@@@ATL@@QEAA?AW4REParseError@2@PEBGH@Z",
+    "prototype": "__int64 __fastcall(unsigned int *, _WORD *, int)",
+    "rank_score": 218,
+    "size": 314,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "TextInteraction::CreateSpecificDocument(IXMLDOMDocument2 * *,int)",
+    "ea": "0x180023e40",
+    "function_file": "functions/180023e40_TextInteraction_CreateSpecificDocument_IXMLDOMDocument2_int.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "TextInteraction::CreateSpecificDocument",
+      "TextInteraction::CreateSpecificDocument",
+      "TextInteraction::CreateSpecificDocument",
+      "TextInteraction::CreateSpecificDocument",
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><TextInteraction/>"
+    ],
+    "name": "?CreateSpecificDocument@TextInteraction@@EEAAJPEAPEAUIXMLDOMDocument2@@H@Z",
+    "prototype": "__int64 __fastcall(TextInteraction *this, struct IXMLDOMDocument2 **)",
+    "rank_score": 217,
+    "size": 343,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 12,
+    "demangled": "StringCchPrintfW(ushort *,unsigned __int64,ushort const *,...)",
+    "ea": "0x180002978",
+    "function_file": "functions/180002978_StringCchPrintfW_ushort_unsigned_int64_ushort_const.md",
+    "matched_imports": [
+      "msvcrt!_vsnwprintf"
+    ],
+    "matched_strings": [],
+    "name": "?StringCchPrintfW@@YAJPEAG_KPEBGZZ",
+    "prototype": "__int64(unsigned __int16 *, unsigned __int64, const unsigned __int16 *, ...)",
+    "rank_score": 214,
+    "size": 132,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 12,
+    "demangled": "McGenEventWrite_EventWriteTransfer",
+    "ea": "0x1800130d0",
+    "function_file": "functions/1800130d0_McGenEventWrite_EventWriteTransfer.md",
+    "matched_imports": [
+      "ADVAPI32!EventWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "McGenEventWrite_EventWriteTransfer",
+    "prototype": "ULONG __fastcall(__int64, const EVENT_DESCRIPTOR *, __int64, ULONG UserDataCount, PEVENT_DATA_DESCRIPTOR UserData)",
+    "rank_score": 213,
+    "size": 82,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil::details::ThreadFailureCallbackHolder::GetThreadContext(wil::FailureInfo *,wil::details::ThreadFailureCallbackHolder *,char *,unsigned __int64)",
+    "ea": "0x18000c5ac",
+    "function_file": "functions/18000c5ac_wil_details_ThreadFailureCallbackHolder_GetThreadContext_wil_FailureInfo_wil_details_ThreadFailureCallbackHold.md",
+    "matched_imports": [
+      "msvcrt!memcpy_s"
+    ],
+    "matched_strings": [],
+    "name": "?GetThreadContext@ThreadFailureCallbackHolder@details@wil@@SA_NPEAUFailureInfo@3@PEAV123@PEAD_K@Z",
+    "prototype": "bool __fastcall(struct wil::FailureInfo *, struct wil::details::ThreadFailureCallbackHolder **, char *, unsigned __int64)",
+    "rank_score": 204,
+    "size": 221,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::GetThreadLocalDataCache(bool)",
+    "ea": "0x18000c690",
+    "function_file": "functions/18000c690_wil_details_abi_GetThreadLocalDataCache_bool.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "?GetThreadLocalDataCache@details_abi@wil@@YAPEAUThreadLocalData@12@_N@Z",
+    "prototype": "struct wil::details_abi::ThreadLocalData *__fastcall(wil::details_abi *this)",
+    "rank_score": 204,
+    "size": 187,
+    "tags": []
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "Rootcause::ParseRootcauseXml(IXMLDOMNode *)",
+    "ea": "0x18001a530",
+    "function_file": "functions/18001a530_Rootcause_ParseRootcauseXml_IXMLDOMNode.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "ExtensionPoint",
+      "Rootcause::ParseRootcauseXml",
+      "Rootcause::ParseRootcauseXml",
+      "Rootcause::ParseRootcauseXml"
+    ],
+    "name": "?ParseRootcauseXml@Rootcause@@AEAAJPEAUIXMLDOMNode@@@Z",
+    "prototype": "__int64 __fastcall(struct Settings **this, struct IXMLDOMNode *)",
+    "rank_score": 203,
+    "size": 1305,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil::details::WriteResultString<char const *>(uchar *,uchar *,char const *,char const * *)",
+    "ea": "0x180008d7c",
+    "function_file": "functions/180008d7c_wil_details_WriteResultString_char_const_uchar_uchar_char_const_char_const.md",
+    "matched_imports": [
+      "msvcrt!memcpy_s"
+    ],
+    "matched_strings": [],
+    "name": "??$WriteResultString@PEBD@details@wil@@YAPEAEPEAE0PEBDPEAPEBD@Z",
+    "prototype": "char *__fastcall(char *, char *, _BYTE *, _QWORD *)",
+    "rank_score": 203,
+    "size": 117,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 23,
+    "demangled": "SdpXmlGetChildNodes(IXMLDOMDocument2 *,IXMLDOMNode *,IXMLDOMNodeList * *,ulong *)",
+    "ea": "0x1800286a4",
+    "function_file": "functions/1800286a4_SdpXmlGetChildNodes_IXMLDOMDocument2_IXMLDOMNode_IXMLDOMNodeList_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "SdpXmlGetChildNodes",
+      "SdpXmlGetChildNodes",
+      "SdpXmlGetChildNodes",
+      "SdpXmlGetNumChildNodes"
+    ],
+    "name": "?SdpXmlGetChildNodes@@YAJPEAUIXMLDOMDocument2@@PEAUIXMLDOMNode@@PEAPEAUIXMLDOMNodeList@@PEAK@Z",
+    "prototype": "__int64 __fastcall(struct IXMLDOMDocument2 *, struct IXMLDOMNode *, struct IXMLDOMNodeList **, unsigned int *)",
+    "rank_score": 202,
+    "size": 523,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "Interaction::ParseInteractionXml(IXMLDOMNode *)",
+    "ea": "0x1800208f4",
+    "function_file": "functions/1800208f4_Interaction_ParseInteractionXml_IXMLDOMNode.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "ExtensionPoint",
+      "Interaction::ParseInteractionXml",
+      "Interaction::ParseInteractionXml",
+      "Interaction::ParseInteractionXml"
+    ],
+    "name": "?ParseInteractionXml@Interaction@@IEAAJPEAUIXMLDOMNode@@@Z",
+    "prototype": "__int64 __fastcall(struct Settings **this, struct IXMLDOMNode *)",
+    "rank_score": 196,
+    "size": 886,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "Rootcause::BuildResultResolutionsXml(Rootcause::_SDIAG_ROOTCAUSE_INSTANCE *,IXMLDOMDocument2 * *)",
+    "ea": "0x1800192ac",
+    "function_file": "functions/1800192ac_Rootcause_BuildResultResolutionsXml_Rootcause_SDIAG_ROOTCAUSE_INSTANCE_IXMLDOMDocument2.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Rootcause::BuildResultResolutionsXml",
+      "Rootcause::BuildResultResolutionsXml",
+      "Rootcause::BuildResultResolutionsXml",
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><Resolutions/>"
+    ],
+    "name": "?BuildResultResolutionsXml@Rootcause@@AEAAJPEAU_SDIAG_ROOTCAUSE_INSTANCE@1@PEAPEAUIXMLDOMDocument2@@@Z",
+    "prototype": "__int64 __fastcall(Rootcause *this, struct tagSAFEARRAY **, struct IXMLDOMDocument2 **)",
+    "rank_score": 195,
+    "size": 679,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 18,
+    "demangled": "SdpXmlAppend(IXMLDOMDocument2 *,IXMLDOMElement *,IXMLDOMDocument2 *)",
+    "ea": "0x180027ea4",
+    "function_file": "functions/180027ea4_SdpXmlAppend_IXMLDOMDocument2_IXMLDOMElement_IXMLDOMDocument2.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "SdpXmlAppend",
+      "SdpXmlAppend",
+      "SdpXmlAppend",
+      "SdpXmlAppend"
+    ],
+    "name": "?SdpXmlAppend@@YAJPEAUIXMLDOMDocument2@@PEAUIXMLDOMElement@@0@Z",
+    "prototype": "__int64 __fastcall(struct IXMLDOMDocument2 *, struct IXMLDOMElement *, struct IXMLDOMDocument2 *)",
+    "rank_score": 195,
+    "size": 395,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "Rootcause::BuildVerificationResultXml(Rootcause::_SDIAG_ROOTCAUSE_INSTANCE *,IXMLDOMDocument2 * *)",
+    "ea": "0x1800199c4",
+    "function_file": "functions/1800199c4_Rootcause_BuildVerificationResultXml_Rootcause_SDIAG_ROOTCAUSE_INSTANCE_IXMLDOMDocument2.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><Rootcause/>",
+      "Rootcause::BuildVerificationResultXml",
+      "Rootcause::BuildVerificationResultXml",
+      "Rootcause::BuildVerificationResultXml"
+    ],
+    "name": "?BuildVerificationResultXml@Rootcause@@AEAAJPEAU_SDIAG_ROOTCAUSE_INSTANCE@1@PEAPEAUIXMLDOMDocument2@@@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 **this, struct Rootcause::_SDIAG_ROOTCAUSE_INSTANCE *, struct IXMLDOMDocument2 **)",
+    "rank_score": 192,
+    "size": 445,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "Verifier::ParseVerifierXml(IXMLDOMNode *)",
+    "ea": "0x18001d20c",
+    "function_file": "functions/18001d20c_Verifier_ParseVerifierXml_IXMLDOMNode.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "ExtensionPoint",
+      "Verifier::ParseVerifierXml",
+      "Verifier::ParseVerifierXml",
+      "Verifier::ParseVerifierXml"
+    ],
+    "name": "?ParseVerifierXml@Verifier@@AEAAJPEAUIXMLDOMNode@@@Z",
+    "prototype": "__int64 __fastcall(Verifier *__hidden this, struct IXMLDOMNode *)",
+    "rank_score": 192,
+    "size": 526,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "Troubleshooter::ParseTroubleshooterXml(IXMLDOMNode *)",
+    "ea": "0x18001bf34",
+    "function_file": "functions/18001bf34_Troubleshooter_ParseTroubleshooterXml_IXMLDOMNode.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "ExtensionPoint",
+      "Troubleshooter::ParseTroubleshooterXml",
+      "Troubleshooter::ParseTroubleshooterXml",
+      "Troubleshooter::ParseTroubleshooterXml"
+    ],
+    "name": "?ParseTroubleshooterXml@Troubleshooter@@AEAAJPEAUIXMLDOMNode@@@Z",
+    "prototype": "__int64 __fastcall(Troubleshooter *__hidden this, struct IXMLDOMNode *)",
+    "rank_score": 191,
+    "size": 467,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SdpXmlMerge(IXMLDOMDocument2 *,IXMLDOMNode *,IXMLDOMDocument2 *,IXMLDOMNode *)",
+    "ea": "0x180028f24",
+    "function_file": "functions/180028f24_SdpXmlMerge_IXMLDOMDocument2_IXMLDOMNode_IXMLDOMDocument2_IXMLDOMNode.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "SdpXmlMerge",
+      "SdpXmlMerge",
+      "SdpXmlMerge",
+      "SdpXmlMerge"
+    ],
+    "name": "?SdpXmlMerge@@YAJPEAUIXMLDOMDocument2@@PEAUIXMLDOMNode@@01@Z",
+    "prototype": "__int64 __fastcall(struct IXMLDOMDocument2 *, struct IXMLDOMNode *, struct IXMLDOMDocument2 *, struct IXMLDOMNode *)",
+    "rank_score": 179,
+    "size": 400,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "MultipleResponseInteraction::CreateSpecificDocument(IXMLDOMDocument2 * *,int)",
+    "ea": "0x180022a30",
+    "function_file": "functions/180022a30_MultipleResponseInteraction_CreateSpecificDocument_IXMLDOMDocument2_int.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "MultipleResponseInteraction::CreateSpecificDocument",
+      "MultipleResponseInteraction::CreateSpecificDocument",
+      "MultipleResponseInteraction::CreateSpecificDocument",
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><MultipleResponseInteraction/>"
+    ],
+    "name": "?CreateSpecificDocument@MultipleResponseInteraction@@MEAAJPEAPEAUIXMLDOMDocument2@@H@Z",
+    "prototype": "__int64 __fastcall(MultipleResponseInteraction *this, struct IXMLDOMDocument2 **, unsigned int)",
+    "rank_score": 175,
+    "size": 220,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "SingleResponseInteraction::CreateSpecificDocument(IXMLDOMDocument2 * *,int)",
+    "ea": "0x180022350",
+    "function_file": "functions/180022350_SingleResponseInteraction_CreateSpecificDocument_IXMLDOMDocument2_int.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "SingleResponseInteraction::CreateSpecificDocument",
+      "SingleResponseInteraction::CreateSpecificDocument",
+      "SingleResponseInteraction::CreateSpecificDocument",
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><SingleResponseInteraction/>"
+    ],
+    "name": "?CreateSpecificDocument@SingleResponseInteraction@@EEAAJPEAPEAUIXMLDOMDocument2@@H@Z",
+    "prototype": "__int64 __fastcall(SingleResponseInteraction *this, struct IXMLDOMDocument2 **, unsigned int)",
+    "rank_score": 175,
+    "size": 216,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "Rootcause::get_RcReportXml(IXMLDOMDocument2 * *)",
+    "ea": "0x18001b9c8",
+    "function_file": "functions/18001b9c8_Rootcause_get_RcReportXml_IXMLDOMDocument2.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Rootcause::get_RcReportXml",
+      "Rootcause::get_RcReportXml",
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><RootCauses/>"
+    ],
+    "name": "?get_RcReportXml@Rootcause@@QEAAJPEAPEAUIXMLDOMDocument2@@@Z",
+    "prototype": "__int64 __fastcall(struct _LIST_ENTRY **this, struct IXMLDOMDocument2 **)",
+    "rank_score": 142,
+    "size": 386,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "SdpBuildParameterXml(_SDIAG_PARAMSET *,int,IXMLDOMDocument2 * *)",
+    "ea": "0x18000312c",
+    "function_file": "functions/18000312c_SdpBuildParameterXml_SDIAG_PARAMSET_int_IXMLDOMDocument2.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><Parameters/>",
+      "SdpBuildParameterXml",
+      "SdpBuildParameterXml"
+    ],
+    "name": "?SdpBuildParameterXml@@YAJPEAU_SDIAG_PARAMSET@@HPEAPEAUIXMLDOMDocument2@@@Z",
+    "prototype": "__int64 __fastcall(struct _SDIAG_PARAMSET *, int, struct IXMLDOMDocument2 **)",
+    "rank_score": 140,
+    "size": 473,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Rootcause::AddXmlToDebugReport(ushort *,ushort *,ushort *,ushort *)",
+    "ea": "0x180018510",
+    "function_file": "functions/180018510_Rootcause_AddXmlToDebugReport_ushort_ushort_ushort_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Rootcause::AddXmlToDebugReport",
+      "Resolver::AddXmlToDebugReport",
+      "Verifier::AddXmlToDebugReport"
+    ],
+    "name": "?AddXmlToDebugReport@Rootcause@@QEAAJPEAG000@Z",
+    "prototype": "__int64 __fastcall(Rootcause *this, unsigned __int16 *, unsigned __int16 *, unsigned __int16 *, unsigned __int16 *)",
+    "rank_score": 138,
+    "size": 511,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "PauseInteraction::CreateSpecificDocument(IXMLDOMDocument2 * *,int)",
+    "ea": "0x180023b00",
+    "function_file": "functions/180023b00_PauseInteraction_CreateSpecificDocument_IXMLDOMDocument2_int.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "PauseInteraction::CreateSpecificDocument",
+      "PauseInteraction::CreateSpecificDocument",
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><PauseInteraction/>"
+    ],
+    "name": "?CreateSpecificDocument@PauseInteraction@@MEAAJPEAPEAUIXMLDOMDocument2@@H@Z",
+    "prototype": "__int64 __fastcall(PauseInteraction *this, struct IXMLDOMDocument2 **)",
+    "rank_score": 135,
+    "size": 151,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 33,
+    "demangled": "memset_0",
+    "ea": "0x180029882",
+    "function_file": "functions/180029882_memset_0.md",
+    "matched_imports": [
+      "msvcrt!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 125,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "DllGetClassObject",
+    "ea": "0x180002a30",
+    "function_file": "functions/180002a30_DllGetClassObject.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "DllGetClassObject",
+      "DllGetClassObject"
+    ],
+    "name": "DllGetClassObject",
+    "prototype": "HRESULT __stdcall(const IID *const rclsid, const IID *const riid, LPVOID *ppv)",
+    "rank_score": 115,
+    "size": 251,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__dllonexit_0",
+    "ea": "0x1800020de",
+    "function_file": "functions/1800020de_dllonexit_0.md",
+    "matched_imports": [
+      "msvcrt!__dllonexit"
+    ],
+    "matched_strings": [],
+    "name": "__dllonexit_0",
+    "prototype": "__int64()",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 13,
+    "demangled": "SdpBuildPath(ushort const *,ushort const *,ushort * *)",
+    "ea": "0x1800020f8",
+    "function_file": "functions/1800020f8_SdpBuildPath_ushort_const_ushort_const_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "SdpBuildPath",
+      "SdpBuildPath"
+    ],
+    "name": "?SdpBuildPath@@YAJPEBG0PEAPEAG@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, const unsigned __int16 *, unsigned __int16 **)",
+    "rank_score": 110,
+    "size": 386,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "Settings::get_PackagePath(ushort * *)",
+    "ea": "0x18001e808",
+    "function_file": "functions/18001e808_Settings_get_PackagePath_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Settings::get_PackagePath",
+      "Settings::get_PackagePath"
+    ],
+    "name": "?get_PackagePath@Settings@@QEAAJPEAPEAG@Z",
+    "prototype": "__int64 __fastcall(Settings *__hidden this, unsigned __int16 **)",
+    "rank_score": 109,
+    "size": 159,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "Settings::get_ResultPath(ushort * *)",
+    "ea": "0x18001e95c",
+    "function_file": "functions/18001e95c_Settings_get_ResultPath_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Settings::get_ResultPath",
+      "Settings::get_ResultPath"
+    ],
+    "name": "?get_ResultPath@Settings@@QEAAJPEAPEAG@Z",
+    "prototype": "__int64 __fastcall(Settings *__hidden this, unsigned __int16 **)",
+    "rank_score": 109,
+    "size": 164,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 8,
+    "demangled": "_CxxThrowException_0",
+    "ea": "0x180001c86",
+    "function_file": "functions/180001c86_CxxThrowException_0.md",
+    "matched_imports": [
+      "msvcrt!_CxxThrowException"
+    ],
+    "matched_strings": [],
+    "name": "_CxxThrowException_0",
+    "prototype": "void __stdcall __noreturn(void *pExceptionObject, _ThrowInfo *pThrowInfo)",
+    "rank_score": 108,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "memcpy_0",
+    "ea": "0x180001ca6",
+    "function_file": "functions/180001ca6_memcpy_0.md",
+    "matched_imports": [
+      "msvcrt!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 105,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "DiagPackage::Diagnose(IXMLDOMDocument2 * *)",
+    "ea": "0x180015e30",
+    "function_file": "functions/180015e30_DiagPackage_Diagnose_IXMLDOMDocument2.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><DetailedInformation/>",
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><Rootcauses Version=\"1.0\"/>"
+    ],
+    "name": "?Diagnose@DiagPackage@@QEAAJPEAPEAUIXMLDOMDocument2@@@Z",
+    "prototype": "__int64 __fastcall(DiagPackage *__hidden this, struct IXMLDOMDocument2 **)",
+    "rank_score": 102,
+    "size": 583,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "memmove_0",
+    "ea": "0x180001cb2",
+    "function_file": "functions/180001cb2_memmove_0.md",
+    "matched_imports": [
+      "msvcrt!memmove"
+    ],
+    "matched_strings": [],
+    "name": "memmove_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 101,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CScriptedDiagFactory::CreateInstance(IUnknown *,_GUID const &,void * *)",
+    "ea": "0x1800140c0",
+    "function_file": "functions/1800140c0_CScriptedDiagFactory_CreateInstance_IUnknown_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "CScriptedDiagFactory::CreateInstance",
+      "CScriptedDiagFactory::CreateInstance"
+    ],
+    "name": "?CreateInstance@CScriptedDiagFactory@@UEAAJPEAUIUnknown@@AEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(CScriptedDiagFactory *__hidden this, struct IUnknown *, const struct _GUID *, void **)",
+    "rank_score": 86,
+    "size": 269,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil::details::ReportFailure_GetLastError<3>(void *,uint,char const *,char const *,char const *,void *)",
+    "ea": "0x180008520",
+    "function_file": "functions/180008520_wil_details_ReportFailure_GetLastError_3_void_uint_char_const_char_const_char_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\internal\\sdk\\inc\\wil\\opensource\\wil\\resource.h",
+      "onecore\\internal\\sdk\\inc\\wil\\opensource\\wil\\resource.h"
+    ],
+    "name": "??$ReportFailure_GetLastError@$02@details@wil@@YAKPEAXIPEBD110@Z",
+    "prototype": "void __fastcall __noreturn(wil::details *, void *, __int64, const char *, int, char *)",
+    "rank_score": 85,
+    "size": 119,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 26,
+    "demangled": "SdpXmlNextNode(IXMLDOMNodeList *,IXMLDOMNode * *)",
+    "ea": "0x1800290bc",
+    "function_file": "functions/1800290bc_SdpXmlNextNode_IXMLDOMNodeList_IXMLDOMNode.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "SdpXmlNextNode"
+    ],
+    "name": "?SdpXmlNextNode@@YAJPEAUIXMLDOMNodeList@@PEAPEAUIXMLDOMNode@@@Z",
+    "prototype": "__int64 __fastcall(struct IXMLDOMNodeList *, struct IXMLDOMNode **)",
+    "rank_score": 80,
+    "size": 285,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "MultipleResponseInteraction::InitializeChoice(IXMLDOMNode *,MultipleResponseInteraction::_CHOICE *)",
+    "ea": "0x180022ce0",
+    "function_file": "functions/180022ce0_MultipleResponseInteraction_InitializeChoice_IXMLDOMNode_MultipleResponseInteraction_CHOICE.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "ExtensionPoint"
+    ],
+    "name": "?InitializeChoice@MultipleResponseInteraction@@MEAAJPEAUIXMLDOMNode@@PEAU_CHOICE@1@@Z",
+    "prototype": "__int64 __fastcall(struct Settings **this, struct IXMLDOMNode *, struct MultipleResponseInteraction::_CHOICE *)",
+    "rank_score": 74,
+    "size": 814,
+    "tags": [
+      "registry_config",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 5,
+    "demangled": "SdpParseDisplayInformation(IXMLDOMNode *,_SDIAG_DISPINFO *)",
+    "ea": "0x180003b2c",
+    "function_file": "functions/180003b2c_SdpParseDisplayInformation_IXMLDOMNode_SDIAG_DISPINFO.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "SdpMoveDispInfo"
+    ],
+    "name": "?SdpParseDisplayInformation@@YAJPEAUIXMLDOMNode@@PEAU_SDIAG_DISPINFO@@@Z",
+    "prototype": "__int64 __fastcall(struct IXMLDOMNode *, struct _SDIAG_DISPINFO *)",
+    "rank_score": 70,
+    "size": 795,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 13,
+    "demangled": "SdpXmlGetRootNode(IXMLDOMDocument2 *,IXMLDOMElement * *)",
+    "ea": "0x1800288b8",
+    "function_file": "functions/1800288b8_SdpXmlGetRootNode_IXMLDOMDocument2_IXMLDOMElement.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "SdpXmlGetRootNode"
+    ],
+    "name": "?SdpXmlGetRootNode@@YAJPEAUIXMLDOMDocument2@@PEAPEAUIXMLDOMElement@@@Z",
+    "prototype": "__int64 __fastcall(struct IXMLDOMDocument2 *, struct IXMLDOMElement **)",
+    "rank_score": 67,
+    "size": 201,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "Script::AddXmlToDebugReport(ushort *,ushort *,ushort *,ushort *)",
+    "ea": "0x18001d470",
+    "function_file": "functions/18001d470_Script_AddXmlToDebugReport_ushort_ushort_ushort_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Script::AddXmlToDebugReport"
+    ],
+    "name": "?AddXmlToDebugReport@Script@@QEAAJPEAG000@Z",
+    "prototype": "__int64 __fastcall(Script *this, unsigned __int16 *, unsigned __int16 *, unsigned __int16 *, unsigned __int16 *)",
+    "rank_score": 66,
+    "size": 206,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "MultipleResponseInteraction::BuildChoiceDocument(MultipleResponseInteraction::_CHOICE,IXMLDOMDocument2 * *,int)",
+    "ea": "0x180022570",
+    "function_file": "functions/180022570_MultipleResponseInteraction_BuildChoiceDocument_MultipleResponseInteraction_CHOICE_IXMLDOMDocument2_int.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><Choice/>"
+    ],
+    "name": "?BuildChoiceDocument@MultipleResponseInteraction@@MEAAJU_CHOICE@1@PEAPEAUIXMLDOMDocument2@@H@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, struct IXMLDOMDocument2 **, int)",
+    "rank_score": 62,
+    "size": 588,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 5,
+    "demangled": "Reporter::AddXmlToReport(IXMLDOMDocument2 *,Reporter::_REPORT_AREA)",
+    "ea": "0x18002146c",
+    "function_file": "functions/18002146c_Reporter_AddXmlToReport_IXMLDOMDocument2_Reporter_REPORT_AREA.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Reporter::AddXmlToReport"
+    ],
+    "name": "?AddXmlToReport@Reporter@@QEAAJPEAUIXMLDOMDocument2@@W4_REPORT_AREA@1@@Z",
+    "prototype": "__int64 __fastcall(__int64, struct IXMLDOMDocument2 *, int)",
+    "rank_score": 61,
+    "size": 369,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "DiagPackage::get_Rootcauses(IXMLDOMDocument2 * *)",
+    "ea": "0x1800181a4",
+    "function_file": "functions/1800181a4_DiagPackage_get_Rootcauses_IXMLDOMDocument2.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><Rootcauses Version=\"1.0\"/>"
+    ],
+    "name": "?get_Rootcauses@DiagPackage@@QEAAJPEAPEAUIXMLDOMDocument2@@@Z",
+    "prototype": "__int64 __fastcall(DiagPackage *__hidden this, struct IXMLDOMDocument2 **)",
+    "rank_score": 60,
+    "size": 442,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "MultipleResponseInteraction::BuildChoicesDocument(IXMLDOMDocument2 * *,int)",
+    "ea": "0x1800227d0",
+    "function_file": "functions/1800227d0_MultipleResponseInteraction_BuildChoicesDocument_IXMLDOMDocument2_int.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><Choices/>"
+    ],
+    "name": "?BuildChoicesDocument@MultipleResponseInteraction@@MEAAJPEAPEAUIXMLDOMDocument2@@H@Z",
+    "prototype": "__int64 __fastcall(MultipleResponseInteraction *this, struct IXMLDOMDocument2 **, unsigned int)",
+    "rank_score": 59,
+    "size": 596,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "DiagPackage::Verify(IXMLDOMDocument2 * *)",
+    "ea": "0x18001790c",
+    "function_file": "functions/18001790c_DiagPackage_Verify_IXMLDOMDocument2.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><Rootcauses Version=\"1.0\"/>"
+    ],
+    "name": "?Verify@DiagPackage@@QEAAJPEAPEAUIXMLDOMDocument2@@@Z",
+    "prototype": "__int64 __fastcall(DiagPackage *__hidden this, struct IXMLDOMDocument2 **)",
+    "rank_score": 58,
+    "size": 287,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "Script::Initialize(Settings *,IXMLDOMNode *)",
+    "ea": "0x18001db84",
+    "function_file": "functions/18001db84_Script_Initialize_Settings_IXMLDOMNode.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><DetailedInformation/>"
+    ],
+    "name": "?Initialize@Script@@QEAAJPEAVSettings@@PEAUIXMLDOMNode@@@Z",
+    "prototype": "__int64 __fastcall(struct IXMLDOMDocument2 **this, struct IXMLDOMDocument2 *, struct IXMLDOMNode *)",
+    "rank_score": 58,
+    "size": 155,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "DiagPackage::AddXmlToDebugReport(ushort *,ushort *,ushort *,ushort *)",
+    "ea": "0x180014438",
+    "function_file": "functions/180014438_DiagPackage_AddXmlToDebugReport_ushort_ushort_ushort_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "DiagPackage::AddXmlToDebugReport"
+    ],
+    "name": "?AddXmlToDebugReport@DiagPackage@@QEAAJPEAG000@Z",
+    "prototype": "__int64 __fastcall(DiagPackage *this, unsigned __int16 *, unsigned __int16 *, unsigned __int16 *, unsigned __int16 *)",
+    "rank_score": 57,
+    "size": 261,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "DiagPackage::Initialize(Settings *,IXMLDOMDocument2 *,IXMLDOMDocument2 *)",
+    "ea": "0x180016080",
+    "function_file": "functions/180016080_DiagPackage_Initialize_Settings_IXMLDOMDocument2_IXMLDOMDocument2.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?><DetailedInformation/>"
+    ],
+    "name": "?Initialize@DiagPackage@@QEAAJPEAVSettings@@PEAUIXMLDOMDocument2@@1@Z",
+    "prototype": "__int64 __fastcall(DiagPackage *__hidden this, struct Settings *, struct IXMLDOMDocument2 *, struct IXMLDOMDocument2 *)",
+    "rank_score": 57,
+    "size": 192,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "Troubleshooter::AddXmlToDebugReport(ushort *,ushort *,ushort *,ushort *)",
+    "ea": "0x18001bcf8",
+    "function_file": "functions/18001bcf8_Troubleshooter_AddXmlToDebugReport_ushort_ushort_ushort_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Troubleshooter::AddXmlToDebugReport"
+    ],
+    "name": "?AddXmlToDebugReport@Troubleshooter@@QEAAJPEAG000@Z",
+    "prototype": "__int64 __fastcall(Troubleshooter *__hidden this, unsigned __int16 *, unsigned __int16 *, unsigned __int16 *, unsigned __int16 *)",
+    "rank_score": 56,
+    "size": 174,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Script::BuildResultXml(IXMLDOMDocument2 *)",
+    "ea": "0x18001dac4",
+    "function_file": "functions/18001dac4_Script_BuildResultXml_IXMLDOMDocument2.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Script::BuildResultXml"
+    ],
+    "name": "?BuildResultXml@Script@@AEAAJPEAUIXMLDOMDocument2@@@Z",
+    "prototype": "__int64 __fastcall(Script *this, struct IXMLDOMDocument2 *)",
+    "rank_score": 55,
+    "size": 185,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CScriptedDiagInteraction::AddXmlToReport(ushort *,ushort *,ushort *,ushort *,ushort *,ushort *,ushort *)",
+    "ea": "0x180013c90",
+    "function_file": "functions/180013c90_CScriptedDiagInteraction_AddXmlToReport_ushort_ushort_ushort_ushort_ushort_ushort_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "CScriptedDiagInteraction::AddXmlToReport"
+    ],
+    "name": "?AddXmlToReport@CScriptedDiagInteraction@@UEAAJPEAG000000@Z",
+    "prototype": "__int64 __fastcall(CScriptedDiagInteraction *__hidden this, unsigned __int16 *, unsigned __int16 *, unsigned __int16 *, unsigned __int16 *, unsigned __int16 *, unsigned __int16 *, unsigned __int16 *)",
+    "rank_score": 53,
+    "size": 122,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil::details::in1diag3::_Log_Hr(void *,uint,char const *,long)",
+    "ea": "0x180029734",
+    "function_file": "functions/180029734_wil_details_in1diag3_Log_Hr_void_uint_char_const_long.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "base\\diagnosis\\pdi\\scripteddiag\\engine\\common\\sdiaglib.cpp"
+    ],
+    "name": "?_Log_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z",
+    "prototype": "void __fastcall(wil::details::in1diag3 *this, void *, __int64, const char *)",
+    "rank_score": 52,
+    "size": 54,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "wil::details::in1diag3::FailFast_Unexpected(void *,uint,char const *)",
+    "ea": "0x18000b2dc",
+    "function_file": "functions/18000b2dc_wil_details_in1diag3_FailFast_Unexpected_void_uint_char_const.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "onecore\\internal\\sdk\\inc\\wil\\opensource\\wil\\resource.h"
+    ],
+    "name": "?FailFast_Unexpected@in1diag3@details@wil@@YAXPEAXIPEBD@Z",
+    "prototype": "void __fastcall __noreturn(wil::details::in1diag3 *this, void *, __int64, const char *)",
+    "rank_score": 45,
+    "size": 32,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SdpMoveParamSet(_SDIAG_PARAMSET *,_SDIAG_PARAMSET *)",
+    "ea": "0x180002798",
+    "function_file": "functions/180002798_SdpMoveParamSet_SDIAG_PARAMSET_SDIAG_PARAMSET.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "SdpMoveParamSet"
+    ],
+    "name": "?SdpMoveParamSet@@YAJPEAU_SDIAG_PARAMSET@@0@Z",
+    "prototype": "__int64 __fastcall(struct _SDIAG_PARAMSET *, struct _SDIAG_PARAMSET *)",
+    "rank_score": 43,
+    "size": 89,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 26,
+    "demangled": "SdpStrCpy(ushort * *,ushort const *)",
+    "ea": "0x180027aa0",
+    "function_file": "functions/180027aa0_SdpStrCpy_ushort_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SdpStrCpy@@YAJPEAPEAGPEBG@Z",
+    "prototype": "__int64 __fastcall(unsigned __int16 **, const unsigned __int16 *)",
+    "rank_score": 41,
+    "size": 212,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 254,
+    "demangled": "SdpDebugTrace(ulong,ushort const *,int,long)",
+    "ea": "0x180026fa0",
+    "function_file": "functions/180026fa0_SdpDebugTrace_ulong_ushort_const_int_long.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SdpDebugTrace@@YAXKPEBGHJ@Z",
+    "prototype": "void __fastcall(ULONG Level, const unsigned __int16 *, unsigned int, int)",
+    "rank_score": 40,
+    "size": 228,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 47,
+    "demangled": "__security_check_cookie",
+    "ea": "0x1800298c0",
+    "function_file": "functions/1800298c0_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "Interaction::BuildInteractionArray(Settings *,IXMLDOMDocument2 *,IXMLDOMNode *,IXMLDOMNode *,IXMLDOMNode *,IXMLDOMNode *,IXMLDOMNode *,Interaction * *,ulong)",
+    "ea": "0x18001f010",
+    "function_file": "functions/18001f010_Interaction_BuildInteractionArray_Settings_IXMLDOMDocument2_IXMLDOMNode_IXMLDOMNode_IXMLDOMNode_IXMLDOMNode_IX.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?BuildInteractionArray@Interaction@@KAJPEAVSettings@@PEAUIXMLDOMDocument2@@PEAUIXMLDOMNode@@2222PEAPEAV1@K@Z",
+    "prototype": "__int64 __fastcall(struct Settings *, struct IXMLDOMDocument2 *, struct IXMLDOMNode *, struct IXMLDOMNode *, struct IXMLDOMNode *, struct IXMLDOMNode *, struct IXMLDOMNode *, struct Interaction **, unsigned int)",
+    "rank_score": 36,
+    "size": 2094,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 155,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x18002a010",
+    "function_file": "functions/18002a010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 114,
+    "demangled": "operator delete(void *)",
+    "ea": "0x1800012a4",
+    "function_file": "functions/1800012a4_operator_delete_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??3@YAXPEAX@Z",
+    "prototype": "void __cdecl(void *Block)",
+    "rank_score": 36,
+    "size": 5,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "Reporter::SetupDebugReport(IXMLDOMDocument2 *,Reporter::_REPORT *)",
+    "ea": "0x180021ec4",
+    "function_file": "functions/180021ec4_Reporter_SetupDebugReport_IXMLDOMDocument2_Reporter_REPORT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SetupDebugReport@Reporter@@AEAAJPEAUIXMLDOMDocument2@@PEAU_REPORT@1@@Z",
+    "prototype": "__int64 __fastcall(Reporter *this, struct IXMLDOMDocument2 *, struct Reporter::_REPORT *, unsigned __int16 *)",
+    "rank_score": 35,
+    "size": 682,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "Reporter::AddIsAdminToReport(IXMLDOMElement *,IXMLDOMDocument2 *)",
+    "ea": "0x180020fc0",
+    "function_file": "functions/180020fc0_Reporter_AddIsAdminToReport_IXMLDOMElement_IXMLDOMDocument2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddIsAdminToReport@Reporter@@AEAAJPEAUIXMLDOMElement@@PEAUIXMLDOMDocument2@@@Z",
+    "prototype": "__int64 __fastcall(Reporter *this, struct IXMLDOMElement *, struct IXMLDOMDocument2 *)",
+    "rank_score": 33,
+    "size": 387,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "Reporter::SetupResultReport(IXMLDOMDocument2 *,Reporter::_REPORT *)",
+    "ea": "0x180022174",
+    "function_file": "functions/180022174_Reporter_SetupResultReport_IXMLDOMDocument2_Reporter_REPORT.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SetupResultReport@Reporter@@AEAAJPEAUIXMLDOMDocument2@@PEAU_REPORT@1@@Z",
+    "prototype": "__int64 __fastcall(Reporter *this, struct IXMLDOMDocument2 *, struct Reporter::_REPORT *, unsigned __int16 *)",
+    "rank_score": 33,
+    "size": 464,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 7,
+    "demangled": "Settings::get_PackageId(ushort * *)",
+    "ea": "0x18001e75c",
+    "function_file": "functions/18001e75c_Settings_get_PackageId_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?get_PackageId@Settings@@QEAAJPEAPEAG@Z",
+    "prototype": "__int64 __fastcall(Settings *__hidden this, unsigned __int16 **)",
+    "rank_score": 32,
+    "size": 164,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 5,
+    "demangled": "Settings::get_Locale(ushort * *)",
+    "ea": "0x18001e6c0",
+    "function_file": "functions/18001e6c0_Settings_get_Locale_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?get_Locale@Settings@@QEAAJPEAPEAG@Z",
+    "prototype": "__int64 __fastcall(Settings *__hidden this, unsigned __int16 **)",
+    "rank_score": 30,
+    "size": 149,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "MultipleResponseInteraction::ParseSpecificChildren(IXMLDOMNodeList *)",
+    "ea": "0x180023680",
+    "function_file": "functions/180023680_MultipleResponseInteraction_ParseSpecificChildren_IXMLDOMNodeList.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?ParseSpecificChildren@MultipleResponseInteraction@@MEAAJPEAUIXMLDOMNodeList@@@Z",
+    "prototype": "__int64 __fastcall(MultipleResponseInteraction *this, struct IXMLDOMNodeList *)",
+    "rank_score": 29,
+    "size": 400,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "Resolver::InitializeScript(IXMLDOMNode *)",
+    "ea": "0x18001c5ac",
+    "function_file": "functions/18001c5ac_Resolver_InitializeScript_IXMLDOMNode.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?InitializeScript@Resolver@@AEAAJPEAUIXMLDOMNode@@@Z",
+    "prototype": "__int64 __fastcall(Resolver *this, struct IXMLDOMNode *)",
+    "rank_score": 29,
+    "size": 307,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "Rootcause::InitializeVerifier(IXMLDOMNode *)",
+    "ea": "0x18001a424",
+    "function_file": "functions/18001a424_Rootcause_InitializeVerifier_IXMLDOMNode.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?InitializeVerifier@Rootcause@@AEAAJPEAUIXMLDOMNode@@@Z",
+    "prototype": "__int64 __fastcall(Rootcause *this, struct IXMLDOMNode *)",
+    "rank_score": 29,
+    "size": 260,
+    "tags": [
+      "file_ops",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 33,
+    "demangled": "operator new[](unsigned __int64)",
+    "ea": "0x1800012b0",
+    "function_file": "functions/1800012b0_operator_new_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??_U@YAPEAX_K@Z",
+    "prototype": "void *__fastcall(size_t)",
+    "rank_score": 26,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "Rootcause::InitializeResolvers(IXMLDOMNode *)",
+    "ea": "0x18001a0bc",
+    "function_file": "functions/18001a0bc_Rootcause_InitializeResolvers_IXMLDOMNode.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?InitializeResolvers@Rootcause@@AEAAJPEAUIXMLDOMNode@@@Z",
+    "prototype": "__int64 __fastcall(Rootcause *__hidden this, struct IXMLDOMNode *)",
+    "rank_score": 25,
+    "size": 679,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 11,
+    "demangled": "CScriptedDiag::CheckStateInitialized(void)",
+    "ea": "0x18000a818",
+    "function_file": "functions/18000a818_CScriptedDiag_CheckStateInitialized_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CheckStateInitialized@CScriptedDiag@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(CScriptedDiag *__hidden this)",
+    "rank_score": 24,
+    "size": 75,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "DiagPackage::InitializeRootcauses(IXMLDOMNode *)",
+    "ea": "0x180016228",
+    "function_file": "functions/180016228_DiagPackage_InitializeRootcauses_IXMLDOMNode.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?InitializeRootcauses@DiagPackage@@AEAAJPEAUIXMLDOMNode@@@Z",
+    "prototype": "__int64 __fastcall(DiagPackage *__hidden this, struct IXMLDOMNode *)",
+    "rank_score": 24,
+    "size": 561,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x180029794",
+    "function_file": "functions/180029794_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 24,
+    "size": 99,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartup",
+    "ea": "0x180001780",
+    "function_file": "functions/180001780_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartup",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 23,
+    "size": 61,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "MultipleResponseInteraction::InitializeChoices(IXMLDOMNode *)",
+    "ea": "0x180023020",
+    "function_file": "functions/180023020_MultipleResponseInteraction_InitializeChoices_IXMLDOMNode.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?InitializeChoices@MultipleResponseInteraction@@MEAAJPEAUIXMLDOMNode@@@Z",
+    "prototype": "__int64 __fastcall(MultipleResponseInteraction *__hidden this, struct IXMLDOMNode *)",
+    "rank_score": 22,
+    "size": 566,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 6,
+    "demangled": "SdpCatId(ushort const *,ushort const *,ushort * *)",
+    "ea": "0x180002280",
+    "function_file": "functions/180002280_SdpCatId_ushort_const_ushort_const_ushort.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?SdpCatId@@YAJPEBG0PEAPEAG@Z",
+    "prototype": "__int64 __fastcall(const unsigned __int16 *, const unsigned __int16 *, unsigned __int16 **)",
+    "rank_score": 21,
+    "size": 175,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "Rootcause::get_VerificationResult(IXMLDOMDocument2 *)",
+    "ea": "0x18001bb50",
+    "function_file": "functions/18001bb50_Rootcause_get_VerificationResult_IXMLDOMDocument2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?get_VerificationResult@Rootcause@@AEAAJPEAUIXMLDOMDocument2@@@Z",
+    "prototype": "__int64 __fastcall(struct _LIST_ENTRY **this, struct IXMLDOMDocument2 *)",
+    "rank_score": 20,
+    "size": 351,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "__DllMainCRTStartup",
+    "ea": "0x1800017c4",
+    "function_file": "functions/1800017c4_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__DllMainCRTStartup",
+    "prototype": "__int64 __fastcall(HINSTANCE hinstDLL, __int64 fdwReason, void *)",
+    "rank_score": 20,
+    "size": 524,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 16,
+    "demangled": "operator new(unsigned __int64)",
+    "ea": "0x180001264",
+    "function_file": "functions/180001264_operator_new_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??2@YAPEAX_K@Z",
+    "prototype": "void *__fastcall(size_t Size)",
+    "rank_score": 19,
+    "size": 57,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "Rootcause::Verify(IXMLDOMDocument2 *)",
+    "ea": "0x18001b2d0",
+    "function_file": "functions/18001b2d0_Rootcause_Verify_IXMLDOMDocument2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Verify@Rootcause@@QEAAJPEAUIXMLDOMDocument2@@@Z",
+    "prototype": "__int64 __fastcall(struct _LIST_ENTRY **this, struct IXMLDOMDocument2 *)",
+    "rank_score": 18,
+    "size": 225,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Copy(unsigned __int64,unsigned __int64)",
+    "ea": "0x1800124ac",
+    "function_file": "functions/1800124ac_std_basic_string_char_std_char_traits_char_std_allocator_char_Copy_unsigned_int64_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAX_K0@Z",
+    "prototype": "size_t *__fastcall(const void **Src, unsigned __int64, size_t)",
+    "rank_score": 18,
+    "size": 239,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Troubleshooter::InitializeScript(IXMLDOMNode *)",
+    "ea": "0x18001be18",
+    "function_file": "functions/18001be18_Troubleshooter_InitializeScript_IXMLDOMNode.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?InitializeScript@Troubleshooter@@AEAAJPEAUIXMLDOMNode@@@Z",
+    "prototype": "__int64 __fastcall(Troubleshooter *this, struct IXMLDOMNode *)",
+    "rank_score": 17,
+    "size": 276,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Verifier::InitializeScript(IXMLDOMNode *)",
+    "ea": "0x18001d0f0",
+    "function_file": "functions/18001d0f0_Verifier_InitializeScript_IXMLDOMNode.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?InitializeScript@Verifier@@AEAAJPEAUIXMLDOMNode@@@Z",
+    "prototype": "__int64 __fastcall(Verifier *this, struct IXMLDOMNode *)",
+    "rank_score": 17,
+    "size": 276,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "CScriptedDiag::InitializePackage(IXMLDOMDocument2 *,IXMLDOMDocument2 *)",
+    "ea": "0x18000dad4",
+    "function_file": "functions/18000dad4_CScriptedDiag_InitializePackage_IXMLDOMDocument2_IXMLDOMDocument2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?InitializePackage@CScriptedDiag@@AEAAJPEAUIXMLDOMDocument2@@0@Z",
+    "prototype": "__int64 __fastcall(CScriptedDiag *this, struct IXMLDOMDocument2 *, struct IXMLDOMDocument2 *)",
+    "rank_score": 16,
+    "size": 217,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "DiagPackage::InitializeTroubleshooter(IXMLDOMNode *)",
+    "ea": "0x180016460",
+    "function_file": "functions/180016460_DiagPackage_InitializeTroubleshooter_IXMLDOMNode.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?InitializeTroubleshooter@DiagPackage@@AEAAJPEAUIXMLDOMNode@@@Z",
+    "prototype": "__int64 __fastcall(DiagPackage *this, struct IXMLDOMNode *)",
+    "rank_score": 16,
+    "size": 178,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Interaction::Initialize(Settings *,IXMLDOMNode *,IXMLDOMDocument2 *)",
+    "ea": "0x18002021c",
+    "function_file": "functions/18002021c_Interaction_Initialize_Settings_IXMLDOMNode_IXMLDOMDocument2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Initialize@Interaction@@QEAAJPEAVSettings@@PEAUIXMLDOMNode@@PEAUIXMLDOMDocument2@@@Z",
+    "prototype": "__int64 __fastcall(Interaction *__hidden this, struct Settings *, struct IXMLDOMNode *, struct IXMLDOMDocument2 *)",
+    "rank_score": 16,
+    "size": 157,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Rootcause::InitializeTroubleshooter(IXMLDOMNode *)",
+    "ea": "0x18001a36c",
+    "function_file": "functions/18001a36c_Rootcause_InitializeTroubleshooter_IXMLDOMNode.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?InitializeTroubleshooter@Rootcause@@AEAAJPEAUIXMLDOMNode@@@Z",
+    "prototype": "__int64 __fastcall(Rootcause *this, struct IXMLDOMNode *)",
+    "rank_score": 16,
+    "size": 177,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "MultipleResponseInteraction::AddResponseFieldsToDocument(IXMLDOMDocument2 *,int)",
+    "ea": "0x1800224e0",
+    "function_file": "functions/1800224e0_MultipleResponseInteraction_AddResponseFieldsToDocument_IXMLDOMDocument2_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddResponseFieldsToDocument@MultipleResponseInteraction@@MEAAJPEAUIXMLDOMDocument2@@H@Z",
+    "prototype": "__int64 __fastcall(MultipleResponseInteraction *this, struct IXMLDOMDocument2 *)",
+    "rank_score": 15,
+    "size": 135,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "Troubleshooter::Initialize(Settings *,IXMLDOMNode *)",
+    "ea": "0x18001bdac",
+    "function_file": "functions/18001bdac_Troubleshooter_Initialize_Settings_IXMLDOMNode.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Initialize@Troubleshooter@@QEAAJPEAVSettings@@PEAUIXMLDOMNode@@@Z",
+    "prototype": "__int64 __fastcall(Troubleshooter *this, struct Settings *, struct IXMLDOMNode *)",
+    "rank_score": 15,
+    "size": 99,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x180029930",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 12,
+    "demangled": "ATL::AtlThrowImpl(long)",
+    "ea": "0x180023e08",
+    "function_file": "functions/180023e08_ATL_AtlThrowImpl_long.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AtlThrowImpl@ATL@@YAXJ@Z",
+    "prototype": "void __fastcall __noreturn(int)",
+    "rank_score": 14,
+    "size": 34,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::UsageIndex<wil_details_ServiceReportingKind,uint,0>::RecordUsage(wil_details_ServiceReportingKind,uint,uint)",
+    "ea": "0x18000ef2c",
+    "function_file": "functions/18000ef2c_wil_details_abi_UsageIndex_wil_details_ServiceReportingKind_uint_0_RecordUsage_wil_details_ServiceReportingKin.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?RecordUsage@?$UsageIndex@W4wil_details_ServiceReportingKind@@I$0A@@details_abi@wil@@QEAA_NW4wil_details_ServiceReportingKind@@II@Z",
+    "prototype": "bool __fastcall(wil::details_abi::RawUsageIndex *, int, int)",
+    "rank_score": 12,
+    "size": 49,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "wil::details_abi::UsageIndex<wil_details_ServiceReportingKind,uint,2>::RecordUsage(wil_details_ServiceReportingKind,uint,uint)",
+    "ea": "0x18000eef8",
+    "function_file": "functions/18000eef8_wil_details_abi_UsageIndex_wil_details_ServiceReportingKind_uint_2_RecordUsage_wil_details_ServiceReportingKin.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?RecordUsage@?$UsageIndex@W4wil_details_ServiceReportingKind@@I$01@details_abi@wil@@QEAA_NW4wil_details_ServiceReportingKind@@II@Z",
+    "prototype": "bool __fastcall(wil::details_abi::RawUsageIndex *, int, int, unsigned int)",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "std::pair<ushort *,IXMLDOMDocument2 *>::pair<ushort *,IXMLDOMDocument2 *>(void)",
+    "ea": "0x1800142cc",
+    "function_file": "functions/1800142cc_std_pair_ushort_IXMLDOMDocument2_pair_ushort_IXMLDOMDocument2_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??0?$pair@PEAGPEAUIXMLDOMDocument2@@@std@@QEAA@XZ",
+    "prototype": "_QWORD *__fastcall(_QWORD *)",
+    "rank_score": 11,
+    "size": 19,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "wil::details::_dynamic_initializer_for__g_threadFailureCallbacks__",
+    "ea": "0x180001250",
+    "function_file": "functions/180001250_wil_details_dynamic_initializer_for_g_threadFailureCallbacks.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil::details::_dynamic_initializer_for__g_threadFailureCallbacks__",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 7,
+    "demangled": "ATL::CAtlRegExp<ATL::CAtlRECharTraitsW>::AddInstruction(ATL::CAtlRegExp<ATL::CAtlRECharTraitsW>::REInstructionType)",
+    "ea": "0x180023d08",
+    "function_file": "functions/180023d08_ATL_CAtlRegExp_ATL_CAtlRECharTraitsW_AddInstruction_ATL_CAtlRegExp_ATL_CAtlRECharTraitsW_REInstructionType.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?AddInstruction@?$CAtlRegExp@VCAtlRECharTraitsW@ATL@@@ATL@@IEAAHW4REInstructionType@12@@Z",
+    "prototype": "__int64 __fastcall(__int64, int)",
+    "rank_score": 10,
+    "size": 106,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "DllCanUnloadNow",
+    "ea": "0x180002a10",
+    "function_file": "functions/180002a10_DllCanUnloadNow.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DllCanUnloadNow",
+    "prototype": "HRESULT __stdcall()",
+    "rank_score": 10,
+    "size": 12,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "wil::details::HrToNtStatus(long)",
+    "ea": "0x18000cb7c",
+    "function_file": "functions/18000cb7c_wil_details_HrToNtStatus_long.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?HrToNtStatus@details@wil@@YAJJ@Z",
+    "prototype": "__int64 __fastcall(wil::details *this)",
+    "rank_score": 10,
+    "size": 444,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "wil::details::in1diag3::_FailFast_GetLastError(void *,uint,char const *)",
+    "ea": "0x1800125b4",
+    "function_file": "functions/1800125b4_wil_details_in1diag3_FailFast_GetLastError_void_uint_char_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_FailFast_GetLastError@in1diag3@details@wil@@YAXPEAXIPEBD@Z",
+    "prototype": "void __fastcall __noreturn(wil::details::in1diag3 *this, void *, __int64, const char *)",
+    "rank_score": 10,
+    "size": 20,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "Rootcause::GetNextInstance(_LIST_ENTRY *,Rootcause::_SDIAG_ROOTCAUSE_INSTANCE * *)",
+    "ea": "0x18001a02c",
+    "function_file": "functions/18001a02c_Rootcause_GetNextInstance_LIST_ENTRY_Rootcause_SDIAG_ROOTCAUSE_INSTANCE.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetNextInstance@Rootcause@@AEAAJPEAU_LIST_ENTRY@@PEAPEAU_SDIAG_ROOTCAUSE_INSTANCE@1@@Z",
+    "prototype": "__int64 __fastcall(Rootcause *this, struct _LIST_ENTRY *, struct _LIST_ENTRY **)",
+    "rank_score": 9,
+    "size": 136,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "Rootcause::GetFirstInstance(_LIST_ENTRY *,Rootcause::_SDIAG_ROOTCAUSE_INSTANCE * *)",
+    "ea": "0x180019ed8",
+    "function_file": "functions/180019ed8_Rootcause_GetFirstInstance_LIST_ENTRY_Rootcause_SDIAG_ROOTCAUSE_INSTANCE.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetFirstInstance@Rootcause@@AEAAJPEAU_LIST_ENTRY@@PEAPEAU_SDIAG_ROOTCAUSE_INSTANCE@1@@Z",
+    "prototype": "__int64 __fastcall(Rootcause *__hidden this, struct _LIST_ENTRY *, struct Rootcause::_SDIAG_ROOTCAUSE_INSTANCE **)",
+    "rank_score": 8,
+    "size": 98,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "McTemplateU0zz_EventWriteTransfer",
+    "ea": "0x1800131a8",
+    "function_file": "functions/1800131a8_McTemplateU0zz_EventWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0zz_EventWriteTransfer",
+    "prototype": "ULONG __fastcall(__int64, const EVENT_DESCRIPTOR *, const wchar_t *, const wchar_t *)",
+    "rank_score": 7,
+    "size": 179,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "_alloca_probe",
+    "ea": "0x180029980",
+    "function_file": "functions/180029980_alloca_probe.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_alloca_probe",
+    "prototype": "unsigned __int64 __fastcall()",
+    "rank_score": 7,
+    "size": 77,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "atexit",
+    "ea": "0x180001af0",
+    "function_file": "functions/180001af0_atexit.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "atexit",
+    "prototype": "int __cdecl(void (__cdecl *)())",
+    "rank_score": 7,
+    "size": 23,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "wil::details::ReportFailure_Hr<2>(void *,uint,char const *,char const *,char const *,void *,long,wil::FailureFlags)",
+    "ea": "0x180008690",
+    "function_file": "functions/180008690_wil_details_ReportFailure_Hr_2_void_uint_char_const_char_const_char_const_void_long_wil_FailureFlags.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$ReportFailure_Hr@$01@details@wil@@YAXPEAXIPEBD110JW4FailureFlags@1@@Z",
+    "prototype": "__int64 __fastcall(__int64, int, __int64, __int64, __int64, __int64, wil::details *)",
+    "rank_score": 7,
+    "size": 92,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "McTemplateU0z_EventWriteTransfer",
+    "ea": "0x180013128",
+    "function_file": "functions/180013128_McTemplateU0z_EventWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateU0z_EventWriteTransfer",
+    "prototype": "ULONG __fastcall(__int64, const EVENT_DESCRIPTOR *, const wchar_t *)",
+    "rank_score": 6,
+    "size": 122,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "wil::details::in1diag3::Return_Hr(void *,uint,char const *,long)",
+    "ea": "0x18000ffb4",
+    "function_file": "functions/18000ffb4_wil_details_in1diag3_Return_Hr_void_uint_char_const_long.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?Return_Hr@in1diag3@details@wil@@YAXPEAXIPEBDJ@Z",
+    "prototype": "void __fastcall(wil::details::in1diag3 *this, void *, int, const char *)",
+    "rank_score": 6,
+    "size": 30,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "wil::details::in1diag3::_FailFastImmediate_Unexpected(void)",
+    "ea": "0x1800125a4",
+    "function_file": "functions/1800125a4_wil_details_in1diag3_FailFastImmediate_Unexpected_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_FailFastImmediate_Unexpected@in1diag3@details@wil@@YAXXZ",
+    "prototype": "void __fastcall __noreturn(wil::details::in1diag3 *__hidden this)",
+    "rank_score": 6,
+    "size": 7,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "McGenControlCallbackV2",
+    "ea": "0x180002bb0",
+    "function_file": "functions/180002bb0_McGenControlCallbackV2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McGenControlCallbackV2",
+    "prototype": "void __fastcall(LPCGUID SourceId, ULONG IsEnabled, UCHAR Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, PEVENT_FILTER_DESCRIPTOR FilterData, unsigned __int16 *CallbackContext)",
+    "rank_score": 4,
+    "size": 256,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "StringCchCopyW(ushort *,unsigned __int64,ushort const *)",
+    "ea": "0x18000551c",
+    "function_file": "functions/18000551c_StringCchCopyW_ushort_unsigned_int64_ushort_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?StringCchCopyW@@YAJPEAG_KPEBG@Z",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, unsigned __int64, unsigned __int16 *)",
+    "rank_score": 3,
+    "size": 107,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_std::basic_string_char_std::char_traits_char__std::allocator_char___::_Copy_::_1_::catch$1",
+    "ea": "0x180029db7",
+    "function_file": "functions/180029db7_std_basic_string_char_std_char_traits_char_std_allocator_char_Copy_1_catch_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_std::basic_string_char_std::char_traits_char__std::allocator_char___::_Copy_::_1_::catch$1",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 3,
+    "size": 71,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_std::basic_string_char_std::char_traits_char__std::allocator_char___::_Copy_::_1_::catch$0",
+    "ea": "0x180029d8c",
+    "function_file": "functions/180029d8c_std_basic_string_char_std_char_traits_char_std_allocator_char_Copy_1_catch_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_std::basic_string_char_std::char_traits_char__std::allocator_char___::_Copy_::_1_::catch$0",
+    "prototype": "void __fastcall __noreturn(__int64, __int64)",
+    "rank_score": 2,
+    "size": 37,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "wistd::__function::__func<_lambda_8db0ce862824541f40dfb767113f1e28_,bool (void *,unsigned __int64,void *,unsigned __int64,uint)>::__move(wistd::__function::__base<bool (void *,unsigned __int64,void *,unsigned __int64,uint)> *)",
+    "ea": "0x180012690",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?__move@?$__func@V_lambda_8db0ce862824541f40dfb767113f1e28_@@$$A6A_NPEAX_K01I@Z@__function@wistd@@UEAAXPEAV?$__base@$$A6A_NPEAX_K01I@Z@23@@Z",
+    "prototype": "void **__fastcall(__int64, __int64)",
+    "rank_score": 0,
+    "size": 29,
+    "tags": []
+  }
+]

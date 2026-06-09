@@ -1,0 +1,386 @@
+[
+  {
+    "import": "ADVAPI32!OpenProcessToken",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180002a9e",
+        "from_func": "0x180002a78",
+        "from_func_name": "?IsProcessElevated@@YAHXZ",
+        "import": "ADVAPI32!OpenProcessToken"
+      },
+      {
+        "from_ea": "0x180002a9e",
+        "from_func": "0x180002a78",
+        "from_func_name": "?IsProcessElevated@@YAHXZ",
+        "import": "ADVAPI32!OpenProcessToken"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegCreateKeyExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180003a13",
+        "from_func": "0x1800039b0",
+        "from_func_name": "RegSetBinEx",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x180003af1",
+        "from_func": "0x180003a9c",
+        "from_func_name": "RegSetDword",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x180003a13",
+        "from_func": "0x1800039b0",
+        "from_func_name": "RegSetBinEx",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x180003af1",
+        "from_func": "0x180003a9c",
+        "from_func_name": "RegSetDword",
+        "import": "ADVAPI32!RegCreateKeyExW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegDeleteTreeW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180002610",
+        "from_func": "0x1800025b0",
+        "from_func_name": "DllUnregisterServer",
+        "import": "ADVAPI32!RegDeleteTreeW"
+      },
+      {
+        "from_ea": "0x180002610",
+        "from_func": "0x1800025b0",
+        "from_func_name": "DllUnregisterServer",
+        "import": "ADVAPI32!RegDeleteTreeW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegOpenKeyExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180003973",
+        "from_func": "0x180003938",
+        "from_func_name": "RegExists",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180003973",
+        "from_func": "0x180003938",
+        "from_func_name": "RegExists",
+        "import": "ADVAPI32!RegOpenKeyExW"
+      }
+    ]
+  },
+  {
+    "import": "ADVAPI32!RegSetValueExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 8,
+    "xrefs": [
+      {
+        "from_ea": "0x180003a3d",
+        "from_func": "0x1800039b0",
+        "from_func_name": "RegSetBinEx",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x180003a65",
+        "from_func": "0x1800039b0",
+        "from_func_name": "RegSetBinEx",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x180003b1e",
+        "from_func": "0x180003a9c",
+        "from_func_name": "RegSetDword",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x180003b4e",
+        "from_func": "0x180003a9c",
+        "from_func_name": "RegSetDword",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x180003a3d",
+        "from_func": "0x1800039b0",
+        "from_func_name": "RegSetBinEx",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x180003a65",
+        "from_func": "0x1800039b0",
+        "from_func_name": "RegSetBinEx",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x180003b1e",
+        "from_func": "0x180003a9c",
+        "from_func_name": "RegSetDword",
+        "import": "ADVAPI32!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x180003b4e",
+        "from_func": "0x180003a9c",
+        "from_func_name": "RegSetDword",
+        "import": "ADVAPI32!RegSetValueExW"
+      }
+    ]
+  },
+  {
+    "import": "KERNEL32!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000217b",
+        "from_func": "0x180002134",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x18000217b",
+        "from_func": "0x180002134",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180002230",
+        "from_func": "0x180002230",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "msvcrt!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__CxxFrameHandler3",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180002018",
+        "from_func": "0x180002018",
+        "from_func_name": "__CxxFrameHandler3_0",
+        "import": "msvcrt!__CxxFrameHandler3"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__CxxFrameHandler4",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180001e92",
+        "from_func": "0x180001e92",
+        "from_func_name": "__CxxFrameHandler4_0",
+        "import": "msvcrt!__CxxFrameHandler4"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__dllonexit",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180002254",
+        "from_func": "0x180002254",
+        "from_func_name": "__dllonexit_0",
+        "import": "msvcrt!__dllonexit"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!NtQueryInformationToken",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 5,
+    "xrefs": [
+      {
+        "from_ea": "0x1800038d9",
+        "from_func": "0x18000388c",
+        "from_func_name": "LUAIsElevatedToken",
+        "import": "ntdll!NtQueryInformationToken"
+      },
+      {
+        "from_ea": "0x180003913",
+        "from_func": "0x18000388c",
+        "from_func_name": "LUAIsElevatedToken",
+        "import": "ntdll!NtQueryInformationToken"
+      },
+      {
+        "from_ea": "0x1800038d9",
+        "from_func": "0x18000388c",
+        "from_func_name": "LUAIsElevatedToken",
+        "import": "ntdll!NtQueryInformationToken"
+      },
+      {
+        "from_ea": "0x180003913",
+        "from_func": "0x18000388c",
+        "from_func_name": "LUAIsElevatedToken",
+        "import": "ntdll!NtQueryInformationToken"
+      },
+      {
+        "from_ea": "0x180008f9c",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ntdll!NtQueryInformationToken"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!WinSqmEndSession",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180003788",
+        "from_func": "0x180003710",
+        "from_func_name": "?UploadSqmData@CUpdateCleanup@@MEAAXXZ",
+        "import": "ntdll!WinSqmEndSession"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!WinSqmIsOptedIn",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180002a44",
+        "from_func": "0x180002930",
+        "from_func_name": "?Initialize@CCleanupBase@@UEAAJPEAUHKEY__@@PEBGPEAPEAG2PEAK@Z",
+        "import": "ntdll!WinSqmIsOptedIn"
+      },
+      {
+        "from_ea": "0x180002a44",
+        "from_func": "0x180002930",
+        "from_func_name": "?Initialize@CCleanupBase@@UEAAJPEAUHKEY__@@PEBGPEAPEAG2PEAK@Z",
+        "import": "ntdll!WinSqmIsOptedIn"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!WinSqmSetDWORD",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180003744",
+        "from_func": "0x180003710",
+        "from_func_name": "?UploadSqmData@CUpdateCleanup@@MEAAXXZ",
+        "import": "ntdll!WinSqmSetDWORD"
+      },
+      {
+        "from_ea": "0x180003776",
+        "from_func": "0x180003710",
+        "from_func_name": "?UploadSqmData@CUpdateCleanup@@MEAAXXZ",
+        "import": "ntdll!WinSqmSetDWORD"
+      },
+      {
+        "from_ea": "0x180003744",
+        "from_func": "0x180003710",
+        "from_func_name": "?UploadSqmData@CUpdateCleanup@@MEAAXXZ",
+        "import": "ntdll!WinSqmSetDWORD"
+      },
+      {
+        "from_ea": "0x180003776",
+        "from_func": "0x180003710",
+        "from_func_name": "?UploadSqmData@CUpdateCleanup@@MEAAXXZ",
+        "import": "ntdll!WinSqmSetDWORD"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!WinSqmSetDWORD64",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000375d",
+        "from_func": "0x180003710",
+        "from_func_name": "?UploadSqmData@CUpdateCleanup@@MEAAXXZ",
+        "import": "ntdll!WinSqmSetDWORD64"
+      },
+      {
+        "from_ea": "0x18000375d",
+        "from_func": "0x180003710",
+        "from_func_name": "?UploadSqmData@CUpdateCleanup@@MEAAXXZ",
+        "import": "ntdll!WinSqmSetDWORD64"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!WinSqmStartSession",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180003728",
+        "from_func": "0x180003710",
+        "from_func_name": "?UploadSqmData@CUpdateCleanup@@MEAAXXZ",
+        "import": "ntdll!WinSqmStartSession"
+      },
+      {
+        "from_ea": "0x180003728",
+        "from_func": "0x180003710",
+        "from_func_name": "?UploadSqmData@CUpdateCleanup@@MEAAXXZ",
+        "import": "ntdll!WinSqmStartSession"
+      }
+    ]
+  }
+]

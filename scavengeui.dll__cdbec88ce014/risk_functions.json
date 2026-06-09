@@ -1,0 +1,1187 @@
+[
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "CCleanupBase::Initialize(HKEY__ *,ushort const *,ushort * *,ushort * *,ulong *)",
+    "ea": "0x180002930",
+    "function_file": "functions/180002930_CCleanupBase_Initialize_HKEY_ushort_const_ushort_ushort_ulong.md",
+    "matched_imports": [
+      "DismApi!DismInitialize",
+      "DismApi!DismOpenSession",
+      "KERNEL32!CreateEventW",
+      "KERNEL32!EnumUILanguagesW",
+      "KERNEL32!GetLastError",
+      "KERNEL32!GetSystemWindowsDirectoryW",
+      "ntdll!WinSqmIsOptedIn"
+    ],
+    "matched_strings": [],
+    "name": "?Initialize@CCleanupBase@@UEAAJPEAUHKEY__@@PEBGPEAPEAG2PEAK@Z",
+    "prototype": "signed int __fastcall(LONG_PTR lParam, HKEY, const unsigned __int16 *, unsigned __int16 **, unsigned __int16 **, unsigned int *)",
+    "rank_score": 1414,
+    "size": 320,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x180002134",
+    "function_file": "functions/180002134_security_init_cookie.md",
+    "matched_imports": [
+      "KERNEL32!GetCurrentProcessId",
+      "KERNEL32!GetCurrentThreadId",
+      "KERNEL32!GetSystemTimeAsFileTime",
+      "KERNEL32!GetTickCount",
+      "KERNEL32!QueryPerformanceCounter"
+    ],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 1223,
+    "size": 221,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "RegSetBinEx",
+    "ea": "0x1800039b0",
+    "function_file": "functions/1800039b0_RegSetBinEx.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegCreateKeyExW",
+      "ADVAPI32!RegSetValueExW",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "RegSetBinEx",
+    "prototype": "_BOOL8 __fastcall(HKEY, const WCHAR *, const WCHAR *, DWORD, BYTE *lpData, DWORD cbData)",
+    "rank_score": 1213,
+    "size": 228,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "RegSetDword",
+    "ea": "0x180003a9c",
+    "function_file": "functions/180003a9c_RegSetDword.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegCreateKeyExW",
+      "ADVAPI32!RegSetValueExW",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "RegSetDword",
+    "prototype": "_BOOL8 __fastcall(HKEY, const WCHAR *, const WCHAR *, int)",
+    "rank_score": 1213,
+    "size": 227,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "CUpdateCleanup::UploadSqmData(void)",
+    "ea": "0x180003710",
+    "function_file": "functions/180003710_CUpdateCleanup_UploadSqmData_void.md",
+    "matched_imports": [
+      "ntdll!WinSqmEndSession",
+      "ntdll!WinSqmSetDWORD",
+      "ntdll!WinSqmSetDWORD64",
+      "ntdll!WinSqmStartSession"
+    ],
+    "matched_strings": [],
+    "name": "?UploadSqmData@CUpdateCleanup@@MEAAXXZ",
+    "prototype": "void __fastcall(CUpdateCleanup *__hidden this)",
+    "rank_score": 920,
+    "size": 127,
+    "tags": [
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "DllRegisterServer",
+    "ea": "0x180002360",
+    "function_file": "functions/180002360_DllRegisterServer.md",
+    "matched_imports": [
+      "KERNEL32!GetLastError",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [
+      "CLSID\\{606B3777-3051-401F-974A-E66ACA82A3A3}",
+      "Update Cleanup",
+      "CLSID\\{606B3777-3051-401F-974A-E66ACA82A3A3}\\InProcServer32",
+      "%systemroot%\\system32\\scavengeui.dll",
+      "ThreadingModel",
+      "Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VolumeCaches\\Update Cleanup",
+      "IconPath",
+      "%systemroot%\\system32\\scavengeui.dll,0",
+      "@%systemroot%\\system32\\scavengeui.dll,-1002",
+      "@%systemroot%\\system32\\scavengeui.dll,-1003"
+    ],
+    "name": "DllRegisterServer",
+    "prototype": "HRESULT __stdcall()",
+    "rank_score": 857,
+    "size": 577,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "CUpdateCleanup::GetSpaceUsed(unsigned __int64 *,IEmptyVolumeCacheCallBack *)",
+    "ea": "0x180003300",
+    "function_file": "functions/180003300_CUpdateCleanup_GetSpaceUsed_unsigned_int64_IEmptyVolumeCacheCallBack.md",
+    "matched_imports": [
+      "DismApi!DismDelete",
+      "DismApi!DismGetPackages"
+    ],
+    "matched_strings": [],
+    "name": "?GetSpaceUsed@CUpdateCleanup@@UEAAJPEA_KPEAUIEmptyVolumeCacheCallBack@@@Z",
+    "prototype": "__int64 __fastcall(CUpdateCleanup *__hidden this, unsigned __int64 *, struct IEmptyVolumeCacheCallBack *)",
+    "rank_score": 821,
+    "size": 789,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "RegExists",
+    "ea": "0x180003938",
+    "function_file": "functions/180003938_RegExists.md",
+    "matched_imports": [
+      "ADVAPI32!RegCloseKey",
+      "ADVAPI32!RegOpenKeyExW",
+      "KERNEL32!SetLastError"
+    ],
+    "matched_strings": [],
+    "name": "RegExists",
+    "prototype": "__int64 __fastcall(HKEY, const WCHAR *)",
+    "rank_score": 812,
+    "size": 113,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "_CRT_INIT",
+    "ea": "0x180001a00",
+    "function_file": "functions/180001a00_CRT_INIT.md",
+    "matched_imports": [
+      "KERNEL32!Sleep",
+      "msvcrt!free"
+    ],
+    "matched_strings": [],
+    "name": "_CRT_INIT",
+    "prototype": "__int64 __fastcall(__int64, int, __int64)",
+    "rank_score": 620,
+    "size": 549,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CUpdateCleanup::Purge(unsigned __int64,IEmptyVolumeCacheCallBack *)",
+    "ea": "0x180003620",
+    "function_file": "functions/180003620_CUpdateCleanup_Purge_unsigned_int64_IEmptyVolumeCacheCallBack.md",
+    "matched_imports": [
+      "DismApi!_DismCleanImage",
+      "msvcrt!_time64"
+    ],
+    "matched_strings": [],
+    "name": "?Purge@CUpdateCleanup@@UEAAJ_KPEAUIEmptyVolumeCacheCallBack@@@Z",
+    "prototype": "__int64 __fastcall(CUpdateCleanup *this, __int64, struct IEmptyVolumeCacheCallBack *)",
+    "rank_score": 612,
+    "size": 148,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "IsProcessElevated(void)",
+    "ea": "0x180002a78",
+    "function_file": "functions/180002a78_IsProcessElevated_void.md",
+    "matched_imports": [
+      "ADVAPI32!OpenProcessToken",
+      "KERNEL32!GetCurrentProcess"
+    ],
+    "matched_strings": [],
+    "name": "?IsProcessElevated@@YAHXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 414,
+    "size": 83,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "LUAIsElevatedToken",
+    "ea": "0x18000388c",
+    "function_file": "functions/18000388c_LUAIsElevatedToken.md",
+    "matched_imports": [
+      "ntdll!NtQueryInformationToken"
+    ],
+    "matched_strings": [],
+    "name": "LUAIsElevatedToken",
+    "prototype": "NTSTATUS __fastcall(HANDLE TokenHandle, _DWORD *, _DWORD *)",
+    "rank_score": 413,
+    "size": 166,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RAII::CAutoDismDelete<_DismPackage *>::`scalar deleting destructor'(uint)",
+    "ea": "0x180003290",
+    "function_file": "functions/180003290_RAII_CAutoDismDelete_DismPackage_scalar_deleting_destructor_uint.md",
+    "matched_imports": [
+      "DismApi!DismDelete",
+      "msvcrt!??3@YAXPEAX@Z"
+    ],
+    "matched_strings": [],
+    "name": "??_G?$CAutoDismDelete@PEAU_DismPackage@@@RAII@@UEAAPEAXI@Z",
+    "prototype": "_QWORD *__fastcall(_QWORD *, char)",
+    "rank_score": 411,
+    "size": 77,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "DllUnregisterServer",
+    "ea": "0x1800025b0",
+    "function_file": "functions/1800025b0_DllUnregisterServer.md",
+    "matched_imports": [
+      "ADVAPI32!RegDeleteTreeW"
+    ],
+    "matched_strings": [
+      "CLSID\\{606B3777-3051-401F-974A-E66ACA82A3A3}",
+      "Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VolumeCaches\\Update Cleanup"
+    ],
+    "name": "DllUnregisterServer",
+    "prototype": "HRESULT __stdcall()",
+    "rank_score": 333,
+    "size": 135,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "std::_Tree<std::_Tset_traits<_DismReleaseType,std::less<_DismReleaseType>,std::allocator<_DismReleaseType>,0>>::~_Tree<std::_Tset_traits<_DismReleaseType,std::less<_DismReleaseType>,std::allocator<_DismReleaseType>,0>>(void)",
+    "ea": "0x180003128",
+    "function_file": "functions/180003128_std_Tree_std_Tset_traits_DismReleaseType_std_less_DismReleaseType_std_allocator_DismReleaseType_0_Tree_std_Tse.md",
+    "matched_imports": [
+      "msvcrt!??3@YAXPEAX@Z"
+    ],
+    "matched_strings": [],
+    "name": "??1?$_Tree@V?$_Tset_traits@W4_DismReleaseType@@U?$less@W4_DismReleaseType@@@std@@V?$allocator@W4_DismReleaseType@@@3@$0A@@std@@@std@@QEAA@XZ",
+    "prototype": "void __fastcall(void **)",
+    "rank_score": 314,
+    "size": 120,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CUpdateCleanup::`vector deleting destructor'(uint)",
+    "ea": "0x180002640",
+    "function_file": "functions/180002640_CUpdateCleanup_vector_deleting_destructor_uint.md",
+    "matched_imports": [
+      "msvcrt!??3@YAXPEAX@Z"
+    ],
+    "matched_strings": [],
+    "name": "??_ECUpdateCleanup@@UEAAPEAXI@Z",
+    "prototype": "CUpdateCleanup *__fastcall(CUpdateCleanup *this, char)",
+    "rank_score": 221,
+    "size": 46,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "std::_Tree<std::_Tset_traits<_DismReleaseType,std::less<_DismReleaseType>,std::allocator<_DismReleaseType>,0>>::_Erase(std::_Tree_node<_DismReleaseType,void *> *)",
+    "ea": "0x180003824",
+    "function_file": "functions/180003824_std_Tree_std_Tset_traits_DismReleaseType_std_less_DismReleaseType_std_allocator_DismReleaseType_0_Erase_std_Tr.md",
+    "matched_imports": [
+      "msvcrt!??3@YAXPEAX@Z"
+    ],
+    "matched_strings": [],
+    "name": "?_Erase@?$_Tree@V?$_Tset_traits@W4_DismReleaseType@@U?$less@W4_DismReleaseType@@@std@@V?$allocator@W4_DismReleaseType@@@3@$0A@@std@@@std@@IEAAXPEAU?$_Tree_node@W4_DismReleaseType@@PEAX@2@@Z",
+    "prototype": "void __fastcall(__int64, void *)",
+    "rank_score": 213,
+    "size": 79,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 6,
+    "demangled": "operator new(unsigned __int64)",
+    "ea": "0x180001064",
+    "function_file": "functions/180001064_operator_new_unsigned_int64.md",
+    "matched_imports": [
+      "msvcrt!malloc"
+    ],
+    "matched_strings": [],
+    "name": "??2@YAPEAX_K@Z",
+    "prototype": "void *__fastcall(size_t Size)",
+    "rank_score": 209,
+    "size": 49,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "RAII::CAutoDismDelete<_DismPackage *>::~CAutoDismDelete<_DismPackage *>(void)",
+    "ea": "0x1800030f0",
+    "function_file": "functions/1800030f0_RAII_CAutoDismDelete_DismPackage_CAutoDismDelete_DismPackage_void.md",
+    "matched_imports": [
+      "DismApi!DismDelete"
+    ],
+    "matched_strings": [],
+    "name": "??1?$CAutoDismDelete@PEAU_DismPackage@@@RAII@@UEAA@XZ",
+    "prototype": "void **__fastcall(_QWORD *)",
+    "rank_score": 202,
+    "size": 48,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RAII::CAutoDismDelete<_DismPackage *>::Release(void)",
+    "ea": "0x1800036c0",
+    "function_file": "functions/1800036c0_RAII_CAutoDismDelete_DismPackage_Release_void.md",
+    "matched_imports": [
+      "DismApi!DismDelete"
+    ],
+    "matched_strings": [],
+    "name": "?Release@?$CAutoDismDelete@PEAU_DismPackage@@@RAII@@UEAAXXZ",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 201,
+    "size": 38,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "_onexit_0",
+    "ea": "0x180001f14",
+    "function_file": "functions/180001f14_onexit_0.md",
+    "matched_imports": [
+      "msvcrt!_onexit"
+    ],
+    "matched_strings": [],
+    "name": "_onexit_0",
+    "prototype": "_onexit_t __cdecl(_onexit_t Func)",
+    "rank_score": 117,
+    "size": 150,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 6,
+    "demangled": "operator delete(void *)",
+    "ea": "0x180001e86",
+    "function_file": "functions/180001e86_operator_delete_void.md",
+    "matched_imports": [
+      "msvcrt!??3@YAXPEAX@Z"
+    ],
+    "matched_strings": [],
+    "name": "??3@YAXPEAX@Z_0",
+    "prototype": "void __fastcall(void *)",
+    "rank_score": 116,
+    "size": 6,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "std::_Wrap_alloc<std::allocator<std::_Tree_node<_DismReleaseType,void *>>>::deallocate(std::_Tree_node<_DismReleaseType,void *> *,unsigned __int64)",
+    "ea": "0x18000387c",
+    "function_file": "functions/18000387c_std_Wrap_alloc_std_allocator_std_Tree_node_DismReleaseType_void_deallocate_std_Tree_node_DismReleaseType_void_.md",
+    "matched_imports": [
+      "msvcrt!??3@YAXPEAX@Z"
+    ],
+    "matched_strings": [],
+    "name": "?deallocate@?$_Wrap_alloc@V?$allocator@U?$_Tree_node@W4_DismReleaseType@@PEAX@std@@@std@@@std@@QEAAXPEAU?$_Tree_node@W4_DismReleaseType@@PEAX@2@_K@Z",
+    "prototype": "void __fastcall(__int64, void *)",
+    "rank_score": 112,
+    "size": 10,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "__dllonexit_0",
+    "ea": "0x180002254",
+    "function_file": "functions/180002254_dllonexit_0.md",
+    "matched_imports": [
+      "msvcrt!__dllonexit"
+    ],
+    "matched_strings": [],
+    "name": "__dllonexit_0",
+    "prototype": "__int64()",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 7,
+    "demangled": "_CxxThrowException_0",
+    "ea": "0x18000200c",
+    "function_file": "functions/18000200c_CxxThrowException_0.md",
+    "matched_imports": [
+      "msvcrt!_CxxThrowException"
+    ],
+    "matched_strings": [],
+    "name": "_CxxThrowException_0",
+    "prototype": "void __stdcall __noreturn(void *pExceptionObject, _ThrowInfo *pThrowInfo)",
+    "rank_score": 107,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "exception::~exception(void)",
+    "ea": "0x180001ff1",
+    "function_file": "functions/180001ff1_exception_exception_void.md",
+    "matched_imports": [
+      "msvcrt!??1exception@@UEAA@XZ"
+    ],
+    "matched_strings": [],
+    "name": "??1exception@@UEAA@XZ_0",
+    "prototype": "void __fastcall(exception *this)",
+    "rank_score": 104,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "memcpy_0",
+    "ea": "0x180002026",
+    "function_file": "functions/180002026_memcpy_0.md",
+    "matched_imports": [
+      "msvcrt!memcpy"
+    ],
+    "matched_strings": [],
+    "name": "memcpy_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 104,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "exception::exception(exception const &)",
+    "ea": "0x180001fe5",
+    "function_file": "functions/180001fe5_exception_exception_exception_const.md",
+    "matched_imports": [
+      "msvcrt!??0exception@@QEAA@AEBV0@@Z"
+    ],
+    "matched_strings": [],
+    "name": "??0exception@@QEAA@AEBV0@@Z_0",
+    "prototype": "exception *__fastcall(exception *this, const struct exception *)",
+    "rank_score": 102,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_XcptFilter_0",
+    "ea": "0x18000203e",
+    "function_file": "functions/18000203e_XcptFilter_0.md",
+    "matched_imports": [
+      "msvcrt!_XcptFilter"
+    ],
+    "matched_strings": [],
+    "name": "_XcptFilter_0",
+    "prototype": "__int64()",
+    "rank_score": 101,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_amsg_exit_0",
+    "ea": "0x18000204a",
+    "function_file": "functions/18000204a_amsg_exit_0.md",
+    "matched_imports": [
+      "msvcrt!_amsg_exit"
+    ],
+    "matched_strings": [],
+    "name": "_amsg_exit_0",
+    "prototype": "__int64()",
+    "rank_score": 101,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_callnewh_0",
+    "ea": "0x180001f06",
+    "function_file": "functions/180001f06_callnewh_0.md",
+    "matched_imports": [
+      "msvcrt!_callnewh"
+    ],
+    "matched_strings": [],
+    "name": "_callnewh_0",
+    "prototype": "int __cdecl(size_t Size)",
+    "rank_score": 101,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "exception::exception(char const * const &)",
+    "ea": "0x180001fcd",
+    "function_file": "functions/180001fcd_exception_exception_char_const_const.md",
+    "matched_imports": [
+      "msvcrt!??0exception@@QEAA@AEBQEBD@Z"
+    ],
+    "matched_strings": [],
+    "name": "??0exception@@QEAA@AEBQEBD@Z_0",
+    "prototype": "exception *__fastcall(exception *this, const char *const *)",
+    "rank_score": 101,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "exception::exception(char const * const &,int)",
+    "ea": "0x180001fd9",
+    "function_file": "functions/180001fd9_exception_exception_char_const_const_int.md",
+    "matched_imports": [
+      "msvcrt!??0exception@@QEAA@AEBQEBDH@Z"
+    ],
+    "matched_strings": [],
+    "name": "??0exception@@QEAA@AEBQEBDH@Z_0",
+    "prototype": "exception *__fastcall(exception *this, const char *const *, int)",
+    "rank_score": 101,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "memmove_0",
+    "ea": "0x180002032",
+    "function_file": "functions/180002032_memmove_0.md",
+    "matched_imports": [
+      "msvcrt!memmove"
+    ],
+    "matched_strings": [],
+    "name": "memmove_0",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 101,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "DllGetClassObject",
+    "ea": "0x1800022b0",
+    "function_file": "functions/1800022b0_DllGetClassObject.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DllGetClassObject",
+    "prototype": "HRESULT __stdcall(const IID *const rclsid, const IID *const riid, LPVOID *ppv)",
+    "rank_score": 34,
+    "size": 157,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 13,
+    "demangled": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "ea": "0x180005010",
+    "function_file": "functions/180005010_guard_dispatch_icall_thunk_10345483385596137414.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall$thunk$10345483385596137414",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 5,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "_DllMainCRTStartup",
+    "ea": "0x180001c30",
+    "function_file": "functions/180001c30_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartup",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 23,
+    "size": 61,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "__DllMainCRTStartup",
+    "ea": "0x180001c74",
+    "function_file": "functions/180001c74_DllMainCRTStartup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__DllMainCRTStartup",
+    "prototype": "__int64 __fastcall(HINSTANCE hinstDLL, __int64 fdwReason, void *)",
+    "rank_score": 20,
+    "size": 524,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Copy(unsigned __int64,unsigned __int64)",
+    "ea": "0x180001238",
+    "function_file": "functions/180001238_std_basic_string_char_std_char_traits_char_std_allocator_char_Copy_unsigned_int64_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAX_K0@Z",
+    "prototype": "size_t *__fastcall(const void **Src, unsigned __int64, size_t)",
+    "rank_score": 18,
+    "size": 247,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "CScavengeUiClassFactory::CreateInstance(IUnknown *,_GUID const &,void * *)",
+    "ea": "0x180002700",
+    "function_file": "functions/180002700_CScavengeUiClassFactory_CreateInstance_IUnknown_GUID_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?CreateInstance@CScavengeUiClassFactory@@UEAAJPEAUIUnknown@@AEBU_GUID@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(CScavengeUiClassFactory *__hidden this, struct IUnknown *, const struct _GUID *, void **)",
+    "rank_score": 15,
+    "size": 357,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x180003be0",
+    "function_file": "functions/180003be0_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Tidy(bool,unsigned __int64)",
+    "ea": "0x180001338",
+    "function_file": "functions/180001338_std_basic_string_char_std_char_traits_char_std_allocator_char_Tidy_bool_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Tidy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAX_N_K@Z",
+    "prototype": "void __fastcall(void **, char, size_t)",
+    "rank_score": 14,
+    "size": 88,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "DllMain",
+    "ea": "0x180002218",
+    "function_file": "functions/180002218_DllMain.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DllMain",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)",
+    "rank_score": 11,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CUpdateCleanup::GetSpaceUsed_::_1_::dtor$0",
+    "ea": "0x180003fa9",
+    "function_file": "functions/180003fa9_CUpdateCleanup_GetSpaceUsed_1_dtor_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CUpdateCleanup::GetSpaceUsed_::_1_::dtor$0",
+    "prototype": "void **__fastcall(__int64, __int64)",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_CUpdateCleanup::GetSpaceUsed_::_1_::dtor$1",
+    "ea": "0x180003fbb",
+    "function_file": "functions/180003fbb_CUpdateCleanup_GetSpaceUsed_1_dtor_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CUpdateCleanup::GetSpaceUsed_::_1_::dtor$1",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 11,
+    "size": 12,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "DllCanUnloadNow",
+    "ea": "0x180002290",
+    "function_file": "functions/180002290_DllCanUnloadNow.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DllCanUnloadNow",
+    "prototype": "HRESULT __stdcall()",
+    "rank_score": 10,
+    "size": 14,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_CUpdateCleanup::GetSpaceUsed_::_1_::catch$9",
+    "ea": "0x180003fcd",
+    "function_file": "functions/180003fcd_CUpdateCleanup_GetSpaceUsed_1_catch_9.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_CUpdateCleanup::GetSpaceUsed_::_1_::catch$9",
+    "prototype": "__int64()",
+    "rank_score": 10,
+    "size": 30,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>::assign(char const *,unsigned __int64)",
+    "ea": "0x180001540",
+    "function_file": "functions/180001540_std_basic_string_char_std_char_traits_char_std_allocator_char_assign_char_const_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@PEBD_K@Z",
+    "prototype": "void **__fastcall(_QWORD *, char *Src, size_t Size)",
+    "rank_score": 9,
+    "size": 247,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "std::_Tree<std::_Tset_traits<_DismReleaseType,std::less<_DismReleaseType>,std::allocator<_DismReleaseType>,0>>::_Insert_at<_DismReleaseType,std::_Nil>(bool,std::_Tree_node<_DismReleaseType,void *> *,_DismReleaseType &&,std::_Nil)",
+    "ea": "0x180002d48",
+    "function_file": "functions/180002d48_std_Tree_std_Tset_traits_DismReleaseType_std_less_DismReleaseType_std_allocator_DismReleaseType_0_Insert_at_Di.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$_Insert_at@W4_DismReleaseType@@U_Nil@std@@@?$_Tree@V?$_Tset_traits@W4_DismReleaseType@@U?$less@W4_DismReleaseType@@@std@@V?$allocator@W4_DismReleaseType@@@3@$0A@@std@@@std@@IEAA?AV?$_Tree_const_iterator@V?$_Tree_val@U?$_Tree_simple_types@W4_DismReleaseType@@@std@@@std@@@1@_NPEAU?$_Tree_node@W4_DismReleaseType@@PEAX@1@$$QEAW4_DismReleaseType@@U_Nil@1@@Z",
+    "prototype": "__int64 *__fastcall(_QWORD *, __int64 *, char, __int64 *, _DWORD *)",
+    "rank_score": 8,
+    "size": 635,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>::assign(std::basic_string<char,std::char_traits<char>,std::allocator<char>> const &,unsigned __int64,unsigned __int64)",
+    "ea": "0x180001448",
+    "function_file": "functions/180001448_std_basic_string_char_std_char_traits_char_std_allocator_char_assign_std_basic_string_char_std_char_traits_cha.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@AEBV12@_K1@Z",
+    "prototype": "void **__fastcall(void **, void **, unsigned __int64, unsigned __int64)",
+    "rank_score": 8,
+    "size": 240,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "std::_Xbad_alloc(void)",
+    "ea": "0x180001398",
+    "function_file": "functions/180001398_std_Xbad_alloc_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Xbad_alloc@std@@YAXXZ",
+    "prototype": "void __noreturn(void)",
+    "rank_score": 7,
+    "size": 32,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "std::_Tree<std::_Tset_traits<_DismReleaseType,std::less<_DismReleaseType>,std::allocator<_DismReleaseType>,0>>::_Insert_nohint<_DismReleaseType,std::_Nil>(bool,_DismReleaseType &&,std::_Nil)",
+    "ea": "0x180002fcc",
+    "function_file": "functions/180002fcc_std_Tree_std_Tset_traits_DismReleaseType_std_less_DismReleaseType_std_allocator_DismReleaseType_0_Insert_nohin.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$_Insert_nohint@W4_DismReleaseType@@U_Nil@std@@@?$_Tree@V?$_Tset_traits@W4_DismReleaseType@@U?$less@W4_DismReleaseType@@@std@@V?$allocator@W4_DismReleaseType@@@3@$0A@@std@@@std@@IEAA?AU?$pair@V?$_Tree_const_iterator@V?$_Tree_val@U?$_Tree_simple_types@W4_DismReleaseType@@@std@@@std@@@std@@_N@1@_N$$QEAW4_DismReleaseType@@U_Nil@1@@Z",
+    "prototype": "__int64 __fastcall(__int64 *, __int64, __int64, int *, char)",
+    "rank_score": 5,
+    "size": 285,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>::erase(unsigned __int64,unsigned __int64)",
+    "ea": "0x180001720",
+    "function_file": "functions/180001720_std_basic_string_char_std_char_traits_char_std_allocator_char_erase_unsigned_int64_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@_K0@Z",
+    "prototype": "_QWORD *__fastcall(_QWORD *, unsigned __int64, unsigned __int64)",
+    "rank_score": 5,
+    "size": 148,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "_IsNonwritableInCurrentImage",
+    "ea": "0x1800020b0",
+    "function_file": "functions/1800020b0_IsNonwritableInCurrentImage.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_IsNonwritableInCurrentImage",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 4,
+    "size": 74,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "_std::basic_string_char_std::char_traits_char__std::allocator_char___::_Copy_::_1_::catch$1",
+    "ea": "0x180003c20",
+    "function_file": "functions/180003c20_std_basic_string_char_std_char_traits_char_std_allocator_char_Copy_1_catch_1.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_std::basic_string_char_std::char_traits_char__std::allocator_char___::_Copy_::_1_::catch$1",
+    "prototype": "void *__fastcall(__int64, __int64)",
+    "rank_score": 4,
+    "size": 68,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "atexit",
+    "ea": "0x180001fb0",
+    "function_file": "functions/180001fb0_atexit.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "atexit",
+    "prototype": "int __cdecl(void (__cdecl *)())",
+    "rank_score": 4,
+    "size": 23,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "std::_Syserror_map(int)",
+    "ea": "0x180001960",
+    "function_file": "functions/180001960_std_Syserror_map_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Syserror_map@std@@YAPEBDH@Z",
+    "prototype": "const char *__fastcall(int)",
+    "rank_score": 4,
+    "size": 40,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "std::_Tree_alloc<0,std::_Tree_base_types<_DismReleaseType,std::allocator<_DismReleaseType>>>::_Buyheadnode(void)",
+    "ea": "0x180003798",
+    "function_file": "functions/180003798_std_Tree_alloc_0_std_Tree_base_types_DismReleaseType_std_allocator_DismReleaseType_Buyheadnode_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Buyheadnode@?$_Tree_alloc@$0A@U?$_Tree_base_types@W4_DismReleaseType@@V?$allocator@W4_DismReleaseType@@@std@@@std@@@std@@QEAAPEAU?$_Tree_node@W4_DismReleaseType@@PEAX@2@XZ",
+    "prototype": "_QWORD *()",
+    "rank_score": 4,
+    "size": 57,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "std::_Tree_buy<_DismReleaseType,std::allocator<_DismReleaseType>>::_Buynode0(void)",
+    "ea": "0x1800037d8",
+    "function_file": "functions/1800037d8_std_Tree_buy_DismReleaseType_std_allocator_DismReleaseType_Buynode0_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Buynode0@?$_Tree_buy@W4_DismReleaseType@@V?$allocator@W4_DismReleaseType@@@std@@@std@@QEAAPEAU?$_Tree_node@W4_DismReleaseType@@PEAX@2@XZ",
+    "prototype": "_QWORD *__fastcall(_QWORD *)",
+    "rank_score": 4,
+    "size": 67,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "std::_Xlength_error(char const *)",
+    "ea": "0x1800013d8",
+    "function_file": "functions/1800013d8_std_Xlength_error_char_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Xlength_error@std@@YAXPEBD@Z",
+    "prototype": "void __fastcall __noreturn(char *)",
+    "rank_score": 4,
+    "size": 35,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "std::_Xout_of_range(char const *)",
+    "ea": "0x180001404",
+    "function_file": "functions/180001404_std_Xout_of_range_char_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Xout_of_range@std@@YAXPEBD@Z",
+    "prototype": "void __fastcall __noreturn(char *)",
+    "rank_score": 3,
+    "size": 35,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Xlen(void)",
+    "ea": "0x1800013c0",
+    "function_file": "functions/1800013c0_std_basic_string_char_std_char_traits_char_std_allocator_char_Xlen_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Xlen@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAXXZ",
+    "prototype": "void __noreturn()",
+    "rank_score": 3,
+    "size": 17,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Xran(void)",
+    "ea": "0x180001430",
+    "function_file": "functions/180001430_std_basic_string_char_std_char_traits_char_std_allocator_char_Xran_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Xran@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAXXZ",
+    "prototype": "void __noreturn()",
+    "rank_score": 3,
+    "size": 17,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "std::length_error::length_error(char const *)",
+    "ea": "0x180001134",
+    "function_file": "functions/180001134_std_length_error_length_error_char_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??0length_error@std@@QEAA@PEBD@Z",
+    "prototype": "std::length_error *__fastcall(std::length_error *this, char *)",
+    "rank_score": 3,
+    "size": 47,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "_FindPESection",
+    "ea": "0x180002060",
+    "function_file": "functions/180002060_FindPESection.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_FindPESection",
+    "prototype": "__int64 __fastcall(__int64, unsigned __int64)",
+    "rank_score": 2,
+    "size": 67,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "_ValidateImageBase",
+    "ea": "0x180002100",
+    "function_file": "functions/180002100_ValidateImageBase.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_ValidateImageBase",
+    "prototype": "_BOOL8 __fastcall(__int64)",
+    "rank_score": 2,
+    "size": 43,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "_std::basic_string_char_std::char_traits_char__std::allocator_char___::_Copy_::_1_::catch$0",
+    "ea": "0x180003c64",
+    "function_file": "functions/180003c64_std_basic_string_char_std_char_traits_char_std_allocator_char_Copy_1_catch_0.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_std::basic_string_char_std::char_traits_char__std::allocator_char___::_Copy_::_1_::catch$0",
+    "prototype": "void __fastcall __noreturn(__int64, __int64)",
+    "rank_score": 2,
+    "size": 37,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "std::_Tree_buy<_DismReleaseType,std::allocator<_DismReleaseType>>::_Buynode<_DismReleaseType>(_DismReleaseType &&)",
+    "ea": "0x180002d1c",
+    "function_file": "functions/180002d1c_std_Tree_buy_DismReleaseType_std_allocator_DismReleaseType_Buynode_DismReleaseType_DismReleaseType.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$_Buynode@W4_DismReleaseType@@@?$_Tree_buy@W4_DismReleaseType@@V?$allocator@W4_DismReleaseType@@@std@@@std@@QEAAPEAU?$_Tree_node@W4_DismReleaseType@@PEAX@1@$$QEAW4_DismReleaseType@@@Z",
+    "prototype": "__int64 __fastcall(__int64, _DWORD *)",
+    "rank_score": 2,
+    "size": 36,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "std::_Winerror_map(int)",
+    "ea": "0x180001990",
+    "function_file": "functions/180001990_std_Winerror_map_int.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?_Winerror_map@std@@YAPEBDH@Z",
+    "prototype": "const char *__fastcall(int)",
+    "rank_score": 2,
+    "size": 40,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "std::bad_alloc::bad_alloc(void)",
+    "ea": "0x1800010c4",
+    "function_file": "functions/1800010c4_std_bad_alloc_bad_alloc_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??0bad_alloc@std@@QEAA@XZ",
+    "prototype": "std::bad_alloc *__fastcall(std::bad_alloc *this)",
+    "rank_score": 2,
+    "size": 65,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RAII::CAutoDismDelete<_DismPackage *>::operator=(_DismPackage *)",
+    "ea": "0x1800031c0",
+    "function_file": "functions/1800031c0_RAII_CAutoDismDelete_DismPackage_operator_DismPackage.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??4?$CAutoDismDelete@PEAU_DismPackage@@@RAII@@UEAAXPEAU_DismPackage@@@Z",
+    "prototype": "__int64 __fastcall(_QWORD *, __int64)",
+    "rank_score": 1,
+    "size": 43,
+    "tags": []
+  }
+]

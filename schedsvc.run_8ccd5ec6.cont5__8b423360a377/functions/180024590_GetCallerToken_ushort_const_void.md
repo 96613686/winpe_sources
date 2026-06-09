@@ -1,0 +1,167 @@
+# GetCallerToken(ushort const *,void * *)
+
+- ea: `0x180024590`
+- end: `0x1800246a1`
+- name: `?GetCallerToken@@YAJPEBGPEAPEAX@Z`
+- size: `273`
+- prototype: `__int64 __fastcall(const unsigned __int16 *, PHANDLE TokenHandle)`
+- caller_count: `10`
+- callee_count: `3`
+- tags: `authz_impersonation`
+
+## callers
+
+- `0x180023c4c`
+- `0x18004e9d0`
+- `0x18004f9b8`
+- `0x18004fc18`
+- `0x180079560`
+- `0x180079874`
+- `0x180079f48`
+- `0x18007a3b8`
+- `0x18007a9dc`
+- `0x18007ae0c`
+
+## callees
+
+- `0x180024590`
+- `0x18002f814`
+- `0x18005a2bc`
+
+## import_xrefs
+
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18002460b`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18002460b`
+- `api-ms-win-core-processthreads-l1-1-0!GetCurrentThread` at `0x1800245bd`
+- `api-ms-win-core-processthreads-l1-1-0!GetCurrentThread` at `0x1800245bd`
+- `api-ms-win-core-processthreads-l1-1-0!OpenThreadToken` at `0x1800245da`
+- `api-ms-win-core-processthreads-l1-1-0!OpenThreadToken` at `0x1800245da`
+- `RPCRT4!RpcImpersonateClient` at `0x1800245a7`
+- `RPCRT4!RpcImpersonateClient` at `0x1800245a7`
+- `RPCRT4!RpcRevertToSelf` at `0x1800245ea`
+- `RPCRT4!RpcRevertToSelf` at `0x180024626`
+- `RPCRT4!RpcRevertToSelf` at `0x1800245ea`
+- `RPCRT4!RpcRevertToSelf` at `0x180024626`
+
+## pseudocode
+
+```c
+__int64 __fastcall GetCallerToken(const unsigned __int16 *a1, PHANDLE TokenHandle)
+{
+  RPC_STATUS v4; // eax
+  EventManager *v5; // rcx
+  RPC_STATUS v6; // ebx
+  HANDLE CurrentThread; // rax
+  signed int LastError; // eax
+  unsigned int v10; // ebx
+  void *v11; // [rsp+20h] [rbp-58h]
+  const struct _GUID *v12; // [rsp+28h] [rbp-50h]
+  void **pExceptionObject; // [rsp+30h] [rbp-48h] BYREF
+  char v14; // [rsp+38h] [rbp-40h]
+  const unsigned __int16 *v15; // [rsp+40h] [rbp-38h]
+  __int64 v16; // [rsp+48h] [rbp-30h]
+  __int64 v17; // [rsp+50h] [rbp-28h]
+  RPC_STATUS v18; // [rsp+58h] [rbp-20h]
+  __int64 v19; // [rsp+5Ch] [rbp-1Ch]
+
+  v4 = RpcImpersonateClient(0);
+  v6 = v4;
+  if ( v4 )
+  {
+    EventManager::EvtReport(v5, &IMPERSONATION_FAILURE, a1, v4, v11, v12);
+    v14 = 0;
+    pExceptionObject = &wmi::GenericException::`vftable';
+    v18 = v6;
+    v15 = &qword_1800A8718;
+    v19 = -1;
+    v16 = 0;
+    v17 = 0;
+    throw (wmi::GenericException *)&pExceptionObject;
+  }
+  CurrentThread = GetCurrentThread();
+  if ( OpenThreadToken(CurrentThread, 8u, 1, TokenHandle) )
+  {
+    RpcRevertToSelf();
+    return 0;
+  }
+  else
+  {
+    LastError = GetLastError();
+    v10 = LastError;
+    if ( LastError > 0 )
+      v10 = (unsigned __int16)LastError | 0x80070000;
+    RpcRevertToSelf();
+    return v10;
+  }
+}
+
+```
+
+## disassembly
+
+```asm
+0x180024590  mov     [rsp+arg_0], rbx
+0x180024595  mov     [rsp+arg_8], rsi
+0x18002459a  push    rdi
+0x18002459b  sub     rsp, 70h
+0x18002459f  mov     rsi, rcx
+0x1800245a2  mov     rdi, rdx
+0x1800245a5  xor     ecx, ecx; BindingHandle
+0x1800245a7  call    cs:__imp_RpcImpersonateClient
+0x1800245ae  nop     dword ptr [rax+rax+00h]
+0x1800245b3  mov     ebx, eax
+0x1800245b5  test    eax, eax
+0x1800245b7  jnz     loc_180024647
+0x1800245bd  call    cs:__imp_GetCurrentThread
+0x1800245c4  nop     dword ptr [rax+rax+00h]
+0x1800245c9  mov     r9, rdi; TokenHandle
+0x1800245cc  mov     edx, 8; DesiredAccess
+0x1800245d1  mov     rcx, rax; ThreadHandle
+0x1800245d4  mov     r8d, 1; OpenAsSelf
+0x1800245da  call    cs:__imp_OpenThreadToken
+0x1800245e1  nop     dword ptr [rax+rax+00h]
+0x1800245e6  test    eax, eax
+0x1800245e8  jz      short loc_18002460B
+0x1800245ea  call    cs:__imp_RpcRevertToSelf
+0x1800245f1  nop     dword ptr [rax+rax+00h]
+0x1800245f6  xor     eax, eax
+0x1800245f8  lea     r11, [rsp+78h+var_8]
+0x1800245fd  mov     rbx, [r11+10h]
+0x180024601  mov     rsi, [r11+18h]
+0x180024605  mov     rsp, r11
+0x180024608  pop     rdi
+0x180024609  retn
+0x18002460b  call    cs:__imp_GetLastError
+0x180024612  nop     dword ptr [rax+rax+00h]
+0x180024617  mov     ebx, eax
+0x180024619  test    eax, eax
+0x18002461b  jle     short loc_180024626
+0x18002461d  movzx   ebx, ax
+0x180024620  or      ebx, 80070000h
+0x180024626  call    cs:__imp_RpcRevertToSelf
+0x18002462d  nop     dword ptr [rax+rax+00h]
+0x180024632  lea     r11, [rsp+78h+var_8]
+0x180024637  mov     eax, ebx
+0x180024639  mov     rbx, [r11+10h]
+0x18002463d  mov     rsi, [r11+18h]
+0x180024641  mov     rsp, r11
+0x180024644  pop     rdi
+0x180024645  retn
+0x180024647  mov     r9d, ebx; unsigned int
+0x18002464a  lea     rdx, IMPERSONATION_FAILURE; struct _EVENT_DESCRIPTOR *
+0x180024651  mov     r8, rsi; unsigned __int16 *
+0x180024654  call    ?EvtReport@EventManager@@QEAAJPEBU_EVENT_DESCRIPTOR@@PEBGKPEAXPEBU_GUID@@@Z; EventManager::EvtReport(_EVENT_DESCRIPTOR const *,ushort const *,ulong,void *,_GUID const *)
+0x180024659  lea     rax, ??_7GenericException@wmi@@6B@; const wmi::GenericException::`vftable'
+0x180024660  mov     [rsp+78h+var_40], 0
+0x180024665  mov     [rsp+78h+pExceptionObject], rax
+0x18002466a  lea     rdx, _TI3?AVGenericException@wmi@@; pThrowInfo
+0x180024671  lea     rax, qword_1800A8718
+0x180024678  mov     [rsp+78h+var_20], ebx
+0x18002467c  mov     [rsp+78h+var_38], rax
+0x180024681  lea     rcx, [rsp+78h+pExceptionObject]; pExceptionObject
+0x180024686  xor     eax, eax
+0x180024688  mov     [rsp+78h+var_1C], 0FFFFFFFFFFFFFFFFh
+0x180024691  mov     [rsp+78h+var_30], rax
+0x180024696  mov     [rsp+78h+var_28], rax
+0x18002469b  call    _CxxThrowException_0
+```

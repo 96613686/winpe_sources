@@ -1,0 +1,203 @@
+# JobSecurity::Update(void *,void *)
+
+- ea: `0x180082720`
+- end: `0x180082889`
+- name: `?Update@JobSecurity@@QEAAJPEAX0@Z`
+- size: `361`
+- prototype: `__int64 __fastcall(PSECURITY_DESCRIPTOR *ObjectsSecurityDescriptor, PSECURITY_DESCRIPTOR ModificationDescriptor, HANDLE Token)`
+- caller_count: `1`
+- callee_count: `2`
+- tags: `authz_impersonation, loader_planting, installer_update, broker_com_uri`
+
+## callers
+
+- `0x180023c4c`
+
+## callees
+
+- `0x180082720`
+- `0x180082a40`
+
+## import_xrefs
+
+- `ntdll!RtlLengthSecurityDescriptor` at `0x180082860`
+- `ntdll!RtlLengthSecurityDescriptor` at `0x180082860`
+- `ntdll!RtlGetControlSecurityDescriptor` at `0x18008276e`
+- `ntdll!RtlGetControlSecurityDescriptor` at `0x18008276e`
+- `ntdll!RtlGetOwnerSecurityDescriptor` at `0x180082792`
+- `ntdll!RtlGetOwnerSecurityDescriptor` at `0x180082792`
+- `ntdll!RtlGetGroupSecurityDescriptor` at `0x1800827b9`
+- `ntdll!RtlGetGroupSecurityDescriptor` at `0x1800827b9`
+- `ntdll!RtlGetDaclSecurityDescriptor` at `0x1800827e2`
+- `ntdll!RtlGetDaclSecurityDescriptor` at `0x1800827e2`
+- `ntdll!RtlSetSecurityObjectEx` at `0x180082849`
+- `ntdll!RtlSetSecurityObjectEx` at `0x180082849`
+
+## pseudocode
+
+```c
+int __fastcall JobSecurity::Update(
+        PSECURITY_DESCRIPTOR *ObjectsSecurityDescriptor,
+        PSECURITY_DESCRIPTOR ModificationDescriptor,
+        HANDLE Token)
+{
+  NTSTATUS ControlSecurityDescriptor; // eax
+  SECURITY_INFORMATION v8; // ebx
+  unsigned __int8 OwnerDefaulted; // [rsp+30h] [rbp-40h] BYREF
+  unsigned __int8 DaclPresent[3]; // [rsp+31h] [rbp-3Fh] BYREF
+  WORD Control; // [rsp+34h] [rbp-3Ch] BYREF
+  PSID Owner; // [rsp+38h] [rbp-38h] BYREF
+  ULONG Revision; // [rsp+40h] [rbp-30h] BYREF
+  PACL Dacl; // [rsp+48h] [rbp-28h] BYREF
+  struct _GENERIC_MAPPING GenericMapping; // [rsp+50h] [rbp-20h] BYREF
+
+  Control = 0;
+  Revision = 0;
+  DaclPresent[0] = 0;
+  OwnerDefaulted = 0;
+  Owner = 0;
+  Dacl = 0;
+  GenericMapping = 0;
+  ControlSecurityDescriptor = RtlGetControlSecurityDescriptor(ModificationDescriptor, &Control, &Revision);
+  if ( ControlSecurityDescriptor < 0 )
+    return ControlSecurityDescriptor | 0x10000000;
+  ControlSecurityDescriptor = RtlGetOwnerSecurityDescriptor(ModificationDescriptor, &Owner, &OwnerDefaulted);
+  if ( ControlSecurityDescriptor < 0 )
+    return ControlSecurityDescriptor | 0x10000000;
+  v8 = Owner != 0;
+  ControlSecurityDescriptor = RtlGetGroupSecurityDescriptor(ModificationDescriptor, &Owner, &OwnerDefaulted);
+  if ( ControlSecurityDescriptor < 0 )
+    return ControlSecurityDescriptor | 0x10000000;
+  if ( Owner )
+    v8 |= 2u;
+  ControlSecurityDescriptor = RtlGetDaclSecurityDescriptor(ModificationDescriptor, DaclPresent, &Dacl, &OwnerDefaulted);
+  if ( ControlSecurityDescriptor < 0 )
+    return ControlSecurityDescriptor | 0x10000000;
+  if ( DaclPresent[0] )
+  {
+    if ( (Control & 0x1000) != 0 )
+      v8 |= 0x80000004;
+    else
+      v8 |= 0x20000004u;
+  }
+  GenericMapping.GenericRead = 1179785;
+  GenericMapping.GenericWrite = 1179926;
+  GenericMapping.GenericExecute = 1179808;
+  GenericMapping.GenericAll = 2032127;
+  ControlSecurityDescriptor = RtlSetSecurityObjectEx(
+                                v8,
+                                ModificationDescriptor,
+                                ObjectsSecurityDescriptor,
+                                3u,
+                                &GenericMapping,
+                                Token);
+  if ( ControlSecurityDescriptor < 0 )
+    return ControlSecurityDescriptor | 0x10000000;
+  *((_DWORD *)ObjectsSecurityDescriptor + 2) = RtlLengthSecurityDescriptor(*ObjectsSecurityDescriptor);
+  return 0;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180082720  push    rbp
+0x180082722  push    rbx
+0x180082723  push    rsi
+0x180082724  push    rdi
+0x180082725  push    r14
+0x180082727  mov     rbp, rsp
+0x18008272a  sub     rsp, 70h
+0x18008272e  mov     rax, cs:__security_cookie
+0x180082735  xor     rax, rsp
+0x180082738  mov     [rbp+var_10], rax
+0x18008273c  xor     eax, eax
+0x18008273e  mov     rdi, rdx
+0x180082741  mov     r14, r8
+0x180082744  mov     [rbp+Control], ax
+0x180082748  mov     rsi, rcx
+0x18008274b  mov     [rbp+Revision], eax
+0x18008274e  xorps   xmm0, xmm0
+0x180082751  mov     [rbp+DaclPresent], al
+0x180082754  mov     rcx, rdi; SecurityDescriptor
+0x180082757  mov     [rbp+OwnerDefaulted], al
+0x18008275a  lea     r8, [rbp+Revision]; Revision
+0x18008275e  mov     [rbp+Owner], rax
+0x180082762  lea     rdx, [rbp+Control]; Control
+0x180082766  mov     [rbp+Dacl], rax
+0x18008276a  movups  xmmword ptr [rbp+var_20.GenericRead], xmm0
+0x18008276e  call    cs:__imp_RtlGetControlSecurityDescriptor
+0x180082775  nop     dword ptr [rax+rax+00h]
+0x18008277a  test    eax, eax
+0x18008277c  jns     short loc_180082787
+0x18008277e  bts     eax, 1Ch
+0x180082782  jmp     loc_180082871
+0x180082787  lea     r8, [rbp+OwnerDefaulted]; OwnerDefaulted
+0x18008278b  mov     rcx, rdi; SecurityDescriptor
+0x18008278e  lea     rdx, [rbp+Owner]; Owner
+0x180082792  call    cs:__imp_RtlGetOwnerSecurityDescriptor
+0x180082799  nop     dword ptr [rax+rax+00h]
+0x18008279e  test    eax, eax
+0x1800827a0  js      short loc_18008277E
+0x1800827a2  xor     ebx, ebx
+0x1800827a4  lea     r8, [rbp+OwnerDefaulted]; GroupDefaulted
+0x1800827a8  cmp     [rbp+Owner], rbx
+0x1800827ac  lea     rdx, [rbp+Owner]; Group
+0x1800827b0  mov     rcx, rdi; SecurityDescriptor
+0x1800827b3  lea     eax, [rbx+1]
+0x1800827b6  cmovnz  ebx, eax
+0x1800827b9  call    cs:__imp_RtlGetGroupSecurityDescriptor
+0x1800827c0  nop     dword ptr [rax+rax+00h]
+0x1800827c5  test    eax, eax
+0x1800827c7  js      short loc_18008277E
+0x1800827c9  cmp     [rbp+Owner], 0
+0x1800827ce  jz      short loc_1800827D3
+0x1800827d0  or      ebx, 2
+0x1800827d3  lea     r9, [rbp+OwnerDefaulted]; DaclDefaulted
+0x1800827d7  mov     rcx, rdi; SecurityDescriptor
+0x1800827da  lea     r8, [rbp+Dacl]; Dacl
+0x1800827de  lea     rdx, [rbp+DaclPresent]; DaclPresent
+0x1800827e2  call    cs:__imp_RtlGetDaclSecurityDescriptor
+0x1800827e9  nop     dword ptr [rax+rax+00h]
+0x1800827ee  test    eax, eax
+0x1800827f0  js      short loc_18008277E
+0x1800827f2  cmp     [rbp+DaclPresent], 0
+0x1800827f6  jz      short loc_180082811
+0x1800827f8  mov     eax, 1000h
+0x1800827fd  test    [rbp+Control], ax
+0x180082801  jz      short loc_18008280B
+0x180082803  or      ebx, 80000004h
+0x180082809  jmp     short loc_180082811
+0x18008280b  or      ebx, 20000004h
+0x180082811  lea     rax, [rbp+var_20]
+0x180082815  mov     [rsp+70h+Token], r14; Token
+0x18008281a  mov     r9d, 3; AutoInheritFlags
+0x180082820  mov     [rsp+70h+GenericMapping], rax; GenericMapping
+0x180082825  mov     r8, rsi; ObjectsSecurityDescriptor
+0x180082828  mov     [rbp+var_20.GenericRead], 120089h
+0x18008282f  mov     rdx, rdi; ModificationDescriptor
+0x180082832  mov     [rbp+var_20.GenericWrite], 120116h
+0x180082839  mov     ecx, ebx; SecurityInformation
+0x18008283b  mov     [rbp+var_20.GenericExecute], 1200A0h
+0x180082842  mov     [rbp+var_20.GenericAll], 1F01FFh
+0x180082849  call    cs:__imp_RtlSetSecurityObjectEx
+0x180082850  nop     dword ptr [rax+rax+00h]
+0x180082855  test    eax, eax
+0x180082857  js      loc_18008277E
+0x18008285d  mov     rcx, [rsi]; SecurityDescriptor
+0x180082860  call    cs:__imp_RtlLengthSecurityDescriptor
+0x180082867  nop     dword ptr [rax+rax+00h]
+0x18008286c  mov     [rsi+8], eax
+0x18008286f  xor     eax, eax
+0x180082871  mov     rcx, [rbp+var_10]
+0x180082875  xor     rcx, rsp; StackCookie
+0x180082878  call    __security_check_cookie
+0x18008287d  add     rsp, 70h
+0x180082881  pop     r14
+0x180082883  pop     rdi
+0x180082884  pop     rsi
+0x180082885  pop     rbx
+0x180082886  pop     rbp
+0x180082887  retn
+```

@@ -1,0 +1,150 @@
+# ATL::CAtlArray<ATL::CAutoPtr<ATL::CDacl::CAccessAce>,ATL::CAutoPtrElementTraits<ATL::CDacl::CAccessAce>>::GrowBuffer(unsigned __int64)
+
+- ea: `0x18004c06c`
+- end: `0x18004c14d`
+- name: `?GrowBuffer@?$CAtlArray@V?$CAutoPtr@VCAccessAce@CDacl@ATL@@@ATL@@V?$CAutoPtrElementTraits@VCAccessAce@CDacl@ATL@@@2@@ATL@@AEAA_N_K@Z`
+- size: `225`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `2`
+- tags: `authz_impersonation`
+
+## callers
+
+- `0x18006e5f4`
+
+## callees
+
+- `0x18002c2f4`
+- `0x18004c06c`
+
+## import_xrefs
+
+- `msvcrt!memmove_s` at `0x18004c111`
+- `msvcrt!memmove_s` at `0x18004c111`
+- `msvcrt!calloc` at `0x18004c0a7`
+- `msvcrt!calloc` at `0x18004c0e8`
+- `msvcrt!calloc` at `0x18004c0a7`
+- `msvcrt!calloc` at `0x18004c0e8`
+- `msvcrt!free` at `0x18004c127`
+- `msvcrt!free` at `0x18004c127`
+
+## pseudocode
+
+```c
+char __fastcall ATL::CAtlArray<ATL::CAutoPtr<ATL::CDacl::CAccessAce>,ATL::CAutoPtrElementTraits<ATL::CDacl::CAccessAce>>::GrowBuffer(
+        __int64 a1,
+        size_t a2)
+{
+  unsigned __int64 v4; // rdx
+  size_t v5; // rcx
+  void *v6; // rax
+  void *v7; // rax
+  void *v8; // rsi
+  errno_t v10; // eax
+
+  v4 = *(_QWORD *)(a1 + 16);
+  if ( a2 > v4 )
+  {
+    v5 = *(int *)(a1 + 24);
+    if ( *(_QWORD *)a1 )
+    {
+      if ( !v5 )
+      {
+        v5 = v4 >> 1;
+        if ( a2 - v4 > v4 >> 1 )
+          v5 = a2 - v4;
+      }
+      if ( a2 < v4 + v5 )
+        a2 = v4 + v5;
+      v7 = calloc(a2, 8u);
+      v8 = v7;
+      if ( !v7 )
+        return 0;
+      v10 = memmove_s(v7, 8LL * *(_QWORD *)(a1 + 8), *(const void *const *)a1, 8LL * *(_QWORD *)(a1 + 8));
+      ATL::AtlCrtErrorCheck(v10);
+      free(*(void **)a1);
+      *(_QWORD *)a1 = v8;
+    }
+    else
+    {
+      if ( v5 > a2 )
+        a2 = v5;
+      v6 = calloc(a2, 8u);
+      *(_QWORD *)a1 = v6;
+      if ( !v6 )
+        return 0;
+    }
+    *(_QWORD *)(a1 + 16) = a2;
+  }
+  return 1;
+}
+
+```
+
+## disassembly
+
+```asm
+0x18004c06c  mov     [rsp+arg_0], rbx
+0x18004c071  mov     [rsp+arg_8], rsi
+0x18004c076  push    rdi
+0x18004c077  sub     rsp, 20h
+0x18004c07b  mov     rbx, rdx
+0x18004c07e  mov     rdi, rcx
+0x18004c081  mov     rdx, [rcx+10h]
+0x18004c085  cmp     rbx, rdx
+0x18004c088  jbe     loc_18004C13A
+0x18004c08e  cmp     qword ptr [rdi], 0
+0x18004c092  movsxd  rcx, dword ptr [rcx+18h]
+0x18004c096  jnz     short loc_18004C0BD
+0x18004c098  cmp     rcx, rbx
+0x18004c09b  mov     edx, 8; Size
+0x18004c0a0  cmova   rbx, rcx
+0x18004c0a4  mov     rcx, rbx; Count
+0x18004c0a7  call    cs:__imp_calloc
+0x18004c0ae  nop     dword ptr [rax+rax+00h]
+0x18004c0b3  mov     [rdi], rax
+0x18004c0b6  test    rax, rax
+0x18004c0b9  jnz     short loc_18004C136
+0x18004c0bb  jmp     short loc_18004C0FC
+0x18004c0bd  test    rcx, rcx
+0x18004c0c0  jnz     short loc_18004C0D5
+0x18004c0c2  mov     rcx, rdx
+0x18004c0c5  mov     rax, rbx
+0x18004c0c8  shr     rcx, 1
+0x18004c0cb  sub     rax, rdx
+0x18004c0ce  cmp     rax, rcx
+0x18004c0d1  cmova   rcx, rax
+0x18004c0d5  lea     rax, [rdx+rcx]
+0x18004c0d9  mov     edx, 8; Size
+0x18004c0de  cmp     rbx, rax
+0x18004c0e1  cmovb   rbx, rax
+0x18004c0e5  mov     rcx, rbx; Count
+0x18004c0e8  call    cs:__imp_calloc
+0x18004c0ef  nop     dword ptr [rax+rax+00h]
+0x18004c0f4  mov     rsi, rax
+0x18004c0f7  test    rax, rax
+0x18004c0fa  jnz     short loc_18004C100
+0x18004c0fc  xor     al, al
+0x18004c0fe  jmp     short loc_18004C13C
+0x18004c100  mov     rdx, [rdi+8]
+0x18004c104  mov     rcx, rsi; Destination
+0x18004c107  mov     r8, [rdi]; Source
+0x18004c10a  shl     rdx, 3; DestinationSize
+0x18004c10e  mov     r9, rdx; SourceSize
+0x18004c111  call    cs:__imp_memmove_s
+0x18004c118  nop     dword ptr [rax+rax+00h]
+0x18004c11d  mov     ecx, eax; int
+0x18004c11f  call    ?AtlCrtErrorCheck@ATL@@YAHH@Z; ATL::AtlCrtErrorCheck(int)
+0x18004c124  mov     rcx, [rdi]; Block
+0x18004c127  call    cs:__imp_free
+0x18004c12e  nop     dword ptr [rax+rax+00h]
+0x18004c133  mov     [rdi], rsi
+0x18004c136  mov     [rdi+10h], rbx
+0x18004c13a  mov     al, 1
+0x18004c13c  mov     rbx, [rsp+28h+arg_0]
+0x18004c141  mov     rsi, [rsp+28h+arg_8]
+0x18004c146  add     rsp, 20h
+0x18004c14a  pop     rdi
+0x18004c14b  retn
+```

@@ -1,0 +1,521 @@
+# ItSrvInitialize
+
+- ea: `0x180077974`
+- end: `0x180077e9d`
+- name: `ItSrvInitialize`
+- size: `1321`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `9`
+- tags: `loader_planting, installer_update, broker_com_uri`
+
+## callers
+
+- `0x1800519e0`
+
+## callees
+
+- `0x180075f08`
+- `0x180076630`
+- `0x1800769b8`
+- `0x180076dbc`
+- `0x180077914`
+- `0x180077974`
+- `0x1800787fc`
+- `0x1800829fa`
+- `0x180082a40`
+
+## import_xrefs
+
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180077afe`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180077afe`
+- `api-ms-win-core-sysinfo-l1-1-0!GetVersionExW` at `0x1800779e5`
+- `api-ms-win-core-sysinfo-l1-1-0!GetVersionExW` at `0x1800779e5`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180077e5d`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180077e5d`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180077ce8`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180077ce8`
+- `api-ms-win-core-synch-l1-1-0!CreateEventW` at `0x180077ae6`
+- `api-ms-win-core-synch-l1-1-0!CreateEventW` at `0x180077b1c`
+- `api-ms-win-core-synch-l1-1-0!CreateEventW` at `0x180077b3f`
+- `api-ms-win-core-synch-l1-1-0!CreateEventW` at `0x180077b62`
+- `api-ms-win-core-synch-l1-1-0!CreateEventW` at `0x180077b85`
+- `api-ms-win-core-synch-l1-1-0!CreateEventW` at `0x180077bac`
+- `api-ms-win-core-synch-l1-1-0!CreateEventW` at `0x180077bd3`
+- `api-ms-win-core-synch-l1-1-0!CreateEventW` at `0x180077bfa`
+- `api-ms-win-core-synch-l1-1-0!CreateEventW` at `0x180077ae6`
+- `api-ms-win-core-synch-l1-1-0!CreateEventW` at `0x180077b1c`
+- `api-ms-win-core-synch-l1-1-0!CreateEventW` at `0x180077b3f`
+- `api-ms-win-core-synch-l1-1-0!CreateEventW` at `0x180077b62`
+- `api-ms-win-core-synch-l1-1-0!CreateEventW` at `0x180077b85`
+- `api-ms-win-core-synch-l1-1-0!CreateEventW` at `0x180077bac`
+- `api-ms-win-core-synch-l1-1-0!CreateEventW` at `0x180077bd3`
+- `api-ms-win-core-synch-l1-1-0!CreateEventW` at `0x180077bfa`
+- `api-ms-win-core-synch-l1-1-0!InitializeCriticalSection` at `0x180077a94`
+- `api-ms-win-core-synch-l1-1-0!InitializeCriticalSection` at `0x180077aa7`
+- `api-ms-win-core-synch-l1-1-0!InitializeCriticalSection` at `0x180077aba`
+- `api-ms-win-core-synch-l1-1-0!InitializeCriticalSection` at `0x180077a94`
+- `api-ms-win-core-synch-l1-1-0!InitializeCriticalSection` at `0x180077aa7`
+- `api-ms-win-core-synch-l1-1-0!InitializeCriticalSection` at `0x180077aba`
+- `ntdll!RtlAcquireSRWLockExclusive` at `0x180077cfb`
+- `ntdll!RtlAcquireSRWLockExclusive` at `0x180077cfb`
+- `ntdll!RtlReleaseSRWLockExclusive` at `0x180077d30`
+- `ntdll!RtlReleaseSRWLockExclusive` at `0x180077d30`
+- `ntdll!RtlInitializeSRWLock` at `0x180077c1d`
+- `ntdll!RtlInitializeSRWLock` at `0x180077c1d`
+- `RPCRT4!RpcServerUseProtseqW` at `0x180077d9c`
+- `RPCRT4!RpcServerUseProtseqW` at `0x180077d9c`
+- `RPCRT4!RpcServerRegisterIfEx` at `0x180077df3`
+- `RPCRT4!RpcServerRegisterIfEx` at `0x180077df3`
+- `RPCRT4!RpcServerInqBindings` at `0x180077db9`
+- `RPCRT4!RpcServerInqBindings` at `0x180077db9`
+- `RPCRT4!RpcServerRegisterAuthInfoW` at `0x180077e10`
+- `RPCRT4!RpcServerRegisterAuthInfoW` at `0x180077e10`
+- `RPCRT4!RpcEpRegisterW` at `0x180077e3d`
+- `RPCRT4!RpcEpRegisterW` at `0x180077e3d`
+- `POWRPROF!PowerDeterminePlatformRole` at `0x180077c5f`
+- `POWRPROF!PowerDeterminePlatformRole` at `0x180077c5f`
+
+## pseudocode
+
+```c
+__int64 ItSrvInitialize()
+{
+  char v0; // di
+  BOOL Version; // ebx
+  struct _ITSRV_GLOBAL_CONTEXT *v2; // rcx
+  unsigned int LastError; // ebx
+  __int128 v4; // xmm0
+  __int128 v5; // xmm1
+  __int32 v6; // eax
+  __int32 v7; // eax
+  __int32 v8; // eax
+  struct _ITSRV_GLOBAL_CONTEXT *v9; // rcx
+  __int128 v11; // [rsp+30h] [rbp-D0h] BYREF
+  __int128 v12; // [rsp+40h] [rbp-C0h]
+  int v13; // [rsp+50h] [rbp-B0h]
+  _OSVERSIONINFOW VersionInformation; // [rsp+60h] [rbp-A0h] BYREF
+  char v15; // [rsp+17Ah] [rbp+7Ah]
+
+  memset_0(&VersionInformation.dwMajorVersion, 0, 0x118u);
+  v0 = 0;
+  memset_0(&ItSrvGlobalContext, 0, 0x368u);
+  VersionInformation.dwOSVersionInfoSize = 284;
+  stru_1800C1310.Blink = &stru_1800C1310;
+  stru_1800C1310.Flink = &stru_1800C1310;
+  Version = GetVersionExW(&VersionInformation);
+  if ( !Version || (byte_1800C1592 = 1, v15 != 1) )
+    byte_1800C1592 = 0;
+  dword_1800C1494 &= 0xFFFFFFC0;
+  dword_1800C14EC &= 0xFFFFFFC0;
+  ItSrvGlobalContext = 1147547697;
+  xmmword_1800C12C4 = (__int128)_mm_load_si128((const __m128i *)&_xmm);
+  dword_1800C14A0 = 0;
+  qword_1800C14A8 = 0;
+  xmmword_1800C12D4 = xmmword_1800C12C4;
+  dword_1800C1490 = -1;
+  dword_1800C14F8 = 0;
+  qword_1800C1500 = 0;
+  dword_1800C14E8 = -1;
+  memset_0(qword_1800C1540, 0, sizeof(qword_1800C1540));
+  InitializeCriticalSection(&stru_1800C12E8);
+  InitializeCriticalSection(&stru_1800C1330);
+  InitializeCriticalSection(&stru_1800C1360);
+  stru_1800C1388.Blink = &stru_1800C1388;
+  stru_1800C1388.Flink = &stru_1800C1388;
+  hObject = CreateEventW(0, 1, 0, 0);
+  if ( !hObject
+    || (qword_1800C1410 = CreateEventW(0, 1, 1, 0)) == 0
+    || (hHandle = CreateEventW(0, 1, 1, 0)) == 0
+    || (qword_1800C1598 = CreateEventW(0, 1, 0, 0)) == 0
+    || (qword_1800C1420 = CreateEventW(0, 1, 1, 0)) == 0
+    || (qword_1800C15A0 = CreateEventW(0, 1, 0, 0)) == 0
+    || (hEvent = CreateEventW(0, 1, 0, 0)) == 0
+    || (qword_1800C1320 = CreateEventW(0, 1, 1, 0)) == 0 )
+  {
+    LastError = GetLastError();
+    goto LABEL_34;
+  }
+  RtlInitializeSRWLock(&qword_1800C1458);
+  if ( Version )
+  {
+    if ( v15 != 1 )
+    {
+      v4 = xmmword_1800AC988;
+      v5 = xmmword_1800AC998;
+      goto LABEL_24;
+    }
+    v6 = PowerDeterminePlatformRole() - 1;
+    if ( !v6 )
+      goto LABEL_23;
+    v7 = v6 - 1;
+    if ( !v7 )
+    {
+      v4 = xmmword_1800AC9AC;
+      v5 = xmmword_1800AC9BC;
+      goto LABEL_24;
+    }
+    v8 = v7 - 1;
+    if ( !v8 )
+    {
+LABEL_23:
+      v4 = xmmword_1800AC964;
+      v5 = xmmword_1800AC974;
+      goto LABEL_24;
+    }
+    if ( v8 == 5 )
+    {
+      v4 = xmmword_1800AC9D0;
+      v5 = xmmword_1800AC9E0;
+      goto LABEL_24;
+    }
+  }
+  v4 = xmmword_1800AC940;
+  v5 = xmmword_1800AC950;
+LABEL_24:
+  v13 = 512;
+  v12 = v5;
+  v11 = v4;
+  LastError = ItSpRetrieveDetectionOverrides((struct _IT_IDLE_DETECTION_PARAMETERS *)&v11);
+  if ( LastError )
+    goto LABEL_37;
+  EnterCriticalSection(&stru_1800C12E8);
+  RtlAcquireSRWLockExclusive(&qword_1800C1458);
+  dword_1800C1450 = v13;
+  *(_OWORD *)byte_1800C1430 = v11;
+  *(__int128 *)((char *)&xmmword_1800C143C + 4) = v12;
+  RtlReleaseSRWLockExclusive(&qword_1800C1458);
+  byte_1800C1460 = 0;
+  String1 = 0;
+  dword_1800C1464 = 0;
+  LastError = ItSpRetrieveRuntimeOverrides((struct _IT_IDLE_RUNTIME_PARAMETERS *)&byte_1800C1460);
+  if ( !LastError )
+  {
+    v0 = 1;
+    LastError = ItSpStartIdleDetection(v9);
+    if ( !LastError )
+    {
+      ItSpUpdateStatus(&ItSrvGlobalContext, 1147547698);
+      LastError = RpcServerUseProtseqW((RPC_WSTR)L"ncalrpc", 0x100u, 0);
+      if ( !LastError )
+      {
+        LastError = RpcServerInqBindings(&BindingVector);
+        if ( !LastError )
+        {
+          LastError = RpcServerRegisterIfEx(qword_18008B1E0, 0, 0, 9u, 0x4D2u, ItSpRpcSecurityCallback);
+          if ( !LastError )
+          {
+            LastError = RpcServerRegisterAuthInfoW(0, 0xAu, 0, 0);
+            if ( !LastError )
+            {
+              byte_1800C1591 = 1;
+              LastError = RpcEpRegisterW(qword_18008B1E0, BindingVector, 0, 0);
+              if ( !LastError )
+                byte_1800C1590 = 1;
+            }
+          }
+        }
+      }
+    }
+  }
+  LeaveCriticalSection(&stru_1800C12E8);
+LABEL_34:
+  if ( LastError )
+  {
+    if ( v0 )
+    {
+      ItSrvUninitialize();
+      return LastError;
+    }
+LABEL_37:
+    ItSpCleanupGlobalContext(v2);
+  }
+  return LastError;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180077974  push    rbp
+0x180077976  push    rbx
+0x180077977  push    rdi
+0x180077978  push    r14
+0x18007797a  lea     rbp, [rsp-98h]
+0x180077982  sub     rsp, 198h
+0x180077989  mov     rax, cs:__security_cookie
+0x180077990  xor     rax, rsp
+0x180077993  mov     [rbp+0B0h+var_30], rax
+0x18007799a  xor     edx, edx; Val
+0x18007799c  lea     rcx, [rsp+1B0h+VersionInformation.dwMajorVersion]; void *
+0x1800779a1  mov     r8d, 118h; Size
+0x1800779a7  call    memset_0
+0x1800779ac  xor     edx, edx; Val
+0x1800779ae  lea     rcx, ?ItSrvGlobalContext@@3PAU_ITSRV_GLOBAL_CONTEXT@@A; void *
+0x1800779b5  mov     r8d, 368h; Size
+0x1800779bb  xor     dil, dil
+0x1800779be  call    memset_0
+0x1800779c3  lea     rax, stru_1800C1310
+0x1800779ca  mov     [rsp+1B0h+VersionInformation.dwOSVersionInfoSize], 11Ch
+0x1800779d2  lea     rcx, [rsp+1B0h+VersionInformation]; lpVersionInformation
+0x1800779d7  mov     cs:stru_1800C1310.Blink, rax
+0x1800779de  mov     cs:stru_1800C1310.Flink, rax
+0x1800779e5  call    cs:__imp_GetVersionExW
+0x1800779ec  nop     dword ptr [rax+rax+00h]
+0x1800779f1  mov     ebx, eax
+0x1800779f3  mov     r14d, 1
+0x1800779f9  test    eax, eax
+0x1800779fb  jz      short loc_180077A0A
+0x1800779fd  mov     cs:byte_1800C1592, r14b
+0x180077a04  cmp     [rbp+0B0h+var_36], r14b
+0x180077a08  jz      short loc_180077A11
+0x180077a0a  mov     cs:byte_1800C1592, dil
+0x180077a11  movdqa  xmm0, cs:__xmm@44663031446630314466303144663031
+0x180077a19  mov     ecx, 0FFFFFFC0h
+0x180077a1e  and     cs:dword_1800C1494, ecx
+0x180077a24  or      eax, 0FFFFFFFFh
+0x180077a27  and     cs:dword_1800C14EC, ecx
+0x180077a2d  xor     edx, edx; Val
+0x180077a2f  lea     rcx, qword_1800C1540; void *
+0x180077a36  mov     cs:?ItSrvGlobalContext@@3PAU_ITSRV_GLOBAL_CONTEXT@@A, 44663031h; _ITSRV_GLOBAL_CONTEXT near * ItSrvGlobalContext
+0x180077a40  movups  cs:xmmword_1800C12C4, xmm0
+0x180077a47  mov     cs:dword_1800C14A0, 0
+0x180077a51  lea     r8d, [rdx+40h]; Size
+0x180077a55  mov     cs:qword_1800C14A8, 0
+0x180077a60  movups  cs:xmmword_1800C12D4, xmm0
+0x180077a67  mov     cs:dword_1800C1490, eax
+0x180077a6d  mov     cs:dword_1800C14F8, 0
+0x180077a77  mov     cs:qword_1800C1500, 0
+0x180077a82  mov     cs:dword_1800C14E8, eax
+0x180077a88  call    memset_0
+0x180077a8d  lea     rcx, stru_1800C12E8; lpCriticalSection
+0x180077a94  call    cs:__imp_InitializeCriticalSection
+0x180077a9b  nop     dword ptr [rax+rax+00h]
+0x180077aa0  lea     rcx, stru_1800C1330; lpCriticalSection
+0x180077aa7  call    cs:__imp_InitializeCriticalSection
+0x180077aae  nop     dword ptr [rax+rax+00h]
+0x180077ab3  lea     rcx, stru_1800C1360; lpCriticalSection
+0x180077aba  call    cs:__imp_InitializeCriticalSection
+0x180077ac1  nop     dword ptr [rax+rax+00h]
+0x180077ac6  lea     rax, stru_1800C1388
+0x180077acd  xor     r9d, r9d; lpName
+0x180077ad0  xor     r8d, r8d; bInitialState
+0x180077ad3  mov     cs:stru_1800C1388.Blink, rax
+0x180077ada  mov     edx, r14d; bManualReset
+0x180077add  mov     cs:stru_1800C1388.Flink, rax
+0x180077ae4  xor     ecx, ecx; lpEventAttributes
+0x180077ae6  call    cs:__imp_CreateEventW
+0x180077aed  nop     dword ptr [rax+rax+00h]
+0x180077af2  mov     cs:hObject, rax
+0x180077af9  test    rax, rax
+0x180077afc  jnz     short loc_180077B11
+0x180077afe  call    cs:__imp_GetLastError
+0x180077b05  nop     dword ptr [rax+rax+00h]
+0x180077b0a  mov     ebx, eax
+0x180077b0c  jmp     loc_180077E69
+0x180077b11  xor     r9d, r9d; lpName
+0x180077b14  mov     r8d, r14d; bInitialState
+0x180077b17  mov     edx, r14d; bManualReset
+0x180077b1a  xor     ecx, ecx; lpEventAttributes
+0x180077b1c  call    cs:__imp_CreateEventW
+0x180077b23  nop     dword ptr [rax+rax+00h]
+0x180077b28  mov     cs:qword_1800C1410, rax
+0x180077b2f  test    rax, rax
+0x180077b32  jz      short loc_180077AFE
+0x180077b34  xor     r9d, r9d; lpName
+0x180077b37  mov     r8d, r14d; bInitialState
+0x180077b3a  mov     edx, r14d; bManualReset
+0x180077b3d  xor     ecx, ecx; lpEventAttributes
+0x180077b3f  call    cs:__imp_CreateEventW
+0x180077b46  nop     dword ptr [rax+rax+00h]
+0x180077b4b  mov     cs:hHandle, rax
+0x180077b52  test    rax, rax
+0x180077b55  jz      short loc_180077AFE
+0x180077b57  xor     r9d, r9d; lpName
+0x180077b5a  xor     r8d, r8d; bInitialState
+0x180077b5d  mov     edx, r14d; bManualReset
+0x180077b60  xor     ecx, ecx; lpEventAttributes
+0x180077b62  call    cs:__imp_CreateEventW
+0x180077b69  nop     dword ptr [rax+rax+00h]
+0x180077b6e  mov     cs:qword_1800C1598, rax
+0x180077b75  test    rax, rax
+0x180077b78  jz      short loc_180077AFE
+0x180077b7a  xor     r9d, r9d; lpName
+0x180077b7d  mov     r8d, r14d; bInitialState
+0x180077b80  mov     edx, r14d; bManualReset
+0x180077b83  xor     ecx, ecx; lpEventAttributes
+0x180077b85  call    cs:__imp_CreateEventW
+0x180077b8c  nop     dword ptr [rax+rax+00h]
+0x180077b91  mov     cs:qword_1800C1420, rax
+0x180077b98  test    rax, rax
+0x180077b9b  jz      loc_180077AFE
+0x180077ba1  xor     r9d, r9d; lpName
+0x180077ba4  xor     r8d, r8d; bInitialState
+0x180077ba7  mov     edx, r14d; bManualReset
+0x180077baa  xor     ecx, ecx; lpEventAttributes
+0x180077bac  call    cs:__imp_CreateEventW
+0x180077bb3  nop     dword ptr [rax+rax+00h]
+0x180077bb8  mov     cs:qword_1800C15A0, rax
+0x180077bbf  test    rax, rax
+0x180077bc2  jz      loc_180077AFE
+0x180077bc8  xor     r9d, r9d; lpName
+0x180077bcb  xor     r8d, r8d; bInitialState
+0x180077bce  mov     edx, r14d; bManualReset
+0x180077bd1  xor     ecx, ecx; lpEventAttributes
+0x180077bd3  call    cs:__imp_CreateEventW
+0x180077bda  nop     dword ptr [rax+rax+00h]
+0x180077bdf  mov     cs:hEvent, rax
+0x180077be6  test    rax, rax
+0x180077be9  jz      loc_180077AFE
+0x180077bef  xor     r9d, r9d; lpName
+0x180077bf2  mov     r8d, r14d; bInitialState
+0x180077bf5  mov     edx, r14d; bManualReset
+0x180077bf8  xor     ecx, ecx; lpEventAttributes
+0x180077bfa  call    cs:__imp_CreateEventW
+0x180077c01  nop     dword ptr [rax+rax+00h]
+0x180077c06  mov     cs:qword_1800C1320, rax
+0x180077c0d  test    rax, rax
+0x180077c10  jz      loc_180077AFE
+0x180077c16  lea     rcx, qword_1800C1458
+0x180077c1d  call    cs:__imp_RtlInitializeSRWLock
+0x180077c24  nop     dword ptr [rax+rax+00h]
+0x180077c29  test    ebx, ebx
+0x180077c2b  jnz     short loc_180077C43
+0x180077c2d  movaps  xmm0, cs:xmmword_1800AC940
+0x180077c34  movaps  xmm1, cs:xmmword_1800AC950
+0x180077c3b  mov     eax, cs:dword_1800AC960
+0x180077c41  jmp     short loc_180077CBF
+0x180077c43  cmp     [rbp+0B0h+var_36], r14b
+0x180077c47  jz      short loc_180077C5F
+0x180077c49  movups  xmm0, cs:xmmword_1800AC988
+0x180077c50  mov     eax, cs:dword_1800AC9A8
+0x180077c56  movups  xmm1, cs:xmmword_1800AC998
+0x180077c5d  jmp     short loc_180077CBF
+0x180077c5f  call    cs:__imp_PowerDeterminePlatformRole
+0x180077c66  nop     dword ptr [rax+rax+00h]
+0x180077c6b  sub     eax, r14d
+0x180077c6e  jz      short loc_180077CAB
+0x180077c70  sub     eax, r14d
+0x180077c73  jz      short loc_180077C95
+0x180077c75  sub     eax, r14d
+0x180077c78  jz      short loc_180077CAB
+0x180077c7a  cmp     eax, 5
+0x180077c7d  jnz     short loc_180077C2D
+0x180077c7f  movaps  xmm0, cs:xmmword_1800AC9D0
+0x180077c86  movaps  xmm1, cs:xmmword_1800AC9E0
+0x180077c8d  mov     eax, cs:dword_1800AC9F0
+0x180077c93  jmp     short loc_180077CBF
+0x180077c95  movups  xmm0, cs:xmmword_1800AC9AC
+0x180077c9c  mov     eax, cs:dword_1800AC9CC
+0x180077ca2  movups  xmm1, cs:xmmword_1800AC9BC
+0x180077ca9  jmp     short loc_180077CBF
+0x180077cab  movups  xmm0, cs:xmmword_1800AC964
+0x180077cb2  mov     eax, cs:dword_1800AC984
+0x180077cb8  movups  xmm1, cs:xmmword_1800AC974
+0x180077cbf  lea     rcx, [rsp+1B0h+var_180]; struct _IT_IDLE_DETECTION_PARAMETERS *
+0x180077cc4  mov     [rsp+1B0h+var_160], eax
+0x180077cc8  movups  [rsp+1B0h+var_170], xmm1
+0x180077ccd  movups  [rsp+1B0h+var_180], xmm0
+0x180077cd2  call    ?ItSpRetrieveDetectionOverrides@@YAKPEAU_IT_IDLE_DETECTION_PARAMETERS@@@Z; ItSpRetrieveDetectionOverrides(_IT_IDLE_DETECTION_PARAMETERS *)
+0x180077cd7  mov     ebx, eax
+0x180077cd9  test    eax, eax
+0x180077cdb  jnz     loc_180077E79
+0x180077ce1  lea     rcx, stru_1800C12E8; lpCriticalSection
+0x180077ce8  call    cs:__imp_EnterCriticalSection
+0x180077cef  nop     dword ptr [rax+rax+00h]
+0x180077cf4  lea     rcx, qword_1800C1458
+0x180077cfb  call    cs:__imp_RtlAcquireSRWLockExclusive
+0x180077d02  nop     dword ptr [rax+rax+00h]
+0x180077d07  movups  xmm0, [rsp+1B0h+var_180]
+0x180077d0c  mov     eax, [rsp+1B0h+var_160]
+0x180077d10  lea     rcx, qword_1800C1458
+0x180077d17  movups  xmm1, [rsp+1B0h+var_170]
+0x180077d1c  mov     cs:dword_1800C1450, eax
+0x180077d22  movaps  xmmword ptr cs:byte_1800C1430, xmm0
+0x180077d29  movaps  cs:xmmword_1800C143C+4, xmm1
+0x180077d30  call    cs:__imp_RtlReleaseSRWLockExclusive
+0x180077d37  nop     dword ptr [rax+rax+00h]
+0x180077d3c  lea     rcx, byte_1800C1460; struct _IT_IDLE_RUNTIME_PARAMETERS *
+0x180077d43  mov     cs:byte_1800C1460, dil
+0x180077d4a  mov     cs:String1, 0
+0x180077d55  mov     cs:dword_1800C1464, ebx
+0x180077d5b  call    ?ItSpRetrieveRuntimeOverrides@@YAKPEAU_IT_IDLE_RUNTIME_PARAMETERS@@@Z; ItSpRetrieveRuntimeOverrides(_IT_IDLE_RUNTIME_PARAMETERS *)
+0x180077d60  mov     ebx, eax
+0x180077d62  test    eax, eax
+0x180077d64  jnz     loc_180077E56
+0x180077d6a  mov     dil, r14b
+0x180077d6d  call    ?ItSpStartIdleDetection@@YAKPEAU_ITSRV_GLOBAL_CONTEXT@@@Z; ItSpStartIdleDetection(_ITSRV_GLOBAL_CONTEXT *)
+0x180077d72  mov     ebx, eax
+0x180077d74  test    eax, eax
+0x180077d76  jnz     loc_180077E56
+0x180077d7c  mov     edx, 44663032h
+0x180077d81  lea     rcx, ?ItSrvGlobalContext@@3PAU_ITSRV_GLOBAL_CONTEXT@@A; _ITSRV_GLOBAL_CONTEXT near * ItSrvGlobalContext
+0x180077d88  call    ?ItSpUpdateStatus@@YAXPEAU_ITSRV_GLOBAL_CONTEXT@@W4_ITSRV_GLOBAL_CONTEXT_STATUS@@@Z; ItSpUpdateStatus(_ITSRV_GLOBAL_CONTEXT *,_ITSRV_GLOBAL_CONTEXT_STATUS)
+0x180077d8d  xor     r8d, r8d; SecurityDescriptor
+0x180077d90  lea     rcx, aNcalrpc; "ncalrpc"
+0x180077d97  mov     edx, 100h; MaxCalls
+0x180077d9c  call    cs:__imp_RpcServerUseProtseqW
+0x180077da3  nop     dword ptr [rax+rax+00h]
+0x180077da8  mov     ebx, eax
+0x180077daa  test    eax, eax
+0x180077dac  jnz     loc_180077E56
+0x180077db2  lea     rcx, BindingVector; BindingVector
+0x180077db9  call    cs:__imp_RpcServerInqBindings
+0x180077dc0  nop     dword ptr [rax+rax+00h]
+0x180077dc5  mov     ebx, eax
+0x180077dc7  test    eax, eax
+0x180077dc9  jnz     loc_180077E56
+0x180077dcf  lea     rax, ?ItSpRpcSecurityCallback@@YAJPEAX0@Z; ItSpRpcSecurityCallback(void *,void *)
+0x180077dd6  xor     r8d, r8d; MgrEpv
+0x180077dd9  mov     [rsp+1B0h+IfCallback], rax; IfCallback
+0x180077dde  lea     r9d, [rbx+9]; Flags
+0x180077de2  xor     edx, edx; MgrTypeUuid
+0x180077de4  mov     [rsp+1B0h+MaxCalls], 4D2h; MaxCalls
+0x180077dec  lea     rcx, qword_18008B1E0; IfSpec
+0x180077df3  call    cs:__imp_RpcServerRegisterIfEx
+0x180077dfa  nop     dword ptr [rax+rax+00h]
+0x180077dff  mov     ebx, eax
+0x180077e01  test    eax, eax
+0x180077e03  jnz     short loc_180077E56
+0x180077e05  xor     r9d, r9d; Arg
+0x180077e08  lea     edx, [rax+0Ah]; AuthnSvc
+0x180077e0b  xor     r8d, r8d; GetKeyFn
+0x180077e0e  xor     ecx, ecx; ServerPrincName
+0x180077e10  call    cs:__imp_RpcServerRegisterAuthInfoW
+0x180077e17  nop     dword ptr [rax+rax+00h]
+0x180077e1c  mov     ebx, eax
+0x180077e1e  test    eax, eax
+0x180077e20  jnz     short loc_180077E56
+0x180077e22  mov     rdx, cs:BindingVector; BindingVector
+0x180077e29  lea     rcx, qword_18008B1E0; IfSpec
+0x180077e30  xor     r9d, r9d; Annotation
+0x180077e33  mov     cs:byte_1800C1591, r14b
+0x180077e3a  xor     r8d, r8d; UuidVector
+0x180077e3d  call    cs:__imp_RpcEpRegisterW
+0x180077e44  nop     dword ptr [rax+rax+00h]
+0x180077e49  mov     ebx, eax
+0x180077e4b  test    eax, eax
+0x180077e4d  jnz     short loc_180077E56
+0x180077e4f  mov     cs:byte_1800C1590, r14b
+0x180077e56  lea     rcx, stru_1800C12E8; lpCriticalSection
+0x180077e5d  call    cs:__imp_LeaveCriticalSection
+0x180077e64  nop     dword ptr [rax+rax+00h]
+0x180077e69  test    ebx, ebx
+0x180077e6b  jz      short loc_180077E7E
+0x180077e6d  test    dil, dil
+0x180077e70  jz      short loc_180077E79
+0x180077e72  call    ItSrvUninitialize
+0x180077e77  jmp     short loc_180077E7E
+0x180077e79  call    ?ItSpCleanupGlobalContext@@YAXPEAU_ITSRV_GLOBAL_CONTEXT@@@Z; ItSpCleanupGlobalContext(_ITSRV_GLOBAL_CONTEXT *)
+0x180077e7e  mov     eax, ebx
+0x180077e80  mov     rcx, [rbp+0B0h+var_30]
+0x180077e87  xor     rcx, rsp; StackCookie
+0x180077e8a  call    __security_check_cookie
+0x180077e8f  add     rsp, 198h
+0x180077e96  pop     r14
+0x180077e98  pop     rdi
+0x180077e99  pop     rbx
+0x180077e9a  pop     rbp
+0x180077e9b  retn
+```

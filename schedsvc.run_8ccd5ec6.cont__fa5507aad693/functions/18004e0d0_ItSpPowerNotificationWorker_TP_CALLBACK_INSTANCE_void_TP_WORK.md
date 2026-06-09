@@ -1,0 +1,33 @@
+# ItSpPowerNotificationWorker(_TP_CALLBACK_INSTANCE *,void *,_TP_WORK *)
+
+- ea: `0x18004e0d0`
+- end: `0x18004e17c`
+- name: `?ItSpPowerNotificationWorker@@YAXPEAU_TP_CALLBACK_INSTANCE@@PEAXPEAU_TP_WORK@@@Z`
+- size: `172`
+- prototype: `void __stdcall(PTP_CALLBACK_INSTANCE Instance, PVOID Context, PTP_WORK Work)`
+- caller_count: `0`
+- callee_count: `1`
+- tags: `loader_planting`
+
+## callees
+
+- `0x18004e0d0`
+
+## import_xrefs
+
+- `api-ms-win-core-synch-l1-1-0!SetEvent` at `0x18004e0ec`
+- `api-ms-win-core-synch-l1-1-0!SetEvent` at `0x18004e0ec`
+- `ntdll!RtlReleaseSRWLockShared` at `0x18004e14b`
+- `ntdll!RtlReleaseSRWLockShared` at `0x18004e14b`
+- `ntdll!RtlAcquireSRWLockShared` at `0x18004e102`
+- `ntdll!RtlAcquireSRWLockShared` at `0x18004e102`
+- `api-ms-win-core-threadpool-l1-2-0!CloseThreadpoolWork` at `0x18004e15f`
+- `api-ms-win-core-threadpool-l1-2-0!CloseThreadpoolWork` at `0x18004e15f`
+- `api-ms-win-core-threadpool-legacy-l1-1-0!ChangeTimerQueueTimer` at `0x18004e13c`
+- `api-ms-win-core-threadpool-legacy-l1-1-0!ChangeTimerQueueTimer` at `0x18004e13c`
+
+## pseudocode
+
+```c
+
+```

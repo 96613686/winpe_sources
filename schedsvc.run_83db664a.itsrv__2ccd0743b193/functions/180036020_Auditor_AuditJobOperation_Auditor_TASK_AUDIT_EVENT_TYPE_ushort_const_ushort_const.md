@@ -1,0 +1,931 @@
+# Auditor::AuditJobOperation(Auditor::TASK_AUDIT_EVENT_TYPE,ushort const *,ushort const *)
+
+- ea: `0x180036020`
+- end: `0x180036c08`
+- name: `?AuditJobOperation@Auditor@@AEAAJW4TASK_AUDIT_EVENT_TYPE@1@PEBG1@Z`
+- size: `3048`
+- prototype: ``
+- caller_count: `3`
+- callee_count: `8`
+- tags: `authz_impersonation, loader_planting, service_task, broker_com_uri`
+
+## callers
+
+- `0x18001d7ac`
+- `0x180047ee0`
+- `0x18004fc18`
+
+## callees
+
+- `0x18002f814`
+- `0x180036020`
+- `0x180036c10`
+- `0x180056954`
+- `0x18005a2bc`
+- `0x18005dcd4`
+- `0x1800829fa`
+- `0x180082a40`
+
+## import_xrefs
+
+- `msvcrt!free` at `0x180036beb`
+- `msvcrt!free` at `0x180036beb`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180036224`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180036741`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1800367a4`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180036825`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18003687f`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1800368d6`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180036b33`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180036b43`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180036b56`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180036b70`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180036b80`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180036b90`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180036224`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180036741`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1800367a4`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180036825`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18003687f`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x1800368d6`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180036b33`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180036b43`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180036b56`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180036b70`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180036b80`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180036b90`
+- `api-ms-win-core-handle-l1-1-0!CloseHandle` at `0x1800361fc`
+- `api-ms-win-core-handle-l1-1-0!CloseHandle` at `0x180036218`
+- `api-ms-win-core-handle-l1-1-0!CloseHandle` at `0x1800364c3`
+- `api-ms-win-core-handle-l1-1-0!CloseHandle` at `0x1800367c7`
+- `api-ms-win-core-handle-l1-1-0!CloseHandle` at `0x1800361fc`
+- `api-ms-win-core-handle-l1-1-0!CloseHandle` at `0x180036218`
+- `api-ms-win-core-handle-l1-1-0!CloseHandle` at `0x1800364c3`
+- `api-ms-win-core-handle-l1-1-0!CloseHandle` at `0x1800367c7`
+- `ntdll!NtQueryInformationProcess` at `0x180036454`
+- `ntdll!NtQueryInformationProcess` at `0x1800364ac`
+- `ntdll!NtQueryInformationProcess` at `0x180036454`
+- `ntdll!NtQueryInformationProcess` at `0x1800364ac`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x18003637a`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x1800366ce`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x18003637a`
+- `api-ms-win-core-heap-l1-1-0!HeapFree` at `0x1800366ce`
+- `api-ms-win-core-heap-l1-1-0!HeapAlloc` at `0x1800362b1`
+- `api-ms-win-core-heap-l1-1-0!HeapAlloc` at `0x1800362b1`
+- `api-ms-win-core-processthreads-l1-1-0!GetCurrentThread` at `0x180036136`
+- `api-ms-win-core-processthreads-l1-1-0!GetCurrentThread` at `0x180036136`
+- `api-ms-win-core-processthreads-l1-1-0!OpenThreadToken` at `0x180036158`
+- `api-ms-win-core-processthreads-l1-1-0!OpenThreadToken` at `0x180036158`
+- `RPCRT4!RpcImpersonateClient` at `0x180036120`
+- `RPCRT4!RpcImpersonateClient` at `0x180036120`
+- `RPCRT4!RpcRevertToSelf` at `0x18003616c`
+- `RPCRT4!RpcRevertToSelf` at `0x180036796`
+- `RPCRT4!RpcRevertToSelf` at `0x18003616c`
+- `RPCRT4!RpcRevertToSelf` at `0x180036796`
+- `RPCRT4!RpcServerInqCallAttributesW` at `0x1800363f0`
+- `RPCRT4!RpcServerInqCallAttributesW` at `0x1800363f0`
+- `api-ms-win-core-heap-l2-1-0!LocalFree` at `0x180036bd7`
+- `api-ms-win-core-heap-l2-1-0!LocalFree` at `0x180036bd7`
+- `api-ms-win-security-base-l1-1-0!GetTokenInformation` at `0x1800361a8`
+- `api-ms-win-security-base-l1-1-0!GetTokenInformation` at `0x1800361e0`
+- `api-ms-win-security-base-l1-1-0!GetTokenInformation` at `0x1800361a8`
+- `api-ms-win-security-base-l1-1-0!GetTokenInformation` at `0x1800361e0`
+- `api-ms-win-core-processthreads-l1-1-1!OpenProcess` at `0x180036421`
+- `api-ms-win-core-processthreads-l1-1-1!OpenProcess` at `0x180036421`
+- `AUTHZ!AuthziInitializeAuditEvent` at `0x18003665a`
+- `AUTHZ!AuthziInitializeAuditEvent` at `0x18003665a`
+- `AUTHZ!AuthziInitializeAuditParams` at `0x1800365f0`
+- `AUTHZ!AuthziInitializeAuditParams` at `0x1800365f0`
+- `AUTHZ!AuthziLogAuditEvent` at `0x18003667b`
+- `AUTHZ!AuthziLogAuditEvent` at `0x18003667b`
+- `AUTHZ!AuthzFreeAuditEvent` at `0x18003669c`
+- `AUTHZ!AuthzFreeAuditEvent` at `0x18003669c`
+
+## string_xrefs
+
+- `0x1800365d4`: `Security`
+- `0x180036969`: `Auditor::GetTokenUserAndStatistics`
+
+## pseudocode
+
+```c
+__int64 __fastcall Auditor::AuditJobOperation(__int64 *a1, int a2, __int64 a3, __int16 *a4)
+{
+  int v6; // edx
+  int v7; // edx
+  int v8; // edx
+  __int64 v10; // rax
+  DWORD v11; // r13d
+  RPC_STATUS v12; // eax
+  EventManager *v13; // rcx
+  RPC_STATUS v14; // edi
+  HANDLE CurrentThread; // rax
+  _QWORD *v16; // rcx
+  signed int v17; // eax
+  unsigned int v18; // edi
+  unsigned __int64 v19; // rsi
+  __int64 v20; // rax
+  unsigned __int64 v21; // rdi
+  SIZE_T v22; // rax
+  OLECHAR *v23; // rax
+  OLECHAR *v24; // r14
+  unsigned __int64 v25; // rcx
+  OLECHAR *v26; // rdx
+  int v27; // esi
+  __int16 v28; // ax
+  int v29; // r14d
+  DWORD v30; // r15d
+  HANDLE v31; // rax
+  void *v32; // rsi
+  signed int v33; // edi
+  Auditor *v34; // rcx
+  void *v35; // r12
+  unsigned __int16 *ComputerNameDnsFullyQualified; // rax
+  unsigned __int16 *v37; // rsi
+  const wchar_t *v38; // rcx
+  void *v39; // r14
+  const OLECHAR *v40; // rdx
+  OLECHAR *v41; // rcx
+  __int64 v42; // rax
+  OLECHAR v43; // r8
+  signed int LastError; // eax
+  signed int v45; // eax
+  __int64 v46; // rdx
+  signed int v47; // eax
+  _QWORD *v48; // rcx
+  __int64 v49; // rdx
+  signed int v50; // eax
+  signed int v51; // eax
+  PDWORD ReturnLength; // [rsp+20h] [rbp-448h]
+  const struct _GUID *v53; // [rsp+28h] [rbp-440h]
+  int v54; // [rsp+80h] [rbp-3E8h]
+  void *TokenHandle; // [rsp+B8h] [rbp-3B0h] BYREF
+  __int64 v56; // [rsp+C0h] [rbp-3A8h]
+  DWORD v57[2]; // [rsp+C8h] [rbp-3A0h] BYREF
+  AUTHZ_AUDIT_EVENT_HANDLE hAuditEvent; // [rsp+D0h] [rbp-398h] BYREF
+  HLOCAL hMem; // [rsp+D8h] [rbp-390h] BYREF
+  __int64 v60; // [rsp+E0h] [rbp-388h]
+  __int128 v61; // [rsp+E8h] [rbp-380h] BYREF
+  int *v62; // [rsp+F8h] [rbp-370h]
+  void **pExceptionObject; // [rsp+100h] [rbp-368h] BYREF
+  char v64; // [rsp+108h] [rbp-360h]
+  const unsigned __int16 *v65; // [rsp+110h] [rbp-358h]
+  __int64 v66; // [rsp+118h] [rbp-350h]
+  __int64 v67; // [rsp+120h] [rbp-348h]
+  RPC_STATUS v68; // [rsp+128h] [rbp-340h]
+  __int64 v69; // [rsp+12Ch] [rbp-33Ch]
+  void **v70; // [rsp+138h] [rbp-330h] BYREF
+  char v71; // [rsp+140h] [rbp-328h]
+  const unsigned __int16 *v72; // [rsp+148h] [rbp-320h]
+  __int64 v73; // [rsp+150h] [rbp-318h]
+  __int64 v74; // [rsp+158h] [rbp-310h]
+  int v75; // [rsp+160h] [rbp-308h]
+  __int64 v76; // [rsp+164h] [rbp-304h]
+  _OWORD ProcessInformation[2]; // [rsp+170h] [rbp-2F8h] BYREF
+  __int128 v78; // [rsp+190h] [rbp-2D8h]
+  _DWORD RpcCallAttributes[2]; // [rsp+1A0h] [rbp-2C8h] BYREF
+  __int128 v80; // [rsp+1A8h] [rbp-2C0h]
+  __int128 v81; // [rsp+1B8h] [rbp-2B0h]
+  __int128 v82; // [rsp+1C8h] [rbp-2A0h]
+  DWORD dwProcessId[4]; // [rsp+1D8h] [rbp-290h]
+  __int128 v84; // [rsp+1E8h] [rbp-280h]
+  __int128 v85; // [rsp+1F8h] [rbp-270h]
+  __int128 v86; // [rsp+208h] [rbp-260h]
+  int v87; // [rsp+220h] [rbp-248h] BYREF
+  char v88[12]; // [rsp+224h] [rbp-244h] BYREF
+  __int64 v89; // [rsp+230h] [rbp-238h]
+  char v90[8]; // [rsp+380h] [rbp-E8h] BYREF
+  __int64 v91; // [rsp+388h] [rbp-E0h]
+  __int64 TokenInformation[14]; // [rsp+3C0h] [rbp-A8h] BYREF
+
+  v60 = a3;
+  if ( a2 )
+  {
+    v6 = a2 - 1;
+    if ( v6 )
+    {
+      v7 = v6 - 1;
+      if ( v7 )
+      {
+        v8 = v7 - 1;
+        if ( v8 )
+        {
+          if ( v8 != 1 )
+            return 2147549183LL;
+          v10 = a1[2];
+        }
+        else
+        {
+          v10 = a1[3];
+        }
+      }
+      else
+      {
+        v10 = a1[4];
+      }
+    }
+    else
+    {
+      v10 = a1[1];
+    }
+  }
+  else
+  {
+    v10 = *a1;
+  }
+  v56 = v10;
+  if ( !v10 )
+    return 2147549183LL;
+  v11 = 0;
+  hAuditEvent = 0;
+  v61 = 0;
+  v62 = 0;
+  v87 = 1;
+  memset_0(v88, 0, 0x15Cu);
+  hMem = 0;
+  TokenHandle = 0;
+  v12 = RpcImpersonateClient(0);
+  v14 = v12;
+  if ( v12 )
+  {
+    EventManager::EvtReport(v13, &IMPERSONATION_FAILURE, L"Auditor::GetTokenUserAndStatistics", v12, ReturnLength, v53);
+    v64 = 0;
+    pExceptionObject = &wmi::GenericException::`vftable';
+    v65 = &qword_1800A8718;
+    v66 = 0;
+    v67 = 0;
+    v68 = v14;
+    v69 = -1;
+    throw (wmi::GenericException *)&pExceptionObject;
+  }
+  CurrentThread = GetCurrentThread();
+  if ( !OpenThreadToken(CurrentThread, 8u, 1, &TokenHandle) )
+  {
+    LastError = GetLastError();
+    v18 = LastError;
+    if ( LastError > 0 )
+      v18 = (unsigned __int16)LastError | 0x80070000;
+    if ( WPP_GLOBAL_Control != (_UNKNOWN *)&WPP_GLOBAL_Control
+      && (*((_DWORD *)WPP_GLOBAL_Control + 7) & 0x8000) != 0
+      && *((_BYTE *)WPP_GLOBAL_Control + 25) >= 2u )
+    {
+      WPP_SF_d(*((_QWORD *)WPP_GLOBAL_Control + 2), 18, WPP_e148bc2992f63fedaeaba66ed01f4918_Traceguids, v18);
+    }
+    RpcRevertToSelf();
+    goto LABEL_86;
+  }
+  RpcRevertToSelf();
+  v57[0] = 0;
+  if ( GetTokenInformation(TokenHandle, TokenUser, TokenInformation, 0x64u, v57) )
+  {
+    if ( GetTokenInformation(TokenHandle, TokenStatistics, v90, 0x38u, v57) )
+    {
+      CloseHandle(TokenHandle);
+      v16 = WPP_GLOBAL_Control;
+      goto LABEL_18;
+    }
+    v45 = GetLastError();
+    v18 = v45;
+    if ( v45 > 0 )
+      v18 = (unsigned __int16)v45 | 0x80070000;
+    CloseHandle(TokenHandle);
+    v16 = WPP_GLOBAL_Control;
+    if ( WPP_GLOBAL_Control != (_UNKNOWN *)&WPP_GLOBAL_Control
+      && (*((_DWORD *)WPP_GLOBAL_Control + 7) & 0x8000) != 0
+      && *((_BYTE *)WPP_GLOBAL_Control + 25) >= 2u )
+    {
+      v46 = 20;
+LABEL_85:
+      WPP_SF_d(v16[2], v46, WPP_e148bc2992f63fedaeaba66ed01f4918_Traceguids, v18);
+LABEL_86:
+      v16 = WPP_GLOBAL_Control;
+    }
+  }
+  else
+  {
+    CloseHandle(TokenHandle);
+    v17 = GetLastError();
+    v18 = v17;
+    if ( v17 > 0 )
+      v18 = (unsigned __int16)v17 | 0x80070000;
+    v16 = WPP_GLOBAL_Control;
+    if ( WPP_GLOBAL_Control != (_UNKNOWN *)&WPP_GLOBAL_Control
+      && (*((_DWORD *)WPP_GLOBAL_Control + 7) & 0x8000) != 0
+      && *((_BYTE *)WPP_GLOBAL_Control + 25) >= 2u )
+    {
+      v46 = 19;
+      goto LABEL_85;
+    }
+  }
+  if ( (v18 & 0x80000000) != 0 )
+  {
+    if ( v16 != &WPP_GLOBAL_Control && (*((_DWORD *)v16 + 7) & 0x8000) != 0 && *((_BYTE *)v16 + 25) >= 2u )
+      WPP_SF_d(v16[2], 10, WPP_e148bc2992f63fedaeaba66ed01f4918_Traceguids, v18);
+    return v18;
+  }
+LABEL_18:
+  v62 = &v87;
+  v19 = -1;
+  v20 = -1;
+  do
+    ++v20;
+  while ( *(_WORD *)(a3 + 2 * v20) );
+  v21 = 3500 - v20;
+  if ( v20 != 3500 )
+  {
+    v22 = 2 * v21;
+    if ( !is_mul_ok(v21, 2u) )
+      v22 = -1;
+    v23 = (OLECHAR *)HeapAlloc(g_PrivateHeap, 0, v22);
+    v24 = v23;
+    *(_QWORD *)v57 = v23;
+    if ( !v23 )
+    {
+      v71 = 0;
+      v72 = &qword_1800A8718;
+      v73 = 0;
+      v74 = 0;
+      v75 = 14;
+      v76 = -1;
+      v70 = &wmi::GenericException::`vftable';
+      throw (wmi::OutOfMemoryException *)&v70;
+    }
+    if ( a4 )
+    {
+      do
+        ++v19;
+      while ( a4[v19] );
+      v25 = v21 - 1;
+      if ( v21 - 1 >= v19 )
+        v25 = v19;
+      if ( v21 > 0x7FFFFFFF )
+      {
+        v27 = -2147024809;
+        *v23 = 0;
+      }
+      else if ( v25 > 0x7FFFFFFE )
+      {
+        v27 = -2147024809;
+        *v23 = 0;
+      }
+      else
+      {
+        v26 = v23;
+        v27 = 0;
+        while ( v25 )
+        {
+          v28 = *a4;
+          if ( !*a4 )
+          {
+            if ( !v21 )
+            {
+LABEL_34:
+              --v26;
+              v27 = -2147024774;
+              break;
+            }
+            break;
+          }
+          ++a4;
+          *v26++ = v28;
+          --v25;
+          if ( !--v21 )
+            goto LABEL_34;
+        }
+        *v26 = 0;
+      }
+    }
+    else if ( v21 > 0x7FFFFFFF )
+    {
+      v27 = -2147024809;
+      *v23 = 0;
+    }
+    else
+    {
+      v42 = 2147483646;
+      v40 = &ChannelPath;
+      v41 = v24;
+      v27 = 0;
+      while ( v42 )
+      {
+        v43 = *v40;
+        if ( !*v40 )
+        {
+          if ( !v21 )
+          {
+LABEL_64:
+            --v41;
+            v27 = -2147024774;
+            break;
+          }
+          break;
+        }
+        ++v40;
+        *v41++ = v43;
+        --v42;
+        if ( !--v21 )
+          goto LABEL_64;
+      }
+      *v41 = 0;
+    }
+    if ( v27 < 0 )
+    {
+      if ( WPP_GLOBAL_Control != (_UNKNOWN *)&WPP_GLOBAL_Control
+        && (*((_DWORD *)WPP_GLOBAL_Control + 7) & 0x8000) != 0
+        && *((_BYTE *)WPP_GLOBAL_Control + 25) >= 2u )
+      {
+        WPP_SF_d(
+          *((_QWORD *)WPP_GLOBAL_Control + 2),
+          12,
+          WPP_e148bc2992f63fedaeaba66ed01f4918_Traceguids,
+          (unsigned int)v27);
+      }
+      HeapFree(g_PrivateHeap, 0, v24);
+      return (unsigned int)v27;
+    }
+    TokenHandle = 0;
+    v80 = 0;
+    v81 = 0;
+    v82 = 0;
+    *(_OWORD *)dwProcessId = 0;
+    v84 = 0;
+    v85 = 0;
+    v86 = 0;
+    RpcCallAttributes[0] = 3;
+    RpcCallAttributes[1] = 16;
+    if ( RpcServerInqCallAttributesW(0, RpcCallAttributes) )
+    {
+      v33 = -1073741244;
+    }
+    else
+    {
+      v29 = 0;
+      v30 = dwProcessId[2];
+      v11 = dwProcessId[1];
+      v31 = OpenProcess(0x1000u, 0, dwProcessId[2]);
+      v32 = v31;
+      if ( v31 )
+      {
+        v33 = NtQueryInformationProcess(v31, ProcessLUIDDeviceMapsEnabled|0x40, &TokenHandle, 8u, 0);
+        if ( v33 >= 0 )
+        {
+          TokenHandle = (void *)(((unsigned __int64)MEMORY[0x7FFE02C4] << 48) | (unsigned __int64)TokenHandle);
+          memset(ProcessInformation, 0, sizeof(ProcessInformation));
+          v78 = 0;
+          if ( !NtQueryInformationProcess(v32, ProcessBasicInformation, ProcessInformation, 0x30u, 0) )
+          {
+            v33 = (int)GetLastError() > 0 ? (unsigned __int16)GetLastError() | 0xC0070000 : GetLastError();
+            if ( v33 >= 0 )
+              v29 = DWORD2(v78);
+          }
+        }
+        CloseHandle(v32);
+      }
+      else if ( (int)GetLastError() > 0 )
+      {
+        v33 = (unsigned __int16)GetLastError() | 0xC0070000;
+      }
+      else
+      {
+        v33 = GetLastError();
+      }
+      if ( v33 >= 0 )
+      {
+        v35 = TokenHandle;
+        goto LABEL_51;
+      }
+      v11 = 0;
+    }
+    v34 = (Auditor *)WPP_GLOBAL_Control;
+    if ( WPP_GLOBAL_Control == (_UNKNOWN *)&WPP_GLOBAL_Control
+      || (*((_DWORD *)WPP_GLOBAL_Control + 7) & 0x8000) == 0
+      || *((_BYTE *)WPP_GLOBAL_Control + 25) < 2u )
+    {
+      v35 = 0;
+    }
+    else
+    {
+      WPP_SF_d(
+        *((_QWORD *)WPP_GLOBAL_Control + 2),
+        13,
+        WPP_e148bc2992f63fedaeaba66ed01f4918_Traceguids,
+        (unsigned int)v33);
+      v35 = 0;
+    }
+    v29 = 0;
+    v30 = 0;
+LABEL_51:
+    ComputerNameDnsFullyQualified = Auditor::GetComputerNameDnsFullyQualified(v34);
+    v37 = ComputerNameDnsFullyQualified;
+    v38 = L"Unknown";
+    if ( ComputerNameDnsFullyQualified )
+      v38 = ComputerNameDnsFullyQualified;
+    v54 = v29;
+    v39 = *(void **)v57;
+    LOWORD(ReturnLength) = 8;
+    if ( (unsigned int)AuthziInitializeAuditParams(
+                         1,
+                         &v61,
+                         &hMem,
+                         L"Security",
+                         (_DWORD)ReturnLength,
+                         13,
+                         v91,
+                         2,
+                         v60,
+                         2,
+                         *(_QWORD *)v57,
+                         11,
+                         v35,
+                         3,
+                         v30,
+                         3,
+                         v54,
+                         3,
+                         v11,
+                         2,
+                         v38) )
+    {
+      v89 = TokenInformation[0];
+      if ( (unsigned int)AuthziInitializeAuditEvent(
+                           0,
+                           0,
+                           v56,
+                           &v61,
+                           0,
+                           -1,
+                           &ChannelPath,
+                           &ChannelPath,
+                           &ChannelPath,
+                           &ChannelPath,
+                           &hAuditEvent) )
+      {
+        if ( (unsigned int)AuthziLogAuditEvent(0, hAuditEvent, 0) )
+          goto LABEL_56;
+        v51 = GetLastError();
+        v33 = v51;
+        if ( v51 > 0 )
+          v33 = (unsigned __int16)v51 | 0x80070000;
+        v48 = WPP_GLOBAL_Control;
+        if ( WPP_GLOBAL_Control == (_UNKNOWN *)&WPP_GLOBAL_Control
+          || (*((_DWORD *)WPP_GLOBAL_Control + 7) & 0x8000) == 0
+          || *((_BYTE *)WPP_GLOBAL_Control + 25) < 2u )
+        {
+          goto LABEL_56;
+        }
+        v49 = 16;
+      }
+      else
+      {
+        v50 = GetLastError();
+        v33 = v50;
+        if ( v50 > 0 )
+          v33 = (unsigned __int16)v50 | 0x80070000;
+        v48 = WPP_GLOBAL_Control;
+        if ( WPP_GLOBAL_Control == (_UNKNOWN *)&WPP_GLOBAL_Control
+          || (*((_DWORD *)WPP_GLOBAL_Control + 7) & 0x8000) == 0
+          || *((_BYTE *)WPP_GLOBAL_Control + 25) < 2u )
+        {
+          goto LABEL_56;
+        }
+        v49 = 15;
+      }
+    }
+    else
+    {
+      v47 = GetLastError();
+      v33 = v47;
+      if ( v47 > 0 )
+        v33 = (unsigned __int16)v47 | 0x80070000;
+      v48 = WPP_GLOBAL_Control;
+      if ( WPP_GLOBAL_Control == (_UNKNOWN *)&WPP_GLOBAL_Control
+        || (*((_DWORD *)WPP_GLOBAL_Control + 7) & 0x8000) == 0
+        || *((_BYTE *)WPP_GLOBAL_Control + 25) < 2u )
+      {
+        goto LABEL_56;
+      }
+      v49 = 14;
+    }
+    WPP_SF_d(v48[2], v49, WPP_e148bc2992f63fedaeaba66ed01f4918_Traceguids, (unsigned int)v33);
+LABEL_56:
+    if ( hAuditEvent )
+      AuthzFreeAuditEvent(hAuditEvent);
+    if ( hMem )
+      LocalFree(hMem);
+    if ( v37 )
+      free(v37);
+    HeapFree(g_PrivateHeap, 0, v39);
+    return (unsigned int)v33;
+  }
+  if ( v16 != &WPP_GLOBAL_Control && (*((_DWORD *)v16 + 7) & 0x8000) != 0 && *((_BYTE *)v16 + 25) >= 2u )
+    WPP_SF_(v16[2], 11, WPP_e148bc2992f63fedaeaba66ed01f4918_Traceguids);
+  return 2147549183LL;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180036020  mov     [rsp+arg_8], rbx
+0x180036025  mov     [rsp+arg_18], rsi
+0x18003602a  push    rdi
+0x18003602b  push    r12
+0x18003602d  push    r13
+0x18003602f  push    r14
+0x180036031  push    r15
+0x180036033  sub     rsp, 440h
+0x18003603a  mov     rax, cs:__security_cookie
+0x180036041  xor     rax, rsp
+0x180036044  mov     [rsp+468h+var_38], rax
+0x18003604c  mov     rbx, r9
+0x18003604f  mov     r14, r8
+0x180036052  mov     [rsp+468h+var_388], r8
+0x18003605a  test    edx, edx
+0x18003605c  jz      loc_18003695E
+0x180036062  sub     edx, 1
+0x180036065  jz      loc_180036955
+0x18003606b  sub     edx, 1
+0x18003606e  jz      short loc_1800360B5
+0x180036070  sub     edx, 1
+0x180036073  jz      loc_18003694C
+0x180036079  cmp     edx, 1
+0x18003607c  jz      loc_180036943
+0x180036082  mov     eax, 8000FFFFh
+0x180036087  mov     rcx, [rsp+468h+var_38]
+0x18003608f  xor     rcx, rsp; StackCookie
+0x180036092  call    __security_check_cookie
+0x180036097  lea     r11, [rsp+468h+var_28]
+0x18003609f  mov     rbx, [r11+38h]
+0x1800360a3  mov     rsi, [r11+48h]
+0x1800360a7  mov     rsp, r11
+0x1800360aa  pop     r15
+0x1800360ac  pop     r14
+0x1800360ae  pop     r13
+0x1800360b0  pop     r12
+0x1800360b2  pop     rdi
+0x1800360b3  retn
+0x1800360b5  mov     rax, [rcx+20h]
+0x1800360b9  mov     [rsp+468h+var_3A8], rax
+0x1800360c1  test    rax, rax
+0x1800360c4  jz      short loc_180036082
+0x1800360c6  xor     r13d, r13d
+0x1800360c9  mov     [rsp+468h+var_3B8], r13d
+0x1800360d1  mov     [rsp+468h+hAuditEvent], r13
+0x1800360d9  xorps   xmm0, xmm0
+0x1800360dc  xor     eax, eax
+0x1800360de  movups  [rsp+468h+var_380], xmm0
+0x1800360e6  mov     [rsp+468h+var_370], rax
+0x1800360ee  mov     [rsp+468h+var_248], 1
+0x1800360f9  xor     edx, edx; Val
+0x1800360fb  mov     r8d, 15Ch; Size
+0x180036101  lea     rcx, [rsp+468h+var_244]; void *
+0x180036109  call    memset_0
+0x18003610e  mov     [rsp+468h+hMem], r13
+0x180036116  mov     [rsp+468h+TokenHandle], r13
+0x18003611e  xor     ecx, ecx; BindingHandle
+0x180036120  call    cs:__imp_RpcImpersonateClient
+0x180036127  nop     dword ptr [rax+rax+00h]
+0x18003612c  mov     edi, eax
+0x18003612e  test    eax, eax
+0x180036130  jnz     loc_180036966
+0x180036136  call    cs:__imp_GetCurrentThread
+0x18003613d  nop     dword ptr [rax+rax+00h]
+0x180036142  mov     rcx, rax; ThreadHandle
+0x180036145  lea     r9, [rsp+468h+TokenHandle]; TokenHandle
+0x18003614d  mov     edx, 8; DesiredAccess
+0x180036152  mov     r8d, 1; OpenAsSelf
+0x180036158  call    cs:__imp_OpenThreadToken
+0x18003615f  nop     dword ptr [rax+rax+00h]
+0x180036164  test    eax, eax
+0x180036166  jz      loc_180036741
+0x18003616c  call    cs:__imp_RpcRevertToSelf
+0x180036173  nop     dword ptr [rax+rax+00h]
+0x180036178  mov     [rsp+468h+var_3A0], r13d
+0x180036180  lea     rax, [rsp+468h+var_3A0]
+0x180036188  mov     [rsp+468h+ReturnLength], rax; ReturnLength
+0x18003618d  mov     r9d, 64h ; 'd'; TokenInformationLength
+0x180036193  lea     r8, [rsp+468h+TokenInformation]; TokenInformation
+0x18003619b  mov     edx, 1; TokenInformationClass
+0x1800361a0  mov     rcx, [rsp+468h+TokenHandle]; TokenHandle
+0x1800361a8  call    cs:__imp_GetTokenInformation
+0x1800361af  nop     dword ptr [rax+rax+00h]
+0x1800361b4  mov     rcx, [rsp+468h+TokenHandle]; hObject
+0x1800361bc  test    eax, eax
+0x1800361be  jz      short loc_180036218
+0x1800361c0  lea     rax, [rsp+468h+var_3A0]
+0x1800361c8  mov     [rsp+468h+ReturnLength], rax; ReturnLength
+0x1800361cd  mov     r9d, 38h ; '8'; TokenInformationLength
+0x1800361d3  lea     r8, [rsp+468h+var_E8]; TokenInformation
+0x1800361db  mov     edx, 0Ah; TokenInformationClass
+0x1800361e0  call    cs:__imp_GetTokenInformation
+0x1800361e7  nop     dword ptr [rax+rax+00h]
+0x1800361ec  test    eax, eax
+0x1800361ee  jz      loc_1800367A4
+0x1800361f4  mov     rcx, [rsp+468h+TokenHandle]; hObject
+0x1800361fc  call    cs:__imp_CloseHandle
+0x180036203  nop     dword ptr [rax+rax+00h]
+0x180036208  lea     r12, WPP_GLOBAL_Control
+0x18003620f  mov     rcx, cs:WPP_GLOBAL_Control
+0x180036216  jmp     short loc_180036260
+0x180036218  call    cs:__imp_CloseHandle
+0x18003621f  nop     dword ptr [rax+rax+00h]
+0x180036224  call    cs:__imp_GetLastError
+0x18003622b  nop     dword ptr [rax+rax+00h]
+0x180036230  mov     edi, eax
+0x180036232  test    eax, eax
+0x180036234  jg      loc_1800369D9
+0x18003623a  lea     r12, WPP_GLOBAL_Control
+0x180036241  mov     rcx, cs:WPP_GLOBAL_Control
+0x180036248  cmp     rcx, r12
+0x18003624b  jnz     loc_1800369E7
+0x180036251  mov     [rsp+468h+var_3B8], edi
+0x180036258  test    edi, edi
+0x18003625a  js      loc_180036A08
+0x180036260  lea     rax, [rsp+468h+var_248]
+0x180036268  mov     [rsp+468h+var_370], rax
+0x180036270  mov     rsi, 0FFFFFFFFFFFFFFFFh
+0x180036277  mov     rax, rsi
+0x18003627a  nop     word ptr [rax+rax+00h]
+0x180036280  inc     rax
+0x180036283  cmp     word ptr [r14+rax*2], 0
+0x180036289  jnz     short loc_180036280
+0x18003628b  mov     edi, 0DACh
+0x180036290  sub     rdi, rax
+0x180036293  jz      loc_180036A3B
+0x180036299  mov     eax, 2
+0x18003629e  mul     rdi
+0x1800362a1  cmovb   rax, rsi
+0x1800362a5  mov     r8, rax; dwBytes
+0x1800362a8  xor     edx, edx; dwFlags
+0x1800362aa  mov     rcx, cs:?g_PrivateHeap@@3VPrivateHeap@@A; hHeap
+0x1800362b1  call    cs:__imp_HeapAlloc
+0x1800362b8  nop     dword ptr [rax+rax+00h]
+0x1800362bd  mov     r14, rax
+0x1800362c0  mov     qword ptr [rsp+468h+var_3A0], rax
+0x1800362c8  test    rax, rax
+0x1800362cb  jz      loc_180036A6E
+0x1800362d1  test    rbx, rbx
+0x1800362d4  jz      loc_180036709
+0x1800362da  nop     word ptr [rax+rax+00h]
+0x1800362e0  inc     rsi
+0x1800362e3  cmp     word ptr [rbx+rsi*2], 0
+0x1800362e8  jnz     short loc_1800362E0
+0x1800362ea  lea     rcx, [rdi-1]
+0x1800362ee  cmp     rcx, rsi
+0x1800362f1  jb      short loc_1800362F6
+0x1800362f3  mov     rcx, rsi
+0x1800362f6  cmp     rdi, 7FFFFFFFh
+0x1800362fd  ja      loc_180036ACB
+0x180036303  mov     eax, 7FFFFFFEh
+0x180036308  cmp     rcx, rax
+0x18003630b  ja      loc_180036AD9
+0x180036311  mov     rdx, r14
+0x180036314  mov     esi, r13d
+0x180036317  test    rcx, rcx
+0x18003631a  jz      short loc_180036348
+0x18003631c  movzx   eax, word ptr [rbx]
+0x18003631f  test    ax, ax
+0x180036322  jz      short loc_180036343
+0x180036324  add     rbx, 2
+0x180036328  mov     [rdx], ax
+0x18003632b  add     rdx, 2
+0x18003632f  dec     rcx
+0x180036332  sub     rdi, 1
+0x180036336  jnz     short loc_180036317
+0x180036338  sub     rdx, 2
+0x18003633c  mov     esi, 8007007Ah
+0x180036341  jmp     short loc_180036348
+0x180036343  test    rdi, rdi
+0x180036346  jz      short loc_180036338
+0x180036348  mov     [rdx], r13w
+0x18003634c  lea     rbx, ChannelPath
+0x180036353  mov     [rsp+468h+var_3B8], esi
+0x18003635a  test    esi, esi
+0x18003635c  jns     short loc_18003638D
+0x18003635e  mov     rcx, cs:WPP_GLOBAL_Control
+0x180036365  cmp     rcx, r12
+0x180036368  jnz     loc_180036AF5
+0x18003636e  mov     r8, r14; lpMem
+0x180036371  xor     edx, edx; dwFlags
+0x180036373  mov     rcx, cs:?g_PrivateHeap@@3VPrivateHeap@@A; hHeap
+0x18003637a  call    cs:__imp_HeapFree
+0x180036381  nop     dword ptr [rax+rax+00h]
+0x180036386  mov     eax, esi
+0x180036388  jmp     loc_180036087
+0x18003638d  mov     [rsp+468h+TokenHandle], r13
+0x180036395  xorps   xmm0, xmm0
+0x180036398  movups  [rsp+468h+var_2C0], xmm0
+0x1800363a0  movups  [rsp+468h+var_2B0], xmm0
+0x1800363a8  movups  [rsp+468h+var_2A0], xmm0
+0x1800363b0  movups  xmmword ptr [rsp+468h+dwProcessId], xmm0
+0x1800363b8  movups  [rsp+468h+var_280], xmm0
+0x1800363c0  movups  [rsp+468h+var_270], xmm0
+0x1800363c8  movups  [rsp+468h+var_260], xmm0
+0x1800363d0  mov     [rsp+468h+RpcCallAttributes], 3
+0x1800363db  mov     [rsp+468h+var_2C4], 10h
+0x1800363e6  lea     rdx, [rsp+468h+RpcCallAttributes]; RpcCallAttributes
+0x1800363ee  xor     ecx, ecx; ClientBinding
+0x1800363f0  call    cs:__imp_RpcServerInqCallAttributesW
+0x1800363f7  nop     dword ptr [rax+rax+00h]
+0x1800363fc  test    eax, eax
+0x1800363fe  jnz     loc_180036B29
+0x180036404  mov     r14d, r13d
+0x180036407  mov     r15d, [rsp+468h+dwProcessId+8]
+0x18003640f  mov     r13d, [rsp+468h+dwProcessId+4]
+0x180036417  mov     r8d, r15d; dwProcessId
+0x18003641a  xor     edx, edx; bInheritHandle
+0x18003641c  mov     ecx, 1000h; dwDesiredAccess
+0x180036421  call    cs:__imp_OpenProcess
+0x180036428  nop     dword ptr [rax+rax+00h]
+0x18003642d  mov     rsi, rax
+0x180036430  test    rax, rax
+0x180036433  jz      loc_180036B33
+0x180036439  mov     [rsp+468h+ReturnLength], r14; ReturnLength
+0x18003643e  mov     r9d, 8; ProcessInformationLength
+0x180036444  lea     r8, [rsp+468h+TokenHandle]; ProcessInformation
+0x18003644c  mov     edx, 5Ch ; '\'; ProcessInformationClass
+0x180036451  mov     rcx, rax; ProcessHandle
+0x180036454  call    cs:__imp_NtQueryInformationProcess
+0x18003645b  nop     dword ptr [rax+rax+00h]
+0x180036460  mov     edi, eax
+0x180036462  test    eax, eax
+0x180036464  js      short loc_1800364C0
+0x180036466  mov     eax, ds:7FFE02C4h
+0x18003646d  shl     rax, 30h
+0x180036471  or      [rsp+468h+TokenHandle], rax
+0x180036479  xorps   xmm0, xmm0
+0x18003647c  movups  [rsp+468h+ProcessInformation], xmm0
+0x180036484  movups  [rsp+468h+var_2E8], xmm0
+0x18003648c  movups  [rsp+468h+var_2D8], xmm0
+0x180036494  mov     [rsp+468h+ReturnLength], r14; ReturnLength
+0x180036499  mov     r9d, 30h ; '0'; ProcessInformationLength
+0x18003649f  lea     r8, [rsp+468h+ProcessInformation]; ProcessInformation
+0x1800364a7  xor     edx, edx; ProcessInformationClass
+0x1800364a9  mov     rcx, rsi; ProcessHandle
+0x1800364ac  call    cs:__imp_NtQueryInformationProcess
+0x1800364b3  nop     dword ptr [rax+rax+00h]
+0x1800364b8  test    eax, eax
+0x1800364ba  jz      loc_180036B70
+0x1800364c0  mov     rcx, rsi; hObject
+0x1800364c3  call    cs:__imp_CloseHandle
+0x1800364ca  nop     dword ptr [rax+rax+00h]
+0x1800364cf  test    edi, edi
+0x1800364d1  jns     loc_180036BB5
+0x1800364d7  xor     r13d, r13d
+0x1800364da  mov     [rsp+468h+var_3B8], edi
+0x1800364e1  mov     rcx, cs:WPP_GLOBAL_Control
+0x1800364e8  cmp     rcx, r12
+0x1800364eb  jz      loc_180036BC9
+0x1800364f1  test    dword ptr [rcx+1Ch], 8000h
+0x1800364f8  jz      loc_180036BC9
+0x1800364fe  cmp     byte ptr [rcx+19h], 2
+0x180036502  jb      loc_180036BC9
+0x180036508  mov     edx, 0Dh
+0x18003650d  mov     r9d, edi
+0x180036510  lea     r8, WPP_e148bc2992f63fedaeaba66ed01f4918_Traceguids
+0x180036517  mov     rcx, [rcx+10h]
+0x18003651b  call    WPP_SF_d
+0x180036520  mov     r12, r13
+0x180036523  jmp     loc_180036BCC
+0x180036528  call    ?GetComputerNameDnsFullyQualified@Auditor@@AEAAPEAGXZ; Auditor::GetComputerNameDnsFullyQualified(void)
+0x18003652d  mov     rsi, rax
+0x180036530  lea     rcx, aUnknown; "Unknown"
+0x180036537  test    rax, rax
+0x18003653a  cmovnz  rcx, rax
+0x18003653e  mov     [rsp+468h+var_3C8], rcx
+0x180036546  mov     [rsp+468h+var_3D0], 2
+0x180036551  mov     [rsp+468h+var_3D8], r13d
+0x180036559  mov     [rsp+468h+var_3E0], 3
+0x180036564  mov     [rsp+468h+var_3E8], r14d
+0x18003656c  mov     [rsp+468h+var_3F0], 3
+0x180036574  mov     [rsp+468h+var_3F8], r15d
+0x180036579  mov     [rsp+468h+var_400], 3
+0x180036581  mov     [rsp+468h+var_408], r12
+0x180036586  mov     [rsp+468h+var_410], 0Bh
+0x18003658e  mov     r14, qword ptr [rsp+468h+var_3A0]
+0x180036596  mov     [rsp+468h+var_418], r14
+0x18003659b  mov     dword ptr [rsp+468h+var_420], 2
+0x1800365a3  mov     rax, [rsp+468h+var_388]
+0x1800365ab  mov     [rsp+468h+var_428], rax
+0x1800365b0  mov     dword ptr [rsp+468h+var_430], 2
+0x1800365b8  mov     rax, [rsp+468h+var_E0]
+0x1800365c0  mov     [rsp+468h+var_438], rax
+0x1800365c5  mov     dword ptr [rsp+468h+var_440], 0Dh
+0x1800365cd  mov     word ptr [rsp+468h+ReturnLength], 8
+0x1800365d4  lea     r9, aSecurity; "Security"
+0x1800365db  lea     r8, [rsp+468h+hMem]
+0x1800365e3  lea     rdx, [rsp+468h+var_380]
+0x1800365eb  mov     ecx, 1
+0x1800365f0  call    cs:__imp_AuthziInitializeAuditParams
+0x1800365f7  nop     dword ptr [rax+rax+00h]
+0x1800365fc  test    eax, eax
+0x1800365fe  jz      loc_180036825
+0x180036604  mov     rax, [rsp+468h+TokenInformation]
+0x18003660c  mov     [rsp+468h+var_238], rax
+0x180036614  lea     rax, [rsp+468h+hAuditEvent]
+0x18003661c  mov     [rsp+468h+var_418], rax
+0x180036621  mov     [rsp+468h+var_420], rbx
+0x180036626  mov     [rsp+468h+var_428], rbx
+  ... truncated ...
+```

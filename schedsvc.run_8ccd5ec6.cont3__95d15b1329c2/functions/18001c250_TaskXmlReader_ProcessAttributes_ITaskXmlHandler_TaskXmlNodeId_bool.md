@@ -1,0 +1,51 @@
+# TaskXmlReader::ProcessAttributes(ITaskXmlHandler *,TaskXmlNodeId,bool &)
+
+- ea: `0x18001c250`
+- end: `0x18001cf2c`
+- name: `?ProcessAttributes@TaskXmlReader@@AEAAJPEAUITaskXmlHandler@@W4TaskXmlNodeId@@AEA_N@Z`
+- size: `3292`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `17`
+- tags: `registry_config, loader_planting, service_task`
+
+## callers
+
+- `0x18001bdf0`
+
+## callees
+
+- `0x180009d60`
+- `0x18000cb10`
+- `0x180011e40`
+- `0x1800188a0`
+- `0x18001ab70`
+- `0x18001bdc0`
+- `0x18001c250`
+- `0x18001cf40`
+- `0x18001d130`
+- `0x1800373f0`
+- `0x180050c24`
+- `0x180050d9c`
+- `0x180050e10`
+- `0x180050e40`
+- `0x180054824`
+- `0x180082a40`
+- `0x180088010`
+
+## import_xrefs
+
+- `OLEAUT32!__imp_SysFreeString` at `0x18001cc9c`
+- `OLEAUT32!__imp_SysFreeString` at `0x18001cd00`
+- `OLEAUT32!__imp_SysFreeString` at `0x18001cc9c`
+- `OLEAUT32!__imp_SysFreeString` at `0x18001cd00`
+
+## string_xrefs
+
+- `0x18001c8c3`: `xmlns`
+
+## pseudocode
+
+```c
+
+```

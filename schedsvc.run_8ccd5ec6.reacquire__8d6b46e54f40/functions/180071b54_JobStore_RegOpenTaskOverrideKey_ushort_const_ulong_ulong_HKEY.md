@@ -1,0 +1,167 @@
+# JobStore::RegOpenTaskOverrideKey(ushort const *,ulong,ulong,HKEY__ * *)
+
+- ea: `0x180071b54`
+- end: `0x180071c53`
+- name: `?RegOpenTaskOverrideKey@JobStore@@AEBAJPEBGKKPEAPEAUHKEY__@@@Z`
+- size: `255`
+- prototype: `int(JobStore *__hidden this, const unsigned __int16 *, unsigned int, unsigned int, HKEY *)`
+- caller_count: `4`
+- callee_count: `3`
+- tags: `registry_config, service_task, broker_com_uri`
+
+## callers
+
+- `0x180011ed0`
+- `0x1800141e0`
+- `0x180031a40`
+- `0x18006fed4`
+
+## callees
+
+- `0x180042dc0`
+- `0x18004bde4`
+- `0x180071b54`
+
+## import_xrefs
+
+- `OLEAUT32!__imp_SysFreeString` at `0x180071c3b`
+- `OLEAUT32!__imp_SysFreeString` at `0x180071c3b`
+- `api-ms-win-core-registry-l1-1-0!RegOpenKeyExW` at `0x180071bea`
+- `api-ms-win-core-registry-l1-1-0!RegOpenKeyExW` at `0x180071bea`
+- `api-ms-win-core-registry-l1-1-0!RegCreateKeyExW` at `0x180071bd2`
+- `api-ms-win-core-registry-l1-1-0!RegCreateKeyExW` at `0x180071bd2`
+
+## pseudocode
+
+```c
+// Hidden C++ exception states: #wind=1
+__int64 __fastcall JobStore::RegOpenTaskOverrideKey(
+        JobStore *this,
+        const unsigned __int16 *a2,
+        REGSAM a3,
+        int a4,
+        HKEY *a5)
+{
+  OLECHAR *v8; // rbx
+  JobStore *v9; // rcx
+  const WCHAR *v10; // rdx
+  HKEY v11; // rcx
+  int v12; // edi
+  LSTATUS v13; // eax
+  BSTR bstrString[7]; // [rsp+50h] [rbp-38h] BYREF
+  HKEY phkResult; // [rsp+90h] [rbp+8h] BYREF
+
+  phkResult = 0;
+  v8 = 0;
+  bstrString[0] = 0;
+  if ( !*((_QWORD *)this + 3) )
+  {
+    *a5 = 0;
+LABEL_12:
+    v12 = 0;
+    goto LABEL_13;
+  }
+  ATL::CComBSTR::operator=(bstrString, a2);
+  v8 = bstrString[0];
+  JobStore::ReverseSlashesInString(v9, bstrString[0]);
+  v11 = (HKEY)*((_QWORD *)this + 3);
+  if ( a4 == 1 )
+  {
+    v12 = RegCreateKeyExW(v11, v10, 0, 0, 0, a3, 0, &phkResult, 0);
+  }
+  else
+  {
+    v13 = RegOpenKeyExW(v11, v10, 0, a3, &phkResult);
+    v12 = v13;
+    if ( v13 == 161 || v13 == 2 )
+    {
+      phkResult = 0;
+      goto LABEL_12;
+    }
+  }
+  if ( !v12 )
+  {
+    *a5 = phkResult;
+    goto LABEL_12;
+  }
+  if ( v12 > 0 )
+    v12 = (unsigned __int16)v12 | 0x80070000;
+LABEL_13:
+  SysFreeString(v8);
+  return (unsigned int)v12;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180071b54  mov     rax, rsp
+0x180071b57  push    rbx
+0x180071b58  push    rbp
+0x180071b59  push    rsi
+0x180071b5a  push    rdi
+0x180071b5b  sub     rsp, 68h
+0x180071b5f  mov     ebp, r9d
+0x180071b62  mov     esi, r8d
+0x180071b65  mov     rdi, rcx
+0x180071b68  mov     qword ptr [rax+8], 0
+0x180071b70  xor     ebx, ebx
+0x180071b72  mov     [rax-38h], rbx
+0x180071b76  cmp     [rcx+18h], rbx
+0x180071b7a  jnz     short loc_180071B8C
+0x180071b7c  mov     rax, [rsp+88h+arg_20]
+0x180071b84  mov     [rax], rbx
+0x180071b87  jmp     loc_180071C36
+0x180071b8c  lea     rcx, [rsp+88h+bstrString]
+0x180071b91  call    ??4CComBSTR@ATL@@QEAAAEAV01@PEBG@Z; ATL::CComBSTR::operator=(ushort const *)
+0x180071b96  mov     rbx, [rsp+88h+bstrString]
+0x180071b9b  mov     rdx, rbx; unsigned __int16 *
+0x180071b9e  call    ?ReverseSlashesInString@JobStore@@AEBAXPEAG@Z; JobStore::ReverseSlashesInString(ushort *)
+0x180071ba3  mov     rcx, [rdi+18h]; hKey
+0x180071ba7  lea     rax, [rsp+88h+arg_0]
+0x180071baf  xor     r8d, r8d; ulOptions
+0x180071bb2  cmp     ebp, 1
+0x180071bb5  jnz     short loc_180071BE2
+0x180071bb7  mov     [rsp+88h+lpdwDisposition], r8; lpdwDisposition
+0x180071bbc  mov     [rsp+88h+phkResult], rax; phkResult
+0x180071bc1  mov     [rsp+88h+lpSecurityAttributes], r8; lpSecurityAttributes
+0x180071bc6  mov     [rsp+88h+samDesired], esi; samDesired
+0x180071bca  mov     [rsp+88h+dwOptions], r8d; dwOptions
+0x180071bcf  xor     r9d, r9d; lpClass
+0x180071bd2  call    cs:__imp_RegCreateKeyExW
+0x180071bd9  nop     dword ptr [rax+rax+00h]
+0x180071bde  mov     edi, eax
+0x180071be0  jmp     short loc_180071C04
+0x180071be2  mov     qword ptr [rsp+88h+dwOptions], rax; phkResult
+0x180071be7  mov     r9d, esi; samDesired
+0x180071bea  call    cs:__imp_RegOpenKeyExW
+0x180071bf1  nop     dword ptr [rax+rax+00h]
+0x180071bf6  mov     edi, eax
+0x180071bf8  cmp     eax, 0A1h
+0x180071bfd  jz      short loc_180071C2A
+0x180071bff  cmp     eax, 2
+0x180071c02  jz      short loc_180071C2A
+0x180071c04  test    edi, edi
+0x180071c06  jz      short loc_180071C15
+0x180071c08  jle     short loc_180071C38
+0x180071c0a  movzx   edi, di
+0x180071c0d  or      edi, 80070000h
+0x180071c13  jmp     short loc_180071C38
+0x180071c15  mov     rcx, [rsp+88h+arg_20]
+0x180071c1d  mov     rax, [rsp+88h+arg_0]
+0x180071c25  mov     [rcx], rax
+0x180071c28  jmp     short loc_180071C36
+0x180071c2a  mov     [rsp+88h+arg_0], 0
+0x180071c36  xor     edi, edi
+0x180071c38  mov     rcx, rbx; bstrString
+0x180071c3b  call    cs:__imp_SysFreeString
+0x180071c42  nop     dword ptr [rax+rax+00h]
+0x180071c47  mov     eax, edi
+0x180071c49  add     rsp, 68h
+0x180071c4d  pop     rdi
+0x180071c4e  pop     rsi
+0x180071c4f  pop     rbp
+0x180071c50  pop     rbx
+0x180071c51  retn
+```

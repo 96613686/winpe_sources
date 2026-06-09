@@ -1,0 +1,36 @@
+# ReadFile_0
+
+- ea: `0x180078ae0`
+- end: `0x180078ae6`
+- name: `ReadFile_0`
+- size: `6`
+- prototype: `BOOL __stdcall(HANDLE hFile, LPVOID lpBuffer, DWORD nNumberOfBytesToRead, LPDWORD lpNumberOfBytesRead, LPOVERLAPPED lpOverlapped)`
+- caller_count: `0`
+- callee_count: `0`
+- tags: `file_ops`
+
+## import_xrefs
+
+- `api-ms-win-core-file-l1-1-0!ReadFile` at `0x180078ae0`
+
+## pseudocode
+
+```c
+// attributes: thunk
+BOOL __stdcall ReadFile_0(
+        HANDLE hFile,
+        LPVOID lpBuffer,
+        DWORD nNumberOfBytesToRead,
+        LPDWORD lpNumberOfBytesRead,
+        LPOVERLAPPED lpOverlapped)
+{
+  return ReadFile(hFile, lpBuffer, nNumberOfBytesToRead, lpNumberOfBytesRead, lpOverlapped);
+}
+
+```
+
+## disassembly
+
+```asm
+0x180078ae0  jmp     cs:__imp_ReadFile
+```

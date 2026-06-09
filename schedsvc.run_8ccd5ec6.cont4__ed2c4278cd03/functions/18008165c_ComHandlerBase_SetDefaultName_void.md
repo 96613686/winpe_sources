@@ -1,0 +1,189 @@
+# ComHandlerBase::SetDefaultName(void)
+
+- ea: `0x18008165c`
+- end: `0x180081833`
+- name: `?SetDefaultName@ComHandlerBase@@IEAAXXZ`
+- size: `471`
+- prototype: `void __fastcall(ComHandlerBase *__hidden this)`
+- caller_count: `1`
+- callee_count: `4`
+- tags: `authz_impersonation, registry_config, loader_planting, service_task, broker_com_uri`
+
+## callers
+
+- `0x18004c900`
+
+## callees
+
+- `0x180030620`
+- `0x18008165c`
+- `0x1800829fa`
+- `0x180082a40`
+
+## import_xrefs
+
+- `api-ms-win-core-registry-l1-1-0!RegOpenKeyExW` at `0x18008171e`
+- `api-ms-win-core-registry-l1-1-0!RegOpenKeyExW` at `0x1800817a7`
+- `api-ms-win-core-registry-l1-1-0!RegOpenKeyExW` at `0x18008171e`
+- `api-ms-win-core-registry-l1-1-0!RegOpenKeyExW` at `0x1800817a7`
+- `api-ms-win-core-registry-l1-1-0!RegQueryValueExW` at `0x180081750`
+- `api-ms-win-core-registry-l1-1-0!RegQueryValueExW` at `0x1800817d9`
+- `api-ms-win-core-registry-l1-1-0!RegQueryValueExW` at `0x180081750`
+- `api-ms-win-core-registry-l1-1-0!RegQueryValueExW` at `0x1800817d9`
+- `api-ms-win-core-registry-l1-1-0!RegCloseKey` at `0x180081774`
+- `api-ms-win-core-registry-l1-1-0!RegCloseKey` at `0x180081806`
+- `api-ms-win-core-registry-l1-1-0!RegCloseKey` at `0x180081774`
+- `api-ms-win-core-registry-l1-1-0!RegCloseKey` at `0x180081806`
+- `api-ms-win-core-com-l1-1-0!StringFromGUID2` at `0x1800816e3`
+- `api-ms-win-core-com-l1-1-0!StringFromGUID2` at `0x1800816e3`
+
+## string_xrefs
+
+- `0x180081682`: `Wow6432Node\CLSID\`
+
+## pseudocode
+
+```c
+void __fastcall ComHandlerBase::SetDefaultName(ComHandlerBase *this)
+{
+  DWORD cbData; // [rsp+30h] [rbp-D0h] BYREF
+  DWORD Type; // [rsp+34h] [rbp-CCh] BYREF
+  HKEY hKey; // [rsp+38h] [rbp-C8h] BYREF
+  WCHAR v5[18]; // [rsp+40h] [rbp-C0h] BYREF
+  OLECHAR sz; // [rsp+64h] [rbp-9Ch] BYREF
+  _BYTE v7[90]; // [rsp+66h] [rbp-9Ah] BYREF
+  BYTE Data[512]; // [rsp+C0h] [rbp-40h] BYREF
+
+  hKey = 0;
+  wcscpy(v5, L"Wow6432Node\\CLID\\");
+  memset_0(v7, 0, 0x52u);
+  Type = 0;
+  cbData = 0;
+  if ( StringFromGUID2((const GUID *const)((char *)this + 40), &sz, 42) )
+  {
+    cbData = 510;
+    if ( !RegOpenKeyExW(HKEY_CLASSES_ROOT, &v5[12], 0, 0x20019u, &hKey) )
+    {
+      if ( !RegQueryValueExW(hKey, 0, 0, &Type, Data, &cbData) && Type - 1 <= 1 )
+      {
+LABEL_9:
+        _bstr_t::operator=((char *)this + 64, Data);
+LABEL_10:
+        RegCloseKey(hKey);
+        return;
+      }
+      RegCloseKey(hKey);
+    }
+    cbData = 510;
+    if ( RegOpenKeyExW(HKEY_CLASSES_ROOT, v5, 0, 0x20019u, &hKey) )
+      return;
+    if ( RegQueryValueExW(hKey, 0, 0, &Type, Data, &cbData) || Type - 1 > 1 )
+      goto LABEL_10;
+    goto LABEL_9;
+  }
+}
+
+```
+
+## disassembly
+
+```asm
+0x18008165c  mov     [rsp-8+arg_8], rbx
+0x180081661  push    rbp
+0x180081662  lea     rbp, [rsp-1D0h]
+0x18008166a  sub     rsp, 2D0h
+0x180081671  mov     rax, cs:__security_cookie
+0x180081678  xor     rax, rsp
+0x18008167b  mov     [rbp+1D0h+var_10], rax
+0x180081682  movups  xmm0, xmmword ptr cs:aWow6432nodeCls; "Wow6432Node\\CLSID\\"
+0x180081689  xor     edx, edx; Val
+0x18008168b  mov     rbx, rcx
+0x18008168e  movups  xmm1, xmmword ptr cs:aWow6432nodeCls+10h; "ode\\CLSID\\"
+0x180081695  lea     rcx, [rsp+2D0h+var_26A]; void *
+0x18008169a  mov     [rsp+2D0h+hKey], 0
+0x1800816a3  movaps  xmmword ptr [rsp+2D0h+var_290], xmm0
+0x1800816a8  movsd   xmm0, qword ptr cs:aWow6432nodeCls+1Eh; "ID\\"
+0x1800816b0  lea     r8d, [rdx+52h]; Size
+0x1800816b4  movaps  xmmword ptr [rsp+2D0h+SubKey], xmm1
+0x1800816b9  movsd   qword ptr [rsp+2D0h+SubKey+0Eh], xmm0
+0x1800816bf  call    memset_0
+0x1800816c4  lea     rcx, [rbx+28h]; rguid
+0x1800816c8  mov     [rsp+2D0h+Type], 0
+0x1800816d0  mov     r8d, 2Ah ; '*'; cchMax
+0x1800816d6  mov     [rsp+2D0h+cbData], 0
+0x1800816de  lea     rdx, [rsp+2D0h+sz]; lpsz
+0x1800816e3  call    cs:__imp_StringFromGUID2
+0x1800816ea  nop     dword ptr [rax+rax+00h]
+0x1800816ef  test    eax, eax
+0x1800816f1  jz      loc_180081812
+0x1800816f7  lea     rax, [rsp+2D0h+hKey]
+0x1800816fc  mov     [rsp+2D0h+cbData], 1FEh
+0x180081704  mov     r9d, 20019h; samDesired
+0x18008170a  mov     [rsp+2D0h+phkResult], rax; phkResult
+0x18008170f  xor     r8d, r8d; ulOptions
+0x180081712  lea     rdx, [rsp+2D0h+SubKey+8]; lpSubKey
+0x180081717  mov     rcx, 0FFFFFFFF80000000h; hKey
+0x18008171e  call    cs:__imp_RegOpenKeyExW
+0x180081725  nop     dword ptr [rax+rax+00h]
+0x18008172a  test    eax, eax
+0x18008172c  jnz     short loc_180081780
+0x18008172e  mov     rcx, [rsp+2D0h+hKey]; hKey
+0x180081733  lea     rax, [rsp+2D0h+cbData]
+0x180081738  mov     [rsp+2D0h+lpcbData], rax; lpcbData
+0x18008173d  lea     r9, [rsp+2D0h+Type]; lpType
+0x180081742  lea     rax, [rbp+1D0h+Data]
+0x180081746  xor     r8d, r8d; lpReserved
+0x180081749  xor     edx, edx; lpValueName
+0x18008174b  mov     [rsp+2D0h+phkResult], rax; lpData
+0x180081750  call    cs:__imp_RegQueryValueExW
+0x180081757  nop     dword ptr [rax+rax+00h]
+0x18008175c  test    eax, eax
+0x18008175e  jnz     short loc_18008176F
+0x180081760  mov     eax, [rsp+2D0h+Type]
+0x180081764  dec     eax
+0x180081766  cmp     eax, 1
+0x180081769  jbe     loc_1800817F4
+0x18008176f  mov     rcx, [rsp+2D0h+hKey]; hKey
+0x180081774  call    cs:__imp_RegCloseKey
+0x18008177b  nop     dword ptr [rax+rax+00h]
+0x180081780  lea     rax, [rsp+2D0h+hKey]
+0x180081785  mov     [rsp+2D0h+cbData], 1FEh
+0x18008178d  mov     r9d, 20019h; samDesired
+0x180081793  mov     [rsp+2D0h+phkResult], rax; phkResult
+0x180081798  xor     r8d, r8d; ulOptions
+0x18008179b  lea     rdx, [rsp+2D0h+var_290]; lpSubKey
+0x1800817a0  mov     rcx, 0FFFFFFFF80000000h; hKey
+0x1800817a7  call    cs:__imp_RegOpenKeyExW
+0x1800817ae  nop     dword ptr [rax+rax+00h]
+0x1800817b3  test    eax, eax
+0x1800817b5  jnz     short loc_180081812
+0x1800817b7  mov     rcx, [rsp+2D0h+hKey]; hKey
+0x1800817bc  lea     rax, [rsp+2D0h+cbData]
+0x1800817c1  mov     [rsp+2D0h+lpcbData], rax; lpcbData
+0x1800817c6  lea     r9, [rsp+2D0h+Type]; lpType
+0x1800817cb  lea     rax, [rbp+1D0h+Data]
+0x1800817cf  xor     r8d, r8d; lpReserved
+0x1800817d2  xor     edx, edx; lpValueName
+0x1800817d4  mov     [rsp+2D0h+phkResult], rax; lpData
+0x1800817d9  call    cs:__imp_RegQueryValueExW
+0x1800817e0  nop     dword ptr [rax+rax+00h]
+0x1800817e5  test    eax, eax
+0x1800817e7  jnz     short loc_180081801
+0x1800817e9  mov     eax, [rsp+2D0h+Type]
+0x1800817ed  dec     eax
+0x1800817ef  cmp     eax, 1
+0x1800817f2  ja      short loc_180081801
+0x1800817f4  lea     rdx, [rbp+1D0h+Data]
+0x1800817f8  lea     rcx, [rbx+40h]
+0x1800817fc  call    ??4_bstr_t@@QEAAAEAV0@PEBG@Z; _bstr_t::operator=(ushort const *)
+0x180081801  mov     rcx, [rsp+2D0h+hKey]; hKey
+0x180081806  call    cs:__imp_RegCloseKey
+0x18008180d  nop     dword ptr [rax+rax+00h]
+0x180081812  mov     rcx, [rbp+1D0h+var_10]
+0x180081819  xor     rcx, rsp; StackCookie
+0x18008181c  call    __security_check_cookie
+0x180081821  mov     rbx, [rsp+2D0h+arg_8]
+0x180081829  add     rsp, 2D0h
+0x180081830  pop     rbp
+0x180081831  retn
+```

@@ -1,0 +1,233 @@
+# EventManager::EvtReport(_EVENT_DESCRIPTOR const *,ushort const *,ulong,void *,_GUID const *)
+
+- ea: `0x18002f814`
+- end: `0x18002f9c7`
+- name: `?EvtReport@EventManager@@QEAAJPEBU_EVENT_DESCRIPTOR@@PEBGKPEAXPEBU_GUID@@@Z`
+- size: `435`
+- prototype: `__int64 __fastcall(EventManager *__hidden this, const struct _EVENT_DESCRIPTOR *, const unsigned __int16 *, unsigned int, void *, const struct _GUID *)`
+- caller_count: `26`
+- callee_count: `4`
+- tags: `loader_planting, service_task`
+
+## callers
+
+- `0x18000d8a0`
+- `0x180011ed0`
+- `0x18001d7ac`
+- `0x18001e06c`
+- `0x18001eae0`
+- `0x18001fa60`
+- `0x180023c4c`
+- `0x180024590`
+- `0x180025a3c`
+- `0x180027990`
+- `0x18002dd30`
+- `0x18002e520`
+- `0x18002f770`
+- `0x180036020`
+- `0x180042200`
+- `0x180047ee0`
+- `0x1800519e0`
+- `0x180055b44`
+- `0x1800564b4`
+- `0x1800685e4`
+- `0x1800687d0`
+- `0x180070b08`
+- `0x180075de0`
+- `0x1800761f0`
+- `0x180076360`
+- `0x180076570`
+
+## callees
+
+- `0x18000a460`
+- `0x18002f814`
+- `0x1800829fa`
+- `0x180082a40`
+
+## import_xrefs
+
+- `msvcrt!fflush` at `0x18002f96f`
+- `msvcrt!fflush` at `0x18002f96f`
+- `msvcrt!fclose` at `0x18002f980`
+- `msvcrt!fclose` at `0x18002f980`
+- `msvcrt!fputws` at `0x18002f95e`
+- `msvcrt!fputws` at `0x18002f95e`
+- `msvcrt!fopen_s` at `0x18002f909`
+- `msvcrt!fopen_s` at `0x18002f909`
+- `ntdll!EtwEventEnabled` at `0x18002f866`
+- `ntdll!EtwEventEnabled` at `0x18002f866`
+- `ntdll!EtwEventWrite` at `0x18002f8db`
+- `ntdll!EtwEventWrite` at `0x18002f8db`
+
+## string_xrefs
+
+- `0x18002f8fd`: `TaskScheduler.log`
+- `0x18002f92b`: `EventWrite error`
+
+## pseudocode
+
+```c
+__int64 __fastcall EventManager::EvtReport(
+        EventManager *this,
+        const struct _EVENT_DESCRIPTOR *a2,
+        const unsigned __int16 *a3,
+        int a4)
+{
+  EventManager *v4; // rsi
+  __int64 v8; // rax
+  __int64 v9; // rcx
+  int v10; // ebx
+  FILE *Stream; // [rsp+38h] [rbp-D0h] BYREF
+  const OLECHAR *v12; // [rsp+40h] [rbp-C8h] BYREF
+  __int64 v13; // [rsp+48h] [rbp-C0h]
+  int *v14; // [rsp+50h] [rbp-B8h]
+  __int64 v15; // [rsp+58h] [rbp-B0h]
+  wchar_t Buffer[1024]; // [rsp+68h] [rbp-A0h] BYREF
+  int v17; // [rsp+8B0h] [rbp+7A8h] BYREF
+
+  v17 = a4;
+  v4 = g_pEventManager;
+  if ( !*(_QWORD *)g_pEventManager )
+    return 1;
+  if ( !(unsigned __int8)EtwEventEnabled() )
+    return 0;
+  if ( a3 )
+  {
+    v12 = a3;
+    v8 = -1;
+    do
+      ++v8;
+    while ( a3[v8] );
+    v13 = (unsigned int)(2 * v8 + 2);
+  }
+  else
+  {
+    v13 = 2;
+    v12 = &ChannelPath;
+  }
+  v9 = *(_QWORD *)v4;
+  v14 = &v17;
+  v15 = 4;
+  v10 = EtwEventWrite(v9, a2, 2, &v12);
+  if ( !v10 )
+    return 0;
+  Stream = 0;
+  if ( !fopen_s(&Stream, "TaskScheduler.log", "a+") )
+  {
+    memset_0(Buffer, 0, sizeof(Buffer));
+    StringCchPrintfW(Buffer, 0x400u, L"%s, (%d)\n", L"EventWrite error", v10);
+    Buffer[1023] = 0;
+    fputws(Buffer, Stream);
+    fflush(Stream);
+    fclose(Stream);
+  }
+  if ( v10 > 0 )
+    return (unsigned __int16)v10 | 0x80070000;
+  return (unsigned int)v10;
+}
+
+```
+
+## disassembly
+
+```asm
+0x18002f814  mov     rax, rsp
+0x18002f817  mov     [rax+8], rbx
+0x18002f81b  mov     [rax+18h], rsi
+0x18002f81f  mov     [rax+20h], r9d
+0x18002f823  push    rbp
+0x18002f824  push    rdi
+0x18002f825  push    r14
+0x18002f827  lea     rbp, [rax-788h]
+0x18002f82e  sub     rsp, 870h
+0x18002f835  mov     rax, cs:__security_cookie
+0x18002f83c  xor     rax, rsp
+0x18002f83f  mov     [rbp+780h+var_20], rax
+0x18002f846  mov     rsi, cs:?g_pEventManager@@3PEAVEventManager@@EA; EventManager * g_pEventManager
+0x18002f84d  xor     r14d, r14d
+0x18002f850  mov     rbx, r8
+0x18002f853  mov     rdi, rdx
+0x18002f856  mov     rcx, [rsi]
+0x18002f859  test    rcx, rcx
+0x18002f85c  jnz     short loc_18002F866
+0x18002f85e  lea     eax, [rcx+1]
+0x18002f861  jmp     loc_18002F99F
+0x18002f866  call    cs:__imp_EtwEventEnabled
+0x18002f86d  nop     dword ptr [rax+rax+00h]
+0x18002f872  test    al, al
+0x18002f874  jz      loc_18002F99D
+0x18002f87a  mov     r8d, 2
+0x18002f880  test    rbx, rbx
+0x18002f883  jz      short loc_18002F8AA
+0x18002f885  mov     [rsp+880h+var_848], rbx
+0x18002f88a  or      rax, 0FFFFFFFFFFFFFFFFh
+0x18002f88e  inc     rax
+0x18002f891  cmp     [rbx+rax*2], r14w
+0x18002f896  jnz     short loc_18002F88E
+0x18002f898  lea     eax, ds:2[rax*2]
+0x18002f89f  mov     dword ptr [rsp+880h+var_840+4], r14d
+0x18002f8a4  mov     dword ptr [rsp+880h+var_840], eax
+0x18002f8a8  jmp     short loc_18002F8BB
+0x18002f8aa  lea     rax, ChannelPath
+0x18002f8b1  mov     [rsp+880h+var_840], r8
+0x18002f8b6  mov     [rsp+880h+var_848], rax
+0x18002f8bb  mov     rcx, [rsi]
+0x18002f8be  lea     rax, [rbp+780h+arg_18]
+0x18002f8c5  lea     r9, [rsp+880h+var_848]
+0x18002f8ca  mov     [rsp+880h+var_838], rax
+0x18002f8cf  mov     rdx, rdi
+0x18002f8d2  mov     [rsp+880h+var_830], 4
+0x18002f8db  call    cs:__imp_EtwEventWrite
+0x18002f8e2  nop     dword ptr [rax+rax+00h]
+0x18002f8e7  mov     ebx, eax
+0x18002f8e9  test    eax, eax
+0x18002f8eb  jz      loc_18002F99D
+0x18002f8f1  lea     r8, Mode; "a+"
+0x18002f8f8  mov     [rsp+880h+Stream], r14
+0x18002f8fd  lea     rdx, FileName; "TaskScheduler.log"
+0x18002f904  lea     rcx, [rsp+880h+Stream]; Stream
+0x18002f909  call    cs:__imp_fopen_s
+0x18002f910  nop     dword ptr [rax+rax+00h]
+0x18002f915  test    eax, eax
+0x18002f917  jnz     short loc_18002F98C
+0x18002f919  xor     edx, edx; Val
+0x18002f91b  lea     rcx, [rsp+880h+Buffer]; void *
+0x18002f920  mov     r8d, 800h; Size
+0x18002f926  call    memset_0
+0x18002f92b  lea     r9, aEventwriteErro; "EventWrite error"
+0x18002f932  mov     [rsp+880h+var_860], ebx
+0x18002f936  lea     r8, aSD; "%s, (%d)\n"
+0x18002f93d  mov     edx, 400h; unsigned __int64
+0x18002f942  lea     rcx, [rsp+880h+Buffer]; unsigned __int16 *
+0x18002f947  call    ?StringCchPrintfW@@YAJPEAG_KPEBGZZ; StringCchPrintfW(ushort *,unsigned __int64,ushort const *,...)
+0x18002f94c  mov     rdx, [rsp+880h+Stream]; Stream
+0x18002f951  lea     rcx, [rsp+880h+Buffer]; Buffer
+0x18002f956  mov     [rbp+780h+var_22], r14w
+0x18002f95e  call    cs:__imp_fputws
+0x18002f965  nop     dword ptr [rax+rax+00h]
+0x18002f96a  mov     rcx, [rsp+880h+Stream]; Stream
+0x18002f96f  call    cs:__imp_fflush
+0x18002f976  nop     dword ptr [rax+rax+00h]
+0x18002f97b  mov     rcx, [rsp+880h+Stream]; Stream
+0x18002f980  call    cs:__imp_fclose
+0x18002f987  nop     dword ptr [rax+rax+00h]
+0x18002f98c  test    ebx, ebx
+0x18002f98e  jle     short loc_18002F999
+0x18002f990  movzx   ebx, bx
+0x18002f993  or      ebx, 80070000h
+0x18002f999  mov     eax, ebx
+0x18002f99b  jmp     short loc_18002F99F
+0x18002f99d  xor     eax, eax
+0x18002f99f  mov     rcx, [rbp+780h+var_20]
+0x18002f9a6  xor     rcx, rsp; StackCookie
+0x18002f9a9  call    __security_check_cookie
+0x18002f9ae  lea     r11, [rsp+880h+var_10]
+0x18002f9b6  mov     rbx, [r11+20h]
+0x18002f9ba  mov     rsi, [r11+30h]
+0x18002f9be  mov     rsp, r11
+0x18002f9c1  pop     r14
+0x18002f9c3  pop     rdi
+0x18002f9c4  pop     rbp
+0x18002f9c5  retn
+```

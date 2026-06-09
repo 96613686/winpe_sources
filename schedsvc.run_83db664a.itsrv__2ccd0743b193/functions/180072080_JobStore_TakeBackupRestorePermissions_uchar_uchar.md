@@ -1,0 +1,213 @@
+# JobStore::TakeBackupRestorePermissions(uchar *,uchar *)
+
+- ea: `0x180072080`
+- end: `0x18007223e`
+- name: `?TakeBackupRestorePermissions@JobStore@@AEBAJPEAE0@Z`
+- size: `446`
+- prototype: `__int64 __fastcall(JobStore *__hidden this, unsigned __int8 *, unsigned __int8 *)`
+- caller_count: `2`
+- callee_count: `4`
+- tags: `authz_impersonation, loader_planting`
+
+## callers
+
+- `0x18006efe8`
+- `0x18006f894`
+
+## callees
+
+- `0x180001544`
+- `0x180045d54`
+- `0x180072080`
+- `0x180082a40`
+
+## import_xrefs
+
+- `ntdll!RtlAdjustPrivilege` at `0x1800720bd`
+- `ntdll!RtlAdjustPrivilege` at `0x180072154`
+- `ntdll!RtlAdjustPrivilege` at `0x1800721ff`
+- `ntdll!RtlAdjustPrivilege` at `0x1800720bd`
+- `ntdll!RtlAdjustPrivilege` at `0x180072154`
+- `ntdll!RtlAdjustPrivilege` at `0x1800721ff`
+
+## pseudocode
+
+```c
+__int64 __fastcall JobStore::TakeBackupRestorePermissions(JobStore *this, unsigned __int8 *a2, unsigned __int8 *a3)
+{
+  __int64 v5; // rcx
+  NTSTATUS v6; // ebx
+  __int64 v7; // r8
+  unsigned int v8; // ebx
+  __int64 v9; // rcx
+  __int64 v10; // r8
+  unsigned __int8 OldValue; // [rsp+30h] [rbp-29h] BYREF
+  char v13; // [rsp+31h] [rbp-28h] BYREF
+  unsigned __int8 v14; // [rsp+32h] [rbp-27h] BYREF
+  char v15; // [rsp+33h] [rbp-26h] BYREF
+  _DWORD v16[3]; // [rsp+34h] [rbp-25h] BYREF
+  _BYTE v17[32]; // [rsp+40h] [rbp-19h] BYREF
+  _DWORD *v18; // [rsp+60h] [rbp+7h]
+  __int64 v19; // [rsp+68h] [rbp+Fh]
+  char *v20; // [rsp+70h] [rbp+17h]
+  __int64 v21; // [rsp+78h] [rbp+1Fh]
+  char *v22; // [rsp+80h] [rbp+27h]
+  __int64 v23; // [rsp+88h] [rbp+2Fh]
+
+  OldValue = 0;
+  v14 = 0;
+  v6 = RtlAdjustPrivilege(0x11u, 1u, 0, &OldValue);
+  if ( v6 >= 0 )
+  {
+    v6 = RtlAdjustPrivilege(0x12u, 1u, 0, &v14);
+    if ( v6 >= 0 )
+    {
+      v8 = 0;
+      *a2 = OldValue;
+      *a3 = v14;
+      return v8;
+    }
+    if ( (unsigned int)dword_1800C0358 > 4 && (unsigned __int8)tlgKeywordOn(v9, 0x400000000001LL) )
+    {
+      v13 = *a3;
+      v15 = *a2;
+      v22 = &v13;
+      v20 = &v15;
+      v18 = v16;
+      v19 = v10;
+      v16[0] = v6;
+      v23 = 1;
+      v21 = 1;
+      tlgWriteTransfer_EventWriteTransfer(&dword_1800C0358, word_1800B16B2, 0, 0, 5, v17);
+    }
+    RtlAdjustPrivilege(0x11u, OldValue, 0, &OldValue);
+  }
+  else if ( (unsigned int)dword_1800C0358 > 4 && (unsigned __int8)tlgKeywordOn(v5, 0x400000000001LL) )
+  {
+    v13 = *a2;
+    v19 = v7;
+    v20 = &v13;
+    v16[0] = v6;
+    v18 = v16;
+    v21 = 1;
+    tlgWriteTransfer_EventWriteTransfer(&dword_1800C0358, byte_1800B1A2D, 0, 0, v7, v17);
+  }
+  return v6 | 0x10000000u;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180072080  mov     [rsp-8+arg_0], rbx
+0x180072085  push    rbp
+0x180072086  push    rsi
+0x180072087  push    rdi
+0x180072088  lea     rbp, [rsp-47h]
+0x18007208d  sub     rsp, 0A0h
+0x180072094  mov     rax, cs:__security_cookie
+0x18007209b  xor     rax, rsp
+0x18007209e  mov     [rbp+57h+var_20], rax
+0x1800720a2  mov     rsi, r8
+0x1800720a5  mov     [rbp+57h+OldValue], 0
+0x1800720a9  xor     r8d, r8d; ForThread
+0x1800720ac  mov     [rbp+57h+var_7E], 0
+0x1800720b0  mov     rdi, rdx
+0x1800720b3  lea     r9, [rbp+57h+OldValue]; OldValue
+0x1800720b7  mov     dl, 1; NewValue
+0x1800720b9  lea     ecx, [r8+11h]; Privilege
+0x1800720bd  call    cs:__imp_RtlAdjustPrivilege
+0x1800720c4  nop     dword ptr [rax+rax+00h]
+0x1800720c9  mov     ebx, eax
+0x1800720cb  test    eax, eax
+0x1800720cd  jns     short loc_180072147
+0x1800720cf  mov     eax, cs:dword_1800C0358
+0x1800720d5  mov     r8d, 4
+0x1800720db  cmp     eax, r8d
+0x1800720de  jbe     short loc_18007213E
+0x1800720e0  mov     rdx, 400000000001h
+0x1800720ea  call    _tlgKeywordOn
+0x1800720ef  test    al, al
+0x1800720f1  jz      short loc_18007213E
+0x1800720f3  mov     al, [rdi]
+0x1800720f5  lea     rdx, byte_1800B1A2D
+0x1800720fc  mov     [rbp+57h+var_7F], al
+0x1800720ff  lea     rcx, dword_1800C0358
+0x180072106  lea     rax, [rbp+57h+var_7F]
+0x18007210a  mov     [rbp+57h+var_48], r8
+0x18007210e  mov     [rbp+57h+var_40], rax
+0x180072112  xor     r9d, r9d
+0x180072115  lea     rax, [rbp+57h+var_7C]
+0x180072119  mov     [rbp+57h+var_7C], ebx
+0x18007211c  mov     [rbp+57h+var_50], rax
+0x180072120  lea     rax, [rbp+57h+var_70]
+0x180072124  mov     [rsp+0B0h+var_88], rax
+0x180072129  mov     [rsp+0B0h+var_90], r8d
+0x18007212e  xor     r8d, r8d
+0x180072131  mov     [rbp+57h+var_38], 1
+0x180072139  call    _tlgWriteTransfer_EventWriteTransfer
+0x18007213e  bts     ebx, 1Ch
+0x180072142  jmp     loc_18007221C
+0x180072147  xor     r8d, r8d; ForThread
+0x18007214a  lea     r9, [rbp+57h+var_7E]; OldValue
+0x18007214e  mov     dl, 1; NewValue
+0x180072150  lea     ecx, [r8+12h]; Privilege
+0x180072154  call    cs:__imp_RtlAdjustPrivilege
+0x18007215b  nop     dword ptr [rax+rax+00h]
+0x180072160  mov     ebx, eax
+0x180072162  test    eax, eax
+0x180072164  jns     loc_180072210
+0x18007216a  mov     eax, cs:dword_1800C0358
+0x180072170  mov     r8d, 4
+0x180072176  cmp     eax, r8d
+0x180072179  jbe     short loc_1800721F1
+0x18007217b  mov     rdx, 400000000001h
+0x180072185  call    _tlgKeywordOn
+0x18007218a  test    al, al
+0x18007218c  jz      short loc_1800721F1
+0x18007218e  mov     al, [rsi]
+0x180072190  lea     rdx, word_1800B16B2
+0x180072197  mov     [rbp+57h+var_7F], al
+0x18007219a  lea     rcx, dword_1800C0358
+0x1800721a1  mov     al, [rdi]
+0x1800721a3  xor     r9d, r9d
+0x1800721a6  mov     [rbp+57h+var_7D], al
+0x1800721a9  lea     rax, [rbp+57h+var_7F]
+0x1800721ad  mov     [rbp+57h+var_30], rax
+0x1800721b1  lea     rax, [rbp+57h+var_7D]
+0x1800721b5  mov     [rbp+57h+var_40], rax
+0x1800721b9  lea     rax, [rbp+57h+var_7C]
+0x1800721bd  mov     [rbp+57h+var_50], rax
+0x1800721c1  lea     rax, [rbp+57h+var_70]
+0x1800721c5  mov     [rbp+57h+var_48], r8
+0x1800721c9  xor     r8d, r8d
+0x1800721cc  mov     [rsp+0B0h+var_88], rax
+0x1800721d1  mov     [rsp+0B0h+var_90], 5
+0x1800721d9  mov     [rbp+57h+var_7C], ebx
+0x1800721dc  mov     [rbp+57h+var_28], 1
+0x1800721e4  mov     [rbp+57h+var_38], 1
+0x1800721ec  call    _tlgWriteTransfer_EventWriteTransfer
+0x1800721f1  mov     dl, [rbp+57h+OldValue]; NewValue
+0x1800721f4  lea     r9, [rbp+57h+OldValue]; OldValue
+0x1800721f8  xor     r8d, r8d; ForThread
+0x1800721fb  lea     ecx, [r8+11h]; Privilege
+0x1800721ff  call    cs:__imp_RtlAdjustPrivilege
+0x180072206  nop     dword ptr [rax+rax+00h]
+0x18007220b  jmp     loc_18007213E
+0x180072210  mov     al, [rbp+57h+OldValue]
+0x180072213  xor     ebx, ebx
+0x180072215  mov     [rdi], al
+0x180072217  mov     al, [rbp+57h+var_7E]
+0x18007221a  mov     [rsi], al
+0x18007221c  mov     eax, ebx
+0x18007221e  mov     rcx, [rbp+57h+var_20]
+0x180072222  xor     rcx, rsp; StackCookie
+0x180072225  call    __security_check_cookie
+0x18007222a  mov     rbx, [rsp+0B0h+arg_0]
+0x180072232  add     rsp, 0A0h
+0x180072239  pop     rdi
+0x18007223a  pop     rsi
+0x18007223b  pop     rbp
+0x18007223c  retn
+```

@@ -1,0 +1,348 @@
+# JobStore::InitKnownTreeFolder(ushort const *,ushort const *)
+
+- ea: `0x18006fc30`
+- end: `0x18006fece`
+- name: `?InitKnownTreeFolder@JobStore@@AEAAJPEBG0@Z`
+- size: `670`
+- prototype: `__int64 __fastcall(JobStore *__hidden this, const unsigned __int16 *, LPCWSTR StringSecurityDescriptor)`
+- caller_count: `1`
+- callee_count: `14`
+- tags: `file_ops, authz_impersonation, registry_config, service_task, broker_com_uri`
+
+## callers
+
+- `0x18006f894`
+
+## callees
+
+- `0x18000cc40`
+- `0x180011e40`
+- `0x18001fe10`
+- `0x1800213d8`
+- `0x180022d80`
+- `0x18002db40`
+- `0x180039fd0`
+- `0x18003bd70`
+- `0x180040af0`
+- `0x180041610`
+- `0x18004c850`
+- `0x180054344`
+- `0x180054c80`
+- `0x18006fc30`
+
+## import_xrefs
+
+- `api-ms-win-core-file-l1-1-0!CreateDirectoryW` at `0x18006fe72`
+- `api-ms-win-core-file-l1-1-0!CreateDirectoryW` at `0x18006fe72`
+- `api-ms-win-core-file-l1-1-0!GetFileAttributesW` at `0x18006fe02`
+- `api-ms-win-core-file-l1-1-0!GetFileAttributesW` at `0x18006fe02`
+- `api-ms-win-core-registry-l1-1-0!RegCreateKeyExW` at `0x18006fd36`
+- `api-ms-win-core-registry-l1-1-0!RegCreateKeyExW` at `0x18006fd36`
+- `api-ms-win-security-sddl-l1-1-0!ConvertStringSecurityDescriptorToSecurityDescriptorW` at `0x18006fc6d`
+- `api-ms-win-security-sddl-l1-1-0!ConvertStringSecurityDescriptorToSecurityDescriptorW` at `0x18006fe2d`
+- `api-ms-win-security-sddl-l1-1-0!ConvertStringSecurityDescriptorToSecurityDescriptorW` at `0x18006fc6d`
+- `api-ms-win-security-sddl-l1-1-0!ConvertStringSecurityDescriptorToSecurityDescriptorW` at `0x18006fe2d`
+
+## string_xrefs
+
+- `0x18006fcb0`: `TaskCache\Tree`
+
+## pseudocode
+
+```c
+// Hidden C++ exception states: #wind=5
+__int64 __fastcall JobStore::InitKnownTreeFolder(HKEY *this, unsigned __int16 *a2, LPCWSTR StringSecurityDescriptor)
+{
+  int v6; // edx
+  tsched *v7; // rcx
+  signed int XmlFileSystemPath; // edi
+  const unsigned __int16 *v9; // rdx
+  const WCHAR *v10; // rdx
+  LSTATUS v11; // eax
+  WCHAR *v12; // rcx
+  WCHAR *v13; // rbx
+  DWORD FileAttributesW; // eax
+  int v15; // edx
+  tsched *v16; // rcx
+  LPCWSTR lpFileName; // [rsp+50h] [rbp-19h] BYREF
+  const WCHAR **v19; // [rsp+58h] [rbp-11h] BYREF
+  HKEY phkResult; // [rsp+60h] [rbp-9h] BYREF
+  PSECURITY_DESCRIPTOR SecurityDescriptor; // [rsp+68h] [rbp-1h] BYREF
+  PSECURITY_DESCRIPTOR v22; // [rsp+70h] [rbp+7h] BYREF
+  int v23; // [rsp+78h] [rbp+Fh]
+  struct _SECURITY_ATTRIBUTES SecurityAttributes; // [rsp+80h] [rbp+17h] BYREF
+  struct _SECURITY_ATTRIBUTES v25; // [rsp+98h] [rbp+2Fh] BYREF
+  DWORD dwDisposition; // [rsp+E8h] [rbp+7Fh] BYREF
+
+  SecurityDescriptor = 0;
+  if ( ConvertStringSecurityDescriptorToSecurityDescriptorW(
+         L"D:P(A;OICI;KRSD;;;BA)(A;OICI;KA;;;SY)",
+         1u,
+         &SecurityDescriptor,
+         0) )
+  {
+    *(_QWORD *)&SecurityAttributes.nLength = 24;
+    SecurityAttributes.lpSecurityDescriptor = SecurityDescriptor;
+    *(_QWORD *)&SecurityAttributes.bInheritHandle = 0;
+    dwDisposition = 0;
+    phkResult = 0;
+    _bstr_t::_bstr_t((_bstr_t *)&v19, L"TaskCache\\Tree");
+    if ( !tsched::IsRoot((tsched *)a2, v9) )
+    {
+      _bstr_t::_bstr_t((_bstr_t *)&lpFileName, a2);
+      _bstr_t::operator+=(&v19, &lpFileName);
+      _bstr_t::~_bstr_t((_bstr_t *)&lpFileName);
+    }
+    if ( v19 )
+      v10 = *v19;
+    else
+      v10 = 0;
+    v11 = RegCreateKeyExW(this[2], v10, 0, 0, 0, 0xF003Fu, &SecurityAttributes, &phkResult, &dwDisposition);
+    XmlFileSystemPath = v11;
+    if ( v11 )
+    {
+      if ( v11 > 0 )
+        XmlFileSystemPath = (unsigned __int16)v11 | 0x80070000;
+      goto LABEL_11;
+    }
+    if ( dwDisposition == 1 )
+    {
+      v22 = 0;
+      tsched::AutoLocalPtr<_SECURITY_DESCRIPTOR>::Attach(&v22, 0);
+      v23 = 0;
+      XmlFileSystemPath = JobSecurity::SetSddl(&v22, StringSecurityDescriptor);
+      if ( XmlFileSystemPath < 0
+        || (XmlFileSystemPath = JobSecurity::StreamOut((JobSecurity *)&v22, phkResult), XmlFileSystemPath < 0) )
+      {
+        tsched::AutoLocalPtr<unsigned short>::~AutoLocalPtr<unsigned short>(&v22);
+LABEL_11:
+        _bstr_t::~_bstr_t((_bstr_t *)&v19);
+        wmi::AutoRegKey::Close((wmi::AutoRegKey *)&phkResult);
+        goto LABEL_29;
+      }
+      tsched::AutoLocalPtr<unsigned short>::~AutoLocalPtr<unsigned short>(&v22);
+    }
+    if ( JobStore::GetUseXmlStore((JobStore *)this) )
+    {
+      lpFileName = 0;
+      XmlFileSystemPath = JobStore::GetXmlFileSystemPath(this, a2, &lpFileName);
+      if ( XmlFileSystemPath < 0 )
+      {
+        v12 = (WCHAR *)lpFileName;
+LABEL_20:
+        operator delete(v12);
+        goto LABEL_11;
+      }
+      v13 = (WCHAR *)lpFileName;
+      FileAttributesW = GetFileAttributesW(lpFileName);
+      if ( FileAttributesW == -1 || (FileAttributesW & 0x10) == 0 )
+      {
+        lpFileName = 0;
+        if ( !ConvertStringSecurityDescriptorToSecurityDescriptorW(
+                StringSecurityDescriptor,
+                1u,
+                (PSECURITY_DESCRIPTOR *)&lpFileName,
+                0)
+          || (*(_QWORD *)&v25.nLength = 24,
+              v25.lpSecurityDescriptor = (LPVOID)lpFileName,
+              *(_QWORD *)&v25.bInheritHandle = 0,
+              !CreateDirectoryW(v13, &v25)) )
+        {
+          XmlFileSystemPath = tsched::GetLastHrError(v16, v15);
+          tsched::AutoLocalPtr<unsigned short>::~AutoLocalPtr<unsigned short>(&lpFileName);
+          v12 = v13;
+          goto LABEL_20;
+        }
+        tsched::AutoLocalPtr<unsigned short>::~AutoLocalPtr<unsigned short>(&lpFileName);
+      }
+      operator delete(v13);
+    }
+    _bstr_t::~_bstr_t((_bstr_t *)&v19);
+    wmi::AutoRegKey::Close((wmi::AutoRegKey *)&phkResult);
+    XmlFileSystemPath = 0;
+    goto LABEL_29;
+  }
+  XmlFileSystemPath = tsched::GetLastHrError(v7, v6);
+LABEL_29:
+  tsched::AutoLocalPtr<unsigned short>::~AutoLocalPtr<unsigned short>(&SecurityDescriptor);
+  return (unsigned int)XmlFileSystemPath;
+}
+
+```
+
+## disassembly
+
+```asm
+0x18006fc30  mov     [rsp-8+arg_0], rbx
+0x18006fc35  mov     [rsp-8+arg_8], rsi
+0x18006fc3a  push    rbp
+0x18006fc3b  push    rdi
+0x18006fc3c  push    r14
+0x18006fc3e  lea     rbp, [rsp-47h]
+0x18006fc43  sub     rsp, 0B0h
+0x18006fc4a  mov     r14, r8
+0x18006fc4d  mov     rbx, rdx
+0x18006fc50  mov     rsi, rcx
+0x18006fc53  mov     [rbp+57h+SecurityDescriptor], 0
+0x18006fc5b  xor     r9d, r9d; SecurityDescriptorSize
+0x18006fc5e  lea     r8, [rbp+57h+SecurityDescriptor]; SecurityDescriptor
+0x18006fc62  lea     edx, [r9+1]; StringSDRevision
+0x18006fc66  lea     rcx, aDPAOiciKrsdBaA; "D:P(A;OICI;KRSD;;;BA)(A;OICI;KA;;;SY)"
+0x18006fc6d  call    cs:__imp_ConvertStringSecurityDescriptorToSecurityDescriptorW
+0x18006fc74  nop     dword ptr [rax+rax+00h]
+0x18006fc79  test    eax, eax
+0x18006fc7b  jnz     short loc_18006FC89
+0x18006fc7d  call    ?GetLastHrError@tsched@@YAJJ@Z; tsched::GetLastHrError(long)
+0x18006fc82  mov     edi, eax
+0x18006fc84  jmp     loc_18006FEAA
+0x18006fc89  mov     qword ptr [rbp+57h+SecurityAttributes.nLength], 18h
+0x18006fc91  mov     rax, [rbp+57h+SecurityDescriptor]
+0x18006fc95  mov     [rbp+57h+SecurityAttributes.lpSecurityDescriptor], rax
+0x18006fc99  mov     qword ptr [rbp+57h+SecurityAttributes.bInheritHandle], 0
+0x18006fca1  mov     [rbp+57h+dwDisposition], 0
+0x18006fca8  mov     [rbp+57h+var_60], 0
+0x18006fcb0  lea     rdx, psz; "TaskCache\\Tree"
+0x18006fcb7  lea     rcx, [rbp+57h+var_68]; this
+0x18006fcbb  call    ??0_bstr_t@@QEAA@PEBG@Z; _bstr_t::_bstr_t(ushort const *)
+0x18006fcc0  nop
+0x18006fcc1  mov     rcx, rbx; this
+0x18006fcc4  call    ?IsRoot@tsched@@YA_NPEBG@Z; tsched::IsRoot(ushort const *)
+0x18006fcc9  test    al, al
+0x18006fccb  jnz     short loc_18006FCF1
+0x18006fccd  mov     rdx, rbx; unsigned __int16 *
+0x18006fcd0  lea     rcx, [rbp+57h+lpFileName]; this
+0x18006fcd4  call    ??0_bstr_t@@QEAA@PEBG@Z; _bstr_t::_bstr_t(ushort const *)
+0x18006fcd9  nop
+0x18006fcda  lea     rdx, [rbp+57h+lpFileName]
+0x18006fcde  lea     rcx, [rbp+57h+var_68]
+0x18006fce2  call    ??Y_bstr_t@@QEAAAEAV0@AEBV0@@Z; _bstr_t::operator+=(_bstr_t const &)
+0x18006fce7  nop
+0x18006fce8  lea     rcx, [rbp+57h+lpFileName]; this
+0x18006fcec  call    ??1_bstr_t@@QEAA@XZ; _bstr_t::~_bstr_t(void)
+0x18006fcf1  mov     rax, [rbp+57h+var_68]
+0x18006fcf5  test    rax, rax
+0x18006fcf8  jz      short loc_18006FCFF
+0x18006fcfa  mov     rdx, [rax]
+0x18006fcfd  jmp     short loc_18006FD01
+0x18006fcff  xor     edx, edx; lpSubKey
+0x18006fd01  lea     rax, [rbp+57h+dwDisposition]
+0x18006fd05  mov     [rsp+0C0h+lpdwDisposition], rax; lpdwDisposition
+0x18006fd0a  lea     rax, [rbp+57h+var_60]
+0x18006fd0e  mov     [rsp+0C0h+phkResult], rax; phkResult
+0x18006fd13  lea     rax, [rbp+57h+SecurityAttributes]
+0x18006fd17  mov     [rsp+0C0h+lpSecurityAttributes], rax; lpSecurityAttributes
+0x18006fd1c  mov     [rsp+0C0h+samDesired], 0F003Fh; samDesired
+0x18006fd24  mov     [rsp+0C0h+dwOptions], 0; dwOptions
+0x18006fd2c  xor     r9d, r9d; lpClass
+0x18006fd2f  xor     r8d, r8d; Reserved
+0x18006fd32  mov     rcx, [rsi+10h]; hKey
+0x18006fd36  call    cs:__imp_RegCreateKeyExW
+0x18006fd3d  nop     dword ptr [rax+rax+00h]
+0x18006fd42  mov     edi, eax
+0x18006fd44  test    eax, eax
+0x18006fd46  jz      short loc_18006FD6B
+0x18006fd48  jle     short loc_18006FD53
+0x18006fd4a  movzx   edi, ax
+0x18006fd4d  or      edi, 80070000h
+0x18006fd53  lea     rcx, [rbp+57h+var_68]; this
+0x18006fd57  call    ??1_bstr_t@@QEAA@XZ; _bstr_t::~_bstr_t(void)
+0x18006fd5c  nop
+0x18006fd5d  lea     rcx, [rbp+57h+var_60]; this
+0x18006fd61  call    ?Close@AutoRegKey@wmi@@QEAAXXZ; wmi::AutoRegKey::Close(void)
+0x18006fd66  jmp     loc_18006FEAA
+0x18006fd6b  cmp     [rbp+57h+dwDisposition], 1
+0x18006fd6f  jnz     short loc_18006FDC0
+0x18006fd71  mov     [rbp+57h+var_50], 0
+0x18006fd79  xor     edx, edx
+0x18006fd7b  lea     rcx, [rbp+57h+var_50]
+0x18006fd7f  call    ?Attach@?$AutoLocalPtr@U_SECURITY_DESCRIPTOR@@@tsched@@QEAAXPEAU_SECURITY_DESCRIPTOR@@@Z; tsched::AutoLocalPtr<_SECURITY_DESCRIPTOR>::Attach(_SECURITY_DESCRIPTOR *)
+0x18006fd84  mov     [rbp+57h+var_48], 0
+0x18006fd8b  mov     rdx, r14; StringSecurityDescriptor
+0x18006fd8e  lea     rcx, [rbp+57h+var_50]; SecurityDescriptor
+0x18006fd92  call    ?SetSddl@JobSecurity@@QEAAJPEBG@Z; JobSecurity::SetSddl(ushort const *)
+0x18006fd97  mov     edi, eax
+0x18006fd99  lea     rcx, [rbp+57h+var_50]; this
+0x18006fd9d  test    eax, eax
+0x18006fd9f  jns     short loc_18006FDA8
+0x18006fda1  call    ??1?$AutoLocalPtr@G@tsched@@QEAA@XZ; tsched::AutoLocalPtr<ushort>::~AutoLocalPtr<ushort>(void)
+0x18006fda6  jmp     short loc_18006FD53
+0x18006fda8  mov     rdx, [rbp+57h+var_60]; HKEY
+0x18006fdac  call    ?StreamOut@JobSecurity@@QEBAJPEAUHKEY__@@@Z; JobSecurity::StreamOut(HKEY__ *)
+0x18006fdb1  mov     edi, eax
+0x18006fdb3  lea     rcx, [rbp+57h+var_50]
+0x18006fdb7  test    eax, eax
+0x18006fdb9  js      short loc_18006FDA1
+0x18006fdbb  call    ??1?$AutoLocalPtr@G@tsched@@QEAA@XZ; tsched::AutoLocalPtr<ushort>::~AutoLocalPtr<ushort>(void)
+0x18006fdc0  mov     rcx, rsi; this
+0x18006fdc3  call    ?GetUseXmlStore@JobStore@@QEBAEXZ; JobStore::GetUseXmlStore(void)
+0x18006fdc8  test    al, al
+0x18006fdca  jz      loc_18006FE95
+0x18006fdd0  mov     [rbp+57h+lpFileName], 0
+0x18006fdd8  lea     r8, [rbp+57h+lpFileName]
+0x18006fddc  mov     rdx, rbx
+0x18006fddf  mov     rcx, rsi
+0x18006fde2  call    ?GetXmlFileSystemPath@JobStore@@QEBAJPEBGAEAV?$AutoVectorPtr@G@wmi@@@Z; JobStore::GetXmlFileSystemPath(ushort const *,wmi::AutoVectorPtr<ushort> &)
+0x18006fde7  mov     edi, eax
+0x18006fde9  test    eax, eax
+0x18006fdeb  jns     short loc_18006FDFB
+0x18006fded  mov     rcx, [rbp+57h+lpFileName]; void *
+0x18006fdf1  call    ??3@YAXPEAX@Z; operator delete(void *)
+0x18006fdf6  jmp     loc_18006FD53
+0x18006fdfb  mov     rbx, [rbp+57h+lpFileName]
+0x18006fdff  mov     rcx, rbx; lpFileName
+0x18006fe02  call    cs:__imp_GetFileAttributesW
+0x18006fe09  nop     dword ptr [rax+rax+00h]
+0x18006fe0e  cmp     eax, 0FFFFFFFFh
+0x18006fe11  jz      short loc_18006FE17
+0x18006fe13  test    al, 10h
+0x18006fe15  jnz     short loc_18006FE8C
+0x18006fe17  mov     [rbp+57h+lpFileName], 0
+0x18006fe1f  xor     r9d, r9d; SecurityDescriptorSize
+0x18006fe22  lea     r8, [rbp+57h+lpFileName]; SecurityDescriptor
+0x18006fe26  lea     edx, [r9+1]; StringSDRevision
+0x18006fe2a  mov     rcx, r14; StringSecurityDescriptor
+0x18006fe2d  call    cs:__imp_ConvertStringSecurityDescriptorToSecurityDescriptorW
+0x18006fe34  nop     dword ptr [rax+rax+00h]
+0x18006fe39  test    eax, eax
+0x18006fe3b  jnz     short loc_18006FE53
+0x18006fe3d  call    ?GetLastHrError@tsched@@YAJJ@Z; tsched::GetLastHrError(long)
+0x18006fe42  mov     edi, eax
+0x18006fe44  lea     rcx, [rbp+57h+lpFileName]
+0x18006fe48  call    ??1?$AutoLocalPtr@G@tsched@@QEAA@XZ; tsched::AutoLocalPtr<ushort>::~AutoLocalPtr<ushort>(void)
+0x18006fe4d  nop
+0x18006fe4e  mov     rcx, rbx
+0x18006fe51  jmp     short loc_18006FDF1
+0x18006fe53  mov     qword ptr [rbp+57h+var_28.nLength], 18h
+0x18006fe5b  mov     rax, [rbp+57h+lpFileName]
+0x18006fe5f  mov     [rbp+57h+var_28.lpSecurityDescriptor], rax
+0x18006fe63  mov     qword ptr [rbp+57h+var_28.bInheritHandle], 0
+0x18006fe6b  lea     rdx, [rbp+57h+var_28]; lpSecurityAttributes
+0x18006fe6f  mov     rcx, rbx; lpPathName
+0x18006fe72  call    cs:__imp_CreateDirectoryW
+0x18006fe79  nop     dword ptr [rax+rax+00h]
+0x18006fe7e  test    eax, eax
+0x18006fe80  jz      short loc_18006FE3D
+0x18006fe82  lea     rcx, [rbp+57h+lpFileName]
+0x18006fe86  call    ??1?$AutoLocalPtr@G@tsched@@QEAA@XZ; tsched::AutoLocalPtr<ushort>::~AutoLocalPtr<ushort>(void)
+0x18006fe8b  nop
+0x18006fe8c  mov     rcx, rbx; void *
+0x18006fe8f  call    ??3@YAXPEAX@Z; operator delete(void *)
+0x18006fe94  nop
+0x18006fe95  lea     rcx, [rbp+57h+var_68]; this
+0x18006fe99  call    ??1_bstr_t@@QEAA@XZ; _bstr_t::~_bstr_t(void)
+0x18006fe9e  nop
+0x18006fe9f  lea     rcx, [rbp+57h+var_60]; this
+0x18006fea3  call    ?Close@AutoRegKey@wmi@@QEAAXXZ; wmi::AutoRegKey::Close(void)
+0x18006fea8  xor     edi, edi
+0x18006feaa  lea     rcx, [rbp+57h+SecurityDescriptor]
+0x18006feae  call    ??1?$AutoLocalPtr@G@tsched@@QEAA@XZ; tsched::AutoLocalPtr<ushort>::~AutoLocalPtr<ushort>(void)
+0x18006feb3  mov     eax, edi
+0x18006feb5  lea     r11, [rsp+0C0h+var_10]
+0x18006febd  mov     rbx, [r11+20h]
+0x18006fec1  mov     rsi, [r11+28h]
+0x18006fec5  mov     rsp, r11
+0x18006fec8  pop     r14
+0x18006feca  pop     rdi
+0x18006fecb  pop     rbp
+0x18006fecc  retn
+```

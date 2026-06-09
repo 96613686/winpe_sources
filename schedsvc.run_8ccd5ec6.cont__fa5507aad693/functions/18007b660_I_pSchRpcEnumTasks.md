@@ -1,0 +1,35 @@
+# _I_pSchRpcEnumTasks
+
+- ea: `0x18007b660`
+- end: `0x18007b729`
+- name: `_I_pSchRpcEnumTasks`
+- size: `201`
+- prototype: ``
+- caller_count: `0`
+- callee_count: `5`
+- tags: `authz_impersonation, service_task`
+
+## callees
+
+- `0x180025de4`
+- `0x180042200`
+- `0x180079874`
+- `0x18007b33c`
+- `0x18007b660`
+
+## import_xrefs
+
+- `RPCRT4!RpcRevertToSelf` at `0x18007b6ae`
+- `RPCRT4!RpcRevertToSelf` at `0x18007b6c8`
+- `RPCRT4!RpcRevertToSelf` at `0x18007b6ae`
+- `RPCRT4!RpcRevertToSelf` at `0x18007b6c8`
+
+## string_xrefs
+
+- `0x18007b685`: `I_pSchRpcEnumTasks`
+
+## pseudocode
+
+```c
+
+```

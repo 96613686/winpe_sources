@@ -1,0 +1,250 @@
+# SdGetFeatureEnabledOnSKU(ushort const *,int *)
+
+- ea: `0x18007e7a8`
+- end: `0x1800892be`
+- name: `?SdGetFeatureEnabledOnSKU@@YAJPEBGPEAH@Z`
+- size: `43798`
+- prototype: `__int64 __fastcall(const unsigned __int16 *, int *)`
+- caller_count: `1`
+- callee_count: `19`
+- tags: `registry_config, loader_planting`
+
+## callers
+
+- `0x18005c678`
+
+## callees
+
+- `0x180009d44`
+- `0x18000c54c`
+- `0x180071bec`
+- `0x180072e08`
+- `0x180072f14`
+- `0x18007e7a8`
+- `0x1800cdc0c`
+- `0x1800cdc3c`
+- `0x1800cdc94`
+- `0x1800cdcdc`
+- `0x1800cdd10`
+- `0x1800cdd44`
+- `0x1800cdd70`
+- `0x1800cdd90`
+- `0x1800cf552`
+- `0x1800cf56a`
+- `0x1800cf582`
+- `0x1800cf5c0`
+- `0x1800d1010`
+
+## import_xrefs
+
+- `KERNEL32!GetCurrentProcess` at `0x18007f062`
+- `KERNEL32!GetCurrentProcess` at `0x18007f062`
+- `KERNEL32!GetModuleFileNameW` at `0x18007f693`
+- `KERNEL32!GetModuleFileNameW` at `0x18007f693`
+- `KERNEL32!FreeLibrary` at `0x18007ebf9`
+- `KERNEL32!FreeLibrary` at `0x180082870`
+- `KERNEL32!FreeLibrary` at `0x180082e82`
+- `KERNEL32!FreeLibrary` at `0x18008452d`
+- `KERNEL32!FreeLibrary` at `0x180086102`
+- `KERNEL32!FreeLibrary` at `0x180086573`
+- `KERNEL32!FreeLibrary` at `0x18008681c`
+- `KERNEL32!FreeLibrary` at `0x180089166`
+- `KERNEL32!FreeLibrary` at `0x18007ebf9`
+- `KERNEL32!FreeLibrary` at `0x180082870`
+- `KERNEL32!FreeLibrary` at `0x180082e82`
+- `KERNEL32!FreeLibrary` at `0x18008452d`
+- `KERNEL32!FreeLibrary` at `0x180086102`
+- `KERNEL32!FreeLibrary` at `0x180086573`
+- `KERNEL32!FreeLibrary` at `0x18008681c`
+- `KERNEL32!FreeLibrary` at `0x180089166`
+- `KERNEL32!GetModuleHandleExW` at `0x18007ed32`
+- `KERNEL32!GetModuleHandleExW` at `0x18008116f`
+- `KERNEL32!GetModuleHandleExW` at `0x180082919`
+- `KERNEL32!GetModuleHandleExW` at `0x180082f2b`
+- `KERNEL32!GetModuleHandleExW` at `0x180086611`
+- `KERNEL32!GetModuleHandleExW` at `0x180087f3e`
+- `KERNEL32!GetModuleHandleExW` at `0x18007ed32`
+- `KERNEL32!GetModuleHandleExW` at `0x18008116f`
+- `KERNEL32!GetModuleHandleExW` at `0x180082919`
+- `KERNEL32!GetModuleHandleExW` at `0x180082f2b`
+- `KERNEL32!GetModuleHandleExW` at `0x180086611`
+- `KERNEL32!GetModuleHandleExW` at `0x180087f3e`
+- `KERNEL32!GetProcAddress` at `0x18007edda`
+- `KERNEL32!GetProcAddress` at `0x1800811c4`
+- `KERNEL32!GetProcAddress` at `0x1800829e4`
+- `KERNEL32!GetProcAddress` at `0x180082ff6`
+- `KERNEL32!GetProcAddress` at `0x1800866d0`
+- `KERNEL32!GetProcAddress` at `0x180087f87`
+- `KERNEL32!GetProcAddress` at `0x18007edda`
+- `KERNEL32!GetProcAddress` at `0x1800811c4`
+- `KERNEL32!GetProcAddress` at `0x1800829e4`
+- `KERNEL32!GetProcAddress` at `0x180082ff6`
+- `KERNEL32!GetProcAddress` at `0x1800866d0`
+- `KERNEL32!GetProcAddress` at `0x180087f87`
+- `KERNEL32!GetLastError` at `0x18007eceb`
+- `KERNEL32!GetLastError` at `0x18007ee97`
+- `KERNEL32!GetLastError` at `0x18007ef8e`
+- `KERNEL32!GetLastError` at `0x18007f092`
+- `KERNEL32!GetLastError` at `0x18007f6ae`
+- `KERNEL32!GetLastError` at `0x18007f6e6`
+- `KERNEL32!GetLastError` at `0x18008117f`
+- `KERNEL32!GetLastError` at `0x180083127`
+- `KERNEL32!GetLastError` at `0x1800831b9`
+- `KERNEL32!GetLastError` at `0x18008325a`
+- `KERNEL32!GetLastError` at `0x1800839ce`
+- `KERNEL32!GetLastError` at `0x180083b14`
+- `KERNEL32!GetLastError` at `0x180083cb0`
+- `KERNEL32!GetLastError` at `0x180083d9b`
+- `KERNEL32!GetLastError` at `0x18008405f`
+- `KERNEL32!GetLastError` at `0x1800840eb`
+- `KERNEL32!GetLastError` at `0x18008486b`
+- `KERNEL32!GetLastError` at `0x180084dd8`
+- `KERNEL32!GetLastError` at `0x18008518e`
+- `KERNEL32!GetLastError` at `0x1800851dc`
+- `KERNEL32!GetLastError` at `0x180085378`
+- `KERNEL32!GetLastError` at `0x180085471`
+- `KERNEL32!GetLastError` at `0x180085568`
+- `KERNEL32!GetLastError` at `0x180085ab8`
+- `KERNEL32!GetLastError` at `0x180087f4e`
+- `KERNEL32!GetLastError` at `0x18007eceb`
+- `KERNEL32!GetLastError` at `0x18007ee97`
+- `KERNEL32!GetLastError` at `0x18007ef8e`
+- `KERNEL32!GetLastError` at `0x18007f092`
+- `KERNEL32!GetLastError` at `0x18007f6ae`
+- `KERNEL32!GetLastError` at `0x18007f6e6`
+- `KERNEL32!GetLastError` at `0x18008117f`
+- `KERNEL32!GetLastError` at `0x180083127`
+- `KERNEL32!GetLastError` at `0x1800831b9`
+- `KERNEL32!GetLastError` at `0x18008325a`
+- `KERNEL32!GetLastError` at `0x1800839ce`
+- `KERNEL32!GetLastError` at `0x180083b14`
+- `KERNEL32!GetLastError` at `0x180083cb0`
+- `KERNEL32!GetLastError` at `0x180083d9b`
+- `KERNEL32!GetLastError` at `0x18008405f`
+- `KERNEL32!GetLastError` at `0x1800840eb`
+- `KERNEL32!GetLastError` at `0x18008486b`
+- `KERNEL32!GetLastError` at `0x180084dd8`
+- `KERNEL32!GetLastError` at `0x18008518e`
+- `KERNEL32!GetLastError` at `0x1800851dc`
+- `KERNEL32!GetLastError` at `0x180085378`
+- `KERNEL32!GetLastError` at `0x180085471`
+- `KERNEL32!GetLastError` at `0x180085568`
+- `KERNEL32!GetLastError` at `0x180085ab8`
+- `KERNEL32!GetLastError` at `0x180087f4e`
+- `KERNEL32!HeapAlloc` at `0x18007f151`
+- `KERNEL32!HeapAlloc` at `0x18007f21a`
+- `KERNEL32!HeapAlloc` at `0x18007f491`
+- `KERNEL32!HeapAlloc` at `0x18007ffae`
+- `KERNEL32!HeapAlloc` at `0x1800805cf`
+- `KERNEL32!HeapAlloc` at `0x180080643`
+- `KERNEL32!HeapAlloc` at `0x18008069f`
+- `KERNEL32!HeapAlloc` at `0x18008074c`
+- `KERNEL32!HeapAlloc` at `0x180080a66`
+- `KERNEL32!HeapAlloc` at `0x180080fa6`
+- `KERNEL32!HeapAlloc` at `0x180081423`
+- `KERNEL32!HeapAlloc` at `0x18008148b`
+- `KERNEL32!HeapAlloc` at `0x1800814f4`
+- `KERNEL32!HeapAlloc` at `0x180081561`
+- `KERNEL32!HeapAlloc` at `0x180081fa0`
+- `KERNEL32!HeapAlloc` at `0x1800868aa`
+- `KERNEL32!HeapAlloc` at `0x180086950`
+- `KERNEL32!HeapAlloc` at `0x180086a76`
+- `KERNEL32!HeapAlloc` at `0x180087023`
+- `KERNEL32!HeapAlloc` at `0x18008767b`
+- `KERNEL32!HeapAlloc` at `0x1800876bc`
+- `KERNEL32!HeapAlloc` at `0x18008771b`
+- `KERNEL32!HeapAlloc` at `0x1800877ce`
+- `KERNEL32!HeapAlloc` at `0x180087ae7`
+- `KERNEL32!HeapAlloc` at `0x180087eac`
+- `KERNEL32!HeapAlloc` at `0x1800881d9`
+- `KERNEL32!HeapAlloc` at `0x180088236`
+- `KERNEL32!HeapAlloc` at `0x1800882a0`
+- `KERNEL32!HeapAlloc` at `0x18008830b`
+- `KERNEL32!HeapAlloc` at `0x180088d64`
+- `KERNEL32!HeapAlloc` at `0x18007f151`
+- `KERNEL32!HeapAlloc` at `0x18007f21a`
+- `KERNEL32!HeapAlloc` at `0x18007f491`
+- `KERNEL32!HeapAlloc` at `0x18007ffae`
+- `KERNEL32!HeapAlloc` at `0x1800805cf`
+- `KERNEL32!HeapAlloc` at `0x180080643`
+- `KERNEL32!HeapAlloc` at `0x18008069f`
+- `KERNEL32!HeapAlloc` at `0x18008074c`
+- `KERNEL32!HeapAlloc` at `0x180080a66`
+- `KERNEL32!HeapAlloc` at `0x180080fa6`
+- `KERNEL32!HeapAlloc` at `0x180081423`
+- `KERNEL32!HeapAlloc` at `0x18008148b`
+- `KERNEL32!HeapAlloc` at `0x1800814f4`
+- `KERNEL32!HeapAlloc` at `0x180081561`
+- `KERNEL32!HeapAlloc` at `0x180081fa0`
+- `KERNEL32!HeapAlloc` at `0x1800868aa`
+- `KERNEL32!HeapAlloc` at `0x180086950`
+- `KERNEL32!HeapAlloc` at `0x180086a76`
+- `KERNEL32!HeapAlloc` at `0x180087023`
+- `KERNEL32!HeapAlloc` at `0x18008767b`
+- `KERNEL32!HeapAlloc` at `0x1800876bc`
+- `KERNEL32!HeapAlloc` at `0x18008771b`
+- `KERNEL32!HeapAlloc` at `0x1800877ce`
+- `KERNEL32!HeapAlloc` at `0x180087ae7`
+- `KERNEL32!HeapAlloc` at `0x180087eac`
+- `KERNEL32!HeapAlloc` at `0x1800881d9`
+- `KERNEL32!HeapAlloc` at `0x180088236`
+- `KERNEL32!HeapAlloc` at `0x1800882a0`
+- `KERNEL32!HeapAlloc` at `0x18008830b`
+- `KERNEL32!HeapAlloc` at `0x180088d64`
+- `KERNEL32!GetProcessHeap` at `0x18007ec64`
+- `KERNEL32!GetProcessHeap` at `0x18007f137`
+- `KERNEL32!GetProcessHeap` at `0x18007f206`
+- `KERNEL32!GetProcessHeap` at `0x18007f47a`
+- `KERNEL32!GetProcessHeap` at `0x18007f5c3`
+- `KERNEL32!GetProcessHeap` at `0x18007f5f4`
+- `KERNEL32!GetProcessHeap` at `0x18007f619`
+- `KERNEL32!GetProcessHeap` at `0x18007f63e`
+- `KERNEL32!GetProcessHeap` at `0x18007ff97`
+- `KERNEL32!GetProcessHeap` at `0x180080063`
+- `KERNEL32!GetProcessHeap` at `0x1800805b7`
+- `KERNEL32!GetProcessHeap` at `0x180080628`
+- `KERNEL32!GetProcessHeap` at `0x180080685`
+- `KERNEL32!GetProcessHeap` at `0x180080733`
+- `KERNEL32!GetProcessHeap` at `0x180080799`
+- `KERNEL32!GetProcessHeap` at `0x1800807d3`
+- `KERNEL32!GetProcessHeap` at `0x18008080d`
+- `KERNEL32!GetProcessHeap` at `0x18008083a`
+- `KERNEL32!GetProcessHeap` at `0x180080891`
+- `KERNEL32!GetProcessHeap` at `0x1800808cf`
+- `KERNEL32!GetProcessHeap` at `0x180080908`
+- `KERNEL32!GetProcessHeap` at `0x180080941`
+- `KERNEL32!GetProcessHeap` at `0x18008096e`
+- `KERNEL32!GetProcessHeap` at `0x180080a4f`
+- `KERNEL32!GetProcessHeap` at `0x180080a9a`
+- `KERNEL32!GetProcessHeap` at `0x180080ad1`
+- `KERNEL32!GetProcessHeap` at `0x180080b06`
+- `KERNEL32!GetProcessHeap` at `0x180080b3b`
+- `KERNEL32!GetProcessHeap` at `0x180080b64`
+- `KERNEL32!GetProcessHeap` at `0x180080b8d`
+- `KERNEL32!GetProcessHeap` at `0x180080bb2`
+- `KERNEL32!GetProcessHeap` at `0x180080be8`
+- `KERNEL32!GetProcessHeap` at `0x180080c18`
+- `KERNEL32!GetProcessHeap` at `0x180080c48`
+- `KERNEL32!GetProcessHeap` at `0x180080c70`
+- `KERNEL32!GetProcessHeap` at `0x180080c99`
+- `KERNEL32!GetProcessHeap` at `0x180080e12`
+- `KERNEL32!GetProcessHeap` at `0x180080f8f`
+- `KERNEL32!GetProcessHeap` at `0x18008140b`
+- `KERNEL32!GetProcessHeap` at `0x180081474`
+- `KERNEL32!GetProcessHeap` at `0x1800814dc`
+- `KERNEL32!GetProcessHeap` at `0x18008154a`
+- `KERNEL32!GetProcessHeap` at `0x1800815b3`
+- `KERNEL32!GetProcessHeap` at `0x1800815eb`
+- `KERNEL32!GetProcessHeap` at `0x180081623`
+- `KERNEL32!GetProcessHeap` at `0x180081650`
+
+## string_xrefs
+
+- `0x180081154`: `ntdll.dll`
+- `0x180087f23`: `ntdll.dll`
+
+## pseudocode
+
+```c
+
+```

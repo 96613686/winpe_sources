@@ -1,0 +1,204 @@
+# JobStore::LoadFileToBuffer(void *,wmi::AutoVectorPtr<ushort> &)
+
+- ea: `0x180073c7c`
+- end: `0x180073df7`
+- name: `?LoadFileToBuffer@JobStore@@CAJPEAXAEAV?$AutoVectorPtr@G@wmi@@@Z`
+- size: `379`
+- prototype: `__int64 __fastcall(HANDLE hFile)`
+- caller_count: `1`
+- callee_count: `4`
+- tags: `file_ops`
+
+## callers
+
+- `0x180072244`
+
+## callees
+
+- `0x18000cc40`
+- `0x180027910`
+- `0x1800423e0`
+- `0x180073c7c`
+
+## import_xrefs
+
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180073cb3`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180073d86`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180073cb3`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180073d86`
+- `api-ms-win-core-file-l1-1-0!ReadFile` at `0x180073d1a`
+- `api-ms-win-core-file-l1-1-0!ReadFile` at `0x180073d76`
+- `api-ms-win-core-file-l1-1-0!ReadFile` at `0x180073d1a`
+- `api-ms-win-core-file-l1-1-0!ReadFile` at `0x180073d76`
+- `api-ms-win-core-file-l1-1-0!GetFileSizeEx` at `0x180073ca3`
+- `api-ms-win-core-file-l1-1-0!GetFileSizeEx` at `0x180073ca3`
+
+## pseudocode
+
+```c
+signed int __fastcall JobStore::LoadFileToBuffer(HANDLE hFile, __int64 a2)
+{
+  signed int result; // eax
+  DWORD v5; // esi
+  char *v6; // rbx
+  signed int LastError; // eax
+  unsigned int v8; // edi
+  __int64 v9; // rcx
+  union _LARGE_INTEGER FileSize; // [rsp+30h] [rbp-10h] BYREF
+  __int16 Buffer; // [rsp+70h] [rbp+30h] BYREF
+  DWORD NumberOfBytesRead; // [rsp+78h] [rbp+38h] BYREF
+
+  FileSize.QuadPart = 0;
+  if ( !GetFileSizeEx(hFile, &FileSize) )
+    goto LABEL_2;
+  if ( FileSize.HighPart )
+    return -2147024882;
+  if ( !FileSize.LowPart || (FileSize.LowPart & 1) != 0 )
+    return -2147024809;
+  NumberOfBytesRead = 0;
+  Buffer = 0;
+  if ( ReadFile(hFile, &Buffer, 2u, &NumberOfBytesRead, 0) )
+  {
+    if ( NumberOfBytesRead == 2 && Buffer == -257 )
+    {
+      v5 = FileSize.LowPart >> 1;
+      v6 = (char *)operator new(saturated_mul(FileSize.LowPart >> 1, 2u));
+      if ( ReadFile(hFile, v6, 2 * v5, &NumberOfBytesRead, 0) )
+      {
+        v9 = 2LL * (v5 - 1);
+        if ( NumberOfBytesRead == v9 )
+        {
+          *(_WORD *)&v6[v9] = 0;
+          wmi::AutoVectorPtr<unsigned short>::operator=(a2, v6);
+          operator delete(0);
+          return 0;
+        }
+        v8 = -2147467259;
+      }
+      else
+      {
+        LastError = GetLastError();
+        v8 = LastError;
+        if ( LastError > 0 )
+          v8 = (unsigned __int16)LastError | 0x80070000;
+      }
+      operator delete(v6);
+      return v8;
+    }
+    return -2147024809;
+  }
+LABEL_2:
+  result = GetLastError();
+  if ( result > 0 )
+    return (unsigned __int16)result | 0x80070000;
+  return result;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180073c7c  mov     [rsp-18h+arg_0], rbx
+0x180073c81  mov     [rsp-18h+arg_8], rsi
+0x180073c86  push    rbp
+0x180073c87  push    rdi
+0x180073c88  push    r14
+0x180073c8a  mov     rbp, rsp
+0x180073c8d  sub     rsp, 40h
+0x180073c91  mov     r14, rdx
+0x180073c94  mov     qword ptr [rbp+FileSize], 0
+0x180073c9c  lea     rdx, [rbp+FileSize]; lpFileSize
+0x180073ca0  mov     rdi, rcx
+0x180073ca3  call    cs:__imp_GetFileSizeEx
+0x180073caa  nop     dword ptr [rax+rax+00h]
+0x180073caf  test    eax, eax
+0x180073cb1  jnz     short loc_180073CD4
+0x180073cb3  call    cs:__imp_GetLastError
+0x180073cba  nop     dword ptr [rax+rax+00h]
+0x180073cbf  test    eax, eax
+0x180073cc1  jle     loc_180073DE3
+0x180073cc7  movzx   eax, ax
+0x180073cca  or      eax, 80070000h
+0x180073ccf  jmp     loc_180073DE3
+0x180073cd4  cmp     dword ptr [rbp+FileSize+4], 0
+0x180073cd8  jz      short loc_180073CE4
+0x180073cda  mov     eax, 8007000Eh
+0x180073cdf  jmp     loc_180073DE3
+0x180073ce4  mov     eax, dword ptr [rbp+FileSize]
+0x180073ce7  test    eax, eax
+0x180073ce9  jz      loc_180073DDE
+0x180073cef  test    al, 1
+0x180073cf1  jnz     loc_180073DDE
+0x180073cf7  xor     eax, eax
+0x180073cf9  mov     [rbp+NumberOfBytesRead], 0
+0x180073d00  lea     r9, [rbp+NumberOfBytesRead]; lpNumberOfBytesRead
+0x180073d04  mov     [rbp+Buffer], ax
+0x180073d08  lea     rdx, [rbp+Buffer]; lpBuffer
+0x180073d0c  mov     [rsp+40h+lpOverlapped], rax; lpOverlapped
+0x180073d11  mov     rcx, rdi; hFile
+0x180073d14  lea     ebx, [rax+2]
+0x180073d17  mov     r8d, ebx; nNumberOfBytesToRead
+0x180073d1a  call    cs:__imp_ReadFile
+0x180073d21  nop     dword ptr [rax+rax+00h]
+0x180073d26  test    eax, eax
+0x180073d28  jz      short loc_180073CB3
+0x180073d2a  cmp     [rbp+NumberOfBytesRead], ebx
+0x180073d2d  jnz     loc_180073DDE
+0x180073d33  mov     ecx, 0FEFFh
+0x180073d38  cmp     [rbp+Buffer], cx
+0x180073d3c  jnz     loc_180073DDE
+0x180073d42  mov     esi, dword ptr [rbp+FileSize]
+0x180073d45  lea     rcx, [rbx-3]
+0x180073d49  shr     esi, 1
+0x180073d4b  mov     eax, ebx
+0x180073d4d  mul     rsi
+0x180073d50  cmovb   rax, rcx
+0x180073d54  mov     rcx, rax; dwBytes
+0x180073d57  call    ??2@YAPEAX_K@Z; operator new(unsigned __int64)
+0x180073d5c  lea     r8d, [rsi+rsi]; nNumberOfBytesToRead
+0x180073d60  mov     [rsp+40h+lpOverlapped], 0; lpOverlapped
+0x180073d69  lea     r9, [rbp+NumberOfBytesRead]; lpNumberOfBytesRead
+0x180073d6d  mov     rdx, rax; lpBuffer
+0x180073d70  mov     rcx, rdi; hFile
+0x180073d73  mov     rbx, rax
+0x180073d76  call    cs:__imp_ReadFile
+0x180073d7d  nop     dword ptr [rax+rax+00h]
+0x180073d82  test    eax, eax
+0x180073d84  jnz     short loc_180073DA3
+0x180073d86  call    cs:__imp_GetLastError
+0x180073d8d  nop     dword ptr [rax+rax+00h]
+0x180073d92  mov     edi, eax
+0x180073d94  test    eax, eax
+0x180073d96  jle     short loc_180073DB6
+0x180073d98  movzx   edi, ax
+0x180073d9b  or      edi, 80070000h
+0x180073da1  jmp     short loc_180073DB6
+0x180073da3  mov     eax, [rbp+NumberOfBytesRead]
+0x180073da6  lea     ecx, [rsi-1]
+0x180073da9  add     rcx, rcx
+0x180073dac  cmp     rax, rcx
+0x180073daf  jz      short loc_180073DC2
+0x180073db1  mov     edi, 80004005h
+0x180073db6  mov     rcx, rbx; void *
+0x180073db9  call    ??3@YAXPEAX@Z; operator delete(void *)
+0x180073dbe  mov     eax, edi
+0x180073dc0  jmp     short loc_180073DE3
+0x180073dc2  xor     eax, eax
+0x180073dc4  mov     rdx, rbx
+0x180073dc7  mov     [rcx+rbx], ax
+0x180073dcb  mov     rcx, r14
+0x180073dce  call    ??4?$AutoVectorPtr@G@wmi@@QEAAAEAV01@PEAG@Z; wmi::AutoVectorPtr<ushort>::operator=(ushort *)
+0x180073dd3  xor     ecx, ecx; void *
+0x180073dd5  call    ??3@YAXPEAX@Z; operator delete(void *)
+0x180073dda  xor     eax, eax
+0x180073ddc  jmp     short loc_180073DE3
+0x180073dde  mov     eax, 80070057h
+0x180073de3  mov     rbx, [rsp+40h+arg_0]
+0x180073de8  mov     rsi, [rsp+40h+arg_8]
+0x180073ded  add     rsp, 40h
+0x180073df1  pop     r14
+0x180073df3  pop     rdi
+0x180073df4  pop     rbp
+0x180073df5  retn
+```

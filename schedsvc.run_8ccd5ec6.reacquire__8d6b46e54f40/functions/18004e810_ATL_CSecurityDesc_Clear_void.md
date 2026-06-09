@@ -1,0 +1,167 @@
+# ATL::CSecurityDesc::Clear(void)
+
+- ea: `0x18004e810`
+- end: `0x18004e964`
+- name: `?Clear@CSecurityDesc@ATL@@MEAAXXZ`
+- size: `340`
+- prototype: `void __fastcall(ATL::CSecurityDesc *__hidden this)`
+- caller_count: `3`
+- callee_count: `1`
+- tags: `authz_impersonation, broker_com_uri`
+
+## callers
+
+- `0x180021418`
+- `0x18006e380`
+- `0x18006e5a0`
+
+## callees
+
+- `0x18004e810`
+
+## import_xrefs
+
+- `msvcrt!free` at `0x18004e8ac`
+- `msvcrt!free` at `0x18004e8d4`
+- `msvcrt!free` at `0x18004e906`
+- `msvcrt!free` at `0x18004e938`
+- `msvcrt!free` at `0x18004e948`
+- `msvcrt!free` at `0x18004e8ac`
+- `msvcrt!free` at `0x18004e8d4`
+- `msvcrt!free` at `0x18004e906`
+- `msvcrt!free` at `0x18004e938`
+- `msvcrt!free` at `0x18004e948`
+- `api-ms-win-security-base-l1-1-0!GetSecurityDescriptorGroup` at `0x18004e8c4`
+- `api-ms-win-security-base-l1-1-0!GetSecurityDescriptorGroup` at `0x18004e8c4`
+- `api-ms-win-security-base-l1-1-0!GetSecurityDescriptorControl` at `0x18004e83f`
+- `api-ms-win-security-base-l1-1-0!GetSecurityDescriptorControl` at `0x18004e83f`
+- `api-ms-win-security-base-l1-1-0!GetSecurityDescriptorOwner` at `0x18004e89c`
+- `api-ms-win-security-base-l1-1-0!GetSecurityDescriptorOwner` at `0x18004e89c`
+- `api-ms-win-security-base-l1-1-0!GetSecurityDescriptorDacl` at `0x18004e8f0`
+- `api-ms-win-security-base-l1-1-0!GetSecurityDescriptorDacl` at `0x18004e8f0`
+- `api-ms-win-security-base-l1-1-0!GetSecurityDescriptorSacl` at `0x18004e922`
+- `api-ms-win-security-base-l1-1-0!GetSecurityDescriptorSacl` at `0x18004e922`
+
+## pseudocode
+
+```c
+void __fastcall ATL::CSecurityDesc::Clear(ATL::CSecurityDesc *this)
+{
+  void *v2; // rcx
+  void *v3; // rcx
+  PSID pGroup; // [rsp+20h] [rbp-28h] BYREF
+  PACL pDacl; // [rsp+28h] [rbp-20h] BYREF
+  PACL pSacl; // [rsp+30h] [rbp-18h] BYREF
+  WORD pControl; // [rsp+60h] [rbp+18h] BYREF
+  DWORD dwRevision; // [rsp+68h] [rbp+20h] BYREF
+  WINBOOL bDaclPresent; // [rsp+70h] [rbp+28h] BYREF
+  PSID pOwner; // [rsp+78h] [rbp+30h] BYREF
+
+  v2 = (void *)*((_QWORD *)this + 1);
+  if ( v2 )
+  {
+    dwRevision = 0;
+    pControl = 0;
+    if ( GetSecurityDescriptorControl(v2, &pControl, &dwRevision) && (pControl & 0x8000u) == 0 )
+    {
+      v3 = (void *)*((_QWORD *)this + 1);
+      pOwner = 0;
+      pGroup = 0;
+      pDacl = 0;
+      pSacl = 0;
+      dwRevision = 0;
+      bDaclPresent = 0;
+      GetSecurityDescriptorOwner(v3, &pOwner, (LPBOOL)&dwRevision);
+      free(pOwner);
+      GetSecurityDescriptorGroup(*((PSECURITY_DESCRIPTOR *)this + 1), &pGroup, (LPBOOL)&dwRevision);
+      free(pGroup);
+      GetSecurityDescriptorDacl(*((PSECURITY_DESCRIPTOR *)this + 1), &bDaclPresent, &pDacl, (LPBOOL)&dwRevision);
+      if ( bDaclPresent )
+        free(pDacl);
+      GetSecurityDescriptorSacl(*((PSECURITY_DESCRIPTOR *)this + 1), &bDaclPresent, &pSacl, (LPBOOL)&dwRevision);
+      if ( bDaclPresent )
+        free(pSacl);
+    }
+    free(*((void **)this + 1));
+    *((_QWORD *)this + 1) = 0;
+  }
+}
+
+```
+
+## disassembly
+
+```asm
+0x18004e810  push    rbp
+0x18004e812  push    rbx
+0x18004e813  mov     rbp, rsp
+0x18004e816  sub     rsp, 48h
+0x18004e81a  mov     rbx, rcx
+0x18004e81d  mov     rcx, [rcx+8]; pSecurityDescriptor
+0x18004e821  test    rcx, rcx
+0x18004e824  jz      loc_18004E95C
+0x18004e82a  xor     eax, eax
+0x18004e82c  mov     [rbp+dwRevision], 0
+0x18004e833  lea     r8, [rbp+dwRevision]; lpdwRevision
+0x18004e837  mov     [rbp+pControl], ax
+0x18004e83b  lea     rdx, [rbp+pControl]; pControl
+0x18004e83f  call    cs:__imp_GetSecurityDescriptorControl
+0x18004e846  nop     dword ptr [rax+rax+00h]
+0x18004e84b  test    eax, eax
+0x18004e84d  jz      loc_18004E944
+0x18004e853  mov     eax, 8000h
+0x18004e858  test    [rbp+pControl], ax
+0x18004e85c  jnz     loc_18004E944
+0x18004e862  mov     rcx, [rbx+8]; pSecurityDescriptor
+0x18004e866  lea     r8, [rbp+dwRevision]; lpbOwnerDefaulted
+0x18004e86a  lea     rdx, [rbp+pOwner]; pOwner
+0x18004e86e  mov     [rbp+pOwner], 0
+0x18004e876  mov     [rbp+pGroup], 0
+0x18004e87e  mov     [rbp+pDacl], 0
+0x18004e886  mov     [rbp+pSacl], 0
+0x18004e88e  mov     [rbp+dwRevision], 0
+0x18004e895  mov     [rbp+bDaclPresent], 0
+0x18004e89c  call    cs:__imp_GetSecurityDescriptorOwner
+0x18004e8a3  nop     dword ptr [rax+rax+00h]
+0x18004e8a8  mov     rcx, [rbp+pOwner]; Block
+0x18004e8ac  call    cs:__imp_free
+0x18004e8b3  nop     dword ptr [rax+rax+00h]
+0x18004e8b8  mov     rcx, [rbx+8]; pSecurityDescriptor
+0x18004e8bc  lea     r8, [rbp+dwRevision]; lpbGroupDefaulted
+0x18004e8c0  lea     rdx, [rbp+pGroup]; pGroup
+0x18004e8c4  call    cs:__imp_GetSecurityDescriptorGroup
+0x18004e8cb  nop     dword ptr [rax+rax+00h]
+0x18004e8d0  mov     rcx, [rbp+pGroup]; Block
+0x18004e8d4  call    cs:__imp_free
+0x18004e8db  nop     dword ptr [rax+rax+00h]
+0x18004e8e0  mov     rcx, [rbx+8]; pSecurityDescriptor
+0x18004e8e4  lea     r9, [rbp+dwRevision]; lpbDaclDefaulted
+0x18004e8e8  lea     r8, [rbp+pDacl]; pDacl
+0x18004e8ec  lea     rdx, [rbp+bDaclPresent]; lpbDaclPresent
+0x18004e8f0  call    cs:__imp_GetSecurityDescriptorDacl
+0x18004e8f7  nop     dword ptr [rax+rax+00h]
+0x18004e8fc  cmp     [rbp+bDaclPresent], 0
+0x18004e900  jz      short loc_18004E912
+0x18004e902  mov     rcx, [rbp+pDacl]; Block
+0x18004e906  call    cs:__imp_free
+0x18004e90d  nop     dword ptr [rax+rax+00h]
+0x18004e912  mov     rcx, [rbx+8]; pSecurityDescriptor
+0x18004e916  lea     r9, [rbp+dwRevision]; lpbSaclDefaulted
+0x18004e91a  lea     r8, [rbp+pSacl]; pSacl
+0x18004e91e  lea     rdx, [rbp+bDaclPresent]; lpbSaclPresent
+0x18004e922  call    cs:__imp_GetSecurityDescriptorSacl
+0x18004e929  nop     dword ptr [rax+rax+00h]
+0x18004e92e  cmp     [rbp+bDaclPresent], 0
+0x18004e932  jz      short loc_18004E944
+0x18004e934  mov     rcx, [rbp+pSacl]; Block
+0x18004e938  call    cs:__imp_free
+0x18004e93f  nop     dword ptr [rax+rax+00h]
+0x18004e944  mov     rcx, [rbx+8]; Block
+0x18004e948  call    cs:__imp_free
+0x18004e94f  nop     dword ptr [rax+rax+00h]
+0x18004e954  mov     qword ptr [rbx+8], 0
+0x18004e95c  add     rsp, 48h
+0x18004e960  pop     rbx
+0x18004e961  pop     rbp
+0x18004e962  retn
+```
