@@ -1,0 +1,35 @@
+# __crtCompareStringW_0
+
+- ea: `0x1800132ce`
+- end: `0x1800132d4`
+- name: `__crtCompareStringW_0`
+- size: `6`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `0`
+- tags: `broker_com_uri`
+
+## callers
+
+- `0x1800126a8`
+
+## import_xrefs
+
+- `msvcrt!__crtCompareStringW` at `0x1800132ce`
+
+## pseudocode
+
+```c
+// attributes: thunk
+__int64 _crtCompareStringW_0()
+{
+  return __crtCompareStringW();
+}
+
+```
+
+## disassembly
+
+```asm
+0x1800132ce  jmp     cs:__imp___crtCompareStringW
+```

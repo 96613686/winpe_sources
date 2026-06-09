@@ -1,0 +1,4208 @@
+[
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "appv::shared::vfs::prefix_tree<PrefixTreeContext,PrefixTreeAllocator>::remove_directory(appv::shared::vfs::prefix_tree_table &)",
+    "ea": "0x140012130",
+    "function_file": "functions/140012130_appv_shared_vfs_prefix_tree_PrefixTreeContext_PrefixTreeAllocator_remove_directory_appv_shared_vfs_prefix_tree.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExFreeToPagedLookasideList",
+      "ntoskrnl!RtlDeleteElementGenericTableAvl",
+      "ntoskrnl!RtlEnumerateGenericTableAvl",
+      "ntoskrnl!RtlIsGenericTableEmptyAvl",
+      "ntoskrnl!RtlLookupElementGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "?remove_directory@?$prefix_tree@VPrefixTreeContext@@VPrefixTreeAllocator@@@vfs@shared@appv@@CAXAEAUprefix_tree_table@234@@Z",
+    "prototype": "",
+    "rank_score": 4218,
+    "size": 731,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "VfsCopyFile",
+    "ea": "0x1400022b4",
+    "function_file": "functions/1400022b4_VfsCopyFile.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltCreateFileEx2",
+      "FLTMGR!FltQueryInformationFile",
+      "FLTMGR!FltSetInformationFile",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "VfsCopyFile",
+    "prototype": "__int64 __usercall@<rax>(PFLT_INSTANCE Instance@<rcx>, __int64, __int64, char, int, int, char, char)",
+    "rank_score": 4060,
+    "size": 1562,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 6,
+    "demangled": "VfsCreateParentDirectories",
+    "ea": "0x14000fd38",
+    "function_file": "functions/14000fd38_VfsCreateParentDirectories.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltCreateFile",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlCompareUnicodeString",
+      "ntoskrnl!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [
+      "VfsCreateParentDirectories() - Failed to create parent directories for store entry '%wZ' because the volume name did not match the COW mapping.",
+      "VfsCreateParentDirectories() - Failed to create parent directories for store entry '%wZ' because it is not a child of the COW mapping.",
+      "VfsCreateParentDirectories() - Failed to create parent directory '%wZ'.\n Status: 0x%08X",
+      "VfsCreateParentDirectories() - Failed to determine the remaining path of new COW directory '%wZ' after component #%d.\n Status: 0x%08X",
+      "VfsCreateParentDirectories() - Failed to copy to parent directory '%wZ' from package.\n Status: 0x%08X"
+    ],
+    "name": "VfsCreateParentDirectories",
+    "prototype": "",
+    "rank_score": 3871,
+    "size": 2325,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "VfsCheckSimpleTargetForRename",
+    "ea": "0x14000b4ec",
+    "function_file": "functions/14000b4ec_VfsCheckSimpleTargetForRename.md",
+    "matched_imports": [
+      "FLTMGR!FltObjectDereference",
+      "FLTMGR!FltObjectReference",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlEqualUnicodeString"
+    ],
+    "matched_strings": [
+      "VfsCheckSimpleTargetForRename() - Failed to get filename info for fileobject: %p\n IRP: %d\n Status: 0x%08X",
+      "VfsCheckSimpleTargetForRename() - Failed to map filename: %wZ\n for mapping: %wZ\n Status: 0x%08X",
+      "VfsCheckSimpleTargetForRename() - Failed to reference instance: %p\n Status: 0x%08X"
+    ],
+    "name": "VfsCheckSimpleTargetForRename",
+    "prototype": "",
+    "rank_score": 3754,
+    "size": 1793,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "appv::shared::vfs::prefix_tree<PrefixTreeContext,PrefixTreeAllocator>::insert_avl(appv::shared::vfs::prefix_tree_table &,_UNICODE_STRING const &,_UNICODE_STRING const &,appv::shared::vfs::prefix_tree_name_entry<PrefixTreeContext> * &)",
+    "ea": "0x140011d50",
+    "function_file": "functions/140011d50_appv_shared_vfs_prefix_tree_PrefixTreeContext_PrefixTreeAllocator_insert_avl_appv_shared_vfs_prefix_tree_table.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocateFromPagedLookasideList",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlDeleteElementGenericTableAvl",
+      "ntoskrnl!RtlEqualUnicodeString",
+      "ntoskrnl!RtlInitializeGenericTableAvl",
+      "ntoskrnl!RtlInsertElementGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "?insert_avl@?$prefix_tree@VPrefixTreeContext@@VPrefixTreeAllocator@@@vfs@shared@appv@@CAJAEAUprefix_tree_table@234@AEBU_UNICODE_STRING@@1AEAPEAU?$prefix_tree_name_entry@VPrefixTreeContext@@@234@@Z",
+    "prototype": "",
+    "rank_score": 3029,
+    "size": 783,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 4,
+    "demangled": "VfsCreateShadow",
+    "ea": "0x14000eb14",
+    "function_file": "functions/14000eb14_VfsCreateShadow.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltGetInstanceContext",
+      "FLTMGR!FltObjectDereference",
+      "FLTMGR!FltObjectReference",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [
+      "VfsCreateShadow() - Failed to get instance context for instance: %p\n Status: 0x%08X",
+      "VfsCreateShadow() - Failed to open file: %wZ\n Status: 0x%08X",
+      "VfsCreateShadow() - Failed to reference instance: %p\n Status: 0x%08X",
+      "VfsCreateShadow() - Failed to delete tombstone: %wZ\n Status: 0x%08X"
+    ],
+    "name": "VfsCreateShadow",
+    "prototype": "__int64 __usercall@<rax>(PFLT_CALLBACK_DATA CallbackData@<rcx>, PFLT_INSTANCE, PFLT_INSTANCE TargetInstance, __int64, char, char, char, char, char, __int64, __int64, __int64, __int64)",
+    "rank_score": 3002,
+    "size": 1339,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "VfsCreateScb",
+    "ea": "0x14000d3b4",
+    "function_file": "functions/14000d3b4_VfsCreateScb.md",
+    "matched_imports": [
+      "FLTMGR!FltReferenceContext",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ExAllocateFromNPagedLookasideList",
+      "ntoskrnl!ExAllocateFromPagedLookasideList",
+      "ntoskrnl!ExDeleteResourceLite",
+      "ntoskrnl!ExFreeToNPagedLookasideList",
+      "ntoskrnl!ExFreeToPagedLookasideList",
+      "ntoskrnl!ExInitializeResourceLite",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!RtlCopySid"
+    ],
+    "matched_strings": [],
+    "name": "VfsCreateScb",
+    "prototype": "",
+    "rank_score": 2818,
+    "size": 605,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "VfsScbClose",
+    "ea": "0x14000d868",
+    "function_file": "functions/14000d868_VfsScbClose.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExAcquireResourceSharedLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "VfsScbClose",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 2809,
+    "size": 350,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "VfsDriverCleanup",
+    "ea": "0x140024008",
+    "function_file": "functions/140024008_VfsDriverCleanup.md",
+    "matched_imports": [
+      "FLTMGR!FltUnregisterFilter",
+      "ntoskrnl!ExDeleteNPagedLookasideList",
+      "ntoskrnl!ExDeletePagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "VfsDriverCleanup",
+    "prototype": "",
+    "rank_score": 2618,
+    "size": 296,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "VfsInitializeLookasideLists",
+    "ea": "0x14002438c",
+    "function_file": "functions/14002438c_VfsInitializeLookasideLists.md",
+    "matched_imports": [
+      "ntoskrnl!ExInitializeNPagedLookasideList",
+      "ntoskrnl!ExInitializePagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "VfsInitializeLookasideLists",
+    "prototype": "",
+    "rank_score": 2415,
+    "size": 624,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "VfsCreateCompletion",
+    "ea": "0x140003f24",
+    "function_file": "functions/140003f24_VfsCreateCompletion.md",
+    "matched_imports": [
+      "FLTMGR!FltCancelFileOpen",
+      "FLTMGR!FltDeleteContext",
+      "FLTMGR!FltGetFileNameInformation",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!RtlCopySid",
+      "ntoskrnl!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [
+      "VfsCreateCompletion() - Failed to get filename info for data: %p\n IRP: %d\n Status: 0x%08X"
+    ],
+    "name": "VfsCreateCompletion",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA CallbackData)",
+    "rank_score": 2269,
+    "size": 546,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SepSddlSecurityDescriptorFromSDDLString",
+    "ea": "0x140025204",
+    "function_file": "functions/140025204_SepSddlSecurityDescriptorFromSDDLString.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlAbsoluteToSelfRelativeSD",
+      "ntoskrnl!RtlCreateSecurityDescriptor",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlSetDaclSecurityDescriptor"
+    ],
+    "matched_strings": [
+      "SeConvertStringSecurityDescriptorToSecurityDescriptor"
+    ],
+    "name": "SepSddlSecurityDescriptorFromSDDLString",
+    "prototype": "",
+    "rank_score": 2068,
+    "size": 414,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "LogInitialize",
+    "ea": "0x14002709c",
+    "function_file": "functions/14002709c_LogInitialize.md",
+    "matched_imports": [
+      "ntoskrnl!EtwRegister",
+      "ntoskrnl!EtwSetInformation",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "\\REGISTRY\\MACHINE\\SOFTWARE\\Microsoft\\AppV\\Shared\\Policy"
+    ],
+    "name": "LogInitialize",
+    "prototype": "",
+    "rank_score": 1869,
+    "size": 567,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "VfsAcquireForSectionSync",
+    "ea": "0x14000e18c",
+    "function_file": "functions/14000e18c_VfsAcquireForSectionSync.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [
+      "VfsAcquireForSectionSync() - Failed to delay copy file. Status: 0x%08X"
+    ],
+    "name": "VfsAcquireForSectionSync",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA Data)",
+    "rank_score": 1869,
+    "size": 488,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VfsReadSecurityDescriptor",
+    "ea": "0x14000e944",
+    "function_file": "functions/14000e944_VfsReadSecurityDescriptor.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltQuerySecurityObject",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [
+      "VfsReadSecurityDescriptor() - Failed to open file: %wZ\n Status: 0x%08X"
+    ],
+    "name": "VfsReadSecurityDescriptor",
+    "prototype": "__int64 __fastcall(PFLT_INSTANCE Instance)",
+    "rank_score": 1867,
+    "size": 457,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 53,
+    "demangled": "LogWrite",
+    "ea": "0x140012acc",
+    "function_file": "functions/140012acc_LogWrite.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!EtwWriteTransfer",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!PsGetCurrentProcessId",
+      "ntoskrnl!PsGetCurrentThreadId",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlAppendUnicodeToString",
+      "ntoskrnl!_vsnwprintf"
+    ],
+    "matched_strings": [],
+    "name": "LogWrite",
+    "prototype": "",
+    "rank_score": 1849,
+    "size": 1227,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VfsCheckPackageFileForDelete",
+    "ea": "0x14000b2dc",
+    "function_file": "functions/14000b2dc_VfsCheckPackageFileForDelete.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltIsDirectory",
+      "ntoskrnl!IoGetFileObjectGenericMapping",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!SeAccessCheck",
+      "ntoskrnl!SeCaptureSubjectContext",
+      "ntoskrnl!SeReleaseSubjectContext"
+    ],
+    "matched_strings": [],
+    "name": "VfsCheckPackageFileForDelete",
+    "prototype": "",
+    "rank_score": 1828,
+    "size": 519,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "VfsGetInstanceFromVolumeName",
+    "ea": "0x140011520",
+    "function_file": "functions/140011520_VfsGetInstanceFromVolumeName.md",
+    "matched_imports": [
+      "FLTMGR!FltEnumerateInstances",
+      "FLTMGR!FltGetInstanceContext",
+      "FLTMGR!FltObjectDereference",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlEqualUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "VfsGetInstanceFromVolumeName",
+    "prototype": "__int64 __fastcall(PCUNICODE_STRING String2)",
+    "rank_score": 1809,
+    "size": 500,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "VfsGenerateFileName",
+    "ea": "0x14000a3c0",
+    "function_file": "functions/14000a3c0_VfsGenerateFileName.md",
+    "matched_imports": [
+      "FLTMGR!FltCheckAndGrowNameControl",
+      "FLTMGR!FltGetFileNameInformation",
+      "FLTMGR!FltGetFileNameInformationUnsafe",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "VfsGenerateFileName",
+    "prototype": "__int64 __usercall@<rax>(PFLT_INSTANCE Instance@<rcx>, PFILE_OBJECT FileObject@<rdx>, PFLT_CALLBACK_DATA CallbackData@<r8>, __int64, PFLT_NAME_CONTROL NameCtrl)",
+    "rank_score": 1808,
+    "size": 462,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VfsCtxTableElementInsert",
+    "ea": "0x140005400",
+    "function_file": "functions/140005400_VfsCtxTableElementInsert.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExAcquireRundownProtection",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!ExReleaseRundownProtection",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!RtlDeleteElementGenericTableAvl",
+      "ntoskrnl!RtlInsertElementGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "VfsCtxTableElementInsert",
+    "prototype": "__int64 __fastcall(PRTL_AVL_TABLE Table, PVOID Buffer, CLONG BufferSize)",
+    "rank_score": 1807,
+    "size": 403,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "VfsCowCopyFile",
+    "ea": "0x140002b4c",
+    "function_file": "functions/140002b4c_VfsCowCopyFile.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltGetInstanceContext",
+      "FLTMGR!FltReleaseContext"
+    ],
+    "matched_strings": [
+      "VfsCowCopyFile() - Failed to get instance context for instance: %p\n Status: 0x%08X",
+      "VfsCowCopyFile() - Failed to get COW mapping to copy %wZ into the COW\n Status: 0x%08X",
+      "VfsCowCopyFile() - Failed to create parent directories for %wZ\n Status: 0x%08X",
+      "VfsCowCopyFile() - Failed to copy file: %wZ\n Status: 0x%08X"
+    ],
+    "name": "VfsCowCopyFile",
+    "prototype": "",
+    "rank_score": 1787,
+    "size": 828,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "VfsCreateStoreForRename",
+    "ea": "0x14000be3c",
+    "function_file": "functions/14000be3c_VfsCreateStoreForRename.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltObjectDereference",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [
+      "VfsCreateStoreForRename() - Failed to get filename info for fileobject: %p\n IRP: %d\n Status: 0x%08X",
+      "VfsCreateStoreForRename() - Failed to map filename: %wZ\n for mapping: %wZ\n Status: 0x%08X",
+      "VfsCreateStoreForRename() - Failed to create parent directories for %wZ\n Status: 0x%08X",
+      "VfsCreateStoreForRename() - Failed to create directory for %wZ\n Status: 0x%08X",
+      "VfsCreateStoreForRename() - Failed to open file: %wZ\n Status: 0x%08X",
+      "VfsCreateDirectory() - Failed to open file: %wZ\n Status: 0x%08X"
+    ],
+    "name": "VfsCreateStoreForRename",
+    "prototype": "__int64 __fastcall(int, int, int, int, HANDLE FileHandle)",
+    "rank_score": 1653,
+    "size": 702,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "VfsDeleteCcb",
+    "ea": "0x14000d618",
+    "function_file": "functions/14000d618_VfsDeleteCcb.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltObjectDereference",
+      "ntoskrnl!ExFreeToPagedLookasideList",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "VfsDeleteCcb",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 1616,
+    "size": 270,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VfsCreateInstanceContext",
+    "ea": "0x140001de0",
+    "function_file": "functions/140001de0_VfsCreateInstanceContext.md",
+    "matched_imports": [
+      "FLTMGR!FltAllocateContext",
+      "FLTMGR!FltGetVolumeFromInstance",
+      "FLTMGR!FltObjectDereference",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltSetInstanceContext",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "VfsCreateInstanceContext",
+    "prototype": "__int64 __fastcall(PFLT_INSTANCE Instance)",
+    "rank_score": 1607,
+    "size": 461,
+    "tags": []
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "VfsRenameVirtualFileSimple",
+    "ea": "0x14000ca28",
+    "function_file": "functions/14000ca28_VfsRenameVirtualFileSimple.md",
+    "matched_imports": [
+      "FLTMGR!FltGetInstanceContext",
+      "FLTMGR!FltObjectDereference",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [
+      "VfsRenameVirtualFileSimple() - Package directory rename is not supported",
+      "VfsRenameVirtualFileSimple() - Failed to get instance context for instance: %p\n Status: 0x%08X",
+      "VfsRenameVirtualFileSimple() - Failed to get COW mapping for simple rename of %wZ\n Status: 0x%08X",
+      "VfsRenameVirtualFileSimple() - Failed to create parent directories for %wZ\n Status: 0x%08X"
+    ],
+    "name": "VfsRenameVirtualFileSimple",
+    "prototype": "",
+    "rank_score": 1586,
+    "size": 724,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "VfsCreateSecurityDescriptors",
+    "ea": "0x14000e59c",
+    "function_file": "functions/14000e59c_VfsCreateSecurityDescriptors.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlEqualSid",
+      "ntoskrnl!RtlGetOwnerSecurityDescriptor"
+    ],
+    "matched_strings": [
+      "VfsCreateSecurityDescriptors() - Failed to read security descriptors for : %wZ\n Status: 0x%08X",
+      "VfsCreateSecurityDescriptors() - Failed to get child file security descriptors for : %wZ\n Status: 0x%08X",
+      "VfsCreateSecurityDescriptors() - Failed to get child directory security descriptors for : %wZ\n Status: 0x%08X"
+    ],
+    "name": "VfsCreateSecurityDescriptors",
+    "prototype": "__int64 __usercall@<rax>(PFLT_INSTANCE Instance@<rcx>, __int64)",
+    "rank_score": 1551,
+    "size": 683,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "VfsCowCopyFileForScb",
+    "ea": "0x140002e90",
+    "function_file": "functions/140002e90_VfsCowCopyFileForScb.md",
+    "matched_imports": [
+      "FLTMGR!FltCreateFileEx2",
+      "FLTMGR!FltObjectDereference",
+      "FLTMGR!FltObjectReference",
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [
+      "VfsCowCopyFileForScb() - Failed to copy file: %wZ\n Status: 0x%08X",
+      "VfsCowCopyFileForScb() - Failed to reference instance: %p\n Status: 0x%08X"
+    ],
+    "name": "VfsCowCopyFileForScb",
+    "prototype": "",
+    "rank_score": 1533,
+    "size": 806,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "VfsCreateDirQuerySubContext",
+    "ea": "0x14000783c",
+    "function_file": "functions/14000783c_VfsCreateDirQuerySubContext.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltObjectReference",
+      "ntoskrnl!ExAllocateFromPagedLookasideList",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [
+      "VfsCreateDirQuerySubContext() - Failed to open file: %wZ\n Status: 0x%08X",
+      "VfsCreateDirQuerySubContext() - Failed to reference instance: %p\n Status: 0x%08X"
+    ],
+    "name": "VfsCreateDirQuerySubContext",
+    "prototype": "__int64 __usercall@<rax>(PVOID FltObject@<rcx>, char, __int64)",
+    "rank_score": 1500,
+    "size": 464,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "VfsOpenScb",
+    "ea": "0x1400037ac",
+    "function_file": "functions/1400037ac_VfsOpenScb.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltGetStreamContext",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [
+      "VfsOpenScb() - Failed to open file: %wZ\n Status: 0x%08X",
+      "VfsOpenScb() - Failed to get stream context for fileobject: %p\n Status: 0x%08X"
+    ],
+    "name": "VfsOpenScb",
+    "prototype": "__int64 __usercall@<rax>(PFLT_INSTANCE Instance@<rcx>, __int64, __int64, __int64, __int64, __int64)",
+    "rank_score": 1490,
+    "size": 454,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "VfsQueryDirectoryRecord",
+    "ea": "0x140006c10",
+    "function_file": "functions/140006c10_VfsQueryDirectoryRecord.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltQueryDirectoryFile",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!RtlCompareUnicodeString",
+      "ntoskrnl!RtlEqualUnicodeString"
+    ],
+    "matched_strings": [
+      "VfsQueryDirectoryRecord() - Failed to query directory namespace for fileobject: %p\n InfoClass: %d\n Status: 0x%08X"
+    ],
+    "name": "VfsQueryDirectoryRecord",
+    "prototype": "",
+    "rank_score": 1467,
+    "size": 1292,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "VfsQueryFile",
+    "ea": "0x140003978",
+    "function_file": "functions/140003978_VfsQueryFile.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltGetStreamContext",
+      "FLTMGR!FltIsDirectory",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [
+      "VfsQueryFile() - Failed to open file: %wZ\n Status: 0x%08X"
+    ],
+    "name": "VfsQueryFile",
+    "prototype": "__int64 __usercall@<rax>(PFLT_INSTANCE Instance@<rcx>, __int64, PFLT_CONTEXT Context, __int64, __int64, PBOOLEAN IsDirectory, __int64)",
+    "rank_score": 1452,
+    "size": 640,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ReadRegistryValue",
+    "ea": "0x1400272dc",
+    "function_file": "functions/1400272dc_ReadRegistryValue.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [],
+    "name": "ReadRegistryValue",
+    "prototype": "",
+    "rank_score": 1446,
+    "size": 459,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "VfsAccessCheck",
+    "ea": "0x14000e438",
+    "function_file": "functions/14000e438_VfsAccessCheck.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetFileObjectGenericMapping",
+      "ntoskrnl!SeAccessCheck",
+      "ntoskrnl!SeAppendPrivileges",
+      "ntoskrnl!SeFreePrivileges",
+      "ntoskrnl!SeLockSubjectContext",
+      "ntoskrnl!SeUnlockSubjectContext"
+    ],
+    "matched_strings": [],
+    "name": "VfsAccessCheck",
+    "prototype": "__int64 __fastcall(PSECURITY_DESCRIPTOR SecurityDescriptor)",
+    "rank_score": 1427,
+    "size": 347,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "VfsPrefixTreeCreate",
+    "ea": "0x140012414",
+    "function_file": "functions/140012414_VfsPrefixTreeCreate.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocateFromPagedLookasideList",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExFreeToPagedLookasideList",
+      "ntoskrnl!RtlInitializeGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "VfsPrefixTreeCreate",
+    "prototype": "",
+    "rank_score": 1425,
+    "size": 301,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "VfsScbTableCreateScb",
+    "ea": "0x14000db50",
+    "function_file": "functions/14000db50_VfsScbTableCreateScb.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!RtlCopySid",
+      "ntoskrnl!RtlDeleteElementGenericTableAvl",
+      "ntoskrnl!RtlInsertElementGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "VfsScbTableCreateScb",
+    "prototype": "",
+    "rank_score": 1417,
+    "size": 378,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VfsScbTableCloseScb",
+    "ea": "0x14000da2c",
+    "function_file": "functions/14000da2c_VfsScbTableCloseScb.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!RtlCopySid",
+      "ntoskrnl!RtlDeleteElementGenericTableAvl",
+      "ntoskrnl!RtlLookupElementGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "VfsScbTableCloseScb",
+    "prototype": "",
+    "rank_score": 1416,
+    "size": 286,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VfsCleanupShadow",
+    "ea": "0x1400018c4",
+    "function_file": "functions/1400018c4_VfsCleanupShadow.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!IoRemoveShareAccess",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "VfsCleanupShadow",
+    "prototype": "",
+    "rank_score": 1406,
+    "size": 286,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "VfsCtxTableElementLookup",
+    "ea": "0x14000559c",
+    "function_file": "functions/14000559c_VfsCtxTableElementLookup.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceSharedLite",
+      "ntoskrnl!ExAcquireRundownProtection",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!ExReleaseRundownProtection",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!RtlLookupElementGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "VfsCtxTableElementLookup",
+    "prototype": "__int64 __fastcall(PRTL_AVL_TABLE Table, PVOID Buffer)",
+    "rank_score": 1406,
+    "size": 210,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 4,
+    "demangled": "VfsDelayedCopy",
+    "ea": "0x14000aefc",
+    "function_file": "functions/14000aefc_VfsDelayedCopy.md",
+    "matched_imports": [
+      "FLTMGR!FltObjectDereference",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [
+      "VfsDelayedCopy() - Failed to get filename info for fileobject: %p\n IRP: %d\n Status: 0x%08X",
+      "VfsDelayedCopy() - Failed to map filename: %wZ%\n for mapping: %wZ\n Status: 0x%08X",
+      "VfsDelayedCopy() - Failed to create parent directories for %wZ\n Status: 0x%08X"
+    ],
+    "name": "VfsDelayedCopy",
+    "prototype": "",
+    "rank_score": 1346,
+    "size": 538,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 1,
+    "demangled": "VfsCreateCommon",
+    "ea": "0x140003c00",
+    "function_file": "functions/140003c00_VfsCreateCommon.md",
+    "matched_imports": [
+      "FLTMGR!FltObjectDereference",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [
+      "VfsCreateCommon() - Failed to get filename info for data: %p\n IRP: %d\n Status: 0x%08X",
+      "VfsCreateCommon() - Failed to create context setup for file: %wZ\n Status: 0x%08X"
+    ],
+    "name": "VfsCreateCommon",
+    "prototype": "",
+    "rank_score": 1320,
+    "size": 797,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "PpRegStateUpdateStackCreationSettings",
+    "ea": "0x140025890",
+    "function_file": "functions/140025890_PpRegStateUpdateStackCreationSettings.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlLengthSecurityDescriptor",
+      "ntoskrnl!SeCaptureSecurityDescriptor",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwSetValueKey"
+    ],
+    "matched_strings": [
+      "Security"
+    ],
+    "name": "PpRegStateUpdateStackCreationSettings",
+    "prototype": "",
+    "rank_score": 1287,
+    "size": 372,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VfsCreateCleanupCompletionContext",
+    "ea": "0x1400019e8",
+    "function_file": "functions/1400019e8_VfsCreateCleanupCompletionContext.md",
+    "matched_imports": [
+      "FLTMGR!FltGetFileNameInformation",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "ntoskrnl!ExAllocateFromPagedLookasideList",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [
+      "VfsCreateCleanupCompletionContext() - Failed to get filename info for data: %p\n IRP: %d\n Status: 0x%08X"
+    ],
+    "name": "VfsCreateCleanupCompletionContext",
+    "prototype": "",
+    "rank_score": 1266,
+    "size": 317,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 3,
+    "demangled": "VfsCheckDirectoryEmpty",
+    "ea": "0x1400061b4",
+    "function_file": "functions/1400061b4_VfsCheckDirectoryEmpty.md",
+    "matched_imports": [
+      "FLTMGR!FltObjectDereference",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [
+      "VfsCheckDirectoryEmpty() - Failed to get filename info for fileobject: %p\n IRP: %d\n Status: 0x%08X"
+    ],
+    "name": "VfsCheckDirectoryEmpty",
+    "prototype": "",
+    "rank_score": 1254,
+    "size": 544,
+    "tags": []
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "DriverInitialize",
+    "ea": "0x140008100",
+    "function_file": "functions/140008100_DriverInitialize.md",
+    "matched_imports": [
+      "FLTMGR!FltRegisterFilter",
+      "FLTMGR!FltStartFiltering",
+      "ntoskrnl!ExInitializePagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "DriverInitialize",
+    "prototype": "__int64 __fastcall(PDRIVER_OBJECT DriverObject)",
+    "rank_score": 1235,
+    "size": 538,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SepSddlGetAclForString",
+    "ea": "0x140024cb8",
+    "function_file": "functions/140024cb8_SepSddlGetAclForString.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!_wcsnicmp",
+      "ntoskrnl!wcschr"
+    ],
+    "matched_strings": [],
+    "name": "SepSddlGetAclForString",
+    "prototype": "__int64 __fastcall(wchar_t *Str1, int)",
+    "rank_score": 1223,
+    "size": 951,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "VfsScbTableGetScb",
+    "ea": "0x14000de04",
+    "function_file": "functions/14000de04_VfsScbTableGetScb.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceSharedLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!RtlCopySid",
+      "ntoskrnl!RtlLookupElementGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "VfsScbTableGetScb",
+    "prototype": "",
+    "rank_score": 1218,
+    "size": 298,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "appv::shared::vfs::prefix_tree<PrefixTreeContext,PrefixTreeAllocator>::~prefix_tree<PrefixTreeContext,PrefixTreeAllocator>(void)",
+    "ea": "0x140011998",
+    "function_file": "functions/140011998_appv_shared_vfs_prefix_tree_PrefixTreeContext_PrefixTreeAllocator_prefix_tree_PrefixTreeContext_PrefixTreeAllo.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExFreeToPagedLookasideList",
+      "ntoskrnl!RtlIsGenericTableEmptyAvl"
+    ],
+    "matched_strings": [],
+    "name": "??1?$prefix_tree@VPrefixTreeContext@@VPrefixTreeAllocator@@@vfs@shared@appv@@QEAA@XZ",
+    "prototype": "",
+    "rank_score": 1215,
+    "size": 198,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "VfsCheckShareAccess",
+    "ea": "0x14000f630",
+    "function_file": "functions/14000f630_VfsCheckShareAccess.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!IoCheckShareAccess",
+      "ntoskrnl!IoSetShareAccess",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "VfsCheckShareAccess",
+    "prototype": "",
+    "rank_score": 1214,
+    "size": 237,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "VfsCtxTableDelete",
+    "ea": "0x14000535c",
+    "function_file": "functions/14000535c_VfsCtxTableDelete.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteResourceLite",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExRundownCompleted",
+      "ntoskrnl!ExWaitForRundownProtectionRelease",
+      "ntoskrnl!RtlDeleteElementGenericTableAvl",
+      "ntoskrnl!RtlEnumerateGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "VfsCtxTableDelete",
+    "prototype": "__int64 __fastcall(PRTL_AVL_TABLE Table)",
+    "rank_score": 1214,
+    "size": 155,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "VfsRenameVirtualFileToNativeTarget",
+    "ea": "0x14000cd04",
+    "function_file": "functions/14000cd04_VfsRenameVirtualFileToNativeTarget.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltGetStreamHandleContext",
+      "FLTMGR!FltReleaseContext"
+    ],
+    "matched_strings": [
+      "VfsRenameVirtualFileToNativeTarget() - Failed to get stream handle context for fileobject: %p\n Status: 0x%08X",
+      "VfsRenameVirtualFileToNativeTarget() - Failed to open file: %wZ\n Status: 0x%08X",
+      "VfsRenameVirtualFileToNativeTarget() - Package directory rename is not supported"
+    ],
+    "name": "VfsRenameVirtualFileToNativeTarget",
+    "prototype": "",
+    "rank_score": 1144,
+    "size": 716,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "VfsProcessDeleteOnCleanupShadow",
+    "ea": "0x140005dc8",
+    "function_file": "functions/140005dc8_VfsProcessDeleteOnCleanupShadow.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "FLTMGR!FltSetInformationFile"
+    ],
+    "matched_strings": [
+      "VfsDelayMarkFileDeleted() - Failed to get stream context for fileobject: %p\n Status: 0x%08X",
+      "VfsMoveDeleteoncloseToScb() - Failed to check directory empty. Status: 0x%08X",
+      "VfsProcessDeleteOnCleanupShadow() - Failed to get filename info for fileobject: %p\n IRP: %d\n Status: 0x%08X"
+    ],
+    "name": "VfsProcessDeleteOnCleanupShadow",
+    "prototype": "",
+    "rank_score": 1143,
+    "size": 662,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "VfsRenameCanReplace",
+    "ea": "0x14000c40c",
+    "function_file": "functions/14000c40c_VfsRenameCanReplace.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "HAL!KeQueryPerformanceCounter",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [
+      "VfsRenameCanReplace() - Failed to open file: %wZ\n Status: 0x%08X"
+    ],
+    "name": "VfsRenameCanReplace",
+    "prototype": "__int64 __fastcall(PFLT_INSTANCE Instance)",
+    "rank_score": 1051,
+    "size": 354,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "VfsCreateCompletionContext",
+    "ea": "0x14000414c",
+    "function_file": "functions/14000414c_VfsCreateCompletionContext.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocateFromPagedLookasideList",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!IoReplaceFileObjectName",
+      "ntoskrnl!RtlCopySid",
+      "ntoskrnl!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "VfsCreateCompletionContext",
+    "prototype": "",
+    "rank_score": 1049,
+    "size": 552,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VfsInsertMappingEntry",
+    "ea": "0x140008fb0",
+    "function_file": "functions/140008fb0_VfsInsertMappingEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!RtlCompareUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "VfsInsertMappingEntry",
+    "prototype": "",
+    "rank_score": 1016,
+    "size": 273,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VfsLookupMappingEntry",
+    "ea": "0x1400090c8",
+    "function_file": "functions/1400090c8_VfsLookupMappingEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceSharedLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!RtlCompareUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "VfsLookupMappingEntry",
+    "prototype": "",
+    "rank_score": 1016,
+    "size": 327,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "VfsDeleteDirQuerySubContext",
+    "ea": "0x140007a48",
+    "function_file": "functions/140007a48_VfsDeleteDirQuerySubContext.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltObjectDereference",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExFreeToPagedLookasideList",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "VfsDeleteDirQuerySubContext",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 1014,
+    "size": 124,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "VfsDeleteScb",
+    "ea": "0x14000d72c",
+    "function_file": "functions/14000d72c_VfsDeleteScb.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ExDeleteResourceLite",
+      "ntoskrnl!ExFreeToNPagedLookasideList",
+      "ntoskrnl!ExFreeToPagedLookasideList",
+      "ntoskrnl!FsRtlTeardownPerStreamContexts"
+    ],
+    "matched_strings": [],
+    "name": "VfsDeleteScb",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 1014,
+    "size": 134,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "VfsGetFileNameInfoForFileObject",
+    "ea": "0x140010aa8",
+    "function_file": "functions/140010aa8_VfsGetFileNameInfoForFileObject.md",
+    "matched_imports": [
+      "FLTMGR!FltGetFileNameInformationUnsafe",
+      "FLTMGR!FltParseFileNameInformation",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "ntoskrnl!IoGetTopLevelIrp",
+      "ntoskrnl!KeAreAllApcsDisabled"
+    ],
+    "matched_strings": [],
+    "name": "VfsGetFileNameInfoForFileObject",
+    "prototype": "",
+    "rank_score": 1009,
+    "size": 253,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VfsProcessClose",
+    "ea": "0x140001b8c",
+    "function_file": "functions/140001b8c_VfsProcessClose.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!IoRemoveShareAccess",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "VfsProcessClose",
+    "prototype": "",
+    "rank_score": 1005,
+    "size": 249,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "VfsGetDeviceVolumeNameFromVolumeName",
+    "ea": "0x140011438",
+    "function_file": "functions/140011438_VfsGetDeviceVolumeNameFromVolumeName.md",
+    "matched_imports": [
+      "FLTMGR!FltGetVolumeFromName",
+      "FLTMGR!FltObjectDereference",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlPrefixUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "VfsGetDeviceVolumeNameFromVolumeName",
+    "prototype": "__int64 __fastcall(PCUNICODE_STRING VolumeName)",
+    "rank_score": 1004,
+    "size": 226,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "VfsUnMapFileName",
+    "ea": "0x14000a7d0",
+    "function_file": "functions/14000a7d0_VfsUnMapFileName.md",
+    "matched_imports": [
+      "FLTMGR!FltGetFileNameInformationUnsafe",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "VfsUnMapFileName",
+    "prototype": "__int64 __fastcall(PFLT_INSTANCE Instance, PFILE_OBJECT FileObject, int, FLT_FILE_NAME_OPTIONS NameOptions, char, PUNICODE_STRING DestinationString)",
+    "rank_score": 1004,
+    "size": 238,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "VfsRemoveShareAccess",
+    "ea": "0x14000f724",
+    "function_file": "functions/14000f724_VfsRemoveShareAccess.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!IoRemoveShareAccess",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "VfsRemoveShareAccess",
+    "prototype": "__int64 __fastcall(PFILE_OBJECT FileObject)",
+    "rank_score": 1003,
+    "size": 130,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "WdmlibIoCreateDeviceSecure",
+    "ea": "0x140024690",
+    "function_file": "functions/140024690_WdmlibIoCreateDeviceSecure.md",
+    "matched_imports": [
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "IoCreateDeviceSecure",
+      "IoValidateDeviceIoControlAccess"
+    ],
+    "name": "WdmlibIoCreateDeviceSecure",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, ULONG DeviceExtensionSize, PUNICODE_STRING DeviceName, ULONG DeviceType, ULONG DeviceCharacteristics, BOOLEAN Exclusive, PCUNICODE_STRING DefaultSDDLString, LPCGUID DeviceClassGuid, PDEVICE_OBJECT *DeviceObject)",
+    "rank_score": 894,
+    "size": 236,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "VfsMarkPackageFileDeleted",
+    "ea": "0x140005b48",
+    "function_file": "functions/140005b48_VfsMarkPackageFileDeleted.md",
+    "matched_imports": [
+      "FLTMGR!FltObjectDereference",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [
+      "VfsMarkPackageFileDeleted() - Failed to map filename: %wZ\n for mapping: %wZ\n Status: 0x%08X",
+      "VfsMarkPackageFileDeleted() - Failed to create parent directories for %wZ\n Status: 0x%08X"
+    ],
+    "name": "VfsMarkPackageFileDeleted",
+    "prototype": "",
+    "rank_score": 887,
+    "size": 255,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "PiRegStateReadStackCreationSettingsFromKey",
+    "ea": "0x14002553c",
+    "function_file": "functions/14002553c_PiRegStateReadStackCreationSettingsFromKey.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!SeCaptureSecurityDescriptor"
+    ],
+    "matched_strings": [
+      "Security"
+    ],
+    "name": "PiRegStateReadStackCreationSettingsFromKey",
+    "prototype": "__int64 __fastcall(HANDLE KeyHandle)",
+    "rank_score": 879,
+    "size": 479,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "VfsCowQueryFileForUserAndPackage",
+    "ea": "0x1400034a0",
+    "function_file": "functions/1400034a0_VfsCowQueryFileForUserAndPackage.md",
+    "matched_imports": [
+      "FLTMGR!FltObjectDereference",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [
+      "VfsCowCheckExcludedExtension() - FileNameExtension: - %wZ\n desiredAccess:     - 0x%08X"
+    ],
+    "name": "VfsCowQueryFileForUserAndPackage",
+    "prototype": "",
+    "rank_score": 875,
+    "size": 772,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "VfsRenameVirtualFileToVirtualTarget",
+    "ea": "0x14000cfd8",
+    "function_file": "functions/14000cfd8_VfsRenameVirtualFileToVirtualTarget.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltObjectDereference"
+    ],
+    "matched_strings": [
+      "VfsRenameVirtualFileToVirtualTarget() - Package directory rename is not supported"
+    ],
+    "name": "VfsRenameVirtualFileToVirtualTarget",
+    "prototype": "__int64 __fastcall(int)",
+    "rank_score": 865,
+    "size": 632,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VfsCreateCcb",
+    "ea": "0x14000d258",
+    "function_file": "functions/14000d258_VfsCreateCcb.md",
+    "matched_imports": [
+      "FLTMGR!FltObjectReference",
+      "ntoskrnl!ExAllocateFromPagedLookasideList",
+      "ntoskrnl!ExFreeToPagedLookasideList",
+      "ntoskrnl!IoIsFileObjectIgnoringSharing"
+    ],
+    "matched_strings": [
+      "VfsCreateCcb() - Failed to reference instance: %p\n Status: 0x%08X"
+    ],
+    "name": "VfsCreateCcb",
+    "prototype": "",
+    "rank_score": 856,
+    "size": 342,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "VfsPreCreateEx",
+    "ea": "0x140001380",
+    "function_file": "functions/140001380_VfsPreCreateEx.md",
+    "matched_imports": [
+      "AppvVemgr!VeMgrLookupProcess",
+      "ntoskrnl!EtwActivityIdControl",
+      "ntoskrnl!PsGetCurrentProcessId",
+      "ntoskrnl!PsGetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "VfsPreCreateEx",
+    "prototype": "",
+    "rank_score": 830,
+    "size": 423,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "SeUtilSecurityInfoFromSecurityDescriptor",
+    "ea": "0x140025a0c",
+    "function_file": "functions/140025a0c_SeUtilSecurityInfoFromSecurityDescriptor.md",
+    "matched_imports": [
+      "ntoskrnl!RtlGetDaclSecurityDescriptor",
+      "ntoskrnl!RtlGetGroupSecurityDescriptor",
+      "ntoskrnl!RtlGetOwnerSecurityDescriptor",
+      "ntoskrnl!RtlGetSaclSecurityDescriptor"
+    ],
+    "matched_strings": [],
+    "name": "SeUtilSecurityInfoFromSecurityDescriptor",
+    "prototype": "__int64 __fastcall(PSECURITY_DESCRIPTOR SecurityDescriptor)",
+    "rank_score": 824,
+    "size": 249,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "VfsCreateControlDevice",
+    "ea": "0x14000848c",
+    "function_file": "functions/14000848c_VfsCreateControlDevice.md",
+    "matched_imports": [
+      "ntoskrnl!IoCreateSymbolicLink",
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "VfsCreateControlDevice",
+    "prototype": "__int64 __fastcall(PDRIVER_OBJECT DriverObject)",
+    "rank_score": 824,
+    "size": 240,
+    "tags": [
+      "reparse_path",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "VfsScbTableElementCompare",
+    "ea": "0x14000dd20",
+    "function_file": "functions/14000dd20_VfsScbTableElementCompare.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory",
+      "ntoskrnl!RtlLengthSid"
+    ],
+    "matched_strings": [],
+    "name": "VfsScbTableElementCompare",
+    "prototype": "RTL_AVL_COMPARE_ROUTINE",
+    "rank_score": 822,
+    "size": 185,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "VfsExpandComponentByMapping",
+    "ea": "0x14000a088",
+    "function_file": "functions/14000a088_VfsExpandComponentByMapping.md",
+    "matched_imports": [
+      "ntoskrnl!RtlEqualUnicodeString",
+      "ntoskrnl!RtlPrefixUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "VfsExpandComponentByMapping",
+    "prototype": "",
+    "rank_score": 818,
+    "size": 413,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "VfsExpandTargetComponent",
+    "ea": "0x14000a22c",
+    "function_file": "functions/14000a22c_VfsExpandTargetComponent.md",
+    "matched_imports": [
+      "FLTMGR!FltObjectDereference",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "VfsExpandTargetComponent",
+    "prototype": "__int64 __usercall@<rax>(PFLT_INSTANCE Instance@<rcx>, __int64, ULONG)",
+    "rank_score": 818,
+    "size": 393,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "IsProcessElevated",
+    "ea": "0x14001187c",
+    "function_file": "functions/14001187c_IsProcessElevated.md",
+    "matched_imports": [
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenProcessTokenEx",
+      "ntoskrnl!ZwQueryInformationToken"
+    ],
+    "matched_strings": [],
+    "name": "IsProcessElevated",
+    "prototype": "",
+    "rank_score": 815,
+    "size": 177,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SepSddlAddAceToAcl",
+    "ea": "0x140024ae0",
+    "function_file": "functions/140024ae0_SepSddlAddAceToAcl.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlAddAccessAllowedAce",
+      "ntoskrnl!RtlLengthSid"
+    ],
+    "matched_strings": [],
+    "name": "SepSddlAddAceToAcl",
+    "prototype": "__int64 __fastcall(int, int, int, int, ACCESS_MASK AccessMask, int, PSID Sid)",
+    "rank_score": 815,
+    "size": 235,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "VfsDeleteMappingPrefixTable",
+    "ea": "0x140008a04",
+    "function_file": "functions/140008a04_VfsDeleteMappingPrefixTable.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExFreeToPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "VfsDeleteMappingPrefixTable",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 815,
+    "size": 156,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "VfsSetRenameInformation",
+    "ea": "0x1400111ec",
+    "function_file": "functions/1400111ec_VfsSetRenameInformation.md",
+    "matched_imports": [
+      "FLTMGR!FltAllocateCallbackData",
+      "FLTMGR!FltFreeCallbackData",
+      "FLTMGR!FltPerformSynchronousIo",
+      "FLTMGR!FltSetInformationFile"
+    ],
+    "matched_strings": [],
+    "name": "VfsSetRenameInformation",
+    "prototype": "",
+    "rank_score": 814,
+    "size": 256,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "VfsAllocateDirQueryContext",
+    "ea": "0x1400073a4",
+    "function_file": "functions/1400073a4_VfsAllocateDirQueryContext.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocateFromPagedLookasideList",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreeToPagedLookasideList",
+      "ntoskrnl!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "VfsAllocateDirQueryContext",
+    "prototype": "",
+    "rank_score": 813,
+    "size": 226,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "VfsUpdateFileSizes",
+    "ea": "0x14000f5b4",
+    "function_file": "functions/14000f5b4_VfsUpdateFileSizes.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex"
+    ],
+    "matched_strings": [],
+    "name": "VfsUpdateFileSizes",
+    "prototype": "",
+    "rank_score": 813,
+    "size": 118,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "VfsCleanupPrefixTreeLibrary",
+    "ea": "0x1400086e8",
+    "function_file": "functions/1400086e8_VfsCleanupPrefixTreeLibrary.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeletePagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "VfsCleanupPrefixTreeLibrary",
+    "prototype": "",
+    "rank_score": 811,
+    "size": 93,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "VfsRenameNativeFileToVirtualTarget",
+    "ea": "0x14000c574",
+    "function_file": "functions/14000c574_VfsRenameNativeFileToVirtualTarget.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltObjectDereference"
+    ],
+    "matched_strings": [],
+    "name": "VfsRenameNativeFileToVirtualTarget",
+    "prototype": "__int64 __fastcall(int)",
+    "rank_score": 810,
+    "size": 384,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "VfsGenerateMappedName",
+    "ea": "0x140008aa8",
+    "function_file": "functions/140008aa8_VfsGenerateMappedName.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "VfsGenerateMappedName",
+    "prototype": "",
+    "rank_score": 806,
+    "size": 339,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "VfsUnMapName",
+    "ea": "0x14000947c",
+    "function_file": "functions/14000947c_VfsUnMapName.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "VfsUnMapName",
+    "prototype": "__int64 __fastcall(int, int, int, int, PUNICODE_STRING DestinationString)",
+    "rank_score": 806,
+    "size": 253,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "VfsGetVolumeName",
+    "ea": "0x14001171c",
+    "function_file": "functions/14001171c_VfsGetVolumeName.md",
+    "matched_imports": [
+      "FLTMGR!FltGetVolumeName",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "VfsGetVolumeName",
+    "prototype": "__int64 __fastcall(PFLT_VOLUME Volume, PUNICODE_STRING VolumeName)",
+    "rank_score": 805,
+    "size": 201,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "VfsRemoveMappings",
+    "ea": "0x1400093f0",
+    "function_file": "functions/1400093f0_VfsRemoveMappings.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "VfsRemoveMappings",
+    "prototype": "",
+    "rank_score": 805,
+    "size": 132,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "DeleteMappingNames",
+    "ea": "0x140013844",
+    "function_file": "functions/140013844_DeleteMappingNames.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "DeleteMappingNames",
+    "prototype": "",
+    "rank_score": 804,
+    "size": 150,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "VfsAppendFileName",
+    "ea": "0x1400108b8",
+    "function_file": "functions/1400108b8_VfsAppendFileName.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "VfsAppendFileName",
+    "prototype": "__int64 __fastcall(PUNICODE_STRING Destination, PCUNICODE_STRING Source)",
+    "rank_score": 804,
+    "size": 308,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "VfsScbUnitCreateScb",
+    "ea": "0x14000dfe8",
+    "function_file": "functions/14000dfe8_VfsScbUnitCreateScb.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "VfsScbUnitCreateScb",
+    "prototype": "",
+    "rank_score": 804,
+    "size": 178,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "VfsLinkCcb",
+    "ea": "0x14000d7b8",
+    "function_file": "functions/14000d7b8_VfsLinkCcb.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "VfsLinkCcb",
+    "prototype": "",
+    "rank_score": 803,
+    "size": 168,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "VfsScbUnitOpenScb",
+    "ea": "0x14000e0a0",
+    "function_file": "functions/14000e0a0_VfsScbUnitOpenScb.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceSharedLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "VfsScbUnitOpenScb",
+    "prototype": "",
+    "rank_score": 803,
+    "size": 105,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "VfsCleanupStreamContext",
+    "ea": "0x140001ce0",
+    "function_file": "functions/140001ce0_VfsCleanupStreamContext.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteResourceLite",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlDeleteElementGenericTableAvl",
+      "ntoskrnl!RtlEnumerateGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "VfsCleanupStreamContext",
+    "prototype": "",
+    "rank_score": 802,
+    "size": 133,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "IopDevObjApplyPostCreationSettings",
+    "ea": "0x140024924",
+    "function_file": "functions/140024924_IopDevObjApplyPostCreationSettings.md",
+    "matched_imports": [
+      "ntoskrnl!IoDeviceObjectType",
+      "ntoskrnl!ObOpenObjectByPointer",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwSetSecurityObject"
+    ],
+    "matched_strings": [],
+    "name": "IopDevObjApplyPostCreationSettings",
+    "prototype": "__int64 __fastcall(PVOID Object)",
+    "rank_score": 734,
+    "size": 239,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "VfsCreateForCreate",
+    "ea": "0x1400046bc",
+    "function_file": "functions/1400046bc_VfsCreateForCreate.md",
+    "matched_imports": [
+      "FLTMGR!FltGetInstanceContext",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!IoReplaceFileObjectName"
+    ],
+    "matched_strings": [
+      "VfsCreateForCreate() - Failed to get instance context for instance: %p\n Status: 0x%08X",
+      "VfsCreateForCreate() - Failed to create parent directories for %wZ\n Status: 0x%08X"
+    ],
+    "name": "VfsCreateForCreate",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA CallbackData)",
+    "rank_score": 721,
+    "size": 754,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "VfsCreateFileByCallbackData",
+    "ea": "0x14000fae0",
+    "function_file": "functions/14000fae0_VfsCreateFileByCallbackData.md",
+    "matched_imports": [
+      "FLTMGR!FltCreateFileEx2",
+      "FLTMGR!FltGetEcpListFromCallbackData",
+      "ntoskrnl!IoIsFileObjectIgnoringSharing"
+    ],
+    "matched_strings": [
+      "VfsCreateFileByCallbackData() - Failed to create file by callback data: %wZ\n Access:0x%08X\n ShareAccess:0x%08X\n Attributes:0x%08X\n CreateDisposition:0x%08X\n CreateOptions:0x%08X\n CreateFlags:0x%08X\n Status: 0x%08X"
+    ],
+    "name": "VfsCreateFileByCallbackData",
+    "prototype": "__int64 __usercall@<rax>(PFLT_CALLBACK_DATA CallbackData@<rcx>, char, char, char, PIO_STATUS_BLOCK, PHANDLE FileHandle, PFILE_OBJECT *FileObject)",
+    "rank_score": 697,
+    "size": 591,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "IoDevObjCreateDeviceSecure",
+    "ea": "0x140024790",
+    "function_file": "functions/140024790_IoDevObjCreateDeviceSecure.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoCreateDevice",
+      "ntoskrnl!IoDeleteDevice"
+    ],
+    "matched_strings": [],
+    "name": "IoDevObjCreateDeviceSecure",
+    "prototype": "__int64 __usercall@<rax>(PDRIVER_OBJECT DriverObject@<rcx>, int, char, __int64, __int64, PDEVICE_OBJECT)",
+    "rank_score": 658,
+    "size": 395,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "FreeSidString",
+    "ea": "0x14001295c",
+    "function_file": "functions/14001295c_FreeSidString.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!RtlFreeUnicodeString"
+    ],
+    "matched_strings": [
+      "FreeSidString() called at IRQL > PASSIVE_LEVEL. The caller should refactorthe log message so this method is only called at IRQL == PASSIVE_LEVEL."
+    ],
+    "name": "FreeSidString",
+    "prototype": "__int64 __fastcall(PUNICODE_STRING UnicodeString)",
+    "rank_score": 653,
+    "size": 82,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "VfsInstanceQueryTeardown",
+    "ea": "0x1400241a0",
+    "function_file": "functions/1400241a0_VfsInstanceQueryTeardown.md",
+    "matched_imports": [
+      "FLTMGR!FltGetInstanceContext",
+      "FLTMGR!FltReleaseContext"
+    ],
+    "matched_strings": [
+      "VfsInstanceQueryTeardown() - VFS volume detach is not allowed for volume: %wZ\n because of opened files: %d"
+    ],
+    "name": "VfsInstanceQueryTeardown",
+    "prototype": "",
+    "rank_score": 653,
+    "size": 163,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "VfsQueryDirectoryFileName",
+    "ea": "0x1400107c8",
+    "function_file": "functions/1400107c8_VfsQueryDirectoryFileName.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltQueryDirectoryFile",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [
+      "VfsQueryDirectoryFileName() - Failed to open file: %wZ\n Status: 0x%08X"
+    ],
+    "name": "VfsQueryDirectoryFileName",
+    "prototype": "__int64 __usercall@<rax>(PFLT_INSTANCE Instance@<rcx>, ULONG Length)",
+    "rank_score": 647,
+    "size": 234,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 21,
+    "demangled": "VfsReleaseMappingEntry",
+    "ea": "0x140009368",
+    "function_file": "functions/140009368_VfsReleaseMappingEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "VfsReleaseMappingEntry",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 645,
+    "size": 128,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "VfsMessageCommonValidate",
+    "ea": "0x140009b0c",
+    "function_file": "functions/140009b0c_VfsMessageCommonValidate.md",
+    "matched_imports": [
+      "ntoskrnl!RtlGUIDFromString",
+      "ntoskrnl!RtlValidSid"
+    ],
+    "matched_strings": [],
+    "name": "VfsMessageCommonValidate",
+    "prototype": "",
+    "rank_score": 628,
+    "size": 559,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "VfsProcessRename",
+    "ea": "0x14000c1b4",
+    "function_file": "functions/14000c1b4_VfsProcessRename.md",
+    "matched_imports": [
+      "AppvVemgr!VeMgrLookupProcess",
+      "ntoskrnl!PsGetCurrentProcessId",
+      "ntoskrnl!PsGetCurrentThreadId"
+    ],
+    "matched_strings": [],
+    "name": "VfsProcessRename",
+    "prototype": "__int64 __fastcall(int)",
+    "rank_score": 626,
+    "size": 591,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "VfsDeleteCleanupCompletionContext",
+    "ea": "0x140001b2c",
+    "function_file": "functions/140001b2c_VfsDeleteCleanupCompletionContext.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExFreeToPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "VfsDeleteCleanupCompletionContext",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 623,
+    "size": 89,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "VfsDeleteSecurityDescriptors",
+    "ea": "0x14000e850",
+    "function_file": "functions/14000e850_VfsDeleteSecurityDescriptors.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!SeDeassignSecurity"
+    ],
+    "matched_strings": [],
+    "name": "VfsDeleteSecurityDescriptors",
+    "prototype": "",
+    "rank_score": 623,
+    "size": 120,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "VfsUserCtxTableElementCompare",
+    "ea": "0x140005a80",
+    "function_file": "functions/140005a80_VfsUserCtxTableElementCompare.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory",
+      "ntoskrnl!RtlLengthSid"
+    ],
+    "matched_strings": [],
+    "name": "VfsUserCtxTableElementCompare",
+    "prototype": "RTL_AVL_COMPARE_ROUTINE",
+    "rank_score": 622,
+    "size": 134,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "VfsCreateContextNormalize",
+    "ea": "0x14000437c",
+    "function_file": "functions/14000437c_VfsCreateContextNormalize.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "VfsCreateContextNormalize",
+    "prototype": "",
+    "rank_score": 618,
+    "size": 256,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "VfsPreDirectoryCtrlEx",
+    "ea": "0x140001530",
+    "function_file": "functions/140001530_VfsPreDirectoryCtrlEx.md",
+    "matched_imports": [
+      "FLTMGR!FltGetStreamHandleContext",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!EtwActivityIdControl"
+    ],
+    "matched_strings": [],
+    "name": "VfsPreDirectoryCtrlEx",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA Data)",
+    "rank_score": 618,
+    "size": 335,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "VfsRenameFile",
+    "ea": "0x140011134",
+    "function_file": "functions/140011134_VfsRenameFile.md",
+    "matched_imports": [
+      "FLTMGR!FltSetInformationFile",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "VfsRenameFile",
+    "prototype": "__int64 __usercall@<rax>(PFLT_INSTANCE Instance@<rcx>, PFILE_OBJECT FileObject@<rdx>, char)",
+    "rank_score": 617,
+    "size": 178,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "VfsPkgCtxRelease",
+    "ea": "0x140005888",
+    "function_file": "functions/140005888_VfsPkgCtxRelease.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteResourceLite",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExFreeToPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "VfsPkgCtxRelease",
+    "prototype": "",
+    "rank_score": 616,
+    "size": 117,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CreateMappingName",
+    "ea": "0x14001360c",
+    "function_file": "functions/14001360c_CreateMappingName.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "CreateMappingName",
+    "prototype": "__int64 __fastcall(PCUNICODE_STRING SourceString)",
+    "rank_score": 615,
+    "size": 346,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VfsCreateMappingPrefixTable",
+    "ea": "0x140008910",
+    "function_file": "functions/140008910_VfsCreateMappingPrefixTable.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocateFromPagedLookasideList",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "VfsCreateMappingPrefixTable",
+    "prototype": "__int64 __fastcall(PCUNICODE_STRING SourceString)",
+    "rank_score": 615,
+    "size": 235,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 7,
+    "demangled": "VfsGetMappedTarget",
+    "ea": "0x140008c04",
+    "function_file": "functions/140008c04_VfsGetMappedTarget.md",
+    "matched_imports": [
+      "FLTMGR!FltObjectReference",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlEqualUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "VfsGetMappedTarget",
+    "prototype": "__int64 __usercall@<rax>(PVOID FltObject@<rcx>, __int64, __int64)",
+    "rank_score": 615,
+    "size": 323,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "VfsCopyStreamData",
+    "ea": "0x1400028d4",
+    "function_file": "functions/1400028d4_VfsCopyStreamData.md",
+    "matched_imports": [
+      "FLTMGR!FltReadFile",
+      "FLTMGR!FltSetInformationFile",
+      "FLTMGR!FltWriteFile"
+    ],
+    "matched_strings": [],
+    "name": "VfsCopyStreamData",
+    "prototype": "__int64 __fastcall(PFLT_INSTANCE InitiatingInstance, PFILE_OBJECT FileObject, PFLT_INSTANCE, PFILE_OBJECT, __int64 FileInformation, PVOID Buffer, ULONG)",
+    "rank_score": 614,
+    "size": 275,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "VfsDeleteControlDevice",
+    "ea": "0x140008584",
+    "function_file": "functions/140008584_VfsDeleteControlDevice.md",
+    "matched_imports": [
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!IoDeleteSymbolicLink",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "VfsDeleteControlDevice",
+    "prototype": "",
+    "rank_score": 612,
+    "size": 99,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "VfsCreateStreamHandleContext",
+    "ea": "0x140001fb4",
+    "function_file": "functions/140001fb4_VfsCreateStreamHandleContext.md",
+    "matched_imports": [
+      "FLTMGR!FltAllocateContext",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltSetStreamHandleContext"
+    ],
+    "matched_strings": [],
+    "name": "VfsCreateStreamHandleContext",
+    "prototype": "__int64 __fastcall(PFLT_INSTANCE Instance, PFILE_OBJECT FileObject)",
+    "rank_score": 604,
+    "size": 196,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "VfsCreateMappingEntry",
+    "ea": "0x14000874c",
+    "function_file": "functions/14000874c_VfsCreateMappingEntry.md",
+    "matched_imports": [
+      "FLTMGR!FltObjectDereference",
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [
+      "VfsCreateMappingEntry() - Failed to get device volume name for volume: %wZ\n Status: 0x%08X",
+      "VfsCreateMappingEntry() - Failed to get instance for volume: %wZ\n Status: 0x%08X",
+      "VfsCreateMappingEntry() - Failed to create security descriptors for directory: %wZ\n Status: 0x%08X"
+    ],
+    "name": "VfsCreateMappingEntry",
+    "prototype": "__int64 __usercall@<rax>(PCUNICODE_STRING VolumeName@<rcx>, __int64, __int64, __int64, __int64)",
+    "rank_score": 552,
+    "size": 443,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SepSddlGetSidForString",
+    "ea": "0x140025078",
+    "function_file": "functions/140025078_SepSddlGetSidForString.md",
+    "matched_imports": [
+      "ntoskrnl!IoIsWdmVersionAvailable",
+      "ntoskrnl!SeExports",
+      "ntoskrnl!_wcsnicmp"
+    ],
+    "matched_strings": [],
+    "name": "SepSddlGetSidForString",
+    "prototype": "__int64 __fastcall(wchar_t *Str1)",
+    "rank_score": 513,
+    "size": 172,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "VfsDecodeFileHandle",
+    "ea": "0x14000f058",
+    "function_file": "functions/14000f058_VfsDecodeFileHandle.md",
+    "matched_imports": [
+      "ntoskrnl!IoFileObjectType",
+      "ntoskrnl!ObReferenceObjectByHandle",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "VfsDecodeFileHandle",
+    "prototype": "",
+    "rank_score": 507,
+    "size": 198,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 5,
+    "demangled": "VfsMarkFileDeleted",
+    "ea": "0x14000f7ac",
+    "function_file": "functions/14000f7ac_VfsMarkFileDeleted.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [
+      "VfsMarkFileDeleted() - Failed to open file: %wZ\n Status: 0x%08X",
+      "VfsMarkFileDeleted() - Failed to mark tombstone file: %wZ\n Status: 0x%08X"
+    ],
+    "name": "VfsMarkFileDeleted",
+    "prototype": "__int64 __usercall@<rax>(PFLT_INSTANCE Instance@<rcx>, char)",
+    "rank_score": 490,
+    "size": 241,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 3,
+    "demangled": "VfsRenamePackageFile",
+    "ea": "0x14000c6fc",
+    "function_file": "functions/14000c6fc_VfsRenamePackageFile.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseFileNameInformation"
+    ],
+    "matched_strings": [
+      "VfsRenamePackageFile() - Failed to get filename info for fileobject: %p\n IRP: %d\n Status: 0x%08X"
+    ],
+    "name": "VfsRenamePackageFile",
+    "prototype": "",
+    "rank_score": 474,
+    "size": 449,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "VfsRenameStoreFile",
+    "ea": "0x14000c8c4",
+    "function_file": "functions/14000c8c4_VfsRenameStoreFile.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseFileNameInformation"
+    ],
+    "matched_strings": [
+      "VfsRenameStoreFile() - Failed to get filename info for fileobject: %p\n IRP: %d\n Status: 0x%08X"
+    ],
+    "name": "VfsRenameStoreFile",
+    "prototype": "",
+    "rank_score": 461,
+    "size": 349,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "PiRegStateOpenClassKey",
+    "ea": "0x1400253a8",
+    "function_file": "functions/1400253a8_PiRegStateOpenClassKey.md",
+    "matched_imports": [
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!_snwprintf"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Class"
+    ],
+    "name": "PiRegStateOpenClassKey",
+    "prototype": "",
+    "rank_score": 459,
+    "size": 395,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VfsDeleteFile",
+    "ea": "0x140010654",
+    "function_file": "functions/140010654_VfsDeleteFile.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [
+      "VfsDeleteFile() - Failed to open file: %wZ\n Status: 0x%08X"
+    ],
+    "name": "VfsDeleteFile",
+    "prototype": "",
+    "rank_score": 455,
+    "size": 176,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "VfsCreateDirQueryContext",
+    "ea": "0x1400074f4",
+    "function_file": "functions/1400074f4_VfsCreateDirQueryContext.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseFileNameInformation"
+    ],
+    "matched_strings": [
+      "VfsCreateDirQueryContext() - Failed to get filename info for data: %p\n IRP: %d\n Status: 0x%08X"
+    ],
+    "name": "VfsCreateDirQueryContext",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA CallbackData)",
+    "rank_score": 451,
+    "size": 469,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "VfsCreateSection",
+    "ea": "0x14000e37c",
+    "function_file": "functions/14000e37c_VfsCreateSection.md",
+    "matched_imports": [
+      "ntoskrnl!ZwCreateSection"
+    ],
+    "matched_strings": [],
+    "name": "VfsCreateSection",
+    "prototype": "__int64 __fastcall(HANDLE FileHandle)",
+    "rank_score": 443,
+    "size": 181,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "VfsNormalizeNameComponentEx",
+    "ea": "0x14000a5a0",
+    "function_file": "functions/14000a5a0_VfsNormalizeNameComponentEx.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreeToPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "VfsNormalizeNameComponentEx",
+    "prototype": "__int64 __usercall@<rax>(PFLT_INSTANCE Instance@<rcx>, __int64, __int64, ULONG, int, __int64)",
+    "rank_score": 439,
+    "size": 476,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SeSddlSecurityDescriptorFromSDDL",
+    "ea": "0x140024a1c",
+    "function_file": "functions/140024a1c_SeSddlSecurityDescriptorFromSDDL.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "SeSddlSecurityDescriptorFromSDDL",
+    "prototype": "",
+    "rank_score": 426,
+    "size": 188,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "VfsIsExcludedExtension",
+    "ea": "0x140007bac",
+    "function_file": "functions/140007bac_VfsIsExcludedExtension.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareUnicodeString",
+      "ntoskrnl!RtlUpcaseUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "VfsIsExcludedExtension",
+    "prototype": "__int64 __fastcall(PCUNICODE_STRING SourceString)",
+    "rank_score": 425,
+    "size": 202,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "VfsDeleteCreateCompletionContext",
+    "ea": "0x140005308",
+    "function_file": "functions/140005308_VfsDeleteCreateCompletionContext.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExFreeToPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "VfsDeleteCreateCompletionContext",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 424,
+    "size": 75,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "VfsGetChildSecurityDescriptor",
+    "ea": "0x14000e8d0",
+    "function_file": "functions/14000e8d0_VfsGetChildSecurityDescriptor.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetFileObjectGenericMapping",
+      "ntoskrnl!SeAssignSecurityEx"
+    ],
+    "matched_strings": [],
+    "name": "VfsGetChildSecurityDescriptor",
+    "prototype": "__int64 __fastcall(PSECURITY_DESCRIPTOR ParentDescriptor)",
+    "rank_score": 421,
+    "size": 109,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "PpRegStateReadCreateClassCreationSettings",
+    "ea": "0x140025724",
+    "function_file": "functions/140025724_PpRegStateReadCreateClassCreationSettings.md",
+    "matched_imports": [
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "PpRegStateReadCreateClassCreationSettings",
+    "prototype": "",
+    "rank_score": 420,
+    "size": 356,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "PrefixTreeAllocator::deallocate(void *,unsigned __int64)",
+    "ea": "0x140011b14",
+    "function_file": "functions/140011b14_PrefixTreeAllocator_deallocate_void_unsigned_int64.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExFreeToPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "?deallocate@PrefixTreeAllocator@@SAXPEAX_K@Z",
+    "prototype": "void __fastcall(PVOID Entry, unsigned __int64)",
+    "rank_score": 414,
+    "size": 128,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "VfsScbUpdateMapping",
+    "ea": "0x14000e110",
+    "function_file": "functions/14000e110_VfsScbUpdateMapping.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex"
+    ],
+    "matched_strings": [],
+    "name": "VfsScbUpdateMapping",
+    "prototype": "",
+    "rank_score": 414,
+    "size": 115,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "VfsUpdateDirQueryContext",
+    "ea": "0x140007acc",
+    "function_file": "functions/140007acc_VfsUpdateDirQueryContext.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "VfsUpdateDirQueryContext",
+    "prototype": "",
+    "rank_score": 414,
+    "size": 217,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "ConvertSidToString",
+    "ea": "0x140012880",
+    "function_file": "functions/140012880_ConvertSidToString.md",
+    "matched_imports": [
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!RtlConvertSidToUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "ConvertSidToString",
+    "prototype": "__int64 __fastcall(PSID Sid, PUNICODE_STRING UnicodeString)",
+    "rank_score": 413,
+    "size": 74,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "PrefixTreeAllocator::allocate(unsigned __int64,bool)",
+    "ea": "0x140011a90",
+    "function_file": "functions/140011a90_PrefixTreeAllocator_allocate_unsigned_int64_bool.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocateFromPagedLookasideList",
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "?allocate@PrefixTreeAllocator@@SAPEAX_K_N@Z",
+    "prototype": "void *__fastcall(unsigned __int64, bool)",
+    "rank_score": 413,
+    "size": 124,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "VfsCreateInitialNameForNormalize",
+    "ea": "0x1400109f4",
+    "function_file": "functions/1400109f4_VfsCreateInitialNameForNormalize.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "VfsCreateInitialNameForNormalize",
+    "prototype": "__int64 __fastcall(PCUNICODE_STRING SourceString)",
+    "rank_score": 413,
+    "size": 173,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "VfsScbGetMapping",
+    "ea": "0x14000d9cc",
+    "function_file": "functions/14000d9cc_VfsScbGetMapping.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex"
+    ],
+    "matched_strings": [],
+    "name": "VfsScbGetMapping",
+    "prototype": "",
+    "rank_score": 410,
+    "size": 89,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "VfsRedirectIo",
+    "ea": "0x14000b11c",
+    "function_file": "functions/14000b11c_VfsRedirectIo.md",
+    "matched_imports": [
+      "FLTMGR!FltIsIoRedirectionAllowedForOperation",
+      "FLTMGR!FltSetCallbackDataDirty"
+    ],
+    "matched_strings": [],
+    "name": "VfsRedirectIo",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA Data)",
+    "rank_score": 407,
+    "size": 166,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "VfsAllocateCopyBuffer",
+    "ea": "0x140002228",
+    "function_file": "functions/140002228_VfsAllocateCopyBuffer.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "VfsAllocateCopyBuffer",
+    "prototype": "",
+    "rank_score": 403,
+    "size": 133,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "VfsPrepareMergeDirectory",
+    "ea": "0x140006710",
+    "function_file": "functions/140006710_VfsPrepareMergeDirectory.md",
+    "matched_imports": [
+      "ntoskrnl!MmMapLockedPagesSpecifyCache"
+    ],
+    "matched_strings": [
+      "VfsValidateDirQueryParameters() - Invalid directory query inforamtion class: %d",
+      "VfsValidateDirQueryParameters() - Directory query index is not supported",
+      "VfsPrepareMergeDirectory() - Failed to create directory query context",
+      "VfsPrepareMergeDirectory() - Multi async directory queries on the same directory are not supported"
+    ],
+    "name": "VfsPrepareMergeDirectory",
+    "prototype": "__int64 __usercall@<rax>(PFLT_CALLBACK_DATA CallbackData@<rcx>, __int64, __int64)",
+    "rank_score": 391,
+    "size": 640,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 1,
+    "demangled": "VfsMessageAddMappings",
+    "ea": "0x140009784",
+    "function_file": "functions/140009784_VfsMessageAddMappings.md",
+    "matched_imports": [
+      "ntoskrnl!RtlLengthSid"
+    ],
+    "matched_strings": [
+      "VfsMessageAddMappings() - Failed to get or create user context for user: %wZ\n Status: 0x%08X",
+      "VfsMessageAddMappings() - Failed to get or create package context for user: %wZ\n PackageId: %wZ\n VersionId: %wZ\n Status: 0x%08X",
+      "VfsMessageAddMappings() - Failed to create mapping from message for user: %wZ\n PackageId: %wZ\n VersionId: %wZ\n Status: 0x%08X"
+    ],
+    "name": "VfsMessageAddMappings",
+    "prototype": "",
+    "rank_score": 361,
+    "size": 898,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "VfsMessageRemoveMappings",
+    "ea": "0x140009d44",
+    "function_file": "functions/140009d44_VfsMessageRemoveMappings.md",
+    "matched_imports": [
+      "ntoskrnl!RtlLengthSid"
+    ],
+    "matched_strings": [
+      "VfsMessageRemoveMappings() - Failed to get user context for user: %wZ\n Status: 0x%08X",
+      "VfsMessageRemoveMappings() - Failed to get package context for user: %wZ\n PackageId: %wZ\n VersionId: %wZ\n Status: 0x%08X"
+    ],
+    "name": "VfsMessageRemoveMappings",
+    "prototype": "",
+    "rank_score": 316,
+    "size": 585,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "VfsWriteWorker",
+    "ea": "0x14000b1f0",
+    "function_file": "functions/14000b1f0_VfsWriteWorker.md",
+    "matched_imports": [
+      "FLTMGR!FltSetCallbackDataDirty"
+    ],
+    "matched_strings": [
+      "VfsWriteWorker() - Failed to delay copy file. Status: 0x%08X"
+    ],
+    "name": "VfsWriteWorker",
+    "prototype": "__int64 __usercall@<rax>(PFLT_CALLBACK_DATA Data@<rcx>, char)",
+    "rank_score": 257,
+    "size": 174,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VfsProcessDeleteFile",
+    "ea": "0x140005d34",
+    "function_file": "functions/140005d34_VfsProcessDeleteFile.md",
+    "matched_imports": [
+      "FLTMGR!FltSetInformationFile"
+    ],
+    "matched_strings": [
+      "VfsProcessDeleteFile() - Failed to delay copy file. Status: 0x%08X"
+    ],
+    "name": "VfsProcessDeleteFile",
+    "prototype": "",
+    "rank_score": 255,
+    "size": 140,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VfsProcessDeleteStoreDirectory",
+    "ea": "0x140006104",
+    "function_file": "functions/140006104_VfsProcessDeleteStoreDirectory.md",
+    "matched_imports": [
+      "FLTMGR!FltSetInformationFile"
+    ],
+    "matched_strings": [
+      "VfsProcessDeleteStoreDirectory() - Failed to check directory empty. Status: 0x%08X"
+    ],
+    "name": "VfsProcessDeleteStoreDirectory",
+    "prototype": "",
+    "rank_score": 255,
+    "size": 170,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "VfsInstanceTeardownComplete",
+    "ea": "0x140024310",
+    "function_file": "functions/140024310_VfsInstanceTeardownComplete.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [
+      "VfsInstanceTeardownComplete() - VFS detached from volume: %wZ"
+    ],
+    "name": "VfsInstanceTeardownComplete",
+    "prototype": "",
+    "rank_score": 253,
+    "size": 93,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 12,
+    "demangled": "VfsOpenFile",
+    "ea": "0x14001070c",
+    "function_file": "functions/14001070c_VfsOpenFile.md",
+    "matched_imports": [
+      "FLTMGR!FltCreateFileEx2"
+    ],
+    "matched_strings": [],
+    "name": "VfsOpenFile",
+    "prototype": "__int64 __usercall@<rax>(PFLT_INSTANCE Instance@<rcx>, ULONG, ULONG, PHANDLE FileHandle, PFILE_OBJECT *FileObject)",
+    "rank_score": 253,
+    "size": 181,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "VfsCreateForOverwrite",
+    "ea": "0x14000502c",
+    "function_file": "functions/14000502c_VfsCreateForOverwrite.md",
+    "matched_imports": [
+      "ntoskrnl!IoReplaceFileObjectName"
+    ],
+    "matched_strings": [],
+    "name": "VfsCreateForOverwrite",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA CallbackData)",
+    "rank_score": 251,
+    "size": 725,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CmRegUtilCreateWstrKey",
+    "ea": "0x140025b0c",
+    "function_file": "functions/140025b0c_CmRegUtilCreateWstrKey.md",
+    "matched_imports": [
+      "ntoskrnl!ZwCreateKey"
+    ],
+    "matched_strings": [],
+    "name": "CmRegUtilCreateWstrKey",
+    "prototype": "",
+    "rank_score": 245,
+    "size": 203,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "VfsCreateForOpen",
+    "ea": "0x1400049b4",
+    "function_file": "functions/1400049b4_VfsCreateForOpen.md",
+    "matched_imports": [
+      "ntoskrnl!IoReplaceFileObjectName"
+    ],
+    "matched_strings": [],
+    "name": "VfsCreateForOpen",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA CallbackData)",
+    "rank_score": 242,
+    "size": 863,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CmRegUtilOpenExistingWstrKey",
+    "ea": "0x140025be0",
+    "function_file": "functions/140025be0_CmRegUtilOpenExistingWstrKey.md",
+    "matched_imports": [
+      "ntoskrnl!ZwOpenKey"
+    ],
+    "matched_strings": [],
+    "name": "CmRegUtilOpenExistingWstrKey",
+    "prototype": "",
+    "rank_score": 235,
+    "size": 133,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "VfsDispatchDeviceIoControl",
+    "ea": "0x140008650",
+    "function_file": "functions/140008650_VfsDispatchDeviceIoControl.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "VfsDispatchDeviceIoControl",
+    "prototype": "",
+    "rank_score": 224,
+    "size": 144,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "VfsNormalizeNameContextCleanup",
+    "ea": "0x14000a790",
+    "function_file": "functions/14000a790_VfsNormalizeNameContextCleanup.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreeToPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "VfsNormalizeNameContextCleanup",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 222,
+    "size": 55,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "VfsPostReadWrite",
+    "ea": "0x14000a990",
+    "function_file": "functions/14000a990_VfsPostReadWrite.md",
+    "matched_imports": [
+      "FLTMGR!FltDoCompletionProcessingWhenSafe"
+    ],
+    "matched_strings": [],
+    "name": "VfsPostReadWrite",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA Data)",
+    "rank_score": 222,
+    "size": 138,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "VfsDispatchControl",
+    "ea": "0x1400085f0",
+    "function_file": "functions/1400085f0_VfsDispatchControl.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "VfsDispatchControl",
+    "prototype": "",
+    "rank_score": 221,
+    "size": 83,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "VfsLookupMappingForUserAndPackage",
+    "ea": "0x140009298",
+    "function_file": "functions/140009298_VfsLookupMappingForUserAndPackage.md",
+    "matched_imports": [
+      "ntoskrnl!RtlLengthSid"
+    ],
+    "matched_strings": [],
+    "name": "VfsLookupMappingForUserAndPackage",
+    "prototype": "__int64 __usercall@<rax>(PVOID Buffer@<rcx>, __int64)",
+    "rank_score": 219,
+    "size": 153,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "VfsDeleteDirQueryContext",
+    "ea": "0x140007a14",
+    "function_file": "functions/140007a14_VfsDeleteDirQueryContext.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreeToPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "VfsDeleteDirQueryContext",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 216,
+    "size": 43,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "VfsPreWriteEx",
+    "ea": "0x1400017e0",
+    "function_file": "functions/1400017e0_VfsPreWriteEx.md",
+    "matched_imports": [
+      "ntoskrnl!EtwActivityIdControl"
+    ],
+    "matched_strings": [],
+    "name": "VfsPreWriteEx",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA Data)",
+    "rank_score": 216,
+    "size": 219,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "VfsUserCtxRelease",
+    "ea": "0x1400059e8",
+    "function_file": "functions/1400059e8_VfsUserCtxRelease.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreeToPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "VfsUserCtxRelease",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 61,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VfsCreateNameNormalizationContext",
+    "ea": "0x140009f94",
+    "function_file": "functions/140009f94_VfsCreateNameNormalizationContext.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocateFromPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "VfsCreateNameNormalizationContext",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 238,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SepSddlDaclFromSDDLString",
+    "ea": "0x140024bd4",
+    "function_file": "functions/140024bd4_SepSddlDaclFromSDDLString.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "SepSddlDaclFromSDDLString",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 221,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "VfsPkgCtxTableElementAllocate",
+    "ea": "0x140005910",
+    "function_file": "functions/140005910_VfsPkgCtxTableElementAllocate.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocateFromPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "VfsPkgCtxTableElementAllocate",
+    "prototype": "",
+    "rank_score": 212,
+    "size": 57,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "VfsPkgCtxTableElementFree",
+    "ea": "0x1400059b0",
+    "function_file": "functions/1400059b0_VfsPkgCtxTableElementFree.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreeToPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "VfsPkgCtxTableElementFree",
+    "prototype": "",
+    "rank_score": 212,
+    "size": 47,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "VfsScbTableElementAllocate",
+    "ea": "0x14000dcd0",
+    "function_file": "functions/14000dcd0_VfsScbTableElementAllocate.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocateFromPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "VfsScbTableElementAllocate",
+    "prototype": "RTL_AVL_ALLOCATE_ROUTINE",
+    "rank_score": 212,
+    "size": 59,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "VfsUserCtxTableElementAllocate",
+    "ea": "0x140005a30",
+    "function_file": "functions/140005a30_VfsUserCtxTableElementAllocate.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocateFromPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "VfsUserCtxTableElementAllocate",
+    "prototype": "RTL_AVL_ALLOCATE_ROUTINE",
+    "rank_score": 212,
+    "size": 59,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "VfsUserCtxTableElementFree",
+    "ea": "0x140005b10",
+    "function_file": "functions/140005b10_VfsUserCtxTableElementFree.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreeToPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "VfsUserCtxTableElementFree",
+    "prototype": "RTL_AVL_FREE_ROUTINE",
+    "rank_score": 212,
+    "size": 47,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "VfsPkgCtxTableElementCompare",
+    "ea": "0x140005950",
+    "function_file": "functions/140005950_VfsPkgCtxTableElementCompare.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "VfsPkgCtxTableElementCompare",
+    "prototype": "",
+    "rank_score": 211,
+    "size": 80,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "appv::shared::vfs::named_avl_table<appv::shared::vfs::prefix_tree_name_entry<PrefixTreeContext>,PrefixTreeAllocator>::named_avl_compare(_RTL_AVL_TABLE *,void *,void *)",
+    "ea": "0x1400120b0",
+    "function_file": "functions/1400120b0_appv_shared_vfs_named_avl_table_appv_shared_vfs_prefix_tree_name_entry_PrefixTreeContext_PrefixTreeAllocator_n.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?named_avl_compare@?$named_avl_table@U?$prefix_tree_name_entry@VPrefixTreeContext@@@vfs@shared@appv@@VPrefixTreeAllocator@@@vfs@shared@appv@@CA?AW4_RTL_GENERIC_COMPARE_RESULTS@@PEAU_RTL_AVL_TABLE@@PEAX1@Z",
+    "prototype": "RTL_AVL_COMPARE_ROUTINE",
+    "rank_score": 211,
+    "size": 53,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "VfsScbTableElementFree",
+    "ea": "0x14000dde0",
+    "function_file": "functions/14000dde0_VfsScbTableElementFree.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreeToPagedLookasideList"
+    ],
+    "matched_strings": [],
+    "name": "VfsScbTableElementFree",
+    "prototype": "RTL_AVL_FREE_ROUTINE",
+    "rank_score": 210,
+    "size": 29,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "VfsGetRelativeNameByMapping",
+    "ea": "0x140008d50",
+    "function_file": "functions/140008d50_VfsGetRelativeNameByMapping.md",
+    "matched_imports": [
+      "ntoskrnl!RtlPrefixUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "VfsGetRelativeNameByMapping",
+    "prototype": "",
+    "rank_score": 209,
+    "size": 293,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "VfsCleanupDirQueryContext",
+    "ea": "0x14000748c",
+    "function_file": "functions/14000748c_VfsCleanupDirQueryContext.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "VfsCleanupDirQueryContext",
+    "prototype": "",
+    "rank_score": 205,
+    "size": 95,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "McGenEventWrite_EtwWriteTransfer",
+    "ea": "0x140001030",
+    "function_file": "functions/140001030_McGenEventWrite_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "McGenEventWrite_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 203,
+    "size": 89,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "VfsCheckFileDeleted",
+    "ea": "0x14000fa88",
+    "function_file": "functions/14000fa88_VfsCheckFileDeleted.md",
+    "matched_imports": [
+      "FLTMGR!FltQueryInformationFile"
+    ],
+    "matched_strings": [],
+    "name": "VfsCheckFileDeleted",
+    "prototype": "",
+    "rank_score": 203,
+    "size": 79,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "VfsProcessDeletePackageDirectory",
+    "ea": "0x140006064",
+    "function_file": "functions/140006064_VfsProcessDeletePackageDirectory.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "VfsProcessDeletePackageDirectory() - Failed to check directory empty. Status: 0x%08X",
+      "VfsProcessDeletePackageDirectory() - Failed to delay copy file. Status: 0x%08X"
+    ],
+    "name": "VfsProcessDeletePackageDirectory",
+    "prototype": "",
+    "rank_score": 96,
+    "size": 153,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 27,
+    "demangled": "__security_check_cookie",
+    "ea": "0x140013b00",
+    "function_file": "functions/140013b00_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "VfsCreateForOpenTargetDirectory",
+    "ea": "0x140004d1c",
+    "function_file": "functions/140004d1c_VfsCreateForOpenTargetDirectory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "VfsCreateForOpenTargetDirectory",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA CallbackData)",
+    "rank_score": 31,
+    "size": 776,
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 28,
+    "demangled": "memset",
+    "ea": "0x140014000",
+    "function_file": "functions/140014000_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 29,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x14001395c",
+    "function_file": "functions/14001395c_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x140027078",
+    "function_file": "functions/140027078_DriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 23,
+    "size": 29,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 22,
+    "demangled": "VfsDecodeFileObject",
+    "ea": "0x14000f124",
+    "function_file": "functions/14000f124_VfsDecodeFileObject.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "VfsDecodeFileObject",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 92,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GsDriverEntry",
+    "ea": "0x140027010",
+    "function_file": "functions/140027010_GsDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GsDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "VfsUpdateFileSizesWorker",
+    "ea": "0x14000b1d0",
+    "function_file": "functions/14000b1d0_VfsUpdateFileSizesWorker.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "VfsUpdateFileSizesWorker",
+    "prototype": "FLT_POSTOP_CALLBACK_STATUS __stdcall(PFLT_CALLBACK_DATA Data, PCFLT_RELATED_OBJECTS FltObjects, PVOID CompletionContext, FLT_POST_OPERATION_FLAGS Flags)",
+    "rank_score": 21,
+    "size": 24,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "VfsCheckTargetForRename",
+    "ea": "0x14000bbf4",
+    "function_file": "functions/14000bbf4_VfsCheckTargetForRename.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "VfsCheckTargetForRename",
+    "prototype": "",
+    "rank_score": 19,
+    "size": 465,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "McTemplateK0_EtwWriteTransfer",
+    "ea": "0x140001090",
+    "function_file": "functions/140001090_McTemplateK0_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 66,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x140013b40",
+    "function_file": "functions/140013b40_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "GetNumberComponents",
+    "ea": "0x14001322c",
+    "function_file": "functions/14001322c_GetNumberComponents.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetNumberComponents",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 98,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "VfsProcessDelete",
+    "ea": "0x140005c50",
+    "function_file": "functions/140005c50_VfsProcessDelete.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "VfsProcessDelete",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 219,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 10,
+    "demangled": "memmove",
+    "ea": "0x140013d00",
+    "function_file": "functions/140013d00_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 16,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "VfsCreateContextSetup",
+    "ea": "0x140004484",
+    "function_file": "functions/140004484_VfsCreateContextSetup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "VfsCreateContextSetup",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 267,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "VfsPostCreate",
+    "ea": "0x14000a960",
+    "function_file": "functions/14000a960_VfsPostCreate.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "VfsPostCreate",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 33,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "VfsUpdateOpenTargetDirectoryFileName",
+    "ea": "0x1400112f4",
+    "function_file": "functions/1400112f4_VfsUpdateOpenTargetDirectoryFileName.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "VfsUpdateOpenTargetDirectoryFileName",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 166,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "__security_init_cookie",
+    "ea": "0x140027044",
+    "function_file": "functions/140027044_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 13,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "VfsPreRedirect",
+    "ea": "0x14000ade0",
+    "function_file": "functions/14000ade0_VfsPreRedirect.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "VfsPreRedirect",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA Data)",
+    "rank_score": 8,
+    "size": 123,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "VfsQueryDirectoryEmpty",
+    "ea": "0x140006a60",
+    "function_file": "functions/140006a60_VfsQueryDirectoryEmpty.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "VfsQueryDirectoryEmpty",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 423,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "WdmlibRtlInitUnicodeStringEx",
+    "ea": "0x1400138e0",
+    "function_file": "functions/1400138e0_WdmlibRtlInitUnicodeStringEx.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WdmlibRtlInitUnicodeStringEx",
+    "prototype": "NTSTATUS __stdcall(PUNICODE_STRING DestinationString, PCWSTR SourceString)",
+    "rank_score": 8,
+    "size": 70,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VfsMergeDirectory",
+    "ea": "0x14000652c",
+    "function_file": "functions/14000652c_VfsMergeDirectory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "VfsMergeDirectory",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 475,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VfsCreateDirQueryContextLocal",
+    "ea": "0x1400076d0",
+    "function_file": "functions/1400076d0_VfsCreateDirQueryContextLocal.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "VfsCreateDirQueryContextLocal",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 355,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "VfsCreateMappingEntryFromMessage",
+    "ea": "0x140009580",
+    "function_file": "functions/140009580_VfsCreateMappingEntryFromMessage.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "VfsCreateMappingEntryFromMessage",
+    "prototype": "",
+    "rank_score": 6,
+    "size": 508,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "VfsQueryDirectory",
+    "ea": "0x140006998",
+    "function_file": "functions/140006998_VfsQueryDirectory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "VfsQueryDirectory",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA Data)",
+    "rank_score": 6,
+    "size": 191,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "CreateMappingNames",
+    "ea": "0x14001376c",
+    "function_file": "functions/14001376c_CreateMappingNames.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CreateMappingNames",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 207,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "VfsProcessLinkName",
+    "ea": "0x14000c100",
+    "function_file": "functions/14000c100_VfsProcessLinkName.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "VfsProcessLinkName",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 172,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "GetRemainingPath",
+    "ea": "0x140013294",
+    "function_file": "functions/140013294_GetRemainingPath.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetRemainingPath",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 234,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "McTemplateK0z_EtwWriteTransfer",
+    "ea": "0x140012fa0",
+    "function_file": "functions/140012fa0_McTemplateK0z_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0z_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 123,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "VfsCheckPackageDirectoryForRename",
+    "ea": "0x14000b2a4",
+    "function_file": "functions/14000b2a4_VfsCheckPackageDirectoryForRename.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "VfsCheckPackageDirectoryForRename",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 46,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "VfsCreateContextValidate",
+    "ea": "0x140004598",
+    "function_file": "functions/140004598_VfsCreateContextValidate.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "VfsCreateContextValidate",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 284,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "McGenControlCallbackV2",
+    "ea": "0x140008320",
+    "function_file": "functions/140008320_McGenControlCallbackV2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McGenControlCallbackV2",
+    "prototype": "void __stdcall(LPCGUID SourceId, ULONG ControlCode, UCHAR Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, PEVENT_FILTER_DESCRIPTOR FilterData, PVOID CallbackContext)",
+    "rank_score": 3,
+    "size": 255,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "VfsCheckVirtualTargetForRename",
+    "ea": "0x14000bdcc",
+    "function_file": "functions/14000bdcc_VfsCheckVirtualTargetForRename.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "VfsCheckVirtualTargetForRename",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 105,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "VfsPreRead",
+    "ea": "0x14000ad70",
+    "function_file": "functions/14000ad70_VfsPreRead.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "VfsPreRead",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA Data)",
+    "rank_score": 3,
+    "size": 106,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "VfsPreNetworkQueryOpen",
+    "ea": "0x14000ad00",
+    "function_file": "functions/14000ad00_VfsPreNetworkQueryOpen.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "VfsPreNetworkQueryOpen",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 56,
+    "tags": []
+  }
+]

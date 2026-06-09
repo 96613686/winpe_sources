@@ -1,0 +1,212 @@
+# PiRegStateOpenClassKey
+
+- ea: `0x18002bda8`
+- end: `0x18002bf33`
+- name: `PiRegStateOpenClassKey`
+- size: `395`
+- prototype: `NTSTATUS __fastcall(unsigned int *, __int64, int, ULONG *, _QWORD *)`
+- caller_count: `2`
+- callee_count: `4`
+- tags: `registry_config`
+
+## callers
+
+- `0x18002c124`
+- `0x18002c290`
+
+## callees
+
+- `0x18001baf0`
+- `0x18002bda8`
+- `0x18002c50c`
+- `0x18002c5e0`
+
+## import_xrefs
+
+- `ntoskrnl!ZwClose` at `0x18002bee9`
+- `ntoskrnl!ZwClose` at `0x18002bee9`
+- `ntoskrnl!_snwprintf` at `0x18002be89`
+- `ntoskrnl!_snwprintf` at `0x18002be89`
+
+## string_xrefs
+
+- `0x18002be02`: `\Registry\Machine\System\CurrentControlSet\Control\Class`
+
+## pseudocode
+
+```c
+NTSTATUS __fastcall PiRegStateOpenClassKey(unsigned int *a1, __int64 a2, int a3, ULONG *a4, _QWORD *a5)
+{
+  NTSTATUS result; // eax
+  __int64 v9; // r8
+  ULONG v10; // r9d
+  HANDLE v11; // rbx
+  NTSTATUS v12; // eax
+  ULONG v13; // esi
+  int v14; // edi
+  ULONG v15; // [rsp+70h] [rbp-61h] BYREF
+  HANDLE Handle; // [rsp+78h] [rbp-59h] BYREF
+  void *v17[2]; // [rsp+80h] [rbp-51h] BYREF
+  wchar_t Dest[40]; // [rsp+90h] [rbp-41h] BYREF
+
+  Handle = 0;
+  v17[0] = 0;
+  v15 = 0;
+  *a5 = 0;
+  if ( a4 )
+    *a4 = 0;
+  result = CmRegUtilOpenExistingWstrKey(
+             0,
+             L"\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Class",
+             131097,
+             &Handle);
+  if ( result >= 0 )
+  {
+    _snwprintf(
+      Dest,
+      0x27u,
+      L"{%08X-%04X-%04X-%02X%02X-%02X%02X%02X%02X%02X%02X}",
+      *a1,
+      *((unsigned __int16 *)a1 + 2),
+      *((unsigned __int16 *)a1 + 3),
+      *((unsigned __int8 *)a1 + 8),
+      *((unsigned __int8 *)a1 + 9),
+      *((unsigned __int8 *)a1 + 10),
+      *((unsigned __int8 *)a1 + 11),
+      *((unsigned __int8 *)a1 + 12),
+      *((unsigned __int8 *)a1 + 13),
+      *((unsigned __int8 *)a1 + 14),
+      *((unsigned __int8 *)a1 + 15));
+    v11 = Handle;
+    Dest[38] = 0;
+    if ( a3 )
+    {
+      v12 = CmRegUtilCreateWstrKey((__int64)Handle, Dest, v9, v10, 0, &v15, v17);
+      v13 = v15;
+    }
+    else
+    {
+      v12 = CmRegUtilOpenExistingWstrKey((__int64)Handle, Dest, 983103, v17);
+      v13 = 2;
+    }
+    v14 = v12;
+    ZwClose(v11);
+    if ( v14 >= 0 )
+    {
+      *a5 = v17[0];
+      if ( a4 )
+        *a4 = v13;
+    }
+    return v14;
+  }
+  return result;
+}
+
+```
+
+## disassembly
+
+```asm
+0x18002bda8  mov     [rsp-8+arg_8], rbx
+0x18002bdad  push    rbp
+0x18002bdae  push    rsi
+0x18002bdaf  push    rdi
+0x18002bdb0  push    r12
+0x18002bdb2  push    r13
+0x18002bdb4  push    r14
+0x18002bdb6  push    r15
+0x18002bdb8  lea     rbp, [rsp-1Fh]
+0x18002bdbd  sub     rsp, 0F0h
+0x18002bdc4  mov     rax, cs:__security_cookie
+0x18002bdcb  xor     rax, rsp
+0x18002bdce  mov     [rbp+4Fh+var_40], rax
+0x18002bdd2  mov     r12, [rbp+4Fh+arg_20]
+0x18002bdd6  xor     ebx, ebx
+0x18002bdd8  mov     [rbp+4Fh+Handle], rbx
+0x18002bddc  mov     r14, r9
+0x18002bddf  mov     [rbp+4Fh+var_A0], rbx
+0x18002bde3  mov     r13d, r8d
+0x18002bde6  mov     [rbp+4Fh+var_B0], ebx
+0x18002bde9  mov     r15, rcx
+0x18002bdec  mov     [r12], rbx
+0x18002bdf0  test    r9, r9
+0x18002bdf3  jz      short loc_18002BDF8
+0x18002bdf5  mov     [r9], ebx
+0x18002bdf8  lea     r9, [rbp+4Fh+Handle]
+0x18002bdfc  mov     r8d, 20019h
+0x18002be02  lea     rdx, aRegistryMachin_1; "\\Registry\\Machine\\System\\CurrentCon"...
+0x18002be09  xor     ecx, ecx
+0x18002be0b  call    CmRegUtilOpenExistingWstrKey
+0x18002be10  test    eax, eax
+0x18002be12  js      loc_18002BF0B
+0x18002be18  movzx   ecx, byte ptr [r15+0Eh]
+0x18002be1d  movzx   edx, byte ptr [r15+0Dh]
+0x18002be22  movzx   r8d, byte ptr [r15+0Ch]
+0x18002be27  movzx   r9d, byte ptr [r15+0Bh]
+0x18002be2c  movzx   eax, byte ptr [r15+0Fh]
+0x18002be31  movzx   r10d, byte ptr [r15+0Ah]
+0x18002be36  movzx   r11d, byte ptr [r15+9]
+0x18002be3b  movzx   ebx, byte ptr [r15+8]
+0x18002be40  movzx   edi, word ptr [r15+6]
+0x18002be45  movzx   esi, word ptr [r15+4]
+0x18002be4a  mov     [rsp+120h+var_B8], eax
+0x18002be4e  mov     [rsp+120h+var_C0], ecx
+0x18002be52  lea     rcx, [rbp+4Fh+Dest]; Dest
+0x18002be56  mov     [rsp+120h+var_C8], edx
+0x18002be5a  mov     edx, 27h ; '''; Count
+0x18002be5f  mov     [rsp+120h+var_D0], r8d
+0x18002be64  lea     r8, a08x04x04x02x02; "{%08X-%04X-%04X-%02X%02X-%02X%02X%02X%0"...
+0x18002be6b  mov     [rsp+120h+var_D8], r9d
+0x18002be70  mov     r9d, [r15]
+0x18002be73  mov     [rsp+120h+var_E0], r10d
+0x18002be78  mov     [rsp+120h+var_E8], r11d
+0x18002be7d  mov     dword ptr [rsp+120h+var_F0], ebx
+0x18002be81  mov     dword ptr [rsp+120h+var_F8], edi
+0x18002be85  mov     dword ptr [rsp+120h+var_100], esi
+0x18002be89  call    cs:__imp__snwprintf
+0x18002be90  nop     dword ptr [rax+rax+00h]
+0x18002be95  mov     rbx, [rbp+4Fh+Handle]
+0x18002be99  lea     rdx, [rbp+4Fh+Dest]
+0x18002be9d  xor     eax, eax
+0x18002be9f  mov     rcx, rbx
+0x18002bea2  mov     [rbp+4Fh+var_44], ax
+0x18002bea6  test    r13d, r13d
+0x18002bea9  jz      short loc_18002BED0
+0x18002beab  lea     rax, [rbp+4Fh+var_A0]
+0x18002beaf  mov     [rsp+120h+var_F0], rax
+0x18002beb4  lea     rax, [rbp+4Fh+var_B0]
+0x18002beb8  mov     [rsp+120h+var_F8], rax
+0x18002bebd  mov     [rsp+120h+var_100], 0
+0x18002bec6  call    CmRegUtilCreateWstrKey
+0x18002becb  mov     esi, [rbp+4Fh+var_B0]
+0x18002bece  jmp     short loc_18002BEE4
+0x18002bed0  lea     r9, [rbp+4Fh+var_A0]
+0x18002bed4  mov     r8d, 0F003Fh
+0x18002beda  call    CmRegUtilOpenExistingWstrKey
+0x18002bedf  mov     esi, 2
+0x18002bee4  mov     rcx, rbx; Handle
+0x18002bee7  mov     edi, eax
+0x18002bee9  call    cs:__imp_ZwClose
+0x18002bef0  nop     dword ptr [rax+rax+00h]
+0x18002bef5  test    edi, edi
+0x18002bef7  js      short loc_18002BF09
+0x18002bef9  mov     rax, [rbp+4Fh+var_A0]
+0x18002befd  mov     [r12], rax
+0x18002bf01  test    r14, r14
+0x18002bf04  jz      short loc_18002BF09
+0x18002bf06  mov     [r14], esi
+0x18002bf09  mov     eax, edi
+0x18002bf0b  mov     rcx, [rbp+4Fh+var_40]
+0x18002bf0f  xor     rcx, rsp; StackCookie
+0x18002bf12  call    __security_check_cookie
+0x18002bf17  mov     rbx, [rsp+120h+arg_8]
+0x18002bf1f  add     rsp, 0F0h
+0x18002bf26  pop     r15
+0x18002bf28  pop     r14
+0x18002bf2a  pop     r13
+0x18002bf2c  pop     r12
+0x18002bf2e  pop     rdi
+0x18002bf2f  pop     rsi
+0x18002bf30  pop     rbp
+0x18002bf31  retn
+```

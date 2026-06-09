@@ -1,0 +1,3690 @@
+[
+  {
+    "callee_count": 14,
+    "caller_count": 1,
+    "demangled": "Streaming::StreamingTargetFileCache::Open(appv::shared::kernel::managed_unicode_string<appv::shared::kernel::UnicodeString_allocator> const &,appv::shared::kernel::managed_unicode_string<appv::shared::kernel::UnicodeString_allocator> const &,_FLT_INSTANCE *,Streaming::InstanceContext &,kernel_std::shared_ptr<Streaming::StreamingTargetFileObject> &)",
+    "ea": "0x140011f30",
+    "function_file": "functions/140011f30_Streaming_StreamingTargetFileCache_Open_appv_shared_kernel_managed_unicode_string_appv_shared_kernel_UnicodeSt.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExAcquireResourceSharedLite",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "StreamingTargetFileCache::Open() - Streaming Filter could not open file for streaming file %s .Failure status 0x%08X.",
+      "StreamingTargetFileCache::Open() - received a write request for a file that's already streamed, file name %s.",
+      "StreamingTargetFileCache::Open() - Streaming filter could not track the streamable file '%s'. This can cause I/O failures. Please try to pre-stream the application. Failure status = 0x%08X."
+    ],
+    "name": "?Open@StreamingTargetFileCache@Streaming@@QEAAJAEBV?$managed_unicode_string@UUnicodeString_allocator@kernel@shared@appv@@@kernel@shared@appv@@0PEAU_FLT_INSTANCE@@AEAVInstanceContext@2@AEAV?$shared_ptr@VStreamingTargetFileObject@Streaming@@@kernel_std@@@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, struct _FLT_INSTANCE *, Streaming::InstanceContext *, Streaming::StreamingTargetFileObject **)",
+    "rank_score": 11358,
+    "size": 2983,
+    "tags": []
+  },
+  {
+    "callee_count": 17,
+    "caller_count": 2,
+    "demangled": "Streaming::StagingManager::StageDirectoryInternal(_FLT_INSTANCE *,_FILE_OBJECT &,_FLT_CALLBACK_DATA *)",
+    "ea": "0x14000a310",
+    "function_file": "functions/14000a310_Streaming_StagingManager_StageDirectoryInternal_FLT_INSTANCE_FILE_OBJECT_FLT_CALLBACK_DATA.md",
+    "matched_imports": [
+      "FLTMGR!FltGetStreamContext",
+      "FLTMGR!FltQueryInformationFile",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!EtwActivityIdControl",
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "StagingManager::StageDirectoryInternal() - Failed to retrieve directory context. Directory path %s, error code 0x%08X.",
+      "StagingManager::StageDirectoryInternal() - Failed to retrieve directory context. Directory path %s, error code 0x%08X.",
+      "StagingManager::StageDirectoryInternal() - Failed to stage file %s, error code 0x%08X."
+    ],
+    "name": "?StageDirectoryInternal@StagingManager@Streaming@@CAJPEAU_FLT_INSTANCE@@AEAU_FILE_OBJECT@@PEAU_FLT_CALLBACK_DATA@@@Z",
+    "prototype": "__int64 __fastcall(PFLT_INSTANCE Instance, PFILE_OBJECT FileObject, PFLT_CALLBACK_DATA CallbackData)",
+    "rank_score": 8966,
+    "size": 2239,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "Streaming::PackageWriter::QueryAllocationRanges(_UNICODE_STRING const &,_UNICODE_STRING &,_FILE_ALLOCATED_RANGE_BUFFER const &,_FILE_ALLOCATED_RANGE_BUFFER * const,ulong,ulong &)",
+    "ea": "0x140008dc4",
+    "function_file": "functions/140008dc4_Streaming_PackageWriter_QueryAllocationRanges_UNICODE_STRING_const_UNICODE_STRING_FILE_ALLOCATED_RANGE_BUFFER_.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "PackageWriter::QueryAllocationRanges() - Streaming Filter could not open file for streaming file %s. Failure status 0x%08X.",
+      "PackageWriter::QueryAllocationRanges() - Streaming filter could not track the streamable file '%s'. This can cause I/O failures. Please try to pre-stream the application. Failure status = 0x%08X."
+    ],
+    "name": "?QueryAllocationRanges@PackageWriter@Streaming@@SAJAEBU_UNICODE_STRING@@AEAU3@AEBU_FILE_ALLOCATED_RANGE_BUFFER@@QEAU4@KAEAK@Z",
+    "prototype": "__int64 __fastcall(const struct _UNICODE_STRING *, struct _UNICODE_STRING *, const struct _FILE_ALLOCATED_RANGE_BUFFER *, struct _FILE_ALLOCATED_RANGE_BUFFER *const, unsigned int, unsigned int *)",
+    "rank_score": 5503,
+    "size": 1423,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "appv::shared::kernel::ThreadPool<kernel_std::shared_ptr<Streaming::FlushRequestManager::FlushRequest>,Streaming::FlushRequestTagInfo>::Run(void)",
+    "ea": "0x1400044a0",
+    "function_file": "functions/1400044a0_appv_shared_kernel_ThreadPool_kernel_std_shared_ptr_Streaming_FlushRequestManager_FlushRequest_Streaming_Flush.md",
+    "matched_imports": [
+      "FLTMGR!FltFlushBuffers",
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeReleaseSemaphore",
+      "ntoskrnl!KeWaitForMultipleObjects",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!ObfReferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "?Run@?$ThreadPool@V?$shared_ptr@VFlushRequest@FlushRequestManager@Streaming@@@kernel_std@@VFlushRequestTagInfo@Streaming@@@kernel@shared@appv@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 4625,
+    "size": 1025,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "appv::shared::kernel::ThreadPool<kernel_std::shared_ptr<Streaming::WriteFault>,Streaming::WriteFaultTagInfo>::Run(void)",
+    "ea": "0x14000ebd0",
+    "function_file": "functions/14000ebd0_appv_shared_kernel_ThreadPool_kernel_std_shared_ptr_Streaming_WriteFault_Streaming_WriteFaultTagInfo_Run_void.md",
+    "matched_imports": [
+      "FLTMGR!FltCompletePendedPreOperation",
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeReleaseSemaphore",
+      "ntoskrnl!KeWaitForMultipleObjects",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!ObfReferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "?Run@?$ThreadPool@V?$shared_ptr@VWriteFault@Streaming@@@kernel_std@@VWriteFaultTagInfo@Streaming@@@kernel@shared@appv@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 4624,
+    "size": 993,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "appv::shared::kernel::ThreadPool<kernel_std::shared_ptr<Streaming::StreamFault>,Streaming::StreamFaultTagInfo>::Run(void)",
+    "ea": "0x14000e7f8",
+    "function_file": "functions/14000e7f8_appv_shared_kernel_ThreadPool_kernel_std_shared_ptr_Streaming_StreamFault_Streaming_StreamFaultTagInfo_Run_voi.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeReleaseSemaphore",
+      "ntoskrnl!KeWaitForMultipleObjects",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!ObfReferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "?Run@?$ThreadPool@V?$shared_ptr@VStreamFault@Streaming@@@kernel_std@@VStreamFaultTagInfo@Streaming@@@kernel@shared@appv@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 4414,
+    "size": 976,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "appv::shared::kernel::ThreadPool<kernel_std::shared_ptr<Streaming::StreamFaultWriter>,Streaming::PackageWriterTagInfo>::Run(void)",
+    "ea": "0x140006c08",
+    "function_file": "functions/140006c08_appv_shared_kernel_ThreadPool_kernel_std_shared_ptr_Streaming_StreamFaultWriter_Streaming_PackageWriterTagInfo.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeReleaseSemaphore",
+      "ntoskrnl!KeWaitForMultipleObjects",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!ObfReferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "?Run@?$ThreadPool@V?$shared_ptr@VStreamFaultWriter@Streaming@@@kernel_std@@VPackageWriterTagInfo@Streaming@@@kernel@shared@appv@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 4414,
+    "size": 976,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "appv::shared::kernel::ThreadPool<kernel_std::shared_ptr<Streaming::StreamFaultWriter>,Streaming::StreamFaultWriterTagInfo>::Run(void)",
+    "ea": "0x140006fe0",
+    "function_file": "functions/140006fe0_appv_shared_kernel_ThreadPool_kernel_std_shared_ptr_Streaming_StreamFaultWriter_Streaming_StreamFaultWriterTag.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeReleaseSemaphore",
+      "ntoskrnl!KeWaitForMultipleObjects",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!ObfReferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "?Run@?$ThreadPool@V?$shared_ptr@VStreamFaultWriter@Streaming@@@kernel_std@@VStreamFaultWriterTagInfo@Streaming@@@kernel@shared@appv@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 4414,
+    "size": 976,
+    "tags": []
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "Streaming::PackageWriter::WriteToStreamableFile(_UNICODE_STRING const &,_UNICODE_STRING const &,_LARGE_INTEGER,void *,ulong,uint,ulong &)",
+    "ea": "0x14000935c",
+    "function_file": "functions/14000935c_Streaming_PackageWriter_WriteToStreamableFile_UNICODE_STRING_const_UNICODE_STRING_const_LARGE_INTEGER_void_ulo.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "PackageWriter::WriteToStreamableFile() - Streaming Filter failed in writing to the file %s from offset %lld with data size %ld. Failure status 0x%08X."
+    ],
+    "name": "?WriteToStreamableFile@PackageWriter@Streaming@@SAJAEBU_UNICODE_STRING@@0T_LARGE_INTEGER@@PEAXKIAEAK@Z",
+    "prototype": "__int64 __fastcall(const struct _UNICODE_STRING *, const struct _UNICODE_STRING *, union _LARGE_INTEGER, void *, unsigned int, unsigned int, unsigned int *)",
+    "rank_score": 4261,
+    "size": 1258,
+    "tags": []
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "Streaming::Messaging::PackageLoader::CreateHardLink(_UNICODE_STRING const &,_UNICODE_STRING const &,_UNICODE_STRING const &)",
+    "ea": "0x140007c24",
+    "function_file": "functions/140007c24_Streaming_Messaging_PackageLoader_CreateHardLink_UNICODE_STRING_const_UNICODE_STRING_const_UNICODE_STRING_cons.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltSetInformationFile",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "PackageLoader::CreateHardLink() - Filter might not be attached to the volume. Couldn't find instance for volume %s . Failure Status 0x%08X.",
+      "PackageLoader::CreateHardLink() - Streaming Filter could not open file for streaming file %s .Failure status 0x%08X."
+    ],
+    "name": "?CreateHardLink@PackageLoader@Messaging@Streaming@@SAJAEBU_UNICODE_STRING@@00@Z",
+    "prototype": "__int64 __fastcall(const struct _UNICODE_STRING *, const struct _UNICODE_STRING *, const struct _UNICODE_STRING *)",
+    "rank_score": 3917,
+    "size": 954,
+    "tags": [
+      "file_ops",
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "Streaming::StrmFltInterface::CreateFile(_FLT_INSTANCE *,_FILE_OBJECT &,_FLT_CALLBACK_DATA &,appv::shared::kernel::auto_ptr<Streaming::StrmCreateContext,appv::shared::kernel::AllocDelete<Streaming::StrmCreateContext>> &)",
+    "ea": "0x140012b18",
+    "function_file": "functions/140012b18_Streaming_StrmFltInterface_CreateFile_FLT_INSTANCE_FILE_OBJECT_FLT_CALLBACK_DATA_appv_shared_kernel_auto_ptr_S.md",
+    "matched_imports": [
+      "FLTMGR!FltCancelFileOpen",
+      "FLTMGR!FltReissueSynchronousIo",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltSetCallbackDataDirty",
+      "ntoskrnl!EtwActivityIdControl",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoReplaceFileObjectName",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "StrmFltInterface::CreateFile() - Streaming filter could not track the streamable file '%s'. This can cause I/O failures. Please try to pre-stream the application. Failure status = 0x%08X."
+    ],
+    "name": "?CreateFile@StrmFltInterface@Streaming@@QEAAJPEAU_FLT_INSTANCE@@AEAU_FILE_OBJECT@@AEAU_FLT_CALLBACK_DATA@@AEAV?$auto_ptr@UStrmCreateContext@Streaming@@U?$AllocDelete@UStrmCreateContext@Streaming@@@kernel@shared@appv@@@kernel@shared@appv@@@Z",
+    "prototype": "__int64 __fastcall(__int64, struct _FLT_INSTANCE *, struct _FILE_OBJECT *, struct _FLT_CALLBACK_DATA *, __int64)",
+    "rank_score": 3293,
+    "size": 1297,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "Streaming::Context::DirectoryContextFactory::CreateStreamContext(_FLT_INSTANCE *,_FILE_OBJECT &,appv::shared::kernel::auto_ptr<Streaming::Context::DirectoryContext,Streaming::Context::ContextDelete> &)",
+    "ea": "0x1400023d8",
+    "function_file": "functions/1400023d8_Streaming_Context_DirectoryContextFactory_CreateStreamContext_FLT_INSTANCE_FILE_OBJECT_appv_shared_kernel_auto.md",
+    "matched_imports": [
+      "FLTMGR!FltAllocateContext",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltSetStreamContext",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExInitializeResourceLite"
+    ],
+    "matched_strings": [
+      "DirectoryContextFactory::CreateStreamContext() - Low memory error.",
+      "DirectoryContextFactory::CreateStreamContext() - Low memory error."
+    ],
+    "name": "?CreateStreamContext@DirectoryContextFactory@Context@Streaming@@SAJPEAU_FLT_INSTANCE@@AEAU_FILE_OBJECT@@AEAV?$auto_ptr@UDirectoryContext@Context@Streaming@@UContextDelete@23@@kernel@shared@appv@@@Z",
+    "prototype": "__int64 __fastcall(PFLT_INSTANCE Instance, PFILE_OBJECT FileObject, PFLT_CONTEXT *)",
+    "rank_score": 2693,
+    "size": 810,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Streaming::StreamFaultWriterWorker::StreamFaultWriterWorker(long &)",
+    "ea": "0x140004fec",
+    "function_file": "functions/140004fec_Streaming_StreamFaultWriterWorker_StreamFaultWriterWorker_long.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExInitializeResourceLite",
+      "ntoskrnl!KeInitializeSemaphore",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwCreateKey",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\Software\\Microsoft\\AppV\\Client\\Streaming",
+      "WriteQueueMaxSize"
+    ],
+    "name": "??0StreamFaultWriterWorker@Streaming@@AEAA@AEAJ@Z",
+    "prototype": "char *__fastcall(char *StartContext, int *)",
+    "rank_score": 2528,
+    "size": 664,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "Streaming::Context::StreamContextFactory::CreateStreamContext(_FLT_INSTANCE *,_UNICODE_STRING const &,_UNICODE_STRING const &,_FILE_OBJECT &,appv::shared::kernel::auto_ptr<Streaming::Context::StrmStreamContext,Streaming::Context::ContextDelete> &)",
+    "ea": "0x14000b748",
+    "function_file": "functions/14000b748_Streaming_Context_StreamContextFactory_CreateStreamContext_FLT_INSTANCE_UNICODE_STRING_const_UNICODE_STRING_co.md",
+    "matched_imports": [
+      "FLTMGR!FltAllocateContext",
+      "FLTMGR!FltReleaseContext",
+      "FLTMGR!FltSetStreamContext"
+    ],
+    "matched_strings": [
+      "StreamContextFactory::CreateStreamContext() - Low memory error.",
+      "StreamContextFactory::CreateStreamContext() - Streaming filter Failed in reading and creating file information. Failure status = 0x%08X.",
+      "StreamContextFactory::CreateStreamContext() - Streaming filter could not set the streaming information on file '%s'. Failure status = 0x%08X."
+    ],
+    "name": "?CreateStreamContext@StreamContextFactory@Context@Streaming@@SAJPEAU_FLT_INSTANCE@@AEBU_UNICODE_STRING@@1AEAU_FILE_OBJECT@@AEAV?$auto_ptr@UStrmStreamContext@Context@Streaming@@UContextDelete@23@@kernel@shared@appv@@@Z",
+    "prototype": "__int64 __fastcall(PFLT_INSTANCE Instance, struct _UNICODE_STRING *, struct _UNICODE_STRING *, PFILE_OBJECT FileObject, PFLT_CONTEXT *)",
+    "rank_score": 2337,
+    "size": 835,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "Streaming::MDLCache::~MDLCache(void)",
+    "ea": "0x1400133f4",
+    "function_file": "functions/1400133f4_Streaming_MDLCache_MDLCache_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeletePagedLookasideList",
+      "ntoskrnl!ExDeleteResourceLite",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??1MDLCache@Streaming@@QEAA@XZ",
+    "prototype": "void __fastcall(PPAGED_LOOKASIDE_LIST Lookaside)",
+    "rank_score": 2216,
+    "size": 326,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 1,
+    "demangled": "Streaming::InstanceContextFactory::CreateContext(_FLT_FILTER *,_FLT_INSTANCE *,_FLT_VOLUME *,Streaming::InstanceContext &)",
+    "ea": "0x14000571c",
+    "function_file": "functions/14000571c_Streaming_InstanceContextFactory_CreateContext_FLT_FILTER_FLT_INSTANCE_FLT_VOLUME_Streaming_InstanceContext.md",
+    "matched_imports": [
+      "FLTMGR!FltAllocateContext",
+      "FLTMGR!FltCbdqInitialize",
+      "FLTMGR!FltQueryVolumeInformation",
+      "FLTMGR!FltSetInstanceContext",
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [
+      "InstanceContextFactory::CreateContext() - Could not allocate context. Failure code 0x%08X.",
+      "InstanceContextFactory::CreateContext() - Couldn't get the dos name for the attached volume. Failure status = 0x%08X.",
+      "InstanceContextFactory::CreateContext() - The streaming filter could not retrieve volume name. Failure Status 0x%08X.",
+      "InstanceContextFactory::CreateContext() - Could not attach to volume. Failure code 0x%08X.",
+      "InstanceContextFactory::CreateContext() - Could not attach to volume. Failure code 0x%08X.",
+      "InstanceContextFactory::CreateContext() - Could not set an instance for a volume. Failure code 0x%08X."
+    ],
+    "name": "?CreateContext@InstanceContextFactory@Streaming@@QEAAJPEAU_FLT_FILTER@@PEAU_FLT_INSTANCE@@PEAU_FLT_VOLUME@@AEAVInstanceContext@2@@Z",
+    "prototype": "__int64 __fastcall(PERESOURCE *this, struct _FLT_FILTER *, struct _FLT_INSTANCE *, struct _FLT_VOLUME *, PFLT_CONTEXT *ReturnedContext)",
+    "rank_score": 2073,
+    "size": 1022,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Streaming::StreamFault::StreamFault(_FLT_CALLBACK_DATA &,_FLT_INSTANCE *,appv::shared::kernel::auto_ptr<Streaming::Context::StrmStreamContext,Streaming::Context::ContextDelete> &,_FILE_OBJECT &,appv::shared::kernel::managed_unicode_string<appv::shared::kernel::UnicodeString_allocator> &,long &)",
+    "ea": "0x14000be10",
+    "function_file": "functions/14000be10_Streaming_StreamFault_StreamFault_FLT_CALLBACK_DATA_FLT_INSTANCE_appv_shared_kernel_auto_ptr_Streaming_Context.md",
+    "matched_imports": [
+      "FLTMGR!FltCbdqInsertIo",
+      "FLTMGR!FltGetRequestorProcessIdEx",
+      "FLTMGR!FltReferenceContext",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!EtwActivityIdControl",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!ObfReferenceObject",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "??0StreamFault@Streaming@@QEAA@AEAU_FLT_CALLBACK_DATA@@PEAU_FLT_INSTANCE@@AEAV?$auto_ptr@UStrmStreamContext@Context@Streaming@@UContextDelete@23@@kernel@shared@appv@@AEAU_FILE_OBJECT@@AEAV?$managed_unicode_string@UUnicodeString_allocator@kernel@shared@appv@@@567@AEAJ@Z",
+    "prototype": "__int64 __fastcall(__int64, struct _FLT_CALLBACK_DATA *, struct _FLT_INSTANCE *, PFLT_CONTEXT *, PVOID Object, __int64, int *)",
+    "rank_score": 2028,
+    "size": 460,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 8,
+    "demangled": "appv::shared::kernel::ThreadPool<kernel_std::shared_ptr<Streaming::StreamFaultWriter>,Streaming::StreamFaultWriterTagInfo>::StopThreadPool(void)",
+    "ea": "0x1400073b8",
+    "function_file": "functions/1400073b8_appv_shared_kernel_ThreadPool_kernel_std_shared_ptr_Streaming_StreamFaultWriter_Streaming_StreamFaultWriterTag.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForMultipleObjects",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "?StopThreadPool@?$ThreadPool@V?$shared_ptr@VStreamFaultWriter@Streaming@@@kernel_std@@VStreamFaultWriterTagInfo@Streaming@@@kernel@shared@appv@@QEAAXXZ",
+    "prototype": "void __fastcall(__int64)",
+    "rank_score": 2016,
+    "size": 527,
+    "tags": []
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 2,
+    "demangled": "Streaming::StreamFaultWriter::Execute(void)",
+    "ea": "0x14000f244",
+    "function_file": "functions/14000f244_Streaming_StreamFaultWriter_Execute_void.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltFlushBuffers",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ObfDereferenceObject",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [
+      "StreamFaultWriter::StreamFaultWriter() - Streaming Filter could not open file for streaming file %s .Failure status 0x%08X.",
+      "StreamFaultWriter::StreamFaultWriter() - StreamFaultWriter successfully wrote file: %s, offset: %lld, length: %ld, status 0x%08X",
+      "StreamFaultWriter::StreamFaultWriter() - StreamFaultWriter failed to write file: %s, offset: %lld, length: %ld, status: 0x%08X."
+    ],
+    "name": "?Execute@StreamFaultWriter@Streaming@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(Streaming::StreamFaultWriter *this, const wchar_t *, bool)",
+    "rank_score": 1951,
+    "size": 1181,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "LogInitialize",
+    "ea": "0x14002409c",
+    "function_file": "functions/14002409c_LogInitialize.md",
+    "matched_imports": [
+      "ntoskrnl!EtwRegister",
+      "ntoskrnl!EtwSetInformation",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "\\REGISTRY\\MACHINE\\SOFTWARE\\Microsoft\\AppV\\Shared\\Policy"
+    ],
+    "name": "LogInitialize",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 1869,
+    "size": 567,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 45,
+    "demangled": "LogWrite",
+    "ea": "0x1400153c4",
+    "function_file": "functions/1400153c4_LogWrite.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!EtwWriteTransfer",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!PsGetCurrentProcessId",
+      "ntoskrnl!PsGetCurrentThreadId",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlAppendUnicodeToString",
+      "ntoskrnl!_vsnwprintf"
+    ],
+    "matched_strings": [],
+    "name": "LogWrite",
+    "prototype": "void(int, __int64, const WCHAR *, ...)",
+    "rank_score": 1849,
+    "size": 1227,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "Streaming::MDLListCache::GetMDL(kernel_std::shared_ptr<appv::shared::kernel::kmdl> &)",
+    "ea": "0x1400105d8",
+    "function_file": "functions/1400105d8_Streaming_MDLListCache_GetMDL_kernel_std_shared_ptr_appv_shared_kernel_kmdl.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExAllocateFromPagedLookasideList",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "?GetMDL@MDLListCache@Streaming@@QEAAJAEAV?$shared_ptr@Vkmdl@kernel@shared@appv@@@kernel_std@@@Z",
+    "prototype": "__int64 __fastcall(PPAGED_LOOKASIDE_LIST Lookaside, __int64)",
+    "rank_score": 1837,
+    "size": 1072,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "Streaming::StreamFaultManager::CreateStreamFault(_FLT_INSTANCE *,_FILE_OBJECT &,_FLT_CALLBACK_DATA &,appv::shared::kernel::auto_ptr<Streaming::Context::StrmStreamContext,Streaming::Context::ContextDelete> &)",
+    "ea": "0x14000db88",
+    "function_file": "functions/14000db88_Streaming_StreamFaultManager_CreateStreamFault_FLT_INSTANCE_FILE_OBJECT_FLT_CALLBACK_DATA_appv_shared_kernel_a.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!SeCaptureSubjectContext",
+      "ntoskrnl!SeQueryInformationToken"
+    ],
+    "matched_strings": [],
+    "name": "?CreateStreamFault@StreamFaultManager@Streaming@@QEAAJPEAU_FLT_INSTANCE@@AEAU_FILE_OBJECT@@AEAU_FLT_CALLBACK_DATA@@AEAV?$auto_ptr@UStrmStreamContext@Context@Streaming@@UContextDelete@23@@kernel@shared@appv@@@Z",
+    "prototype": "NTSTATUS __fastcall(__int64, struct _FLT_INSTANCE *, void *, struct _FLT_CALLBACK_DATA *, PFLT_CONTEXT *)",
+    "rank_score": 1832,
+    "size": 667,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "Streaming::Messaging::PackageLoader::CreateStreamableFile(_UNICODE_STRING const &,_FLT_INSTANCE *,_UNICODE_STRING *,_UNICODE_STRING const &,_LARGE_INTEGER &)",
+    "ea": "0x1400086a8",
+    "function_file": "functions/1400086a8_Streaming_Messaging_PackageLoader_CreateStreamableFile_UNICODE_STRING_const_FLT_INSTANCE_UNICODE_STRING_UNICOD.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltCreateFileEx",
+      "FLTMGR!FltFsControlFile",
+      "FLTMGR!FltSetInformationFile",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [
+      "PackageLoader::CreateStreamableFile() - Failed to create package file %s. Failure status = 0x%08X.",
+      "PackageLoader::CreateStreamableFile() - Could not set short name %s on file %s. Failure status = 0x%08X.",
+      "PackageLoader::CreateStreamableFile() - Could not allocate file %s, size %lld. Failure status = 0x%08X, check Disk space.",
+      "PackageLoader::CreateStreamableFile() - Could not set the streaming information for file %s. Failure status 0x%08X."
+    ],
+    "name": "?CreateStreamableFile@PackageLoader@Messaging@Streaming@@CAJAEBU_UNICODE_STRING@@PEAU_FLT_INSTANCE@@PEAU4@0AEAT_LARGE_INTEGER@@@Z",
+    "prototype": "__int64 __fastcall(struct _UNICODE_STRING *, struct _FLT_INSTANCE *, struct _FILE_OBJECT *, const struct _UNICODE_STRING *, union _LARGE_INTEGER *)",
+    "rank_score": 1831,
+    "size": 1326,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "appv::shared::kernel::kmdl::close(void)",
+    "ea": "0x140010b08",
+    "function_file": "functions/140010b08_appv_shared_kernel_kmdl_close_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExFreeToPagedLookasideList",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!IoGetCurrentProcess",
+      "ntoskrnl!KeStackAttachProcess",
+      "ntoskrnl!KeUnstackDetachProcess",
+      "ntoskrnl!MmUnlockPages",
+      "ntoskrnl!MmUnmapLockedPages",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "?close@kmdl@kernel@shared@appv@@AEAAXXZ",
+    "prototype": "void __fastcall(appv::shared::kernel::kmdl *__hidden this)",
+    "rank_score": 1818,
+    "size": 342,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 8,
+    "demangled": "appv::shared::kernel::ThreadPool<kernel_std::shared_ptr<Streaming::StreamFault>,Streaming::StreamFaultTagInfo>::StopThreadPool(void)",
+    "ea": "0x1400048a8",
+    "function_file": "functions/1400048a8_appv_shared_kernel_ThreadPool_kernel_std_shared_ptr_Streaming_StreamFault_Streaming_StreamFaultTagInfo_StopThr.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForMultipleObjects",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "?StopThreadPool@?$ThreadPool@V?$shared_ptr@VStreamFault@Streaming@@@kernel_std@@VStreamFaultTagInfo@Streaming@@@kernel@shared@appv@@QEAAXXZ",
+    "prototype": "void __fastcall(__int64)",
+    "rank_score": 1815,
+    "size": 494,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "Streaming::StrmGlobalData::LoadFilter(_DRIVER_OBJECT *)",
+    "ea": "0x140001204",
+    "function_file": "functions/140001204_Streaming_StrmGlobalData_LoadFilter_DRIVER_OBJECT.md",
+    "matched_imports": [
+      "FLTMGR!FltRegisterFilter",
+      "FLTMGR!FltStartFiltering",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExInitializeResourceLite"
+    ],
+    "matched_strings": [
+      "\\StrmFltCommunicationClientServerPort",
+      "StrmGlobalData::LoadFilter() - The streaming filter could not open connection port with user mode applications. Failure Status 0x%08X.",
+      "\\StrmFltCommunicationServerClientPort"
+    ],
+    "name": "?LoadFilter@StrmGlobalData@Streaming@@QEAAJPEAU_DRIVER_OBJECT@@@Z",
+    "prototype": "NTSTATUS __fastcall(Streaming::StrmGlobalData *this, struct _DRIVER_OBJECT *)",
+    "rank_score": 1744,
+    "size": 888,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Streaming::FileOperations::GetReparseData(_FLT_INSTANCE *,_FILE_OBJECT &,appv::shared::kernel::auto_ptr<_REPARSE_DATA_BUFFER,appv::shared::kernel::AllocDelete<_REPARSE_DATA_BUFFER>> &)",
+    "ea": "0x140002edc",
+    "function_file": "functions/140002edc_Streaming_FileOperations_GetReparseData_FLT_INSTANCE_FILE_OBJECT_appv_shared_kernel_auto_ptr_REPARSE_DATA_BUFF.md",
+    "matched_imports": [
+      "FLTMGR!FltFsControlFile",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [
+      "Streaming::FileOperations::GetReparseData() - Low memory error.",
+      "Streaming::FileOperations::GetReparseData()- Low memory error."
+    ],
+    "name": "?GetReparseData@FileOperations@Streaming@@YAJPEAU_FLT_INSTANCE@@AEAU_FILE_OBJECT@@AEAV?$auto_ptr@U_REPARSE_DATA_BUFFER@@U?$AllocDelete@U_REPARSE_DATA_BUFFER@@@kernel@shared@appv@@@kernel@shared@appv@@@Z",
+    "prototype": "__int64 __fastcall(PFLT_INSTANCE Instance, PFILE_OBJECT FileObject, void **)",
+    "rank_score": 1698,
+    "size": 469,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "appv::shared::kernel::ThreadPool<kernel_std::shared_ptr<Streaming::StreamFault>,Streaming::StreamFaultTagInfo>::QueueWorkItem(kernel_std::shared_ptr<Streaming::StreamFault> &)",
+    "ea": "0x14000e330",
+    "function_file": "functions/14000e330_appv_shared_kernel_ThreadPool_kernel_std_shared_ptr_Streaming_StreamFault_Streaming_StreamFaultTagInfo_QueueWo.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeReleaseSemaphore"
+    ],
+    "matched_strings": [],
+    "name": "?QueueWorkItem@?$ThreadPool@V?$shared_ptr@VStreamFault@Streaming@@@kernel_std@@VStreamFaultTagInfo@Streaming@@@kernel@shared@appv@@QEAAJAEAV?$shared_ptr@VStreamFault@Streaming@@@kernel_std@@@Z",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *)",
+    "rank_score": 1604,
+    "size": 308,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "appv::shared::kernel::ThreadPool<kernel_std::shared_ptr<Streaming::StreamFaultWriter>,Streaming::StreamFaultWriterTagInfo>::QueueWorkItem(kernel_std::shared_ptr<Streaming::StreamFaultWriter> &)",
+    "ea": "0x14000d380",
+    "function_file": "functions/14000d380_appv_shared_kernel_ThreadPool_kernel_std_shared_ptr_Streaming_StreamFaultWriter_Streaming_StreamFaultWriterTag.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeReleaseSemaphore"
+    ],
+    "matched_strings": [],
+    "name": "?QueueWorkItem@?$ThreadPool@V?$shared_ptr@VStreamFaultWriter@Streaming@@@kernel_std@@VStreamFaultWriterTagInfo@Streaming@@@kernel@shared@appv@@QEAAJAEAV?$shared_ptr@VStreamFaultWriter@Streaming@@@kernel_std@@@Z",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *)",
+    "rank_score": 1604,
+    "size": 310,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "appv::shared::kernel::ThreadPool<kernel_std::shared_ptr<Streaming::WriteFault>,Streaming::WriteFaultTagInfo>::QueueWorkItem(kernel_std::shared_ptr<Streaming::WriteFault> &)",
+    "ea": "0x14000e46c",
+    "function_file": "functions/14000e46c_appv_shared_kernel_ThreadPool_kernel_std_shared_ptr_Streaming_WriteFault_Streaming_WriteFaultTagInfo_QueueWork.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeReleaseSemaphore"
+    ],
+    "matched_strings": [],
+    "name": "?QueueWorkItem@?$ThreadPool@V?$shared_ptr@VWriteFault@Streaming@@@kernel_std@@VWriteFaultTagInfo@Streaming@@@kernel@shared@appv@@QEAAJAEAV?$shared_ptr@VWriteFault@Streaming@@@kernel_std@@@Z",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *)",
+    "rank_score": 1604,
+    "size": 310,
+    "tags": []
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "Streaming::Messaging::PackageLoader::CreateStagingDirectory(_UNICODE_STRING const &,_FLT_INSTANCE *,_UNICODE_STRING *,_UNICODE_STRING const &,uchar)",
+    "ea": "0x140007fe4",
+    "function_file": "functions/140007fe4_Streaming_Messaging_PackageLoader_CreateStagingDirectory_UNICODE_STRING_const_FLT_INSTANCE_UNICODE_STRING_UNIC.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [
+      "PackageLoader::CreateStagingDirectory() - Failed to create package file %s. Failure status = 0x%08X.",
+      "PackageLoader::CreateStagingDirectory() - Could not set short name %s on file %s. Failure status = 0x%08X.",
+      "PackageLoader::CreateStagingDirectory() - Failed to set extended attributes on file %s with error code 0x%08X.",
+      "PackageLoader::CreateStagingDirectory() - Failed to query offline attributes for file %s with error code 0x%08X."
+    ],
+    "name": "?CreateStagingDirectory@PackageLoader@Messaging@Streaming@@CAJAEBU_UNICODE_STRING@@PEAU_FLT_INSTANCE@@PEAU4@0E@Z",
+    "prototype": "__int64 __fastcall(struct _UNICODE_STRING *, PFLT_INSTANCE Instance, struct _FILE_OBJECT *, const struct _UNICODE_STRING *, char)",
+    "rank_score": 1580,
+    "size": 1221,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ReadRegistryValue",
+    "ea": "0x1400242dc",
+    "function_file": "functions/1400242dc_ReadRegistryValue.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [],
+    "name": "ReadRegistryValue",
+    "prototype": "__int64 __fastcall(struct _UNICODE_STRING *, struct _UNICODE_STRING *, __int64, PVOID *)",
+    "rank_score": 1446,
+    "size": 459,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "Streaming::StreamingTargetFileCache::Close(Streaming::InstanceContext &,appv::shared::kernel::managed_unicode_string<appv::shared::kernel::UnicodeString_allocator> const &,bool)",
+    "ea": "0x140011cb0",
+    "function_file": "functions/140011cb0_Streaming_StreamingTargetFileCache_Close_Streaming_InstanceContext_appv_shared_kernel_managed_unicode_string_a.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!RtlCompareUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?Close@StreamingTargetFileCache@Streaming@@QEAAJAEAVInstanceContext@2@AEBV?$managed_unicode_string@UUnicodeString_allocator@kernel@shared@appv@@@kernel@shared@appv@@_N@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, const UNICODE_STRING *, char)",
+    "rank_score": 1422,
+    "size": 523,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Streaming::Context::StreamingBitMap::Update(_LARGE_INTEGER,ulong,ulong &,uchar)",
+    "ea": "0x14000fb9c",
+    "function_file": "functions/14000fb9c_Streaming_Context_StreamingBitMap_Update_LARGE_INTEGER_ulong_ulong_uchar.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!RtlAreBitsSet",
+      "ntoskrnl!RtlSetBits"
+    ],
+    "matched_strings": [],
+    "name": "?Update@StreamingBitMap@Context@Streaming@@QEAAET_LARGE_INTEGER@@KAEAKE@Z",
+    "prototype": "unsigned __int8 __fastcall(PRTL_BITMAP BitMapHeader, union _LARGE_INTEGER, unsigned int, unsigned int *)",
+    "rank_score": 1414,
+    "size": 346,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Streaming::StreamingTargetFileCache::GetInstance(kernel_std::shared_ptr<Streaming::StreamingTargetFileCache> &)",
+    "ea": "0x1400062bc",
+    "function_file": "functions/1400062bc_Streaming_StreamingTargetFileCache_GetInstance_kernel_std_shared_ptr_Streaming_StreamingTargetFileCache.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExDeleteResourceLite",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExInitializeResourceLite"
+    ],
+    "matched_strings": [],
+    "name": "?GetInstance@StreamingTargetFileCache@Streaming@@SAJAEAV?$shared_ptr@VStreamingTargetFileCache@Streaming@@@kernel_std@@@Z",
+    "prototype": "__int64 __fastcall(__int64 *)",
+    "rank_score": 1408,
+    "size": 544,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "appv::shared::kernel::ThreadPool<kernel_std::shared_ptr<Streaming::FlushRequestManager::FlushRequest>,Streaming::FlushRequestTagInfo>::InitializeThreadPool(void)",
+    "ea": "0x140003ef8",
+    "function_file": "functions/140003ef8_appv_shared_kernel_ThreadPool_kernel_std_shared_ptr_Streaming_FlushRequestManager_FlushRequest_Streaming_Flush.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceSharedLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!PsCreateSystemThread",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "?InitializeThreadPool@?$ThreadPool@V?$shared_ptr@VFlushRequest@FlushRequestManager@Streaming@@@kernel_std@@VFlushRequestTagInfo@Streaming@@@kernel@shared@appv@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(char *StartContext, const wchar_t *)",
+    "rank_score": 1406,
+    "size": 334,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "appv::shared::kernel::ThreadPool<kernel_std::shared_ptr<Streaming::StreamFault>,Streaming::StreamFaultTagInfo>::InitializeThreadPool(void)",
+    "ea": "0x14000e088",
+    "function_file": "functions/14000e088_appv_shared_kernel_ThreadPool_kernel_std_shared_ptr_Streaming_StreamFault_Streaming_StreamFaultTagInfo_Initial.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceSharedLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!PsCreateSystemThread",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "?InitializeThreadPool@?$ThreadPool@V?$shared_ptr@VStreamFault@Streaming@@@kernel_std@@VStreamFaultTagInfo@Streaming@@@kernel@shared@appv@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(char *StartContext, const wchar_t *)",
+    "rank_score": 1406,
+    "size": 334,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "appv::shared::kernel::ThreadPool<kernel_std::shared_ptr<Streaming::StreamFaultWriter>,Streaming::PackageWriterTagInfo>::InitializeThreadPool(void)",
+    "ea": "0x140006710",
+    "function_file": "functions/140006710_appv_shared_kernel_ThreadPool_kernel_std_shared_ptr_Streaming_StreamFaultWriter_Streaming_PackageWriterTagInfo.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceSharedLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!PsCreateSystemThread",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "?InitializeThreadPool@?$ThreadPool@V?$shared_ptr@VStreamFaultWriter@Streaming@@@kernel_std@@VPackageWriterTagInfo@Streaming@@@kernel@shared@appv@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(char *StartContext, const wchar_t *)",
+    "rank_score": 1406,
+    "size": 334,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "appv::shared::kernel::ThreadPool<kernel_std::shared_ptr<Streaming::StreamFaultWriter>,Streaming::StreamFaultWriterTagInfo>::InitializeThreadPool(void)",
+    "ea": "0x140006864",
+    "function_file": "functions/140006864_appv_shared_kernel_ThreadPool_kernel_std_shared_ptr_Streaming_StreamFaultWriter_Streaming_StreamFaultWriterTag.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceSharedLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!PsCreateSystemThread",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "?InitializeThreadPool@?$ThreadPool@V?$shared_ptr@VStreamFaultWriter@Streaming@@@kernel_std@@VStreamFaultWriterTagInfo@Streaming@@@kernel@shared@appv@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(char *StartContext, const wchar_t *)",
+    "rank_score": 1406,
+    "size": 334,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "appv::shared::kernel::ThreadPool<kernel_std::shared_ptr<Streaming::WriteFault>,Streaming::WriteFaultTagInfo>::InitializeThreadPool(void)",
+    "ea": "0x14000e1dc",
+    "function_file": "functions/14000e1dc_appv_shared_kernel_ThreadPool_kernel_std_shared_ptr_Streaming_WriteFault_Streaming_WriteFaultTagInfo_Initializ.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceSharedLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!PsCreateSystemThread",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "?InitializeThreadPool@?$ThreadPool@V?$shared_ptr@VWriteFault@Streaming@@@kernel_std@@VWriteFaultTagInfo@Streaming@@@kernel@shared@appv@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(char *StartContext, const wchar_t *)",
+    "rank_score": 1406,
+    "size": 334,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "appv::shared::kernel::ThreadPool<kernel_std::shared_ptr<Streaming::StreamFaultWriter>,Streaming::PackageWriterTagInfo>::ThreadPool<kernel_std::shared_ptr<Streaming::StreamFaultWriter>,Streaming::PackageWriterTagInfo>(long,long &,long,long)",
+    "ea": "0x140004d88",
+    "function_file": "functions/140004d88_appv_shared_kernel_ThreadPool_kernel_std_shared_ptr_Streaming_StreamFaultWriter_Streaming_PackageWriterTagInfo.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExInitializeResourceLite",
+      "ntoskrnl!KeInitializeSemaphore",
+      "ntoskrnl!KeQueryActiveProcessorCount"
+    ],
+    "matched_strings": [],
+    "name": "??0?$ThreadPool@V?$shared_ptr@VStreamFaultWriter@Streaming@@@kernel_std@@VPackageWriterTagInfo@Streaming@@@kernel@shared@appv@@QEAA@JAEAJJJ@Z",
+    "prototype": "char *__fastcall(char *StartContext, int, NTSTATUS *)",
+    "rank_score": 1405,
+    "size": 352,
+    "tags": []
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 1,
+    "demangled": "Streaming::StreamFault::Execute(void)",
+    "ea": "0x14000c4ac",
+    "function_file": "functions/14000c4ac_Streaming_StreamFault_Execute_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [
+      "StreamFault::Execute() - Stream Fault Buffer UpdateUserBuffer returned error status: 0x%08X.  Freeing MDL.",
+      "StreamFault::Execute() - StreamFaultWriter added to queue for file: %s, offset: %lld, length: %ld, status: 0x%08X.",
+      "StreamFault::Execute() - StreamFaultWriter was not added to queue for file: %s, offset: %lld, length: %ld; status: 0x%08X.  Block may not be written."
+    ],
+    "name": "?Execute@StreamFault@Streaming@@QEAAJXZ",
+    "prototype": "__int64 __fastcall(Streaming::StreamFault *__hidden this)",
+    "rank_score": 1375,
+    "size": 2751,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 4,
+    "demangled": "Streaming::Context::StreamingBitmapBuilder::UpdateStreamingInformation(_FLT_INSTANCE *,_FILE_OBJECT &,Streaming::Context::StreamingBitMap &)",
+    "ea": "0x14000b448",
+    "function_file": "functions/14000b448_Streaming_Context_StreamingBitmapBuilder_UpdateStreamingInformation_FLT_INSTANCE_FILE_OBJECT_Streaming_Context.md",
+    "matched_imports": [
+      "FLTMGR!FltTagFile",
+      "ntoskrnl!ExAcquireResourceSharedLite",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [
+      "StreamingBitmapBuilder::UpdateStreamingInformation() - Could not set the streaming information for file %s. Failure status 0x%08X."
+    ],
+    "name": "?UpdateStreamingInformation@StreamingBitmapBuilder@Context@Streaming@@SAJPEAU_FLT_INSTANCE@@AEAU_FILE_OBJECT@@AEAVStreamingBitMap@23@@Z",
+    "prototype": "__int64 __fastcall(PFLT_INSTANCE Instance, PFILE_OBJECT FileObject, struct Streaming::Context::StreamingBitMap *)",
+    "rank_score": 1265,
+    "size": 465,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Streaming::Messaging::UserCommunication::Connect(_FLT_PORT *)",
+    "ea": "0x1400138fc",
+    "function_file": "functions/1400138fc_Streaming_Messaging_UserCommunication_Connect_FLT_PORT.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [
+      "UserCommunication::Connect() - The streaming filter received a new connection from a user mode application."
+    ],
+    "name": "?Connect@UserCommunication@Messaging@Streaming@@QEAAJPEAU_FLT_PORT@@@Z",
+    "prototype": "__int64 __fastcall(PERESOURCE *this, struct _ERESOURCE *)",
+    "rank_score": 1257,
+    "size": 275,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "Streaming::Messaging::PackageLoader::CreateStagingDirectory(_UNICODE_STRING const &,_UNICODE_STRING const &,_UNICODE_STRING *,uchar)",
+    "ea": "0x1400084b0",
+    "function_file": "functions/1400084b0_Streaming_Messaging_PackageLoader_CreateStagingDirectory_UNICODE_STRING_const_UNICODE_STRING_const_UNICODE_STR.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "PackageLoader::CreateStagingDirectory() - Filter might not be attached to the volume. Couldn't find instance for volume %s. Failure Status 0x%08X."
+    ],
+    "name": "?CreateStagingDirectory@PackageLoader@Messaging@Streaming@@SAJAEBU_UNICODE_STRING@@0PEAU4@E@Z",
+    "prototype": "__int64 __fastcall(const struct _UNICODE_STRING *, const struct _UNICODE_STRING *, struct _UNICODE_STRING *, char)",
+    "rank_score": 1252,
+    "size": 495,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "Streaming::MDLList::Remove(kernel_std::shared_ptr<appv::shared::kernel::kmdl> &)",
+    "ea": "0x14000d4bc",
+    "function_file": "functions/14000d4bc_Streaming_MDLList_Remove_kernel_std_shared_ptr_appv_shared_kernel_kmdl.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "?Remove@MDLList@Streaming@@QEAAJAEAV?$shared_ptr@Vkmdl@kernel@shared@appv@@@kernel_std@@@Z",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *)",
+    "rank_score": 1225,
+    "size": 227,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "Streaming::MDLList::FindItem(appv::shared::kernel::kmdl *,kernel_std::shared_ptr<Streaming::MDLEntry> &)",
+    "ea": "0x14000cf74",
+    "function_file": "functions/14000cf74_Streaming_MDLList_FindItem_appv_shared_kernel_kmdl_kernel_std_shared_ptr_Streaming_MDLEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceSharedLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "?FindItem@MDLList@Streaming@@QEAAJPEAVkmdl@kernel@shared@appv@@AEAV?$shared_ptr@UMDLEntry@Streaming@@@kernel_std@@@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64)",
+    "rank_score": 1215,
+    "size": 218,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "Streaming::StreamFault::~StreamFault(void)",
+    "ea": "0x14000c1d4",
+    "function_file": "functions/14000c1d4_Streaming_StreamFault_StreamFault_void.md",
+    "matched_imports": [
+      "FLTMGR!FltCbdqRemoveNextIo",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "??1StreamFault@Streaming@@QEAA@XZ",
+    "prototype": "void __fastcall(Streaming::StreamFault *__hidden this)",
+    "rank_score": 1215,
+    "size": 208,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 7,
+    "demangled": "appv::shared::kernel::SafeQueue<kernel_std::shared_ptr<Streaming::WriteFault>,Streaming::WriteFaultTagInfo>::Get(kernel_std::shared_ptr<Streaming::WriteFault> &)",
+    "ea": "0x140003c58",
+    "function_file": "functions/140003c58_appv_shared_kernel_SafeQueue_kernel_std_shared_ptr_Streaming_WriteFault_Streaming_WriteFaultTagInfo_Get_kernel.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "?Get@?$SafeQueue@V?$shared_ptr@VWriteFault@Streaming@@@kernel_std@@VWriteFaultTagInfo@Streaming@@@kernel@shared@appv@@QEAA_NAEAV?$shared_ptr@VWriteFault@Streaming@@@kernel_std@@@Z",
+    "prototype": "char __fastcall(__int64, __int64)",
+    "rank_score": 1211,
+    "size": 226,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "Streaming::InstanceContextFactory::GetContextByVolumeName(_UNICODE_STRING,_FLT_INSTANCE * &,Streaming::InstanceContext &)",
+    "ea": "0x140005ed8",
+    "function_file": "functions/140005ed8_Streaming_InstanceContextFactory_GetContextByVolumeName_UNICODE_STRING_FLT_INSTANCE_Streaming_InstanceContext.md",
+    "matched_imports": [
+      "FLTMGR!FltReferenceContext",
+      "ntoskrnl!ExAcquireResourceSharedLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!RtlEqualUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?GetContextByVolumeName@InstanceContextFactory@Streaming@@QEAAJU_UNICODE_STRING@@AEAPEAU_FLT_INSTANCE@@AEAVInstanceContext@2@@Z",
+    "prototype": "__int64 __fastcall(PERESOURCE *this, struct _UNICODE_STRING *, POWNER_ENTRY *, struct Streaming::InstanceContext *)",
+    "rank_score": 1208,
+    "size": 218,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "Streaming::StrmFltInterface::PreCreate(_FLT_INSTANCE *,_FILE_OBJECT &,_FLT_CALLBACK_DATA &,void * &)",
+    "ea": "0x140013030",
+    "function_file": "functions/140013030_Streaming_StrmFltInterface_PreCreate_FLT_INSTANCE_FILE_OBJECT_FLT_CALLBACK_DATA_void.md",
+    "matched_imports": [
+      "FLTMGR!FltSetCallbackDataDirty",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?PreCreate@StrmFltInterface@Streaming@@QEAAJPEAU_FLT_INSTANCE@@AEAU_FILE_OBJECT@@AEAU_FLT_CALLBACK_DATA@@AEAPEAX@Z",
+    "prototype": "__int64 __fastcall(Streaming::StrmFltInterface *this, struct _FLT_INSTANCE *, struct _FILE_OBJECT *, struct _FLT_CALLBACK_DATA *, void **)",
+    "rank_score": 1208,
+    "size": 298,
+    "tags": []
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "Streaming::Reader::ReadFile(_FLT_INSTANCE *,_FILE_OBJECT &,_FLT_CALLBACK_DATA &,appv::shared::kernel::auto_ptr<Streaming::Context::StrmStreamContext,Streaming::Context::ContextDelete> &)",
+    "ea": "0x140009d98",
+    "function_file": "functions/140009d98_Streaming_Reader_ReadFile_FLT_INSTANCE_FILE_OBJECT_FLT_CALLBACK_DATA_appv_shared_kernel_auto_ptr_Streaming_Con.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!EtwActivityIdControl"
+    ],
+    "matched_strings": [
+      "safe to read file %wZ , offset = %x, Length = %x \n",
+      "Reader::ReadFile() - New stream fault requested. File name: %s, Offset: %lld , Length %ld, Status 0x%08X.",
+      "Reader::ReadFile() - Failed to create a stream fault request. File name: %s, Offset: %lld , Length %ld, Status 0x%08X."
+    ],
+    "name": "?ReadFile@Reader@Streaming@@SA?AW4_FLT_PREOP_CALLBACK_STATUS@@PEAU_FLT_INSTANCE@@AEAU_FILE_OBJECT@@AEAU_FLT_CALLBACK_DATA@@AEAV?$auto_ptr@UStrmStreamContext@Context@Streaming@@UContextDelete@23@@kernel@shared@appv@@@Z",
+    "prototype": "__int64 __fastcall(struct _FLT_INSTANCE *, __int64, __int64, __int64)",
+    "rank_score": 1158,
+    "size": 940,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "Streaming::Messaging::UserCommunication::GetSendMessageTimeOutValue(void)",
+    "ea": "0x140013acc",
+    "function_file": "functions/140013acc_Streaming_Messaging_UserCommunication_GetSendMessageTimeOutValue_void.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\Software\\Microsoft\\AppV\\Client\\Streaming",
+      "UserCommunication::GetSendMessageTimeOutValue() - Failed to query the send time out value. the value type or the value size doesn't match the expectation."
+    ],
+    "name": "?GetSendMessageTimeOutValue@UserCommunication@Messaging@Streaming@@CAKXZ",
+    "prototype": "__int64(void)",
+    "rank_score": 1129,
+    "size": 418,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "Streaming::DACLSetter::SetDirectoryDACL(_UNICODE_STRING const &,_UNICODE_STRING const &,void *)",
+    "ea": "0x1400020c8",
+    "function_file": "functions/1400020c8_Streaming_DACLSetter_SetDirectoryDACL_UNICODE_STRING_const_UNICODE_STRING_const_void.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "DACLSetter::SetDirectoryDACL() - Streaming Filter failed to set directory DACL to '%s'. Failure status: 0x%08X."
+    ],
+    "name": "?SetDirectoryDACL@DACLSetter@Streaming@@SAJAEBU_UNICODE_STRING@@0PEAX@Z",
+    "prototype": "__int64 __fastcall(const struct _UNICODE_STRING *, const struct _UNICODE_STRING *, const struct _UNICODE_STRING *)",
+    "rank_score": 1062,
+    "size": 457,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "appv::shared::kernel::SidFromPid<appv::shared::kernel::UnicodeString_allocator>(void *,appv::shared::kernel::managed_unicode_string<appv::shared::kernel::UnicodeString_allocator> &,uchar *)",
+    "ea": "0x140014640",
+    "function_file": "functions/140014640_appv_shared_kernel_SidFromPid_appv_shared_kernel_UnicodeString_allocator_void_appv_shared_kernel_managed_unico.md",
+    "matched_imports": [
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenProcess",
+      "ntoskrnl!ZwOpenProcessTokenEx"
+    ],
+    "matched_strings": [],
+    "name": "??$SidFromPid@UUnicodeString_allocator@kernel@shared@appv@@@kernel@shared@appv@@YAJPEAXAEAV?$managed_unicode_string@UUnicodeString_allocator@kernel@shared@appv@@@012@PEAE@Z",
+    "prototype": "NTSTATUS __fastcall(void *, __int64, __int64)",
+    "rank_score": 1036,
+    "size": 279,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "appv::shared::kernel::SidFromEThread<appv::shared::kernel::UnicodeString_allocator>(_KTHREAD *,appv::shared::kernel::managed_unicode_string<appv::shared::kernel::UnicodeString_allocator> &,uchar *)",
+    "ea": "0x140014560",
+    "function_file": "functions/140014560_appv_shared_kernel_SidFromEThread_appv_shared_kernel_UnicodeString_allocator_KTHREAD_appv_shared_kernel_manage.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!PsDereferenceImpersonationToken",
+      "ntoskrnl!PsReferenceImpersonationToken",
+      "ntoskrnl!SeQueryInformationToken"
+    ],
+    "matched_strings": [],
+    "name": "??$SidFromEThread@UUnicodeString_allocator@kernel@shared@appv@@@kernel@shared@appv@@YAJPEAU_KTHREAD@@AEAV?$managed_unicode_string@UUnicodeString_allocator@kernel@shared@appv@@@012@PEAE@Z",
+    "prototype": "__int64 __fastcall(struct _KTHREAD *, __int64, _BYTE *)",
+    "rank_score": 1025,
+    "size": 215,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "Streaming::StrmGlobalData::~StrmGlobalData(void)",
+    "ea": "0x140001104",
+    "function_file": "functions/140001104_Streaming_StrmGlobalData_StrmGlobalData_void.md",
+    "matched_imports": [
+      "FLTMGR!FltCloseCommunicationPort",
+      "FLTMGR!FltUnregisterFilter",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??1StrmGlobalData@Streaming@@QEAA@XZ",
+    "prototype": "void __fastcall(Streaming::StrmGlobalData *__hidden this)",
+    "rank_score": 1017,
+    "size": 248,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "Streaming::Messaging::UserCommunication::DisconnectClient(void)",
+    "ea": "0x140013a18",
+    "function_file": "functions/140013a18_Streaming_Messaging_UserCommunication_DisconnectClient_void.md",
+    "matched_imports": [
+      "FLTMGR!FltCloseClientPort",
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "?DisconnectClient@UserCommunication@Messaging@Streaming@@QEAAXXZ",
+    "prototype": "void __fastcall(Streaming::Messaging::UserCommunication *__hidden this)",
+    "rank_score": 1015,
+    "size": 172,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "Streaming::MDLList::AddItem(kernel_std::shared_ptr<Streaming::MDLEntry> &)",
+    "ea": "0x140010188",
+    "function_file": "functions/140010188_Streaming_MDLList_AddItem_kernel_std_shared_ptr_Streaming_MDLEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "?AddItem@MDLList@Streaming@@QEAAJAEAV?$shared_ptr@UMDLEntry@Streaming@@@kernel_std@@@Z",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *)",
+    "rank_score": 1014,
+    "size": 224,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "Streaming::Context::StreamContextFactory::GetOrCreateStreamContext(_FLT_INSTANCE *,_FLT_CALLBACK_DATA &,_FILE_OBJECT &,appv::shared::kernel::auto_ptr<Streaming::Context::StrmStreamContext,Streaming::Context::ContextDelete> &)",
+    "ea": "0x14000ba94",
+    "function_file": "functions/14000ba94_Streaming_Context_StreamContextFactory_GetOrCreateStreamContext_FLT_INSTANCE_FLT_CALLBACK_DATA_FILE_OBJECT_app.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?GetOrCreateStreamContext@StreamContextFactory@Context@Streaming@@SAJPEAU_FLT_INSTANCE@@AEAU_FLT_CALLBACK_DATA@@AEAU_FILE_OBJECT@@AEAV?$auto_ptr@UStrmStreamContext@Context@Streaming@@UContextDelete@23@@kernel@shared@appv@@@Z",
+    "prototype": "__int64 __fastcall(PFLT_INSTANCE Instance, struct _FLT_CALLBACK_DATA *, struct _FILE_OBJECT *, PFLT_CONTEXT *)",
+    "rank_score": 1009,
+    "size": 314,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "appv::shared::kernel::event::create(wchar_t const *,bool)",
+    "ea": "0x140004ab8",
+    "function_file": "functions/140004ab8_appv_shared_kernel_event_create_wchar_t_const_bool.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoCreateNotificationEvent",
+      "ntoskrnl!KeClearEvent",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "?create@event@kernel@shared@appv@@QEAAJPEB_W_N@Z",
+    "prototype": "__int64 __fastcall(appv::shared::kernel::event *this, const wchar_t *)",
+    "rank_score": 1009,
+    "size": 186,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Streaming::FileOperations::GetParentDirOpenNameFromCallback(_FLT_CALLBACK_DATA &,appv::shared::kernel::managed_unicode_string<appv::shared::kernel::UnicodeString_allocator> &)",
+    "ea": "0x140002de4",
+    "function_file": "functions/140002de4_Streaming_FileOperations_GetParentDirOpenNameFromCallback_FLT_CALLBACK_DATA_appv_shared_kernel_managed_unicode.md",
+    "matched_imports": [
+      "FLTMGR!FltGetFileNameInformation",
+      "FLTMGR!FltParseFileNameInformation",
+      "FLTMGR!FltReleaseFileNameInformation",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?GetParentDirOpenNameFromCallback@FileOperations@Streaming@@YAJAEAU_FLT_CALLBACK_DATA@@AEAV?$managed_unicode_string@UUnicodeString_allocator@kernel@shared@appv@@@kernel@shared@appv@@@Z",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA CallbackData, __int64)",
+    "rank_score": 1006,
+    "size": 241,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "Streaming::Context::StreamingBitMap::IsSafeToRead(_LARGE_INTEGER,ulong)",
+    "ea": "0x14000fab8",
+    "function_file": "functions/14000fab8_Streaming_Context_StreamingBitMap_IsSafeToRead_LARGE_INTEGER_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceSharedLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!RtlAreBitsSet"
+    ],
+    "matched_strings": [],
+    "name": "?IsSafeToRead@StreamingBitMap@Context@Streaming@@QEAAET_LARGE_INTEGER@@K@Z",
+    "prototype": "BOOLEAN __fastcall(PRTL_BITMAP BitMapHeader, union _LARGE_INTEGER, unsigned int)",
+    "rank_score": 1005,
+    "size": 221,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "Streaming::StreamFaultWriter::~StreamFaultWriter(void)",
+    "ea": "0x14000f1a4",
+    "function_file": "functions/14000f1a4_Streaming_StreamFaultWriter_StreamFaultWriter_void.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "??1StreamFaultWriter@Streaming@@QEAA@XZ",
+    "prototype": "void __fastcall(Streaming::StreamFaultWriter *__hidden this)",
+    "rank_score": 1004,
+    "size": 153,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "appv::shared::kernel::ThreadHandles<Streaming::StreamFaultTagInfo>::~ThreadHandles<Streaming::StreamFaultTagInfo>(void)",
+    "ea": "0x1400039e4",
+    "function_file": "functions/1400039e4_appv_shared_kernel_ThreadHandles_Streaming_StreamFaultTagInfo_ThreadHandles_Streaming_StreamFaultTagInfo_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteResourceLite",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "??1?$ThreadHandles@VStreamFaultTagInfo@Streaming@@@kernel@shared@appv@@QEAA@XZ",
+    "prototype": "void __fastcall(__int64)",
+    "rank_score": 1004,
+    "size": 189,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "appv::shared::kernel::kmdl::Lock(void)",
+    "ea": "0x140010a10",
+    "function_file": "functions/140010a10_appv_shared_kernel_kmdl_Lock_void.md",
+    "matched_imports": [
+      "ntoskrnl!IoAllocateMdl",
+      "ntoskrnl!IoGetCurrentProcess",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache",
+      "ntoskrnl!MmProbeAndLockPages",
+      "ntoskrnl!ObfReferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "?Lock@kmdl@kernel@shared@appv@@AEAAJXZ",
+    "prototype": "__int64 __fastcall(appv::shared::kernel::kmdl *__hidden this)",
+    "rank_score": 1004,
+    "size": 241,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "appv::shared::kernel::sid_is_system",
+    "ea": "0x140014d38",
+    "function_file": "functions/140014d38_appv_shared_kernel_sid_is_system.md",
+    "matched_imports": [
+      "ntoskrnl!RtlEqualSid",
+      "ntoskrnl!SeExports"
+    ],
+    "matched_strings": [],
+    "name": "appv::shared::kernel::sid_is_system",
+    "prototype": "bool __fastcall(PSID Sid2)",
+    "rank_score": 934,
+    "size": 139,
+    "tags": [
+      "authz_impersonation",
+      "service_task",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "Streaming::Writer::WriteFile(_FLT_INSTANCE *,_FILE_OBJECT &,_FLT_CALLBACK_DATA &,appv::shared::kernel::auto_ptr<Streaming::Context::StrmStreamContext,Streaming::Context::ContextDelete> &)",
+    "ea": "0x140014ff0",
+    "function_file": "functions/140014ff0_Streaming_Writer_WriteFile_FLT_INSTANCE_FILE_OBJECT_FLT_CALLBACK_DATA_appv_shared_kernel_auto_ptr_Streaming_Co.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!DbgPrint"
+    ],
+    "matched_strings": [
+      "safe write file %wZ \n",
+      "start write file %wZ \n"
+    ],
+    "name": "?WriteFile@Writer@Streaming@@SA?AW4_FLT_PREOP_CALLBACK_STATUS@@PEAU_FLT_INSTANCE@@AEAU_FILE_OBJECT@@AEAU_FLT_CALLBACK_DATA@@AEAV?$auto_ptr@UStrmStreamContext@Context@Streaming@@UContextDelete@23@@kernel@shared@appv@@@Z",
+    "prototype": "__int64 __fastcall(struct _FLT_INSTANCE *, __int64, __int64, __int64)",
+    "rank_score": 897,
+    "size": 290,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "Streaming::Messaging::PackageLoader::CreateStreamableFile(_UNICODE_STRING const &,_UNICODE_STRING const &,_UNICODE_STRING *,_LARGE_INTEGER &)",
+    "ea": "0x140008bdc",
+    "function_file": "functions/140008bdc_Streaming_Messaging_PackageLoader_CreateStreamableFile_UNICODE_STRING_const_UNICODE_STRING_const_UNICODE_STRIN.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "PackageLoader::CreateStreamableFile() - Filter might not be attached to the volume. Couldn't find instance for volume %s . Failure Status 0x%08X.",
+      "PackageLoader::CreateStreamableFile() - Failed to create package file %s. Failure status = 0x%08X."
+    ],
+    "name": "?CreateStreamableFile@PackageLoader@Messaging@Streaming@@SAJAEBU_UNICODE_STRING@@0PEAU4@AEAT_LARGE_INTEGER@@@Z",
+    "prototype": "__int64 __fastcall(const struct _UNICODE_STRING *, const struct _UNICODE_STRING *, struct _FILE_OBJECT *, union _LARGE_INTEGER *)",
+    "rank_score": 892,
+    "size": 480,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Streaming::WriteFault::WriteFault(_FLT_CALLBACK_DATA &,appv::shared::kernel::auto_ptr<Streaming::Context::StrmStreamContext,Streaming::Context::ContextDelete> &,long &)",
+    "ea": "0x14000da20",
+    "function_file": "functions/14000da20_Streaming_WriteFault_WriteFault_FLT_CALLBACK_DATA_appv_shared_kernel_auto_ptr_Streaming_Context_StrmStreamCont.md",
+    "matched_imports": [
+      "FLTMGR!FltReferenceContext",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!EtwActivityIdControl",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "Failed to retrieve directory context. Directory path %s, error code 0x%08X."
+    ],
+    "name": "??0WriteFault@Streaming@@QEAA@AEAU_FLT_CALLBACK_DATA@@AEAV?$auto_ptr@UStrmStreamContext@Context@Streaming@@UContextDelete@23@@kernel@shared@appv@@AEAJ@Z",
+    "prototype": "__int64 __fastcall(__int64, struct _FLT_CALLBACK_DATA *, PFLT_CONTEXT *, int *)",
+    "rank_score": 856,
+    "size": 247,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "Streaming::StagingManager::StageDirectoryUnsafe(_FLT_INSTANCE *,appv::shared::kernel::managed_unicode_string<appv::shared::kernel::UnicodeString_allocator> const &)",
+    "ea": "0x14000abd8",
+    "function_file": "functions/14000abd8_Streaming_StagingManager_StageDirectoryUnsafe_FLT_INSTANCE_appv_shared_kernel_managed_unicode_string_appv_shar.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [
+      "StagingManager::StageDirectoryUnsafe() - Failed to open directory %s, error code 0x%08X."
+    ],
+    "name": "?StageDirectoryUnsafe@StagingManager@Streaming@@SAJPEAU_FLT_INSTANCE@@AEBV?$managed_unicode_string@UUnicodeString_allocator@kernel@shared@appv@@@kernel@shared@appv@@@Z",
+    "prototype": "__int64 __fastcall(PFLT_INSTANCE Instance, struct _UNICODE_STRING *)",
+    "rank_score": 852,
+    "size": 418,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Streaming::FileOperations::SetDirectoryDACL(_FLT_FILTER *,_FLT_INSTANCE *,_UNICODE_STRING const &,void *)",
+    "ea": "0x140003158",
+    "function_file": "functions/140003158_Streaming_FileOperations_SetDirectoryDACL_FLT_FILTER_FLT_INSTANCE_UNICODE_STRING_const_void.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "FLTMGR!FltCreateFileEx",
+      "FLTMGR!FltSetSecurityObject",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "?SetDirectoryDACL@FileOperations@Streaming@@YAJPEAU_FLT_FILTER@@PEAU_FLT_INSTANCE@@AEBU_UNICODE_STRING@@PEAX@Z",
+    "prototype": "__int64 __fastcall(Streaming::FileOperations *this, struct _FLT_FILTER *, struct _UNICODE_STRING *, struct _UNICODE_STRING *)",
+    "rank_score": 844,
+    "size": 292,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 44,
+    "demangled": "Streaming::Utils::GetCurrentActivityID(void)",
+    "ea": "0x1400147fc",
+    "function_file": "functions/1400147fc_Streaming_Utils_GetCurrentActivityID_void.md",
+    "matched_imports": [
+      "ntoskrnl!EtwActivityIdControl",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?GetCurrentActivityID@Utils@Streaming@@YA?AV?$shared_ptr@U_GUID@@@kernel_std@@XZ",
+    "prototype": "GUID **__fastcall(GUID **)",
+    "rank_score": 829,
+    "size": 305,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Streaming::MDLListCache::FreeMDL(kernel_std::shared_ptr<appv::shared::kernel::kmdl> &)",
+    "ea": "0x14000d0c8",
+    "function_file": "functions/14000d0c8_Streaming_MDLListCache_FreeMDL_kernel_std_shared_ptr_appv_shared_kernel_kmdl.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceSharedLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "?FreeMDL@MDLListCache@Streaming@@QEAAJAEAV?$shared_ptr@Vkmdl@kernel@shared@appv@@@kernel_std@@@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64 *)",
+    "rank_score": 828,
+    "size": 389,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "Streaming::Utils::GetCurrentProcessAndUserNotSystem(appv::shared::kernel::managed_unicode_string<appv::shared::kernel::UnicodeString_allocator> &,void * &)",
+    "ea": "0x140014934",
+    "function_file": "functions/140014934_Streaming_Utils_GetCurrentProcessAndUserNotSystem_appv_shared_kernel_managed_unicode_string_appv_shared_kernel.md",
+    "matched_imports": [
+      "ntoskrnl!PsGetCurrentProcessId",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenThreadTokenEx"
+    ],
+    "matched_strings": [],
+    "name": "?GetCurrentProcessAndUserNotSystem@Utils@Streaming@@YAJAEAV?$managed_unicode_string@UUnicodeString_allocator@kernel@shared@appv@@@kernel@shared@appv@@AEAPEAX@Z",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *)",
+    "rank_score": 818,
+    "size": 275,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "Streaming::StrmInstanceTeardownStart(_FLT_RELATED_OBJECTS const *,ulong)",
+    "ea": "0x1400078a0",
+    "function_file": "functions/1400078a0_Streaming_StrmInstanceTeardownStart_FLT_RELATED_OBJECTS_const_ulong.md",
+    "matched_imports": [
+      "FLTMGR!FltCbdqDisable",
+      "FLTMGR!FltCbdqRemoveNextIo",
+      "FLTMGR!FltCompletePendedPreOperation",
+      "FLTMGR!FltReleaseContext"
+    ],
+    "matched_strings": [],
+    "name": "?StrmInstanceTeardownStart@Streaming@@YAXPEBU_FLT_RELATED_OBJECTS@@K@Z",
+    "prototype": "void __fastcall(Streaming *this, const struct _FLT_RELATED_OBJECTS *)",
+    "rank_score": 815,
+    "size": 203,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Streaming::MDLList::Clear(void)",
+    "ea": "0x140013850",
+    "function_file": "functions/140013850_Streaming_MDLList_Clear_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "?Clear@MDLList@Streaming@@QEAAXXZ",
+    "prototype": "void __fastcall(PERESOURCE *this)",
+    "rank_score": 814,
+    "size": 165,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "Streaming::PendingQueue::CreateInstance(kernel_std::shared_ptr<Streaming::PendingQueue> &)",
+    "ea": "0x140005b20",
+    "function_file": "functions/140005b20_Streaming_PendingQueue_CreateInstance_kernel_std_shared_ptr_Streaming_PendingQueue.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?CreateInstance@PendingQueue@Streaming@@SAJAEAV?$shared_ptr@VPendingQueue@Streaming@@@kernel_std@@@Z",
+    "prototype": "__int64 __fastcall(Streaming::PendingQueue **)",
+    "rank_score": 810,
+    "size": 577,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "appv::shared::kernel::ThreadPool<kernel_std::shared_ptr<Streaming::StreamFaultWriter>,Streaming::StreamFaultWriterTagInfo>::~ThreadPool<kernel_std::shared_ptr<Streaming::StreamFaultWriter>,Streaming::StreamFaultWriterTagInfo>(void)",
+    "ea": "0x14000528c",
+    "function_file": "functions/14000528c_appv_shared_kernel_ThreadPool_kernel_std_shared_ptr_Streaming_StreamFaultWriter_Streaming_StreamFaultWriterTag.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteResourceLite",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "??1?$ThreadPool@V?$shared_ptr@VStreamFaultWriter@Streaming@@@kernel_std@@VStreamFaultWriterTagInfo@Streaming@@@kernel@shared@appv@@QEAA@XZ",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 809,
+    "size": 160,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "appv::shared::kernel::ThreadPool<kernel_std::shared_ptr<Streaming::FlushRequestManager::FlushRequest>,Streaming::FlushRequestTagInfo>::~ThreadPool<kernel_std::shared_ptr<Streaming::FlushRequestManager::FlushRequest>,Streaming::FlushRequestTagInfo>(void)",
+    "ea": "0x140003aa8",
+    "function_file": "functions/140003aa8_appv_shared_kernel_ThreadPool_kernel_std_shared_ptr_Streaming_FlushRequestManager_FlushRequest_Streaming_Flush.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteResourceLite",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "??1?$ThreadPool@V?$shared_ptr@VFlushRequest@FlushRequestManager@Streaming@@@kernel_std@@VFlushRequestTagInfo@Streaming@@@kernel@shared@appv@@QEAA@XZ",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 808,
+    "size": 160,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Streaming::StreamFaultWriterWorker::Process(kernel_std::shared_ptr<Streaming::StreamFaultWriter>)",
+    "ea": "0x14000d254",
+    "function_file": "functions/14000d254_Streaming_StreamFaultWriterWorker_Process_kernel_std_shared_ptr_Streaming_StreamFaultWriter.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceSharedLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "?Process@StreamFaultWriterWorker@Streaming@@QEAAJV?$shared_ptr@VStreamFaultWriter@Streaming@@@kernel_std@@@Z",
+    "prototype": "__int64 __fastcall(PERESOURCE *, _QWORD *)",
+    "rank_score": 806,
+    "size": 292,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Streaming::FileOperations::GetDosFilePathUnsafe(_FLT_INSTANCE *,_FILE_OBJECT &,_UNICODE_STRING const &,appv::shared::kernel::managed_unicode_string<appv::shared::kernel::UnicodeString_allocator> &)",
+    "ea": "0x140002a14",
+    "function_file": "functions/140002a14_Streaming_FileOperations_GetDosFilePathUnsafe_FLT_INSTANCE_FILE_OBJECT_UNICODE_STRING_const_appv_shared_kernel.md",
+    "matched_imports": [
+      "FLTMGR!FltGetFileNameInformationUnsafe",
+      "FLTMGR!FltParseFileNameInformation",
+      "FLTMGR!FltReleaseFileNameInformation"
+    ],
+    "matched_strings": [],
+    "name": "?GetDosFilePathUnsafe@FileOperations@Streaming@@YAJPEAU_FLT_INSTANCE@@AEAU_FILE_OBJECT@@AEBU_UNICODE_STRING@@AEAV?$managed_unicode_string@UUnicodeString_allocator@kernel@shared@appv@@@kernel@shared@appv@@@Z",
+    "prototype": "__int64 __fastcall(PFLT_INSTANCE Instance, PFILE_OBJECT FileObject, const void **, struct _UNICODE_STRING *)",
+    "rank_score": 805,
+    "size": 289,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Streaming::InstanceContextFactory::DeleteContext(Streaming::StrmInstanceContext *)",
+    "ea": "0x140005d68",
+    "function_file": "functions/140005d68_Streaming_InstanceContextFactory_DeleteContext_Streaming_StrmInstanceContext.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "?DeleteContext@InstanceContextFactory@Streaming@@QEAAXPEAUStrmInstanceContext@2@@Z",
+    "prototype": "void __fastcall(PERESOURCE *this, struct Streaming::StrmInstanceContext ***)",
+    "rank_score": 805,
+    "size": 206,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "Streaming::PendingQueue::~PendingQueue(void)",
+    "ea": "0x1400053e8",
+    "function_file": "functions/1400053e8_Streaming_PendingQueue_PendingQueue_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteResourceLite",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlDeleteElementGenericTableAvl",
+      "ntoskrnl!RtlEnumerateGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "??1PendingQueue@Streaming@@QEAA@XZ",
+    "prototype": "void __fastcall(Streaming::PendingQueue *__hidden this)",
+    "rank_score": 805,
+    "size": 170,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Streaming::StreamingTargetFileCache::Clear(Streaming::StrmInstanceContext *)",
+    "ea": "0x140011bf8",
+    "function_file": "functions/140011bf8_Streaming_StreamingTargetFileCache_Clear_Streaming_StrmInstanceContext.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "?Clear@StreamingTargetFileCache@Streaming@@QEAAXPEAUStrmInstanceContext@2@@Z",
+    "prototype": "void __fastcall(PERESOURCE *this, struct Streaming::StrmInstanceContext *)",
+    "rank_score": 805,
+    "size": 178,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "appv::shared::kernel::ThreadHandles<Streaming::FlushRequestTagInfo>::ResizeNoLock(ulong)",
+    "ea": "0x140004378",
+    "function_file": "functions/140004378_appv_shared_kernel_ThreadHandles_Streaming_FlushRequestTagInfo_ResizeNoLock_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?ResizeNoLock@?$ThreadHandles@VFlushRequestTagInfo@Streaming@@@kernel@shared@appv@@AEAAJK@Z",
+    "prototype": "__int64 __fastcall(unsigned int *, unsigned int)",
+    "rank_score": 805,
+    "size": 290,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "appv::shared::kernel::ThreadHandles<Streaming::PackageWriterTagInfo>::ResizeNoLock(ulong)",
+    "ea": "0x1400069b8",
+    "function_file": "functions/1400069b8_appv_shared_kernel_ThreadHandles_Streaming_PackageWriterTagInfo_ResizeNoLock_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?ResizeNoLock@?$ThreadHandles@VPackageWriterTagInfo@Streaming@@@kernel@shared@appv@@AEAAJK@Z",
+    "prototype": "__int64 __fastcall(unsigned int *, unsigned int)",
+    "rank_score": 805,
+    "size": 290,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "appv::shared::kernel::ThreadHandles<Streaming::StreamFaultTagInfo>::ResizeNoLock(ulong)",
+    "ea": "0x14000e5a8",
+    "function_file": "functions/14000e5a8_appv_shared_kernel_ThreadHandles_Streaming_StreamFaultTagInfo_ResizeNoLock_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?ResizeNoLock@?$ThreadHandles@VStreamFaultTagInfo@Streaming@@@kernel@shared@appv@@AEAAJK@Z",
+    "prototype": "__int64 __fastcall(unsigned int *, unsigned int)",
+    "rank_score": 805,
+    "size": 290,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "appv::shared::kernel::ThreadHandles<Streaming::StreamFaultWriterTagInfo>::ResizeNoLock(ulong)",
+    "ea": "0x140006ae0",
+    "function_file": "functions/140006ae0_appv_shared_kernel_ThreadHandles_Streaming_StreamFaultWriterTagInfo_ResizeNoLock_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?ResizeNoLock@?$ThreadHandles@VStreamFaultWriterTagInfo@Streaming@@@kernel@shared@appv@@AEAAJK@Z",
+    "prototype": "__int64 __fastcall(unsigned int *, unsigned int)",
+    "rank_score": 805,
+    "size": 290,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "appv::shared::kernel::ThreadHandles<Streaming::WriteFaultTagInfo>::ResizeNoLock(ulong)",
+    "ea": "0x14000e6d0",
+    "function_file": "functions/14000e6d0_appv_shared_kernel_ThreadHandles_Streaming_WriteFaultTagInfo_ResizeNoLock_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?ResizeNoLock@?$ThreadHandles@VWriteFaultTagInfo@Streaming@@@kernel@shared@appv@@AEAAJK@Z",
+    "prototype": "__int64 __fastcall(unsigned int *, unsigned int)",
+    "rank_score": 805,
+    "size": 290,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "kernel_std::shared_ptr<appv::shared::kernel::shared_read_lock>::reset<appv::shared::kernel::shared_read_lock>(appv::shared::kernel::shared_read_lock *)",
+    "ea": "0x140002298",
+    "function_file": "functions/140002298_kernel_std_shared_ptr_appv_shared_kernel_shared_read_lock_reset_appv_shared_kernel_shared_read_lock_appv_share.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExDeleteResourceLite",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??$reset@Vshared_read_lock@kernel@shared@appv@@@?$shared_ptr@Vshared_read_lock@kernel@shared@appv@@@kernel_std@@QEAAXPEAVshared_read_lock@kernel@shared@appv@@@Z",
+    "prototype": "__int64 __fastcall(__int64 *, _QWORD *)",
+    "rank_score": 804,
+    "size": 250,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "Streaming::PackageWriter::WriteToStreamableFile(_FLT_INSTANCE *,Streaming::Context::StrmStreamContext *,_FILE_OBJECT &,_LARGE_INTEGER,void *,ulong,ulong,bool,ulong &)",
+    "ea": "0x14000984c",
+    "function_file": "functions/14000984c_Streaming_PackageWriter_WriteToStreamableFile_FLT_INSTANCE_Streaming_Context_StrmStreamContext_FILE_OBJECT_LAR.md",
+    "matched_imports": [
+      "FLTMGR!FltWriteFile",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [
+      "PackageWriter::WriteToStreamableFile() - PackageWriter::WriteToStreamableFile() - Invalid parameter was passed in the write request for file %s. Size %lld from offset %lld with data size %ld. Failure status 0x%08X.",
+      "PackageWriter::WriteToStreamableFile() - NTFS Error while trying to write to the file %s. Size %lld from offset %lld with data size %ld. Failure status 0x%08X.",
+      "PackageWriter::WriteToStreamableFile() - NTFS Error while trying to write to the file %s. Size %lld from offset %lld with data size %ld. Failure status 0x%08X."
+    ],
+    "name": "?WriteToStreamableFile@PackageWriter@Streaming@@SAJPEAU_FLT_INSTANCE@@PEAUStrmStreamContext@Context@2@AEAU_FILE_OBJECT@@T_LARGE_INTEGER@@PEAXKK_NAEAK@Z",
+    "prototype": "__int64 __fastcall(struct _FLT_INSTANCE *, struct Streaming::Context::StrmStreamContext *, struct _FILE_OBJECT *, union _LARGE_INTEGER, void *Src, size_t Size, unsigned int, ULONG, unsigned int *)",
+    "rank_score": 766,
+    "size": 774,
+    "tags": [
+      "file_ops",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "Streaming::WriteFault::ProcessFault(void)",
+    "ea": "0x140014dcc",
+    "function_file": "functions/140014dcc_Streaming_WriteFault_ProcessFault_void.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [
+      "complete write file %wZ \n"
+    ],
+    "name": "?ProcessFault@WriteFault@Streaming@@QEAA?AW4_FLT_PREOP_CALLBACK_STATUS@@XZ",
+    "prototype": "__int64 __fastcall(Streaming::WriteFault *this)",
+    "rank_score": 661,
+    "size": 542,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Streaming::Messaging::UserCommunication::Initialize(_UNICODE_STRING &,bool)",
+    "ea": "0x140013c74",
+    "function_file": "functions/140013c74_Streaming_Messaging_UserCommunication_Initialize_UNICODE_STRING_bool.md",
+    "matched_imports": [
+      "FLTMGR!FltBuildDefaultSecurityDescriptor",
+      "FLTMGR!FltCreateCommunicationPort",
+      "FLTMGR!FltFreeSecurityDescriptor"
+    ],
+    "matched_strings": [],
+    "name": "?Initialize@UserCommunication@Messaging@Streaming@@QEAAJAEAU_UNICODE_STRING@@_N@Z",
+    "prototype": "__int64 __fastcall(PFLT_PORT *ServerPort, struct _UNICODE_STRING *, char)",
+    "rank_score": 644,
+    "size": 263,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "Streaming::MDLCache::GetFreeMdl(ulong,kernel_std::shared_ptr<appv::shared::kernel::kmdl> &)",
+    "ea": "0x140010270",
+    "function_file": "functions/140010270_Streaming_MDLCache_GetFreeMdl_ulong_kernel_std_shared_ptr_appv_shared_kernel_kmdl.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "?GetFreeMdl@MDLCache@Streaming@@QEAAJKAEAV?$shared_ptr@Vkmdl@kernel@shared@appv@@@kernel_std@@@Z",
+    "prototype": "__int64 __fastcall(__int64, unsigned int, __int64)",
+    "rank_score": 636,
+    "size": 863,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 26,
+    "demangled": "Streaming::Utils::GetNullTerminated(_UNICODE_STRING const *)",
+    "ea": "0x140014b00",
+    "function_file": "functions/140014b00_Streaming_Utils_GetNullTerminated_UNICODE_STRING_const.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?GetNullTerminated@Utils@Streaming@@YA?AV?$shared_ptr@_W@kernel_std@@PEBU_UNICODE_STRING@@@Z",
+    "prototype": "_QWORD *__fastcall(_QWORD *, unsigned __int16 *)",
+    "rank_score": 630,
+    "size": 312,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "Streaming::MDLListCache::MDLListCache(ulong,ulong,ulong,long &)",
+    "ea": "0x140013304",
+    "function_file": "functions/140013304_Streaming_MDLListCache_MDLListCache_ulong_ulong_ulong_long.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExInitializePagedLookasideList",
+      "ntoskrnl!ExInitializeResourceLite"
+    ],
+    "matched_strings": [],
+    "name": "??0MDLListCache@Streaming@@QEAA@KKKAEAJ@Z",
+    "prototype": "PPAGED_LOOKASIDE_LIST __fastcall(PPAGED_LOOKASIDE_LIST Lookaside, int, int, unsigned int, int *)",
+    "rank_score": 623,
+    "size": 232,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "Streaming::Utils::GetProcessAndUserNotSystem(_FLT_CALLBACK_DATA &,appv::shared::kernel::managed_unicode_string<appv::shared::kernel::UnicodeString_allocator> &,void * &)",
+    "ea": "0x140014c40",
+    "function_file": "functions/140014c40_Streaming_Utils_GetProcessAndUserNotSystem_FLT_CALLBACK_DATA_appv_shared_kernel_managed_unicode_string_appv_sh.md",
+    "matched_imports": [
+      "FLTMGR!FltGetRequestorProcessIdEx",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?GetProcessAndUserNotSystem@Utils@Streaming@@YAJAEAU_FLT_CALLBACK_DATA@@AEAV?$managed_unicode_string@UUnicodeString_allocator@kernel@shared@appv@@@kernel@shared@appv@@AEAPEAX@Z",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA CallbackData, __int64, HANDLE *)",
+    "rank_score": 618,
+    "size": 241,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "appv::shared::kernel::ConvertSid<appv::shared::kernel::UnicodeString_allocator>(void *,appv::shared::kernel::managed_unicode_string<appv::shared::kernel::UnicodeString_allocator> &)",
+    "ea": "0x14000d718",
+    "function_file": "functions/14000d718_appv_shared_kernel_ConvertSid_appv_shared_kernel_UnicodeString_allocator_void_appv_shared_kernel_managed_unico.md",
+    "matched_imports": [
+      "ntoskrnl!RtlConvertSidToUnicodeString",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!RtlValidSid"
+    ],
+    "matched_strings": [],
+    "name": "??$ConvertSid@UUnicodeString_allocator@kernel@shared@appv@@@kernel@shared@appv@@YAJPEAXAEAV?$managed_unicode_string@UUnicodeString_allocator@kernel@shared@appv@@@012@@Z",
+    "prototype": "NTSTATUS __fastcall(PSID Sid, __int64)",
+    "rank_score": 616,
+    "size": 130,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Streaming::Messaging::UserCommunication::InitializeConnection(appv::shared::kernel::auto_ptr<Streaming::Messaging::UserCommunication,Streaming::Messaging::UserCommunicationDelete> &,_UNICODE_STRING &,bool)",
+    "ea": "0x140013d84",
+    "function_file": "functions/140013d84_Streaming_Messaging_UserCommunication_InitializeConnection_appv_shared_kernel_auto_ptr_Streaming_Messaging_Use.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExInitializeResourceLite"
+    ],
+    "matched_strings": [],
+    "name": "?InitializeConnection@UserCommunication@Messaging@Streaming@@SAJAEAV?$auto_ptr@VUserCommunication@Messaging@Streaming@@UUserCommunicationDelete@23@@kernel@shared@appv@@AEAU_UNICODE_STRING@@_N@Z",
+    "prototype": "__int64 __fastcall(__int64 *, struct _UNICODE_STRING *, bool)",
+    "rank_score": 615,
+    "size": 241,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "Streaming::StreamFaultManager::CreateWriteFault(_FLT_CALLBACK_DATA &,appv::shared::kernel::auto_ptr<Streaming::Context::StrmStreamContext,Streaming::Context::ContextDelete> &,bool)",
+    "ea": "0x14000de2c",
+    "function_file": "functions/14000de2c_Streaming_StreamFaultManager_CreateWriteFault_FLT_CALLBACK_DATA_appv_shared_kernel_auto_ptr_Streaming_Context_.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?CreateWriteFault@StreamFaultManager@Streaming@@QEAA?AW4_FLT_PREOP_CALLBACK_STATUS@@AEAU_FLT_CALLBACK_DATA@@AEAV?$auto_ptr@UStrmStreamContext@Context@Streaming@@UContextDelete@23@@kernel@shared@appv@@_N@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, char)",
+    "rank_score": 611,
+    "size": 598,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "StreamFaultBuffer::StreamFaultBuffer(_FLT_CALLBACK_DATA_QUEUE *,_IO_CSQ_IRP_CONTEXT *,appv::shared::kernel::auto_ptr<_FILE_OBJECT,appv::shared::kernel::ObjectDelete> &,appv::shared::kernel::managed_unicode_string<appv::shared::kernel::UnicodeString_allocator> &,ulong,long &)",
+    "ea": "0x14000bfe4",
+    "function_file": "functions/14000bfe4_StreamFaultBuffer_StreamFaultBuffer_FLT_CALLBACK_DATA_QUEUE_IO_CSQ_IRP_CONTEXT_appv_shared_kernel_auto_ptr_FIL.md",
+    "matched_imports": [
+      "FLTMGR!FltCbdqRemoveNextIo",
+      "FLTMGR!FltLockUserBuffer",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache"
+    ],
+    "matched_strings": [],
+    "name": "??0StreamFaultBuffer@@QEAA@PEAU_FLT_CALLBACK_DATA_QUEUE@@PEAU_IO_CSQ_IRP_CONTEXT@@AEAV?$auto_ptr@U_FILE_OBJECT@@UObjectDelete@kernel@shared@appv@@@kernel@shared@appv@@AEAV?$managed_unicode_string@UUnicodeString_allocator@kernel@shared@appv@@@456@KAEAJ@Z",
+    "prototype": "__int64 __fastcall(__int64, struct _FLT_CALLBACK_DATA_QUEUE *, void *, __int64, __int64, int, NTSTATUS *)",
+    "rank_score": 609,
+    "size": 490,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "Streaming::Context::StreamContextFactory::GetStreamContext(_FLT_INSTANCE *,_FILE_OBJECT &,appv::shared::kernel::auto_ptr<Streaming::Context::StrmStreamContext,Streaming::Context::ContextDelete> &)",
+    "ea": "0x14000bcb0",
+    "function_file": "functions/14000bcb0_Streaming_Context_StreamContextFactory_GetStreamContext_FLT_INSTANCE_FILE_OBJECT_appv_shared_kernel_auto_ptr_S.md",
+    "matched_imports": [
+      "FLTMGR!FltGetStreamContext",
+      "FLTMGR!FltReleaseContext"
+    ],
+    "matched_strings": [],
+    "name": "?GetStreamContext@StreamContextFactory@Context@Streaming@@SAJPEAU_FLT_INSTANCE@@AEAU_FILE_OBJECT@@AEAV?$auto_ptr@UStrmStreamContext@Context@Streaming@@UContextDelete@23@@kernel@shared@appv@@@Z",
+    "prototype": "__int64 __fastcall(struct _FLT_INSTANCE *, struct _FILE_OBJECT *, PFLT_CONTEXT *)",
+    "rank_score": 608,
+    "size": 126,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "Streaming::FlushRequestManager::Process(kernel_std::shared_ptr<Streaming::StreamingTargetFileObject> &)",
+    "ea": "0x1400041cc",
+    "function_file": "functions/1400041cc_Streaming_FlushRequestManager_Process_kernel_std_shared_ptr_Streaming_StreamingTargetFileObject.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?Process@FlushRequestManager@Streaming@@QEAAJAEAV?$shared_ptr@VStreamingTargetFileObject@Streaming@@@kernel_std@@@Z",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *)",
+    "rank_score": 608,
+    "size": 420,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "Streaming::PackageWriter::GetInstance(kernel_std::shared_ptr<Streaming::PackageWriter> &)",
+    "ea": "0x14000600c",
+    "function_file": "functions/14000600c_Streaming_PackageWriter_GetInstance_kernel_std_shared_ptr_Streaming_PackageWriter.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?GetInstance@PackageWriter@Streaming@@SAJAEAV?$shared_ptr@VPackageWriter@Streaming@@@kernel_std@@@Z",
+    "prototype": "__int64 __fastcall(char **)",
+    "rank_score": 608,
+    "size": 324,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "Streaming::StreamFaultWriterWorker::GetInstance(kernel_std::shared_ptr<Streaming::StreamFaultWriterWorker> &)",
+    "ea": "0x140006158",
+    "function_file": "functions/140006158_Streaming_StreamFaultWriterWorker_GetInstance_kernel_std_shared_ptr_Streaming_StreamFaultWriterWorker.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?GetInstance@StreamFaultWriterWorker@Streaming@@SAJAEAV?$shared_ptr@VStreamFaultWriterWorker@Streaming@@@kernel_std@@@Z",
+    "prototype": "__int64 __fastcall(char **)",
+    "rank_score": 608,
+    "size": 347,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "Streaming::FileOperations::GetFilePathFromCallback(_FLT_CALLBACK_DATA &,_UNICODE_STRING const &,appv::shared::kernel::managed_unicode_string<appv::shared::kernel::UnicodeString_allocator> &,appv::shared::kernel::managed_unicode_string<appv::shared::kernel::UnicodeString_allocator> &)",
+    "ea": "0x140002cb8",
+    "function_file": "functions/140002cb8_Streaming_FileOperations_GetFilePathFromCallback_FLT_CALLBACK_DATA_UNICODE_STRING_const_appv_shared_kernel_man.md",
+    "matched_imports": [
+      "FLTMGR!FltGetFileNameInformation",
+      "FLTMGR!FltParseFileNameInformation",
+      "FLTMGR!FltReleaseFileNameInformation"
+    ],
+    "matched_strings": [],
+    "name": "?GetFilePathFromCallback@FileOperations@Streaming@@YAJAEAU_FLT_CALLBACK_DATA@@AEBU_UNICODE_STRING@@AEAV?$managed_unicode_string@UUnicodeString_allocator@kernel@shared@appv@@@kernel@shared@appv@@2@Z",
+    "prototype": "__int64 __fastcall(struct _FLT_CALLBACK_DATA *, const void **, struct _UNICODE_STRING *, __int64)",
+    "rank_score": 607,
+    "size": 292,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Streaming::StreamFaultWriter::StreamFaultWriter(appv::shared::kernel::auto_ptr<Streaming::Context::StrmStreamContext,Streaming::Context::ContextDelete> &,_FLT_INSTANCE *,void *,__int64 &,ulong &,uint,long &)",
+    "ea": "0x14000f078",
+    "function_file": "functions/14000f078_Streaming_StreamFaultWriter_StreamFaultWriter_appv_shared_kernel_auto_ptr_Streaming_Context_StrmStreamContext_.md",
+    "matched_imports": [
+      "FLTMGR!FltReferenceContext",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "??0StreamFaultWriter@Streaming@@QEAA@AEAV?$auto_ptr@UStrmStreamContext@Context@Streaming@@UContextDelete@23@@kernel@shared@appv@@PEAU_FLT_INSTANCE@@PEAXAEA_JAEAKIAEAJ@Z",
+    "prototype": "__int64 __fastcall(__int64, PFLT_CONTEXT *, struct _FLT_INSTANCE *, const void *, const wchar_t **, _DWORD *, int, int *)",
+    "rank_score": 607,
+    "size": 292,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "Streaming::Context::StreamingBitMap::CreateInstance(void *,ulong,appv::shared::kernel::auto_ptr<Streaming::Context::StreamingBitMap,appv::shared::kernel::AllocDelete<Streaming::Context::StreamingBitMap>> &)",
+    "ea": "0x14000f7cc",
+    "function_file": "functions/14000f7cc_Streaming_Context_StreamingBitMap_CreateInstance_void_ulong_appv_shared_kernel_auto_ptr_Streaming_Context_Stre.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?CreateInstance@StreamingBitMap@Context@Streaming@@SAJPEAXKAEAV?$auto_ptr@VStreamingBitMap@Context@Streaming@@U?$AllocDelete@VStreamingBitMap@Context@Streaming@@@kernel@shared@appv@@@kernel@shared@appv@@@Z",
+    "prototype": "__int64 __fastcall(void *, unsigned int, Streaming::Context::StreamingBitMap **)",
+    "rank_score": 606,
+    "size": 206,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "Streaming::Context::StreamingBitMap::~StreamingBitMap(void)",
+    "ea": "0x14000f770",
+    "function_file": "functions/14000f770_Streaming_Context_StreamingBitMap_StreamingBitMap_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteResourceLite",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??1StreamingBitMap@Context@Streaming@@QEAA@XZ",
+    "prototype": "void __fastcall(Streaming::Context::StreamingBitMap *__hidden this)",
+    "rank_score": 604,
+    "size": 83,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Streaming::StreamingTargetFileObject::StreamingTargetFileObject(appv::shared::kernel::managed_unicode_string<appv::shared::kernel::UnicodeString_allocator> const &,appv::shared::kernel::auto_ptr<_FILE_OBJECT,appv::shared::kernel::ObjectDelete> &,appv::shared::kernel::auto_ptr<void,appv::shared::kernel::ObjectDelete> &,appv::shared::kernel::auto_ptr<Streaming::Context::StrmStreamContext,Streaming::Context::ContextDelete> &,long &)",
+    "ea": "0x140011a90",
+    "function_file": "functions/140011a90_Streaming_StreamingTargetFileObject_StreamingTargetFileObject_appv_shared_kernel_managed_unicode_string_appv_s.md",
+    "matched_imports": [
+      "FLTMGR!FltReferenceContext",
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "??0StreamingTargetFileObject@Streaming@@QEAA@AEBV?$managed_unicode_string@UUnicodeString_allocator@kernel@shared@appv@@@kernel@shared@appv@@AEAV?$auto_ptr@U_FILE_OBJECT@@UObjectDelete@kernel@shared@appv@@@345@AEAV?$auto_ptr@XUObjectDelete@kernel@shared@appv@@@345@AEAV?$auto_ptr@UStrmStreamContext@Context@Streaming@@UContextDelete@23@@345@AEAJ@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64 *, __int64 *, PFLT_CONTEXT *, int *)",
+    "rank_score": 604,
+    "size": 219,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "appv::shared::kernel::auto_ptr<Streaming::StrmCreateContext,appv::shared::kernel::AllocDelete<Streaming::StrmCreateContext>>::~auto_ptr<Streaming::StrmCreateContext,appv::shared::kernel::AllocDelete<Streaming::StrmCreateContext>>(void)",
+    "ea": "0x1400016fc",
+    "function_file": "functions/1400016fc_appv_shared_kernel_auto_ptr_Streaming_StrmCreateContext_appv_shared_kernel_AllocDelete_Streaming_StrmCreateCon.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??1?$auto_ptr@UStrmCreateContext@Streaming@@U?$AllocDelete@UStrmCreateContext@Streaming@@@kernel@shared@appv@@@kernel@shared@appv@@QEAA@XZ",
+    "prototype": "void __fastcall(_QWORD **)",
+    "rank_score": 602,
+    "size": 103,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "kernel_std::detail::sp_counted_impl_p<Streaming::StreamingTargetFileCache>::dispose(void)",
+    "ea": "0x140007bc0",
+    "function_file": "functions/140007bc0_kernel_std_detail_sp_counted_impl_p_Streaming_StreamingTargetFileCache_dispose_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteResourceLite",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?dispose@?$sp_counted_impl_p@VStreamingTargetFileCache@Streaming@@@detail@kernel_std@@UEAAXXZ",
+    "prototype": "void __fastcall(__int64)",
+    "rank_score": 602,
+    "size": 92,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "kernel_std::detail::sp_counted_impl_p<appv::shared::kernel::shared_read_lock>::dispose(void)",
+    "ea": "0x140002740",
+    "function_file": "functions/140002740_kernel_std_detail_sp_counted_impl_p_appv_shared_kernel_shared_read_lock_dispose_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteResourceLite",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?dispose@?$sp_counted_impl_p@Vshared_read_lock@kernel@shared@appv@@@detail@kernel_std@@UEAAXXZ",
+    "prototype": "void __fastcall(__int64)",
+    "rank_score": 601,
+    "size": 83,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "Streaming::Context::StreamingBitmapBuilder::ReadStreamingInformation(_FLT_INSTANCE *,_FILE_OBJECT &,appv::shared::kernel::auto_ptr<Streaming::Context::StreamingBitMap,appv::shared::kernel::AllocDelete<Streaming::Context::StreamingBitMap>> &)",
+    "ea": "0x14000b0bc",
+    "function_file": "functions/14000b0bc_Streaming_Context_StreamingBitmapBuilder_ReadStreamingInformation_FLT_INSTANCE_FILE_OBJECT_appv_shared_kernel_.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [
+      "StreamingBitmapBuilder::ReadStreamingInformation() - Could not read the streaming information from file %s. Failure status 0x%08X.",
+      "StreamingBitmapBuilder::ReadStreamingInformation() - Could not read the streaming information from file %s. Failure status 0x%08X.",
+      "StreamingBitmapBuilder::ReadStreamingInformation() - Low memory error."
+    ],
+    "name": "?ReadStreamingInformation@StreamingBitmapBuilder@Context@Streaming@@SAJPEAU_FLT_INSTANCE@@AEAU_FILE_OBJECT@@AEAV?$auto_ptr@VStreamingBitMap@Context@Streaming@@U?$AllocDelete@VStreamingBitMap@Context@Streaming@@@kernel@shared@appv@@@kernel@shared@appv@@@Z",
+    "prototype": "__int64 __fastcall(PFLT_INSTANCE Instance, PFILE_OBJECT FileObject, struct Streaming::Context::StreamingBitMap **)",
+    "rank_score": 553,
+    "size": 616,
+    "tags": [
+      "reparse_path",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "Streaming::StrmInstanceQueryTeardown(_FLT_RELATED_OBJECTS const *,ulong)",
+    "ea": "0x1400075d0",
+    "function_file": "functions/1400075d0_Streaming_StrmInstanceQueryTeardown_FLT_RELATED_OBJECTS_const_ulong.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseContext"
+    ],
+    "matched_strings": [
+      "Streaming::StrmInstanceQueryTeardown() - Streaming Filter cannot detach. there might be a few files still opened. Please reboot the machine to detach the filter."
+    ],
+    "name": "?StrmInstanceQueryTeardown@Streaming@@YAJPEBU_FLT_RELATED_OBJECTS@@K@Z",
+    "prototype": "__int64 __fastcall(Streaming *this, const struct _FLT_RELATED_OBJECTS *)",
+    "rank_score": 457,
+    "size": 296,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Streaming::MDLCache::MDLCache(long * const)",
+    "ea": "0x1400131fc",
+    "function_file": "functions/1400131fc_Streaming_MDLCache_MDLCache_long_const.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExInitializeResourceLite"
+    ],
+    "matched_strings": [],
+    "name": "??0MDLCache@Streaming@@AEAA@QEAJ@Z",
+    "prototype": "struct _PAGED_LOOKASIDE_LIST *__fastcall(struct _PAGED_LOOKASIDE_LIST *this, int *const)",
+    "rank_score": 424,
+    "size": 255,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "Streaming::StrmFltInterface::WriteFile(_FLT_INSTANCE *,_FILE_OBJECT &,_FLT_CALLBACK_DATA &)",
+    "ea": "0x140013160",
+    "function_file": "functions/140013160_Streaming_StrmFltInterface_WriteFile_FLT_INSTANCE_FILE_OBJECT_FLT_CALLBACK_DATA.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseContext"
+    ],
+    "matched_strings": [],
+    "name": "?WriteFile@StrmFltInterface@Streaming@@QEAA?AW4_FLT_PREOP_CALLBACK_STATUS@@PEAU_FLT_INSTANCE@@AEAU_FILE_OBJECT@@AEAU_FLT_CALLBACK_DATA@@@Z",
+    "prototype": "__int64 __fastcall(Streaming::StrmFltInterface *this, struct _FLT_INSTANCE *, struct _FILE_OBJECT *, struct _FLT_CALLBACK_DATA *)",
+    "rank_score": 417,
+    "size": 147,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 12,
+    "demangled": "appv::shared::kernel::managed_unicode_string<appv::shared::kernel::UnicodeString_allocator>::build_managed_unicode_string(_UNICODE_STRING const &)",
+    "ea": "0x1400034fc",
+    "function_file": "functions/1400034fc_appv_shared_kernel_managed_unicode_string_appv_shared_kernel_UnicodeString_allocator_build_managed_unicode_str.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?build_managed_unicode_string@?$managed_unicode_string@UUnicodeString_allocator@kernel@shared@appv@@@kernel@shared@appv@@QEAAJAEBU_UNICODE_STRING@@@Z",
+    "prototype": "__int64 __fastcall(__int64, unsigned __int16 *)",
+    "rank_score": 417,
+    "size": 333,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Streaming::staging_operations::stage_directory(wchar_t const *,wchar_t const *,void * const,_GUID const &)",
+    "ea": "0x140011478",
+    "function_file": "functions/140011478_Streaming_staging_operations_stage_directory_wchar_t_const_wchar_t_const_void_const_GUID_const.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?stage_directory@staging_operations@Streaming@@YAJPEB_W0QEAXAEBU_GUID@@@Z",
+    "prototype": "__int64 __fastcall(Streaming::staging_operations *this, const wchar_t *, const wchar_t *, _OWORD *)",
+    "rank_score": 416,
+    "size": 334,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "appv::shared::kernel::auto_ptr<Streaming::Messaging::UserCommunication,Streaming::Messaging::UserCommunicationDelete>::~auto_ptr<Streaming::Messaging::UserCommunication,Streaming::Messaging::UserCommunicationDelete>(void)",
+    "ea": "0x140001044",
+    "function_file": "functions/140001044_appv_shared_kernel_auto_ptr_Streaming_Messaging_UserCommunication_Streaming_Messaging_UserCommunicationDelete_.md",
+    "matched_imports": [
+      "FLTMGR!FltCloseCommunicationPort",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??1?$auto_ptr@VUserCommunication@Messaging@Streaming@@UUserCommunicationDelete@23@@kernel@shared@appv@@QEAA@XZ",
+    "prototype": "void __fastcall(Streaming::Messaging::UserCommunication **)",
+    "rank_score": 415,
+    "size": 100,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "Streaming::Messaging::UserCommunication::~UserCommunication(void)",
+    "ea": "0x1400053a4",
+    "function_file": "functions/1400053a4_Streaming_Messaging_UserCommunication_UserCommunication_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteResourceLite",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??1UserCommunication@Messaging@Streaming@@QEAA@XZ",
+    "prototype": "void __fastcall(Streaming::Messaging::UserCommunication *__hidden this)",
+    "rank_score": 414,
+    "size": 60,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "Streaming::StrmPreRead(_FLT_CALLBACK_DATA *,_FLT_RELATED_OBJECTS const *,void * *)",
+    "ea": "0x140001ce0",
+    "function_file": "functions/140001ce0_Streaming_StrmPreRead_FLT_CALLBACK_DATA_FLT_RELATED_OBJECTS_const_void.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseContext"
+    ],
+    "matched_strings": [],
+    "name": "?StrmPreRead@Streaming@@YA?AW4_FLT_PREOP_CALLBACK_STATUS@@PEAU_FLT_CALLBACK_DATA@@PEBU_FLT_RELATED_OBJECTS@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(Streaming *this, struct _FLT_CALLBACK_DATA *, const struct _FLT_RELATED_OBJECTS *, void **)",
+    "rank_score": 414,
+    "size": 167,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "Streaming::WriteFault::~WriteFault(void)",
+    "ea": "0x14000db20",
+    "function_file": "functions/14000db20_Streaming_WriteFault_WriteFault_void.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseContext",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??1WriteFault@Streaming@@QEAA@XZ",
+    "prototype": "void __fastcall(Streaming::WriteFault *__hidden this)",
+    "rank_score": 414,
+    "size": 98,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "appv::shared::kernel::buffer<appv::shared::kernel::UnicodeString_allocator>::resize(ulong)",
+    "ea": "0x140003770",
+    "function_file": "functions/140003770_appv_shared_kernel_buffer_appv_shared_kernel_UnicodeString_allocator_resize_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?resize@?$buffer@UUnicodeString_allocator@kernel@shared@appv@@@kernel@shared@appv@@QEAAJK@Z",
+    "prototype": "__int64 __fastcall(unsigned int *, unsigned int)",
+    "rank_score": 410,
+    "size": 132,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "Streaming::Context::StreamContextFactory::GetOrCreateStreamContext(_FLT_INSTANCE *,Streaming::InstanceContext &,_UNICODE_STRING const &,_UNICODE_STRING const &,_FILE_OBJECT &,appv::shared::kernel::auto_ptr<Streaming::Context::StrmStreamContext,Streaming::Context::ContextDelete> &)",
+    "ea": "0x14000bbd4",
+    "function_file": "functions/14000bbd4_Streaming_Context_StreamContextFactory_GetOrCreateStreamContext_FLT_INSTANCE_Streaming_InstanceContext_UNICODE.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?GetOrCreateStreamContext@StreamContextFactory@Context@Streaming@@SAJPEAU_FLT_INSTANCE@@AEAVInstanceContext@3@AEBU_UNICODE_STRING@@2AEAU_FILE_OBJECT@@AEAV?$auto_ptr@UStrmStreamContext@Context@Streaming@@UContextDelete@23@@kernel@shared@appv@@@Z",
+    "prototype": "__int64 __fastcall(PFLT_INSTANCE Instance, Streaming::InstanceContext *this, const void **, struct _UNICODE_STRING *, PFILE_OBJECT FileObject, PFLT_CONTEXT *)",
+    "rank_score": 409,
+    "size": 214,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "Streaming::FileOperations::ChangeFileAttribute(_FLT_INSTANCE *,_FILE_OBJECT &,ulong,uchar)",
+    "ea": "0x14000279c",
+    "function_file": "functions/14000279c_Streaming_FileOperations_ChangeFileAttribute_FLT_INSTANCE_FILE_OBJECT_ulong_uchar.md",
+    "matched_imports": [
+      "FLTMGR!FltQueryInformationFile",
+      "FLTMGR!FltSetInformationFile"
+    ],
+    "matched_strings": [],
+    "name": "?ChangeFileAttribute@FileOperations@Streaming@@YAJPEAU_FLT_INSTANCE@@AEAU_FILE_OBJECT@@KE@Z",
+    "prototype": "int __fastcall(PFLT_INSTANCE Instance, PFILE_OBJECT FileObject, struct _FILE_OBJECT *, char)",
+    "rank_score": 407,
+    "size": 194,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Streaming::FileOperations::CreateParentDirectories(_FLT_FILTER *,_FLT_INSTANCE *,_UNICODE_STRING const &,_UNICODE_STRING const &)",
+    "ea": "0x140002910",
+    "function_file": "functions/140002910_Streaming_FileOperations_CreateParentDirectories_FLT_FILTER_FLT_INSTANCE_UNICODE_STRING_const_UNICODE_STRING_c.md",
+    "matched_imports": [
+      "FLTMGR!FltClose",
+      "ntoskrnl!ObfDereferenceObject"
+    ],
+    "matched_strings": [],
+    "name": "?CreateParentDirectories@FileOperations@Streaming@@YAJPEAU_FLT_FILTER@@PEAU_FLT_INSTANCE@@AEBU_UNICODE_STRING@@2@Z",
+    "prototype": "__int64 __fastcall(Streaming::FileOperations *this, struct _FLT_FILTER *, struct _FLT_INSTANCE *, const struct _UNICODE_STRING *)",
+    "rank_score": 404,
+    "size": 251,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "CsqRemoveIo(_FLT_CALLBACK_DATA_QUEUE *,_FLT_CALLBACK_DATA *)",
+    "ea": "0x140002070",
+    "function_file": "functions/140002070_CsqRemoveIo_FLT_CALLBACK_DATA_QUEUE_FLT_CALLBACK_DATA.md",
+    "matched_imports": [
+      "ntoskrnl!RtlDeleteElementGenericTableAvl",
+      "ntoskrnl!RtlLookupElementGenericTableAvl"
+    ],
+    "matched_strings": [],
+    "name": "?CsqRemoveIo@@YAXPEAU_FLT_CALLBACK_DATA_QUEUE@@PEAU_FLT_CALLBACK_DATA@@@Z",
+    "prototype": "void __fastcall(PFLT_CALLBACK_DATA_QUEUE Cbdq, PFLT_CALLBACK_DATA Cbd)",
+    "rank_score": 401,
+    "size": 82,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 4,
+    "demangled": "Streaming::Messaging::UserCommunication::SendMessage(void *,ulong,void *,ulong &)",
+    "ea": "0x140014364",
+    "function_file": "functions/140014364_Streaming_Messaging_UserCommunication_SendMessage_void_ulong_void_ulong.md",
+    "matched_imports": [
+      "FLTMGR!FltSendMessage"
+    ],
+    "matched_strings": [
+      "UserCommunication::SendMessage() - Send message to the streaming engine failed. Status 0x%08X.",
+      "UserCommunication::SendMessage() - Send message to the streaming engine failed. Status 0x%08X."
+    ],
+    "name": "?SendMessage@UserCommunication@Messaging@Streaming@@QEAAJPEAXK0AEAK@Z",
+    "prototype": "__int64 __fastcall(Streaming::Messaging::UserCommunication *this, void *, ULONG, void *, unsigned int *ReplyLength)",
+    "rank_score": 303,
+    "size": 499,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "StreamFaultBuffer::Complete(long,ulong)",
+    "ea": "0x14000c2ac",
+    "function_file": "functions/14000c2ac_StreamFaultBuffer_Complete_long_ulong.md",
+    "matched_imports": [
+      "FLTMGR!FltCompletePendedPreOperation"
+    ],
+    "matched_strings": [
+      "StreamFaultBuffer::Complete() - Stream fault failed. File name: %s, Offset: %lld , Length %ld, Status 0x%08X.",
+      "StreamFaultBuffer::Complete() - Stream Succeeded. File name: %s, Offset: %lld, Length %ld, Status 0x%08X."
+    ],
+    "name": "?Complete@StreamFaultBuffer@@QEAAXJK@Z",
+    "prototype": "void __fastcall(StreamFaultBuffer *__hidden this, int, unsigned int)",
+    "rank_score": 300,
+    "size": 506,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "Streaming::Context::StreamingBitmapBuilder::UnMarkFileForStreaming(_FLT_INSTANCE *,_FILE_OBJECT &)",
+    "ea": "0x14000b32c",
+    "function_file": "functions/14000b32c_Streaming_Context_StreamingBitmapBuilder_UnMarkFileForStreaming_FLT_INSTANCE_FILE_OBJECT.md",
+    "matched_imports": [
+      "FLTMGR!FltUntagFile"
+    ],
+    "matched_strings": [
+      "StreamingBitmapBuilder::UnMarkFileForStreaming() - Could not delete the streaming information for file %s. Failure status 0x%08X."
+    ],
+    "name": "?UnMarkFileForStreaming@StreamingBitmapBuilder@Context@Streaming@@SAJPEAU_FLT_INSTANCE@@AEAU_FILE_OBJECT@@@Z",
+    "prototype": "__int64 __fastcall(PFLT_INSTANCE Instance, PFILE_OBJECT FileObject)",
+    "rank_score": 259,
+    "size": 276,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "CsqCompleteCanceledIo(_FLT_CALLBACK_DATA_QUEUE *,_FLT_CALLBACK_DATA *)",
+    "ea": "0x140001e30",
+    "function_file": "functions/140001e30_CsqCompleteCanceledIo_FLT_CALLBACK_DATA_QUEUE_FLT_CALLBACK_DATA.md",
+    "matched_imports": [
+      "FLTMGR!FltCompletePendedPreOperation"
+    ],
+    "matched_strings": [
+      "CsqCompleteCanceledIo() - Stream fault was canceled. File name: %s, Offset: %lld, Length %ld, Status 0x%08X."
+    ],
+    "name": "?CsqCompleteCanceledIo@@YAXPEAU_FLT_CALLBACK_DATA_QUEUE@@PEAU_FLT_CALLBACK_DATA@@@Z",
+    "prototype": "void __fastcall(PFLT_CALLBACK_DATA_QUEUE Cbdq, PFLT_CALLBACK_DATA Cbd)",
+    "rank_score": 255,
+    "size": 202,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "Streaming::FileOperations::OpenFileForStreaming(_FLT_FILTER *,_FLT_INSTANCE *,_UNICODE_STRING const *,appv::shared::kernel::auto_ptr<_FILE_OBJECT,appv::shared::kernel::ObjectDelete> &,appv::shared::kernel::auto_ptr<void,appv::shared::kernel::ObjectDelete> &)",
+    "ea": "0x1400030b8",
+    "function_file": "functions/1400030b8_Streaming_FileOperations_OpenFileForStreaming_FLT_FILTER_FLT_INSTANCE_UNICODE_STRING_const_appv_shared_kernel_.md",
+    "matched_imports": [
+      "FLTMGR!FltCreateFileEx"
+    ],
+    "matched_strings": [],
+    "name": "?OpenFileForStreaming@FileOperations@Streaming@@YAJPEAU_FLT_FILTER@@PEAU_FLT_INSTANCE@@PEBU_UNICODE_STRING@@AEAV?$auto_ptr@U_FILE_OBJECT@@UObjectDelete@kernel@shared@appv@@@kernel@shared@appv@@AEAV?$auto_ptr@XUObjectDelete@kernel@shared@appv@@@789@@Z",
+    "prototype": "NTSTATUS __fastcall(struct _FLT_FILTER *, struct _FLT_INSTANCE *, struct _UNICODE_STRING *, PFILE_OBJECT *, PHANDLE FileHandle)",
+    "rank_score": 245,
+    "size": 154,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "Streaming::FileOperations::CreateDirectoryInternal(_FLT_FILTER *,_FLT_INSTANCE *,_UNICODE_STRING const &,ulong,ulong,void *,appv::shared::kernel::auto_ptr<_FILE_OBJECT,appv::shared::kernel::ObjectDelete> &,appv::shared::kernel::auto_ptr<void,appv::shared::kernel::ObjectDelete> &)",
+    "ea": "0x140002864",
+    "function_file": "functions/140002864_Streaming_FileOperations_CreateDirectoryInternal_FLT_FILTER_FLT_INSTANCE_UNICODE_STRING_const_ulong_ulong_void.md",
+    "matched_imports": [
+      "FLTMGR!FltCreateFileEx"
+    ],
+    "matched_strings": [],
+    "name": "?CreateDirectoryInternal@FileOperations@Streaming@@YAJPEAU_FLT_FILTER@@PEAU_FLT_INSTANCE@@AEBU_UNICODE_STRING@@KKPEAXAEAV?$auto_ptr@U_FILE_OBJECT@@UObjectDelete@kernel@shared@appv@@@kernel@shared@appv@@AEAV?$auto_ptr@XUObjectDelete@kernel@shared@appv@@@789@@Z",
+    "prototype": "NTSTATUS __fastcall(struct _FLT_FILTER *, struct _FLT_INSTANCE *, struct _UNICODE_STRING *, ACCESS_MASK DesiredAccess, ULONG CreateDisposition, __int64, PFILE_OBJECT *FileObject, void **FileHandle)",
+    "rank_score": 244,
+    "size": 163,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "Streaming::Messaging::UserCommunication::ProcessMessage(void *,ulong,void *,ulong,ulong *)",
+    "ea": "0x140013f68",
+    "function_file": "functions/140013f68_Streaming_Messaging_UserCommunication_ProcessMessage_void_ulong_void_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "UserCommunication::ProcessMessage() - The streaming filter received a corrupted message, you system might be running a malicious application. Failure status 0x%08X.",
+      "UserCommunication::ProcessMessage() - A create package file request is received.",
+      "UserCommunication::ProcessMessage() - A create package file message failed. Failure Status 0x%08X.",
+      "UserCommunication::ProcessMessage() - Streaming Filter received a write request.",
+      "UserCommunication::ProcessMessage() - Streaming Filter failed the write request received from the streaming manager. Failure status 0x%08X."
+    ],
+    "name": "?ProcessMessage@UserCommunication@Messaging@Streaming@@QEAAJPEAXK0KPEAK@Z",
+    "prototype": "__int64 __fastcall(Streaming::Messaging::UserCommunication *this, Streaming::staging_operations *, unsigned int, _DWORD *, unsigned int, unsigned int *)",
+    "rank_score": 239,
+    "size": 1014,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "appv::shared::kernel::SidFromToken<appv::shared::kernel::UnicodeString_allocator>(void *,appv::shared::kernel::managed_unicode_string<appv::shared::kernel::UnicodeString_allocator> &,uchar *)",
+    "ea": "0x140014760",
+    "function_file": "functions/140014760_appv_shared_kernel_SidFromToken_appv_shared_kernel_UnicodeString_allocator_void_appv_shared_kernel_managed_uni.md",
+    "matched_imports": [
+      "ntoskrnl!ZwQueryInformationToken"
+    ],
+    "matched_strings": [],
+    "name": "??$SidFromToken@UUnicodeString_allocator@kernel@shared@appv@@@kernel@shared@appv@@YAJPEAXAEAV?$managed_unicode_string@UUnicodeString_allocator@kernel@shared@appv@@@012@PEAE@Z",
+    "prototype": "int __fastcall(void *, __int64, _BYTE *)",
+    "rank_score": 217,
+    "size": 150,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 11,
+    "demangled": "Streaming::InstanceContextFactory::GetContext(_FLT_INSTANCE *,Streaming::InstanceContext &)",
+    "ea": "0x140005e3c",
+    "function_file": "functions/140005e3c_Streaming_InstanceContextFactory_GetContext_FLT_INSTANCE_Streaming_InstanceContext.md",
+    "matched_imports": [
+      "FLTMGR!FltGetInstanceContext"
+    ],
+    "matched_strings": [],
+    "name": "?GetContext@InstanceContextFactory@Streaming@@QEAAJPEAU_FLT_INSTANCE@@AEAVInstanceContext@2@@Z",
+    "prototype": "__int64 __fastcall(Streaming::InstanceContextFactory *this, struct _FLT_INSTANCE *, PFLT_CONTEXT *)",
+    "rank_score": 216,
+    "size": 147,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "Streaming::StreamingTargetFileCache::Find(appv::shared::kernel::managed_unicode_string<appv::shared::kernel::UnicodeString_allocator> const &,kernel_std::shared_ptr<Streaming::StreamingTargetFileObject> &)",
+    "ea": "0x140011ec4",
+    "function_file": "functions/140011ec4_Streaming_StreamingTargetFileCache_Find_appv_shared_kernel_managed_unicode_string_appv_shared_kernel_UnicodeSt.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?Find@StreamingTargetFileCache@Streaming@@AEAAJAEBV?$managed_unicode_string@UUnicodeString_allocator@kernel@shared@appv@@@kernel@shared@appv@@AEAV?$shared_ptr@VStreamingTargetFileObject@Streaming@@@kernel_std@@@Z",
+    "prototype": "__int64 __fastcall(__int64, const UNICODE_STRING *, __int64)",
+    "rank_score": 214,
+    "size": 102,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Streaming::StrmPostQueryInfoWorker(_FLT_CALLBACK_DATA *,_FLT_RELATED_OBJECTS const *,void *,ulong)",
+    "ea": "0x1400018d0",
+    "function_file": "functions/1400018d0_Streaming_StrmPostQueryInfoWorker_FLT_CALLBACK_DATA_FLT_RELATED_OBJECTS_const_void_ulong.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseContext"
+    ],
+    "matched_strings": [],
+    "name": "?StrmPostQueryInfoWorker@Streaming@@YA?AW4_FLT_POSTOP_CALLBACK_STATUS@@PEAU_FLT_CALLBACK_DATA@@PEBU_FLT_RELATED_OBJECTS@@PEAXK@Z",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA Data, PCFLT_RELATED_OBJECTS FltObjects, PVOID CompletionContext, FLT_POST_OPERATION_FLAGS Flags)",
+    "rank_score": 213,
+    "size": 161,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "Streaming::StrmPostQueryInfo(_FLT_CALLBACK_DATA *,_FLT_RELATED_OBJECTS const *,void *,ulong)",
+    "ea": "0x140001870",
+    "function_file": "functions/140001870_Streaming_StrmPostQueryInfo_FLT_CALLBACK_DATA_FLT_RELATED_OBJECTS_const_void_ulong.md",
+    "matched_imports": [
+      "FLTMGR!FltDoCompletionProcessingWhenSafe"
+    ],
+    "matched_strings": [],
+    "name": "?StrmPostQueryInfo@Streaming@@YA?AW4_FLT_POSTOP_CALLBACK_STATUS@@PEAU_FLT_CALLBACK_DATA@@PEBU_FLT_RELATED_OBJECTS@@PEAXK@Z",
+    "prototype": "__int64 __fastcall(struct _FLT_CALLBACK_DATA *this, const struct _FLT_RELATED_OBJECTS *, struct _FLT_RELATED_OBJECTS *, void *)",
+    "rank_score": 211,
+    "size": 83,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "appv::shared::kernel::doubly_linked_list<kernel_std::shared_ptr<Streaming::FlushRequestManager::FlushRequest>,Streaming::FlushRequestTagInfo>::erase(appv::shared::kernel::bidirectional_list_iterator<appv::shared::kernel::dl_node_t<kernel_std::shared_ptr<Streaming::FlushRequestManager::FlushRequest>>>)",
+    "ea": "0x140004c40",
+    "function_file": "functions/140004c40_appv_shared_kernel_doubly_linked_list_kernel_std_shared_ptr_Streaming_FlushRequestManager_FlushRequest_Streami.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?erase@?$doubly_linked_list@V?$shared_ptr@VFlushRequest@FlushRequestManager@Streaming@@@kernel_std@@VFlushRequestTagInfo@Streaming@@@kernel@shared@appv@@QEAA?AV?$bidirectional_list_iterator@V?$dl_node_t@V?$shared_ptr@VFlushRequest@FlushRequestManager@Streaming@@@kernel_std@@@kernel@shared@appv@@@234@V5234@@Z",
+    "prototype": "_QWORD *__fastcall(_DWORD *, _QWORD *, __int64)",
+    "rank_score": 209,
+    "size": 151,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "appv::shared::kernel::managed_unicode_string<appv::shared::kernel::UnicodeString_allocator>::append(_UNICODE_STRING const &)",
+    "ea": "0x140003408",
+    "function_file": "functions/140003408_appv_shared_kernel_managed_unicode_string_appv_shared_kernel_UnicodeString_allocator_append_UNICODE_STRING_con.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?append@?$managed_unicode_string@UUnicodeString_allocator@kernel@shared@appv@@@kernel@shared@appv@@QEAAJAEBU_UNICODE_STRING@@@Z",
+    "prototype": "__int64 __fastcall(struct _UNICODE_STRING *, const void **)",
+    "rank_score": 209,
+    "size": 236,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 4,
+    "demangled": "appv::shared::kernel::managed_unicode_string<appv::shared::kernel::UnicodeString_allocator>::build_managed_unicode_string(appv::shared::kernel::managed_unicode_string<appv::shared::kernel::UnicodeString_allocator> const &)",
+    "ea": "0x140003650",
+    "function_file": "functions/140003650_appv_shared_kernel_managed_unicode_string_appv_shared_kernel_UnicodeString_allocator_build_managed_unicode_str.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "?build_managed_unicode_string@?$managed_unicode_string@UUnicodeString_allocator@kernel@shared@appv@@@kernel@shared@appv@@QEAAJAEBV1234@@Z",
+    "prototype": "__int64 __fastcall(__int64, unsigned int *)",
+    "rank_score": 208,
+    "size": 139,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "appv::shared::kernel::auto_ptr<Streaming::StreamFaultManager,appv::shared::kernel::AllocDelete<Streaming::StreamFaultManager>>::~auto_ptr<Streaming::StreamFaultManager,appv::shared::kernel::AllocDelete<Streaming::StreamFaultManager>>(void)",
+    "ea": "0x140005334",
+    "function_file": "functions/140005334_appv_shared_kernel_auto_ptr_Streaming_StreamFaultManager_appv_shared_kernel_AllocDelete_Streaming_StreamFaultM.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "??1?$auto_ptr@VStreamFaultManager@Streaming@@U?$AllocDelete@VStreamFaultManager@Streaming@@@kernel@shared@appv@@@kernel@shared@appv@@QEAA@XZ",
+    "prototype": "void __fastcall(void **)",
+    "rank_score": 205,
+    "size": 106,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "McGenEventWrite_EtwWriteTransfer",
+    "ea": "0x14000a14c",
+    "function_file": "functions/14000a14c_McGenEventWrite_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "McGenEventWrite_EtwWriteTransfer",
+    "prototype": "NTSTATUS __fastcall(REGHANDLE *, const EVENT_DESCRIPTOR *, const GUID *, ULONG, PEVENT_DATA_DESCRIPTOR UserData)",
+    "rank_score": 203,
+    "size": 89,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "kernel_std::detail::sp_counted_impl_p<Streaming::PackageWriter>::dispose(void)",
+    "ea": "0x140007ae0",
+    "function_file": "functions/140007ae0_kernel_std_detail_sp_counted_impl_p_Streaming_PackageWriter_dispose_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?dispose@?$sp_counted_impl_p@VPackageWriter@Streaming@@@detail@kernel_std@@UEAAXXZ",
+    "prototype": "void __fastcall(__int64)",
+    "rank_score": 203,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "kernel_std::detail::sp_counted_impl_p<Streaming::StreamFaultWriterWorker>::dispose(void)",
+    "ea": "0x140007b80",
+    "function_file": "functions/140007b80_kernel_std_detail_sp_counted_impl_p_Streaming_StreamFaultWriterWorker_dispose_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?dispose@?$sp_counted_impl_p@VStreamFaultWriterWorker@Streaming@@@detail@kernel_std@@UEAAXXZ",
+    "prototype": "void __fastcall(__int64)",
+    "rank_score": 203,
+    "size": 55,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "messages::validate_pointer<_FILE_ALLOCATED_RANGE_BUFFER>(_FILE_ALLOCATED_RANGE_BUFFER *,ulong)",
+    "ea": "0x140010104",
+    "function_file": "functions/140010104_messages_validate_pointer_FILE_ALLOCATED_RANGE_BUFFER_FILE_ALLOCATED_RANGE_BUFFER_ulong.md",
+    "matched_imports": [
+      "ntoskrnl!ProbeForRead"
+    ],
+    "matched_strings": [],
+    "name": "??$validate_pointer@U_FILE_ALLOCATED_RANGE_BUFFER@@@messages@@YA_NPEAU_FILE_ALLOCATED_RANGE_BUFFER@@K@Z",
+    "prototype": "char __fastcall(volatile void *, unsigned int)",
+    "rank_score": 203,
+    "size": 36,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Streaming::StrmPreMDLRead(_FLT_CALLBACK_DATA *,_FLT_RELATED_OBJECTS const *,void * *)",
+    "ea": "0x140001c70",
+    "function_file": "functions/140001c70_Streaming_StrmPreMDLRead_FLT_CALLBACK_DATA_FLT_RELATED_OBJECTS_const_void.md",
+    "matched_imports": [
+      "FLTMGR!FltReleaseContext"
+    ],
+    "matched_strings": [],
+    "name": "?StrmPreMDLRead@Streaming@@YA?AW4_FLT_PREOP_CALLBACK_STATUS@@PEAU_FLT_CALLBACK_DATA@@PEBU_FLT_RELATED_OBJECTS@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(Streaming *this, struct _FLT_CALLBACK_DATA *, const struct _FLT_RELATED_OBJECTS *, void **)",
+    "rank_score": 202,
+    "size": 97,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "kernel_std::detail::sp_counted_impl_p<Streaming::StreamFaultWriter>::dispose(void)",
+    "ea": "0x14000d6e0",
+    "function_file": "functions/14000d6e0_kernel_std_detail_sp_counted_impl_p_Streaming_StreamFaultWriter_dispose_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?dispose@?$sp_counted_impl_p@VStreamFaultWriter@Streaming@@@detail@kernel_std@@UEAAXXZ",
+    "prototype": "void __fastcall(__int64)",
+    "rank_score": 202,
+    "size": 47,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "kernel_std::detail::sp_counted_impl_p<Streaming::WriteFault>::dispose(void)",
+    "ea": "0x14000f040",
+    "function_file": "functions/14000f040_kernel_std_detail_sp_counted_impl_p_Streaming_WriteFault_dispose_void.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "?dispose@?$sp_counted_impl_p@VWriteFault@Streaming@@@detail@kernel_std@@UEAAXXZ",
+    "prototype": "void __fastcall(__int64)",
+    "rank_score": 202,
+    "size": 47,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "StreamFaultBuffer::UpdateUserBuffer(void *,ulong)",
+    "ea": "0x14000d5a8",
+    "function_file": "functions/14000d5a8_StreamFaultBuffer_UpdateUserBuffer_void_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "StreamFaultBuffer::UpdateUserBuffer() - Stream fault failed because of a bad user buffer. File name: %s, Offset: %lld , Length %ld, Status 0x%08X."
+    ],
+    "name": "?UpdateUserBuffer@StreamFaultBuffer@@QEAAJPEAXK@Z",
+    "prototype": "__int64 __fastcall(StreamFaultBuffer *__hidden this, void *, unsigned int)",
+    "rank_score": 58,
+    "size": 211,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "Streaming::StrmPostCreate(_FLT_CALLBACK_DATA *,_FLT_RELATED_OBJECTS const *,void *,ulong)",
+    "ea": "0x140001780",
+    "function_file": "functions/140001780_Streaming_StrmPostCreate_FLT_CALLBACK_DATA_FLT_RELATED_OBJECTS_const_void_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Streaming::StrmPostCreate() - Failed to open file with status 0x%08X."
+    ],
+    "name": "?StrmPostCreate@Streaming@@YA?AW4_FLT_POSTOP_CALLBACK_STATUS@@PEAU_FLT_CALLBACK_DATA@@PEBU_FLT_RELATED_OBJECTS@@PEAXK@Z",
+    "prototype": "__int64 __fastcall(Streaming *this, struct _FLT_CALLBACK_DATA *, const struct _FLT_RELATED_OBJECTS *, void *)",
+    "rank_score": 57,
+    "size": 228,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "Streaming::StagingManager::RemoveOfflineDirectory(_FLT_INSTANCE *,_FILE_OBJECT &,appv::shared::kernel::managed_unicode_string<appv::shared::kernel::UnicodeString_allocator> const &)",
+    "ea": "0x14000a1f0",
+    "function_file": "functions/14000a1f0_Streaming_StagingManager_RemoveOfflineDirectory_FLT_INSTANCE_FILE_OBJECT_appv_shared_kernel_managed_unicode_st.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "StagingManager::RemoveOfflineDirectory() - Failed to set extended attributes on file %s with error code 0x%08X."
+    ],
+    "name": "?RemoveOfflineDirectory@StagingManager@Streaming@@CAJPEAU_FLT_INSTANCE@@AEAU_FILE_OBJECT@@AEBV?$managed_unicode_string@UUnicodeString_allocator@kernel@shared@appv@@@kernel@shared@appv@@@Z",
+    "prototype": "__int64 __fastcall(PFLT_INSTANCE Instance, PFILE_OBJECT FileObject, __int64)",
+    "rank_score": 50,
+    "size": 280,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "Streaming::StrmPreCreate(_FLT_CALLBACK_DATA *,_FLT_RELATED_OBJECTS const *,void * *)",
+    "ea": "0x140001aa0",
+    "function_file": "functions/140001aa0_Streaming_StrmPreCreate_FLT_CALLBACK_DATA_FLT_RELATED_OBJECTS_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "Streaming::StrmPreCreate() - Failed in pre-create operation for file %s, error code 0x%08X."
+    ],
+    "name": "?StrmPreCreate@Streaming@@YA?AW4_FLT_PREOP_CALLBACK_STATUS@@PEAU_FLT_CALLBACK_DATA@@PEBU_FLT_RELATED_OBJECTS@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(struct _FLT_CALLBACK_DATA *this, struct _FLT_CALLBACK_DATA *, struct _FILE_OBJECT *, void **)",
+    "rank_score": 48,
+    "size": 269,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 83,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x140015b30",
+    "function_file": "functions/140015b30_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 16,
+    "demangled": "__security_check_cookie",
+    "ea": "0x140015af0",
+    "function_file": "functions/140015af0_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 28,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 22,
+    "demangled": "memmove",
+    "ea": "0x140015c00",
+    "function_file": "functions/140015c00_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 28,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "Streaming::MDLCache::FreeMDL(kernel_std::shared_ptr<appv::shared::kernel::kmdl> &)",
+    "ea": "0x14000d054",
+    "function_file": "functions/14000d054_Streaming_MDLCache_FreeMDL_kernel_std_shared_ptr_appv_shared_kernel_kmdl.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?FreeMDL@MDLCache@Streaming@@QEAAXAEAV?$shared_ptr@Vkmdl@kernel@shared@appv@@@kernel_std@@@Z",
+    "prototype": "void __fastcall(__int64, _QWORD *)",
+    "rank_score": 25,
+    "size": 108,
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x14001594c",
+    "function_file": "functions/14001594c_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 24,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x140024078",
+    "function_file": "functions/140024078_DriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 23,
+    "size": 29,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GsDriverEntry",
+    "ea": "0x140024010",
+    "function_file": "functions/140024010_GsDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GsDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 16,
+    "demangled": "kernel_std::detail::shared_count::operator=(kernel_std::detail::shared_count const &)",
+    "ea": "0x140003bd8",
+    "function_file": "functions/140003bd8_kernel_std_detail_shared_count_operator_kernel_std_detail_shared_count_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??4shared_count@detail@kernel_std@@QEAAAEAV012@AEBV012@@Z",
+    "prototype": "volatile signed __int32 **__fastcall(volatile signed __int32 **, volatile signed __int32 **)",
+    "rank_score": 18,
+    "size": 122,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Streaming::staging_operations::create_hard_link(void *,ulong,void *,ulong,ulong &)",
+    "ea": "0x140010df4",
+    "function_file": "functions/140010df4_Streaming_staging_operations_create_hard_link_void_ulong_void_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?create_hard_link@staging_operations@Streaming@@YAJPEAXK0KAEAK@Z",
+    "prototype": "__int64 __fastcall(Streaming::staging_operations *this, void *, _DWORD *, void *, _DWORD *)",
+    "rank_score": 15,
+    "size": 259,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 7,
+    "demangled": "Streaming::Utils::GetFileFullName(_UNICODE_STRING const &,_UNICODE_STRING const &,appv::shared::kernel::managed_unicode_string<appv::shared::kernel::UnicodeString_allocator> &)",
+    "ea": "0x140014a50",
+    "function_file": "functions/140014a50_Streaming_Utils_GetFileFullName_UNICODE_STRING_const_UNICODE_STRING_const_appv_shared_kernel_managed_unicode_s.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetFileFullName@Utils@Streaming@@YAJAEBU_UNICODE_STRING@@0AEAV?$managed_unicode_string@UUnicodeString_allocator@kernel@shared@appv@@@kernel@shared@appv@@@Z",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64)",
+    "rank_score": 14,
+    "size": 169,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Streaming::staging_operations::set_directory_DACL(void const *,ulong,void *,ulong,ulong &)",
+    "ea": "0x140011384",
+    "function_file": "functions/140011384_Streaming_staging_operations_set_directory_DACL_void_const_ulong_void_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?set_directory_DACL@staging_operations@Streaming@@YAJPEBXKPEAXKAEAK@Z",
+    "prototype": "int __fastcall(Streaming::staging_operations *this, const void *, int *, void *, _DWORD *)",
+    "rank_score": 14,
+    "size": 236,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "__security_init_cookie",
+    "ea": "0x140024044",
+    "function_file": "functions/140024044_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 13,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Streaming::StrmPreSetFileInfo(_FLT_CALLBACK_DATA *,_FLT_RELATED_OBJECTS const *,void * *)",
+    "ea": "0x140001d90",
+    "function_file": "functions/140001d90_Streaming_StrmPreSetFileInfo_FLT_CALLBACK_DATA_FLT_RELATED_OBJECTS_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?StrmPreSetFileInfo@Streaming@@YA?AW4_FLT_PREOP_CALLBACK_STATUS@@PEAU_FLT_CALLBACK_DATA@@PEBU_FLT_RELATED_OBJECTS@@PEAPEAX@Z",
+    "prototype": "enum _FLT_PREOP_CALLBACK_STATUS __fastcall(struct _FLT_CALLBACK_DATA *this, struct _FLT_CALLBACK_DATA *, const struct _FLT_RELATED_OBJECTS *, void **)",
+    "rank_score": 12,
+    "size": 89,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "memset",
+    "ea": "0x140015f00",
+    "function_file": "functions/140015f00_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 12,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 9,
+    "demangled": "McTemplateK0_EtwWriteTransfer",
+    "ea": "0x14000a1ac",
+    "function_file": "functions/14000a1ac_McTemplateK0_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0_EtwWriteTransfer",
+    "prototype": "NTSTATUS __fastcall(REGHANDLE *, const EVENT_DESCRIPTOR *, const GUID *)",
+    "rank_score": 11,
+    "size": 59,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "NotifyPortMessage(void *,void *,ulong,void *,ulong,ulong *)",
+    "ea": "0x140013f40",
+    "function_file": "functions/140013f40_NotifyPortMessage_void_void_ulong_void_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?NotifyPortMessage@@YAJPEAX0K0KPEAK@Z",
+    "prototype": "NTSTATUS __fastcall(Streaming::Messaging::UserCommunication *PortCookie, PVOID InputBuffer, ULONG InputBufferLength, PVOID OutputBuffer, ULONG OutputBufferLength, PULONG ReturnOutputBufferLength)",
+    "rank_score": 11,
+    "size": 33,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "appv::shared::kernel::avl_tree<kernel_std::shared_ptr<Streaming::PendingQueueItem>,Streaming::PendingQueueAllocator,less<kernel_std::shared_ptr<Streaming::PendingQueueItem>>>::avl_tree_order(_RTL_AVL_TABLE *,void *,void *)",
+    "ea": "0x140007a80",
+    "function_file": "functions/140007a80_appv_shared_kernel_avl_tree_kernel_std_shared_ptr_Streaming_PendingQueueItem_Streaming_PendingQueueAllocator_l.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?avl_tree_order@?$avl_tree@V?$shared_ptr@UPendingQueueItem@Streaming@@@kernel_std@@UPendingQueueAllocator@Streaming@@U?$less@V?$shared_ptr@UPendingQueueItem@Streaming@@@kernel_std@@@@@kernel@shared@appv@@CA?AW4_RTL_GENERIC_COMPARE_RESULTS@@PEAU_RTL_AVL_TABLE@@PEAX1@Z",
+    "prototype": "__int64 __fastcall(struct _RTL_AVL_TABLE *Table, unsigned __int64 **FirstStruct, unsigned __int64 **SecondStruct)",
+    "rank_score": 11,
+    "size": 33,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "appv::shared::kernel::doubly_linked_list<kernel_std::shared_ptr<Streaming::StreamFaultWriter>,Streaming::StreamFaultWriterTagInfo>::~doubly_linked_list<kernel_std::shared_ptr<Streaming::StreamFaultWriter>,Streaming::StreamFaultWriterTagInfo>(void)",
+    "ea": "0x140003b50",
+    "function_file": "functions/140003b50_appv_shared_kernel_doubly_linked_list_kernel_std_shared_ptr_Streaming_StreamFaultWriter_Streaming_StreamFaultW.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$doubly_linked_list@V?$shared_ptr@VStreamFaultWriter@Streaming@@@kernel_std@@VStreamFaultWriterTagInfo@Streaming@@@kernel@shared@appv@@QEAA@XZ",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 9,
+    "size": 130,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Streaming::staging_operations::create_file(void const *,ulong,void *,ulong,ulong &)",
+    "ea": "0x140010c64",
+    "function_file": "functions/140010c64_Streaming_staging_operations_create_file_void_const_ulong_void_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?create_file@staging_operations@Streaming@@YAJPEBXKPEAXKAEAK@Z",
+    "prototype": "__int64 __fastcall(Streaming::staging_operations *this, const void *, _DWORD *, void *, union _LARGE_INTEGER)",
+    "rank_score": 7,
+    "size": 393,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "Streaming::staging_operations::write_file(void const *,ulong,void *,ulong,ulong &)",
+    "ea": "0x140011928",
+    "function_file": "functions/140011928_Streaming_staging_operations_write_file_void_const_ulong_void_ulong_ulong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?write_file@staging_operations@Streaming@@YAJPEBXKPEAXKAEAK@Z",
+    "prototype": "int __fastcall(Streaming::staging_operations *this, const void *, int *, void *, _DWORD *)",
+    "rank_score": 6,
+    "size": 354,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "messages::write<wchar_t const *>(uchar * &,uchar const *,ulong &,wchar_t const * const,unsigned __int64)",
+    "ea": "0x140010130",
+    "function_file": "functions/140010130_messages_write_wchar_t_const_uchar_uchar_const_ulong_wchar_t_const_const_unsigned_int64.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??$write@PEB_W@messages@@YAXAEAPEAEPEBEAEAKQEB_W_K@Z",
+    "prototype": "char *__fastcall(void **, int, _DWORD *, const void *, size_t Size)",
+    "rank_score": 6,
+    "size": 82,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Streaming::Context::StreamingBitmapBuilder::QueryAllocationRanges(appv::shared::kernel::auto_ptr<Streaming::Context::StreamingBitMap,appv::shared::kernel::AllocDelete<Streaming::Context::StreamingBitMap>> &,__int64,_FILE_ALLOCATED_RANGE_BUFFER const &,_FILE_ALLOCATED_RANGE_BUFFER * const,ulong,ulong &)",
+    "ea": "0x14000af6c",
+    "function_file": "functions/14000af6c_Streaming_Context_StreamingBitmapBuilder_QueryAllocationRanges_appv_shared_kernel_auto_ptr_Streaming_Context_S.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?QueryAllocationRanges@StreamingBitmapBuilder@Context@Streaming@@SAJAEAV?$auto_ptr@VStreamingBitMap@Context@Streaming@@U?$AllocDelete@VStreamingBitMap@Context@Streaming@@@kernel@shared@appv@@@kernel@shared@appv@@_JAEBU_FILE_ALLOCATED_RANGE_BUFFER@@QEAU8@KAEAK@Z",
+    "prototype": "__int64 __fastcall(PRTL_BITMAP *, __int64, union _LARGE_INTEGER *, __int64, unsigned int, unsigned int *)",
+    "rank_score": 5,
+    "size": 327,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "kernel_std::shared_ptr<_GUID>::~shared_ptr<_GUID>(void)",
+    "ea": "0x1400010b0",
+    "function_file": "functions/1400010b0_kernel_std_shared_ptr_GUID_shared_ptr_GUID_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "??1?$shared_ptr@U_GUID@@@kernel_std@@QEAA@XZ",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 5,
+    "size": 78,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "McTemplateK0z_EtwWriteTransfer",
+    "ea": "0x140015898",
+    "function_file": "functions/140015898_McTemplateK0z_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0z_EtwWriteTransfer",
+    "prototype": "NTSTATUS __fastcall(REGHANDLE *, const EVENT_DESCRIPTOR *, const GUID *, const wchar_t *)",
+    "rank_score": 4,
+    "size": 123,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "Streaming::InstanceContext::GetDosName(_UNICODE_STRING const * &)",
+    "ea": "0x140005fb8",
+    "function_file": "functions/140005fb8_Streaming_InstanceContext_GetDosName_UNICODE_STRING_const.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?GetDosName@InstanceContext@Streaming@@QEAAJAEAPEBU_UNICODE_STRING@@@Z",
+    "prototype": "__int64 __fastcall(Streaming::InstanceContext *__hidden this, const struct _UNICODE_STRING **)",
+    "rank_score": 4,
+    "size": 75,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "McGenControlCallbackV2",
+    "ea": "0x140001590",
+    "function_file": "functions/140001590_McGenControlCallbackV2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McGenControlCallbackV2",
+    "prototype": "void __stdcall(LPCGUID SourceId, ULONG ControlCode, UCHAR Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, PEVENT_FILTER_DESCRIPTOR FilterData, PVOID CallbackContext)",
+    "rank_score": 3,
+    "size": 255,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "Streaming::StrmPreDirectoryControl(_FLT_CALLBACK_DATA *,_FLT_RELATED_OBJECTS const *,void * *)",
+    "ea": "0x140001bc0",
+    "function_file": "functions/140001bc0_Streaming_StrmPreDirectoryControl_FLT_CALLBACK_DATA_FLT_RELATED_OBJECTS_const_void.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?StrmPreDirectoryControl@Streaming@@YA?AW4_FLT_PREOP_CALLBACK_STATUS@@PEAU_FLT_CALLBACK_DATA@@PEBU_FLT_RELATED_OBJECTS@@PEAPEAX@Z",
+    "prototype": "__int64 __fastcall(PFLT_CALLBACK_DATA CallbackData, struct _FLT_CALLBACK_DATA *, const struct _FLT_RELATED_OBJECTS *, void **)",
+    "rank_score": 2,
+    "size": 48,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "appv::shared::kernel::ThreadPool<kernel_std::shared_ptr<Streaming::FlushRequestManager::FlushRequest>,Streaming::FlushRequestTagInfo>::WorkingThread(void *)",
+    "ea": "0x140004aa0",
+    "function_file": "functions/140004aa0_appv_shared_kernel_ThreadPool_kernel_std_shared_ptr_Streaming_FlushRequestManager_FlushRequest_Streaming_Flush.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?WorkingThread@?$ThreadPool@V?$shared_ptr@VFlushRequest@FlushRequestManager@Streaming@@@kernel_std@@VFlushRequestTagInfo@Streaming@@@kernel@shared@appv@@SAXPEAX@Z",
+    "prototype": "void __fastcall(__int64 StartContext)",
+    "rank_score": 1,
+    "size": 15,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "appv::shared::kernel::ThreadPool<kernel_std::shared_ptr<Streaming::StreamFault>,Streaming::StreamFaultTagInfo>::WorkingThread(void *)",
+    "ea": "0x14000efc0",
+    "function_file": "functions/14000efc0_appv_shared_kernel_ThreadPool_kernel_std_shared_ptr_Streaming_StreamFault_Streaming_StreamFaultTagInfo_Working.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?WorkingThread@?$ThreadPool@V?$shared_ptr@VStreamFault@Streaming@@@kernel_std@@VStreamFaultTagInfo@Streaming@@@kernel@shared@appv@@SAXPEAX@Z",
+    "prototype": "void __fastcall(__int64 StartContext)",
+    "rank_score": 1,
+    "size": 15,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "appv::shared::kernel::ThreadPool<kernel_std::shared_ptr<Streaming::StreamFaultWriter>,Streaming::PackageWriterTagInfo>::WorkingThread(void *)",
+    "ea": "0x140007980",
+    "function_file": "functions/140007980_appv_shared_kernel_ThreadPool_kernel_std_shared_ptr_Streaming_StreamFaultWriter_Streaming_PackageWriterTagInfo.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?WorkingThread@?$ThreadPool@V?$shared_ptr@VStreamFaultWriter@Streaming@@@kernel_std@@VPackageWriterTagInfo@Streaming@@@kernel@shared@appv@@SAXPEAX@Z",
+    "prototype": "void __fastcall(__int64 StartContext)",
+    "rank_score": 1,
+    "size": 15,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "appv::shared::kernel::ThreadPool<kernel_std::shared_ptr<Streaming::StreamFaultWriter>,Streaming::StreamFaultWriterTagInfo>::WorkingThread(void *)",
+    "ea": "0x1400079a0",
+    "function_file": "functions/1400079a0_appv_shared_kernel_ThreadPool_kernel_std_shared_ptr_Streaming_StreamFaultWriter_Streaming_StreamFaultWriterTag.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?WorkingThread@?$ThreadPool@V?$shared_ptr@VStreamFaultWriter@Streaming@@@kernel_std@@VStreamFaultWriterTagInfo@Streaming@@@kernel@shared@appv@@SAXPEAX@Z",
+    "prototype": "void __fastcall(__int64 StartContext)",
+    "rank_score": 1,
+    "size": 15,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "appv::shared::kernel::ThreadPool<kernel_std::shared_ptr<Streaming::WriteFault>,Streaming::WriteFaultTagInfo>::WorkingThread(void *)",
+    "ea": "0x14000efe0",
+    "function_file": "functions/14000efe0_appv_shared_kernel_ThreadPool_kernel_std_shared_ptr_Streaming_WriteFault_Streaming_WriteFaultTagInfo_WorkingTh.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "?WorkingThread@?$ThreadPool@V?$shared_ptr@VWriteFault@Streaming@@@kernel_std@@VWriteFaultTagInfo@Streaming@@@kernel@shared@appv@@SAXPEAX@Z",
+    "prototype": "void __fastcall(__int64 StartContext)",
+    "rank_score": 1,
+    "size": 15,
+    "tags": []
+  }
+]

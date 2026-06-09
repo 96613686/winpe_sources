@@ -1,0 +1,128 @@
+# SHFusionInitializeFromModuleID
+
+- ea: `0x180055f14`
+- end: `0x180056019`
+- name: `SHFusionInitializeFromModuleID`
+- size: `261`
+- prototype: `__int64 __fastcall(HMODULE hModule)`
+- caller_count: `2`
+- callee_count: `3`
+- tags: `broker_com_uri`
+
+## callers
+
+- `0x1800221f4`
+- `0x180055d30`
+
+## callees
+
+- `0x180055f14`
+- `0x180056490`
+- `0x1800582e0`
+
+## import_xrefs
+
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW` at `0x180055f70`
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleW` at `0x180055f70`
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleFileNameW` at `0x180055f87`
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleFileNameW` at `0x180055f87`
+- `KERNEL32!CreateActCtxW` at `0x180055fb9`
+- `KERNEL32!CreateActCtxW` at `0x180055fb9`
+- `KERNEL32!ReleaseActCtx` at `0x180055fd7`
+- `KERNEL32!ReleaseActCtx` at `0x180055fd7`
+
+## pseudocode
+
+```c
+_BOOL8 __fastcall SHFusionInitializeFromModuleID(HMODULE hModule, unsigned __int16 a2)
+{
+  HMODULE ModuleHandleW; // rbx
+  HANDLE v4; // rax
+  ACTCTXW pActCtx; // [rsp+20h] [rbp-E0h] BYREF
+  WCHAR Filename[264]; // [rsp+60h] [rbp-A0h] BYREF
+
+  ModuleHandleW = hModule;
+  if ( g_hActCtx != (HANDLE)-1LL )
+    return 1;
+  memset(&pActCtx, 0, sizeof(pActCtx));
+  if ( !hModule )
+    ModuleHandleW = GetModuleHandleW(0);
+  GetModuleFileNameW(ModuleHandleW, Filename, 0x104u);
+  pActCtx.lpResourceName = (LPCWSTR)a2;
+  pActCtx.cbSize = 56;
+  pActCtx.lpSource = Filename;
+  pActCtx.dwFlags = 136;
+  pActCtx.hModule = ModuleHandleW;
+  v4 = CreateActCtxW(&pActCtx);
+  if ( v4 != (HANDLE)-1LL )
+  {
+    if ( _InterlockedCompareExchange64((volatile signed __int64 *)&g_hActCtx, (signed __int64)v4, -1) != -1 )
+      ReleaseActCtx(v4);
+    DelayLoadCC();
+  }
+  return g_hActCtx != (HANDLE)-1LL;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180055f14  mov     [rsp-8+arg_10], rbx
+0x180055f19  mov     [rsp-8+arg_18], rdi
+0x180055f1e  push    rbp
+0x180055f1f  lea     rbp, [rsp-180h]
+0x180055f27  sub     rsp, 280h
+0x180055f2e  mov     rax, cs:__security_cookie
+0x180055f35  xor     rax, rsp
+0x180055f38  mov     [rbp+180h+var_10], rax
+0x180055f3f  cmp     cs:g_hActCtx, 0FFFFFFFFFFFFFFFFh
+0x180055f47  mov     rbx, rcx
+0x180055f4a  mov     edi, edx
+0x180055f4c  jnz     loc_180055FF0
+0x180055f52  xorps   xmm0, xmm0
+0x180055f55  xor     eax, eax
+0x180055f57  mov     [rsp+280h+pActCtx.hModule], rax
+0x180055f5c  movups  xmmword ptr [rsp+280h+pActCtx.cbSize], xmm0
+0x180055f61  movups  xmmword ptr [rsp+280h+pActCtx.wProcessorArchitecture], xmm0
+0x180055f66  movups  xmmword ptr [rsp+280h+pActCtx.lpResourceName], xmm0
+0x180055f6b  test    rcx, rcx
+0x180055f6e  jnz     short loc_180055F79
+0x180055f70  call    cs:__imp_GetModuleHandleW
+0x180055f76  mov     rbx, rax
+0x180055f79  mov     r8d, 104h; nSize
+0x180055f7f  lea     rdx, [rsp+280h+Filename]; lpFilename
+0x180055f84  mov     rcx, rbx; hModule
+0x180055f87  call    cs:__imp_GetModuleFileNameW
+0x180055f8d  movzx   ecx, di
+0x180055f90  lea     rax, [rsp+280h+Filename]
+0x180055f95  mov     [rsp+280h+pActCtx.lpResourceName], rcx
+0x180055f9a  lea     rcx, [rsp+280h+pActCtx]; pActCtx
+0x180055f9f  mov     [rsp+280h+pActCtx.cbSize], 38h ; '8'
+0x180055fa7  mov     [rsp+280h+pActCtx.lpSource], rax
+0x180055fac  mov     [rsp+280h+pActCtx.dwFlags], 88h
+0x180055fb4  mov     [rsp+280h+pActCtx.hModule], rbx
+0x180055fb9  call    cs:__imp_CreateActCtxW
+0x180055fbf  mov     rcx, rax; hActCtx
+0x180055fc2  cmp     rax, 0FFFFFFFFFFFFFFFFh
+0x180055fc6  jz      short loc_180055FE2
+0x180055fc8  or      rax, 0FFFFFFFFFFFFFFFFh
+0x180055fcc  lock cmpxchg cs:g_hActCtx, rcx
+0x180055fd5  jz      short loc_180055FDD
+0x180055fd7  call    cs:__imp_ReleaseActCtx
+0x180055fdd  call    DelayLoadCC
+0x180055fe2  cmp     cs:g_hActCtx, 0FFFFFFFFFFFFFFFFh
+0x180055fea  jnz     short loc_180055FF0
+0x180055fec  xor     eax, eax
+0x180055fee  jmp     short loc_180055FF5
+0x180055ff0  mov     eax, 1
+0x180055ff5  mov     rcx, [rbp+180h+var_10]
+0x180055ffc  xor     rcx, rsp; StackCookie
+0x180055fff  call    __security_check_cookie
+0x180056004  lea     r11, [rsp+280h+var_s0]
+0x18005600c  mov     rbx, [r11+20h]
+0x180056010  mov     rdi, [r11+28h]
+0x180056014  mov     rsp, r11
+0x180056017  pop     rbp
+0x180056018  retn
+```
