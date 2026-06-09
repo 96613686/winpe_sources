@@ -1,0 +1,1351 @@
+[
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "NsippRequestChangeNotification",
+    "ea": "0x140003e20",
+    "function_file": "functions/140003e20_NsippRequestChangeNotification.md",
+    "matched_imports": [
+      "NDIS!NdisGetThreadObjectCompartmentId",
+      "NETIO!NsiDeregisterChangeNotificationEx",
+      "NETIO!NsiRegisterChangeNotificationEx",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAcquireCancelSpinLock",
+      "ntoskrnl!IoIs32bitProcess",
+      "ntoskrnl!IoReleaseCancelSpinLock",
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeInitializeSpinLock",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "NsippRequestChangeNotification",
+    "prototype": "__int64 __fastcall(__int64, void *, unsigned int, unsigned __int8)",
+    "rank_score": 4039,
+    "size": 1445,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "ApplySecurityToDeviceObject",
+    "ea": "0x1400058c0",
+    "function_file": "functions/1400058c0_ApplySecurityToDeviceObject.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ObGetObjectSecurity",
+      "ntoskrnl!ObOpenObjectByPointer",
+      "ntoskrnl!ObReleaseObjectSecurity",
+      "ntoskrnl!RtlAddAccessAllowedAce",
+      "ntoskrnl!RtlCreateAcl",
+      "ntoskrnl!RtlCreateSecurityDescriptor",
+      "ntoskrnl!RtlGetDaclSecurityDescriptor",
+      "ntoskrnl!RtlLengthSid",
+      "ntoskrnl!RtlSetDaclSecurityDescriptor",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwSetSecurityObject"
+    ],
+    "matched_strings": [],
+    "name": "ApplySecurityToDeviceObject",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 2627,
+    "size": 572,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "NsippCancelChangeNotification",
+    "ea": "0x1400015d0",
+    "function_file": "functions/1400015d0_NsippCancelChangeNotification.md",
+    "matched_imports": [
+      "NETIO!NsiDeregisterChangeNotificationEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoAcquireCancelSpinLock",
+      "ntoskrnl!IoIs32bitProcess",
+      "ntoskrnl!IoReleaseCancelSpinLock",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "NsippCancelChangeNotification",
+    "prototype": "__int64 __fastcall(unsigned int *, unsigned int)",
+    "rank_score": 2428,
+    "size": 675,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 2,
+    "demangled": "NsippSetAllParameters",
+    "ea": "0x140001880",
+    "function_file": "functions/140001880_NsippSetAllParameters.md",
+    "matched_imports": [
+      "NETIO!NsiSetAllParametersEx",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoIs32bitProcess",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NsippSetAllParameters",
+    "prototype": "__int64 __fastcall(void *Src, unsigned int, unsigned __int8, __int64)",
+    "rank_score": 2420,
+    "size": 1354,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "NsippChangeNotificationCallback",
+    "ea": "0x140005060",
+    "function_file": "functions/140005060_NsippChangeNotificationCallback.md",
+    "matched_imports": [
+      "ntoskrnl!IoAcquireCancelSpinLock",
+      "ntoskrnl!IoAllocateWorkItem",
+      "ntoskrnl!IoQueueWorkItem",
+      "ntoskrnl!IoReleaseCancelSpinLock",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "NsippChangeNotificationCallback",
+    "prototype": "void __fastcall(PVOID *Context)",
+    "rank_score": 2215,
+    "size": 559,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SepSddlSecurityDescriptorFromSDDLString",
+    "ea": "0x14000dca4",
+    "function_file": "functions/14000dca4_SepSddlSecurityDescriptorFromSDDLString.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlAbsoluteToSelfRelativeSD",
+      "ntoskrnl!RtlCreateSecurityDescriptor",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlSetDaclSecurityDescriptor"
+    ],
+    "matched_strings": [
+      "SeConvertStringSecurityDescriptorToSecurityDescriptor"
+    ],
+    "name": "SepSddlSecurityDescriptorFromSDDLString",
+    "prototype": "",
+    "rank_score": 2068,
+    "size": 414,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "NsippRegisterChangeNotification",
+    "ea": "0x140003700",
+    "function_file": "functions/140003700_NsippRegisterChangeNotification.md",
+    "matched_imports": [
+      "NETIO!NsiDeregisterChangeNotificationEx",
+      "NETIO!NsiRegisterChangeNotificationEx",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoIs32bitProcess",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NsippRegisterChangeNotification",
+    "prototype": "__int64 __fastcall(void *Src, unsigned int, char, __int64, _QWORD *)",
+    "rank_score": 2024,
+    "size": 994,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "NsippIsCallerNsiService",
+    "ea": "0x1400032d0",
+    "function_file": "functions/1400032d0_NsippIsCallerNsiService.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetFileObjectGenericMapping",
+      "ntoskrnl!PsGetCurrentProcess",
+      "ntoskrnl!SeAccessCheck",
+      "ntoskrnl!SeCaptureSubjectContextEx",
+      "ntoskrnl!SeLockSubjectContext",
+      "ntoskrnl!SeReleaseSubjectContext",
+      "ntoskrnl!SeUnlockSubjectContext"
+    ],
+    "matched_strings": [],
+    "name": "NsippIsCallerNsiService",
+    "prototype": "__int64()",
+    "rank_score": 1434,
+    "size": 227,
+    "tags": [
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "PpRegStateUpdateStackCreationSettings",
+    "ea": "0x14000e330",
+    "function_file": "functions/14000e330_PpRegStateUpdateStackCreationSettings.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlLengthSecurityDescriptor",
+      "ntoskrnl!SeCaptureSecurityDescriptor",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwSetValueKey"
+    ],
+    "matched_strings": [
+      "Security"
+    ],
+    "name": "PpRegStateUpdateStackCreationSettings",
+    "prototype": "",
+    "rank_score": 1287,
+    "size": 372,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "NsippCreateDevice",
+    "ea": "0x140005320",
+    "function_file": "functions/140005320_NsippCreateDevice.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoCreateSymbolicLink",
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!SeConvertStringSecurityDescriptorToSecurityDescriptor"
+    ],
+    "matched_strings": [],
+    "name": "NsippCreateDevice",
+    "prototype": "__int64 __fastcall(PDRIVER_OBJECT DriverObject)",
+    "rank_score": 1261,
+    "size": 652,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "NsippCancelChangeNotificationRoutine",
+    "ea": "0x140004e30",
+    "function_file": "functions/140004e30_NsippCancelChangeNotificationRoutine.md",
+    "matched_imports": [
+      "NETIO!NsiDeregisterChangeNotificationEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoReleaseCancelSpinLock",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeAcquireSpinLockAtDpcLevel",
+      "ntoskrnl!KeReleaseSpinLockFromDpcLevel"
+    ],
+    "matched_strings": [],
+    "name": "NsippCancelChangeNotificationRoutine",
+    "prototype": "void __fastcall(__int64, IRP *)",
+    "rank_score": 1224,
+    "size": 346,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "NsippDeregisterChangeNotification",
+    "ea": "0x1400033c0",
+    "function_file": "functions/1400033c0_NsippDeregisterChangeNotification.md",
+    "matched_imports": [
+      "NETIO!NsiDeregisterChangeNotificationEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoIs32bitProcess",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NsippDeregisterChangeNotification",
+    "prototype": "__int64 __fastcall(void *Src, unsigned int, unsigned __int8, __int64)",
+    "rank_score": 1223,
+    "size": 812,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SepSddlGetAclForString",
+    "ea": "0x14000d768",
+    "function_file": "functions/14000d768_SepSddlGetAclForString.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!_wcsnicmp",
+      "ntoskrnl!wcschr"
+    ],
+    "matched_strings": [],
+    "name": "SepSddlGetAclForString",
+    "prototype": "__int64 __fastcall(wchar_t *Str1, int)",
+    "rank_score": 1223,
+    "size": 948,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "NsippCleanup",
+    "ea": "0x1400013f0",
+    "function_file": "functions/1400013f0_NsippCleanup.md",
+    "matched_imports": [
+      "NETIO!NsiDeregisterChangeNotificationEx",
+      "NETIO!NsiSetAllParametersEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NsippCleanup",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 1216,
+    "size": 473,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "CmRegUtilUcValueGetFullBuffer",
+    "ea": "0x14000e744",
+    "function_file": "functions/14000e744_CmRegUtilUcValueGetFullBuffer.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [],
+    "name": "CmRegUtilUcValueGetFullBuffer",
+    "prototype": "__int64 __usercall@<rax>(HANDLE KeyHandle@<rcx>, PUNICODE_STRING ValueName@<rdx>, __int64)",
+    "rank_score": 1205,
+    "size": 366,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "WdmlibInit",
+    "ea": "0x14000d1ac",
+    "function_file": "functions/14000d1ac_WdmlibInit.md",
+    "matched_imports": [
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "IoCreateDeviceSecure",
+      "IoValidateDeviceIoControlAccess"
+    ],
+    "name": "WdmlibInit",
+    "prototype": "",
+    "rank_score": 883,
+    "size": 133,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "PiRegStateReadStackCreationSettingsFromKey",
+    "ea": "0x14000dfdc",
+    "function_file": "functions/14000dfdc_PiRegStateReadStackCreationSettingsFromKey.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!SeCaptureSecurityDescriptor"
+    ],
+    "matched_strings": [
+      "Security"
+    ],
+    "name": "PiRegStateReadStackCreationSettingsFromKey",
+    "prototype": "__int64 __fastcall(HANDLE KeyHandle)",
+    "rank_score": 879,
+    "size": 479,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 0,
+    "demangled": "NsippDispatch",
+    "ea": "0x140001dd0",
+    "function_file": "functions/140001dd0_NsippDispatch.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IofCompleteRequest",
+      "ntoskrnl!KeInitializeSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NsippDispatch",
+    "prototype": "__int64 __fastcall(__int64, IRP *)",
+    "rank_score": 850,
+    "size": 684,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "NsippDeleteDevice",
+    "ea": "0x140005bb8",
+    "function_file": "functions/140005bb8_NsippDeleteDevice.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoDeleteDevice",
+      "ntoskrnl!IoDeleteSymbolicLink",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "NsippDeleteDevice",
+    "prototype": "",
+    "rank_score": 842,
+    "size": 126,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 10,
+    "demangled": "NsippProbeAndAllocateParameters",
+    "ea": "0x1400043d0",
+    "function_file": "functions/1400043d0_NsippProbeAndAllocateParameters.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExRaiseAccessViolation",
+      "ntoskrnl!ProbeForRead"
+    ],
+    "matched_strings": [],
+    "name": "NsippProbeAndAllocateParameters",
+    "prototype": "__int64 __fastcall(const void *, unsigned int, __int64, __m128i *, __int64, __m128i *, __int64, __m128i *, unsigned __int8, unsigned int, char, __m128i *, _QWORD *, _QWORD *, unsigned int *, __int64 *, __m128i *, __int64 *, __m128i *, __int64 *, __int64 *, __int64 *, __int64 *, char **, _QWORD *)",
+    "rank_score": 831,
+    "size": 2161,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "SeUtilSecurityInfoFromSecurityDescriptor",
+    "ea": "0x14000e4ac",
+    "function_file": "functions/14000e4ac_SeUtilSecurityInfoFromSecurityDescriptor.md",
+    "matched_imports": [
+      "ntoskrnl!RtlGetDaclSecurityDescriptor",
+      "ntoskrnl!RtlGetGroupSecurityDescriptor",
+      "ntoskrnl!RtlGetOwnerSecurityDescriptor",
+      "ntoskrnl!RtlGetSaclSecurityDescriptor"
+    ],
+    "matched_strings": [],
+    "name": "SeUtilSecurityInfoFromSecurityDescriptor",
+    "prototype": "__int64 __fastcall(PSECURITY_DESCRIPTOR SecurityDescriptor)",
+    "rank_score": 824,
+    "size": 249,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "AllocateCapabilitySid",
+    "ea": "0x1400055c0",
+    "function_file": "functions/1400055c0_AllocateCapabilitySid.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!RtlInitializeSid",
+      "ntoskrnl!RtlLengthRequiredSid",
+      "ntoskrnl!RtlSubAuthoritySid"
+    ],
+    "matched_strings": [],
+    "name": "AllocateCapabilitySid",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 815,
+    "size": 216,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SepSddlAddAceToAcl",
+    "ea": "0x14000d590",
+    "function_file": "functions/14000d590_SepSddlAddAceToAcl.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlAddAccessAllowedAce",
+      "ntoskrnl!RtlLengthSid"
+    ],
+    "matched_strings": [],
+    "name": "SepSddlAddAceToAcl",
+    "prototype": "__int64 __fastcall(int, int, int, int, ACCESS_MASK AccessMask, int, PSID Sid)",
+    "rank_score": 815,
+    "size": 235,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CmRegUtilUcValueSetUcString",
+    "ea": "0x14000e8b8",
+    "function_file": "functions/14000e8b8_CmRegUtilUcValueSetUcString.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!ZwSetValueKey"
+    ],
+    "matched_strings": [],
+    "name": "CmRegUtilUcValueSetUcString",
+    "prototype": "__int64 __fastcall(HANDLE KeyHandle, PUNICODE_STRING ValueName)",
+    "rank_score": 807,
+    "size": 307,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "IopDevObjApplyPostCreationSettings",
+    "ea": "0x14000d3d4",
+    "function_file": "functions/14000d3d4_IopDevObjApplyPostCreationSettings.md",
+    "matched_imports": [
+      "ntoskrnl!IoDeviceObjectType",
+      "ntoskrnl!ObOpenObjectByPointer",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwSetSecurityObject"
+    ],
+    "matched_strings": [],
+    "name": "IopDevObjApplyPostCreationSettings",
+    "prototype": "__int64 __fastcall(PVOID Object)",
+    "rank_score": 734,
+    "size": 239,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "IoDevObjCreateDeviceSecure",
+    "ea": "0x14000d240",
+    "function_file": "functions/14000d240_IoDevObjCreateDeviceSecure.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoCreateDevice",
+      "ntoskrnl!IoDeleteDevice"
+    ],
+    "matched_strings": [],
+    "name": "IoDevObjCreateDeviceSecure",
+    "prototype": "__int64 __usercall@<rax>(PDRIVER_OBJECT DriverObject@<rcx>, int, char, __int64, __int64, PDEVICE_OBJECT)",
+    "rank_score": 658,
+    "size": 395,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "NsippEnumerateObjectsAllParameters",
+    "ea": "0x140002850",
+    "function_file": "functions/140002850_NsippEnumerateObjectsAllParameters.md",
+    "matched_imports": [
+      "NETIO!NsiEnumerateObjectsAllParametersEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoIs32bitProcess"
+    ],
+    "matched_strings": [],
+    "name": "NsippEnumerateObjectsAllParameters",
+    "prototype": "__int64 __fastcall(char *Src, unsigned int, unsigned __int8, _QWORD *)",
+    "rank_score": 621,
+    "size": 1625,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "NsippGetAllParameters",
+    "ea": "0x140002280",
+    "function_file": "functions/140002280_NsippGetAllParameters.md",
+    "matched_imports": [
+      "NETIO!NsiGetAllParametersEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoIs32bitProcess"
+    ],
+    "matched_strings": [],
+    "name": "NsippGetAllParameters",
+    "prototype": "__int64 __fastcall(char *Src, unsigned int, unsigned __int8, _QWORD *)",
+    "rank_score": 620,
+    "size": 1469,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "NsippEnumerateObjectsAllPersistentParametersWithMask",
+    "ea": "0x140005c3c",
+    "function_file": "functions/140005c3c_NsippEnumerateObjectsAllPersistentParametersWithMask.md",
+    "matched_imports": [
+      "NETIO!NsiEnumerateObjectsAllPersistentParametersWithMask",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoIs32bitProcess"
+    ],
+    "matched_strings": [],
+    "name": "NsippEnumerateObjectsAllPersistentParametersWithMask",
+    "prototype": "__int64 __fastcall(void *Src)",
+    "rank_score": 618,
+    "size": 1188,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "NsippGetParameter",
+    "ea": "0x140002eb0",
+    "function_file": "functions/140002eb0_NsippGetParameter.md",
+    "matched_imports": [
+      "NETIO!NsiGetParameterEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoIs32bitProcess"
+    ],
+    "matched_strings": [],
+    "name": "NsippGetParameter",
+    "prototype": "__int64 __fastcall(char *Src, unsigned int, unsigned __int8, _QWORD *)",
+    "rank_score": 617,
+    "size": 1044,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "NsippGetAllPersistentParametersWithMask",
+    "ea": "0x140001010",
+    "function_file": "functions/140001010_NsippGetAllPersistentParametersWithMask.md",
+    "matched_imports": [
+      "NETIO!NsiGetAllPersistentParametersWithMask",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoIs32bitProcess"
+    ],
+    "matched_strings": [],
+    "name": "NsippGetAllPersistentParametersWithMask",
+    "prototype": "__int64 __fastcall(void *Src)",
+    "rank_score": 615,
+    "size": 977,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "NsippSetAllPersistentParametersWithMask",
+    "ea": "0x1400060e8",
+    "function_file": "functions/1400060e8_NsippSetAllPersistentParametersWithMask.md",
+    "matched_imports": [
+      "NETIO!NsiSetAllPersistentParametersWithMask",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoIs32bitProcess"
+    ],
+    "matched_strings": [],
+    "name": "NsippSetAllPersistentParametersWithMask",
+    "prototype": "__int64 __fastcall(void *Src, unsigned int, char)",
+    "rank_score": 613,
+    "size": 832,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "NsippSetParameter",
+    "ea": "0x140003af0",
+    "function_file": "functions/140003af0_NsippSetParameter.md",
+    "matched_imports": [
+      "NETIO!NsiSetParameterEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoIs32bitProcess"
+    ],
+    "matched_strings": [],
+    "name": "NsippSetParameter",
+    "prototype": "__int64 __fastcall(void *Src, unsigned int, unsigned __int8)",
+    "rank_score": 613,
+    "size": 799,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "NsippDeregisterWorker",
+    "ea": "0x1400052a0",
+    "function_file": "functions/1400052a0_NsippDeregisterWorker.md",
+    "matched_imports": [
+      "NETIO!NsiDeregisterChangeNotificationEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoFreeWorkItem"
+    ],
+    "matched_strings": [],
+    "name": "NsippDeregisterWorker",
+    "prototype": "IO_WORKITEM_ROUTINE",
+    "rank_score": 610,
+    "size": 110,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "NsippFindIrp",
+    "ea": "0x140004f90",
+    "function_file": "functions/140004f90_NsippFindIrp.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "NsippFindIrp",
+    "prototype": "_QWORD *__fastcall(_QWORD **, __int64, KSPIN_LOCK *, _QWORD *)",
+    "rank_score": 603,
+    "size": 202,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SepSddlGetSidForString",
+    "ea": "0x14000db24",
+    "function_file": "functions/14000db24_SepSddlGetSidForString.md",
+    "matched_imports": [
+      "ntoskrnl!IoIsWdmVersionAvailable",
+      "ntoskrnl!SeExports",
+      "ntoskrnl!_wcsnicmp"
+    ],
+    "matched_strings": [],
+    "name": "SepSddlGetSidForString",
+    "prototype": "__int64 __fastcall(wchar_t *Str1)",
+    "rank_score": 513,
+    "size": 177,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "PiRegStateOpenClassKey",
+    "ea": "0x14000de48",
+    "function_file": "functions/14000de48_PiRegStateOpenClassKey.md",
+    "matched_imports": [
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!_snwprintf"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Class"
+    ],
+    "name": "PiRegStateOpenClassKey",
+    "prototype": "",
+    "rank_score": 459,
+    "size": 395,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SeSddlSecurityDescriptorFromSDDL",
+    "ea": "0x14000d4cc",
+    "function_file": "functions/14000d4cc_SeSddlSecurityDescriptorFromSDDL.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "SeSddlSecurityDescriptorFromSDDL",
+    "prototype": "",
+    "rank_score": 426,
+    "size": 188,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "PpRegStateReadCreateClassCreationSettings",
+    "ea": "0x14000e1c4",
+    "function_file": "functions/14000e1c4_PpRegStateReadCreateClassCreationSettings.md",
+    "matched_imports": [
+      "ntoskrnl!ZwClose"
+    ],
+    "matched_strings": [],
+    "name": "PpRegStateReadCreateClassCreationSettings",
+    "prototype": "",
+    "rank_score": 420,
+    "size": 356,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "NsippCleanupNotification",
+    "ea": "0x140005b04",
+    "function_file": "functions/140005b04_NsippCleanupNotification.md",
+    "matched_imports": [
+      "NETIO!NsiDeregisterChangeNotificationEx",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "NsippCleanupNotification",
+    "prototype": "",
+    "rank_score": 413,
+    "size": 174,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "NsippProbeForWrite",
+    "ea": "0x140004c50",
+    "function_file": "functions/140004c50_NsippProbeForWrite.md",
+    "matched_imports": [
+      "ntoskrnl!ExRaiseAccessViolation",
+      "ntoskrnl!ProbeForWrite"
+    ],
+    "matched_strings": [],
+    "name": "NsippProbeForWrite",
+    "prototype": "unsigned __int64 __fastcall(volatile void *, SIZE_T, __int64, char)",
+    "rank_score": 402,
+    "size": 74,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CmRegUtilCreateUcKey",
+    "ea": "0x14000e5ac",
+    "function_file": "functions/14000e5ac_CmRegUtilCreateUcKey.md",
+    "matched_imports": [
+      "ntoskrnl!ZwCreateKey"
+    ],
+    "matched_strings": [],
+    "name": "CmRegUtilCreateUcKey",
+    "prototype": "",
+    "rank_score": 243,
+    "size": 164,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "CmRegUtilOpenExistingWstrKey",
+    "ea": "0x14000e6b8",
+    "function_file": "functions/14000e6b8_CmRegUtilOpenExistingWstrKey.md",
+    "matched_imports": [
+      "ntoskrnl!ZwOpenKey"
+    ],
+    "matched_strings": [],
+    "name": "CmRegUtilOpenExistingWstrKey",
+    "prototype": "",
+    "rank_score": 235,
+    "size": 133,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SepSddlDaclFromSDDLString",
+    "ea": "0x14000d684",
+    "function_file": "functions/14000d684_SepSddlDaclFromSDDLString.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "SepSddlDaclFromSDDLString",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 221,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x14000f078",
+    "function_file": "functions/14000f078_DriverEntry.md",
+    "matched_imports": [
+      "ntoskrnl!KeInitializeSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 213,
+    "size": 84,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "NsippIsMatchingObject",
+    "ea": "0x140004d70",
+    "function_file": "functions/140004d70_NsippIsMatchingObject.md",
+    "matched_imports": [
+      "NETIO!NsiGetModuleHandle"
+    ],
+    "matched_strings": [],
+    "name": "NsippIsMatchingObject",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 205,
+    "size": 179,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "ProbeForRead_0",
+    "ea": "0x1400056cf",
+    "function_file": "functions/1400056cf_ProbeForRead_0.md",
+    "matched_imports": [
+      "ntoskrnl!ProbeForRead"
+    ],
+    "matched_strings": [],
+    "name": "ProbeForRead_0",
+    "prototype": "void __stdcall(volatile void *Address, SIZE_T Length, ULONG Alignment)",
+    "rank_score": 104,
+    "size": 7,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x1400064ac",
+    "function_file": "functions/1400064ac_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 19,
+    "demangled": "memset",
+    "ea": "0x140006980",
+    "function_file": "functions/140006980_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 23,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GsDriverEntry",
+    "ea": "0x14000f010",
+    "function_file": "functions/14000f010_GsDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GsDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 14,
+    "demangled": "RtlCopyFromUser",
+    "ea": "0x1400056e8",
+    "function_file": "functions/1400056e8_RtlCopyFromUser.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlCopyFromUser",
+    "prototype": "__int64 __fastcall(void *, void *Src, size_t Size)",
+    "rank_score": 17,
+    "size": 96,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "__security_check_cookie",
+    "ea": "0x140006530",
+    "function_file": "functions/140006530_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 17,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 15,
+    "demangled": "RtlCopyVolatileMemory",
+    "ea": "0x140006560",
+    "function_file": "functions/140006560_RtlCopyVolatileMemory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlCopyVolatileMemory",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 16,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "WdmlibIoCreateDeviceSecure",
+    "ea": "0x14000d010",
+    "function_file": "functions/14000d010_WdmlibIoCreateDeviceSecure.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WdmlibIoCreateDeviceSecure",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, ULONG DeviceExtensionSize, PUNICODE_STRING DeviceName, ULONG DeviceType, ULONG DeviceCharacteristics, BOOLEAN Exclusive, PCUNICODE_STRING DefaultSDDLString, LPCGUID DeviceClassGuid, PDEVICE_OBJECT *DeviceObject)",
+    "rank_score": 14,
+    "size": 115,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x140006610",
+    "function_file": "functions/140006610_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "memmove",
+    "ea": "0x140006680",
+    "function_file": "functions/140006680_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 14,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x14000f044",
+    "function_file": "functions/14000f044_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x1400065b0",
+    "function_file": "functions/1400065b0_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 6,
+    "demangled": "RtlCopyToUser",
+    "ea": "0x14000d08c",
+    "function_file": "functions/14000d08c_RtlCopyToUser.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlCopyToUser",
+    "prototype": "__int64 __fastcall(void *, void *Src, size_t Size)",
+    "rank_score": 9,
+    "size": 93,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "WdmlibRtlInitUnicodeStringEx",
+    "ea": "0x140006430",
+    "function_file": "functions/140006430_WdmlibRtlInitUnicodeStringEx.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WdmlibRtlInitUnicodeStringEx",
+    "prototype": "NTSTATUS __stdcall(PUNICODE_STRING DestinationString, PCWSTR SourceString)",
+    "rank_score": 8,
+    "size": 70,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "RtlWriteULongToUser",
+    "ea": "0x14000d138",
+    "function_file": "functions/14000d138_RtlWriteULongToUser.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlWriteULongToUser",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 7,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "CmRegUtilCreateWstrKey",
+    "ea": "0x14000e658",
+    "function_file": "functions/14000e658_CmRegUtilCreateWstrKey.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CmRegUtilCreateWstrKey",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "NsippCopyMemory",
+    "ea": "0x140004ca0",
+    "function_file": "functions/140004ca0_NsippCopyMemory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NsippCopyMemory",
+    "prototype": "void *__fastcall(void *Src, void **, char, unsigned int, char)",
+    "rank_score": 4,
+    "size": 106,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "RtlWriteULong64ToUser",
+    "ea": "0x14000d0f0",
+    "function_file": "functions/14000d0f0_RtlWriteULong64ToUser.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlWriteULong64ToUser",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 4,
+    "size": 64,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SepSddlParseWideStringUlong",
+    "ea": "0x14000dbdc",
+    "function_file": "functions/14000dbdc_SepSddlParseWideStringUlong.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SepSddlParseWideStringUlong",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 194,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "memcmp",
+    "ea": "0x140006ea0",
+    "function_file": "functions/140006ea0_memcmp.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memcmp",
+    "prototype": "int __cdecl(const void *Buf1, const void *Buf2, size_t Size)",
+    "rank_score": 3,
+    "size": 199,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlCopyFromUser$thunk$11487580757436585079",
+    "ea": "0x140007010",
+    "function_file": "functions/140007010_RtlCopyFromUser_thunk_11487580757436585079.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlCopyFromUser$thunk$11487580757436585079",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlCopyToUser$thunk$8481748130428616498",
+    "ea": "0x140007020",
+    "function_file": "functions/140007020_RtlCopyToUser_thunk_8481748130428616498.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlCopyToUser$thunk$8481748130428616498",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlMoveVolatileMemory",
+    "ea": "0x140006570",
+    "function_file": "functions/140006570_RtlMoveVolatileMemory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlMoveVolatileMemory",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlWriteULong64ToUser$thunk$4480820996488585629",
+    "ea": "0x140007030",
+    "function_file": "functions/140007030_RtlWriteULong64ToUser_thunk_4480820996488585629.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlWriteULong64ToUser$thunk$4480820996488585629",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlWriteULongToUser$thunk$10400971452996433967",
+    "ea": "0x140007040",
+    "function_file": "functions/140007040_RtlWriteULongToUser_thunk_10400971452996433967.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlWriteULongToUser$thunk$10400971452996433967",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  }
+]

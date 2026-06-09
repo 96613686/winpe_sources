@@ -1,0 +1,177 @@
+# SQMLoggingTask
+
+- ea: `0x180163c10`
+- end: `0x18016488b`
+- name: `SQMLoggingTask`
+- size: `3195`
+- prototype: ``
+- caller_count: `0`
+- callee_count: `17`
+- tags: `loader_planting, service_task`
+
+## callees
+
+- `0x180006330`
+- `0x18001e090`
+- `0x18001ea60`
+- `0x180033b5c`
+- `0x1800b244c`
+- `0x180163c10`
+- `0x180164894`
+- `0x1801649bc`
+- `0x180164e80`
+- `0x180164fc0`
+- `0x180172edc`
+- `0x1801c4a34`
+- `0x1801d0ea0`
+- `0x1801d2a7c`
+- `0x1801d614c`
+- `0x1801ddf20`
+- `0x180255f90`
+
+## import_xrefs
+
+- `api-ms-win-crt-private-l1-1-0!wcschr` at `0x180164117`
+- `api-ms-win-crt-private-l1-1-0!wcschr` at `0x180164117`
+- `api-ms-win-crt-private-l1-1-0!wcsstr` at `0x180164138`
+- `api-ms-win-crt-private-l1-1-0!wcsstr` at `0x180164138`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x180163c47`
+- `api-ms-win-core-processthreads-l1-1-0!TlsGetValue` at `0x180163c47`
+- `RPCRT4!RpcStringFreeW` at `0x180163cdd`
+- `RPCRT4!RpcStringFreeW` at `0x180163cfa`
+- `RPCRT4!RpcStringFreeW` at `0x180163d17`
+- `RPCRT4!RpcStringFreeW` at `0x180163cdd`
+- `RPCRT4!RpcStringFreeW` at `0x180163cfa`
+- `RPCRT4!RpcStringFreeW` at `0x180163d17`
+- `ntdll!WinSqmAddToStream` at `0x1801645e3`
+- `ntdll!WinSqmAddToStream` at `0x1801645e3`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164263`
+- `ntdll!WinSqmIncrementDWORD` at `0x18016427e`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164299`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801642b4`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801642cf`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801642ea`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164305`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164320`
+- `ntdll!WinSqmIncrementDWORD` at `0x18016433b`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164356`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164371`
+- `ntdll!WinSqmIncrementDWORD` at `0x18016438c`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801643a7`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801643c2`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801643dd`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801643f8`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164413`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164423`
+- `ntdll!WinSqmIncrementDWORD` at `0x18016443e`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164459`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164474`
+- `ntdll!WinSqmIncrementDWORD` at `0x18016448f`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801644aa`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801644c5`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801644e0`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801645fe`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164619`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164634`
+- `ntdll!WinSqmIncrementDWORD` at `0x18016464f`
+- `ntdll!WinSqmIncrementDWORD` at `0x18016466a`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164685`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801646a0`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801646bb`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801646d6`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801646f1`
+- `ntdll!WinSqmIncrementDWORD` at `0x18016470c`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164727`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164742`
+- `ntdll!WinSqmIncrementDWORD` at `0x18016475d`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164778`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164793`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801647ae`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801647be`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801647d9`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801647f4`
+- `ntdll!WinSqmIncrementDWORD` at `0x18016480f`
+- `ntdll!WinSqmIncrementDWORD` at `0x18016482a`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164845`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164860`
+- `ntdll!WinSqmIncrementDWORD` at `0x18016487b`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164263`
+- `ntdll!WinSqmIncrementDWORD` at `0x18016427e`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164299`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801642b4`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801642cf`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801642ea`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164305`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164320`
+- `ntdll!WinSqmIncrementDWORD` at `0x18016433b`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164356`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164371`
+- `ntdll!WinSqmIncrementDWORD` at `0x18016438c`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801643a7`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801643c2`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801643dd`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801643f8`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164413`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164423`
+- `ntdll!WinSqmIncrementDWORD` at `0x18016443e`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164459`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164474`
+- `ntdll!WinSqmIncrementDWORD` at `0x18016448f`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801644aa`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801644c5`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801644e0`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801645fe`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164619`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164634`
+- `ntdll!WinSqmIncrementDWORD` at `0x18016464f`
+- `ntdll!WinSqmIncrementDWORD` at `0x18016466a`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164685`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801646a0`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801646bb`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801646d6`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801646f1`
+- `ntdll!WinSqmIncrementDWORD` at `0x18016470c`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164727`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164742`
+- `ntdll!WinSqmIncrementDWORD` at `0x18016475d`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164778`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164793`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801647ae`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801647be`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801647d9`
+- `ntdll!WinSqmIncrementDWORD` at `0x1801647f4`
+- `ntdll!WinSqmIncrementDWORD` at `0x18016480f`
+- `ntdll!WinSqmIncrementDWORD` at `0x18016482a`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164845`
+- `ntdll!WinSqmIncrementDWORD` at `0x180164860`
+- `ntdll!WinSqmIncrementDWORD` at `0x18016487b`
+- `ntdll!WinSqmSetDWORD` at `0x1801641a4`
+- `ntdll!WinSqmSetDWORD` at `0x1801641b8`
+- `ntdll!WinSqmSetDWORD` at `0x1801641cc`
+- `ntdll!WinSqmSetDWORD` at `0x1801641e0`
+- `ntdll!WinSqmSetDWORD` at `0x1801641f4`
+- `ntdll!WinSqmSetDWORD` at `0x18016421e`
+- `ntdll!WinSqmSetDWORD` at `0x180164233`
+- `ntdll!WinSqmSetDWORD` at `0x180164248`
+- `ntdll!WinSqmSetDWORD` at `0x1801641a4`
+- `ntdll!WinSqmSetDWORD` at `0x1801641b8`
+- `ntdll!WinSqmSetDWORD` at `0x1801641cc`
+- `ntdll!WinSqmSetDWORD` at `0x1801641e0`
+- `ntdll!WinSqmSetDWORD` at `0x1801641f4`
+- `ntdll!WinSqmSetDWORD` at `0x18016421e`
+- `ntdll!WinSqmSetDWORD` at `0x180164233`
+- `ntdll!WinSqmSetDWORD` at `0x180164248`
+- `ntdll!WinSqmSetString` at `0x18016415e`
+- `ntdll!WinSqmSetString` at `0x180164177`
+- `ntdll!WinSqmSetString` at `0x180164190`
+- `ntdll!WinSqmSetString` at `0x18016415e`
+- `ntdll!WinSqmSetString` at `0x180164177`
+- `ntdll!WinSqmSetString` at `0x180164190`
+- `ntdll!WinSqmIsOptedIn` at `0x180163c9c`
+- `ntdll!WinSqmIsOptedIn` at `0x180163c9c`
+
+## pseudocode
+
+```c
+
+```

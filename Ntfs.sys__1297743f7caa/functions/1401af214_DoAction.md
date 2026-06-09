@@ -1,0 +1,239 @@
+# DoAction
+
+- ea: `0x1401af214`
+- end: `0x1401b1f8d`
+- name: `DoAction`
+- size: `11641`
+- prototype: `__int64 __usercall@<rax>(int@<ecx>, void *Src, size_t Size, int, __int64, __int64, __int64 Lbn, PULONG BitMapBuffer)`
+- caller_count: `2`
+- callee_count: `30`
+- tags: ``
+
+## callers
+
+- `0x14015e444`
+- `0x1401adad0`
+
+## callees
+
+- `0x140007ea0`
+- `0x14003aea8`
+- `0x14003c210`
+- `0x14004d6c8`
+- `0x14004d768`
+- `0x14004d820`
+- `0x14004d8f0`
+- `0x14004d9a8`
+- `0x140059440`
+- `0x140059740`
+- `0x1400b8e5c`
+- `0x140124000`
+- `0x140126f90`
+- `0x140152e70`
+- `0x140152f10`
+- `0x14015d228`
+- `0x14015d2c4`
+- `0x14015ea40`
+- `0x140163e10`
+- `0x14016aa80`
+- `0x1401af214`
+- `0x1402127c0`
+- `0x14021c040`
+- `0x14021c340`
+- `0x140220c20`
+- `0x140222e84`
+- `0x140222ff0`
+- `0x140235500`
+- `0x140256288`
+- `0x14029ff8c`
+
+## import_xrefs
+
+- `ntoskrnl!FsRtlRemoveBaseMcbEntry` at `0x1401b0bba`
+- `ntoskrnl!FsRtlRemoveBaseMcbEntry` at `0x1401b0bba`
+- `ntoskrnl!KeReleaseGuardedMutex` at `0x1401b0c7e`
+- `ntoskrnl!KeReleaseGuardedMutex` at `0x1401b0c7e`
+- `ntoskrnl!RtlInitializeBitMap` at `0x1401b0a14`
+- `ntoskrnl!RtlInitializeBitMap` at `0x1401b15bd`
+- `ntoskrnl!RtlInitializeBitMap` at `0x1401b0a14`
+- `ntoskrnl!RtlInitializeBitMap` at `0x1401b15bd`
+- `ntoskrnl!KeAcquireGuardedMutex` at `0x1401b0bf0`
+- `ntoskrnl!KeAcquireGuardedMutex` at `0x1401b0bf0`
+- `ntoskrnl!CcUnpinData` at `0x1401af2ed`
+- `ntoskrnl!CcUnpinData` at `0x1401af335`
+- `ntoskrnl!CcUnpinData` at `0x1401af372`
+- `ntoskrnl!CcUnpinData` at `0x1401af41a`
+- `ntoskrnl!CcUnpinData` at `0x1401af47d`
+- `ntoskrnl!CcUnpinData` at `0x1401af4c7`
+- `ntoskrnl!CcUnpinData` at `0x1401af534`
+- `ntoskrnl!CcUnpinData` at `0x1401af5a9`
+- `ntoskrnl!CcUnpinData` at `0x1401af5f3`
+- `ntoskrnl!CcUnpinData` at `0x1401af660`
+- `ntoskrnl!CcUnpinData` at `0x1401af780`
+- `ntoskrnl!CcUnpinData` at `0x1401af7a6`
+- `ntoskrnl!CcUnpinData` at `0x1401af7f0`
+- `ntoskrnl!CcUnpinData` at `0x1401af85d`
+- `ntoskrnl!CcUnpinData` at `0x1401af8cc`
+- `ntoskrnl!CcUnpinData` at `0x1401af982`
+- `ntoskrnl!CcUnpinData` at `0x1401afaa5`
+- `ntoskrnl!CcUnpinData` at `0x1401afbe0`
+- `ntoskrnl!CcUnpinData` at `0x1401afc85`
+- `ntoskrnl!CcUnpinData` at `0x1401afd0b`
+- `ntoskrnl!CcUnpinData` at `0x1401afd80`
+- `ntoskrnl!CcUnpinData` at `0x1401afdd9`
+- `ntoskrnl!CcUnpinData` at `0x1401afe1f`
+- `ntoskrnl!CcUnpinData` at `0x1401afe69`
+- `ntoskrnl!CcUnpinData` at `0x1401afed6`
+- `ntoskrnl!CcUnpinData` at `0x1401aff89`
+- `ntoskrnl!CcUnpinData` at `0x1401affd7`
+- `ntoskrnl!CcUnpinData` at `0x1401afffd`
+- `ntoskrnl!CcUnpinData` at `0x1401b0047`
+- `ntoskrnl!CcUnpinData` at `0x1401b00b4`
+- `ntoskrnl!CcUnpinData` at `0x1401b0166`
+- `ntoskrnl!CcUnpinData` at `0x1401b01c3`
+- `ntoskrnl!CcUnpinData` at `0x1401b020e`
+- `ntoskrnl!CcUnpinData` at `0x1401b0234`
+- `ntoskrnl!CcUnpinData` at `0x1401b025a`
+- `ntoskrnl!CcUnpinData` at `0x1401b02a4`
+- `ntoskrnl!CcUnpinData` at `0x1401b0311`
+- `ntoskrnl!CcUnpinData` at `0x1401b037b`
+- `ntoskrnl!CcUnpinData` at `0x1401b049d`
+- `ntoskrnl!CcUnpinData` at `0x1401b04ef`
+- `ntoskrnl!CcUnpinData` at `0x1401b055c`
+- `ntoskrnl!CcUnpinData` at `0x1401b0734`
+- `ntoskrnl!CcUnpinData` at `0x1401b075a`
+- `ntoskrnl!CcUnpinData` at `0x1401b07b9`
+- `ntoskrnl!CcUnpinData` at `0x1401b083f`
+- `ntoskrnl!CcUnpinData` at `0x1401b08b6`
+- `ntoskrnl!CcUnpinData` at `0x1401b09e2`
+- `ntoskrnl!CcUnpinData` at `0x1401b0cd3`
+- `ntoskrnl!CcUnpinData` at `0x1401b0d59`
+- `ntoskrnl!CcUnpinData` at `0x1401b0dc5`
+- `ntoskrnl!CcUnpinData` at `0x1401b0e61`
+- `ntoskrnl!CcUnpinData` at `0x1401b0ece`
+- `ntoskrnl!CcUnpinData` at `0x1401b0f80`
+- `ntoskrnl!CcUnpinData` at `0x1401b0ff8`
+- `ntoskrnl!CcUnpinData` at `0x1401b105a`
+- `ntoskrnl!CcUnpinData` at `0x1401b10e0`
+- `ntoskrnl!CcUnpinData` at `0x1401b114c`
+- `ntoskrnl!CcUnpinData` at `0x1401b11c0`
+- `ntoskrnl!CcUnpinData` at `0x1401b122d`
+- `ntoskrnl!CcUnpinData` at `0x1401b12df`
+- `ntoskrnl!CcUnpinData` at `0x1401b131a`
+- `ntoskrnl!CcUnpinData` at `0x1401b137c`
+- `ntoskrnl!CcUnpinData` at `0x1401b1402`
+- `ntoskrnl!CcUnpinData` at `0x1401b146f`
+- `ntoskrnl!CcUnpinData` at `0x1401b14ab`
+- `ntoskrnl!CcUnpinData` at `0x1401b158b`
+- `ntoskrnl!CcUnpinData` at `0x1401b17fb`
+- `ntoskrnl!CcUnpinData` at `0x1401b1851`
+- `ntoskrnl!CcUnpinData` at `0x1401b18a8`
+- `ntoskrnl!CcUnpinData` at `0x1401b1921`
+- `ntoskrnl!CcUnpinData` at `0x1401b19a7`
+- `ntoskrnl!CcUnpinData` at `0x1401b1a13`
+- `ntoskrnl!CcUnpinData` at `0x1401b1a47`
+- `ntoskrnl!CcUnpinData` at `0x1401b1aa7`
+- `ntoskrnl!CcUnpinData` at `0x1401b1b14`
+- `ntoskrnl!CcUnpinData` at `0x1401b1bc6`
+- `ntoskrnl!CcUnpinData` at `0x1401b1bf6`
+- `ntoskrnl!CcUnpinData` at `0x1401b1c2d`
+- `ntoskrnl!CcUnpinData` at `0x1401b1c8f`
+- `ntoskrnl!CcUnpinData` at `0x1401b1d15`
+- `ntoskrnl!CcUnpinData` at `0x1401b1d81`
+- `ntoskrnl!CcUnpinData` at `0x1401b1de2`
+- `ntoskrnl!CcUnpinData` at `0x1401b1e4f`
+- `ntoskrnl!CcUnpinData` at `0x1401b1efd`
+- `ntoskrnl!CcUnpinData` at `0x1401b1f29`
+- `ntoskrnl!CcUnpinData` at `0x1401af2ed`
+- `ntoskrnl!CcUnpinData` at `0x1401af335`
+- `ntoskrnl!CcUnpinData` at `0x1401af372`
+- `ntoskrnl!CcUnpinData` at `0x1401af41a`
+- `ntoskrnl!CcUnpinData` at `0x1401af47d`
+- `ntoskrnl!CcUnpinData` at `0x1401af4c7`
+- `ntoskrnl!CcUnpinData` at `0x1401af534`
+- `ntoskrnl!CcUnpinData` at `0x1401af5a9`
+- `ntoskrnl!CcUnpinData` at `0x1401af5f3`
+- `ntoskrnl!CcUnpinData` at `0x1401af660`
+- `ntoskrnl!CcUnpinData` at `0x1401af780`
+- `ntoskrnl!CcUnpinData` at `0x1401af7a6`
+- `ntoskrnl!CcUnpinData` at `0x1401af7f0`
+- `ntoskrnl!CcUnpinData` at `0x1401af85d`
+- `ntoskrnl!CcUnpinData` at `0x1401af8cc`
+- `ntoskrnl!CcUnpinData` at `0x1401af982`
+- `ntoskrnl!CcUnpinData` at `0x1401afaa5`
+- `ntoskrnl!CcUnpinData` at `0x1401afbe0`
+- `ntoskrnl!CcUnpinData` at `0x1401afc85`
+- `ntoskrnl!CcUnpinData` at `0x1401afd0b`
+- `ntoskrnl!CcUnpinData` at `0x1401afd80`
+- `ntoskrnl!CcUnpinData` at `0x1401afdd9`
+- `ntoskrnl!CcUnpinData` at `0x1401afe1f`
+- `ntoskrnl!CcUnpinData` at `0x1401afe69`
+- `ntoskrnl!CcUnpinData` at `0x1401afed6`
+- `ntoskrnl!CcUnpinData` at `0x1401aff89`
+- `ntoskrnl!CcUnpinData` at `0x1401affd7`
+- `ntoskrnl!CcUnpinData` at `0x1401afffd`
+- `ntoskrnl!CcUnpinData` at `0x1401b0047`
+- `ntoskrnl!CcUnpinData` at `0x1401b00b4`
+- `ntoskrnl!CcUnpinData` at `0x1401b0166`
+- `ntoskrnl!CcUnpinData` at `0x1401b01c3`
+- `ntoskrnl!CcUnpinData` at `0x1401b020e`
+- `ntoskrnl!CcUnpinData` at `0x1401b0234`
+- `ntoskrnl!CcUnpinData` at `0x1401b025a`
+- `ntoskrnl!CcUnpinData` at `0x1401b02a4`
+- `ntoskrnl!CcUnpinData` at `0x1401b0311`
+- `ntoskrnl!CcUnpinData` at `0x1401b037b`
+- `ntoskrnl!CcUnpinData` at `0x1401b049d`
+- `ntoskrnl!CcUnpinData` at `0x1401b04ef`
+- `ntoskrnl!CcUnpinData` at `0x1401b055c`
+- `ntoskrnl!CcUnpinData` at `0x1401b0734`
+- `ntoskrnl!CcUnpinData` at `0x1401b075a`
+- `ntoskrnl!CcUnpinData` at `0x1401b07b9`
+- `ntoskrnl!CcUnpinData` at `0x1401b083f`
+- `ntoskrnl!CcUnpinData` at `0x1401b08b6`
+- `ntoskrnl!CcUnpinData` at `0x1401b09e2`
+- `ntoskrnl!CcUnpinData` at `0x1401b0cd3`
+- `ntoskrnl!CcUnpinData` at `0x1401b0d59`
+- `ntoskrnl!CcUnpinData` at `0x1401b0dc5`
+- `ntoskrnl!CcUnpinData` at `0x1401b0e61`
+- `ntoskrnl!CcUnpinData` at `0x1401b0ece`
+- `ntoskrnl!CcUnpinData` at `0x1401b0f80`
+- `ntoskrnl!CcUnpinData` at `0x1401b0ff8`
+- `ntoskrnl!CcUnpinData` at `0x1401b105a`
+- `ntoskrnl!CcUnpinData` at `0x1401b10e0`
+- `ntoskrnl!CcUnpinData` at `0x1401b114c`
+- `ntoskrnl!CcUnpinData` at `0x1401b11c0`
+- `ntoskrnl!CcUnpinData` at `0x1401b122d`
+- `ntoskrnl!CcUnpinData` at `0x1401b12df`
+- `ntoskrnl!CcUnpinData` at `0x1401b131a`
+- `ntoskrnl!CcUnpinData` at `0x1401b137c`
+- `ntoskrnl!CcUnpinData` at `0x1401b1402`
+- `ntoskrnl!CcUnpinData` at `0x1401b146f`
+- `ntoskrnl!CcUnpinData` at `0x1401b14ab`
+- `ntoskrnl!CcUnpinData` at `0x1401b158b`
+- `ntoskrnl!CcUnpinData` at `0x1401b17fb`
+- `ntoskrnl!CcUnpinData` at `0x1401b1851`
+- `ntoskrnl!CcUnpinData` at `0x1401b18a8`
+- `ntoskrnl!CcUnpinData` at `0x1401b1921`
+- `ntoskrnl!CcUnpinData` at `0x1401b19a7`
+- `ntoskrnl!CcUnpinData` at `0x1401b1a13`
+- `ntoskrnl!CcUnpinData` at `0x1401b1a47`
+- `ntoskrnl!CcUnpinData` at `0x1401b1aa7`
+- `ntoskrnl!CcUnpinData` at `0x1401b1b14`
+- `ntoskrnl!CcUnpinData` at `0x1401b1bc6`
+- `ntoskrnl!CcUnpinData` at `0x1401b1bf6`
+- `ntoskrnl!CcUnpinData` at `0x1401b1c2d`
+- `ntoskrnl!CcUnpinData` at `0x1401b1c8f`
+- `ntoskrnl!CcUnpinData` at `0x1401b1d15`
+- `ntoskrnl!CcUnpinData` at `0x1401b1d81`
+- `ntoskrnl!CcUnpinData` at `0x1401b1de2`
+- `ntoskrnl!CcUnpinData` at `0x1401b1e4f`
+- `ntoskrnl!CcUnpinData` at `0x1401b1efd`
+- `ntoskrnl!CcUnpinData` at `0x1401b1f29`
+- `ntoskrnl!FsRtlLookupBaseMcbEntry` at `0x1401b0b86`
+- `ntoskrnl!FsRtlLookupBaseMcbEntry` at `0x1401b0b86`
+
+## pseudocode
+
+```c
+
+```

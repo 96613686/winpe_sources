@@ -1,0 +1,49 @@
+# wil::ProfileDataStore::BatchSaveAsync$_ResumeCoro$1_Windows::Data::Security::Passkey::RecoveryItemPdr_
+
+- ea: `0x18001d5d0`
+- end: `0x18001da54`
+- name: `wil::ProfileDataStore::BatchSaveAsync$_ResumeCoro$1_Windows::Data::Security::Passkey::RecoveryItemPdr_`
+- size: `1156`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `17`
+- tags: `broker_com_uri`
+
+## callers
+
+- `0x18001e86c`
+
+## callees
+
+- `0x180003520`
+- `0x180003c97`
+- `0x180003cdf`
+- `0x18000cac0`
+- `0x18001ae30`
+- `0x18001d5d0`
+- `0x1800230a4`
+- `0x180044048`
+- `0x18004519c`
+- `0x18004ced8`
+- `0x18004eaac`
+- `0x18004eba0`
+- `0x18004ec6c`
+- `0x18004ed50`
+- `0x18004ee3c`
+- `0x18004f7d4`
+- `0x180061010`
+
+## import_xrefs
+
+- `msvcp_win!?__ExceptionPtrDestroy@@YAXPEAX@Z` at `0x18001d9c0`
+- `msvcp_win!?__ExceptionPtrDestroy@@YAXPEAX@Z` at `0x18001d9c0`
+- `api-ms-win-crt-private-l1-1-0!_o_abort` at `0x18001d77b`
+- `api-ms-win-crt-private-l1-1-0!_o_abort` at `0x18001d911`
+- `api-ms-win-crt-private-l1-1-0!_o_abort` at `0x18001d77b`
+- `api-ms-win-crt-private-l1-1-0!_o_abort` at `0x18001d911`
+
+## pseudocode
+
+```c
+
+```

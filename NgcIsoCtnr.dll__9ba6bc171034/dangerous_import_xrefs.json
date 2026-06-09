@@ -1,0 +1,2287 @@
+[
+  {
+    "import": "CRYPT32!CertFindExtension",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180009077",
+        "from_func": "0x180009077",
+        "from_func_name": "__imp_load_CertFindExtension",
+        "import": "CRYPT32!CertFindExtension"
+      },
+      {
+        "from_ea": "0x18007c646",
+        "from_func": "0x18007c600",
+        "from_func_name": "?FindExtensionByOid@CertificateUtil@@SAPEAU_CERT_EXTENSION@@PEBDPEBU_CERT_CONTEXT@@@Z",
+        "import": "CRYPT32!CertFindExtension"
+      }
+    ]
+  },
+  {
+    "import": "RPCRT4!RpcStringBindingComposeW",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180064f5a",
+        "from_func": "0x180064f04",
+        "from_func_name": "?Bind@NgcIsoRpcClient@@QEAAJXZ",
+        "import": "RPCRT4!RpcStringBindingComposeW"
+      },
+      {
+        "from_ea": "0x180065121",
+        "from_func": "0x1800650bc",
+        "from_func_name": "?BindIfNecessaryUnsafe@NgcIsoRpcClientNew@@AEAAJXZ",
+        "import": "RPCRT4!RpcStringBindingComposeW"
+      },
+      {
+        "from_ea": "0x180064f5a",
+        "from_func": "0x180064f04",
+        "from_func_name": "?Bind@NgcIsoRpcClient@@QEAAJXZ",
+        "import": "RPCRT4!RpcStringBindingComposeW"
+      },
+      {
+        "from_ea": "0x180065121",
+        "from_func": "0x1800650bc",
+        "from_func_name": "?BindIfNecessaryUnsafe@NgcIsoRpcClientNew@@AEAAJXZ",
+        "import": "RPCRT4!RpcStringBindingComposeW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-com-l1-1-0!CoCreateGuid",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180018d27",
+        "from_func": "0x180018bf0",
+        "from_func_name": "?InternalCreate@NgcIsoContainer@@AEAAJPEBG0PEBEK1KW4NgcCtnrTpmSupport@@PEA_K3@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoCreateGuid"
+      },
+      {
+        "from_ea": "0x180072b8b",
+        "from_func": "0x180072b54",
+        "from_func_name": "NgcUtils::GenerateTemporaryFilePath",
+        "import": "api-ms-win-core-com-l1-1-0!CoCreateGuid"
+      },
+      {
+        "from_ea": "0x180018d27",
+        "from_func": "0x180018bf0",
+        "from_func_name": "?InternalCreate@NgcIsoContainer@@AEAAJPEBG0PEBEK1KW4NgcCtnrTpmSupport@@PEA_K3@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoCreateGuid"
+      },
+      {
+        "from_ea": "0x180072b8b",
+        "from_func": "0x180072b54",
+        "from_func_name": "NgcUtils::GenerateTemporaryFilePath",
+        "import": "api-ms-win-core-com-l1-1-0!CoCreateGuid"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-com-l1-1-0!CoCreateInstance",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180075519",
+        "from_func": "0x1800753fc",
+        "from_func_name": "?IsSecureBioEnabled@NgcUtils@@YA_NXZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoCreateInstance"
+      },
+      {
+        "from_ea": "0x180075519",
+        "from_func": "0x1800753fc",
+        "from_func_name": "?IsSecureBioEnabled@NgcUtils@@YA_NXZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoCreateInstance"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-com-l1-1-0!CoInitializeEx",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800754c8",
+        "from_func": "0x1800753fc",
+        "from_func_name": "?IsSecureBioEnabled@NgcUtils@@YA_NXZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoInitializeEx"
+      },
+      {
+        "from_ea": "0x1800754c8",
+        "from_func": "0x1800753fc",
+        "from_func_name": "?IsSecureBioEnabled@NgcUtils@@YA_NXZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoInitializeEx"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc",
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ],
+    "xref_count": 5,
+    "xrefs": [
+      {
+        "from_ea": "0x180017c2b",
+        "from_func": "0x180017bd0",
+        "from_func_name": "??$make_unique_string_nothrow@V?$unique_any_t@V?$unique_storage@U?$resource_policy@PEAGP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAGPEAG$0A@$$T@details@wil@@@details@wil@@@wil@@@wil@@YA?AV?$unique_any_t@V?$unique_storage@U?$resource_policy@PEAGP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAGPEAG$0A@$$T@details@wil@@@details@wil@@@0@PEBG_K@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180070e67",
+        "from_func": "0x180070e3c",
+        "from_func_name": "?CoMemAllocCopy@NgcUtils@@YAJPEBX_KPEAPEAX@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180017c2b",
+        "from_func": "0x180017bd0",
+        "from_func_name": "??$make_unique_string_nothrow@V?$unique_any_t@V?$unique_storage@U?$resource_policy@PEAGP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAGPEAG$0A@$$T@details@wil@@@details@wil@@@wil@@@wil@@YA?AV?$unique_any_t@V?$unique_storage@U?$resource_policy@PEAGP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAGPEAG$0A@$$T@details@wil@@@details@wil@@@0@PEBG_K@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x180070e67",
+        "from_func": "0x180070e3c",
+        "from_func_name": "?CoMemAllocCopy@NgcUtils@@YAJPEBX_KPEAPEAX@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      },
+      {
+        "from_ea": "0x1800c2aa0",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemAlloc"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree",
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x18001803c",
+        "from_func": "0x180018030",
+        "from_func_name": "??1?$unique_storage@U?$resource_policy@PEAGP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAGPEAG$0A@$$T@details@wil@@@details@wil@@QEAA@XZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180044637",
+        "from_func": "0x180044618",
+        "from_func_name": "??1?$out_param_ptr_t@PEAPEAXV?$unique_ptr@EU?$function_deleter@P6AXPEAX@Z$1?CoTaskMemFree@@YAX0@Z@wil@@@wistd@@@details@wil@@QEAA@XZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800450f5",
+        "from_func": "0x180044e90",
+        "from_func_name": "?AddProtector@Recovery@Protector@@UEAAJ_K0PEBEKPEAPEAEPEAK@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x18001803c",
+        "from_func": "0x180018030",
+        "from_func_name": "??1?$unique_storage@U?$resource_policy@PEAGP6AXPEAX@Z$1?CoTaskMemFree@@YAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAGPEAG$0A@$$T@details@wil@@@details@wil@@QEAA@XZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x180044637",
+        "from_func": "0x180044618",
+        "from_func_name": "??1?$out_param_ptr_t@PEAPEAXV?$unique_ptr@EU?$function_deleter@P6AXPEAX@Z$1?CoTaskMemFree@@YAX0@Z@wil@@@wistd@@@details@wil@@QEAA@XZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      },
+      {
+        "from_ea": "0x1800450f5",
+        "from_func": "0x180044e90",
+        "from_func_name": "?AddProtector@Recovery@Protector@@UEAAJ_K0PEBEKPEAPEAEPEAK@Z",
+        "import": "api-ms-win-core-com-l1-1-0!CoTaskMemFree"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-com-l1-1-0!CoUninitialize",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180075551",
+        "from_func": "0x1800753fc",
+        "from_func_name": "?IsSecureBioEnabled@NgcUtils@@YA_NXZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoUninitialize"
+      },
+      {
+        "from_ea": "0x180075569",
+        "from_func": "0x1800753fc",
+        "from_func_name": "?IsSecureBioEnabled@NgcUtils@@YA_NXZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoUninitialize"
+      },
+      {
+        "from_ea": "0x180075551",
+        "from_func": "0x1800753fc",
+        "from_func_name": "?IsSecureBioEnabled@NgcUtils@@YA_NXZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoUninitialize"
+      },
+      {
+        "from_ea": "0x180075569",
+        "from_func": "0x1800753fc",
+        "from_func_name": "?IsSecureBioEnabled@NgcUtils@@YA_NXZ",
+        "import": "api-ms-win-core-com-l1-1-0!CoUninitialize"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-com-l1-1-0!StringFromGUID2",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180070f14",
+        "from_func": "0x180070ef0",
+        "from_func_name": "?GetStringFromGuid@NgcUtils@@YAJAEBU_GUID@@PEAGK@Z",
+        "import": "api-ms-win-core-com-l1-1-0!StringFromGUID2"
+      },
+      {
+        "from_ea": "0x180070f14",
+        "from_func": "0x180070ef0",
+        "from_func_name": "?GetStringFromGuid@NgcUtils@@YAJAEBU_GUID@@PEAGK@Z",
+        "import": "api-ms-win-core-com-l1-1-0!StringFromGUID2"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-file-l1-1-0!CompareFileTime",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 8,
+    "xrefs": [
+      {
+        "from_ea": "0x180047392",
+        "from_func": "0x1800472d8",
+        "from_func_name": "?ValidateExpiration@Pin@Protector@@AEAAJXZ",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x1800803c7",
+        "from_func": "0x18008004c",
+        "from_func_name": "?GetCertificates@RegistrationCertStatus@@CAJW4_CERTFICATE_LOCATION@@PEBDPEBG22W4INFO_KIND@@PEAPEAPEBU_CERT_CONTEXT@@PEAK@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x18008040c",
+        "from_func": "0x18008004c",
+        "from_func_name": "?GetCertificates@RegistrationCertStatus@@CAJW4_CERTFICATE_LOCATION@@PEBDPEBG22W4INFO_KIND@@PEAPEAPEBU_CERT_CONTEXT@@PEAK@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180080a0a",
+        "from_func": "0x180080874",
+        "from_func_name": "?SortCertificatesInPlace@@YAJQEAPEBU_CERT_CONTEXT@@K@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180047392",
+        "from_func": "0x1800472d8",
+        "from_func_name": "?ValidateExpiration@Pin@Protector@@AEAAJXZ",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x1800803c7",
+        "from_func": "0x18008004c",
+        "from_func_name": "?GetCertificates@RegistrationCertStatus@@CAJW4_CERTFICATE_LOCATION@@PEBDPEBG22W4INFO_KIND@@PEAPEAPEBU_CERT_CONTEXT@@PEAK@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x18008040c",
+        "from_func": "0x18008004c",
+        "from_func_name": "?GetCertificates@RegistrationCertStatus@@CAJW4_CERTFICATE_LOCATION@@PEBDPEBG22W4INFO_KIND@@PEAPEAPEBU_CERT_CONTEXT@@PEAK@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      },
+      {
+        "from_ea": "0x180080a0a",
+        "from_func": "0x180080874",
+        "from_func_name": "?SortCertificatesInPlace@@YAJQEAPEBU_CERT_CONTEXT@@K@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CompareFileTime"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-file-l1-1-0!CreateFileW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180072c7b",
+        "from_func": "0x180072c40",
+        "from_func_name": "?ReadFile@NgcUtils@@YAJPEBGPEAV?$vector@EV?$allocator@E@std@@@std@@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x180072f05",
+        "from_func": "0x180072dfc",
+        "from_func_name": "?WriteFileSynchronously@NgcUtils@@YAJPEBG0PEBEK@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x180072c7b",
+        "from_func": "0x180072c40",
+        "from_func_name": "?ReadFile@NgcUtils@@YAJPEBGPEAV?$vector@EV?$allocator@E@std@@@std@@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      },
+      {
+        "from_ea": "0x180072f05",
+        "from_func": "0x180072dfc",
+        "from_func_name": "?WriteFileSynchronously@NgcUtils@@YAJPEBG0PEBEK@Z",
+        "import": "api-ms-win-core-file-l1-1-0!CreateFileW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-file-l1-1-0!DeleteFileW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x1800719bd",
+        "from_func": "0x180071624",
+        "from_func_name": "?DeleteDirectoryRecursively@NgcUtils@@YAJPEBG_N@Z",
+        "import": "api-ms-win-core-file-l1-1-0!DeleteFileW"
+      },
+      {
+        "from_ea": "0x180072b32",
+        "from_func": "0x180072b14",
+        "from_func_name": "wil::details::ScopeExitFnGuard__lambda_264642e826a098a243dd793cc2ac5100___::operator()",
+        "import": "api-ms-win-core-file-l1-1-0!DeleteFileW"
+      },
+      {
+        "from_ea": "0x180072e58",
+        "from_func": "0x180072dfc",
+        "from_func_name": "?WriteFileSynchronously@NgcUtils@@YAJPEBG0PEBEK@Z",
+        "import": "api-ms-win-core-file-l1-1-0!DeleteFileW"
+      },
+      {
+        "from_ea": "0x1800719bd",
+        "from_func": "0x180071624",
+        "from_func_name": "?DeleteDirectoryRecursively@NgcUtils@@YAJPEBG_N@Z",
+        "import": "api-ms-win-core-file-l1-1-0!DeleteFileW"
+      },
+      {
+        "from_ea": "0x180072b32",
+        "from_func": "0x180072b14",
+        "from_func_name": "wil::details::ScopeExitFnGuard__lambda_264642e826a098a243dd793cc2ac5100___::operator()",
+        "import": "api-ms-win-core-file-l1-1-0!DeleteFileW"
+      },
+      {
+        "from_ea": "0x180072e58",
+        "from_func": "0x180072dfc",
+        "from_func_name": "?WriteFileSynchronously@NgcUtils@@YAJPEBG0PEBEK@Z",
+        "import": "api-ms-win-core-file-l1-1-0!DeleteFileW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-file-l1-1-0!GetFileAttributesExW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180071323",
+        "from_func": "0x1800712f4",
+        "from_func_name": "?CheckForDirectory@NgcUtils@@YAJPEBG@Z",
+        "import": "api-ms-win-core-file-l1-1-0!GetFileAttributesExW"
+      },
+      {
+        "from_ea": "0x180071323",
+        "from_func": "0x1800712f4",
+        "from_func_name": "?CheckForDirectory@NgcUtils@@YAJPEBG@Z",
+        "import": "api-ms-win-core-file-l1-1-0!GetFileAttributesExW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-file-l1-1-0!ReadFile",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180072d63",
+        "from_func": "0x180072c40",
+        "from_func_name": "?ReadFile@NgcUtils@@YAJPEBGPEAV?$vector@EV?$allocator@E@std@@@std@@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!ReadFile"
+      },
+      {
+        "from_ea": "0x180072d63",
+        "from_func": "0x180072c40",
+        "from_func_name": "?ReadFile@NgcUtils@@YAJPEBGPEAV?$vector@EV?$allocator@E@std@@@std@@@Z",
+        "import": "api-ms-win-core-file-l1-1-0!ReadFile"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-file-l1-1-0!RemoveDirectoryW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18007176d",
+        "from_func": "0x180071624",
+        "from_func_name": "?DeleteDirectoryRecursively@NgcUtils@@YAJPEBG_N@Z",
+        "import": "api-ms-win-core-file-l1-1-0!RemoveDirectoryW"
+      },
+      {
+        "from_ea": "0x18007176d",
+        "from_func": "0x180071624",
+        "from_func_name": "?DeleteDirectoryRecursively@NgcUtils@@YAJPEBG_N@Z",
+        "import": "api-ms-win-core-file-l1-1-0!RemoveDirectoryW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-file-l1-1-0!WriteFile",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180072f6c",
+        "from_func": "0x180072dfc",
+        "from_func_name": "?WriteFileSynchronously@NgcUtils@@YAJPEBG0PEBEK@Z",
+        "import": "api-ms-win-core-file-l1-1-0!WriteFile"
+      },
+      {
+        "from_ea": "0x180072f6c",
+        "from_func": "0x180072dfc",
+        "from_func_name": "?WriteFileSynchronously@NgcUtils@@YAJPEBG0PEBEK@Z",
+        "import": "api-ms-win-core-file-l1-1-0!WriteFile"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-file-l2-1-0!MoveFileExW",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x18007301c",
+        "from_func": "0x180072dfc",
+        "from_func_name": "?WriteFileSynchronously@NgcUtils@@YAJPEBG0PEBEK@Z",
+        "import": "api-ms-win-core-file-l2-1-0!MoveFileExW"
+      },
+      {
+        "from_ea": "0x18007301c",
+        "from_func": "0x180072dfc",
+        "from_func_name": "?WriteFileSynchronously@NgcUtils@@YAJPEBG0PEBEK@Z",
+        "import": "api-ms-win-core-file-l2-1-0!MoveFileExW"
+      },
+      {
+        "from_ea": "0x1800c2b90",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-core-file-l2-1-0!MoveFileExW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x180008137",
+        "from_func": "0x1800080e8",
+        "from_func_name": "__security_init_cookie",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x18000a6a0",
+        "from_func": "0x18000a668",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@UProcessLocalData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x18000a80c",
+        "from_func": "0x18000a7d4",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@VFeatureStateData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x180008137",
+        "from_func": "0x1800080e8",
+        "from_func_name": "__security_init_cookie",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x18000a6a0",
+        "from_func": "0x18000a668",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@UProcessLocalData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x18000a80c",
+        "from_func": "0x18000a7d4",
+        "from_func_name": "?Acquire@?$ProcessLocalStorageData@VFeatureStateData@details_abi@wil@@@details_abi@wil@@SAJPEBDPEAPEAV123@@Z",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 40,
+    "xrefs": [
+      {
+        "from_ea": "0x18006fa70",
+        "from_func": "0x18006fa64",
+        "from_func_name": "??1?$unique_storage@U?$resource_policy@PEAUHKEY__@@P6AJPEAU1@@Z$1?RegCloseKey@@YAJ0@ZU?$integral_constant@_K$0A@@wistd@@PEAU1@PEAU1@$0A@$$T@details@wil@@@details@wil@@QEAA@XZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x18006fffe",
+        "from_func": "0x18006ffd4",
+        "from_func_name": "?reset@?$unique_storage@U?$resource_policy@PEAUHKEY__@@P6AJPEAU1@@Z$1?RegCloseKey@@YAJ0@ZU?$integral_constant@_K$0A@@wistd@@PEAU1@PEAU1@$0A@$$T@details@wil@@@details@wil@@QEAAXPEAUHKEY__@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180075118",
+        "from_func": "0x180074efc",
+        "from_func_name": "?ExistsSecureFpRegKey@NgcUtils@@YA_NXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180075121",
+        "from_func": "0x180074efc",
+        "from_func_name": "?ExistsSecureFpRegKey@NgcUtils@@YA_NXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x18007515e",
+        "from_func": "0x180074efc",
+        "from_func_name": "?ExistsSecureFpRegKey@NgcUtils@@YA_NXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180075167",
+        "from_func": "0x180074efc",
+        "from_func_name": "?ExistsSecureFpRegKey@NgcUtils@@YA_NXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180077fb8",
+        "from_func": "0x180077db0",
+        "from_func_name": "?GetFactorsForWildcard@winbio@@YAJPEAU_WINBIO_IDENTITY@@W4FactorKey@1@PEAI@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x1800795a9",
+        "from_func": "0x180079504",
+        "from_func_name": "?GetWindowsDirectoryWinPE@@YAKPEAPEAG@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180079633",
+        "from_func": "0x1800795d8",
+        "from_func_name": "?IsWinPEHost@@YAHXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180079db2",
+        "from_func": "0x180079cc4",
+        "from_func_name": "?RegSubKeyExists@@YAKPEAUHKEY__@@PEBG1PEAH@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180079dc2",
+        "from_func": "0x180079cc4",
+        "from_func_name": "?RegSubKeyExists@@YAKPEAUHKEY__@@PEBG1PEAH@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x18007c57b",
+        "from_func": "0x18007c080",
+        "from_func_name": "?FindAllCertificatesByOidValue@CertificateUtil@@SAJW4_CERTFICATE_LOCATION@@QEAPEBDQEAPEBGQEAW4_CERT_OID_VALUE_TYPE@@KQEAPEBU_CERT_CONTEXT@@PEAK@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180080f97",
+        "from_func": "0x180080c58",
+        "from_func_name": "?Load@NgcStatusStorage@@QEAAJPEAUHKEY__@@PEBG@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x18008106a",
+        "from_func": "0x180080fec",
+        "from_func_name": "?Load@NgcStatusStorage@@QEAAJXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x18008125b",
+        "from_func": "0x180081084",
+        "from_func_name": "?ReadKey@NgcStatusStorage@@CAKPEAUHKEY__@@PEBGU_GUID@@PEAUSTRUCT_NGC_REG_KEY@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180081556",
+        "from_func": "0x180081544",
+        "from_func_name": "?CloseSubKey@RegistryPath@@QEAAXXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x1800819fa",
+        "from_func": "0x18008194c",
+        "from_func_name": "?InitializeCurrentUserPath@RegistryPath@@QEAAJKPEBG@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180081c11",
+        "from_func": "0x180081b94",
+        "from_func_name": "?OpenSubKey@RegistryPath@@QEBAKKPEAPEAUHKEY__@@H@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180081e75",
+        "from_func": "0x180081e1c",
+        "from_func_name": "?Reset@RegistryPath@@AEAAXXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180081e9c",
+        "from_func": "0x180081e1c",
+        "from_func_name": "?Reset@RegistryPath@@AEAAXXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x18006fa70",
+        "from_func": "0x18006fa64",
+        "from_func_name": "??1?$unique_storage@U?$resource_policy@PEAUHKEY__@@P6AJPEAU1@@Z$1?RegCloseKey@@YAJ0@ZU?$integral_constant@_K$0A@@wistd@@PEAU1@PEAU1@$0A@$$T@details@wil@@@details@wil@@QEAA@XZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x18006fffe",
+        "from_func": "0x18006ffd4",
+        "from_func_name": "?reset@?$unique_storage@U?$resource_policy@PEAUHKEY__@@P6AJPEAU1@@Z$1?RegCloseKey@@YAJ0@ZU?$integral_constant@_K$0A@@wistd@@PEAU1@PEAU1@$0A@$$T@details@wil@@@details@wil@@QEAAXPEAUHKEY__@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180075118",
+        "from_func": "0x180074efc",
+        "from_func_name": "?ExistsSecureFpRegKey@NgcUtils@@YA_NXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180075121",
+        "from_func": "0x180074efc",
+        "from_func_name": "?ExistsSecureFpRegKey@NgcUtils@@YA_NXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x18007515e",
+        "from_func": "0x180074efc",
+        "from_func_name": "?ExistsSecureFpRegKey@NgcUtils@@YA_NXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180075167",
+        "from_func": "0x180074efc",
+        "from_func_name": "?ExistsSecureFpRegKey@NgcUtils@@YA_NXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180077fb8",
+        "from_func": "0x180077db0",
+        "from_func_name": "?GetFactorsForWildcard@winbio@@YAJPEAU_WINBIO_IDENTITY@@W4FactorKey@1@PEAI@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x1800795a9",
+        "from_func": "0x180079504",
+        "from_func_name": "?GetWindowsDirectoryWinPE@@YAKPEAPEAG@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180079633",
+        "from_func": "0x1800795d8",
+        "from_func_name": "?IsWinPEHost@@YAHXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180079db2",
+        "from_func": "0x180079cc4",
+        "from_func_name": "?RegSubKeyExists@@YAKPEAUHKEY__@@PEBG1PEAH@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180079dc2",
+        "from_func": "0x180079cc4",
+        "from_func_name": "?RegSubKeyExists@@YAKPEAUHKEY__@@PEBG1PEAH@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x18007c57b",
+        "from_func": "0x18007c080",
+        "from_func_name": "?FindAllCertificatesByOidValue@CertificateUtil@@SAJW4_CERTFICATE_LOCATION@@QEAPEBDQEAPEBGQEAW4_CERT_OID_VALUE_TYPE@@KQEAPEBU_CERT_CONTEXT@@PEAK@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180080f97",
+        "from_func": "0x180080c58",
+        "from_func_name": "?Load@NgcStatusStorage@@QEAAJPEAUHKEY__@@PEBG@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x18008106a",
+        "from_func": "0x180080fec",
+        "from_func_name": "?Load@NgcStatusStorage@@QEAAJXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x18008125b",
+        "from_func": "0x180081084",
+        "from_func_name": "?ReadKey@NgcStatusStorage@@CAKPEAUHKEY__@@PEBGU_GUID@@PEAUSTRUCT_NGC_REG_KEY@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180081556",
+        "from_func": "0x180081544",
+        "from_func_name": "?CloseSubKey@RegistryPath@@QEAAXXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x1800819fa",
+        "from_func": "0x18008194c",
+        "from_func_name": "?InitializeCurrentUserPath@RegistryPath@@QEAAJKPEBG@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180081c11",
+        "from_func": "0x180081b94",
+        "from_func_name": "?OpenSubKey@RegistryPath@@QEBAKKPEAPEAUHKEY__@@H@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180081e75",
+        "from_func": "0x180081e1c",
+        "from_func_name": "?Reset@RegistryPath@@AEAAXXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      },
+      {
+        "from_ea": "0x180081e9c",
+        "from_func": "0x180081e1c",
+        "from_func_name": "?Reset@RegistryPath@@AEAAXXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCloseKey"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-registry-l1-1-0!RegCreateKeyExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180076fc5",
+        "from_func": "0x180076f54",
+        "from_func_name": "?EnableVbs@BioPolicy@@AEAAJXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCreateKeyExW"
+      },
+      {
+        "from_ea": "0x180076fc5",
+        "from_func": "0x180076f54",
+        "from_func_name": "?EnableVbs@BioPolicy@@AEAAJXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegCreateKeyExW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-registry-l1-1-0!RegEnumKeyExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x180075a8c",
+        "from_func": "0x1800758fc",
+        "from_func_name": "?SetBioProtectorUpdateNeeded@NgcUtils@@YAJXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegEnumKeyExW"
+      },
+      {
+        "from_ea": "0x180077fa3",
+        "from_func": "0x180077db0",
+        "from_func_name": "?GetFactorsForWildcard@winbio@@YAJPEAU_WINBIO_IDENTITY@@W4FactorKey@1@PEAI@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegEnumKeyExW"
+      },
+      {
+        "from_ea": "0x180080e87",
+        "from_func": "0x180080c58",
+        "from_func_name": "?Load@NgcStatusStorage@@QEAAJPEAUHKEY__@@PEBG@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegEnumKeyExW"
+      },
+      {
+        "from_ea": "0x180075a8c",
+        "from_func": "0x1800758fc",
+        "from_func_name": "?SetBioProtectorUpdateNeeded@NgcUtils@@YAJXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegEnumKeyExW"
+      },
+      {
+        "from_ea": "0x180077fa3",
+        "from_func": "0x180077db0",
+        "from_func_name": "?GetFactorsForWildcard@winbio@@YAJPEAU_WINBIO_IDENTITY@@W4FactorKey@1@PEAI@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegEnumKeyExW"
+      },
+      {
+        "from_ea": "0x180080e87",
+        "from_func": "0x180080c58",
+        "from_func_name": "?Load@NgcStatusStorage@@QEAAJPEAUHKEY__@@PEBG@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegEnumKeyExW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-registry-l1-1-0!RegGetValueW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 24,
+    "xrefs": [
+      {
+        "from_ea": "0x1800750fd",
+        "from_func": "0x180074efc",
+        "from_func_name": "?ExistsSecureFpRegKey@NgcUtils@@YA_NXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegGetValueW"
+      },
+      {
+        "from_ea": "0x18007567a",
+        "from_func": "0x180075628",
+        "from_func_name": "?SecureBioRegKeyState@NgcUtils@@YA?AW4_NGC_ENABLED_STATE@@XZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegGetValueW"
+      },
+      {
+        "from_ea": "0x1800779ae",
+        "from_func": "0x180077970",
+        "from_func_name": "?RegistryQueryDwordNoThrow@@YAJPEAUHKEY__@@PEBG1PEAK@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegGetValueW"
+      },
+      {
+        "from_ea": "0x180077ba1",
+        "from_func": "0x180077b14",
+        "from_func_name": "?GetEnrollmentCommitted@winbio@@YAJPEAK@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegGetValueW"
+      },
+      {
+        "from_ea": "0x180077bed",
+        "from_func": "0x180077b14",
+        "from_func_name": "?GetEnrollmentCommitted@winbio@@YAJPEAK@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegGetValueW"
+      },
+      {
+        "from_ea": "0x180077d41",
+        "from_func": "0x180077c2c",
+        "from_func_name": "?GetFactorsForSID@winbio@@YAJPEAU_WINBIO_IDENTITY@@W4FactorKey@1@PEAI@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegGetValueW"
+      },
+      {
+        "from_ea": "0x180077f56",
+        "from_func": "0x180077db0",
+        "from_func_name": "?GetFactorsForWildcard@winbio@@YAJPEAU_WINBIO_IDENTITY@@W4FactorKey@1@PEAI@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegGetValueW"
+      },
+      {
+        "from_ea": "0x18007991e",
+        "from_func": "0x1800798a0",
+        "from_func_name": "?RegReadDwordValue@@YAKPEAUHKEY__@@PEBG11PEAKK@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegGetValueW"
+      },
+      {
+        "from_ea": "0x180079a60",
+        "from_func": "0x1800799d4",
+        "from_func_name": "?RegReadQwordValue@@YAKPEAUHKEY__@@PEBG11PEA_J_J@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegGetValueW"
+      },
+      {
+        "from_ea": "0x180079b9d",
+        "from_func": "0x180079b18",
+        "from_func_name": "?RegReadStringValue@@YAKPEAUHKEY__@@PEBG11KPEAPEAG@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegGetValueW"
+      },
+      {
+        "from_ea": "0x180079c46",
+        "from_func": "0x180079b18",
+        "from_func_name": "?RegReadStringValue@@YAKPEAUHKEY__@@PEBG11KPEAPEAG@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegGetValueW"
+      },
+      {
+        "from_ea": "0x180083eb0",
+        "from_func": "0x180083e68",
+        "from_func_name": "?GetDwordRegistryValue@PwdlessPlat@@YAJPEAUHKEY__@@PEBG1PEAK@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegGetValueW"
+      },
+      {
+        "from_ea": "0x1800750fd",
+        "from_func": "0x180074efc",
+        "from_func_name": "?ExistsSecureFpRegKey@NgcUtils@@YA_NXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegGetValueW"
+      },
+      {
+        "from_ea": "0x18007567a",
+        "from_func": "0x180075628",
+        "from_func_name": "?SecureBioRegKeyState@NgcUtils@@YA?AW4_NGC_ENABLED_STATE@@XZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegGetValueW"
+      },
+      {
+        "from_ea": "0x1800779ae",
+        "from_func": "0x180077970",
+        "from_func_name": "?RegistryQueryDwordNoThrow@@YAJPEAUHKEY__@@PEBG1PEAK@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegGetValueW"
+      },
+      {
+        "from_ea": "0x180077ba1",
+        "from_func": "0x180077b14",
+        "from_func_name": "?GetEnrollmentCommitted@winbio@@YAJPEAK@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegGetValueW"
+      },
+      {
+        "from_ea": "0x180077bed",
+        "from_func": "0x180077b14",
+        "from_func_name": "?GetEnrollmentCommitted@winbio@@YAJPEAK@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegGetValueW"
+      },
+      {
+        "from_ea": "0x180077d41",
+        "from_func": "0x180077c2c",
+        "from_func_name": "?GetFactorsForSID@winbio@@YAJPEAU_WINBIO_IDENTITY@@W4FactorKey@1@PEAI@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegGetValueW"
+      },
+      {
+        "from_ea": "0x180077f56",
+        "from_func": "0x180077db0",
+        "from_func_name": "?GetFactorsForWildcard@winbio@@YAJPEAU_WINBIO_IDENTITY@@W4FactorKey@1@PEAI@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegGetValueW"
+      },
+      {
+        "from_ea": "0x18007991e",
+        "from_func": "0x1800798a0",
+        "from_func_name": "?RegReadDwordValue@@YAKPEAUHKEY__@@PEBG11PEAKK@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegGetValueW"
+      },
+      {
+        "from_ea": "0x180079a60",
+        "from_func": "0x1800799d4",
+        "from_func_name": "?RegReadQwordValue@@YAKPEAUHKEY__@@PEBG11PEA_J_J@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegGetValueW"
+      },
+      {
+        "from_ea": "0x180079b9d",
+        "from_func": "0x180079b18",
+        "from_func_name": "?RegReadStringValue@@YAKPEAUHKEY__@@PEBG11KPEAPEAG@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegGetValueW"
+      },
+      {
+        "from_ea": "0x180079c46",
+        "from_func": "0x180079b18",
+        "from_func_name": "?RegReadStringValue@@YAKPEAUHKEY__@@PEBG11KPEAPEAG@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegGetValueW"
+      },
+      {
+        "from_ea": "0x180083eb0",
+        "from_func": "0x180083e68",
+        "from_func_name": "?GetDwordRegistryValue@PwdlessPlat@@YAJPEAUHKEY__@@PEBG1PEAK@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegGetValueW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-registry-l1-1-0!RegLoadKeyW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800797b1",
+        "from_func": "0x180079670",
+        "from_func_name": "?RegLoadKeyWinPE@@YAJPEAUHKEY__@@PEBG11@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegLoadKeyW"
+      },
+      {
+        "from_ea": "0x1800797b1",
+        "from_func": "0x180079670",
+        "from_func_name": "?RegLoadKeyWinPE@@YAJPEAUHKEY__@@PEBG11@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegLoadKeyW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-registry-l1-1-0!RegOpenCurrentUser",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180079853",
+        "from_func": "0x180079840",
+        "from_func_name": "?RegOpenCurrentUserKey@@YAKKPEAPEAUHKEY__@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenCurrentUser"
+      },
+      {
+        "from_ea": "0x180079853",
+        "from_func": "0x180079840",
+        "from_func_name": "?RegOpenCurrentUserKey@@YAKKPEAPEAUHKEY__@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenCurrentUser"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 27,
+    "xrefs": [
+      {
+        "from_ea": "0x180075095",
+        "from_func": "0x180074efc",
+        "from_func_name": "?ExistsSecureFpRegKey@NgcUtils@@YA_NXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180075776",
+        "from_func": "0x1800756dc",
+        "from_func_name": "NgcUtils::SetBioProtectorRegKey",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180075980",
+        "from_func": "0x1800758fc",
+        "from_func_name": "?SetBioProtectorUpdateNeeded@NgcUtils@@YAJXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180077eda",
+        "from_func": "0x180077db0",
+        "from_func_name": "?GetFactorsForWildcard@winbio@@YAJPEAU_WINBIO_IDENTITY@@W4FactorKey@1@PEAI@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180079541",
+        "from_func": "0x180079504",
+        "from_func_name": "?GetWindowsDirectoryWinPE@@YAKPEAPEAG@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180079608",
+        "from_func": "0x1800795d8",
+        "from_func_name": "?IsWinPEHost@@YAHXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180079d42",
+        "from_func": "0x180079cc4",
+        "from_func_name": "?RegSubKeyExists@@YAKPEAUHKEY__@@PEBG1PEAH@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180079d91",
+        "from_func": "0x180079cc4",
+        "from_func_name": "?RegSubKeyExists@@YAKPEAUHKEY__@@PEBG1PEAH@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18007c1b0",
+        "from_func": "0x18007c080",
+        "from_func_name": "?FindAllCertificatesByOidValue@CertificateUtil@@SAJW4_CERTFICATE_LOCATION@@QEAPEBDQEAPEBGQEAW4_CERT_OID_VALUE_TYPE@@KQEAPEBU_CERT_CONTEXT@@PEAK@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18007c263",
+        "from_func": "0x18007c080",
+        "from_func_name": "?FindAllCertificatesByOidValue@CertificateUtil@@SAJW4_CERTFICATE_LOCATION@@QEAPEBDQEAPEBGQEAW4_CERT_OID_VALUE_TYPE@@KQEAPEBU_CERT_CONTEXT@@PEAK@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180080cfd",
+        "from_func": "0x180080c58",
+        "from_func_name": "?Load@NgcStatusStorage@@QEAAJPEAUHKEY__@@PEBG@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x1800810d5",
+        "from_func": "0x180081084",
+        "from_func_name": "?ReadKey@NgcStatusStorage@@CAKPEAUHKEY__@@PEBGU_GUID@@PEAUSTRUCT_NGC_REG_KEY@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180081bd3",
+        "from_func": "0x180081b94",
+        "from_func_name": "?OpenSubKey@RegistryPath@@QEBAKKPEAPEAUHKEY__@@H@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180075095",
+        "from_func": "0x180074efc",
+        "from_func_name": "?ExistsSecureFpRegKey@NgcUtils@@YA_NXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180075776",
+        "from_func": "0x1800756dc",
+        "from_func_name": "NgcUtils::SetBioProtectorRegKey",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180075980",
+        "from_func": "0x1800758fc",
+        "from_func_name": "?SetBioProtectorUpdateNeeded@NgcUtils@@YAJXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180077eda",
+        "from_func": "0x180077db0",
+        "from_func_name": "?GetFactorsForWildcard@winbio@@YAJPEAU_WINBIO_IDENTITY@@W4FactorKey@1@PEAI@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180079541",
+        "from_func": "0x180079504",
+        "from_func_name": "?GetWindowsDirectoryWinPE@@YAKPEAPEAG@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180079608",
+        "from_func": "0x1800795d8",
+        "from_func_name": "?IsWinPEHost@@YAHXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180079d42",
+        "from_func": "0x180079cc4",
+        "from_func_name": "?RegSubKeyExists@@YAKPEAUHKEY__@@PEBG1PEAH@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180079d91",
+        "from_func": "0x180079cc4",
+        "from_func_name": "?RegSubKeyExists@@YAKPEAUHKEY__@@PEBG1PEAH@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18007c1b0",
+        "from_func": "0x18007c080",
+        "from_func_name": "?FindAllCertificatesByOidValue@CertificateUtil@@SAJW4_CERTFICATE_LOCATION@@QEAPEBDQEAPEBGQEAW4_CERT_OID_VALUE_TYPE@@KQEAPEBU_CERT_CONTEXT@@PEAK@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x18007c263",
+        "from_func": "0x18007c080",
+        "from_func_name": "?FindAllCertificatesByOidValue@CertificateUtil@@SAJW4_CERTFICATE_LOCATION@@QEAPEBDQEAPEBGQEAW4_CERT_OID_VALUE_TYPE@@KQEAPEBU_CERT_CONTEXT@@PEAK@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180080cfd",
+        "from_func": "0x180080c58",
+        "from_func_name": "?Load@NgcStatusStorage@@QEAAJPEAUHKEY__@@PEBG@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x1800810d5",
+        "from_func": "0x180081084",
+        "from_func_name": "?ReadKey@NgcStatusStorage@@CAKPEAUHKEY__@@PEBGU_GUID@@PEAUSTRUCT_NGC_REG_KEY@@@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x180081bd3",
+        "from_func": "0x180081b94",
+        "from_func_name": "?OpenSubKey@RegistryPath@@QEBAKKPEAPEAUHKEY__@@H@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      },
+      {
+        "from_ea": "0x1800c2b7c",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-core-registry-l1-1-0!RegOpenKeyExW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-registry-l1-1-0!RegQueryInfoKeyW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180075a15",
+        "from_func": "0x1800758fc",
+        "from_func_name": "?SetBioProtectorUpdateNeeded@NgcUtils@@YAJXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryInfoKeyW"
+      },
+      {
+        "from_ea": "0x180080d99",
+        "from_func": "0x180080c58",
+        "from_func_name": "?Load@NgcStatusStorage@@QEAAJPEAUHKEY__@@PEBG@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryInfoKeyW"
+      },
+      {
+        "from_ea": "0x180075a15",
+        "from_func": "0x1800758fc",
+        "from_func_name": "?SetBioProtectorUpdateNeeded@NgcUtils@@YAJXZ",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryInfoKeyW"
+      },
+      {
+        "from_ea": "0x180080d99",
+        "from_func": "0x180080c58",
+        "from_func_name": "?Load@NgcStatusStorage@@QEAAJPEAUHKEY__@@PEBG@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegQueryInfoKeyW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-registry-l1-1-0!RegSetValueExW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800757ff",
+        "from_func": "0x1800756dc",
+        "from_func_name": "NgcUtils::SetBioProtectorRegKey",
+        "import": "api-ms-win-core-registry-l1-1-0!RegSetValueExW"
+      },
+      {
+        "from_ea": "0x1800757ff",
+        "from_func": "0x1800756dc",
+        "from_func_name": "NgcUtils::SetBioProtectorRegKey",
+        "import": "api-ms-win-core-registry-l1-1-0!RegSetValueExW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-registry-l1-1-0!RegUnLoadKeyW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x18007c1e7",
+        "from_func": "0x18007c080",
+        "from_func_name": "?FindAllCertificatesByOidValue@CertificateUtil@@SAJW4_CERTFICATE_LOCATION@@QEAPEBDQEAPEBGQEAW4_CERT_OID_VALUE_TYPE@@KQEAPEBU_CERT_CONTEXT@@PEAK@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegUnLoadKeyW"
+      },
+      {
+        "from_ea": "0x18007c5b3",
+        "from_func": "0x18007c080",
+        "from_func_name": "?FindAllCertificatesByOidValue@CertificateUtil@@SAJW4_CERTFICATE_LOCATION@@QEAPEBDQEAPEBGQEAW4_CERT_OID_VALUE_TYPE@@KQEAPEBU_CERT_CONTEXT@@PEAK@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegUnLoadKeyW"
+      },
+      {
+        "from_ea": "0x18007c1e7",
+        "from_func": "0x18007c080",
+        "from_func_name": "?FindAllCertificatesByOidValue@CertificateUtil@@SAJW4_CERTFICATE_LOCATION@@QEAPEBDQEAPEBGQEAW4_CERT_OID_VALUE_TYPE@@KQEAPEBU_CERT_CONTEXT@@PEAK@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegUnLoadKeyW"
+      },
+      {
+        "from_ea": "0x18007c5b3",
+        "from_func": "0x18007c080",
+        "from_func_name": "?FindAllCertificatesByOidValue@CertificateUtil@@SAJW4_CERTFICATE_LOCATION@@QEAPEBDQEAPEBGQEAW4_CERT_OID_VALUE_TYPE@@KQEAPEBU_CERT_CONTEXT@@PEAK@Z",
+        "import": "api-ms-win-core-registry-l1-1-0!RegUnLoadKeyW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-registry-l1-1-1!RegSetKeyValueW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x180077010",
+        "from_func": "0x180076f54",
+        "from_func_name": "?EnableVbs@BioPolicy@@AEAAJXZ",
+        "import": "api-ms-win-core-registry-l1-1-1!RegSetKeyValueW"
+      },
+      {
+        "from_ea": "0x180077010",
+        "from_func": "0x180076f54",
+        "from_func_name": "?EnableVbs@BioPolicy@@AEAAJXZ",
+        "import": "api-ms-win-core-registry-l1-1-1!RegSetKeyValueW"
+      },
+      {
+        "from_ea": "0x1800c2c1c",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-core-registry-l1-1-1!RegSetKeyValueW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-string-l1-1-0!CompareStringEx",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18007908f",
+        "from_func": "0x180079004",
+        "from_func_name": "?CompareStringInternal@@YAJPEBGH0HKPEAW4COMPARE_STR_RESULT@@@Z",
+        "import": "api-ms-win-core-string-l1-1-0!CompareStringEx"
+      },
+      {
+        "from_ea": "0x18007908f",
+        "from_func": "0x180079004",
+        "from_func_name": "?CompareStringInternal@@YAJPEBGH0HKPEAW4COMPARE_STR_RESULT@@@Z",
+        "import": "api-ms-win-core-string-l1-1-0!CompareStringEx"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-core-synch-l1-2-0!InitOnceComplete",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180010956",
+        "from_func": "0x180010928",
+        "from_func_name": "??1Completer@?$static_lazy@VLogProvider@@@details@wil@@QEAA@XZ",
+        "import": "api-ms-win-core-synch-l1-2-0!InitOnceComplete"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x1800084e0",
+        "from_func": "0x1800084e0",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "api-ms-win-crt-private-l1-1-0!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!__CxxFrameHandler3",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x1800084d4",
+        "from_func": "0x1800084d4",
+        "from_func_name": "__CxxFrameHandler3_0",
+        "import": "api-ms-win-crt-private-l1-1-0!__CxxFrameHandler3"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!__CxxFrameHandler4",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x18000835e",
+        "from_func": "0x18000835e",
+        "from_func_name": "__CxxFrameHandler4_0",
+        "import": "api-ms-win-crt-private-l1-1-0!__CxxFrameHandler4"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!__RTDynamicCast",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180084310",
+        "from_func": "0x180084310",
+        "from_func_name": "__RTDynamicCast_0",
+        "import": "api-ms-win-crt-private-l1-1-0!__RTDynamicCast"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!_o___stdio_common_vsprintf",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800071d7",
+        "from_func": "0x18000718c",
+        "from_func_name": "snprintf",
+        "import": "api-ms-win-crt-private-l1-1-0!_o___stdio_common_vsprintf"
+      },
+      {
+        "from_ea": "0x1800071d7",
+        "from_func": "0x18000718c",
+        "from_func_name": "snprintf",
+        "import": "api-ms-win-crt-private-l1-1-0!_o___stdio_common_vsprintf"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!_o___stdio_common_vswprintf",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x18000839a",
+        "from_func": "0x18000839a",
+        "from_func_name": "_o___stdio_common_vswprintf_0",
+        "import": "api-ms-win-crt-private-l1-1-0!_o___stdio_common_vswprintf"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!_o__configure_narrow_argv",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x1800083be",
+        "from_func": "0x1800083be",
+        "from_func_name": "_o__configure_narrow_argv_0",
+        "import": "api-ms-win-crt-private-l1-1-0!_o__configure_narrow_argv"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-crt-private-l1-1-0!_o__seh_filter_dll",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180008438",
+        "from_func": "0x180008438",
+        "from_func_name": "_o__seh_filter_dll_0",
+        "import": "api-ms-win-crt-private-l1-1-0!_o__seh_filter_dll"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-base-l1-1-0!CopySid",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x1800456eb",
+        "from_func": "0x1800454b0",
+        "from_func_name": "?AuthenticateProtector@Bio@Protector@@UEAAJPEBEKPEA_K1@Z",
+        "import": "api-ms-win-security-base-l1-1-0!CopySid"
+      },
+      {
+        "from_ea": "0x180074e7a",
+        "from_func": "0x180074d0c",
+        "from_func_name": "NgcUtils::GetUserSidFromToken",
+        "import": "api-ms-win-security-base-l1-1-0!CopySid"
+      },
+      {
+        "from_ea": "0x18007615a",
+        "from_func": "0x18007610c",
+        "from_func_name": "_anonymous_namespace_::IdentityFromSid",
+        "import": "api-ms-win-security-base-l1-1-0!CopySid"
+      },
+      {
+        "from_ea": "0x1800456eb",
+        "from_func": "0x1800454b0",
+        "from_func_name": "?AuthenticateProtector@Bio@Protector@@UEAAJPEBEKPEA_K1@Z",
+        "import": "api-ms-win-security-base-l1-1-0!CopySid"
+      },
+      {
+        "from_ea": "0x180074e7a",
+        "from_func": "0x180074d0c",
+        "from_func_name": "NgcUtils::GetUserSidFromToken",
+        "import": "api-ms-win-security-base-l1-1-0!CopySid"
+      },
+      {
+        "from_ea": "0x18007615a",
+        "from_func": "0x18007610c",
+        "from_func_name": "_anonymous_namespace_::IdentityFromSid",
+        "import": "api-ms-win-security-base-l1-1-0!CopySid"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-base-l1-1-0!FreeSid",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x18002db21",
+        "from_func": "0x18002daf0",
+        "from_func_name": "??1?$out_param_ptr_t@PEAPEAXV?$unique_any_t@V?$unique_storage@U?$resource_policy@PEAXP6APEAXPEAX@Z$1?FreeSid@@YAPEAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@@wil@@@details@wil@@QEAA@XZ",
+        "import": "api-ms-win-security-base-l1-1-0!FreeSid"
+      },
+      {
+        "from_ea": "0x18002db8c",
+        "from_func": "0x18002db80",
+        "from_func_name": "??1?$unique_storage@U?$resource_policy@PEAXP6APEAXPEAX@Z$1?FreeSid@@YAPEAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@QEAA@XZ",
+        "import": "api-ms-win-security-base-l1-1-0!FreeSid"
+      },
+      {
+        "from_ea": "0x18002db21",
+        "from_func": "0x18002daf0",
+        "from_func_name": "??1?$out_param_ptr_t@PEAPEAXV?$unique_any_t@V?$unique_storage@U?$resource_policy@PEAXP6APEAXPEAX@Z$1?FreeSid@@YAPEAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@@wil@@@details@wil@@QEAA@XZ",
+        "import": "api-ms-win-security-base-l1-1-0!FreeSid"
+      },
+      {
+        "from_ea": "0x18002db8c",
+        "from_func": "0x18002db80",
+        "from_func_name": "??1?$unique_storage@U?$resource_policy@PEAXP6APEAXPEAX@Z$1?FreeSid@@YAPEAX0@ZU?$integral_constant@_K$0A@@wistd@@PEAXPEAX$0A@$$T@details@wil@@@details@wil@@QEAA@XZ",
+        "import": "api-ms-win-security-base-l1-1-0!FreeSid"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-base-l1-1-0!GetLengthSid",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x180045701",
+        "from_func": "0x1800454b0",
+        "from_func_name": "?AuthenticateProtector@Bio@Protector@@UEAAJPEBEKPEA_K1@Z",
+        "import": "api-ms-win-security-base-l1-1-0!GetLengthSid"
+      },
+      {
+        "from_ea": "0x180074e13",
+        "from_func": "0x180074d0c",
+        "from_func_name": "NgcUtils::GetUserSidFromToken",
+        "import": "api-ms-win-security-base-l1-1-0!GetLengthSid"
+      },
+      {
+        "from_ea": "0x18007617f",
+        "from_func": "0x18007610c",
+        "from_func_name": "_anonymous_namespace_::IdentityFromSid",
+        "import": "api-ms-win-security-base-l1-1-0!GetLengthSid"
+      },
+      {
+        "from_ea": "0x180045701",
+        "from_func": "0x1800454b0",
+        "from_func_name": "?AuthenticateProtector@Bio@Protector@@UEAAJPEBEKPEA_K1@Z",
+        "import": "api-ms-win-security-base-l1-1-0!GetLengthSid"
+      },
+      {
+        "from_ea": "0x180074e13",
+        "from_func": "0x180074d0c",
+        "from_func_name": "NgcUtils::GetUserSidFromToken",
+        "import": "api-ms-win-security-base-l1-1-0!GetLengthSid"
+      },
+      {
+        "from_ea": "0x18007617f",
+        "from_func": "0x18007610c",
+        "from_func_name": "_anonymous_namespace_::IdentityFromSid",
+        "import": "api-ms-win-security-base-l1-1-0!GetLengthSid"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-base-l1-1-0!GetTokenInformation",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 5,
+    "xrefs": [
+      {
+        "from_ea": "0x180074d4b",
+        "from_func": "0x180074d0c",
+        "from_func_name": "NgcUtils::GetUserSidFromToken",
+        "import": "api-ms-win-security-base-l1-1-0!GetTokenInformation"
+      },
+      {
+        "from_ea": "0x180074dc1",
+        "from_func": "0x180074d0c",
+        "from_func_name": "NgcUtils::GetUserSidFromToken",
+        "import": "api-ms-win-security-base-l1-1-0!GetTokenInformation"
+      },
+      {
+        "from_ea": "0x180074d4b",
+        "from_func": "0x180074d0c",
+        "from_func_name": "NgcUtils::GetUserSidFromToken",
+        "import": "api-ms-win-security-base-l1-1-0!GetTokenInformation"
+      },
+      {
+        "from_ea": "0x180074dc1",
+        "from_func": "0x180074d0c",
+        "from_func_name": "NgcUtils::GetUserSidFromToken",
+        "import": "api-ms-win-security-base-l1-1-0!GetTokenInformation"
+      },
+      {
+        "from_ea": "0x1800c2af0",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-security-base-l1-1-0!GetTokenInformation"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-base-l1-1-0!IsValidSid",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x18007611c",
+        "from_func": "0x18007610c",
+        "from_func_name": "_anonymous_namespace_::IdentityFromSid",
+        "import": "api-ms-win-security-base-l1-1-0!IsValidSid"
+      },
+      {
+        "from_ea": "0x180078192",
+        "from_func": "0x180078174",
+        "from_func_name": "?ValidateIdentity@winbio@@YAJPEAU_WINBIO_IDENTITY@@_N@Z",
+        "import": "api-ms-win-security-base-l1-1-0!IsValidSid"
+      },
+      {
+        "from_ea": "0x18007611c",
+        "from_func": "0x18007610c",
+        "from_func_name": "_anonymous_namespace_::IdentityFromSid",
+        "import": "api-ms-win-security-base-l1-1-0!IsValidSid"
+      },
+      {
+        "from_ea": "0x180078192",
+        "from_func": "0x180078174",
+        "from_func_name": "?ValidateIdentity@winbio@@YAJPEAU_WINBIO_IDENTITY@@_N@Z",
+        "import": "api-ms-win-security-base-l1-1-0!IsValidSid"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-lsalookup-l1-1-2!LsaLookupUserAccountType",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x1800749d9",
+        "from_func": "0x1800749b0",
+        "from_func_name": "?GetUserAccountType@NgcUtils@@YAJPEAXPEAW4NgcUserAccountType@@@Z",
+        "import": "api-ms-win-security-lsalookup-l1-1-2!LsaLookupUserAccountType"
+      },
+      {
+        "from_ea": "0x1800749d9",
+        "from_func": "0x1800749b0",
+        "from_func_name": "?GetUserAccountType@NgcUtils@@YAJPEAXPEAW4NgcUserAccountType@@@Z",
+        "import": "api-ms-win-security-lsalookup-l1-1-2!LsaLookupUserAccountType"
+      },
+      {
+        "from_ea": "0x1800c2bcc",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-security-lsalookup-l1-1-2!LsaLookupUserAccountType"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-sddl-l1-1-0!ConvertSidToStringSidW",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 5,
+    "xrefs": [
+      {
+        "from_ea": "0x18007208e",
+        "from_func": "0x180071fcc",
+        "from_func_name": "NgcUtils::GetNgcEnabledModifiers",
+        "import": "api-ms-win-security-sddl-l1-1-0!ConvertSidToStringSidW"
+      },
+      {
+        "from_ea": "0x18007811a",
+        "from_func": "0x180078070",
+        "from_func_name": "?GetRegPathForSID@winbio@@YAJPEAU_WINBIO_IDENTITY@@PEAV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@@Z",
+        "import": "api-ms-win-security-sddl-l1-1-0!ConvertSidToStringSidW"
+      },
+      {
+        "from_ea": "0x18007208e",
+        "from_func": "0x180071fcc",
+        "from_func_name": "NgcUtils::GetNgcEnabledModifiers",
+        "import": "api-ms-win-security-sddl-l1-1-0!ConvertSidToStringSidW"
+      },
+      {
+        "from_ea": "0x18007811a",
+        "from_func": "0x180078070",
+        "from_func_name": "?GetRegPathForSID@winbio@@YAJPEAU_WINBIO_IDENTITY@@PEAV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@@Z",
+        "import": "api-ms-win-security-sddl-l1-1-0!ConvertSidToStringSidW"
+      },
+      {
+        "from_ea": "0x1800c2adc",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-security-sddl-l1-1-0!ConvertSidToStringSidW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-security-sddl-l1-1-0!ConvertStringSidToSidW",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 8,
+    "xrefs": [
+      {
+        "from_ea": "0x180030da4",
+        "from_func": "0x180030bdc",
+        "from_func_name": "?ReadProtectorProperties@NgcIsoContainer@@AEAAJXZ",
+        "import": "api-ms-win-security-sddl-l1-1-0!ConvertStringSidToSidW"
+      },
+      {
+        "from_ea": "0x180044846",
+        "from_func": "0x1800447cc",
+        "from_func_name": "?AddBioProtector@Bio@Protector@@AEAAJ_K0@Z",
+        "import": "api-ms-win-security-sddl-l1-1-0!ConvertStringSidToSidW"
+      },
+      {
+        "from_ea": "0x180045673",
+        "from_func": "0x1800454b0",
+        "from_func_name": "?AuthenticateProtector@Bio@Protector@@UEAAJPEBEKPEA_K1@Z",
+        "import": "api-ms-win-security-sddl-l1-1-0!ConvertStringSidToSidW"
+      },
+      {
+        "from_ea": "0x180074ac6",
+        "from_func": "0x180074a7c",
+        "from_func_name": "?IsConsumerUser@NgcUtils@@YAJPEBGPEA_N@Z",
+        "import": "api-ms-win-security-sddl-l1-1-0!ConvertStringSidToSidW"
+      },
+      {
+        "from_ea": "0x180030da4",
+        "from_func": "0x180030bdc",
+        "from_func_name": "?ReadProtectorProperties@NgcIsoContainer@@AEAAJXZ",
+        "import": "api-ms-win-security-sddl-l1-1-0!ConvertStringSidToSidW"
+      },
+      {
+        "from_ea": "0x180044846",
+        "from_func": "0x1800447cc",
+        "from_func_name": "?AddBioProtector@Bio@Protector@@AEAAJ_K0@Z",
+        "import": "api-ms-win-security-sddl-l1-1-0!ConvertStringSidToSidW"
+      },
+      {
+        "from_ea": "0x180045673",
+        "from_func": "0x1800454b0",
+        "from_func_name": "?AuthenticateProtector@Bio@Protector@@UEAAJPEBEKPEA_K1@Z",
+        "import": "api-ms-win-security-sddl-l1-1-0!ConvertStringSidToSidW"
+      },
+      {
+        "from_ea": "0x180074ac6",
+        "from_func": "0x180074a7c",
+        "from_func_name": "?IsConsumerUser@NgcUtils@@YAJPEBGPEA_N@Z",
+        "import": "api-ms-win-security-sddl-l1-1-0!ConvertStringSidToSidW"
+      }
+    ]
+  },
+  {
+    "import": "api-ms-win-stateseparation-helpers-l1-1-0!GetPersistedRegistryLocationW",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 9,
+    "xrefs": [
+      {
+        "from_ea": "0x180074bdf",
+        "from_func": "0x180074ba0",
+        "from_func_name": "?GetNgcStateSeparatedRegistryLocation@NgcUtils@@YAJPEBG00PEAPEAG@Z",
+        "import": "api-ms-win-stateseparation-helpers-l1-1-0!GetPersistedRegistryLocationW"
+      },
+      {
+        "from_ea": "0x180074c5d",
+        "from_func": "0x180074ba0",
+        "from_func_name": "?GetNgcStateSeparatedRegistryLocation@NgcUtils@@YAJPEBG00PEAPEAG@Z",
+        "import": "api-ms-win-stateseparation-helpers-l1-1-0!GetPersistedRegistryLocationW"
+      },
+      {
+        "from_ea": "0x1800781f3",
+        "from_func": "0x1800781c0",
+        "from_func_name": "?GetWinBioRegistryLocation@@YAJPEAV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@@Z",
+        "import": "api-ms-win-stateseparation-helpers-l1-1-0!GetPersistedRegistryLocationW"
+      },
+      {
+        "from_ea": "0x180078263",
+        "from_func": "0x1800781c0",
+        "from_func_name": "?GetWinBioRegistryLocation@@YAJPEAV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@@Z",
+        "import": "api-ms-win-stateseparation-helpers-l1-1-0!GetPersistedRegistryLocationW"
+      },
+      {
+        "from_ea": "0x180074bdf",
+        "from_func": "0x180074ba0",
+        "from_func_name": "?GetNgcStateSeparatedRegistryLocation@NgcUtils@@YAJPEBG00PEAPEAG@Z",
+        "import": "api-ms-win-stateseparation-helpers-l1-1-0!GetPersistedRegistryLocationW"
+      },
+      {
+        "from_ea": "0x180074c5d",
+        "from_func": "0x180074ba0",
+        "from_func_name": "?GetNgcStateSeparatedRegistryLocation@NgcUtils@@YAJPEBG00PEAPEAG@Z",
+        "import": "api-ms-win-stateseparation-helpers-l1-1-0!GetPersistedRegistryLocationW"
+      },
+      {
+        "from_ea": "0x1800781f3",
+        "from_func": "0x1800781c0",
+        "from_func_name": "?GetWinBioRegistryLocation@@YAJPEAV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@@Z",
+        "import": "api-ms-win-stateseparation-helpers-l1-1-0!GetPersistedRegistryLocationW"
+      },
+      {
+        "from_ea": "0x180078263",
+        "from_func": "0x1800781c0",
+        "from_func_name": "?GetWinBioRegistryLocation@@YAJPEAV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@@Z",
+        "import": "api-ms-win-stateseparation-helpers-l1-1-0!GetPersistedRegistryLocationW"
+      },
+      {
+        "from_ea": "0x1800c2be0",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-stateseparation-helpers-l1-1-0!GetPersistedRegistryLocationW"
+      }
+    ]
+  },
+  {
+    "import": "cryptngc!NgcGetKeyAttestationForContainerService",
+    "tags": [
+      "service_task"
+    ],
+    "xref_count": 5,
+    "xrefs": [
+      {
+        "from_ea": "0x18002177d",
+        "from_func": "0x1800214e0",
+        "from_func_name": "?InternalCreateClaim@NgcIsoContainer@@AEAAJU_GUID@@_KPEBGPEBEKPEAPEAEPEAK@Z",
+        "import": "cryptngc!NgcGetKeyAttestationForContainerService"
+      },
+      {
+        "from_ea": "0x18006fd83",
+        "from_func": "0x18006fd00",
+        "from_func_name": "?GetAikCertificate@NgcCtnrCommon@@YAJQEBG00PEAV?$vector@EV?$allocator@E@std@@@std@@@Z",
+        "import": "cryptngc!NgcGetKeyAttestationForContainerService"
+      },
+      {
+        "from_ea": "0x180008cfa",
+        "from_func": "0x180008cfa",
+        "from_func_name": "__imp_load_NgcGetKeyAttestationForContainerService",
+        "import": "cryptngc!NgcGetKeyAttestationForContainerService"
+      },
+      {
+        "from_ea": "0x18002177d",
+        "from_func": "0x1800214e0",
+        "from_func_name": "?InternalCreateClaim@NgcIsoContainer@@AEAAJU_GUID@@_KPEBGPEBEKPEAPEAEPEAK@Z",
+        "import": "cryptngc!NgcGetKeyAttestationForContainerService"
+      },
+      {
+        "from_ea": "0x18006fd83",
+        "from_func": "0x18006fd00",
+        "from_func_name": "?GetAikCertificate@NgcCtnrCommon@@YAJQEBG00PEAV?$vector@EV?$allocator@E@std@@@std@@@Z",
+        "import": "cryptngc!NgcGetKeyAttestationForContainerService"
+      }
+    ]
+  },
+  {
+    "import": "ext-ms-win-biometrics-winbio-core-l1-1-3!WinBioNgcCloseAuthorizationSession",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x180075bb2",
+        "from_func": "0x180075ba8",
+        "from_func_name": "??1SecureBioEnrollmentAuth@NgcUtils@@QEAA@XZ",
+        "import": "ext-ms-win-biometrics-winbio-core-l1-1-3!WinBioNgcCloseAuthorizationSession"
+      },
+      {
+        "from_ea": "0x180008b59",
+        "from_func": "0x180008b59",
+        "from_func_name": "__imp_load_WinBioNgcCloseAuthorizationSession",
+        "import": "ext-ms-win-biometrics-winbio-core-l1-1-3!WinBioNgcCloseAuthorizationSession"
+      },
+      {
+        "from_ea": "0x180075bb2",
+        "from_func": "0x180075ba8",
+        "from_func_name": "??1SecureBioEnrollmentAuth@NgcUtils@@QEAA@XZ",
+        "import": "ext-ms-win-biometrics-winbio-core-l1-1-3!WinBioNgcCloseAuthorizationSession"
+      }
+    ]
+  },
+  {
+    "import": "ext-ms-win-biometrics-winbio-core-l1-1-3!WinBioNgcGetAuthorizationWithTicket",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x180076037",
+        "from_func": "0x180076000",
+        "from_func_name": "?GetSecureBioAuthorization@NgcUtils@@YAJ_KPEAV?$vector@EV?$allocator@E@std@@@std@@11@Z",
+        "import": "ext-ms-win-biometrics-winbio-core-l1-1-3!WinBioNgcGetAuthorizationWithTicket"
+      },
+      {
+        "from_ea": "0x180008b47",
+        "from_func": "0x180008b47",
+        "from_func_name": "__imp_load_WinBioNgcGetAuthorizationWithTicket",
+        "import": "ext-ms-win-biometrics-winbio-core-l1-1-3!WinBioNgcGetAuthorizationWithTicket"
+      },
+      {
+        "from_ea": "0x180076037",
+        "from_func": "0x180076000",
+        "from_func_name": "?GetSecureBioAuthorization@NgcUtils@@YAJ_KPEAV?$vector@EV?$allocator@E@std@@@std@@11@Z",
+        "import": "ext-ms-win-biometrics-winbio-core-l1-1-3!WinBioNgcGetAuthorizationWithTicket"
+      }
+    ]
+  },
+  {
+    "import": "ext-ms-win-biometrics-winbio-core-l1-1-3!WinBioNgcOpenAuthorizationSession",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180075f9d",
+        "from_func": "0x180075f5c",
+        "from_func_name": "?GetNonce@SecureBioEnrollmentAuth@NgcUtils@@QEAAJPEAV?$vector@EV?$allocator@E@std@@@std@@@Z",
+        "import": "ext-ms-win-biometrics-winbio-core-l1-1-3!WinBioNgcOpenAuthorizationSession"
+      },
+      {
+        "from_ea": "0x180008b6b",
+        "from_func": "0x180008b6b",
+        "from_func_name": "__imp_load_WinBioNgcOpenAuthorizationSession",
+        "import": "ext-ms-win-biometrics-winbio-core-l1-1-3!WinBioNgcOpenAuthorizationSession"
+      },
+      {
+        "from_ea": "0x180075f9d",
+        "from_func": "0x180075f5c",
+        "from_func_name": "?GetNonce@SecureBioEnrollmentAuth@NgcUtils@@QEAAJPEAV?$vector@EV?$allocator@E@std@@@std@@@Z",
+        "import": "ext-ms-win-biometrics-winbio-core-l1-1-3!WinBioNgcOpenAuthorizationSession"
+      },
+      {
+        "from_ea": "0x1800c1e34",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ext-ms-win-biometrics-winbio-core-l1-1-3!WinBioNgcOpenAuthorizationSession"
+      }
+    ]
+  },
+  {
+    "import": "ext-ms-win-devmgmt-policy-l1-1-0!PolicyManager_GetDeviceLockPolicy_DevicePasswordEnabled",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x180070c6b",
+        "from_func": "0x180070c14",
+        "from_func_name": "?GetDeviceWipeAttemptLimit@PolicyManager@@YAJPEAK@Z",
+        "import": "ext-ms-win-devmgmt-policy-l1-1-0!PolicyManager_GetDeviceLockPolicy_DevicePasswordEnabled"
+      },
+      {
+        "from_ea": "0x180008c5d",
+        "from_func": "0x180008c5d",
+        "from_func_name": "__imp_load_PolicyManager_GetDeviceLockPolicy_DevicePasswordEnabled",
+        "import": "ext-ms-win-devmgmt-policy-l1-1-0!PolicyManager_GetDeviceLockPolicy_DevicePasswordEnabled"
+      },
+      {
+        "from_ea": "0x180070c6b",
+        "from_func": "0x180070c14",
+        "from_func_name": "?GetDeviceWipeAttemptLimit@PolicyManager@@YAJPEAK@Z",
+        "import": "ext-ms-win-devmgmt-policy-l1-1-0!PolicyManager_GetDeviceLockPolicy_DevicePasswordEnabled"
+      }
+    ]
+  },
+  {
+    "import": "ext-ms-win-devmgmt-policy-l1-1-0!PolicyManager_GetDeviceLockPolicy_MaxDevicePasswordFailedAttempts",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180070cb2",
+        "from_func": "0x180070c14",
+        "from_func_name": "?GetDeviceWipeAttemptLimit@PolicyManager@@YAJPEAK@Z",
+        "import": "ext-ms-win-devmgmt-policy-l1-1-0!PolicyManager_GetDeviceLockPolicy_MaxDevicePasswordFailedAttempts"
+      },
+      {
+        "from_ea": "0x180008c6f",
+        "from_func": "0x180008c6f",
+        "from_func_name": "__imp_load_PolicyManager_GetDeviceLockPolicy_MaxDevicePasswordFailedAttempts",
+        "import": "ext-ms-win-devmgmt-policy-l1-1-0!PolicyManager_GetDeviceLockPolicy_MaxDevicePasswordFailedAttempts"
+      },
+      {
+        "from_ea": "0x180070cb2",
+        "from_func": "0x180070c14",
+        "from_func_name": "?GetDeviceWipeAttemptLimit@PolicyManager@@YAJPEAK@Z",
+        "import": "ext-ms-win-devmgmt-policy-l1-1-0!PolicyManager_GetDeviceLockPolicy_MaxDevicePasswordFailedAttempts"
+      },
+      {
+        "from_ea": "0x1800c1e54",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ext-ms-win-devmgmt-policy-l1-1-0!PolicyManager_GetDeviceLockPolicy_MaxDevicePasswordFailedAttempts"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!NtFlushBuffersFileEx",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180072fbe",
+        "from_func": "0x180072dfc",
+        "from_func_name": "?WriteFileSynchronously@NgcUtils@@YAJPEBG0PEBEK@Z",
+        "import": "ntdll!NtFlushBuffersFileEx"
+      },
+      {
+        "from_ea": "0x180072fbe",
+        "from_func": "0x180072dfc",
+        "from_func_name": "?WriteFileSynchronously@NgcUtils@@YAJPEBG0PEBEK@Z",
+        "import": "ntdll!NtFlushBuffersFileEx"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!NtQueryKey",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180081778",
+        "from_func": "0x18008168c",
+        "from_func_name": "?Initialize@RegistryPath@@QEAAJPEAUHKEY__@@PEBG1@Z",
+        "import": "ntdll!NtQueryKey"
+      },
+      {
+        "from_ea": "0x1800817ea",
+        "from_func": "0x18008168c",
+        "from_func_name": "?Initialize@RegistryPath@@QEAAJPEAUHKEY__@@PEBG1@Z",
+        "import": "ntdll!NtQueryKey"
+      },
+      {
+        "from_ea": "0x180081778",
+        "from_func": "0x18008168c",
+        "from_func_name": "?Initialize@RegistryPath@@QEAAJPEAUHKEY__@@PEBG1@Z",
+        "import": "ntdll!NtQueryKey"
+      },
+      {
+        "from_ea": "0x1800817ea",
+        "from_func": "0x18008168c",
+        "from_func_name": "?Initialize@RegistryPath@@QEAAJPEAUHKEY__@@PEBG1@Z",
+        "import": "ntdll!NtQueryKey"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!NtQuerySystemInformation",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 5,
+    "xrefs": [
+      {
+        "from_ea": "0x180075495",
+        "from_func": "0x1800753fc",
+        "from_func_name": "?IsSecureBioEnabled@NgcUtils@@YA_NXZ",
+        "import": "ntdll!NtQuerySystemInformation"
+      },
+      {
+        "from_ea": "0x180076a5c",
+        "from_func": "0x180076a1c",
+        "from_func_name": "?IsVsmAvailable@VsmUtils@@YAJPEA_N@Z",
+        "import": "ntdll!NtQuerySystemInformation"
+      },
+      {
+        "from_ea": "0x180075495",
+        "from_func": "0x1800753fc",
+        "from_func_name": "?IsSecureBioEnabled@NgcUtils@@YA_NXZ",
+        "import": "ntdll!NtQuerySystemInformation"
+      },
+      {
+        "from_ea": "0x180076a5c",
+        "from_func": "0x180076a1c",
+        "from_func_name": "?IsVsmAvailable@VsmUtils@@YAJPEA_N@Z",
+        "import": "ntdll!NtQuerySystemInformation"
+      },
+      {
+        "from_ea": "0x1800c2bb8",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ntdll!NtQuerySystemInformation"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlGetPersistedStateLocation",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180081a77",
+        "from_func": "0x180081a14",
+        "from_func_name": "?InitializePersistedStatePath@RegistryPath@@QEAAJPEBG00@Z",
+        "import": "ntdll!RtlGetPersistedStateLocation"
+      },
+      {
+        "from_ea": "0x180081a77",
+        "from_func": "0x180081a14",
+        "from_func_name": "?InitializePersistedStatePath@RegistryPath@@QEAAJPEBG00@Z",
+        "import": "ntdll!RtlGetPersistedStateLocation"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlIsMultiSessionSku",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180070c22",
+        "from_func": "0x180070c14",
+        "from_func_name": "?GetDeviceWipeAttemptLimit@PolicyManager@@YAJPEAK@Z",
+        "import": "ntdll!RtlIsMultiSessionSku"
+      },
+      {
+        "from_ea": "0x180070c22",
+        "from_func": "0x180070c14",
+        "from_func_name": "?GetDeviceWipeAttemptLimit@PolicyManager@@YAJPEAK@Z",
+        "import": "ntdll!RtlIsMultiSessionSku"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlPublishWnfStateData",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180045728",
+        "from_func": "0x1800454b0",
+        "from_func_name": "?AuthenticateProtector@Bio@Protector@@UEAAJPEBEKPEA_K1@Z",
+        "import": "ntdll!RtlPublishWnfStateData"
+      },
+      {
+        "from_ea": "0x180070962",
+        "from_func": "0x18007077c",
+        "from_func_name": "?ProgressiveLockoutTimerWorker@LockoutTimer@NgcCtnrCommon@@AEAAJXZ",
+        "import": "ntdll!RtlPublishWnfStateData"
+      },
+      {
+        "from_ea": "0x180045728",
+        "from_func": "0x1800454b0",
+        "from_func_name": "?AuthenticateProtector@Bio@Protector@@UEAAJPEBEKPEA_K1@Z",
+        "import": "ntdll!RtlPublishWnfStateData"
+      },
+      {
+        "from_ea": "0x180070962",
+        "from_func": "0x18007077c",
+        "from_func_name": "?ProgressiveLockoutTimerWorker@LockoutTimer@NgcCtnrCommon@@AEAAJXZ",
+        "import": "ntdll!RtlPublishWnfStateData"
+      }
+    ]
+  },
+  {
+    "import": "tbs!Tbsip_Submit_Command",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x180076bdc",
+        "from_func": "0x180076b50",
+        "from_func_name": "?Vtl0TpmSubmitCommand@@YAJPEA_KPEAEIPEAI0@Z",
+        "import": "tbs!Tbsip_Submit_Command"
+      },
+      {
+        "from_ea": "0x180008dbb",
+        "from_func": "0x180008dbb",
+        "from_func_name": "__imp_load_Tbsip_Submit_Command",
+        "import": "tbs!Tbsip_Submit_Command"
+      },
+      {
+        "from_ea": "0x180076bdc",
+        "from_func": "0x180076b50",
+        "from_func_name": "?Vtl0TpmSubmitCommand@@YAJPEA_KPEAEIPEAI0@Z",
+        "import": "tbs!Tbsip_Submit_Command"
+      }
+    ]
+  }
+]

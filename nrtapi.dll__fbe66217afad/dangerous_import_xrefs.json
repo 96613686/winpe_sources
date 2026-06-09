@@ -1,0 +1,429 @@
+[
+  {
+    "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x180001084",
+        "from_func": "0x180001038",
+        "from_func_name": "__security_init_cookie",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x180001084",
+        "from_func": "0x180001038",
+        "from_func_name": "__security_init_cookie",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x18000272c",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "api-ms-win-core-processthreads-l1-1-0!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!NtClose",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180001420",
+        "from_func": "0x180001420",
+        "from_func_name": "CloseNameResolutionHandle",
+        "import": "ntdll!NtClose"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!NtCreateFile",
+    "tags": [
+      "file_ops",
+      "loader_planting"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x1800013ce",
+        "from_func": "0x1800012a0",
+        "from_func_name": "CloneNameResolutionHandle",
+        "import": "ntdll!NtCreateFile"
+      },
+      {
+        "from_ea": "0x180001918",
+        "from_func": "0x180001560",
+        "from_func_name": "CreateNameResolutionHandle",
+        "import": "ntdll!NtCreateFile"
+      },
+      {
+        "from_ea": "0x1800013ce",
+        "from_func": "0x1800012a0",
+        "from_func_name": "CloneNameResolutionHandle",
+        "import": "ntdll!NtCreateFile"
+      },
+      {
+        "from_ea": "0x180001918",
+        "from_func": "0x180001560",
+        "from_func_name": "CreateNameResolutionHandle",
+        "import": "ntdll!NtCreateFile"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlAllocateHeap",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x1800012e6",
+        "from_func": "0x1800012a0",
+        "from_func_name": "CloneNameResolutionHandle",
+        "import": "ntdll!RtlAllocateHeap"
+      },
+      {
+        "from_ea": "0x1800017ae",
+        "from_func": "0x180001560",
+        "from_func_name": "CreateNameResolutionHandle",
+        "import": "ntdll!RtlAllocateHeap"
+      },
+      {
+        "from_ea": "0x1800019fe",
+        "from_func": "0x1800019b4",
+        "from_func_name": "GetCanonicalizeProxyNames",
+        "import": "ntdll!RtlAllocateHeap"
+      },
+      {
+        "from_ea": "0x1800012e6",
+        "from_func": "0x1800012a0",
+        "from_func_name": "CloneNameResolutionHandle",
+        "import": "ntdll!RtlAllocateHeap"
+      },
+      {
+        "from_ea": "0x1800017ae",
+        "from_func": "0x180001560",
+        "from_func_name": "CreateNameResolutionHandle",
+        "import": "ntdll!RtlAllocateHeap"
+      },
+      {
+        "from_ea": "0x1800019fe",
+        "from_func": "0x1800019b4",
+        "from_func_name": "GetCanonicalizeProxyNames",
+        "import": "ntdll!RtlAllocateHeap"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlCanonicalizeDomainName",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 5,
+    "xrefs": [
+      {
+        "from_ea": "0x180001829",
+        "from_func": "0x180001560",
+        "from_func_name": "CreateNameResolutionHandle",
+        "import": "ntdll!RtlCanonicalizeDomainName"
+      },
+      {
+        "from_ea": "0x180001a7a",
+        "from_func": "0x1800019b4",
+        "from_func_name": "GetCanonicalizeProxyNames",
+        "import": "ntdll!RtlCanonicalizeDomainName"
+      },
+      {
+        "from_ea": "0x180001829",
+        "from_func": "0x180001560",
+        "from_func_name": "CreateNameResolutionHandle",
+        "import": "ntdll!RtlCanonicalizeDomainName"
+      },
+      {
+        "from_ea": "0x180001a7a",
+        "from_func": "0x1800019b4",
+        "from_func_name": "GetCanonicalizeProxyNames",
+        "import": "ntdll!RtlCanonicalizeDomainName"
+      },
+      {
+        "from_ea": "0x1800026c8",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ntdll!RtlCanonicalizeDomainName"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlCaptureContext",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180001160",
+        "from_func": "0x180001120",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlCaptureContext"
+      },
+      {
+        "from_ea": "0x180001160",
+        "from_func": "0x180001120",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlCaptureContext"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlFreeHeap",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x1800013fe",
+        "from_func": "0x1800012a0",
+        "from_func_name": "CloneNameResolutionHandle",
+        "import": "ntdll!RtlFreeHeap"
+      },
+      {
+        "from_ea": "0x1800016ab",
+        "from_func": "0x180001560",
+        "from_func_name": "CreateNameResolutionHandle",
+        "import": "ntdll!RtlFreeHeap"
+      },
+      {
+        "from_ea": "0x18000198f",
+        "from_func": "0x18000193c",
+        "from_func_name": "FreeProxyNameArray",
+        "import": "ntdll!RtlFreeHeap"
+      },
+      {
+        "from_ea": "0x1800013fe",
+        "from_func": "0x1800012a0",
+        "from_func_name": "CloneNameResolutionHandle",
+        "import": "ntdll!RtlFreeHeap"
+      },
+      {
+        "from_ea": "0x1800016ab",
+        "from_func": "0x180001560",
+        "from_func_name": "CreateNameResolutionHandle",
+        "import": "ntdll!RtlFreeHeap"
+      },
+      {
+        "from_ea": "0x18000198f",
+        "from_func": "0x18000193c",
+        "from_func_name": "FreeProxyNameArray",
+        "import": "ntdll!RtlFreeHeap"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlFreeUnicodeString",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180001688",
+        "from_func": "0x180001560",
+        "from_func_name": "CreateNameResolutionHandle",
+        "import": "ntdll!RtlFreeUnicodeString"
+      },
+      {
+        "from_ea": "0x180001969",
+        "from_func": "0x18000193c",
+        "from_func_name": "FreeProxyNameArray",
+        "import": "ntdll!RtlFreeUnicodeString"
+      },
+      {
+        "from_ea": "0x180001688",
+        "from_func": "0x180001560",
+        "from_func_name": "CreateNameResolutionHandle",
+        "import": "ntdll!RtlFreeUnicodeString"
+      },
+      {
+        "from_ea": "0x180001969",
+        "from_func": "0x18000193c",
+        "from_func_name": "FreeProxyNameArray",
+        "import": "ntdll!RtlFreeUnicodeString"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlInitUnicodeString",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 8,
+    "xrefs": [
+      {
+        "from_ea": "0x180001359",
+        "from_func": "0x1800012a0",
+        "from_func_name": "CloneNameResolutionHandle",
+        "import": "ntdll!RtlInitUnicodeString"
+      },
+      {
+        "from_ea": "0x180001812",
+        "from_func": "0x180001560",
+        "from_func_name": "CreateNameResolutionHandle",
+        "import": "ntdll!RtlInitUnicodeString"
+      },
+      {
+        "from_ea": "0x1800018b0",
+        "from_func": "0x180001560",
+        "from_func_name": "CreateNameResolutionHandle",
+        "import": "ntdll!RtlInitUnicodeString"
+      },
+      {
+        "from_ea": "0x180001a55",
+        "from_func": "0x1800019b4",
+        "from_func_name": "GetCanonicalizeProxyNames",
+        "import": "ntdll!RtlInitUnicodeString"
+      },
+      {
+        "from_ea": "0x180001359",
+        "from_func": "0x1800012a0",
+        "from_func_name": "CloneNameResolutionHandle",
+        "import": "ntdll!RtlInitUnicodeString"
+      },
+      {
+        "from_ea": "0x180001812",
+        "from_func": "0x180001560",
+        "from_func_name": "CreateNameResolutionHandle",
+        "import": "ntdll!RtlInitUnicodeString"
+      },
+      {
+        "from_ea": "0x1800018b0",
+        "from_func": "0x180001560",
+        "from_func_name": "CreateNameResolutionHandle",
+        "import": "ntdll!RtlInitUnicodeString"
+      },
+      {
+        "from_ea": "0x180001a55",
+        "from_func": "0x1800019b4",
+        "from_func_name": "GetCanonicalizeProxyNames",
+        "import": "ntdll!RtlInitUnicodeString"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlLookupFunctionEntry",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x18000117f",
+        "from_func": "0x180001120",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlLookupFunctionEntry"
+      },
+      {
+        "from_ea": "0x18000117f",
+        "from_func": "0x180001120",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlLookupFunctionEntry"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlVirtualUnwind",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1800011cc",
+        "from_func": "0x180001120",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlVirtualUnwind"
+      },
+      {
+        "from_ea": "0x1800011cc",
+        "from_func": "0x180001120",
+        "from_func_name": "__report_gsfailure",
+        "import": "ntdll!RtlVirtualUnwind"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!memset",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x180001d36",
+        "from_func": "0x180001d36",
+        "from_func_name": "memset_0",
+        "import": "ntdll!memset"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!wcscpy_s",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x180001523",
+        "from_func": "0x180001434",
+        "from_func_name": "CopyNameResolutionInfo",
+        "import": "ntdll!wcscpy_s"
+      },
+      {
+        "from_ea": "0x180001850",
+        "from_func": "0x180001560",
+        "from_func_name": "CreateNameResolutionHandle",
+        "import": "ntdll!wcscpy_s"
+      },
+      {
+        "from_ea": "0x180001523",
+        "from_func": "0x180001434",
+        "from_func_name": "CopyNameResolutionInfo",
+        "import": "ntdll!wcscpy_s"
+      },
+      {
+        "from_ea": "0x180001850",
+        "from_func": "0x180001560",
+        "from_func_name": "CreateNameResolutionHandle",
+        "import": "ntdll!wcscpy_s"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!wcsnlen",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x180001730",
+        "from_func": "0x180001560",
+        "from_func_name": "CreateNameResolutionHandle",
+        "import": "ntdll!wcsnlen"
+      },
+      {
+        "from_ea": "0x180001730",
+        "from_func": "0x180001560",
+        "from_func_name": "CreateNameResolutionHandle",
+        "import": "ntdll!wcsnlen"
+      }
+    ]
+  }
+]

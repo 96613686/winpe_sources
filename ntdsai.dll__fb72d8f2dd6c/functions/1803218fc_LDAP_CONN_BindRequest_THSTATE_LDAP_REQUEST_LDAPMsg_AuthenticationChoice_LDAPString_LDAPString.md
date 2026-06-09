@@ -1,0 +1,180 @@
+# LDAP_CONN::BindRequest(_THSTATE *,LDAP_REQUEST *,LDAPMsg *,AuthenticationChoice *,LDAPString *,LDAPString *)
+
+- ea: `0x1803218fc`
+- end: `0x1803243ad`
+- name: `?BindRequest@LDAP_CONN@@AEAA?AW4_enum1@@PEAU_THSTATE@@PEAVLDAP_REQUEST@@PEAULDAPMsg@@PEAUAuthenticationChoice@@PEAULDAPString@@4@Z`
+- size: `10929`
+- prototype: `__int64 __fastcall(__int64, __int64, struct LDAP_REQUEST *, __int64, _WORD *, WCHAR *, __int64)`
+- caller_count: `1`
+- callee_count: `51`
+- tags: `authz_impersonation, broker_com_uri`
+
+## callers
+
+- `0x180355ef0`
+
+## callees
+
+- `0x180006330`
+- `0x180006360`
+- `0x1800067d0`
+- `0x18000b0b0`
+- `0x18000bb20`
+- `0x18000bb80`
+- `0x18000ed84`
+- `0x18000ff94`
+- `0x180010510`
+- `0x18001e090`
+- `0x18001ea60`
+- `0x180021400`
+- `0x180021aa3`
+- `0x180030af8`
+- `0x180030b60`
+- `0x180036e3c`
+- `0x1801521dc`
+- `0x180173e2c`
+- `0x180180c50`
+- `0x180192394`
+- `0x18031f268`
+- `0x18031faac`
+- `0x1803218fc`
+- `0x180325718`
+- `0x1803257a8`
+- `0x1803257f8`
+- `0x180326848`
+- `0x180327ba4`
+- `0x180329e30`
+- `0x180329e7c`
+- `0x18032a4e0`
+- `0x18032b13c`
+- `0x1803418c8`
+- `0x180341c4c`
+- `0x180352428`
+- `0x180354dc0`
+- `0x18035acb8`
+- `0x18035ad54`
+- `0x18035ae0c`
+- `0x18035b308`
+- `0x18035d7e4`
+- `0x180372fec`
+- `0x180373310`
+- `0x180373644`
+- `0x18037e038`
+- `0x18037e158`
+- `0x18037e3bc`
+- `0x18037e518`
+- `0x18037eddc`
+- `0x18037ef04`
+
+## import_xrefs
+
+- `api-ms-win-crt-private-l1-1-0!_o_strcat_s` at `0x180321ea8`
+- `api-ms-win-crt-private-l1-1-0!_o_strcat_s` at `0x18032230f`
+- `api-ms-win-crt-private-l1-1-0!_o_strcat_s` at `0x180321ea8`
+- `api-ms-win-crt-private-l1-1-0!_o_strcat_s` at `0x18032230f`
+- `api-ms-win-crt-private-l1-1-0!_o_strcpy_s` at `0x180321da6`
+- `api-ms-win-crt-private-l1-1-0!_o_strcpy_s` at `0x1803225b1`
+- `api-ms-win-crt-private-l1-1-0!_o_strcpy_s` at `0x180322636`
+- `api-ms-win-crt-private-l1-1-0!_o_strcpy_s` at `0x180322795`
+- `api-ms-win-crt-private-l1-1-0!_o_strcpy_s` at `0x1803227f9`
+- `api-ms-win-crt-private-l1-1-0!_o_strcpy_s` at `0x1803234f8`
+- `api-ms-win-crt-private-l1-1-0!_o_strcpy_s` at `0x180321da6`
+- `api-ms-win-crt-private-l1-1-0!_o_strcpy_s` at `0x1803225b1`
+- `api-ms-win-crt-private-l1-1-0!_o_strcpy_s` at `0x180322636`
+- `api-ms-win-crt-private-l1-1-0!_o_strcpy_s` at `0x180322795`
+- `api-ms-win-crt-private-l1-1-0!_o_strcpy_s` at `0x1803227f9`
+- `api-ms-win-crt-private-l1-1-0!_o_strcpy_s` at `0x1803234f8`
+- `api-ms-win-security-sddl-l1-1-0!ConvertSidToStringSidW` at `0x180323f74`
+- `api-ms-win-security-sddl-l1-1-0!ConvertSidToStringSidW` at `0x180323f74`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180323566`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180323f82`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180323566`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180323f82`
+- `api-ms-win-core-heap-l2-1-0!LocalFree` at `0x1803240d5`
+- `api-ms-win-core-heap-l2-1-0!LocalFree` at `0x1803240d5`
+- `api-ms-win-core-sysinfo-l1-1-0!GetTickCount` at `0x180321ad1`
+- `api-ms-win-core-sysinfo-l1-1-0!GetTickCount` at `0x1803239de`
+- `api-ms-win-core-sysinfo-l1-1-0!GetTickCount` at `0x180321ad1`
+- `api-ms-win-core-sysinfo-l1-1-0!GetTickCount` at `0x1803239de`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180321fea`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180321ff4`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180322437`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180322441`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180322a8f`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180322c90`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180322ee2`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180322eec`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1803234a2`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180323860`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x18032423e`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1803242f5`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1804722cd`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1804722f2`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180472317`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x18047233c`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180472361`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180472386`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1804723ab`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1804723d0`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1804723f5`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x18047241a`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x18047247c`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1804724a1`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180321fea`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180321ff4`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180322437`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180322441`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180322a8f`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180322c90`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180322ee2`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180322eec`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1803234a2`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180323860`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x18032423e`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1803242f5`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1804722cd`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1804722f2`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180472317`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x18047233c`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180472361`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x180472386`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1804723ab`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1804723d0`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1804723f5`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x18047241a`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x18047247c`
+- `api-ms-win-core-synch-l1-1-0!LeaveCriticalSection` at `0x1804724a1`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180321ec8`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180321f27`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180322327`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180322386`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x1803228b0`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180322b4f`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180322d0e`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180322e25`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180323265`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180323847`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180323aef`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x1803242d6`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180321ec8`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180321f27`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180322327`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180322386`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x1803228b0`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180322b4f`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180322d0e`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180322e25`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180323265`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180323847`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x180323aef`
+- `api-ms-win-core-synch-l1-1-0!EnterCriticalSection` at `0x1803242d6`
+- `SspiCli!FreeContextBuffer` at `0x180324264`
+- `SspiCli!FreeContextBuffer` at `0x180324283`
+- `SspiCli!FreeContextBuffer` at `0x180324264`
+- `SspiCli!FreeContextBuffer` at `0x180324283`
+
+## pseudocode
+
+```c
+
+```

@@ -1,0 +1,793 @@
+[
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "NsiAllocateAndGetTable",
+    "ea": "0x1800016b0",
+    "function_file": "functions/1800016b0_NsiAllocateAndGetTable.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc",
+      "api-ms-win-core-heap-l1-1-0!HeapFree",
+      "api-ms-win-core-synch-l1-1-0!CreateEventA",
+      "ntdll!NtDeviceIoControlFile",
+      "ntdll!NtWaitForSingleObject",
+      "ntdll!RtlNtStatusToDosError"
+    ],
+    "matched_strings": [],
+    "name": "NsiAllocateAndGetTable",
+    "prototype": "__int64 __fastcall(int, __int64, unsigned int, _QWORD *, unsigned int, _QWORD *, unsigned int, _QWORD *, unsigned int, _QWORD *, unsigned int, unsigned int *)",
+    "rank_score": 4824,
+    "size": 1522,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 13,
+    "demangled": "NsiIoctl",
+    "ea": "0x1800013b0",
+    "function_file": "functions/1800013b0_NsiIoctl.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!CreateFileW",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-io-l1-1-0!DeviceIoControl",
+      "api-ms-win-core-synch-l1-1-0!CreateEventA",
+      "ntdll!NtDeviceIoControlFile",
+      "ntdll!NtWaitForSingleObject",
+      "ntdll!RtlNtStatusToDosError"
+    ],
+    "matched_strings": [],
+    "name": "NsiIoctl",
+    "prototype": "__int64 __fastcall(DWORD dwIoControlCode, LPVOID lpInBuffer, DWORD nInBufferSize, LPVOID lpOutBuffer, LPDWORD lpBytesReturned, LPOVERLAPPED lpOverlapped)",
+    "rank_score": 2248,
+    "size": 524,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "NsiEnumerateObjectsAllParameters",
+    "ea": "0x180002110",
+    "function_file": "functions/180002110_NsiEnumerateObjectsAllParameters.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!CreateFileW",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!CreateEventA",
+      "ntdll!NtDeviceIoControlFile",
+      "ntdll!NtWaitForSingleObject",
+      "ntdll!RtlNtStatusToDosError"
+    ],
+    "matched_strings": [],
+    "name": "NsiEnumerateObjectsAllParameters",
+    "prototype": "DWORD __fastcall(unsigned int, unsigned int, __int64, unsigned int, __int64, unsigned int, __int64, unsigned int, __int64, unsigned int, __int64, int, _DWORD *)",
+    "rank_score": 1834,
+    "size": 495,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "NsiGetAllParameters",
+    "ea": "0x180001d30",
+    "function_file": "functions/180001d30_NsiGetAllParameters.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!CreateFileW",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!CreateEventA",
+      "ntdll!NtDeviceIoControlFile",
+      "ntdll!NtWaitForSingleObject",
+      "ntdll!RtlNtStatusToDosError"
+    ],
+    "matched_strings": [],
+    "name": "NsiGetAllParameters",
+    "prototype": "DWORD __fastcall(unsigned int, __int64, unsigned int, __int64, unsigned int, __int64, unsigned int, __int64, unsigned int, __int64, unsigned int)",
+    "rank_score": 1834,
+    "size": 503,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "NsiGetParameter",
+    "ea": "0x180001f30",
+    "function_file": "functions/180001f30_NsiGetParameter.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!CreateFileW",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!CreateEventA",
+      "ntdll!NtDeviceIoControlFile",
+      "ntdll!NtWaitForSingleObject",
+      "ntdll!RtlNtStatusToDosError"
+    ],
+    "matched_strings": [],
+    "name": "NsiGetParameter",
+    "prototype": "",
+    "rank_score": 1834,
+    "size": 473,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "NsiGetParameterEx",
+    "ea": "0x180002470",
+    "function_file": "functions/180002470_NsiGetParameterEx.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!CreateFileW",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!CreateEventA",
+      "ntdll!NtDeviceIoControlFile",
+      "ntdll!NtWaitForSingleObject",
+      "ntdll!RtlNtStatusToDosError"
+    ],
+    "matched_strings": [],
+    "name": "NsiGetParameterEx",
+    "prototype": "__int64 __fastcall(PVOID OutputBuffer)",
+    "rank_score": 1834,
+    "size": 385,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "NsiRegisterChangeNotificationEx",
+    "ea": "0x180002690",
+    "function_file": "functions/180002690_NsiRegisterChangeNotificationEx.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!CreateFileW",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!CreateEventA",
+      "ntdll!NtDeviceIoControlFile",
+      "ntdll!NtWaitForSingleObject",
+      "ntdll!RtlNtStatusToDosError"
+    ],
+    "matched_strings": [],
+    "name": "NsiRegisterChangeNotificationEx",
+    "prototype": "ULONG __fastcall(_QWORD *OutputBuffer)",
+    "rank_score": 1834,
+    "size": 354,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "NsiGetAllParametersEx",
+    "ea": "0x180002310",
+    "function_file": "functions/180002310_NsiGetAllParametersEx.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!CreateFileW",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!CreateEventA",
+      "ntdll!NtDeviceIoControlFile",
+      "ntdll!NtWaitForSingleObject",
+      "ntdll!RtlNtStatusToDosError"
+    ],
+    "matched_strings": [],
+    "name": "NsiGetAllParametersEx",
+    "prototype": "__int64 __fastcall(PVOID OutputBuffer)",
+    "rank_score": 1833,
+    "size": 333,
+    "tags": [
+      "file_ops",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "NsiEnumerateObjectsAllParametersEx",
+    "ea": "0x1800015d0",
+    "function_file": "functions/1800015d0_NsiEnumerateObjectsAllParametersEx.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-synch-l1-1-0!CreateEventA",
+      "ntdll!NtDeviceIoControlFile",
+      "ntdll!NtWaitForSingleObject",
+      "ntdll!RtlNtStatusToDosError"
+    ],
+    "matched_strings": [],
+    "name": "NsiEnumerateObjectsAllParametersEx",
+    "prototype": "DWORD __fastcall(PVOID OutputBuffer)",
+    "rank_score": 1213,
+    "size": 211,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "_DllInitialize",
+    "ea": "0x180002840",
+    "function_file": "functions/180002840_DllInitialize.md",
+    "matched_imports": [
+      "api-ms-win-core-handle-l1-1-0!CloseHandle",
+      "api-ms-win-core-heap-l1-1-0!GetProcessHeap",
+      "api-ms-win-core-libraryloader-l1-2-0!DisableThreadLibraryCalls"
+    ],
+    "matched_strings": [],
+    "name": "_DllInitialize",
+    "prototype": "",
+    "rank_score": 822,
+    "size": 106,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "NsiFreeTable",
+    "ea": "0x180002600",
+    "function_file": "functions/180002600_NsiFreeTable.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "NsiFreeTable",
+    "prototype": "__int64 __fastcall(LPVOID lpMem, LPVOID, LPVOID, LPVOID)",
+    "rank_score": 802,
+    "size": 132,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "NsiOpenDevice",
+    "ea": "0x180001cb0",
+    "function_file": "functions/180001cb0_NsiOpenDevice.md",
+    "matched_imports": [
+      "api-ms-win-core-errorhandling-l1-1-0!GetLastError",
+      "api-ms-win-core-file-l1-1-0!CreateFileW",
+      "api-ms-win-core-handle-l1-1-0!CloseHandle"
+    ],
+    "matched_strings": [],
+    "name": "NsiOpenDevice",
+    "prototype": "DWORD()",
+    "rank_score": 623,
+    "size": 113,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "NsiAllocateAndGetPersistentDataWithMaskTable",
+    "ea": "0x180002bd0",
+    "function_file": "functions/180002bd0_NsiAllocateAndGetPersistentDataWithMaskTable.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!HeapAlloc"
+    ],
+    "matched_strings": [],
+    "name": "NsiAllocateAndGetPersistentDataWithMaskTable",
+    "prototype": "__int64 __usercall@<rax>(int@<ecx>, int@<edx>, __int64, __int64, int, __int64)",
+    "rank_score": 608,
+    "size": 613,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "NsiFreePersistentDataWithMaskTable",
+    "ea": "0x180002f60",
+    "function_file": "functions/180002f60_NsiFreePersistentDataWithMaskTable.md",
+    "matched_imports": [
+      "api-ms-win-core-heap-l1-1-0!HeapFree"
+    ],
+    "matched_strings": [],
+    "name": "NsiFreePersistentDataWithMaskTable",
+    "prototype": "__int64 __fastcall(LPVOID lpMem, LPVOID, LPVOID)",
+    "rank_score": 602,
+    "size": 96,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "memset_0",
+    "ea": "0x1800030e1",
+    "function_file": "functions/1800030e1_memset_0.md",
+    "matched_imports": [
+      "ntdll!memset"
+    ],
+    "matched_strings": [],
+    "name": "memset_0",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 115,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "NtTerminateProcess_0",
+    "ea": "0x180002b10",
+    "function_file": "functions/180002b10_NtTerminateProcess_0.md",
+    "matched_imports": [
+      "ntdll!NtTerminateProcess"
+    ],
+    "matched_strings": [],
+    "name": "NtTerminateProcess_0",
+    "prototype": "NTSTATUS __stdcall(HANDLE ProcessHandle, NTSTATUS ExitStatus)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "RtlCaptureContext_0",
+    "ea": "0x180002b1c",
+    "function_file": "functions/180002b1c_RtlCaptureContext_0.md",
+    "matched_imports": [
+      "ntdll!RtlCaptureContext"
+    ],
+    "matched_strings": [],
+    "name": "RtlCaptureContext_0",
+    "prototype": "void __stdcall(PCONTEXT ContextRecord)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "RtlLookupFunctionEntry_0",
+    "ea": "0x180002b28",
+    "function_file": "functions/180002b28_RtlLookupFunctionEntry_0.md",
+    "matched_imports": [
+      "ntdll!RtlLookupFunctionEntry"
+    ],
+    "matched_strings": [],
+    "name": "RtlLookupFunctionEntry_0",
+    "prototype": "PRUNTIME_FUNCTION __stdcall(ULONG64 ControlPc, PULONG64 ImageBase, PUNWIND_HISTORY_TABLE HistoryTable)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "RtlUnhandledExceptionFilter_0",
+    "ea": "0x180002b40",
+    "function_file": "functions/180002b40_RtlUnhandledExceptionFilter_0.md",
+    "matched_imports": [
+      "ntdll!RtlUnhandledExceptionFilter"
+    ],
+    "matched_strings": [],
+    "name": "RtlUnhandledExceptionFilter_0",
+    "prototype": "LONG __stdcall(struct _EXCEPTION_POINTERS *ExceptionInfo)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "RtlVirtualUnwind_0",
+    "ea": "0x180002b34",
+    "function_file": "functions/180002b34_RtlVirtualUnwind_0.md",
+    "matched_imports": [
+      "ntdll!RtlVirtualUnwind"
+    ],
+    "matched_strings": [],
+    "name": "RtlVirtualUnwind_0",
+    "prototype": "PEXCEPTION_ROUTINE __stdcall(ULONG HandlerType, ULONG64 ImageBase, ULONG64 ControlPc, PRUNTIME_FUNCTION FunctionEntry, PCONTEXT ContextRecord, PVOID *HandlerData, PULONG64 EstablisherFrame, PKNONVOLATILE_CONTEXT_POINTERS ContextPointers)",
+    "rank_score": 111,
+    "size": 6,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "__report_gsfailure",
+    "ea": "0x1800028e0",
+    "function_file": "functions/1800028e0_report_gsfailure.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__report_gsfailure",
+    "prototype": "void __cdecl __noreturn(uintptr_t StackCookie)",
+    "rank_score": 29,
+    "size": 375,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "_DllMainCRTStartupForGS2",
+    "ea": "0x1800028b8",
+    "function_file": "functions/1800028b8_DllMainCRTStartupForGS2.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_DllMainCRTStartupForGS2",
+    "prototype": "",
+    "rank_score": 23,
+    "size": 24,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "DllInitialize",
+    "ea": "0x180002800",
+    "function_file": "functions/180002800_DllInitialize.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "DllInitialize",
+    "prototype": "BOOL __stdcall(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)",
+    "rank_score": 13,
+    "size": 45,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x180002a60",
+    "function_file": "functions/180002a60_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 13,
+    "size": 68,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "__security_check_cookie",
+    "ea": "0x180003120",
+    "function_file": "functions/180003120_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 12,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie_ex",
+    "ea": "0x180002aac",
+    "function_file": "functions/180002aac_security_init_cookie_ex.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie_ex",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 94,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "NsiDeregisterChangeNotification",
+    "ea": "0x180002e40",
+    "function_file": "functions/180002e40_NsiDeregisterChangeNotification.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NsiDeregisterChangeNotification",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 76,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "NsiDeregisterChangeNotificationEx",
+    "ea": "0x180001370",
+    "function_file": "functions/180001370_NsiDeregisterChangeNotificationEx.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NsiDeregisterChangeNotificationEx",
+    "prototype": "__int64 __fastcall(LPVOID lpOutBuffer)",
+    "rank_score": 11,
+    "size": 58,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "NsiGetObjectSecurity",
+    "ea": "0x180002b50",
+    "function_file": "functions/180002b50_NsiGetObjectSecurity.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NsiGetObjectSecurity",
+    "prototype": "__int64 __fastcall(LPVOID lpOutBuffer)",
+    "rank_score": 11,
+    "size": 54,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "NsiSetObjectSecurity",
+    "ea": "0x180002b90",
+    "function_file": "functions/180002b90_NsiSetObjectSecurity.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NsiSetObjectSecurity",
+    "prototype": "__int64 __fastcall(LPVOID lpOutBuffer)",
+    "rank_score": 11,
+    "size": 54,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "_guard_dispatch_icall_nop",
+    "ea": "0x180003160",
+    "function_file": "functions/180003160_guard_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 2,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "_guard_xfg_dispatch_icall_nop",
+    "ea": "0x180003190",
+    "function_file": "functions/180003190_guard_xfg_dispatch_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_xfg_dispatch_icall_nop",
+    "prototype": "",
+    "rank_score": 11,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "NsiEnumerateObjectsAllPersistentParametersWithMask",
+    "ea": "0x180002ea0",
+    "function_file": "functions/180002ea0_NsiEnumerateObjectsAllPersistentParametersWithMask.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NsiEnumerateObjectsAllPersistentParametersWithMask",
+    "prototype": "__int64 __fastcall(int, int, int, int, DWORD BytesReturned, __int64, __int64, int, __int64)",
+    "rank_score": 4,
+    "size": 171,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "NsiRequestChangeNotificationEx",
+    "ea": "0x180001140",
+    "function_file": "functions/180001140_NsiRequestChangeNotificationEx.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NsiRequestChangeNotificationEx",
+    "prototype": "__int64 __fastcall(_QWORD *lpInBuffer)",
+    "rank_score": 3,
+    "size": 90,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "NsiSetAllPersistentParametersWithMask",
+    "ea": "0x180003040",
+    "function_file": "functions/180003040_NsiSetAllPersistentParametersWithMask.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NsiSetAllPersistentParametersWithMask",
+    "prototype": "__int64 __fastcall(int, int, int, int, DWORD BytesReturned, __int64, __int64, int)",
+    "rank_score": 3,
+    "size": 155,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "NsiGetAllPersistentParametersWithMask",
+    "ea": "0x180001010",
+    "function_file": "functions/180001010_NsiGetAllPersistentParametersWithMask.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NsiGetAllPersistentParametersWithMask",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 136,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "NsiRegisterChangeNotification",
+    "ea": "0x180002fd0",
+    "function_file": "functions/180002fd0_NsiRegisterChangeNotification.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NsiRegisterChangeNotification",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 100,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "NsiSetAllParameters",
+    "ea": "0x1800011e0",
+    "function_file": "functions/1800011e0_NsiSetAllParameters.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NsiSetAllParameters",
+    "prototype": "__int64 __fastcall(int, int, __int64, int, __int64, int, __int64, int)",
+    "rank_score": 2,
+    "size": 147,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "NsiSetParameter",
+    "ea": "0x180001280",
+    "function_file": "functions/180001280_NsiSetParameter.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NsiSetParameter",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 161,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "NsiCancelChangeNotification",
+    "ea": "0x1800010a0",
+    "function_file": "functions/1800010a0_NsiCancelChangeNotification.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NsiCancelChangeNotification",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 59,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "NsiRequestChangeNotification",
+    "ea": "0x1800010f0",
+    "function_file": "functions/1800010f0_NsiRequestChangeNotification.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NsiRequestChangeNotification",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 61,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "NsiSetAllParametersEx",
+    "ea": "0x1800011a0",
+    "function_file": "functions/1800011a0_NsiSetAllParametersEx.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NsiSetAllParametersEx",
+    "prototype": "__int64 __fastcall(LPVOID lpOutBuffer)",
+    "rank_score": 1,
+    "size": 58,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "NsiSetParameterEx",
+    "ea": "0x180001330",
+    "function_file": "functions/180001330_NsiSetParameterEx.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NsiSetParameterEx",
+    "prototype": "__int64 __fastcall(LPVOID lpOutBuffer)",
+    "rank_score": 1,
+    "size": 49,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "_guard_check_icall_nop",
+    "ea": "0x180003100",
+    "function_file": "functions/180003100_guard_check_icall_nop.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_check_icall_nop",
+    "prototype": "",
+    "rank_score": 0,
+    "size": 3,
+    "tags": []
+  }
+]

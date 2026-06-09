@@ -1,0 +1,840 @@
+# NtfsNonCachedIo
+
+- ea: `0x140175a80`
+- end: `0x140176e5a`
+- name: `NtfsNonCachedIo`
+- size: `5082`
+- prototype: `__int64 __fastcall(__int64, PIRP Irp, __int64, unsigned __int64, unsigned int, int)`
+- caller_count: `7`
+- callee_count: `27`
+- tags: `authz_impersonation, installer_update, broker_com_uri`
+
+## callers
+
+- `0x1400177d0`
+- `0x140025210`
+- `0x14002c840`
+- `0x1401bcd70`
+- `0x140223a60`
+- `0x140245ba8`
+- `0x1402836cc`
+
+## callees
+
+- `0x140005810`
+- `0x140005f40`
+- `0x140007ea0`
+- `0x1400082b0`
+- `0x14000c290`
+- `0x14001da30`
+- `0x14001e2f0`
+- `0x14001e9d0`
+- `0x140021160`
+- `0x140023250`
+- `0x140024100`
+- `0x1400241c0`
+- `0x14002c400`
+- `0x14003ad08`
+- `0x14003c184`
+- `0x140059250`
+- `0x1400596c0`
+- `0x140139ed0`
+- `0x140163f78`
+- `0x140175a80`
+- `0x140176e60`
+- `0x1401771e0`
+- `0x140177570`
+- `0x140177610`
+- `0x140177be0`
+- `0x1401c0660`
+- `0x14026ba38`
+
+## import_xrefs
+
+- `ntoskrnl!IoFreeIrp` at `0x1402a9de5`
+- `ntoskrnl!IoFreeIrp` at `0x1402a9de5`
+- `ntoskrnl!IoSetActivityIdThread` at `0x1401768b5`
+- `ntoskrnl!IoSetActivityIdThread` at `0x1401768b5`
+- `ntoskrnl!IoClearActivityIdThread` at `0x1401768d7`
+- `ntoskrnl!IoClearActivityIdThread` at `0x1401768d7`
+- `ntoskrnl!IoFreeMdl` at `0x1402a9dce`
+- `ntoskrnl!IoFreeMdl` at `0x1402a9dce`
+- `ntoskrnl!ExSetResourceOwnerPointerEx` at `0x140175f6f`
+- `ntoskrnl!ExSetResourceOwnerPointerEx` at `0x1401765d6`
+- `ntoskrnl!ExSetResourceOwnerPointerEx` at `0x140175f6f`
+- `ntoskrnl!ExSetResourceOwnerPointerEx` at `0x1401765d6`
+- `ntoskrnl!FsRtlUpdateDiskCounters` at `0x140175e3a`
+- `ntoskrnl!FsRtlUpdateDiskCounters` at `0x140175e3a`
+- `ntoskrnl!IoMakeAssociatedIrpEx` at `0x140176213`
+- `ntoskrnl!IoMakeAssociatedIrpEx` at `0x140176213`
+- `ntoskrnl!IoGetIoPriorityHint` at `0x140175f39`
+- `ntoskrnl!IoGetIoPriorityHint` at `0x1401765a6`
+- `ntoskrnl!IoGetIoPriorityHint` at `0x140175f39`
+- `ntoskrnl!IoGetIoPriorityHint` at `0x1401765a6`
+- `ntoskrnl!IoGetDeviceToVerify` at `0x1401762c0`
+- `ntoskrnl!IoGetDeviceToVerify` at `0x1401762c0`
+- `ntoskrnl!IoSetDeviceToVerify` at `0x1401762de`
+- `ntoskrnl!IoSetDeviceToVerify` at `0x1401762de`
+- `ntoskrnl!IoSetMasterIrpStatus` at `0x14017618d`
+- `ntoskrnl!IoSetMasterIrpStatus` at `0x14017618d`
+- `ntoskrnl!ExIsResourceAcquiredSharedLite` at `0x140176c76`
+- `ntoskrnl!ExIsResourceAcquiredSharedLite` at `0x140176c76`
+- `ntoskrnl!IoGetActivityIdThread` at `0x140176895`
+- `ntoskrnl!IoGetActivityIdThread` at `0x140176895`
+- `ntoskrnl!ExAllocateFromLookasideListEx` at `0x140176837`
+- `ntoskrnl!ExAllocateFromLookasideListEx` at `0x140176837`
+- `ntoskrnl!ExIsResourceAcquiredExclusiveLite` at `0x140176c53`
+- `ntoskrnl!ExIsResourceAcquiredExclusiveLite` at `0x140176c53`
+- `ext-ms-win-fs-clfs-l1-1-0!ClfsLsnInvalid` at `0x140176b3d`
+- `ext-ms-win-fs-clfs-l1-1-0!ClfsLsnInvalid` at `0x140176b3d`
+
+## pseudocode
+
+```c
+__int64 __fastcall NtfsNonCachedIo(__int64 a1, PIRP Irp, __int64 a3, unsigned __int64 a4, unsigned int a5, int a6)
+{
+  __int64 v10; // rcx
+  __int64 v11; // rdi
+  __int64 v12; // rax
+  char v13; // r12
+  unsigned int *v14; // rbx
+  bool v15; // al
+  bool v16; // al
+  bool v17; // al
+  char v18; // al
+  bool v19; // al
+  unsigned __int64 v20; // rdi
+  NTSTATUS v21; // eax
+  __int64 v22; // r9
+  __int64 v23; // r10
+  _QWORD *v24; // r8
+  IRP *v25; // rax
+  NTSTATUS v26; // edi
+  __int64 v27; // rcx
+  __int64 v28; // rdx
+  struct _ERESOURCE *v29; // rcx
+  NTSTATUS Status; // eax
+  NTSTATUS v31; // eax
+  unsigned int v32; // edx
+  NTSTATUS v33; // eax
+  __int64 v34; // rcx
+  unsigned int v35; // ecx
+  __int64 AssociatedIrp; // rax
+  __int64 v37; // rdx
+  __int64 v38; // rcx
+  __int64 v39; // rax
+  _QWORD *v40; // rax
+  _QWORD *v41; // rdi
+  __int64 v42; // rcx
+  _QWORD *v43; // rdx
+  _QWORD *ActivityIdThread; // rax
+  char *v45; // rcx
+  __int64 v46; // rdi
+  __int64 v48; // r8
+  const CLFS_LSN *v49; // rcx
+  __int16 v50; // cx
+  __int64 v51; // rax
+  __int64 v52; // rax
+  char v53; // dl
+  bool v54; // [rsp+89h] [rbp-187h]
+  char v55; // [rsp+92h] [rbp-17Eh]
+  signed int v56; // [rsp+94h] [rbp-17Ch]
+  IRP *v57; // [rsp+98h] [rbp-178h]
+  _QWORD *v58; // [rsp+A8h] [rbp-168h]
+  unsigned int v60; // [rsp+B0h] [rbp-160h]
+  unsigned __int8 v61; // [rsp+B8h] [rbp-158h]
+  __int64 v62; // [rsp+C0h] [rbp-150h]
+  __int64 v63; // [rsp+C0h] [rbp-150h]
+  __int64 v64; // [rsp+D0h] [rbp-140h]
+  NTSTATUS v65; // [rsp+E0h] [rbp-130h]
+  PMDL MemoryDescriptorList; // [rsp+100h] [rbp-110h]
+  __int64 v67; // [rsp+110h] [rbp-100h]
+  __int128 v68; // [rsp+130h] [rbp-E0h] BYREF
+  __int64 v69; // [rsp+140h] [rbp-D0h]
+  _BYTE v70[128]; // [rsp+148h] [rbp-C8h] BYREF
+
+  v10 = a5;
+  v11 = *(_QWORD *)(*(_QWORD *)(a3 + 184) + 96LL);
+  v58 = (_QWORD *)v11;
+  v61 = 0;
+  v12 = *(_QWORD *)(a1 + 192);
+  v54 = v12 && (*(_QWORD *)(v12 + 32) != -1 || *(_QWORD *)(v12 + 72) != -1);
+  v13 = *(_BYTE *)(a1 + 12) & 1;
+  if ( NtfsDiskAccountingEnabled )
+  {
+    NtfsUpdateReadWriteDiskCounters(a1, (__int64)Irp, a5);
+    v10 = a5;
+  }
+  if ( *(_BYTE *)(a1 + 32) == 4 )
+  {
+    v48 = *(_QWORD *)(a3 + 192);
+    if ( a3 == *(_QWORD *)(v48 + 72)
+      && (*(_DWORD *)(a1 + 16) & 0x100000LL) == 0
+      && (Microsoft_Windows_NtfsLog_43345c4f859f3d6790af3cfb07b93456EnableBits & 4) != 0 )
+    {
+      McTemplateU0ppd_EtwWriteTransfer(v10, (const EVENT_DESCRIPTOR *)deviosup_c10106, v48, a4, v10);
+    }
+    if ( (*(_DWORD *)(a3 + 512) & 0x20) != 0 )
+    {
+      if ( (dword_1400956B8 & 0x200000) != 0 )
+      {
+        v61 = 12;
+      }
+      else
+      {
+        v61 = 8;
+        if ( a3 == *(_QWORD *)(v11 + 64) && (*(_DWORD *)(v11 + 4) & 0x1000) != 0 )
+        {
+          v51 = *(_QWORD *)(v11 + 232);
+          if ( v51 )
+          {
+            if ( *(_WORD *)v51 == 2049 )
+            {
+              v52 = *(_QWORD *)(v51 + 24);
+              if ( v52 )
+              {
+                if ( *(_WORD *)v52 == 2051 )
+                {
+                  v53 = 8;
+                  if ( (*(_DWORD *)(v52 + 428) & 0x1000) != 0 )
+                    v53 = 12;
+                  v61 = v53;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    v49 = *(const CLFS_LSN **)(*(_QWORD *)(a3 + 184) + 328LL);
+    if ( v49 && ((v49->offset.cidContainer & 1) != 0 || !ClfsLsnInvalid(v49 + 15)) )
+      *(_DWORD *)(a1 + 12) |= 0x1000000u;
+  }
+  if ( (a6 & 6) == 0
+    && *(_DWORD *)(a3 + 256) == 128
+    && _bittest16((const signed __int16 *)(a3 + 460), 0xEu)
+    && !*(_QWORD *)(a3 + 504)
+    && *(_QWORD *)(a3 + 632) != -1 )
+  {
+    if ( NtfsStatusDebugFlags )
+      NtfsStatusTraceAndDebugInternal(a1, 0xC0000810, 0xC27D5u);
+    NtfsRaiseStatusInternal(a1, -1073739760, 0, 0, 796629);
+  }
+  MemoryDescriptorList = 0;
+  v57 = 0;
+  v65 = -1073741823;
+  v55 = 0;
+  v14 = (unsigned int *)NtfsAllocateFromPerProcessorLookasideList(NtfsCompressCtxLookasideList);
+  if ( !v13 )
+    *(_QWORD *)(*(_QWORD *)(a1 + 208) + 64LL) = v14;
+  memset(v14, 0, 0xB8u);
+  memset(v70, 0, sizeof(v70));
+  *((_QWORD *)v14 + 10) = v70;
+  v14[22] = 8;
+  v15 = (*(_DWORD *)(a3 + 448) || (*(_WORD *)(a3 + 460) & 0x80FF) != 0)
+     && *(_QWORD *)(a3 + 16)
+     && !ExIsResourceAcquiredExclusiveLite(*(PERESOURCE *)(*(_QWORD *)(a3 + 184) + 112LL))
+     && !ExIsResourceAcquiredSharedLite((PERESOURCE)(*(_QWORD *)(*(_QWORD *)(a3 + 184) + 104LL) + 64LL));
+  *((_BYTE *)v14 + 104) = v15;
+  v16 = *(_BYTE *)(a1 + 32) == 4
+     && v13
+     && (v50 = *(_WORD *)(a3 + 460), (v50 & 0x80FF) != 0)
+     && ((dword_1400956B8 & 0x100) == 0 || !(_BYTE)v50)
+     && *(_QWORD *)(a3 + 16)
+     && !v54
+     && (*(_DWORD *)(a1 + 16) & 0x40000LL) == 0;
+  *((_BYTE *)v14 + 105) = v16;
+  v17 = *(_BYTE *)(a1 + 32) == 4
+     && *(_BYTE *)(a3 + 460)
+     && (*(_DWORD *)(a3 + 200) & 0x80000) != 0
+     && ((dword_1400956B8 & 0x200) != 0 || NtfsGetAttributeListSize(a1, *(_QWORD *)(a3 + 184)) <= qword_140095A98);
+  *((_BYTE *)v14 + 106) = v17;
+  v18 = *(_BYTE *)(a1 + 32);
+  v19 = v18 == 4 && *(_DWORD *)(a3 + 452)
+     || v18 == 3
+     && (*(_BYTE *)(a3 + 460) && *(_DWORD *)(a3 + 452)
+      || *(_QWORD *)(a3 + 504) && *(_DWORD *)(a3 + 256) == 128 && (a6 & 6) == 0 && *(int *)(a3 + 200) >= 0);
+  *((_BYTE *)v14 + 108) = v19;
+  Irp->AssociatedIrp.IrpCount = 0;
+  if ( (a6 & 4) == 0
+    && *(_BYTE *)(a1 + 32) == 4
+    && *(_DWORD *)(a3 + 452)
+    && *(_BYTE *)(a3 + 460)
+    && (*(_DWORD *)(a3 + 512) & 0x4000) == 0
+    && (Irp == *(PIRP *)(a1 + 112) || *(_QWORD *)(*(_QWORD *)(a3 + 288) + 24LL)) )
+  {
+    if ( !*(_QWORD *)(a3 + 280) )
+    {
+      NtfsCreateInternalAttributeStream(a1, a3, 0, 0, (__int64)&qword_1400620E0, 0);
+      if ( !*(_DWORD *)(a3 + 208) && !*(_DWORD *)(*(_QWORD *)(a3 + 184) + 268LL) )
+      {
+        v68 = 0;
+        v69 = 0;
+        v40 = ExAllocateFromLookasideListEx(&NtfsCloseEntryLookasideList);
+        v41 = v40;
+        v63 = (__int64)v40;
+        if ( v40 )
+        {
+          memset(v40, 0, 0x58u);
+          v41[1] = v41;
+          *v41 = v41;
+          v41[3] = v41 + 2;
+          v41[2] = v41 + 2;
+          v41[4] = a3;
+          *((_BYTE *)v41 + 56) = 5;
+          NtfsIncrementCloseCounts((__int64)(v41 + 2), a3, 1, 0);
+          v43 = *(_QWORD **)(a1 + 120);
+          if ( v43 )
+          {
+            *((_QWORD *)&v68 + 1) = *v43;
+            v69 = v43[1];
+            v45 = (char *)&v68 + 8;
+          }
+          else
+          {
+            ActivityIdThread = (_QWORD *)IoGetActivityIdThread(v42);
+            if ( ActivityIdThread )
+            {
+              *((_QWORD *)&v68 + 1) = *ActivityIdThread;
+              v69 = ActivityIdThread[1];
+              v45 = (char *)&v68 + 8;
+            }
+            else
+            {
+              v45 = 0;
+            }
+          }
+          v46 = IoSetActivityIdThread(v45);
+          NtfsQueueClose(a1, v63, 1);
+          IoClearActivityIdThread(v46);
+        }
+      }
+    }
+    v20 = a4;
+    MemoryDescriptorList = NtfsLockFileRange(a1, a3, a4, a5);
+  }
+  else
+  {
+    v20 = a4;
+  }
+  if ( *(_BYTE *)(a1 + 32) == 3 && (*(_BYTE *)(a1 + 16) & 0x40) != 0 )
+    v21 = 1073741877;
+  else
+    v21 = 0;
+  v56 = v21;
+  Irp->IoStatus.Status = v21;
+  *(_QWORD *)v14 = v20;
+  v14[2] = a5;
+  *((_QWORD *)v14 + 2) = v20;
+  *((_QWORD *)v14 + 3) = v20 + a5;
+  while ( *((_QWORD *)v14 + 3) > *((_QWORD *)v14 + 2) )
+  {
+    v60 = NtfsPrepareBuffers(a1, Irp, a3);
+    v22 = v60 + *((_QWORD *)v14 + 2);
+    v62 = v22;
+    v23 = *((_QWORD *)v14 + 3);
+    v64 = v23;
+    if ( (Irp->Flags & 2) != 0 )
+    {
+      v24 = (_QWORD *)(v58[101] + 704LL * (HIDWORD(KeGetPcr()[1].LockArray) % NtfsNumberProcessors));
+      if ( *(_DWORD *)(a3 + 256) != 128 || (*(_DWORD *)(*(_QWORD *)(a3 + 184) + 4LL) & 0x100) != 0 )
+      {
+        if ( a3 != v58[8] )
+        {
+          if ( *(_BYTE *)(a1 + 32) == 4 )
+            v24[12] = v24[12];
+          else
+            v24[9] = v24[9];
+        }
+      }
+      else if ( *(_BYTE *)(a1 + 32) == 4 )
+      {
+        v24[6] = v24[6];
+      }
+      else
+      {
+        v24[3] = v24[3];
+      }
+    }
+    if ( v13 )
+      goto LABEL_36;
+    if ( v22 < v23 )
+    {
+      v25 = v57;
+      if ( !v57 )
+      {
+        AssociatedIrp = IoMakeAssociatedIrpEx(
+                          Irp,
+                          Irp->Tail.Overlay.CurrentStackLocation->DeviceObject,
+                          (unsigned __int8)(*(_BYTE *)(v58[28] + 76LL) + 1));
+        v37 = AssociatedIrp;
+        v57 = (IRP *)AssociatedIrp;
+        if ( !AssociatedIrp )
+        {
+          if ( NtfsStatusDebugFlags )
+            NtfsStatusTraceAndDebugInternal(a1, 0xC000009A, 0xC28F5u);
+          NtfsRaiseStatusInternal(a1, -1073741670, 0, 0, 796917);
+        }
+        v38 = *(_QWORD *)(*(_QWORD *)(a1 + 208) + 88LL);
+        v39 = *(_QWORD *)(AssociatedIrp + 184);
+        *(_QWORD *)(v39 - 16) = NtfsAssociatedIrpCompletionRoutine;
+        *(_QWORD *)(v39 - 8) = v38;
+        *(_BYTE *)(v39 - 69) = 0;
+        *(_BYTE *)(v39 - 69) = 64;
+        *(_BYTE *)(v39 - 69) = -64;
+        *(_BYTE *)(v39 - 69) = -32;
+        --*(_BYTE *)(v37 + 67);
+        *(_QWORD *)(v37 + 184) -= 72LL;
+        NtfsPreProcessIo(a1, (__int64)Irp, 1u);
+        v22 = v62;
+        v23 = v64;
+LABEL_36:
+        v25 = v57;
+      }
+    }
+    else
+    {
+      v25 = v57;
+      if ( v57 )
+      {
+        v27 = *(_QWORD *)(a1 + 208);
+        if ( (*(_BYTE *)(v27 + 48) & 3) != 0 || (*(_DWORD *)v27 & 0x10000) != 0 )
+          goto LABEL_36;
+        IoGetIoPriorityHint(Irp);
+        v28 = *(_QWORD *)(a1 + 208);
+        v67 = v28;
+        *(_QWORD *)(v28 + 48) |= 3uLL;
+        v29 = *(struct _ERESOURCE **)(v28 + 40);
+        if ( v29 )
+        {
+          ExSetResourceOwnerPointerEx(v29, *(PVOID *)(v28 + 48), 1u);
+          v28 = v67;
+        }
+        v22 = v62;
+        v23 = v64;
+        if ( (struct _KTHREAD *)qword_1400958C0 == KeGetCurrentThread() )
+        {
+          qword_1400958C0 = *(_QWORD *)(v28 + 48);
+        }
+        else if ( *(struct _KTHREAD **)(v58[689] + 8LL) == KeGetCurrentThread() )
+        {
+          *(_QWORD *)(v58[689] + 8LL) = *(_QWORD *)(v28 + 48);
+          v25 = v57;
+          goto LABEL_39;
+        }
+        v25 = v57;
+      }
+    }
+LABEL_39:
+    if ( v22 < v23 )
+    {
+      if ( !v13 )
+        goto LABEL_85;
+    }
+    else
+    {
+      if ( v25 )
+      {
+        v26 = 259;
+        goto LABEL_118;
+      }
+      v13 = 1;
+    }
+    if ( Irp->IoStatus.Status < 0 )
+      break;
+    if ( *((_BYTE *)v14 + 108) )
+    {
+      v33 = NtfsFinishBuffers(a1, v60, 0, (__int64)v14);
+      if ( v33 < 0 )
+        Irp->IoStatus.Status = v33;
+    }
+    Status = Irp->IoStatus.Status;
+    if ( Status < 0 || v62 >= v64 )
+      break;
+    if ( v55 )
+    {
+      Irp->IoStatus.Status = v65;
+      IoSetMasterIrpStatus(Irp, (unsigned int)Status);
+    }
+    else
+    {
+      v55 = 1;
+      v65 = Irp->IoStatus.Status;
+    }
+LABEL_85:
+    v34 = *((_QWORD *)v14 + 2) + v60;
+    *((_QWORD *)v14 + 2) = v34;
+    if ( v34 > *(_QWORD *)v14 )
+    {
+      v35 = v34 - *(_QWORD *)v14;
+      if ( v35 >= v14[2] )
+        v35 = v14[2];
+      v14[16] = v35;
+    }
+  }
+  v31 = Irp->IoStatus.Status;
+  if ( ((unsigned int)v31 <= 0x40000009 || v31 >= 1073741836)
+    && (*(_DWORD *)(a3 + 512) & 8) != 0
+    && *(_BYTE *)(a1 + 32) == 3
+    && !(unsigned __int8)NtfsVerifyAndRevertUsaBlock(a1, a3, (_DWORD)Irp, 0, 0, a5, *((_QWORD *)v14 + 2)) )
+  {
+    NtfsFixDataError(a1, a3, Irp, *((_QWORD *)v14 + 2), a5, v61, a6);
+  }
+  v32 = Irp->IoStatus.Status;
+  if ( NtfsStatusDebugFlags
+    && v32
+    && v32 != 294
+    && v32 - 298 > 1
+    && v32 < 0xFFFFFFED
+    && v32 != -1073741608
+    && v32 != -1073741802
+    && v32 != -1073741807
+    && v32 + 2147483643 > 1
+    && v32 != 259 )
+  {
+    NtfsStatusTraceAndDebugInternal(0, v32, 0xC2AD7u);
+  }
+  v26 = Irp->IoStatus.Status;
+LABEL_118:
+  if ( v57 )
+  {
+    if ( NtfsStatusDebugFlags && v56 && (unsigned int)(v56 - 298) > 1 && (unsigned int)(v56 + 2147483643) > 1 )
+      NtfsStatusTraceAndDebugInternal(0, v56, 0xC2B1Eu);
+    NtfsExtendedCompleteRequestInternal(0, v57, v56, 1u, v56 >= 0);
+    if ( a1 && *(IRP **)(a1 + 112) == v57 )
+      *(_QWORD *)(a1 + 112) = 0;
+  }
+  if ( MemoryDescriptorList )
+    NtfsFreeMdl(MemoryDescriptorList);
+  if ( !v54 )
+    NtfsReleaseDelayedAllocation(a1, 0, 0x7FFFFFFFFFFFFFFFLL);
+  if ( v26 != 259 )
+  {
+    NtfsDeallocateCompressionBuffer(a1, (__int64)Irp, (__int64)v14, 0);
+    NtfsFreeToPerProcessorLookasideList(NtfsCompressCtxLookasideList, (__int64)v14);
+  }
+  if ( v13 && v26 >= 0 )
+    Irp->IoStatus.Information = a5;
+  if ( NtfsStatusDebugFlags
+    && v26
+    && v26 != 294
+    && (unsigned int)(v26 - 298) > 1
+    && (unsigned int)v26 < 0xFFFFFFED
+    && v26 != -1073741608
+    && v26 != -1073741802
+    && v26 != -1073741807
+    && (unsigned int)(v26 + 2147483643) > 1
+    && v26 != 259 )
+  {
+    NtfsStatusTraceAndDebugInternal(0, v26, 0xC2BA3u);
+  }
+  return (unsigned int)v26;
+}
+
+```
+
+## disassembly
+
+```asm
+0x140175a80  push    rbx
+0x140175a82  push    rsi
+0x140175a83  push    rdi
+0x140175a84  push    r12
+0x140175a86  push    r13
+0x140175a88  push    r14
+0x140175a8a  push    r15
+0x140175a8c  sub     rsp, 190h
+0x140175a93  mov     rax, cs:__security_cookie
+0x140175a9a  xor     rax, rsp
+0x140175a9d  mov     [rsp+1C8h+var_48], rax
+0x140175aa5  mov     rbx, r9
+0x140175aa8  mov     [rsp+1C8h+var_160], rbx
+0x140175aad  mov     r14, r8
+0x140175ab0  mov     r15, rdx
+0x140175ab3  mov     rsi, rcx
+0x140175ab6  mov     [rsp+1C8h+var_128], rcx
+0x140175abe  mov     [rsp+1C8h+Irp], rdx
+0x140175ac6  mov     [rsp+1C8h+var_F0], r8
+0x140175ace  mov     ecx, [rsp+1C8h+arg_20]
+0x140175ad5  mov     [rsp+1C8h+var_170], ecx
+0x140175ad9  xor     r13d, r13d
+0x140175adc  mov     [rsp+1C8h+var_184], r13d
+0x140175ae1  mov     rax, [r8+0B8h]
+0x140175ae8  mov     rdi, [rax+60h]
+0x140175aec  mov     [rsp+1C8h+var_168], rdi
+0x140175af1  mov     [rsp+1C8h+var_E8], rdi
+0x140175af9  mov     byte ptr [rsp+1C8h+var_158], r13b
+0x140175afe  mov     rax, [rsi+0C0h]
+0x140175b05  test    rax, rax
+0x140175b08  jnz     loc_140176E35
+0x140175b0e  mov     [rsp+1C8h+var_187], r13b
+0x140175b13  movzx   r12d, byte ptr [rsi+0Ch]
+0x140175b18  and     r12b, 1
+0x140175b1c  mov     [rsp+1C8h+var_180], r12b
+0x140175b21  cmp     cs:NtfsDiskAccountingEnabled, r13b
+0x140175b28  jz      short loc_140175B39
+0x140175b2a  mov     r8d, ecx
+0x140175b2d  mov     rcx, rsi
+0x140175b30  call    NtfsUpdateReadWriteDiskCounters
+0x140175b35  mov     ecx, [rsp+1C8h+var_170]
+0x140175b39  cmp     byte ptr [rsi+20h], 4
+0x140175b3d  jz      loc_140176AFB
+0x140175b43  mov     edi, [rsp+1C8h+arg_28]
+0x140175b4a  and     edi, 6
+0x140175b4d  jnz     short loc_140175B6C
+0x140175b4f  cmp     dword ptr [r14+100h], 80h
+0x140175b5a  jnz     short loc_140175B6C
+0x140175b5c  bt      word ptr [r14+1CCh], 0Eh
+0x140175b66  jb      loc_140176D22
+0x140175b6c  mov     [rsp+1C8h+var_154], r13d
+0x140175b71  mov     [rsp+1C8h+MemoryDescriptorList], r13
+0x140175b79  mov     [rsp+1C8h+var_178], r13
+0x140175b7e  mov     [rsp+1C8h+var_188], r13b
+0x140175b83  mov     [rsp+1C8h+var_17F], r13b
+0x140175b88  mov     eax, 0C0000001h
+0x140175b8d  mov     [rsp+1C8h+var_130], eax
+0x140175b94  mov     [rsp+1C8h+var_17C], eax
+0x140175b98  mov     [rsp+1C8h+var_17E], r13b
+0x140175b9d  mov     eax, [rsp+1C8h+var_170]
+0x140175ba1  mov     [rsp+1C8h+var_118], eax
+0x140175ba8  mov     rcx, cs:NtfsCompressCtxLookasideList
+0x140175baf  call    NtfsAllocateFromPerProcessorLookasideList
+0x140175bb4  mov     rbx, rax
+0x140175bb7  mov     [rsp+1C8h+var_120], rax
+0x140175bbf  test    r12b, r12b
+0x140175bc2  jnz     short loc_140175BCF
+0x140175bc4  mov     rax, [rsi+0D0h]
+0x140175bcb  mov     [rax+40h], rbx
+0x140175bcf  xor     edx, edx; Val
+0x140175bd1  mov     r8d, 0B8h; Size
+0x140175bd7  mov     rcx, rbx; void *
+0x140175bda  call    memset
+0x140175bdf  xor     edx, edx; Val
+0x140175be1  mov     r8d, 80h; Size
+0x140175be7  lea     rcx, [rsp+1C8h+var_C8]; void *
+0x140175bef  call    memset
+0x140175bf4  lea     rax, [rsp+1C8h+var_C8]
+0x140175bfc  mov     [rbx+50h], rax
+0x140175c00  mov     dword ptr [rbx+58h], 8
+0x140175c07  cmp     [r14+1C0h], r13d
+0x140175c0e  jnz     loc_140176C3E
+0x140175c14  mov     ecx, 80FFh
+0x140175c19  test    [r14+1CCh], cx
+0x140175c21  jnz     loc_140176C3E
+0x140175c27  xor     al, al
+0x140175c29  mov     [rbx+68h], al
+0x140175c2c  cmp     byte ptr [rsi+20h], 4
+0x140175c30  jz      loc_140176B5D
+0x140175c36  xor     al, al
+0x140175c38  mov     [rbx+69h], al
+0x140175c3b  cmp     byte ptr [rsi+20h], 4
+0x140175c3f  jz      loc_140176AAE
+0x140175c45  xor     al, al
+0x140175c47  mov     [rbx+6Ah], al
+0x140175c4a  movzx   eax, byte ptr [rsi+20h]
+0x140175c4e  cmp     al, 4
+0x140175c50  jz      loc_140176A9A
+0x140175c56  cmp     al, 3
+0x140175c58  jnz     short loc_140175C74
+0x140175c5a  cmp     [r14+1CCh], r13b
+0x140175c61  jnz     loc_140176CC4
+0x140175c67  cmp     [r14+1F8h], r13
+0x140175c6e  jnz     loc_140176CF7
+0x140175c74  xor     al, al
+0x140175c76  mov     [rbx+6Ch], al
+0x140175c79  mov     [r15+18h], r13d
+0x140175c7d  mov     r8d, [rsp+1C8h+arg_28]
+0x140175c85  test    r8b, 4
+0x140175c89  jnz     short loc_140175C95
+0x140175c8b  cmp     byte ptr [rsi+20h], 4
+0x140175c8f  jz      loc_140176771
+0x140175c95  mov     rdi, [rsp+1C8h+var_160]
+0x140175c9a  cmp     byte ptr [rsi+20h], 3
+0x140175c9e  jz      loc_140176656
+0x140175ca4  mov     eax, r13d
+0x140175ca7  mov     [rsp+1C8h+var_17C], eax
+0x140175cab  mov     [r15+30h], eax
+0x140175caf  mov     [rbx], rdi
+0x140175cb2  mov     eax, [rsp+1C8h+var_170]
+0x140175cb6  mov     [rbx+8], eax
+0x140175cb9  mov     [rbx+10h], rdi
+0x140175cbd  add     rax, rdi
+0x140175cc0  mov     [rbx+18h], rax
+0x140175cc4  mov     edi, [rsp+1C8h+var_17C]
+0x140175cc8  mov     r10, 100000000h
+0x140175cd2  mov     r9, [rbx+10h]
+0x140175cd6  mov     rdx, [rbx+18h]
+0x140175cda  cmp     rdx, r9
+0x140175cdd  jle     loc_140176050
+0x140175ce3  mov     rax, [rsp+1C8h+var_168]
+0x140175ce8  mov     eax, [rax+12C8h]
+0x140175cee  lea     ecx, [rax+rax]
+0x140175cf1  mov     rax, r10
+0x140175cf4  sub     rax, rcx
+0x140175cf7  sub     rdx, r9
+0x140175cfa  cmp     rdx, rax
+0x140175cfd  cmovg   rdx, rax
+0x140175d01  mov     [rsp+1C8h+var_17F], 0
+0x140175d06  mov     [rsp+1C8h+var_190], rbx
+0x140175d0b  lea     rax, [rsp+1C8h+var_184]
+0x140175d10  mov     [rsp+1C8h+var_198], rax
+0x140175d15  mov     dword ptr [rsp+1C8h+var_1A0], r8d
+0x140175d1a  mov     dword ptr [rsp+1C8h+var_1A8], edx
+0x140175d1e  mov     r8, r14
+0x140175d21  mov     rdx, r15
+0x140175d24  mov     rcx, rsi
+0x140175d27  call    NtfsPrepareBuffers
+0x140175d2c  mov     dword ptr [rsp+1C8h+var_160], eax
+0x140175d30  mov     [rsp+1C8h+var_188], 1
+0x140175d35  mov     eax, eax
+0x140175d37  mov     [rsp+1C8h+var_F8], rax
+0x140175d3f  mov     r9, [rbx+10h]
+0x140175d43  add     r9, rax
+0x140175d46  mov     [rsp+1C8h+var_150], r9
+0x140175d4b  mov     r10, [rbx+18h]
+0x140175d4f  mov     [rsp+1C8h+var_140], r10
+0x140175d57  mov     ecx, [r15+10h]
+0x140175d5b  mov     r11, [rsp+1C8h+var_168]
+0x140175d60  test    cl, 2
+0x140175d63  jz      short loc_140175DBC
+0x140175d65  mov     eax, gs:1A4h
+0x140175d6d  xor     edx, edx
+0x140175d6f  div     cs:NtfsNumberProcessors
+0x140175d75  mov     ecx, edx
+0x140175d77  imul    r8, rcx, 2C0h
+0x140175d7e  add     r8, [r11+328h]
+0x140175d85  cmp     dword ptr [r14+100h], 80h
+0x140175d90  jnz     loc_140175EE4
+0x140175d96  mov     rax, [r14+0B8h]
+0x140175d9d  test    dword ptr [rax+4], 100h
+0x140175da4  jnz     loc_140175EE4
+0x140175daa  mov     eax, [rsp+1C8h+var_184]
+0x140175dae  cmp     byte ptr [rsi+20h], 4
+0x140175db2  jz      loc_140175FDC
+0x140175db8  add     [r8+18h], rax
+0x140175dbc  test    r12b, r12b
+0x140175dbf  jz      loc_140175F05
+0x140175dc5  mov     rax, [rsp+1C8h+var_178]
+0x140175dca  mov     r8, [rsp+1C8h+var_168]
+0x140175dcf  cmp     [rsp+1C8h+var_184], 0
+0x140175dd4  jz      loc_140175EC9
+0x140175dda  mov     rax, [rsi+0D0h]
+0x140175de1  test    rax, rax
+0x140175de4  jz      short loc_140175DF2
+0x140175de6  test    dword ptr [rax], 1000h
+0x140175dec  jnz     loc_14017629D
+0x140175df2  mov     rdx, [r8+0E0h]
+0x140175df9  mov     rax, [rbx+50h]
+0x140175dfd  mov     [rsp+1C8h+var_1A0], rax
+0x140175e02  mov     eax, [rsp+1C8h+var_184]
+0x140175e06  mov     dword ptr [rsp+1C8h+var_1A8], eax
+0x140175e0a  mov     r9, r15
+0x140175e0d  mov     r8, r14
+0x140175e10  mov     rcx, rsi
+0x140175e13  call    NtfsMultipleAsync
+0x140175e18  mov     [rsp+1C8h+var_17F], 1
+0x140175e1d  cmp     cs:NtfsDiskAccountingEnabled, 0
+0x140175e24  jz      short loc_140175E46
+0x140175e26  mov     edx, r13d
+0x140175e29  cmp     byte ptr [rsi+20h], 4
+0x140175e2d  cmovz   edx, dword ptr [rsp+1C8h+var_160]
+0x140175e32  mov     ecx, dword ptr [rsp+1C8h+var_160]
+0x140175e36  cmovz   ecx, r13d
+0x140175e3a  call    cs:__imp_FsRtlUpdateDiskCounters
+0x140175e41  nop     dword ptr [rax+rax+00h]
+0x140175e46  test    r12b, r12b
+0x140175e49  jz      short loc_140175EA5
+0x140175e4b  mov     r8, r14
+0x140175e4e  mov     rdx, r15
+0x140175e51  mov     rcx, rsi
+0x140175e54  call    NtfsWaitOnIo
+0x140175e59  mov     rax, [rsi+0D0h]
+0x140175e60  mov     ecx, [rax]
+0x140175e62  and     ecx, 0C000h
+0x140175e68  cmp     ecx, 0C000h
+0x140175e6e  jz      loc_14017636E
+0x140175e74  mov     ecx, [r15+30h]
+0x140175e78  lea     eax, [rcx+3FFFFF5Eh]
+0x140175e7e  cmp     eax, 1
+0x140175e81  ja      loc_14017646E
+0x140175e87  mov     rcx, [r15+98h]; Thread
+0x140175e8e  test    rcx, rcx
+0x140175e91  jnz     loc_1401762C0
+0x140175e97  mov     rcx, gs:188h
+0x140175ea0  jmp     loc_1401762DC
+0x140175ea5  mov     rax, [rsp+1C8h+var_140]
+0x140175ead  cmp     [rsp+1C8h+var_150], rax
+0x140175eb2  jl      loc_14017601B
+0x140175eb8  movzx   eax, cs:NtfsStatusDebugFlags
+0x140175ebf  mov     edi, 103h
+0x140175ec4  jmp     loc_14017649A
+0x140175ec9  cmp     r9, r10
+0x140175ecc  jl      loc_14017601B
+0x140175ed2  test    rax, rax
+0x140175ed5  jnz     short loc_140175EB8
+0x140175ed7  mov     r12b, 1
+0x140175eda  mov     [rsp+1C8h+var_180], r12b
+0x140175edf  jmp     loc_140176024
+0x140175ee4  cmp     r14, [r11+40h]
+0x140175ee8  jz      loc_140175DBC
+0x140175eee  mov     eax, [rsp+1C8h+var_184]
+0x140175ef2  cmp     byte ptr [rsi+20h], 4
+0x140175ef6  jnz     loc_140175FE5
+0x140175efc  add     [r8+60h], rax
+0x140175f00  jmp     loc_140175DBC
+0x140175f05  cmp     r9, r10
+0x140175f08  jl      loc_1401761E8
+0x140175f0e  cmp     [rsp+1C8h+var_184], 0
+0x140175f13  jz      loc_1401762AD
+0x140175f19  mov     rcx, [rsi+0D0h]
+0x140175f20  test    byte ptr [rcx+30h], 3
+0x140175f24  jnz     loc_140175DC5
+0x140175f2a  test    dword ptr [rcx], 10000h
+0x140175f30  jnz     loc_140175DC5
+0x140175f36  mov     rcx, r15; Irp
+0x140175f39  call    cs:__imp_IoGetIoPriorityHint
+0x140175f40  nop     dword ptr [rax+rax+00h]
+0x140175f45  mov     rdx, [rsi+0D0h]
+0x140175f4c  mov     [rsp+1C8h+var_100], rdx
+0x140175f54  or      qword ptr [rdx+30h], 3
+0x140175f59  mov     rax, [rdx+30h]
+0x140175f5d  mov     rcx, [rdx+28h]; Resource
+0x140175f61  test    rcx, rcx
+0x140175f64  jz      short loc_140175F83
+0x140175f66  mov     r8d, 1; Flags
+0x140175f6c  mov     rdx, rax; OwnerPointer
+0x140175f6f  call    cs:__imp_ExSetResourceOwnerPointerEx
+0x140175f76  nop     dword ptr [rax+rax+00h]
+0x140175f7b  mov     rdx, [rsp+1C8h+var_100]
+0x140175f83  mov     rcx, cs:qword_1400958C0
+0x140175f8a  mov     rax, gs:188h
+0x140175f93  mov     r8, [rsp+1C8h+var_168]
+0x140175f98  mov     r9, [rsp+1C8h+var_150]
+0x140175f9d  mov     r10, [rsp+1C8h+var_140]
+0x140175fa5  cmp     rcx, rax
+0x140175fa8  jz      short loc_140175FEE
+0x140175faa  mov     rax, [r8+1588h]
+0x140175fb1  mov     rcx, [rax+8]
+0x140175fb5  mov     rax, gs:188h
+0x140175fbe  cmp     rcx, rax
+0x140175fc1  jnz     short loc_140175FF9
+0x140175fc3  mov     rcx, [r8+1588h]
+0x140175fca  mov     rax, [rdx+30h]
+0x140175fce  mov     [rcx+8], rax
+0x140175fd2  mov     rax, [rsp+1C8h+var_178]
+0x140175fd7  jmp     loc_140175DCF
+0x140175fdc  add     [r8+30h], rax
+0x140175fe0  jmp     loc_140175DBC
+0x140175fe5  add     [r8+48h], rax
+0x140175fe9  jmp     loc_140175DBC
+0x140175fee  mov     rax, [rdx+30h]
+0x140175ff2  mov     cs:qword_1400958C0, rax
+0x140175ff9  mov     rax, [rsp+1C8h+var_178]
+0x140175ffe  jmp     loc_140175DCF
+0x140176003  cmp     ecx, 0FFFFFFFFh
+0x140176006  jle     loc_14017625B
+0x14017600c  lea     eax, [rcx-4000000Ah]
+0x140176012  cmp     eax, 1
+0x140176015  jbe     loc_14017625B
+  ... truncated ...
+```

@@ -1,0 +1,3762 @@
+[
+  {
+    "callee_count": 14,
+    "caller_count": 3,
+    "demangled": "MdaResolveSymbolicLink",
+    "ea": "0x140035384",
+    "function_file": "functions/140035384_MdaResolveSymbolicLink.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlAppendUnicodeToString",
+      "ntoskrnl!RtlCompareUnicodeString",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlFindUnicodePrefix",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlPrefixUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "MdaResolveSymbolicLink",
+    "prototype": "__int64 __fastcall(__int64, struct _MRX_FCB_ *, __int64, BOOLEAN, UNICODE_STRING *String2, unsigned __int16 *, __int64 *, __int64, _BYTE *)",
+    "rank_score": 9662,
+    "size": 4040,
+    "tags": [
+      "reparse_path",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 43,
+    "caller_count": 2,
+    "demangled": "NfsLookup",
+    "ea": "0x140004530",
+    "function_file": "functions/140004530_NfsLookup.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!RtlCompareUnicodeString",
+      "rpcxdr!OncRpcDestroy"
+    ],
+    "matched_strings": [],
+    "name": "NfsLookup",
+    "prototype": "__int64 __fastcall(__int64, __int64, const UNICODE_STRING *, __int64, char, struct _UNICODE_STRING **)",
+    "rank_score": 7272,
+    "size": 5966,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 23,
+    "caller_count": 1,
+    "demangled": "MdaSetRenameInformation",
+    "ea": "0x14001c694",
+    "function_file": "functions/14001c694_MdaSetRenameInformation.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!FsRtlAreNamesEqual",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "MdaSetRenameInformation",
+    "prototype": "__int64 __fastcall(_QWORD *, __int64, __int64, int, __int64, char, __int64)",
+    "rank_score": 6659,
+    "size": 3996,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 28,
+    "caller_count": 0,
+    "demangled": "MdaCreate",
+    "ea": "0x1400316d0",
+    "function_file": "functions/1400316d0_MdaCreate.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!FsRtlDoesNameContainWildCards",
+      "ntoskrnl!IoGetRequestorProcessId",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "rdbss!RxCreateNetFobx",
+      "rdbss!RxFinishFcbInitialization"
+    ],
+    "matched_strings": [
+      "NfsSymlinkTargetName",
+      "NfsActOnLink"
+    ],
+    "name": "MdaCreate",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 6350,
+    "size": 8747,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 21,
+    "caller_count": 1,
+    "demangled": "InitNfsRedir",
+    "ea": "0x14002d428",
+    "function_file": "functions/14002d428_InitNfsRedir.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExDeleteResourceLite",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExInitializeResourceLite",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeInitializeMutex",
+      "ntoskrnl!LsaLookupAuthenticationPackage",
+      "ntoskrnl!LsaRegisterLogonProcess",
+      "ntoskrnl!NtAdjustPrivilegesToken",
+      "ntoskrnl!NtClose",
+      "ntoskrnl!NtOpenProcessToken",
+      "ntoskrnl!PsCreateSystemThread",
+      "ntoskrnl!RtlConvertSidToUnicodeString",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!RtlInitAnsiString",
+      "ntoskrnl!RtlInitializeSid",
+      "ntoskrnl!RtlLengthRequiredSid",
+      "ntoskrnl!RtlSubAuthoritySid",
+      "rpcxdr!OncRpcEndpointClose",
+      "rpcxdr!OncRpcEndpointOpen"
+    ],
+    "matched_strings": [],
+    "name": "InitNfsRedir",
+    "prototype": "__int64 __fastcall(char *StartContext)",
+    "rank_score": 5880,
+    "size": 2427,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 1,
+    "demangled": "MdaSetLinkInformation",
+    "ea": "0x14001bbbc",
+    "function_file": "functions/14001bbbc_MdaSetLinkInformation.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!FsRtlAreNamesEqual",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "MdaSetLinkInformation",
+    "prototype": "__int64 __fastcall(_QWORD *, __int64, __int64, __int64, int, __int64)",
+    "rank_score": 5037,
+    "size": 2767,
+    "tags": []
+  },
+  {
+    "callee_count": 19,
+    "caller_count": 1,
+    "demangled": "MdaLocateDirent",
+    "ea": "0x1400070a0",
+    "function_file": "functions/1400070a0_MdaLocateDirent.md",
+    "matched_imports": [
+      "ntoskrnl!FsRtlIsNameInExpression",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!RtlAnsiStringToUnicodeString",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlCustomCPToUnicodeN"
+    ],
+    "matched_strings": [],
+    "name": "MdaLocateDirent",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64 *, __int64 *, char, __int64 *, __int64, PUNICODE_STRING DestinationString, PUNICODE_STRING Name, _BYTE *)",
+    "rank_score": 3645,
+    "size": 4246,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 17,
+    "demangled": "NfsRdrBuildCall",
+    "ea": "0x140001f10",
+    "function_file": "functions/140001f10_NfsRdrBuildCall.md",
+    "matched_imports": [
+      "ntoskrnl!KeDelayExecutionThread",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "rpcxdr!OncRpcBuildCall",
+      "rpcxdr!OncRpcDereferenceOutboundGssCtx",
+      "rpcxdr!OncRpcReferenceOutboundGssCtx"
+    ],
+    "matched_strings": [],
+    "name": "NfsRdrBuildCall",
+    "prototype": "__int64 __fastcall(__int64, unsigned int, unsigned int, int, int, int, __int64)",
+    "rank_score": 3628,
+    "size": 933,
+    "tags": []
+  },
+  {
+    "callee_count": 31,
+    "caller_count": 0,
+    "demangled": "MdaCreateVNetRoot",
+    "ea": "0x140025be0",
+    "function_file": "functions/140025be0_MdaCreateVNetRoot.md",
+    "matched_imports": [
+      "ksecdd!LsaGetLogonSessionData",
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!KeInitializeMutex",
+      "ntoskrnl!LsaFreeReturnBuffer",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!ZwClose",
+      "rdbss!RxLogEventDirect"
+    ],
+    "matched_strings": [
+      "MountOptions",
+      "SOFTWARE\\Microsoft\\ServicesForNFS",
+      "SOFTWARE\\Microsoft\\ServicesForNFS",
+      "MdaCreateVNetRoot",
+      "MountSymlinkTargetShare"
+    ],
+    "name": "MdaCreateVNetRoot",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 3490,
+    "size": 5725,
+    "tags": [
+      "reparse_path",
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 3,
+    "demangled": "NfsSendWaitReplyWaitInternal",
+    "ea": "0x140001760",
+    "function_file": "functions/140001760_NfsSendWaitReplyWaitInternal.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExAcquireResourceSharedLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeDelayExecutionThread",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "rpcxdr!OncRpcSendCallWaitReply"
+    ],
+    "matched_strings": [],
+    "name": "NfsSendWaitReplyWaitInternal",
+    "prototype": "__int64 __fastcall(__int64, union _LARGE_INTEGER, __int64, unsigned int *, __int64, __int64, _QWORD *, char, int)",
+    "rank_score": 3428,
+    "size": 1947,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "MdaUpdateMountTree",
+    "ea": "0x140034a90",
+    "function_file": "functions/140034a90_MdaUpdateMountTree.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!RtlAnsiStringToUnicodeString",
+      "ntoskrnl!RtlInitAnsiString",
+      "ntoskrnl!RtlInitializeUnicodePrefix",
+      "ntoskrnl!RtlInsertUnicodePrefix",
+      "ntoskrnl!RtlRemoveUnicodePrefix",
+      "rpcxdr!OncRpcDestroy"
+    ],
+    "matched_strings": [],
+    "name": "MdaUpdateMountTree",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 3423,
+    "size": 932,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 24,
+    "caller_count": 10,
+    "demangled": "NfsGetAttributes",
+    "ea": "0x1400029d0",
+    "function_file": "functions/1400029d0_NfsGetAttributes.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "rpcxdr!OncRpcDestroy"
+    ],
+    "matched_strings": [],
+    "name": "NfsGetAttributes",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64)",
+    "rank_score": 3263,
+    "size": 2464,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "MdaFindTargetAttributes",
+    "ea": "0x140018a7c",
+    "function_file": "functions/140018a7c_MdaFindTargetAttributes.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlCompareUnicodeString",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!RtlPrefixUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "MdaFindTargetAttributes",
+    "prototype": "__int64 __fastcall(__int64, struct _MRX_FCB_ *, __int64, char, __int64, _BYTE *, _BYTE *)",
+    "rank_score": 3241,
+    "size": 1474,
+    "tags": [
+      "reparse_path",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "NfsInitialiseServiceSecDesc",
+    "ea": "0x140039b90",
+    "function_file": "functions/140039b90_NfsInitialiseServiceSecDesc.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlAddAccessAllowedAce",
+      "ntoskrnl!RtlCreateAcl",
+      "ntoskrnl!RtlCreateSecurityDescriptor",
+      "ntoskrnl!RtlInitializeSid",
+      "ntoskrnl!RtlLengthRequiredSid",
+      "ntoskrnl!RtlSetDaclSecurityDescriptor",
+      "ntoskrnl!RtlSubAuthoritySid"
+    ],
+    "matched_strings": [],
+    "name": "NfsInitialiseServiceSecDesc",
+    "prototype": "__int64 __fastcall(struct _ACL **, void *)",
+    "rank_score": 3237,
+    "size": 544,
+    "tags": [
+      "authz_impersonation",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 17,
+    "caller_count": 0,
+    "demangled": "MdaCommonCreateSrvCall",
+    "ea": "0x140009f60",
+    "function_file": "functions/140009f60_MdaCommonCreateSrvCall.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExInitializeResourceLite",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!RtlInitializeUnicodePrefix"
+    ],
+    "matched_strings": [],
+    "name": "MdaCommonCreateSrvCall",
+    "prototype": "void __fastcall(__int64 *Context)",
+    "rank_score": 3052,
+    "size": 3644,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 8,
+    "demangled": "HacInsertEntry",
+    "ea": "0x140003bd0",
+    "function_file": "functions/140003bd0_HacInsertEntry.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!RtlCompareUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "HacInsertEntry",
+    "prototype": "LONG __fastcall(__int64, __int64)",
+    "rank_score": 3050,
+    "size": 2386,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "NfsFakeReadDirectoryEntry",
+    "ea": "0x1400196a8",
+    "function_file": "functions/1400196a8_NfsFakeReadDirectoryEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!RtlEqualUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "NfsFakeReadDirectoryEntry",
+    "prototype": "__int64 __fastcall(__int64, __int64, void **, char, _QWORD *, _QWORD *, _DWORD *, _QWORD *, _QWORD *)",
+    "rank_score": 2824,
+    "size": 1567,
+    "tags": []
+  },
+  {
+    "callee_count": 24,
+    "caller_count": 2,
+    "demangled": "NfsRename",
+    "ea": "0x14000e940",
+    "function_file": "functions/14000e940_NfsRename.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeReleaseMutex",
+      "rpcxdr!OncRpcDestroy"
+    ],
+    "matched_strings": [],
+    "name": "NfsRename",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64, __int64, __int64)",
+    "rank_score": 2654,
+    "size": 2350,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 26,
+    "caller_count": 1,
+    "demangled": "NfsLink",
+    "ea": "0x14000f274",
+    "function_file": "functions/14000f274_NfsLink.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeReleaseMutex",
+      "rpcxdr!OncRpcDestroy"
+    ],
+    "matched_strings": [],
+    "name": "NfsLink",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64, __int64)",
+    "rank_score": 2651,
+    "size": 2044,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 5,
+    "demangled": "MdaParsePathFast",
+    "ea": "0x1400022c0",
+    "function_file": "functions/1400022c0_MdaParsePathFast.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlCompareUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "MdaParsePathFast",
+    "prototype": "__int64 __fastcall(__int64, struct _MRX_FCB_ *, UNICODE_STRING *, char, __int64 *, PUNICODE_STRING Destination, _BYTE *, __int64 *)",
+    "rank_score": 2647,
+    "size": 1791,
+    "tags": [
+      "reparse_path",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 18,
+    "caller_count": 3,
+    "demangled": "MapGetUnixCredsFromNTUserName",
+    "ea": "0x140020fa8",
+    "function_file": "functions/140020fa8_MapGetUnixCredsFromNTUserName.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExDeleteResourceLite",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlFreeAnsiString",
+      "ntoskrnl!RtlInitAnsiString",
+      "ntoskrnl!RtlUnicodeStringToAnsiString",
+      "rpcxdr!OncRpcBuildCall",
+      "rpcxdr!OncRpcDestroy"
+    ],
+    "matched_strings": [],
+    "name": "MapGetUnixCredsFromNTUserName",
+    "prototype": "__int64 __fastcall(__int64, __int64, const UNICODE_STRING *, unsigned int *)",
+    "rank_score": 2641,
+    "size": 2617,
+    "tags": []
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 2,
+    "demangled": "MntUnmount",
+    "ea": "0x140024720",
+    "function_file": "functions/140024720_MntUnmount.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceSharedLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!RtlFreeAnsiString",
+      "ntoskrnl!RtlUnicodeStringToAnsiString",
+      "rpcxdr!OncRpcBuildCall",
+      "rpcxdr!OncRpcDestroy",
+      "rpcxdr!OncRpcSendReplyAndDestroy"
+    ],
+    "matched_strings": [],
+    "name": "MntUnmount",
+    "prototype": "void __fastcall(__int64, const UNICODE_STRING *)",
+    "rank_score": 2625,
+    "size": 1338,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "MdaGetUserInfo",
+    "ea": "0x14003677c",
+    "function_file": "functions/14003677c_MdaGetUserInfo.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlAppendUnicodeToString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey"
+    ],
+    "matched_strings": [
+      "MountType",
+      "DeleteSymlinks",
+      "DisplayAllLinks",
+      "\\Registry\\User\\",
+      "Access",
+      "NFSReaddir",
+      "SymLinks",
+      "EUCMount",
+      "Mount",
+      "ReadBuffer",
+      "WriteBuffer",
+      "FileAttributeCache",
+      "Cache",
+      "RemoteWriteCache"
+    ],
+    "name": "MdaGetUserInfo",
+    "prototype": "__int64 __fastcall(void *, __int64, __int64, const UNICODE_STRING *, _DWORD *, __int64)",
+    "rank_score": 2624,
+    "size": 1965,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 17,
+    "caller_count": 0,
+    "demangled": "MdaCloseSrvOpen",
+    "ea": "0x140030ef0",
+    "function_file": "functions/140030ef0_MdaCloseSrvOpen.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "MdaCloseSrvOpen",
+    "prototype": "__int64 __fastcall(_QWORD *)",
+    "rank_score": 2462,
+    "size": 1990,
+    "tags": [
+      "authz_impersonation",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 17,
+    "caller_count": 1,
+    "demangled": "MdaCreateNetRoot",
+    "ea": "0x140025484",
+    "function_file": "functions/140025484_MdaCreateNetRoot.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlFindUnicodePrefix"
+    ],
+    "matched_strings": [],
+    "name": "MdaCreateNetRoot",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64)",
+    "rank_score": 2452,
+    "size": 1878,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "NfsReadUserRegistry",
+    "ea": "0x14000b680",
+    "function_file": "functions/14000b680_NfsReadUserRegistry.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [],
+    "name": "NfsReadUserRegistry",
+    "prototype": "__int64 __fastcall(PCUNICODE_STRING SourceString, PCWSTR, PCWSTR, ULONG, void *)",
+    "rank_score": 2449,
+    "size": 622,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 0,
+    "demangled": "MdaQueryDirectory",
+    "ea": "0x140005de0",
+    "function_file": "functions/140005de0_MdaQueryDirectory.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlUpcaseUnicodeString",
+      "rpcxdr!OncRpcDestroy"
+    ],
+    "matched_strings": [],
+    "name": "MdaQueryDirectory",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 2441,
+    "size": 4779,
+    "tags": []
+  },
+  {
+    "callee_count": 18,
+    "caller_count": 5,
+    "demangled": "MntMount",
+    "ea": "0x140023dd0",
+    "function_file": "functions/140023dd0_MntMount.md",
+    "matched_imports": [
+      "ntoskrnl!RtlFreeAnsiString",
+      "ntoskrnl!RtlUnicodeStringToAnsiString",
+      "rpcxdr!OncRpcBuildCall",
+      "rpcxdr!OncRpcDestroy"
+    ],
+    "matched_strings": [],
+    "name": "MntMount",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64, PCUNICODE_STRING SourceString, unsigned int *)",
+    "rank_score": 2441,
+    "size": 2378,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "MdaAreFcbsOnSameRemoteFilesystem",
+    "ea": "0x140025040",
+    "function_file": "functions/140025040_MdaAreFcbsOnSameRemoteFilesystem.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!RtlCompareUnicodeString",
+      "ntoskrnl!RtlFindUnicodePrefix"
+    ],
+    "matched_strings": [],
+    "name": "MdaAreFcbsOnSameRemoteFilesystem",
+    "prototype": "char __fastcall(__int64, __int64)",
+    "rank_score": 2425,
+    "size": 1084,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "NuiUpdateDefault",
+    "ea": "0x140016634",
+    "function_file": "functions/140016634_NuiUpdateDefault.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "NuiUpdateDefault",
+    "prototype": "__int64 __fastcall(_DWORD *, const void **, const void **, const void **, int, char, _OWORD *, _OWORD *)",
+    "rank_score": 2423,
+    "size": 1131,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 0,
+    "demangled": "MdaExtractNetRootName",
+    "ea": "0x1400273f0",
+    "function_file": "functions/1400273f0_MdaExtractNetRootName.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlFindUnicodePrefix",
+      "ntoskrnl!SeCaptureSubjectContext",
+      "ntoskrnl!SeQueryAuthenticationIdToken",
+      "ntoskrnl!SeReleaseSubjectContext"
+    ],
+    "matched_strings": [],
+    "name": "MdaExtractNetRootName",
+    "prototype": "void __fastcall(__int64, _QWORD *, UNICODE_STRING *, _OWORD *)",
+    "rank_score": 2248,
+    "size": 1782,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 5,
+    "demangled": "PmapQueryAndProbe",
+    "ea": "0x14000adb0",
+    "function_file": "functions/14000adb0_PmapQueryAndProbe.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExDeleteResourceLite",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExInitializeResourceLite",
+      "rpcxdr!OncRpcBuildCall",
+      "rpcxdr!OncRpcDestroy"
+    ],
+    "matched_strings": [],
+    "name": "PmapQueryAndProbe",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int16 *, unsigned int, unsigned int *, __int64, _QWORD *, _QWORD *)",
+    "rank_score": 2248,
+    "size": 2237,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 23,
+    "caller_count": 2,
+    "demangled": "NfsRemoveOrRmdir",
+    "ea": "0x1400124ec",
+    "function_file": "functions/1400124ec_NfsRemoveOrRmdir.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeReleaseMutex",
+      "rpcxdr!OncRpcDestroy"
+    ],
+    "matched_strings": [],
+    "name": "NfsRemoveOrRmdir",
+    "prototype": "__int64 __fastcall(__int64, __int64, int, __int64, __int64)",
+    "rank_score": 2239,
+    "size": 1869,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "TeardownDaSrvCall",
+    "ea": "0x140034e3c",
+    "function_file": "functions/140034e3c_TeardownDaSrvCall.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteResourceLite",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlRemoveUnicodePrefix"
+    ],
+    "matched_strings": [],
+    "name": "TeardownDaSrvCall",
+    "prototype": "void __fastcall(char *P, __int64)",
+    "rank_score": 2207,
+    "size": 332,
+    "tags": []
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x14002246c",
+    "function_file": "functions/14002246c_DriverEntry.md",
+    "matched_imports": [
+      "ntoskrnl!IoCreateSymbolicLink",
+      "ntoskrnl!IoDeleteSymbolicLink",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!NtClose",
+      "ntoskrnl!NtCreateFile",
+      "ntoskrnl!RtlInitUnicodeString",
+      "rdbss!RxRegisterMinirdr",
+      "rdbss!RxUnregisterMinirdr"
+    ],
+    "matched_strings": [],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 2102,
+    "size": 2023,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 34,
+    "caller_count": 1,
+    "demangled": "NfsCreateOrMkdir",
+    "ea": "0x14000fbc0",
+    "function_file": "functions/14000fbc0_NfsCreateOrMkdir.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeReleaseMutex",
+      "rpcxdr!OncRpcDestroy"
+    ],
+    "matched_strings": [],
+    "name": "NfsCreateOrMkdir",
+    "prototype": "__int64 __fastcall(__int64, __int64, unsigned int, __int64, __int64, __int64, char, char, _WORD *, struct _UNICODE_STRING **)",
+    "rank_score": 2061,
+    "size": 3232,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 4,
+    "demangled": "LoadCodePageTable",
+    "ea": "0x14002c4c4",
+    "function_file": "functions/14002c4c4_LoadCodePageTable.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!RtlInitCodePageTable",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwCreateFile",
+      "ntoskrnl!ZwQueryInformationFile",
+      "ntoskrnl!ZwReadFile"
+    ],
+    "matched_strings": [],
+    "name": "LoadCodePageTable",
+    "prototype": "__int64 __fastcall(__int64, ULONG, struct _CPTABLEINFO *, PVOID *)",
+    "rank_score": 2053,
+    "size": 665,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 18,
+    "caller_count": 2,
+    "demangled": "NfsFillReadDirBuffer",
+    "ea": "0x140012c40",
+    "function_file": "functions/140012c40_NfsFillReadDirBuffer.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "rpcxdr!OncRpcDestroy"
+    ],
+    "matched_strings": [],
+    "name": "NfsFillReadDirBuffer",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64)",
+    "rank_score": 2043,
+    "size": 1669,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 7,
+    "demangled": "HacAllocate",
+    "ea": "0x14000c370",
+    "function_file": "functions/14000c370_HacAllocate.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "HacAllocate",
+    "prototype": "struct _UNICODE_STRING *__fastcall(__int64, __int64, const UNICODE_STRING *, const UNICODE_STRING *)",
+    "rank_score": 2026,
+    "size": 1185,
+    "tags": []
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "MntUnmountAll",
+    "ea": "0x140024c60",
+    "function_file": "functions/140024c60_MntUnmountAll.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceSharedLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "rpcxdr!OncRpcBuildCall",
+      "rpcxdr!OncRpcDestroy",
+      "rpcxdr!OncRpcSendReplyAndDestroy"
+    ],
+    "matched_strings": [],
+    "name": "MntUnmountAll",
+    "prototype": "NTSTATUS __fastcall(_QWORD *)",
+    "rank_score": 2017,
+    "size": 773,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "NfsUpCallCheckAndWaitForInFlightRequests",
+    "ea": "0x1400391f8",
+    "function_file": "functions/1400391f8_NfsUpCallCheckAndWaitForInFlightRequests.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeDelayExecutionThread",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "NfsUpCallCheckAndWaitForInFlightRequests",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 2005,
+    "size": 298,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "GetNlsTablePath",
+    "ea": "0x14002c2e0",
+    "function_file": "functions/14002c2e0_GetNlsTablePath.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlIntegerToUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Nls\\CodePage",
+      "\\SystemRoot\\System32\\"
+    ],
+    "name": "GetNlsTablePath",
+    "prototype": "__int64 __fastcall(ULONG Value, PUNICODE_STRING DestinationString)",
+    "rank_score": 1927,
+    "size": 478,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 6,
+    "demangled": "MdaNotifyFullReportChange",
+    "ea": "0x14002fe10",
+    "function_file": "functions/14002fe10_MdaNotifyFullReportChange.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutexUnsafe",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseFastMutexUnsafe",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache",
+      "ntoskrnl!RtlCompareMemory",
+      "ntoskrnl!RtlxOemStringToUnicodeSize"
+    ],
+    "matched_strings": [],
+    "name": "MdaNotifyFullReportChange",
+    "prototype": "PDEVICE_OBJECT *__fastcall(PFAST_MUTEX FastMutex, _QWORD **, __int64, unsigned __int16, __int16, int, int, int)",
+    "rank_score": 1846,
+    "size": 2079,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 20,
+    "caller_count": 3,
+    "demangled": "NfsCommit",
+    "ea": "0x14000df64",
+    "function_file": "functions/14000df64_NfsCommit.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!RtlCompareMemory",
+      "rpcxdr!OncRpcDestroy"
+    ],
+    "matched_strings": [],
+    "name": "NfsCommit",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, const void *, __int64, unsigned int)",
+    "rank_score": 1843,
+    "size": 1374,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "UnInitNfsRedir",
+    "ea": "0x14002edd4",
+    "function_file": "functions/14002edd4_UnInitNfsRedir.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteResourceLite",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!LsaDeregisterLogonProcess",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "rpcxdr!OncRpcEndpointClose"
+    ],
+    "matched_strings": [],
+    "name": "UnInitNfsRedir",
+    "prototype": "void __fastcall(__int64)",
+    "rank_score": 1813,
+    "size": 515,
+    "tags": []
+  },
+  {
+    "callee_count": 25,
+    "caller_count": 6,
+    "demangled": "NfsSetAttributes",
+    "ea": "0x14002a9e0",
+    "function_file": "functions/14002a9e0_NfsSetAttributes.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "rpcxdr!OncRpcDestroy"
+    ],
+    "matched_strings": [],
+    "name": "NfsSetAttributes",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64 *, __int64)",
+    "rank_score": 1655,
+    "size": 1872,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 23,
+    "caller_count": 2,
+    "demangled": "NfsWrite",
+    "ea": "0x140010904",
+    "function_file": "functions/140010904_NfsWrite.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "rpcxdr!OncRpcDestroy"
+    ],
+    "matched_strings": [],
+    "name": "NfsWrite",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64, char, __int64 *, unsigned int *, __int64, __int64, __int64)",
+    "rank_score": 1654,
+    "size": 2446,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 1,
+    "demangled": "UserAuthentication",
+    "ea": "0x140016cb8",
+    "function_file": "functions/140016cb8_UserAuthentication.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!SeCaptureSubjectContext",
+      "ntoskrnl!SeQueryAuthenticationIdToken",
+      "ntoskrnl!SeReleaseSubjectContext"
+    ],
+    "matched_strings": [],
+    "name": "UserAuthentication",
+    "prototype": "__int64 __fastcall(__int64, __int64, unsigned int, _OWORD *, unsigned int)",
+    "rank_score": 1650,
+    "size": 1848,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 1,
+    "demangled": "NfsReadDirBufferFromNet",
+    "ea": "0x140011298",
+    "function_file": "functions/140011298_NfsReadDirBufferFromNet.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "rpcxdr!OncRpcDestroy"
+    ],
+    "matched_strings": [],
+    "name": "NfsReadDirBufferFromNet",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64)",
+    "rank_score": 1629,
+    "size": 1729,
+    "tags": []
+  },
+  {
+    "callee_count": 16,
+    "caller_count": 1,
+    "demangled": "NfsRead",
+    "ea": "0x140011984",
+    "function_file": "functions/140011984_NfsRead.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "rpcxdr!OncRpcDestroy"
+    ],
+    "matched_strings": [],
+    "name": "NfsRead",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, unsigned __int64, unsigned int *, __int64, _DWORD *)",
+    "rank_score": 1628,
+    "size": 1528,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "MdaNotifyFullChangeDirectory",
+    "ea": "0x14002fa64",
+    "function_file": "functions/14002fa64_MdaNotifyFullChangeDirectory.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutexUnsafe",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExReleaseFastMutexUnsafe",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "rdbss!RxLowIoCompletion"
+    ],
+    "matched_strings": [],
+    "name": "MdaNotifyFullChangeDirectory",
+    "prototype": "void __fastcall(PFAST_MUTEX FastMutex, _QWORD *, __int64, const UNICODE_STRING *, char, int, int, PRX_CONTEXT RxContext)",
+    "rank_score": 1625,
+    "size": 933,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "MdaCancelNotify",
+    "ea": "0x14002f040",
+    "function_file": "functions/14002f040_MdaCancelNotify.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutexUnsafe",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseFastMutexUnsafe",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache",
+      "rdbss!RxLowIoCompletion"
+    ],
+    "matched_strings": [],
+    "name": "MdaCancelNotify",
+    "prototype": "__int64 __fastcall(PRX_CONTEXT RxContext)",
+    "rank_score": 1624,
+    "size": 1128,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "MdaRemoveParentAlias",
+    "ea": "0x1400350d8",
+    "function_file": "functions/1400350d8_MdaRemoveParentAlias.md",
+    "matched_imports": [
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlCompareUnicodeString",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "MdaRemoveParentAlias",
+    "prototype": "__int64 __fastcall(__int64, struct _UNICODE_STRING *)",
+    "rank_score": 1622,
+    "size": 678,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "AmCreateMount",
+    "ea": "0x1400150f0",
+    "function_file": "functions/1400150f0_AmCreateMount.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwCreateFile",
+      "rdbss!RxAcquireExclusiveFcbResourceInMRx",
+      "rdbss!RxReleaseFcbResourceInMRx"
+    ],
+    "matched_strings": [
+      "MountOptions"
+    ],
+    "name": "AmCreateMount",
+    "prototype": "__int64 __fastcall(struct _MRX_FCB_ *, __int64, struct _UNICODE_STRING *, char, __int128 *, __int64, _BYTE *)",
+    "rank_score": 1501,
+    "size": 1404,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 2,
+    "demangled": "MapGetUnixCredsFromSid",
+    "ea": "0x1400219e8",
+    "function_file": "functions/1400219e8_MapGetUnixCredsFromSid.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteResourceLite",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlInitAnsiString",
+      "ntoskrnl!RtlLengthSid",
+      "rpcxdr!OncRpcBuildCall",
+      "rpcxdr!OncRpcDestroy"
+    ],
+    "matched_strings": [],
+    "name": "MapGetUnixCredsFromSid",
+    "prototype": "__int64 __fastcall(__int64, __int64, void *, _DWORD *)",
+    "rank_score": 1449,
+    "size": 1635,
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "MdaUserCacheThread",
+    "ea": "0x140036fd0",
+    "function_file": "functions/140036fd0_MdaUserCacheThread.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeDelayExecutionThread",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!PsTerminateSystemThread"
+    ],
+    "matched_strings": [
+      "MdaUserCacheThread",
+      "CacheRefreshInterval"
+    ],
+    "name": "MdaUserCacheThread",
+    "prototype": "void __fastcall(char *StartContext)",
+    "rank_score": 1308,
+    "size": 621,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "UpCallRemoveQueueRequest",
+    "ea": "0x14003a2dc",
+    "function_file": "functions/14003a2dc_UpCallRemoveQueueRequest.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExGetPreviousMode",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeRemoveQueue",
+      "ntoskrnl!MmIsKernelAddress"
+    ],
+    "matched_strings": [
+      "RemoveUpcall failed completing status %x\n"
+    ],
+    "name": "UpCallRemoveQueueRequest",
+    "prototype": "__int64 __fastcall(__int64 SpinLock, _DWORD *, unsigned int *, unsigned int *, __int64, PLIST_ENTRY *)",
+    "rank_score": 1269,
+    "size": 427,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "MdaDevFcbXXXControlFile",
+    "ea": "0x140017770",
+    "function_file": "functions/140017770_MdaDevFcbXXXControlFile.md",
+    "matched_imports": [
+      "ntoskrnl!ExGetPreviousMode",
+      "ntoskrnl!IoGetFileObjectGenericMapping",
+      "ntoskrnl!SeAccessCheck",
+      "ntoskrnl!SeCaptureSubjectContext",
+      "ntoskrnl!SeReleaseSubjectContext",
+      "rdbss!RxStopMinirdr"
+    ],
+    "matched_strings": [],
+    "name": "MdaDevFcbXXXControlFile",
+    "prototype": "__int64 __fastcall(PRX_CONTEXT RxContext)",
+    "rank_score": 1242,
+    "size": 1009,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 17,
+    "caller_count": 2,
+    "demangled": "NfsReadlink",
+    "ea": "0x1400132cc",
+    "function_file": "functions/1400132cc_NfsReadlink.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "rpcxdr!OncRpcDestroy"
+    ],
+    "matched_strings": [],
+    "name": "NfsReadlink",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64)",
+    "rank_score": 1239,
+    "size": 1366,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 17,
+    "caller_count": 1,
+    "demangled": "NfsPathConf",
+    "ea": "0x14000c8d8",
+    "function_file": "functions/14000c8d8_NfsPathConf.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "rpcxdr!OncRpcDestroy"
+    ],
+    "matched_strings": [],
+    "name": "NfsPathConf",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64)",
+    "rank_score": 1237,
+    "size": 1240,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 17,
+    "caller_count": 1,
+    "demangled": "NfsAccess",
+    "ea": "0x14000e4ec",
+    "function_file": "functions/14000e4ec_NfsAccess.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "rpcxdr!OncRpcDestroy"
+    ],
+    "matched_strings": [],
+    "name": "NfsAccess",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64, _DWORD *)",
+    "rank_score": 1236,
+    "size": 1101,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "UpdateUserBuffer",
+    "ea": "0x14003a5b8",
+    "function_file": "functions/14003a5b8_UpdateUserBuffer.md",
+    "matched_imports": [
+      "ntoskrnl!IoAllocateMdl",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache",
+      "ntoskrnl!MmProbeAndLockPages",
+      "ntoskrnl!ZwAllocateVirtualMemory"
+    ],
+    "matched_strings": [],
+    "name": "UpdateUserBuffer",
+    "prototype": "__int64 __fastcall(__int64, __int64, unsigned int *, unsigned int *)",
+    "rank_score": 1220,
+    "size": 994,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 12,
+    "demangled": "NfsForceDisconnect",
+    "ea": "0x14002d1e4",
+    "function_file": "functions/14002d1e4_NfsForceDisconnect.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExAcquireResourceSharedLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "NfsForceDisconnect",
+    "prototype": "void __fastcall(__int64, char)",
+    "rank_score": 1216,
+    "size": 253,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "GetMapVersion",
+    "ea": "0x140020c90",
+    "function_file": "functions/140020c90_GetMapVersion.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExDeleteResourceLite",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExInitializeResourceLite"
+    ],
+    "matched_strings": [],
+    "name": "GetMapVersion",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 1215,
+    "size": 783,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "NfsRdrCryptoHash",
+    "ea": "0x14002e330",
+    "function_file": "functions/14002e330_NfsRdrCryptoHash.md",
+    "matched_imports": [
+      "ksecdd!BCryptCreateHash",
+      "ksecdd!BCryptDestroyHash",
+      "ksecdd!BCryptFinishHash",
+      "ksecdd!BCryptHashData",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "NfsRdrCryptoHash",
+    "prototype": "__int64 __fastcall(__int64, PUCHAR *, ULONG *, UCHAR *, ULONG cbInput)",
+    "rank_score": 1210,
+    "size": 624,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "NfsRdrCryptoInit",
+    "ea": "0x14002e5a8",
+    "function_file": "functions/14002e5a8_NfsRdrCryptoInit.md",
+    "matched_imports": [
+      "ksecdd!BCryptCloseAlgorithmProvider",
+      "ksecdd!BCryptGetProperty",
+      "ksecdd!BCryptOpenAlgorithmProvider",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "NfsRdrCryptoInit",
+    "prototype": "__int64 __fastcall(BCRYPT_ALG_HANDLE *phAlgorithm)",
+    "rank_score": 1209,
+    "size": 589,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "NfsRdrpInitAutomountDfsMaps",
+    "ea": "0x14002e8e4",
+    "function_file": "functions/14002e8e4_NfsRdrpInitAutomountDfsMaps.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlFreeUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [
+      "MountSymlinkDfsMaps"
+    ],
+    "name": "NfsRdrpInitAutomountDfsMaps",
+    "prototype": "void __fastcall(__int64)",
+    "rank_score": 1077,
+    "size": 557,
+    "tags": [
+      "reparse_path",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 25,
+    "demangled": "HacDereference",
+    "ea": "0x140005c90",
+    "function_file": "functions/140005c90_HacDereference.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "HacDereference",
+    "prototype": "LONG __fastcall(__int64, __int64)",
+    "rank_score": 1035,
+    "size": 325,
+    "tags": []
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 8,
+    "demangled": "CaseInsensitiveLookup",
+    "ea": "0x140003510",
+    "function_file": "functions/140003510_CaseInsensitiveLookup.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!_strnicmp"
+    ],
+    "matched_strings": [],
+    "name": "CaseInsensitiveLookup",
+    "prototype": "__int64 __fastcall(__int64, __int64, unsigned __int16 *, __int64, char, _QWORD *)",
+    "rank_score": 1034,
+    "size": 1720,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "NfsRdrpNTAuthFromMRxCredentialOrToken",
+    "ea": "0x140029b24",
+    "function_file": "functions/140029b24_NfsRdrpNTAuthFromMRxCredentialOrToken.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlAppendUnicodeToString"
+    ],
+    "matched_strings": [],
+    "name": "NfsRdrpNTAuthFromMRxCredentialOrToken",
+    "prototype": "__int64 __fastcall(__int64, __int64, unsigned int *, __int64, void **)",
+    "rank_score": 1034,
+    "size": 718,
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "NfsRdrGetUnixCredsFromMapSvr",
+    "ea": "0x140028608",
+    "function_file": "functions/140028608_NfsRdrGetUnixCredsFromMapSvr.md",
+    "matched_imports": [
+      "ksecdd!SecLookupAccountSid",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlAppendUnicodeToString"
+    ],
+    "matched_strings": [],
+    "name": "NfsRdrGetUnixCredsFromMapSvr",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, void **, _BYTE *)",
+    "rank_score": 1031,
+    "size": 607,
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 0,
+    "demangled": "MdaCleanupFobx",
+    "ea": "0x140030b60",
+    "function_file": "functions/140030b60_MdaCleanupFobx.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoGetRequestorProcessId",
+      "ntoskrnl!KeReleaseMutex"
+    ],
+    "matched_strings": [],
+    "name": "MdaCleanupFobx",
+    "prototype": "__int64 __fastcall(_QWORD *, __int64)",
+    "rank_score": 1028,
+    "size": 896,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "MdaNtDispatch",
+    "ea": "0x140009b80",
+    "function_file": "functions/140009b80_MdaNtDispatch.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest",
+      "rdbss!RxFsdDispatch"
+    ],
+    "matched_strings": [],
+    "name": "MdaNtDispatch",
+    "prototype": "__int64 __fastcall(PRDBSS_DEVICE_OBJECT RxDeviceObject, PIRP Irp)",
+    "rank_score": 1028,
+    "size": 575,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "HacQueryAndReference",
+    "ea": "0x140008a50",
+    "function_file": "functions/140008a50_HacQueryAndReference.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!RtlCompareUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "HacQueryAndReference",
+    "prototype": "__int64 *__fastcall(PRKMUTEX Mutex, PCUNICODE_STRING String2)",
+    "rank_score": 1023,
+    "size": 605,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 4,
+    "demangled": "NfsReadDirectoryEntry",
+    "ea": "0x140013dc0",
+    "function_file": "functions/140013dc0_NfsReadDirectoryEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeReleaseMutex",
+      "rpcxdr!OncRpcDestroy"
+    ],
+    "matched_strings": [],
+    "name": "NfsReadDirectoryEntry",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, void **, char, _QWORD *, _QWORD *, _DWORD *, _QWORD *, _QWORD *)",
+    "rank_score": 1023,
+    "size": 1334,
+    "tags": []
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "NfsGetNonCachedAttributes",
+    "ea": "0x14002a5f0",
+    "function_file": "functions/14002a5f0_NfsGetNonCachedAttributes.md",
+    "matched_imports": [
+      "rpcxdr!OncRpcBuildCall",
+      "rpcxdr!OncRpcDestroy"
+    ],
+    "matched_strings": [],
+    "name": "NfsGetNonCachedAttributes",
+    "prototype": "__int64 __fastcall(__int64, _OWORD *, __int64, __int64)",
+    "rank_score": 1019,
+    "size": 1002,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "GetTempNameForDelRenaming",
+    "ea": "0x140030934",
+    "function_file": "functions/140030934_GetTempNameForDelRenaming.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlAppendUnicodeToString",
+      "ntoskrnl!RtlIntegerToUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "GetTempNameForDelRenaming",
+    "prototype": "__int64 __fastcall(__int64, __int64, struct _UNICODE_STRING *, const UNICODE_STRING *)",
+    "rank_score": 1008,
+    "size": 460,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "PruneDirectoryCache",
+    "ea": "0x1400209b0",
+    "function_file": "functions/1400209b0_PruneDirectoryCache.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "PruneDirectoryCache",
+    "prototype": "_BOOL8 __fastcall(__int64, struct _KMUTANT *, unsigned __int64)",
+    "rank_score": 1007,
+    "size": 315,
+    "tags": []
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "MdaDeviceControl",
+    "ea": "0x140022c5c",
+    "function_file": "functions/140022c5c_MdaDeviceControl.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetFileObjectGenericMapping",
+      "ntoskrnl!SeAccessCheck",
+      "ntoskrnl!SeCaptureSubjectContext",
+      "ntoskrnl!SeReleaseSubjectContext"
+    ],
+    "matched_strings": [],
+    "name": "MdaDeviceControl",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 850,
+    "size": 925,
+    "tags": [
+      "authz_impersonation",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "AmOpenFile",
+    "ea": "0x1400157d8",
+    "function_file": "functions/1400157d8_AmOpenFile.md",
+    "matched_imports": [
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwCreateFile",
+      "rdbss!RxAcquireExclusiveFcbResourceInMRx",
+      "rdbss!RxReleaseFcbResourceInMRx"
+    ],
+    "matched_strings": [],
+    "name": "AmOpenFile",
+    "prototype": "__int64 __fastcall(PMRX_FCB Fcb, struct _UNICODE_STRING *, char, void **, _BYTE *)",
+    "rank_score": 847,
+    "size": 426,
+    "tags": [
+      "file_ops",
+      "reparse_path",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "MdaCreateSrvCall",
+    "ea": "0x14000baf0",
+    "function_file": "functions/14000baf0_MdaCreateSrvCall.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwQueryLicenseValue",
+      "rdbss!RxDispatchToWorkerThread",
+      "rdbss!RxLogEventDirect"
+    ],
+    "matched_strings": [],
+    "name": "MdaCreateSrvCall",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 827,
+    "size": 386,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "MdaGetSecurityInfo",
+    "ea": "0x1400282a8",
+    "function_file": "functions/1400282a8_MdaGetSecurityInfo.md",
+    "matched_imports": [
+      "ntoskrnl!ObOpenObjectByPointer",
+      "ntoskrnl!RtlConvertSidToUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwQueryInformationToken"
+    ],
+    "matched_strings": [],
+    "name": "MdaGetSecurityInfo",
+    "prototype": "__int64 __fastcall(__int64, struct _UNICODE_STRING *, PSID *, __int64, HANDLE *)",
+    "rank_score": 825,
+    "size": 349,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 15,
+    "demangled": "DeleteDirCache",
+    "ea": "0x14001837c",
+    "function_file": "functions/14001837c_DeleteDirCache.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "DeleteDirCache",
+    "prototype": "void __fastcall(__int64, __int64)",
+    "rank_score": 819,
+    "size": 308,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "CheckForDeleteAccess",
+    "ea": "0x1400374f8",
+    "function_file": "functions/1400374f8_CheckForDeleteAccess.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex"
+    ],
+    "matched_strings": [],
+    "name": "CheckForDeleteAccess",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64 *, int)",
+    "rank_score": 816,
+    "size": 1020,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "NfsGetRegistryPath",
+    "ea": "0x1400147f0",
+    "function_file": "functions/1400147f0_NfsGetRegistryPath.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!RtlAppendUnicodeStringToString",
+      "ntoskrnl!RtlCopyUnicodeString",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "NfsGetRegistryPath",
+    "prototype": "NTSTATUS __fastcall(PUNICODE_STRING Destination, PCUNICODE_STRING SourceString, PCWSTR, int, _DWORD *, unsigned int)",
+    "rank_score": 814,
+    "size": 365,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "NfsRdrpInitializeOutboundGssContext",
+    "ea": "0x1400298b0",
+    "function_file": "functions/1400298b0_NfsRdrpInitializeOutboundGssContext.md",
+    "matched_imports": [
+      "rpcxdr!OncRpcCreateOutboundGssContext",
+      "rpcxdr!OncRpcDestroyOutboundGssContext",
+      "rpcxdr!OncRpcDisestablishOutboundGssContext",
+      "rpcxdr!OncRpcEstablishOutboundGssContext"
+    ],
+    "matched_strings": [],
+    "name": "NfsRdrpInitializeOutboundGssContext",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *, __int64, _QWORD *)",
+    "rank_score": 805,
+    "size": 211,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "MdaUserCacheFinish",
+    "ea": "0x140036f30",
+    "function_file": "functions/140036f30_MdaUserCacheFinish.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "MdaUserCacheFinish",
+    "prototype": "NTSTATUS __fastcall(__int64)",
+    "rank_score": 803,
+    "size": 142,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 9,
+    "demangled": "NfsReadRegistry",
+    "ea": "0x140038550",
+    "function_file": "functions/140038550_NfsReadRegistry.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!MmGetSystemRoutineAddress",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlQueryRegistryValues"
+    ],
+    "matched_strings": [
+      "RtlQueryRegistryValuesEx"
+    ],
+    "name": "NfsReadRegistry",
+    "prototype": "__int64 __fastcall(PCUNICODE_STRING SourceString, PCWSTR, __int64, int, _DWORD *, unsigned int)",
+    "rank_score": 765,
+    "size": 276,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "NfsRdrpCompareEAs",
+    "ea": "0x140028ac8",
+    "function_file": "functions/140028ac8_NfsRdrpCompareEAs.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCompareUnicodeString"
+    ],
+    "matched_strings": [
+      "NfsRdrpCompareEAs"
+    ],
+    "name": "NfsRdrpCompareEAs",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *, __int64)",
+    "rank_score": 662,
+    "size": 579,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SetMountOptions",
+    "ea": "0x140016b14",
+    "function_file": "functions/140016b14_SetMountOptions.md",
+    "matched_imports": [
+      "ntoskrnl!SeCaptureSubjectContext",
+      "ntoskrnl!SeQueryAuthenticationIdToken",
+      "ntoskrnl!SeReleaseSubjectContext"
+    ],
+    "matched_strings": [],
+    "name": "SetMountOptions",
+    "prototype": "__int64 __fastcall(__int64, unsigned int)",
+    "rank_score": 630,
+    "size": 414,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 24,
+    "demangled": "NfsSendWaitReply",
+    "ea": "0x140013ac0",
+    "function_file": "functions/140013ac0_NfsSendWaitReply.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject",
+      "rpcxdr!OncRpcDestroy"
+    ],
+    "matched_strings": [],
+    "name": "NfsSendWaitReply",
+    "prototype": "__int64 __fastcall(int, __int64, __int64, int, __int64, __int64, __int64, _QWORD *, int)",
+    "rank_score": 629,
+    "size": 340,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "MdaLocks",
+    "ea": "0x14001e050",
+    "function_file": "functions/14001e050_MdaLocks.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetRequestorProcessId",
+      "rdbss!RxIndicateChangeOfOplockStateForTarget"
+    ],
+    "matched_strings": [],
+    "name": "MdaLocks",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 628,
+    "size": 1603,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "NfsRdrpGetUidGidFromLdap",
+    "ea": "0x140028f00",
+    "function_file": "functions/140028f00_NfsRdrpGetUidGidFromLdap.md",
+    "matched_imports": [
+      "ksecdd!SecLookupAccountSid",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "NfsRdrpGetUidGidFromLdap",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *, void **, __int64, __int64, __int64, __int64)",
+    "rank_score": 627,
+    "size": 509,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "MdaNotifyCompleteIrp",
+    "ea": "0x14002f744",
+    "function_file": "functions/14002f744_MdaNotifyCompleteIrp.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache",
+      "rdbss!RxLowIoCompletion"
+    ],
+    "matched_strings": [],
+    "name": "MdaNotifyCompleteIrp",
+    "prototype": "NTSTATUS __fastcall(PRX_CONTEXT RxContext, __int64, unsigned int, NTSTATUS)",
+    "rank_score": 620,
+    "size": 522,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "NfsRdrpGetUidGidFromPasswdGroup",
+    "ea": "0x140029104",
+    "function_file": "functions/140029104_NfsRdrpGetUidGidFromPasswdGroup.md",
+    "matched_imports": [
+      "ksecdd!SecLookupAccountSid",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "NfsRdrpGetUidGidFromPasswdGroup",
+    "prototype": "__int64 __fastcall(__int64, __int64, void **, __int64)",
+    "rank_score": 618,
+    "size": 388,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 5,
+    "demangled": "DsSjisToEuc",
+    "ea": "0x14002bf9c",
+    "function_file": "functions/14002bf9c_DsSjisToEuc.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCopyString"
+    ],
+    "matched_strings": [],
+    "name": "DsSjisToEuc",
+    "prototype": "__int64 __fastcall(STRING *SourceString, PSTRING DestinationString)",
+    "rank_score": 617,
+    "size": 827,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "HacFindOpenHandles",
+    "ea": "0x14001f9cc",
+    "function_file": "functions/14001f9cc_HacFindOpenHandles.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!RtlCompareUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "HacFindOpenHandles",
+    "prototype": "char __fastcall(__int64)",
+    "rank_score": 616,
+    "size": 251,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "NfsUpCallGetComputerName",
+    "ea": "0x1400394ac",
+    "function_file": "functions/1400394ac_NfsUpCallGetComputerName.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCopyString"
+    ],
+    "matched_strings": [],
+    "name": "NfsUpCallGetComputerName",
+    "prototype": "__int64 __fastcall(__int64, struct _STRING *)",
+    "rank_score": 615,
+    "size": 291,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "NfsReadDirectoryQuit",
+    "ea": "0x140014970",
+    "function_file": "functions/140014970_NfsReadDirectoryQuit.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "rpcxdr!OncRpcDestroy"
+    ],
+    "matched_strings": [],
+    "name": "NfsReadDirectoryQuit",
+    "prototype": "void __fastcall(PVOID *, char)",
+    "rank_score": 611,
+    "size": 269,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "AmGetLinkInfo",
+    "ea": "0x140015674",
+    "function_file": "functions/140015674_AmGetLinkInfo.md",
+    "matched_imports": [
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwQueryInformationFile"
+    ],
+    "matched_strings": [],
+    "name": "AmGetLinkInfo",
+    "prototype": "__int64 __fastcall(PMRX_FCB Fcb, struct _UNICODE_STRING *, char, __int64, _BYTE *)",
+    "rank_score": 609,
+    "size": 348,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "FindMountPort",
+    "ea": "0x1400235c0",
+    "function_file": "functions/1400235c0_FindMountPort.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite"
+    ],
+    "matched_strings": [],
+    "name": "FindMountPort",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64)",
+    "rank_score": 609,
+    "size": 357,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "MdaCheckDirectoryAccess",
+    "ea": "0x140014300",
+    "function_file": "functions/140014300_MdaCheckDirectoryAccess.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex"
+    ],
+    "matched_strings": [],
+    "name": "MdaCheckDirectoryAccess",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 609,
+    "size": 604,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "InsertDirBufferIntoDirCache",
+    "ea": "0x1400184b8",
+    "function_file": "functions/1400184b8_InsertDirBufferIntoDirCache.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!KeReleaseMutex"
+    ],
+    "matched_strings": [],
+    "name": "InsertDirBufferIntoDirCache",
+    "prototype": "__int64 __fastcall(__int64, __int64, _QWORD *, __int64, __int64)",
+    "rank_score": 608,
+    "size": 491,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "NfsUpCallCreateRequestQueue",
+    "ea": "0x140039328",
+    "function_file": "functions/140039328_NfsUpCallCreateRequestQueue.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExInitializeResourceLite",
+      "ntoskrnl!KeInitializeEvent"
+    ],
+    "matched_strings": [],
+    "name": "NfsUpCallCreateRequestQueue",
+    "prototype": "__int64 __fastcall(_QWORD *)",
+    "rank_score": 604,
+    "size": 199,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "UpCallCreateQueueEx2",
+    "ea": "0x14003a070",
+    "function_file": "functions/14003a070_UpCallCreateQueueEx2.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!KeInitializeQueue",
+      "ntoskrnl!KeInitializeSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "UpCallCreateQueueEx2",
+    "prototype": "__int64 __fastcall(KSPIN_LOCK **)",
+    "rank_score": 604,
+    "size": 187,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "MdaGetDefaultMountInfo",
+    "ea": "0x140036354",
+    "function_file": "functions/140036354_MdaGetDefaultMountInfo.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "SOFTWARE\\Microsoft\\ClientForNFS\\CurrentVersion\\Users\\Default\\Mount",
+      "MountType",
+      "DeleteSymlinks",
+      "DisplayAllLinks",
+      "Access",
+      "NFSReaddir",
+      "SymLinks",
+      "EUCMount",
+      "ReadBuffer",
+      "WriteBuffer",
+      "FileAttributeCache",
+      "RemoteWriteCache"
+    ],
+    "name": "MdaGetDefaultMountInfo",
+    "prototype": "__int64 __fastcall(_DWORD *)",
+    "rank_score": 525,
+    "size": 1058,
+    "tags": [
+      "reparse_path",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "NfsRdrpShutdownRedirector",
+    "ea": "0x1400232dc",
+    "function_file": "functions/1400232dc_NfsRdrpShutdownRedirector.md",
+    "matched_imports": [
+      "ntoskrnl!IoDeleteSymbolicLink",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "NfsRdrpShutdownRedirector",
+    "prototype": "NTSTATUS()",
+    "rank_score": 428,
+    "size": 166,
+    "tags": [
+      "reparse_path",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 24,
+    "demangled": "HacIsEntryFake",
+    "ea": "0x140003440",
+    "function_file": "functions/140003440_HacIsEntryFake.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "HacIsEntryFake",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 426,
+    "size": 192,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 6,
+    "demangled": "HacPurgePostfix",
+    "ea": "0x140020154",
+    "function_file": "functions/140020154_HacPurgePostfix.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!RtlCompareUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "HacPurgePostfix",
+    "prototype": "LONG __fastcall(__int64, const UNICODE_STRING *)",
+    "rank_score": 422,
+    "size": 217,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "InsertNegativeCacheEntry",
+    "ea": "0x140020884",
+    "function_file": "functions/140020884_InsertNegativeCacheEntry.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex"
+    ],
+    "matched_strings": [],
+    "name": "InsertNegativeCacheEntry",
+    "prototype": "void __fastcall(__int64, __int64, __int64, const UNICODE_STRING *, const UNICODE_STRING *)",
+    "rank_score": 421,
+    "size": 291,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "MdaNotifyCompleteIrpList",
+    "ea": "0x14002f954",
+    "function_file": "functions/14002f954_MdaNotifyCompleteIrpList.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "rdbss!RxSetMinirdrCancelRoutine"
+    ],
+    "matched_strings": [],
+    "name": "MdaNotifyCompleteIrpList",
+    "prototype": "void __fastcall(__int64, NTSTATUS)",
+    "rank_score": 418,
+    "size": 266,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "MdaFinishCreate",
+    "ea": "0x1400081f0",
+    "function_file": "functions/1400081f0_MdaFinishCreate.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "rdbss!RxFinishFcbInitialization"
+    ],
+    "matched_strings": [],
+    "name": "MdaFinishCreate",
+    "prototype": "PDEVICE_OBJECT *__fastcall(_QWORD *, __int64)",
+    "rank_score": 415,
+    "size": 1147,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 6,
+    "demangled": "HacpRemoveEntry",
+    "ea": "0x1400206e4",
+    "function_file": "functions/1400206e4_HacpRemoveEntry.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "HacpRemoveEntry",
+    "prototype": "LONG __fastcall(__int64 *)",
+    "rank_score": 414,
+    "size": 407,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "MdaRead",
+    "ea": "0x140034680",
+    "function_file": "functions/140034680_MdaRead.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache"
+    ],
+    "matched_strings": [],
+    "name": "MdaRead",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 412,
+    "size": 763,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "AllocateUserInfoCache",
+    "ea": "0x140015e70",
+    "function_file": "functions/140015e70_AllocateUserInfoCache.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "AllocateUserInfoCache",
+    "prototype": "unsigned int *__fastcall(_QWORD *, const void **, const void **, const void **, int, __int64, _OWORD *)",
+    "rank_score": 407,
+    "size": 267,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "NfsUpCallDestroyRequestQueue",
+    "ea": "0x1400393f8",
+    "function_file": "functions/1400393f8_NfsUpCallDestroyRequestQueue.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteResourceLite",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "NfsUpCallDestroyRequestQueue",
+    "prototype": "__int64 __fastcall(_QWORD *)",
+    "rank_score": 406,
+    "size": 172,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "HacIsNegativeCacheEntry",
+    "ea": "0x140009ea0",
+    "function_file": "functions/140009ea0_HacIsNegativeCacheEntry.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "HacIsNegativeCacheEntry",
+    "prototype": "_BOOL8 __fastcall(__int64)",
+    "rank_score": 404,
+    "size": 184,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "MapReadMappingServerFromRegistry",
+    "ea": "0x140022054",
+    "function_file": "functions/140022054_MapReadMappingServerFromRegistry.md",
+    "matched_imports": [
+      "ntoskrnl!RtlDowncaseUnicodeString"
+    ],
+    "matched_strings": [
+      "SOFTWARE\\Microsoft\\ServicesForNFS",
+      "SOFTWARE\\Microsoft\\ServicesForNFS"
+    ],
+    "name": "MapReadMappingServerFromRegistry",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 321,
+    "size": 451,
+    "tags": [
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "MdaQueryEaInformation",
+    "ea": "0x14001a950",
+    "function_file": "functions/14001a950_MdaQueryEaInformation.md",
+    "matched_imports": [
+      "ntoskrnl!RtlFreeUnicodeString"
+    ],
+    "matched_strings": [
+      "NfsSymlinkTargetName",
+      "NfsSymlinkTargetName"
+    ],
+    "name": "MdaQueryEaInformation",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 306,
+    "size": 1064,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "NfsRdrpReadStartupRegistrySettings",
+    "ea": "0x14002eb18",
+    "function_file": "functions/14002eb18_NfsRdrpReadStartupRegistrySettings.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "MaxCacheSize",
+      "MaxDirCacheSize",
+      "DisableCache",
+      "DeleteSymlinks",
+      "DisplayAllLinks"
+    ],
+    "name": "NfsRdrpReadStartupRegistrySettings",
+    "prototype": "__int64 __fastcall(_DWORD *)",
+    "rank_score": 239,
+    "size": 691,
+    "tags": [
+      "reparse_path",
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "MdaReadRegistrySettings",
+    "ea": "0x14002dec4",
+    "function_file": "functions/14002dec4_MdaReadRegistrySettings.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "SOFTWARE\\Microsoft\\ClientForNFS\\CurrentVersion\\Users\\Default\\Mount",
+      "MountType",
+      "SoftMountTimeout",
+      "Protocols",
+      "CompatibilityFlags"
+    ],
+    "name": "MdaReadRegistrySettings",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 235,
+    "size": 1035,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 16,
+    "demangled": "HacUpdateTimeStamp",
+    "ea": "0x1400204c0",
+    "function_file": "functions/1400204c0_HacUpdateTimeStamp.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex"
+    ],
+    "matched_strings": [],
+    "name": "HacUpdateTimeStamp",
+    "prototype": "LONG __fastcall(__int64)",
+    "rank_score": 229,
+    "size": 65,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 61,
+    "demangled": "HacAcquireLock",
+    "ea": "0x140008140",
+    "function_file": "functions/140008140_HacAcquireLock.md",
+    "matched_imports": [
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "HacAcquireLock",
+    "prototype": "int __fastcall(__int64)",
+    "rank_score": 227,
+    "size": 156,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 18,
+    "demangled": "HacOrphanStaleEntry",
+    "ea": "0x1400145f0",
+    "function_file": "functions/1400145f0_HacOrphanStaleEntry.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex"
+    ],
+    "matched_strings": [],
+    "name": "HacOrphanStaleEntry",
+    "prototype": "LONG __fastcall(__int64, __int64)",
+    "rank_score": 222,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "NfsConnectInternal",
+    "ea": "0x14002cfc8",
+    "function_file": "functions/14002cfc8_NfsConnectInternal.md",
+    "matched_imports": [
+      "rpcxdr!OncRpcConnectionOpen"
+    ],
+    "matched_strings": [],
+    "name": "NfsConnectInternal",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 220,
+    "size": 427,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "NfsLookupDirCache",
+    "ea": "0x1400186ac",
+    "function_file": "functions/1400186ac_NfsLookupDirCache.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareString"
+    ],
+    "matched_strings": [],
+    "name": "NfsLookupDirCache",
+    "prototype": "__int64 __fastcall(__int64, __int64, char, _QWORD *, STRING *String1, BOOLEAN CaseInSensitive)",
+    "rank_score": 215,
+    "size": 335,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 7,
+    "demangled": "HacOrphanEntry",
+    "ea": "0x140014650",
+    "function_file": "functions/140014650_HacOrphanEntry.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex"
+    ],
+    "matched_strings": [],
+    "name": "HacOrphanEntry",
+    "prototype": "LONG __fastcall(__int64)",
+    "rank_score": 211,
+    "size": 59,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SearchDirEntryInCache",
+    "ea": "0x140018804",
+    "function_file": "functions/140018804_SearchDirEntryInCache.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex"
+    ],
+    "matched_strings": [],
+    "name": "SearchDirEntryInCache",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64)",
+    "rank_score": 211,
+    "size": 531,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 7,
+    "demangled": "HacInvalidateAttributes",
+    "ea": "0x1400200d0",
+    "function_file": "functions/1400200d0_HacInvalidateAttributes.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex"
+    ],
+    "matched_strings": [],
+    "name": "HacInvalidateAttributes",
+    "prototype": "LONG __fastcall(__int64)",
+    "rank_score": 210,
+    "size": 59,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 7,
+    "demangled": "NfsConvertUnicodeToAnsi",
+    "ea": "0x14002c764",
+    "function_file": "functions/14002c764_NfsConvertUnicodeToAnsi.md",
+    "matched_imports": [
+      "ntoskrnl!RtlUnicodeStringToAnsiString"
+    ],
+    "matched_strings": [],
+    "name": "NfsConvertUnicodeToAnsi",
+    "prototype": "NTSTATUS __fastcall(int, struct _STRING *, const UNICODE_STRING *, __int64, int)",
+    "rank_score": 210,
+    "size": 234,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "NfsUpCallCallbackSignalRequestComplete",
+    "ea": "0x1400391d0",
+    "function_file": "functions/1400391d0_NfsUpCallCallbackSignalRequestComplete.md",
+    "matched_imports": [
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "NfsUpCallCallbackSignalRequestComplete",
+    "prototype": "LONG __fastcall(__int64)",
+    "rank_score": 210,
+    "size": 31,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "HacRenameEntry",
+    "ea": "0x14002030c",
+    "function_file": "functions/14002030c_HacRenameEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "HacRenameEntry",
+    "prototype": "LONG __fastcall(__int64, __int64, __int64, void *)",
+    "rank_score": 209,
+    "size": 372,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "MdaWrite",
+    "ea": "0x140038350",
+    "function_file": "functions/140038350_MdaWrite.md",
+    "matched_imports": [
+      "ntoskrnl!MmMapLockedPagesSpecifyCache"
+    ],
+    "matched_strings": [],
+    "name": "MdaWrite",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 208,
+    "size": 411,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "MdaNotifyChangeDirectory",
+    "ea": "0x14001a820",
+    "function_file": "functions/14001a820_MdaNotifyChangeDirectory.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex"
+    ],
+    "matched_strings": [],
+    "name": "MdaNotifyChangeDirectory",
+    "prototype": "__int64 __fastcall(PRX_CONTEXT RxContext)",
+    "rank_score": 207,
+    "size": 295,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "MdaDeleteConnection",
+    "ea": "0x140017628",
+    "function_file": "functions/140017628_MdaDeleteConnection.md",
+    "matched_imports": [
+      "rdbss!RxFinalizeConnection"
+    ],
+    "matched_strings": [],
+    "name": "MdaDeleteConnection",
+    "prototype": "__int64 __fastcall(__int64, _BYTE *)",
+    "rank_score": 206,
+    "size": 311,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 5,
+    "demangled": "_tlgWriteTransfer_EtwWriteTransfer",
+    "ea": "0x140001010",
+    "function_file": "functions/140001010_tlgWriteTransfer_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "_tlgWriteTransfer_EtwWriteTransfer",
+    "prototype": "NTSTATUS __fastcall(__int64, unsigned __int8 *, __int64, __int64, ULONG UserDataCount, PEVENT_DATA_DESCRIPTOR UserData)",
+    "rank_score": 206,
+    "size": 169,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "FNeedToCancel",
+    "ea": "0x14002cf7c",
+    "function_file": "functions/14002cf7c_FNeedToCancel.md",
+    "matched_imports": [
+      "ntoskrnl!PsIsThreadTerminating"
+    ],
+    "matched_strings": [],
+    "name": "FNeedToCancel",
+    "prototype": "bool __fastcall(__int64)",
+    "rank_score": 203,
+    "size": 70,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "HacUnMarkNegativeCacheFlag",
+    "ea": "0x140020488",
+    "function_file": "functions/140020488_HacUnMarkNegativeCacheFlag.md",
+    "matched_imports": [
+      "ntoskrnl!KeReleaseMutex"
+    ],
+    "matched_strings": [],
+    "name": "HacUnMarkNegativeCacheFlag",
+    "prototype": "LONG __fastcall(__int64)",
+    "rank_score": 203,
+    "size": 48,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "OncRpcSleep",
+    "ea": "0x1400234e4",
+    "function_file": "functions/1400234e4_OncRpcSleep.md",
+    "matched_imports": [
+      "ntoskrnl!KeDelayExecutionThread"
+    ],
+    "matched_strings": [],
+    "name": "OncRpcSleep",
+    "prototype": "NTSTATUS()",
+    "rank_score": 202,
+    "size": 45,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "MdaIsEAPresent",
+    "ea": "0x14002840c",
+    "function_file": "functions/14002840c_MdaIsEAPresent.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "MountOptions"
+    ],
+    "name": "MdaIsEAPresent",
+    "prototype": "char __fastcall(char *Str1, unsigned int)",
+    "rank_score": 43,
+    "size": 100,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 55,
+    "demangled": "__security_check_cookie",
+    "ea": "0x14003aba0",
+    "function_file": "functions/14003aba0_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 57,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x14003abe0",
+    "function_file": "functions/14003abe0_guard_dispatch_icall.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 45,
+    "demangled": "memmove",
+    "ea": "0x14003adc0",
+    "function_file": "functions/14003adc0_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 31,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 60,
+    "demangled": "memset",
+    "ea": "0x14003b0c0",
+    "function_file": "functions/14003b0c0_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 29,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 34,
+    "demangled": "XdrDecodeInt",
+    "ea": "0x140011f84",
+    "function_file": "functions/140011f84_XdrDecodeInt.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "XdrDecodeInt",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 28,
+    "size": 72,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 43,
+    "demangled": "WPP_SF_Z",
+    "ea": "0x140015a40",
+    "function_file": "functions/140015a40_WPP_SF_Z.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_Z",
+    "prototype": "__int64 __fastcall(__int64, unsigned __int16, __int64, const wchar_t *)",
+    "rank_score": 27,
+    "size": 113,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 0,
+    "demangled": "MdaSetFileInformation",
+    "ea": "0x14001b5a0",
+    "function_file": "functions/14001b5a0_MdaSetFileInformation.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MdaSetFileInformation",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 26,
+    "size": 1073,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 157,
+    "demangled": "WPP_SF_",
+    "ea": "0x1400159cc",
+    "function_file": "functions/1400159cc_WPP_SF.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_",
+    "prototype": "__int64 __fastcall(__int64, unsigned __int16, __int64)",
+    "rank_score": 26,
+    "size": 40,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 114,
+    "demangled": "WPP_SF_d",
+    "ea": "0x1400159fc",
+    "function_file": "functions/1400159fc_WPP_SF_d.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_d",
+    "prototype": "__int64 __fastcall(__int64, unsigned __int16, __int64, int)",
+    "rank_score": 26,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "MdaAccessCheck",
+    "ea": "0x1400095b0",
+    "function_file": "functions/1400095b0_MdaAccessCheck.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MdaAccessCheck",
+    "prototype": "char __fastcall(__int64, __int64, __int64, int)",
+    "rank_score": 25,
+    "size": 1162,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 22,
+    "demangled": "OncRpcMapRpcStatusToNtStatus",
+    "ea": "0x140022220",
+    "function_file": "functions/140022220_OncRpcMapRpcStatusToNtStatus.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "OncRpcMapRpcStatusToNtStatus",
+    "prototype": "__int64 __fastcall(_DWORD *)",
+    "rank_score": 24,
+    "size": 72,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x14003a9ec",
+    "function_file": "functions/14003a9ec_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 24,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 21,
+    "demangled": "WPP_SF_s",
+    "ea": "0x140018310",
+    "function_file": "functions/140018310_WPP_SF_s.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_s",
+    "prototype": "__int64 __fastcall(__int64, unsigned __int16, __int64, const char *)",
+    "rank_score": 23,
+    "size": 100,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GsDriverEntry",
+    "ea": "0x140047010",
+    "function_file": "functions/140047010_GsDriverEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GsDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 22,
+    "size": 44,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 19,
+    "demangled": "MapNFSStatusToNtStatus",
+    "ea": "0x14002ddac",
+    "function_file": "functions/14002ddac_MapNFSStatusToNtStatus.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MapNFSStatusToNtStatus",
+    "prototype": "__int64 __fastcall(unsigned int)",
+    "rank_score": 22,
+    "size": 270,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "MdaSetSecurityInformation",
+    "ea": "0x14001d640",
+    "function_file": "functions/14001d640_MdaSetSecurityInformation.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MdaSetSecurityInformation",
+    "prototype": "__int64()",
+    "rank_score": 22,
+    "size": 105,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 19,
+    "demangled": "XdrDecodeNfsFileAttributes",
+    "ea": "0x14000fb40",
+    "function_file": "functions/14000fb40_XdrDecodeNfsFileAttributes.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "XdrDecodeNfsFileAttributes",
+    "prototype": "__int64 __fastcall(__int64, __int64, char)",
+    "rank_score": 22,
+    "size": 27,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 17,
+    "demangled": "XdrEncodeNfsFileHandleUnsafe",
+    "ea": "0x14000fa80",
+    "function_file": "functions/14000fa80_XdrEncodeNfsFileHandleUnsafe.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "XdrEncodeNfsFileHandleUnsafe",
+    "prototype": "_QWORD *__fastcall(__int64, __int64, char)",
+    "rank_score": 22,
+    "size": 185,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 20,
+    "demangled": "WPP_SF_dd",
+    "ea": "0x1400173f8",
+    "function_file": "functions/1400173f8_WPP_SF_dd.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_dd",
+    "prototype": "__int64(__int64, unsigned __int16, __int64, int, ...)",
+    "rank_score": 21,
+    "size": 75,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 17,
+    "demangled": "XdrDecodeBool",
+    "ea": "0x14000d99c",
+    "function_file": "functions/14000d99c_XdrDecodeBool.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "XdrDecodeBool",
+    "prototype": "bool __fastcall(__int64)",
+    "rank_score": 20,
+    "size": 77,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 19,
+    "demangled": "XdrEncodeIntUnsafe",
+    "ea": "0x140011960",
+    "function_file": "functions/140011960_XdrEncodeIntUnsafe.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "XdrEncodeIntUnsafe",
+    "prototype": "__int64 __fastcall(__int64, unsigned int)",
+    "rank_score": 20,
+    "size": 27,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 17,
+    "demangled": "MdaDissectNameTail",
+    "ea": "0x140009380",
+    "function_file": "functions/140009380_MdaDissectNameTail.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MdaDissectNameTail",
+    "prototype": "__int64 __fastcall(unsigned __int16 *, __int64, __int64)",
+    "rank_score": 19,
+    "size": 174,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 16,
+    "demangled": "OncRpcBufMgrGetCurrentValidLengthRemaining",
+    "ea": "0x1400150a4",
+    "function_file": "functions/1400150a4_OncRpcBufMgrGetCurrentValidLengthRemaining.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "OncRpcBufMgrGetCurrentValidLengthRemaining",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 18,
+    "size": 28,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 17,
+    "demangled": "WPP_SF_q",
+    "ea": "0x140017590",
+    "function_file": "functions/140017590_WPP_SF_q.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_q",
+    "prototype": "__int64(__int64, unsigned __int16, __int64, ...)",
+    "rank_score": 18,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "MdaSetFileInformationAtCleanup",
+    "ea": "0x14001b9e0",
+    "function_file": "functions/14001b9e0_MdaSetFileInformationAtCleanup.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MdaSetFileInformationAtCleanup",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 17,
+    "size": 468,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 10,
+    "demangled": "XdrDecodeSkipBytes",
+    "ea": "0x14000d9f0",
+    "function_file": "functions/14000d9f0_XdrDecodeSkipBytes.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "XdrDecodeSkipBytes",
+    "prototype": "void __fastcall(__int64)",
+    "rank_score": 17,
+    "size": 140,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "NfsRdrpInitializeSecurityContext",
+    "ea": "0x14002998c",
+    "function_file": "functions/14002998c_NfsRdrpInitializeSecurityContext.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NfsRdrpInitializeSecurityContext",
+    "prototype": "__int64 __fastcall(__int64, _QWORD *)",
+    "rank_score": 16,
+    "size": 402,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "MdaNotifyUpdateBuffer",
+    "ea": "0x14003083c",
+    "function_file": "functions/14003083c_MdaNotifyUpdateBuffer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MdaNotifyUpdateBuffer",
+    "prototype": "char __fastcall(_DWORD *, int, const void **, const void **, int, int)",
+    "rank_score": 15,
+    "size": 239,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "MdaUpdateNetRootState",
+    "ea": "0x140028570",
+    "function_file": "functions/140028570_MdaUpdateNetRootState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MdaUpdateNetRootState",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 14,
+    "size": 143,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "NfsRdrpSetProtocol",
+    "ea": "0x140034248",
+    "function_file": "functions/140034248_NfsRdrpSetProtocol.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NfsRdrpSetProtocol",
+    "prototype": "char __fastcall(_BYTE *, _DWORD *, int)",
+    "rank_score": 14,
+    "size": 361,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 12,
+    "demangled": "WPP_SF_sD",
+    "ea": "0x14001db18",
+    "function_file": "functions/14001db18_WPP_SF_sD.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_sD",
+    "prototype": "__int64(__int64, unsigned __int16, __int64, const char *, ...)",
+    "rank_score": 14,
+    "size": 122,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "MdaGetRemoteProtocolInformation",
+    "ea": "0x14001a688",
+    "function_file": "functions/14001a688_MdaGetRemoteProtocolInformation.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MdaGetRemoteProtocolInformation",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, __int64, _DWORD *)",
+    "rank_score": 13,
+    "size": 121,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 9,
+    "demangled": "XdrEncodeOpaqueUnsafe",
+    "ea": "0x140010870",
+    "function_file": "functions/140010870_XdrEncodeOpaqueUnsafe.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "XdrEncodeOpaqueUnsafe",
+    "prototype": "void *__fastcall(__int64, unsigned int, const void *)",
+    "rank_score": 13,
+    "size": 139,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 12,
+    "demangled": "XdrNextMod4Boundary",
+    "ea": "0x140014c30",
+    "function_file": "functions/140014c30_XdrNextMod4Boundary.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "XdrNextMod4Boundary",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 13,
+    "size": 44,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "MdaComputeNewBufferingState",
+    "ea": "0x14001def0",
+    "function_file": "functions/14001def0_MdaComputeNewBufferingState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MdaComputeNewBufferingState",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, _DWORD *)",
+    "rank_score": 12,
+    "size": 120,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "MdaQuerySecurityInformation",
+    "ea": "0x14001ad80",
+    "function_file": "functions/14001ad80_MdaQuerySecurityInformation.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MdaQuerySecurityInformation",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 12,
+    "size": 73,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 7,
+    "demangled": "MdaVerifyFcb",
+    "ea": "0x140014760",
+    "function_file": "functions/140014760_MdaVerifyFcb.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MdaVerifyFcb",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64)",
+    "rank_score": 12,
+    "size": 137,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 9,
+    "demangled": "XdrBytesLeft",
+    "ea": "0x140025004",
+    "function_file": "functions/140025004_XdrBytesLeft.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "XdrBytesLeft",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 12,
+    "size": 54,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x140047044",
+    "function_file": "functions/140047044_security_init_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 1,
+    "demangled": "NfsProtocolFlagsToBitfield",
+    "ea": "0x14002e2d8",
+    "function_file": "functions/14002e2d8_NfsProtocolFlagsToBitfield.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "NfsProtocolFlagsToBitfield",
+    "prototype": "char __fastcall(unsigned int, _BYTE *)",
+    "rank_score": 11,
+    "size": 79,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "WPP_SF_ZZ",
+    "ea": "0x140019d7c",
+    "function_file": "functions/140019d7c_WPP_SF_ZZ.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_ZZ",
+    "prototype": "__int64 __fastcall(__int64, unsigned __int16, __int64, const wchar_t *, unsigned __int16 *)",
+    "rank_score": 11,
+    "size": 186,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "CheckDirectoryIsEmpty",
+    "ea": "0x1400372e8",
+    "function_file": "functions/1400372e8_CheckDirectoryIsEmpty.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "CheckDirectoryIsEmpty",
+    "prototype": "__int64 __fastcall(__int64, int, int, _BYTE *)",
+    "rank_score": 10,
+    "size": 520,
+    "tags": []
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 3,
+    "demangled": "RemoveNegativeCacheEntry",
+    "ea": "0x140020af4",
+    "function_file": "functions/140020af4_RemoveNegativeCacheEntry.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RemoveNegativeCacheEntry",
+    "prototype": "void __fastcall(__int64, __int64, const UNICODE_STRING *)",
+    "rank_score": 10,
+    "size": 105,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "OncRpcBufMgrGetNextBufferDescriptor",
+    "ea": "0x14001f860",
+    "function_file": "functions/14001f860_OncRpcBufMgrGetNextBufferDescriptor.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "OncRpcBufMgrGetNextBufferDescriptor",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 8,
+    "size": 35,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SearchCacheBasedOnCookie",
+    "ea": "0x140013c20",
+    "function_file": "functions/140013c20_SearchCacheBasedOnCookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SearchCacheBasedOnCookie",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 7,
+    "size": 401,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "MdaMapDesiredAccess",
+    "ea": "0x140033af0",
+    "function_file": "functions/140033af0_MdaMapDesiredAccess.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MdaMapDesiredAccess",
+    "prototype": "__int64 __fastcall(char)",
+    "rank_score": 6,
+    "size": 346,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 5,
+    "demangled": "OncRpcBufMgrGetDescriptorValidLengthRemaining",
+    "ea": "0x14001f834",
+    "function_file": "functions/14001f834_OncRpcBufMgrGetDescriptorValidLengthRemaining.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "OncRpcBufMgrGetDescriptorValidLengthRemaining",
+    "prototype": "__int64 __fastcall(_DWORD *)",
+    "rank_score": 6,
+    "size": 34,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "HacRemoveEntryFromLRUList",
+    "ea": "0x140020234",
+    "function_file": "functions/140020234_HacRemoveEntryFromLRUList.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "HacRemoveEntryFromLRUList",
+    "prototype": "__int64 __fastcall(_QWORD *)",
+    "rank_score": 5,
+    "size": 208,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "XdrDecodeNfs3PathConf",
+    "ea": "0x14000c818",
+    "function_file": "functions/14000c818_XdrDecodeNfs3PathConf.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "XdrDecodeNfs3PathConf",
+    "prototype": "bool __fastcall(__int64, _DWORD *)",
+    "rank_score": 5,
+    "size": 184,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "AmRemovePrefix",
+    "ea": "0x140015988",
+    "function_file": "functions/140015988_AmRemovePrefix.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "AmRemovePrefix",
+    "prototype": "__int64 __fastcall(__int64, unsigned __int16)",
+    "rank_score": 4,
+    "size": 59,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "HacConstructFakeDirectory",
+    "ea": "0x14001f904",
+    "function_file": "functions/14001f904_HacConstructFakeDirectory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "HacConstructFakeDirectory",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 4,
+    "size": 194,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "MdaMapShareAccess",
+    "ea": "0x140033c50",
+    "function_file": "functions/140033c50_MdaMapShareAccess.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MdaMapShareAccess",
+    "prototype": "__int64 __fastcall(char)",
+    "rank_score": 3,
+    "size": 55,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "OncRpcCopyAddress",
+    "ea": "0x14000bab0",
+    "function_file": "functions/14000bab0_OncRpcCopyAddress.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "OncRpcCopyAddress",
+    "prototype": "__int64 __fastcall(_OWORD *, _OWORD *)",
+    "rank_score": 3,
+    "size": 50,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "MdaCheckForCollapsibleOpen",
+    "ea": "0x140030b10",
+    "function_file": "functions/140030b10_MdaCheckForCollapsibleOpen.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MdaCheckForCollapsibleOpen",
+    "prototype": "__int64()",
+    "rank_score": 2,
+    "size": 68,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "MdaCollapseOpen",
+    "ea": "0x1400316c0",
+    "function_file": "functions/1400316c0_MdaCollapseOpen.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MdaCollapseOpen",
+    "prototype": "__int64()",
+    "rank_score": 0,
+    "size": 6,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "MdaIsValidDirectory",
+    "ea": "0x140023120",
+    "function_file": "functions/140023120_MdaIsValidDirectory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MdaIsValidDirectory",
+    "prototype": "__int64()",
+    "rank_score": 0,
+    "size": 3,
+    "tags": []
+  }
+]
