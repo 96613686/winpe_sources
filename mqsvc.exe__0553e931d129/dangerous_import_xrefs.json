@@ -1,0 +1,111 @@
+[
+  {
+    "import": "KERNEL32!GetCurrentProcessId",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1400015fb",
+        "from_func": "0x1400015b4",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      },
+      {
+        "from_ea": "0x1400015fb",
+        "from_func": "0x1400015b4",
+        "from_func_name": "__security_init_cookie",
+        "import": "KERNEL32!GetCurrentProcessId"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x1400016a3",
+        "from_func": "0x1400016a3",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "msvcrt!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__CxxFrameHandler4",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x140001388",
+        "from_func": "0x140001388",
+        "from_func_name": "__CxxFrameHandler4_0",
+        "import": "msvcrt!__CxxFrameHandler4"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!__dllonexit",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x140001781",
+        "from_func": "0x140001781",
+        "from_func_name": "__dllonexit_0",
+        "import": "msvcrt!__dllonexit"
+      }
+    ]
+  },
+  {
+    "import": "msvcrt!_commode",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x140001136",
+        "from_func": "0x140001090",
+        "from_func_name": "pre_c_init",
+        "import": "msvcrt!_commode"
+      }
+    ]
+  },
+  {
+    "import": "ntdll!RtlImageNtHeader",
+    "tags": [
+      "loader_planting",
+      "service_task"
+    ],
+    "xref_count": 3,
+    "xrefs": [
+      {
+        "from_ea": "0x140001021",
+        "from_func": "0x140001010",
+        "from_func_name": "_dynamic_initializer_for__g_initSafeAlloca__",
+        "import": "ntdll!RtlImageNtHeader"
+      },
+      {
+        "from_ea": "0x140001021",
+        "from_func": "0x140001010",
+        "from_func_name": "_dynamic_initializer_for__g_initSafeAlloca__",
+        "import": "ntdll!RtlImageNtHeader"
+      },
+      {
+        "from_ea": "0x140002980",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ntdll!RtlImageNtHeader"
+      }
+    ]
+  }
+]

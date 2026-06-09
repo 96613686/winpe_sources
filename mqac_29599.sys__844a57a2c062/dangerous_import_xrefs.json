@@ -1,0 +1,709 @@
+[
+  {
+    "import": "ntoskrnl!IoCreateSymbolicLink",
+    "tags": [
+      "reparse_path"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000d2f9",
+        "from_func": "0x14000cef8",
+        "from_func_name": "?ACCreateDeviceObject@@YAJPEAU_DRIVER_OBJECT@@PEBU_UNICODE_STRING@@PEAPEAU_DEVICE_OBJECT@@@Z",
+        "import": "ntoskrnl!IoCreateSymbolicLink"
+      },
+      {
+        "from_ea": "0x14000d2f9",
+        "from_func": "0x14000cef8",
+        "from_func_name": "?ACCreateDeviceObject@@YAJPEAU_DRIVER_OBJECT@@PEBU_UNICODE_STRING@@PEAPEAU_DEVICE_OBJECT@@@Z",
+        "import": "ntoskrnl!IoCreateSymbolicLink"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!IoDeleteSymbolicLink",
+    "tags": [
+      "reparse_path"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000d3f4",
+        "from_func": "0x14000d3dc",
+        "from_func_name": "?ACDeleteDeviceObject@@YAXPEAU_DEVICE_OBJECT@@@Z",
+        "import": "ntoskrnl!IoDeleteSymbolicLink"
+      },
+      {
+        "from_ea": "0x14000d3f4",
+        "from_func": "0x14000d3dc",
+        "from_func_name": "?ACDeleteDeviceObject@@YAXPEAU_DEVICE_OBJECT@@@Z",
+        "import": "ntoskrnl!IoDeleteSymbolicLink"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!IofCompleteRequest",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 48,
+    "xrefs": [
+      {
+        "from_ea": "0x140003d40",
+        "from_func": "0x140003b20",
+        "from_func_name": "ACCleanup",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140003e91",
+        "from_func": "0x140003dd0",
+        "from_func_name": "ACClose",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140004b9f",
+        "from_func": "0x140004afc",
+        "from_func_name": "ACCompleteRemoteRequest",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14000a503",
+        "from_func": "0x14000a3b0",
+        "from_func_name": "ACDeviceControl",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14000c6a5",
+        "from_func": "0x14000c5f0",
+        "from_func_name": "ACCreate",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140011ef8",
+        "from_func": "0x140011e00",
+        "from_func_name": "?ACCancelCreatePacketNotification@@YAXPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140012023",
+        "from_func": "0x140011f30",
+        "from_func_name": "ACCancelSender",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x1400121ba",
+        "from_func": "0x1400120e4",
+        "from_func_name": "?CompleteCreatePacket@CCreatePacketComplete@@AEAAXPEAU_DEVICE_OBJECT@@@Z",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140014c26",
+        "from_func": "0x140014c00",
+        "from_func_name": "?CompleteRequest@CPacket@@QEAAJPEAU_IRP@@@Z",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140014de4",
+        "from_func": "0x140014c48",
+        "from_func_name": "?CompleteWriter@CPacket@@QEAAXJ@Z",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x1400177a7",
+        "from_func": "0x140017694",
+        "from_func_name": "?HandleCreatePacketCompleted@CPacket@@QEAAXJG@Z",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140019b35",
+        "from_func": "0x1400199e0",
+        "from_func_name": "ACCancelReader",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14001a8d8",
+        "from_func": "0x14001a840",
+        "from_func_name": "ACCancelServiceRequest",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14001a9e1",
+        "from_func": "0x14001a900",
+        "from_func_name": "?CancelOpenQueueRequest@CQMInterface@@CAXPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14001aacd",
+        "from_func": "0x14001aa94",
+        "from_func_name": "?CompleteOpenQueueRequest@CQMInterface@@QEAAJPEAVCACOpenQueueRequest@@J@Z",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14001aba0",
+        "from_func": "0x14001aaf8",
+        "from_func_name": "?Dispatch@CQMInterface@@AEAAXXZ",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14001b6d1",
+        "from_func": "0x14001b640",
+        "from_func_name": "ACCancelRemoteQueueOperation",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14001b845",
+        "from_func": "0x14001b700",
+        "from_func_name": "ACCancelRemoteReader",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14001bb0b",
+        "from_func": "0x14001b9e0",
+        "from_func_name": "?CreateRemoteCursor@CProxy@@UEAAJPEAU_DEVICE_OBJECT@@KK@Z",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14001bb50",
+        "from_func": "0x14001b9e0",
+        "from_func_name": "?CreateRemoteCursor@CProxy@@UEAAJPEAU_DEVICE_OBJECT@@KK@Z",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14001f1a1",
+        "from_func": "0x14001f110",
+        "from_func_name": "ACCancelXactControl",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140020d5d",
+        "from_func": "0x140020ca0",
+        "from_func_name": "?ACCancelNotification@@YAXPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140020e56",
+        "from_func": "0x140020d80",
+        "from_func_name": "ACCancelWriter",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14002124e",
+        "from_func": "0x140021144",
+        "from_func_name": "?CompleteStorage@CStorageComplete@@AEAAXPEAU_DEVICE_OBJECT@@@Z",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140003d40",
+        "from_func": "0x140003b20",
+        "from_func_name": "ACCleanup",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140003e91",
+        "from_func": "0x140003dd0",
+        "from_func_name": "ACClose",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140004b9f",
+        "from_func": "0x140004afc",
+        "from_func_name": "ACCompleteRemoteRequest",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14000a503",
+        "from_func": "0x14000a3b0",
+        "from_func_name": "ACDeviceControl",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14000c6a5",
+        "from_func": "0x14000c5f0",
+        "from_func_name": "ACCreate",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140011ef8",
+        "from_func": "0x140011e00",
+        "from_func_name": "?ACCancelCreatePacketNotification@@YAXPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140012023",
+        "from_func": "0x140011f30",
+        "from_func_name": "ACCancelSender",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x1400121ba",
+        "from_func": "0x1400120e4",
+        "from_func_name": "?CompleteCreatePacket@CCreatePacketComplete@@AEAAXPEAU_DEVICE_OBJECT@@@Z",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140014c26",
+        "from_func": "0x140014c00",
+        "from_func_name": "?CompleteRequest@CPacket@@QEAAJPEAU_IRP@@@Z",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140014de4",
+        "from_func": "0x140014c48",
+        "from_func_name": "?CompleteWriter@CPacket@@QEAAXJ@Z",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x1400177a7",
+        "from_func": "0x140017694",
+        "from_func_name": "?HandleCreatePacketCompleted@CPacket@@QEAAXJG@Z",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140019b35",
+        "from_func": "0x1400199e0",
+        "from_func_name": "ACCancelReader",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14001a8d8",
+        "from_func": "0x14001a840",
+        "from_func_name": "ACCancelServiceRequest",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14001a9e1",
+        "from_func": "0x14001a900",
+        "from_func_name": "?CancelOpenQueueRequest@CQMInterface@@CAXPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14001aacd",
+        "from_func": "0x14001aa94",
+        "from_func_name": "?CompleteOpenQueueRequest@CQMInterface@@QEAAJPEAVCACOpenQueueRequest@@J@Z",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14001aba0",
+        "from_func": "0x14001aaf8",
+        "from_func_name": "?Dispatch@CQMInterface@@AEAAXXZ",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14001b6d1",
+        "from_func": "0x14001b640",
+        "from_func_name": "ACCancelRemoteQueueOperation",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14001b845",
+        "from_func": "0x14001b700",
+        "from_func_name": "ACCancelRemoteReader",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14001bb0b",
+        "from_func": "0x14001b9e0",
+        "from_func_name": "?CreateRemoteCursor@CProxy@@UEAAJPEAU_DEVICE_OBJECT@@KK@Z",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14001bb50",
+        "from_func": "0x14001b9e0",
+        "from_func_name": "?CreateRemoteCursor@CProxy@@UEAAJPEAU_DEVICE_OBJECT@@KK@Z",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14001f1a1",
+        "from_func": "0x14001f110",
+        "from_func_name": "ACCancelXactControl",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140020d5d",
+        "from_func": "0x140020ca0",
+        "from_func_name": "?ACCancelNotification@@YAXPEAU_DEVICE_OBJECT@@PEAU_IRP@@@Z",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140020e56",
+        "from_func": "0x140020d80",
+        "from_func_name": "ACCancelWriter",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x14002124e",
+        "from_func": "0x140021144",
+        "from_func_name": "?CompleteStorage@CStorageComplete@@AEAAXPEAU_DEVICE_OBJECT@@@Z",
+        "import": "ntoskrnl!IofCompleteRequest"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlCompareMemory",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140003f4e",
+        "from_func": "0x140003f44",
+        "from_func_name": "??8@YAHAEBUBOID@@0@Z",
+        "import": "ntoskrnl!RtlCompareMemory"
+      },
+      {
+        "from_ea": "0x140003f4e",
+        "from_func": "0x140003f44",
+        "from_func_name": "??8@YAHAEBUBOID@@0@Z",
+        "import": "ntoskrnl!RtlCompareMemory"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlCreateAcl",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000c1dd",
+        "from_func": "0x14000c100",
+        "from_func_name": "?BuildConnectSecurityDescriptor@@YAJPEAPEAU_SECURITY_DESCRIPTOR@@@Z",
+        "import": "ntoskrnl!RtlCreateAcl"
+      },
+      {
+        "from_ea": "0x14000c1dd",
+        "from_func": "0x14000c100",
+        "from_func_name": "?BuildConnectSecurityDescriptor@@YAJPEAPEAU_SECURITY_DESCRIPTOR@@@Z",
+        "import": "ntoskrnl!RtlCreateAcl"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlCreateSecurityDescriptor",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000c244",
+        "from_func": "0x14000c100",
+        "from_func_name": "?BuildConnectSecurityDescriptor@@YAJPEAPEAU_SECURITY_DESCRIPTOR@@@Z",
+        "import": "ntoskrnl!RtlCreateSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x14000c244",
+        "from_func": "0x14000c100",
+        "from_func_name": "?BuildConnectSecurityDescriptor@@YAJPEAPEAU_SECURITY_DESCRIPTOR@@@Z",
+        "import": "ntoskrnl!RtlCreateSecurityDescriptor"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlLengthSid",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000c187",
+        "from_func": "0x14000c100",
+        "from_func_name": "?BuildConnectSecurityDescriptor@@YAJPEAPEAU_SECURITY_DESCRIPTOR@@@Z",
+        "import": "ntoskrnl!RtlLengthSid"
+      },
+      {
+        "from_ea": "0x14000c187",
+        "from_func": "0x14000c100",
+        "from_func_name": "?BuildConnectSecurityDescriptor@@YAJPEAPEAU_SECURITY_DESCRIPTOR@@@Z",
+        "import": "ntoskrnl!RtlLengthSid"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlQueryFeatureConfiguration",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x14002f940",
+        "from_func": "0x14002f8f0",
+        "from_func_name": "wil_details_UpdateFeatureConfiguredStates",
+        "import": "ntoskrnl!RtlQueryFeatureConfiguration"
+      },
+      {
+        "from_ea": "0x140030191",
+        "from_func": "0x140030138",
+        "from_func_name": "wil_details_PopulateInitialConfiguredFeatureStates",
+        "import": "ntoskrnl!RtlQueryFeatureConfiguration"
+      },
+      {
+        "from_ea": "0x14002f940",
+        "from_func": "0x14002f8f0",
+        "from_func_name": "wil_details_UpdateFeatureConfiguredStates",
+        "import": "ntoskrnl!RtlQueryFeatureConfiguration"
+      },
+      {
+        "from_ea": "0x140030191",
+        "from_func": "0x140030138",
+        "from_func_name": "wil_details_PopulateInitialConfiguredFeatureStates",
+        "import": "ntoskrnl!RtlQueryFeatureConfiguration"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlQueryFeatureConfigurationChangeStamp",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1400300a0",
+        "from_func": "0x140030078",
+        "from_func_name": "wil_InitializeFeatureStaging",
+        "import": "ntoskrnl!RtlQueryFeatureConfigurationChangeStamp"
+      },
+      {
+        "from_ea": "0x1400300a0",
+        "from_func": "0x140030078",
+        "from_func_name": "wil_InitializeFeatureStaging",
+        "import": "ntoskrnl!RtlQueryFeatureConfigurationChangeStamp"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlRegisterFeatureConfigurationChangeNotification",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1400300f8",
+        "from_func": "0x140030078",
+        "from_func_name": "wil_InitializeFeatureStaging",
+        "import": "ntoskrnl!RtlRegisterFeatureConfigurationChangeNotification"
+      },
+      {
+        "from_ea": "0x1400300f8",
+        "from_func": "0x140030078",
+        "from_func_name": "wil_InitializeFeatureStaging",
+        "import": "ntoskrnl!RtlRegisterFeatureConfigurationChangeNotification"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlSetDaclSecurityDescriptor",
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000c261",
+        "from_func": "0x14000c100",
+        "from_func_name": "?BuildConnectSecurityDescriptor@@YAJPEAPEAU_SECURITY_DESCRIPTOR@@@Z",
+        "import": "ntoskrnl!RtlSetDaclSecurityDescriptor"
+      },
+      {
+        "from_ea": "0x14000c261",
+        "from_func": "0x14000c100",
+        "from_func_name": "?BuildConnectSecurityDescriptor@@YAJPEAPEAU_SECURITY_DESCRIPTOR@@@Z",
+        "import": "ntoskrnl!RtlSetDaclSecurityDescriptor"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlUnregisterFeatureConfigurationChangeNotification",
+    "tags": [
+      "registry_config"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14002f51c",
+        "from_func": "0x14002f50c",
+        "from_func_name": "wil_UninitializeFeatureStaging",
+        "import": "ntoskrnl!RtlUnregisterFeatureConfigurationChangeNotification"
+      },
+      {
+        "from_ea": "0x14002f51c",
+        "from_func": "0x14002f50c",
+        "from_func_name": "wil_UninitializeFeatureStaging",
+        "import": "ntoskrnl!RtlUnregisterFeatureConfigurationChangeNotification"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlValidSid",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000c538",
+        "from_func": "0x14000c388",
+        "from_func_name": "?GetConfiguredServiceIdentity@@YAJPEAPEAX@Z",
+        "import": "ntoskrnl!RtlValidSid"
+      },
+      {
+        "from_ea": "0x14000c538",
+        "from_func": "0x14000c388",
+        "from_func_name": "?GetConfiguredServiceIdentity@@YAJPEAPEAX@Z",
+        "import": "ntoskrnl!RtlValidSid"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!SeAccessCheck",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000c33f",
+        "from_func": "0x14000c2a8",
+        "from_func_name": "?ConnectAccessCheck@@YAJPEAU_SECURITY_SUBJECT_CONTEXT@@@Z",
+        "import": "ntoskrnl!SeAccessCheck"
+      },
+      {
+        "from_ea": "0x14000c33f",
+        "from_func": "0x14000c2a8",
+        "from_func_name": "?ConnectAccessCheck@@YAJPEAU_SECURITY_SUBJECT_CONTEXT@@@Z",
+        "import": "ntoskrnl!SeAccessCheck"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!ZwCreateFile",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x14000f126",
+        "from_func": "0x14000efc8",
+        "from_func_name": "?ACpCreateBitmap@@YAPEAVCPingPong@@PEAU_DEVICE_OBJECT@@PEB_WPEAPEA_WPEAPEAX@Z",
+        "import": "ntoskrnl!ZwCreateFile"
+      },
+      {
+        "from_ea": "0x14000f62a",
+        "from_func": "0x14000f54c",
+        "from_func_name": "?Create@CMMFAllocator@@SAPEAV1@PEAVCPoolAllocator@@PEB_WH@Z",
+        "import": "ntoskrnl!ZwCreateFile"
+      },
+      {
+        "from_ea": "0x14000f126",
+        "from_func": "0x14000efc8",
+        "from_func_name": "?ACpCreateBitmap@@YAPEAVCPingPong@@PEAU_DEVICE_OBJECT@@PEB_WPEAPEA_WPEAPEAX@Z",
+        "import": "ntoskrnl!ZwCreateFile"
+      },
+      {
+        "from_ea": "0x14000f62a",
+        "from_func": "0x14000f54c",
+        "from_func_name": "?Create@CMMFAllocator@@SAPEAV1@PEAVCPoolAllocator@@PEB_WH@Z",
+        "import": "ntoskrnl!ZwCreateFile"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!ZwDeleteFile",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x14000f305",
+        "from_func": "0x14000f2b4",
+        "from_func_name": "ACpDeleteFile",
+        "import": "ntoskrnl!ZwDeleteFile"
+      },
+      {
+        "from_ea": "0x14000f916",
+        "from_func": "0x14000f54c",
+        "from_func_name": "?Create@CMMFAllocator@@SAPEAV1@PEAVCPoolAllocator@@PEB_WH@Z",
+        "import": "ntoskrnl!ZwDeleteFile"
+      },
+      {
+        "from_ea": "0x14000f305",
+        "from_func": "0x14000f2b4",
+        "from_func_name": "ACpDeleteFile",
+        "import": "ntoskrnl!ZwDeleteFile"
+      },
+      {
+        "from_ea": "0x14000f916",
+        "from_func": "0x14000f54c",
+        "from_func_name": "?Create@CMMFAllocator@@SAPEAV1@PEAVCPoolAllocator@@PEB_WH@Z",
+        "import": "ntoskrnl!ZwDeleteFile"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!ZwReadFile",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140010750",
+        "from_func": "0x1400106f4",
+        "from_func_name": "?ReadPingPage@CMMFAllocator@@AEBAJK@Z",
+        "import": "ntoskrnl!ZwReadFile"
+      },
+      {
+        "from_ea": "0x140010750",
+        "from_func": "0x1400106f4",
+        "from_func_name": "?ReadPingPage@CMMFAllocator@@AEBAJK@Z",
+        "import": "ntoskrnl!ZwReadFile"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!ZwWriteFile",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000f51c",
+        "from_func": "0x14000f4c8",
+        "from_func_name": "?ACpWritePingPong@@YAJPEAVCPingPong@@PEAX@Z",
+        "import": "ntoskrnl!ZwWriteFile"
+      },
+      {
+        "from_ea": "0x14000f51c",
+        "from_func": "0x14000f4c8",
+        "from_func_name": "?ACpWritePingPong@@YAJPEAVCPingPong@@PEAX@Z",
+        "import": "ntoskrnl!ZwWriteFile"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 1,
+    "xrefs": [
+      {
+        "from_ea": "0x14000107d",
+        "from_func": "0x14000107d",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "ntoskrnl!__C_specific_handler"
+      }
+    ]
+  }
+]

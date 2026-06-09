@@ -1,0 +1,6087 @@
+[
+  {
+    "callee_count": 22,
+    "caller_count": 1,
+    "demangled": "DriverEntry",
+    "ea": "0x14003108c",
+    "function_file": "functions/14003108c_DriverEntry.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbActivateRecurrentService",
+      "mrxsmb!MRxSmbDeviceObject",
+      "mrxsmb!MRxSmbGetConfigurationBlock",
+      "mrxsmb!MRxSmbInitializeRecurrentService",
+      "mrxsmb!MRxSmbRegisterDialect",
+      "mrxsmb!MRxSmbRegisterSubRedirector",
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!EtwRegister",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!MmBuildMdlForNonPagedPool",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "DriverEntry",
+    "prototype": "NTSTATUS __stdcall(_DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 5787,
+    "size": 1805,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 17,
+    "caller_count": 1,
+    "demangled": "SmbCeFindOrConstructSessionEntry",
+    "ea": "0x140002614",
+    "function_file": "functions/140002614_SmbCeFindOrConstructSessionEntry.md",
+    "matched_imports": [
+      "ksecdd!GetSecurityUserInfo",
+      "mrxsmb!MRxSmbBootedRemotely",
+      "mrxsmb!MRxSmbRemoteBootMachineDomain",
+      "mrxsmb!MRxSmbRemoteBootMachineName",
+      "mrxsmb!MRxSmbRemoteBootMachinePassword",
+      "mrxsmb!MRxSmbRemoteBootShare",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!LsaFreeReturnBuffer",
+      "ntoskrnl!RtlCompareUnicodeString",
+      "ntoskrnl!RtlEqualUnicodeString",
+      "rdbss!RxCloneUnicodeStringNonPagedPool",
+      "rdbss!RxCreateCredential",
+      "rdbss!RxDereferenceCredential",
+      "rdbss!RxDiagnosticTrace",
+      "rdbss!RxReferenceCredential"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeFindOrConstructSessionEntry",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64 *)",
+    "rank_score": 5363,
+    "size": 3633,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "MRxSmbUnload",
+    "ea": "0x140032a30",
+    "function_file": "functions/140032a30_MRxSmbUnload.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbDeregisterDialect",
+      "mrxsmb!MRxSmbDeregisterSubRedirector",
+      "mrxsmb!MRxSmbDeviceObject",
+      "mrxsmb!MRxSmbShutdownRecurrentService",
+      "ntoskrnl!EtwUnregister",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeFlushQueuedDpcs",
+      "ntoskrnl!MmResetDriverPaging"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbUnload",
+    "prototype": "",
+    "rank_score": 4745,
+    "size": 804,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 10,
+    "demangled": "MRxSmbDeferredCreate",
+    "ea": "0x1400381d0",
+    "function_file": "functions/1400381d0_MRxSmbDeferredCreate.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExIsResourceAcquiredExclusiveLite",
+      "ntoskrnl!ExIsResourceAcquiredSharedLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeSetEvent",
+      "rdbss!RxAcquireExclusiveFcbResourceInMRx",
+      "rdbss!RxAcquireSharedFcbResourceInMRx",
+      "rdbss!RxInitializeContext",
+      "rdbss!RxReleaseFcbResourceInMRx",
+      "rdbss!RxWaitSync"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbDeferredCreate",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 4433,
+    "size": 1202,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "MRxSmbReadMiscellaneousRegistryParameters",
+    "ea": "0x140032114",
+    "function_file": "functions/140032114_MRxSmbReadMiscellaneousRegistryParameters.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey",
+      "ntoskrnl!ZwQueryValueKey",
+      "ntoskrnl!ZwSetValueKey"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Services\\MRxSmb\\Parameters",
+      "DeferredOpensEnabled",
+      "InfoCacheLevel",
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Services\\LanmanWorkStation\\Parameters",
+      "RequireSecuritySignature",
+      "EnableSecuritySignature",
+      "MaxNumOfExchangesForPipelineReadWrite",
+      "EnableCachingOnWriteOnlyOpens",
+      "DisableByteRangeLockingOnReadOnlyFiles",
+      "NoDeleteOnClose",
+      "RequireExtendedSecurity",
+      "SMB1NATCompatibilityLevel",
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Services\\EventLog\\System\\mrxsmb",
+      "%SystemRoot%\\System32\\kernel32.dll",
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Services\\LanmanServer\\Parameters"
+    ],
+    "name": "MRxSmbReadMiscellaneousRegistryParameters",
+    "prototype": "",
+    "rank_score": 4279,
+    "size": 1671,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "loader_planting",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 25,
+    "caller_count": 0,
+    "demangled": "MRxSmbQueryDirectory",
+    "ea": "0x14002a430",
+    "function_file": "functions/14002a430_MRxSmbQueryDirectory.md",
+    "matched_imports": [
+      "mrxsmb!FsRtlValidateFileInformationBufferEx",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExIsResourceAcquiredExclusiveLite",
+      "ntoskrnl!ExIsResourceAcquiredSharedLite",
+      "ntoskrnl!FsRtlDoesNameContainWildCards",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlUpcaseUnicodeString",
+      "rdbss!RxAcquireExclusiveFcbResourceInMRx",
+      "rdbss!RxDowngradeFcbToSharedInMRx",
+      "rdbss!RxReleaseFcbResourceInMRx"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbQueryDirectory",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 4260,
+    "size": 5007,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 1,
+    "demangled": "MRxSmbCreateWithExtraOptions",
+    "ea": "0x140037780",
+    "function_file": "functions/140037780_MRxSmbCreateWithExtraOptions.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoBuildPartialMdl",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!MmBuildMdlForNonPagedPool",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache",
+      "ntoskrnl!MmProbeAndLockPages",
+      "ntoskrnl!MmUnlockPages",
+      "ntoskrnl!RtlxUnicodeStringToAnsiSize",
+      "rdbss!RxAllocateMdl2",
+      "rdbss!RxFcbGetOutstandingBufferingChangeEvent",
+      "rdbss!RxProcessFcbChangeBufferingStateRequest"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbCreateWithExtraOptions",
+    "prototype": "__int64 __fastcall(PRX_CONTEXT RxContext)",
+    "rank_score": 3945,
+    "size": 2584,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 0,
+    "demangled": "SendSecondaryRequests",
+    "ea": "0x14003ffe0",
+    "function_file": "functions/14003ffe0_SendSecondaryRequests.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoBuildPartialMdl",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache",
+      "ntoskrnl!MmProbeAndLockPages",
+      "ntoskrnl!MmUnmapLockedPages",
+      "rdbss!RxAllocateMdl2",
+      "rdbss!RxUnlockHeaderPages"
+    ],
+    "matched_strings": [],
+    "name": "SendSecondaryRequests",
+    "prototype": "void __fastcall(char *Context)",
+    "rank_score": 3834,
+    "size": 2859,
+    "tags": []
+  },
+  {
+    "callee_count": 18,
+    "caller_count": 1,
+    "demangled": "SmbCeReceiveInd",
+    "ea": "0x140004a60",
+    "function_file": "functions/140004a60_SmbCeReceiveInd.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbLegacyPerfCtrs",
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "rdbss!RxIndicateChangeOfOplockState",
+      "rdbss!RxPerProcessCountersEnabled"
+    ],
+    "matched_strings": [
+      "VctIndReceive:Error handling copy data request %lx\n"
+    ],
+    "name": "SmbCeReceiveInd",
+    "prototype": "__int64 __fastcall(__int64, __int64, unsigned int, unsigned int, unsigned int *, __int64, _QWORD *, _DWORD *, int)",
+    "rank_score": 3696,
+    "size": 2180,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SmbCeInitializeTransactionParameters",
+    "ea": "0x14004b830",
+    "function_file": "functions/14004b830_SmbCeInitializeTransactionParameters.md",
+    "matched_imports": [
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache",
+      "ntoskrnl!MmProbeAndLockPages",
+      "ntoskrnl!MmUnlockPages",
+      "rdbss!RxAllocateMdl2"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeInitializeTransactionParameters",
+    "prototype": "__int64 __fastcall(struct _MDL *, unsigned __int16, __int64, unsigned int, __int64, unsigned int, __int64)",
+    "rank_score": 3610,
+    "size": 1029,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SmbCeDiscardTransactExchange",
+    "ea": "0x14004f060",
+    "function_file": "functions/14004f060_SmbCeDiscardTransactExchange.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbDeviceObject",
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!MmUnlockPages",
+      "rdbss!RxDispatchToWorkerThread"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeDiscardTransactExchange",
+    "prototype": "void __stdcall(PVOID Context)",
+    "rank_score": 3521,
+    "size": 809,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "SmbTransactExchangeStart",
+    "ea": "0x140046bb0",
+    "function_file": "functions/140046bb0_SmbTransactExchangeStart.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoBuildPartialMdl",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!IoGetRequestorProcessId",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache",
+      "ntoskrnl!MmProbeAndLockPages",
+      "rdbss!RxAllocateMdl2",
+      "rdbss!RxUnlockHeaderPages"
+    ],
+    "matched_strings": [],
+    "name": "SmbTransactExchangeStart",
+    "prototype": "__int64 __fastcall(PVOID pContext)",
+    "rank_score": 3445,
+    "size": 3371,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 19,
+    "caller_count": 0,
+    "demangled": "SmbPseExchangeStart_Create",
+    "ea": "0x140047fb0",
+    "function_file": "functions/140047fb0_SmbPseExchangeStart_Create.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExLocalTimeToSystemTime",
+      "ntoskrnl!FsRtlIsFatDbcsLegal",
+      "ntoskrnl!FsRtlIsHpfsDbcsLegal",
+      "ntoskrnl!IoGetRequestorProcessId",
+      "ntoskrnl!RtlFreeOemString",
+      "ntoskrnl!RtlSecondsSince1970ToTime",
+      "ntoskrnl!RtlUnicodeStringToOemString",
+      "rdbss!RxFinishFcbInitialization",
+      "rdbss!RxInitializeContext"
+    ],
+    "matched_strings": [],
+    "name": "SmbPseExchangeStart_Create",
+    "prototype": "__int64 __fastcall(char *pContext, __int64)",
+    "rank_score": 3271,
+    "size": 2938,
+    "tags": [
+      "authz_impersonation",
+      "loader_planting",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 2,
+    "demangled": "VctIndReceive",
+    "ea": "0x1400043a0",
+    "function_file": "functions/1400043a0_VctIndReceive.md",
+    "matched_imports": [
+      "mrxsmb!CopyBufferToMdl",
+      "mrxsmb!MRxSmbDeviceObject",
+      "mrxsmb!MRxSmbLegacyPerfCtrs",
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!RtlGetCallersAddress",
+      "rdbss!RxDispatchToWorkerThread"
+    ],
+    "matched_strings": [],
+    "name": "VctIndReceive",
+    "prototype": "__int64 __fastcall(__int64, int, unsigned int, unsigned int, int, unsigned int *, __int64, _QWORD *, __int128 **, unsigned int *)",
+    "rank_score": 3250,
+    "size": 1711,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 1,
+    "demangled": "BuildExtendedSessionSetupResponsePrologueFake",
+    "ea": "0x14003c81c",
+    "function_file": "functions/14003c81c_BuildExtendedSessionSetupResponsePrologueFake.md",
+    "matched_imports": [
+      "ksecdd!AcquireCredentialsHandleW",
+      "ksecdd!FreeContextBuffer",
+      "ksecdd!InitializeSecurityContextW",
+      "ksecdd!MapSecurityError",
+      "ksecdd!QueryContextAttributesW",
+      "ksecdd!SecMakeSPN",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "BuildExtendedSessionSetupResponsePrologueFake",
+    "prototype": "",
+    "rank_score": 3052,
+    "size": 1543,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 20,
+    "caller_count": 0,
+    "demangled": "SmbPseExchangeStart_Write",
+    "ea": "0x140044c70",
+    "function_file": "functions/140044c70_SmbPseExchangeStart_Write.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbLegacyPerfCtrs",
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!IoBuildPartialMdl",
+      "ntoskrnl!KeSetEvent",
+      "ntoskrnl!MmUnmapLockedPages",
+      "rdbss!RxLowIoCompletion"
+    ],
+    "matched_strings": [],
+    "name": "SmbPseExchangeStart_Write",
+    "prototype": "__int64 __fastcall(PVOID pContext)",
+    "rank_score": 2964,
+    "size": 3090,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 2,
+    "demangled": "BuildNtLanmanResponsePrologue",
+    "ea": "0x14003ceb8",
+    "function_file": "functions/14003ceb8_BuildNtLanmanResponsePrologue.md",
+    "matched_imports": [
+      "ksecdd!AcquireCredentialsHandleW",
+      "ksecdd!InitializeSecurityContextW",
+      "ksecdd!MapSecurityError",
+      "ksecdd!SecMakeSPNEx2",
+      "mrxsmb!MRxSmbUseKernelModeSecurity",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "BuildNtLanmanResponsePrologue",
+    "prototype": "",
+    "rank_score": 2769,
+    "size": 3103,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 22,
+    "demangled": "SmbCeInitiateExchange",
+    "ea": "0x14004dd50",
+    "function_file": "functions/14004dd50_SmbCeInitiateExchange.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeWaitForSingleObject",
+      "rdbss!RxSetMinirdrCancelRoutine"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeInitiateExchange",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 2669,
+    "size": 1931,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 0,
+    "demangled": "MRxSmbWrite",
+    "ea": "0x14004cfa0",
+    "function_file": "functions/14004cfa0_MRxSmbWrite.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "rdbss!RxIndicateChangeOfOplockStateForTarget",
+      "rdbss!RxLowIoGetBufferAddress"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbWrite",
+    "prototype": "",
+    "rank_score": 2628,
+    "size": 2111,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SmbMmInit",
+    "ea": "0x140035358",
+    "function_file": "functions/140035358_SmbMmInit.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExAllocatePoolWithTag",
+      "ntoskrnl!ExFreePool",
+      "ntoskrnl!ExInitializeNPagedLookasideList",
+      "ntoskrnl!ExInitializeZone",
+      "ntoskrnl!KeInitializeSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "SmbMmInit",
+    "prototype": "",
+    "rank_score": 2617,
+    "size": 715,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "VctpCreateConnectionCallback",
+    "ea": "0x1400153a0",
+    "function_file": "functions/1400153a0_VctpCreateConnectionCallback.md",
+    "matched_imports": [
+      "mrxsmb!RxCeQueryInformation",
+      "mrxsmb!RxCeTearDownVC",
+      "mrxsmb!SmbMmFreeServerTransport",
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "VctpCreateConnectionCallback",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 2421,
+    "size": 692,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "MRxSmbCacheFullDirectory",
+    "ea": "0x140043368",
+    "function_file": "functions/140043368_MRxSmbCacheFullDirectory.md",
+    "matched_imports": [
+      "mrxsmb!FsRtlValidateFileInformationBufferEx",
+      "mrxsmb!MRxSmbGetConfigurationBlock",
+      "mrxsmb!MRxSmbLegacyPerfCtrs",
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!RtlCopySid",
+      "rdbss!RxNameCacheActivateEntry",
+      "rdbss!RxNameCacheCheckEntry",
+      "rdbss!RxNameCacheCreateEntryEx",
+      "rdbss!RxNameCacheExpireEntry",
+      "rdbss!RxNameCacheFetchEntryEx"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbCacheFullDirectory",
+    "prototype": "void __fastcall(__int64, __int64, unsigned int, __int64)",
+    "rank_score": 2336,
+    "size": 1079,
+    "tags": [
+      "authz_impersonation",
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "VctInstantiateServerTransport",
+    "ea": "0x140015020",
+    "function_file": "functions/140015020_VctInstantiateServerTransport.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbDeviceObject",
+      "mrxsmb!RxCeEstablishConnectionNew",
+      "mrxsmb!SmbMmFreeServerTransport",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!RtlCopyUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "VctInstantiateServerTransport",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 2331,
+    "size": 796,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "ValidateServerExtendedSessionSetupResponse",
+    "ea": "0x14000d660",
+    "function_file": "functions/14000d660_ValidateServerExtendedSessionSetupResponse.md",
+    "matched_imports": [
+      "ksecdd!FreeContextBuffer",
+      "ksecdd!InitializeSecurityContextW",
+      "ksecdd!MapSecurityError",
+      "ksecdd!QueryContextAttributesW"
+    ],
+    "matched_strings": [],
+    "name": "ValidateServerExtendedSessionSetupResponse",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 2240,
+    "size": 1501,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "SmbCeCancelExchange",
+    "ea": "0x140012940",
+    "function_file": "functions/140012940_SmbCeCancelExchange.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!IoGetRequestorProcessId",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!MmProbeAndLockPages",
+      "rdbss!RxAllocateMdl2",
+      "rdbss!RxUnlockHeaderPages"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeCancelExchange",
+    "prototype": "NTSTATUS __stdcall(PRX_CONTEXT RxContext)",
+    "rank_score": 2237,
+    "size": 1025,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "SmbCepFinalizeExchange",
+    "ea": "0x140005640",
+    "function_file": "functions/140005640_SmbCepFinalizeExchange.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbDeviceObject",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "rdbss!RxPostToWorkerThread"
+    ],
+    "matched_strings": [],
+    "name": "SmbCepFinalizeExchange",
+    "prototype": "__int64 __fastcall(PVOID pContext)",
+    "rank_score": 2214,
+    "size": 1118,
+    "tags": []
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "SmbCeFindOrConstructNetRootEntry",
+    "ea": "0x14000d314",
+    "function_file": "functions/14000d314_SmbCeFindOrConstructNetRootEntry.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbRemoteBootShare",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!RtlCompareUnicodeString",
+      "rdbss!RxNameCacheInitializeEx"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeFindOrConstructNetRootEntry",
+    "prototype": "",
+    "rank_score": 2127,
+    "size": 836,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "BuildExtendedSessionSetupResponsePrologue",
+    "ea": "0x1400519f0",
+    "function_file": "functions/1400519f0_BuildExtendedSessionSetupResponsePrologue.md",
+    "matched_imports": [
+      "ksecdd!AcquireCredentialsHandleW",
+      "ksecdd!FreeContextBuffer",
+      "ksecdd!InitializeSecurityContextW",
+      "ksecdd!MapSecurityError",
+      "ksecdd!QueryContextAttributesW",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "BuildExtendedSessionSetupResponsePrologue",
+    "prototype": "__int64 __fastcall(__int64, __int64, _WORD *, _QWORD *)",
+    "rank_score": 2044,
+    "size": 2022,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 2,
+    "demangled": "SmbCeDiscardExchangeWorkerThreadRoutine",
+    "ea": "0x1400099a0",
+    "function_file": "functions/1400099a0_SmbCeDiscardExchangeWorkerThreadRoutine.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExFreeToNPagedLookasideList",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeDiscardExchangeWorkerThreadRoutine",
+    "prototype": "void __stdcall(PVOID Context)",
+    "rank_score": 2031,
+    "size": 539,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SmbExtSecurityBuildSpn",
+    "ea": "0x140029dd8",
+    "function_file": "functions/140029dd8_SmbExtSecurityBuildSpn.md",
+    "matched_imports": [
+      "ksecdd!SecMakeSPNEx2",
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [],
+    "name": "SmbExtSecurityBuildSpn",
+    "prototype": "__int64 __fastcall(__int64, struct _UNICODE_STRING *, _BYTE *)",
+    "rank_score": 2028,
+    "size": 515,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "MRxSmbFinishWrite",
+    "ea": "0x14004ad90",
+    "function_file": "functions/14004ad90_MRxSmbFinishWrite.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "rdbss!RxNameCacheExpireEntry",
+      "rdbss!RxNameCacheFetchEntryEx"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbFinishWrite",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 2014,
+    "size": 1046,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "MRxSmbIsBasicFileInfoCacheFound",
+    "ea": "0x14004f390",
+    "function_file": "functions/14004f390_MRxSmbIsBasicFileInfoCacheFound.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "rdbss!RxNameCacheActivateEntry",
+      "rdbss!RxNameCacheCheckEntry",
+      "rdbss!RxNameCacheExpireEntry",
+      "rdbss!RxNameCacheFetchEntryEx"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbIsBasicFileInfoCacheFound",
+    "prototype": "",
+    "rank_score": 2008,
+    "size": 574,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "MRxSmbIsStandardFileInfoCacheFound",
+    "ea": "0x140044248",
+    "function_file": "functions/140044248_MRxSmbIsStandardFileInfoCacheFound.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "rdbss!RxNameCacheActivateEntry",
+      "rdbss!RxNameCacheCheckEntry",
+      "rdbss!RxNameCacheExpireEntry",
+      "rdbss!RxNameCacheFetchEntryEx"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbIsStandardFileInfoCacheFound",
+    "prototype": "",
+    "rank_score": 2007,
+    "size": 477,
+    "tags": []
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "SmbCeFindOrConstructServerEntry",
+    "ea": "0x1400012b4",
+    "function_file": "functions/1400012b4_SmbCeFindOrConstructServerEntry.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbActivateRecurrentService",
+      "mrxsmb!MRxSmbBootedRemotely",
+      "mrxsmb!MRxSmbDeviceObject",
+      "mrxsmb!MRxSmbRemoteBootShare",
+      "mrxsmb!SmbCepDereferenceTransport",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!RtlCompareUnicodeString",
+      "ntoskrnl!RtlEqualUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeFindOrConstructServerEntry",
+    "prototype": "",
+    "rank_score": 1941,
+    "size": 1253,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 18,
+    "demangled": "SmbCepDereferenceServerEntry",
+    "ea": "0x140004030",
+    "function_file": "functions/140004030_SmbCepDereferenceServerEntry.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbCancelRecurrentService",
+      "mrxsmb!MRxSmbDeviceObject",
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeSetEvent",
+      "rdbss!RxPostToWorkerThread"
+    ],
+    "matched_strings": [],
+    "name": "SmbCepDereferenceServerEntry",
+    "prototype": "__int64 __fastcall(PVOID pContext)",
+    "rank_score": 1931,
+    "size": 373,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SmbCeGetConfigurationInformation",
+    "ea": "0x140032e60",
+    "function_file": "functions/140032e60_SmbCeGetConfigurationInformation.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Services\\LanmanWorkStation\\Linkage"
+    ],
+    "name": "SmbCeGetConfigurationInformation",
+    "prototype": "",
+    "rank_score": 1911,
+    "size": 589,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "SmbCeUninitializeServerTransport",
+    "ea": "0x140040c10",
+    "function_file": "functions/140040c10_SmbCeUninitializeServerTransport.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbDeviceObject",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoGetCurrentProcess",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject",
+      "rdbss!RxGetRDBSSProcess",
+      "rdbss!RxPostToWorkerThread"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeUninitializeServerTransport",
+    "prototype": "",
+    "rank_score": 1908,
+    "size": 367,
+    "tags": []
+  },
+  {
+    "callee_count": 24,
+    "caller_count": 1,
+    "demangled": "MRxSmbT2OpenFile",
+    "ea": "0x1400394f0",
+    "function_file": "functions/1400394f0_MRxSmbT2OpenFile.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "rdbss!RxFcbGetOutstandingBufferingChangeEvent",
+      "rdbss!RxProcessFcbChangeBufferingStateRequest"
+    ],
+    "matched_strings": [
+      "MRxSmbT2Open---%p %08lx\n",
+      "MRxSmbT2OpenFile",
+      "MRxSmbT2OpenFile",
+      "MRxSmbT2Open again---%p %08lx\n"
+    ],
+    "name": "MRxSmbT2OpenFile",
+    "prototype": "__int64 __fastcall(PRX_CONTEXT RxContext)",
+    "rank_score": 1904,
+    "size": 1262,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "SmbConstructNetRootExchangeFinalize",
+    "ea": "0x14000fee0",
+    "function_file": "functions/14000fee0_SmbConstructNetRootExchangeFinalize.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbDeviceObject",
+      "mrxsmb!MRxSmbLegacyPerfCtrs",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!MmUnlockPages",
+      "rdbss!RxDiagnosticTrace",
+      "rdbss!RxPostToWorkerThread",
+      "rdbss!RxUnlockHeaderPages"
+    ],
+    "matched_strings": [
+      "Callback rdbss for create VNetRootCtxt %p Status %x"
+    ],
+    "name": "SmbConstructNetRootExchangeFinalize",
+    "prototype": "__int64 __fastcall(PVOID Context)",
+    "rank_score": 1875,
+    "size": 771,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 9,
+    "demangled": "MRxSmbCacheFileNotFound",
+    "ea": "0x140043228",
+    "function_file": "functions/140043228_MRxSmbCacheFileNotFound.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbGetConfigurationBlock",
+      "mrxsmb!MRxSmbLegacyPerfCtrs",
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "rdbss!RxNameCacheActivateEntry",
+      "rdbss!RxNameCacheCreateEntryEx",
+      "rdbss!RxNameCacheFetchEntryEx"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbCacheFileNotFound",
+    "prototype": "",
+    "rank_score": 1823,
+    "size": 314,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "MRxSmbIsFullDirectoryCached",
+    "ea": "0x140043f88",
+    "function_file": "functions/140043f88_MRxSmbIsFullDirectoryCached.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!RtlEqualSid",
+      "rdbss!RxNameCacheActivateEntry",
+      "rdbss!RxNameCacheCheckEntry",
+      "rdbss!RxNameCacheExpireEntry",
+      "rdbss!RxNameCacheFetchEntryEx"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbIsFullDirectoryCached",
+    "prototype": "",
+    "rank_score": 1822,
+    "size": 697,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 5,
+    "demangled": "SmbCeTranceive",
+    "ea": "0x14004e5b0",
+    "function_file": "functions/14004e5b0_SmbCeTranceive.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbLegacyPerfCtrs",
+      "mrxsmb!RxCeSend",
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExIsResourceAcquiredExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache",
+      "rdbss!RxPerProcessCountersEnabled"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeTranceive",
+    "prototype": "__int64 __fastcall(PVOID pContext)",
+    "rank_score": 1738,
+    "size": 1362,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 19,
+    "demangled": "SmbPseFinalizeOrdinaryExchange",
+    "ea": "0x140046120",
+    "function_file": "functions/140046120_SmbPseFinalizeOrdinaryExchange.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbDeviceObject",
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!MmUnmapLockedPages",
+      "rdbss!RxDereferenceAndDeleteRxContext_Real",
+      "rdbss!RxPostToWorkerThread",
+      "rdbss!RxUnlockHeaderPages"
+    ],
+    "matched_strings": [],
+    "name": "SmbPseFinalizeOrdinaryExchange",
+    "prototype": "__int64 __fastcall(PVOID pContext)",
+    "rank_score": 1727,
+    "size": 599,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 9,
+    "demangled": "SmbCepDereferenceServerTransport",
+    "ea": "0x140008b70",
+    "function_file": "functions/140008b70_SmbCepDereferenceServerTransport.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbDeviceObject",
+      "ntoskrnl!IoGetCurrentProcess",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!RtlGetCallersAddress",
+      "rdbss!RxDispatchToWorkerThread",
+      "rdbss!RxGetRDBSSProcess"
+    ],
+    "matched_strings": [],
+    "name": "SmbCepDereferenceServerTransport",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 1725,
+    "size": 384,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SmbCeGetReconnectableServers",
+    "ea": "0x1400330b4",
+    "function_file": "functions/1400330b4_SmbCeGetReconnectableServers.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Services\\LanmanWorkStation\\Parameters"
+    ],
+    "name": "SmbCeGetReconnectableServers",
+    "prototype": "",
+    "rank_score": 1699,
+    "size": 594,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SmbCeGetServersWithExtendedSessTimeout",
+    "ea": "0x14003330c",
+    "function_file": "functions/14003330c_SmbCeGetServersWithExtendedSessTimeout.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\System\\CurrentControlSet\\Services\\LanmanWorkStation\\Parameters"
+    ],
+    "name": "SmbCeGetServersWithExtendedSessTimeout",
+    "prototype": "",
+    "rank_score": 1698,
+    "size": 525,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 4,
+    "demangled": "SmbCeParseSmbHeader",
+    "ea": "0x140007820",
+    "function_file": "functions/140007820_SmbCeParseSmbHeader.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbLegacyPerfCtrs",
+      "ntoskrnl!EtwWriteTransfer",
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeParseSmbHeader",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, int *, unsigned int, unsigned int, unsigned int *)",
+    "rank_score": 1669,
+    "size": 4115,
+    "tags": [
+      "service_task",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 1,
+    "demangled": "MRxSmbNamedPipeFsControl",
+    "ea": "0x14003021c",
+    "function_file": "functions/14003021c_MRxSmbNamedPipeFsControl.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoGetRequestorProcess",
+      "ntoskrnl!KeStackAttachProcess",
+      "ntoskrnl!KeUnstackDetachProcess",
+      "ntoskrnl!ProbeForRead",
+      "ntoskrnl!ProbeForWrite"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbNamedPipeFsControl",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 1641,
+    "size": 2443,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "MRxSmbQueryVolumeInformationWithFullBuffer",
+    "ea": "0x1400502b4",
+    "function_file": "functions/1400502b4_MRxSmbQueryVolumeInformationWithFullBuffer.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbGetConfigurationBlock",
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeQueryTimeIncrement"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbQueryVolumeInformationWithFullBuffer",
+    "prototype": "",
+    "rank_score": 1628,
+    "size": 1240,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "SmbCeInitializeServerEntry",
+    "ea": "0x1400010f0",
+    "function_file": "functions/1400010f0_SmbCeInitializeServerEntry.md",
+    "matched_imports": [
+      "mrxsmb!SmbCeFindTransport",
+      "mrxsmb!SmbCepDereferenceTransport",
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "rdbss!RxFinalizeSecurityContext",
+      "rdbss!RxReferenceCredential"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeInitializeServerEntry",
+    "prototype": "",
+    "rank_score": 1628,
+    "size": 444,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "SmbCeSyncExchangeForSecuritySignature",
+    "ea": "0x140009650",
+    "function_file": "functions/140009650_SmbCeSyncExchangeForSecuritySignature.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeSyncExchangeForSecuritySignature",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 1620,
+    "size": 626,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "SmbCeTearDownServerEntry",
+    "ea": "0x140011e70",
+    "function_file": "functions/140011e70_SmbCeTearDownServerEntry.md",
+    "matched_imports": [
+      "mrxsmb!SmbCepDereferenceTransport",
+      "ntoskrnl!ExFreePoolWithTag",
+      "rdbss!RxFinalizeSecurityContext"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeTearDownServerEntry",
+    "prototype": "void __stdcall(PVOID Context)",
+    "rank_score": 1619,
+    "size": 413,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "MRxSmbCreateBasicFileInfoCache",
+    "ea": "0x14004a7a0",
+    "function_file": "functions/14004a7a0_MRxSmbCreateBasicFileInfoCache.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbGetConfigurationBlock",
+      "mrxsmb!MRxSmbLegacyPerfCtrs",
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "rdbss!RxNameCacheActivateEntry",
+      "rdbss!RxNameCacheCreateEntryEx",
+      "rdbss!RxNameCacheFetchEntryEx"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbCreateBasicFileInfoCache",
+    "prototype": "",
+    "rank_score": 1518,
+    "size": 385,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "SmbCeInitializeTransactExchange",
+    "ea": "0x14004bf90",
+    "function_file": "functions/14004bf90_SmbCeInitializeTransactExchange.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache",
+      "ntoskrnl!MmProbeAndLockPages",
+      "ntoskrnl!RtlxUnicodeStringToAnsiSize",
+      "rdbss!RxAllocateMdl2"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeInitializeTransactExchange",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64, _WORD *, _QWORD *, __int64)",
+    "rank_score": 1438,
+    "size": 3405,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "SmbCeCompleteServerEntryInitialization",
+    "ea": "0x14001185c",
+    "function_file": "functions/14001185c_SmbCeCompleteServerEntryInitialization.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeCompleteServerEntryInitialization",
+    "prototype": "",
+    "rank_score": 1434,
+    "size": 861,
+    "tags": [
+      "registry_config",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 2,
+    "demangled": "MRxSmbFsControl",
+    "ea": "0x14002f120",
+    "function_file": "functions/14002f120_MRxSmbFsControl.md",
+    "matched_imports": [
+      "mrxsmb!FsRtlValidateReparsePointBufferEx",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExIsResourceAcquiredExclusiveLite",
+      "ntoskrnl!ProbeForRead",
+      "ntoskrnl!ProbeForWrite",
+      "rdbss!RxAcquireExclusiveFcbResourceInMRx",
+      "rdbss!RxReleaseFcbResourceInMRx"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbFsControl",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 1431,
+    "size": 1301,
+    "tags": [
+      "reparse_path"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 16,
+    "demangled": "MRxSmbInvalidateFullDirectoryCacheParent",
+    "ea": "0x14004b1b0",
+    "function_file": "functions/14004b1b0_MRxSmbInvalidateFullDirectoryCacheParent.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!RtlUpcaseUnicodeChar",
+      "rdbss!RxNameCacheActivateEntry",
+      "rdbss!RxNameCacheCheckEntry",
+      "rdbss!RxNameCacheExpireEntry",
+      "rdbss!RxNameCacheFetchEntryEx"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbInvalidateFullDirectoryCacheParent",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 1426,
+    "size": 694,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "ParseTransactResponse",
+    "ea": "0x14000a700",
+    "function_file": "functions/14000a700_ParseTransactResponse.md",
+    "matched_imports": [
+      "ntoskrnl!IoBuildPartialMdl",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache",
+      "rdbss!RxAllocateMdl2"
+    ],
+    "matched_strings": [],
+    "name": "ParseTransactResponse",
+    "prototype": "__int64 __fastcall(__int64, char *, unsigned int, __int64, unsigned int *, __int64, struct _MDL **, _DWORD *)",
+    "rank_score": 1425,
+    "size": 2109,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SmbCeReferenceServer",
+    "ea": "0x14000a000",
+    "function_file": "functions/14000a000_SmbCeReferenceServer.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbLegacyPerfCtrs",
+      "mrxsmb!MRxSmbUseKernelModeSecurity",
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeReferenceServer",
+    "prototype": "",
+    "rank_score": 1421,
+    "size": 539,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SmbCeSendToServer",
+    "ea": "0x14003f41c",
+    "function_file": "functions/14003f41c_SmbCeSendToServer.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbLegacyPerfCtrs",
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExIsResourceAcquiredExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeSendToServer",
+    "prototype": "",
+    "rank_score": 1419,
+    "size": 499,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 3,
+    "demangled": "SmbCeRemoteBootReconnect",
+    "ea": "0x140042fd4",
+    "function_file": "functions/140042fd4_SmbCeRemoteBootReconnect.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetCurrentProcess",
+      "ntoskrnl!KeDelayExecutionThread",
+      "ntoskrnl!KeStackAttachProcess",
+      "ntoskrnl!KeUnstackDetachProcess",
+      "ntoskrnl!RtlRandom",
+      "rdbss!RxGetRDBSSProcess"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeRemoteBootReconnect",
+    "prototype": "",
+    "rank_score": 1415,
+    "size": 588,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "MRxSmbInvalidateFullDirectoryCacheParentForRename",
+    "ea": "0x1400439e0",
+    "function_file": "functions/1400439e0_MRxSmbInvalidateFullDirectoryCacheParentForRename.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "ntoskrnl!RtlUpcaseUnicodeChar",
+      "rdbss!RxNameCacheActivateEntry",
+      "rdbss!RxNameCacheCheckEntry",
+      "rdbss!RxNameCacheExpireEntry",
+      "rdbss!RxNameCacheFetchEntryEx"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbInvalidateFullDirectoryCacheParentForRename",
+    "prototype": "",
+    "rank_score": 1412,
+    "size": 627,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SmbCeTearDownNetRootEntry",
+    "ea": "0x14003e934",
+    "function_file": "functions/14003e934_SmbCeTearDownNetRootEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "rdbss!RxNameCacheFinalize"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeTearDownNetRootEntry",
+    "prototype": "",
+    "rank_score": 1409,
+    "size": 307,
+    "tags": []
+  },
+  {
+    "callee_count": 17,
+    "caller_count": 1,
+    "demangled": "SmbTransactExchangeReceive",
+    "ea": "0x140006af0",
+    "function_file": "functions/140006af0_SmbTransactExchangeReceive.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbDeviceObject",
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!MmBuildMdlForNonPagedPool",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache",
+      "rdbss!RxPostToWorkerThread"
+    ],
+    "matched_strings": [],
+    "name": "SmbTransactExchangeReceive",
+    "prototype": "__int64 __fastcall(unsigned int *pContext, unsigned int, __int64, unsigned int *, __int64, _QWORD *, _DWORD *, __int16)",
+    "rank_score": 1343,
+    "size": 3364,
+    "tags": []
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 4,
+    "demangled": "SmbCeSend",
+    "ea": "0x14003f0c8",
+    "function_file": "functions/14003f0c8_SmbCeSend.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbLegacyPerfCtrs",
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExIsResourceAcquiredExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache",
+      "rdbss!RxPerProcessCountersEnabled"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeSend",
+    "prototype": "__int64 __fastcall(PVOID pContext)",
+    "rank_score": 1331,
+    "size": 843,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "MRxSmbCreateStandardFileInfoCache",
+    "ea": "0x1400281f8",
+    "function_file": "functions/1400281f8_MRxSmbCreateStandardFileInfoCache.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbGetConfigurationBlock",
+      "mrxsmb!MRxSmbLegacyPerfCtrs",
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "rdbss!RxNameCacheActivateEntry",
+      "rdbss!RxNameCacheCreateEntryEx",
+      "rdbss!RxNameCacheFetchEntryEx"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbCreateStandardFileInfoCache",
+    "prototype": "",
+    "rank_score": 1317,
+    "size": 274,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "MRxSmbCreateInternalFileInfoCache",
+    "ea": "0x1400437a8",
+    "function_file": "functions/1400437a8_MRxSmbCreateInternalFileInfoCache.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbGetConfigurationBlock",
+      "mrxsmb!MRxSmbLegacyPerfCtrs",
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "rdbss!RxNameCacheActivateEntry",
+      "rdbss!RxNameCacheCreateEntryEx",
+      "rdbss!RxNameCacheFetchEntryEx"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbCreateInternalFileInfoCache",
+    "prototype": "",
+    "rank_score": 1313,
+    "size": 252,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "MRxSmbNotifyChangeDirectoryCompletion",
+    "ea": "0x14000f310",
+    "function_file": "functions/14000f310_MRxSmbNotifyChangeDirectoryCompletion.md",
+    "matched_imports": [
+      "mrxsmb!FsRtlValidateChangeNotifyBuffer",
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "rdbss!RxLowIoCompletion"
+    ],
+    "matched_strings": [
+      "MRxSmbNotifyChangeDirectoryCompletion"
+    ],
+    "name": "MRxSmbNotifyChangeDirectoryCompletion",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 1257,
+    "size": 371,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "MRxSmbNamedPipeFsControlCompletion",
+    "ea": "0x14000f1d0",
+    "function_file": "functions/14000f1d0_MRxSmbNamedPipeFsControlCompletion.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "rdbss!RxLowIoCompletion"
+    ],
+    "matched_strings": [
+      "MRxSmbNamedPipeFsControlCompletion"
+    ],
+    "name": "MRxSmbNamedPipeFsControlCompletion",
+    "prototype": "void __fastcall(volatile signed __int32 *P)",
+    "rank_score": 1255,
+    "size": 308,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 3,
+    "demangled": "MrxSmbUnalignedDirEntryCopyTail",
+    "ea": "0x140052fa0",
+    "function_file": "functions/140052fa0_MrxSmbUnalignedDirEntryCopyTail.md",
+    "matched_imports": [
+      "ntoskrnl!FsRtlIsNameInExpression",
+      "ntoskrnl!RtlEqualUnicodeString",
+      "ntoskrnl!RtlOemStringToCountedUnicodeString",
+      "ntoskrnl!RtlOemStringToUnicodeString",
+      "ntoskrnl!RtlxOemStringToUnicodeSize"
+    ],
+    "matched_strings": [],
+    "name": "MrxSmbUnalignedDirEntryCopyTail",
+    "prototype": "__int64 __fastcall(__int64, int, __int64, int *, __int64)",
+    "rank_score": 1247,
+    "size": 2622,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "SmbCeConstructServerTransport",
+    "ea": "0x140014abc",
+    "function_file": "functions/140014abc_SmbCeConstructServerTransport.md",
+    "matched_imports": [
+      "mrxsmb!SmbCeQueryServerAvailability",
+      "mrxsmb!SmbCeUpdateServerAvailability",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!KeSetEvent"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeConstructServerTransport",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 1222,
+    "size": 451,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "SmbCeGetUserNameAndDomainName",
+    "ea": "0x1400515f0",
+    "function_file": "functions/1400515f0_SmbCeGetUserNameAndDomainName.md",
+    "matched_imports": [
+      "ksecdd!FreeContextBuffer",
+      "ksecdd!GetSecurityUserInfo",
+      "ksecdd!MapSecurityError",
+      "ksecdd!QueryContextAttributesW",
+      "ntoskrnl!LsaFreeReturnBuffer",
+      "ntoskrnl!RtlInitUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeGetUserNameAndDomainName",
+    "prototype": "",
+    "rank_score": 1221,
+    "size": 644,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "SmbCeErrorInd",
+    "ea": "0x14000bd10",
+    "function_file": "functions/14000bd10_SmbCeErrorInd.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbDeviceObject",
+      "mrxsmb!MRxSmbLegacyPerfCtrs",
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "rdbss!RxDispatchToWorkerThread"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeErrorInd",
+    "prototype": "__int64 __fastcall(PVOID pContext)",
+    "rank_score": 1219,
+    "size": 302,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "MRxSmbUpdateBasicFileInfoCacheAll",
+    "ea": "0x14004442c",
+    "function_file": "functions/14004442c_MRxSmbUpdateBasicFileInfoCacheAll.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "rdbss!RxNameCacheActivateEntry",
+      "rdbss!RxNameCacheExpireEntry",
+      "rdbss!RxNameCacheFetchEntryEx"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbUpdateBasicFileInfoCacheAll",
+    "prototype": "",
+    "rank_score": 1217,
+    "size": 309,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "SmbMmTearDown",
+    "ea": "0x14003562c",
+    "function_file": "functions/14003562c_SmbMmTearDown.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteNPagedLookasideList",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "SmbMmTearDown",
+    "prototype": "",
+    "rank_score": 1213,
+    "size": 137,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 5,
+    "demangled": "MRxSmbInvalidateInternalFileInfoCache",
+    "ea": "0x140043c5c",
+    "function_file": "functions/140043c5c_MRxSmbInvalidateInternalFileInfoCache.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "rdbss!RxNameCacheExpireEntry",
+      "rdbss!RxNameCacheFetchEntryEx"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbInvalidateInternalFileInfoCache",
+    "prototype": "",
+    "rank_score": 1210,
+    "size": 274,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "MRxSmbIsFileInFullDirectoryCache",
+    "ea": "0x14004f5e0",
+    "function_file": "functions/14004f5e0_MRxSmbIsFileInFullDirectoryCache.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "rdbss!RxNameCacheActivateEntry",
+      "rdbss!RxNameCacheCheckEntry",
+      "rdbss!RxNameCacheExpireEntry",
+      "rdbss!RxNameCacheFetchEntryEx"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbIsFileInFullDirectoryCache",
+    "prototype": "",
+    "rank_score": 1209,
+    "size": 569,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "MRxSmbInvalidateBasicFileInfoCache",
+    "ea": "0x14004b470",
+    "function_file": "functions/14004b470_MRxSmbInvalidateBasicFileInfoCache.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "rdbss!RxNameCacheExpireEntry",
+      "rdbss!RxNameCacheFetchEntryEx"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbInvalidateBasicFileInfoCache",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 1207,
+    "size": 372,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "MRxSmbIsFileNotFoundCached",
+    "ea": "0x14004ef00",
+    "function_file": "functions/14004ef00_MRxSmbIsFileNotFoundCached.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "rdbss!RxNameCacheActivateEntry",
+      "rdbss!RxNameCacheCheckEntry",
+      "rdbss!RxNameCacheExpireEntry",
+      "rdbss!RxNameCacheFetchEntryEx"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbIsFileNotFoundCached",
+    "prototype": "",
+    "rank_score": 1207,
+    "size": 339,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "MRxSmbInvalidateStandardFileInfoCache",
+    "ea": "0x14004ac50",
+    "function_file": "functions/14004ac50_MRxSmbInvalidateStandardFileInfoCache.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "rdbss!RxNameCacheExpireEntry",
+      "rdbss!RxNameCacheFetchEntryEx"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbInvalidateStandardFileInfoCache",
+    "prototype": "",
+    "rank_score": 1204,
+    "size": 301,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "MRxSmbIsInternalFileInfoCacheFound",
+    "ea": "0x1400500d0",
+    "function_file": "functions/1400500d0_MRxSmbIsInternalFileInfoCacheFound.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "rdbss!RxNameCacheActivateEntry",
+      "rdbss!RxNameCacheCheckEntry",
+      "rdbss!RxNameCacheExpireEntry",
+      "rdbss!RxNameCacheFetchEntryEx"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbIsInternalFileInfoCacheFound",
+    "prototype": "",
+    "rank_score": 1203,
+    "size": 235,
+    "tags": []
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 0,
+    "demangled": "VctIndDataReady",
+    "ea": "0x140008840",
+    "function_file": "functions/140008840_VctIndDataReady.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbLegacyPerfCtrs",
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [
+      "SS mismatch on data ready ind, tear down connection\n"
+    ],
+    "name": "VctIndDataReady",
+    "prototype": "__int64 __fastcall(__int64, signed __int64, __int64, int)",
+    "rank_score": 1169,
+    "size": 808,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 0,
+    "demangled": "SmbPseExchangeStart_Read",
+    "ea": "0x14003bd40",
+    "function_file": "functions/14003bd40_SmbPseExchangeStart_Read.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbLegacyPerfCtrs",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!MmUnmapLockedPages",
+      "rdbss!RxLowIoCompletion",
+      "rdbss!RxLowIoGetBufferAddress"
+    ],
+    "matched_strings": [],
+    "name": "SmbPseExchangeStart_Read",
+    "prototype": "__int64 __fastcall(PVOID pContext, PRX_CONTEXT RxContext)",
+    "rank_score": 1132,
+    "size": 1255,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SmbCeHoldExchangeForSessionRecovery",
+    "ea": "0x140044a9c",
+    "function_file": "functions/140044a9c_SmbCeHoldExchangeForSessionRecovery.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbDeviceObject",
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion",
+      "rdbss!RxDispatchToWorkerThread"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeHoldExchangeForSessionRecovery",
+    "prototype": "",
+    "rank_score": 1119,
+    "size": 447,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "MRxSmbUpdateSMB1UnusedCounter",
+    "ea": "0x140032d5c",
+    "function_file": "functions/140032d5c_MRxSmbUpdateSMB1UnusedCounter.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey",
+      "ntoskrnl!ZwSetValueKey"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\Software\\Microsoft\\SMB1Uninstall"
+    ],
+    "name": "MRxSmbUpdateSMB1UnusedCounter",
+    "prototype": "",
+    "rank_score": 1094,
+    "size": 251,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 3,
+    "demangled": "SmbCeCompleteSessionEntryInitialization",
+    "ea": "0x140053db0",
+    "function_file": "functions/140053db0_SmbCeCompleteSessionEntryInitialization.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbGetConfigurationBlock",
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [
+      "SmbCeCompleteSessionEntryInitialization"
+    ],
+    "name": "SmbCeCompleteSessionEntryInitialization",
+    "prototype": "",
+    "rank_score": 1094,
+    "size": 1293,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 23,
+    "caller_count": 1,
+    "demangled": "MRxSmbCreate",
+    "ea": "0x140036d40",
+    "function_file": "functions/140036d40_MRxSmbCreate.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbBootedRemotely",
+      "ntoskrnl!ExAllocatePool2",
+      "rdbss!RxCreateNetFobx",
+      "rdbss!RxFcbGetOutstandingBufferingChangeEvent",
+      "rdbss!RxProcessFcbChangeBufferingStateRequest"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbCreate",
+    "prototype": "__int64 __fastcall(PRX_CONTEXT RxContext)",
+    "rank_score": 1074,
+    "size": 2618,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 14,
+    "caller_count": 0,
+    "demangled": "MRxSmbHandOverSrvCall",
+    "ea": "0x140013700",
+    "function_file": "functions/140013700_MRxSmbHandOverSrvCall.md",
+    "matched_imports": [
+      "mrxsmb!SmbCeUpdateTransportDispatchVectors",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbHandOverSrvCall",
+    "prototype": "",
+    "rank_score": 1060,
+    "size": 886,
+    "tags": [
+      "registry_config",
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 8,
+    "demangled": "MRxSmbCreateFileSuccessTail",
+    "ea": "0x1400499e0",
+    "function_file": "functions/1400499e0_MRxSmbCreateFileSuccessTail.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "rdbss!RxCreateNetFobx",
+      "rdbss!RxFinishFcbInitialization",
+      "rdbss!RxIndicateChangeOfOplockState",
+      "rdbss!RxRegisterSrvOpenWithBufferingManager"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbCreateFileSuccessTail",
+    "prototype": "__int64 __usercall@<rax>(PRX_CONTEXT RxContext@<rcx>, int, char, int, __int64)",
+    "rank_score": 1059,
+    "size": 2314,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "SmbAddSmbSecuritySignature",
+    "ea": "0x14003ec3c",
+    "function_file": "functions/14003ec3c_SmbAddSmbSecuritySignature.md",
+    "matched_imports": [
+      "ksecdd!BCryptDestroyHash",
+      "ksecdd!BCryptDuplicateHash",
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache"
+    ],
+    "matched_strings": [],
+    "name": "SmbAddSmbSecuritySignature",
+    "prototype": "",
+    "rank_score": 1030,
+    "size": 401,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "SmbPseExchangeStart_Rename",
+    "ea": "0x14003c550",
+    "function_file": "functions/14003c550_SmbPseExchangeStart_Rename.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCompareUnicodeString",
+      "rdbss!RxAcquireExclusiveFcbResourceInMRx",
+      "rdbss!RxReleaseFcbResourceInMRx"
+    ],
+    "matched_strings": [],
+    "name": "SmbPseExchangeStart_Rename",
+    "prototype": "__int64 __fastcall(PVOID pContext, PMRX_FCB Fcb)",
+    "rank_score": 1025,
+    "size": 710,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "MRxSmbFsCtlUserTransact",
+    "ea": "0x14002f968",
+    "function_file": "functions/14002f968_MRxSmbFsCtlUserTransact.md",
+    "matched_imports": [
+      "ntoskrnl!IoIs32bitProcess",
+      "ntoskrnl!ProbeForWrite"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbFsCtlUserTransact",
+    "prototype": "void __fastcall(__int64)",
+    "rank_score": 1021,
+    "size": 1538,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 15,
+    "demangled": "SmbCeDecrementPendingOperationsAndFinalize",
+    "ea": "0x1400054b0",
+    "function_file": "functions/1400054b0_SmbCeDecrementPendingOperationsAndFinalize.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "rdbss!RxClearMinirdrCancelRoutine"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeDecrementPendingOperationsAndFinalize",
+    "prototype": "__int64 __fastcall(PVOID pContext)",
+    "rank_score": 1020,
+    "size": 394,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "VctCompleteInitialization",
+    "ea": "0x140041168",
+    "function_file": "functions/140041168_VctCompleteInitialization.md",
+    "matched_imports": [
+      "mrxsmb!RxCeGetTransportAddresses",
+      "mrxsmb!RxCeQueryInformation",
+      "mrxsmb!RxCeQueryLocalAddressInformation",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "VctCompleteInitialization",
+    "prototype": "",
+    "rank_score": 1020,
+    "size": 438,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "UninitializeSecurityContextsForSession",
+    "ea": "0x14001111c",
+    "function_file": "functions/14001111c_UninitializeSecurityContextsForSession.md",
+    "matched_imports": [
+      "ksecdd!DeleteSecurityContext",
+      "ksecdd!FreeCredentialsHandle",
+      "mrxsmb!MRxSmbUseKernelModeSecurity",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "UninitializeSecurityContextsForSession",
+    "prototype": "",
+    "rank_score": 1018,
+    "size": 325,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "SmbCeSubmitTransactionRequest",
+    "ea": "0x14004bce0",
+    "function_file": "functions/14004bce0_SmbCeSubmitTransactionRequest.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbDeviceObject",
+      "ntoskrnl!DbgPrint",
+      "rdbss!RxPostToWorkerThread"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeSubmitTransactionRequest",
+    "prototype": "__int64 __fastcall(__int64, __int64, int, __int64, __int64)",
+    "rank_score": 923,
+    "size": 680,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 3,
+    "demangled": "SmbCeCompleteVNetRootContextInitialization",
+    "ea": "0x140042d00",
+    "function_file": "functions/140042d00_SmbCeCompleteVNetRootContextInitialization.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireResourceExclusiveLite",
+      "ntoskrnl!ExReleaseResourceLite",
+      "ntoskrnl!KeEnterCriticalRegion",
+      "ntoskrnl!KeLeaveCriticalRegion"
+    ],
+    "matched_strings": [
+      "SmbCeCompleteVNetRootContextInitialization",
+      "SmbCeCompleteVNetRootContextInitialization"
+    ],
+    "name": "SmbCeCompleteVNetRootContextInitialization",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 901,
+    "size": 349,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 13,
+    "demangled": "__SmbPseCreateOrdinaryExchange",
+    "ea": "0x14004d7f0",
+    "function_file": "functions/14004d7f0_SmbPseCreateOrdinaryExchange.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache",
+      "ntoskrnl!MmProbeAndLockPages"
+    ],
+    "matched_strings": [
+      "__SmbPseCreateOrdinaryExchange"
+    ],
+    "name": "__SmbPseCreateOrdinaryExchange",
+    "prototype": "__int64 __fastcall(__int64, __int64, int, __int64, __int64, __int64 *)",
+    "rank_score": 883,
+    "size": 1359,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "SmbTransactExchangeCopyDataHandler",
+    "ea": "0x140014200",
+    "function_file": "functions/140014200_SmbTransactExchangeCopyDataHandler.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache"
+    ],
+    "matched_strings": [
+      "copyHandlerDiscard, st=%08lx\n"
+    ],
+    "name": "SmbTransactExchangeCopyDataHandler",
+    "prototype": "__int64 __fastcall(char *pContext, PMDL Mdl, unsigned int)",
+    "rank_score": 859,
+    "size": 663,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "MRxSmbDeallocateSideBuffer",
+    "ea": "0x1400283f8",
+    "function_file": "functions/1400283f8_MRxSmbDeallocateSideBuffer.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!ExReleaseFastMutex"
+    ],
+    "matched_strings": [
+      "D--------- side buffer %p %08lx %p %p %p <%wZ> %s\n"
+    ],
+    "name": "MRxSmbDeallocateSideBuffer",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 858,
+    "size": 287,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "MRxSmbNotifyChangeDirectorySynchronousCompletion",
+    "ea": "0x14000f48c",
+    "function_file": "functions/14000f48c_MRxSmbNotifyChangeDirectorySynchronousCompletion.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [
+      "MRxSmbNotifyChangeDirectorySynchronousCompletion"
+    ],
+    "name": "MRxSmbNotifyChangeDirectorySynchronousCompletion",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 854,
+    "size": 223,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 21,
+    "demangled": "SmbPseOrdinaryExchange",
+    "ea": "0x140045d50",
+    "function_file": "functions/140045d50_SmbPseOrdinaryExchange.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!IoBuildPartialMdl",
+      "ntoskrnl!KeInitializeEvent"
+    ],
+    "matched_strings": [],
+    "name": "SmbPseOrdinaryExchange",
+    "prototype": "__int64 __fastcall(PVOID pContext)",
+    "rank_score": 838,
+    "size": 964,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "MRxSmbReadHandler_NoCopy",
+    "ea": "0x140010b90",
+    "function_file": "functions/140010b90_MRxSmbReadHandler_NoCopy.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!IoBuildPartialMdl",
+      "ntoskrnl!MmBuildMdlForNonPagedPool"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbReadHandler_NoCopy",
+    "prototype": "char __fastcall(__int64, unsigned int, __int64, unsigned int *, __int64, _QWORD *, _DWORD *, __int64)",
+    "rank_score": 823,
+    "size": 1031,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "MRxSmbNotifyChangeDirectory",
+    "ea": "0x140030bb0",
+    "function_file": "functions/140030bb0_MRxSmbNotifyChangeDirectory.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExIsResourceAcquiredExclusiveLite",
+      "rdbss!RxAcquireExclusiveFcbResourceInMRx",
+      "rdbss!RxReleaseFcbResourceInMRx"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbNotifyChangeDirectory",
+    "prototype": "",
+    "rank_score": 820,
+    "size": 615,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "SmbCeSendCompleteInd",
+    "ea": "0x1400052f0",
+    "function_file": "functions/1400052f0_SmbCeSendCompleteInd.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeSendCompleteInd",
+    "prototype": "",
+    "rank_score": 819,
+    "size": 439,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "GetNTSecurityParameters",
+    "ea": "0x1400133c4",
+    "function_file": "functions/1400133c4_GetNTSecurityParameters.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!MmBuildMdlForNonPagedPool",
+      "rdbss!RxAllocateMdl2"
+    ],
+    "matched_strings": [],
+    "name": "GetNTSecurityParameters",
+    "prototype": "",
+    "rank_score": 818,
+    "size": 656,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "MRxSmbUpdateFileInfoCacheFileSize",
+    "ea": "0x140044568",
+    "function_file": "functions/140044568_MRxSmbUpdateFileInfoCacheFileSize.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "rdbss!RxNameCacheActivateEntry",
+      "rdbss!RxNameCacheFetchEntryEx"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbUpdateFileInfoCacheFileSize",
+    "prototype": "",
+    "rank_score": 817,
+    "size": 182,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "SmbCopySendBufferForSecuritySignatures",
+    "ea": "0x14003f618",
+    "function_file": "functions/14003f618_SmbCopySendBufferForSecuritySignatures.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!MmBuildMdlForNonPagedPool",
+      "rdbss!RxAllocateMdl2"
+    ],
+    "matched_strings": [],
+    "name": "SmbCopySendBufferForSecuritySignatures",
+    "prototype": "",
+    "rank_score": 816,
+    "size": 221,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "VctIndSendCompleteWithParameters",
+    "ea": "0x1400041b0",
+    "function_file": "functions/1400041b0_VctIndSendCompleteWithParameters.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "VctIndSendCompleteWithParameters",
+    "prototype": "",
+    "rank_score": 816,
+    "size": 376,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "IsTerminalServicesServer",
+    "ea": "0x140031834",
+    "function_file": "functions/140031834_IsTerminalServicesServer.md",
+    "matched_imports": [
+      "ntoskrnl!RtlVerifyVersionInfo",
+      "ntoskrnl!VerSetConditionMask"
+    ],
+    "matched_strings": [],
+    "name": "IsTerminalServicesServer",
+    "prototype": "",
+    "rank_score": 815,
+    "size": 205,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "MRxSmbUpdateStandardFileInfoCache",
+    "ea": "0x140044624",
+    "function_file": "functions/140044624_MRxSmbUpdateStandardFileInfoCache.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "rdbss!RxNameCacheActivateEntry",
+      "rdbss!RxNameCacheFetchEntryEx"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbUpdateStandardFileInfoCache",
+    "prototype": "",
+    "rank_score": 815,
+    "size": 203,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 11,
+    "demangled": "SmbCeReconnect",
+    "ea": "0x140053c10",
+    "function_file": "functions/140053c10_SmbCeReconnect.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!KeWaitForSingleObject"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeReconnect",
+    "prototype": "void __stdcall(PVOID Context)",
+    "rank_score": 815,
+    "size": 277,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 12,
+    "demangled": "SmbMmFreeObjectPool",
+    "ea": "0x140005c60",
+    "function_file": "functions/140005c60_SmbMmFreeObjectPool.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "SmbMmFreeObjectPool",
+    "prototype": "",
+    "rank_score": 814,
+    "size": 168,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "SmbMmAllocateObject",
+    "ea": "0x14000a440",
+    "function_file": "functions/14000a440_SmbMmAllocateObject.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExInterlockedInsertTailList",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "SmbMmAllocateObject",
+    "prototype": "",
+    "rank_score": 813,
+    "size": 428,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "MRxSmbInvalidateFileNotFoundCache",
+    "ea": "0x1400507a0",
+    "function_file": "functions/1400507a0_MRxSmbInvalidateFileNotFoundCache.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "rdbss!RxNameCacheExpireEntry",
+      "rdbss!RxNameCacheFetchEntryEx"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbInvalidateFileNotFoundCache",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 809,
+    "size": 244,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "MRxSmbInvalidateFullDirectoryCache",
+    "ea": "0x14004ab70",
+    "function_file": "functions/14004ab70_MRxSmbInvalidateFullDirectoryCache.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "rdbss!RxNameCacheExpireEntry",
+      "rdbss!RxNameCacheFetchEntryEx"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbInvalidateFullDirectoryCache",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 806,
+    "size": 214,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "HashUserSessionKey",
+    "ea": "0x140041b84",
+    "function_file": "functions/140041b84_HashUserSessionKey.md",
+    "matched_imports": [
+      "ksecdd!BCryptCreateHash",
+      "ksecdd!BCryptDestroyHash",
+      "ksecdd!BCryptFinishHash",
+      "ksecdd!BCryptHashData"
+    ],
+    "matched_strings": [],
+    "name": "HashUserSessionKey",
+    "prototype": "__int64 __fastcall(PUCHAR pbSecret, PUCHAR pbOutput)",
+    "rank_score": 805,
+    "size": 242,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "MRxSmbInvalidateFileNotFoundCacheForRename",
+    "ea": "0x140043918",
+    "function_file": "functions/140043918_MRxSmbInvalidateFileNotFoundCacheForRename.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExReleaseFastMutex",
+      "rdbss!RxNameCacheExpireEntry",
+      "rdbss!RxNameCacheFetchEntryEx"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbInvalidateFileNotFoundCacheForRename",
+    "prototype": "",
+    "rank_score": 805,
+    "size": 191,
+    "tags": []
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 1,
+    "demangled": "SmbCeDataReadyInd",
+    "ea": "0x14000b524",
+    "function_file": "functions/14000b524_SmbCeDataReadyInd.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbLegacyPerfCtrs",
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [
+      "SS mismatch on data ready ind, tear down connection\n"
+    ],
+    "name": "SmbCeDataReadyInd",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 762,
+    "size": 450,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "MRxSmbReadSmb1UninstallRegistryParameters",
+    "ea": "0x1400327a4",
+    "function_file": "functions/1400327a4_MRxSmbReadSmb1UninstallRegistryParameters.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\Software\\Microsoft\\SMB1Uninstall",
+      "UninstallSMB1LBDays"
+    ],
+    "name": "MRxSmbReadSmb1UninstallRegistryParameters",
+    "prototype": "",
+    "rank_score": 734,
+    "size": 236,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "SmbExtSecuritySessionSetupExchangeFinalize",
+    "ea": "0x14000bfc0",
+    "function_file": "functions/14000bfc0_SmbExtSecuritySessionSetupExchangeFinalize.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbDeviceObject",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "rdbss!RxPostToWorkerThread"
+    ],
+    "matched_strings": [],
+    "name": "SmbExtSecuritySessionSetupExchangeFinalize",
+    "prototype": "__int64 __fastcall(unsigned int *pContext, _BYTE *)",
+    "rank_score": 733,
+    "size": 544,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "SmbCeResume",
+    "ea": "0x140005aa4",
+    "function_file": "functions/140005aa4_SmbCeResume.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbDeviceObject",
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!KeSetEvent",
+      "rdbss!RxDispatchToWorkerThread"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeResume",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 720,
+    "size": 118,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "DeleteSecurityContextForSession",
+    "ea": "0x140011028",
+    "function_file": "functions/140011028_DeleteSecurityContextForSession.md",
+    "matched_imports": [
+      "ksecdd!DeleteSecurityContext",
+      "mrxsmb!MRxSmbUseKernelModeSecurity",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "DeleteSecurityContextForSession",
+    "prototype": "",
+    "rank_score": 715,
+    "size": 237,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "MRxSmbGetSMB1UnusedCounter",
+    "ea": "0x140031a18",
+    "function_file": "functions/140031a18_MRxSmbGetSMB1UnusedCounter.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwClose",
+      "ntoskrnl!ZwOpenKey"
+    ],
+    "matched_strings": [
+      "\\Registry\\Machine\\Software\\Microsoft\\SMB1Uninstall"
+    ],
+    "name": "MRxSmbGetSMB1UnusedCounter",
+    "prototype": "",
+    "rank_score": 695,
+    "size": 188,
+    "tags": [
+      "reparse_path",
+      "authz_impersonation",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 1,
+    "demangled": "SmbCeNegotiate",
+    "ea": "0x14003e6b4",
+    "function_file": "functions/14003e6b4_SmbCeNegotiate.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!KeInitializeEvent"
+    ],
+    "matched_strings": [
+      "MRXSMB: Cannot talk to %wZ which doesn't support Security Signature.\n"
+    ],
+    "name": "SmbCeNegotiate",
+    "prototype": "",
+    "rank_score": 667,
+    "size": 535,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "MRxSmbSMB1MonitorRoutine",
+    "ea": "0x14000bac0",
+    "function_file": "functions/14000bac0_MRxSmbSMB1MonitorRoutine.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!ZwUpdateWnfStateData"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbSMB1MonitorRoutine",
+    "prototype": "",
+    "rank_score": 640,
+    "size": 585,
+    "tags": [
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "SmbMmAllocateExchange",
+    "ea": "0x140001cd0",
+    "function_file": "functions/140001cd0_SmbMmAllocateExchange.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocateFromNPagedLookasideList",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "SmbMmAllocateExchange",
+    "prototype": "unsigned __int8 *__fastcall(int)",
+    "rank_score": 632,
+    "size": 351,
+    "tags": [
+      "authz_impersonation",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 1,
+    "demangled": "SmbCeSendEchoProbe",
+    "ea": "0x1400113f4",
+    "function_file": "functions/1400113f4_SmbCeSendEchoProbe.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!MmBuildMdlForNonPagedPool",
+      "ntoskrnl!MmSizeOfMdl"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeSendEchoProbe",
+    "prototype": "",
+    "rank_score": 631,
+    "size": 398,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 8,
+    "demangled": "SmbMmFreeExchange",
+    "ea": "0x14000b140",
+    "function_file": "functions/14000b140_SmbMmFreeExchange.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreeToNPagedLookasideList",
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "SmbMmFreeExchange",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 631,
+    "size": 193,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 0,
+    "demangled": "SmbPseExchangeStart_Locks",
+    "ea": "0x140034bf0",
+    "function_file": "functions/140034bf0_SmbPseExchangeStart_Locks.md",
+    "matched_imports": [
+      "ntoskrnl!IoFreeMdl",
+      "ntoskrnl!MmUnmapLockedPages",
+      "rdbss!RxLowIoCompletion"
+    ],
+    "matched_strings": [],
+    "name": "SmbPseExchangeStart_Locks",
+    "prototype": "",
+    "rank_score": 631,
+    "size": 1073,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "MRxSmbBuildOpenPrintFile",
+    "ea": "0x14003652c",
+    "function_file": "functions/14003652c_MRxSmbBuildOpenPrintFile.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetRequestorProcessId",
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!RtlUpcaseUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbBuildOpenPrintFile",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 630,
+    "size": 391,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "MRxSmbStart",
+    "ea": "0x1400328a0",
+    "function_file": "functions/1400328a0_MRxSmbStart.md",
+    "matched_imports": [
+      "ksecdd!InitSecurityInterfaceW",
+      "ntoskrnl!KeInitializeEvent",
+      "ntoskrnl!MmResetDriverPaging"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbStart",
+    "prototype": "",
+    "rank_score": 626,
+    "size": 265,
+    "tags": [
+      "service_task",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "MRxSmbQueryQuotaInformation",
+    "ea": "0x140028ee0",
+    "function_file": "functions/140028ee0_MRxSmbQueryQuotaInformation.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlLengthRequiredSid"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbQueryQuotaInformation",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 621,
+    "size": 646,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 6,
+    "demangled": "SmbCepReferenceServerTransport",
+    "ea": "0x14000a230",
+    "function_file": "functions/14000a230_SmbCepReferenceServerTransport.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock",
+      "ntoskrnl!RtlGetCallersAddress"
+    ],
+    "matched_strings": [],
+    "name": "SmbCepReferenceServerTransport",
+    "prototype": "",
+    "rank_score": 619,
+    "size": 252,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "CngRsa32Compat_MD5Final",
+    "ea": "0x14000fd40",
+    "function_file": "functions/14000fd40_CngRsa32Compat_MD5Final.md",
+    "matched_imports": [
+      "ksecdd!BCryptCloseAlgorithmProvider",
+      "ksecdd!BCryptDestroyHash",
+      "ksecdd!BCryptFinishHash"
+    ],
+    "matched_strings": [],
+    "name": "CngRsa32Compat_MD5Final",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 618,
+    "size": 106,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "MRxSmbQueryFileInformationFromPseudoOpen",
+    "ea": "0x140047dc0",
+    "function_file": "functions/140047dc0_MRxSmbQueryFileInformationFromPseudoOpen.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag",
+      "rdbss!RxInitializeContext"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbQueryFileInformationFromPseudoOpen",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 617,
+    "size": 480,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "__MRxSmbAllocateSideBuffer",
+    "ea": "0x14002c464",
+    "function_file": "functions/14002c464_MRxSmbAllocateSideBuffer.md",
+    "matched_imports": [
+      "ntoskrnl!ExAcquireFastMutex",
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExReleaseFastMutex"
+    ],
+    "matched_strings": [],
+    "name": "__MRxSmbAllocateSideBuffer",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 617,
+    "size": 292,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "MRxSmbFixupFindFirst",
+    "ea": "0x140039210",
+    "function_file": "functions/140039210_MRxSmbFixupFindFirst.md",
+    "matched_imports": [
+      "ntoskrnl!RtlUnicodeStringToOemString",
+      "ntoskrnl!RtlUpcaseUnicodeStringToOemString",
+      "ntoskrnl!RtlxUnicodeStringToOemSize"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbFixupFindFirst",
+    "prototype": "",
+    "rank_score": 616,
+    "size": 371,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "SmbCeTearDownSessionEntry",
+    "ea": "0x14003ea70",
+    "function_file": "functions/14003ea70_SmbCeTearDownSessionEntry.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "rdbss!RxFinalizeSecurityContext"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeTearDownSessionEntry",
+    "prototype": "",
+    "rank_score": 616,
+    "size": 181,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "MRxSmbDereferenceGlobalReadWrite",
+    "ea": "0x14004e4f0",
+    "function_file": "functions/14004e4f0_MRxSmbDereferenceGlobalReadWrite.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeSetEvent",
+      "rdbss!RxLowIoCompletion"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbDereferenceGlobalReadWrite",
+    "prototype": "__int64 __fastcall(PVOID P)",
+    "rank_score": 614,
+    "size": 177,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "MRxSmbRetrieveSid",
+    "ea": "0x1400521e0",
+    "function_file": "functions/1400521e0_MRxSmbRetrieveSid.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!RtlCopySid",
+      "ntoskrnl!SeQueryInformationToken"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbRetrieveSid",
+    "prototype": "",
+    "rank_score": 613,
+    "size": 184,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "MRxSmbStop",
+    "ea": "0x1400329b0",
+    "function_file": "functions/1400329b0_MRxSmbStop.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbShutdownRecurrentService",
+      "ntoskrnl!ExFreePoolWithTag",
+      "ntoskrnl!KeFlushQueuedDpcs"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbStop",
+    "prototype": "",
+    "rank_score": 613,
+    "size": 120,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "BuildNtLanmanResponseEpilogue",
+    "ea": "0x14003ce2c",
+    "function_file": "functions/14003ce2c_BuildNtLanmanResponseEpilogue.md",
+    "matched_imports": [
+      "ksecdd!FreeContextBuffer",
+      "mrxsmb!MRxSmbUseKernelModeSecurity",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "BuildNtLanmanResponseEpilogue",
+    "prototype": "",
+    "rank_score": 516,
+    "size": 133,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "SmbTransactExchangeFinalize",
+    "ea": "0x1400144a0",
+    "function_file": "functions/1400144a0_SmbTransactExchangeFinalize.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbDeviceObject",
+      "ntoskrnl!KeGetCurrentIrql",
+      "rdbss!RxPostToWorkerThread"
+    ],
+    "matched_strings": [],
+    "name": "SmbTransactExchangeFinalize",
+    "prototype": "__int64 __fastcall(PVOID Context)",
+    "rank_score": 507,
+    "size": 312,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "SmbPseExchangeFinalize_default",
+    "ea": "0x14000b410",
+    "function_file": "functions/14000b410_SmbPseExchangeFinalize_default.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbDeviceObject",
+      "ntoskrnl!KeSetEvent",
+      "rdbss!RxPostToWorkerThread"
+    ],
+    "matched_strings": [],
+    "name": "SmbPseExchangeFinalize_default",
+    "prototype": "__int64 __fastcall(PVOID pContext)",
+    "rank_score": 505,
+    "size": 267,
+    "tags": []
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 0,
+    "demangled": "MRxSmbIsValidDirectory",
+    "ea": "0x140029ff0",
+    "function_file": "functions/140029ff0_MRxSmbIsValidDirectory.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbGetConfigurationBlock",
+      "ntoskrnl!KeDelayExecutionThread"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbIsValidDirectory",
+    "prototype": "__int64 __fastcall(__int64, _WORD *, __int64, __int64)",
+    "rank_score": 460,
+    "size": 1082,
+    "tags": [
+      "file_ops",
+      "registry_config",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 25,
+    "caller_count": 0,
+    "demangled": "MRxSmbSetFileInformation",
+    "ea": "0x14002b980",
+    "function_file": "functions/14002b980_MRxSmbSetFileInformation.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbSetFileInformation",
+    "prototype": "",
+    "rank_score": 458,
+    "size": 1749,
+    "tags": [
+      "file_ops",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 27,
+    "demangled": "MRxSmbStuffSMB",
+    "ea": "0x140046380",
+    "function_file": "functions/140046380_MRxSmbStuffSMB.md",
+    "matched_imports": [
+      "ntoskrnl!RtlUnicodeStringToOemString",
+      "ntoskrnl!RtlUpcaseUnicodeStringToOemString"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbStuffSMB",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _DWORD)",
+    "rank_score": 440,
+    "size": 1727,
+    "tags": []
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 0,
+    "demangled": "MRxSmbCreateVNetRoot",
+    "ea": "0x1400522a0",
+    "function_file": "functions/1400522a0_MRxSmbCreateVNetRoot.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbLegacyPerfCtrs",
+      "rdbss!RxDiagnosticTrace"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbCreateVNetRoot",
+    "prototype": "",
+    "rank_score": 439,
+    "size": 1021,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "SmbPseExchangeReceive_default",
+    "ea": "0x140006230",
+    "function_file": "functions/140006230_SmbPseExchangeReceive_default.md",
+    "matched_imports": [
+      "ntoskrnl!KeGetCurrentIrql",
+      "ntoskrnl!MmMapLockedPagesSpecifyCache"
+    ],
+    "matched_strings": [],
+    "name": "SmbPseExchangeReceive_default",
+    "prototype": "__int64 __fastcall(__int64, unsigned int, unsigned int, unsigned int *, char *Src, _QWORD *, unsigned int *, __int16)",
+    "rank_score": 437,
+    "size": 2222,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "SmbCeCompleteAdminExchange",
+    "ea": "0x14003df64",
+    "function_file": "functions/14003df64_SmbCeCompleteAdminExchange.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeCompleteAdminExchange",
+    "prototype": "__int64 __fastcall(PVOID Entry)",
+    "rank_score": 428,
+    "size": 255,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "SmbCheckSecuritySignaturePartial",
+    "ea": "0x1400126a4",
+    "function_file": "functions/1400126a4_SmbCheckSecuritySignaturePartial.md",
+    "matched_imports": [
+      "ntoskrnl!MmMapLockedPagesSpecifyCache",
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "SmbCheckSecuritySignaturePartial",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 427,
+    "size": 191,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 0,
+    "demangled": "MRxSmbCloseSrvOpen",
+    "ea": "0x1400367d0",
+    "function_file": "functions/1400367d0_MRxSmbCloseSrvOpen.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbCloseSrvOpen",
+    "prototype": "",
+    "rank_score": 426,
+    "size": 890,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 4,
+    "demangled": "MRxSmbGetUlongRegistryParameter",
+    "ea": "0x140031adc",
+    "function_file": "functions/140031adc_MRxSmbGetUlongRegistryParameter.md",
+    "matched_imports": [
+      "ntoskrnl!RtlInitUnicodeString",
+      "ntoskrnl!ZwQueryValueKey"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbGetUlongRegistryParameter",
+    "prototype": "__int64 __fastcall(HANDLE KeyHandle)",
+    "rank_score": 417,
+    "size": 179,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "wil_InitializeFeatureStaging",
+    "ea": "0x140055078",
+    "function_file": "functions/140055078_wil_InitializeFeatureStaging.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfigurationChangeStamp",
+      "ntoskrnl!RtlRegisterFeatureConfigurationChangeNotification"
+    ],
+    "matched_strings": [],
+    "name": "wil_InitializeFeatureStaging",
+    "prototype": "",
+    "rank_score": 417,
+    "size": 183,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "MRxSmbFabricateAttributesOnNetRoot",
+    "ea": "0x14002d060",
+    "function_file": "functions/14002d060_MRxSmbFabricateAttributesOnNetRoot.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory",
+      "ntoskrnl!RtlOemStringToUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbFabricateAttributesOnNetRoot",
+    "prototype": "",
+    "rank_score": 416,
+    "size": 325,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "CngRsa32Compat_MD5Init",
+    "ea": "0x140012548",
+    "function_file": "functions/140012548_CngRsa32Compat_MD5Init.md",
+    "matched_imports": [
+      "ksecdd!BCryptCreateHash",
+      "ksecdd!BCryptOpenAlgorithmProvider"
+    ],
+    "matched_strings": [],
+    "name": "CngRsa32Compat_MD5Init",
+    "prototype": "__int64 __fastcall(BCRYPT_HASH_HANDLE *phHash)",
+    "rank_score": 413,
+    "size": 140,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "MRxSmbResumeAsyncReadWriteRequests",
+    "ea": "0x14003f9cc",
+    "function_file": "functions/14003f9cc_MRxSmbResumeAsyncReadWriteRequests.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint",
+      "rdbss!RxLowIoCompletion"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbResumeAsyncReadWriteRequests",
+    "prototype": "__int64 __fastcall(PRX_CONTEXT RxContext)",
+    "rank_score": 413,
+    "size": 126,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 11,
+    "demangled": "SmbCeIncrementPendingOperations",
+    "ea": "0x1400098d0",
+    "function_file": "functions/1400098d0_SmbCeIncrementPendingOperations.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeIncrementPendingOperations",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 413,
+    "size": 188,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_UninitializeFeatureStaging",
+    "ea": "0x140033b0c",
+    "function_file": "functions/140033b0c_wil_UninitializeFeatureStaging.md",
+    "matched_imports": [
+      "ntoskrnl!RtlUnregisterFeatureConfigurationChangeNotification",
+      "ntoskrnl!RtlUnregisterFeatureUsageProvider"
+    ],
+    "matched_strings": [],
+    "name": "wil_UninitializeFeatureStaging",
+    "prototype": "",
+    "rank_score": 413,
+    "size": 90,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 2,
+    "demangled": "SmbCeDbTearDown",
+    "ea": "0x140011de4",
+    "function_file": "functions/140011de4_SmbCeDbTearDown.md",
+    "matched_imports": [
+      "ntoskrnl!ExDeleteResourceLite"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeDbTearDown",
+    "prototype": "",
+    "rank_score": 412,
+    "size": 48,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "p_GetAlgHandle",
+    "ea": "0x140012834",
+    "function_file": "functions/140012834_p_GetAlgHandle.md",
+    "matched_imports": [
+      "ksecdd!BCryptCloseAlgorithmProvider",
+      "ksecdd!BCryptOpenAlgorithmProvider"
+    ],
+    "matched_strings": [],
+    "name": "p_GetAlgHandle",
+    "prototype": "",
+    "rank_score": 412,
+    "size": 112,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "SmbCeTransportDisconnectIndicated",
+    "ea": "0x140012014",
+    "function_file": "functions/140012014_SmbCeTransportDisconnectIndicated.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeTransportDisconnectIndicated",
+    "prototype": "__int64 __fastcall(PVOID pContext)",
+    "rank_score": 410,
+    "size": 74,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 6,
+    "demangled": "SmbCeDecrementPendingOperations",
+    "ea": "0x14000a600",
+    "function_file": "functions/14000a600_SmbCeDecrementPendingOperations.md",
+    "matched_imports": [
+      "ntoskrnl!KeAcquireSpinLockRaiseToDpc",
+      "ntoskrnl!KeReleaseSpinLock"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeDecrementPendingOperations",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 407,
+    "size": 125,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "MRxSmbPseudoOpenTailFromFakeGFAResponse",
+    "ea": "0x14004a4a4",
+    "function_file": "functions/14004a4a4_MRxSmbPseudoOpenTailFromFakeGFAResponse.md",
+    "matched_imports": [
+      "ntoskrnl!ExLocalTimeToSystemTime",
+      "ntoskrnl!RtlSecondsSince1970ToTime"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbPseudoOpenTailFromFakeGFAResponse",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 406,
+    "size": 230,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "MRxSmbCollapseOpen",
+    "ea": "0x140036b50",
+    "function_file": "functions/140036b50_MRxSmbCollapseOpen.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2",
+      "rdbss!RxCreateNetFobx"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbCollapseOpen",
+    "prototype": "",
+    "rank_score": 404,
+    "size": 324,
+    "tags": []
+  },
+  {
+    "callee_count": 13,
+    "caller_count": 1,
+    "demangled": "MRxSmbFinishT2OpenFile",
+    "ea": "0x140038f6c",
+    "function_file": "functions/140038f6c_MRxSmbFinishT2OpenFile.md",
+    "matched_imports": [
+      "rdbss!RxInferFileType"
+    ],
+    "matched_strings": [
+      "MRxSmbFinishT2OpenFile",
+      "MRxSmbFinishT2OpenFile"
+    ],
+    "name": "MRxSmbFinishT2OpenFile",
+    "prototype": "__int64 __fastcall(PRX_CONTEXT RxContext, __int64, __int64, int)",
+    "rank_score": 319,
+    "size": 660,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "SmbCepDiscardMidAssociatedWithExchange",
+    "ea": "0x14001243c",
+    "function_file": "functions/14001243c_SmbCepDiscardMidAssociatedWithExchange.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbDeviceObject",
+      "rdbss!RxDispatchToWorkerThread"
+    ],
+    "matched_strings": [],
+    "name": "SmbCepDiscardMidAssociatedWithExchange",
+    "prototype": "",
+    "rank_score": 318,
+    "size": 260,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "MRxSmbInitializeRecurrentServices",
+    "ea": "0x14000f7e8",
+    "function_file": "functions/14000f7e8_MRxSmbInitializeRecurrentServices.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbDeviceObject",
+      "mrxsmb!MRxSmbInitializeRecurrentService"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbInitializeRecurrentServices",
+    "prototype": "",
+    "rank_score": 316,
+    "size": 196,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 2,
+    "demangled": "SmbCeTransportDisconnectIndicatedLite",
+    "ea": "0x140012064",
+    "function_file": "functions/140012064_SmbCeTransportDisconnectIndicatedLite.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbDeviceObject",
+      "rdbss!RxPostToWorkerThread"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeTransportDisconnectIndicatedLite",
+    "prototype": "__int64 __fastcall(PVOID pContext)",
+    "rank_score": 312,
+    "size": 431,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "SmbCeDiscardExchange",
+    "ea": "0x140052944",
+    "function_file": "functions/140052944_SmbCeDiscardExchange.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbDeviceObject",
+      "rdbss!RxPostToWorkerThread"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeDiscardExchange",
+    "prototype": "__int64 __fastcall(PVOID pContext)",
+    "rank_score": 307,
+    "size": 81,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SmbExtSecuritySessionSetupExchangeCopyDataHandler",
+    "ea": "0x14000e2d0",
+    "function_file": "functions/14000e2d0_SmbExtSecuritySessionSetupExchangeCopyDataHandler.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint"
+    ],
+    "matched_strings": [
+      "Mapping Incomplete Server Response to Invalid Response\n"
+    ],
+    "name": "SmbExtSecuritySessionSetupExchangeCopyDataHandler",
+    "prototype": "",
+    "rank_score": 272,
+    "size": 66,
+    "tags": [
+      "loader_planting",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 21,
+    "caller_count": 1,
+    "demangled": "MRxSmbDownlevelCreate",
+    "ea": "0x14003a5f0",
+    "function_file": "functions/14003a5f0_MRxSmbDownlevelCreate.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbDownlevelCreate",
+    "prototype": "__int64 __fastcall(PVOID pContext)",
+    "rank_score": 246,
+    "size": 1851,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "MRxSmbSetSecurityInformation",
+    "ea": "0x140029910",
+    "function_file": "functions/140029910_MRxSmbSetSecurityInformation.md",
+    "matched_imports": [
+      "ntoskrnl!RtlLengthSecurityDescriptor"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbSetSecurityInformation",
+    "prototype": "",
+    "rank_score": 241,
+    "size": 519,
+    "tags": [
+      "file_ops",
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 8,
+    "caller_count": 3,
+    "demangled": "BuildTreeConnectSecurityInformation",
+    "ea": "0x140035df8",
+    "function_file": "functions/140035df8_BuildTreeConnectSecurityInformation.md",
+    "matched_imports": [
+      "ntoskrnl!RtlUnicodeStringToOemString"
+    ],
+    "matched_strings": [],
+    "name": "BuildTreeConnectSecurityInformation",
+    "prototype": "",
+    "rank_score": 236,
+    "size": 653,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 9,
+    "caller_count": 0,
+    "demangled": "MRxSmbFinishOpenAndX",
+    "ea": "0x140038d60",
+    "function_file": "functions/140038d60_MRxSmbFinishOpenAndX.md",
+    "matched_imports": [
+      "rdbss!RxInferFileType"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbFinishOpenAndX",
+    "prototype": "__int64 __fastcall(__int64, __int64)",
+    "rank_score": 233,
+    "size": 515,
+    "tags": [
+      "file_ops",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "MRxSmbBuildNtCreateAndX",
+    "ea": "0x1400495b4",
+    "function_file": "functions/1400495b4_MRxSmbBuildNtCreateAndX.md",
+    "matched_imports": [
+      "ntoskrnl!RtlxUnicodeStringToOemSize"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbBuildNtCreateAndX",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 231,
+    "size": 681,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "MRxSmbQuerySecurityInformation",
+    "ea": "0x140029170",
+    "function_file": "functions/140029170_MRxSmbQuerySecurityInformation.md",
+    "matched_imports": [
+      "ntoskrnl!RtlValidRelativeSecurityDescriptor"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbQuerySecurityInformation",
+    "prototype": "__int64 __fastcall(__int64)",
+    "rank_score": 231,
+    "size": 700,
+    "tags": [
+      "authz_impersonation",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 24,
+    "demangled": "MRxSmbTrackDerefCount",
+    "ea": "0x140003e20",
+    "function_file": "functions/140003e20_MRxSmbTrackDerefCount.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbTrackDerefCount",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 230,
+    "size": 520,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_UpdateFeatureConfiguredStates",
+    "ea": "0x140033ef0",
+    "function_file": "functions/140033ef0_wil_details_UpdateFeatureConfiguredStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_UpdateFeatureConfiguredStates",
+    "prototype": "",
+    "rank_score": 226,
+    "size": 176,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "CngRsa32Compat_MD5Update",
+    "ea": "0x1400125dc",
+    "function_file": "functions/1400125dc_CngRsa32Compat_MD5Update.md",
+    "matched_imports": [
+      "ksecdd!BCryptHashData"
+    ],
+    "matched_strings": [],
+    "name": "CngRsa32Compat_MD5Update",
+    "prototype": "",
+    "rank_score": 225,
+    "size": 39,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 19,
+    "demangled": "MRxSmbTrackRefCount",
+    "ea": "0x140001e40",
+    "function_file": "functions/140001e40_MRxSmbTrackRefCount.md",
+    "matched_imports": [
+      "ntoskrnl!DbgPrint"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbTrackRefCount",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 225,
+    "size": 516,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "SmbCeUpdateNetRoot",
+    "ea": "0x14003eb2c",
+    "function_file": "functions/14003eb2c_SmbCeUpdateNetRoot.md",
+    "matched_imports": [
+      "rdbss!RxUpdateNetRootCachingMode"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeUpdateNetRoot",
+    "prototype": "",
+    "rank_score": 225,
+    "size": 264,
+    "tags": [
+      "registry_config",
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "SmbCheckSecuritySignature",
+    "ea": "0x14001260c",
+    "function_file": "functions/14001260c_SmbCheckSecuritySignature.md",
+    "matched_imports": [
+      "ksecdd!BCryptDuplicateHash"
+    ],
+    "matched_strings": [],
+    "name": "SmbCheckSecuritySignature",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 225,
+    "size": 145,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "SmbExtSecuritySessionSetupExchangeReceive",
+    "ea": "0x14000e320",
+    "function_file": "functions/14000e320_SmbExtSecuritySessionSetupExchangeReceive.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareMemory"
+    ],
+    "matched_strings": [],
+    "name": "SmbExtSecuritySessionSetupExchangeReceive",
+    "prototype": "",
+    "rank_score": 223,
+    "size": 178,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "VctComputeTransportAddressSize",
+    "ea": "0x140041324",
+    "function_file": "functions/140041324_VctComputeTransportAddressSize.md",
+    "matched_imports": [
+      "ntoskrnl!RtlxUnicodeStringToOemSize"
+    ],
+    "matched_strings": [],
+    "name": "VctComputeTransportAddressSize",
+    "prototype": "",
+    "rank_score": 223,
+    "size": 54,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "MRxSmbFinishLongNameCreateFile",
+    "ea": "0x14003889c",
+    "function_file": "functions/14003889c_MRxSmbFinishLongNameCreateFile.md",
+    "matched_imports": [
+      "rdbss!RxInferFileType"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbFinishLongNameCreateFile",
+    "prototype": "__int64 __fastcall(PRX_CONTEXT RxContext)",
+    "rank_score": 221,
+    "size": 546,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "MRxSmbFinishNTCreateAndX",
+    "ea": "0x140038ad0",
+    "function_file": "functions/140038ad0_MRxSmbFinishNTCreateAndX.md",
+    "matched_imports": [
+      "rdbss!RxInferFileType"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbFinishNTCreateAndX",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64)",
+    "rank_score": 220,
+    "size": 636,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "MRxSmbFsdDispatch",
+    "ea": "0x1400319e0",
+    "function_file": "functions/1400319e0_MRxSmbFsdDispatch.md",
+    "matched_imports": [
+      "ntoskrnl!IofCompleteRequest"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbFsdDispatch",
+    "prototype": "",
+    "rank_score": 220,
+    "size": 47,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "MRxSmbRead",
+    "ea": "0x14003bbd0",
+    "function_file": "functions/14003bbd0_MRxSmbRead.md",
+    "matched_imports": [
+      "rdbss!RxLowIoGetBufferAddress"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbRead",
+    "prototype": "__int64 __fastcall(PRX_CONTEXT RxContext)",
+    "rank_score": 219,
+    "size": 354,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 17,
+    "demangled": "SmbCeTransact",
+    "ea": "0x14000a340",
+    "function_file": "functions/14000a340_SmbCeTransact.md",
+    "matched_imports": [
+      "ntoskrnl!KeInitializeEvent"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeTransact",
+    "prototype": "__int64 __fastcall(int, int, int, int, __int64, __int16, __int64, int, __int64, int, __int64, int, __int64, int, __int64)",
+    "rank_score": 219,
+    "size": 242,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "MRxSmbAdjustCreateParameters",
+    "ea": "0x140051880",
+    "function_file": "functions/140051880_MRxSmbAdjustCreateParameters.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetRequestorProcessId"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbAdjustCreateParameters",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 217,
+    "size": 262,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "SmbCheckSecuritySignatureWithMdl",
+    "ea": "0x14001276c",
+    "function_file": "functions/14001276c_SmbCheckSecuritySignatureWithMdl.md",
+    "matched_imports": [
+      "ntoskrnl!MmMapLockedPagesSpecifyCache"
+    ],
+    "matched_strings": [],
+    "name": "SmbCheckSecuritySignatureWithMdl",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 217,
+    "size": 193,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "ea": "0x140055138",
+    "function_file": "functions/140055138_wil_details_PopulateInitialConfiguredFeatureStates.md",
+    "matched_imports": [
+      "ntoskrnl!RtlQueryFeatureConfiguration"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_PopulateInitialConfiguredFeatureStates",
+    "prototype": "",
+    "rank_score": 216,
+    "size": 223,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "SmbCeFindServerEntry",
+    "ea": "0x14000b9dc",
+    "function_file": "functions/14000b9dc_SmbCeFindServerEntry.md",
+    "matched_imports": [
+      "ntoskrnl!RtlCompareUnicodeString"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeFindServerEntry",
+    "prototype": "__int64 __fastcall(PCUNICODE_STRING String1)",
+    "rank_score": 215,
+    "size": 218,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "SmbCeUpdateSrvCall",
+    "ea": "0x14001221c",
+    "function_file": "functions/14001221c_SmbCeUpdateSrvCall.md",
+    "matched_imports": [
+      "rdbss!RxSetSrvCallDomainName"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeUpdateSrvCall",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 133,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_RecordCachedUsage",
+    "ea": "0x14000fb5c",
+    "function_file": "functions/14000fb5c_wil_details_RecordCachedUsage.md",
+    "matched_imports": [
+      "ntoskrnl!RtlRecordFeatureUsage"
+    ],
+    "matched_strings": [],
+    "name": "wil_details_RecordCachedUsage",
+    "prototype": "",
+    "rank_score": 215,
+    "size": 334,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "MRxSmbInitializeEchoProbeService",
+    "ea": "0x14003f870",
+    "function_file": "functions/14003f870_MRxSmbInitializeEchoProbeService.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbInitializeEchoProbeService",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 148,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Smb64ThunkFileRenameInfo",
+    "ea": "0x14003dcc4",
+    "function_file": "functions/14003dcc4_Smb64ThunkFileRenameInfo.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "Smb64ThunkFileRenameInfo",
+    "prototype": "",
+    "rank_score": 214,
+    "size": 151,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "SmbConstructNetRootExchangeCopyDataHandler",
+    "ea": "0x14000fde0",
+    "function_file": "functions/14000fde0_SmbConstructNetRootExchangeCopyDataHandler.md",
+    "matched_imports": [
+      "ntoskrnl!MmMapLockedPagesSpecifyCache"
+    ],
+    "matched_strings": [],
+    "name": "SmbConstructNetRootExchangeCopyDataHandler",
+    "prototype": "__int64 __fastcall(__int64, __int64, unsigned int)",
+    "rank_score": 214,
+    "size": 244,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "SmbTransactBuildHeader",
+    "ea": "0x1400512e0",
+    "function_file": "functions/1400512e0_SmbTransactBuildHeader.md",
+    "matched_imports": [
+      "ntoskrnl!IoGetRequestorProcessId"
+    ],
+    "matched_strings": [],
+    "name": "SmbTransactBuildHeader",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 214,
+    "size": 226,
+    "tags": [
+      "authz_impersonation"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "MRxSmbCacheInfo",
+    "ea": "0x14004a930",
+    "function_file": "functions/14004a930_MRxSmbCacheInfo.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbGetConfigurationBlock"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbCacheInfo",
+    "prototype": "",
+    "rank_score": 213,
+    "size": 90,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "MRxSmbTearDownEchoProbeService",
+    "ea": "0x14003f98c",
+    "function_file": "functions/14003f98c_MRxSmbTearDownEchoProbeService.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbTearDownEchoProbeService",
+    "prototype": "",
+    "rank_score": 213,
+    "size": 57,
+    "tags": [
+      "service_task"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "MRxSmbConstructDeferredOpenContext",
+    "ea": "0x14004a2f0",
+    "function_file": "functions/14004a2f0_MRxSmbConstructDeferredOpenContext.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbConstructDeferredOpenContext",
+    "prototype": "",
+    "rank_score": 211,
+    "size": 427,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 3,
+    "demangled": "MRxSmbIsFileInPartialDirectoryCache",
+    "ea": "0x140043d74",
+    "function_file": "functions/140043d74_MRxSmbIsFileInPartialDirectoryCache.md",
+    "matched_imports": [
+      "ntoskrnl!RtlUpcaseUnicodeChar"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbIsFileInPartialDirectoryCache",
+    "prototype": "",
+    "rank_score": 210,
+    "size": 438,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "FsRtlCreateMidAtlas",
+    "ea": "0x140035028",
+    "function_file": "functions/140035028_FsRtlCreateMidAtlas.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "FsRtlCreateMidAtlas",
+    "prototype": "",
+    "rank_score": 206,
+    "size": 465,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "McGenEventWrite_EtwWriteTransfer",
+    "ea": "0x14000e638",
+    "function_file": "functions/14000e638_McGenEventWrite_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "McGenEventWrite_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 204,
+    "size": 86,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "Smb64ThunkRemoteLinkTrackingInfo",
+    "ea": "0x14003dd64",
+    "function_file": "functions/14003dd64_Smb64ThunkRemoteLinkTrackingInfo.md",
+    "matched_imports": [
+      "ntoskrnl!ExAllocatePool2"
+    ],
+    "matched_strings": [],
+    "name": "Smb64ThunkRemoteLinkTrackingInfo",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 204,
+    "size": 142,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 3,
+    "demangled": "_tlgWriteTransfer_EtwWriteTransfer",
+    "ea": "0x140001040",
+    "function_file": "functions/140001040_tlgWriteTransfer_EtwWriteTransfer.md",
+    "matched_imports": [
+      "ntoskrnl!EtwWriteTransfer"
+    ],
+    "matched_strings": [],
+    "name": "_tlgWriteTransfer_EtwWriteTransfer",
+    "prototype": "__int64 __fastcall(int, int, int, int, ULONG, __int64)",
+    "rank_score": 204,
+    "size": 168,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "MRxSmbFinishNoCopyRead",
+    "ea": "0x14003bb60",
+    "function_file": "functions/14003bb60_MRxSmbFinishNoCopyRead.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbFinishNoCopyRead",
+    "prototype": "",
+    "rank_score": 202,
+    "size": 91,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "MRxSmbDeallocateForSrvOpen",
+    "ea": "0x1400319a0",
+    "function_file": "functions/1400319a0_MRxSmbDeallocateForSrvOpen.md",
+    "matched_imports": [
+      "ntoskrnl!ExFreePoolWithTag"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbDeallocateForSrvOpen",
+    "prototype": "",
+    "rank_score": 201,
+    "size": 49,
+    "tags": []
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 3,
+    "demangled": "SmbCePrepareExchangeForReuse",
+    "ea": "0x14004eb70",
+    "function_file": "functions/14004eb70_SmbCePrepareExchangeForReuse.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "SmbCeUpdateSessionEntryAndVNetRootContext",
+      "SmbCeUpdateSessionEntryAndVNetRootContext",
+      "SmbCeUpdateSessionEntryAndVNetRootContext"
+    ],
+    "name": "SmbCePrepareExchangeForReuse",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 163,
+    "size": 741,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 1,
+    "demangled": "BuildSessionSetupSecurityInformation",
+    "ea": "0x140050ae0",
+    "function_file": "functions/140050ae0_BuildSessionSetupSecurityInformation.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbUseKernelModeSecurity"
+    ],
+    "matched_strings": [],
+    "name": "BuildSessionSetupSecurityInformation",
+    "prototype": "",
+    "rank_score": 151,
+    "size": 2034,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "SmbCeUpdateSessionEntryAndVNetRootContext",
+    "ea": "0x14004f920",
+    "function_file": "functions/14004f920_SmbCeUpdateSessionEntryAndVNetRootContext.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "SmbCeUpdateSessionEntryAndVNetRootContext",
+      "SmbCeUpdateSessionEntryAndVNetRootContext",
+      "SmbCeUpdateSessionEntryAndVNetRootContext"
+    ],
+    "name": "SmbCeUpdateSessionEntryAndVNetRootContext",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 149,
+    "size": 302,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 7,
+    "demangled": "SmbCeBuildSmbHeader",
+    "ea": "0x1400478f0",
+    "function_file": "functions/1400478f0_SmbCeBuildSmbHeader.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbUseKernelModeSecurity"
+    ],
+    "matched_strings": [],
+    "name": "SmbCeBuildSmbHeader",
+    "prototype": "",
+    "rank_score": 130,
+    "size": 1211,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "MRxSmbCompleteBufferingStateChangeRequest",
+    "ea": "0x140034700",
+    "function_file": "functions/140034700_MRxSmbCompleteBufferingStateChangeRequest.md",
+    "matched_imports": [
+      "rdbss!RxLockEnumerator"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbCompleteBufferingStateChangeRequest",
+    "prototype": "",
+    "rank_score": 119,
+    "size": 381,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "MRxSmbBuildReadRequest",
+    "ea": "0x14003b980",
+    "function_file": "functions/14003b980_MRxSmbBuildReadRequest.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbLegacyPerfCtrs"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbBuildReadRequest",
+    "prototype": "",
+    "rank_score": 118,
+    "size": 462,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "MRxSmbBuildWriteRequest",
+    "ea": "0x140045890",
+    "function_file": "functions/140045890_MRxSmbBuildWriteRequest.md",
+    "matched_imports": [
+      "mrxsmb!MRxSmbLegacyPerfCtrs"
+    ],
+    "matched_strings": [],
+    "name": "MRxSmbBuildWriteRequest",
+    "prototype": "",
+    "rank_score": 115,
+    "size": 1206,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 4,
+    "demangled": "ProbeForRead_0",
+    "ea": "0x14000debf",
+    "function_file": "functions/14000debf_ProbeForRead_0.md",
+    "matched_imports": [
+      "ntoskrnl!ProbeForRead"
+    ],
+    "matched_strings": [],
+    "name": "ProbeForRead_0",
+    "prototype": "void __stdcall(volatile void *Address, SIZE_T Length, ULONG Alignment)",
+    "rank_score": 104,
+    "size": 7,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 2,
+    "demangled": "MRxSmbUpdateNetRootState",
+    "ea": "0x140028310",
+    "function_file": "functions/140028310_MRxSmbUpdateNetRootState.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "MRxSmbUpdateNetRootState",
+      "MRxSmbUpdateNetRootState"
+    ],
+    "name": "MRxSmbUpdateNetRootState",
+    "prototype": "",
+    "rank_score": 99,
+    "size": 225,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "SmbCeCompleteUninitializeServerTransport",
+    "ea": "0x140014a70",
+    "function_file": "functions/140014a70_SmbCeCompleteUninitializeServerTransport.md",
+    "matched_imports": [],
+    "matched_strings": [
+      "SmbCeCompleteUninitializeServerTransport",
+      "SmbCeCompleteUninitializeServerTransport"
+    ],
+    "name": "SmbCeCompleteUninitializeServerTransport",
+    "prototype": "__int64 __fastcall(PVOID pContext)",
+    "rank_score": 93,
+    "size": 67,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 15,
+    "caller_count": 2,
+    "demangled": "MRxSmbSetFileAttributes",
+    "ea": "0x14003b4c8",
+    "function_file": "functions/14003b4c8_MRxSmbSetFileAttributes.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbSetFileAttributes",
+    "prototype": "__int64 __fastcall(PVOID pContext)",
+    "rank_score": 55,
+    "size": 1028,
+    "tags": [
+      "file_ops",
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 26,
+    "demangled": "MRxSmbStartSMBCommand",
+    "ea": "0x14004a590",
+    "function_file": "functions/14004a590_MRxSmbStartSMBCommand.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbStartSMBCommand",
+    "prototype": "__int64 __fastcall(_DWORD, _DWORD, _BYTE, _DWORD)",
+    "rank_score": 51,
+    "size": 439,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 53,
+    "demangled": "__security_check_cookie",
+    "ea": "0x140016560",
+    "function_file": "functions/140016560_security_check_cookie.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_check_cookie",
+    "prototype": "void __cdecl(uintptr_t StackCookie)",
+    "rank_score": 37,
+    "size": 30,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 108,
+    "demangled": "_guard_dispatch_icall",
+    "ea": "0x140016640",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "_guard_dispatch_icall",
+    "prototype": "",
+    "rank_score": 36,
+    "size": 6,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 62,
+    "demangled": "memmove",
+    "ea": "0x1400166c0",
+    "function_file": "functions/1400166c0_memmove.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memmove",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 31,
+    "size": 682,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 2,
+    "demangled": "ParseExtSecuritySessionSetupResponse",
+    "ea": "0x14000e0d8",
+    "function_file": "functions/14000e0d8_ParseExtSecuritySessionSetupResponse.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "ParseExtSecuritySessionSetupResponse",
+    "prototype": "__int64 __fastcall(__int64, unsigned int, unsigned int, __int64)",
+    "rank_score": 29,
+    "size": 491,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 47,
+    "demangled": "memset",
+    "ea": "0x1400169c0",
+    "function_file": "functions/1400169c0_memset.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "memset",
+    "prototype": "void *__cdecl(void *, int Val, size_t Size)",
+    "rank_score": 29,
+    "size": 263,
+    "tags": []
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "SmbExtSecuritySessionSetupExchangeStart",
+    "ea": "0x140052700",
+    "function_file": "functions/140052700_SmbExtSecuritySessionSetupExchangeStart.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmbExtSecuritySessionSetupExchangeStart",
+    "prototype": "__int64 __fastcall(PVOID pContext)",
+    "rank_score": 28,
+    "size": 405,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 31,
+    "demangled": "SmbReferenceRecord",
+    "ea": "0x140002470",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmbReferenceRecord",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 28,
+    "size": 411,
+    "tags": []
+  },
+  {
+    "callee_count": 11,
+    "caller_count": 3,
+    "demangled": "MRxSmbCoreDeleteForSupercedeOrClose",
+    "ea": "0x14003a204",
+    "function_file": "functions/14003a204_MRxSmbCoreDeleteForSupercedeOrClose.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbCoreDeleteForSupercedeOrClose",
+    "prototype": "__int64 __fastcall(PVOID pContext)",
+    "rank_score": 27,
+    "size": 393,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 126,
+    "demangled": "WPP_SF_",
+    "ea": "0x14000dfa8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD)",
+    "rank_score": 26,
+    "size": 40,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 113,
+    "demangled": "WPP_SF_d",
+    "ea": "0x14000dfd8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_d",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 26,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 61,
+    "demangled": "WPP_SF_q",
+    "ea": "0x14000ebd8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_q",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 26,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 45,
+    "demangled": "WPP_SF_qD",
+    "ea": "0x14000dc44",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qD",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _DWORD)",
+    "rank_score": 26,
+    "size": 78,
+    "tags": []
+  },
+  {
+    "callee_count": 10,
+    "caller_count": 1,
+    "demangled": "MRxSmbBuildOpenAndX",
+    "ea": "0x14003630c",
+    "function_file": "functions/14003630c_MRxSmbBuildOpenAndX.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbBuildOpenAndX",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 25,
+    "size": 536,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "SmbInitializeSmbSecuritySignature",
+    "ea": "0x14003edd4",
+    "function_file": "functions/14003edd4_SmbInitializeSmbSecuritySignature.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmbInitializeSmbSecuritySignature",
+    "prototype": "",
+    "rank_score": 25,
+    "size": 113,
+    "tags": [
+      "installer_update",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 23,
+    "demangled": "WPP_SF_Dd",
+    "ea": "0x14000e01c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_Dd",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _DWORD)",
+    "rank_score": 24,
+    "size": 75,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "__GSHandlerCheckCommon",
+    "ea": "0x14001646c",
+    "function_file": "functions/14001646c_GSHandlerCheckCommon.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__GSHandlerCheckCommon",
+    "prototype": "",
+    "rank_score": 24,
+    "size": 112,
+    "tags": [
+      "loader_planting",
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 3,
+    "demangled": "MRxSmbPseudoOpenTailFromGFAResponse",
+    "ea": "0x140049870",
+    "function_file": "functions/140049870_MRxSmbPseudoOpenTailFromGFAResponse.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbPseudoOpenTailFromGFAResponse",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 20,
+    "size": 355,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "MRxSmbCoreCheckPath",
+    "ea": "0x140039ee0",
+    "function_file": "functions/140039ee0_MRxSmbCoreCheckPath.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbCoreCheckPath",
+    "prototype": "__int64 __fastcall(PVOID pContext)",
+    "rank_score": 19,
+    "size": 322,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "MRxSmbUpdateFileInformationAfterClose_Start",
+    "ea": "0x1400399f0",
+    "function_file": "functions/1400399f0_MRxSmbUpdateFileInformationAfterClose_Start.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbUpdateFileInformationAfterClose_Start",
+    "prototype": "__int64 __fastcall(PVOID pContext)",
+    "rank_score": 19,
+    "size": 421,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 18,
+    "demangled": "WPP_SF_qq",
+    "ea": "0x14000e52c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qq",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 19,
+    "size": 75,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "MRxSmbCloseAfterCoreCreate",
+    "ea": "0x140039b9c",
+    "function_file": "functions/140039b9c_MRxSmbCloseAfterCoreCreate.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbCloseAfterCoreCreate",
+    "prototype": "__int64 __fastcall(PVOID pContext)",
+    "rank_score": 18,
+    "size": 225,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "MRxSmbCoreCreate",
+    "ea": "0x14003a028",
+    "function_file": "functions/14003a028_MRxSmbCoreCreate.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbCoreCreate",
+    "prototype": "__int64 __fastcall(PVOID pContext)",
+    "rank_score": 18,
+    "size": 239,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "MRxSmbCoreCreateDirectory",
+    "ea": "0x14003a120",
+    "function_file": "functions/14003a120_MRxSmbCoreCreateDirectory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbCoreCreateDirectory",
+    "prototype": "__int64 __fastcall(PVOID pContext)",
+    "rank_score": 18,
+    "size": 221,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "MRxSmbCoreOpen",
+    "ea": "0x14003a394",
+    "function_file": "functions/14003a394_MRxSmbCoreOpen.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbCoreOpen",
+    "prototype": "__int64 __fastcall(PVOID pContext)",
+    "rank_score": 18,
+    "size": 249,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 0,
+    "demangled": "MRxSmbFinishCreatePrintFile",
+    "ea": "0x140038760",
+    "function_file": "functions/140038760_MRxSmbFinishCreatePrintFile.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbFinishCreatePrintFile",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 310,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 1,
+    "demangled": "MRxSmbPseudoOpenTailFromCoreCreateDirectory",
+    "ea": "0x14003b3a4",
+    "function_file": "functions/14003b3a4_MRxSmbPseudoOpenTailFromCoreCreateDirectory.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbPseudoOpenTailFromCoreCreateDirectory",
+    "prototype": "",
+    "rank_score": 18,
+    "size": 285,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "MRxSmbBuildRename",
+    "ea": "0x14003c2e8",
+    "function_file": "functions/14003c2e8_MRxSmbBuildRename.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbBuildRename",
+    "prototype": "",
+    "rank_score": 17,
+    "size": 265,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 11,
+    "demangled": "MRxSmbSetInitialSMB",
+    "ea": "0x140046a50",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbSetInitialSMB",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 17,
+    "size": 343,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 15,
+    "demangled": "WPP_SF_Z",
+    "ea": "0x14000e998",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_Z",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 17,
+    "size": 113,
+    "tags": []
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 1,
+    "demangled": "MRxSmbBuildDeleteForRename",
+    "ea": "0x14003c230",
+    "function_file": "functions/14003c230_MRxSmbBuildDeleteForRename.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbBuildDeleteForRename",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 175,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 4,
+    "caller_count": 0,
+    "demangled": "MRxSmbFinishCoreOpen",
+    "ea": "0x14003adf0",
+    "function_file": "functions/14003adf0_MRxSmbFinishCoreOpen.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbFinishCoreOpen",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 363,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 5,
+    "caller_count": 0,
+    "demangled": "MRxSmbNetworkOpenInformationByName",
+    "ea": "0x140039420",
+    "function_file": "functions/140039420_MRxSmbNetworkOpenInformationByName.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbNetworkOpenInformationByName",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 200,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 12,
+    "caller_count": 2,
+    "demangled": "MRxSmbRename",
+    "ea": "0x14003c3f8",
+    "function_file": "functions/14003c3f8_MRxSmbRename.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbRename",
+    "prototype": "",
+    "rank_score": 16,
+    "size": 338,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 4,
+    "demangled": "MRxSmbCopyAndTranslatePipeState",
+    "ea": "0x140052f50",
+    "function_file": "functions/140052f50_MRxSmbCopyAndTranslatePipeState.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbCopyAndTranslatePipeState",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 15,
+    "size": 70,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 12,
+    "demangled": "MRxSmbInvalidateFileInfoCache",
+    "ea": "0x14004ab38",
+    "function_file": "functions/14004ab38_MRxSmbInvalidateFileInfoCache.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbInvalidateFileInfoCache",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 15,
+    "size": 37,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 13,
+    "demangled": "McTemplateK0qqq_EtwWriteTransfer",
+    "ea": "0x14000e694",
+    "function_file": "functions/14000e694_McTemplateK0qqq_EtwWriteTransfer.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0qqq_EtwWriteTransfer",
+    "prototype": "__int64(_DWORD, _DWORD, _DWORD, _DWORD, char, ...)",
+    "rank_score": 15,
+    "size": 108,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "Smb1QueryProtocolInformation",
+    "ea": "0x14000e778",
+    "function_file": "functions/14000e778_Smb1QueryProtocolInformation.md",
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "Smb1QueryProtocolInformation",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 167,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "ea": "0x140033c48",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_ReevaluateCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 15,
+    "size": 269,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 1,
+    "demangled": "MRxSmbCreateFileInfoCache",
+    "ea": "0x14004a750",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbCreateFileInfoCache",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 66,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "McTemplateK0uq_EtwWriteTransfer",
+    "ea": "0x14000e708",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0uq_EtwWriteTransfer",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 14,
+    "size": 103,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 11,
+    "demangled": "WPP_SF_qZ",
+    "ea": "0x14000ed10",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qZ",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 147,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "wil_details_EvaluateFeatureDependencies_UpdateFeatureDesiredStates",
+    "ea": "0x140033d5c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_UpdateFeatureDesiredStates",
+    "prototype": "",
+    "rank_score": 14,
+    "size": 140,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "GetLanmanSecurityParameters",
+    "ea": "0x1400132a0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GetLanmanSecurityParameters",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 13,
+    "size": 159,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "MRxSmbComputeNewBufferingState",
+    "ea": "0x140036ca0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbComputeNewBufferingState",
+    "prototype": "",
+    "rank_score": 13,
+    "size": 143,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "GsDriverEntry",
+    "ea": "0x140055010",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "GsDriverEntry",
+    "prototype": "NTSTATUS __stdcall(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)",
+    "rank_score": 12,
+    "size": 44,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "SmbCepUpdateTransportConstructionState",
+    "ea": "0x140040e74",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmbCepUpdateTransportConstructionState",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 34,
+    "tags": [
+      "installer_update"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "WPP_SF_DLL",
+    "ea": "0x140014194",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_DLL",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 94,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "WPP_SF_LLDLL",
+    "ea": "0x140015e64",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_LLDLL",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 124,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "__security_init_cookie",
+    "ea": "0x140055044",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "__security_init_cookie",
+    "prototype": "void __cdecl()",
+    "rank_score": 12,
+    "size": 46,
+    "tags": [
+      "broker_com_uri"
+    ]
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "ea": "0x140033e50",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_ReevaluateOnFeatureConfigurationChange",
+    "prototype": "",
+    "rank_score": 12,
+    "size": 20,
+    "tags": [
+      "registry_config"
+    ]
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 10,
+    "demangled": "WPP_SF_qDD",
+    "ea": "0x140010358",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "WPP_SF_qDD",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD, _DWORD, _DWORD)",
+    "rank_score": 11,
+    "size": 91,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 9,
+    "demangled": "MRxSmbIsStreamFile",
+    "ea": "0x140044700",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbIsStreamFile",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD)",
+    "rank_score": 10,
+    "size": 125,
+    "tags": []
+  },
+  {
+    "callee_count": 6,
+    "caller_count": 1,
+    "demangled": "MRxSmbQueryDirectoryFromCache",
+    "ea": "0x14002b7c8",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbQueryDirectoryFromCache",
+    "prototype": "__int64 __fastcall(__int64, __int64, __int64)",
+    "rank_score": 10,
+    "size": 431,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "MRxSmbSetFileInformationAtCleanup",
+    "ea": "0x14002c060",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbSetFileInformationAtCleanup",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 3,
+    "tags": [
+      "file_ops"
+    ]
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "SmbAdminExchangeCopyDataHandler",
+    "ea": "0x140011270",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmbAdminExchangeCopyDataHandler",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 3,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 6,
+    "demangled": "SmbCeUninitializeExchangeTransport",
+    "ea": "0x14004ee60",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmbCeUninitializeExchangeTransport",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 145,
+    "tags": []
+  },
+  {
+    "callee_count": 0,
+    "caller_count": 0,
+    "demangled": "SmbPseExchangeCopyDataHandler_default",
+    "ea": "0x140014110",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmbPseExchangeCopyDataHandler_default",
+    "prototype": "",
+    "rank_score": 10,
+    "size": 17,
+    "tags": [
+      "loader_planting"
+    ]
+  },
+  {
+    "callee_count": 7,
+    "caller_count": 0,
+    "demangled": "MRxSmbExtendForCache",
+    "ea": "0x14002cec0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbExtendForCache",
+    "prototype": "",
+    "rank_score": 9,
+    "size": 357,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 8,
+    "demangled": "SmbCeGetExchangeSession",
+    "ea": "0x14000b120",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmbCeGetExchangeSession",
+    "prototype": "__int64(void)",
+    "rank_score": 9,
+    "size": 20,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 7,
+    "demangled": "wil_details_FeatureDescriptors_SkipPadding",
+    "ea": "0x14000fb30",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_FeatureDescriptors_SkipPadding",
+    "prototype": "",
+    "rank_score": 8,
+    "size": 34,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "RtlWriteULong64ToUser",
+    "ea": "0x14002859c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlWriteULong64ToUser",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 64,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 5,
+    "demangled": "RtlWriteUShortToUser",
+    "ea": "0x140028628",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlWriteUShortToUser",
+    "prototype": "",
+    "rank_score": 7,
+    "size": 64,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 3,
+    "demangled": "RtlCopyToUser",
+    "ea": "0x140028538",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlCopyToUser",
+    "prototype": "__int64 __fastcall(void *, void *Src, size_t Size)",
+    "rank_score": 6,
+    "size": 93,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 2,
+    "demangled": "MRxSmbIsFileInfoCacheFound",
+    "ea": "0x140043f30",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbIsFileInfoCacheFound",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 5,
+    "size": 80,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 3,
+    "demangled": "RtlWriteULongToUser",
+    "ea": "0x1400285e4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlWriteULongToUser",
+    "prototype": "",
+    "rank_score": 5,
+    "size": 62,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "MRxSmbAdjustReturnedCreateAction",
+    "ea": "0x14003608c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbAdjustReturnedCreateAction",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 4,
+    "size": 35,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "MRxSmbCreateSuffix",
+    "ea": "0x1400438ac",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbCreateSuffix",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 102,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "MRxSmbDecrementSrvOpenCount",
+    "ea": "0x1400381a0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbDecrementSrvOpenCount",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 41,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "MRxSmbFinishCoreCreate",
+    "ea": "0x14003ad40",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbFinishCoreCreate",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 163,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "MRxSmbMapDesiredAccess",
+    "ea": "0x1400526a4",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbMapDesiredAccess",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 55,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "MRxSmbMapShareAccess",
+    "ea": "0x14003b370",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbMapShareAccess",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 43,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 3,
+    "demangled": "RtlCopyVolatileMemory",
+    "ea": "0x140016590",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlCopyVolatileMemory",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 4,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 2,
+    "demangled": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "ea": "0x140033c0c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_EvaluateFeatureDependencies_GetCachedFeatureEnabledState",
+    "prototype": "",
+    "rank_score": 4,
+    "size": 51,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "MRxSmbCanCreatePseudoOpen",
+    "ea": "0x14005289c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbCanCreatePseudoOpen",
+    "prototype": "__int64 __fastcall(_QWORD, _QWORD, _QWORD, _QWORD)",
+    "rank_score": 3,
+    "size": 159,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "MRxSmbCheckForCollapsibleOpen",
+    "ea": "0x1400366c0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbCheckForCollapsibleOpen",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 255,
+    "tags": []
+  },
+  {
+    "callee_count": 3,
+    "caller_count": 0,
+    "demangled": "MRxSmbForceDeferredOpen",
+    "ea": "0x140039390",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbForceDeferredOpen",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 120,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "McGenControlCallbackV2",
+    "ea": "0x14000f910",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McGenControlCallbackV2",
+    "prototype": "void __stdcall(LPCGUID SourceId, ULONG ControlCode, UCHAR Level, ULONGLONG MatchAnyKeyword, ULONGLONG MatchAllKeyword, PEVENT_FILTER_DESCRIPTOR FilterData, PVOID CallbackContext)",
+    "rank_score": 3,
+    "size": 254,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 1,
+    "demangled": "McTemplateK0q_EtwWriteTransfer",
+    "ea": "0x14000fa8c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "McTemplateK0q_EtwWriteTransfer",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 89,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "SmbCeRemoveDefaultSessionEntry",
+    "ea": "0x14000de4c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmbCeRemoveDefaultSessionEntry",
+    "prototype": "__int64 __fastcall(_QWORD)",
+    "rank_score": 3,
+    "size": 63,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 2,
+    "demangled": "wil_details_BuildFeatureStateCacheFromQueryResults",
+    "ea": "0x140033b6c",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "wil_details_BuildFeatureStateCacheFromQueryResults",
+    "prototype": "",
+    "rank_score": 3,
+    "size": 87,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "MRxSmbCreateFcb",
+    "ea": "0x140031910",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbCreateFcb",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 61,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 1,
+    "demangled": "MRxSmbCreateParentDirPrefix",
+    "ea": "0x14004eb10",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbCreateParentDirPrefix",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 90,
+    "tags": []
+  },
+  {
+    "callee_count": 2,
+    "caller_count": 0,
+    "demangled": "MRxSmbExtendForNonCache",
+    "ea": "0x14002d030",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "MRxSmbExtendForNonCache",
+    "prototype": "",
+    "rank_score": 2,
+    "size": 39,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlCopyToUser$thunk$8481748130428616498",
+    "ea": "0x140018010",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlCopyToUser$thunk$8481748130428616498",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlMoveVolatileMemory",
+    "ea": "0x1400165a0",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlMoveVolatileMemory",
+    "prototype": "void *__cdecl(void *, const void *Src, size_t Size)",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlWriteULong64ToUser$thunk$4480820996488585629",
+    "ea": "0x140018020",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlWriteULong64ToUser$thunk$4480820996488585629",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlWriteULongToUser$thunk$10400971452996433967",
+    "ea": "0x140018030",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlWriteULongToUser$thunk$10400971452996433967",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "RtlWriteUShortToUser$thunk$4279219291461662417",
+    "ea": "0x140018040",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "RtlWriteUShortToUser$thunk$4279219291461662417",
+    "prototype": "",
+    "rank_score": 1,
+    "size": 5,
+    "tags": []
+  },
+  {
+    "callee_count": 1,
+    "caller_count": 0,
+    "demangled": "SmbCeFinalizeExchangeWorkerThreadRoutine",
+    "ea": "0x14003f050",
+    "function_file": null,
+    "matched_imports": [],
+    "matched_strings": [],
+    "name": "SmbCeFinalizeExchangeWorkerThreadRoutine",
+    "prototype": "void __stdcall(PVOID Context)",
+    "rank_score": 1,
+    "size": 36,
+    "tags": []
+  }
+]

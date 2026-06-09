@@ -1,0 +1,401 @@
+[
+  {
+    "import": "ntoskrnl!IoCreateFileEx",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14001104e",
+        "from_func": "0x140010620",
+        "from_func_name": "MRxDAVFormatUserModeFsCtlRequest",
+        "import": "ntoskrnl!IoCreateFileEx"
+      },
+      {
+        "from_ea": "0x14001104e",
+        "from_func": "0x140010620",
+        "from_func_name": "MRxDAVFormatUserModeFsCtlRequest",
+        "import": "ntoskrnl!IoCreateFileEx"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!IofCompleteRequest",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140017b4f",
+        "from_func": "0x140017310",
+        "from_func_name": "MRxDAVFsdDispatch",
+        "import": "ntoskrnl!IofCompleteRequest"
+      },
+      {
+        "from_ea": "0x140017b4f",
+        "from_func": "0x140017310",
+        "from_func_name": "MRxDAVFsdDispatch",
+        "import": "ntoskrnl!IofCompleteRequest"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!PsRevertToSelf",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x140026588",
+        "from_func": "0x1400262c4",
+        "from_func_name": "UMRxAssignWork",
+        "import": "ntoskrnl!PsRevertToSelf"
+      },
+      {
+        "from_ea": "0x140026627",
+        "from_func": "0x1400262c4",
+        "from_func_name": "UMRxAssignWork",
+        "import": "ntoskrnl!PsRevertToSelf"
+      },
+      {
+        "from_ea": "0x140026588",
+        "from_func": "0x1400262c4",
+        "from_func_name": "UMRxAssignWork",
+        "import": "ntoskrnl!PsRevertToSelf"
+      },
+      {
+        "from_ea": "0x140026627",
+        "from_func": "0x1400262c4",
+        "from_func_name": "UMRxAssignWork",
+        "import": "ntoskrnl!PsRevertToSelf"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!RtlCompareUnicodeString",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 6,
+    "xrefs": [
+      {
+        "from_ea": "0x140018230",
+        "from_func": "0x140018188",
+        "from_func_name": "MRxDAVSkipIrps",
+        "import": "ntoskrnl!RtlCompareUnicodeString"
+      },
+      {
+        "from_ea": "0x1400182c8",
+        "from_func": "0x140018188",
+        "from_func_name": "MRxDAVSkipIrps",
+        "import": "ntoskrnl!RtlCompareUnicodeString"
+      },
+      {
+        "from_ea": "0x1400182e3",
+        "from_func": "0x140018188",
+        "from_func_name": "MRxDAVSkipIrps",
+        "import": "ntoskrnl!RtlCompareUnicodeString"
+      },
+      {
+        "from_ea": "0x140018230",
+        "from_func": "0x140018188",
+        "from_func_name": "MRxDAVSkipIrps",
+        "import": "ntoskrnl!RtlCompareUnicodeString"
+      },
+      {
+        "from_ea": "0x1400182c8",
+        "from_func": "0x140018188",
+        "from_func_name": "MRxDAVSkipIrps",
+        "import": "ntoskrnl!RtlCompareUnicodeString"
+      },
+      {
+        "from_ea": "0x1400182e3",
+        "from_func": "0x140018188",
+        "from_func_name": "MRxDAVSkipIrps",
+        "import": "ntoskrnl!RtlCompareUnicodeString"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!SeAccessCheck",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x1400105db",
+        "from_func": "0x140010554",
+        "from_func_name": "MRxDavIsCallerPrivileged",
+        "import": "ntoskrnl!SeAccessCheck"
+      },
+      {
+        "from_ea": "0x1400105db",
+        "from_func": "0x140010554",
+        "from_func_name": "MRxDavIsCallerPrivileged",
+        "import": "ntoskrnl!SeAccessCheck"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!SeCreateClientSecurityFromSubjectContext",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000fce6",
+        "from_func": "0x14000f9d4",
+        "from_func_name": "MRxDAVFormatTheDAVContext",
+        "import": "ntoskrnl!SeCreateClientSecurityFromSubjectContext"
+      },
+      {
+        "from_ea": "0x14000fce6",
+        "from_func": "0x14000f9d4",
+        "from_func_name": "MRxDAVFormatTheDAVContext",
+        "import": "ntoskrnl!SeCreateClientSecurityFromSubjectContext"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!SeDeleteClientSecurity",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 8,
+    "xrefs": [
+      {
+        "from_ea": "0x140004e33",
+        "from_func": "0x140004dac",
+        "from_func_name": "MRxDAVHandleCreateSrvCallCancellation",
+        "import": "ntoskrnl!SeDeleteClientSecurity"
+      },
+      {
+        "from_ea": "0x14001967f",
+        "from_func": "0x1400195b0",
+        "from_func_name": "MRxDAVFinalizeVNetRoot",
+        "import": "ntoskrnl!SeDeleteClientSecurity"
+      },
+      {
+        "from_ea": "0x14001bedd",
+        "from_func": "0x14001bdf0",
+        "from_func_name": "MRxDAVPrecompleteUserModeSrvCallCreateRequest",
+        "import": "ntoskrnl!SeDeleteClientSecurity"
+      },
+      {
+        "from_ea": "0x14001c6a8",
+        "from_func": "0x14001c570",
+        "from_func_name": "MRxDAVSrvCallWrapper",
+        "import": "ntoskrnl!SeDeleteClientSecurity"
+      },
+      {
+        "from_ea": "0x140004e33",
+        "from_func": "0x140004dac",
+        "from_func_name": "MRxDAVHandleCreateSrvCallCancellation",
+        "import": "ntoskrnl!SeDeleteClientSecurity"
+      },
+      {
+        "from_ea": "0x14001967f",
+        "from_func": "0x1400195b0",
+        "from_func_name": "MRxDAVFinalizeVNetRoot",
+        "import": "ntoskrnl!SeDeleteClientSecurity"
+      },
+      {
+        "from_ea": "0x14001bedd",
+        "from_func": "0x14001bdf0",
+        "from_func_name": "MRxDAVPrecompleteUserModeSrvCallCreateRequest",
+        "import": "ntoskrnl!SeDeleteClientSecurity"
+      },
+      {
+        "from_ea": "0x14001c6a8",
+        "from_func": "0x14001c570",
+        "from_func_name": "MRxDAVSrvCallWrapper",
+        "import": "ntoskrnl!SeDeleteClientSecurity"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!SeImpersonateClientEx",
+    "tags": [
+      "authz_impersonation"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140027c44",
+        "from_func": "0x140027bac",
+        "from_func_name": "UMRxImpersonateClient",
+        "import": "ntoskrnl!SeImpersonateClientEx"
+      },
+      {
+        "from_ea": "0x140027c44",
+        "from_func": "0x140027bac",
+        "from_func_name": "UMRxImpersonateClient",
+        "import": "ntoskrnl!SeImpersonateClientEx"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!ZwCreateFile",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140013942",
+        "from_func": "0x1400130e0",
+        "from_func_name": "MRxDAVCreateContinuation",
+        "import": "ntoskrnl!ZwCreateFile"
+      },
+      {
+        "from_ea": "0x140013942",
+        "from_func": "0x1400130e0",
+        "from_func_name": "MRxDAVCreateContinuation",
+        "import": "ntoskrnl!ZwCreateFile"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!ZwDeleteFile",
+    "tags": [
+      "file_ops"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14002374c",
+        "from_func": "0x140023530",
+        "from_func_name": "MRxDAVDeallocateForFcb",
+        "import": "ntoskrnl!ZwDeleteFile"
+      },
+      {
+        "from_ea": "0x14002374c",
+        "from_func": "0x140023530",
+        "from_func_name": "MRxDAVDeallocateForFcb",
+        "import": "ntoskrnl!ZwDeleteFile"
+      }
+    ]
+  },
+  {
+    "import": "ntoskrnl!__C_specific_handler",
+    "tags": [
+      "loader_planting"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14000101d",
+        "from_func": "0x14000101d",
+        "from_func_name": "__C_specific_handler_0",
+        "import": "ntoskrnl!__C_specific_handler"
+      },
+      {
+        "from_ea": "0x14000d5d0",
+        "from_func": null,
+        "from_func_name": "",
+        "import": "ntoskrnl!__C_specific_handler"
+      }
+    ]
+  },
+  {
+    "import": "rdbss!RxCompleteRequestEx",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 4,
+    "xrefs": [
+      {
+        "from_ea": "0x140004ff7",
+        "from_func": "0x140004f50",
+        "from_func_name": "MRxDAVHandleGeneralCancellation",
+        "import": "rdbss!RxCompleteRequestEx"
+      },
+      {
+        "from_ea": "0x14002798b",
+        "from_func": "0x140027658",
+        "from_func_name": "UMRxFinalizeAsyncEngineContext",
+        "import": "rdbss!RxCompleteRequestEx"
+      },
+      {
+        "from_ea": "0x140004ff7",
+        "from_func": "0x140004f50",
+        "from_func_name": "MRxDAVHandleGeneralCancellation",
+        "import": "rdbss!RxCompleteRequestEx"
+      },
+      {
+        "from_ea": "0x14002798b",
+        "from_func": "0x140027658",
+        "from_func_name": "UMRxFinalizeAsyncEngineContext",
+        "import": "rdbss!RxCompleteRequestEx"
+      }
+    ]
+  },
+  {
+    "import": "rdbss!RxDispatchToWorkerThread",
+    "tags": [
+      "installer_update"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x14001addc",
+        "from_func": "0x14001ac20",
+        "from_func_name": "MRxDAVCreateSrvCall",
+        "import": "rdbss!RxDispatchToWorkerThread"
+      },
+      {
+        "from_ea": "0x14001addc",
+        "from_func": "0x14001ac20",
+        "from_func_name": "MRxDAVCreateSrvCall",
+        "import": "rdbss!RxDispatchToWorkerThread"
+      }
+    ]
+  },
+  {
+    "import": "rdbss!RxFsdDispatch",
+    "tags": [
+      "installer_update"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140017a62",
+        "from_func": "0x140017310",
+        "from_func_name": "MRxDAVFsdDispatch",
+        "import": "rdbss!RxFsdDispatch"
+      },
+      {
+        "from_ea": "0x140017a62",
+        "from_func": "0x140017310",
+        "from_func_name": "MRxDAVFsdDispatch",
+        "import": "rdbss!RxFsdDispatch"
+      }
+    ]
+  },
+  {
+    "import": "rdbss!RxLowIoCompletion",
+    "tags": [
+      "broker_com_uri"
+    ],
+    "xref_count": 2,
+    "xrefs": [
+      {
+        "from_ea": "0x140027955",
+        "from_func": "0x140027658",
+        "from_func_name": "UMRxFinalizeAsyncEngineContext",
+        "import": "rdbss!RxLowIoCompletion"
+      },
+      {
+        "from_ea": "0x140027955",
+        "from_func": "0x140027658",
+        "from_func_name": "UMRxFinalizeAsyncEngineContext",
+        "import": "rdbss!RxLowIoCompletion"
+      }
+    ]
+  }
+]

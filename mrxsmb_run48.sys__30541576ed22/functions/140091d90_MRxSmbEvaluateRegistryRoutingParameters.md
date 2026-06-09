@@ -1,0 +1,105 @@
+# MRxSmbEvaluateRegistryRoutingParameters
+
+- ea: `0x140091d90`
+- end: `0x140091e47`
+- name: `MRxSmbEvaluateRegistryRoutingParameters`
+- size: `183`
+- prototype: ``
+- caller_count: `1`
+- callee_count: `1`
+- tags: `reparse_path, authz_impersonation, registry_config, broker_com_uri`
+
+## callers
+
+- `0x140028fec`
+
+## callees
+
+- `0x140091d90`
+
+## import_xrefs
+
+- `ntoskrnl!ZwOpenKey` at `0x140091e0a`
+- `ntoskrnl!ZwOpenKey` at `0x140091e0a`
+- `ntoskrnl!RtlInitUnicodeString` at `0x140091dc7`
+- `ntoskrnl!RtlInitUnicodeString` at `0x140091dc7`
+- `ntoskrnl!ZwClose` at `0x140091e34`
+- `ntoskrnl!ZwClose` at `0x140091e34`
+
+## pseudocode
+
+```c
+int __fastcall MRxSmbEvaluateRegistryRoutingParameters(void *a1)
+{
+  int result; // eax
+  UNICODE_STRING DestinationString; // [rsp+20h] [rbp-48h] BYREF
+  struct _OBJECT_ATTRIBUTES ObjectAttributes; // [rsp+30h] [rbp-38h] BYREF
+  void *KeyHandle; // [rsp+70h] [rbp+8h] BYREF
+
+  KeyHandle = 0;
+  memset(&ObjectAttributes, 0, 44);
+  DestinationString = 0;
+  RtlInitUnicodeString(&DestinationString, L"Routing");
+  ObjectAttributes.Length = 48;
+  ObjectAttributes.ObjectName = &DestinationString;
+  ObjectAttributes.RootDirectory = a1;
+  ObjectAttributes.Attributes = 576;
+  *(_OWORD *)&ObjectAttributes.SecurityDescriptor = 0;
+  result = ZwOpenKey(&KeyHandle, 0x20019u, &ObjectAttributes);
+  if ( result >= 0 )
+  {
+    byte_14007D240 = 1;
+    return ZwClose(KeyHandle);
+  }
+  else
+  {
+    byte_14007D240 = 0;
+  }
+  return result;
+}
+
+```
+
+## disassembly
+
+```asm
+0x140091d90  push    rbx
+0x140091d92  sub     rsp, 60h
+0x140091d96  xorps   xmm0, xmm0
+0x140091d99  mov     [rsp+68h+KeyHandle], 0
+0x140091da2  mov     rbx, rcx
+0x140091da5  lea     rdx, aRouting; "Routing"
+0x140091dac  movups  xmmword ptr [rsp+68h+ObjectAttributes.ObjectName], xmm0
+0x140091db1  xor     eax, eax
+0x140091db3  lea     rcx, [rsp+68h+DestinationString]; DestinationString
+0x140091db8  movups  xmmword ptr [rsp+68h+ObjectAttributes+1Ch], xmm0
+0x140091dbd  movups  xmmword ptr [rsp+68h+ObjectAttributes.Length], xmm0
+0x140091dc2  movups  xmmword ptr [rsp+68h+DestinationString.Length], xmm0
+0x140091dc7  call    cs:__imp_RtlInitUnicodeString
+0x140091dce  nop     dword ptr [rax+rax+00h]
+0x140091dd3  lea     rax, [rsp+68h+DestinationString]
+0x140091dd8  mov     [rsp+68h+ObjectAttributes.Length], 30h ; '0'
+0x140091de0  xorps   xmm0, xmm0
+0x140091de3  mov     [rsp+68h+ObjectAttributes.ObjectName], rax
+0x140091de8  lea     r8, [rsp+68h+ObjectAttributes]; ObjectAttributes
+0x140091ded  mov     [rsp+68h+ObjectAttributes.RootDirectory], rbx
+0x140091df2  mov     edx, 20019h; DesiredAccess
+0x140091df7  mov     [rsp+68h+ObjectAttributes.Attributes], 240h
+0x140091dff  lea     rcx, [rsp+68h+KeyHandle]; KeyHandle
+0x140091e04  movdqu  xmmword ptr [rsp+68h+ObjectAttributes.SecurityDescriptor], xmm0
+0x140091e0a  call    cs:__imp_ZwOpenKey
+0x140091e11  nop     dword ptr [rax+rax+00h]
+0x140091e16  test    eax, eax
+0x140091e18  jns     short loc_140091E28
+0x140091e1a  mov     cs:byte_14007D240, 0
+0x140091e21  add     rsp, 60h
+0x140091e25  pop     rbx
+0x140091e26  retn
+0x140091e28  mov     rcx, [rsp+68h+KeyHandle]; Handle
+0x140091e2d  mov     cs:byte_14007D240, 1
+0x140091e34  call    cs:__imp_ZwClose
+0x140091e3b  nop     dword ptr [rax+rax+00h]
+0x140091e40  add     rsp, 60h
+0x140091e44  pop     rbx
+0x140091e45  retn
+```

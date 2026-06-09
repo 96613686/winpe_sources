@@ -1,0 +1,272 @@
+# sub_1400AFFA0
+
+- ea: `0x1400affa0`
+- end: `0x1400b44dc`
+- name: `sub_1400AFFA0`
+- size: `17724`
+- prototype: `__int64 __fastcall(HWND hWnd)`
+- caller_count: `0`
+- callee_count: `132`
+- tags: `broker_com_uri`
+
+## callees
+
+- `0x1400021e0`
+- `0x140002fb0`
+- `0x1400036c0`
+- `0x140004370`
+- `0x140005600`
+- `0x140005660`
+- `0x1400232e8`
+- `0x14002991c`
+- `0x14003f630`
+- `0x140043c5c`
+- `0x140043eec`
+- `0x140044294`
+- `0x1400442b0`
+- `0x140044648`
+- `0x1400452b0`
+- `0x140046a20`
+- `0x140046c10`
+- `0x140048410`
+- `0x14004c4b0`
+- `0x140050e64`
+- `0x140054c00`
+- `0x140054dc0`
+- `0x1400551d0`
+- `0x140055c70`
+- `0x140056fc0`
+- `0x14005a358`
+- `0x14005bf60`
+- `0x14005e450`
+- `0x14005fe98`
+- `0x140060c5c`
+- `0x140067340`
+- `0x14006f180`
+- `0x140073278`
+- `0x140075780`
+- `0x140076d04`
+- `0x14007906c`
+- `0x14007be38`
+- `0x1400813c8`
+- `0x1400837f4`
+- `0x140085f08`
+- `0x140087d80`
+- `0x1400881fc`
+- `0x140088d40`
+- `0x14008a540`
+- `0x14008bca0`
+- `0x14008cfc0`
+- `0x14008e01c`
+- `0x14008e510`
+- `0x14008ef50`
+- `0x14008fbbc`
+
+## import_xrefs
+
+- `KERNEL32!WideCharToMultiByte` at `0x1400b16ec`
+- `KERNEL32!WideCharToMultiByte` at `0x1400b16ec`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b02a5`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b02b5`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b02c5`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b02d5`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b02e5`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b0810`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b0820`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b0830`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b0840`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b0850`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b0a57`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b0a67`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b0a77`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b0a87`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b0a97`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b1c00`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b2ac0`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b2ad4`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b2ae8`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b2afc`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b2b10`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b2b41`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b2b51`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b2b61`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b2b71`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b2b7c`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b2f5b`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b2f6b`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b2f7b`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b2f8b`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b2f9b`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b3f9a`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b3faa`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b3fba`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b3fca`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b3fda`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b02a5`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b02b5`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b02c5`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b02d5`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b02e5`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b0810`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b0820`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b0830`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b0840`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b0850`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b0a57`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b0a67`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b0a77`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b0a87`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b0a97`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b1c00`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b2ac0`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b2ad4`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b2ae8`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b2afc`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b2b10`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b2b41`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b2b51`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b2b61`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b2b71`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b2b7c`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b2f5b`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b2f6b`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b2f7b`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b2f8b`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b2f9b`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b3f9a`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b3faa`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b3fba`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b3fca`
+- `KERNEL32!GetSystemDefaultLangID` at `0x1400b3fda`
+- `KERNEL32!MultiByteToWideChar` at `0x1400b181d`
+- `KERNEL32!MultiByteToWideChar` at `0x1400b181d`
+- `KERNEL32!GetLocaleInfoW` at `0x1400b2528`
+- `KERNEL32!GetLocaleInfoW` at `0x1400b2545`
+- `KERNEL32!GetLocaleInfoW` at `0x1400b2528`
+- `KERNEL32!GetLocaleInfoW` at `0x1400b2545`
+- `VCRUNTIME140!wcsstr` at `0x1400b2559`
+- `VCRUNTIME140!wcsstr` at `0x1400b2574`
+- `VCRUNTIME140!wcsstr` at `0x1400b2559`
+- `VCRUNTIME140!wcsstr` at `0x1400b2574`
+- `VCRUNTIME140!__std_type_info_compare` at `0x1400b06d8`
+- `VCRUNTIME140!__std_type_info_compare` at `0x1400b06d8`
+- `VCRUNTIME140!__RTtypeid` at `0x1400b06c7`
+- `VCRUNTIME140!__RTtypeid` at `0x1400b06c7`
+- `MSVCP140!??1?$basic_iostream@DU?$char_traits@D@std@@@std@@UEAA@XZ` at `0x1400b3e60`
+- `MSVCP140!??1?$basic_iostream@DU?$char_traits@D@std@@@std@@UEAA@XZ` at `0x1400b3e60`
+- `MSVCP140!??1?$basic_ios@DU?$char_traits@D@std@@@std@@UEAA@XZ` at `0x1400b3e6d`
+- `MSVCP140!??1?$basic_ios@DU?$char_traits@D@std@@@std@@UEAA@XZ` at `0x1400b3e6d`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1400b40eb`
+- `api-ms-win-crt-heap-l1-1-0!free` at `0x1400b40eb`
+- `api-ms-win-crt-runtime-l1-1-0!terminate` at `0x1400b01fc`
+- `api-ms-win-crt-runtime-l1-1-0!terminate` at `0x1400b0582`
+- `api-ms-win-crt-runtime-l1-1-0!terminate` at `0x1400b3e7d`
+- `api-ms-win-crt-runtime-l1-1-0!terminate` at `0x1400b01fc`
+- `api-ms-win-crt-runtime-l1-1-0!terminate` at `0x1400b0582`
+- `api-ms-win-crt-runtime-l1-1-0!terminate` at `0x1400b3e7d`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x1400b1df3`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x1400b296c`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x1400b3750`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x1400b3c9d`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x1400b1df3`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x1400b296c`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x1400b3750`
+- `api-ms-win-crt-runtime-l1-1-0!_invoke_watson` at `0x1400b3c9d`
+- `api-ms-win-crt-string-l1-1-0!wcscmp` at `0x1400b0088`
+- `api-ms-win-crt-string-l1-1-0!wcscmp` at `0x1400b0088`
+- `Mso98Win32Client!Mso98Win32Client_12322` at `0x1400b3c4c`
+- `Mso98Win32Client!Mso98Win32Client_12322` at `0x1400b3c4c`
+- `mso40uiWin32Client!mso40uiWin32Client_38185` at `0x1400b1116`
+- `mso40uiWin32Client!mso40uiWin32Client_38185` at `0x1400b1116`
+- `Mso30Win32Client!Mso30Win32Client_4896` at `0x1400b225b`
+- `Mso30Win32Client!Mso30Win32Client_4896` at `0x1400b225b`
+- `Mso30Win32Client!Mso30Win32Client_56180` at `0x1400b16c8`
+- `Mso30Win32Client!Mso30Win32Client_56180` at `0x1400b1803`
+- `Mso30Win32Client!Mso30Win32Client_56180` at `0x1400b16c8`
+- `Mso30Win32Client!Mso30Win32Client_56180` at `0x1400b1803`
+- `Mso20Win32Client!Mso20Win32Client_7228` at `0x1400b01f6`
+- `Mso20Win32Client!Mso20Win32Client_7228` at `0x1400b057c`
+- `Mso20Win32Client!Mso20Win32Client_7228` at `0x1400b3e14`
+- `Mso20Win32Client!Mso20Win32Client_7228` at `0x1400b01f6`
+- `Mso20Win32Client!Mso20Win32Client_7228` at `0x1400b057c`
+- `Mso20Win32Client!Mso20Win32Client_7228` at `0x1400b3e14`
+- `Mso20Win32Client!Mso20Win32Client_9342` at `0x1400b194d`
+- `Mso20Win32Client!Mso20Win32Client_9342` at `0x1400b194d`
+- `Mso20Win32Client!Mso20Win32Client_52497` at `0x1400b0100`
+- `Mso20Win32Client!Mso20Win32Client_52497` at `0x1400b0157`
+- `Mso20Win32Client!Mso20Win32Client_52497` at `0x1400b0453`
+- `Mso20Win32Client!Mso20Win32Client_52497` at `0x1400b04aa`
+- `Mso20Win32Client!Mso20Win32Client_52497` at `0x1400b0e40`
+- `Mso20Win32Client!Mso20Win32Client_52497` at `0x1400b20e2`
+- `Mso20Win32Client!Mso20Win32Client_52497` at `0x1400b21f0`
+- `Mso20Win32Client!Mso20Win32Client_52497` at `0x1400b23cb`
+- `Mso20Win32Client!Mso20Win32Client_52497` at `0x1400b28c6`
+- `Mso20Win32Client!Mso20Win32Client_52497` at `0x1400b2eca`
+- `Mso20Win32Client!Mso20Win32Client_52497` at `0x1400b0100`
+- `Mso20Win32Client!Mso20Win32Client_52497` at `0x1400b0157`
+- `Mso20Win32Client!Mso20Win32Client_52497` at `0x1400b0453`
+- `Mso20Win32Client!Mso20Win32Client_52497` at `0x1400b04aa`
+- `Mso20Win32Client!Mso20Win32Client_52497` at `0x1400b0e40`
+- `Mso20Win32Client!Mso20Win32Client_52497` at `0x1400b20e2`
+- `Mso20Win32Client!Mso20Win32Client_52497` at `0x1400b21f0`
+- `Mso20Win32Client!Mso20Win32Client_52497` at `0x1400b23cb`
+- `Mso20Win32Client!Mso20Win32Client_52497` at `0x1400b28c6`
+- `Mso20Win32Client!Mso20Win32Client_52497` at `0x1400b2eca`
+- `Mso20Win32Client!__imp_Mso20Win32Client_53248` at `0x1400b0179`
+- `Mso20Win32Client!__imp_Mso20Win32Client_53248` at `0x1400b04cc`
+- `Mso20Win32Client!__imp_Mso20Win32Client_53248` at `0x1400b2120`
+- `Mso20Win32Client!__imp_Mso20Win32Client_53248` at `0x1400b2271`
+- `Mso20Win32Client!__imp_Mso20Win32Client_53248` at `0x1400b2365`
+- `Mso20Win32Client!__imp_Mso20Win32Client_53248` at `0x1400b2413`
+- `Mso20Win32Client!__imp_Mso20Win32Client_53248` at `0x1400b3123`
+- `Mso20Win32Client!__imp_Mso20Win32Client_53248` at `0x1400b3184`
+- `Mso20Win32Client!__imp_Mso20Win32Client_53248` at `0x1400b3895`
+- `Mso20Win32Client!__imp_Mso20Win32Client_53248` at `0x1400b0179`
+- `Mso20Win32Client!__imp_Mso20Win32Client_53248` at `0x1400b04cc`
+- `Mso20Win32Client!__imp_Mso20Win32Client_53248` at `0x1400b2120`
+- `Mso20Win32Client!__imp_Mso20Win32Client_53248` at `0x1400b2271`
+- `Mso20Win32Client!__imp_Mso20Win32Client_53248` at `0x1400b2365`
+- `Mso20Win32Client!__imp_Mso20Win32Client_53248` at `0x1400b2413`
+- `Mso20Win32Client!__imp_Mso20Win32Client_53248` at `0x1400b3123`
+- `Mso20Win32Client!__imp_Mso20Win32Client_53248` at `0x1400b3184`
+- `Mso20Win32Client!__imp_Mso20Win32Client_53248` at `0x1400b3895`
+- `Mso20Win32Client!Mso20Win32Client_59137` at `0x1400b261f`
+- `Mso20Win32Client!Mso20Win32Client_59137` at `0x1400b2639`
+- `Mso20Win32Client!Mso20Win32Client_59137` at `0x1400b261f`
+- `Mso20Win32Client!Mso20Win32Client_59137` at `0x1400b2639`
+- `OLEAUT32!VarDateFromStr` at `0x1400b25bb`
+- `OLEAUT32!VarDateFromStr` at `0x1400b25bb`
+- `OLEAUT32!VariantTimeToSystemTime` at `0x1400b25d4`
+- `OLEAUT32!VariantTimeToSystemTime` at `0x1400b25d4`
+- `GDI32!GetClipBox` at `0x1400b31c9`
+- `GDI32!GetClipBox` at `0x1400b31c9`
+- `USER32!IsWindow` at `0x1400b40b8`
+- `USER32!IsWindow` at `0x1400b40b8`
+- `USER32!SendMessageW` at `0x1400b0de4`
+- `USER32!SendMessageW` at `0x1400b0eae`
+- `USER32!SendMessageW` at `0x1400b0fb6`
+- `USER32!SendMessageW` at `0x1400b1239`
+- `USER32!SendMessageW` at `0x1400b158e`
+- `USER32!SendMessageW` at `0x1400b16b4`
+- `USER32!SendMessageW` at `0x1400b1831`
+- `USER32!SendMessageW` at `0x1400b1cf6`
+- `USER32!SendMessageW` at `0x1400b20c5`
+- `USER32!SendMessageW` at `0x1400b2100`
+- `USER32!SendMessageW` at `0x1400b2156`
+- `USER32!SendMessageW` at `0x1400b21d0`
+- `USER32!SendMessageW` at `0x1400b220e`
+- `USER32!SendMessageW` at `0x1400b23ae`
+- `USER32!SendMessageW` at `0x1400b23e9`
+- `USER32!SendMessageW` at `0x1400b2508`
+- `USER32!SendMessageW` at `0x1400b28a7`
+- `USER32!SendMessageW` at `0x1400b28e5`
+- `USER32!SendMessageW` at `0x1400b2ead`
+- `USER32!SendMessageW` at `0x1400b2ee8`
+- `USER32!SendMessageW` at `0x1400b3115`
+- `USER32!SendMessageW` at `0x1400b3d17`
+
+## pseudocode
+
+```c
+
+```
