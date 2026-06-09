@@ -1,0 +1,77 @@
+# _Init_thread_footer
+
+- ea: `0x14011ccf4`
+- end: `0x14011cd5d`
+- name: `_Init_thread_footer`
+- size: `105`
+- prototype: ``
+- caller_count: `220`
+- callee_count: `0`
+- tags: ``
+
+## callers
+
+- `0x14003cc30`
+- `0x14003e1e0`
+- `0x14003e570`
+- `0x14003ffd0`
+- `0x140041710`
+- `0x140041b10`
+- `0x140044160`
+- `0x14004d050`
+- `0x14004e430`
+- `0x14004e6a0`
+- `0x14004e810`
+- `0x14004ec80`
+- `0x14004eda0`
+- `0x14004fc3a`
+- `0x14004fd02`
+- `0x14004fe10`
+- `0x140058f00`
+- `0x14005b3b0`
+- `0x14005c8e0`
+- `0x1400609e0`
+- `0x1400628f0`
+- `0x140062d50`
+- `0x140065ae0`
+- `0x14006b550`
+- `0x14006faa0`
+- `0x140070f20`
+- `0x140071340`
+- `0x14007b920`
+- `0x14007d870`
+- `0x14007d930`
+- `0x14007ddd0`
+- `0x140082230`
+- `0x140083a60`
+- `0x140084b90`
+- `0x140086090`
+- `0x140086350`
+- `0x140089fe0`
+- `0x14008a150`
+- `0x14008a4d0`
+- `0x14008f140`
+- `0x14009041c`
+- `0x1400916e6`
+- `0x140094eea`
+- `0x140095890`
+- `0x140096556`
+- `0x14009bc50`
+- `0x14009f5f0`
+- `0x14009f670`
+- `0x1400a00c0`
+- `0x1400a0610`
+
+## import_xrefs
+
+- `KERNEL32!AcquireSRWLockExclusive` at `0x14011cd04`
+- `KERNEL32!AcquireSRWLockExclusive` at `0x14011cd04`
+- `KERNEL32!ReleaseSRWLockExclusive` at `0x14011cd44`
+- `KERNEL32!ReleaseSRWLockExclusive` at `0x14011cd44`
+- `KERNEL32!WakeAllConditionVariable` at `0x14011cd56`
+
+## pseudocode
+
+```c
+
+```

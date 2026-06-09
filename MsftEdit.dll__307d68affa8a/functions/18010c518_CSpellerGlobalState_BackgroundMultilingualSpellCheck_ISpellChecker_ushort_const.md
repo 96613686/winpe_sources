@@ -1,0 +1,134 @@
+# CSpellerGlobalState::BackgroundMultilingualSpellCheck(ISpellChecker *,ushort const *)
+
+- ea: `0x18010c518`
+- end: `0x18010c5c5`
+- name: `?BackgroundMultilingualSpellCheck@CSpellerGlobalState@@AEAAJPEAUISpellChecker@@PEBG@Z`
+- size: `173`
+- prototype: `__int64 __fastcall(PVOID pv, struct ISpellChecker *, const unsigned __int16 *)`
+- caller_count: `1`
+- callee_count: `1`
+- tags: `broker_com_uri`
+
+## callers
+
+- `0x180129f0c`
+
+## callees
+
+- `0x18010c518`
+
+## import_xrefs
+
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18010c5a0`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18010c5a0`
+- `api-ms-win-core-threadpool-l1-2-0!CreateThreadpoolWork` at `0x18010c560`
+- `api-ms-win-core-threadpool-l1-2-0!CreateThreadpoolWork` at `0x18010c560`
+- `api-ms-win-core-threadpool-l1-2-0!SubmitThreadpoolWork` at `0x18010c571`
+- `api-ms-win-core-threadpool-l1-2-0!SubmitThreadpoolWork` at `0x18010c571`
+- `api-ms-win-core-threadpool-l1-2-0!WaitForThreadpoolWorkCallbacks` at `0x18010c57c`
+- `api-ms-win-core-threadpool-l1-2-0!WaitForThreadpoolWorkCallbacks` at `0x18010c57c`
+- `api-ms-win-core-threadpool-l1-2-0!CloseThreadpoolWork` at `0x18010c585`
+- `api-ms-win-core-threadpool-l1-2-0!CloseThreadpoolWork` at `0x18010c585`
+- `api-ms-win-core-com-l1-1-0!CoReleaseMarshalData` at `0x18010c595`
+- `api-ms-win-core-com-l1-1-0!CoReleaseMarshalData` at `0x18010c595`
+- `api-ms-win-core-com-l1-1-0!CoMarshalInterThreadInterfaceInStream` at `0x18010c542`
+- `api-ms-win-core-com-l1-1-0!CoMarshalInterThreadInterfaceInStream` at `0x18010c542`
+
+## pseudocode
+
+```c
+int __fastcall CSpellerGlobalState::BackgroundMultilingualSpellCheck(
+        char *pv,
+        IUnknown *a2,
+        const unsigned __int16 *a3)
+{
+  LPSTREAM *v3; // rsi
+  int result; // eax
+  struct _TP_WORK *ThreadpoolWork; // rax
+  struct _TP_WORK *v7; // rdi
+
+  v3 = (LPSTREAM *)(pv + 328);
+  *((_QWORD *)pv + 39) = a3;
+  result = CoMarshalInterThreadInterfaceInStream(&GUID_b6fd0b71_e2bc_4653_8d05_f197e412770b, a2, (LPSTREAM *)pv + 41);
+  *((_DWORD *)pv + 17) = result;
+  if ( result >= 0 )
+  {
+    ThreadpoolWork = CreateThreadpoolWork(
+                       CSpellerGlobalState::MultilingualSpellCheckThreadProc,
+                       pv,
+                       (PTP_CALLBACK_ENVIRON)(pv + 152));
+    v7 = ThreadpoolWork;
+    if ( ThreadpoolWork )
+    {
+      SubmitThreadpoolWork(ThreadpoolWork);
+      WaitForThreadpoolWorkCallbacks(v7, 0);
+      CloseThreadpoolWork(v7);
+      result = *((_DWORD *)pv + 17);
+      if ( result < 0 )
+      {
+        CoReleaseMarshalData(*v3);
+        return *((_DWORD *)pv + 17);
+      }
+    }
+    else
+    {
+      result = GetLastError();
+      if ( result > 0 )
+        result = (unsigned __int16)result | 0x80070000;
+      *((_DWORD *)pv + 17) = result;
+    }
+  }
+  return result;
+}
+
+```
+
+## disassembly
+
+```asm
+0x18010c518  mov     [rsp+arg_0], rbx
+0x18010c51d  mov     [rsp+arg_8], rsi
+0x18010c522  push    rdi
+0x18010c523  sub     rsp, 20h
+0x18010c527  lea     rsi, [rcx+148h]
+0x18010c52e  mov     [rcx+138h], r8
+0x18010c535  mov     rbx, rcx
+0x18010c538  mov     r8, rsi; ppStm
+0x18010c53b  lea     rcx, _GUID_b6fd0b71_e2bc_4653_8d05_f197e412770b; riid
+0x18010c542  call    cs:__imp_CoMarshalInterThreadInterfaceInStream
+0x18010c548  mov     [rbx+44h], eax
+0x18010c54b  test    eax, eax
+0x18010c54d  js      short loc_18010C5B5
+0x18010c54f  lea     r8, [rbx+98h]; pcbe
+0x18010c556  mov     rdx, rbx; pv
+0x18010c559  lea     rcx, ?MultilingualSpellCheckThreadProc@CSpellerGlobalState@@CAXPEAU_TP_CALLBACK_INSTANCE@@PEAXPEAU_TP_WORK@@@Z; pfnwk
+0x18010c560  call    cs:__imp_CreateThreadpoolWork
+0x18010c566  mov     rdi, rax
+0x18010c569  test    rax, rax
+0x18010c56c  jz      short loc_18010C5A0
+0x18010c56e  mov     rcx, rax; pwk
+0x18010c571  call    cs:__imp_SubmitThreadpoolWork
+0x18010c577  xor     edx, edx; fCancelPendingCallbacks
+0x18010c579  mov     rcx, rdi; pwk
+0x18010c57c  call    cs:__imp_WaitForThreadpoolWorkCallbacks
+0x18010c582  mov     rcx, rdi; pwk
+0x18010c585  call    cs:__imp_CloseThreadpoolWork
+0x18010c58b  mov     eax, [rbx+44h]
+0x18010c58e  test    eax, eax
+0x18010c590  jns     short loc_18010C5B5
+0x18010c592  mov     rcx, [rsi]; pStm
+0x18010c595  call    cs:__imp_CoReleaseMarshalData
+0x18010c59b  mov     eax, [rbx+44h]
+0x18010c59e  jmp     short loc_18010C5B5
+0x18010c5a0  call    cs:__imp_GetLastError
+0x18010c5a6  test    eax, eax
+0x18010c5a8  jle     short loc_18010C5B2
+0x18010c5aa  movzx   eax, ax
+0x18010c5ad  or      eax, 80070000h
+0x18010c5b2  mov     [rbx+44h], eax
+0x18010c5b5  mov     rbx, [rsp+28h+arg_0]
+0x18010c5ba  mov     rsi, [rsp+28h+arg_8]
+0x18010c5bf  add     rsp, 20h
+0x18010c5c3  pop     rdi
+0x18010c5c4  retn
+```

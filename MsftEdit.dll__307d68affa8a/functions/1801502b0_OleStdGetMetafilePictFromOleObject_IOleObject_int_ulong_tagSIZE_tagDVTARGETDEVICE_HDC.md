@@ -1,0 +1,499 @@
+# OleStdGetMetafilePictFromOleObject(IOleObject *,int,ulong,tagSIZE *,tagDVTARGETDEVICE *,HDC__ *)
+
+- ea: `0x1801502b0`
+- end: `0x18015063c`
+- name: `?OleStdGetMetafilePictFromOleObject@@YAPEAXPEAUIOleObject@@HKPEAUtagSIZE@@PEAUtagDVTARGETDEVICE@@PEAUHDC__@@@Z`
+- size: `908`
+- prototype: `void *__fastcall(struct IOleObject *, int, unsigned int, struct tagSIZE *, struct tagDVTARGETDEVICE *, HDC hdcRef)`
+- caller_count: `3`
+- callee_count: `8`
+- tags: ``
+
+## callers
+
+- `0x180148d1c`
+- `0x180158afc`
+- `0x180159bb0`
+
+## callees
+
+- `0x180040d10`
+- `0x180040d4c`
+- `0x1800498d0`
+- `0x18013bad0`
+- `0x1801479e4`
+- `0x18014f38c`
+- `0x1801502b0`
+- `0x18027a010`
+
+## import_xrefs
+
+- `api-ms-win-core-heap-l2-1-0!GlobalAlloc` at `0x1801505bc`
+- `api-ms-win-core-heap-l2-1-0!GlobalAlloc` at `0x1801505bc`
+- `api-ms-win-core-heap-obsolete-l1-1-0!GlobalUnlock` at `0x1801505f5`
+- `api-ms-win-core-heap-obsolete-l1-1-0!GlobalUnlock` at `0x1801505f5`
+- `api-ms-win-core-heap-obsolete-l1-1-0!GlobalLock` at `0x1801505cd`
+- `api-ms-win-core-heap-obsolete-l1-1-0!GlobalLock` at `0x1801505cd`
+- `ext-ms-win-gdi-draw-l1-1-1!SetWindowOrgEx` at `0x180150524`
+- `ext-ms-win-gdi-draw-l1-1-1!SetWindowOrgEx` at `0x180150524`
+- `ext-ms-win-gdi-draw-l1-1-1!SetWindowExtEx` at `0x180150536`
+- `ext-ms-win-gdi-draw-l1-1-1!SetWindowExtEx` at `0x180150536`
+- `ext-ms-win-gdi-metafile-l1-1-1!CloseMetaFile` at `0x180150586`
+- `ext-ms-win-gdi-metafile-l1-1-1!CloseMetaFile` at `0x180150586`
+- `ext-ms-win-gdi-metafile-l1-1-1!CreateMetaFileA` at `0x1801504f6`
+- `ext-ms-win-gdi-metafile-l1-1-1!CreateMetaFileA` at `0x1801504f6`
+- `ext-ms-win-gdi-metafile-l1-1-0!DeleteMetaFile` at `0x1801505a7`
+- `ext-ms-win-gdi-metafile-l1-1-0!DeleteMetaFile` at `0x1801505a7`
+
+## pseudocode
+
+```c
+void *__fastcall OleStdGetMetafilePictFromOleObject(
+        struct IOleObject *a1,
+        int a2,
+        unsigned int a3,
+        struct tagSIZE *a4,
+        struct tagDVTARGETDEVICE *a5,
+        HDC hdcRef)
+{
+  unsigned int v7; // ebx
+  HMETAFILE v10; // rdi
+  HBITMAP hBitmap; // r13
+  struct COLE32_PROC *Ole32Procs; // rax
+  __int64 v13; // rdx
+  struct COLE32_PROC *v14; // rbx
+  void *v15; // rbx
+  int v17; // ebx
+  HDC MetaFileA; // rax
+  HDC v19; // r14
+  int v20; // edi
+  int v21; // ebx
+  HGLOBAL v22; // rax
+  _QWORD *v23; // rax
+  int x[2]; // [rsp+60h] [rbp-79h] BYREF
+  __int64 v25; // [rsp+68h] [rbp-71h] BYREF
+  __int64 v26; // [rsp+70h] [rbp-69h] BYREF
+  unsigned int v27; // [rsp+78h] [rbp-61h]
+  unsigned int (__fastcall ***v28)(_QWORD, GUID *, __int64 *); // [rsp+80h] [rbp-59h] BYREF
+  __int128 v29; // [rsp+88h] [rbp-51h] BYREF
+  unsigned int v30; // [rsp+98h] [rbp-41h]
+  int v31; // [rsp+9Ch] [rbp-3Dh]
+  __int64 v32; // [rsp+A0h] [rbp-39h]
+  struct tagSTGMEDIUM hemf; // [rsp+A8h] [rbp-31h] BYREF
+  struct tagPOINT pt; // [rsp+C0h] [rbp-19h] BYREF
+  struct tagSIZE sz; // [rsp+C8h] [rbp-11h] BYREF
+  __int128 v36; // [rsp+D0h] [rbp-9h] BYREF
+
+  v7 = a3;
+  v32 = 0;
+  v27 = a3;
+  v30 = a3;
+  v26 = 0;
+  *(_QWORD *)x = 0;
+  v28 = 0;
+  v10 = 0;
+  v25 = 0;
+  v31 = -1;
+  v29 = 0;
+  memset(&hemf, 0, sizeof(hemf));
+  if ( a2 )
+  {
+    LOWORD(v29) = 14;
+    LODWORD(v32) = 64;
+  }
+  else
+  {
+    LOWORD(v29) = 3;
+    LODWORD(v32) = 32;
+  }
+  if ( ((__int64 (__fastcall *)(struct IOleObject *, GUID *, _QWORD))a1->lpVtbl->QueryInterface)(
+         a1,
+         &IID_IOleCache,
+         &v28)
+    || (**v28)(v28, &IID_IDataObject, &v25) )
+  {
+    goto LABEL_18;
+  }
+  if ( !(*(unsigned int (__fastcall **)(__int64, __int128 *, struct tagSTGMEDIUM *))(*(_QWORD *)v25 + 24LL))(
+          v25,
+          &v29,
+          &hemf) )
+  {
+    hBitmap = hemf.hBitmap;
+    Ole32Procs = CThreadData::GetOle32Procs();
+    v14 = (struct COLE32_PROC *)((char *)Ole32Procs + 24);
+    if ( *((_QWORD *)Ole32Procs + 3) || (SetProcAddr((FARPROC *)Ole32Procs + 3, 1, "OleDuplicateData"), *(_QWORD *)v14) )
+    {
+      LOWORD(v13) = a2 != 0 ? 14 : 3;
+      v15 = (void *)(*(__int64 (__fastcall **)(HBITMAP, __int64, _QWORD))v14)(hBitmap, v13, 0);
+    }
+    else
+    {
+      v15 = 0;
+    }
+    goto LABEL_15;
+  }
+  if ( a2 )
+    goto LABEL_34;
+  LOWORD(v29) = 14;
+  LODWORD(v32) = 64;
+  if ( !(*(unsigned int (__fastcall **)(__int64, __int128 *, struct tagSTGMEDIUM *))(*(_QWORD *)v25 + 24LL))(
+          v25,
+          &v29,
+          &hemf)
+    && hemf.hBitmap )
+  {
+    v15 = 0;
+    v10 = (HMETAFILE)ConvertEnhancedMetafileToMetafile(hemf.hEnhMetaFile, hdcRef);
+LABEL_15:
+    CW32System::ReleaseStgMedium(&hemf);
+    if ( v15 )
+      goto LABEL_16;
+    v7 = v27;
+LABEL_18:
+    if ( a2 )
+      goto LABEL_34;
+  }
+  if ( !((__int64 (__fastcall *)(struct IOleObject *, GUID *, __int64 *))a1->lpVtbl->QueryInterface)(
+          a1,
+          &IID_IViewObject2,
+          &v26) )
+  {
+    if ( a4 )
+    {
+      v17 = 0;
+      *(struct tagSIZE *)x = *a4;
+    }
+    else
+    {
+      v17 = (*(__int64 (__fastcall **)(__int64, _QWORD, __int64, _QWORD, int *))(*(_QWORD *)v26 + 72LL))(
+              v26,
+              v7,
+              0xFFFFFFFFLL,
+              0,
+              x);
+      if ( v17 )
+        *(_QWORD *)x = 0;
+    }
+    if ( !v10 )
+    {
+      sz = 0;
+      pt = 0;
+      v36 = 0;
+      MetaFileA = CreateMetaFileA(0);
+      v19 = MetaFileA;
+      if ( !MetaFileA )
+        goto LABEL_28;
+      v20 = x[0];
+      v21 = x[1];
+      *((_QWORD *)&v36 + 1) = *(_QWORD *)x;
+      *(_QWORD *)&v36 = 0;
+      SetWindowOrgEx(MetaFileA, 0, 0, &pt);
+      SetWindowExtEx(v19, v20, v21, &sz);
+      v17 = (*(__int64 (__fastcall **)(__int64, _QWORD, __int64, _QWORD, _QWORD, _QWORD, HDC, __int128 *, __int128 *, _QWORD, _QWORD))(*(_QWORD *)v26 + 24LL))(
+              v26,
+              v27,
+              0xFFFFFFFFLL,
+              0,
+              0,
+              0,
+              v19,
+              &v36,
+              &v36,
+              0,
+              0);
+      v10 = CloseMetaFile(v19);
+      if ( !v10 )
+        goto LABEL_28;
+    }
+    if ( !v17 )
+    {
+      v22 = GlobalAlloc(0x2042u, 0x18u);
+      v15 = v22;
+      if ( v22 )
+      {
+        v23 = GlobalLock(v22);
+        if ( v23 )
+        {
+          v23[2] = v10;
+          *((_DWORD *)v23 + 1) = x[0];
+          *((_DWORD *)v23 + 2) = x[1];
+          *(_DWORD *)v23 = 8;
+          GlobalUnlock(v15);
+        }
+        goto LABEL_16;
+      }
+    }
+    else
+    {
+LABEL_28:
+      v15 = 0;
+    }
+    if ( v10 )
+      DeleteMetaFile(v10);
+LABEL_16:
+    Resp::TCntPtr<IDataObject>::~TCntPtr<IDataObject>(&v25);
+    Resp::TCntPtr<IDataObject>::~TCntPtr<IDataObject>(&v28);
+    Resp::TCntPtr<IDataObject>::~TCntPtr<IDataObject>(&v26);
+    return v15;
+  }
+LABEL_34:
+  Resp::TCntPtr<IDataObject>::~TCntPtr<IDataObject>(&v25);
+  Resp::TCntPtr<IDataObject>::~TCntPtr<IDataObject>(&v28);
+  Resp::TCntPtr<IDataObject>::~TCntPtr<IDataObject>(&v26);
+  return 0;
+}
+
+```
+
+## disassembly
+
+```asm
+0x1801502b0  push    rbp
+0x1801502b2  push    rbx
+0x1801502b3  push    rdi
+0x1801502b4  push    r12
+0x1801502b6  push    r13
+0x1801502b8  push    r14
+0x1801502ba  push    r15
+0x1801502bc  lea     rbp, [rsp-17h]
+0x1801502c1  sub     rsp, 0F0h
+0x1801502c8  mov     rax, cs:__security_cookie
+0x1801502cf  xor     rax, rsp
+0x1801502d2  mov     [rbp+47h+var_40], rax
+0x1801502d6  mov     r13, [rbp+47h+hdcRef]
+0x1801502da  xor     eax, eax
+0x1801502dc  mov     r14d, edx
+0x1801502df  mov     [rbp+47h+var_68], rax
+0x1801502e3  xorps   xmm0, xmm0
+0x1801502e6  mov     ebx, r8d
+0x1801502e9  movups  [rbp+47h+var_88], xmm0
+0x1801502ed  mov     r15, rcx
+0x1801502f0  mov     [rbp+47h+var_A8], ebx
+0x1801502f3  xor     ecx, ecx
+0x1801502f5  mov     dword ptr [rbp+47h+var_88], ebx
+0x1801502f8  mov     [rbp+47h+var_B0], rcx
+0x1801502fc  xorps   xmm1, xmm1
+0x1801502ff  mov     qword ptr [rbp+47h+x], rcx
+0x180150303  mov     r12, r9
+0x180150306  mov     [rbp+47h+var_A0], rcx
+0x18015030a  mov     edi, ecx
+0x18015030c  mov     [rbp+47h+var_B8], rcx
+0x180150310  lea     edx, [rcx+3]
+0x180150313  mov     dword ptr [rbp+47h+var_88+4], 0FFFFFFFFh
+0x18015031a  lea     eax, [rcx+0Eh]
+0x18015031d  movups  [rbp+47h+var_98], xmm0
+0x180150321  movups  xmmword ptr [rbp+47h+hemf], xmm1
+0x180150325  test    r14d, r14d
+0x180150328  jz      short loc_180150337
+0x18015032a  mov     word ptr [rbp+47h+var_98], ax
+0x18015032e  mov     dword ptr [rbp+47h+var_88+8], 40h ; '@'
+0x180150335  jmp     short loc_180150342
+0x180150337  mov     word ptr [rbp+47h+var_98], dx
+0x18015033b  mov     dword ptr [rbp+47h+var_88+8], 20h ; ' '
+0x180150342  mov     rax, [r15]
+0x180150345  lea     r8, [rbp+47h+var_A0]
+0x180150349  lea     rdx, IID_IOleCache
+0x180150350  mov     rcx, r15
+0x180150353  mov     rax, [rax]
+0x180150356  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x18015035b  test    eax, eax
+0x18015035d  jnz     loc_180150471
+0x180150363  mov     rcx, [rbp+47h+var_A0]
+0x180150367  lea     r8, [rbp+47h+var_B8]
+0x18015036b  lea     rdx, IID_IDataObject
+0x180150372  mov     rax, [rcx]
+0x180150375  mov     rax, [rax]
+0x180150378  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x18015037d  test    eax, eax
+0x18015037f  jnz     loc_180150471
+0x180150385  mov     rcx, [rbp+47h+var_B8]
+0x180150389  lea     r8, [rbp+47h+hemf]
+0x18015038d  lea     rdx, [rbp+47h+var_98]
+0x180150391  mov     rax, [rcx]
+0x180150394  mov     rax, [rax+18h]
+0x180150398  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x18015039d  test    eax, eax
+0x18015039f  jnz     short loc_1801503F3
+0x1801503a1  mov     r13, [rbp+47h+hemf+8]
+0x1801503a5  call    ?GetOle32Procs@CThreadData@@SAPEAVCOLE32_PROC@@XZ; CThreadData::GetOle32Procs(void)
+0x1801503aa  lea     rbx, [rax+18h]
+0x1801503ae  cmp     [rbx], rdi
+0x1801503b1  jnz     short loc_1801503CC
+0x1801503b3  lea     r8, aOleduplicateda; "OleDuplicateData"
+0x1801503ba  mov     edx, 1
+0x1801503bf  mov     rcx, rbx
+0x1801503c2  call    ?SetProcAddr@@YAXAEAPEAXW4DLL_ENUM@@PEBD@Z; SetProcAddr(void * &,DLL_ENUM,char const *)
+0x1801503c7  cmp     [rbx], rdi
+0x1801503ca  jz      short loc_1801503EF
+0x1801503cc  mov     eax, r14d
+0x1801503cf  mov     rcx, r13
+0x1801503d2  neg     eax
+0x1801503d4  mov     rax, [rbx]
+0x1801503d7  sbb     dx, dx
+0x1801503da  xor     r8d, r8d
+0x1801503dd  and     dx, 0Bh
+0x1801503e1  add     dx, 3
+0x1801503e5  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x1801503ea  mov     rbx, rax
+0x1801503ed  jmp     short loc_18015043D
+0x1801503ef  xor     ebx, ebx
+0x1801503f1  jmp     short loc_18015043D
+0x1801503f3  test    r14d, r14d
+0x1801503f6  jnz     loc_180150600
+0x1801503fc  mov     rcx, [rbp+47h+var_B8]
+0x180150400  lea     eax, [r14+0Eh]
+0x180150404  mov     word ptr [rbp+47h+var_98], ax
+0x180150408  lea     r8, [rbp+47h+hemf]
+0x18015040c  mov     dword ptr [rbp+47h+var_88+8], 40h ; '@'
+0x180150413  lea     rdx, [rbp+47h+var_98]
+0x180150417  mov     rax, [rcx]
+0x18015041a  mov     rax, [rax+18h]
+0x18015041e  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x180150423  test    eax, eax
+0x180150425  jnz     short loc_18015047A
+0x180150427  mov     rcx, [rbp+47h+hemf+8]; hemf
+0x18015042b  test    rcx, rcx
+0x18015042e  jz      short loc_18015047A
+0x180150430  xor     ebx, ebx
+0x180150432  mov     rdx, r13; hdcRef
+0x180150435  call    ConvertEnhancedMetafileToMetafile
+0x18015043a  mov     rdi, rax
+0x18015043d  lea     rcx, [rbp+47h+hemf]; struct tagSTGMEDIUM *
+0x180150441  call    ?ReleaseStgMedium@CW32System@@SAXPEAUtagSTGMEDIUM@@@Z; CW32System::ReleaseStgMedium(tagSTGMEDIUM *)
+0x180150446  test    rbx, rbx
+0x180150449  jz      short loc_18015046E
+0x18015044b  lea     rcx, [rbp+47h+var_B8]; void *
+0x18015044f  call    ??1?$TCntPtr@UIDataObject@@@Resp@@QEAA@XZ; Resp::TCntPtr<IDataObject>::~TCntPtr<IDataObject>(void)
+0x180150454  lea     rcx, [rbp+47h+var_A0]; void *
+0x180150458  call    ??1?$TCntPtr@UIDataObject@@@Resp@@QEAA@XZ; Resp::TCntPtr<IDataObject>::~TCntPtr<IDataObject>(void)
+0x18015045d  lea     rcx, [rbp+47h+var_B0]; void *
+0x180150461  call    ??1?$TCntPtr@UIDataObject@@@Resp@@QEAA@XZ; Resp::TCntPtr<IDataObject>::~TCntPtr<IDataObject>(void)
+0x180150466  mov     rax, rbx
+0x180150469  jmp     loc_18015061D
+0x18015046e  mov     ebx, [rbp+47h+var_A8]
+0x180150471  test    r14d, r14d
+0x180150474  jnz     loc_180150600
+0x18015047a  mov     rax, [r15]
+0x18015047d  lea     r8, [rbp+47h+var_B0]
+0x180150481  lea     rdx, IID_IViewObject2
+0x180150488  mov     rcx, r15
+0x18015048b  mov     rax, [rax]
+0x18015048e  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x180150493  xor     r15d, r15d
+0x180150496  test    eax, eax
+0x180150498  jnz     loc_180150600
+0x18015049e  test    r12, r12
+0x1801504a1  jz      short loc_1801504B0
+0x1801504a3  mov     rax, [r12]
+0x1801504a7  mov     ebx, r15d
+0x1801504aa  mov     qword ptr [rbp+47h+x], rax
+0x1801504ae  jmp     short loc_1801504DC
+0x1801504b0  mov     rcx, [rbp+47h+var_B0]
+0x1801504b4  lea     rdx, [rbp+47h+x]
+0x1801504b8  mov     [rsp+120h+var_100], rdx
+0x1801504bd  xor     r9d, r9d
+0x1801504c0  or      r8d, 0FFFFFFFFh
+0x1801504c4  mov     edx, ebx
+0x1801504c6  mov     rax, [rcx]
+0x1801504c9  mov     rax, [rax+48h]
+0x1801504cd  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x1801504d2  mov     ebx, eax
+0x1801504d4  test    eax, eax
+0x1801504d6  jz      short loc_1801504DC
+0x1801504d8  mov     qword ptr [rbp+47h+x], r15
+0x1801504dc  test    rdi, rdi
+0x1801504df  jnz     loc_180150594
+0x1801504e5  xorps   xmm0, xmm0
+0x1801504e8  mov     qword ptr [rbp+47h+sz.cx], r15
+0x1801504ec  xor     ecx, ecx; pszFile
+0x1801504ee  mov     qword ptr [rbp+47h+pt.x], r15
+0x1801504f2  movups  [rbp+47h+var_50], xmm0
+0x1801504f6  call    cs:__imp_CreateMetaFileA
+0x1801504fc  mov     r14, rax
+0x1801504ff  test    rax, rax
+0x180150502  jz      loc_180150598
+0x180150508  mov     edi, [rbp+47h+x]
+0x18015050b  lea     r9, [rbp+47h+pt]; lppt
+0x18015050f  mov     ebx, [rbp+47h+x+4]
+0x180150512  xor     r8d, r8d; y
+0x180150515  xor     edx, edx; x
+0x180150517  mov     dword ptr [rbp+47h+var_50+8], edi
+0x18015051a  mov     rcx, rax; hdc
+0x18015051d  mov     dword ptr [rbp+47h+var_50+0Ch], ebx
+0x180150520  mov     qword ptr [rbp+47h+var_50], r15
+0x180150524  call    cs:__imp_SetWindowOrgEx
+0x18015052a  lea     r9, [rbp+47h+sz]; lpsz
+0x18015052e  mov     r8d, ebx; y
+0x180150531  mov     edx, edi; x
+0x180150533  mov     rcx, r14; hdc
+0x180150536  call    cs:__imp_SetWindowExtEx
+0x18015053c  mov     rcx, [rbp+47h+var_B0]
+0x180150540  lea     rdx, [rbp+47h+var_50]
+0x180150544  mov     [rsp+120h+var_D0], r15
+0x180150549  xor     r9d, r9d
+0x18015054c  mov     [rsp+120h+var_D8], r15
+0x180150551  or      r8d, 0FFFFFFFFh
+0x180150555  mov     [rsp+120h+var_E0], rdx
+0x18015055a  lea     rdx, [rbp+47h+var_50]
+0x18015055e  mov     rax, [rcx]
+0x180150561  mov     [rsp+120h+var_E8], rdx
+0x180150566  mov     edx, [rbp+47h+var_A8]
+0x180150569  mov     [rsp+120h+var_F0], r14
+0x18015056e  mov     rax, [rax+18h]
+0x180150572  mov     [rsp+120h+var_F8], r15
+0x180150577  mov     [rsp+120h+var_100], r15
+0x18015057c  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x180150581  mov     rcx, r14; hdc
+0x180150584  mov     ebx, eax
+0x180150586  call    cs:__imp_CloseMetaFile
+0x18015058c  mov     rdi, rax
+0x18015058f  test    rax, rax
+0x180150592  jz      short loc_180150598
+0x180150594  test    ebx, ebx
+0x180150596  jz      short loc_1801505B2
+0x180150598  mov     rbx, r15
+0x18015059b  test    rdi, rdi
+0x18015059e  jz      loc_18015044B
+0x1801505a4  mov     rcx, rdi; hmf
+0x1801505a7  call    cs:__imp_DeleteMetaFile
+0x1801505ad  jmp     loc_18015044B
+0x1801505b2  mov     edx, 18h; dwBytes
+0x1801505b7  mov     ecx, 2042h; uFlags
+0x1801505bc  call    cs:__imp_GlobalAlloc
+0x1801505c2  mov     rbx, rax
+0x1801505c5  test    rax, rax
+0x1801505c8  jz      short loc_18015059B
+0x1801505ca  mov     rcx, rax; hMem
+0x1801505cd  call    cs:__imp_GlobalLock
+0x1801505d3  test    rax, rax
+0x1801505d6  jz      loc_18015044B
+0x1801505dc  mov     [rax+10h], rdi
+0x1801505e0  mov     ecx, [rbp+47h+x]
+0x1801505e3  mov     [rax+4], ecx
+0x1801505e6  mov     ecx, [rbp+47h+x+4]
+0x1801505e9  mov     [rax+8], ecx
+0x1801505ec  mov     rcx, rbx; hMem
+0x1801505ef  mov     dword ptr [rax], 8
+0x1801505f5  call    cs:__imp_GlobalUnlock
+0x1801505fb  jmp     loc_18015044B
+0x180150600  lea     rcx, [rbp+47h+var_B8]; void *
+0x180150604  call    ??1?$TCntPtr@UIDataObject@@@Resp@@QEAA@XZ; Resp::TCntPtr<IDataObject>::~TCntPtr<IDataObject>(void)
+0x180150609  lea     rcx, [rbp+47h+var_A0]; void *
+0x18015060d  call    ??1?$TCntPtr@UIDataObject@@@Resp@@QEAA@XZ; Resp::TCntPtr<IDataObject>::~TCntPtr<IDataObject>(void)
+0x180150612  lea     rcx, [rbp+47h+var_B0]; void *
+0x180150616  call    ??1?$TCntPtr@UIDataObject@@@Resp@@QEAA@XZ; Resp::TCntPtr<IDataObject>::~TCntPtr<IDataObject>(void)
+0x18015061b  xor     eax, eax
+0x18015061d  mov     rcx, [rbp+47h+var_40]
+0x180150621  xor     rcx, rsp; StackCookie
+0x180150624  call    __security_check_cookie
+0x180150629  add     rsp, 0F0h
+0x180150630  pop     r15
+0x180150632  pop     r14
+0x180150634  pop     r13
+0x180150636  pop     r12
+0x180150638  pop     rdi
+0x180150639  pop     rbx
+0x18015063a  pop     rbp
+0x18015063b  retn
+```

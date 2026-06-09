@@ -1,0 +1,34 @@
+# GetLayoutInit(HDC__ *)
+
+- ea: `0x180146360`
+- end: `0x1801463cd`
+- name: `?GetLayoutInit@@YAKPEAUHDC__@@@Z`
+- size: `109`
+- prototype: `unsigned int __fastcall(HDC)`
+- caller_count: `0`
+- callee_count: `4`
+- tags: `loader_planting`
+
+## callees
+
+- `0x18002ab44`
+- `0x18002abb0`
+- `0x180146360`
+- `0x18027a010`
+
+## import_xrefs
+
+- `api-ms-win-core-libraryloader-l1-2-0!GetProcAddress` at `0x180146391`
+- `api-ms-win-core-libraryloader-l1-2-0!GetProcAddress` at `0x180146391`
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleA` at `0x18014637c`
+- `api-ms-win-core-libraryloader-l1-2-0!GetModuleHandleA` at `0x18014637c`
+
+## string_xrefs
+
+- `0x180146375`: `GDI32.DLL`
+
+## pseudocode
+
+```c
+
+```

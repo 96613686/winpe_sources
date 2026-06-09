@@ -1,0 +1,235 @@
+# CMagellan::InvertMagellanDownBMP(CDisplay *,int,HDC__ *)
+
+- ea: `0x18006fd9c`
+- end: `0x18006ff57`
+- name: `?InvertMagellanDownBMP@CMagellan@@AEAAHPEAVCDisplay@@HPEAUHDC__@@@Z`
+- size: `443`
+- prototype: `int(CMagellan *__hidden this, struct CDisplay *, int, HDC)`
+- caller_count: `4`
+- callee_count: `4`
+- tags: `broker_com_uri`
+
+## callers
+
+- `0x1800700a4`
+- `0x1800f86d8`
+- `0x1801399cc`
+- `0x1801fa3f4`
+
+## callees
+
+- `0x18006fd9c`
+- `0x18008db68`
+- `0x1800e9338`
+- `0x180168728`
+
+## import_xrefs
+
+- `ext-ms-win-gdi-dc-create-l1-1-0!DeleteDC` at `0x18006ff2e`
+- `ext-ms-win-gdi-dc-create-l1-1-0!DeleteDC` at `0x18006ff2e`
+- `ext-ms-win-gdi-dc-create-l1-1-0!CreateCompatibleDC` at `0x18006fe2d`
+- `ext-ms-win-gdi-dc-create-l1-1-0!CreateCompatibleDC` at `0x18006fe2d`
+- `ext-ms-win-gdi-dc-l1-2-0!GetObjectW` at `0x18006fe59`
+- `ext-ms-win-gdi-dc-l1-2-0!GetObjectW` at `0x18006fe59`
+- `ext-ms-win-gdi-dc-l1-2-0!SelectObject` at `0x18006fe46`
+- `ext-ms-win-gdi-dc-l1-2-0!SelectObject` at `0x18006fe46`
+- `ext-ms-win-gdi-draw-l1-1-1!DPtoLP` at `0x18006fe80`
+- `ext-ms-win-gdi-draw-l1-1-1!DPtoLP` at `0x18006fe9b`
+- `ext-ms-win-gdi-draw-l1-1-1!DPtoLP` at `0x18006fe80`
+- `ext-ms-win-gdi-draw-l1-1-1!DPtoLP` at `0x18006fe9b`
+- `ext-ms-win-gdi-draw-l1-1-0!BitBlt` at `0x18006ff0b`
+- `ext-ms-win-gdi-draw-l1-1-0!BitBlt` at `0x18006ff0b`
+
+## pseudocode
+
+```c
+__int64 __fastcall CMagellan::InvertMagellanDownBMP(HGDIOBJ *this, struct CDisplay *a2, int a3, HDC a4)
+{
+  unsigned int v7; // edi
+  CTxtEdit **v9; // rbx
+  HDC HDC; // rsi
+  HDC CompatibleDC; // rax
+  HDC hdcSrc; // r15
+  struct tagPOINT v13; // [rsp+50h] [rbp-30h] BYREF
+  _OWORD pv[2]; // [rsp+58h] [rbp-28h] BYREF
+  struct tagPOINT pt; // [rsp+C0h] [rbp+40h] BYREF
+  struct tagPOINT x1; // [rsp+C8h] [rbp+48h] BYREF
+
+  if ( a2 )
+  {
+    v7 = *(_WORD *)this & 1;
+    if ( v7 != a3 && this[1] )
+    {
+      pt = 0;
+      x1 = 0;
+      v9 = (CTxtEdit **)((char *)a2 + 16);
+      memset(pv, 0, sizeof(pv));
+      if ( a4 )
+      {
+        HDC = a4;
+LABEL_9:
+        CompatibleDC = CreateCompatibleDC(HDC);
+        hdcSrc = CompatibleDC;
+        if ( CompatibleDC )
+        {
+          SelectObject(CompatibleDC, this[1]);
+          if ( GetObjectW(this[1], 32, pv) )
+          {
+            pt = *(struct tagPOINT *)((char *)pv + 4);
+            DPtoLP(HDC, &pt, 1);
+            x1 = 0;
+            DPtoLP(hdcSrc, &x1, 1);
+            v13 = 0;
+            CDisplay::PointFromPointuv(a2, &v13, (const struct Ptls6::tagLSPOINTUV *)(this + 2), 0, 0);
+            BitBlt(HDC, v13.x - (pt.x >> 1) - 1, v13.y - (pt.y >> 1) + 1, pt.x, pt.y, hdcSrc, x1.x, x1.y, 0x990066u);
+            *(_WORD *)this = *(_WORD *)this & 0xFFFE | v7 ^ 1;
+          }
+          DeleteDC(hdcSrc);
+        }
+        if ( !a4 )
+        {
+          if ( *((_BYTE *)v9 + 33) )
+            CTxtEdit::TxReleaseDC(*v9, HDC);
+          *((_BYTE *)v9 + 33) = 0;
+        }
+        return v7;
+      }
+      HDC = CDevDesc::GetHDC((struct CDisplay *)((char *)a2 + 16));
+      if ( HDC )
+        goto LABEL_9;
+    }
+    return v7;
+  }
+  return 0;
+}
+
+```
+
+## disassembly
+
+```asm
+0x18006fd9c  mov     [rsp-38h+arg_10], rbx
+0x18006fda1  push    rbp
+0x18006fda2  push    rsi
+0x18006fda3  push    rdi
+0x18006fda4  push    r12
+0x18006fda6  push    r13
+0x18006fda8  push    r14
+0x18006fdaa  push    r15
+0x18006fdac  mov     rbp, rsp
+0x18006fdaf  sub     rsp, 80h
+0x18006fdb6  xor     r15d, r15d
+0x18006fdb9  mov     r12, r9
+0x18006fdbc  mov     r13, rdx
+0x18006fdbf  mov     r14, rcx
+0x18006fdc2  test    rdx, rdx
+0x18006fdc5  jz      short loc_18006FDEF
+0x18006fdc7  movzx   edi, word ptr [rcx]
+0x18006fdca  and     edi, 1
+0x18006fdcd  cmp     edi, r8d
+0x18006fdd0  jnz     short loc_18006FDF3
+0x18006fdd2  mov     eax, edi
+0x18006fdd4  mov     rbx, [rsp+80h+arg_10]
+0x18006fddc  add     rsp, 80h
+0x18006fde3  pop     r15
+0x18006fde5  pop     r14
+0x18006fde7  pop     r13
+0x18006fde9  pop     r12
+0x18006fdeb  pop     rdi
+0x18006fdec  pop     rsi
+0x18006fded  pop     rbp
+0x18006fdee  retn
+0x18006fdef  xor     eax, eax
+0x18006fdf1  jmp     short loc_18006FDD4
+0x18006fdf3  cmp     [rcx+8], r15
+0x18006fdf7  jz      short loc_18006FDD2
+0x18006fdf9  mov     qword ptr [rbp+pt.x], r15
+0x18006fdfd  xorps   xmm0, xmm0
+0x18006fe00  mov     qword ptr [rbp+arg_8.x], r15
+0x18006fe04  lea     rbx, [rdx+10h]
+0x18006fe08  movups  [rbp+pv], xmm0
+0x18006fe0c  movups  [rbp+var_18], xmm0
+0x18006fe10  test    r12, r12
+0x18006fe13  jz      short loc_18006FE1A
+0x18006fe15  mov     rsi, r12
+0x18006fe18  jmp     short loc_18006FE2A
+0x18006fe1a  mov     rcx, rbx; this
+0x18006fe1d  call    ?GetHDC@CDevDesc@@QEAAPEAUHDC__@@XZ; CDevDesc::GetHDC(void)
+0x18006fe22  mov     rsi, rax
+0x18006fe25  test    rax, rax
+0x18006fe28  jz      short loc_18006FDD2
+0x18006fe2a  mov     rcx, rsi; hdc
+0x18006fe2d  call    cs:__imp_CreateCompatibleDC
+0x18006fe33  mov     r15, rax
+0x18006fe36  test    rax, rax
+0x18006fe39  jz      loc_18006FF34
+0x18006fe3f  mov     rdx, [r14+8]; h
+0x18006fe43  mov     rcx, rax; hdc
+0x18006fe46  call    cs:__imp_SelectObject
+0x18006fe4c  mov     rcx, [r14+8]; h
+0x18006fe50  lea     r8, [rbp+pv]; pv
+0x18006fe54  mov     edx, 20h ; ' '; c
+0x18006fe59  call    cs:__imp_GetObjectW
+0x18006fe5f  test    eax, eax
+0x18006fe61  jz      loc_18006FF2B
+0x18006fe67  mov     eax, dword ptr [rbp+pv+4]
+0x18006fe6a  lea     rdx, [rbp+pt]; lppt
+0x18006fe6e  mov     [rbp+pt.x], eax
+0x18006fe71  mov     r8d, 1; c
+0x18006fe77  mov     eax, dword ptr [rbp+pv+8]
+0x18006fe7a  mov     rcx, rsi; hdc
+0x18006fe7d  mov     [rbp+pt.y], eax
+0x18006fe80  call    cs:__imp_DPtoLP
+0x18006fe86  mov     r8d, 1; c
+0x18006fe8c  mov     qword ptr [rbp+arg_8.x], 0
+0x18006fe94  lea     rdx, [rbp+arg_8]; lppt
+0x18006fe98  mov     rcx, r15; hdc
+0x18006fe9b  call    cs:__imp_DPtoLP
+0x18006fea1  lea     r8, [r14+10h]; struct Ptls6::tagLSPOINTUV *
+0x18006fea5  mov     qword ptr [rbp+var_30.x], 0
+0x18006fead  xor     r9d, r9d; bool
+0x18006feb0  mov     byte ptr [rsp+80h+cy], 0; bool
+0x18006feb5  lea     rdx, [rbp+var_30]; struct tagPOINT *
+0x18006feb9  mov     rcx, r13; this
+0x18006febc  call    ?PointFromPointuv@CDisplay@@QEBAXAEAUtagPOINT@@AEBUtagLSPOINTUV@Ptls6@@_N2@Z; CDisplay::PointFromPointuv(tagPOINT &,Ptls6::tagLSPOINTUV const &,bool,bool)
+0x18006fec1  mov     ecx, [rbp+pt.y]
+0x18006fec4  mov     r13d, 1
+0x18006feca  mov     r8d, [rbp+var_30.y]
+0x18006fece  mov     eax, ecx
+0x18006fed0  mov     r9d, [rbp+pt.x]; cx
+0x18006fed4  mov     edx, [rbp+var_30.x]
+0x18006fed7  sar     eax, 1
+0x18006fed9  sub     r8d, eax
+0x18006fedc  mov     [rsp+80h+rop], 990066h; rop
+0x18006fee4  mov     eax, r9d
+0x18006fee7  add     r8d, r13d; y
+0x18006feea  sar     eax, 1
+0x18006feec  sub     edx, eax
+0x18006feee  mov     eax, [rbp+arg_8.y]
+0x18006fef1  mov     [rsp+80h+y1], eax; y1
+0x18006fef5  sub     edx, r13d; x
+0x18006fef8  mov     eax, [rbp+arg_8.x]
+0x18006fefb  mov     [rsp+80h+x1], eax; x1
+0x18006feff  mov     [rsp+80h+hdcSrc], r15; hdcSrc
+0x18006ff04  mov     [rsp+80h+cy], ecx; cy
+0x18006ff08  mov     rcx, rsi; hdc
+0x18006ff0b  call    cs:__imp_BitBlt
+0x18006ff11  movzx   eax, word ptr [r14]
+0x18006ff15  movzx   ecx, di
+0x18006ff18  mov     edx, 0FFFEh
+0x18006ff1d  xor     cx, r13w
+0x18006ff21  and     ax, dx
+0x18006ff24  or      cx, ax
+0x18006ff27  mov     [r14], cx
+0x18006ff2b  mov     rcx, r15; hdc
+0x18006ff2e  call    cs:__imp_DeleteDC
+0x18006ff34  test    r12, r12
+0x18006ff37  jnz     loc_18006FDD2
+0x18006ff3d  cmp     [rbx+21h], r12b
+0x18006ff41  jz      short loc_18006FF4E
+0x18006ff43  mov     rcx, [rbx]; this
+0x18006ff46  mov     rdx, rsi; HDC
+0x18006ff49  call    ?TxReleaseDC@CTxtEdit@@QEAAHPEAUHDC__@@@Z; CTxtEdit::TxReleaseDC(HDC__ *)
+0x18006ff4e  mov     byte ptr [rbx+21h], 0
+0x18006ff52  jmp     loc_18006FDD2
+```

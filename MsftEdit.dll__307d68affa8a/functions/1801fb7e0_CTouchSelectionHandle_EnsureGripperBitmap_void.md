@@ -1,0 +1,468 @@
+# CTouchSelectionHandle::EnsureGripperBitmap(void)
+
+- ea: `0x1801fb7e0`
+- end: `0x1801fbb43`
+- name: `?EnsureGripperBitmap@CTouchSelectionHandle@@IEAAXXZ`
+- size: `867`
+- prototype: `void __fastcall(CTouchSelectionHandle *__hidden this)`
+- caller_count: `1`
+- callee_count: `4`
+- tags: `broker_com_uri`
+
+## callers
+
+- `0x1801ff9b8`
+
+## callees
+
+- `0x18013bad0`
+- `0x1801fb7e0`
+- `0x1801fc570`
+- `0x1801fea58`
+
+## import_xrefs
+
+- `ext-ms-win-gdi-dc-create-l1-1-0!DeleteDC` at `0x1801fbaed`
+- `ext-ms-win-gdi-dc-create-l1-1-0!DeleteDC` at `0x1801fbaed`
+- `ext-ms-win-gdi-dc-create-l1-1-0!CreateCompatibleDC` at `0x1801fb8ae`
+- `ext-ms-win-gdi-dc-create-l1-1-0!CreateCompatibleDC` at `0x1801fb8ae`
+- `ext-ms-win-gdi-dc-l1-2-0!SelectObject` at `0x1801fb8cc`
+- `ext-ms-win-gdi-dc-l1-2-0!SelectObject` at `0x1801fbae4`
+- `ext-ms-win-gdi-dc-l1-2-0!SelectObject` at `0x1801fb8cc`
+- `ext-ms-win-gdi-dc-l1-2-0!SelectObject` at `0x1801fbae4`
+- `ext-ms-win-gdi-draw-l1-1-0!CreateDIBSection` at `0x1801fb889`
+- `ext-ms-win-gdi-draw-l1-1-0!CreateDIBSection` at `0x1801fb889`
+- `ext-ms-win-rtcore-gdi-object-l1-1-0!DeleteObject` at `0x1801fbafc`
+- `ext-ms-win-rtcore-gdi-object-l1-1-0!DeleteObject` at `0x1801fbafc`
+- `ext-ms-win-rtcore-ntuser-dc-access-l1-1-0!GetDC` at `0x1801fb868`
+- `ext-ms-win-rtcore-ntuser-dc-access-l1-1-0!GetDC` at `0x1801fb868`
+- `ext-ms-win-rtcore-ntuser-dc-access-l1-1-0!ReleaseDC` at `0x1801fb8a0`
+- `ext-ms-win-rtcore-ntuser-dc-access-l1-1-0!ReleaseDC` at `0x1801fb8c0`
+- `ext-ms-win-rtcore-ntuser-dc-access-l1-1-0!ReleaseDC` at `0x1801fb8a0`
+- `ext-ms-win-rtcore-ntuser-dc-access-l1-1-0!ReleaseDC` at `0x1801fb8c0`
+
+## pseudocode
+
+```c
+void __fastcall CTouchSelectionHandle::EnsureGripperBitmap(CTouchSelectionHandle *this)
+{
+  LONG v2; // ebx
+  HDC DC; // rsi
+  HBITMAP v4; // r13
+  HDC CompatibleDC; // r12
+  HGDIOBJ v6; // rax
+  unsigned int v7; // r8d
+  int v8; // edx
+  int v9; // r14d
+  int v10; // eax
+  __int64 v11; // rcx
+  int v12; // r11d
+  unsigned int v13; // r15d
+  int v14; // r9d
+  int v15; // r14d
+  int v16; // r8d
+  int i; // r10d
+  int v18; // ecx
+  __int64 v19; // r12
+  int v20; // esi
+  int v21; // ecx
+  __int64 j; // rsi
+  unsigned int v23; // r9d
+  void *v24; // rcx
+  __int64 v25; // rax
+  int v26; // ecx
+  unsigned int v27; // [rsp+30h] [rbp-59h] BYREF
+  bool v28[4]; // [rsp+34h] [rbp-55h] BYREF
+  unsigned int v29; // [rsp+38h] [rbp-51h]
+  int v30; // [rsp+3Ch] [rbp-4Dh]
+  void *ppvBits; // [rsp+40h] [rbp-49h] BYREF
+  int v32; // [rsp+48h] [rbp-41h]
+  HDC v33; // [rsp+50h] [rbp-39h]
+  HBITMAP v34; // [rsp+58h] [rbp-31h]
+  HGDIOBJ h; // [rsp+60h] [rbp-29h]
+  BITMAPINFO pbmi; // [rsp+68h] [rbp-21h] BYREF
+
+  if ( !*((_QWORD *)this + 10) || *((_BYTE *)this + 100) )
+  {
+    v2 = *(_DWORD *)(*((_QWORD *)this + 16) + 8LL);
+    memset(&pbmi.bmiHeader.biSizeImage, 0, 24);
+    pbmi.bmiHeader.biSize = 40;
+    pbmi.bmiHeader.biWidth = v2;
+    pbmi.bmiHeader.biHeight = v2;
+    *(_QWORD *)&pbmi.bmiHeader.biPlanes = 2097153;
+    ppvBits = 0;
+    v27 = 0;
+    *(_DWORD *)v28 = 0;
+    CTouchSelectionHandle::GetGripperColorsFromTextHost(this, &v27, (unsigned int *)v28);
+    DC = GetDC(0);
+    v34 = CreateDIBSection(DC, &pbmi, 0, &ppvBits, 0, 0);
+    v4 = v34;
+    if ( !v34 )
+    {
+      ReleaseDC(0, DC);
+      return;
+    }
+    CompatibleDC = CreateCompatibleDC(DC);
+    v33 = CompatibleDC;
+    ReleaseDC(0, DC);
+    v6 = SelectObject(CompatibleDC, v4);
+    v7 = *(_DWORD *)v28;
+    h = v6;
+    v8 = 0;
+    v9 = v2 * v2;
+    v32 = v2 * v2;
+    v30 = *(_WORD *)v28 & 0xFF00 | (v28[0] << 16) | v28[2];
+    v10 = v30 ^ 0xFFFFFF;
+    v29 = v30 ^ 0xFFFFFF;
+    if ( v2 * v2 > 0 )
+    {
+      do
+      {
+        v11 = (unsigned int)v8++;
+        *((_DWORD *)ppvBits + v11) = v10 | 0x1000000;
+      }
+      while ( v8 < v9 );
+      v7 = *(_DWORD *)v28;
+    }
+    CTouchSelectionHandle::RenderHandle(this, CompatibleDC, v7, v27, v7);
+    v12 = 0;
+    v13 = v27 & 0xFF00 | ((unsigned __int8)v27 << 16) | BYTE2(v27);
+    if ( v2 > 0 )
+    {
+LABEL_9:
+      v14 = 0;
+      v15 = -1;
+      v16 = 0;
+      for ( i = 1; ; v16 += i )
+      {
+        if ( i <= 0 )
+        {
+          if ( v16 < 0 )
+            goto LABEL_25;
+        }
+        else if ( v16 >= v2 )
+        {
+          goto LABEL_25;
+        }
+        v18 = v16 + v12 * v2;
+        v19 = v18;
+        v20 = *((_DWORD *)ppvBits + v18);
+        if ( v20 == v30 || v20 == v13 )
+        {
+          if ( i != 1 )
+          {
+            v15 = v16 + v12 * v2;
+LABEL_25:
+            while ( v14 <= v15 )
+              *((_DWORD *)ppvBits + v14++) |= 0xFF000000;
+            if ( ++v12 >= v2 )
+            {
+              v9 = v32;
+              CompatibleDC = v33;
+              v4 = v34;
+              break;
+            }
+            goto LABEL_9;
+          }
+          i = -1;
+          v16 = v2 - 1;
+          v14 = v18;
+        }
+        else if ( !*((_BYTE *)ppvBits + 4 * v18 + 3) )
+        {
+          v21 = -((unsigned __int8)v20 + BYTE1(v20) + BYTE2(v20) - BYTE1(v29) - HIWORD(v29) - (unsigned __int8)v29);
+          if ( (int)((unsigned __int8)v20 + BYTE1(v20) + BYTE2(v20) - BYTE1(v29) - HIWORD(v29) - (unsigned __int8)v29) > 0 )
+            v21 = (unsigned __int8)v20 + BYTE1(v20) + BYTE2(v20) - BYTE1(v29) - HIWORD(v29) - (unsigned __int8)v29;
+          *((_DWORD *)ppvBits + v19) = v30
+                                     | ((unsigned __int8)(((((unsigned __int64)(1431655766LL * v21) >> 32) & 0x80000000) != 0LL)
+                                                        + ((unsigned __int64)(1431655766LL * v21) >> 32)) << 24);
+        }
+      }
+    }
+    for ( j = 0; (int)j < v9; j = (unsigned int)(j + 1) )
+    {
+      v23 = HIBYTE(*((_DWORD *)ppvBits + j));
+      *((_DWORD *)ppvBits + j) = (unsigned __int8)(v23 * (unsigned __int8)*((_DWORD *)ppvBits + j) / 0xFF)
+                               | ((unsigned __int8)(v23 * (unsigned __int8)BYTE2(*((_DWORD *)ppvBits + j)) / 0xFF) << 16)
+                               | ((unsigned __int8)(v23 * BYTE1(*((_DWORD *)ppvBits + j)) / 0xFF) << 8)
+                               | _byteswap_ulong(v23);
+    }
+    SelectObject(CompatibleDC, h);
+    DeleteDC(CompatibleDC);
+    v24 = (void *)*((_QWORD *)this + 10);
+    if ( v24 )
+      DeleteObject(v24);
+    v25 = *((_QWORD *)this + 16);
+    *((_QWORD *)this + 10) = v4;
+    *((_BYTE *)this + 100) = 0;
+    v26 = *(_DWORD *)(v25 + 4);
+    *((_DWORD *)this + 23) = v27;
+    *((_DWORD *)this + 24) = *(_DWORD *)v28;
+    *((_DWORD *)this + 22) = v26;
+  }
+}
+
+```
+
+## disassembly
+
+```asm
+0x1801fb7e0  push    rbp
+0x1801fb7e2  push    rbx
+0x1801fb7e3  push    rsi
+0x1801fb7e4  push    rdi
+0x1801fb7e5  push    r12
+0x1801fb7e7  push    r13
+0x1801fb7e9  push    r14
+0x1801fb7eb  push    r15
+0x1801fb7ed  lea     rbp, [rsp-1Fh]
+0x1801fb7f2  sub     rsp, 0A8h
+0x1801fb7f9  mov     rax, cs:__security_cookie
+0x1801fb800  xor     rax, rsp
+0x1801fb803  mov     [rbp+57h+var_48], rax
+0x1801fb807  xor     r15d, r15d
+0x1801fb80a  mov     rdi, rcx
+0x1801fb80d  cmp     [rcx+50h], r15
+0x1801fb811  jz      short loc_1801FB81D
+0x1801fb813  cmp     [rcx+64h], r15b
+0x1801fb817  jz      loc_1801FBB23
+0x1801fb81d  mov     rax, [rcx+80h]
+0x1801fb824  lea     r8, [rbp+57h+var_AC]; unsigned int *
+0x1801fb828  xorps   xmm0, xmm0
+0x1801fb82b  lea     rdx, [rbp+57h+var_B0]; unsigned int *
+0x1801fb82f  mov     ebx, [rax+8]
+0x1801fb832  xor     eax, eax
+0x1801fb834  movups  xmmword ptr [rbp+57h+pbmi.bmiHeader.biWidth], xmm0
+0x1801fb838  mov     qword ptr [rbp+57h+pbmi.bmiHeader.biClrImportant], rax
+0x1801fb83c  movups  xmmword ptr [rbp+57h+pbmi.bmiHeader.biSizeImage], xmm0
+0x1801fb840  mov     [rbp+57h+pbmi.bmiHeader.biSize], 28h ; '('
+0x1801fb847  mov     [rbp+57h+pbmi.bmiHeader.biWidth], ebx
+0x1801fb84a  mov     [rbp+57h+pbmi.bmiHeader.biHeight], ebx
+0x1801fb84d  mov     qword ptr [rbp+57h+pbmi.bmiHeader.biPlanes], 200001h
+0x1801fb855  mov     [rbp+57h+ppvBits], r15
+0x1801fb859  mov     [rbp+57h+var_B0], r15d
+0x1801fb85d  mov     dword ptr [rbp+57h+var_AC], r15d
+0x1801fb861  call    ?GetGripperColorsFromTextHost@CTouchSelectionHandle@@IEBAXAEAK0@Z; CTouchSelectionHandle::GetGripperColorsFromTextHost(ulong &,ulong &)
+0x1801fb866  xor     ecx, ecx; hWnd
+0x1801fb868  call    cs:__imp_GetDC
+0x1801fb86e  mov     [rsp+0E0h+offset], r15d; offset
+0x1801fb873  lea     r9, [rbp+57h+ppvBits]; ppvBits
+0x1801fb877  mov     rcx, rax; hdc
+0x1801fb87a  mov     [rsp+0E0h+hSection], r15; hSection
+0x1801fb87f  xor     r8d, r8d; usage
+0x1801fb882  lea     rdx, [rbp+57h+pbmi]; pbmi
+0x1801fb886  mov     rsi, rax
+0x1801fb889  call    cs:__imp_CreateDIBSection
+0x1801fb88f  mov     [rbp+57h+var_88], rax
+0x1801fb893  mov     r13, rax
+0x1801fb896  test    rax, rax
+0x1801fb899  jnz     short loc_1801FB8AB
+0x1801fb89b  mov     rdx, rsi; hDC
+0x1801fb89e  xor     ecx, ecx; hWnd
+0x1801fb8a0  call    cs:__imp_ReleaseDC
+0x1801fb8a6  jmp     loc_1801FBB23
+0x1801fb8ab  mov     rcx, rsi; hdc
+0x1801fb8ae  call    cs:__imp_CreateCompatibleDC
+0x1801fb8b4  mov     rdx, rsi; hDC
+0x1801fb8b7  xor     ecx, ecx; hWnd
+0x1801fb8b9  mov     r12, rax
+0x1801fb8bc  mov     [rbp+57h+var_90], rax
+0x1801fb8c0  call    cs:__imp_ReleaseDC
+0x1801fb8c6  mov     rdx, r13; h
+0x1801fb8c9  mov     rcx, r12; hdc
+0x1801fb8cc  call    cs:__imp_SelectObject
+0x1801fb8d2  mov     r8d, dword ptr [rbp+57h+var_AC]
+0x1801fb8d6  mov     esi, 0FF00h
+0x1801fb8db  mov     [rbp+57h+h], rax
+0x1801fb8df  mov     ecx, r8d
+0x1801fb8e2  shr     ecx, 10h
+0x1801fb8e5  mov     r14d, ebx
+0x1801fb8e8  movzx   eax, cl
+0x1801fb8eb  mov     edx, r15d
+0x1801fb8ee  imul    r14d, ebx
+0x1801fb8f2  movzx   ecx, r8b
+0x1801fb8f6  shl     ecx, 10h
+0x1801fb8f9  or      eax, ecx
+0x1801fb8fb  mov     ecx, r8d
+0x1801fb8fe  and     ecx, esi
+0x1801fb900  or      eax, ecx
+0x1801fb902  mov     [rbp+57h+var_98], r14d
+0x1801fb906  mov     [rbp+57h+var_A4], eax
+0x1801fb909  xor     eax, 0FFFFFFh
+0x1801fb90e  mov     [rbp+57h+var_A8], eax
+0x1801fb911  test    r14d, r14d
+0x1801fb914  jle     short loc_1801FB933
+0x1801fb916  mov     r8d, eax
+0x1801fb919  bts     r8d, 18h
+0x1801fb91e  mov     rax, [rbp+57h+ppvBits]
+0x1801fb922  mov     ecx, edx
+0x1801fb924  inc     edx
+0x1801fb926  mov     [rax+rcx*4], r8d
+0x1801fb92a  cmp     edx, r14d
+0x1801fb92d  jl      short loc_1801FB91E
+0x1801fb92f  mov     r8d, dword ptr [rbp+57h+var_AC]; bool
+0x1801fb933  mov     r9d, [rbp+57h+var_B0]; unsigned int
+0x1801fb937  mov     rdx, r12; HDC
+0x1801fb93a  mov     rcx, rdi; this
+0x1801fb93d  mov     dword ptr [rsp+0E0h+hSection], r8d; unsigned int
+0x1801fb942  call    ?RenderHandle@CTouchSelectionHandle@@IEBAXPEAUHDC__@@_NKK@Z; CTouchSelectionHandle::RenderHandle(HDC__ *,bool,ulong,ulong)
+0x1801fb947  mov     ecx, [rbp+57h+var_B0]
+0x1801fb94a  xor     r11d, r11d
+0x1801fb94d  mov     eax, ecx
+0x1801fb94f  shr     eax, 10h
+0x1801fb952  movzx   r15d, al
+0x1801fb956  movzx   eax, cl
+0x1801fb959  and     ecx, esi
+0x1801fb95b  shl     eax, 10h
+0x1801fb95e  or      r15d, eax
+0x1801fb961  or      r15d, ecx
+0x1801fb964  test    ebx, ebx
+0x1801fb966  jle     loc_1801FBA60
+0x1801fb96c  lea     edx, [r11+1]
+0x1801fb970  xor     r9d, r9d
+0x1801fb973  or      r14d, 0FFFFFFFFh
+0x1801fb977  xor     r8d, r8d
+0x1801fb97a  mov     r10d, edx
+0x1801fb97d  test    r10d, r10d
+0x1801fb980  jle     short loc_1801FB98D
+0x1801fb982  cmp     r8d, ebx
+0x1801fb985  jge     loc_1801FBA43
+0x1801fb98b  jmp     short loc_1801FB996
+0x1801fb98d  test    r8d, r8d
+0x1801fb990  js      loc_1801FBA43
+0x1801fb996  mov     r13, [rbp+57h+ppvBits]
+0x1801fb99a  mov     ecx, ebx
+0x1801fb99c  imul    ecx, r11d
+0x1801fb9a0  add     ecx, r8d
+0x1801fb9a3  movsxd  r12, ecx
+0x1801fb9a6  mov     esi, [r13+r12*4+0]
+0x1801fb9ab  cmp     esi, [rbp+57h+var_A4]
+0x1801fb9ae  jz      short loc_1801FBA15
+0x1801fb9b0  cmp     esi, r15d
+0x1801fb9b3  jz      short loc_1801FBA15
+0x1801fb9b5  cmp     byte ptr [r13+r12*4+3], 0
+0x1801fb9bb  jnz     short loc_1801FBA25
+0x1801fb9bd  movzx   ecx, word ptr [rbp+57h+var_A8]
+0x1801fb9c1  mov     eax, esi
+0x1801fb9c3  shr     eax, 10h
+0x1801fb9c6  movzx   edx, al
+0x1801fb9c9  shr     ecx, 8
+0x1801fb9cc  sub     edx, ecx
+0x1801fb9ce  movzx   eax, si
+0x1801fb9d1  mov     ecx, [rbp+57h+var_A8]
+0x1801fb9d4  shr     eax, 8
+0x1801fb9d7  add     edx, eax
+0x1801fb9d9  mov     eax, ecx
+0x1801fb9db  shr     eax, 10h
+0x1801fb9de  sub     edx, eax
+0x1801fb9e0  movzx   eax, cl
+0x1801fb9e3  sub     edx, eax
+0x1801fb9e5  movzx   eax, sil
+0x1801fb9e9  add     edx, eax
+0x1801fb9eb  mov     eax, 55555556h
+0x1801fb9f0  mov     ecx, edx
+0x1801fb9f2  neg     ecx
+0x1801fb9f4  cmovs   ecx, edx
+0x1801fb9f7  imul    ecx
+0x1801fb9f9  mov     eax, edx
+0x1801fb9fb  shr     eax, 1Fh
+0x1801fb9fe  add     edx, eax
+0x1801fba00  movzx   eax, dl
+0x1801fba03  mov     edx, 1
+0x1801fba08  shl     eax, 18h
+0x1801fba0b  or      eax, [rbp+57h+var_A4]
+0x1801fba0e  mov     [r13+r12*4+0], eax
+0x1801fba13  jmp     short loc_1801FBA25
+0x1801fba15  cmp     r10d, edx
+0x1801fba18  jnz     short loc_1801FBA2D
+0x1801fba1a  or      r10d, 0FFFFFFFFh
+0x1801fba1e  lea     r8d, [rbx-1]
+0x1801fba22  mov     r9d, ecx
+0x1801fba25  add     r8d, r10d
+0x1801fba28  jmp     loc_1801FB97D
+0x1801fba2d  mov     r14d, ecx
+0x1801fba30  jmp     short loc_1801FBA43
+0x1801fba32  mov     rax, [rbp+57h+ppvBits]
+0x1801fba36  movsxd  rcx, r9d
+0x1801fba39  or      dword ptr [rax+rcx*4], 0FF000000h
+0x1801fba40  add     r9d, edx
+0x1801fba43  cmp     r9d, r14d
+0x1801fba46  jle     short loc_1801FBA32
+0x1801fba48  add     r11d, edx
+0x1801fba4b  cmp     r11d, ebx
+0x1801fba4e  jl      loc_1801FB970
+0x1801fba54  mov     r14d, [rbp+57h+var_98]
+0x1801fba58  mov     r12, [rbp+57h+var_90]
+0x1801fba5c  mov     r13, [rbp+57h+var_88]
+0x1801fba60  xor     esi, esi
+0x1801fba62  test    r14d, r14d
+0x1801fba65  jle     short loc_1801FBADD
+0x1801fba67  mov     r15d, 80808081h
+0x1801fba6d  mov     r11, [rbp+57h+ppvBits]
+0x1801fba71  mov     eax, r15d
+0x1801fba74  mov     r8d, [r11+rsi*4]
+0x1801fba78  mov     r9d, r8d
+0x1801fba7b  shr     r9d, 18h
+0x1801fba7f  movzx   ecx, r8w
+0x1801fba83  mov     r10d, r9d
+0x1801fba86  shr     ecx, 8
+0x1801fba89  imul    ecx, r9d
+0x1801fba8d  bswap   r10d
+0x1801fba90  mul     ecx
+0x1801fba92  shr     edx, 7
+0x1801fba95  movzx   eax, dl
+0x1801fba98  shl     eax, 8
+0x1801fba9b  or      r10d, eax
+0x1801fba9e  mov     eax, r8d
+0x1801fbaa1  shr     eax, 10h
+0x1801fbaa4  movzx   ecx, al
+0x1801fbaa7  mov     eax, r15d
+0x1801fbaaa  imul    ecx, r9d
+0x1801fbaae  mul     ecx
+0x1801fbab0  movzx   ecx, r8b
+0x1801fbab4  shr     edx, 7
+0x1801fbab7  movzx   eax, dl
+0x1801fbaba  shl     eax, 10h
+0x1801fbabd  or      r10d, eax
+0x1801fbac0  imul    ecx, r9d
+0x1801fbac4  mov     eax, r15d
+0x1801fbac7  mul     ecx
+0x1801fbac9  shr     edx, 7
+0x1801fbacc  movzx   eax, dl
+0x1801fbacf  or      r10d, eax
+0x1801fbad2  mov     [r11+rsi*4], r10d
+0x1801fbad6  inc     esi
+0x1801fbad8  cmp     esi, r14d
+0x1801fbadb  jl      short loc_1801FBA6D
+0x1801fbadd  mov     rdx, [rbp+57h+h]; h
+0x1801fbae1  mov     rcx, r12; hdc
+0x1801fbae4  call    cs:__imp_SelectObject
+0x1801fbaea  mov     rcx, r12; hdc
+0x1801fbaed  call    cs:__imp_DeleteDC
+0x1801fbaf3  mov     rcx, [rdi+50h]; ho
+0x1801fbaf7  test    rcx, rcx
+0x1801fbafa  jz      short loc_1801FBB02
+0x1801fbafc  call    cs:__imp_DeleteObject
+0x1801fbb02  mov     rax, [rdi+80h]
+0x1801fbb09  mov     [rdi+50h], r13
+0x1801fbb0d  mov     byte ptr [rdi+64h], 0
+0x1801fbb11  mov     ecx, [rax+4]
+0x1801fbb14  mov     eax, [rbp+57h+var_B0]
+0x1801fbb17  mov     [rdi+5Ch], eax
+0x1801fbb1a  mov     eax, dword ptr [rbp+57h+var_AC]
+0x1801fbb1d  mov     [rdi+60h], eax
+0x1801fbb20  mov     [rdi+58h], ecx
+0x1801fbb23  mov     rcx, [rbp+57h+var_48]
+0x1801fbb27  xor     rcx, rsp; StackCookie
+0x1801fbb2a  call    __security_check_cookie
+0x1801fbb2f  add     rsp, 0A8h
+0x1801fbb36  pop     r15
+0x1801fbb38  pop     r14
+0x1801fbb3a  pop     r13
+0x1801fbb3c  pop     r12
+0x1801fbb3e  pop     rdi
+0x1801fbb3f  pop     rsi
+0x1801fbb40  pop     rbx
+0x1801fbb41  pop     rbp
+0x1801fbb42  retn
+```

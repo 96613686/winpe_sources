@@ -1,0 +1,737 @@
+# CTxtEdit::TxGetNaturalSize2(ulong,HDC__ *,HDC__ *,tagDVTARGETDEVICE *,ulong,tagSIZE const *,long *,long *,long *)
+
+- ea: `0x180070c50`
+- end: `0x1800714a5`
+- name: `?TxGetNaturalSize2@CTxtEdit@@UEAAJKPEAUHDC__@@0PEAUtagDVTARGETDEVICE@@KPEBUtagSIZE@@PEAJ33@Z`
+- size: `2133`
+- prototype: `int(CTxtEdit *__hidden this, unsigned int, HDC, HDC, struct tagDVTARGETDEVICE *, unsigned int, const struct tagSIZE *, int *, int *, int *)`
+- caller_count: `0`
+- callee_count: `14`
+- tags: `installer_update`
+
+## callees
+
+- `0x180022934`
+- `0x18006d67c`
+- `0x18006f6f0`
+- `0x18006f8f0`
+- `0x18006f9ac`
+- `0x18006fc4c`
+- `0x180070c50`
+- `0x1800714ac`
+- `0x180072e24`
+- `0x180072ec0`
+- `0x180073184`
+- `0x1800e4b74`
+- `0x1800f7efc`
+- `0x18027a010`
+
+## import_xrefs
+
+- `ext-ms-win-gdi-dc-create-l1-1-0!DeleteDC` at `0x18007149a`
+- `ext-ms-win-gdi-dc-create-l1-1-0!DeleteDC` at `0x18007149a`
+- `ext-ms-win-gdi-dc-create-l1-1-1!CreateICW` at `0x180071308`
+- `ext-ms-win-gdi-dc-create-l1-1-1!CreateICW` at `0x180071308`
+- `ext-ms-win-rtcore-gdi-devcaps-l1-1-0!GetDeviceCaps` at `0x180070d4e`
+- `ext-ms-win-rtcore-gdi-devcaps-l1-1-0!GetDeviceCaps` at `0x18007121d`
+- `ext-ms-win-rtcore-gdi-devcaps-l1-1-0!GetDeviceCaps` at `0x18007122f`
+- `ext-ms-win-rtcore-gdi-devcaps-l1-1-0!GetDeviceCaps` at `0x180071357`
+- `ext-ms-win-rtcore-gdi-devcaps-l1-1-0!GetDeviceCaps` at `0x180070d4e`
+- `ext-ms-win-rtcore-gdi-devcaps-l1-1-0!GetDeviceCaps` at `0x18007121d`
+- `ext-ms-win-rtcore-gdi-devcaps-l1-1-0!GetDeviceCaps` at `0x18007122f`
+- `ext-ms-win-rtcore-gdi-devcaps-l1-1-0!GetDeviceCaps` at `0x180071357`
+
+## pseudocode
+
+```c
+__int64 __fastcall CTxtEdit::TxGetNaturalSize2(
+        unsigned __int64 this,
+        int a2,
+        HDC a3,
+        HDC a4,
+        struct tagDVTARGETDEVICE *a5,
+        unsigned int a6,
+        const struct tagSIZE *a7,
+        int *a8,
+        int *a9,
+        int *a10)
+{
+  bool v14; // al
+  HDC v15; // r14
+  struct tagDVTARGETDEVICE *v16; // rsi
+  int *v17; // rdx
+  const struct tagSIZE *v18; // r15
+  HDC v19; // r12
+  int DeviceCaps; // eax
+  BOOL v21; // edx
+  int *v22; // r13
+  int v23; // eax
+  int v24; // ecx
+  __int64 v25; // rcx
+  __int64 v26; // r15
+  int v27; // eax
+  const struct IDpiAccessor *v28; // rdx
+  bool v29; // cl
+  struct IGraphicContext *v30; // rax
+  __int64 v31; // r15
+  int v32; // eax
+  __int64 v33; // rax
+  void (__fastcall ****v34)(_QWORD, int *, int *, __int64 *, char *); // r15
+  void (__fastcall ***v35)(_QWORD, int *, int *, __int64 *, char *); // r15
+  struct IGraphicContext *v36; // rcx
+  _QWORD *v37; // r15
+  const struct IDpiAccessor *v38; // rbx
+  char v39; // al
+  __int64 v40; // rdx
+  _QWORD *v41; // rbx
+  int v42; // eax
+  __int64 v43; // rbx
+  void (__fastcall ****v44)(_QWORD, int *, int *, __int64 *, char *); // rbx
+  void (__fastcall ***v45)(_QWORD, int *, int *, __int64 *, char *); // rbx
+  __int64 v46; // rsi
+  unsigned int v47; // ebx
+  unsigned int v48; // r14d
+  int v49; // ebx
+  int v50; // eax
+  int v51; // r8d
+  int *v52; // rcx
+  __int64 v53; // rax
+  __int64 v55; // rax
+  void (__fastcall ****v56)(_QWORD, int *, int *, __int64 *, char *); // rbx
+  void (__fastcall ***v57)(_QWORD, int *, int *, __int64 *, char *); // rbx
+  CMsgCallBack *v58; // rcx
+  int *v59; // rax
+  HDC ICW; // rax
+  void (__fastcall **v61)(_QWORD, int *, int *, __int64 *, char *); // rax
+  void (__fastcall **v62)(_QWORD, int *, int *, __int64 *, char *); // rax
+  int v63; // eax
+  int v64; // eax
+  int v65; // [rsp+30h] [rbp-D0h] BYREF
+  int v66; // [rsp+34h] [rbp-CCh] BYREF
+  struct IGraphicContext *GraphicContext; // [rsp+38h] [rbp-C8h] BYREF
+  char v68; // [rsp+40h] [rbp-C0h]
+  __int64 v69; // [rsp+44h] [rbp-BCh] BYREF
+  char v70; // [rsp+4Ch] [rbp-B4h]
+  int v71; // [rsp+50h] [rbp-B0h] BYREF
+  int v72; // [rsp+54h] [rbp-ACh] BYREF
+  int v73; // [rsp+58h] [rbp-A8h] BYREF
+  void **v74; // [rsp+60h] [rbp-A0h] BYREF
+  __int64 v75; // [rsp+68h] [rbp-98h]
+  void **v76; // [rsp+70h] [rbp-90h] BYREF
+  __int64 v77; // [rsp+78h] [rbp-88h]
+  struct IGraphicContext *v78; // [rsp+80h] [rbp-80h] BYREF
+  char v79; // [rsp+88h] [rbp-78h]
+  __int64 v80; // [rsp+8Ch] [rbp-74h]
+  char v81; // [rsp+94h] [rbp-6Ch]
+  unsigned __int64 v82; // [rsp+98h] [rbp-68h] BYREF
+  struct IGraphicContext *v83; // [rsp+A0h] [rbp-60h] BYREF
+  char v84; // [rsp+A8h] [rbp-58h]
+  __int64 v85; // [rsp+ACh] [rbp-54h] BYREF
+  char v86; // [rsp+B4h] [rbp-4Ch]
+  _QWORD v87[2]; // [rsp+C0h] [rbp-40h] BYREF
+  struct IGraphicContext *v88; // [rsp+D0h] [rbp-30h] BYREF
+  char v89; // [rsp+D8h] [rbp-28h]
+  __int64 v90; // [rsp+DCh] [rbp-24h]
+  char v91; // [rsp+E4h] [rbp-1Ch]
+  __int16 v92; // [rsp+E8h] [rbp-18h]
+  __int64 v93; // [rsp+ECh] [rbp-14h]
+  int v94; // [rsp+F8h] [rbp-8h]
+  __int128 v95; // [rsp+100h] [rbp+0h]
+  BOOL v96; // [rsp+150h] [rbp+50h]
+  int v97; // [rsp+158h] [rbp+58h] BYREF
+
+  v97 = a2;
+  v14 = CCallMgrCenter::EnterContext((CCallMgrCenter *)(this + 48));
+  v15 = 0;
+  v73 = 0;
+  v82 = ((this & -(__int64)v14) + 48) & -(__int64)((this & -(__int64)v14) != 0);
+  if ( a2 != 1 && a2 != 8 )
+  {
+    v49 = -2147221397;
+LABEL_56:
+    CCallMgr::~CCallMgr((CCallMgr *)&v82);
+    return (unsigned int)v49;
+  }
+  v16 = a5;
+  if ( !a4 || a5 )
+  {
+    if ( a8 )
+    {
+      v17 = a9;
+      if ( a9 )
+      {
+        if ( (a6 & 0x3FFFFFFF) <= 4 && a6 != -2147483646 )
+        {
+          v18 = a7;
+          if ( !a7->cy )
+          {
+            v59 = a10;
+            *a8 = 0;
+            *v17 = 0;
+            if ( v59 )
+              *v59 = 0;
+            v49 = 0;
+            goto LABEL_56;
+          }
+          v19 = 0;
+          if ( !a4 && a5 )
+          {
+            ICW = CreateICW(
+                    (LPCWSTR)((char *)a5 + a5->tdDriverNameOffset),
+                    (LPCWSTR)((char *)a5 + a5->tdDeviceNameOffset),
+                    (LPCWSTR)((char *)a5 + a5->tdPortNameOffset),
+                    (const DEVMODEW *)((char *)a5 + a5->tdExtDevmodeOffset));
+            v19 = ICW;
+            if ( !ICW )
+            {
+              v49 = -2147467259;
+              goto LABEL_56;
+            }
+            a4 = ICW;
+          }
+          if ( (*(_BYTE *)(this + 176) & 8) != 0 )
+          {
+            if ( *(_QWORD *)(this + 304) )
+            {
+              v58 = *(CMsgCallBack **)(this + 312);
+              if ( v58 )
+                CMsgCallBack::NotifyEvents(v58, 0x80u);
+            }
+          }
+          if ( (*(_BYTE *)(this + 276) & 0x40) != 0 )
+          {
+            DeviceCaps = 1;
+          }
+          else
+          {
+            v15 = a3;
+            DeviceCaps = GetDeviceCaps(a3, 2);
+          }
+          v21 = (g_dwFlagsCTO & 1) != 0 && DeviceCaps == 1;
+          v22 = a8;
+          v96 = v21;
+          v23 = *a8;
+          v24 = *a9;
+          v65 = *a8;
+          v66 = v24;
+          if ( v21 )
+          {
+            v65 = 8 * v23;
+            v66 = 8 * v24;
+          }
+          v25 = *(_QWORD *)(this + 136);
+          *(_DWORD *)(v25 + 140) = v18->cy;
+          *(_QWORD *)(v25 + 144) = 0;
+          v26 = *(_QWORD *)(this + 568);
+          v74 = &COverrideDpi::`vftable';
+          v75 = 0;
+          if ( v26 )
+          {
+            LODWORD(v75) = (*(__int64 (__fastcall **)(__int64))(*(_QWORD *)v26 + 8LL))(v26);
+            v27 = (*(__int64 (__fastcall **)(__int64))(*(_QWORD *)v26 + 16LL))(v26);
+          }
+          else
+          {
+            LODWORD(v75) = CW32System::_xPerInchScreenDC;
+            v27 = CW32System::_yPerInchScreenDC;
+          }
+          HIDWORD(v75) = v27;
+          if ( v15 && ((*(_BYTE *)(this + 280) & 1) == 0 || GetDeviceCaps(v15, 2) == 2) )
+          {
+            LODWORD(v75) = GetDeviceCaps(v15, 88);
+            HIDWORD(v75) = GetDeviceCaps(v15, 90);
+          }
+          if ( (a6 & 0xBFFFFFFF) == 2 )
+          {
+            v55 = *(_QWORD *)(this + 256);
+            if ( v55 && (v56 = *(void (__fastcall *****)(_QWORD, int *, int *, __int64 *, char *))(v55 + 80)) != 0 )
+              v57 = *v56;
+            else
+              v57 = 0;
+            GraphicContext = CreateGraphicContext(
+                               (*(_BYTE *)(this + 276) & 0x40) != 0,
+                               (const struct IDpiAccessor *)&v74,
+                               v15,
+                               0);
+            v68 = 0;
+            v69 = 0;
+            v70 = 0;
+            if ( v57 )
+            {
+              v70 = 1;
+              v61 = *v57;
+              v71 = 0;
+              v97 = 0;
+              (*v61)(v57, &v71, &v97, &v69, (char *)&v69 + 4);
+            }
+            v49 = CDisplay::RoundToLine(*(CDisplay **)(this + 136), (const struct CHDC *)&GraphicContext, v65, &v66);
+            CHDC::~CHDC((CHDC *)&GraphicContext);
+          }
+          else
+          {
+            v28 = *(const struct IDpiAccessor **)(this + 568);
+            v29 = (*(_BYTE *)(this + 276) & 0x40) != 0;
+            v87[0] = 0;
+            v87[1] = this;
+            v30 = CreateGraphicContext(v29, v28, 0, 0);
+            v89 = 0;
+            v90 = 0;
+            v91 = 0;
+            v92 = 0;
+            v93 = 0;
+            v94 = 0;
+            v31 = *(_QWORD *)(this + 568);
+            v88 = v30;
+            v76 = &COverrideDpi::`vftable';
+            v95 = 0;
+            v77 = 0;
+            if ( v31 )
+            {
+              LODWORD(v77) = (*(__int64 (__fastcall **)(__int64))(*(_QWORD *)v31 + 8LL))(v31);
+              v32 = (*(__int64 (__fastcall **)(__int64))(*(_QWORD *)v31 + 16LL))(v31);
+            }
+            else
+            {
+              LODWORD(v77) = CW32System::_xPerInchScreenDC;
+              v32 = CW32System::_yPerInchScreenDC;
+            }
+            HIDWORD(v77) = v32;
+            if ( a4 )
+              COverrideDpi::UpdateDpi((COverrideDpi *)&v76, a4);
+            v33 = *(_QWORD *)(this + 256);
+            if ( v33 && (v34 = *(void (__fastcall *****)(_QWORD, int *, int *, __int64 *, char *))(v33 + 80)) != 0 )
+              v35 = *v34;
+            else
+              v35 = 0;
+            v36 = CreateGraphicContext((*(_BYTE *)(this + 276) & 0x40) != 0, (const struct IDpiAccessor *)&v76, a4, 0);
+            GraphicContext = v36;
+            v68 = 0;
+            v69 = 0;
+            v70 = 0;
+            if ( v35 )
+            {
+              v72 = 0;
+              v71 = 0;
+              v70 = 1;
+              (**v35)(v35, &v72, &v71, &v69, (char *)&v69 + 4);
+              v36 = GraphicContext;
+            }
+            v37 = *(_QWORD **)(this + 136);
+            v38 = *(const struct IDpiAccessor **)(v37[2] + 568LL);
+            v39 = (*(__int64 (__fastcall **)(struct IGraphicContext *))(*(_QWORD *)v36 + 80LL))(v36);
+            v78 = CreateGraphicContext(v39, v38, 0, 0);
+            v79 = 0;
+            v80 = 0;
+            v81 = 0;
+            (*(void (__fastcall **)(struct IGraphicContext *, struct IGraphicContext *))(*(_QWORD *)v78 + 8LL))(
+              v78,
+              GraphicContext);
+            v79 = v68;
+            v80 = v69;
+            v81 = v70;
+            if ( !v70 && !(*(unsigned __int8 (__fastcall **)(struct IGraphicContext *))(*(_QWORD *)v78 + 24LL))(v78) )
+            {
+              v40 = v37[11];
+              if ( v40 )
+                CHDC::SetDC((CHDC *)&v78, (const struct CHDC *)(v40 + 8));
+            }
+            v41 = (_QWORD *)v37[8];
+            if ( !v41 )
+            {
+              v37[8] = v87;
+              v41 = v87;
+            }
+            ++*(_DWORD *)v41;
+            ++*((_DWORD *)v41 + 1);
+            v42 = v97;
+            v41[9] = v16;
+            v41[8] = 0;
+            *((_DWORD *)v41 + 14) = v42;
+            if ( v81 || (*(unsigned __int8 (__fastcall **)(struct IGraphicContext *))(*(_QWORD *)v78 + 24LL))(v78) )
+              CDevDesc::SetDC((CDevDesc *)(v41 + 1), (const struct CHDC *)&v78, -1, -1);
+            CHDC::~CHDC((CHDC *)&v78);
+            v43 = *(_QWORD *)(this + 256);
+            if ( v43 && (v44 = *(void (__fastcall *****)(_QWORD, int *, int *, __int64 *, char *))(v43 + 80)) != 0 )
+              v45 = *v44;
+            else
+              v45 = 0;
+            v83 = CreateGraphicContext((*(_BYTE *)(this + 276) & 0x40) != 0, (const struct IDpiAccessor *)&v74, v15, 0);
+            v84 = 0;
+            v85 = 0;
+            v86 = 0;
+            if ( v45 )
+            {
+              v86 = 1;
+              v62 = *v45;
+              v72 = 0;
+              v97 = 0;
+              (*v62)(v45, &v72, &v97, &v85, (char *)&v85 + 4);
+            }
+            v46 = *(_QWORD *)(this + 136);
+            v47 = *(_DWORD *)(v46 + 52);
+            v48 = *(_DWORD *)(v46 + 56);
+            CDevDesc::SetDC((CDevDesc *)(v46 + 16), (const struct CHDC *)&v83, -1, -1);
+            CDisplay::SetDispResolution((CDisplay *)v46);
+            if ( __PAIR64__(v48, v47) != *(_QWORD *)(v46 + 52) )
+              *(_QWORD *)(v46 + 144) = 0;
+            v49 = (*(__int64 (__fastcall **)(_QWORD, _QWORD, int *, int *, int *))(**(_QWORD **)(this + 136) + 456LL))(
+                    *(_QWORD *)(this + 136),
+                    a6,
+                    &v65,
+                    &v66,
+                    &v73);
+            CDevDesc::ResetDCW((CDevDesc *)(*(_QWORD *)(this + 136) + 16LL));
+            CDisplay::ReleaseDrawInfo(*(CDisplay **)(this + 136));
+            CHDC::~CHDC((CHDC *)&v83);
+            CHDC::~CHDC((CHDC *)&GraphicContext);
+            v76 = &IDpiAccessor::`vftable';
+            CHDC::~CHDC((CHDC *)&v88);
+          }
+          if ( v49 >= 0 )
+          {
+            if ( v96 )
+            {
+              v63 = v65 - 4;
+              if ( v65 + 4 >= 0 )
+                v63 = v65 + 4;
+              v51 = v63 / 8;
+              v65 = v63 / 8;
+              v64 = v66 - 4;
+              if ( v66 + 4 >= 0 )
+                v64 = v66 + 4;
+              v50 = v64 / 8;
+              v66 = v50;
+            }
+            else
+            {
+              v50 = v66;
+              v51 = v65;
+            }
+            v52 = a9;
+            *v22 = v51;
+            *v52 = v50;
+            if ( a10 )
+              *a10 = v73;
+          }
+          if ( v19 )
+            DeleteDC(v19);
+          v53 = *(_QWORD *)(this + 136);
+          *(_QWORD *)(v53 + 140) = 0;
+          *(_DWORD *)(v53 + 148) = 0;
+          v74 = &IDpiAccessor::`vftable';
+          goto LABEL_56;
+        }
+      }
+    }
+  }
+  CCallMgr::~CCallMgr((CCallMgr *)&v82);
+  return 2147942487LL;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180070c50  mov     [rsp-8+arg_10], rbx
+0x180070c55  mov     [rsp-8+arg_8], edx
+0x180070c59  push    rbp
+0x180070c5a  push    rsi
+0x180070c5b  push    rdi
+0x180070c5c  push    r12
+0x180070c5e  push    r13
+0x180070c60  push    r14
+0x180070c62  push    r15
+0x180070c64  lea     rbp, [rsp-10h]
+0x180070c69  sub     rsp, 110h
+0x180070c70  mov     rdi, rcx
+0x180070c73  mov     rbx, r9
+0x180070c76  add     rcx, 30h ; '0'; this
+0x180070c7a  mov     r13, r8
+0x180070c7d  mov     esi, edx
+0x180070c7f  call    ?EnterContext@CCallMgrCenter@@AEAA_NXZ; CCallMgrCenter::EnterContext(void)
+0x180070c84  neg     al
+0x180070c86  sbb     r11, r11
+0x180070c89  and     r11, rdi
+0x180070c8c  lea     r10, [r11+30h]
+0x180070c90  neg     r11
+0x180070c93  sbb     rax, rax
+0x180070c96  xor     r14d, r14d
+0x180070c99  and     rax, r10
+0x180070c9c  mov     [rsp+140h+var_E8], r14d
+0x180070ca1  mov     [rbp+40h+var_A8], rax
+0x180070ca5  cmp     esi, 1
+0x180070ca8  jnz     loc_1800712B0
+0x180070cae  mov     rsi, [rbp+40h+arg_20]
+0x180070cb2  test    rbx, rbx
+0x180070cb5  jnz     loc_1800712C3
+0x180070cbb  mov     rcx, [rbp+40h+arg_38]
+0x180070cc2  test    rcx, rcx
+0x180070cc5  jz      loc_180071248
+0x180070ccb  mov     rdx, [rbp+40h+arg_40]
+0x180070cd2  test    rdx, rdx
+0x180070cd5  jz      loc_180071248
+0x180070cdb  mov     eax, [rbp+40h+arg_28]
+0x180070cde  and     eax, 3FFFFFFFh
+0x180070ce3  cmp     eax, 4
+0x180070ce6  ja      loc_180071248
+0x180070cec  cmp     [rbp+40h+arg_28], 80000002h
+0x180070cf3  jz      loc_180071248
+0x180070cf9  mov     r15, [rbp+40h+arg_30]
+0x180070d00  cmp     [r15+4], r14d
+0x180070d04  jz      loc_1800712CD
+0x180070d0a  mov     r12, r14
+0x180070d0d  test    rbx, rbx
+0x180070d10  jnz     short loc_180070D1B
+0x180070d12  test    rsi, rsi
+0x180070d15  jnz     loc_1800712EA
+0x180070d1b  test    byte ptr [rdi+0B0h], 8
+0x180070d22  jz      short loc_180070D31
+0x180070d24  cmp     [rdi+130h], r14
+0x180070d2b  jnz     loc_18007125B
+0x180070d31  mov     al, [rdi+114h]
+0x180070d37  shr     al, 6
+0x180070d3a  test    al, 1
+0x180070d3c  cmovz   r14, r13
+0x180070d40  jnz     loc_18007123E
+0x180070d46  mov     edx, 2; index
+0x180070d4b  mov     rcx, r14; hdc
+0x180070d4e  call    cs:__imp_GetDeviceCaps
+0x180070d54  test    byte ptr cs:?g_dwFlagsCTO@@3KA, 1; ulong g_dwFlagsCTO
+0x180070d5b  jnz     loc_180071328
+0x180070d61  xor     edx, edx
+0x180070d63  mov     r13, [rbp+40h+arg_38]
+0x180070d6a  mov     rcx, [rbp+40h+arg_40]
+0x180070d71  mov     [rbp+40h+arg_0], edx
+0x180070d74  mov     eax, [r13+0]
+0x180070d78  mov     ecx, [rcx]
+0x180070d7a  mov     [rsp+140h+var_110], eax
+0x180070d7e  mov     [rsp+140h+var_10C], ecx
+0x180070d82  test    edx, edx
+0x180070d84  jnz     loc_180071338
+0x180070d8a  mov     eax, [r15+4]
+0x180070d8e  mov     rcx, [rdi+88h]
+0x180070d95  mov     [rcx+8Ch], eax
+0x180070d9b  lea     rax, ??_7COverrideDpi@@6B@; const COverrideDpi::`vftable'
+0x180070da2  mov     qword ptr [rcx+90h], 0
+0x180070dad  mov     r15, [rdi+238h]
+0x180070db4  mov     [rsp+140h+var_E0], rax
+0x180070db9  mov     [rsp+140h+var_D8], 0
+0x180070dc2  test    r15, r15
+0x180070dc5  jz      loc_180071286
+0x180070dcb  mov     rax, [r15]
+0x180070dce  mov     rcx, r15
+0x180070dd1  mov     rax, [rax+8]
+0x180070dd5  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x180070dda  mov     dword ptr [rsp+140h+var_D8], eax
+0x180070dde  mov     rcx, r15
+0x180070de1  mov     rax, [r15]
+0x180070de4  mov     rax, [rax+10h]
+0x180070de8  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x180070ded  xor     r15d, r15d
+0x180070df0  mov     dword ptr [rsp+140h+var_D8+4], eax
+0x180070df4  test    r14, r14
+0x180070df7  jnz     loc_180071208
+0x180070dfd  mov     eax, [rbp+40h+arg_28]
+0x180070e00  btr     eax, 1Eh
+0x180070e04  cmp     eax, 2
+0x180070e07  jz      loc_180071180
+0x180070e0d  mov     cl, [rdi+114h]
+0x180070e13  xor     r9d, r9d; struct ITextRenderTarget *
+0x180070e16  mov     rdx, [rdi+238h]; struct IDpiAccessor *
+0x180070e1d  xor     r8d, r8d; HDC
+0x180070e20  shr     cl, 6
+0x180070e23  and     cl, 1; bool
+0x180070e26  mov     [rbp+40h+var_80], r15
+0x180070e2a  mov     [rbp+40h+var_78], rdi
+0x180070e2e  call    ?CreateGraphicContext@@YAPEAVIGraphicContext@@_NPEBVIDpiAccessor@@PEAUHDC__@@PEAUITextRenderTarget@@@Z; CreateGraphicContext(bool,IDpiAccessor const *,HDC__ *,ITextRenderTarget *)
+0x180070e33  mov     [rbp+40h+var_68], r15b
+0x180070e37  xorps   xmm0, xmm0
+0x180070e3a  mov     [rbp+40h+var_64], r15
+0x180070e3e  mov     [rbp+40h+var_5C], r15b
+0x180070e42  mov     [rbp+40h+var_58], r15w
+0x180070e47  mov     [rbp+40h+var_54], r15
+0x180070e4b  mov     [rbp+40h+var_48], r15d
+0x180070e4f  mov     r15, [rdi+238h]
+0x180070e56  mov     [rbp+40h+var_70], rax
+0x180070e5a  lea     rax, ??_7COverrideDpi@@6B@; const COverrideDpi::`vftable'
+0x180070e61  mov     [rsp+140h+var_D0], rax
+0x180070e66  movdqa  [rbp+40h+var_40], xmm0
+0x180070e6b  mov     [rsp+140h+var_C8], 0
+0x180070e74  test    r15, r15
+0x180070e77  jz      loc_18007129B
+0x180070e7d  mov     rax, [r15]
+0x180070e80  mov     rcx, r15
+0x180070e83  mov     rax, [rax+8]
+0x180070e87  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x180070e8c  mov     dword ptr [rsp+140h+var_C8], eax
+0x180070e90  mov     rcx, r15
+0x180070e93  mov     rax, [r15]
+0x180070e96  mov     rax, [rax+10h]
+0x180070e9a  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x180070e9f  mov     dword ptr [rsp+140h+var_C8+4], eax
+0x180070ea3  test    rbx, rbx
+0x180070ea6  jnz     loc_1800713AC
+0x180070eac  mov     rax, [rdi+100h]
+0x180070eb3  test    rax, rax
+0x180070eb6  jz      short loc_180070EC5
+0x180070eb8  mov     r15, [rax+50h]
+0x180070ebc  test    r15, r15
+0x180070ebf  jnz     loc_1800713BE
+0x180070ec5  xor     r15d, r15d
+0x180070ec8  mov     cl, [rdi+114h]
+0x180070ece  lea     rdx, [rsp+140h+var_D0]; struct IDpiAccessor *
+0x180070ed3  shr     cl, 6
+0x180070ed6  xor     r9d, r9d; struct ITextRenderTarget *
+0x180070ed9  and     cl, 1; bool
+0x180070edc  mov     r8, rbx; HDC
+0x180070edf  call    ?CreateGraphicContext@@YAPEAVIGraphicContext@@_NPEBVIDpiAccessor@@PEAUHDC__@@PEAUITextRenderTarget@@@Z; CreateGraphicContext(bool,IDpiAccessor const *,HDC__ *,ITextRenderTarget *)
+0x180070ee4  mov     rcx, rax
+0x180070ee7  mov     [rsp+140h+var_108], rax
+0x180070eec  xor     eax, eax
+0x180070eee  mov     [rsp+140h+var_100], al
+0x180070ef2  mov     [rsp+140h+var_FC], rax
+0x180070ef7  mov     [rsp+140h+var_F4], al
+0x180070efb  test    r15, r15
+0x180070efe  jnz     loc_1800713C6
+0x180070f04  mov     r15, [rdi+88h]
+0x180070f0b  mov     rax, [r15+10h]
+0x180070f0f  mov     rbx, [rax+238h]
+0x180070f16  mov     rax, [rcx]
+0x180070f19  mov     rax, [rax+50h]
+0x180070f1d  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x180070f22  xor     r9d, r9d; struct ITextRenderTarget *
+0x180070f25  xor     r8d, r8d; HDC
+0x180070f28  mov     rdx, rbx; struct IDpiAccessor *
+0x180070f2b  mov     cl, al; bool
+0x180070f2d  call    ?CreateGraphicContext@@YAPEAVIGraphicContext@@_NPEBVIDpiAccessor@@PEAUHDC__@@PEAUITextRenderTarget@@@Z; CreateGraphicContext(bool,IDpiAccessor const *,HDC__ *,ITextRenderTarget *)
+0x180070f32  mov     rdx, [rsp+140h+var_108]
+0x180070f37  xor     ebx, ebx
+0x180070f39  mov     [rbp+40h+var_C0], rax
+0x180070f3d  mov     r8, rax
+0x180070f40  mov     [rbp+40h+var_B8], bl
+0x180070f43  mov     [rbp+40h+var_B4], rbx
+0x180070f47  mov     [rbp+40h+var_AC], bl
+0x180070f4a  mov     rcx, [rax]
+0x180070f4d  mov     rax, [rcx+8]
+0x180070f51  mov     rcx, r8
+0x180070f54  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x180070f59  mov     al, [rsp+140h+var_100]
+0x180070f5d  mov     [rbp+40h+var_B8], al
+0x180070f60  mov     eax, dword ptr [rsp+140h+var_FC]
+0x180070f64  mov     dword ptr [rbp+40h+var_B4], eax
+0x180070f67  mov     eax, dword ptr [rsp+140h+var_FC+4]
+0x180070f6b  mov     dword ptr [rbp+40h+var_B4+4], eax
+0x180070f6e  mov     al, [rsp+140h+var_F4]
+0x180070f72  mov     [rbp+40h+var_AC], al
+0x180070f75  test    al, al
+0x180070f77  jnz     short loc_180070F9A
+0x180070f79  mov     rcx, [rbp+40h+var_C0]
+0x180070f7d  mov     rax, [rcx]
+0x180070f80  mov     rax, [rax+18h]
+0x180070f84  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x180070f89  test    al, al
+0x180070f8b  jnz     short loc_180070F9A
+0x180070f8d  mov     rdx, [r15+58h]
+0x180070f91  test    rdx, rdx
+0x180070f94  jnz     loc_180071404
+0x180070f9a  mov     rbx, [r15+40h]
+0x180070f9e  test    rbx, rbx
+0x180070fa1  jnz     short loc_180070FAF
+0x180070fa3  lea     rax, [rbp+40h+var_80]
+0x180070fa7  mov     [r15+40h], rax
+0x180070fab  lea     rbx, [rbp+40h+var_80]
+0x180070faf  inc     dword ptr [rbx]
+0x180070fb1  xor     r15d, r15d
+0x180070fb4  inc     dword ptr [rbx+4]
+0x180070fb7  mov     eax, [rbp+40h+arg_8]
+0x180070fba  mov     [rbx+48h], rsi
+0x180070fbe  or      esi, 0FFFFFFFFh
+0x180070fc1  mov     [rbx+40h], r15
+0x180070fc5  mov     [rbx+38h], eax
+0x180070fc8  cmp     [rbp+40h+var_AC], r15b
+0x180070fcc  jnz     short loc_180070FE2
+0x180070fce  mov     rcx, [rbp+40h+var_C0]
+0x180070fd2  mov     rax, [rcx]
+0x180070fd5  mov     rax, [rax+18h]
+0x180070fd9  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x180070fde  test    al, al
+0x180070fe0  jz      short loc_180070FF5
+0x180070fe2  lea     rcx, [rbx+8]; this
+0x180070fe6  mov     r9d, esi; int
+0x180070fe9  mov     r8d, esi; int
+0x180070fec  lea     rdx, [rbp+40h+var_C0]; struct CHDC *
+0x180070ff0  call    ?SetDC@CDevDesc@@QEAAHAEBVCHDC@@JJ@Z; CDevDesc::SetDC(CHDC const &,long,long)
+0x180070ff5  lea     rcx, [rbp+40h+var_C0]; this
+0x180070ff9  call    ??1CHDC@@QEAA@XZ; CHDC::~CHDC(void)
+0x180070ffe  mov     rbx, [rdi+100h]
+0x180071005  test    rbx, rbx
+0x180071008  jz      short loc_180071017
+0x18007100a  mov     rbx, [rbx+50h]
+0x18007100e  test    rbx, rbx
+0x180071011  jnz     loc_180071416
+0x180071017  mov     rbx, r15
+0x18007101a  mov     cl, [rdi+114h]
+0x180071020  lea     rdx, [rsp+140h+var_E0]; struct IDpiAccessor *
+0x180071025  shr     cl, 6
+0x180071028  xor     r9d, r9d; struct ITextRenderTarget *
+0x18007102b  and     cl, 1; bool
+0x18007102e  mov     r8, r14; HDC
+0x180071031  call    ?CreateGraphicContext@@YAPEAVIGraphicContext@@_NPEBVIDpiAccessor@@PEAUHDC__@@PEAUITextRenderTarget@@@Z; CreateGraphicContext(bool,IDpiAccessor const *,HDC__ *,ITextRenderTarget *)
+0x180071036  mov     [rbp+40h+var_A0], rax
+0x18007103a  mov     [rbp+40h+var_98], r15b
+0x18007103e  mov     [rbp+40h+var_94], r15
+0x180071042  mov     [rbp+40h+var_8C], r15b
+0x180071046  test    rbx, rbx
+0x180071049  jnz     loc_18007141E
+0x18007104f  mov     rsi, [rdi+88h]
+0x180071056  lea     rdx, [rbp+40h+var_A0]; struct CHDC *
+0x18007105a  or      r8d, 0FFFFFFFFh; int
+0x18007105e  mov     r9d, r8d; int
+0x180071061  mov     ebx, [rsi+34h]
+0x180071064  lea     rcx, [rsi+10h]; this
+0x180071068  mov     r14d, [rsi+38h]
+0x18007106c  call    ?SetDC@CDevDesc@@QEAAHAEBVCHDC@@JJ@Z; CDevDesc::SetDC(CHDC const &,long,long)
+0x180071071  mov     rcx, rsi; this
+0x180071074  call    ?SetDispResolution@CDisplay@@QEAAXXZ; CDisplay::SetDispResolution(void)
+0x180071079  cmp     ebx, [rsi+34h]
+0x18007107c  jnz     loc_18007127A
+0x180071082  cmp     r14d, [rsi+38h]
+0x180071086  jnz     loc_18007127A
+0x18007108c  mov     rcx, [rdi+88h]
+0x180071093  lea     rdx, [rsp+140h+var_E8]
+0x180071098  mov     [rsp+140h+var_120], rdx
+0x18007109d  lea     r9, [rsp+140h+var_10C]
+0x1800710a2  mov     edx, [rbp+40h+arg_28]
+0x1800710a5  lea     r8, [rsp+140h+var_110]
+0x1800710aa  mov     rax, [rcx]
+0x1800710ad  mov     rax, [rax+1C8h]
+0x1800710b4  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x1800710b9  mov     rcx, [rdi+88h]
+0x1800710c0  mov     ebx, eax
+0x1800710c2  add     rcx, 10h; this
+0x1800710c6  call    ?ResetDCW@CDevDesc@@QEAAXXZ; CDevDesc::ResetDCW(void)
+0x1800710cb  mov     rcx, [rdi+88h]; this
+0x1800710d2  call    ?ReleaseDrawInfo@CDisplay@@QEAAXXZ; CDisplay::ReleaseDrawInfo(void)
+0x1800710d7  lea     rcx, [rbp+40h+var_A0]; this
+0x1800710db  call    ??1CHDC@@QEAA@XZ; CHDC::~CHDC(void)
+0x1800710e0  lea     rcx, [rsp+140h+var_108]; this
+0x1800710e5  call    ??1CHDC@@QEAA@XZ; CHDC::~CHDC(void)
+0x1800710ea  lea     rsi, ??_7IDpiAccessor@@6B@; const IDpiAccessor::`vftable'
+0x1800710f1  lea     rcx, [rbp+40h+var_70]; this
+0x1800710f5  mov     [rsp+140h+var_D0], rsi
+0x1800710fa  call    ??1CHDC@@QEAA@XZ; CHDC::~CHDC(void)
+0x1800710ff  test    ebx, ebx
+0x180071101  js      short loc_180071133
+0x180071103  cmp     [rbp+40h+arg_0], r15d
+0x180071107  jnz     loc_180071454
+0x18007110d  mov     eax, [rsp+140h+var_10C]
+0x180071111  mov     r8d, [rsp+140h+var_110]
+0x180071116  mov     rcx, [rbp+40h+arg_40]
+0x18007111d  mov     [r13+0], r8d
+0x180071121  mov     [rcx], eax
+0x180071123  mov     rcx, [rbp+40h+arg_48]
+0x18007112a  test    rcx, rcx
+0x18007112d  jnz     loc_18007148C
+  ... truncated ...
+```

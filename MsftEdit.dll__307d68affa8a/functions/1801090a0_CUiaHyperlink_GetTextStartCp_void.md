@@ -1,0 +1,132 @@
+# CUiaHyperlink::GetTextStartCp(void)
+
+- ea: `0x1801090a0`
+- end: `0x18010916f`
+- name: `?GetTextStartCp@CUiaHyperlink@@UEAAJXZ`
+- size: `207`
+- prototype: `__int64 __fastcall(CUiaHyperlink *__hidden this)`
+- caller_count: `0`
+- callee_count: `3`
+- tags: `broker_com_uri`
+
+## callees
+
+- `0x180021928`
+- `0x1801090a0`
+- `0x180109178`
+
+## import_xrefs
+
+- `api-ms-win-crt-private-l1-1-0!wcschr` at `0x18010911a`
+- `api-ms-win-crt-private-l1-1-0!wcschr` at `0x18010911a`
+- `api-ms-win-core-string-l1-1-0!CompareStringOrdinal` at `0x180109104`
+- `api-ms-win-core-string-l1-1-0!CompareStringOrdinal` at `0x180109104`
+
+## string_xrefs
+
+- `0x1801090fd`: `HYPERLINK "`
+
+## pseudocode
+
+```c
+__int64 __fastcall CUiaHyperlink::GetTextStartCp(CUiaHyperlink *this)
+{
+  unsigned int v1; // ebx
+  LPCWCH v2; // rcx
+  const WCHAR *v3; // rdi
+  wchar_t *v4; // rax
+  __int64 v5; // rcx
+  unsigned __int16 *v6; // rdx
+  LPCWCH lpString2; // [rsp+40h] [rbp+8h] BYREF
+
+  v1 = *((_DWORD *)this + 4);
+  lpString2 = 0;
+  if ( (int)CUiaHyperlink::GetLinkText(this, (unsigned __int16 **)&lpString2) < 0 )
+    goto LABEL_11;
+  v2 = lpString2 + 1;
+  if ( *lpString2 != 0xFDDF )
+    v2 = lpString2;
+  v3 = v2 + 1;
+  if ( *v2 != 32 )
+    v3 = v2;
+  if ( CompareStringOrdinal(L"HYPERLINK \"", -1, v3, 11, 1) == 2 && (v4 = wcschr(v3 + 12, 0x22u)) != 0 )
+  {
+    v5 = 4;
+    v6 = (unsigned __int16 *)lpString2;
+    if ( v4[1] != 32 )
+      v5 = 2;
+    v1 += ((__int64)v4 + v5 - (__int64)lpString2) >> 1;
+  }
+  else
+  {
+LABEL_11:
+    v6 = (unsigned __int16 *)lpString2;
+  }
+  if ( v6 )
+  {
+    lpString2 = 0;
+    CW32System::SysFreeString(v6);
+  }
+  return v1;
+}
+
+```
+
+## disassembly
+
+```asm
+0x1801090a0  mov     rax, rsp
+0x1801090a3  mov     [rax+10h], rbx
+0x1801090a7  mov     [rax+18h], rsi
+0x1801090ab  push    rdi
+0x1801090ac  sub     rsp, 30h
+0x1801090b0  mov     ebx, [rcx+10h]
+0x1801090b3  lea     rdx, [rax+8]; unsigned __int16 **
+0x1801090b7  mov     qword ptr [rax+8], 0
+0x1801090bf  call    ?GetLinkText@CUiaHyperlink@@QEAAJPEAPEAG@Z; CUiaHyperlink::GetLinkText(ushort * *)
+0x1801090c4  test    eax, eax
+0x1801090c6  js      short loc_180109142
+0x1801090c8  mov     rax, [rsp+38h+lpString2]
+0x1801090cd  mov     edx, 0FDDFh
+0x1801090d2  mov     r9d, 0Bh; cchCount2
+0x1801090d8  mov     [rsp+38h+bIgnoreCase], 1; bIgnoreCase
+0x1801090e0  cmp     [rax], dx
+0x1801090e3  lea     rcx, [rax+2]
+0x1801090e7  cmovnz  rcx, rax
+0x1801090eb  cmp     word ptr [rcx], 20h ; ' '
+0x1801090ef  lea     rdi, [rcx+2]
+0x1801090f3  cmovnz  rdi, rcx
+0x1801090f7  or      edx, 0FFFFFFFFh; cchCount1
+0x1801090fa  mov     r8, rdi; lpString2
+0x1801090fd  lea     rcx, ?cszLinkPrefix@@3QBGB; "HYPERLINK \""
+0x180109104  call    cs:__imp_CompareStringOrdinal
+0x18010910a  mov     esi, 2
+0x18010910f  cmp     eax, esi
+0x180109111  jnz     short loc_180109142
+0x180109113  lea     edx, [rsi+20h]; Ch
+0x180109116  lea     rcx, [rdi+18h]; Str
+0x18010911a  call    cs:__imp_wcschr
+0x180109120  test    rax, rax
+0x180109123  jz      short loc_180109142
+0x180109125  cmp     word ptr [rax+2], 20h ; ' '
+0x18010912a  lea     ecx, [rsi+2]
+0x18010912d  mov     rdx, [rsp+38h+lpString2]
+0x180109132  cmovnz  ecx, esi
+0x180109135  sub     rcx, rdx
+0x180109138  add     rcx, rax
+0x18010913b  sar     rcx, 1
+0x18010913e  add     ebx, ecx
+0x180109140  jmp     short loc_180109147
+0x180109142  mov     rdx, [rsp+38h+lpString2]
+0x180109147  test    rdx, rdx
+0x18010914a  jz      short loc_18010915D
+0x18010914c  mov     rcx, rdx; unsigned __int16 *
+0x18010914f  mov     [rsp+38h+lpString2], 0
+0x180109158  call    ?SysFreeString@CW32System@@SAXPEAG@Z; CW32System::SysFreeString(ushort *)
+0x18010915d  mov     rsi, [rsp+38h+arg_10]
+0x180109162  mov     eax, ebx
+0x180109164  mov     rbx, [rsp+38h+arg_8]
+0x180109169  add     rsp, 30h
+0x18010916d  pop     rdi
+0x18010916e  retn
+```

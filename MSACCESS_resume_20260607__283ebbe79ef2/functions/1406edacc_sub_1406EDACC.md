@@ -1,0 +1,228 @@
+# sub_1406EDACC
+
+- ea: `0x1406edacc`
+- end: `0x1406ee280`
+- name: `sub_1406EDACC`
+- size: `1972`
+- prototype: ``
+- caller_count: `2`
+- callee_count: `1`
+- tags: ``
+
+## callers
+
+- `0x1400ca440`
+- `0x1406ee520`
+
+## callees
+
+- `0x1406eda78`
+
+## import_xrefs
+
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edc47`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edc58`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edc69`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edc7a`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edc8b`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edc9c`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edcaf`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edcc0`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edcce`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edcdd`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edcec`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edcfb`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edd09`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edd18`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edd29`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edd3a`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edd4b`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edd5a`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edd69`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edd7a`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edd89`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edd9a`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406eddab`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406eddb9`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406eddca`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edddb`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406eddec`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406eddfd`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ede0e`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ede1f`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ede30`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ede41`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ede52`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ede63`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ede74`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ede85`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ede96`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edea7`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edeb8`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edec9`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ededa`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edeeb`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edefc`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edf0d`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edf1e`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edf2f`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edf40`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edf51`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edf62`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edf71`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edf84`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edf95`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edfa4`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edfb2`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edfc1`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edfd2`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edfe3`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edff4`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee005`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee016`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee027`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee038`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee047`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee056`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee067`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee078`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee089`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee09a`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee0ab`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee0bc`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee0cf`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee0de`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee0ef`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee0fe`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee10f`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee120`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee131`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee142`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee153`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee164`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee175`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee186`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee197`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee1a8`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee1b6`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee1c4`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee1d7`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee1e5`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee1f6`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee207`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee215`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee224`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee233`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee241`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee250`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee25f`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edc47`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edc58`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edc69`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edc7a`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edc8b`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edc9c`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edcaf`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edcc0`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edcce`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edcdd`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edcec`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edcfb`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edd09`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edd18`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edd29`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edd3a`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edd4b`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edd5a`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edd69`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edd7a`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edd89`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edd9a`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406eddab`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406eddb9`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406eddca`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edddb`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406eddec`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406eddfd`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ede0e`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ede1f`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ede30`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ede41`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ede52`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ede63`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ede74`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ede85`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ede96`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edea7`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edeb8`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edec9`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ededa`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edeeb`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edefc`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edf0d`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edf1e`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edf2f`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edf40`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edf51`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edf62`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edf71`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edf84`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edf95`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edfa4`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edfb2`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edfc1`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edfd2`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edfe3`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406edff4`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee005`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee016`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee027`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee038`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee047`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee056`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee067`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee078`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee089`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee09a`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee0ab`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee0bc`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee0cf`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee0de`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee0ef`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee0fe`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee10f`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee120`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee131`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee142`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee153`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee164`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee175`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee186`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee197`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee1a8`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee1b6`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee1c4`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee1d7`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee1e5`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee1f6`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee207`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee215`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee224`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee233`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee241`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee250`
+- `mso40uiWin32Client!mso40uiWin32Client_15794` at `0x1406ee25f`
+- `USER32!SystemParametersInfoW` at `0x1406edc33`
+- `USER32!SystemParametersInfoW` at `0x1406edc33`
+- `USER32!GetSysColor` at `0x1406edae0`
+- `USER32!GetSysColor` at `0x1406edaed`
+- `USER32!GetSysColor` at `0x1406edafa`
+- `USER32!GetSysColor` at `0x1406edb19`
+- `USER32!GetSysColor` at `0x1406edb2a`
+- `USER32!GetSysColor` at `0x1406edb3b`
+
+## pseudocode
+
+```c
+
+```

@@ -1,0 +1,171 @@
+# OleUIDrawShading(tagRECT *,HDC__ *)
+
+- ea: `0x180150830`
+- end: `0x180150970`
+- name: `?OleUIDrawShading@@YAXPEAUtagRECT@@PEAUHDC__@@@Z`
+- size: `320`
+- prototype: `void(struct tagRECT *, HDC)`
+- caller_count: `1`
+- callee_count: `2`
+- tags: ``
+
+## callers
+
+- `0x1801f7894`
+
+## callees
+
+- `0x18013bad0`
+- `0x180150830`
+
+## import_xrefs
+
+- `ext-ms-win-gdi-dc-l1-2-0!SelectObject` at `0x1801508c0`
+- `ext-ms-win-gdi-dc-l1-2-0!SelectObject` at `0x180150932`
+- `ext-ms-win-gdi-dc-l1-2-0!SelectObject` at `0x1801508c0`
+- `ext-ms-win-gdi-dc-l1-2-0!SelectObject` at `0x180150932`
+- `ext-ms-win-gdi-draw-l1-1-1!SetBkColor` at `0x1801508de`
+- `ext-ms-win-gdi-draw-l1-1-1!SetBkColor` at `0x180150926`
+- `ext-ms-win-gdi-draw-l1-1-1!SetBkColor` at `0x1801508de`
+- `ext-ms-win-gdi-draw-l1-1-1!SetBkColor` at `0x180150926`
+- `ext-ms-win-gdi-draw-l1-1-1!PatBlt` at `0x180150910`
+- `ext-ms-win-gdi-draw-l1-1-1!PatBlt` at `0x180150910`
+- `ext-ms-win-gdi-draw-l1-1-1!CreatePatternBrush` at `0x1801508a8`
+- `ext-ms-win-gdi-draw-l1-1-1!CreatePatternBrush` at `0x1801508a8`
+- `ext-ms-win-gdi-draw-l1-1-0!CreateBitmap` at `0x180150893`
+- `ext-ms-win-gdi-draw-l1-1-0!CreateBitmap` at `0x180150893`
+- `ext-ms-win-gdi-font-l1-1-1!SetTextColor` at `0x1801508d1`
+- `ext-ms-win-gdi-font-l1-1-1!SetTextColor` at `0x18015091b`
+- `ext-ms-win-gdi-font-l1-1-1!SetTextColor` at `0x1801508d1`
+- `ext-ms-win-gdi-font-l1-1-1!SetTextColor` at `0x18015091b`
+- `ext-ms-win-rtcore-gdi-object-l1-1-0!DeleteObject` at `0x18015093b`
+- `ext-ms-win-rtcore-gdi-object-l1-1-0!DeleteObject` at `0x180150944`
+- `ext-ms-win-rtcore-gdi-object-l1-1-0!DeleteObject` at `0x18015093b`
+- `ext-ms-win-rtcore-gdi-object-l1-1-0!DeleteObject` at `0x180150944`
+
+## pseudocode
+
+```c
+void __fastcall OleUIDrawShading(struct tagRECT *a1, HDC a2)
+{
+  HBITMAP Bitmap; // rax
+  HBITMAP v5; // rbp
+  HBRUSH PatternBrush; // rax
+  HBRUSH v7; // r14
+  HGDIOBJ v8; // rsi
+  COLORREF v9; // edi
+  COLORREF v10; // ebx
+  _DWORD v11[4]; // [rsp+30h] [rbp-48h] BYREF
+
+  v11[0] = 2228241;
+  v11[1] = 8912964;
+  v11[2] = 2228241;
+  v11[3] = 8912964;
+  Bitmap = CreateBitmap(8, 8, 1u, 1u, v11);
+  v5 = Bitmap;
+  if ( Bitmap )
+  {
+    PatternBrush = CreatePatternBrush(Bitmap);
+    v7 = PatternBrush;
+    if ( PatternBrush )
+    {
+      v8 = SelectObject(a2, PatternBrush);
+      v9 = SetTextColor(a2, 0xFFFFFFu);
+      v10 = SetBkColor(a2, 0);
+      PatBlt(a2, a1->left, a1->top, a1->right - a1->left, a1->bottom - a1->top, 0xA000C9u);
+      SetTextColor(a2, v9);
+      SetBkColor(a2, v10);
+      SelectObject(a2, v8);
+      DeleteObject(v7);
+    }
+    DeleteObject(v5);
+  }
+}
+
+```
+
+## disassembly
+
+```asm
+0x180150830  mov     r11, rsp
+0x180150833  mov     [r11+18h], rbx
+0x180150837  mov     [r11+20h], rbp
+0x18015083b  push    rsi
+0x18015083c  push    rdi
+0x18015083d  push    r12
+0x18015083f  push    r14
+0x180150841  push    r15
+0x180150843  sub     rsp, 50h
+0x180150847  mov     rax, cs:__security_cookie
+0x18015084e  xor     rax, rsp
+0x180150851  mov     [rsp+78h+var_38], rax
+0x180150856  mov     r8d, 1; nPlanes
+0x18015085c  mov     [rsp+78h+var_48], 220011h
+0x180150864  mov     r12, rcx
+0x180150867  mov     [rsp+78h+var_44], 880044h
+0x18015086f  mov     r15, rdx
+0x180150872  mov     [rsp+78h+var_40], 220011h
+0x18015087a  lea     rax, [r11-48h]
+0x18015087e  mov     [rsp+78h+var_3C], 880044h
+0x180150886  lea     ecx, [r8+7]; nWidth
+0x18015088a  mov     [r11-58h], rax
+0x18015088e  mov     edx, ecx; nHeight
+0x180150890  mov     r9d, r8d; nBitCount
+0x180150893  call    cs:__imp_CreateBitmap
+0x180150899  mov     rbp, rax
+0x18015089c  test    rax, rax
+0x18015089f  jz      loc_18015094A
+0x1801508a5  mov     rcx, rax; hbm
+0x1801508a8  call    cs:__imp_CreatePatternBrush
+0x1801508ae  mov     r14, rax
+0x1801508b1  test    rax, rax
+0x1801508b4  jz      loc_180150941
+0x1801508ba  mov     rdx, rax; h
+0x1801508bd  mov     rcx, r15; hdc
+0x1801508c0  call    cs:__imp_SelectObject
+0x1801508c6  mov     edx, 0FFFFFFh; color
+0x1801508cb  mov     rcx, r15; hdc
+0x1801508ce  mov     rsi, rax
+0x1801508d1  call    cs:__imp_SetTextColor
+0x1801508d7  xor     edx, edx; color
+0x1801508d9  mov     rcx, r15; hdc
+0x1801508dc  mov     edi, eax
+0x1801508de  call    cs:__imp_SetBkColor
+0x1801508e4  mov     r10d, [r12+0Ch]
+0x1801508e9  mov     rcx, r15; hdc
+0x1801508ec  mov     r8d, [r12+4]; y
+0x1801508f1  mov     ebx, eax
+0x1801508f3  mov     r9d, [r12+8]
+0x1801508f8  sub     r10d, r8d
+0x1801508fb  sub     r9d, [r12]; w
+0x1801508ff  mov     edx, [r12]; x
+0x180150903  mov     [rsp+78h+rop], 0A000C9h; rop
+0x18015090b  mov     [rsp+78h+h], r10d; h
+0x180150910  call    cs:__imp_PatBlt
+0x180150916  mov     edx, edi; color
+0x180150918  mov     rcx, r15; hdc
+0x18015091b  call    cs:__imp_SetTextColor
+0x180150921  mov     edx, ebx; color
+0x180150923  mov     rcx, r15; hdc
+0x180150926  call    cs:__imp_SetBkColor
+0x18015092c  mov     rdx, rsi; h
+0x18015092f  mov     rcx, r15; hdc
+0x180150932  call    cs:__imp_SelectObject
+0x180150938  mov     rcx, r14; ho
+0x18015093b  call    cs:__imp_DeleteObject
+0x180150941  mov     rcx, rbp; ho
+0x180150944  call    cs:__imp_DeleteObject
+0x18015094a  mov     rcx, [rsp+78h+var_38]
+0x18015094f  xor     rcx, rsp; StackCookie
+0x180150952  call    __security_check_cookie
+0x180150957  lea     r11, [rsp+78h+var_28]
+0x18015095c  mov     rbx, [r11+40h]
+0x180150960  mov     rbp, [r11+48h]
+0x180150964  mov     rsp, r11
+0x180150967  pop     r15
+0x180150969  pop     r14
+0x18015096b  pop     r12
+0x18015096d  pop     rdi
+0x18015096e  pop     rsi
+0x18015096f  retn
+```

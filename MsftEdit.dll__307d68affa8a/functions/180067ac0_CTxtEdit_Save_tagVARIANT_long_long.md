@@ -1,0 +1,557 @@
+# CTxtEdit::Save(tagVARIANT *,long,long)
+
+- ea: `0x180067ac0`
+- end: `0x180067f59`
+- name: `?Save@CTxtEdit@@UEAAJPEAUtagVARIANT@@JJ@Z`
+- size: `1177`
+- prototype: `int(CTxtEdit *__hidden this, struct tagVARIANT *, int, int)`
+- caller_count: `0`
+- callee_count: `8`
+- tags: `file_ops`
+
+## callees
+
+- `0x180021c38`
+- `0x180067ac0`
+- `0x180067f60`
+- `0x1800d9af4`
+- `0x1800fe528`
+- `0x18010214c`
+- `0x1801376bc`
+- `0x18027a010`
+
+## import_xrefs
+
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180067f17`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x180067f17`
+- `api-ms-win-core-localization-l1-2-0!IsValidCodePage` at `0x180067ce2`
+- `api-ms-win-core-localization-l1-2-0!IsValidCodePage` at `0x180067ce2`
+- `api-ms-win-core-handle-l1-1-0!CloseHandle` at `0x180067cb3`
+- `api-ms-win-core-handle-l1-1-0!CloseHandle` at `0x180067dc8`
+- `api-ms-win-core-handle-l1-1-0!CloseHandle` at `0x180067f29`
+- `api-ms-win-core-handle-l1-1-0!CloseHandle` at `0x180067cb3`
+- `api-ms-win-core-handle-l1-1-0!CloseHandle` at `0x180067dc8`
+- `api-ms-win-core-handle-l1-1-0!CloseHandle` at `0x180067f29`
+- `api-ms-win-core-file-l1-1-0!GetFileType` at `0x180067e16`
+- `api-ms-win-core-file-l1-1-0!GetFileType` at `0x180067e16`
+- `api-ms-win-core-file-l1-1-0!CreateFileW` at `0x180067dff`
+- `api-ms-win-core-file-l1-1-0!CreateFileW` at `0x180067dff`
+- `ext-ms-win-rtcore-ntuser-cursor-l1-1-0!LoadCursorW` at `0x180067ec1`
+- `ext-ms-win-rtcore-ntuser-cursor-l1-1-0!LoadCursorW` at `0x180067ec1`
+
+## pseudocode
+
+```c
+__int64 __fastcall CTxtEdit::Save(CTxtEdit *this, struct tagVARIANT *a2, unsigned int a3, UINT a4)
+{
+  struct CDocInfo *DocInfo; // rsi
+  int v9; // edx
+  int v10; // r14d
+  int v11; // ecx
+  __int64 result; // rax
+  __int64 (__fastcall ***llVal)(_QWORD, GUID *, void **); // rcx
+  int v14; // ebx
+  unsigned __int16 *bstrVal; // rcx
+  unsigned __int16 *v16; // rax
+  unsigned int v17; // r13d
+  DWORD v18; // edx
+  void *v19; // rcx
+  DWORD dwCreationDisposition; // eax
+  HANDLE FileW; // rax
+  int v22; // edi
+  __int16 *v23; // rdx
+  HCURSOR CursorW; // rax
+  int v25; // r8d
+  HICON v26; // rbx
+  int v27; // r8d
+  signed int LastError; // ebx
+  __int16 v29; // [rsp+40h] [rbp-30h] BYREF
+  CTxtEdit *v30; // [rsp+48h] [rbp-28h]
+  int v31; // [rsp+50h] [rbp-20h] BYREF
+  HANDLE hObject; // [rsp+58h] [rbp-18h] BYREF
+  unsigned int v33; // [rsp+60h] [rbp-10h]
+  signed int (__fastcall *v34)(void *, unsigned __int8 *, DWORD, DWORD *); // [rsp+64h] [rbp-Ch]
+  void *v36; // [rsp+B8h] [rbp+48h] BYREF
+
+  hObject = 0;
+  v33 = 0;
+  v34 = MyWrite;
+  if ( !a2 || a2->vt != 13 )
+  {
+    v31 = 0;
+    v30 = (CTxtEdit *)((char *)this - 16);
+    DocInfo = CTxtEdit::GetDocInfo((CTxtEdit *)((char *)this - 16));
+    if ( a4 && (a4 & 0xFFFFFFFE) != 0x4B0 && !IsValidCodePage(a4) || a3 > 0x1FFF || (a3 & 0x100) != 0 )
+      return 2147942487LL;
+    if ( (a3 & 0xF) >= 3 )
+      return 2147500033LL;
+    if ( !DocInfo )
+      return 2147942414LL;
+    v9 = 0;
+    v10 = 1;
+    LODWORD(v36) = 0;
+    if ( a2 )
+    {
+      if ( a2->vt == 8 )
+      {
+        bstrVal = a2->bstrVal;
+        if ( bstrVal )
+        {
+          if ( CW32System::SysStringLen(bstrVal)
+            && (!*(_QWORD *)DocInfo || (unsigned int)CW32System::wcscmp(
+                                                       a2->bstrVal,
+                                                       *(const unsigned __int16 **)DocInfo)) )
+          {
+            CTxtEdit::CloseFile(v30, 0);
+            v16 = CW32System::SysAllocString(a2->bstrVal);
+            *(_QWORD *)DocInfo = v16;
+            if ( v16 )
+            {
+              v9 = 1;
+              *((_WORD *)DocInfo + 56) &= 0xFF0Fu;
+              goto LABEL_8;
+            }
+            return 2147942414LL;
+          }
+          v9 = (int)v36;
+        }
+      }
+    }
+LABEL_8:
+    v11 = *((unsigned __int16 *)DocInfo + 56);
+    if ( (a3 & 0xF) == 0 )
+      a3 |= v11 & 0xF;
+    if ( (a3 & 0xF0) == 0 )
+      a3 |= v11 & 0xF0;
+    if ( (a3 & 0xF00) == 0 )
+      a3 |= v11 & 0xF00;
+    if ( !a4 )
+      a4 = *((unsigned __int16 *)DocInfo + 57);
+    if ( a3 != v11 || (_WORD)a4 != *((_WORD *)DocInfo + 57) )
+      v9 = 1;
+    *((_WORD *)DocInfo + 56) = a3;
+    if ( !**((_QWORD **)this + 30) )
+      return 2147500037LL;
+    if ( (*((_DWORD *)this + 40) & 0x4000000) != 0 && !v9 )
+      return 0;
+    v17 = 2;
+    v18 = ((a3 >> 9) & 1) == 0;
+    if ( (a3 & 0x400) == 0 )
+      v18 = (((a3 >> 9) & 1) == 0) | 2;
+    v19 = (void *)*((_QWORD *)DocInfo + 3);
+    dwCreationDisposition = ((int)a3 >> 4) & 0xF;
+    LODWORD(v30) = v18;
+    if ( !dwCreationDisposition )
+      dwCreationDisposition = 1;
+    LODWORD(v36) = dwCreationDisposition;
+    if ( v19 )
+    {
+      CloseHandle(v19);
+      dwCreationDisposition = (unsigned int)v36;
+      v18 = (unsigned int)v30;
+      *((_QWORD *)DocInfo + 3) = 0;
+    }
+    FileW = CreateFileW(*(LPCWSTR *)DocInfo, 0xC0000000, v18, 0, dwCreationDisposition, 0x80u, 0);
+    hObject = FileW;
+    if ( FileW == (HANDLE)-1LL || GetFileType(FileW) != 1 )
+    {
+      LastError = GetLastError();
+      if ( hObject != (HANDLE)-1LL )
+        CloseHandle(hObject);
+      if ( LastError )
+      {
+        if ( LastError > 0 )
+          return (unsigned __int16)LastError | 0x80070000;
+      }
+      else
+      {
+        return (unsigned int)-2147024809;
+      }
+      return (unsigned int)LastError;
+    }
+    v22 = a3 & 0xF;
+    *((_QWORD *)DocInfo + 3) = hObject;
+    if ( v22 == 1 )
+    {
+      v10 = 2;
+    }
+    else
+    {
+      if ( v22 == 3 )
+      {
+        v10 = 1572872;
+LABEL_74:
+        CursorW = LoadCursorW(0, (LPCWSTR)0x7F02);
+        v26 = CTxtEdit::TxSetCursor((CTxtEdit *)((char *)this - 16), CursorW, v25);
+        (*(void (__fastcall **)(char *, __int64, _QWORD, HANDLE *, _QWORD))(*((_QWORD *)this - 2) + 24LL))(
+          (char *)this - 16,
+          1098,
+          v10,
+          &hObject,
+          0);
+        CTxtEdit::TxSetCursor((CTxtEdit *)((char *)this - 16), v26, v27);
+        if ( (_DWORD)v30 == 3 )
+        {
+          CloseHandle(*((HANDLE *)DocInfo + 3));
+          *((_QWORD *)DocInfo + 3) = 0;
+        }
+        *((_DWORD *)this + 40) |= 0x4000000u;
+        return v33;
+      }
+      if ( (a4 & 0xFFFFFFFE) == 0x4B0 || a4 == 65001 )
+      {
+        LOWORD(v36) = -257;
+        v29 = -2;
+        if ( a4 == 65001 )
+        {
+          v17 = 3;
+          v23 = (__int16 *)&szUTF8BOM;
+        }
+        else if ( a4 == 1200 )
+        {
+          v10 = 17;
+          v23 = (__int16 *)&v36;
+        }
+        else
+        {
+          v23 = &v29;
+        }
+        v34(hObject, (unsigned __int8 *)v23, v17, (DWORD *)&v31);
+      }
+    }
+    if ( a4 && a4 != 1200 )
+      v10 |= (a4 << 16) | 0x20;
+    goto LABEL_74;
+  }
+  llVal = (__int64 (__fastcall ***)(_QWORD, GUID *, void **))a2->llVal;
+  if ( !llVal )
+    return 2147942487LL;
+  v36 = 0;
+  result = (**llVal)(llVal, &IID_IStream, &v36);
+  if ( !(_DWORD)result )
+  {
+    hObject = v36;
+    v34 = (signed int (__fastcall *)(void *, unsigned __int8 *, DWORD, DWORD *))MyStreamWrite;
+    if ( !a4 || a4 == 1200 )
+      v14 = ((a3 & 0xF) == 1) + 1;
+    else
+      v14 = (((a3 & 0xF) == 1) + 1) | (a4 << 16) | 0x20;
+    (*(void (__fastcall **)(char *, __int64, _QWORD, HANDLE *, _QWORD))(*((_QWORD *)this - 2) + 24LL))(
+      (char *)this - 16,
+      1098,
+      v14,
+      &hObject,
+      0);
+    (*(void (__fastcall **)(void *))(*(_QWORD *)v36 + 16LL))(v36);
+    return v33;
+  }
+  return result;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180067ac0  mov     [rsp-38h+arg_10], rbx
+0x180067ac5  mov     [rsp-38h+arg_0], rcx
+0x180067aca  push    rbp
+0x180067acb  push    rsi
+0x180067acc  push    rdi
+0x180067acd  push    r12
+0x180067acf  push    r13
+0x180067ad1  push    r14
+0x180067ad3  push    r15
+0x180067ad5  mov     rbp, rsp
+0x180067ad8  sub     rsp, 70h
+0x180067adc  xor     r14d, r14d
+0x180067adf  lea     rax, ?MyWrite@@YAK_KPEAEJPEAJ@Z; MyWrite(unsigned __int64,uchar *,long,long *)
+0x180067ae6  mov     [rbp+hObject], r14
+0x180067aea  mov     ebx, r9d
+0x180067aed  mov     [rbp+var_10], r14d
+0x180067af1  mov     edi, r8d
+0x180067af4  mov     [rbp+var_C], rax
+0x180067af8  mov     r15, rdx
+0x180067afb  mov     rsi, rcx
+0x180067afe  test    rdx, rdx
+0x180067b01  jnz     loc_180067BF2
+0x180067b07  lea     rax, [rcx-10h]
+0x180067b0b  mov     [rbp+var_20], r14d
+0x180067b0f  mov     rcx, rax; this
+0x180067b12  mov     [rbp+var_28], rax
+0x180067b16  call    ?GetDocInfo@CTxtEdit@@QEAAPEAVCDocInfo@@XZ; CTxtEdit::GetDocInfo(void)
+0x180067b1b  mov     rsi, rax
+0x180067b1e  mov     r12d, 4B0h
+0x180067b24  test    ebx, ebx
+0x180067b26  jnz     loc_180067CD2
+0x180067b2c  cmp     edi, 1FFFh
+0x180067b32  ja      loc_180067C05
+0x180067b38  bt      edi, 8
+0x180067b3c  jb      loc_180067C05
+0x180067b42  mov     r13d, edi
+0x180067b45  and     r13d, 0Fh
+0x180067b49  cmp     r13d, 3
+0x180067b4d  jnb     loc_180067CF5
+0x180067b53  test    rsi, rsi
+0x180067b56  jz      loc_180067F4F
+0x180067b5c  mov     edx, r14d
+0x180067b5f  mov     r14d, 1
+0x180067b65  mov     dword ptr [rbp+arg_8], edx
+0x180067b68  test    r15, r15
+0x180067b6b  jnz     loc_180067CFF
+0x180067b71  movzx   ecx, word ptr [rsi+70h]
+0x180067b75  test    r13d, r13d
+0x180067b78  jnz     short loc_180067B81
+0x180067b7a  mov     eax, ecx
+0x180067b7c  and     eax, 0Fh
+0x180067b7f  or      edi, eax
+0x180067b81  test    dil, 0F0h
+0x180067b85  jnz     short loc_180067B90
+0x180067b87  mov     eax, ecx
+0x180067b89  and     eax, 0F0h
+0x180067b8e  or      edi, eax
+0x180067b90  mov     r8d, 0F00h
+0x180067b96  test    r8d, edi
+0x180067b99  jnz     short loc_180067BA2
+0x180067b9b  mov     eax, ecx
+0x180067b9d  and     eax, r8d
+0x180067ba0  or      edi, eax
+0x180067ba2  test    ebx, ebx
+0x180067ba4  jnz     short loc_180067BAA
+0x180067ba6  movzx   ebx, word ptr [rsi+72h]
+0x180067baa  cmp     edi, ecx
+0x180067bac  jnz     loc_180067D6E
+0x180067bb2  cmp     bx, [rsi+72h]
+0x180067bb6  jnz     loc_180067D6E
+0x180067bbc  mov     r15, [rbp+arg_0]
+0x180067bc0  mov     [rsi+70h], di
+0x180067bc4  mov     rax, [r15+0F0h]
+0x180067bcb  cmp     qword ptr [rax], 0
+0x180067bcf  jnz     loc_180067D76
+0x180067bd5  mov     eax, 80004005h
+0x180067bda  mov     rbx, [rsp+70h+arg_10]
+0x180067be2  add     rsp, 70h
+0x180067be6  pop     r15
+0x180067be8  pop     r14
+0x180067bea  pop     r13
+0x180067bec  pop     r12
+0x180067bee  pop     rdi
+0x180067bef  pop     rsi
+0x180067bf0  pop     rbp
+0x180067bf1  retn
+0x180067bf2  cmp     word ptr [rdx], 0Dh
+0x180067bf6  jnz     loc_180067B07
+0x180067bfc  mov     rcx, [rdx+8]
+0x180067c00  test    rcx, rcx
+0x180067c03  jnz     short loc_180067C16
+0x180067c05  mov     eax, 80070057h
+0x180067c0a  jmp     short loc_180067BDA
+0x180067c0c  jg      loc_180067F41
+0x180067c12  mov     eax, ebx
+0x180067c14  jmp     short loc_180067BDA
+0x180067c16  mov     [rbp+arg_8], r14
+0x180067c1a  lea     r8, [rbp+arg_8]
+0x180067c1e  mov     rax, [rcx]
+0x180067c21  lea     rdx, IID_IStream
+0x180067c28  mov     rax, [rax]
+0x180067c2b  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x180067c30  test    eax, eax
+0x180067c32  jnz     short loc_180067BDA
+0x180067c34  mov     rax, [rbp+arg_8]
+0x180067c38  and     dil, 0Fh
+0x180067c3c  mov     [rbp+hObject], rax
+0x180067c40  lea     rax, ?MyStreamWrite@@YAK_KPEAEJPEAJ@Z; MyStreamWrite(unsigned __int64,uchar *,long,long *)
+0x180067c47  mov     [rbp+var_C], rax
+0x180067c4b  mov     eax, r14d
+0x180067c4e  mov     r14d, 1
+0x180067c54  cmp     dil, r14b
+0x180067c57  setz    al
+0x180067c5a  add     eax, r14d
+0x180067c5d  test    ebx, ebx
+0x180067c5f  jz      short loc_180067C76
+0x180067c61  mov     r12d, 4B0h
+0x180067c67  cmp     ebx, r12d
+0x180067c6a  jz      short loc_180067C76
+0x180067c6c  shl     ebx, 10h
+0x180067c6f  or      ebx, eax
+0x180067c71  or      ebx, 20h
+0x180067c74  jmp     short loc_180067C78
+0x180067c76  mov     ebx, eax
+0x180067c78  lea     rcx, [rsi-10h]
+0x180067c7c  movsxd  r8, ebx
+0x180067c7f  mov     rax, [rcx]
+0x180067c82  lea     r9, [rbp+hObject]
+0x180067c86  mov     edx, 44Ah
+0x180067c8b  mov     qword ptr [rsp+70h+dwCreationDisposition], 0
+0x180067c94  mov     rax, [rax+18h]
+0x180067c98  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x180067c9d  mov     rcx, [rbp+arg_8]
+0x180067ca1  mov     rax, [rcx]
+0x180067ca4  mov     rax, [rax+10h]
+0x180067ca8  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x180067cad  jmp     short loc_180067CCA
+0x180067caf  mov     rcx, [rsi+18h]; hObject
+0x180067cb3  call    cs:__imp_CloseHandle
+0x180067cb9  mov     qword ptr [rsi+18h], 0
+0x180067cc1  bts     dword ptr [r15+0A0h], 1Ah
+0x180067cca  mov     eax, [rbp+var_10]
+0x180067ccd  jmp     loc_180067BDA
+0x180067cd2  mov     ecx, ebx
+0x180067cd4  and     ecx, 0FFFFFFFEh
+0x180067cd7  cmp     ecx, r12d
+0x180067cda  jz      loc_180067B2C
+0x180067ce0  mov     ecx, ebx; CodePage
+0x180067ce2  call    cs:__imp_IsValidCodePage
+0x180067ce8  test    eax, eax
+0x180067cea  jz      loc_180067C05
+0x180067cf0  jmp     loc_180067B2C
+0x180067cf5  mov     eax, 80004001h
+0x180067cfa  jmp     loc_180067BDA
+0x180067cff  cmp     word ptr [r15], 8
+0x180067d04  jnz     loc_180067B71
+0x180067d0a  mov     rcx, [r15+8]; unsigned __int16 *
+0x180067d0e  test    rcx, rcx
+0x180067d11  jz      loc_180067B71
+0x180067d17  call    ?SysStringLen@CW32System@@SAIPEAG@Z; CW32System::SysStringLen(ushort *)
+0x180067d1c  test    eax, eax
+0x180067d1e  jz      short loc_180067D66
+0x180067d20  mov     rdx, [rsi]; unsigned __int16 *
+0x180067d23  test    rdx, rdx
+0x180067d26  jz      short loc_180067D35
+0x180067d28  mov     rcx, [r15+8]; unsigned __int16 *
+0x180067d2c  call    ?wcscmp@CW32System@@SAHPEBG0@Z; CW32System::wcscmp(ushort const *,ushort const *)
+0x180067d31  test    eax, eax
+0x180067d33  jz      short loc_180067D66
+0x180067d35  mov     rcx, [rbp+var_28]; this
+0x180067d39  xor     edx, edx; int
+0x180067d3b  call    ?CloseFile@CTxtEdit@@QEAAJH@Z; CTxtEdit::CloseFile(int)
+0x180067d40  mov     rcx, [r15+8]; unsigned __int16 *
+0x180067d44  call    ?SysAllocString@CW32System@@SAPEAGPEBG@Z; CW32System::SysAllocString(ushort const *)
+0x180067d49  mov     [rsi], rax
+0x180067d4c  test    rax, rax
+0x180067d4f  jz      loc_180067F4F
+0x180067d55  mov     eax, 0FF0Fh
+0x180067d5a  mov     edx, r14d
+0x180067d5d  and     [rsi+70h], ax
+0x180067d61  jmp     loc_180067B71
+0x180067d66  mov     edx, dword ptr [rbp+arg_8]
+0x180067d69  jmp     loc_180067B71
+0x180067d6e  mov     edx, r14d
+0x180067d71  jmp     loc_180067BBC
+0x180067d76  test    dword ptr [r15+0A0h], 4000000h
+0x180067d81  jz      short loc_180067D8E
+0x180067d83  test    edx, edx
+0x180067d85  jnz     short loc_180067D8E
+0x180067d87  xor     eax, eax
+0x180067d89  jmp     loc_180067BDA
+0x180067d8e  mov     ecx, edi
+0x180067d90  mov     r13d, 2
+0x180067d96  shr     ecx, 9
+0x180067d99  mov     eax, edi
+0x180067d9b  not     ecx
+0x180067d9d  and     ecx, r14d
+0x180067da0  or      ecx, r13d
+0x180067da3  mov     edx, ecx
+0x180067da5  and     edx, 0FFFFFFFDh
+0x180067da8  bt      edi, 0Ah
+0x180067dac  cmovnb  edx, ecx
+0x180067daf  mov     rcx, [rsi+18h]; hObject
+0x180067db3  sar     eax, 4
+0x180067db6  and     eax, 0Fh
+0x180067db9  mov     dword ptr [rbp+var_28], edx
+0x180067dbc  cmovz   eax, r14d
+0x180067dc0  mov     dword ptr [rbp+arg_8], eax
+0x180067dc3  test    rcx, rcx
+0x180067dc6  jz      short loc_180067DDC
+0x180067dc8  call    cs:__imp_CloseHandle
+0x180067dce  mov     eax, dword ptr [rbp+arg_8]
+0x180067dd1  mov     edx, dword ptr [rbp+var_28]
+0x180067dd4  mov     qword ptr [rsi+18h], 0
+0x180067ddc  mov     rcx, [rsi]; lpFileName
+0x180067ddf  mov     r8d, edx; dwShareMode
+0x180067de2  mov     [rsp+70h+hTemplateFile], 0; hTemplateFile
+0x180067deb  mov     edx, 0C0000000h; dwDesiredAccess
+0x180067df0  mov     [rsp+70h+dwFlagsAndAttributes], 80h; dwFlagsAndAttributes
+0x180067df8  xor     r9d, r9d; lpSecurityAttributes
+0x180067dfb  mov     [rsp+70h+dwCreationDisposition], eax; dwCreationDisposition
+0x180067dff  call    cs:__imp_CreateFileW
+0x180067e05  mov     [rbp+hObject], rax
+0x180067e09  cmp     rax, 0FFFFFFFFFFFFFFFFh
+0x180067e0d  jz      loc_180067F17
+0x180067e13  mov     rcx, rax; hFile
+0x180067e16  call    cs:__imp_GetFileType
+0x180067e1c  cmp     eax, r14d
+0x180067e1f  jnz     loc_180067F17
+0x180067e25  mov     rax, [rbp+hObject]
+0x180067e29  and     edi, 0Fh
+0x180067e2c  mov     [rsi+18h], rax
+0x180067e30  cmp     edi, r14d
+0x180067e33  jnz     short loc_180067E3A
+0x180067e35  mov     r14d, r13d
+0x180067e38  jmp     short loc_180067EA8
+0x180067e3a  cmp     edi, 3
+0x180067e3d  jnz     short loc_180067E47
+0x180067e3f  mov     r14d, 180008h
+0x180067e45  jmp     short loc_180067EBA
+0x180067e47  mov     eax, ebx
+0x180067e49  mov     ecx, 0FDE9h
+0x180067e4e  and     eax, 0FFFFFFFEh
+0x180067e51  cmp     eax, r12d
+0x180067e54  jz      short loc_180067E5A
+0x180067e56  cmp     ebx, ecx
+0x180067e58  jnz     short loc_180067EA8
+0x180067e5a  mov     eax, 0FEFFh
+0x180067e5f  mov     word ptr [rbp+arg_8], ax
+0x180067e63  mov     eax, 0FFFEh
+0x180067e68  mov     [rbp+var_30], ax
+0x180067e6c  cmp     ebx, ecx
+0x180067e6e  jnz     short loc_180067E7F
+0x180067e70  mov     r13d, 3
+0x180067e76  lea     rdx, ?szUTF8BOM@@3QBEB; uchar const near * const szUTF8BOM
+0x180067e7d  jmp     short loc_180067E94
+0x180067e7f  cmp     ebx, r12d
+0x180067e82  jnz     short loc_180067E90
+0x180067e84  mov     r14d, 11h
+0x180067e8a  lea     rdx, [rbp+arg_8]
+0x180067e8e  jmp     short loc_180067E94
+0x180067e90  lea     rdx, [rbp+var_30]
+0x180067e94  mov     rcx, [rbp+hObject]
+0x180067e98  lea     r9, [rbp+var_20]
+0x180067e9c  mov     rax, [rbp+var_C]
+0x180067ea0  mov     r8d, r13d
+0x180067ea3  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x180067ea8  test    ebx, ebx
+0x180067eaa  jz      short loc_180067EBA
+0x180067eac  cmp     ebx, r12d
+0x180067eaf  jz      short loc_180067EBA
+0x180067eb1  shl     ebx, 10h
+0x180067eb4  or      ebx, 20h
+0x180067eb7  or      r14d, ebx
+0x180067eba  mov     edx, 7F02h; lpCursorName
+0x180067ebf  xor     ecx, ecx; hInstance
+0x180067ec1  call    cs:__imp_LoadCursorW
+0x180067ec7  lea     rdi, [r15-10h]
+0x180067ecb  mov     rdx, rax; HICON
+0x180067ece  mov     rcx, rdi; this
+0x180067ed1  call    ?TxSetCursor@CTxtEdit@@QEAAPEAUHICON__@@PEAU2@H@Z; CTxtEdit::TxSetCursor(HICON__ *,int)
+0x180067ed6  mov     rdx, [rdi]
+0x180067ed9  lea     r9, [rbp+hObject]
+0x180067edd  mov     rbx, rax
+0x180067ee0  movsxd  r8, r14d
+0x180067ee3  mov     rcx, rdi
+0x180067ee6  mov     qword ptr [rsp+70h+dwCreationDisposition], 0
+0x180067eef  mov     rax, [rdx+18h]
+0x180067ef3  mov     edx, 44Ah
+0x180067ef8  call    _guard_dispatch_icall$thunk$10345483385596137414
+0x180067efd  mov     rdx, rbx; HICON
+0x180067f00  mov     rcx, rdi; this
+0x180067f03  call    ?TxSetCursor@CTxtEdit@@QEAAPEAUHICON__@@PEAU2@H@Z; CTxtEdit::TxSetCursor(HICON__ *,int)
+0x180067f08  cmp     dword ptr [rbp+var_28], 3
+0x180067f0c  jnz     loc_180067CC1
+0x180067f12  jmp     loc_180067CAF
+0x180067f17  call    cs:__imp_GetLastError
+0x180067f1d  mov     rcx, [rbp+hObject]; hObject
+0x180067f21  mov     ebx, eax
+0x180067f23  cmp     rcx, 0FFFFFFFFFFFFFFFFh
+  ... truncated ...
+```

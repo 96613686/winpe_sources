@@ -1,0 +1,63 @@
+# Windows::Internal::StringReference::StringReference(ushort const (&)[28])
+
+- ea: `0x180273470`
+- end: `0x1802734b3`
+- name: `??$?0$0BM@@StringReference@Internal@Windows@@QEAA@AEAY0BM@$$CBG@Z`
+- size: `67`
+- prototype: `__int64 __fastcall(HSTRING *string, PCWSTR sourceString)`
+- caller_count: `2`
+- callee_count: `1`
+- tags: ``
+
+## callers
+
+- `0x180273cc4`
+- `0x180275d5c`
+
+## callees
+
+- `0x180273470`
+
+## import_xrefs
+
+- `api-ms-win-core-errorhandling-l1-1-0!RaiseException` at `0x1802734a4`
+- `api-ms-win-core-errorhandling-l1-1-0!RaiseException` at `0x1802734a4`
+- `api-ms-win-core-winrt-string-l1-1-0!WindowsCreateStringReference` at `0x18027348b`
+- `api-ms-win-core-winrt-string-l1-1-0!WindowsCreateStringReference` at `0x18027348b`
+
+## pseudocode
+
+```c
+HSTRING *__fastcall Windows::Internal::StringReference::StringReference(HSTRING *string, PCWSTR sourceString)
+{
+  if ( WindowsCreateStringReference(sourceString, 0x1Bu, (HSTRING_HEADER *)(string + 1), string) < 0 )
+    RaiseException(0xC000000D, 1u, 0, 0);
+  return string;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180273470  push    rbx
+0x180273472  sub     rsp, 20h
+0x180273476  mov     rax, rdx
+0x180273479  lea     r8, [rcx+8]; hstringHeader
+0x18027347d  mov     rbx, rcx
+0x180273480  mov     r9, rcx; string
+0x180273483  mov     rcx, rax; sourceString
+0x180273486  mov     edx, 1Bh; length
+0x18027348b  call    cs:__imp_WindowsCreateStringReference
+0x180273491  test    eax, eax
+0x180273493  jns     short loc_1802734AA
+0x180273495  xor     r9d, r9d; lpArguments
+0x180273498  xor     r8d, r8d; nNumberOfArguments
+0x18027349b  mov     ecx, 0C000000Dh; dwExceptionCode
+0x1802734a0  lea     edx, [r9+1]; dwExceptionFlags
+0x1802734a4  call    cs:__imp_RaiseException
+0x1802734aa  mov     rax, rbx
+0x1802734ad  add     rsp, 20h
+0x1802734b1  pop     rbx
+0x1802734b2  retn
+```

@@ -1,0 +1,93 @@
+# GetGripperColors
+
+- ea: `0x1801fc4f8`
+- end: `0x1801fc569`
+- name: `GetGripperColors`
+- size: `113`
+- prototype: ``
+- caller_count: `2`
+- callee_count: `1`
+- tags: ``
+
+## callers
+
+- `0x1801fc4a0`
+- `0x1801fc570`
+
+## callees
+
+- `0x1801fc4f8`
+
+## import_xrefs
+
+- `ext-ms-win-rtcore-ntuser-sysparams-l1-1-0!SystemParametersInfoW` at `0x1801fc533`
+- `ext-ms-win-rtcore-ntuser-sysparams-l1-1-0!SystemParametersInfoW` at `0x1801fc533`
+- `ext-ms-win-rtcore-ntuser-syscolors-l1-1-0!GetSysColor` at `0x1801fc549`
+- `ext-ms-win-rtcore-ntuser-syscolors-l1-1-0!GetSysColor` at `0x1801fc556`
+- `ext-ms-win-rtcore-ntuser-syscolors-l1-1-0!GetSysColor` at `0x1801fc549`
+- `ext-ms-win-rtcore-ntuser-syscolors-l1-1-0!GetSysColor` at `0x1801fc556`
+
+## pseudocode
+
+```c
+DWORD __fastcall GetGripperColors(DWORD *a1, DWORD *a2)
+{
+  DWORD result; // eax
+  int pvParam; // [rsp+20h] [rbp-18h] BYREF
+  __int64 v6; // [rsp+24h] [rbp-14h]
+  int v7; // [rsp+2Ch] [rbp-Ch]
+
+  *a2 = 0xFFFFFF;
+  *a1 = 2171169;
+  v6 = 0;
+  v7 = 0;
+  pvParam = 16;
+  result = SystemParametersInfoW(0x42u, 0x10u, &pvParam, 0);
+  if ( result )
+  {
+    if ( (v6 & 1) != 0 )
+    {
+      *a2 = GetSysColor(5);
+      result = GetSysColor(26);
+      *a1 = result;
+    }
+  }
+  return result;
+}
+
+```
+
+## disassembly
+
+```asm
+0x1801fc4f8  mov     [rsp+arg_0], rbx
+0x1801fc4fd  push    rdi
+0x1801fc4fe  sub     rsp, 30h
+0x1801fc502  mov     dword ptr [rdx], 0FFFFFFh
+0x1801fc508  lea     r8, [rsp+38h+pvParam]; pvParam
+0x1801fc50d  xor     eax, eax
+0x1801fc50f  mov     dword ptr [rcx], 212121h
+0x1801fc515  mov     rbx, rdx
+0x1801fc518  mov     [rsp+38h+var_14], rax
+0x1801fc51d  mov     edx, 10h; uiParam
+0x1801fc522  mov     [rsp+38h+var_C], eax
+0x1801fc526  mov     rdi, rcx
+0x1801fc529  mov     [rsp+38h+pvParam], edx
+0x1801fc52d  xor     r9d, r9d; fWinIni
+0x1801fc530  lea     ecx, [rdx+32h]; uiAction
+0x1801fc533  call    cs:__imp_SystemParametersInfoW
+0x1801fc539  test    eax, eax
+0x1801fc53b  jz      short loc_1801FC55E
+0x1801fc53d  test    byte ptr [rsp+38h+var_14], 1
+0x1801fc542  jz      short loc_1801FC55E
+0x1801fc544  mov     ecx, 5; nIndex
+0x1801fc549  call    cs:__imp_GetSysColor
+0x1801fc54f  mov     ecx, 1Ah; nIndex
+0x1801fc554  mov     [rbx], eax
+0x1801fc556  call    cs:__imp_GetSysColor
+0x1801fc55c  mov     [rdi], eax
+0x1801fc55e  mov     rbx, [rsp+38h+arg_0]
+0x1801fc563  add     rsp, 30h
+0x1801fc567  pop     rdi
+0x1801fc568  retn
+```

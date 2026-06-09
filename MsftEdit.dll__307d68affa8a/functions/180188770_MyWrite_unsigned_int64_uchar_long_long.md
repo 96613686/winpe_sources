@@ -1,0 +1,72 @@
+# MyWrite(unsigned __int64,uchar *,long,long *)
+
+- ea: `0x180188770`
+- end: `0x1801887c6`
+- name: `?MyWrite@@YAK_KPEAEJPEAJ@Z`
+- size: `86`
+- prototype: `unsigned int __fastcall(unsigned __int64, unsigned __int8 *, int, int *)`
+- caller_count: `0`
+- callee_count: `1`
+- tags: `file_ops`
+
+## callees
+
+- `0x180188770`
+
+## import_xrefs
+
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18018879f`
+- `api-ms-win-core-errorhandling-l1-1-0!GetLastError` at `0x18018879f`
+- `api-ms-win-core-file-l1-1-0!WriteFile` at `0x180188795`
+- `api-ms-win-core-file-l1-1-0!WriteFile` at `0x180188795`
+
+## pseudocode
+
+```c
+signed int __fastcall MyWrite(void *a1, unsigned __int8 *a2, DWORD a3, DWORD *a4)
+{
+  signed int result; // eax
+
+  if ( !a1 )
+    return -2147467259;
+  *a4 = 0;
+  if ( WriteFile(a1, a2, a3, a4, 0) )
+    return *a4 == 0 ? 0x80004005 : 0;
+  result = GetLastError();
+  if ( result > 0 )
+    return (unsigned __int16)result | 0x80070000;
+  return result;
+}
+
+```
+
+## disassembly
+
+```asm
+0x180188770  push    rbx
+0x180188772  sub     rsp, 30h
+0x180188776  mov     rbx, r9
+0x180188779  test    rcx, rcx
+0x18018877c  jnz     short loc_180188785
+0x18018877e  mov     eax, 80004005h
+0x180188783  jmp     short loc_1801887C0
+0x180188785  mov     dword ptr [r9], 0
+0x18018878c  mov     [rsp+38h+lpOverlapped], 0; lpOverlapped
+0x180188795  call    cs:__imp_WriteFile
+0x18018879b  test    eax, eax
+0x18018879d  jnz     short loc_1801887B3
+0x18018879f  call    cs:__imp_GetLastError
+0x1801887a5  test    eax, eax
+0x1801887a7  jle     short loc_1801887C0
+0x1801887a9  movzx   eax, ax
+0x1801887ac  or      eax, 80070000h
+0x1801887b1  jmp     short loc_1801887C0
+0x1801887b3  mov     eax, [rbx]
+0x1801887b5  neg     eax
+0x1801887b7  sbb     eax, eax
+0x1801887b9  not     eax
+0x1801887bb  and     eax, 80004005h
+0x1801887c0  add     rsp, 30h
+0x1801887c4  pop     rbx
+0x1801887c5  retn
+```
